@@ -31,7 +31,7 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
     for url in urls:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:10]:
+            for entry in feed.entries[:12]:
                 title = getattr(entry, 'title', '')
                 link = getattr(entry, 'link', '#')
                 if title:
@@ -47,17 +47,19 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
         time.sleep(3)
 
     prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości dla kategorii '{category}' i wybierz 10-15 najważniejszych.
-Przetwórz je na niezwykle zwięzłe, chwytliwe punkty informacyjne wzorując się na tym stylu:
-- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
-- ⚓️🇺🇸 Iran atakuje balistykami lotniskowiec USA
-- 💻 OpenAI zapowiada nowy model AI
+Jesteś redaktorem minimalistycznego serwisu informacyjnego. Przeanalizuj poniższe nagłówki z kategorii '{category}' i wybierz 10-12 najważniejszych.
 
-Zasady:
-1. Używaj flag państw i emoji tematycznych na początku każdej linii.
-2. Pisz maksymalnie krótko i treściwie (usuń zbędny szum medialny).
-3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z kluczami: "text" (przetworzony krótki tekst z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
-4. Żadnego formatowania markdown (żaden ```json ani ```), zwróć czysty tekst JSON zaczynający się od [ i kończący się na ].
+ZASADA KLUCZOWA: Nie kopiuj dosłownie długich tytułów z RSS! Przetwórz je na krótkie, chwytliwe, uderzeniowe punkty informacyjne (maksymalnie do kilkunastu słów), dokładnie tak jak w tym wzorcu:
+- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
+- 👟 NIKE wyleci z S&P 100 po 18 latach
+- 🇮🇹 Meloni premierem Włoch najdłużej od 1945 roku
+- 🇺🇸🇷🇺 Delegacja USA spotkała się z Putinem ws. Ukrainy
+
+Wymagania:
+1. Każda linia (pole "text") MUSI zaczynać się od odpowiedniej flagi państwa lub emoji tematycznego.
+2. Usuń zbędny szum medialny, nazwy portali czy przydługie wprowadzenia. Skup się na czystym fakcie.
+3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z dwoma kluczami: "text" (skrócony, przetworzony tekst z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
+4. Żadnego formatowania markdown (żadnego ```json ani ```), wyłącznie czysty tekst JSON zaczynający się od [ i kończący się na ].
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -84,8 +86,7 @@ Dane wejściowe:
         items = json.loads(text_res)
     except Exception as e:
         print(f"Błąd AI dla {category}: {e}")
-        # Awaryjne skrócenie tytułów w przypadku błędu zamiast wklejania gigantycznych zdań
-        items = [{"text": f"📌 {art['title'][:70]}...", "link": art['link']} for art in raw_articles[:10]]
+        items = [{"text": f"📌 {art['title'][:60]}...", "link": art['link']} for art in raw_articles[:10]]
 
     categorized_data[category] = items
 
