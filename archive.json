@@ -4,25 +4,25 @@
     "categories": {
       "swiat": [
         {
-          "text": "⚠️ Odświeżam dane dla swiat...",
+          "text": "⚠️ Błąd pobierania danych dla swiat",
           "link": "#"
         }
       ],
       "polska": [
         {
-          "text": "⚠️ Odświeżam dane dla polska...",
+          "text": "⚠️ Błąd pobierania danych dla polska",
           "link": "#"
         }
       ],
       "finanse": [
         {
-          "text": "⚠️ Odświeżam dane dla finanse...",
+          "text": "⚠️ Błąd pobierania danych dla finanse",
           "link": "#"
         }
       ],
       "technologia": [
         {
-          "text": "⚠️ Odświeżam dane dla technologia...",
+          "text": "⚠️ Błąd pobierania danych dla technologia",
           "link": "#"
         }
       ]
