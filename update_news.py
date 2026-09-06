@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from datetime import datetime
 import feedparser
 from google import genai
@@ -25,7 +26,7 @@ RSS_CATEGORIES = {
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 categorized_data = {}
 
-for category, urls in RSS_CATEGORIES.items():
+for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
     raw_articles = []
     for url in urls:
         try:
@@ -41,6 +42,10 @@ for category, urls in RSS_CATEGORIES.items():
     if not raw_articles:
         categorized_data[category] = [{"text": f"⚠️ Brak wiadomości dla kategorii {category}", "link": "#"}]
         continue
+
+    # Odstęp czasowy między zapytaniami, aby nie przekroczyć limitu API
+    if index > 0:
+        time.sleep(3)
 
     prompt = f"""
 Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
@@ -60,7 +65,6 @@ Dane wejściowe:
         )
         text_res = response.text.strip()
         
-        # Agresywne czyszczenie ewentualnego markdowna
         if "```" in text_res:
             parts = text_res.split("```")
             for p in parts:
@@ -73,8 +77,7 @@ Dane wejściowe:
 
         items = json.loads(text_res)
     except Exception as e:
-        print(f"Błąd AI dla {category}: {e}, tekst odpowiedzi: {response.text if 'response' in locals() else 'brak'}")
-        # Awaryjny fallback: jeśli AI zawiedzie, bierzemy bezpośrednio surowe nagłówki z RSS bez AI, żeby stroni nie psuć
+        print(f"Błąd AI dla {category}: {e}")
         items = [{"text": f"🌐 {art['title']}", "link": art['link']} for art in raw_articles[:10]]
 
     categorized_data[category] = items
