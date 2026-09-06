@@ -3,40 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skrót Info ze Świata</title>
+  <title>Minimalistyczny Agregator Newsów</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: #0f172a;
       color: #f8fafc;
       padding: 16px;
-      max-width: 600px;
+      max-width: 650px;
       margin: 0 auto;
     }
-    h1 { font-size: 18px; border-bottom: 1px solid #334155; padding-bottom: 10px; margin-bottom: 12px; }
+    header {
+      border-bottom: 1px solid #334155;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 19px; margin: 0 0 6px 0; }
+    #date-subtitle { color: #94a3b8; font-size: 13px; }
+    
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .filter-btn {
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #3b82f6;
+      color: #ffffff;
+      border-color: #3b82f6;
+    }
+
     ul { list-style: none; padding: 0; margin: 0; }
-    li { padding: 10px 0; border-bottom: 1px solid #1e293b; font-size: 15px; line-height: 1.4; }
+    li {
+      padding: 12px 0;
+      border-bottom: 1px solid #1e293b;
+      font-size: 15px;
+      line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .news-link {
+      font-size: 12px;
+      color: #60a5fa;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .news-link:hover { text-decoration: underline; }
     .loading { color: #94a3b8; font-style: italic; }
   </style>
 </head>
 <body>
-  <h1 id="header-title">Skrót info ze świata 🌎</h1>
+  <header>
+    <h1 id="header-title">Agregator Info 🌎</h1>
+    <div id="date-subtitle">Ładowanie danych...</div>
+  </header>
+
+  <div class="filters">
+    <button class="filter-btn active" onclick="switchCategory('swiat', this)">🌍 Świat</button>
+    <button class="filter-btn" onclick="switchCategory('polska', this)">🇵🇱 Polska</button>
+    <button class="filter-btn" onclick="switchCategory('finanse', this)">📈 Finanse</button>
+    <button class="filter-btn" onclick="switchCategory('technologia', this)">💻 Technologia</button>
+  </div>
+
   <ul id="news-container">
     <li class="loading">Pobieranie najnowszych informacji...</li>
   </ul>
 
   <script>
+    let globalData = null;
+    let currentCategory = 'swiat';
+
+    function renderNews(category) {
+      currentCategory = category;
+      const container = document.getElementById('news-container');
+      
+      if (!globalData || !globalData.categories || !globalData.categories[category]) {
+        container.innerHTML = '<li class="loading">Brak danych dla tej kategorii.</li>';
+        return;
+      }
+
+      const items = globalData.categories[category];
+      container.innerHTML = items.map(function(item) {
+        return '<li>' +
+                 '<span>' + item.text + '</span>' +
+                 (item.link && item.link !== '#' ? '<a class="news-link" href="' + item.link + '" target="_blank" rel="noopener">🔗 Czytaj źródło</a>' : '') +
+               '</li>';
+      }).join('');
+    }
+
+    function switchCategory(category, btnElement) {
+      document.querySelectorAll('.filter-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      btnElement.classList.add('active');
+      renderNews(category);
+    }
+
     fetch('news.json')
       .then(function(response) { return response.json(); })
       .then(function(data) {
-        document.getElementById('header-title').textContent = 'Skrót info ze świata 🌎 ' + data.date;
-        var container = document.getElementById('news-container');
-        container.innerHTML = data.items.map(function(item) {
-          return '<li>' + item + '</li>';
-        }).join('');
+        globalData = data;
+        document.getElementById('date-subtitle').textContent = 'Aktualizacja z dnia: ' + data.date;
+        renderNews(currentCategory);
       })
       .catch(function() {
-        document.getElementById('news-container').innerHTML = '<li class="loading">Błąd wczytywania danych. Spróbuj później.</li>';
+        document.getElementById('news-container').innerHTML = '<li class="loading">Błąd wczytywania danych. Uruchom najpierw akcję w GitHubie.</li>';
       });
   </script>
 </body>
