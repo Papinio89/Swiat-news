@@ -43,15 +43,21 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
         categorized_data[category] = [{"text": f"⚠️ Brak wiadomości dla kategorii {category}", "link": "#"}]
         continue
 
-    # Odstęp czasowy między zapytaniami, aby nie przekroczyć limitu API
     if index > 0:
         time.sleep(3)
 
     prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
-Dla każdej wiadomości stwórz krótki punkt z flagą/emoji na początku.
-Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z kluczami: "text" oraz "link" (przypisz oryginalny link).
-Ważne: Nie używaj żadnego formatowania markdown (żadnego ```json ani ```), zwróć czysty tekst JSON zaczynający się od [ i kończący się na ].
+Przeanalizuj poniższe nagłówki wiadomości dla kategorii '{category}' i wybierz 10-15 najważniejszych.
+Przetwórz je na niezwykle zwięzłe, chwytliwe punkty informacyjne wzorując się na tym stylu:
+- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
+- ⚓️🇺🇸 Iran atakuje balistykami lotniskowiec USA
+- 💻 OpenAI zapowiada nowy model AI
+
+Zasady:
+1. Używaj flag państw i emoji tematycznych na początku każdej linii.
+2. Pisz maksymalnie krótko i treściwie (usuń zbędny szum medialny).
+3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z kluczami: "text" (przetworzony krótki tekst z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
+4. Żadnego formatowania markdown (żaden ```json ani ```), zwróć czysty tekst JSON zaczynający się od [ i kończący się na ].
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -78,7 +84,8 @@ Dane wejściowe:
         items = json.loads(text_res)
     except Exception as e:
         print(f"Błąd AI dla {category}: {e}")
-        items = [{"text": f"🌐 {art['title']}", "link": art['link']} for art in raw_articles[:10]]
+        # Awaryjne skrócenie tytułów w przypadku błędu zamiast wklejania gigantycznych zdań
+        items = [{"text": f"📌 {art['title'][:70]}...", "link": art['link']} for art in raw_articles[:10]]
 
     categorized_data[category] = items
 
