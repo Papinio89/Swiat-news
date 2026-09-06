@@ -4,7 +4,6 @@ import time
 from datetime import datetime
 import feedparser
 from google import genai
-from google.genai import types
 
 RSS_CATEGORIES = {
     "swiat": [
@@ -41,7 +40,7 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
             print(f"Błąd RSS z {url}: {e}")
 
     if not raw_articles:
-        categorized_data[category] = [{"text": f"⚠️ Brak wiadomości dla kategorii {category}", "link": "#"}]
+        categorized_data[category] = [{"text": f"Brak wiadomości dla kategorii {category}", "link": "#"}]
         continue
 
     if index > 0:
@@ -50,14 +49,16 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
     prompt = f"""
 Jesteś redaktorem minimalistycznego serwisu informacyjnego. Przeanalizuj poniższe nagłówki z kategorii '{category}' i wybierz 10 najważniejszych.
 
-ZASADA BEZWZGLĘDNA: Nie kopiuj długich tytułów! Przekształć każdy nagłówek w bardzo krótki, uderzeniowy punkt (maksymalnie 8-10 słów), zaczynający się od flagi lub emoji, dokładnie w tym stylu:
+ZASADA BEZWZGLĘDNA: Nie kopiuj długich tytułów! Przekształć każdy nagłówek w bardzo krótki, uderzeniowy punkt (maksymalnie do 10 słów), zaczynający się od flagi lub emoji, dokładnie w tym stylu:
 - 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
 - 👟 NIKE wyleci z S&P 100 po 18 latach
 - 🇮🇹 Meloni premierem Włoch najdłużej od 1945 roku
 
-Zwróć wynik jako listę obiektów JSON posiadających dokładnie dwa klucze: 
+Zwróć wynik WYŁĄCZNIE jako poprawną tablicę JSON. Każdy obiekt w tablicy musi zawierać dokładnie dwa klucze: 
 1. "text" (skrócona treść z flagą/emoji) 
 2. "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
+
+Nie dodawaj żadnego dodatkowego tekstu poza czystym JSON-em.
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -65,29 +66,34 @@ Dane wejściowe:
 
     items = []
     try:
-        # Wymuszenie przez API, że odpowiedź MUSI być czystym JSON-em o strukturze listy obiektów
         response = client.models.generate_content(
             model='gemini-2.5-flash',
             contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema={
-                    "type": "ARRAY",
-                    "items": {
-                        "type": "OBJECT",
-                        "properties": {
-                            "text": {"type": "STRING"},
-                            "link": {"type": "STRING"}
-                        },
-                        "required": ["text", "link"]
-                    }
-                }
-            ),
         )
-        items = json.loads(response.text.strip())
+        text_res = response.text.strip()
+        
+        # Bezpieczne wyłuskanie JSON-a ze znaczników markdown, jeśli model je doda
+        if "```" in text_res:
+            parts = text_res.split("```")
+            for p in parts:
+                p_clean = p.strip()
+                if p_clean.startswith("["):
+                    text_res = p_clean
+                    break
+                elif p_clean.startswith("json"):
+                    text_res = p_clean[4:].strip()
+                    break
+
+        items = json.loads(text_res)
     except Exception as e:
-        print(f"Błąd API/Parsowania dla {category}: {e}")
-        items = [{"text": f"⚠️ Błąd pobierania danych dla {category}", "link": "#"}]
+        print(f"Błąd parsowania dla {category}: {e}")
+        # Jeśli parsowanie AI zawiedzie, inteligentnie skracamy surowe nagłówki RSS, zamiast wypisywać błąd
+        items = []
+        for art in raw_articles[:10]:
+            short_title = art['title'].split(' - ')[0]  # usuwamy np. nazwy portali na końcu
+            if len(short_title) > 60:
+                short_title = short_title[:57] + "..."
+            items.append({"text": f"📌 {short_title}", "link": art['link']})
 
     categorized_data[category] = items
 
