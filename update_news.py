@@ -19,68 +19,81 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 categorized_data = {}
 
 for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
+    print(f"\n=== Przetwarzam: {category} ===")
+    
     raw_articles = []
     for url in urls:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:10]:
-                title = getattr(entry, 'title', '')
+            for entry in feed.entries[:8]:  # mniej = bezpieczniej
+                title = getattr(entry, 'title', '').strip()
                 link = getattr(entry, 'link', '#')
-                if title:
+                if title and len(title) > 10:
                     raw_articles.append({"title": title, "link": link})
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"RSS błąd: {e}")
 
     if not raw_articles:
         categorized_data[category] = [{"text": f"⚠️ Brak wiadomości ({category})", "link": "#"}]
         continue
 
+    # Długi odstęp – kluczowe
     if index > 0:
-        time.sleep(5)
+        print("Czekam 15 sekund (ochrona rate-limitu)...")
+        time.sleep(15)
 
     prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości i wybierz do 12 najważniejszych.
-Dla każdej wiadomości stwórz krótki, minimalistyczny punkt z flagą/emoji na początku, w stylu:
+Przeanalizuj poniższe nagłówki i wybierz do 10 najważniejszych.
+Dla każdej stwórz bardzo krótki punkt z flagą/emoji na początku.
+Styl:
 - 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
 - 👟 NIKE wyleci z S&P 100 po 18 latach
 - 🇺🇦 1600 dni wojny na Ukrainie
 
-Zwróć wynik WYŁĄCZNIE jako poprawną tablicę JSON obiektów.
-Każdy obiekt musi mieć dokładnie dwa klucze: "text" i "link".
-Żadnego markdown typu ```json.
+Zwróć WYŁĄCZNIE czystą tablicę JSON.
+Każdy obiekt: "text" i "link".
+Żadnego markdown.
 
-Dane wejściowe:
+Dane:
 {json.dumps(raw_articles, ensure_ascii=False)}
 """
 
-    try:
-        response = client.models.generate_content(
-            model='gemini-3.5-flash',
-            contents=prompt,
-        )
-        text_res = response.text.strip()
+    items = None
+    for attempt in range(2):  # maksymalnie 2 próby
+        try:
+            response = client.models.generate_content(
+                model='gemini-3.5-flash',
+                contents=prompt,
+            )
+            text_res = response.text.strip()
 
-        if text_res.startswith("```json"):
-            text_res = text_res[7:]
-        if text_res.startswith("```"):
-            text_res = text_res[3:]
-        if text_res.endswith("```"):
-            text_res = text_res[:-3]
-        text_res = text_res.strip()
+            # Czyszczenie markdown
+            if "```" in text_res:
+                text_res = text_res.replace("```json", "").replace("```", "").strip()
 
-        items = json.loads(text_res)
+            items = json.loads(text_res)
 
-        if not isinstance(items, list):
-            raise ValueError("Nie lista")
-        items = [i for i in items if isinstance(i, dict) and "text" in i and "link" in i][:12]
+            if isinstance(items, list) and len(items) > 0:
+                items = [i for i in items if isinstance(i, dict) and "text" in i][:10]
+                break
+            else:
+                raise ValueError("Pusta lub zła lista")
 
-    except Exception as e:
-        print(f"Błąd AI ({category}): {e}")
+        except Exception as e:
+            print(f"Próba {attempt+1} nieudana: {e}")
+            if attempt == 0:
+                print("Czekam 10 sekund i próbuję jeszcze raz...")
+                time.sleep(10)
+
+    if not items:
         items = [{"text": f"⚠️ Błąd pobierania kategorii {category}", "link": "#"}]
 
     categorized_data[category] = items
     print(f"✓ {category}: {len(items)} pozycji")
+    for it in items[:2]:
+        print(f"   → {it.get('text', '')[:60]}")
 
+# Data
 today_key = datetime.now().strftime("%Y-%m-%d")
 today_str = datetime.now().strftime("%d %B %Y")
 
@@ -107,4 +120,4 @@ archive_data[today_key] = output_data
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print("✅ Gotowe")
+print("\n✅ Gotowe")
