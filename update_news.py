@@ -35,8 +35,12 @@ for category, urls in RSS_CATEGORIES.items():
                 link = getattr(entry, 'link', '#')
                 if title:
                     raw_articles.append({"title": title, "link": link})
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Uwaga: Nie udało się pobrać feedu z {url}: {e}")
+
+    if not raw_articles:
+        categorized_data[category] = [{"text": f"⚠️ Brak dostępnych źródeł dla kategorii {category}", "link": "#"}]
+        continue
 
     prompt = f"""
 Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
@@ -59,13 +63,9 @@ Dane wejściowe:
             text_res = text_res[3:-3].strip()
         
         items = json.loads(text_res)
-
-
-except Exception as e:
-    print(f"Szczegóły błędu dla {category}: {e}")
-    items = [{"text": f"⚠️ Błąd: {str(e)[:40]}", "link": "#"}]
-
-
+    except Exception as e:
+        print(f"Błąd przetwarzania AI dla kategorii {category}: {e}")
+        items = [{"text": f"⚠️ Błąd generowania AI dla kategorii {category}", "link": "#"}]
 
     categorized_data[category] = items
 
