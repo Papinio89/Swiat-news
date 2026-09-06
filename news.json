@@ -3,142 +3,82 @@
   "categories": {
     "swiat": [
       {
-        "text": "⚠️ Błąd pobierania kategorii swiat",
-        "link": "#"
+        "text": "🇺🇦🇺🇸 Prezydent Zełenski spotkał się z wysłannikami Donalda Trumpa",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbWVlNGtQejNNZTE2bEhkMlBHdzZZMlZKR3d6WVF1RS1Ha0hXYlRLeDRJOVpRMEkwTkRJeWNLNjlkaXJSaWZRd1EzWDFOemNCcnJ3aU1RaWxFc2F0eW1tTGpwUU1wUk1rV2RYZkFfTFhzQnZRMnI3TzBLMEpONzUybmczejltSzloVlJ2YjRzbTN0YjdMdlo2Zy1pSUY1Qzd0WUdhWXJNUFZSNzBPbG16Q1pPOFRJY2w3VGc?oc=5"
+      },
+      {
+        "text": "🇩🇪 Wybory w Saksonii-Anhalt: Skrajna prawica (AfD) na wyraźnym prowadzeniu",
+        "link": "https://www.nytimes.com/live/2026/09/06/world/germany-election"
+      },
+      {
+        "text": "🇺🇸🇺🇦 Amerykańscy wysłannicy przybyli do Kijowa po rozmowach z Putinem",
+        "link": "https://www.nytimes.com/2026/09/06/world/europe/ukraine-zelensky-witkoff-kushner-russia-putin.html"
+      },
+      {
+        "text": "🇵🇱 Wojsko wydało pilny komunikat ws. podejrzenia naruszenia przestrzeni powietrznej",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSTZfUHdsbm5xS3NFYmJ4XzMxNFl5SFE4ZEh6NG5QM3pHcnVtLUc4SU1mQnU0bXU0SVJndkxNcmNtSWpBWjZDQlAtOXdvU1lMblVzTnVoYXJqZHprUHIzRTI4S1Y1Z2VFNERYd3g5aXFRRGdTVmFXd0ozbnJuT0RaZjZERWhRci1teUdzTFdSR2E2c21wQ0tmNXUwekdJSnlWVy1xeUNyNVZwQ2pWeVBTaWxteVlBWDln?oc=5"
+      },
+      {
+        "text": "🕊️ Status przygotowań do nowych rozmów pokojowych między Ukrainą a Rosją",
+        "link": "https://www.nytimes.com/2026/09/05/world/europe/ukraine-russia-talks-wtk.html"
+      },
+      {
+        "text": "🇷🇺🇺🇸 Władimir Putin spotkał się w Moskwie z wysłannikami Donalda Trumpa",
+        "link": "https://www.nytimes.com/2026/09/05/world/europe/russia-ukraine-witkoff-kushner-moscow.html"
+      },
+      {
+        "text": "🇩🇪 Znamy wstępne wyniki wyborów krajowych w Saksonii-Anhalt",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNS3Y5bGhVa2RaZUlrbU1odHZlUDJ2NVl4bUhZQUZZWURHRWlydC14dnZGdll1N0RCeE9CQmJKY193akgtZlctYjk5SFNPM29yRHMxTmhmZzVZczNaTE1YMW1mTEJ6eXdKc21TRlVoby1MNFE5cGhrdjJ2bWI3T21vV1RWUG14ak9kMkRDNVRYNUZBS3g0ejAtT3hkUjd3eHRh?oc=5"
+      },
+      {
+        "text": "🇺🇦 NYT donosi o korupcji i marnotrawstwie w ukraińskich kontraktach zbrojeniowych",
+        "link": "https://www.nytimes.com/2026/09/06/world/europe/ukraine-war-weapons-fraud-corruption.html"
+      },
+      {
+        "text": "⚖️ Kolejne zatrzymanie prokuratury w śledztwie dotyczącym giełdy Zonda",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS25ORkFWSnVab1ozelB2enl4UTQ5Q3VuV2tQTGs3WXBmWWhqZEpocTMxbGZOVzMySXZiSjhnWDB4clBhNXhEcGdQa1ZfRXd1ZFpmbWNxRS05OGJlNkZiaUxKNXBzQ1h3RXEtdkQyeXM1UW5QYjM0dFZ0WjZhQ0cyWWZoS3U2UjBEZ3ZJSWtCX3gzdGhxc3dCcjh4SmxTWkhDd2ZsWFllb1o4ZnJpQ1Q0SEh0dGEzamI4Rlo1WXNwdHg2T28?oc=5"
+      },
+      {
+        "text": "🇨🇦🇺🇸 Nowe cła Donalda Trumpa uderzają w kanadyjskich producentów miodu",
+        "link": "https://www.nytimes.com/2026/09/06/world/canada/trump-tariffs-canada-bees-honey.html"
+      },
+      {
+        "text": "🇨🇳 Chińscy absolwenci mierzą się z trudnym rynkiem pracy i rozwojem AI",
+        "link": "https://www.nytimes.com/2026/09/06/world/asia/chinas-new-graduates-ai-challenges.html"
+      },
+      {
+        "text": "💼 Sędzia Waldemar Żurek domaga się pokaźnej kwoty od Zbigniewa Ziobry",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMTEyVXZZN0tTSXJkandCbVhGUjlMMjJfRC1hekNicjEyQlRzbnFRUy1hdjFZeVRLM3VvbW1CZ0VGVVJqXy1EVjlnbk9YYUExNEhSTXMxdm4wSHlPeTdSUU5ndUU5MzFTVGMtM3RSQWxpRUpGMHBYZzhXNm1fUzgzdDFJR3NQcS1jOWZoczFoc2RUQ3F6R1hwaFZ5dmNkbzFP?oc=5"
+      },
+      {
+        "text": "🌾 Karol Nawrocki skierował specjalne wystąpienie do rolników",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQLUY0Y2JFV3Y4NE5tRW92TDEteTV6YUpWd0diVTB6UWhTUVZWcDM4YVgtTWgzZGZpSC1UR1F3RDNMNG1qall0LXZod2dOSzd3R0NNUUFKcWVJb2wzeXBQVG52aVN4enZfc0hRRmJOemZIdk9TN3pxTEtsQW85THZhcC1CT214Zmo5OUViWHVlUHZENGtJeUNTdUVyUC1rZFBscmU0ZnBSk2ZzVzVadl9BemlkR0duMlJtSVl5V0hzZ3BaMGs?oc=5"
+      },
+      {
+        "text": "🇳🇵 Udana akcja ratunkowa po katastrofalnych powodziach w Nepalu",
+        "link": "https://www.nytimes.com/2026/09/05/world/asia/nepal-floods-chinese-worker-rescue.html"
+      },
+      {
+        "text": "🪙 Znany samorządowiec zeznawał ws. utraconej fortuny na giełdzie Zondacrypto",
+        "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNcEF0R001bVgyY1p1Qld4UktXYmpMN2twQzlCbFB4LUlPNkdwMmIxZUk3STItcmhiT2xYdVg3MGVSOHRoY0ItZFdOV3hmVVJCelhTeUxwS1BRWUVrS2FmQnVxZndEUHBxT0FVOF85WFMySjhSbExRWXoyWDhnTjhvaVBFTmlnLS1iNjhxam5OU1RFY3RYd3VXQzN6eW1WeU93c0hYUTM5R3AwMlJoZ1YxODQzekhxTGd4Q3ZvSEZUUTdlLWZIZFRwUUNoQk1vYjFlbWdObmpsOHpQcEJBY0tDOVBXVkdTTFlLYXcteHBSNHBLbndXRXVSTHk3VG9EVE9UQ2NmSFpLbXExcUU0R3d1MWVXMm1nSlN0SUxIa3ZqdGtaLTE2eS1WZFgwTlpCUmN0cFpIeVBn?oc=5"
       }
     ],
     "polska": [
       {
-        "text": "⚛️ Historyczny krok dla polskiego atomu: 50 lat oczekiwania na elektrownię jądrową.",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSmxKRElveUdQVTZ4Q3U3eWQwX1l6TXd6WGtJb2xjZXVRcm1zSU1QY0llMG1oWVVfd0VDbExpR3pldnFneGduQ21Oc1BmN3h5SXZHUVp2dU9MVjRuYXhHMWg5NUJJdUN1OUk0YXEwY21KZkM0R0Zwb0FYZ1JnVGxKel9pem91bUloeWxpQ01jZk5QVk9Tbnc5MnR2VlpxN25mQmVDaXJBaVNpNTNKYTZj?oc=5"
-      },
-      {
-        "text": "✈️ Wojskowy samolot algierski lecący z Moskwy przeleciał przez polską przestrzeń powietrzną.",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbUI0XzRlZ0l5SFlHRV85N3N2MzBHNnlPVEd4MlhwQWdRVTFZbDYxMVBkSTFPeGZITVhIMTRkYzhkaWV2a0tYdUFhNGNZQW8yRWdtQUs1R2FBZ2dQaDVsM0FHbktXS2VNSnlnajlVOTlJSldKZUhHTWgxRUJsN05mcjM2el9Gbjd4MnkySTZ5RUk4UnJVVFNYTFBidmZxOEtoUXlrT3hDQkpaSGt5T3MwZDB4X0JxNFhVdVRFR2dDYS1mZ1NWNGtybncyZ0xRNWdSTWF3?oc=5"
-      },
-      {
-        "text": "🇵🇱🛡️ Polska w globalnym łańcuchu dostaw uzbrojenia – produkujemy kluczowe części broni.",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdVNiUzJVd1hqeGlxaFdFN1NqNXQ0YzAwOGwtd3ppYWRhZTdUalM5ZUhwUWw5SE5zczl2dl9rZGlSUEF3c0lBa1VJRjdCX3lPQjJqQ2p3VTRKNTdwYy1PZE1qZm8xREU5b2tPSDQ0OThoNmNiZ19YV3ZjWU1UZW84TGhFSVRyUlVrajk2RHFuUlptdTlnVDNNTUw5NVUyVkRzWUxCaVlHRHdHdVRfUk80enJzNE1YUTJBbVE?oc=5"
-      },
-      {
-        "text": "🇪🇺 Twarde stanowisko Polski w grze o ogromne fundusze unijne.",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTWcybG9pM2RWcG80US14MEJPMmlaRFFqQzFSNURpTGo5TC02R2J4b214Uk9ZY1JFcHNwZTJMTnNPdjdqRGljYkg1LVNLNGhyVXZCSmZYbmtmamtVY0E2WU9oQ1dRU1hHX2xJc2J3TWFwTkE4dnk5SXlOc3FJaThuTi0tMHpnWWVVVy0teTNyU0NXRldtZDNmU2EtN1pQQlZCdUFfdDdpbTlnUQ?oc=5"
-      },
-      {
-        "text": "🏐🇵🇱 Polskie siatkarki walczą o brązowy medal Mistrzostw Europy w meczu z Serbią.",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQR2V4cmo5ME53SWl0SW9GbUwwdXcyTXhuc0dqV1R1RXlBSVhCcXdKeFUxV0VELUlQQU00TWxYNEJmMHdVS0VjUzlicDFiX2REeWlDT1ZxMk43a2w5M21zTjZUTm9vQUZKbU5ES0pnSV9ZdTlOdmFZSlhwekIzUWdXWnFRaDY1ZVVMdFVTUUYyS0FJTGVSaWhCamRNMXNSU0dYQW1laVU2a3NPVENCd3JXWEp5V1FmMDh6WWhHSDNYVW5QX0NEcTZzdHV5NDlDZzJqdVRfcW5Sdk0?oc=5"
-      },
-      {
-        "text": "🇩🇪🇵🇱 Sondaż: Polacy podzieleni w sprawie reparacji od Niemiec, najmłodsi mają odmienne zdanie.",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeVFLNGpjNlh4d0pzVW5RQkF3eDY4NmJuQTZuOTRXb05wdG9FRzdSby1fQ2d2QU5LVUpaYmhLenR6d3gxQ19XWGNhZU41aHVvbkg4NHJTeTBlWTJhOWY2TlFZR2Rvd1E2dnVqaUx2Z01nNW5aNXM4RFlEOFhSby1HVkNYTjc4bzJEZkVxZVJ4cW9RdUhZMy1TQ1RkZkRHYU5pTTVraGlWa3QwQUUxcXl6aE1PTjlxUEpPck91WnhlaGszVkd5YmJra2ZlYVM?oc=5"
-      },
-      {
-        "text": "🇵🇱 Weto prezydenta w mocy – brak nowej ustawy przynosi Polsce codzienne straty.",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUXJJTVI3dWRmek5pbm1RbHI0N3pFYzdWclNaSFlteXFpVHAwN0hOYW4xTXllWXduOXRKZ0s4R3JXbFRhQVI5TER2TFlKeS1BdUN6aGlLOXhucUxxN19hdVdWX0Y2OXZpTVZvZWJ0NlA4cDhiblVEUHo4RDdPblB1Z1pva0g2aHV3dVZETnYzLVZmbWhXWUZMYlJDeWpURWlRSXkyZUZUdWRwaVgtOVR5aFluMVBEZmJHTFpMbEtoX1RKak0?oc=5"
-      },
-      {
-        "text": "🇪🇺🇵🇱 Wybór kursu Polski: geopolityczna debata między rdzeniem a peryferiami Europy.",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeEpHTGNnX2YwcklUekJLRHU2d2tvbVBzTTN0RXBWeHNYOWY5MDY2QXRoSXdpVExOOVlWd2ZfN0JMM0hCR2FSeVhrdlp2NXVLUm5xby1YTmVqSzJla2RmdWo4ZlhSNWFRZ0lEeDM0dHRLQ0tsazlxSnR2T2puSjB0N0I5cW4yZ3R0V1ZRTTFJNzA0WFJObEUwdlNGdTk5TEQ0U1BfQ2RJNA?oc=5"
+        "text": "⚠️ Błąd generowania AI dla kategorii polska",
+        "link": "#"
       }
     ],
     "finanse": [
       {
-        "text": "🇵🇱 Polska stawia na gigafabrykę AI, podczas gdy Putin mówi o szansach na pokój",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOE1FZkloQlRGVG8zbDRhVWl6NVZWWnZCQlRtNWpMU0VrQllYREotT2VVT2xXNXZrbm9ENVZBdXloaWFUdlMwM0xxLTdLSEYwcDNNVzZzYjZqTzFIMHVwZTRFNi1KdktmOTRzVU5mOExfZ3FPNVNjVUdRSnIteEpIRjRnQlBCYzNOQ0FiazZ0c1hWWm9VM1kxeGYyUERkUzhXcmFRY3BR?oc=5"
-      },
-      {
-        "text": "🇷🇺 Niepokojący proceder szerzy się w rosyjskich sklepach i aptekach",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX1RNUW43TER3M09ZLS1OOHBaUU9QOC1jeFJuenVTYXB2WEtKMFlyQzhVbG9ySnJhZ0xVc2gwTklSTW5wRXRRcWFlU25pZE1jLU81NWsxWmNQbEJWM0g3Y3lKc2lvV1JhRUdkdE55UEFVQnlhSmJPUWNzanc2VnBUUERubzBqY3d1ZjNnTk9kLWk0d2J5SDVDaG9UdXdremxuSTU2MFZyU2xkYWZFYTU3dGhR?oc=5"
-      },
-      {
-        "text": "🇵🇱 Alarmujące dane z Polski: krajowe mikrofirmy walczą o przetrwanie",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeHdDT0xZV0ZDS25SaWg1SEFGdk1TTExQMEk1NFlqdHBtRVVqajVvdHozdFg5V1RYdWZuc0Y4LXFsVW5QeXZDN19tRmF1T3RvbENEdVY3OVVQWGVxckV2ejFkX2Q1Z2l2M1RNTXp1Z0dDT09zX0gwM0tBcnpCZ1RmcXRsaDBsbUh3RXFCWEh1eTh0REVLSklKSDBJXzhTSVhGcUUxQ0ZfaDg0Wm04N3dPc2xLd0RjWEI3RHpCU2VqMkVaWU8ybTgwUEVtUFZSN1diZ1Q4?oc=5"
-      },
-      {
-        "text": "🇵🇱 Relacje Glapiński-Tusk: szef NBP wskazuje, że polityka jest cięższa niż ekonomia",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVjBnS0R1b29aU19fUUJMbWZFalFUZ1FMWnJiM2EzSHdLS3RCa1pvWjhmWkk2T3VCQkVsRmI1MlcxRkFNZF9JSElHWlRkbGlWcEtHbnN2aGJYNEQ3SmtDN1BOMHEtc2xGQ0t5T2RPRGpUc21MZ1dHVW9FZFM5cXhyMFlCd0s4VkpCV0d4d1Z4TDRuemgtVGFXRktPbUdVeldhZ3JNY1N2cGlhbC1DV01DYWxlWU56Q3M?oc=5"
-      },
-      {
-        "text": "📈 Rząd walczy z deficytem budżetowym, a na świecie trwają rekordowe zakupy złota",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMWlzTC1kRDF4cXpiQlEtTHl2ZjRTc013ZG5pZkdlMzZwVUdKcEgycWZLY25fZnJkVmlON2JfZE4wbHk3T2x1b0t4VTdjTVN1azZLLXB6cWRyMTdLTlpyMW94Y05xaFVBbXo2ZHhSYXdlRVJ1OUp6Q2hFbThyNzlYMjNlc2xLOF9ET2dV?oc=5"
-      },
-      {
-        "text": "🇪🇺 Przełomowy, europejski zwrot w strategicznym finansowaniu rozwoju",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHdDME50ZnNXSk5ma2hnQW5DR2RraVpRbGxtRXp3X3JGOE1oM0ktUGl1TC1UQV9FaFphaTJ4S21ETk96MnZBVnk4NHI0a0J4S3p6VUczam84cmhZb3F4MVlmWlltOFlrZW94Q2pBZXBfMXhvZWVGS2xwSnZPbzZQNk5jcDFXcnBVb0s0LXBId1didEg3aEQyWEk2bkctTFRnQmRSeGctdWtLcGo3Y001R3ByQjNpVS1DZkE?oc=5"
-      },
-      {
-        "text": "📯 Poczta Polska ujawnia niepokojące wyniki: 103 miliony złotych w pięć miesięcy",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVC15X1NDcnZEbmNxLTA0RlpvOHNiM09WSlJpOHRsQTVkWkJnQi1VQjROajZKZkc3eFRKc052SXpsWUZGYUEwMm9TWFo5aFhMRUQ5cVNJeXRUMGdmc0ZhdDJCTGRnNWJIbmh4ZWw3SS05SHBFN2MyYzlsajR5TFdKTzJISjZtRWxMcXhrR2IwQjFGNW16UzhmMWlKS29IRllnczhSVVdORlloUlRVQ2hQaTB5NHhGUQ?oc=5"
-      },
-      {
-        "text": "📈 Skok cen żywności i paliwa rodzi obawy o tzw. efekty drugiej rundy",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQzEyQTliQ1Z4N2xjdGVJdVJoUnd6MXRYOVExRkxsVUhodkhEVVgyRVYwQ21NaTRyMzhoSW5UMnliMFlJM0lEY0Z5NE92Rkt2M3JXSXVPcS16d2RqZkc0RDZqNlRyRG5fUEJ1MjZIM21TbHJxNm5ZRno5dl9qUHBrWTJrR1l6dnlTVnhDRlpOZVRoNzdraUZaanY3S0hIZTNROHF0MU51dnBZa3A2SC0ycTJLRF9jZw?oc=5"
-      },
-      {
-        "text": "🇵🇱 Wycena polskiej gospodarki zbliża się do kolejnej historycznej granicy",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQWxFV2VOcHNtbFdwQjJUb2toX1N6ZkhNLW1JMm1qZk4tZG9PVDJocGt3YUZQQTVXaEhYT3BFV2UzQnFwTE1palljYkk0bGxvOW1JaHNpYUpTaHdHdjdNM0JYU0xDbXc2ME9oQlB2d2pLZzluX21abTVhVmZxdTRnQzVrYjY1emRUWEVndUdBVXd0V0xob2l2bjBsVUhJUWdXZEdWektIaHljNXR0bHR4aGFqcnZ0Uzl6VlpqLUdyLWh2MjRPS0VDLURNWWQ5WWMtV3BBQ2xxSHZRTFJQQlNlRGRn?oc=5"
+        "text": "⚠️ Błąd generowania AI dla kategorii finanse",
+        "link": "#"
       }
     ],
     "technologia": [
       {
-        "text": "❤️ Sztuczna inteligencja wykrywa choroby serca z EKG w kilka sekund",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUXdWSTJZaFQyMjlKemJ1YXYxUUxyUTVjOUpzZ00xZjRZNWM1SkZUN1cxWGZkaTBYWkFiTFROeS05WkVuYlNoSV8xVm9BTjc4Q2NKNW1VOFhIWndyamVwYkd4R2RFMDVLX29iSnpRUW51UmRTU1BWeTVFZnBjdGdrZjdiaHVrN2QwNi04azg3QXYtSUtBOWdHa0VDeHFBSnFXNzlvQXlGRV81VUZQSjFITUlEYUVyUUVVV1Nmb2FzTDNRams5M0JEcms5QjNQUjl0TzZZa1VB?oc=5"
-      },
-      {
-        "text": "🤖 Niepokojący incydent z botem AI na serwerach Wikipedii",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYWVRSnJvOHpsYldXQ1UxVFljOE5kcXhGeWllSGk5UDE2MXc4cmRqX1BVLXRMb1k0MTlCeW9tZGNaQ3ZqYXE2WnRnWVdCVDE4SzFMVTFCWjhNR2hsby1JMFh4TlZhZHIwdW45SEdDVGpnZDdWSGtKRUluaEdyWGhYRGVzUVRmcVZOMzZtNEY3QnpJbDVUWlVQWVpOSUgwdXJtRHVWak5DeGszZW1lcUo0?oc=5"
-      },
-      {
-        "text": "💼 AI głęboko transformuje rynek pracy, ale nie w oczywisty sposób",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPc0hxWndlUUhhRmg2YWpvMzVQQzRFNGlhcWRDaUp6UTlmN0N2UUJrMkdwd0N4ajdydGpZNjh4ZXFmQlJuNzRpcVBwT2ppSVppLXRxenVSNU1XM1FjOE1TNERXLUhOUnZIMnNwS1FiUHlUU0FseUlpajBfYUJCVWRTZ0p3MHZ3cE16VVlLSm1xOVptRjVfYzF5LUNzb0NsZkQ3OWtDeWFfbnVNYmtwZlE?oc=5"
-      },
-      {
-        "text": "📈 Sektor energetyczny wyprzedza gigantów BigTech na giełdzie",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbXIwWHNkQVJlbnFiaF93RWhMVEtucjNybmdzbUtvXzlzbW54NWJTTWV1b0E4YnEyei1ZUmRJSHZtbklobUNJazB0Tl9tbUtIT3gtSUdSV2szNXR1Wk9CMGY0TFc3b3Y1Q2E5T1FMYkMxM2xORm55ckZJcFNaQUV4UzYtdk5LMWUwZm5oMzBZdnFVXzhTQ25rWFVsR1g5MHJjRlJZd0xzLWg3VWtPRktXc2o5LWdyM0lXTUh4YXFtUWlWQVlkT2w1ZWhiRDdmZw?oc=5"
-      },
-      {
-        "text": "📱 WhatsApp przestanie działać na wielu starszych modelach smartfonów",
-        "link": "https://antyweb.pl/whatsapp-przestanie-od-wtorku-dzialac-na-tych-smartfonach-nie-ma-odwrotu"
-      },
-      {
-        "text": "🎮 Kontrowersje wokół PlayStation: gracze nie posiadają cyfrowych gier na własność",
-        "link": "https://antyweb.pl/playstation-gracze-sa-dostatecznie-madrzy-by-wiedziec-ze-nie-posiadaja-kupionych-gier"
-      },
-      {
-        "text": "💻 Wyłączenie tego jednego ustawienia znacząco przyspieszy Windows 11",
-        "link": "https://antyweb.pl/windows-11-muli-wylacz-to-jedno-ustawienie"
-      },
-      {
-        "text": "🔄 Duża aktualizacja Androida nadchodzi na smartfony Samsunga",
-        "link": "https://antyweb.pl/duza-aktualizacja-dla-samsungow-android-17-juz-za-kilka-dni"
-      },
-      {
-        "text": "🚀 Indyjski koncept kosmicznego domu BHEEM pokazuje przyszłość poza Ziemią",
-        "link": "https://antyweb.pl/jak-bedzie-wygladal-dom-czlowieka-w-kosmosie-indyjski-koncept-bheem"
-      },
-      {
-        "text": "🇵🇱 Polak stworzył brakującą aplikację Kalendarza Google na system macOS",
-        "link": "https://antyweb.pl/google-nie-chce-zrobic-kalendarza-na-maca-polak-zrobil-to-za-nich"
-      },
-      {
-        "text": "🏢 Jak rozpoznać, czy sztuczna inteligencja zagraża Twojej pracy biurowej?",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYUcxWXBYMEpOVFpvVDNlSUt4YnBtQUY1OURRNTBYMVJXX0RWWVFBLVh1OFl5VjNSUHBtYzZXRElLd0NOSzlwTVM5LWowdmtfWGhDSThsR28xcU1zdlR2b2QzY0l4eEVpaTdGVF9JUklTRHFkM29LNklXMm8wa1Y2UHBReUt2NjQ2eGJ1RzgyTGVwMnRLbEhWekpweERfQ1IwMFFDMUM5WmoxdjV3UjNF?oc=5"
-      },
-      {
-        "text": "💾 AI przywraca do łask i rewolucjonizuje odczyt danych z taśm magnetycznych",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZjUya05TUTNRN0JTdWNuaFVZX3REM3BvSFh3MGRBVjRLOGV4WUIybkJrckg1ME9CU3JPa09tdnhiQnBZemZTMU5odGtJR3Zoa05aT0VlNVlfbGVnVE5UcDZtMjB1ekNHOVhZRzlTbVgxWUN0ZVhfMlpfSmlDLTZpRE5BYWRmQ21NZTZnMUVNd19KQ0to?oc=5"
-      },
-      {
-        "text": "⚖️ AI Governance: kluczowe zasady wdrażania sztucznej inteligencji w firmie",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBMbmZCRGFJYmFJaktZR1BNQVg2WGk4T0c0MDFiTzNnbUU5ZzROX09QQXBUX3Q4WUxTQW0xOVJRaTR0ejZNelFIcUV4MS1laENwaHpFaVN0NGhNMnVJakRIcmlIS3J4X0g4aHRVdG40cDBpWFd6UGx6MllR?oc=5"
-      },
-      {
-        "text": "🇻🇳 W Wietnamie powstaje uniwersytet w całości oparty na sztucznej inteligencji",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTW92b1JnSDlzTUJ2ZTVQcHVERWtVMWxuRzlSbFVaZzlRMU1HZzBYNkR3RzRBUTdoZm54X2xnOF9TNmV5QTVHU3c2Zko4eG13ZmJzelM4VXZKYmljMl9veXpzSUw4Rlpta3NNZ0hFdDBraEVYNWpLdUpaWmFIY19DRHhVc0tZejRlajJj?oc=5"
-      },
-      {
-        "text": "💧 Eksperci radzą: jak powtórnie wykorzystać wodę z klimatyzacji",
-        "link": "https://antyweb.pl/nie-wylewaj-wody-z-klimatyzacji-eksperci-radza-jak-ja-wykorzystac"
+        "text": "⚠️ Błąd generowania AI dla kategorii technologia",
+        "link": "#"
       }
     ]
   }
