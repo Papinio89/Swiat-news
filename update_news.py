@@ -59,8 +59,13 @@ Dane wejściowe:
             text_res = text_res[3:-3].strip()
         
         items = json.loads(text_res)
-    except Exception:
-        items = [{"text": f"⚠️ Błąd pobierania kategorii {category}", "link": "#"}]
+
+
+except Exception as e:
+    print(f"Szczegóły błędu dla {category}: {e}")
+    items = [{"text": f"⚠️ Błąd: {str(e)[:40]}", "link": "#"}]
+
+
 
     categorized_data[category] = items
 
