@@ -2,7 +2,7 @@ name: Auto Update News
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6,19 * * *'
   workflow_dispatch:
 
 jobs:
@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name 'Bot Wiadomości'
           git config --global user.email 'bot@users.noreply.github.com'
-          git add news.json
+          git add news.json archive.json
           git commit -m "Automatyczna aktualizacja newsów [skip ci]" || exit 0
           git push
