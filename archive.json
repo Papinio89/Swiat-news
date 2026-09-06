@@ -4,52 +4,8 @@
     "categories": {
       "swiat": [
         {
-          "text": "🇩🇪 Niemcy: Skrajnie prawicowa AfD wygrywa w kluczowych wyborach regionalnych",
-          "link": "https://www.nytimes.com/live/2026/09/06/world/germany-election"
-        },
-        {
-          "text": "🇺🇸🇺🇦 USA-Ukraina: Wysłannicy Trumpa w Kijowie po rozmowach z Putinem w Moskwie",
-          "link": "https://www.nytimes.com/2026/09/06/world/europe/ukraine-zelensky-witkoff-kushner-russia-putin.html"
-        },
-        {
-          "text": "🇺🇦 Ukraina: Zełenski oskarża Rosję o zablokowanie przylotu wysłannikom Trumpa",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNamdKc0lZT1ZhWGtzMGpJbEhRbnBXYjVxM2NuMFhtTEtoUjZhSnRCZE1DVkFPV3J0SDJLWHNPaVJEa3dJVzVNTzdaVzB2RlJnQWs1VFdCdVJvV0dvMGhvNXdGbU45VU9rYk5XdnV0RHFzU3psYmtUYUxPUEthWnpDNnJxSkt2RDI5LVVzT25LRjNmSXUzOVdxNjhSenZHNGlKUkFvUktmaw?oc=5"
-        },
-        {
-          "text": "🇩🇪🇷🇺 Niemcy-Rosja: Berlin oskarża Moskwę, Ławrow mówi o „początku prawdziwej wojny”",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ0tzMHYwYmdPT2JkZlI4Yjh1Unc4dEpvM1lRYjRKUzlvTy0xbFltLW1DbDhiWkxEQ05NS1NMSlRhYnZ2YnpQTi1EeFZacmFZUmxKSDVBbTNMa1ZQVmlfZzU2TndaMC1GcFJzRDQ5MTlCckxLNGZZZnR6dC14b3JIcVZPekUtWEVzdU1ZdVdXVFFDUUhyYUstTEU3dTVLa0NPRW5wODBDMjQ2eEVMcUttQ24zZmpiRVhoWGc?oc=5"
-        },
-        {
-          "text": "🇧🇾 Białoruś: Andrzej Poczobut zdecydował o powrocie do kraju mimo ryzyka",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZ0M5YXFGMWpDQ0NwV2wyN0JVVXhYRTNqdllDTFQxeThzZTE3c3N3NHBleWJ5MTlIT25aWDVRYUg4bVF3ZTk3ODRBTWFwOFIzWm5tdHBlQUlreS1HcTBSSUZhMVRrbXRnUVB6REpLRXF4ZzdSN3Vmd1dyNFU0cHROYndNNzlPTzZiVEtZdHFCQTBHdC1MNFBLMDQxelg3eXNZR3RMa0l6a9IBpgFBVV95cUxOTGMtblBkNE5Ocnp0YWlULXhjcWNnTV83c25DOWVha1A5RzhGZGc1bTBvLW84MXVUQjFISFR3TUpGNEhfazFHM0dUVGJWcm5MZnQ3NmJkdmNWakk4REdkcnpVQ1BsSm4tOGhiRDQxeDFGd3FlNUR3aVZONEpEUWh6SFluMDVhWUgyWTFyX2ZPdGd0UW9vMXZnSlRDY1E4ZDdicU56eW1B?oc=5"
-        },
-        {
-          "text": "🇺🇦🇷🇺 Ukraina: Na jakim etapie są negocjacje pokojowe przed kolejną rundą rozmów?",
-          "link": "https://www.nytimes.com/2026/09/05/world/europe/ukraine-russia-talks-wtk.html"
-        },
-        {
-          "text": "🇺🇦 Ukraina: Nadużycia i marnotrawstwo przy kontraktach na broń",
-          "link": "https://www.nytimes.com/2026/09/06/world/europe/ukraine-war-weapons-fraud-corruption.html"
-        },
-        {
-          "text": "🇨🇦🇺🇸 Kanada: Nowe cła Trumpa uderzają w producentów miodu",
-          "link": "https://www.nytimes.com/2026/09/06/world/canada/trump-tariffs-canada-bees-honey.html"
-        },
-        {
-          "text": "🇨🇳 Chiny: Absolwenci mierzą się z kryzysem na rynku pracy i konkurencją AI",
-          "link": "https://www.nytimes.com/2026/09/06/world/asia/chinas-new-graduates-ai-challenges.html"
-        },
-        {
-          "text": "🇭🇹🇺🇸 Haiti: Deportowani z USA imigranci pozostawieni bez środków do życia",
-          "link": "https://www.nytimes.com/2026/09/06/world/americas/haiti-deportees.html"
-        },
-        {
-          "text": "🇵🇱 Zonda: Kolejne zatrzymanie w głośnej sprawie giełdy kryptowalut",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS25ORkFWSnVab1ozelB2enl4UTQ5Q3VuV2tQTGs3WXBmWWhqZEpocTMxbGZOVzMySXZiSjhnWDB4clBhNXhEcGdQa1ZfRXd1ZFpmbWNxRS05OGJlNkZiaUxKNXBzQ1h3RXEtdkQyeXM1UW5QYjM0dFZ0WjZhQ0cyWWZoS3U2UjBEZ3ZJSWtCX3gzdGhxc3dCcjh4SmxTWkhDd2ZsWFllb1o4ZnJpQ1Q0SEh0dGEzamI4Rlo1WXNwdHg2T28?oc=5"
-        },
-        {
-          "text": "🇵🇱 Polska: Alarm o naruszeniu granicy okazał się fałszywy – śmigłowiec wykrył ptaki",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZTFXZE1scGNRSEE3cHBHQnp4SjlVem9tRFZMMXlBZFJobTJxMGREamxGV0dDYWE2WG13ZFpESHlZY3hXM1RLMW1iNmFvUGtmVXpCTURteHoySjdOU1B1Vng2QkN5WGkyVmtyRTFoYzVKSnF0OUV1UWx3Vjd3czRySU11c19ob3NubUpORENBc04yVHVNNmJ3WXpkRmRTUDdfZV9Uby1WTnRBTThuYXdOdjJ5SUE5TXRFR3JFQXRLdzhHU0pTeVU2SA?oc=5"
+          "text": "⚠️ Błąd pobierania kategorii swiat",
+          "link": "#"
         }
       ],
       "polska": [
