@@ -4,6 +4,7 @@ import time
 from datetime import datetime
 import feedparser
 from google import genai
+from google.genai import types
 
 RSS_CATEGORIES = {
     "swiat": [
@@ -54,7 +55,9 @@ ZASADA BEZWZGLĘDNA: Nie kopiuj długich tytułów! Przekształć każdy nagłó
 - 👟 NIKE wyleci z S&P 100 po 18 latach
 - 🇮🇹 Meloni premierem Włoch najdłużej od 1945 roku
 
-Zwróć wynik WYŁĄCZNIE jako czystą tablicę JSON (bez żadnych znaczników ```json, bez formatowania markdown, zacznij od [ i skończ na ]). Każdy obiekt w tablicy musi mieć dokładnie dwa klucze: "text" (skrócona treść z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych).
+Zwróć wynik jako listę obiektów JSON posiadających dokładnie dwa klucze: 
+1. "text" (skrócona treść z flagą/emoji) 
+2. "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -62,29 +65,29 @@ Dane wejściowe:
 
     items = []
     try:
+        # Wymuszenie przez API, że odpowiedź MUSI być czystym JSON-em o strukturze listy obiektów
         response = client.models.generate_content(
-            model='gemini-3.5-flash',
+            model='gemini-2.5-flash',
             contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema={
+                    "type": "ARRAY",
+                    "items": {
+                        "type": "OBJECT",
+                        "properties": {
+                            "text": {"type": "STRING"},
+                            "link": {"type": "STRING"}
+                        },
+                        "required": ["text", "link"]
+                    }
+                }
+            ),
         )
-        text_res = response.text.strip()
-        
-        # Agresywne czyszczenie wszelkich otoczeń markdown
-        if "```" in text_res:
-            parts = text_res.split("```")
-            for p in parts:
-                p_clean = p.strip()
-                if p_clean.startswith("["):
-                    text_res = p_clean
-                    break
-                elif p_clean.startswith("json"):
-                    text_res = p_clean[4:].strip()
-                    break
-
-        items = json.loads(text_res)
+        items = json.loads(response.text.strip())
     except Exception as e:
-        print(f"Błąd parsowania AI dla {category}: {e}")
-        # Jeśli AI podpadnie, wyświetlamy krótką informację o błędzie zamiast śmieciowych długich tytułów
-        items = [{"text": f"⚠️ Odświeżam dane dla {category}...", "link": "#"}]
+        print(f"Błąd API/Parsowania dla {category}: {e}")
+        items = [{"text": f"⚠️ Błąd pobierania danych dla {category}", "link": "#"}]
 
     categorized_data[category] = items
 
