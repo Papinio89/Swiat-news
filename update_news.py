@@ -12,14 +12,6 @@ RSS_CATEGORIES = {
     ],
     "polska": [
         "https://news.google.com/rss/search?q=Polska&hl=pl&gl=PL&ceid=PL:pl"
-    ],
-    "finanse": [
-        "https://news.google.com/rss/search?q=gospodarka+finanse+biznes&hl=pl&gl=PL&ceid=PL:pl",
-        "https://www.bankier.pl/xml/rss/strefa-inwestora.xml"
-    ],
-    "technologia": [
-        "https://news.google.com/rss/search?q=technologia+AI&hl=pl&gl=PL&ceid=PL:pl",
-        "https://antyweb.pl/feed"
     ]
 }
 
@@ -43,9 +35,8 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
         categorized_data[category] = [{"text": f"⚠️ Brak wiadomości ({category})", "link": "#"}]
         continue
 
-    # Małe opóźnienie tylko między kategoriami (żeby nie łapać rate-limitu)
     if index > 0:
-        time.sleep(4)
+        time.sleep(5)
 
     prompt = f"""
 Przeanalizuj poniższe nagłówki wiadomości i wybierz do 12 najważniejszych.
@@ -69,7 +60,6 @@ Dane wejściowe:
         )
         text_res = response.text.strip()
 
-        # Czyścimy ewentualny markdown
         if text_res.startswith("```json"):
             text_res = text_res[7:]
         if text_res.startswith("```"):
@@ -80,7 +70,6 @@ Dane wejściowe:
 
         items = json.loads(text_res)
 
-        # Prosta walidacja
         if not isinstance(items, list):
             raise ValueError("Nie lista")
         items = [i for i in items if isinstance(i, dict) and "text" in i and "link" in i][:12]
