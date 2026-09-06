@@ -4,54 +4,68 @@ from datetime import datetime
 import feedparser
 from google import genai
 
-RSS_URLS = [
-    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
-    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
-]
-
-headlines = []
-for url in RSS_URLS:
-    feed = feedparser.parse(url)
-    for entry in feed.entries[:10]:
-        headlines.append(entry.title)
+# Konfiguracja źródeł RSS z podziałem na kategorie
+RSS_CATEGORIES = {
+    "swiat": [
+        "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
+        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    ],
+    "polska": [
+        "https://news.google.com/rss/search?q=Polska&hl=pl&gl=PL&ceid=PL:pl"
+    ],
+    "finanse": [
+        "https://news.google.com/rss/search?q=gospodarka+finanse+biznes&hl=pl&gl=PL&ceid=PL:pl",
+        "https://www.bankier.pl/xml/rss/strefa-inwestora.xml"
+    ],
+    "technologia": [
+        "https://news.google.com/rss/search?q=technologia+AI&hl=pl&gl=PL&ceid=PL:pl",
+        "https://antyweb.pl/feed"
+    ]
+}
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+categorized_data = {}
 
-prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości ze świata i wybierz 10-15 najważniejszych. 
-Przetwórz je dokładnie na taki styl, format i zwięzłość jak w tym przykładzie:
-- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
-- ⚓️🇺🇸 Iran atakuje balistykami lotniskowiec USA
-- ₿ 15 lat temu Bitcoin = 8$
+for category, urls in RSS_CATEGORIES.items():
+    raw_articles = []
+    for url in urls:
+        feed = feedparser.parse(url)
+        for entry in feed.entries[:10]:
+            title = getattr(entry, 'title', '')
+            link = getattr(entry, 'link', '#')
+            if title:
+                raw_articles.append({"title": title, "link": link})
 
-Zasady:
-1. Używaj flag państw i emoji tematycznych na początku każdej linii.
-2. Pisz maksymalnie zwięźle, w formie krótkich punktów informacyjnych.
-3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON zawierającą same ciągi tekstowe (stringi), bez dodatkowego formatowania markdown kodu.
+    prompt = f"""
+Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
+Dla każdego wiadomości stwórz krótki, minimalistyczny punkt z flagą/emoji na początku.
+Zwróć wynik WYŁĄCZNIE jako poprawną tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony tekst z flagą i emoji) oraz "link" (dokładny link URL przekazany w danych wejściowych). Żadnego markdown typu ```json.
 
-Nagłówki do przetworzenia:
-{json.dumps(headlines, ensure_ascii=False)}
+Dane wejściowe:
+{json.dumps(raw_articles, ensure_ascii=False)}
 """
 
-response = client.models.generate_content(
-    model='gemini-3.5-flash',
-    contents=prompt,
-)
+    try:
+        response = client.models.generate_content(
+            model='gemini-3.5-flash',
+            contents=prompt,
+        )
+        text_res = response.text.strip()
+        if text_res.startswith("```json"):
+            text_res = text_res[7:-3].strip()
+        elif text_res.startswith("```"):
+            text_res = text_res[3:-3].strip()
+        
+        items = json.loads(text_res)
+    except Exception:
+        items = [{"text": f"⚠️ Błąd pobierania kategorii {category}", "link": "#"}]
 
-try:
-    text_res = response.text.strip()
-    if text_res.startswith("```json"):
-        text_res = text_res[7:-3].strip()
-    elif text_res.startswith("```"):
-        text_res = text_res[3:-3].strip()
-    items = json.loads(text_res)
-except Exception:
-    items = [f"Błąd generowania AI: {response.text[:50]}"]
+    categorized_data[category] = items
 
-today_str = datetime.now().strftime("%d %B")
+today_str = datetime.now().strftime("%d %B %Y")
 output_data = {
     "date": today_str,
-    "items": items
+    "categories": categorized_data
 }
 
 with open("news.json", "w", encoding="utf-8") as f:
