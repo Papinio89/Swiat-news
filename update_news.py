@@ -4,7 +4,6 @@ from datetime import datetime
 import feedparser
 from google import genai
 
-# Konfiguracja źródeł RSS z podziałem na kategorie
 RSS_CATEGORIES = {
     "swiat": [
         "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
@@ -29,16 +28,19 @@ categorized_data = {}
 for category, urls in RSS_CATEGORIES.items():
     raw_articles = []
     for url in urls:
-        feed = feedparser.parse(url)
-        for entry in feed.entries[:10]:
-            title = getattr(entry, 'title', '')
-            link = getattr(entry, 'link', '#')
-            if title:
-                raw_articles.append({"title": title, "link": link})
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries[:10]:
+                title = getattr(entry, 'title', '')
+                link = getattr(entry, 'link', '#')
+                if title:
+                    raw_articles.append({"title": title, "link": link})
+        except Exception:
+            pass
 
     prompt = f"""
 Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
-Dla każdego wiadomości stwórz krótki, minimalistyczny punkt z flagą/emoji na początku.
+Dla każdej wiadomości stwórz krótki, minimalistyczny punkt z flagą/emoji na początku.
 Zwróć wynik WYŁĄCZNIE jako poprawną tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony tekst z flagą i emoji) oraz "link" (dokładny link URL przekazany w danych wejściowych). Żadnego markdown typu ```json.
 
 Dane wejściowe:
@@ -62,11 +64,28 @@ Dane wejściowe:
 
     categorized_data[category] = items
 
+today_key = datetime.now().strftime("%Y-%m-%d")
 today_str = datetime.now().strftime("%d %B %Y")
 output_data = {
     "date": today_str,
     "categories": categorized_data
 }
 
+# Zapis bieżących newsów
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+# Obsługa pliku archiwum
+archive_file = "archive.json"
+archive_data = {}
+if os.path.exists(archive_file):
+    try:
+        with open(archive_file, "r", encoding="utf-8") as f:
+            archive_data = json.load(f)
+    except Exception:
+        archive_data = {}
+
+archive_data[today_key] = output_data
+
+with open(archive_file, "w", encoding="utf-8") as f:
+    json.dump(archive_data, f, ensure_ascii=False, indent=2)
