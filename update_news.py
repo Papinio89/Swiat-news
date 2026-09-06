@@ -47,19 +47,14 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
         time.sleep(3)
 
     prompt = f"""
-Jesteś redaktorem minimalistycznego serwisu informacyjnego. Przeanalizuj poniższe nagłówki z kategorii '{category}' i wybierz 10-12 najważniejszych.
+Jesteś redaktorem minimalistycznego serwisu informacyjnego. Przeanalizuj poniższe nagłówki z kategorii '{category}' i wybierz 10 najważniejszych.
 
-ZASADA KLUCZOWA: Nie kopiuj dosłownie długich tytułów z RSS! Przetwórz je na krótkie, chwytliwe, uderzeniowe punkty informacyjne (maksymalnie do kilkunastu słów), dokładnie tak jak w tym wzorcu:
+ZASADA BEZWZGLĘDNA: Nie kopiuj długich tytułów! Przekształć każdy nagłówek w bardzo krótki, uderzeniowy punkt (maksymalnie 8-10 słów), zaczynający się od flagi lub emoji, dokładnie w tym stylu:
 - 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
 - 👟 NIKE wyleci z S&P 100 po 18 latach
 - 🇮🇹 Meloni premierem Włoch najdłużej od 1945 roku
-- 🇺🇸🇷🇺 Delegacja USA spotkała się z Putinem ws. Ukrainy
 
-Wymagania:
-1. Każda linia (pole "text") MUSI zaczynać się od odpowiedniej flagi państwa lub emoji tematycznego.
-2. Usuń zbędny szum medialny, nazwy portali czy przydługie wprowadzenia. Skup się na czystym fakcie.
-3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z dwoma kluczami: "text" (skrócony, przetworzony tekst z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych dla danego nagłówka).
-4. Żadnego formatowania markdown (żadnego ```json ani ```), wyłącznie czysty tekst JSON zaczynający się od [ i kończący się na ].
+Zwróć wynik WYŁĄCZNIE jako czystą tablicę JSON (bez żadnych znaczników ```json, bez formatowania markdown, zacznij od [ i skończ na ]). Każdy obiekt w tablicy musi mieć dokładnie dwa klucze: "text" (skrócona treść z flagą/emoji) oraz "link" (przypisz dokładnie ten sam link URL, który był w danych wejściowych).
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -73,20 +68,23 @@ Dane wejściowe:
         )
         text_res = response.text.strip()
         
+        # Agresywne czyszczenie wszelkich otoczeń markdown
         if "```" in text_res:
             parts = text_res.split("```")
             for p in parts:
-                p_trim = p.strip()
-                if p_trim.startswith("[") or p_trim.startswith("json"):
-                    if p_trim.startswith("json"):
-                        p_trim = p_trim[4:].strip()
-                    text_res = p_trim
+                p_clean = p.strip()
+                if p_clean.startswith("["):
+                    text_res = p_clean
+                    break
+                elif p_clean.startswith("json"):
+                    text_res = p_clean[4:].strip()
                     break
 
         items = json.loads(text_res)
     except Exception as e:
-        print(f"Błąd AI dla {category}: {e}")
-        items = [{"text": f"📌 {art['title'][:60]}...", "link": art['link']} for art in raw_articles[:10]]
+        print(f"Błąd parsowania AI dla {category}: {e}")
+        # Jeśli AI podpadnie, wyświetlamy krótką informację o błędzie zamiast śmieciowych długich tytułów
+        items = [{"text": f"⚠️ Odświeżam dane dla {category}...", "link": "#"}]
 
     categorized_data[category] = items
 
