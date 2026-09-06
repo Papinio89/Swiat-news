@@ -36,36 +36,46 @@ for category, urls in RSS_CATEGORIES.items():
                 if title:
                     raw_articles.append({"title": title, "link": link})
         except Exception as e:
-            print(f"Uwaga: Nie udało się pobrać feedu z {url}: {e}")
+            print(f"Błąd RSS z {url}: {e}")
 
     if not raw_articles:
-        categorized_data[category] = [{"text": f"⚠️ Brak dostępnych źródeł dla kategorii {category}", "link": "#"}]
+        categorized_data[category] = [{"text": f"⚠️ Brak wiadomości dla kategorii {category}", "link": "#"}]
         continue
 
     prompt = f"""
 Przeanalizuj poniższe nagłówki wiadomości i wybierz do 15 najważniejszych.
-Dla każdej wiadomości stwórz krótki, minimalistyczny punkt z flagą/emoji na początku.
-Zwróć wynik WYŁĄCZNIE jako poprawną tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony tekst z flagą i emoji) oraz "link" (dokładny link URL przekazany w danych wejściowych). Żadnego markdown typu ```json.
+Dla każdej wiadomości stwórz krótki punkt z flagą/emoji na początku.
+Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów z kluczami: "text" oraz "link" (przypisz oryginalny link).
+Ważne: Nie używaj żadnego formatowania markdown (żadnego ```json ani ```), zwróć czysty tekst JSON zaczynający się od [ i kończący się na ].
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
 """
 
+    items = []
     try:
         response = client.models.generate_content(
             model='gemini-3.5-flash',
             contents=prompt,
         )
         text_res = response.text.strip()
-        if text_res.startswith("```json"):
-            text_res = text_res[7:-3].strip()
-        elif text_res.startswith("```"):
-            text_res = text_res[3:-3].strip()
         
+        # Agresywne czyszczenie ewentualnego markdowna
+        if "```" in text_res:
+            parts = text_res.split("```")
+            for p in parts:
+                p_trim = p.strip()
+                if p_trim.startswith("[") or p_trim.startswith("json"):
+                    if p_trim.startswith("json"):
+                        p_trim = p_trim[4:].strip()
+                    text_res = p_trim
+                    break
+
         items = json.loads(text_res)
     except Exception as e:
-        print(f"Błąd przetwarzania AI dla kategorii {category}: {e}")
-        items = [{"text": f"⚠️ Błąd generowania AI dla kategorii {category}", "link": "#"}]
+        print(f"Błąd AI dla {category}: {e}, tekst odpowiedzi: {response.text if 'response' in locals() else 'brak'}")
+        # Awaryjny fallback: jeśli AI zawiedzie, bierzemy bezpośrednio surowe nagłówki z RSS bez AI, żeby stroni nie psuć
+        items = [{"text": f"🌐 {art['title']}", "link": art['link']} for art in raw_articles[:10]]
 
     categorized_data[category] = items
 
@@ -76,11 +86,9 @@ output_data = {
     "categories": categorized_data
 }
 
-# Zapis bieżących newsów
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# Obsługa pliku archiwum
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
