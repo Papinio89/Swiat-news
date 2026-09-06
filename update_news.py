@@ -18,12 +18,8 @@ RSS_CATEGORIES = {
     ]
 }
 
-try:
-    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-    print("Klient Gemini utworzony OK")
-except Exception as e:
-    print(f"BŁĄD tworzenia klienta: {e}")
-    client = None
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+print("Klient Gemini utworzony OK")
 
 categorized_data = {}
 
@@ -34,11 +30,11 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
     for url in urls:
         try:
             feed = feedparser.parse(url)
-            print(f"RSS {url}: {len(feed.entries)} wpisów")
+            print(f"RSS: {len(feed.entries)} wpisów")
             for entry in feed.entries[:6]:
                 title = getattr(entry, 'title', '').strip()
                 link = getattr(entry, 'link', '#')
-                if title:
+                if title and len(title) > 10:
                     raw_articles.append({"title": title, "link": link})
         except Exception as e:
             print(f"Błąd RSS: {e}")
@@ -49,42 +45,36 @@ for index, (category, urls) in enumerate(RSS_CATEGORIES.items()):
         categorized_data[category] = [{"text": f"⚠️ Brak artykułów ({category})", "link": "#"}]
         continue
 
-    if not client:
-        categorized_data[category] = [{"text": f"⚠️ Brak klienta Gemini", "link": "#"}]
-        continue
-
     if index > 0:
-        print("Czekam 12 sekund...")
-        time.sleep(12)
+        print("Czekam 20 sekund...")
+        time.sleep(20)
 
     prompt = f"""Przeanalizuj nagłówki i wybierz do 8 najważniejszych.
-Stwórz krótkie punkty z emoji/flagą na początku.
-Zwróć TYLKO czystą tablicę JSON z obiektami mającymi "text" i "link".
-Bez markdown.
+Stwórz krótkie punkty z emoji/flagą na początku (styl: 🇨🇳 Chiny: 80% wzrost importu węgla...).
+Zwróć TYLKO czystą tablicę JSON z obiektami "text" i "link". Bez markdown.
 
 Dane:
-{json.dumps(raw_articles[:6], ensure_ascii=False)}
+{json.dumps(raw_articles, ensure_ascii=False)}
 """
 
     items = None
     try:
         print("Wysyłam do Gemini...")
         response = client.models.generate_content(
-            model='gemini-3.5-flash',
+            model='gemini-2.5-flash',          # ← zmieniony model (wyższy limit free)
             contents=prompt,
         )
         text_res = response.text.strip()
-        print(f"Odpowiedź (pierwsze 150 znaków): {text_res[:150]}")
+        print(f"Odpowiedź (początek): {text_res[:120]}")
 
-        # Czyszczenie
         text_res = text_res.replace("```json", "").replace("```", "").strip()
         items = json.loads(text_res)
 
-        if not isinstance(items, list):
-            raise ValueError("Nie jest listą")
-
-        items = [i for i in items if isinstance(i, dict) and "text" in i][:8]
-        print(f"Sparsowano {len(items)} pozycji")
+        if isinstance(items, list) and len(items) > 0:
+            items = [i for i in items if isinstance(i, dict) and "text" in i][:8]
+            print(f"OK – {len(items)} pozycji")
+        else:
+            raise ValueError("Pusta lista")
 
     except Exception as e:
         print(f"BŁĄD Gemini: {type(e).__name__}: {e}")
