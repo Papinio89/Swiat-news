@@ -17,10 +17,31 @@
       border-bottom: 1px solid #334155;
       padding-bottom: 12px;
       margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-    h1 { font-size: 19px; margin: 0 0 6px 0; }
+    h1 { font-size: 19px; margin: 0 0 4px 0; }
     #date-subtitle { color: #94a3b8; font-size: 13px; }
     
+    .archive-box {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .archive-box label { font-size: 11px; color: #94a3b8; }
+    #archive-select {
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
     .filters {
       display: flex;
       gap: 8px;
@@ -65,8 +86,16 @@
 </head>
 <body>
   <header>
-    <h1 id="header-title">Agregator Info 🌎</h1>
-    <div id="date-subtitle">Ładowanie danych...</div>
+    <div>
+      <h1 id="header-title">Agregator Info 🌎</h1>
+      <div id="date-subtitle">Ładowanie danych...</div>
+    </div>
+    <div class="archive-box">
+      <label for="archive-select">📅 Archiwum:</label>
+      <select id="archive-select" onchange="loadArchiveDate(this.value)">
+        <option value="">Dzisiejsze (Najnowsze)</option>
+      </select>
+    </div>
   </header>
 
   <div class="filters">
@@ -81,19 +110,20 @@
   </ul>
 
   <script>
-    let globalData = null;
+    let currentData = null;
+    let archiveDatabase = {};
     let currentCategory = 'swiat';
 
-    function renderNews(category) {
+    function renderNews(dataObj, category) {
       currentCategory = category;
       const container = document.getElementById('news-container');
       
-      if (!globalData || !globalData.categories || !globalData.categories[category]) {
+      if (!dataObj || !dataObj.categories || !dataObj.categories[category]) {
         container.innerHTML = '<li class="loading">Brak danych dla tej kategorii.</li>';
         return;
       }
 
-      const items = globalData.categories[category];
+      const items = dataObj.categories[category];
       container.innerHTML = items.map(function(item) {
         return '<li>' +
                  '<span>' + item.text + '</span>' +
@@ -107,19 +137,53 @@
         btn.classList.remove('active');
       });
       btnElement.classList.add('active');
-      renderNews(category);
+      renderNews(currentData, category);
     }
 
-    fetch('news.json')
-      .then(function(response) { return response.json(); })
-      .then(function(data) {
-        globalData = data;
-        document.getElementById('date-subtitle').textContent = 'Aktualizacja z dnia: ' + data.date;
-        renderNews(currentCategory);
-      })
-      .catch(function() {
-        document.getElementById('news-container').innerHTML = '<li class="loading">Błąd wczytywania danych. Uruchom najpierw akcję w GitHubie.</li>';
+    function loadArchiveDate(dateKey) {
+      if (!dateKey) {
+        // Wczytaj najświeższe z news.json
+        fetch('news.json')
+          .then(res => res.json())
+          .then(data => {
+            currentData = data;
+            document.getElementById('date-subtitle').textContent = 'Aktualizacja z dnia: ' + data.date;
+            renderNews(currentData, currentCategory);
+          });
+        return;
+      }
+
+      if (archiveDatabase[dateKey]) {
+        currentData = archiveDatabase[dateKey];
+        document.getElementById('date-subtitle').textContent = 'Archiwum z dnia: ' + currentData.date;
+        renderNews(currentData, currentCategory);
+      }
+    }
+
+    // Inicjalizacja danych głównych oraz archiwum
+    Promise.all([
+      fetch('news.json').then(res => res.json()),
+      fetch('archive.json').then(res => res.json()).catch(() => ({}))
+    ]).then(([latestData, archives]) => {
+      currentData = latestData;
+      archiveDatabase = archives;
+      
+      document.getElementById('date-subtitle').textContent = 'Aktualizacja z dnia: ' + latestData.date;
+      renderNews(currentData, currentCategory);
+
+      // Wypełnienie listy rozwijanej archiwum
+      const select = document.getElementById('archive-select');
+      const sortedKeys = Object.keys(archives).sort().reverse();
+      
+      sortedKeys.forEach(key => {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.textContent = archives[key].date || key;
+        select.appendChild(opt);
       });
+    }).catch(() => {
+      document.getElementById('news-container').innerHTML = '<li class="loading">Błąd wczytywania danych. Uruchom najpierw akcję w GitHubie.</li>';
+    });
   </script>
 </body>
 </html>
