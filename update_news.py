@@ -56,7 +56,7 @@ Dane wejściowe:
 
 try:
     completion = client.chat.completions.create(
-        model="llama-3.1-8b-instant",          # szybki i darmowy
+      model="llama-3.3-70b-versatile",  ,          # szybki i darmowy
         messages=[{"role": "user", "content": prompt}],
         temperature=0.4,
         max_tokens=1500,
