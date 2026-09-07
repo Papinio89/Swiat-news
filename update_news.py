@@ -1,109 +1,73 @@
 import json
 import os
-import re
 from datetime import datetime
 import feedparser
-from groq import Groq
-
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+from google import genai
 
 RSS_URLS = [
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
     "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
 ]
 
+# Pobieramy nagłówki wraz z oryginalnymi linkami
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:10]:
-            title = getattr(entry, "title", "").strip()
-            link = getattr(entry, "link", "#")
+        for entry in feed.entries[:15]:
+            title = getattr(entry, 'title', '')
+            link = getattr(entry, 'link', '#')
             if title:
                 raw_articles.append({"title": title, "link": link})
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Błąd RSS z {url}: {e}")
 
-# Usuwamy duplikaty
-seen = set()
-unique = []
-for a in raw_articles:
-    t = a["title"][:50]
-    if t not in seen:
-        seen.add(t)
-        unique.append(a)
-raw_articles = unique[:10]
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś redaktorem. Z poniższych nagłówków wybierz 8-10 najważniejszych.
+# Przekazujemy do AI zarówno tekst jak i linki w formacie JSON, aby model zwrócił sparowane obiekty
+prompt = f"""
+Przeanalizuj poniższe nagłówki wiadomości ze świata i wybierz 15-20 najważniejszych. 
+Przetwórz każdą wiadomość na krótki, zwięzły punkt informacyjny (wzorując się na stylu: "- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r", używając flag państw i emoji).
 
-Dla każdej stwórz krótki punkt z emoji/flagą na początku w stylu:
-- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
-- ⚓️🇺🇸 Iran atakuje balistykami lotniskowiec USA
-- 🇺🇦 1600 dni wojny na Ukrainie
+Zasady:
+1. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony krótki nagłówek z flagą/emoji) oraz "link" (dokładnie ten sam link URL, który był w danych wejściowych dla danej wiadomości).
+2. Żadnego formatowania markdown (żadnego ```json ani ```).
 
-Zwróć TYLKO czystą tablicę JSON (bez markdown, bez ```).
-Każdy obiekt: {{"text": "...", "link": "..."}}
-Link musi być dokładnie taki jak w danych.
-
-Dane:
+Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
 """
 
 items = []
 try:
-    completion = client.chat.completions.create(
-        model="openai/gpt-oss-20b",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.3,
-        max_tokens=1200,
+    response = client.models.generate_content(
+        model='gemini-3.5-flash',
+        contents=prompt,
     )
-    text_res = completion.choices[0].message.content.strip()
-    print("Odpowiedź AI (początek):", text_res[:200])
-
-    # Czyszczenie
-    text_res = text_res.replace("```json", "").replace("```", "").strip()
-
-    # Próba wyciągnięcia tablicy JSON nawet jak jest uszkodzona
-    match = re.search(r'\[\s*\{.*\}\s*\]', text_res, re.DOTALL)
-    if match:
-        text_res = match.group(0)
-
+    text_res = response.text.strip()
+    if text_res.startswith("```json"):
+        text_res = text_res[7:-3].strip()
+    elif text_res.startswith("```"):
+        text_res = text_res[3:-3].strip()
+    
     items = json.loads(text_res)
-
-    if not isinstance(items, list):
-        raise ValueError("Nie lista")
-
-    items = [i for i in items if isinstance(i, dict) and "text" in i][:10]
-
 except Exception as e:
-    print("Błąd AI:", e)
-    # Fallback – proste skrócenie tytułów
-    items = []
-    for a in raw_articles[:8]:
-        short = a["title"].split(" - ")[0].split(" | ")[0]
-        if len(short) > 60:
-            short = short[:57] + "..."
-        items.append({"text": f"📌 {short}", "link": a["link"]})
+    print(f"Błąd AI: {e}")
+    # Awaryjny fallback, gdyby AI zwróciło błąd
+    items = [{"text": f"📌 {art['title'][:60]}...", "link": art['link']} for art in raw_articles[:15]]
 
-# Data
-months = {
-    1: "stycznia", 2: "lutego", 3: "marca", 4: "kwietnia",
-    5: "maja", 6: "czerwca", 7: "lipca", 8: "sierpnia",
-    9: "września", 10: "października", 11: "listopada", 12: "grudnia"
-}
-now = datetime.now()
-today_str = f"{now.day} {months[now.month]} {now.year}"
-today_key = now.strftime("%Y-%m-%d")
+today_key = datetime.now().strftime("%Y-%m-%d")
+today_str = datetime.now().strftime("%d %B %Y")
 
 output_data = {
     "date": today_str,
     "items": items
 }
 
+# Zapis bieżących wiadomości (baza do odczytu dla strony)
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# Archiwum
+# Obsługa archiwum
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
@@ -111,13 +75,9 @@ if os.path.exists(archive_file):
         with open(archive_file, "r", encoding="utf-8") as f:
             archive_data = json.load(f)
     except Exception:
-        pass
+        archive_data = {}
 
 archive_data[today_key] = output_data
-sorted_keys = sorted(archive_data.keys(), reverse=True)[:30]
-archive_data = {k: archive_data[k] for k in sorted_keys}
 
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
-
-print(f"Gotowe – {len(items)} pozycji")
