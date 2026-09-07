@@ -16,24 +16,58 @@
     header {
       border-bottom: 1px solid #334155;
       padding-bottom: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     h1 { font-size: 19px; margin: 0 0 4px 0; }
     #date-subtitle { color: #94a3b8; font-size: 13px; }
+    .archive-box { display: flex; flex-direction: column; gap: 4px; }
+    .archive-box label { font-size: 11px; color: #94a3b8; }
+    #archive-select {
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+    }
     ul { list-style: none; padding: 0; margin: 0; }
     li {
       padding: 12px 0;
       border-bottom: 1px solid #1e293b;
       font-size: 15px;
       line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
     }
+    .news-link {
+      font-size: 12px;
+      color: #60a5fa;
+      text-decoration: none;
+      width: fit-content;
+    }
+    .news-link:hover { text-decoration: underline; }
     .loading { color: #94a3b8; font-style: italic; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Agregator Info 🌎</h1>
-    <div id="date-subtitle">Ładowanie...</div>
+    <div>
+      <h1>Agregator Info 🌎</h1>
+      <div id="date-subtitle">Ładowanie...</div>
+    </div>
+    <div class="archive-box">
+      <label for="archive-select">📅 Archiwum:</label>
+      <select id="archive-select" onchange="loadArchive(this.value)">
+        <option value="">Dzisiejsze</option>
+      </select>
+    </div>
   </header>
 
   <ul id="news-container">
@@ -41,25 +75,58 @@
   </ul>
 
   <script>
-    fetch('news.json')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('date-subtitle').textContent = 'Aktualizacja: ' + data.date;
-        const container = document.getElementById('news-container');
-        
-        if (!data.items || data.items.length === 0) {
-          container.innerHTML = '<li class="loading">Brak danych</li>';
-          return;
-        }
-        
-        container.innerHTML = data.items.map(item => 
-          '<li>' + item + '</li>'
-        ).join('');
-      })
-      .catch(() => {
-        document.getElementById('news-container').innerHTML = 
-          '<li class="loading">Błąd wczytywania. Uruchom akcję w GitHubie.</li>';
+    let currentData = null;
+    let archiveDatabase = {};
+
+    function render(items) {
+      const container = document.getElementById('news-container');
+      if (!items || items.length === 0) {
+        container.innerHTML = '<li class="loading">Brak danych</li>';
+        return;
+      }
+      container.innerHTML = items.map(item => {
+        const text = typeof item === 'string' ? item : item.text;
+        const link = typeof item === 'object' ? item.link : null;
+        return `<li>
+          <span>${text}</span>
+          ${link && link !== '#' ? `<a class="news-link" href="${link}" target="_blank" rel="noopener">🔗 Czytaj źródło</a>` : ''}
+        </li>`;
+      }).join('');
+    }
+
+    function loadArchive(key) {
+      if (!key) {
+        document.getElementById('date-subtitle').textContent = 'Aktualizacja: ' + currentData.date;
+        render(currentData.items);
+        return;
+      }
+      const data = archiveDatabase[key];
+      if (data) {
+        document.getElementById('date-subtitle').textContent = 'Archiwum: ' + data.date;
+        render(data.items);
+      }
+    }
+
+    Promise.all([
+      fetch('news.json').then(r => r.json()),
+      fetch('archive.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([latest, archives]) => {
+      currentData = latest;
+      archiveDatabase = archives;
+      document.getElementById('date-subtitle').textContent = 'Aktualizacja: ' + latest.date;
+      render(latest.items);
+
+      const select = document.getElementById('archive-select');
+      Object.keys(archives).sort().reverse().forEach(key => {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.textContent = archives[key].date || key;
+        select.appendChild(opt);
       });
+    }).catch(() => {
+      document.getElementById('news-container').innerHTML = 
+        '<li class="loading">Błąd wczytywania. Uruchom akcję w GitHubie.</li>';
+    });
   </script>
 </body>
 </html>
