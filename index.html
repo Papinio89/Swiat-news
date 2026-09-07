@@ -1,132 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agregator Info</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
-      padding: 16px;
-      max-width: 650px;
-      margin: 0 auto;
-    }
-    header {
-      border-bottom: 1px solid #334155;
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    h1 { font-size: 19px; margin: 0 0 4px 0; }
-    #date-subtitle { color: #94a3b8; font-size: 13px; }
-    .archive-box { display: flex; flex-direction: column; gap: 4px; }
-    .archive-box label { font-size: 11px; color: #94a3b8; }
-    #archive-select {
-      background: #1e293b;
-      color: #f8fafc;
-      border: 1px solid #334155;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-size: 12px;
-      cursor: pointer;
-    }
-    ul { list-style: none; padding: 0; margin: 0; }
-    li {
-      padding: 12px 0;
-      border-bottom: 1px solid #1e293b;
-      font-size: 15px;
-      line-height: 1.4;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .news-link {
-      font-size: 12px;
-      color: #60a5fa;
-      text-decoration: none;
-      width: fit-content;
-    }
-    .news-link:hover { text-decoration: underline; }
-    .loading { color: #94a3b8; font-style: italic; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat w pigułce – Minimalist News</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+            background: #fdfdfd;
+            line-height: 1.5;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 { font-size: 1.4rem; margin: 0; }
+        #date-display { font-size: 0.9rem; color: #666; }
+        .archive-box {
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+        select {
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 14px;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Agregator Info 🌎</h1>
-      <div id="date-subtitle">Ładowanie...</div>
-    </div>
+
+    <header>
+        <h1>🌍 Świat w pigułce</h1>
+        <div id="date-display">Ładowanie...</div>
+    </header>
+
     <div class="archive-box">
-      <label for="archive-select">📅 Archiwum:</label>
-      <select id="archive-select" onchange="loadArchive(this.value)">
-        <option value="">Dzisiejsze</option>
-      </select>
+        <label for="archive-select">Archiwum: </label>
+        <select id="archive-select" onchange="loadArchiveDate(this.value)">
+            <option value="">Dzisiejsze wiadomości</option>
+        </select>
     </div>
-  </header>
 
-  <ul id="news-container">
-    <li class="loading">Pobieranie informacji...</li>
-  </ul>
+    <ul id="news-list">
+        <li>Pobieranie wiadomości...</li>
+    </ul>
 
-  <script>
-    let currentData = null;
-    let archiveDatabase = {};
+    <footer>
+        Minimalistyczny aggregator AI • Zasilany przez Gemini Flash
+    </footer>
 
-    function render(items) {
-      const container = document.getElementById('news-container');
-      if (!items || items.length === 0) {
-        container.innerHTML = '<li class="loading">Brak danych</li>';
-        return;
-      }
-      container.innerHTML = items.map(item => {
-        const text = typeof item === 'string' ? item : item.text;
-        const link = typeof item === 'object' ? item.link : null;
-        return `<li>
-          <span>${text}</span>
-          ${link && link !== '#' ? `<a class="news-link" href="${link}" target="_blank" rel="noopener">🔗 Czytaj źródło</a>` : ''}
-        </li>`;
-      }).join('');
-    }
+    <script>
+        let archiveData = {};
 
-    function loadArchive(key) {
-      if (!key) {
-        document.getElementById('date-subtitle').textContent = 'Aktualizacja: ' + currentData.date;
-        render(currentData.items);
-        return;
-      }
-      const data = archiveDatabase[key];
-      if (data) {
-        document.getElementById('date-subtitle').textContent = 'Archiwum: ' + data.date;
-        render(data.items);
-      }
-    }
+        async function init() {
+            try {
+                // Pobieramy archiwum, żeby wypełnić listę dat
+                const archiveRes = await fetch('archive.json');
+                if (archiveRes.ok) {
+                    archiveData = await archiveRes.json();
+                    const select = document.getElementById('archive-select');
+                    
+                    // Sortujemy daty malejąco (od najnowszych)
+                    const sortedDates = Object.keys(archiveData).sort().reverse();
+                    for (const d of sortedDates) {
+                        const opt = document.createElement('option');
+                        opt.value = d;
+                        opt.textContent = archiveData[d].date || d;
+                        select.appendChild(opt);
+                    }
+                }
+            } catch (e) {
+                console.log("Brak pliku archiwum lub błąd wczytywania.");
+            }
 
-    Promise.all([
-      fetch('news.json').then(r => r.json()),
-      fetch('archive.json').then(r => r.json()).catch(() => ({}))
-    ]).then(([latest, archives]) => {
-      currentData = latest;
-      archiveDatabase = archives;
-      document.getElementById('date-subtitle').textContent = 'Aktualizacja: ' + latest.date;
-      render(latest.items);
+            // Ładowanie dzisiejszych newsów
+            loadTodayNews();
+        }
 
-      const select = document.getElementById('archive-select');
-      Object.keys(archives).sort().reverse().forEach(key => {
-        const opt = document.createElement('option');
-        opt.value = key;
-        opt.textContent = archives[key].date || key;
-        select.appendChild(opt);
-      });
-    }).catch(() => {
-      document.getElementById('news-container').innerHTML = 
-        '<li class="loading">Błąd wczytywania. Uruchom akcję w GitHubie.</li>';
-    });
-  </script>
+        async function loadTodayNews() {
+            try {
+                const res = await fetch('news.json');
+                const data = await res.json();
+                renderNews(data);
+            } catch (e) {
+                document.getElementById('news-list').innerHTML = '<li>⚠️ Nie udało się załadować aktualności.</li>';
+            }
+        }
+
+        function loadArchiveDate(dateKey) {
+            if (!dateKey) {
+                loadTodayNews();
+                return;
+            }
+            if (archiveData[dateKey]) {
+                renderNews(archiveData[dateKey]);
+            }
+        }
+
+        function renderNews(data) {
+            document.getElementById('date-display').textContent = data.date || '';
+            const list = document.getElementById('news-list');
+            list.innerHTML = '';
+
+            if (!data.items || data.items.length === 0) {
+                list.innerHTML = '<li>Brak wiadomości.</li>';
+                return;
+            }
+
+            data.items.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.link || '#';
+                a.target = '_blank';
+                a.textContent = item.text;
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        }
+
+        init();
+    </script>
 </body>
 </html>
