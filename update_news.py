@@ -58,9 +58,8 @@ Dane wejściowe:
 
 items = []
 try:
-    # Używamy stabilnego i oszczędnego modelu gemini-2.0-flash
     response = client.models.generate_content(
-        model='gemini-2.0-flash',
+        model='gemini-3.6-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -72,7 +71,6 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    # Jeśli nadal wystąpi błąd, generujemy chociaż ładniejsze wpisy zamiast samych pinezek
     items = [{"text": f"🌍 {art['title']}", "link": art['link']} for art in raw_articles[:15]]
 
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
