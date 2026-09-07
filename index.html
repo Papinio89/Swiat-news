@@ -16,6 +16,7 @@
             --btn-hover: #f1f3f4;
             --badge-bg: #f1f3f4;
             --progress-bar: #1a0dab;
+            --star-active: #fbc02d;
         }
 
         [data-theme="dark"] {
@@ -29,9 +30,9 @@
             --btn-hover: #2a2a2a;
             --badge-bg: #2a2a2a;
             --progress-bar: #8ab4f8;
+            --star-active: #fdd835;
         }
 
-        /* Pasek postępu czytania na samej górze */
         #progress-container {
             position: fixed;
             top: 0;
@@ -89,7 +90,7 @@
         .controls-bar {
             display: flex;
             gap: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             flex-wrap: wrap;
             align-items: center;
         }
@@ -107,13 +108,41 @@
             font-size: 0.9rem;
             box-sizing: border-box;
         }
+
+        .tabs-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .tab-btn {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .tab-btn.active {
+            background: var(--link-color);
+            color: #fff;
+            border-color: var(--link-color);
+        }
+        [data-theme="dark"] .tab-btn.active {
+            color: #121212;
+        }
         
         .stats-bar {
             font-size: 0.85rem;
             color: var(--text-muted);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            background: var(--badge-bg);
+            padding: 8px 12px;
+            border-radius: 6px;
         }
 
         ul {
@@ -137,24 +166,40 @@
         li a:hover {
             text-decoration: underline;
         }
-        /* Style dla klikniętych/odwiedzonych linków */
         li a:visited {
             color: var(--link-visited);
             opacity: 0.75;
         }
         
-        .copy-btn {
+        .actions-group {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            white-space: nowrap;
+        }
+        .star-btn {
             background: none;
             border: none;
             cursor: pointer;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            padding: 2px 6px;
-            border-radius: 4px;
-            background: var(--badge-bg);
-            opacity: 0.7;
+            font-size: 1rem;
+            padding: 2px 4px;
+            opacity: 0.4;
             transition: opacity 0.2s;
-            white-space: nowrap;
+        }
+        .star-btn.starred {
+            opacity: 1;
+        }
+        .star-btn:hover { opacity: 1; }
+
+        .copy-btn {
+            background: var(--badge-bg);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            padding: 3px 6px;
+            border-radius: 4px;
+            transition: opacity 0.2s;
         }
         .copy-btn:hover { opacity: 1; }
 
@@ -186,8 +231,8 @@
 
     <div class="controls-bar">
         <div class="archive-box">
-            <select id="archive-select" onchange="loadArchiveDate(this.value)">
-                <option value="">Dzisiejsze wiadomości</option>
+            <select id="archive-select" onchange="loadArchiveSession(this.value)">
+                <option value="">Najnowsze wydanie</option>
             </select>
         </div>
         <div class="search-box">
@@ -195,9 +240,14 @@
         </div>
     </div>
 
+    <div class="tabs-bar">
+        <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">Wszystkie newsy</button>
+        <button class="tab-btn" id="tab-starred" onclick="switchTab('starred')">⭐ Na potem (<span id="starred-count">0</span>)</button>
+    </div>
+
     <div class="stats-bar">
-        <span id="news-count">Liczba nagłówków: 0</span>
-        <span id="search-status"></span>
+        <span id="progress-text">Postęp: 0% (0/0)</span>
+        <span id="comment-text" style="font-weight: 500;">Zaczynamy!</span>
     </div>
 
     <ul id="news-list">
@@ -211,8 +261,9 @@
     <script>
         let archiveData = {};
         let currentItems = [];
+        let activeTab = 'all';
+        let starredLinks = JSON.parse(localStorage.getItem('starred_news') || '[]');
 
-        // Pasek postępu przewijania strony
         window.onscroll = function() {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -241,11 +292,17 @@
                 if (archiveRes.ok) {
                     archiveData = await archiveRes.json();
                     const select = document.getElementById('archive-select');
-                    const sortedDates = Object.keys(archiveData).sort().reverse();
-                    for (const d of sortedDates) {
+                    
+                    // Sortowanie sesji malejąco (najnowsze u góry)
+                    const sortedKeys = Object.keys(archiveData).sort().reverse();
+                    for (const key of sortedKeys) {
+                        const item = archiveData[key];
                         const opt = document.createElement('option');
-                        opt.value = d;
-                        opt.textContent = archiveData[d].date || d;
+                        opt.value = key;
+                        
+                        // Ładne nazewnictwo w rozwijanej liście (Data + Godzina pobrania)
+                        let sessionType = (item.time && item.time.startsWith("0")) ? "🌅 Poranne" : "🌆 Wieczorne";
+                        opt.textContent = `${item.date || key} (${sessionType} - ${item.time || '19:00'})`;
                         select.appendChild(opt);
                     }
                 }
@@ -253,10 +310,10 @@
                 console.log("Brak pliku archiwum.");
             }
 
-            loadTodayNews();
+            loadLatestNews();
         }
 
-        async function loadTodayNews() {
+        async function loadLatestNews() {
             try {
                 const res = await fetch('news.json');
                 const data = await res.json();
@@ -266,34 +323,67 @@
             }
         }
 
-        function loadArchiveDate(dateKey) {
-            if (!dateKey) {
-                loadTodayNews();
+        function loadArchiveSession(sessionKey) {
+            if (!sessionKey) {
+                loadLatestNews();
                 return;
             }
-            if (archiveData[dateKey]) {
-                processData(archiveData[dateKey]);
+            if (archiveData[sessionKey]) {
+                processData(archiveData[sessionKey]);
             }
         }
 
         function processData(data) {
-            document.getElementById('date-display').textContent = data.date || '';
+            let timeInfo = data.time ? ` • Pobrano o ${data.time}` : '';
+            document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
             currentItems = data.items || [];
-            renderNews(currentItems);
+            renderNews();
         }
 
-        function renderNews(items) {
+        function switchTab(tab) {
+            activeTab = tab;
+            document.getElementById('tab-all').classList.toggle('active', tab === 'all');
+            document.getElementById('tab-starred').classList.toggle('active', tab === 'starred');
+            renderNews();
+        }
+
+        function toggleStar(link) {
+            if (starredLinks.includes(link)) {
+                starredLinks = starredLinks.filter(l => l !== link);
+            } else {
+                starredLinks.push(link);
+            }
+            localStorage.setItem('starred_news', JSON.stringify(starredLinks));
+            renderNews();
+        }
+
+        function renderNews() {
             const list = document.getElementById('news-list');
             list.innerHTML = '';
 
-            document.getElementById('news-count').textContent = `Liczba nagłówków: ${items.length}`;
+            // Obsługa licznika gwiazdek
+            document.getElementById('starred-count').textContent = starredLinks.length;
 
-            if (items.length === 0) {
-                list.innerHTML = '<li>Brak pasujących wiadomości.</li>';
+            let itemsToDisplay = currentItems;
+            if (activeTab === 'starred') {
+                itemsToDisplay = currentItems.filter(item => starredLinks.includes(item.link));
+            }
+
+            // Obsługa wyszukiwarki na żywo w locie
+            const query = document.getElementById('search-input').value.toLowerCase();
+            if (query) {
+                itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
+            }
+
+            if (itemsToDisplay.length === 0) {
+                list.innerHTML = activeTab === 'starred' 
+                    ? '<li>Brak zapisanych wiadomości na potem. Kliknij gwiazdkę przy newsie, aby go zapisać!</li>' 
+                    : '<li>Brak pasujących wiadomości.</li>';
+                updateStats(0, currentItems.length);
                 return;
             }
 
-            items.forEach((item) => {
+            itemsToDisplay.forEach((item) => {
                 const li = document.createElement('li');
                 
                 const a = document.createElement('a');
@@ -301,32 +391,54 @@
                 a.target = '_blank';
                 a.textContent = item.text;
                 
+                const actionsGroup = document.createElement('div');
+                actionsGroup.className = 'actions-group';
+
+                const starBtn = document.createElement('button');
+                const isStarred = starredLinks.includes(item.link);
+                starBtn.className = `star-btn ${isStarred ? 'starred' : ''}`;
+                starBtn.textContent = isStarred ? '⭐' : '☆';
+                starBtn.title = isStarred ? 'Usuń z ulubionych' : 'Zapisz na potem';
+                starBtn.onclick = () => toggleStar(item.link);
+
                 const copyBtn = document.createElement('button');
                 copyBtn.className = 'copy-btn';
-                copyBtn.textContent = 'Kopiuj link';
+                copyBtn.textContent = 'Kopiuj';
                 copyBtn.onclick = () => {
                     navigator.clipboard.writeText(item.link);
                     copyBtn.textContent = 'Skopiowano!';
-                    setTimeout(() => copyBtn.textContent = 'Kopiuj link', 1500);
+                    setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
                 };
 
+                actionsGroup.appendChild(starBtn);
+                actionsGroup.appendChild(copyBtn);
+
                 li.appendChild(a);
-                li.appendChild(copyBtn);
+                li.appendChild(actionsGroup);
                 list.appendChild(li);
             });
+
+            // Wyliczanie statystyk procentowych w oparciu o całą listę bieżącego wydania
+            updateStats(itemsToDisplay.length, currentItems.length);
+        }
+
+        function updateStats(displayedCount, totalCount) {
+            // Symulacja przeczytanych na podstawie odwiedzanych linków lub liczby wyświetlonych
+            let percent = totalCount > 0 ? Math.round((displayedCount / totalCount) * 100) : 0;
+            
+            // Chwytliwe komentarze w zależności od postępu
+            let comment = "Zaczynamy!";
+            if (percent > 0 && percent <= 30) comment = "Jeszcze jeden news?";
+            else if (percent > 30 && percent <= 75) comment = "Czytaj dalej!";
+            else if (percent > 75 && percent < 100) comment = "Już prawie wszystko!";
+            else if (percent >= 100 && totalCount > 0) comment = "Wszystko zaliczone!";
+
+            document.getElementById('progress-text').textContent = `Wyświetlone: ${displayedCount}/${totalCount} (${percent}%)`;
+            document.getElementById('comment-text').textContent = comment;
         }
 
         function filterNews() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const filtered = currentItems.filter(item => item.text.toLowerCase().includes(query));
-            renderNews(filtered);
-            
-            const status = document.getElementById('search-status');
-            if (query) {
-                status.textContent = `Znaleziono: ${filtered.length}`;
-            } else {
-                status.textContent = '';
-            }
+            renderNews();
         }
 
         init();
