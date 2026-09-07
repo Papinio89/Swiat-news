@@ -7,7 +7,6 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Oszczędne źródła
 RSS_URLS = [
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
     "https://www.reuters.com/world/"
@@ -17,8 +16,8 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        # Optymalizacja: pobieramy rozsądną paczkę 12 wpisów (oszczędność tokenów wejściowych)
-        for entry in feed.entries[:12]:
+        # Pobieramy 18 elementów ze źródła – idealny balans między bogatą treścią a niskim kosztem
+        for entry in feed.entries[:18]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -52,11 +51,11 @@ if session_name == "wieczorne":
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-# Bardziej ekonomiczny, ale precyzyjny prompt (krótszy = mniejsze zużycie tokenów)
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz zwięzły przegląd w stylu platformy X.
-WYMAGANIA:
-1. Wybierz najważniejsze wiadomości (geopolityka, finanse, gospodarka) oraz dodaj kilka ciekawostek.
-2. Każdy punkt musi zaczynać się od unikalnej flagi lub ikony tematycznej (np. 🇺🇸, 🇪🇺, 📈, 🚀). BEZWGLĘDNIE zakaz używania wszędzie ikony globu (🌍).
+# Zbalansowany prompt: precyzyjnie wymusza obecność ciekawostek i solidną paczkę newsów
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz atrakcyjny przegląd w stylu platformy X.
+WYMAGANE MINIMUM:
+1. Przygotuj 12-15 ważnych wiadomości (geopolityka, finanse, gospodarka). Każda musi zaczynać się od odpowiedniej flagi lub ikony tematycznej (np. 🇺🇸, 🇪🇺, 📈, ⚖️). NIGDY nie używaj ikony globu (🌍).
+2. Przygotuj dodatkowo 3-5 luźniejszych ciekawostek ze świata (nauka, technologia, lifestyle) z dedykowanymi emoji (np. 🚀, 🤖, 🧠, ☕).
 3. Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
 4. Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z kluczami: "text" oraz "link" (dokładnie ten sam URL z wejścia).
 5. Żadnego formatowania markdown (żadnego ```json ani ```).
@@ -80,7 +79,7 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    items = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:12]]
+    items = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:15]]
 
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
 date_pretty = now_pl.strftime("%d %B %Y")
