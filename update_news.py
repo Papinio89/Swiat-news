@@ -14,9 +14,9 @@ for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
         for entry in feed.entries[:10]:
-            if entry.title:
+            if getattr(entry, "title", None):
                 headlines.append(entry.title)
-    except:
+    except Exception:
         pass
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
@@ -39,24 +39,24 @@ Nagłówki do przetworzenia:
 
 try:
     response = client.models.generate_content(
-        model='gemini-2.5-flash',          # zmieniony na model z lepszym limitem free
+        model="gemini-2.5-flash-lite",          # ← model z najwyższym limitem free
         contents=prompt,
     )
     text_res = response.text.strip()
-    
+
     if text_res.startswith("```json"):
         text_res = text_res[7:-3].strip()
     elif text_res.startswith("```"):
         text_res = text_res[3:-3].strip()
-    
+
     items = json.loads(text_res)
-    
+
     if not isinstance(items, list):
         items = [str(items)]
-        
+
 except Exception as e:
     print("Błąd AI:", e)
-    items = [f"⚠️ Błąd generowania AI"]
+    items = ["⚠️ Błąd generowania AI"]
 
 today_str = datetime.now().strftime("%d %B %Y")
 output_data = {
