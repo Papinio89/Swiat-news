@@ -6,15 +6,15 @@ from google import genai
 
 RSS_URLS = [
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
-    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    "https://www.reuters.com/world/" # dodatkowe źródło dla bogatszej treści
 ]
 
-# Pobieramy nagłówki wraz z oryginalnymi linkami
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:15]:
+        for entry in feed.entries[:20]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -24,14 +24,15 @@ for url in RSS_URLS:
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-# Przekazujemy do AI zarówno tekst jak i linki w formacie JSON, aby model zwrócił sparowane obiekty
 prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości ze świata i wybierz 15-20 najważniejszych. 
-Przetwórz każdą wiadomość na krótki, zwięzły punkt informacyjny (wzorując się na stylu: "- 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r", używając flag państw i emoji).
+Przeanalizuj poniższe nagłówki wiadomości i stwórz minimalistyczny przegląd w stylu profesjonalnych kanałów informacyjnych z platformy X (krótkie, uderzeniowe fakty z flagami i emoji).
 
-Zasady:
-1. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony krótki nagłówek z flagą/emoji) oraz "link" (dokładnie ten sam link URL, który był w danych wejściowych dla danej wiadomości).
-2. Żadnego formatowania markdown (żadnego ```json ani ```).
+Wymagania:
+1. Wybierz 15-20 najważniejszych, poważnych wiadomości (geopolitika, finanse, konflikty, gospodarka).
+2. Dodaj dodatkowo 5-7 luźniejszych, ciekawych lub zaskakujących newsów/ciekawostek ze świata (np. kultura, nietypowe wydarzenia, ciekawostki ze świata, technologia).
+3. Łącznie przygotuj około 22-27 pozycji.
+4. Zwróć wynik WYŁĄCZNIE jako tablicę JSON obiektów, gdzie każdy obiekt ma dokładnie dwa klucze: "text" (przetworzony krótki nagłówek z flagą/emoji) oraz "link" (dokładnie ten sam link URL, który był w danych wejściowych dla danej wiadomości).
+5. Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
@@ -52,8 +53,7 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    # Awaryjny fallback, gdyby AI zwróciło błąd
-    items = [{"text": f"📌 {art['title'][:60]}...", "link": art['link']} for art in raw_articles[:15]]
+    items = [{"text": f"📌 {art['title'][:60]}...", "link": art['link']} for art in raw_articles[:20]]
 
 today_key = datetime.now().strftime("%Y-%m-%d")
 today_str = datetime.now().strftime("%d %B %Y")
@@ -63,11 +63,9 @@ output_data = {
     "items": items
 }
 
-# Zapis bieżących wiadomości (baza do odczytu dla strony)
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# Obsługa archiwum
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
