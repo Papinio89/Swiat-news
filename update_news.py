@@ -55,13 +55,12 @@ Dane wejściowe:
 """
 
 try:
-   completion = client.chat.completions.create(
-    model="openai/gpt-oss-20b",
-    messages=[{"role": "user", "content": prompt}],
-    temperature=0.4,
-    max_tokens=1500,
-)
-    
+    completion = client.chat.completions.create(
+        model="openai/gpt-oss-20b",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.4,
+        max_tokens=1500,
+    )
     text_res = completion.choices[0].message.content.strip()
 
     if "```" in text_res:
