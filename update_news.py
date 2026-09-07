@@ -56,7 +56,7 @@ try:
 
 except Exception as e:
     print("Błąd AI:", e)
-    items = ["⚠️ Błąd generowania AI"]
+    items = ["nowy ⚠️ Błąd generowania AI"]
 
 today_str = datetime.now().strftime("%d %B %Y")
 output_data = {
