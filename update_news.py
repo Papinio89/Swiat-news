@@ -8,16 +8,17 @@ from google import genai
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 RSS_URLS = [
-    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
-    "https://www.reuters.com/world/"
+    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
+    "https://news.google.com/rss/search?q=world+news+finance+tech+science&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl"
 ]
 
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        # Pobieramy 18 elementów ze źródła – idealny balans między bogatą treścią a niskim kosztem
-        for entry in feed.entries[:18]:
+        for entry in feed.entries[:12]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -51,14 +52,16 @@ if session_name == "wieczorne":
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-# Zbalansowany prompt: precyzyjnie wymusza obecność ciekawostek i solidną paczkę newsów
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz atrakcyjny przegląd w stylu platformy X.
-WYMAGANE MINIMUM:
-1. Przygotuj 12-15 ważnych wiadomości (geopolityka, finanse, gospodarka). Każda musi zaczynać się od odpowiedniej flagi lub ikony tematycznej (np. 🇺🇸, 🇪🇺, 📈, ⚖️). NIGDY nie używaj ikony globu (🌍).
-2. Przygotuj dodatkowo 3-5 luźniejszych ciekawostek ze świata (nauka, technologia, lifestyle) z dedykowanymi emoji (np. 🚀, 🤖, 🧠, ☕).
-3. Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
-4. Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z kluczami: "text" oraz "link" (dokładnie ten sam URL z wejścia).
-5. Żadnego formatowania markdown (żadnego ```json ani ```).
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, globalny przegląd w stylu platformy X (przetłumacz i sformatuj wszystko na język polski).
+
+BEZWGLĘDNIE WYMAGANA STRUKTURA (podział na dwie części):
+1. CZĘŚĆ GŁÓWNA (12-15 wiadomości): Skup się w 80% na świecie (geopolityka, rynki finansowe, Wall Street, gospodarka globalna, konflikty). Każda musi zaczynać się od odpowiedniej flagi państwa lub ikony tematycznej (np. 🇺🇸, 🇨🇳, 🇪🇺, 📈, ⚖️). Zakaz używania ikony globu (🌍).
+2. CZĘŚĆ LUZU / CIEKAWOSTKI (4-6 wiadomości): Obowiązkowo dodaj luźniejsze, zaskakujące lub fascynujące tematy ze świata (nauka, kosmos, AI, technologie, nietypowe fakty, lifestyle). Każda z unikalnym emoji (np. 🚀, 🤖, 🧠, 🦖, ☕, 🧬).
+
+ZASADY:
+- Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
+- Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z kluczami: "text" oraz "link" (dokładnie ten sam URL z wejścia).
+- Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
