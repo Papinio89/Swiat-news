@@ -16,7 +16,6 @@
             --btn-hover: #f1f3f4;
             --badge-bg: #f1f3f4;
             --progress-bar: #1a0dab;
-            --star-active: #fbc02d;
         }
 
         [data-theme="dark"] {
@@ -30,7 +29,6 @@
             --btn-hover: #2a2a2a;
             --badge-bg: #2a2a2a;
             --progress-bar: #8ab4f8;
-            --star-active: #fdd835;
         }
 
         #progress-container {
@@ -166,7 +164,8 @@
         li a:hover {
             text-decoration: underline;
         }
-        li a:visited {
+        /* Styl odwiedzonego linku */
+        li a.read {
             color: var(--link-visited);
             opacity: 0.75;
         }
@@ -236,7 +235,7 @@
             </select>
         </div>
         <div class="search-box">
-            <input type="text" id="search-input" placeholder="🔍 Szukaj w nagłówkach..." oninput="filterNews()">
+            <input type="text" id="search-input" placeholder="🔍 Szukaj w tym wydaniu..." oninput="renderNews()">
         </div>
     </div>
 
@@ -246,7 +245,7 @@
     </div>
 
     <div class="stats-bar">
-        <span id="progress-text">Postęp: 0% (0/0)</span>
+        <span id="progress-text">Przeczytane: 0/0 (0%)</span>
         <span id="comment-text" style="font-weight: 500;">Zaczynamy!</span>
     </div>
 
@@ -263,6 +262,7 @@
         let currentItems = [];
         let activeTab = 'all';
         let starredLinks = JSON.parse(localStorage.getItem('starred_news') || '[]');
+        let readLinks = JSON.parse(localStorage.getItem('read_news') || '[]');
 
         window.onscroll = function() {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -293,15 +293,13 @@
                     archiveData = await archiveRes.json();
                     const select = document.getElementById('archive-select');
                     
-                    // Sortowanie sesji malejąco (najnowsze u góry)
                     const sortedKeys = Object.keys(archiveData).sort().reverse();
                     for (const key of sortedKeys) {
                         const item = archiveData[key];
                         const opt = document.createElement('option');
                         opt.value = key;
                         
-                        // Ładne nazewnictwo w rozwijanej liście (Data + Godzina pobrania)
-                        let sessionType = (item.time && item.time.startsWith("0")) ? "🌅 Poranne" : "🌆 Wieczorne";
+                        let sessionType = (item.time && item.time < "12:00") ? "🌅 Poranne" : "🌆 Wieczorne";
                         opt.textContent = `${item.date || key} (${sessionType} - ${item.time || '19:00'})`;
                         select.appendChild(opt);
                     }
@@ -337,6 +335,8 @@
             let timeInfo = data.time ? ` • Pobrano o ${data.time}` : '';
             document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
             currentItems = data.items || [];
+            // Po zmianie wydania czyszczymy pole wyszukiwania, żeby nie blokowało widoku
+            document.getElementById('search-input').value = '';
             renderNews();
         }
 
@@ -357,20 +357,30 @@
             renderNews();
         }
 
+        function markAsRead(link) {
+            if (!readLinks.includes(link)) {
+                readLinks.push(link);
+                localStorage.setItem('read_news', JSON.stringify(readLinks));
+            }
+            renderNews();
+        }
+
         function renderNews() {
             const list = document.getElementById('news-list');
             list.innerHTML = '';
 
-            // Obsługa licznika gwiazdek
             document.getElementById('starred-count').textContent = starredLinks.length;
 
+            // 1. Bazowa lista z wybranego wydania
             let itemsToDisplay = currentItems;
+
+            // 2. Jeśli zakładka to "Ulubione", filtrujemy po gwiazdkach
             if (activeTab === 'starred') {
-                itemsToDisplay = currentItems.filter(item => starredLinks.includes(item.link));
+                itemsToDisplay = itemsToDisplay.filter(item => starredLinks.includes(item.link));
             }
 
-            // Obsługa wyszukiwarki na żywo w locie
-            const query = document.getElementById('search-input').value.toLowerCase();
+            // 3. Wyszukiwarka działa WYŁĄCZNIE na aktualnie wyświetlanych elementach z wybranego wydania
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
             if (query) {
                 itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
             }
@@ -378,8 +388,8 @@
             if (itemsToDisplay.length === 0) {
                 list.innerHTML = activeTab === 'starred' 
                     ? '<li>Brak zapisanych wiadomości na potem. Kliknij gwiazdkę przy newsie, aby go zapisać!</li>' 
-                    : '<li>Brak pasujących wiadomości.</li>';
-                updateStats(0, currentItems.length);
+                    : '<li>Brak pasujących wiadomości w tym wydaniu.</li>';
+                updateStats();
                 return;
             }
 
@@ -391,6 +401,14 @@
                 a.target = '_blank';
                 a.textContent = item.text;
                 
+                // Oznaczamy wizualnie, jeśli link był już kliknięty
+                if (readLinks.includes(item.link)) {
+                    a.classList.add('read');
+                }
+
+                // Kliknięcie w link rejestruje przeczytanie
+                a.onclick = () => markAsRead(item.link);
+                
                 const actionsGroup = document.createElement('div');
                 actionsGroup.className = 'actions-group';
 
@@ -399,12 +417,16 @@
                 starBtn.className = `star-btn ${isStarred ? 'starred' : ''}`;
                 starBtn.textContent = isStarred ? '⭐' : '☆';
                 starBtn.title = isStarred ? 'Usuń z ulubionych' : 'Zapisz na potem';
-                starBtn.onclick = () => toggleStar(item.link);
+                starBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    toggleStar(item.link);
+                };
 
                 const copyBtn = document.createElement('button');
                 copyBtn.className = 'copy-btn';
                 copyBtn.textContent = 'Kopiuj';
-                copyBtn.onclick = () => {
+                copyBtn.onclick = (e) => {
+                    e.stopPropagation();
                     navigator.clipboard.writeText(item.link);
                     copyBtn.textContent = 'Skopiowano!';
                     setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
@@ -418,27 +440,24 @@
                 list.appendChild(li);
             });
 
-            // Wyliczanie statystyk procentowych w oparciu o całą listę bieżącego wydania
-            updateStats(itemsToDisplay.length, currentItems.length);
+            updateStats();
         }
 
-        function updateStats(displayedCount, totalCount) {
-            // Symulacja przeczytanych na podstawie odwiedzanych linków lub liczby wyświetlonych
-            let percent = totalCount > 0 ? Math.round((displayedCount / totalCount) * 100) : 0;
+        function updateStats() {
+            const totalCount = currentItems.length;
+            // Licznik opiera się wyłącznie na tym, ile newsów z BIEŻĄCEGO wydania znajduje się w tablicy readLinks
+            const readInCurrent = currentItems.filter(item => readLinks.includes(item.link)).length;
             
-            // Chwytliwe komentarze w zależności od postępu
+            const percent = totalCount > 0 ? Math.round((readInCurrent / totalCount) * 100) : 0;
+            
             let comment = "Zaczynamy!";
             if (percent > 0 && percent <= 30) comment = "Jeszcze jeden news?";
             else if (percent > 30 && percent <= 75) comment = "Czytaj dalej!";
             else if (percent > 75 && percent < 100) comment = "Już prawie wszystko!";
             else if (percent >= 100 && totalCount > 0) comment = "Wszystko zaliczone!";
 
-            document.getElementById('progress-text').textContent = `Wyświetlone: ${displayedCount}/${totalCount} (${percent}%)`;
+            document.getElementById('progress-text').textContent = `Przeczytane: ${readInCurrent}/${totalCount} (${percent}%)`;
             document.getElementById('comment-text').textContent = comment;
-        }
-
-        function filterNews() {
-            renderNews();
         }
 
         init();
