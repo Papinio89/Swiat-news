@@ -2,63 +2,77 @@ import json
 import os
 from datetime import datetime
 import feedparser
-from google import genai
+from openai import OpenAI
+
+# Groq (OpenAI-compatible)
+client = OpenAI(
+    api_key=os.environ.get("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1"
+)
 
 RSS_URLS = [
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
     "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
 ]
 
-headlines = []
+raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:10]:
-            if getattr(entry, "title", None):
-                headlines.append(entry.title)
+        for entry in feed.entries[:12]:
+            title = getattr(entry, "title", "").strip()
+            link = getattr(entry, "link", "#")
+            if title:
+                raw_articles.append({"title": title, "link": link})
     except Exception:
         pass
 
-client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-
 prompt = f"""
-Przeanalizuj poniższe nagłówki wiadomości ze świata i wybierz 10-15 najważniejszych. 
-Przetwórz je dokładnie na taki styl, format i zwięzłość jak w tym przykładzie:
+Jesteś redaktorem minimalistycznego serwisu informacyjnego.
+Przeanalizuj poniższe nagłówki i wybierz 12-15 najważniejszych.
+
+Dla każdej wiadomości stwórz bardzo krótki, uderzeniowy punkt (max 8-10 słów) zaczynający się od flagi lub emoji.
+Dokładny styl:
 - 🇨🇳 Chiny: 80% wzrost importu węgla koksowego r/r
 - ⚓️🇺🇸 Iran atakuje balistykami lotniskowiec USA
 - ₿ 15 lat temu Bitcoin = 8$
+- 🇺🇦 1600 dni wojny na Ukrainie
 
-Zasady:
-1. Używaj flag państw i emoji tematycznych na początku każdej linii.
-2. Pisz maksymalnie zwięźle, w formie krótkich punktów informacyjnych.
-3. Zwróć wynik WYŁĄCZNIE jako tablicę JSON zawierającą same ciągi tekstowe (stringi), bez dodatkowego formatowania markdown kodu.
+Zwróć WYŁĄCZNIE czystą tablicę JSON.
+Każdy obiekt musi mieć dokładnie dwa klucze:
+- "text" (krótki tytuł z emoji)
+- "link" (dokładny link z danych wejściowych)
 
-Nagłówki do przetworzenia:
-{json.dumps(headlines, ensure_ascii=False)}
+Bez markdown, bez ```json.
+
+Dane:
+{json.dumps(raw_articles, ensure_ascii=False)}
 """
 
 try:
-    response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",          # ← model z najwyższym limitem free
-        contents=prompt,
+    response = client.chat.completions.create(
+        model="llama-3.1-8b-instant",   # szybki i darmowy
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.4,
     )
-    text_res = response.text.strip()
+    text_res = response.choices[0].message.content.strip()
 
-    if text_res.startswith("```json"):
-        text_res = text_res[7:-3].strip()
-    elif text_res.startswith("```"):
-        text_res = text_res[3:-3].strip()
+    if "```" in text_res:
+        text_res = text_res.replace("```json", "").replace("```", "").strip()
 
     items = json.loads(text_res)
 
-    if not isinstance(items, list):
-        items = [str(items)]
+    # walidacja
+    items = [i for i in items if isinstance(i, dict) and "text" in i and "link" in i][:15]
 
 except Exception as e:
     print("Błąd AI:", e)
-    items = ["nowy ⚠️ Błąd generowania AI"]
+    items = [{"text": "⚠️ Błąd generowania AI", "link": "#"}]
 
+# Data
+today_key = datetime.now().strftime("%Y-%m-%d")
 today_str = datetime.now().strftime("%d %B %Y")
+
 output_data = {
     "date": today_str,
     "items": items
@@ -67,4 +81,27 @@ output_data = {
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-print("Gotowe – zapisano news.json")
+# Archiwum
+archive_file = "archive.json"
+archive_data = {}
+if os.path.exists(archive_file):
+    try:
+        with open(archive_file, "r", encoding="utf-8") as f:
+            archive_data = json.load(f)
+    except:
+        pass
+
+archive_data[today_key] = output_data
+
+# zostaw tylko ostatnie 30 dni
+sorted_keys variables → Actions → New repository secret**  
+Nazwa: `GROQ_API_KEY`  
+Wartość: Twój klucz
+
+---
+
+### 2. `requirements.txt`
+
+```txt
+feedparser>=6.0.11
+groq>=0.9.0
