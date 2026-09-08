@@ -77,7 +77,6 @@ items = []
 try:
     response = client.models.generate_content(
         model='gemini-3.6-flash',
-,
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -89,7 +88,6 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    # Awaryjny fallback dostosowany do nowego formatu
     items = [{
         "category": "AKTUALNOŚCI",
         "title": art['title'],
