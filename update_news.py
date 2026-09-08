@@ -47,20 +47,26 @@ if session_name == "wieczorne":
     morning_key = f"{today_date_key}_poranne"
     if morning_key in archive_data:
         for item in archive_data[morning_key].get("items", []):
-            if "text" in item:
-                previous_topics.append(item["text"])
+            if "title" in item:
+                previous_topics.append(item["title"])
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, globalny przegląd w stylu platformy X (przetłumacz i sformatuj wszystko na język polski).
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, globalny przegląd (przetłumacz i sformatuj wszystko na język polski).
 
-BEZWGLĘDNIE WYMAGANA STRUKTURA (podział na dwie części):
-1. CZĘŚĆ GŁÓWNA (12-15 wiadomości): Skup się w 80% na świecie (geopolityka, rynki finansowe, Wall Street, gospodarka globalna, konflikty). Każda musi zaczynać się od odpowiedniej flagi państwa lub ikony tematycznej (np. 🇺🇸, 🇨🇳, 🇪🇺, 📈, ⚖️). Zakaz używania ikony globu (🌍).
-2. CZĘŚĆ LUZU / CIEKAWOSTKI (4-6 wiadomości): Obowiązkowo dodaj luźniejsze, zaskakujące lub fascynujące tematy ze świata (nauka, kosmos, AI, technologie, nietypowe fakty, lifestyle). Każda z unikalnym emoji (np. 🚀, 🤖, 🧠, 🦖, ☕, 🧬).
+WYMAGANA STRUKTURA:
+Stwórz listę wiadomości (około 12-16 elementów), łącząc tematy globalne, finansowe, geopolityczne oraz technologiczne/naukowe.
+
+Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
+- "category": Kategoria wiadomości pisana wielkimi literami (np. "ŚWIAT / GEOPOLITYKA", "RYNKI / GOSPODARKA", "NAUKA / TECHNOLOGIE").
+- "title": Główny, chwytliwy nagłówek show w języku polskim.
+- "summary": Skrótowy opis wiadomości (2-3 zdania wyjaśniające istotę sprawy).
+- "comment": Autorski, wnikliwy komentarz, wnioski lub smaczek analityczny (odpowiednik idei żarówki).
+- "link": Dokładnie ten sam URL z wejścia dla danej wiadomości.
 
 ZASADY:
 - Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
-- Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z kluczami: "text" oraz "link" (dokładnie ten sam URL z wejścia).
+- Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z powyższymi kluczami.
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Dane wejściowe:
@@ -70,7 +76,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.6-flash',
+        model='gemini-2.5-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -82,7 +88,14 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    items = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:15]]
+    # Awaryjny fallback dostosowany do nowego formatu
+    items = [{
+        "category": "AKTUALNOŚCI",
+        "title": art['title'],
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła ze względu na błąd przetwarzania.",
+        "comment": "Brak dodatkowego komentarza analitycznego.",
+        "link": art['link']
+    } for art in raw_articles[:15]]
 
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
 date_pretty = now_pl.strftime("%d %B %Y")
