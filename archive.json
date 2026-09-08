@@ -155,75 +155,67 @@
   },
   "2026-09-08_wieczorne": {
     "date": "08 September 2026",
-    "time": "20:27",
-    "timestamp": "2026-09-08_20:27",
+    "time": "20:33",
+    "timestamp": "2026-09-08_20:33",
     "items": {
       "Świat i Gospodarka (Wiadomości Główne)": [
         {
-          "text": "🇺🇳 UNCTAD: Gwałtowny rozwój centrów danych redefiniuje globalną mapę bezpośrednich inwestycji zagranicznych.",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0H..."
-        },
-        {
-          "text": "🇩🇪🇺🇦 Niemcy podjęły kluczową decyzję o przekazaniu kolejnych zapasów sprzętu wojskowego z Bundeswehry dla Ukrainy.",
+          "text": "🇩🇪🇺🇦 Niemcy ogłosiły kluczową decyzję o przekazaniu kolejnych zapasów sprzętu wojskowego z magazynów Bundeswehry na rzecz sił zbrojnych Ukrainy.",
           "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY0xTY1NuN1NqVG9oQnMwVkFNcDBvQkNGRHFQeFV6bzlKX2RnWUlFNEp6MW9saHR6TzdXVDlScmtDU3dUXzBvYTBGQUJqNng2UGllWWFqYVFPWDJwcDAwWmo3eXFUUnlxeDM0RzJmd0hJMjkxWUdLLWtQLWhvSWcwZFl4a0s1a0tDUTYtTFNKQ1V6dHlXcWVBRHU2WTNNMk41RXlUUENrdWh4cGNVd253aGJuR3FHVzJOdDAwU3psMA?oc=5"
         },
         {
-          "text": "🇺🇦🇵🇱 Radosław Sikorski ocenia sytuację na froncie: Władimir Putin ma obecnie już tylko dwie opcje wyjścia z konfliktu.",
+          "text": "🇺🇦🇵🇱 Minister Radosław Sikorski ocenił sytuację geopolityczną wokół wojny w Ukrainie, wskazując, że Władimir Putin ma obecnie do wyboru jedynie dwa prawdopodobne scenariusze.",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZzJDdk9EUW82M0dEQWtERmJESHdNZnpnX0gtUi1RMi1hTEV6QkRiUFd0b1hrN2d2WGszSmVmUmpIcENQWXg2YWlGbFB6SVBwLWV0S3ZrMDBOdENsMUFaM3RSN2V2b0syMWhValpnUy1ZcXZ3NnBKUkR2ck9yOHBPZHg3SjdNb2hBSHQ2WjZIaWplT29KM01zbDlBSi1OTmVuVWFuWGFPQ3FvMjRUeU1QSlNZbVg?oc=5"
         },
         {
-          "text": "🇩🇪 Niemcy: Kontrowersyjne wypowiedzi oraz życie prywatne liderki AfD Alice Weidel wywołują gorącą dyskusję w kampanii.",
+          "text": "🇩🇪 Kontrowersje wokół liderki AfD Alice Weidel – jej osobiste życie oraz prowokacyjne wypowiedzi dotyczące Polski wywołują szerokie dyskusje w europejskiej polityce.",
           "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNzlZWXVhekRxa082cjRXWmZQaWxqRVJaTHNiSmxTMlBuRktORGpKdGdCM3h0aG1rd2lHakZobGpReGJ4c3RwMjhmT2JseHV2MHFWaGFjOER0VDYtMkdjNVJMMEdKV1pKX2UwY3J0RFFPUWQwZlF1V2JnV2hSV2F3azE1bUpvMzA2YXVBenc0bDRQc1V2cHlWc2VsREtXY2p6cGI5cEktOXgyUWlFb1RfU1Vad2c0el80?oc=5"
         },
         {
-          "text": "🇭🇰 Hongkong utrzymuje pozycję światowego lidera w prestiżowym rankingu klastrów naukowo-technologicznych.",
+          "text": "📈 Raport UNCTAD wskazuje, że gwałtowny rozwój centrów danych diametralnie przekształca globalny krajobraz inwestycji kapitałowych na świecie.",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+        },
+        {
+          "text": "🇭🇰 Azjatyckie klastry naukowo-technologiczne z Hongkongiem na czele utrzymują pozycję lidera w globalnym wyścigu innowacji technologicznych.",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NdHhGYnhDckEzOXA4Nk56RGNJRHBZN2p5RzllYm8yd09PSXhwR002enJ5ekJWZVJKTU93M1lESWk2WmRSOXFqTTk2UmlsYm9LODR4TDB6MDN1WFNHNmJIcXRxNkRjQW5DdmctamwzZ3FQQVcyZHUzTA?oc=5"
         },
         {
-          "text": "🇺🇸 Naukowcy z UC Berkeley uruchamiają zaawansowany program badający wpływ sektora finansowego na stabilność demokracji.",
+          "text": "🏛️ Badacze z UC Berkeley uruchomili profesjonalny program analizujący bezpośredni wpływ współczesnego rynku finansowego na stabilność systemów demokratycznych.",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
         },
         {
-          "text": "📰 Międzynarodowy portal News.cx debiutuje z bezpłatnym codziennym serwisem informacyjnym z zakresu biznesu i technologii.",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhTcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
+          "text": "🇵🇱 Premier Donald Tusk zapowiedział zdecydowane działania rozliczeniowe oraz zaostrzenie nadzoru państwa nad sektorem kryptowalut w Polsce.",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtKRmhqcVFNd1lmQUhiOS1ObENJOFcxVDNtcHllWWFEMkg5UFUxcGpXYVgtc1A0TnNDVFpSM3laeEJ0djh3dXJhNVNSSmhldnFFem9hU3F2M1FPbDZuUzlfRWJFWWFBZVYtczZGeE1EbnExRVh6UHRqVmp1RkFoXzB6SjdqTEZ0dXV2VUNQUF9rY3l4Sm5FemEtZmM2RGdVMmc?oc=5"
         },
         {
-          "text": "🇵🇱 Polska: Były zastępca szefa Urzędu Ochrony Państwa Piotr Niemczyk został zatrzymany przez służby.",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMWl1UXFWZVMzdzNaTHZrMjV3SHhaMjVkR09ndlBZOWhTZVcwZEFsa29Ua2kyc2pLZHpjdnRpQy1qZUVSTkotRVRJNDh4VEc1WURkR0RLT3NWTUZFcGJ4Q3owMUh3eGRQaWFyaEJjcThxMjBlQW8tbGRrRV_aU19IdlJyRU5EcENsVGVCVlBMeHI?oc=5"
-        },
-        {
-          "text": "🇵🇱 Prokuratura wszczyna nowe śledztwo w sprawie byłego ministra Zbigniewa Ziobry – w tle pojawiają się nowe nazwiska.",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObnVaZ1RSRmdUTm9QTC1IQ0VORERkeXhMNUk0NFVNakZ0ME4xYnRYNkFJeUVkR0lxQjljdERRbmFSaElvSF9tTVdOM2k5Y2NZdzZMZ3l1WTNJN0ROcXlQX0M2ekNQd3FLMTE1eDVUSmk1YUtWdXI1cmcyWk1uUlAtTWhxb1N4NGFxYl80cDFZangtYWVFdXRnU3ktVEd2R1JzbW54Z245emU?oc=5"
-        },
-        {
-          "text": "🇵🇱 Premier Donald Tusk zapowiada kluczowe poprawki do ustawy o kryptowalutach i dystansuje się od propozycji prezydenckich.",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObk9HLVlFekpYLS1EOTQxcW9MbUtDUVhYOEE0RFJ3cElHS0s1RWc3YzlPZkRXQTF3a3JjSEE1Q1c3ajNFSzVJeTh6TTNUWDFWNUVTMUdOM1R5ZEhxbEtwNi1RUVFodkhYcGJuVFZZa0JxaHZ5Q3otTUxySVZ2WkZwN1VpWEVtMS1Pb1otOHdNdHRUZ3pVUTBTMkEwU0htQW5TUUdJNHVDZENVclRYRlFpNXFHX21CTm92bGc?oc=5"
-        },
-        {
-          "text": "🇵🇱🇧🇾 Sprawa Andrzeja Poczobuta ukazuje rosnące polityczne i dyplomatyczne znaczenie Polski w relacjach z Białorusią.",
+          "text": "🇵🇱🇧🇾 Działania wokół uwięzionego polskiego dziennikarza Andrzeja Poczobuta ponownie podkreślają strategiczne znacznie Polski w relacjach z Białorusią.",
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdWdvRlpSQkZYb1EzX19FSDU5dzdlYzVPaDV1QmRBRHJfQ0JUN3l1UEpneEdOUTdEY1IyUnFCeDRrcVgtR0VhZ1hadDBCT1ZFbE1nX3JCd0IzUXNmV2tzVlNfS1lPNkQ5T2pnSzllZzZEa1liemxkZTQzOUJTejFYRzFCdjNkR09pbGx0WU4wQW9WYVpYX1pud0YwY0N3ZkU3WTVLMWVEZjBzcWN3X0hmWllkOHJhYjVYOC1IcHBfV1lxMGJr?oc=5"
+        },
+        {
+          "text": "⚖️ Prokuratura wszczęła nowe śledztwo w sprawie byłego ministra Zbigniewa Ziobry, prześwietlając decyzje podejmowane w resorcie sprawiedliwości.",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMnVWYk45b2VoR0R3c3JjVE5uS3ZIZ3dyMVZJdlUxRDB0cnhhbjJESDZCWXdJSUV2UWVlYnlvRXBMY2x5WmdxUWF3bzRuVXFJXzFhMXNfaWh0YVBqU1hMQWpxNVRjWnZURDJCamtJbWgxTXRlZWNUeEhPU0l0WFJHcW4zSXFpM1ZBQmFhLVdYUnA1Y2V0NU1Hb1VnZkw4YmhxdkhDTGpxOUM3Zw?oc=5"
+        },
+        {
+          "text": "⚖️ Funkcjonariusze CBŚP ujawnili kulisy udaremnionego zamachu na sędziego oraz żonę podejrzanego w spisku kryminalnym.",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSnBtOVNlZmE0azF4cmZfcTNsQ3RTdFJQbm1NN2hEZm10TlNiQnVmazZNb0psQXlZbXlNb0NrWnkwdC1lMTFaZXZCSDdqVnoxZE9QdkhySTB4bExvV0k3VFMwRDg0NEttXzRPX1FRWUZIbmxtd2ZZaUwtQlRFajJKRlBtVnpvQ3U1Z2c4QS1Nc0JZMDlJOWc?oc=5"
         }
       ],
       "Ciekawostki i Luźniejsze Tematy": [
         {
-          "text": "🧮 Dlaczego matematyka wyższa staje się kluczowym kierunkiem przyszłości? Monash University przedstawia 5 powodów.",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
+          "text": "📐 Dlaczego warto studiować matematykę wyższą? Uniwersytet Monash przedstawia 5 kluczowych powodów, dla których matematyka otwiera drzwi do innowacji w AI i danych.",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2iqUF_7ZkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
         },
         {
-          "text": "🔬 ONZ apeluje o likwidację barier dla kobiet w naukach ścisłych i przyspieszenie ich integracji w branżach STEM.",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
+          "text": "🌐 Nowa platforma informacyjna News.cx zadebiutowała na rynku, oferując darmowy, codzienny przegląd najnowszych doniesień ze świata technologii, nauki i zdrowia.",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
         },
         {
-          "text": "🏫 Daniels School of Business na Uniwersytecie Purdue po raz kolejny potwierdza pozycję lidera edukacji biznesowej.",
-          "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF_UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
+          "text": "👩‍🔬 Międzynarodowy Dzień Kobiet i Dziewcząt w Nauce: Organizacja Narodów Zjednoczonych wzywa do likwidowania barier i zmniejszania luki płciowej w sektorze STEM.",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl_PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
         },
         {
-          "text": "🕵️ Niezwykła sprawa kryminalna w Polsce: Udaremniono precyzyjnie zaplanowany zamach na żonę, policjantów i sędziego.",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWnZ0cWswZWtYYTFlbm1NUnpXRzhpeGR4WG1uSVhpblFJbjBrLUxXUUZwMnlTOERwMEwzMW96ZUthTWRndUg1NW44QXIwcU5mMl92NjQwTEdscmEzZEo5cEtXSGNyU01IX1RwQlRoZUk3ajE5MUl1NGM3Sy05LTJFRDFKRmp0WUhtS0F6YXFPUVVYYWxpWmpfZUc3dlpWTnlqV2tDNG4yNF9XTi1aTE9F?oc=5"
-        },
-        {
-          "text": "🗣️ Polityczne spięcia w koalicji: Anna Maria Żukowska ujawnia kulisy nieznanego sporu o nominacje wewnątrz rządowych struktur.",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeXBnN2RVNkM1QnlaRmNnOGtCUU1pbWVWeGlpVjFzNTRpdHB4TmRnZUNFeDd3ZVJ2UHNrcl81MUVoSEY1VFNPLUMxYjcyRzV0ZS1vamR6NjhtMk1Fc3V5ZjhaZU8tQzRuZFRFS090SHpUbWtyeG5mLUhMbGZDNXFENlNsejhiME9SUkpwXzJxRUhBaHdzelRPYVctaVVoUjM0M3NUVVktYlZxUQ?oc=5"
+          "text": "🎓 Szkoła biznesowa Daniels School of Business na Uniwersytecie Purdue obroniła tytuł najlepszej uczelni biznesowej w stanie Indiana wg zestawienia Times Higher Education.",
+          "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
         }
       ]
     }
