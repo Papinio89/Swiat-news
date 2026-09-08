@@ -47,7 +47,6 @@ if session_name == "wieczorne":
     morning_key = f"{today_date_key}_poranne"
     if morning_key in archive_data:
         items_data = archive_data[morning_key].get("items", [])
-        # Obsługa zarówno nowego formatu słownikowego, jak i starego listowego
         if isinstance(items_data, dict):
             for sec_items in items_data.values():
                 for item in sec_items:
@@ -86,7 +85,7 @@ Dane wejściowe:
 items = {}
 try:
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.6-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -98,7 +97,6 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    # Awaryjny fallback do płaskiej listy lub prostego obiektu
     fallback_list = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:12]]
     items = {"Wiadomości Główne": fallback_list}
 
@@ -118,5 +116,5 @@ with open("news.json", "w", encoding="utf-8") as f:
 
 archive_data[session_fixed_key] = output_data
 
-with open("archive.json", "w", encoding="strukturę" if False else "utf-8") as f:
+with open("archive.json", "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
