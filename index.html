@@ -384,7 +384,15 @@ container.innerHTML = '';
 document.getElementById('starred-count').textContent = starredLinks.length;
 const query = document.getElementById('search-input').value.toLowerCase().trim();
 if (activeTab === 'starred') {
-let starredItems = currentItems.filter(item => starredLinks.includes(item.link));
+let flattenedItems = [];
+if (Array.isArray(currentItems)) {
+flattenedItems = currentItems;
+} else if (typeof currentItems === 'object' && currentItems !== null) {
+for (const items of Object.values(currentItems)) {
+if (Array.isArray(items)) flattenedItems.push(...items);
+}
+}
+let starredItems = flattenedItems.filter(item => starredLinks.includes(item.link));
 if (query) {
 starredItems = starredItems.filter(item => item.text.toLowerCase().includes(query));
 }
@@ -398,9 +406,7 @@ container.appendChild(ul);
 updateStats();
 return;
 }
-// Normalny widok z podziałem na sekcje (jeśli dane są obiektem z sekcjami lub płaską listą)
 if (Array.isArray(currentItems)) {
-// Stary format (płaska lista)
 let itemsToDisplay = currentItems;
 if (query) {
 itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
@@ -413,7 +419,6 @@ itemsToDisplay.forEach(item => ul.appendChild(createItemElement(item)));
 container.appendChild(ul);
 }
 } else if (typeof currentItems === 'object' && currentItems !== null) {
-// Nowy format z podziałem na sekcje (główna / luzu)
 let hasAny = false;
 for (const [sectionName, items] of Object.entries(currentItems)) {
 if (!Array.isArray(items)) continue;
