@@ -46,43 +46,28 @@ previous_topics = []
 if session_name == "wieczorne":
     morning_key = f"{today_date_key}_poranne"
     if morning_key in archive_data:
-        items_data = archive_data[morning_key].get("items", [])
-        if isinstance(items_data, dict):
-            for sec_items in items_data.values():
-                for item in sec_items:
-                    if "text" in item:
-                        previous_topics.append(item["text"])
-        elif isinstance(items_data, list):
-            for item in items_data:
-                if "text" in item:
-                    previous_topics.append(item["text"])
+        for item in archive_data[morning_key].get("items", []):
+            if "text" in item:
+                previous_topics.append(item["text"])
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, globalny przegląd w stylu platformy X (przetłumacz i sformatuj wszystko na język polski).
 
-BEZWGLĘDNIE WYMAGANA STRUKTURA JSON (obiekt z dwoma kluczami będącymi tablicami):
-1. "Świat i Gospodarka (Wiadomości Główne)" (10-14 elementów): Skup się w 80% na świecie (geopolityka, rynki finansowe, Wall Street, gospodarka globalna, konflikty). Każda musi zaczynać się od odpowiedniej flagi państwa lub ikony tematycznej (np. 🇺🇸, 🇨🇳, 🇪🇺, 📈, ⚖️). Zakaz używania ikony globu (🌍).
-2. "Ciekawostki i Luźniejsze Tematy" (4-6 elementów): Obowiązkowo luźniejsze, zaskakujące lub fascynujące tematy ze świata (nauka, kosmos, AI, technologie, nietypowe fakty, lifestyle). Każda z unikalnym emoji (np. 🚀, 🤖, 🧠, 🦖, ☕, 🧬).
+BEZWGLĘDNIE WYMAGANA STRUKTURA (podział na dwie części):
+1. CZĘŚĆ GŁÓWNA (12-15 wiadomości): Skup się w 80% na świecie (geopolityka, rynki finansowe, Wall Street, gospodarka globalna, konflikty). Każda musi zaczynać się od odpowiedniej flagi państwa lub ikony tematycznej (np. 🇺🇸, 🇨🇳, 🇪🇺, 📈, ⚖️). Zakaz używania ikony globu (🌍).
+2. CZĘŚĆ LUZU / CIEKAWOSTKI (4-6 wiadomości): Obowiązkowo dodaj luźniejsze, zaskakujące lub fascynujące tematy ze świata (nauka, kosmos, AI, technologie, nietypowe fakty, lifestyle). Każda z unikalnym emoji (np. 🚀, 🤖, 🧠, 🦖, ☕, 🧬).
 
 ZASADY:
 - Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
-- Zwróć WYŁĄCZNIE czysty obiekt JSON w następującym formacie:
-{{
-  "Świat i Gospodarka (Wiadomości Główne)": [
-    {{"text": "🇺🇸 ...", "link": "url"}}
-  ],
-  "Ciekawostki i Luźniejsze Tematy": [
-    {{"text": "🚀 ...", "link": "url"}}
-  ]
-}}
+- Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z kluczami: "text" oraz "link" (dokładnie ten sam URL z wejścia).
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Dane wejściowe:
 {json.dumps(raw_articles, ensure_ascii=False)}
 """
 
-items = {}
+items = []
 try:
     response = client.models.generate_content(
         model='gemini-3.6-flash',
@@ -97,8 +82,7 @@ try:
     items = json.loads(text_res)
 except Exception as e:
     print(f"Błąd AI: {e}")
-    fallback_list = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:12]]
-    items = {"Wiadomości Główne": fallback_list}
+    items = [{"text": f"📌 {art['title']}", "link": art['link']} for art in raw_articles[:15]]
 
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
 date_pretty = now_pl.strftime("%d %B %Y")
