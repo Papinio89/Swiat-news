@@ -1,466 +1,467 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Świat w pigułce – Minimalist News</title>
-    <style>
-        :root {
-            --bg-color: #fdfdfd;
-            --text-color: #222;
-            --text-muted: #666;
-            --border-color: #eaeaea;
-            --link-color: #1a0dab;
-            --link-visited: #551a8b;
-            --input-bg: #fff;
-            --btn-hover: #f1f3f4;
-            --badge-bg: #f1f3f4;
-            --progress-bar: #1a0dab;
-        }
-
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --text-muted: #a0a0a0;
-            --border-color: #2d2d2d;
-            --link-color: #8ab4f8;
-            --link-visited: #c58af9;
-            --input-bg: #1e1e1e;
-            --btn-hover: #2a2a2a;
-            --badge-bg: #2a2a2a;
-            --progress-bar: #8ab4f8;
-        }
-
-        #progress-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: transparent;
-            z-index: 1000;
-        }
-        #progress-bar {
-            height: 100%;
-            background: var(--progress-bar);
-            width: 0%;
-            transition: width 0.1s;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: var(--text-color);
-            background: var(--bg-color);
-            line-height: 1.5;
-            transition: background 0.3s, color 0.3s;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-        }
-        .header-left h1 { font-size: 1.4rem; margin: 0 0 4px 0; }
-        #date-display { font-size: 0.85rem; color: var(--text-muted); }
-        
-        .header-right {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-        .icon-btn {
-            background: var(--input-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            padding: 6px 10px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-        }
-        .icon-btn:hover { background: var(--btn-hover); }
-
-        .controls-bar {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .archive-box, .search-box {
-            flex: 1;
-            min-width: 200px;
-        }
-        select, input {
-            width: 100%;
-            padding: 8px 12px;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            background: var(--input-bg);
-            color: var(--text-color);
-            font-size: 0.9rem;
-            box-sizing: border-box;
-        }
-
-        .tabs-bar {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        .tab-btn {
-            background: var(--input-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            padding: 6px 14px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        .tab-btn.active {
-            background: var(--link-color);
-            color: #fff;
-            border-color: var(--link-color);
-        }
-        [data-theme="dark"] .tab-btn.active {
-            color: #121212;
-        }
-        
-        .stats-bar {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--badge-bg);
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            margin-bottom: 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 10px;
-        }
-        li a {
-            color: var(--link-color);
-            text-decoration: none;
-            flex: 1;
-            transition: color 0.2s, opacity 0.2s;
-        }
-        li a:hover {
-            text-decoration: underline;
-        }
-        /* Styl odwiedzonego linku */
-        li a.read {
-            color: var(--link-visited);
-            opacity: 0.75;
-        }
-        
-        .actions-group {
-            display: flex;
-            gap: 6px;
-            align-items: center;
-            white-space: nowrap;
-        }
-        .star-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            padding: 2px 4px;
-            opacity: 0.4;
-            transition: opacity 0.2s;
-        }
-        .star-btn.starred {
-            opacity: 1;
-        }
-        .star-btn:hover { opacity: 1; }
-
-        .copy-btn {
-            background: var(--badge-bg);
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            padding: 3px 6px;
-            border-radius: 4px;
-            transition: opacity 0.2s;
-        }
-        .copy-btn:hover { opacity: 1; }
-
-        footer {
-            margin-top: 45px;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            padding-top: 15px;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Świat w pigułce – Minimalist News</title>
+<style>
+:root {
+--bg-color: #fdfdfd;
+--text-color: #222;
+--text-muted: #666;
+--border-color: #eaeaea;
+--link-color: #1a0dab;
+--link-visited: #551a8b;
+--input-bg: #fff;
+--btn-hover: #f1f3f4;
+--badge-bg: #f1f3f4;
+--progress-bar: #1a0dab;
+--section-title: #333;
+}
+[data-theme="dark"] {
+--bg-color: #121212;
+--text-color: #e0e0e0;
+--text-muted: #a0a0a0;
+--border-color: #2d2d2d;
+--link-color: #8ab4f8;
+--link-visited: #c58af9;
+--input-bg: #1e1e1e;
+--btn-hover: #2a2a2a;
+--badge-bg: #2a2a2a;
+--progress-bar: #8ab4f8;
+--section-title: #f1f1f1;
+}
+#progress-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 3px;
+background: transparent;
+z-index: 1000;
+}
+#progress-bar {
+height: 100%;
+background: var(--progress-bar);
+width: 0%;
+transition: width 0.1s;
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+max-width: 700px;
+margin: 40px auto;
+padding: 0 20px;
+color: var(--text-color);
+background: var(--bg-color);
+line-height: 1.5;
+transition: background 0.3s, color 0.3s;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+border-bottom: 1px solid var(--border-color);
+padding-bottom: 15px;
+margin-bottom: 20px;
+}
+.header-left h1 { font-size: 1.4rem; margin: 0 0 4px 0; }
+#date-display { font-size: 0.85rem; color: var(--text-muted); }
+.header-right {
+display: flex;
+gap: 8px;
+align-items: center;
+}
+.icon-btn {
+background: var(--input-bg);
+border: 1px solid var(--border-color);
+color: var(--text-color);
+padding: 6px 10px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 0.9rem;
+transition: background 0.2s;
+}
+.icon-btn:hover { background: var(--btn-hover); }
+.controls-bar {
+display: flex;
+gap: 12px;
+margin-bottom: 15px;
+flex-wrap: wrap;
+align-items: center;
+}
+.archive-box, .search-box {
+flex: 1;
+min-width: 200px;
+}
+select, input {
+width: 100%;
+padding: 8px 12px;
+border-radius: 6px;
+border: 1px solid var(--border-color);
+background: var(--input-bg);
+color: var(--text-color);
+font-size: 0.9rem;
+box-sizing: border-box;
+}
+.tabs-bar {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+.tab-btn {
+background: var(--input-bg);
+border: 1px solid var(--border-color);
+color: var(--text-color);
+padding: 6px 14px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 0.85rem;
+font-weight: 500;
+}
+.tab-btn.active {
+background: var(--link-color);
+color: #fff;
+border-color: var(--link-color);
+}
+[data-theme="dark"] .tab-btn.active {
+color: #121212;
+}
+.stats-bar {
+font-size: 0.85rem;
+color: var(--text-muted);
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: var(--badge-bg);
+padding: 8px 12px;
+border-radius: 6px;
+}
+.section-header {
+font-size: 1.05rem;
+font-weight: 700;
+color: var(--section-title);
+margin: 25px 0 12px 0;
+padding-bottom: 6px;
+border-bottom: 1px dashed var(--border-color);
+}
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+li {
+margin-bottom: 16px;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+gap: 10px;
+}
+li a {
+color: var(--link-color);
+text-decoration: none;
+flex: 1;
+transition: color 0.2s, opacity 0.2s;
+}
+li a:hover {
+text-decoration: underline;
+}
+li a.read {
+color: var(--link-visited);
+opacity: 0.75;
+}
+.actions-group {
+display: flex;
+gap: 6px;
+align-items: center;
+white-space: nowrap;
+}
+.star-btn {
+background: none;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+padding: 2px 4px;
+opacity: 0.4;
+transition: opacity 0.2s;
+}
+.star-btn.starred {
+opacity: 1;
+}
+.star-btn:hover { opacity: 1; }
+.copy-btn {
+background: var(--badge-bg);
+border: 1px solid var(--border-color);
+cursor: pointer;
+color: var(--text-muted);
+font-size: 0.75rem;
+padding: 3px 6px;
+border-radius: 4px;
+transition: opacity 0.2s;
+}
+.copy-btn:hover { opacity: 1; }
+footer {
+margin-top: 45px;
+font-size: 0.8rem;
+color: var(--text-muted);
+border-top: 1px solid var(--border-color);
+padding-top: 15px;
+text-align: center;
+}
+</style>
 </head>
 <body data-theme="light">
-
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-    </div>
-
-    <header>
-        <div class="header-left">
-            <h1>🌍 Świat w pigułce</h1>
-            <div id="date-display">Ładowanie...</div>
-        </div>
-        <div class="header-right">
-            <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" title="Przełącz motyw">🌙</button>
-        </div>
-    </header>
-
-    <div class="controls-bar">
-        <div class="archive-box">
-            <select id="archive-select" onchange="loadArchiveSession(this.value)">
-                <option value="">Najnowsze wydanie</option>
-            </select>
-        </div>
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="🔍 Szukaj w tym wydaniu..." oninput="renderNews()">
-        </div>
-    </div>
-
-    <div class="tabs-bar">
-        <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">Wszystkie newsy</button>
-        <button class="tab-btn" id="tab-starred" onclick="switchTab('starred')">⭐ Na potem (<span id="starred-count">0</span>)</button>
-    </div>
-
-    <div class="stats-bar">
-        <span id="progress-text">Przeczytane: 0/0 (0%)</span>
-        <span id="comment-text" style="font-weight: 500;">Zaczynamy!</span>
-    </div>
-
-    <ul id="news-list">
-        <li>Pobieranie wiadomości...</li>
-    </ul>
-
-    <footer>
-        Minimalistyczny aggregator AI • 0 tokenów przy przeglądaniu
-    </footer>
-
-    <script>
-        let archiveData = {};
-        let currentItems = [];
-        let activeTab = 'all';
-        let starredLinks = JSON.parse(localStorage.getItem('starred_news') || '[]');
-        let readLinks = JSON.parse(localStorage.getItem('read_news') || '[]');
-
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("progress-bar").style.width = scrolled + "%";
-        };
-
-        function initTheme() {
-            const savedTheme = localStorage.getItem('news_theme') || 'light';
-            document.body.setAttribute('data-theme', savedTheme);
-            document.getElementById('theme-toggle').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-        }
-
-        function toggleTheme() {
-            const current = document.body.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.body.setAttribute('data-theme', next);
-            localStorage.setItem('news_theme', next);
-            document.getElementById('theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
-        }
-
-        async function init() {
-            initTheme();
-            try {
-                const archiveRes = await fetch('archive.json');
-                if (archiveRes.ok) {
-                    archiveData = await archiveRes.json();
-                    const select = document.getElementById('archive-select');
-                    
-                    const sortedKeys = Object.keys(archiveData).sort().reverse();
-                    for (const key of sortedKeys) {
-                        const item = archiveData[key];
-                        const opt = document.createElement('option');
-                        opt.value = key;
-                        
-                        let sessionType = (item.time && item.time < "12:00") ? "🌅 Poranne" : "🌆 Wieczorne";
-                        opt.textContent = `${item.date || key} (${sessionType} - ${item.time || '19:00'})`;
-                        select.appendChild(opt);
-                    }
-                }
-            } catch (e) {
-                console.log("Brak pliku archiwum.");
-            }
-
-            loadLatestNews();
-        }
-
-        async function loadLatestNews() {
-            try {
-                const res = await fetch('news.json');
-                const data = await res.json();
-                processData(data);
-            } catch (e) {
-                document.getElementById('news-list').innerHTML = '<li>⚠️ Nie udało się załadować aktualności.</li>';
-            }
-        }
-
-        function loadArchiveSession(sessionKey) {
-            if (!sessionKey) {
-                loadLatestNews();
-                return;
-            }
-            if (archiveData[sessionKey]) {
-                processData(archiveData[sessionKey]);
-            }
-        }
-
-        function processData(data) {
-            let timeInfo = data.time ? ` • Pobrano o ${data.time}` : '';
-            document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
-            currentItems = data.items || [];
-            // Po zmianie wydania czyszczymy pole wyszukiwania, żeby nie blokowało widoku
-            document.getElementById('search-input').value = '';
-            renderNews();
-        }
-
-        function switchTab(tab) {
-            activeTab = tab;
-            document.getElementById('tab-all').classList.toggle('active', tab === 'all');
-            document.getElementById('tab-starred').classList.toggle('active', tab === 'starred');
-            renderNews();
-        }
-
-        function toggleStar(link) {
-            if (starredLinks.includes(link)) {
-                starredLinks = starredLinks.filter(l => l !== link);
-            } else {
-                starredLinks.push(link);
-            }
-            localStorage.setItem('starred_news', JSON.stringify(starredLinks));
-            renderNews();
-        }
-
-        function markAsRead(link) {
-            if (!readLinks.includes(link)) {
-                readLinks.push(link);
-                localStorage.setItem('read_news', JSON.stringify(readLinks));
-            }
-            renderNews();
-        }
-
-        function renderNews() {
-            const list = document.getElementById('news-list');
-            list.innerHTML = '';
-
-            document.getElementById('starred-count').textContent = starredLinks.length;
-
-            // 1. Bazowa lista z wybranego wydania
-            let itemsToDisplay = currentItems;
-
-            // 2. Jeśli zakładka to "Ulubione", filtrujemy po gwiazdkach
-            if (activeTab === 'starred') {
-                itemsToDisplay = itemsToDisplay.filter(item => starredLinks.includes(item.link));
-            }
-
-            // 3. Wyszukiwarka działa WYŁĄCZNIE na aktualnie wyświetlanych elementach z wybranego wydania
-            const query = document.getElementById('search-input').value.toLowerCase().trim();
-            if (query) {
-                itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
-            }
-
-            if (itemsToDisplay.length === 0) {
-                list.innerHTML = activeTab === 'starred' 
-                    ? '<li>Brak zapisanych wiadomości na potem. Kliknij gwiazdkę przy newsie, aby go zapisać!</li>' 
-                    : '<li>Brak pasujących wiadomości w tym wydaniu.</li>';
-                updateStats();
-                return;
-            }
-
-            itemsToDisplay.forEach((item) => {
-                const li = document.createElement('li');
-                
-                const a = document.createElement('a');
-                a.href = item.link || '#';
-                a.target = '_blank';
-                a.textContent = item.text;
-                
-                // Oznaczamy wizualnie, jeśli link był już kliknięty
-                if (readLinks.includes(item.link)) {
-                    a.classList.add('read');
-                }
-
-                // Kliknięcie w link rejestruje przeczytanie
-                a.onclick = () => markAsRead(item.link);
-                
-                const actionsGroup = document.createElement('div');
-                actionsGroup.className = 'actions-group';
-
-                const starBtn = document.createElement('button');
-                const isStarred = starredLinks.includes(item.link);
-                starBtn.className = `star-btn ${isStarred ? 'starred' : ''}`;
-                starBtn.textContent = isStarred ? '⭐' : '☆';
-                starBtn.title = isStarred ? 'Usuń z ulubionych' : 'Zapisz na potem';
-                starBtn.onclick = (e) => {
-                    e.stopPropagation();
-                    toggleStar(item.link);
-                };
-
-                const copyBtn = document.createElement('button');
-                copyBtn.className = 'copy-btn';
-                copyBtn.textContent = 'Kopiuj';
-                copyBtn.onclick = (e) => {
-                    e.stopPropagation();
-                    navigator.clipboard.writeText(item.link);
-                    copyBtn.textContent = 'Skopiowano!';
-                    setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
-                };
-
-                actionsGroup.appendChild(starBtn);
-                actionsGroup.appendChild(copyBtn);
-
-                li.appendChild(a);
-                li.appendChild(actionsGroup);
-                list.appendChild(li);
-            });
-
-            updateStats();
-        }
-
-        function updateStats() {
-            const totalCount = currentItems.length;
-            // Licznik opiera się wyłącznie na tym, ile newsów z BIEŻĄCEGO wydania znajduje się w tablicy readLinks
-            const readInCurrent = currentItems.filter(item => readLinks.includes(item.link)).length;
-            
-            const percent = totalCount > 0 ? Math.round((readInCurrent / totalCount) * 100) : 0;
-            
-            let comment = "Zaczynamy!";
-            if (percent > 0 && percent <= 30) comment = "Jeszcze jeden news?";
-            else if (percent > 30 && percent <= 75) comment = "Czytaj dalej!";
-            else if (percent > 75 && percent < 100) comment = "Już prawie wszystko!";
-            else if (percent >= 100 && totalCount > 0) comment = "Wszystko zaliczone!";
-
-            document.getElementById('progress-text').textContent = `Przeczytane: ${readInCurrent}/${totalCount} (${percent}%)`;
-            document.getElementById('comment-text').textContent = comment;
-        }
-
-        init();
-    </script>
+<div id="progress-container">
+<div id="progress-bar"></div>
+</div>
+<header>
+<div class="header-left">
+<h1>🌍 Świat w pigułce</h1>
+<div id="date-display">Ładowanie...</div>
+</div>
+<div class="header-right">
+<button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" title="Przełącz motyw">🌙</button>
+</div>
+</header>
+<div class="controls-bar">
+<div class="archive-box">
+<select id="archive-select" onchange="loadArchiveSession(this.value)">
+<option value="">Najnowsze wydanie</option>
+</select>
+</div>
+<div class="search-box">
+<input type="text" id="search-input" placeholder="🔍 Szukaj w tym wydaniu..." oninput="renderNews()">
+</div>
+</div>
+<div class="tabs-bar">
+<button class="tab-btn active" id="tab-all" onclick="switchTab('all')">Wszystkie newsy</button>
+<button class="tab-btn" id="tab-starred" onclick="switchTab('starred')">⭐ Na potem (<span id="starred-count">0</span>)</button>
+</div>
+<div class="stats-bar">
+<span id="progress-text">Przeczytane: 0/0 (0%)</span>
+<span id="comment-text" style="font-weight: 500;">Zaczynamy!</span>
+</div>
+<div id="news-container">
+<ul id="news-list">
+<li>Pobieranie wiadomości...</li>
+</ul>
+</div>
+<footer>
+Minimalistyczny aggregator AI • 0 tokenów przy przeglądaniu
+</footer>
+<script>
+let archiveData = {};
+let currentItems = [];
+let activeTab = 'all';
+let starredLinks = JSON.parse(localStorage.getItem('starred_news') || '[]');
+let readLinks = JSON.parse(localStorage.getItem('read_news') || '[]');
+window.onscroll = function() {
+let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let scrolled = (winScroll / height) * 100;
+document.getElementById("progress-bar").style.width = scrolled + "%";
+};
+function initTheme() {
+const savedTheme = localStorage.getItem('news_theme') || 'light';
+document.body.setAttribute('data-theme', savedTheme);
+document.getElementById('theme-toggle').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+}
+function toggleTheme() {
+const current = document.body.getAttribute('data-theme');
+const next = current === 'dark' ? 'light' : 'dark';
+document.body.setAttribute('data-theme', next);
+localStorage.setItem('news_theme', next);
+document.getElementById('theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
+}
+async function init() {
+initTheme();
+try {
+const archiveRes = await fetch('archive.json');
+if (archiveRes.ok) {
+archiveData = await archiveRes.json();
+const select = document.getElementById('archive-select');
+const sortedKeys = Object.keys(archiveData).sort().reverse();
+for (const key of sortedKeys) {
+const item = archiveData[key];
+const opt = document.createElement('option');
+opt.value = key;
+let sessionType = (item.time && item.time < "12:00") ? "🌅 Poranne" : "🌆 Wieczorne";
+opt.textContent = ⁠${item.date || key} (${sessionType} - ${item.time || '19:00'})⁠;
+select.appendChild(opt);
+}
+}
+} catch (e) {
+console.log("Brak pliku archiwum.");
+}
+loadLatestNews();
+}
+async function loadLatestNews() {
+try {
+const res = await fetch('news.json');
+const data = await res.json();
+processData(data);
+} catch (e) {
+document.getElementById('news-container').innerHTML = '<ul><li>⚠️ Nie udało się załadować aktualności.</li></ul>';
+}
+}
+function loadArchiveSession(sessionKey) {
+if (!sessionKey) {
+loadLatestNews();
+return;
+}
+if (archiveData[sessionKey]) {
+processData(archiveData[sessionKey]);
+}
+}
+function processData(data) {
+let timeInfo = data.time ? ⁠ • Pobrano o ${data.time}⁠ : '';
+document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
+currentItems = data.items || [];
+document.getElementById('search-input').value = '';
+renderNews();
+}
+function switchTab(tab) {
+activeTab = tab;
+document.getElementById('tab-all').classList.toggle('active', tab === 'all');
+document.getElementById('tab-starred').classList.toggle('active', tab === 'starred');
+renderNews();
+}
+function toggleStar(link) {
+if (starredLinks.includes(link)) {
+starredLinks = starredLinks.filter(l => l !== link);
+} else {
+starredLinks.push(link);
+}
+localStorage.setItem('starred_news', JSON.stringify(starredLinks));
+renderNews();
+}
+function markAsRead(link) {
+if (!readLinks.includes(link)) {
+readLinks.push(link);
+localStorage.setItem('read_news', JSON.stringify(readLinks));
+}
+renderNews();
+}
+function createItemElement(item) {
+const li = document.createElement('li');
+const a = document.createElement('a');
+a.href = item.link || '#';
+a.target = '_blank';
+a.textContent = item.text;
+if (readLinks.includes(item.link)) {
+a.classList.add('read');
+}
+a.onclick = () => markAsRead(item.link);
+const actionsGroup = document.createElement('div');
+actionsGroup.className = 'actions-group';
+const starBtn = document.createElement('button');
+const isStarred = starredLinks.includes(item.link);
+starBtn.className = ⁠star-btn ${isStarred ? 'starred' : ''}⁠;
+starBtn.textContent = isStarred ? '⭐' : '☆';
+starBtn.title = isStarred ? 'Usuń z ulubionych' : 'Zapisz na potem';
+starBtn.onclick = (e) => {
+e.stopPropagation();
+toggleStar(item.link);
+};
+const copyBtn = document.createElement('button');
+copyBtn.className = 'copy-btn';
+copyBtn.textContent = 'Kopiuj';
+copyBtn.onclick = (e) => {
+e.stopPropagation();
+navigator.clipboard.writeText(item.link);
+copyBtn.textContent = 'Skopiowano!';
+setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
+};
+actionsGroup.appendChild(starBtn);
+actionsGroup.appendChild(copyBtn);
+li.appendChild(a);
+li.appendChild(actionsGroup);
+return li;
+}
+function renderNews() {
+const container = document.getElementById('news-container');
+container.innerHTML = '';
+document.getElementById('starred-count').textContent = starredLinks.length;
+const query = document.getElementById('search-input').value.toLowerCase().trim();
+if (activeTab === 'starred') {
+let starredItems = currentItems.filter(item => starredLinks.includes(item.link));
+if (query) {
+starredItems = starredItems.filter(item => item.text.toLowerCase().includes(query));
+}
+if (starredItems.length === 0) {
+container.innerHTML = '<ul><li>Brak zapisanych wiadomości na potem. Kliknij gwiazdkę przy newsie, aby go zapisać!</li></ul>';
+} else {
+const ul = document.createElement('ul');
+starredItems.forEach(item => ul.appendChild(createItemElement(item)));
+container.appendChild(ul);
+}
+updateStats();
+return;
+}
+// Normalny widok z podziałem na sekcje (jeśli dane są obiektem z sekcjami lub płaską listą)
+if (Array.isArray(currentItems)) {
+// Stary format (płaska lista)
+let itemsToDisplay = currentItems;
+if (query) {
+itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
+}
+if (itemsToDisplay.length === 0) {
+container.innerHTML = '<ul><li>Brak pasujących wiadomości w tym wydaniu.</li></ul>';
+} else {
+const ul = document.createElement('ul');
+itemsToDisplay.forEach(item => ul.appendChild(createItemElement(item)));
+container.appendChild(ul);
+}
+} else if (typeof currentItems === 'object' && currentItems !== null) {
+// Nowy format z podziałem na sekcje (główna / luzu)
+let hasAny = false;
+for (const [sectionName, items] of Object.entries(currentItems)) {
+if (!Array.isArray(items)) continue;
+let filtered = items;
+if (query) {
+filtered = filtered.filter(item => item.text.toLowerCase().includes(query));
+}
+if (filtered.length > 0) {
+hasAny = true;
+const h2 = document.createElement('div');
+h2.className = 'section-header';
+h2.textContent = sectionName;
+container.appendChild(h2);
+const ul = document.createElement('ul');
+filtered.forEach(item => ul.appendChild(createItemElement(item)));
+container.appendChild(ul);
+}
+}
+if (!hasAny) {
+container.innerHTML = '<ul><li>Brak pasujących wiadomości w tym wydaniu.</li></ul>';
+}
+}
+updateStats();
+}
+function updateStats() {
+let totalCount = 0;
+let readInCurrent = 0;
+if (Array.isArray(currentItems)) {
+totalCount = currentItems.length;
+readInCurrent = currentItems.filter(item => readLinks.includes(item.link)).length;
+} else if (typeof currentItems === 'object' && currentItems !== null) {
+for (const items of Object.values(currentItems)) {
+if (Array.isArray(items)) {
+totalCount += items.length;
+readInCurrent += items.filter(item => readLinks.includes(item.link)).length;
+}
+}
+}
+const percent = totalCount > 0 ? Math.round((readInCurrent / totalCount) * 100) : 0;
+let comment = "Zaczynamy!";
+if (percent > 0 && percent <= 30) comment = "Jeszcze jeden news?";
+else if (percent > 30 && percent <= 75) comment = "Czytaj dalej!";
+else if (percent > 75 && percent < 100) comment = "Już prawie wszystko!";
+else if (percent >= 100 && totalCount > 0) comment = "Wszystko zaliczone!";
+document.getElementById('progress-text').textContent = ⁠Przeczytane: ${readInCurrent}/${totalCount} (${percent}%)⁠;
+document.getElementById('comment-text').textContent = comment;
+}
+init();
+</script>
 </body>
 </html>
