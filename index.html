@@ -16,6 +16,9 @@
             --btn-hover: #f1f3f4;
             --badge-bg: #f1f3f4;
             --progress-bar: #1a0dab;
+            --card-bg: #fff;
+            --comment-bg: #f4f8f4;
+            --comment-border: #d0e8d0;
         }
 
         [data-theme="dark"] {
@@ -29,23 +32,16 @@
             --btn-hover: #2a2a2a;
             --badge-bg: #2a2a2a;
             --progress-bar: #8ab4f8;
+            --card-bg: #1a1a1a;
+            --comment-bg: #16221a;
+            --comment-border: #204028;
         }
 
         #progress-container {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: transparent;
-            z-index: 1000;
+            top: 0; left: 0; width: 100%; height: 3px; background: transparent; z-index: 1000;
         }
-        #progress-bar {
-            height: 100%;
-            background: var(--progress-bar);
-            width: 0%;
-            transition: width 0.1s;
-        }
+        #progress-bar { height: 100%; background: var(--progress-bar); width: 0%; transition: width 0.1s; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -58,165 +54,132 @@
             transition: background 0.3s, color 0.3s;
         }
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;
         }
         .header-left h1 { font-size: 1.4rem; margin: 0 0 4px 0; }
         #date-display { font-size: 0.85rem; color: var(--text-muted); }
         
-        .header-right {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
         .icon-btn {
-            background: var(--input-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            padding: 6px 10px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background 0.2s;
+            background: var(--input-bg); border: 1px solid var(--border-color); color: var(--text-color);
+            padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; transition: background 0.2s;
         }
         .icon-btn:hover { background: var(--btn-hover); }
 
-        .controls-bar {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .archive-box, .search-box {
-            flex: 1;
-            min-width: 200px;
-        }
+        .controls-bar { display: flex; gap: 12px; margin-bottom: 15px; flex-wrap: wrap; }
+        .archive-box, .search-box { flex: 1; min-width: 200px; }
         select, input {
-            width: 100%;
-            padding: 8px 12px;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            background: var(--input-bg);
-            color: var(--text-color);
-            font-size: 0.9rem;
-            box-sizing: border-box;
+            width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color);
+            background: var(--input-bg); color: var(--text-color); font-size: 0.9rem; box-sizing: border-box;
         }
 
-        .tabs-bar {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
+        .tabs-bar { display: flex; gap: 10px; margin-bottom: 15px; }
         .tab-btn {
-            background: var(--input-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            padding: 6px 14px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
+            background: var(--input-bg); border: 1px solid var(--border-color); color: var(--text-color);
+            padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 500;
         }
-        .tab-btn.active {
-            background: var(--link-color);
-            color: #fff;
-            border-color: var(--link-color);
-        }
-        [data-theme="dark"] .tab-btn.active {
-            color: #121212;
-        }
+        .tab-btn.active { background: var(--link-color); color: #fff; border-color: var(--link-color); }
+        [data-theme="dark"] .tab-btn.active { color: #121212; }
         
         .stats-bar {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--badge-bg);
-            padding: 8px 12px;
-            border-radius: 6px;
+            font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--badge-bg); padding: 8px 12px; border-radius: 6px;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
+        /* Nowe style dla kafelków newsów */
+        ul { list-style: none; padding: 0; margin: 0; }
+        .news-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
             margin-bottom: 16px;
+            transition: border-color 0.2s;
+        }
+        .news-header-row {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: flex-start;
             gap: 10px;
         }
-        li a {
+        .news-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+        .news-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+        .news-title {
+            font-size: 1.05rem;
+            font-weight: 600;
             color: var(--link-color);
             text-decoration: none;
-            flex: 1;
-            transition: color 0.2s, opacity 0.2s;
+            display: inline-block;
         }
-        li a:hover {
-            text-decoration: underline;
-        }
-        /* Styl odwiedzonego linku */
-        li a.read {
-            color: var(--link-visited);
-            opacity: 0.75;
-        }
-        
-        .actions-group {
-            display: flex;
-            gap: 6px;
-            align-items: center;
-            white-space: nowrap;
-        }
-        .star-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            padding: 2px 4px;
-            opacity: 0.4;
-            transition: opacity 0.2s;
-        }
-        .star-btn.starred {
-            opacity: 1;
-        }
-        .star-btn:hover { opacity: 1; }
+        .news-title:hover { text-decoration: underline; }
+        .news-title.read { color: var(--link-visited); opacity: 0.75; }
 
-        .copy-btn {
-            background: var(--badge-bg);
-            border: 1px solid var(--border-color);
-            cursor: pointer;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            padding: 3px 6px;
-            border-radius: 4px;
-            transition: opacity 0.2s;
+        .news-summary {
+            font-size: 0.9rem;
+            color: var(--text-color);
+            margin-top: 8px;
+            margin-bottom: 12px;
         }
-        .copy-btn:hover { opacity: 1; }
+
+        /* Przyciski akcji i rozwijania */
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 10px;
+            margin-top: 8px;
+        }
+        .expand-toggle-btn {
+            background: none; border: none; color: var(--link-color); cursor: pointer;
+            font-size: 0.85rem; font-weight: 500; padding: 0; display: flex; align-items: center; gap: 4px;
+        }
+        .expand-toggle-btn:hover { text-decoration: underline; }
+
+        .actions-group { display: flex; gap: 6px; align-items: center; }
+        .star-btn { background: none; border: none; cursor: pointer; font-size: 1rem; opacity: 0.4; transition: opacity 0.2s; }
+        .star-btn.starred, .star-btn:hover { opacity: 1; }
+        .copy-btn {
+            background: var(--badge-bg); border: 1px solid var(--border-color); cursor: pointer;
+            color: var(--text-muted); font-size: 0.75rem; padding: 3px 6px; border-radius: 4px;
+        }
+
+        /* Komentarz (ukryty domyślnie, rozwijany) */
+        .news-comment {
+            display: none;
+            background: var(--comment-bg);
+            border: 1px solid var(--comment-border);
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            gap: 8px;
+            align-items: flex-start;
+        }
+        .news-comment.open { display: flex; }
+        .comment-icon { font-size: 1rem; line-height: 1.2; }
 
         footer {
-            margin-top: 45px;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            padding-top: 15px;
-            text-align: center;
+            margin-top: 45px; font-size: 0.8rem; color: var(--text-muted);
+            border-top: 1px solid var(--border-color); padding-top: 15px; text-align: center;
         }
     </style>
 </head>
 <body data-theme="light">
 
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-    </div>
+    <div id="progress-container"><div id="progress-bar"></div></div>
 
     <header>
         <div class="header-left">
@@ -253,9 +216,7 @@
         <li>Pobieranie wiadomości...</li>
     </ul>
 
-    <footer>
-        Minimalistyczny aggregator AI • 0 tokenów przy przeglądaniu
-    </footer>
+    <footer>Minimalistyczny aggregator AI • 0 tokenów przy przeglądaniu</footer>
 
     <script>
         let archiveData = {};
@@ -292,22 +253,17 @@
                 if (archiveRes.ok) {
                     archiveData = await archiveRes.json();
                     const select = document.getElementById('archive-select');
-                    
                     const sortedKeys = Object.keys(archiveData).sort().reverse();
                     for (const key of sortedKeys) {
                         const item = archiveData[key];
                         const opt = document.createElement('option');
                         opt.value = key;
-                        
                         let sessionType = (item.time && item.time < "12:00") ? "🌅 Poranne" : "🌆 Wieczorne";
                         opt.textContent = `${item.date || key} (${sessionType} - ${item.time || '19:00'})`;
                         select.appendChild(opt);
                     }
                 }
-            } catch (e) {
-                console.log("Brak pliku archiwum.");
-            }
-
+            } catch (e) { console.log("Brak pliku archiwum."); }
             loadLatestNews();
         }
 
@@ -322,20 +278,14 @@
         }
 
         function loadArchiveSession(sessionKey) {
-            if (!sessionKey) {
-                loadLatestNews();
-                return;
-            }
-            if (archiveData[sessionKey]) {
-                processData(archiveData[sessionKey]);
-            }
+            if (!sessionKey) { loadLatestNews(); return; }
+            if (archiveData[sessionKey]) processData(archiveData[sessionKey]);
         }
 
         function processData(data) {
             let timeInfo = data.time ? ` • Pobrano o ${data.time}` : '';
             document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
             currentItems = data.items || [];
-            // Po zmianie wydania czyszczymy pole wyszukiwania, żeby nie blokowało widoku
             document.getElementById('search-input').value = '';
             renderNews();
         }
@@ -368,26 +318,25 @@
         function renderNews() {
             const list = document.getElementById('news-list');
             list.innerHTML = '';
-
             document.getElementById('starred-count').textContent = starredLinks.length;
 
-            // 1. Bazowa lista z wybranego wydania
             let itemsToDisplay = currentItems;
-
-            // 2. Jeśli zakładka to "Ulubione", filtrujemy po gwiazdkach
             if (activeTab === 'starred') {
                 itemsToDisplay = itemsToDisplay.filter(item => starredLinks.includes(item.link));
             }
 
-            // 3. Wyszukiwarka działa WYŁĄCZNIE na aktualnie wyświetlanych elementach z wybranego wydania
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             if (query) {
-                itemsToDisplay = itemsToDisplay.filter(item => item.text.toLowerCase().includes(query));
+                itemsToDisplay = itemsToDisplay.filter(item => 
+                    (item.title && item.title.toLowerCase().includes(query)) || 
+                    (item.summary && item.summary.toLowerCase().includes(query)) ||
+                    (item.category && item.category.toLowerCase().includes(query))
+                );
             }
 
             if (itemsToDisplay.length === 0) {
                 list.innerHTML = activeTab === 'starred' 
-                    ? '<li>Brak zapisanych wiadomości na potem. Kliknij gwiazdkę przy newsie, aby go zapisać!</li>' 
+                    ? '<li>Brak zapisanych wiadomości na potem.</li>' 
                     : '<li>Brak pasujących wiadomości w tym wydaniu.</li>';
                 updateStats();
                 return;
@@ -396,19 +345,61 @@
             itemsToDisplay.forEach((item) => {
                 const li = document.createElement('li');
                 
-                const a = document.createElement('a');
-                a.href = item.link || '#';
-                a.target = '_blank';
-                a.textContent = item.text;
-                
-                // Oznaczamy wizualnie, jeśli link był już kliknięty
-                if (readLinks.includes(item.link)) {
-                    a.classList.add('read');
+                const card = document.createElement('div');
+                card.className = 'news-card';
+
+                const headerRow = document.createElement('div');
+                headerRow.className = 'news-header-row';
+
+                const meta = document.createElement('div');
+                meta.className = 'news-meta';
+
+                // 1. Kategoria
+                if (item.category) {
+                    const cat = document.createElement('span');
+                    cat.className = 'news-category';
+                    cat.textContent = item.category;
+                    meta.appendChild(cat);
                 }
 
-                // Kliknięcie w link rejestruje przeczytanie
-                a.onclick = () => markAsRead(item.link);
-                
+                // 2. Główny nagłówek
+                const titleA = document.createElement('a');
+                titleA.href = item.link || '#';
+                titleA.target = '_blank';
+                titleA.className = `news-title ${readLinks.includes(item.link) ? 'read' : ''}`;
+                titleA.textContent = item.title || item.text;
+                titleA.onclick = () => markAsRead(item.link);
+                meta.appendChild(titleA);
+
+                headerRow.appendChild(meta);
+                card.appendChild(headerRow);
+
+                // 3. Skrótowy opis
+                if (item.summary) {
+                    const summaryDiv = document.createElement('div');
+                    summaryDiv.className = 'news-summary';
+                    summaryDiv.textContent = item.summary;
+                    card.appendChild(summaryDiv);
+                }
+
+                // Dolny pasek: Przycisk rozwijania komentarza + gwiazdka/kopiowanie
+                const cardActions = document.createElement('div');
+                cardActions.className = 'card-actions';
+
+                if (item.comment) {
+                    const expandBtn = document.createElement('button');
+                    expandBtn.className = 'expand-toggle-btn';
+                    expandBtn.innerHTML = '<span>➕</span> Pokaż komentarz';
+                    expandBtn.onclick = () => {
+                        commentDiv.classList.toggle('open');
+                        const isOpen = commentDiv.classList.contains('open');
+                        expandBtn.innerHTML = isOpen ? '<span>➖</span> Ukryj komentarz' : '<span>➕</span> Pokaż komentarz';
+                    };
+                    cardActions.appendChild(expandBtn);
+                } else {
+                    cardActions.appendChild(document.createElement('div')); // placeholder
+                }
+
                 const actionsGroup = document.createElement('div');
                 actionsGroup.className = 'actions-group';
 
@@ -416,17 +407,12 @@
                 const isStarred = starredLinks.includes(item.link);
                 starBtn.className = `star-btn ${isStarred ? 'starred' : ''}`;
                 starBtn.textContent = isStarred ? '⭐' : '☆';
-                starBtn.title = isStarred ? 'Usuń z ulubionych' : 'Zapisz na potem';
-                starBtn.onclick = (e) => {
-                    e.stopPropagation();
-                    toggleStar(item.link);
-                };
+                starBtn.onclick = () => toggleStar(item.link);
 
                 const copyBtn = document.createElement('button');
                 copyBtn.className = 'copy-btn';
                 copyBtn.textContent = 'Kopiuj';
-                copyBtn.onclick = (e) => {
-                    e.stopPropagation();
+                copyBtn.onclick = () => {
                     navigator.clipboard.writeText(item.link);
                     copyBtn.textContent = 'Skopiowano!';
                     setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
@@ -434,9 +420,20 @@
 
                 actionsGroup.appendChild(starBtn);
                 actionsGroup.appendChild(copyBtn);
+                cardActions.appendChild(actionsGroup);
+                card.appendChild(cardActions);
 
-                li.appendChild(a);
-                li.appendChild(actionsGroup);
+                // 4. Komentarz (ukryty / rozwijany)
+                let commentDiv = null;
+                if (item.comment) {
+                    commentDiv = document.createElement('div');
+                    commentDiv.className = 'news-comment';
+                    commentDiv.innerHTML = `<span class="comment-icon">💡</span> <div>${item.comment}</div>`;
+                    card.appendChild(commentDiv);
+                }
+
+                li.style.display = 'block'; // Nadpisujemy domyślny flex z poprzedniego CSS dla li
+                li.appendChild(card);
                 list.appendChild(li);
             });
 
@@ -445,9 +442,7 @@
 
         function updateStats() {
             const totalCount = currentItems.length;
-            // Licznik opiera się wyłącznie na tym, ile newsów z BIEŻĄCEGO wydania znajduje się w tablicy readLinks
             const readInCurrent = currentItems.filter(item => readLinks.includes(item.link)).length;
-            
             const percent = totalCount > 0 ? Math.round((readInCurrent / totalCount) * 100) : 0;
             
             let comment = "Zaczynamy!";
