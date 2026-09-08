@@ -155,81 +155,59 @@
   },
   "2026-09-08_wieczorne": {
     "date": "08 September 2026",
-    "time": "19:45",
-    "timestamp": "2026-09-08_19:45",
-    "items": [
-      {
-        "text": "🇺🇸🇷🇺 Donald Trump przeprowadził rozmowę telefoniczną z Władimirem Putinem, podczas której uzyskał zapewnienia dotyczące bezpieczeństwa w Europie.",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMGNqOTZ6ejdBcVltMnVlY0dqUldaaS12MjBTeXinYTZIYTZ0NlNLdnRCWFNOTkdHZ3VISjNaMlZBSGMtTmJnMDVSc0RxUEE5RjBQUThnWlZuT09YRHlQY3g2VmZCdVZNUy1jaW9qR0FtYjJPblNFODVIVUo1a2FTRUVncWFhaWdnMjVjRElYeDd4WnhGZ21UOXdHMEM0LVNp?oc=5"
-      },
-      {
-        "text": "🇮🇱🇵🇸 Premier Benjamin Netanjahu miał zignorować wywiadowcze ostrzeżenia przed nadchodzącym atakiem Hamasu na Izrael.",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQT3lZM2Z5cnloMDFCTTVlcmVGUDVaaEhZNzdxckw5V09NeFhQUkJaS2tPWDR6VUlmaXR3V0R1cklqTTlvQ2RwRlo0MU5TdGFNdHNLMWdvTW9qbXpiMkF6SXRWM1pYenNrVHVnVGZuS2xfaV93NzFqTEhhZnpzVWxMNFBvYkFualhJOVI0M3IyaHFOZmJzYUEyR3gxdjg5QWtUcW5HV1FPTEVsSXUxQnpONzJPUjBiQQ?oc=5"
-      },
-      {
-        "text": "🇺🇸🇪🇺 Amerykański ekspert przestrzega: wstrzemięźliwa reakcja NATO na wrogie działania Rosji stanowi „ciche zaproszenie” do dalszej eskalacji.",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNlpJZzR4bHJEMUljX1M5QWdhMFdvQ094ZkJvMHJfRXJFQ2htUVg3S1hNd0JmeFNiTFphVDhKOThrRXhpNUNKcGZzbjRUamNaWm15VVFJY1lPMVFtLTdZM21WUmZFd1hZQ1RpVGZrWW1nSXE1dmU3M2dLRlYwRzFicC1keUtFbVdaSGpFOHZpWV82VzNNZXh4OG1ndTRKSENXcjhCa0Zn?oc=5"
-      },
-      {
-        "text": "🇩🇪 Niemiecka polityk Alice Weidel wywołuje kontrowersje wypowiedziami określającymi Polskę jako „Niemcy wschodnie”.",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNzlZWXVhekRxa082cjRXWmZQaWxqRVJaTHNiSmxTMlBuRktORGpKdGdCM3h0aG1rd2lHakZobGpReGJ4c3RwMjhmT2JseHV2MHFWaGFjOER0VDYtMkdjNVJMM0dSWEpfeTBjcnREUVBRZDBmUXVXYmdXaFJXYXdrMTVtSm8zMDZhdUF6dzRsNFBzVXZweVZzZWVES1djenBiOXBJLTl4MlFpRW9UX1NVWndnNHpfNA?oc=5"
-      },
-      {
-        "text": "🇧🇾🇵🇱 Działacz Andrzej Poczobut powrócił na Białoruś, deklarując, że w życiu nie wolno kierować się strachem.",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUZPTjAwbWthcUNBbGJxazhZR3FOMHI0QXZULWZJMWZpdGQ2Q2RDMkszekkxWUpPX1llZF9Db3ZrZHpBRUM4SGpNS3B3UWtpaWMwcUJrS3RPV2pxaVkwOEQ4UkRCZWN2Tmx0Q3hma1lnVzF1OUgyYW92LVJzTzZ4ZmRTa09CUV9Ham5MRl90T1QzT0FPOFE?oc=5"
-      },
-      {
-        "text": "📉 Raport UNCTAD: Gwałtowny rozwój centrów danych redefiniuje globalny krajobraz inwestycyjny i cyfrową gospodarkę.",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0HXX2pOTDJE?oc=5"
-      },
-      {
-        "text": "🇺🇸 Badacze z UC Berkeley uruchamiają nowatorski program analizujący bezpośredni wpływ rynków finansowych na stan demokracji.",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
-      },
-      {
-        "text": "🇭🇰 Klastry naukowo-technologiczne w Hongkongu utrzymują wiodącą pozycję w globalnych rankingach innowacji cyfrowych.",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NdHhGYnhDckEzOXA4Nk56RGNJRHBZN2p5RzllYm8yd09PSXhwR002enJ5ekJWZVJKTU93M1lESWk2WmRSOXFqTTk2UmlsYm9LODR4TDB6MDN1WFNHNmJIcXRxNkRjQW5DdmctamwzZ3FQQVcyZHUzTA?oc=5"
-      },
-      {
-        "text": "🇵🇱 Premier Donald Tusk ostro skrytykował propozycje poprawek do ustawy regulującej rynek kryptowalut, nazywając je „czystym złem”.",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObk9HLVlFekpYLS1EOTQxcW9MbUtDUVhYOEE0RFJ3cElHS0s1RWc3YzlPZkRXQTF3a3JjSEE1Q1c3ajNFSzVJeTh6TTNUWDFWNUVTMUdOM1R5ZEhxbEtwNi1RUVFodkhYcGJuVFZZa0JxaHZ5Q3otTUxySVZ2WkZwN1VpWEVtMS1Pb1otOHdNdHRUZ3pVUTBTMkEwU0htQW5TUUdJNHVDZENVclRYRlFpNXFHX21CTm92bGc?oc=5"
-      },
-      {
-        "text": "🇵🇱 Prokuratura wszczęła kolejne śledztwo dotyczące Zbigniewa Ziobry – śledczy skupiają się na dwóch nowych nazwiskach.",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObnVaZ1RSRmdUTm9QTC1IQ0VORERkeXhMNUk0NFVNakZ0ME4xYnRYNkFJeUVkR0lxQjljdERRbmFSaElvSF9tTVdOM2k5Y2NZdzZMZ3l1WTNJN0ROcXlQX0M2ekNQd3FLMTE1eDVUSmk1YUtWdXI1cmcyWk1uUlAtTWhxb1N4NGFxYl80cDFZangtYWVFdXRnU3ktVEd2R1JzbW54Z245emU?oc=5"
-      },
-      {
-        "text": "⚖️ Kim jest Roman Ż.? Prześwietlenie działalności biznesmena, który sprawował kontrolę nad giełdą Zondacrypto.",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWEtDR21laTRNYmw5R05zQjRuc3ZsckM0YmRqeU84Y1d2ZEZWVDJJYmhYQmdoUHNUcHBlUFFsc0I2UG5QSEM5c2hfMHZKNDBTZXNtTmJ3ckc1dnlYT0Mtd3VMdUdXVzRCUkZPLU50S05rLTAzV3RSRlpDYThjTm9rYUI5NVgzQnc?oc=5"
-      },
-      {
-        "text": "🏛️ Incydent proceduralno-bezpieczeństwa podczas oficjalnego wystąpienia prezydenta Andrzeja Dudy w Kielcach.",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZWJ1ZHExd0E4a05IT2xnbUVnSG1oUklLVEZNMVZScjl4dWJWallNb0MwZGpyNVdOSkNrcWtYeGJoeko1SlZ1MlRFVEIwcWlsc3VPREJuUzBla0RyWWJoNzk3cHlGWjh3ekZCbDNWVWxMM3NvZl92RklPR1d6b29fUWJoZVRNRHUyRDBIRHVMV3A4bVg1OFo1YVVySDJ4YzBfMVpneQ?oc=5"
-      },
-      {
-        "text": "🇵🇱 Spór o stołówki szkolne: minister edukacji Barbara Nowacka zdecydowanie odpowiada na głosy krytyki dotyczące proponowanego menu.",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR0xtZHptd1draUJMeDhOWF83YzEzWnhDUTJWRlFzVnVIV1dSUUtkY3NRN2tuQV9PZWdhdnNxZkU3cHZlZ2hkelppcm04Sy1VNE13bnNzT1E4MmhSeTBwZjRzdzdzOTNZZDJEUUpWck9IbHc2M0xkWGhBeHltMDJNcE44RzR4VHlsMmRKWGZ4ZHB5bGp2R1VmQnZ0WE5qQQ?oc=5"
-      },
-      {
-        "text": "🎓 Uniwersytet Monash wyróżnia 5 kluczowych powódów, dla których studia magisterskie z matematyki stają się najbardziej pożądanym kierunkiem przyszłości.",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
-      },
-      {
-        "text": "🌐 W sieci zdebiutował serwis News.cx, oferujący darmowy, codzienny przegląd najnowszych informacji z zakresu technologii, nauki i zdrowia.",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
-      },
-      {
-        "text": "👩‍🔬 ONZ apeluje o znoszenie barier dla kobiet w sektorze STEM oraz niwelowanie nierówności płciowych w światowej nauce.",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
-      },
-      {
-        "text": "💼 Daniels School of Business na Uniwersytucie Purdue umacnia swoją pozycję lidera wśród szkół biznesowych na rynku amerykańskim.",
-        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
-      },
-      {
-        "text": "🕵️ Mroczne ustalenia śledczych: 54-letni mężczyzna miał zlecić płatne zabójstwo swojej byłej żony.",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZFV5NElOUlFGbi1sclY1ZldhSUttWmVYa2d6R2dNbGlyeUdHbkV0R0NfTkUxVWJicW0zMHduUEJqVHE5RGNFLVRHZXBza1dVSm5nOWJvRnl3QjF2SkhKS3NpR3ZnQ1BRUDBJQ2plUmEwMWJpNmdEUUdtam01dHpUa05lMmhqZ1dXZWtUZ2MxNjNJN0NvTEQ2VjJkdWdieVdUQVpHMXBCZDBEY1VZSUZzUw?oc=5"
-      }
-    ]
+    "time": "20:23",
+    "timestamp": "2026-09-08_20:23",
+    "items": {
+      "Wiadomości Główne": [
+        {
+          "text": "📌 5 reasons to study a Master of Mathematics - Monash University",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
+        },
+        {
+          "text": "📌 Analysis of 380 trillion AI tokens reveals how the technology is transforming financial markets - news.yale.edu",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc3MyaFR2VlpzZUU2TVhENmZNcUljdElUcjlPd1l2Z09JZHAxNWtMd01YSFFKWUEtUWtKR3ROdEpEZEY5NG9LVGNsTE5McnVKOVFFVWdJSjlLd1JfRVZHSUExVElER05xRVNHSzEtblphWGlIU1dhUHFoeVRrOEFRTDNKclBHemNHV09rZmFOb1FFUTNJanJtTFJzX2FneThtWGtEUWNGUUZNdnd5VlVqRFBrZWxVSm5Rbnc?oc=5"
+        },
+        {
+          "text": "📌 News.cx Debuts With Free Daily Coverage Across Technology, Business, Science, Health, and World News - Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
+        },
+        {
+          "text": "📌 Sci-Tech cluster maintains global lead - news.gov.hk",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NdHhGYnhDckEzOXA4Nk56RGNJRHBZN2p5RzllYm8yd09PSXhwR002enJ5ekJWZVJKTU93M1lESWk2WmRSOXFqTTk2UmlsYm9LODR4TDB6MDN1WFNHNmJIcXRxNkRjQW5DdmctamwzZ3FQQVcyZHUzTA?oc=5"
+        },
+        {
+          "text": "📌 NSF launches Project Triad to advance quantum technology for real-world applications - U.S. National Science Foundation (.gov)",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQV1dGdkVYamQ4LUowMFFrM21fOXo3N3VTVGt3MnpYQnY4WE9ZYWllWUozUllESXlFVGE4TmQzZlBjOTZNU015MG91akVCZmdSY2kzbXFIOTBTbTFhRXl1enQ3NjlRZ2ROWmo1Q3hUZkc4VXJRM1RKbUZJX1JWWE1vVjhzRGQtdTU5SlNn?oc=5"
+        },
+        {
+          "text": "📌 What Is Fintech? Why It Matters + Career Opportunities - University of Central Florida",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV9Yd2Z1ZWt6VVdaSUN3?oc=5"
+        },
+        {
+          "text": "📌 Researchers launch program to examine finance’s role in democracy - University of California, Berkeley",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
+        },
+        {
+          "text": "📌 Financial Times ranks MIT Sloan No. 1 in 2026 Global MBA Ranking - news.mit.edu",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M0xuenR0N0g0ZW94ZWttT1c2S21ORU8zUUJtNGRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
+        },
+        {
+          "text": "📌 Daniels School of Business affirms standing as Indiana’s No. 1 business school, based on Times Higher Education global rankings - Purdue University",
+          "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
+        },
+        {
+          "text": "📌 Data centres are reshaping the global investment landscape - UN Trade and Development (UNCTAD)",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+        },
+        {
+          "text": "📌 Women and girls in science: Dismantling barriers, closing gender gaps - UN News",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
+        },
+        {
+          "text": "📌 What is Anthopic's Claude Mythos and what risks does it pose? - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RQ080QjNmR3N5VElKQnh1WXRFSk9iR0JxTy1ZaDNRY0dXNUFXZ0w1Wk1XUWs2MTdTR3dUZVpfMHYwVUJSZ1ZTQlVPaWFFODdFSHRKdXJxazVfUQ?oc=5"
+        }
+      ]
+    }
   }
 }
