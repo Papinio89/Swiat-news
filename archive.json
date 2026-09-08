@@ -155,113 +155,99 @@
   },
   "2026-09-08_wieczorne": {
     "date": "08 September 2026",
-    "time": "21:10",
-    "timestamp": "2026-09-08_21:10",
+    "time": "21:22",
+    "timestamp": "2026-09-08_21:22",
     "items": [
       {
         "category": "RYNKI / AI",
-        "title": "380 bilionów tokenów AI: Jak sztuczna inteligencja rewolucjonizuje rynki finansowe",
-        "summary": "Analiza 380 bilionów tokenów przetworzonych przez algorytmy AI wykazuje, że sztuczna inteligencja głęboko zmienia mechanikę rynków kapitałowych. Zaawansowane modele automatycznie analizują sprawozdania finansowe i wiadomości, drastycznie skracając czas reakcji inwestorów. Zjawisko to prowadzi do niespotykanej dotąd płynności, ale potęguje też ryzyko nagłych tąpnięć cenowych.",
-        "comment": "Przewaga informacyjna przestała zależeć od szybkości ludzkiego umysłu – dziś wygrywają algorytmy zdolne interpretować niuanse sprawozdań w ułamku sekundy.",
+        "title": "🤖 AI rewolucjonizuje rynki finansowe",
+        "summary": "Analiza 380 trylionów tokenów AI wykazuje, jak sztuczna inteligencja dogłębnie przekształca globalny rynek finansowy i handel.",
+        "comment": "Skala wykorzystania AI w finansach osiągnęła punkt zwrotny, wymuszając zmianę tradycyjnych modeli zarządzania ryzykiem.",
         "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc3MyaFR2VlpzZUU2TVhENmZNcUljdElUcjlPd1l2Z09JZHAxNWtMd01YSFFKWUEtUWtKR3ROdEpEZEY5NG9LVGNsTE5McnVKOVFFVWdJSjlLd1JfRVZHSUExVElER05xRVNHSzEtblphWGlIU1dhUHFoeVRrOEFRTDNKclBHemNHV09rZmFOb1FFUTNJanJtTFJzX2FneThtWGtEUWNGUUZNdnd5VlVqRFBrZWxVSm5Rbnc?oc=5"
       },
       {
-        "category": "GOSPODARKA / INWESTYCJE",
-        "title": "Centra danych przearanżowują globalną mapę inwestycji zdaniem UNCTAD",
-        "summary": "Agencja UNCTAD zwraca uwagę na rosnącą rolę centrów danych jako kluczowego napędu globalnych przepływów kapitałowych. Rozwój sztucznej inteligencji oraz usług chmurowych wymusza miliardowe nakłady w infrastrukturę cyfrową i energetyczną. Inwestycje te coraz silniej wpływają na atrakcyjność gospodarczą poszczególnych regionów świata.",
-        "comment": "Centra danych przestały być zwykłą infrastrukturą techniczną – stały się współczesnym odpowiednikiem portów i kolei, decydującym o geopolitycznym znaczeniu państw.",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
-      },
-      {
         "category": "NAUKA / TECHNOLOGIE",
-        "title": "Projekt Triad: Amerykański NSF przyspiesza komercjalizację technologii kwantowych",
-        "summary": "Amerykańska Narodowa Fundacja Nauki (NSF) uruchomiła Project Triad, którego celem jest przeniesienie technologii kwantowych z laboratoriów do praktycznych zastosowań rynkowych. Inicjatywa ma połączyć środowisko akademickie z przemysłem, by przyspieszyć wdrożenia w obszarze kryptografii i obliczeń. Rywalizacja o dominację w tej dziedzinie staje się kluczowym elementem strategii technologicznej USA.",
-        "comment": "Przejście komputerów kwantowych z fazy eksperymentalnej do komercyjnej wywoła rewolucję w cyfrowym bezpieczeństwie, zmuszając firmy do całkowitego przemodelowania obecnych szyfrów.",
+        "title": "⚛️ Amerykański NSF uruchamia Projekt Triad",
+        "summary": "Amerykańska Narodowa Fundacja Nauki startuje z nowym programem, mającym na celu rozwój i praktyczne zastosowanie technologii kwantowych.",
+        "comment": "Wyścig o dominację kwantową przenosi się z laboratoriów bezpośrednio do komercyjnych zastosowań przemysłowych.",
         "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQV1dGdkVYamQ4LUowMFFrM21fOXo3N3VTVGt3MnpYQnY4WE9ZYWllWUozUllESXlFVGE4TmQzZlBjOTZNU015MG91akVCZmdSY2kzbXFIOTBTbTFhRXl1enQ3NjlRZ2ROWmo1Q3hUZkc4VXJRM1RKbUZJX1JWWE1vVjhzRGQtdTU5SlNn?oc=5"
       },
       {
+        "category": "RYNKI / INWESTYCJE",
+        "title": "🖥️ Centra danych zmieniają mapę inwestycji",
+        "summary": "Raport UNCTAD wskazuje, że gwałtowny rozwój infrastruktury cyfrowej staje się głównym czynnikiem przyciągającym kapitał zagraniczny.",
+        "comment": "Zapotrzebowanie na moc obliczeniową i energię przedefiniowuje atrakcyjność inwestycyjną całych regionów świata.",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+      },
+      {
         "category": "TECHNOLOGIE / AI",
-        "title": "Claude Mythos od Anthropic: Nowa odsłona AI i pytania o cyfrowe bezpieczeństwo",
-        "summary": "Firma Anthropic poinformowała o nowym przedsięwzięciu z rodziny Claude, określanym jako Mythos, co wywołało dyskusję wokół potencjalnych zagrożeń technicznych i etycznych. Analitycy analizują stopień autonomii nowych systemów oraz ich wpływ na bezpieczeństwo teleinformatyczne. Kluczowe wyzwanie stanowi kontrola nad halucynacjami AI oraz ryzykiem wykorzystania jej w cyberatakach.",
-        "comment": "Wyścig modeli językowych wkracza w fazę, w której kwestie bezpieczeństwa (AI safety) przestają być teorią, a stają się warunkiem koniecznym do wdrożeń rynkowych.",
+        "title": "⚠️ Wyzwania wokół modelu Claude Mythos",
+        "summary": "BBC analizuje nowy model AI od Anthropic oraz potencjalne zagrożenia i ryzyka bezpieczeństwa, które za sobą niesie.",
+        "comment": "Im potężniejsze stają się modele językowe, tym trudniejsza staje się ich kontrola i weryfikacja algorytmiczna.",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RQ080QjNmR3N5VElKQnh1WXRFSk9iR0JxTy1ZaDNRY0dXNUFXZ0w1Wk1XUWs2MTdTR3dUZVpfMHYwVUJSZ1ZTQlVPaWFFODdFSHRKdXJxazVfUQ?oc=5"
       },
       {
-        "category": "NAUKA / GOSPODARKA",
-        "title": "Czy finanse zagrażają demokracji? Badacze z UC Berkeley ruszają z nowym projektem",
-        "summary": "Uniwersytet Kalifornijski w Berkeley uruchamia specjalny program badawczy poświęcony wpływowi sektora finansowego na funkcjonowanie instytucji demokratycznych. Naukowcy zamierzają przeanalizować, jak koncentracja kapitału i lobbing rynków finansowych przekształcają procesy wyborcze i decyzje polityczne. Projekt ma dostarczyć nowych danych na temat powiązań między wielkim kapitałem a stabilnością państwa.",
-        "comment": "Po latach skupiania się na wpływie mediów społecznościowych na demokrację, badacze wracają do korzeni – sprawdzając, jak cichy przepływ kapitału kształtuje decyzje polityczne.",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
+        "category": "ŚWIAT / POLITYKA",
+        "title": "🇩🇪 Kontrowersje wokół liderki AfD Alice Weidel",
+        "summary": "Skomplikowane życie prywatne i wyraziste poglądy liderki skrajnej prawicy budzą duże zainteresowanie mediów.",
+        "comment": "Pragmatyzm życiowy połączony z radykalizmem politycznym to coraz częstszy paradoks współczesnego populizmu.",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNzlZWXVhekRxa082cjRXWmZQaWxqRVJaTHNiSmxTMlBuRktORGpKdGdCM3h0aG1rd2lHakZobGpReGJ4c3RwMjhmT2JseHV2MHFWaGFjOER0VDYtMkdjNVJMMEdKV1pKX2UwY3J0RFFPUWQwZlF1V2JnV2hSV2F3azE1bUpvMzA2YXVBenc0bDRQc1V2cHlWc2VsREtXY2p6cGI5cEktOXgyUWlFb1RfU1Vad2c0el80?oc=5"
       },
       {
-        "category": "ŚWIAT / OBRONNOŚĆ",
-        "title": "Niemcy otwierają rezerwy Bundeswehry dla Ukrainy: Kluczowe wsparcie wojskowe",
-        "summary": "Niemiecki rząd podjął decyzję o przekazaniu kolejnych zasobów z rezerw Bundeswehry na rzecz wsparcia sił zbrojnych Ukrainy. Decyzja ta wpisuje się w szerszą strategię wzmacniania zdolności obronnych Kijowa w obliczu przedłużającego się konfliktu. Działania te mają na celu szybkie uzupełnienie najpilniejszych braków sprzętowych na froncie.",
-        "comment": "Zmiana podejścia Berlina pokazuje, że niemiecka doktryna obronna przeszła trwałą ewolucję od powściągliwości do roli jednego z głównych dostawców uzbrojenia w Europie.",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY0xTY1NuN1NqVG9oQnMwVkFNcDBvQkNGRHFQeFV6bzlKX2RnWUlFNEp6MW9saHR6TzdXVDlScmtDU3dUXzBvYTBGQUJqNng2UGllWWFqYVFPWDJwcDAwWmo3eXFUUnlxeDM0RzJmd0pJMjkxWUdLLWtQLWhvSWcwZFl4a0s1a0tDUTYtTFNKQ1V6dHlXcWVBRHU6WTNNMk41RXlUUENrdWh4cGNVd253aGJuR3FHVzJOdDAwU3psMA?oc=5"
+        "category": "POLSKA / GOSPODARKA",
+        "title": "🪙 Premier Tusk zapowiada rozliczenia w krypto",
+        "summary": "Donald Tusk ogłasza uregulowanie branży kryptowalut i uszczelnienie nadzoru nad aktywami cyfrowymi.",
+        "comment": "Zaostrzenie kursu wpisuje się w globalny trend zacieśniania kontroli skarbowej nad rynkiem aktywów wirtualnych.",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtKRmhqcVFNd1lmQUhiOS1ObENJOFcxVDNtcHllWWFEMkg5UFUxcGpXYVgtc1A0TnNDVFpSM3laeEJ0djh3dXJhNVNSSmhldnFFem9hU3F2M1FPbDZuUzlfRWJFWWFBZVYtczZGeE1EbnExRVX6UHRqVmp1RkFoXzB6SjdqTEZ0dXV2VUNQUF9rY3l4Sm5FemEtZmM2RGdVMmc?oc=5"
       },
       {
-        "category": "GEOPOLITYKA / ŚWIAT",
-        "title": "Sikorski o ruchach Kremla: \"Putin ma już tylko dwie opcje\"",
-        "summary": "Szef polskiej dyplomacji Radosław Sikorski ocenił sytuację na froncie i strategię Władimira Putina, twierdząc, że rosyjski przywódca ma obecnie do wyboru jedynie dwa wyjścia. Zdaniem Sikorskiego determinacja Zachodu we wspieraniu Ukrainy drastycznie ogranicza manewr polityczny i militarny Moskwy. Wypowiedź ta wpisuje się w polską ofensywę dyplomatyczną na forum międzynarodowym.",
-        "comment": "Presja dyplomatyczna Warszawy konsekwentnie zmierza do punktowania słabości rosyjskiej machiny wojennej i utwierdzania sojuszników w przekonaniu o konieczności kontynuowania wsparcia.",
+        "category": "ŚWIAT / POLITYKA",
+        "title": "🇧🇾 Postawa Andrzeja Poczobuta na Białorusi",
+        "summary": "Dziennikarz pozostaje niewzruszony w swojej postawie wobec reżimu, podkreślając brak miejsca na strach.",
+        "comment": "Niezłomność Poczobuta czyni z niego potężny symbol oporu przeciwko autorytarnym działaniom Mińska.",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUZPTjAwbWthcUNBbGJxazhZR3FOMHI0QXZULWZJMWZpdGQ2Q2RDMkszekkxWUpPX1llZF_Db3ZrZHpBRUM4SGpNS3B3UWtpaWMwcUJrS3RPV2pxaVkwOEQ4UkRCZWN2Tmx0Q3hma1lnVzF1OUgyYW92LVJzTzZ4ZmRTa09CUV9Ham5MRl90T1QzT0FPOFE?oc=5"
+      },
+      {
+        "category": "POLSKA / PRAWO",
+        "title": "⚖️ Nowe śledztwo w sprawie Zbigniewa Ziobry",
+        "summary": "Prokuratura bierze pod lupę kolejne dwa znane nazwiska w kontekście ustaleń śledczych.",
+        "comment": "Systematyczne prześwietlanie decyzji poprzedniego kierownictwa resortu sprawiedliwości wchodzi w krytyczną fazę.",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbTM5Z3JUdW04SUJLYW1GSTlTME9CN1pVNmNNNktjcHJJX0RmMW9EZllkQnVoQVFxUW43cktuQ3YxNDFfZGt1N09tZjh0SFozR0o4bWh2NmJSelNOZU1mcnBuOHBNZGtMbXpQOHdhOHUwLW53MndEbHd0UFExRHNsaEN5TGd5WnQ4TlVkczFEcnRDc2hmQUxheDJkUy1iUlpHYmVsbGZBT3VtMTFhUU43VUVfRDFuZ3FRbEE?oc=5"
+      },
+      {
+        "category": "ŚWIAT / GEOPOLITYKA",
+        "title": "🇺🇦 Sikorski analizuje ruchy Putina",
+        "summary": "Minister Radosław Sikorski ocenia, że Rosja ma obecnie przed sobą jedynie dwa scenariusze dalszego działania.",
+        "comment": "Polska dyplomacja konsekwentnie akcentuje ograniczone alternatywy strategiczne Kremla na arenie międzynarodowej.",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZzJDdk9EUW82M0dEQWtERmJESHdNZnpnX0gtUi1RMi1hTEV6QkRiUFd0b1hrN2d2WGszSmVmUmpIcENQWXg2YWlGbFB6SVBwLWV0S3ZrMDBOdENsMUFaM3RSN2V2b0syMWhValpnUy1ZcXZ3NnBKUkR2ck9yOHBPZHg3SjdNb2hBSHQ2WjZIaWplT29KM01zbDlBSi1OTmVuVWFuWGFPQ3FvMjRUeU1QSlNZbVg?oc=5"
       },
       {
         "category": "ŚWIAT / GEOPOLITYKA",
-        "title": "Sprawa Andrzeja Poczobuta a dyplomatyczna pozycja Polski w regionie",
-        "summary": "Informacje dotyczące sytuacji więzionego na Białorusi dziennikarza Andrzeja Poczobuta ponownie stawiają na porządku dziennym kwestię relacji polsko-białoruskich. Analitycy podkreślają, że rozwój tej sprawy jest sprawdzianem skuteczności polskiej polityki wschodniej i nacisków międzynarodowych. Sytuacja więźniów politycznych reżimu Łukaszenki pozostaje kluczowym punktem spornym w regionie.",
-        "comment": "Kwestia praw człowieka na Białorusi to nie tylko problem humanitarny, ale też twardy test wpływu regionalnego polskiej dyplomacji na reżim w Mińsku.",
-        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdWdvRlpSQkZYb1EzX19FSDU5dzdlYzVPaDV1QmRBRHJfQ0JUN3l1UEpneEdOUTdEY1IyUnFCeDRrcVgtR0VhZ1hadDBCT1ZFbE1nX3JCd0IzUXNmV2tzVlNfS1lPNkQ5T2pnSzllZzZEa1liemxkZTQzOUJTejFYRzFCdjNkR09pbGx0WU4wQW9WYVpYX1pud0YwY0N3ZkU3WTVLMWVEZjBzcWN3X0hmWllkOHJhYjVYOC1IcHBfV1lxMGJr?oc=5"
+        "title": "🇵🇸 Koalicja państw w sprawie Zachodniego Brzegu",
+        "summary": "Polska dołącza do międzynarodowej inicjatywy dotyczącej Zachodniego Brzegu, co budzi sprzeciw Izraela.",
+        "comment": "Zaostrzenie stanowiska państw europejskich zwiastuje rosnącą presję dyplomatyczną na politykę Izraela.",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaUpfOXNLcm51RkJYX3hjS1JpcngxZlQ4c2ZtdFh6NzdMSHVpbnBTXzZXajVZSFZRaE01THZDTXl5bnBqRkZYdHpNMno0RUZWMGM3Q2RYc09KYzZhR3o0Q1ZXNWQ1S2p5VEYtN2cwR0pjV3pySjdGbWNnSkJhekxqMXNzaGljRVlIRXRQSGV5YXRMQlFLLVpYT0Z6TFVEQUVqSmRSVm5ERXNoMkFjamxhMldvUGRFVXA1UklAMlw0R3dMQQ?oc=5"
       },
       {
-        "category": "ŚWIAT / POLITYKA",
-        "title": "Niezwykły profil Alice Weidel: Kontrowersyjne wypowiedzi i prywatne życie liderki AfD",
-        "summary": "Media analizują profil Alice Weidel, liderki skrajnie prawicowej partii AfD, zwracając uwagę na kontrast między jej życiem prywatnym a radykalną retoryką polityczną. Polityczka, żyjąca w jednopłciowym związku i wychowująca dzieci, nie stroni od ostrych wypowiedzi pod adresem sąsiadów Niemiec. Jej postawa wywołuje liczne kontrowersje zarówno w Niemczech, jak i za granicą.",
-        "comment": "Postać Weidel pokazuje pragmatyczną wielotwarzowość współczesnego populizmu, który potrafi łączyć niekonwencjonalny styl życia z tradycjonalistycznym i nacjonalistycznym przekazem.",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNzlZWXVhekRxa082cjRXWmZQaWxqRVJaTHNiSmxTMlBuRktORGpKdGdCM3h0aG1rd2lHakZobGpReGJ4c3RwMjhmT2JseHV2MHFWaGFjOER0VDYtMkdjNVJMMEdKV1pKX2UwY3J0RFFPUWQwZlF1V2JnV2hSV2F3azE1bUpvMzA2YXVBenc0bDRQc1V2cHlWc2VsREtXY2p6cGI5cEktOXgyUWlFb1RfU1Vad2c0el80?oc=5"
-      },
-      {
-        "category": "POLSKA / FINANSE",
-        "title": "Rząd bierze pod lupę rynek kryptowalut: Tusk zapowiada rozliczenia",
-        "summary": "Premier Donald Tusk odniósł się do kwestii rynku kryptowalut, sygnalizując intensyfikację działań kontrolnych i rozliczeniowych w tym sektorze. Działania rządu mają na celu ograniczenie szarej strefy oraz przeciwdziałanie potencjalnym oszustwom finansowym i praniu pieniędzy. Ogłoszenie to wywołało szerokie dyskusje w środowisku polskich inwestorów cyfrowych aktywów.",
-        "comment": "Wkraczanie państwa na rynek kryptowalut z ostrym kursem regulacyjnym to globalny trend, który w Polsce zyskuje wymiar mocno polityczny i skarbowy.",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWtKRmhqcVFNd1lmQUhiOS1ObENJOFcxVDNtcHllWWFEMkg5UFUxcGpXYVgtc1A0TnNDVFpSM3laeEJ0djh3dXJhNVNSSmhldnFFem9hU3F2M1FPbDZuUzlfRWJFWWFBZVYtczZGeE1EbnExRVh6UHRqVmp1RkFoXzB6SjdqTEZ0dXV2VUNQUF9rY3l4Sm5FemEtZmM2RGdVMmc?oc=5"
-      },
-      {
-        "category": "POLSKA / POLITYKA",
-        "title": "Nowe śledztwo w sprawie Zbigniewa Ziobry: Znane nazwiska pod lupą prokuratorów",
-        "summary": "Prokuratura wszczęła nowe śledztwo dotyczące działań byłego ministra sprawiedliwości Zbigniewa Ziobry, w którym pojawiają się nazwiska znanych współpracowników polityka. Postępowanie dotyczy potencjalnych przekroczeń uprawnień i nieprawidłowości w zarządzaniu funduszami państwowymi. Jest to kolejny etap szeroko zakrojonych rozliczeń poprzedniej ekipy rządzącej.",
-        "comment": "Rozliczenia wymiaru sprawiedliwości stają się jednym z głównych motywów przewodnich obecnej kadencji sejmowej, budząc silne emocje polityczne po obu stronach sporu.",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMnVWYk45b2VoR0R3c3JjVE5uS3ZIZ3dyMVZJdlUxRDB0cnhhbjJESDZCWXdJSUV2UWVlYnlvRXBMY2x5WmdxUWF3bzRuVXFJXzFhMXNfaWh0YVBqU1hMQWpxNVRjWnZURDJCamtJbWgxTXRlZWNUeEhPU0l0WFJHcW4zSXFpM1ZBQmFhLVdYUnA1Y2V0NU1Hb1VnZkw4YmhxdkhDTGpxOUM3Zw?oc=5"
-      },
-      {
-        "category": "POLSKA / SAMORZĄD",
-        "title": "Ostateczna lista kandydatów w Krakowie: Walka o fotel prezydenta wchodzi w decydującą fazę",
-        "summary": "Ogłoszono oficjalną i ostateczną listę kandydatów ubiegających się o urząd prezydenta Krakowa. Kampania wyborcza w stolicy Małopolski wkracza w decydującą fazę, a starcie zapowiada się jako wyjątkowo wyrównane po odejściu wieloletniego włodarza miasta. Kluczowymi tematami sporu pozostają transport, planowanie przestrzenne oraz rozwój lokalny.",
-        "comment": "Wybory w Krakowie są jednym z najważniejszych testów poparcia politycznego w dużych ośrodkach miejskich, pokazując nowe układy sił na lokalnej scenie.",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNc1lHN19ZUXFLQVAycGNRQWVfZ3BZLVEyVzk0UEExSWRpbGJRVzlHVEtNZnVDSHV2MXJZRWV2MG03UGFyOW5UTndoRjY5V0dOWFU1b0RGTEpZMGh4akJmaDQxTUljVklqZGVwUmhKaXFHekltNDUzbjBPblV2Smx1dnhqSWZOeGFFNWJVdk1WMXp6emxTWThjM2RoQXBrRzJuRUlpNlhNdVBiS0JiNVlza1pMelBQN1NJczBpV05PU1QyQQ?oc=5"
-      },
-      {
-        "category": "INNOWACJE / ŚWIAT",
-        "title": "Azjatyckie klastry technologiczne utrzymują pozycję liderów innowacji",
-        "summary": "Według najnowszego zestawienia, azjatyckie klastry naukowo-technologiczne, w tym te powiązane z Hongkongiem i Shenzhen, utrzymują czołowe pozycje w globalnych rankingach innowacji. Pozycja ta wynika z ogromnych nakładów na badania, rozwój oraz silnego wsparcia infrastrukturalnego dla startupów. Region ten pozostaje kluczowym hubem technologicznym mimo napięć geopolitycznych.",
-        "comment": "Mimo prób dywersyfikacji łańcuchów dostaw przez Zachód, dominacja azjatyckich ekosystemów innowacji technologicznych wciąż opiera się na unikalnej skali produkcji i zaplecza badawczego.",
+        "category": "NAUKA / INNOWACJE",
+        "title": "🇭🇰 Azjatyckie klastry technologiczne na czele",
+        "summary": "Klastry innowacji w Hongkongu i Azji Wschodniej utrzymują pozycję globalnych liderów w rankingach rozwoju.",
+        "comment": "Przesunięcie środka ciężkości światowych innowacji w stronę Azji staje się utrwalonym trendem strukturalnym.",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9NdHhGYnhDckEzOXA4Nk56RGNJRHBZN2p5RzllYm8yd09PSXhwR002enJ5ekJWZVJKTU93M1lESWk2WmRSOXFqTTk2UmlsYm9LODR4TDB6MDN1WFNHNmJIcXRxNkRjQW5DdmctamwzZ3FQQVcyZHUzTA?oc=5"
       },
       {
-        "category": "POLSKA / SPOŁECZEŃSTWO",
-        "title": "Spór o posiłki w szkołach: Ministerstwo Edukacji odpowiada na krytykę zmian w menu",
-        "summary": "Minister Edukacji Barbara Nowacka odniosła się do kontrowersji wokół proponowanych zmian w wyżywieniu dzieci w placówkach oświatowych. Resort podkreśla konieczność wprowadzania zdrowych nawyków żywieniowych, odpierając zarzuty o nadmierną ingerencję w decyzje szkół i rodziców. Sprawa wywołała żywiołową debatę na temat standardów zdrowotnych w polskim szkolnictwie.",
-        "comment": "Kwestia stołówek szkolnych pokazała, jak z pozoru techniczna regulacja zdrowotna potrafi stać się zarzewiem gorącego sporu światopoglądowego i społecznego.",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR0xtZHptd1draUJMeDhOWF83YzEzWnhDUTJWRlFzVnVIV1dSUUtkY3NRN2tuQV9OZWdhdnNxZkU3cHZlZ2hkelppcm04Sy1VNE13bnNzT1E4MmhSeTBwZjRzdzdzOTNZZDJEUUpWck9IbHc2M0xkWGhBeHltMDJNcE44RzR4VHlsMmRKWGZ4ZHB5bGp2R1VmQnZ0WE5qQQ?oc=5"
+        "category": "EDUKACJA / BIZNES",
+        "title": "🎓 MIT Sloan liderem rankingu MBA",
+        "summary": "Financial Times sklasyfikował MIT Sloan na pierwszym miejscu w globalnym zestawieniu programów MBA na rok 2026.",
+        "comment": "Silne powiązanie biznesu z technologiami i analizą danych daje przewagę w kształceniu liderów nowej ery.",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M3Lnz3R0N0g0ZW94ZWttT1c2S21ORU8zUUJtNGRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
       },
       {
         "category": "SPOŁECZEŃSTWO / NAUKA",
-        "title": "Kobiety w nauce: Raport ONZ wzywa do przełamywania barier systemowych",
-        "summary": "Z okazji Międzynarodowego Dnia Kobiet i Dziewcząt w Nauce, ONZ opublikowało raport wzywający do usuwania barier systemowych w dostępie kobiet do kariery naukowej. Mimo postępów, udział kobiet w sektorze STEM (nauka, technologia, inżynieria, matematyka) pozostaje znacząco niższy niż mężczyzn. Raport wskazuje na konieczność reform edukacyjnych oraz zmian w politykach rekrutacyjnych instytucji badawczych.",
-        "comment": "Zamykanie luki płci w sektorze STEM to nie tylko kwestia sprawiedliwości społecznej, ale rezerwa innowacyjności, bez której gospodarka oparta na wiedzy traci tempo.",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5mTBNRnBlbDFIdWZMWQ?oc=5"
+        "title": "👩‍🔬 Apel ONZ ws. luk płciowych w nauce",
+        "summary": "ONZ wzywa do usuwania barier systemowych i zwiększania udziału kobiet oraz dziewcząt w sektora STEM.",
+        "comment": "Równomierne włączenie potencjału społecznego jest niezbędne dla przyspieszenia globalnego postępu technologicznego.",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
       }
     ]
   }
