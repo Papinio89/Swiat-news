@@ -52,16 +52,14 @@ if session_name == "wieczorne":
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, globalny przegląd (przetłumacz i sformatuj wszystko na język polski).
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz zwięzły, dynamiczny przegląd globalny (przetłumacz i sformatuj na język polski).
 
-WYMAGANA STRUKTURA:
-Stwórz listę wiadomości (około 12-16 elementów), łącząc tematy globalne, finansowe, geopolityczne oraz technologiczne/naukowe.
-
+WYMAGANA STRUKTURA (12-15 elementów):
 Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "category": Kategoria wiadomości pisana wielkimi literami (np. "ŚWIAT / GEOPOLITYKA", "RYNKI / GOSPODARKA", "NAUKA / TECHNOLOGIE").
-- "title": Główny, chwytliwy nagłówek show w języku polskim.
-- "summary": Skrótowy opis wiadomości (2-3 zdania wyjaśniające istotę sprawy).
-- "comment": Autorski, wnikliwy komentarz, wnioski lub smaczek analityczny (odpowiednik idei żarówki).
+- "title": Krótki, chwytliwy nagłówek z dopasowaną emotikoną na początku (np. "🇺🇸 Decyzja Fedu zaskoczyła rynki").
+- "summary": Krótki opis w postaci 1 konkretnego zdania (maksymalnie dwa krótkie).
+- "comment": Krótki, trafny komentarz analityczny (odpowiednik idei żarówki).
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości.
 
 ZASADY:
@@ -90,9 +88,9 @@ except Exception as e:
     print(f"Błąd AI: {e}")
     items = [{
         "category": "AKTUALNOŚCI",
-        "title": art['title'],
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła ze względu na błąd przetwarzania.",
-        "comment": "Brak dodatkowego komentarza analitycznego.",
+        "title": f"📌 {art['title']}",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
         "link": art['link']
     } for art in raw_articles[:15]]
 
