@@ -42,13 +42,39 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
-# Pobieramy tytuły ze WSZYSTKICH wpisów w historii archive.json
+# Pobieramy tytuły z ostatnich 4 sesji w archiwum, aby uniknąć przeciążenia promptu
 previous_topics = []
-for session_key, session_content in archive_data.items():
+sorted_sessions = sorted(archive_data.keys(), reverse=True)[:4]
+for session_key in sorted_sessions:
+    session_content = archive_data[session_key]
     if isinstance(session_content, dict) and "items" in session_content:
         for item in session_content.get("items", []):
             if "title" in item:
-                previous_topics.append(item["title"])
+                clean_title = "".join([c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
+                previous_topics.append(clean_title)
+
+# Wstępna filtracja duplikatów w Pythonie na podstawie pokrycia słów
+filtered_raw_articles = []
+for art in raw_articles:
+    art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
+    is_duplicate = False
+    
+    art_words = set(art_clean.split())
+    if len(art_words) > 2:
+        for prev in previous_topics:
+            prev_words = set(prev.split())
+            if len(prev_words) > 2:
+                common = art_words.intersection(prev_words)
+                if len(common) / min(len(art_words), len(prev_words)) > 0.5:
+                    is_duplicate = True
+                    break
+                    
+    if not is_duplicate:
+        filtered_raw_articles.append(art)
+
+# Zabezpieczenie przed nadmiernym odfiltrowaniem
+if len(filtered_raw_articles) < 5:
+    filtered_raw_articles = raw_articles
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
@@ -67,18 +93,17 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
-- Unikaj powtarzania WSZYSTKICH tematów znajdujących się w historii archiwum: {json.dumps(previous_topics, ensure_ascii=False)}
 - Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z powyższymi kluczami.
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Dane wejściowe:
-{json.dumps(raw_articles, ensure_ascii=False)}
+{json.dumps(filtered_raw_articles, ensure_ascii=False)}
 """
 
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.6-flash',
+        model='gemini-2.5-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
