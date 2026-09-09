@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 import feedparser
 from google import genai
@@ -50,6 +50,15 @@ if session_name == "wieczorne":
             if "title" in item:
                 previous_topics.append(item["title"])
 
+yesterday_date = now_pl - timedelta(days=1)
+yesterday_key_base = yesterday_date.strftime("%Y-%m-%d")
+for s_name in ["poranne", "wieczorne"]:
+    past_key = f"{yesterday_key_base}_{s_name}"
+    if past_key in archive_data:
+        for item in archive_data[past_key].get("items", []):
+            if "title" in item:
+                previous_topics.append(item["title"])
+
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Przeanalizuj poniższe nagłówki i stwórz dynamiczny przegląd globalny (przetłumacz i sformatuj na język polski).
@@ -67,7 +76,7 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
-- Unikaj powtarzania tematów z poranka: {json.dumps(previous_topics, ensure_ascii=False)}
+- Unikaj powtarzania tematów z poranka oraz z poprzednich dni: {json.dumps(previous_topics, ensure_ascii=False)}
 - Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z powyższymi kluczami.
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
