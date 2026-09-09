@@ -1,105 +1,98 @@
 {
   "date": "09 September 2026",
-  "time": "11:43",
-  "timestamp": "2026-09-09_11:43",
+  "time": "20:24",
+  "timestamp": "2026-09-09_20:24",
   "items": [
     {
-      "category": "GOSPODARKA / ŚWIAT",
-      "title": "🇺🇸 Trump podpisuje dekret o zakazie importu",
-      "summary": "Prezydent USA podpisał rozporządzenie wprowadzające zakaz importu wybranych towarów, które ma wejść w życie 29 września. Decyzja ma na celu zmianę dotychczasowych łańcuchów dostaw i ochronę rynku wewnętrznego.",
-      "comment": "Kolejny zwrot w stronę protekcjonizmu gospodarczego, który wymusi na globalnych koncernach szybką redefinicję strategii handlowych.",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWjZrZWV5VW5qSy1NNkx5cVppSGpXcFNtZmcyZEVCZENuc0IyTVg1aGZubWI1V2xmZFBCcjZFU1dOUzlQb3hYbXRVckw4dkVXdEZNU2RrM3czSkJOWVFzVWlUOGRhLWJ4em1IMVphd2M3cnFwUkJ3ekZ5dzB4WWNPRHFQRl9ZX0FlZXhoaXdFN1h2enVlNUxQOGM0US1GV25EaF85ajhfdENzUWlJLUtRYjd0dUlZV2xEZ1E4?oc=5"
+      "category": "GOSPODARKA / RYNKI",
+      "title": "🛢️ Gwałtowny skok cen ropy po ripoście Iranu",
+      "summary": "Ceny ropy naftowej przekroczyły kluczową barierę cenową po tym, jak Iran odpowiedział militarnie na wcześniejsze uderzenia ze strony USA. Sytuacja na Bliskim Wschodzie ponownie wywołuje obawy o stabilność dostaw surowców.",
+      "comment": "Rynki energii pozostają niezwykle wrażliwe na geopolityczne napięcia, co może bezpośrednio przełożyć się na wzrost inflacji na świecie.",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUlFNM3NueTN4ZlRvbVotcFhNaUZwUjdvdkRtNzRwcE12NWRoYkRSTGt4STZETHEwclZ6cUpZU2Q2Uk11VEo5UDktdkVvVlo1UnZjWjdNcTFVN3pCUlFuTm5TYnJaTUtlYkh4YlBtWmxGWGVldFdIaWo2aHBwY3FpZnlVR1dzeWRZMlJsWTc2OHZMUkhrQ1VzcXlkU1JzaXdaRjFudWgtZUhnNXV1MWxURlJkU1lxYy1iSnpMS3lCd0ctd3hSVTJSXw?oc=5"
     },
     {
-      "category": "GEOPOLITYKA / ŚWIAT",
-      "title": "⚓ Napięcie w Cieśninie Ormuz: USA i Iran na krawędzi",
-      "summary": "Stany Zjednoczone utknęły w narastającym konflikcie z Iranem o kontrolę nad strategicznym szlakiem morskim w Cieśninie Ormuz. Sytuacja stawia pod znakiem zapytania stabilność międzynarodowych dostaw ropy naftowej.",
-      "comment": "Cieśnina Ormuz to energetyczne gardło świata – jakakolwiek blokada natychmiast przełoży się na wzrost cen paliw na stacjach w Europie.",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSkVjZmdLUkU5Z05JMUozNWhfbmZDNWNGN05PZ3dZdnpucGJjZXlQbzl6ZVFUc2JPdjV5T0lYNmh1ZVFRUHA4WnQzV1R6M0E1Y25kM2RLZlZTRUpXNm14U0k2SlhMWnRqM05LUzlCY1VVd0xnM2haTWtJYWJ5Sk43NTYwTVZuNjJfLXFOWnJIdGpUdVV6Q2xhN3V6cHRJYkNWeHBDQXdzMlZMSTRKekIxNWZoWDJraUxuUE1aaFI0SEQtYTRyTmg5MGdodFVCdw?oc=5"
+      "category": "ŚWIAT / KONFLIKTY",
+      "title": "💥 Zmasowany atak Ukrainy na Noworosyjsk",
+      "summary": "Ukraińskie siły przeprowadziły potężny uderzeniowy atak na rosyjski port w Noworosyjsku. Zgłaszane są znaczne zniszczenia infrastruktury oraz ofiary śmiertelne i ranni.",
+      "comment": "Przeniesienie ciężaru walk na kluczowe rosyjskie węzły logistyczne nad Morzem Czarnym mocno ogranicza zdolności operacyjne Floty Czarnomorskiej.",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaF9CRGFnRDVTNG5GODkzNENvZHB6d040UXdHRmQxbTE4cUNLZnZpVzhVeURFYmQ0aWdYU29CT3Rsc2Z0eVlKRlVDT3hZSWRCWkdZbjRBTDI3dFlYNVAtbG1fRlp1VzljUnU3T29XbFJkUDlPMDFpYkxySkMzVnNEbHJsMWhOVEx1TndFR28yOXpILXBMUWRvMnliZFZKWXlQU00xa2JoSFdyallzS3lUTDdNSHBJQ2lNUnM1OXpB?oc=5"
     },
     {
-      "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🛡️ Polska podpisała nową umowę zbrojeniową z USA",
-      "summary": "Finalizacja kolejnego kontraktu na zakup nowoczesnego sprzętu wojskowego ze Stanów Zjednoczonych została oficjalnie potwierdzona. Przedstawiciele rządu podkreślają, że porozumienie umacnia strategiczne partnerstwo i bezpieczeństwo kraju.",
-      "comment": "Konsekwentna modernizacja polskiej armii oparta na amerykańskim sprzęcie utrwala pozycję Polski jako kluczowego filaru wschodniej flanki NATO.",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZlBscld3TUdmN2hVcE84SVVIWDhfd2ZhaXJiV2UwNEtfNEFOd1NrUXBIR2RGUDREZXpIbEpReUZNTnAtVnNMZmVqQndiRU9NV2RRN2tSZDh4WkNHS1RUTjJrclpkbngzbDZoMXp2SFVlX2JlbWVDejdVMkIzNjZmOXo4WENYWWNRLWUtVmFkWTNlcjFVVWM1RkM2ZHpsaHhWaHVmTWU2WHdkbnlzVi1IZUE3ZVNOakt1N2lFNXJYeHBLWUs1?oc=5"
+      "category": "ŚWIAT / GEOPOLITYKA",
+      "title": "🗳️ Donald Trump chwali wyniki wyborcze AfD",
+      "summary": "Były prezydent USA skomentował sukces prawicowej partii AfD w Niemczech, nawiązując do swojego flagowego hasła i nawołując do 'uczynienia Niemiec znowu wielkimi'.",
+      "comment": "Słowa Trumpa pokazują rosnącą solidarność i przepływ narracji między amerykańskimi konserwatystami a europejską prawicą.",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMWhWUUxlQ1podWs3bmx6cURNOGZud250TWFwWkZycE9XWXd1SV95QmtHYjlKOF9RX3NMRVduYjd5V2c4endJM0dLMGN2T3BlYUwwQjdIQ0o3WFlrVjVWS1VDRkt4bGR1Y1J1QmtUZ1lvM1dwRW53b09LM2NRNnRZQUpsLVRHNE5LcEJCdW1MRnZRN2sxcDAwZEN0d2RpVC1HdHZrT2pfb1A?oc=5"
     },
     {
-      "category": "DYPLOMACJA / ŚWIAT",
-      "title": "🌐 Wyjątek dla Polski i Węgier w decyzji Waszyngtonu",
-      "summary": "Stany Zjednoczone zdecydowały o wyłączeniu Polski oraz Węgier z nowo wprowadzonej pauzy w procedurach międzynarodowych. Decyzja ta jest postrzegana jako gest docenienia relacji bilateralnych w regionie.",
-      "comment": "Pragmatyzm w dyplomacji znów bierze górę – Amerykanie zabezpieczają interesy w kluczowych punktach Europy Środkowej.",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWElrdmhWS1RKOGxLbXRDck8zdzRlb2VSUWp1WGxHUUxqQW5ENVdqMzBNeXdKVURzT25hUXFlUXZwTHNSeTZaWk5HeENMMUZ3ejdXZTJqY3V6dWRWUnJqUGQtSXQ5LXBZcWphbUZFRmRVMUhGRkNGcEtPVHQ4ZXRVeWhrUlhqUURNV05fd3JHNHdxelVadXhWSFAzcmU0T1F1bU50MHpNOXJrMFFtS3N3Q2NVMkp3VnEwSVE?oc=5"
-    },
-    {
-      "category": "TECHNOLOGIE / GOSPODARKA",
-      "title": "🇬🇧 Wielka Brytania tworzy ramy dla technologii kwantowych",
-      "summary": "Rząd Wielkiej Brytanii ogłosił powstanie pierwszego na świecie krajowego systemu standardów kwantowych. Inicjatywa ma wzmocnić pozycję brytyjskiego sektora technologicznego i ułatwić globalny handel przełomowymi rozwiązaniami.",
-      "comment": "Ustanowienie reguł gry na wczesnym etapie rozwoju komputerów kwantowych może dać Brytyjczykom ogromną przewagę regulacyjną i rynkową.",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObXgwb0JPcktlZDljY3VrTXlwT3RaNzdfalJqQU9qbFFkcFhDVXFtX09Kc3RRV2lrRkljWGlBQ2cxOVRocXRZYVNyU3lzT3BoRFpsNkowNDdFclJGcS0yNWg2V1FwWjZtemFQbUh2R2JlalNvaXBLQUlmN25oLVU0QnR1eGFudkZsUVg4bWpRUXd3bWVkWVpLaGdsbzF6OXAyNGdfX2tHMFVCeTYxRWlYYi1naHdNWDloVmF4Mmo3UkRKaEttc0stUDNUR2NKRjN5b1R0S3dWWnRUek9ITy1SQ1pBbw?oc=5"
-    },
-    {
-      "category": "POLITYKA / PRAWO",
-      "title": "🇧🇷 Kontrowersje wokół umowy emerytalnej z Brazylią",
-      "summary": "Projekt włączenia obywateli Brazylii do polskiego systemu emerytalnego wywołał falę dyskusji w parlamencie oraz protesty środowisk politycznych. Krytycy wskazują na potencjalne obciążenia dla ZUS, podczas gdy zwolennicy mówią o wzajemności praw.",
-      "comment": "Systemy emerytalne w Europie są pod dużą presją, więc każda umowa międzynarodowa tego typu budzi emocjonalny opór społeczny.",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZFNzTHhhWGlmWGJzOWtBQ2lPcGVJakN1NmJqM28zcEY3bkJjYUlKakhtNEhtOExwcXF0VGk0LUJ3VG9WMmxHXzgxZGdrc0NSSGFVSm5ONFRMQ0lkQndaZ2tLcmlxOU5ROGpaZzVyX1VkQlBBVXpibDhZTTk5ODNXOXd2ZXB0MmlkOWw0TXdOTTJOSWlIdnpLSVhINGhjeElhZ2hUM0diVWNkYjl6aXAyakJ4cWxvUdIBrwFBVV95cUxPR1FkX1V0b1RSdTlUa0NTNXNBVGdnTkIxRkx3N3d4bW1rekJkOVltbElJSDVtb21vTUw3WVJLSjhJOHF1dnB2ZnM0bWRXYUhELVF3RndIeTZFd1J4eWp2T0d1TUVnX09CZ21RSkppajlEdGNiR3RhMlA3b0xGaWh4b0VHMFVBdm9LaEE1WEVDS1lab0pqQ09LYUwyX3pVaGlMdHF3N1RfVDI2dWQxMTQ0?oc=5"
-    },
-    {
-      "category": "NAUKA / GOSPODARKA",
-      "title": "🏛️ UC Berkeley bada wpływ finansów na demokrację",
-      "summary": "Amerykańscy naukowcy uruchomili interdyscyplinarny program badawczy skupiony na analizie wpływu rynków finansowych na trwałość instytucji demokratycznych. Projekt ma wyjaśnić, jak kapitał kształtuje decyzje polityczne.",
-      "comment": "Gdy granica między potęgą finansową a władzą polityczną się zaciera, rzetelne badania naukowe stają się kluczowe dla ochrony demokracji.",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
+      "category": "GOSPODARKA / RYNKI",
+      "title": "📈 Deloitte analizuje kluczowe trendy gospodarcze tygodnia",
+      "summary": "Najnowszy przegląd ekonomiczny Deloitte wskazuje na zmieniające się układy sił w makroekonomii i weryfikuje prognozy dotyczące stóp procentowych w największych gospodarkach.",
+      "comment": "Niepewność polityki pieniężnej sprawia, że inwestorzy z uwagą śledzą każdy sygnał płynący z danych o inflacji i zatrudnieniu.",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5"
     },
     {
       "category": "POLSKA / BEZPIECZEŃSTWO",
-      "title": "🔍 Dziennikarskie śledztwo uderza w służby specjalne",
-      "summary": "Wspólne ustalenia dziennikarzy ujawniają materiały audio, które rzucają nowe światło na funkcjonowanie polskich służb podległych resortowi spraw wewnętrznych. Sprawa budzi duże emocje na scenie politycznej.",
-      "comment": "Przejrzystość działań służb specjalnych to wieczna próba sił między bezpieczeństwem państwa a obywatelską kontrolą.",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLTVRU3pUcElSYVQ0d3ljWEh0aU1JTmRFOGZybXh0VzRFRkk3WjRzN3hVb2ZES2VHUkx0OWpOMEVHYVJOY2VldEVJaUl5aHdkbkZJVGVXTFRlN3JxMC1CYWo3YmM5SjkySTcxSnZoNEF2dkhnXzhSUERZY2Zxa09URk8zaTFFV1FYakFJT3NIM211NjZSdmFsUjA5aUVwTnNlVEVKYUNCNFFfUTBh?oc=5"
+      "title": "🚨 Incydent na targach z udziałem szefa MON",
+      "summary": "Służby zatrzymały 44-letniego obywatela Ukrainy po groźnym zdarzeniu podczas targów, w którym brał udział minister obrony narodowej. Trwają wyjaśnienia motywów sprawcy.",
+      "comment": "Szybka reakcja ochrony zapobiegła eskalacji, jednak incydent wymusi weryfikację procedur bezpieczeństwa najważniejszych osób w państwie.",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjJQaTlfa0oyUkNzQWNzRlRpTXVsNk5WRW5HcUhyeEw4TnJCdUVHUUE2eUN2LUtGV3hVNzN4cGlTWHBoRXplTEtPMlJiSVJ5bG1STEhVb2NoTnNfWTIyYnY0M296aFdIampZdTltckJoeFJrdlBaZDU0SVQ5QXNnUjZpdzctRHpTNlFkb3F3UXlwUVA5Rm93MFhhTFlmUW5heHJNOTY1QTkzaHdaS3FQS3BKSnl3VndGd2REVXNYRVFaZGM?oc=5"
     },
     {
-      "category": "POLSKA / PRAWO",
-      "title": "⚖️ Krytyka ze strony byłego szefa Trybunału Konstytucyjnego",
-      "summary": "Były prezes TK ostro skrytykował niedawne publiczne deklaracje polityków, zarzucając im przekraczanie konstytucyjnych kompetencji. Wypowiedź wywołała kolejną odsłonę sporu o praworządność.",
-      "comment": "Spory autorytetów prawnych z politykami pokazują, jak głęboki i trudny do zasypania pozostaje podział wokół wymiaru sprawiedliwości.",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNkpDejlteEdqY0dpdHowb0htZnB2LUZ1ZTZYT1NMT0NTRnF2Z3BFNWRTV1hIOERwNmlOdmpDTWU4VFFhaTZRc3BJTUMwSWJNMm14WW1NZnRPTTZRekNRdlM3V2xOMy1GZWZYdXU3VEpDbllkY1dzbHBtTEVldkR0QVBwRGducl9MSWQ0VVAtNFJpYVN5SWpQQXZtMEJSMWpVU283YnE5V1_LN1hPY19ILXBVc0lOU1BQek5R?oc=5"
+      "category": "POLSKA / WIADOMOŚCI",
+      "title": "🚂 Tragiczna katastrofa kolejowa w Sokolnikach",
+      "summary": "W Sokolnikach doszło do poważnego wypadku pociągu. Na miejscu pracują liczne zastępy ratunkowe, trwa ustalanie dokładnych przyczyn tragedii i szacowanie strat.",
+      "comment": "Każde tego typu zdarzenie stawia pytania o stan infrastruktury kolejowej oraz sprawność systemów automatycznego sterowania ruchem.",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNN0txYkRLT1ZRTl83YlU4WEpGM0xsa25TUXVWajhjeC04REVVU0VMa2ZHMG0ycDViSW1CVjdtYlE0ZFV1SkVQRzRZN2FOSWM0VEdaTzBhMEx1OXdib3ZOejliaWdXaWhrcHF6UnN3MFBLUk9CNXFXRWI0M1B5UHhidm5wbFJHdUE4cGFhYWFaZHpnVXQ0bVNCSkVIYnBaRzJB?oc=5"
     },
     {
-      "category": "POLSKA / SPOŁECZEŃSTWO",
-      "title": "👨‍⚖️ Surowy wyrok dla duchownego z diecezji sosnowieckiej",
-      "summary": "Sąd wydał bezwzględny wyrok więzienia oraz dożywotni zakaz pracy z dziećmi wobec księdza Jacka K. Sprawa stanowi zwieńczenie głośnego procesu karnego.",
-      "comment": "Stanowcza reakcja wymiaru sprawiedliwości pokazuje, że dawny parasol ochronny nad duchownymi został bezpowrotnie usunięty.",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNktla3dZSEpSNThoclpMTzBfVHhwaFgwc3BMNG9kT1g5dHBpVmRmc2J5ZUk1Z0JNOWJyODVKRUZBeEExMDd1WEtOUG00QkdwTnZOREhQT2h6VlFIZkFIMW1wV0F3dV9CZmVxTldsV24zdHZCbU5uSHNxdHpYRVpOWXlCNEVjVDdrYnpYNERwQkpwZGpCSEIw?oc=5"
+      "category": "ŚWIAT / WIADOMOŚCI",
+      "title": "👑 Norwegia żegna króla Haralda V",
+      "summary": "Poruszające sceny podczas uroczystości żałobnych w Oslo. Królowa Sonja podeszła do trumny swojego męża, króla Haralda V, nie kryjąc głębokiego wzruszenia.",
+      "comment": "Odejście monarchy to koniec pewnej epoki dla Norwegii, w której Harald V cieszył się ogromnym szacunkiem i autorytetem społecznym.",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWU1mbHQzTUdYZGFrYm1kY2FOUkxHdXdsbDNNMTYwVklaTDlZSWwzRlluTV9mZHpJUFdoX1FoT1JqTWeVTV8xLTZaajJqMHE0VjVLQzRscHZ6dzRBbE5hWmdoUW9FdmROWXJUTG5ndDBiOGlONXhUN0RldUhnTTZ0OEZoREt6aTZnVlNITkhlLXpvaGJBcHNHRGEtekhUREpCdlUwc0QteW9VWWx1cUVlbXpiYjgtMVByTDNZcEE1V2lWT0tQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / EDULAB",
-      "title": "🤖 Najbardziej opłacalne kierunki studiów w erze AI",
-      "summary": "Najnowsze analizy edukacyjne wskazują kierunki uniwersyteckie, które zagwarantują najwyższe zarobki w branży sztucznej inteligencji do 2026 roku. Sama umiejętność kodowania przestaje już wystarczać.",
-      "comment": "Połączenie wiedzy merytorycznej z inżynierią promptów staje się nowym, najbardziej pożądanym kompasem zawodowym.",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdk1OWEY4SjZKVWE2bUE0dXZxSkhzNVJTcXNGS2ZTY3hfRjhOUTRsRmZSNXBaY0NtX3JTZTBTeGxIRnQyV2pMVTRBWGNMSWJmUExYZjlSM1lGc0ZEVHNKdmtZeVVwRHNLRVFJOFBaNm9qVzlDZWNTcTVDeFlYYTFUa2lNQU5NRGI2ZzlZSHR1QWVSU1ZlTnhqRUFmQmp3VWFzNDJzS1A0QmFiS2tUZkRMZjFB?oc=5"
+      "category": "POLSKA / POLITYKA",
+      "title": "📊 Najnowszy ranking zaufania do polityków",
+      "summary": "Karol Nawrocki utrzymuje pozycję lidera w rankingu zaufania, choć ministrowie stopniowo zmniejszają do niego dystans w najnowszych badaniach opinii publicznej.",
+      "comment": "Stabilna pozycja lidera pokazuje, że zaufanie społeczne można budować spójnym przekazem niezależnie od codziennych politycznych starć.",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTmlId2xNXzg4RTFuaWEzWWd2a3RpY3FyU0FpTWoxWjI5OEJQb2JkUDdGVVQ5dHZ3alU0V3k3TjktUWpHY0lQcFhVWi1MSVFFLU93YlhBTVdNU09QOFVvWHZnYWxrd2NkWUZXRnNHVjgxU3F3S3AzX1VicTdrSk1jWm5tOGNmVkYzTFZMSmtqUWtoYWdOTzlldjFqNUFXdHJrdXVHUDdsZzF0QVppVTZ0YlhZenFIRzFoaEVLZm9B?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / MEDIA",
-      "title": "🚀 Nowy portal News.cx stawia na darmowy dostęp",
-      "summary": "Na rynku mediów zadebiutował nowy serwis informacyjny News.cx, oferujący bezpłatne przeglądy z zakresu technologii, biznesu i nauki. Twórcy chcą przełamać trend powszechnych opłat za treści.",
-      "comment": "W czasach, gdy za niemal każdy rzetelny artykuł trzeba płacić subskrypcję, w pełni darmowy model serwisowy to odważny eksperyment.",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
+      "category": "NAUKA / GOSPODARKA",
+      "title": "👩‍🔬 ONZ apeluje o znoszenie barier dla kobiet w nauce",
+      "summary": "Organizacja Narodów Zjednoczonych zwraca uwagę na konieczność wyrównywania szans w sektorze STEM oraz szybszego niwelowania luk płciowych w świecie technologii i badań.",
+      "comment": "Równy dostęp do kariery naukowej to nie tylko kwestia sprawiedliwości, ale też szansa na szybszy rozwój innowacji na świecie.",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / TECH",
-      "title": "🧠 Dlaczego branża Fintech wciąż przyciąga tłumy?",
-      "summary": "Eksperci z Uniwersytetu Centralnej Florydy wyjaśniają, dlaczego finanse połączone z technologią przeżywają renesans i jakie ścieżki kariery otwiera ta branża przed młodymi specjalistami.",
-      "comment": "Tradycyjna bankowość przechodzi do historii – przyszłość należy do tych, którzy potrafią połączyć algorytmy z wygodą użytkownika.",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV9Yd2Z1ZWt6VVdaSUN3?oc=5"
+      "category": "CIEKAWOSTKA / NAUKA",
+      "title": "🧠 AI rozwiązała zagadkę matematyczną za milion dolarów",
+      "summary": "Sztuczna inteligencja uporała się z jednym z problemów milenijnych, za który wyznaczono ogromną nagrodę. W środowisku naukowym wybuchł jednak spór o to, komu należy się tytuł autora odkrycia.",
+      "comment": "Gdy algorytmy zaczynają prześcigać ludzkie umysły w czystej matematyce, zasady przyznawania nagród naukowych wymagają napisania na nowo.",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSldISUJrMkNieWpteE53QmI5Y1lBMC1FODB1TnIzZldTdElWQTI3M0poRnJnWXpOcUxWNGNuTUdiX05OeTBIWHduWVlRWnBkYXJ5aXJ2SmR5M0Y1d0FEQnBjNDE1X0ViSWxDV0dmZkhhelYwXzVzNkR6dzF6bzZnTjRWVzRIZGZMOGk3V0Q0UnNXb2VPU2dFcFlibnUwdlFqMG1IYQ?oc=5"
     },
     {
       "category": "CIEKAWOSTKA / LIFE",
-      "title": "🐝 Sukces Daniels School of Business w światowym rankingu",
-      "summary": "Daniels School of Business obroniła pozycję lidera w regionie według globalnego zestawienia Times Higher Education. Uczelnia przyciąga studentów innowacyjnym podejściem do biznesu.",
-      "comment": "Renoma w świecie akademickim to dziś nie tylko tradycja, ale przede wszystkim umiejętność dostosowania programów do realiów rynkowych.",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
+      "title": "🚀 14-latek na hulajnodze pędził 55 km/h przed policją",
+      "summary": "Niezwykły pościg w Polsce. Nastolatek uciekał przed funkcjonariuszami na zmodyfikowanej hulajnodze elektrycznej z prędkością przekraczającą 50 km/h.",
+      "comment": "Szybkość tej 'zabawki' mogłaby zawstydzić niejeden skuter, ale finał w postaci konsekwencji prawnych był do przewidzenia.",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM2NlZl9hRnhaNGZVMk01WjF2dXc5dnE4anjaUGVCUHVQUENMZFkwMXhqaGRVbDlONXlTakF6U2ZkcDRfeG9JSTlja2s0aDBwVFNzemhSSkVxMWhZRzYtWF9US0U1T2lsc1N0N3o4cjdhU2swTW1RMmRQbkRYWEUxWTM1OExxMnJMbGNDLUlMNmhfSHBBVUFkRGpRaEtLeEVGOHBHWkFZbGpQZGFiTGE4bjZfODRZVnp0dEhkMDdTSkZfdVowMVE?oc=5"
+    },
+    {
+      "category": "CIEKAWOSTKA / LIFE",
+      "title": "🏎️ Prezydent Duda szczerze o jeździe Porsche",
+      "summary": "Andrzej Duda podzielił się osobistą refleksją na temat posiadania i prowadzenia sportowych aut, wyznając, że 'nie ma przyjemności, jak się pędzi'.",
+      "comment": "Nawet miłośnicy szybkiej motoryzacji z wiekiem zaczynają doceniać spokojną jazdę zamiast bicia rekordów prędkości.",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejJ6SjlULU9lRGtRTFFjem51blZJYkdjR0VjMVJGZG9ZSmxKOUphRzVoLVZZakpyT1ShTGtPbzRHN0Rnb1JrdUFnVWo4YjZNUGtid3hycVFYQjA4WUEtVVltYlhfZk50NDBUU0w4d0tTdkRHN09fTDJ1S0JDRW9Ha2pXSTEtYjlSRkE3VTNtaWd3Z3Uxb2NFX2dXOXowR29RaWYzLUF1c2NSUWhj?oc=5"
+    },
+    {
+      "category": "CIEKAWOSTKA / EDUKACJA",
+      "title": "🐝 Dlaczego studia z wyższej matematyki to duma i wyzwanie?",
+      "summary": "Eksperci z Monash University przedstawili kluczowe powody, dla których zaawansowana matematyka staje się jednym z najbardziej pożądanych kierunków na świecie.",
+      "comment": "W erze algorytmów i sztucznej inteligencji umiejętność ścisłego, logicznego myślenia staje się wręcz supermocą na rynku pracy.",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
     }
   ]
 }
