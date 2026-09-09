@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 from zoneinfo import ZoneInfo
 import feedparser
 from google import genai
@@ -42,20 +42,11 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
+# Pobieramy tytuły ze WSZYSTKICH wpisów w historii archive.json
 previous_topics = []
-if session_name == "wieczorne":
-    morning_key = f"{today_date_key}_poranne"
-    if morning_key in archive_data:
-        for item in archive_data[morning_key].get("items", []):
-            if "title" in item:
-                previous_topics.append(item["title"])
-
-yesterday_date = now_pl - timedelta(days=1)
-yesterday_key_base = yesterday_date.strftime("%Y-%m-%d")
-for s_name in ["poranne", "wieczorne"]:
-    past_key = f"{yesterday_key_base}_{s_name}"
-    if past_key in archive_data:
-        for item in archive_data[past_key].get("items", []):
+for session_key, session_content in archive_data.items():
+    if isinstance(session_content, dict) and "items" in session_content:
+        for item in session_content.get("items", []):
             if "title" in item:
                 previous_topics.append(item["title"])
 
@@ -76,7 +67,7 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
-- Unikaj powtarzania tematów z poranka oraz z poprzednich dni: {json.dumps(previous_topics, ensure_ascii=False)}
+- Unikaj powtarzania WSZYSTKICH tematów znajdujących się w historii archiwum: {json.dumps(previous_topics, ensure_ascii=False)}
 - Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z powyższymi kluczami.
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
