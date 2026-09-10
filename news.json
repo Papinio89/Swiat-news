@@ -1,98 +1,112 @@
 {
-  "date": "09 September 2026",
-  "time": "20:24",
-  "timestamp": "2026-09-09_20:24",
+  "date": "10 September 2026",
+  "time": "06:03",
+  "timestamp": "2026-09-10_06:03",
   "items": [
     {
-      "category": "GOSPODARKA / RYNKI",
-      "title": "🛢️ Gwałtowny skok cen ropy po ripoście Iranu",
-      "summary": "Ceny ropy naftowej przekroczyły kluczową barierę cenową po tym, jak Iran odpowiedział militarnie na wcześniejsze uderzenia ze strony USA. Sytuacja na Bliskim Wschodzie ponownie wywołuje obawy o stabilność dostaw surowców.",
-      "comment": "Rynki energii pozostają niezwykle wrażliwe na geopolityczne napięcia, co może bezpośrednio przełożyć się na wzrost inflacji na świecie.",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUlFNM3NueTN4ZlRvbVotcFhNaUZwUjdvdkRtNzRwcE12NWRoYkRSTGt4STZETHEwclZ6cUpZU2Q2Uk11VEo5UDktdkVvVlo1UnZjWjdNcTFVN3pCUlFuTm5TYnJaTUtlYkh4YlBtWmxGWGVldFdIaWo2aHBwY3FpZnlVR1dzeWRZMlJsWTc2OHZMUkhrQ1VzcXlkU1JzaXdaRjFudWgtZUhnNXV1MWxURlJkU1lxYy1iSnpMS3lCd0ctd3hSVTJSXw?oc=5"
-    },
-    {
-      "category": "ŚWIAT / KONFLIKTY",
-      "title": "💥 Zmasowany atak Ukrainy na Noworosyjsk",
-      "summary": "Ukraińskie siły przeprowadziły potężny uderzeniowy atak na rosyjski port w Noworosyjsku. Zgłaszane są znaczne zniszczenia infrastruktury oraz ofiary śmiertelne i ranni.",
-      "comment": "Przeniesienie ciężaru walk na kluczowe rosyjskie węzły logistyczne nad Morzem Czarnym mocno ogranicza zdolności operacyjne Floty Czarnomorskiej.",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaF9CRGFnRDVTNG5GODkzNENvZHB6d040UXdHRmQxbTE4cUNLZnZpVzhVeURFYmQ0aWdYU29CT3Rsc2Z0eVlKRlVDT3hZSWRCWkdZbjRBTDI3dFlYNVAtbG1fRlp1VzljUnU3T29XbFJkUDlPMDFpYkxySkMzVnNEbHJsMWhOVEx1TndFR28yOXpILXBMUWRvMnliZFZKWXlQU00xa2JoSFdyallzS3lUTDdNSHBJQ2lNUnM1OXpB?oc=5"
-    },
-    {
-      "category": "ŚWIAT / GEOPOLITYKA",
-      "title": "🗳️ Donald Trump chwali wyniki wyborcze AfD",
-      "summary": "Były prezydent USA skomentował sukces prawicowej partii AfD w Niemczech, nawiązując do swojego flagowego hasła i nawołując do 'uczynienia Niemiec znowu wielkimi'.",
-      "comment": "Słowa Trumpa pokazują rosnącą solidarność i przepływ narracji między amerykańskimi konserwatystami a europejską prawicą.",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMWhWUUxlQ1podWs3bmx6cURNOGZud250TWFwWkZycE9XWXd1SV95QmtHYjlKOF9RX3NMRVduYjd5V2c4endJM0dLMGN2T3BlYUwwQjdIQ0o3WFlrVjVWS1VDRkt4bGR1Y1J1QmtUZ1lvM1dwRW53b09LM2NRNnRZQUpsLVRHNE5LcEJCdW1MRnZRN2sxcDAwZEN0d2RpVC1HdHZrT2pfb1A?oc=5"
-    },
-    {
-      "category": "GOSPODARKA / RYNKI",
-      "title": "📈 Deloitte analizuje kluczowe trendy gospodarcze tygodnia",
-      "summary": "Najnowszy przegląd ekonomiczny Deloitte wskazuje na zmieniające się układy sił w makroekonomii i weryfikuje prognozy dotyczące stóp procentowych w największych gospodarkach.",
-      "comment": "Niepewność polityki pieniężnej sprawia, że inwestorzy z uwagą śledzą każdy sygnał płynący z danych o inflacji i zatrudnieniu.",
+      "category": "AKTUALNOŚCI",
+      "title": "📌 What’s happening this week in economics? - Deloitte",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5"
     },
     {
-      "category": "POLSKA / BEZPIECZEŃSTWO",
-      "title": "🚨 Incydent na targach z udziałem szefa MON",
-      "summary": "Służby zatrzymały 44-letniego obywatela Ukrainy po groźnym zdarzeniu podczas targów, w którym brał udział minister obrony narodowej. Trwają wyjaśnienia motywów sprawcy.",
-      "comment": "Szybka reakcja ochrony zapobiegła eskalacji, jednak incydent wymusi weryfikację procedur bezpieczeństwa najważniejszych osób w państwie.",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjJQaTlfa0oyUkNzQWNzRlRpTXVsNk5WRW5HcUhyeEw4TnJCdUVHUUE2eUN2LUtGV3hVNzN4cGlTWHBoRXplTEtPMlJiSVJ5bG1STEhVb2NoTnNfWTIyYnY0M296aFdIampZdTltckJoeFJrdlBaZDU0SVQ5QXNnUjZpdzctRHpTNlFkb3F3UXlwUVA5Rm93MFhhTFlmUW5heHJNOTY1QTkzaHdaS3FQS3BKSnl3VndGd2REVXNYRVFaZGM?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 5 reasons to study a Master of Mathematics - Monash University",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
     },
     {
-      "category": "POLSKA / WIADOMOŚCI",
-      "title": "🚂 Tragiczna katastrofa kolejowa w Sokolnikach",
-      "summary": "W Sokolnikach doszło do poważnego wypadku pociągu. Na miejscu pracują liczne zastępy ratunkowe, trwa ustalanie dokładnych przyczyn tragedii i szacowanie strat.",
-      "comment": "Każde tego typu zdarzenie stawia pytania o stan infrastruktury kolejowej oraz sprawność systemów automatycznego sterowania ruchem.",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNN0txYkRLT1ZRTl83YlU4WEpGM0xsa25TUXVWajhjeC04REVVU0VMa2ZHMG0ycDViSW1CVjdtYlE0ZFV1SkVQRzRZN2FOSWM0VEdaTzBhMEx1OXdib3ZOejliaWdXaWhrcHF6UnN3MFBLUk9CNXFXRWI0M1B5UHhidm5wbFJHdUE4cGFhYWFaZHpnVXQ0bVNCSkVIYnBaRzJB?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Analysis of 380 trillion AI tokens reveals how the technology is transforming financial markets - YaleNews",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc3MyaFR2VlpzZUU2TVhENmZNcUljdElUcjlPd1l2Z09JZHAxNWtMd01YSFFKWUEtUWtKR3ROdEpEZEY5NG9LVGNsTE5McnVKOVFFVWdJSjlLd1JfRVZHSUExVElER05xRVNHSzEtblphWGlIU1dhUHFoeVRrOEFRTDNKclBHemNHV09rZmFOb1FFUTNJanJtTFJzX2FneThtWGtEUWNGUUZNdnd5VlVqRFBrZWxVSm5Rbnc?oc=5"
     },
     {
-      "category": "ŚWIAT / WIADOMOŚCI",
-      "title": "👑 Norwegia żegna króla Haralda V",
-      "summary": "Poruszające sceny podczas uroczystości żałobnych w Oslo. Królowa Sonja podeszła do trumny swojego męża, króla Haralda V, nie kryjąc głębokiego wzruszenia.",
-      "comment": "Odejście monarchy to koniec pewnej epoki dla Norwegii, w której Harald V cieszył się ogromnym szacunkiem i autorytetem społecznym.",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWU1mbHQzTUdYZGFrYm1kY2FOUkxHdXdsbDNNMTYwVklaTDlZSWwzRlluTV9mZHpJUFdoX1FoT1JqTWeVTV8xLTZaajJqMHE0VjVLQzRscHZ6dzRBbE5hWmdoUW9FdmROWXJUTG5ndDBiOGlONXhUN0RldUhnTTZ0OEZoREt6aTZnVlNITkhlLXpvaGJBcHNHRGEtekhUREpCdlUwc0QteW9VWWx1cUVlbXpiYjgtMVByTDNZcEE1V2lWT0tQ?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 News.cx Debuts With Free Daily Coverage Across Technology, Business, Science, Health, and World News - finance.yahoo.com",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
     },
     {
-      "category": "POLSKA / POLITYKA",
-      "title": "📊 Najnowszy ranking zaufania do polityków",
-      "summary": "Karol Nawrocki utrzymuje pozycję lidera w rankingu zaufania, choć ministrowie stopniowo zmniejszają do niego dystans w najnowszych badaniach opinii publicznej.",
-      "comment": "Stabilna pozycja lidera pokazuje, że zaufanie społeczne można budować spójnym przekazem niezależnie od codziennych politycznych starć.",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTmlId2xNXzg4RTFuaWEzWWd2a3RpY3FyU0FpTWoxWjI5OEJQb2JkUDdGVVQ5dHZ3alU0V3k3TjktUWpHY0lQcFhVWi1MSVFFLU93YlhBTVdNU09QOFVvWHZnYWxrd2NkWUZXRnNHVjgxU3F3S3AzX1VicTdrSk1jWm5tOGNmVkYzTFZMSmtqUWtoYWdOTzlldjFqNUFXdHJrdXVHUDdsZzF0QVppVTZ0YlhZenFIRzFoaEVLZm9B?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 NSF launches Project Triad to advance quantum technology for real-world applications - U.S. National Science Foundation (.gov)",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQV1dGdkVYamQ4LUowMFFrM21fOXo3N3VTVGt3MnpYQnY4WE9ZYWllWUozUllESXlFVGE4TmQzZlBjOTZNU015MG91akVCZmdSY2kzbXFIOTBTbTFhRXl1enQ3NjlRZ2ROWmo1Q3hUZkc4VXJRM1RKbUZJX1JWWE1vVjhzRGQtdTU5SlNn?oc=5"
     },
     {
-      "category": "NAUKA / GOSPODARKA",
-      "title": "👩‍🔬 ONZ apeluje o znoszenie barier dla kobiet w nauce",
-      "summary": "Organizacja Narodów Zjednoczonych zwraca uwagę na konieczność wyrównywania szans w sektorze STEM oraz szybszego niwelowania luk płciowych w świecie technologii i badań.",
-      "comment": "Równy dostęp do kariery naukowej to nie tylko kwestia sprawiedliwości, ale też szansa na szybszy rozwój innowacji na świecie.",
+      "category": "AKTUALNOŚCI",
+      "title": "📌 What Is Fintech? Why It Matters + Career Opportunities - University of Central Florida",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV9Yd2Z1ZWt6VVdaSUN3?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Researchers launch program to examine finance’s role in democracy - University of California, Berkeley",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Financial Times ranks MIT Sloan No. 1 in 2026 Global MBA Ranking - MIT News",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M0xuenR0N0g0ZW94ZWttT1c2S21ORU8zUUJtNGRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Daniels School of Business affirms standing as Indiana’s No. 1 business school, based on Times Higher Education global rankings - Purdue University",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Women and girls in science: Dismantling barriers, closing gender gaps - UN News",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🧠 AI rozwiązała zagadkę matematyczną za milion dolarów",
-      "summary": "Sztuczna inteligencja uporała się z jednym z problemów milenijnych, za który wyznaczono ogromną nagrodę. W środowisku naukowym wybuchł jednak spór o to, komu należy się tytuł autora odkrycia.",
-      "comment": "Gdy algorytmy zaczynają prześcigać ludzkie umysły w czystej matematyce, zasady przyznawania nagród naukowych wymagają napisania na nowo.",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSldISUJrMkNieWpteE53QmI5Y1lBMC1FODB1TnIzZldTdElWQTI3M0poRnJnWXpOcUxWNGNuTUdiX05OeTBIWHduWVlRWnBkYXJ5aXJ2SmR5M0Y1d0FEQnBjNDE1X0ViSWxDV0dmZkhhelYwXzVzNkR6dzF6bzZnTjRWVzRIZGZMOGk3V0Q0UnNXb2VPU2dFcFlibnUwdlFqMG1IYQ?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 What is Anthopic's Claude Mythos and what risks does it pose? - BBC",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RQ080QjNmR3N5VElKQnh1WXRFSk9iR0JxTy1ZaDNRY0dXNUFXZ0w1Wk1XUWs2MTdTR3dUZVpfMHYwVUJSZ1ZTQlVPaWFFODdFSHRKdXJxazVfUQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / LIFE",
-      "title": "🚀 14-latek na hulajnodze pędził 55 km/h przed policją",
-      "summary": "Niezwykły pościg w Polsce. Nastolatek uciekał przed funkcjonariuszami na zmodyfikowanej hulajnodze elektrycznej z prędkością przekraczającą 50 km/h.",
-      "comment": "Szybkość tej 'zabawki' mogłaby zawstydzić niejeden skuter, ale finał w postaci konsekwencji prawnych był do przewidzenia.",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM2NlZl9hRnhaNGZVMk01WjF2dXc5dnE4anjaUGVCUHVQUENMZFkwMXhqaGRVbDlONXlTakF6U2ZkcDRfeG9JSTlja2s0aDBwVFNzemhSSkVxMWhZRzYtWF9US0U1T2lsc1N0N3o4cjdhU2swTW1RMmRQbkRYWEUxWTM1OExxMnJMbGNDLUlMNmhfSHBBVUFkRGpRaEtLeEVGOHBHWkFZbGpQZGFiTGE4bjZfODRZVnp0dEhkMDdTSkZfdVowMVE?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Data centres are reshaping the global investment landscape - UN Trade and Development (UNCTAD)",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / LIFE",
-      "title": "🏎️ Prezydent Duda szczerze o jeździe Porsche",
-      "summary": "Andrzej Duda podzielił się osobistą refleksją na temat posiadania i prowadzenia sportowych aut, wyznając, że 'nie ma przyjemności, jak się pędzi'.",
-      "comment": "Nawet miłośnicy szybkiej motoryzacji z wiekiem zaczynają doceniać spokojną jazdę zamiast bicia rekordów prędkości.",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejJ6SjlULU9lRGtRTFFjem51blZJYkdjR0VjMVJGZG9ZSmxKOUphRzVoLVZZakpyT1ShTGtPbzRHN0Rnb1JrdUFnVWo4YjZNUGtid3hycVFYQjA4WUEtVVltYlhfZk50NDBUU0w4d0tTdkRHN09fTDJ1S0JDRW9Ha2pXSTEtYjlSRkE3VTNtaWd3Z3Uxb2NFX2dXOXowR29RaWYzLUF1c2NSUWhj?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Dron niemal trafił w samolot z Zełenskim na pokładzie. Incydent w Mołdawii - Wiadomości Onet",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPT1NtNm9ZZlJGb0ZfZlIwVUlpM3NrN0M4a1pjWkZ6VFZDVVRzZDZKc3lxcDVlSlV6dHZtb001b3pzYklwS3RZNWd5a2U5V1JNSmdiYWtCXzJXOEl1cUpWdHJkZm5fMEZxcHVHMFRrcEZxU1ltRkpwSE9vNjZOU2xXa2FlVk9OSnVlc2VEM3BtMEZBdExvUExDVHdiR2tSUzhOdHdJVjJ5VVlqYjgtN2dmR1VGREZHaFp4Z25KdWw3aw?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / EDUKACJA",
-      "title": "🐝 Dlaczego studia z wyższej matematyki to duma i wyzwanie?",
-      "summary": "Eksperci z Monash University przedstawili kluczowe powody, dla których zaawansowana matematyka staje się jednym z najbardziej pożądanych kierunków na świecie.",
-      "comment": "W erze algorytmów i sztucznej inteligencji umiejętność ścisłego, logicznego myślenia staje się wręcz supermocą na rynku pracy.",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Co z kandydaturą Berka? Kancelaria prezydenta chce wyjaśnień - WP Wiadomości",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQnNOLVRKRTBVa2pUY1pTNnlrRFVGM0hfZjNFbGZ4b0RWM3B3NEx0MWYyakE5aU4zSllOUDhsM0s0M2dmMC1zdEI5SEppc0NGeWRYZ3ctUnJSTDFOb3EyQmZYTENJZHhGSU1tRUJnYnNEZVpIeFRPTmczaEpkMVBEdkI0WmJmbnJkVFVkNzgwYUgyQU5oYUZ3cFhKUlB0NzBKTWxTRA?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 W Kielcach pokazują najnowszą broń. Ekspert dostrzegł problem - Fakt",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQXF5TkYxVlFVV1NoUzJQdENDU2lTUjBoaWZmaW90eXN6dzdxWXE0WXNTUUF2ZkVyd2dJRkcwTmNxa1ppWkxGTzhPNEQ1aUdiWjdvcjJVdWhHbWFRb1JmVTRBOGdZN2Y3MW02bEdQb3V0aHNZZE9wWXBaQW01dmk1cDNfVjBJSC1DbGQ5M3Bka01ndk8xM1NkNkE5Zkk2WVFvcTd5Z21jUWJwT3BCZzZLNHFzTURNdjRXRU1fdQ?oc=5"
     }
   ]
 }
