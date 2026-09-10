@@ -456,113 +456,99 @@
   },
   "2026-09-10_poranne": {
     "date": "10 September 2026",
-    "time": "06:03",
-    "timestamp": "2026-09-10_06:03",
+    "time": "06:09",
+    "timestamp": "2026-09-10_06:09",
     "items": [
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 What’s happening this week in economics? - Deloitte",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcV9VYnV0R0RPcWN0d2g1SHJIVlNmaVA1TV9nXzRKdVlFcWtSMjQ1T1B0djE4dDNRanZvSVFGX0ZBNUd6cnZkVnAtenFuMnFzdU9zYzg5cFdkTVRxU1F5YVVXVFhVWGdhd2RsTDBkNS1Xcm9ub1FnMFp5NnB3WVBYa3JJa1FVbG5IT0ZRRHphTUhtNThkenVJS1ZrdWNDdw?oc=5"
+        "category": "GOSPODARKA / TECHNOLOGIE",
+        "title": "📉 Ministrowie finansów ostrzegają przed modelem Mythos AI",
+        "summary": "Szefowie resortów finansów i bankierzy wyrażają głębokie zaniepokojenie nowym modelem sztucznej inteligencji Mythos AI. Obawy dotyczą potencjalnego wpływu technologii na stabilność rynków finansowych.",
+        "comment": "Szybki rozwój zaawansowanych modeli AI zaczął budzić realny strach w sektorze bankowym, gdzie niekontrolowana algorytmiczna destabilizacja może kosztować miliardy.",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTC1uY3NPZFFFSVRZeVlTSHJYWmFwVTJaR1BMRnBMQ3R2SVpmSmMyMGtzR2FYc3NGVjBjZ1N5dnFrVnc2Q0FNZ0ZUVl9FeVg0em0wQ216dWxzUQ?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 5 reasons to study a Master of Mathematics - Monash University",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUzVRMkJfUTEwN2lxUF83WkpMTFM2dEZoT1NMWjRjeDhacmZORHVnOU9lRFQyMVFqZTFINWxKMEpjcTFJOElJc0paMnZpYU1ydWhlc3NWRXU0WTZJbi1oSDIxMFBsbklvZXpRalVIMlB6OGxEVHQzNmhWUG10eHpHT0t0d1FJeEZFRFhoREN0RnVmZGZ2Yy1ncEpDaw?oc=5"
+        "category": "WIADOMOŚCI / POLSKA",
+        "title": "🚨 Wykolejenie pociągu osobowego w Polsce",
+        "summary": "Doszło do niebezpiecznego zdarzenia na torach – wykoleił się pociąg pasażerski. Trwają akcje służb oraz specjalna relacja z miejsca wypadku.",
+        "comment": "Zdarzenie po raz kolejny wywołuje dyskusję o stanie infrastruktury kolejowej i procedurach bezpieczeństwa w ruchu pasażerskim.",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZzBsV25UTlpuMlFtNVVXaVEwWWdOUEFWdmZFVjhVbmpjeG5KSWJzSVd4czBLeWppX1BOcHIzS2tVZE1PYl81NTM1eXpCTWszWG5MdGJZbmpLQ0FiTW9FNEpNYkNaYnJPNEdCcC1LX09GT2R1MG5TU0s3ZGNwYVRjM2h2NnFsYWhqeFJPMVM3NERIcXEzSF85b0NBeEtXYW14WGlYRkpsZkZQVzlU?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Analysis of 380 trillion AI tokens reveals how the technology is transforming financial markets - YaleNews",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc3MyaFR2VlpzZUU2TVhENmZNcUljdElUcjlPd1l2Z09JZHAxNWtMd01YSFFKWUEtUWtKR3ROdEpEZEY5NG9LVGNsTE5McnVKOVFFVWdJSjlLd1JfRVZHSUExVElER05xRVNHSzEtblphWGlIU1dhUHFoeVRrOEFRTDNKclBHemNHV09rZmFOb1FFUTNJanJtTFJzX2FneThtWGtEUWNGUUZNdnd5VlVqRFBrZWxVSm5Rbnc?oc=5"
+        "category": "GOSPODARKA / KRYPTOWALUTY",
+        "title": "🪙 Sprawa Zondacrypto dzieli Polaków",
+        "summary": "Nowy sondaż wskazuje na znaczne rozbieżności w opiniach Polaków dotyczących działalności i przyszłości znanej giełdy kryptowalutowej.",
+        "comment": "Rynek krypto w Polsce dynamicznie rośnie, lecz opinia publiczna pozostaje mocno podzielona między entuzjazmem dla innowacji a obawami o ryzyko finansowe.",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOWc1dW5xVmJnU1BEVlpwOV9WWjVZY0JZekZqMHNnMlR6ekxkRm1wa3FjZm52UEdQdzhjV0twZ0luSkEwN2pEQWxUWDdDUmlJUFNLNmYxNEF2OXFtaVV3c0lvbnlqdUZFU3h6cFVDbk02dTlBOHNqR1FBOHVuek9UOTJFVXZmNE5BdXllNGVJZGlDYUdwVjRjNEhmNFZsRWVfbXkxUjM4QklzQQ?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 News.cx Debuts With Free Daily Coverage Across Technology, Business, Science, Health, and World News - finance.yahoo.com",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
+        "category": "GOSPODARKA / PRAWO",
+        "title": "📜 Ustawa o kryptoaktywach: Morawiecki wspiera Nawrockiego",
+        "summary": "Były premier Mateusz Morawiecki opowiedział się za stanowiskiem Karola Nawrockiego w kwestii regulacji rynku kryptoaktywów w Polsce.",
+        "comment": "Regulacje kryptoaktywów stają się kluczowym polem sporu politycznego, gdzie ścierają się wizje ochrony inwestorów i swobody rynkowej.",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbjRzUTAxWnN3ZVl5TjJaZ2VTNXB2QVhJRWF4ZGFlRllyWWVMUnAyMWVtem53aDNUZDR3M0JnY2RmcU4xQTNhMzIzV2VVdURMT280N3BkOEFUZ2k0Z3l4UWJ2ZFlxMHpXVVp1QnhuS3BVZS1xQUg3RzZ2OEJ0RUlKSnREcFgzVi1Wby1FV3h4XzFSN0dpVC1nTjhWMzVseTkzY2FFWFFyYlg?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 NSF launches Project Triad to advance quantum technology for real-world applications - U.S. National Science Foundation (.gov)",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQV1dGdkVYamQ4LUowMFFrM21fOXo3N3VTVGt3MnpYQnY4WE9ZYWllWUozUllESXlFVGE4TmQzZlBjOTZNU015MG91akVCZmdSY2kzbXFIOTBTbTFhRXl1enQ3NjlRZ2ROWmo1Q3hUZkc4VXJRM1RKbUZJX1JWWE1vVjhzRGQtdTU5SlNn?oc=5"
+        "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
+        "title": "🛡️ Rozmowy Tomasza Siemoniaka z szefem CIA",
+        "summary": "Minister koordynator służb specjalnych odbył ważne spotkanie z szefem amerykańskiej Agencji Wywiadowczej. Głównym tematem było bezpieczeństwo regionalne.",
+        "comment": "Współpraca wywiadowcza z USA pozostaje fundamentem polskiej strategii obronnej w obliczu trwających napięć geopolitycznych w Europie Wschodniej.",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObE5pb0t3UFNDQlFPeGI0cVlRUmU3UDRDZk50SDNVU3FUNmNBbWw2dnF3WmZuUmtJTWUtRngwYnJJYmFhNXFndmVfVFl6cXRJSHVSTmgzVXh2QTV3Mm5Ld3Z5cUl5RVZpWXZibEdDLUttZTlVdzNhLThTTzRoRkpxVGtTQWloWGdGclE0UUo5S2Jta3JMa1c5NnpRRjdPWGFl?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 What Is Fintech? Why It Matters + Career Opportunities - University of Central Florida",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV9Yd2Z1ZWt6VVdaSUN3?oc=5"
+        "category": "POLITYKA / POLSKA",
+        "title": "📊 Sondaż CBOS: Wyraźny wzrost zaufania do Donalda Tuska",
+        "summary": "Najnowsze badanie CBOS przynosi znaczny wzrost wskaźników zaufania społecznego do premiera Donalda Tuska.",
+        "comment": "Zyskujące zaufanie szefa rządu pokazuje skuteczne konsolidowanie elektoratu, choć utrzymanie tych wyników przy nadchodzących reformach będzie wyzwaniem.",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLTdBUG1VXzMtUE5wZU1oZlZIU2NEdHJXSndDVm5QcjVXZWpFS1ZFemRrQVpmdi1iblphREJJVlBWS1BGcGlrRmJrYkg0OFpQS29Sa2FGZzI2RFFBaV9sT1lqUm9FcmZlMWJ1bnBuNkU4SU5IaExQRUc4dzAzQkNpNndGckdxLTgtTkcwcXJtckNGb3BDVXJMdFFoV05Ya0dYazRMXzdZd2JJZWUz?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Researchers launch program to examine finance’s role in democracy - University of California, Berkeley",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTzJLRjZYdUg5aUZ0dUVoOFlvTUNsZm5QY0lOSHJkTVNZeGpLX1A4a19ETW9EdThoYmdQLXJHTXZ1NFZMZXgxSjZWM29VbFJWT0tYWUo3YXMwRzBYRnR2Z1JTSXNzaUlaNzhTQzZmMEdLeks5elRJOFNXOWhKdFBfNWVCNXFYRjBjbUdzYnR2NHhuQW1GeDA4WUY0cmc?oc=5"
+        "category": "GEOPOLITYKA / USA",
+        "title": "🎙️ Donald Trump mobilizuje partię przed wyborami",
+        "summary": "Były prezydent USA podczas przemówienia do Republikanów poruszył kluczowe kwestie: bezpieczeństwo granic, politykę wobec Iranu oraz koszty życia.",
+        "comment": "Trump konsekwentnie stawia na narrację gospodarczą i narodową, trafiając do wyborców zaniepokojonych inflacją i sytuacją międzynarodową.",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbElveFEyMEJSR1BLc2JmSGRacERZbkJ2VF8xSFVsREN6MU5wNWRxNkRxWk1taGdPNUlGcExWQWdDSGJub0tfUnh5MlROVG9NRkFvWndVVzJwdlBiSGpVRnd1enNrZW03NUEta2xvMC1URjhSbVJRSVNnbDhNWVZQb1JxNU5nN1UxWXlINEY2Z1BXNFpPS3dzV2ZoSDFpVmQzZ0Y2NTdncw?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Financial Times ranks MIT Sloan No. 1 in 2026 Global MBA Ranking - MIT News",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M0xuenR0N0g0ZW94ZWttT1c2S21ORU8zUUJtNGRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
+        "category": "GEOPOLITYKA / NIEMCY",
+        "title": "🏛️ Ostry spór w Bundestagu: Merz starł się z AfD",
+        "summary": "W niemieckim parlamencie doszło do gwałtownej wymiany zdań między liderem chadecji Friedrichem Merzem a szefową prawicowo-populistycznej AfD.",
+        "comment": "Starcie obrazuje rosnącą polaryzację niemieckiej sceny politycznej przed nadchodzącymi rozstrzygnięciami wyborczymi.",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNFdCbGIxZEkxblVHTUFQS3ZJZTRaZWRFSS1aSUI5OTRzZ003Ml8waTNYMUxHLVNubTFWQWM4Tk5KczJkcVFHOW44bmRvMDJjbUR6Zi1NSk9oQzN4UDF3cXU0WGpUV2E4OXJvN2JxSHNIVVRIcUVLZVozWkhkcmgzX2ZmQVRpMDhxTTF2RE9MTk5LTlg5d3dodjVmU3NRYTEtRlhhS2V6ZEVnNjdiYzNZWmN5QmM4dDRJSmJB?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Daniels School of Business affirms standing as Indiana’s No. 1 business school, based on Times Higher Education global rankings - Purdue University",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
+        "category": "POLITYKA / POLSKA",
+        "title": "🎙️ Zgrzyt podczas przemówienia w Kielcach",
+        "summary": "Podczas uroczystego wystąpienia w Kielcach doszło do nieoczekiwanej incydentalnej sytuacji, która wywołała widoczne zakłopotanie Karola Nawrockiego.",
+        "comment": "Nawet drobne potknięcia wizerunkowe publicznych postaci natychmiast stają się pożywką dla politycznej dyskusji w mediach.",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZWJ1ZHExd0E4a05IT2xnbUVnSG1oUklLVEZNMVZScjl4dWJWallNb0MwZGpyNVdOSkNrcWtYeGJoeko1SlZ1MlRFVEIwcWlsc3VPREJuUzBla0RyWWJoNzk3cHlGWjh3ekZCbDNWVWxMM3NvZl92RklPR1d6b29fUWJoZVRNRHUyRDBIRHVMV3A4bVg1OFo1YVVySDJ4YzBfMVpneQ?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Women and girls in science: Dismantling barriers, closing gender gaps - UN News",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
+        "category": "CIEKAWOSTKA / POLITYKA",
+        "title": "🧠 Brawurowa teoria spiskowa i wolta na zapleczu PiS",
+        "summary": "Tuż pod nosem Przemysława Czarnka doszło do zaskakujących roszad, które wywołały falę dyskusji i nietypowych teorii wśród działaczy partyjnych.",
+        "comment": "Kulisom polityki niemal zawsze towarzyszą wewnętrzne intrygi, które dostarczają sporo emocji zewnętrznym obserwatorom.",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZUUtZW1Gci03MThvek03RmRnSGt4M3I2a2Y4enFNdnV0WTZBaW1Wc2lsUmdWTnM3UGIzcjdTcWZjWnFHQ0g5eTR4TlRpVEt2bkpuTnZzVzZmT001TENhazdjTWY0Rm9DaEhCUTJEeU1DUjJadTBlSnQtMnBiSzl5Y1NWRFBieW81N1FremhmSWF2cUlHOXVXY3RlSVJWRTl1dW9CSWFaZ1U5eHdEM05RQg?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 What is Anthopic's Claude Mythos and what risks does it pose? - BBC",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RQ080QjNmR3N5VElKQnh1WXRFSk9iR0JxTy1ZaDNRY0dXNUFXZ0w1Wk1XUWs2MTdTR3dUZVpfMHYwVUJSZ1ZTQlVPaWFFODdFSHRKdXJxazVfUQ?oc=5"
+        "category": "CIEKAWOSTKA / TECHNOLOGIE",
+        "title": "🤖 Sztuczna inteligencja: Szansa dla ludzkości czy zagrożenie?",
+        "summary": "Encyklopedia Britannica podsumowuje wielki wyścig technologiczny – zestawienie najważniejszych argumentów za i przeciw w debacie o przyszłości AI.",
+        "comment": "Fascynujące, jak technologia stworzona do automatyzacji w mgnieniu oka stała się największym filozoficznym dylematem naszej ery.",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLOFRoZ3JOQjhkUWhpMGQ1RmRWT0tPRWd3TEpmN2kzV1A0b3N5NmpNTGs2eVR3QXVZNEhBMkZnU2xPd3RwZU43Z2dVVkdEUUJfVklHQ2Q1eUFEU3VCMm5OVEJlWDdvTEFIeDMzN29nSmJlbnhfM3c?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Data centres are reshaping the global investment landscape - UN Trade and Development (UNCTAD)",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+        "category": "CIEKAWOSTKA / NAUKA",
+        "title": "🚀 Top 10 uczelni informatycznych świata na rok 2026",
+        "summary": "Opublikowano najnowszy ranking uczelni kształcących przyszłych liderów nowoczesnych technologii i nauk komputerowych.",
+        "comment": "Konkurencja wśród uniwersytetów jest tak ogromna, że czołowe ośrodki wyznaczają standardy edukacyjne z wieloletnim wyprzedzeniem.",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ0JuaHhWNUE1UFJhaUNZS292NFVHWXpjRzJLNFhVVUlyTXlvUlpMQXppNXJyZ3ZpRkFpQ3dkUHB3ZWZpdnVWZldpcWo4SEVpQTZHR0JMQVFGYlhPbTV0MjFpWWJRb1V1Z1N2WmRXRklPejBOcVk4MllPTTQ2OThzTEFrVno4OWFWNTh3Z1pueUdEdmdjMm9oVUEyblN1Mjd2NG4zQmJMVzc?oc=5"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Dron niemal trafił w samolot z Zełenskim na pokładzie. Incydent w Mołdawii - Wiadomości Onet",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPT1NtNm9ZZlJGb0ZfZlIwVUlpM3NrN0M4a1pjWkZ6VFZDVVRzZDZKc3lxcDVlSlV6dHZtb001b3pzYklwS3RZNWd5a2U5V1JNSmdiYWtCXzJXOEl1cUpWdHJkZm5fMEZxcHVHMFRrcEZxU1ltRkpwSE9vNjZOU2xXa2FlVk9OSnVlc2VEM3BtMEZBdExvUExDVHdiR2tSUzhOdHdJVjJ5VVlqYjgtN2dmR1VGREZHaFp4Z25KdWw3aw?oc=5"
-      },
-      {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Co z kandydaturą Berka? Kancelaria prezydenta chce wyjaśnień - WP Wiadomości",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQnNOLVRKRTBVa2pUY1pTNnlrRFVGM0hfZjNFbGZ4b0RWM3B3NEx0MWYyakE5aU4zSllOUDhsM0s0M2dmMC1zdEI5SEppc0NGeWRYZ3ctUnJSTDFOb3EyQmZYTENJZHhGSU1tRUJnYnNEZVpIeFRPTmczaEpkMVBEdkI0WmJmbnJkVFVkNzgwYUgyQU5oYUZ3cFhKUlB0NzBKTWxTRA?oc=5"
-      },
-      {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 W Kielcach pokazują najnowszą broń. Ekspert dostrzegł problem - Fakt",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQXF5TkYxVlFVV1NoUzJQdENDU2lTUjBoaWZmaW90eXN6dzdxWXE0WXNTUUF2ZkVyd2dJRkcwTmNxa1ppWkxGTzhPNEQ1aUdiWjdvcjJVdWhHbWFRb1JmVTRBOGdZN2Y3MW02bEdQb3V0aHNZZE9wWXBaQW01dmk1cDNfVjBJSC1DbGQ5M3Bka01ndk8xM1NkNkE5Zkk2WVFvcTd5Z21jUWJwT3BCZzZLNHFzTURNdjRXRU1fdQ?oc=5"
+        "category": "CIEKAWOSTKA / PRZYSZŁOŚĆ",
+        "title": "🐝 Wielka Brytania tworzy pierwszy na świecie rynek kwantowy",
+        "summary": "Brytyjski rząd ogłosił pionierskie ramy prawne dla standardów kwantowych, przypieczętowując swoją pozycję lidera w technologiach przyszłości.",
+        "comment": "Komputery kwantowe wchodzą z fazy laboratoryjnej w fazę twardych regulacji rynkowych – rewolucja zbliża się szybciej, niż przypuszczaliśmy.",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObXgwb0JPcktlZDljY3VrTXlwT3RaNzdfalJqQU9qbFFkcFhDVXFtX09Kc3RRV2lrRkljWGlBQ2cxOVRocXRZYVNyU3lzT3BoRFpsNkowNDdFclJGcS0yNWg2V1FwWjZtemFQbUh2R2JlalNvaXBLQUlmN25oLVU0QnR1eGFudkZsUVg4bWpRUXd3bWVkWVpLaGdsbzF6OXAyNGdfX2tHMFVCeTYxRWlYYi1naHdNWDloVmF4Mmo3UkRKaEttc0stUDNUR2NKRjN5b1R0S3dWWnRUek9ITy1SQ1pBbw?oc=5"
       }
     ]
   }
