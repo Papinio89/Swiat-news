@@ -1,12 +1,7 @@
 name: Auto Update News
 
 on:
-  schedule:
-    # 06:00 CEST -> uruchom o 05:15 CEST (03:15 UTC)
-    # 19:00 CEST -> uruchom o 18:15 CEST (16:15 UTC)
-    - cron: '15 3,16 * * *'
   workflow_dispatch:
-
 
 jobs:
   update:
