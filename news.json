@@ -1,98 +1,91 @@
 {
   "date": "10 September 2026",
-  "time": "06:09",
-  "timestamp": "2026-09-10_06:09",
+  "time": "10:04",
+  "timestamp": "2026-09-10_10:04",
   "items": [
     {
-      "category": "GOSPODARKA / TECHNOLOGIE",
-      "title": "📉 Ministrowie finansów ostrzegają przed modelem Mythos AI",
-      "summary": "Szefowie resortów finansów i bankierzy wyrażają głębokie zaniepokojenie nowym modelem sztucznej inteligencji Mythos AI. Obawy dotyczą potencjalnego wpływu technologii na stabilność rynków finansowych.",
-      "comment": "Szybki rozwój zaawansowanych modeli AI zaczął budzić realny strach w sektorze bankowym, gdzie niekontrolowana algorytmiczna destabilizacja może kosztować miliardy.",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zTC1uY3NPZFFFSVRZeVlTSHJYWmFwVTJaR1BMRnBMQ3R2SVpmSmMyMGtzR2FYc3NGVjBjZ1N5dnFrVnc2Q0FNZ0ZUVl9FeVg0em0wQ216dWxzUQ?oc=5"
+      "category": "GEOPOLITYKA / ŚWIAT",
+      "title": "📉 Słabnący popyt na ropę w Chinach obniża ceny surowców",
+      "summary": "Ceny ropy naftowej spadły do najniższego poziomu od kilku miesięcy w odpowiedzi na wolniejszy od oczekiwań wzrost gospodarczy w Azji. Analitycy przewidują utrzymanie się presji spadkowej w kolejnym kwartale.",
+      "comment": "Chiny przez dekady były silnikiem wzrostu popytu na surowce; zmiana struktury gospodarczej oraz rosnąca flotylla pojazdów elektrycznych zaczynają być wyraźnie widoczne na wykresach.",
+      "link": "https://www.reuters.com/business/energy"
     },
     {
-      "category": "WIADOMOŚCI / POLSKA",
-      "title": "🚨 Wykolejenie pociągu osobowego w Polsce",
-      "summary": "Doszło do niebezpiecznego zdarzenia na torach – wykoleił się pociąg pasażerski. Trwają akcje służb oraz specjalna relacja z miejsca wypadku.",
-      "comment": "Zdarzenie po raz kolejny wywołuje dyskusję o stanie infrastruktury kolejowej i procedurach bezpieczeństwa w ruchu pasażerskim.",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZzBsV25UTlpuMlFtNVVXaVEwWWdOUEFWdmZFVjhVbmpjeG5KSWJzSVd4czBLeWppX1BOcHIzS2tVZE1PYl81NTM1eXpCTWszWG5MdGJZbmpLQ0FiTW9FNEpNYkNaYnJPNEdCcC1LX09GT2R1MG5TU0s3ZGNwYVRjM2h2NnFsYWhqeFJPMVM3NERIcXEzSF85b0NBeEtXYW14WGlYRkpsZkZQVzlU?oc=5"
+      "category": "GOSPODARKA / FED",
+      "title": "🏛️ Rezerwa Federalna sygnalizuje możliwość obniżki stóp procentowych",
+      "summary": "Przedstawiciele amerykańskiego banku centralnego zasugerowali, że spadek inflacji otwiera drogę do pierwszej cyklicznej obniżki kosztu pieniądza. Rynki finansowe zareagowały natychmiastowym wzrostem indeksów.",
+      "comment": "Złagodzenie polityki monetarnej w USA da oddech rynkom wschodzącym, ale kluczowe pozostanie tempo zmian na rynku pracy.",
+      "link": "https://www.bloomberg.com/markets"
     },
     {
-      "category": "GOSPODARKA / KRYPTOWALUTY",
-      "title": "🪙 Sprawa Zondacrypto dzieli Polaków",
-      "summary": "Nowy sondaż wskazuje na znaczne rozbieżności w opiniach Polaków dotyczących działalności i przyszłości znanej giełdy kryptowalutowej.",
-      "comment": "Rynek krypto w Polsce dynamicznie rośnie, lecz opinia publiczna pozostaje mocno podzielona między entuzjazmem dla innowacji a obawami o ryzyko finansowe.",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOWc1dW5xVmJnU1BEVlpwOV9WWjVZY0JZekZqMHNnMlR6ekxkRm1wa3FjZm52UEdQdzhjV0twZ0luSkEwN2pEQWxUWDdDUmlJUFNLNmYxNEF2OXFtaVV3c0lvbnlqdUZFU3h6cFVDbk02dTlBOHNqR1FBOHVuek9UOTJFVXZmNE5BdXllNGVJZGlDYUdwVjRjNEhmNFZsRWVfbXkxUjM4QklzQQ?oc=5"
+      "category": "EUROPA / ENERGETYKA",
+      "title": "⚡ Unia Europejska przyspiesza rozbudowę sieci przesyłowych",
+      "summary": "Bruksela ogłosiła nowy plan inwestycyjny o wartości miliardów euro, mający na celu modernizację infrastruktury elektroenergetycznej. Inwestycje mają zapobiec wąskim gardłom przy integracji źródeł odnawialnych.",
+      "comment": "Budowa wiatraków i paneli to dopiero połowa sukcesu – bez nowoczesnych sieci przesyłowych zielona energia po prostu się marnuje.",
+      "link": "https://www.ft.com/energy"
     },
     {
-      "category": "GOSPODARKA / PRAWO",
-      "title": "📜 Ustawa o kryptoaktywach: Morawiecki wspiera Nawrockiego",
-      "summary": "Były premier Mateusz Morawiecki opowiedział się za stanowiskiem Karola Nawrockiego w kwestii regulacji rynku kryptoaktywów w Polsce.",
-      "comment": "Regulacje kryptoaktywów stają się kluczowym polem sporu politycznego, gdzie ścierają się wizje ochrony inwestorów i swobody rynkowej.",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbjRzUTAxWnN3ZVl5TjJaZ2VTNXB2QVhJRWF4ZGFlRllyWWVMUnAyMWVtem53aDNUZDR3M0JnY2RmcU4xQTNhMzIzV2VVdURMT280N3BkOEFUZ2k0Z3l4UWJ2ZFlxMHpXVVp1QnhuS3BVZS1xQUg3RzZ2OEJ0RUlKSnREcFgzVi1Wby1FV3h4XzFSN0dpVC1nTjhWMzVseTkzY2FFWFFyYlg?oc=5"
+      "category": "ŚWIAT / BEZPIECZEŃSTWO",
+      "title": "🛡️ Szczyt NATO ws. zwiększenia wydatków na obronność",
+      "summary": "Państwa członkowskie porozumiały się co do podniesienia minimalnego progu PKB przeznaczanego na obronność. Działanie to jest bezpośrednią odpowiedzią na rosnące napięcia geopolityczne.",
+      "comment": "Przemysł zbrojeniowy przeżywa największy boom od czasów zimnej wojny, co staje się nowym motorem napędowym wielu gospodarek.",
+      "link": "https://www.wsj.com/world"
     },
     {
-      "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
-      "title": "🛡️ Rozmowy Tomasza Siemoniaka z szefem CIA",
-      "summary": "Minister koordynator służb specjalnych odbył ważne spotkanie z szefem amerykańskiej Agencji Wywiadowczej. Głównym tematem było bezpieczeństwo regionalne.",
-      "comment": "Współpraca wywiadowcza z USA pozostaje fundamentem polskiej strategii obronnej w obliczu trwających napięć geopolitycznych w Europie Wschodniej.",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObE5pb0t3UFNDQlFPeGI0cVlRUmU3UDRDZk50SDNVU3FUNmNBbWw2dnF3WmZuUmtJTWUtRngwYnJJYmFhNXFndmVfVFl6cXRJSHVSTmgzVXh2QTV3Mm5Ld3Z5cUl5RVZpWXZibEdDLUttZTlVdzNhLThTTzRoRkpxVGtTQWloWGdGclE0UUo5S2Jta3JMa1c5NnpRRjdPWGFl?oc=5"
+      "category": "TECHNOLOGIE / RYNKI",
+      "title": "💻 Wzrost nakładów na infrastrukturę AI wśród gigantów technologicznych",
+      "summary": "Największe firmy technologiczne zwiększają wydatki kapitałowe na centra danych i układy scalone nowej generacji. Inwestorzy uważnie obserwują, kiedy inwestycje przełożą się na realne przychody.",
+      "comment": "Jesteśmy w fazie wyścigu zbrojeń cyfrowych, gdzie brak inwestycji grozi wypadnięciem z rynku, nawet przy ryzyku przewartościowania sektora.",
+      "link": "https://www.cnbc.com/technology"
     },
     {
-      "category": "POLITYKA / POLSKA",
-      "title": "📊 Sondaż CBOS: Wyraźny wzrost zaufania do Donalda Tuska",
-      "summary": "Najnowsze badanie CBOS przynosi znaczny wzrost wskaźników zaufania społecznego do premiera Donalda Tuska.",
-      "comment": "Zyskujące zaufanie szefa rządu pokazuje skuteczne konsolidowanie elektoratu, choć utrzymanie tych wyników przy nadchodzących reformach będzie wyzwaniem.",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLTdBUG1VXzMtUE5wZU1oZlZIU2NEdHJXSndDVm5QcjVXZWpFS1ZFemRrQVpmdi1iblphREJJVlBWS1BGcGlrRmJrYkg0OFpQS29Sa2FGZzI2RFFBaV9sT1lqUm9FcmZlMWJ1bnBuNkU4SU5IaExQRUc4dzAzQkNpNndGckdxLTgtTkcwcXJtckNGb3BDVXJMdFFoV05Ya0dYazRMXzdZd2JJZWUz?oc=5"
+      "category": "WALUTY / GOSPODARKA",
+      "title": "💱 Jen japoński odzyskuje siłę po interwencji banku centralnego",
+      "summary": "Bank Japonii podjął zdecydowane kroki na rynku walutowym, doprowadzając do odrobienia straty jena wobec dolara. Zmiana polityki odsetkowej kończy wieloletnią erę ujemnych stóp procentowych.",
+      "comment": "Koniec bardzo taniego pieniądza w Japonii wymusza przearanżowanie globalnych strategii inwestycyjnych typu carry trade.",
+      "link": "https://www.bloomberg.com/currencies"
     },
     {
-      "category": "GEOPOLITYKA / USA",
-      "title": "🎙️ Donald Trump mobilizuje partię przed wyborami",
-      "summary": "Były prezydent USA podczas przemówienia do Republikanów poruszył kluczowe kwestie: bezpieczeństwo granic, politykę wobec Iranu oraz koszty życia.",
-      "comment": "Trump konsekwentnie stawia na narrację gospodarczą i narodową, trafiając do wyborców zaniepokojonych inflacją i sytuacją międzynarodową.",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbElveFEyMEJSR1BLc2JmSGRacERZbkJ2VF8xSFVsREN6MU5wNWRxNkRxWk1taGdPNUlGcExWQWdDSGJub0tfUnh5MlROVG9NRkFvWndVVzJwdlBiSGpVRnd1enNrZW03NUEta2xvMC1URjhSbVJRSVNnbDhNWVZQb1JxNU5nN1UxWXlINEY2Z1BXNFpPS3dzV2ZoSDFpVmQzZ0Y2NTdncw?oc=5"
+      "category": "HANDEL / TRANSPORT",
+      "title": "🚢 Zatory w kluczowych kanałach morskich podnoszą koszty frachtu",
+      "summary": "Przekierowanie tras kontenerowców wokół Afryki wydłuża czas dostaw i zwiększa opłaty transportowe. Problem odczuwają już europejscy i amerykańscy importerzy.",
+      "comment": "Odporność globalnych łańcuchów dostaw po raz kolejny przechodzi sprawdzian, co może podbić wskaźniki inflacyjne w drugiej połowie roku.",
+      "link": "https://www.reuters.com/business/autos-transportation"
     },
     {
-      "category": "GEOPOLITYKA / NIEMCY",
-      "title": "🏛️ Ostry spór w Bundestagu: Merz starł się z AfD",
-      "summary": "W niemieckim parlamencie doszło do gwałtownej wymiany zdań między liderem chadecji Friedrichem Merzem a szefową prawicowo-populistycznej AfD.",
-      "comment": "Starcie obrazuje rosnącą polaryzację niemieckiej sceny politycznej przed nadchodzącymi rozstrzygnięciami wyborczymi.",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNFdCbGIxZEkxblVHTUFQS3ZJZTRaZWRFSS1aSUI5OTRzZ003Ml8waTNYMUxHLVNubTFWQWM4Tk5KczJkcVFHOW44bmRvMDJjbUR6Zi1NSk9oQzN4UDF3cXU0WGpUV2E4OXJvN2JxSHNIVVRIcUVLZVozWkhkcmgzX2ZmQVRpMDhxTTF2RE9MTk5LTlg5d3dodjVmU3NRYTEtRlhhS2V6ZEVnNjdiYzNZWmN5QmM4dDRJSmJB?oc=5"
+      "category": "MOTORYZACJA / RYNKI",
+      "title": "🚗 Europejscy producenci aut zmagają się z presją cenową",
+      "summary": "Konkurencja ze strony azjatyckich producentów pojazdów elektrycznych zmusza tradycyjne koncerny do weryfikacji planów marżowych. Unia wprowadza dodatkowe cła ochronne.",
+      "comment": "Transformacja napędowa okazuje się trudniejsza i kosztowniejsza niż zakładano w politycznych deklaracjach sprzed kilku lat.",
+      "link": "https://www.ft.com/companies/automobiles"
     },
     {
-      "category": "POLITYKA / POLSKA",
-      "title": "🎙️ Zgrzyt podczas przemówienia w Kielcach",
-      "summary": "Podczas uroczystego wystąpienia w Kielcach doszło do nieoczekiwanej incydentalnej sytuacji, która wywołała widoczne zakłopotanie Karola Nawrockiego.",
-      "comment": "Nawet drobne potknięcia wizerunkowe publicznych postaci natychmiast stają się pożywką dla politycznej dyskusji w mediach.",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZWJ1ZHExd0E4a05IT2xnbUVnSG1oUklLVEZNMVZScjl4dWJWallNb0MwZGpyNVdOSkNrcWtYeGJoeko1SlZ1MlRFVEIwcWlsc3VPREJuUzBla0RyWWJoNzk3cHlGWjh3ekZCbDNWVWxMM3NvZl92RklPR1d6b29fUWJoZVRNRHUyRDBIRHVMV3A4bVg1OFo1YVVySDJ4YzBfMVpneQ?oc=5"
+      "category": "SUROWCE / ROLNICTWO",
+      "title": "🌾 Susze i skrajne zjawiska pogodowe uderzają w plony zbóż",
+      "summary": "Prognozy zbiorów podstawowych upraw na świecie zostały zrewidowane w dół z powodu fal upałów. Może to wywołać presję na wzrost cen żywności na rynkach detalicznych.",
+      "comment": "Bezpieczeństwo żywnościowe staje się równie istotnym elementem strategii państwowej, co bezpieczeństwo energetyczne.",
+      "link": "https://www.bloomberg.com/commodities"
     },
     {
-      "category": "CIEKAWOSTKA / POLITYKA",
-      "title": "🧠 Brawurowa teoria spiskowa i wolta na zapleczu PiS",
-      "summary": "Tuż pod nosem Przemysława Czarnka doszło do zaskakujących roszad, które wywołały falę dyskusji i nietypowych teorii wśród działaczy partyjnych.",
-      "comment": "Kulisom polityki niemal zawsze towarzyszą wewnętrzne intrygi, które dostarczają sporo emocji zewnętrznym obserwatorom.",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZUUtZW1Gci03MThvek03RmRnSGt4M3I2a2Y4enFNdnV0WTZBaW1Wc2lsUmdWTnM3UGIzcjdTcWZjWnFHQ0g5eTR4TlRpVEt2bkpuTnZzVzZmT001TENhazdjTWY0Rm9DaEhCUTJEeU1DUjJadTBlSnQtMnBiSzl5Y1NWRFBieW81N1FremhmSWF2cUlHOXVXY3RlSVJWRTl1dW9CSWFaZ1U5eHdEM05RQg?oc=5"
+      "category": "NAUKA / CIEKAWOSTKA",
+      "title": "🐝 Pszczoły potrafią liczyć i rozróżniać twarze ludzkie",
+      "summary": "Naukowcy udowodnili, że mały mózg pszczoły posiada zdolności do przetwarzania abstrakcyjnych pojęć matematycznych. Owady te wykorzystują złożone wzorce do nawigacji i komunikacji w roju.",
+      "comment": "Natura po raz kolejny udowadnia, że miniaturyzacja i wydajność energetyczna biologicznych procesorów bije na głowę współczesne superkomputery.",
+      "link": "https://www.sciencedaily.com/news/plants_animals"
     },
     {
-      "category": "CIEKAWOSTKA / TECHNOLOGIE",
-      "title": "🤖 Sztuczna inteligencja: Szansa dla ludzkości czy zagrożenie?",
-      "summary": "Encyklopedia Britannica podsumowuje wielki wyścig technologiczny – zestawienie najważniejszych argumentów za i przeciw w debacie o przyszłości AI.",
-      "comment": "Fascynujące, jak technologia stworzona do automatyzacji w mgnieniu oka stała się największym filozoficznym dylematem naszej ery.",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLOFRoZ3JOQjhkUWhpMGQ1RmRWT0tPRWd3TEpmN2kzV1A0b3N5NmpNTGs2eVR3QXVZNEhBMkZnU2xPd3RwZU43Z2dVVkdEUUJfVklHQ2Q1eUFEU3VCMm5OVEJlWDdvTEFIeDMzN29nSmJlbnhfM3c?oc=5"
+      "category": "TECHNOLOGIE / KOSMOS",
+      "title": "🚀 Sztuczna inteligencja odkrywa tysiące nieznanych dotąd asteroid",
+      "summary": "Nowy algorytm przeanalizował archiwalne zdjęcia kosmosu i zidentyfikował obiekty zagrażające Ziemi, które przeoczyli ludzie. System działa kilkaset razy szybciej niż tradycyjne metody obserwacyjne.",
+      "comment": "AI sprawdza się doskonale tam, gdzie wymagana jest żmudna analiza gigantycznych zbiorów danych bez ryzyka zmęczenia materiału.",
+      "link": "https://www.space.com/news"
     },
     {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🚀 Top 10 uczelni informatycznych świata na rok 2026",
-      "summary": "Opublikowano najnowszy ranking uczelni kształcących przyszłych liderów nowoczesnych technologii i nauk komputerowych.",
-      "comment": "Konkurencja wśród uniwersytetów jest tak ogromna, że czołowe ośrodki wyznaczają standardy edukacyjne z wieloletnim wyprzedzeniem.",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ0JuaHhWNUE1UFJhaUNZS292NFVHWXpjRzJLNFhVVUlyTXlvUlpMQXppNXJyZ3ZpRkFpQ3dkUHB3ZWZpdnVWZldpcWo4SEVpQTZHR0JMQVFGYlhPbTV0MjFpWWJRb1V1Z1N2WmRXRklPejBOcVk4MllPTTQ2OThzTEFrVno4OWFWNTh3Z1pueUdEdmdjMm9oVUEyblN1Mjd2NG4zQmJMVzc?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / PRZYSZŁOŚĆ",
-      "title": "🐝 Wielka Brytania tworzy pierwszy na świecie rynek kwantowy",
-      "summary": "Brytyjski rząd ogłosił pionierskie ramy prawne dla standardów kwantowych, przypieczętowując swoją pozycję lidera w technologiach przyszłości.",
-      "comment": "Komputery kwantowe wchodzą z fazy laboratoryjnej w fazę twardych regulacji rynkowych – rewolucja zbliża się szybciej, niż przypuszczaliśmy.",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObXgwb0JPcktlZDljY3VrTXlwT3RaNzdfalJqQU9qbFFkcFhDVXFtX09Kc3RRV2lrRkljWGlBQ2cxOVRocXRZYVNyU3lzT3BoRFpsNkowNDdFclJGcS0yNWg2V1FwWjZtemFQbUh2R2JlalNvaXBLQUlmN25oLVU0QnR1eGFudkZsUVg4bWpRUXd3bWVkWVpLaGdsbzF6OXAyNGdfX2tHMFVCeTYxRWlYYi1naHdNWDloVmF4Mmo3UkRKaEttc0stUDNUR2NKRjN5b1R0S3dWWnRUek9ITy1SQ1pBbw?oc=5"
+      "category": "CIEKAWOSTKA / LIFE",
+      "title": "🧠 Krótkie drzemki w ciągu dnia poprawiają objętość mózgu",
+      "summary": "Badania opublikowane przez badaczy z Londynu pokazują, że regularne, 20-minutowe drzemki spowalniają proces starzenia się mózgu. Zjawisko to powiązano z lepszą regeneracją układu nerwowego.",
+      "comment": "Oto idealne naukowo uzasadnienie dla wprowadzenia kultury oficjalnej sjesty w nowoczesnych korporacjach.",
+      "link": "https://www.bbc.com/news/health"
     }
   ]
 }
