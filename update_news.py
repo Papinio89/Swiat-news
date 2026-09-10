@@ -18,7 +18,7 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:12]:
+        for entry in feed.entries[:15]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -42,9 +42,9 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
-# Pobieramy tytuły z ostatnich 4 sesji w archiwum, aby uniknąć przeciążenia promptu
+# Pobieramy tytuły z ostatnich 8 sesji w archiwum (ok. 4 dni wstecz) dla lepszej filtracji
 previous_topics = []
-sorted_sessions = sorted(archive_data.keys(), reverse=True)[:4]
+sorted_sessions = sorted(archive_data.keys(), reverse=True)[:8]
 for session_key in sorted_sessions:
     session_content = archive_data[session_key]
     if isinstance(session_content, dict) and "items" in session_content:
@@ -53,7 +53,7 @@ for session_key in sorted_sessions:
                 clean_title = "".join([c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
                 previous_topics.append(clean_title)
 
-# Wstępna filtracja duplikatów w Pythonie na podstawie pokrycia słów
+# Zaostrzona wstępna filtracja duplikatów w Pythonie (próg 35% pokrycia słów)
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -65,7 +65,7 @@ for art in raw_articles:
             prev_words = set(prev.split())
             if len(prev_words) > 2:
                 common = art_words.intersection(prev_words)
-                if len(common) / min(len(art_words), len(prev_words)) > 0.5:
+                if len(common) / min(len(art_words), len(prev_words)) > 0.35:
                     is_duplicate = True
                     break
                     
@@ -93,6 +93,7 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
+- BEZWZGLĘDNIE unikaj tematów powtarzających się z ostatniej historii archiwum: {json.dumps(previous_topics[:30], ensure_ascii=False)}
 - Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów z powyższymi kluczami.
 - Żadnego formatowania markdown (żadnego ```json ani ```).
 
