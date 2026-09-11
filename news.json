@@ -1,105 +1,98 @@
 {
   "date": "11 September 2026",
-  "time": "06:01",
-  "timestamp": "2026-09-11_06:01",
+  "time": "19:10",
+  "timestamp": "2026-09-11_19:10",
   "items": [
     {
-      "category": "GOSPODARKA / BANKOWOŚĆ",
-      "title": "📈 Podwyżki stóp procentowych uderzają w oczekiwania inflacyjne",
-      "summary": "Decyzja o podniesieniu stóp procentowych ma na celu powstrzymanie rosnących cen, jednak zdaniem analityków inflacja wciąż utrzymuje się powyżej celu.",
-      "comment": "Kluczowym wyzwaniem dla banków centralnych pozostaje schłodzenie gospodarki bez wywoływania głębszej recesji.",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTFdGMHhtUFhYaTc5M1VrTTVEaEVySG9OQlJic2c1QlZXMlB1XzY0aHZFMVRIRXJuTHFVenhQUGZRMUVyZlZ3VzFOVHNueGpYS3U4UGFlMWJ2SlFWa0R5RVZ4d2VqdkpmcFFUWEFGWjQxVFFlNGN1S19XREkxZDcxOGp2d0VSYzVCNUQ2UXlkZGtuUklHdmJBbVJuMnliTVhacUJSTEVtS2VWY1_2TzA5bDYtWnFKaUE3UVRNUWRyQkU?oc=5"
+      "category": "GEOPOLITYKA / BLISKI WSCHÓD",
+      "title": "💥 Przełom w Jemenie zmieni układ sił w regionie",
+      "summary": "Błyskawiczne działania militarne w Jemenie zyskują przychylność Iranu, potęgując napięcia na Bliskim Wschodzie. Sytuacja bezpośrednio zagraża stabilności kluczowych morskich szlaków handlowych.",
+      "comment": "Zaostrzenie konfliktu w Jemenie bez wątpienia przełoży się na wzrost niepewności na rynku transportu towarowego i surowcowego.",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTC1Hal9RWHpJRVQ2cjhfc3gzdlFEdzBEOGJKdUJnSkVxc2VVeGVscjY1RXFUTkdobjJjWnlUZTNkY010NE9mcjhNT254TWV1WF9BYlBlbWVGRkNSVUptX2dsZjlHRk9YTjdBOW1FYlloNmQ2RVpnakNGbG5yVzljR0VKSm1LX0NiRTRXeThBZFZjZjluV2c?oc=5"
     },
     {
-      "category": "GEOPOLITYKA / SUROWCE",
-      "title": "🛢️ Donald Trump zapowiada gwałtowny spadek cen ropy",
-      "summary": "Donald Trump przekonuje, że wdrożenie odpowiednich zmian polityczno-gospodarczych doprowadzi do szybkiej obniżki globalnych cen ropy naftowej.",
-      "comment": "Rynek naftowy pozostaje niezwykle wrażliwy na deklaracje polityczne, choć rzeczywisty wpływ zależy od globalnego popytu i decyzji OPEC+.",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNnFUakhXX3lNM25ROVJ1d2ZSenptUGVNTE51LTFaV1l0OHQ3dnFCb055bnpkaUtxR0VkMlNXVVMxenlfQVh5TEFFRXNfR1huY25DdTJKNjBfcFZ1Q0Z4Y25NR29MblZiTEU1bTVBNHNMS0w3LVNBUTRNMllTalpiam1FV3V4cENsaEJ3dnhMRWpGcGp1aDN1dE5OQ3BHNmx2UElIdlpKQ081UDhwNS1Lak91WQ?oc=5"
+      "category": "GEOPOLITYKA / USA",
+      "title": "🇺🇸 Donald Trump nawiązuje do 11 września i uderza w Iran",
+      "summary": "Podczas przemówienia w rocznicę zamachów na WTC Donald Trump podkreślił determinację USA w walce ze wpływami Teheranu. Wystąpienie nadaje nowy ton amerykańskiej polityce zagranicznej.",
+      "comment": "Zaostrzenie antyirańskiej retoryki staje się jednym z filarów dyskursu wokół bezpieczeństwa narodowego USA.",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdUtuT0tURXZjRG1LM0FFVnpUX2tjdzQxMDFmZjRDV25zYWlObVJRb1huemo3ajdSSWNoTURVbTQzSkF4ZE56bkdKSUFBT0RibmVXR1lxc3NZckUtaGg0ZmExX2RDa2VNZ19GNDNELUtsTjg5ek9qZWotdFdoMDVVbmU4TU5lWUxhczZ1bGl5c08xSFpVSW9KTU45MTlneW1YVU1Cb2xIVkdGby1MU2lxYUtxVF90MkRGcXRfS194QXI?oc=5"
     },
     {
-      "category": "ŚWIAT / GEOPOLITYKA",
-      "title": "✈️ Incydent w przestrzeni powietrznej z samolotem Zełenskiego",
-      "summary": "Doszło do niebezpiecznej sytuacji w powietrzu z udziałem samolotu prezydenta Ukrainy. Strona rosyjska wydała oficjalny komentarz w tej sprawie.",
-      "comment": "To kolejny dowód na ogromne ryzyko eskalacji w strefach przygranicznych konfliktu.",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR2lEYzFzVVhmM1lJRUFBZmxJbkNIek5KNzBPVWJPenFwUXVnSURvVDEwLXBxLXpOZmtLZC1Nb3o0MUdaT3hpTmh5UFpOcjlNOWtteUVBalBYSmNXNndJNGV4MWFvVHN4NUc1MUF0Z3loNjRfMHcxSlVMNkl3aWZtT05FX3lTQThsZGJjLVdpVmJ2WmZqUXlHaUtNanFtRW85RHE4amM2ckpYTjNCWklKT1Jn?oc=5"
+      "category": "GEOPOLITYKA / DYPLOMACJA",
+      "title": "🕊️ Dyplomatyczny spór po zniszczeniu pomnika UPA",
+      "summary": "Zniszczenie pomnika UPA przez Grzegorza Brauna wywołało natychmiastową reakcję ukraińskiego Ministerstwa Spraw Zagranicznych. Wydarzenie doprowadziło do spięcia na linii Warszawa-Kijów.",
+      "comment": "Kwestie historyczne nieustannie pozostają wrażliwym obszarem w relacjach międzynarodowych w Europie Środkowo-Wschodniej.",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUk5MMGFSbUI3RHVUTmdMQwZwRUVEbmxETmVNTllid054TDUtZk1iZDZzSHMwbXpVakBscVNqMV9sM1RMV19qYzZUTEVsdDYzRjZveWxLQzU2em90RVFyRkptX1l1NzdpWTdPN2NXRldRRUJiaFRpbWZEd1RUakM1ZHBsR0NXOFFLeUNkYThpY2NlMG5NZUVYR9IBlwFBVV95cUxPcmRtM1VKUlZYMlVoTWpnanF4Yk5abDgwc2czeWRLU3dpLUxKaHhISEhlMWxSTk16MEpRSVFiSUZTZlVOUkxRcU5MS3BaWW52VXhsQnZQT0JfUU0tRU1HRHdQbUEyMkxWNmxuU2plUjNmQ3laUkgxSlJVOUs3eGJQT3VtckZTRGRoTncxYmJOYWcxZi16ZTB3?oc=5"
     },
     {
-      "category": "ŚWIAT / KONFLIKTY",
-      "title": "💥 Zmasowany atak dronów w rosyjskim obwodzie saratowskim",
-      "summary": "Nocny atak bezzałogowców w obwodzie saratowskim wywołał alarmy i zakłócenia w funkcjonowaniu lokalnej infrastruktury.",
-      "comment": "Użycie dronów na dalekich dystansach staje się kluczowym elementem strategii operacyjnej obu stron.",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMEE5QWt6aW5aSHBXSnZWdjhJdXlPd2ozT1NUQmZsdElQc0tMR3oyeFNKLWlQckc0ZUU2VS16TTk1ZUVfQUVYZTVmMHJvWmQzWmtqd1BHTWpEVG5DanVZZG5PUG4xYnA1LWk0Rjh6d1_YRXBWdW91RTEwOUNrVVl1NEFWcTlyX0dScDRCOWllSkd2bDNNRTBSUlNn?oc=5"
+      "category": "GOSPODARKA / ENERGETYKA",
+      "title": "⛽ Rząd szuka sposobów na obniżenie cen paliw",
+      "summary": "Minister Motyka zapowiedział prace nad rozwiązaniami mającymi na celu powstrzymanie dalszych wzrostów cen paliw na stacjach. Temat trafia do priorytetów rządu.",
+      "comment": "Rosnące koszty paliwa bezpośrednio napędzają presję inflacyjną, wymuszając interwencję na szczeblu państwowym.",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNelRFNWxlZmNEcjVwT0JKazdETGlrbUJIQTlCajRZZENLbEJSMTUxX2hMUGZTS1hiMWhXM0R5MWhjbzRWU0I1VHlLRWpyN1gtaHdKN1hLOFV1b2dKYk8yQnUycUktSGo3bHplWkNaYl9mdHRFbFRsVmNoM3lCVnZnbTY2NTRvS0g1WkRmV253U2NiUVB4b05Nc0JMcHVGRnJnMURSaWpmZzlaWk5oMFNQalUzR2N0ZU5yZ0dCYw?oc=5"
     },
     {
-      "category": "GOSPODARKA / INWESTYCJE",
-      "title": "🏢 Centra danych redefiniują globalny rynek inwestycyjny",
-      "summary": "Raport UNCTAD wskazuje, że rosące zapotrzebowanie na chmurę i sztuczną inteligencję przekierowuje strumienie kapitału do sektora centrów danych.",
-      "comment": "Infrastruktura cyfrowa zyskuje status tak samo kluczowy jak magistrale energetyczne czy przesyłowe.",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+      "category": "GOSPODARKA / TRANSPORT",
+      "title": "🚆 Strajk maszynistów wywołuje opóźnienia na kolei",
+      "summary": "Ogólnopolski protest maszynistów doprowadził do odwołania wielu pociągów oraz znacznych opóźnień w ruchu pasażerskim. Skutki utrudnień odczuwają tysiące podróżnych.",
+      "comment": "Napięcia w relacjach ze związkami zawodowymi obnażają wyzwania logistyczne i kadrowe w polskim sektorze kolejowym.",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMVl1QjhoY3ZBUThoS3otM0pKWHRLUmw4OUpKQ2RGeWlrRlRCMktEM29BS2dhSTZ4M3QwRkw3UkgwTzFXZlA0V2JmSWlKYWFmMnJqdnlhWExRNmd1TXZ0NVp6UmxUOEVkYjlNcXR3Q0RkUjlxaldZWUYzQXdiOTV1bEJiWVV6U3BvaHJiRmExcVB2aWQ0dzY3Mw?oc=5"
     },
     {
-      "category": "ŚWIAT / POLITYKA",
-      "title": "🏛️ Kontrowersje wokół nowych propozycji politycznych Trumpa",
-      "summary": "Niedawne wypowiedzi i pomysły byłego prezydenta USA wywołują dyskusje polityczne, a krytycy określają je mianem nieprzejrzystych.",
-      "comment": "Amerykańska kampania wyborcza wkracza w fazę intensywnych sporów prawnych i weryfikacji obietnic.",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNb2E3UUNJMVgxM3FMWFNwNGVwUHhldUZ3WXZyVU1Bb0xZWUlMMUltejI2UFo3TmlBX1JxWGtlamxIamU0SnFQYXpyeEdCMU5VVEtIN2tzMENGdlhnNE13M3J3SXdfTlpCYVZrbnZQV2FkbFBWcHFRcHdCSWF2bm82dlIxa09Gd3FESGR2UmlvY0gwaDdsbmo1Y3BoRUZYM0ZvdlZXdzRFZDIwX25NdGlaWkJmX28zcU1feTdrNmx4QQ?oc=5"
+      "category": "POLITYKA / POLSKA",
+      "title": "🏛️ Instytucjonalny spór o ślubowanie sędziego",
+      "summary": "Włodzimierz Czarzasty odrzucił wniosek Karola Nawrockiego i zażądał odebrania ślubowania od Macieja Berka. Wymiana zdań zaostrzyła konflikt polityczny w wokół organów państwowych.",
+      "comment": "Brak konsensusu politycznego utrudnia sprawne funkcjonowanie kluczowych instytucji konstytucyjnych.",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcm85TFZRV3ZrUDNtUmhZVGp2NkxXUkF3alFXcldQVnJkcDlONzVRRDRYODgyS2d2ZjdtZ25vMFViMkQyNjAwc1JobGpzQWo1cXltYVNLc1pmWV9BeWdDbHJTank3S1VTRnduRklxU0N4YzQ2a3hXTkdGVE5QVGVZa09XdnZpdUNiOHJyd2QwMXJfdmIya1Q5Z2UwTWhObEtFczhJTkJQMHI0TWk3ZW9GZ0U5MA?oc=5"
     },
     {
-      "category": "POLSKA / BEZPIECZEŃSTWO",
-      "title": "🛡️ Działania służb w Skarżysku-Kamiennej ws. infrastruktury",
-      "summary": "Polskie służby podjęły natychmiastowe kroki w związku z próbą uszkodzenia sieci wodociągowej w regionie.",
-      "comment": "Ochrona infrastruktury krytycznej w miastach staje się absolutnym priorytetem w kontekście współczesnych zagrożeń.",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVDVsbEdOcWwxRUFqY0pMV1RoUk82b0dXVTZBTzhUSWRmWmNsWUd4MkhrRHV4ZjdzV3ROZWFwZWttMnY3NEVMUHNERE9hUTRRMzdxcHRPeHF6MkVGQS0wQ2E0SGdZTDBUZ3ZQS2R5cVRFeUc0Qk5oNzk0bVRCLUVGR0tPMEhsZFJqWlF0WTl6a1NjVlNDbkdNcC1KMGoxTDlxUG9XV29SeDhOcER4bDVOMm5B?oc=5"
+      "category": "POLITYKA / POLSKA",
+      "title": "⚖️ Incydent w Akademii Wymiaru Sprawiedliwości",
+      "summary": "Próba wejścia Jarosława Kaczyńskiego na teren Akademii Wymiaru Sprawiedliwości zakończyła się mocnymi oskarżeniami o naruszenie prawa. Wydarzenie odbiło się szerokim echem w mediach.",
+      "comment": "Kolejna odsłona walki o instytucje prawne pokazuje, jak silnie spolaratyzowana jest polska scena polityczna.",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeDZ4N3FSV0F6YWJvNGVRTFhjS2FaVXI0NHUwNFFDVFZjLWNqcC1heFU0blkzZmNGa2lrXzVRbjBrZ3ZacDhKbXZ6Ry1UbzhTZWRMMm1LZTJ2T3hrd2ZNQ3N0QWIyYUQ4dXdWSGQ3ZmN4QTNLOUxoaUdmV2RwVjVhb0dWdGRHMkRTMGhZdmkyeXItc18xMmRIRmZ4WndrSVNOWjVzYkJnR2ZXbzdX?oc=5"
     },
     {
-      "category": "POLSKA / PRAWO",
-      "title": "⚠️ Wyższe kary dla sprawców wypadków na przejazdach kolejowych",
-      "summary": "Politycy zapowiadają zaostrzenie sankcji dla kierowców stwarzających zagrożenie na torach po serii tragicznych zdarzeń drogowo-kolejowych.",
-      "comment": "Wyższe kary są ważnym sygnałem, jednak kluczowa pozostaje ciągła modernizacja przejazdów i edukacja.",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWFB2NVVWenhublN3ZlZOODlyQUUySzZNdmxGdnU4czI2dW5sQzVYSXp4YUN2VS1uUE94eU54Q1BiS0VxWjJ1OGkxcXpTQXh0VnNYLUZQNWl0cmdEUE1wbHd0UkRvRnZiaHNFdkh4LUt5amYzakp0aVlFZU1rZmtpMzhXWGp4UTVaQ0t4U0V4T0dTUXBHR3FueTYwR2FzMFp3c3RIUlp3?oc=5"
+      "category": "PRAWO / POLSKA",
+      "title": "📜 Nowa RPO wnioskuje o kasację dla aktywisty",
+      "summary": "Nowo powołana Rzecznik Praw Obywatelskich rozpoczęła urzędowanie od wniesienia kasacji na korzyść aktywisty klimatycznego. Sprawa staje się sprawdzianem dla wolności zgromadzeń.",
+      "comment": "Pierwsze decyzje nowej RPO wyraźnie sygnalizują zwrot w stronę aktywniejszej ochrony praw obywatelskich.",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONm9PSlFUWlBDclFEVjlOUXlsYktoaGtZdFQtc3N0R1QwN2o2Q21hYWZCcG1tMkxTV3RHOXdpUGpYSWxYaXM1TGZOUFVRck0zVTBCb3dfLTRvRDk4M0JGQkxpRjV2c2E4RUxHUV9rb1E0YVdLVjBvU1N0ZkdfbHVSYnFrcw?oc=5"
     },
     {
-      "category": "FINANSE / TECHNOLOGIE",
-      "title": "⚛️ Światowe Forum Ekonomiczne o przyszłości finansów kwantowych",
-      "summary": "WEF wskazuje, w jaki sposób sektor finansowy przygotowuje się do wdrażania technologii kwantowych i ochrony danych.",
-      "comment": "Bezpieczeństwo kryptograficzne w bankowości musi wyprzedzić powszechną dostępność komercyjnych komputerów kwantowych.",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObzVhTkV3ZnF2bWdZMk9ORzRVRjV3eW5QTVp6b3R3WnA0akFnSWZONzcyb1FPZGQzQko2bjFLaXpiNEMwUlpsTGY1MnN6bmt5Y2tBamNBX0QwbTJsZWdwX19nYVVvd29PMUpRSHN6VG5uM0dMMnY1cENHbTRMang3aHVEM2s0QjdzcUJWSzBWZHpHV0wtMTc1SFdzV2hiYzk1LURVNkJFc2lvMnlRelZla2R1Q2xzczlqeFkw?oc=5"
+      "category": "WIADOMOŚCI / POLSKA",
+      "title": "⚠️ Niebezpieczne zdarzenie na przejeździe w Łodzi",
+      "summary": "Autobus osobowy został zablokowany między opuszczonymi rogatkami na przejeździe kolejowym w Łodzi. Nagranie ze zdarzenia wzbudziło niepokój w sieci.",
+      "comment": "Incydent przypomina o konieczności stałego podnoszenia świadomości kierowców w zakresie procedur bezpieczeństwa na torach.",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYTBKcFNacThKazN1WnhOeC1maGQydk9yd2d2YTh5WXpyMWhoT3VNNTNnR28xWjg4U04wQ0tLX3JXS3Y4bEFWVWFCYTNaWjM1bXZVX1dYdVJNdEdPM1pod1BBQXRlZmJ6VkllM2dlNjZQcDJHbXNOZmFRb0h2WmM3aTI4NjVBMU5FbHE2SFNHVEJIcHMxeG5sOGVaSmdwMWNYRUdKc2ZnbGk4aGxQaVVMZ0VjenlwR3ZqRGRMakl0MHIybTFhcl9qM2RB?oc=5"
     },
     {
-      "category": "RYNKI / INWESTYCJE",
-      "title": "📊 Analiza funduszy inwestycyjnych sektora technologicznego",
-      "summary": "Eksperci rynkowi oceniają perspektywy i ryzyka inwestowania w wyspecjalizowane fundusze technologiczne w obliczu wahań giełdowych.",
-      "comment": "Sektor spółek technologicznych nadal przyciąga inwestorów, lecz wymaga większej selektywności portfela.",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORWRiV1FMZWJmMzFCZ0QydGxoNmdvYjJrRjVOUHI2NGZyWm9BUndIQngtcWJxZS1yUFFmNmdrekxfX0ZNRENEaHBuSmdDcG4wdW1VNTNDOG5yZFVuN2xUWllzNjRMYi1UTnVCN2JRUUV4WVQ0bkdzbWZ1ajgzMS1peWZKTQ?oc=5"
+      "category": "CIEKAWOSTKA / EKO ARCHITEKTURA",
+      "title": "🏗️ Ikoniczna kopuła Science World w nowym wydaniu",
+      "summary": "Słynna konstrukcja 'The Beautiful Dome' nie trafi na złomowisko, lecz przejdzie unikalny proces upcyclingu. Innowacyjny projekt pozwoli zachować zabytek architektoniczny w duchu ekologii.",
+      "comment": "Przykład na to, jak kreatywny recykling w dużej skali może łączyć ochronę dziedzictwa miejskiego z nowoczesnym designem.",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVHl2OUx2blRCXy1sTnlzaHE2YzN4STdvRndjcXRjN19UaVkwS0hFUzRRNWVQSlRuaUNsZzlwOW16YTZRYUs5RTdTUDYtWnlyUFE2NWpDSjRqbHlWYXhKVG9qU1ExRWlBVEhEeVJ6OFBqbnJLZF9LWGhTWTFMemlVNHp4WEdzQmhFYk9XZVNXdGpmN3pic0xhdmZiNF9qZUx4dS1hWUlmVQ?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / TECHNOLOGIE",
-      "title": "🚀 2977 dronów rozświetliło nocne niebo nad Nowym Jorkiem",
-      "summary": "Niezwykłe widowisko z udziałem niemal trzech tysięcy zsynchronizowanych dronów zachwyciło mieszkańców i turystów w Nowym Jorku.",
-      "comment": "Świetlne spektakle dronów stają się nowoczesną i ekologiczną alternatywą dla tradycyjnych fajerwerków.",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUGhOZmpOMHBQQURJZ2V2NEs5bE5LRmx3akg5QV9KNk45c0xIWmhkR0tVekVFMTdSTGh3QUJtTTJYeUJGYjlhMkVweHlDYXVXcXllV0RVVFdqV2x1ekl3S2tnZzBnY0VnRDFXZTY4c1QwaWM3eXl3RVRHUjV3MTNDRWlpcHFfTG9zbGE1VEJCX3lNb25Bc0p4X3dKaEFOaThUeklnTUdSTnhHOGNVT3ZTMmdqYjBvc0ZGRkxn?oc=5"
+      "category": "TECHNOLOGIE / DRONY",
+      "title": "🚀 Specjalny korytarz powietrzny dla dronów nad Polską",
+      "summary": "Polska Agencja Żeglugi Powietrznej wyznaczyła na mapie stref lotniczych dedykowany korytarz do testowania dronów. To przełomowy krok w stronę komercyjnego transportu autonomicznego.",
+      "comment": "Polska staje się jednym z pionierów w tworzeniu zintegrowanej przestrzeni powietrznej dla maszyn bezzałogowych.",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWk15cThhQTgtSUJCeFhXeUVXT2p3SVpSY2YwVUtXSGdBTklJRDZNSWRDbHdjT3JNeUlKNlNnY2xsQXBydEZUT0xrOExjRTgwaDJ2cS1iLTFtQ3VoRm96YWlrTUpiWTczeVpZaHpNYWRlRzhYTjNOZjhySkVXNTg4WFhTaU5mYnRfN2I2YjQyckktNlhEcHZF?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🧠 Globalna inicjatywa ONZ na rzecz kobiet w świecie nauki",
-      "summary": "ONZ zwraca uwagę na potrzebę dalszego znoszenia barier społecznych i ułatwiania kobietom dostępu do innowacyjnych badań naukowych.",
-      "comment": "Różnorodność w zespołach badawczych udowodnienie przekłada się na szybsze tempo odkryć naukowych.",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl_PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5bTBNRnBlbDFIdWZMWQ?oc=5"
+      "category": "TECHNOLOGIE / NAUKA",
+      "title": "🤖 Przełomowa debata wokół przyszłości sztucznej inteligencji",
+      "summary": "Encyklopedia Britannica opublikowała obszerną analizę zalet i zagrożeń wynikających z rozwoju AI. Tekst zbiera najważniejsze stanowiska środowiska naukowego.",
+      "comment": "Zrozumienie etycznych limitów algorytmów staje się kluczowym wyzwaniem dla nadchodzącej dekady.",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLOFRoZ3JOQjhkUWhpMGQ1RmRWT0tPRWd3TEpmN2kzV1A0b3N5NmpNTGs2eVR3QXVZNEhBMkZnU2xPd3RwZU43Z2dVVkdEUUJfVklHQ2Q1eUFEU3VCMm5OVEJlWDdvTEFIeDMzN29nSmJlbnhfM3c?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / LIFE",
-      "title": "🤖 Debiut serwisu News.cx z darmowym przeglądem wiedzy",
-      "summary": "Uruchomiono nową platformę dostarczającą codzienne skróty z zakresu biznesu, technologii, nauki i zdrowia dla każdego zainteresowanego.",
-      "comment": "W epoce szumu informacyjnego zwięzłe skróty wiadomości zyskują coraz większą popularność wśród czytelników.",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / EDUKACJA",
-      "title": "💡 Czym jest Fintech i dlaczego warto budować w nim karierę?",
-      "summary": "Uniwersytet Centralnej Florydy przygląda się dynamicznemu rozwojowi branży innowacji finansowych oraz nowym perspektywom zawodowym.",
-      "comment": "Połączenie wiedzy finansowej ze znajomością nowoczesnych technologii to uniwersalny przepis na sukces w XXI wieku.",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV_Xd2Z1ZWt6VVdaSUN3?oc=5"
+      "category": "CIEKAWOSTKA / BEZPIECZEŃSTWO",
+      "title": "🧠 Detektywistyczne spojrzenie na kulisy wypadku drogowego",
+      "summary": "Naoczny świadek zdarzenia z udziałem autokaru szczegółowo opisał moment groźnej kolizji drogowej. Jego relacja rzuca nowe światło na przyczyny niespodziewanych zdarzeń na trasie.",
+      "comment": "Analiza relacji świadków pozwala lepiej zrozumieć czynniki psychologiczne wpływające na zachowania kierowców.",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ3RLai0wU2JVbEZVUjVhTk5nUkZDOGVWVEg4bXU2V0lKRzRBR0xPSGhJWHdtSEtob3FqTHVnaDM5VzFDOVZ1aHh0UEZQSlNnNjhoMmYyZjZkRU40dWJ4T3kzZnVNYzllcHZENm9iV0xFNmtLRGFicnM4QWZnMmdTMFZUZ2V1dUVoajFobWR2QUh1TUk0VVhMUVNneHNwZ0JNREZ0VWItN3dfa0c2MjBuT2dfczFTcTg?oc=5"
     }
   ]
 }
