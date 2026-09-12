@@ -7,10 +7,11 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
+# Bardziej ukierunkowane źródła na absurdalne ciekawostki, dziwne zwierzęta i luźny humor
 RSS_URLS = [
-    "https://news.google.com/rss/search?q=science+nature+culture+quirky+fun+facts&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=ciekawostki+nauka+technologia+kultura+świat&hl=pl&gl=PL&ceid=PL:pl",
-    "https://www.reutersagency.com/feed/?best-topics=lifestyle&post_type=best"
+    "https://news.google.com/rss/search?q=weird+animal+facts+quirky+funny+history+bizarre&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=dziwne+fakty+śmieszne+ciekawostki+absurdalne+zwierzęta&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=dziwna+historia+nietypowe+rekordy+humor&hl=pl&gl=PL&ceid=PL:pl"
 ]
 
 raw_articles = []
@@ -71,18 +72,18 @@ if len(filtered_raw_articles) < 5:
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz lekką, rozrywkową listę 10 ciekawostek (przetłumacz i sformatuj na język polski).
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz czysto rozrywkową, lekką i **ekstremalnie zabawną** listę 10 ciekawostek (przetłumacz i sformatuj na język polski).
 
 WYMAGANA STRUKTURA (dokładnie 10 elementów):
-- Skup się wyłącznie na luźnych tematach, ciekawostkach ze świata przyrody, nauki, nietypowych rekordach, nietypowych świętach oraz fascynujących smaczkach kulturowych. 
-- BEZWZGLĘDNIE ODRZUCAJ WSZELKIE QUIZY, TESTY WIEDZY, ZAGADKI TYPU „SPRAWDŹ SIĘ W TEŚCIE” LUB ARTYKUŁY WYMAGAJĄCE ROZWIĄZYWANIA TESTÓW. Ma to być gotowa ciekawostka do przeczytania, a nie interaktywny quiz.
-- Zero ciężkiej polityki czy giełdy.
+- Skup się WYŁĄCZNIE na absurdalnych faktach, dziwnych zachowaniach zwierząt (np. śmieszne zwyczaje pand, wombatów, wydr, ptaków), szalonej historii, dziwnym jedzeniu/piciu (np. piwo w dawnych wiekach) oraz totalnie zakręconych, nietypowych rekordach świata.
+- **Kategoryczny zakaz:** Żadnych poważnych badań naukowych, psychologii społecznej, socjologii, sztuki, recenzji książek czy rocznic architektury/miast. Ma być luźno, śmiesznie i czysto rozrywkowo!
+- Każdy fakt ma wywoływać uśmiech lub autentyczne "serio?!".
 
 Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
-- "category": Kategoria pisana wielkimi literami (np. "CIEKAWOSTKA", "PRZYRODA", "NAUKA / LIFE", "REKORDY").
-- "title": Krótki, chwytliwy nagłówek z unikalną, dopasowaną emotikoną na początku (np. "🐋 Wielki dzień wielorybów: Gdzie je spotkać?").
-- "summary": Konkretny, ciekawy opis w 1-2 zdaniach przybliżający fakt.
-- "comment": Lekki, zabawny lub intrygujący komentarz, anegdotka lub żart (odpowiednik luźnej porady lub humoru).
+- "category": Kategoria pisana wielkimi literami (np. "ZWIERZAKI", "ABSRUDY ŚWIATA", "SZALONA HISTORIA", "BEKA Z NAUKI").
+- "title": Krótki, chwytliwy i zabawny nagłówek z unikalną, dopasowaną emotikoną na początku (np. "🐼 Leniwe pandy i ich życiowe motto: Jak przetrwać dzień na leżąco").
+- "summary": Konkretny, zabawny opis w 1-2 zdaniach przedstawiający kuriozalny fakt.
+- "comment": Dowcipny, sarkastyczny lub ironiczny komentarz z lekkim żartem.
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli ciekawostka nie ma bezpośredniego linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
@@ -110,10 +111,10 @@ try:
 except Exception as e:
     print(f"Błąd AI: {e}")
     items = [{
-        "category": "CIEKAWOSTKA",
-        "title": f"💡 {art['title']}",
-        "summary": "Fascynujący fakt ze świata.",
-        "comment": "Kto by pomyślał!",
+        "category": "ZWIERZAKI",
+        "title": f"🦦 {art['title']}",
+        "summary": "Nietypowy i szalony fakt z życia przyrody.",
+        "comment": "Natura naprawdę ma poczucie humoru!",
         "link": art['link']
     } for art in raw_articles[:10]]
 
