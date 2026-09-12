@@ -7,7 +7,6 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Źródła RSS o szerszej tematyce lifestyle, nauka, ciekawostki, kultura i świat
 RSS_URLS = [
     "https://news.google.com/rss/search?q=science+nature+culture+quirky+fun+facts&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=ciekawostki+nauka+technologia+kultura+świat&hl=pl&gl=PL&ceid=PL:pl",
@@ -39,7 +38,6 @@ now_pl = datetime.now(pl_tz)
 today_date_key = now_pl.strftime("%Y-%m-%d")
 session_fixed_key = f"{today_date_key}_rozrywka"
 
-# Pobieramy tytuły z historii rozrywkowej, aby unikać duplikatów
 previous_topics = []
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:10]
 for session_key in sorted_sessions:
@@ -50,7 +48,6 @@ for session_key in sorted_sessions:
                 clean_title = "".join([c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
                 previous_topics.append(clean_title)
 
-# Wstępna filtracja duplikatów w Pythonie
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -77,7 +74,8 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 prompt = f"""Przeanalizuj poniższe nagłówki i stwórz lekką, rozrywkową listę 10 ciekawostek (przetłumacz i sformatuj na język polski).
 
 WYMAGANA STRUKTURA (dokładnie 10 elementów):
-- Skup się wyłącznie na luźnych tematach, ciekawostkach ze świata przyrody, nauki, nietypowych rekordach, nietypowych świętach (np. dzień kota, dzień wieloryba) oraz fascynujących smaczkach kulturowych. 
+- Skup się wyłącznie na luźnych tematach, ciekawostkach ze świata przyrody, nauki, nietypowych rekordach, nietypowych świętach oraz fascynujących smaczkach kulturowych. 
+- BEZWZGLĘDNIE ODRZUCAJ WSZELKIE QUIZY, TESTY WIEDZY, ZAGADKI TYPU „SPRAWDŹ SIĘ W TEŚCIE” LUB ARTYKUŁY WYMAGAJĄCE ROZWIĄZYWANIA TESTÓW. Ma to być gotowa ciekawostka do przeczytania, a nie interaktywny quiz.
 - Zero ciężkiej polityki czy giełdy.
 
 Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
