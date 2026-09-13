@@ -118,6 +118,9 @@
             <button id="tab-btn-fast" data-tab="fast" onclick="switchTab('fast')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-bolt mr-1.5"></i> Fast Review
             </button>
+            <button id="tab-btn-radar" data-tab="radar" onclick="switchTab('radar')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
+                <i class="fa-solid fa-tower-broadcast mr-1.5"></i> Radar (RAW)
+            </button>
             <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
             </button>
@@ -133,10 +136,12 @@
             <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że plik JSON się zaktualizował z błędem.</p>
         </div>
 
+        <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
+        <!-- 2. Fast Review -->
         <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
             <div id="fast-list" class="flex flex-col gap-3 mb-8"></div>
             
@@ -151,10 +156,35 @@
             </div>
         </div>
 
+        <!-- 3. Radar (RAW) -->
+        <div id="view-radar" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-sm mb-8">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-3">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
+                            <i class="fa-solid fa-tower-broadcast text-brand-500"></i> Masowe Kopiowanie RAW pod Threads
+                        </h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Wszystkie surowe nagłówki zebrane z kanałów RSS bez obróbki AI (<span id="radar-count" class="font-bold text-brand-500">0</span> wpisów).</p>
+                    </div>
+                    <button onclick="copyRadarMassText()" class="px-4 py-2 bg-brand-500 text-white dark:text-slate-900 font-bold text-xs rounded-full hover:bg-brand-400 transition shadow-sm flex items-center gap-1.5 whitespace-nowrap">
+                        <i class="fa-regular fa-copy"></i> Kopiuj wszystkie
+                    </button>
+                </div>
+                <textarea id="radar-mass-output" readonly class="w-full h-64 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 focus:outline-none resize-none leading-relaxed"></textarea>
+            </div>
+
+            <div class="mb-4 flex items-center justify-between">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Pojedyncze nagłówki</h4>
+            </div>
+            <div id="radar-list" class="flex flex-col gap-3"></div>
+        </div>
+
+        <!-- 4. Archiwum -->
         <div id="view-archive" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="archive-container" class="flex flex-col gap-12"></div>
         </div>
 
+        <!-- 5. Wyniki wyszukiwania -->
         <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div class="mb-6 flex justify-between items-end">
                 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
@@ -187,6 +217,7 @@
         let todayItems = [];
         let archiveGroups = [];
         let allNewsFlat = [];
+        let rawFeedArticles = [];
         let cardCounter = 0; 
 
         function initTheme() {
@@ -361,7 +392,6 @@
 
                             <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                                 <div class="flex items-center mb-3">
-                                    <!-- POPRAWKA CENTROWANIA: sztywna wysokość h-6 i flex items-center justify-center -->
                                     <span class="inline-flex items-center justify-center px-3 h-6 rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
                                         ${rawC}
                                     </span>
@@ -445,6 +475,65 @@
             });
         }
 
+        // Renderowanie zakładki RADAR (RAW Data)
+        function renderRadarView(rawArticles) {
+            const list = document.getElementById('radar-list');
+            const massTextarea = document.getElementById('radar-mass-output');
+            const countEl = document.getElementById('radar-count');
+            
+            list.innerHTML = '';
+            countEl.textContent = rawArticles.length;
+
+            let massText = `⚡ RADAR WIADOMOŚCI (${rawArticles.length} tematów z RSS):\n\n`;
+
+            rawArticles.forEach((art, index) => {
+                const title = (art.title || '').trim();
+                const link = art.link || '#';
+                const encTitle = encodeURIComponent(title);
+                const encLink = encodeURIComponent(link);
+
+                massText += `• ${title}\n`;
+
+                const itemHtml = `
+                    <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex gap-3 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
+                        <span class="text-xs font-bold text-brand-500 w-6 text-center">${index + 1}.</span>
+                        <div class="flex-1 min-w-0">
+                            <h4 class="text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-medium leading-snug truncate">
+                                ${link !== '#' ? `<a href="${link}" target="_blank" class="hover:text-brand-500 transition">${title}</a>` : title}
+                            </h4>
+                        </div>
+                        <div class="flex gap-1.5 flex-shrink-0">
+                            <button onclick="copySingleRawTitle('${encTitle}')" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Kopiuj nagłówek">
+                                <i class="fa-regular fa-copy text-xs"></i>
+                            </button>
+                            ${link !== '#' ? `
+                            <a href="${link}" target="_blank" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Otwórz źródło">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                            </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+                list.insertAdjacentHTML('beforeend', itemHtml);
+            });
+
+            massTextarea.value = massText;
+        }
+
+        function copySingleRawTitle(encTitle) {
+            const title = decodeURIComponent(encTitle);
+            navigator.clipboard.writeText(title);
+            alert('Skopiowano nagłówek!');
+        }
+
+        function copyRadarMassText() {
+            const textarea = document.getElementById('radar-mass-output');
+            textarea.select();
+            document.execCommand('copy');
+            alert('Skopiowano wszystkie tytuły z Radaru!');
+            window.getSelection().removeAllRanges();
+        }
+
         function generateThreadsContent(items, dateText) {
             let txt = `🌍 Świat w Minutę - ${dateText}\n\n`;
             items.forEach(item => {
@@ -497,15 +586,17 @@
             try {
                 const cb = new Date().getTime(); 
                 
-                const [globalNewsData, globalRozData, aNewsData, aRozData] = await Promise.all([
+                const [globalNewsData, globalRozData, aNewsData, aRozData, rawFeedData] = await Promise.all([
                     safeFetchJson(`news.json?v=${cb}`),
                     safeFetchJson(`rozrywka.json?v=${cb}`),
                     safeFetchJson(`archive.json?v=${cb}`),
-                    safeFetchJson(`archive_rozrywka.json?v=${cb}`)
+                    safeFetchJson(`archive_rozrywka.json?v=${cb}`),
+                    safeFetchJson(`raw_feed.json?v=${cb}`)
                 ]);
 
                 archiveNews = aNewsData;
                 archiveRoz = aRozData;
+                rawFeedArticles = rawFeedData.items || [];
 
                 todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
                 let displayDate = globalNewsData.date || "Dzisiaj";
@@ -540,6 +631,7 @@
 
                 renderCardsToContainer(document.getElementById('today-grid'), todayItems);
                 renderFastReview(todayItems);
+                renderRadarView(rawFeedArticles);
                 generateThreadsContent(todayItems, displayDate);
                 renderArchive();
 
