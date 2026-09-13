@@ -60,7 +60,7 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
-# Pobieramy tytuły z ostatnich 8 sesji w archiwum (ok. 4 dni wstecz) dla lepszej filtracji
+# Pobieramy tytuły z ostatnich 8 sesji w archiwum (ok. 4 dni wstecz) dla filtracji duplikatów
 previous_topics = []
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:8]
 for session_key in sorted_sessions:
@@ -71,7 +71,7 @@ for session_key in sorted_sessions:
                 clean_title = "".join([c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
                 previous_topics.append(clean_title)
 
-# Zaostrzona wstępna filtracja duplikatów w Pythonie (próg 35% pokrycia słów)
+# Wstępna filtracja duplikatów w Pythonie (próg 35% pokrycia słów)
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -155,10 +155,21 @@ output_data = {
     "items": items
 }
 
+# 1. Zapis głównego wydania newsów
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
+# 2. Zapis do archiwum wydań
 archive_data[session_fixed_key] = output_data
-
 with open("archive.json", "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
+
+# 3. Zapis surowych tytułów z RSS pod szybkie wrzutki na Threads
+raw_feed_output = {
+    "date": date_pretty,
+    "time": time_pretty,
+    "count": len(filtered_raw_articles),
+    "items": filtered_raw_articles
+}
+with open("raw_feed.json", "w", encoding="utf-8") as f:
+    json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
