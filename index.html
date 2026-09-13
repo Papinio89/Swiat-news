@@ -325,7 +325,7 @@
                 const safeSummary = (item.summary || '').replace(/'/g, "\\'");
                 const safeLink = item.link || window.location.href;
 
-                // KARTA
+                // KARTA - Poprawione centrowanie w h-6 i items-center
                 const cardHtml = `
                     <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
@@ -345,7 +345,8 @@
 
                         <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                             <div class="flex items-center mb-3">
-                                <span class="px-2.5 py-1 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
+                                <!-- Idealne centrowanie tekstu -->
+                                <span class="inline-flex items-center justify-center px-2.5 h-6 rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
                                     ${item.category || 'Wiadomość'}
                                 </span>
                             </div>
@@ -378,14 +379,15 @@
                 `;
                 grid.insertAdjacentHTML('beforeend', cardHtml);
 
-                // FAST REVIEW
+                // FAST REVIEW - Poprawione centrowanie w h-5
                 const listHtml = `
                     <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center hover:border-slate-700 hover:bg-slate-800/40 transition">
                         <div class="text-3xl hidden sm:block">${emoji}</div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center gap-2 mb-2">
                                 <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                <span class="text-[9px] font-bold uppercase tracking-wider ${catStyle} px-2 py-0.5 rounded border inline-block whitespace-nowrap">
+                                <!-- Idealne centrowanie tekstu -->
+                                <span class="inline-flex items-center justify-center px-2 h-5 rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
                                     ${item.category}
                                 </span>
                             </div>
