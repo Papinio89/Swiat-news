@@ -1,127 +1,119 @@
 {
   "date": "13 September 2026",
-  "time": "10:08",
-  "timestamp": "2026-09-13_10:08",
+  "time": "16:07",
+  "timestamp": "2026-09-13_16:07",
   "items": [
     {
-      "category": "ŚWIAT / GOSPODARKA",
-      "title": "📉 AI wywołuje rynkową panikę: Co mówią eksperci?",
-      "summary": "Eksperci z dziedziny finansów behawioralnych analizują, dlaczego narracje z pogranicza science fiction o sztucznej inteligencji wywołują nagłe wahania na giełdach. Strach przed nieznanym staje się nowym, realnym czynnikiem inwestycyjnym.",
-      "comment": "Emocje wciąż rządzą rynkami silniej niż algorytmy – wyobraźnia inwestorów potrafi wycenić obawy znacznie szybciej niż jakikolwiek system przedstawi realne zyski.",
-      "image_query": "stock market panic",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQTMybTJXTmgxTXA3UWsxY3laaE93LVZmenB1TEpVRHBsN3ByUXFpMGF0U1IwTHc2di1qbExjSUlYZzhtTHdMMTBjSVJZbjlidXZVQ0pSSm5ITFhtbUpFQzY4OFJRcjlWZ0I3TDNxaUIzZWxuY3dDLUdjcDlDV3BTbmRSS0xLQnY5R0xrZkFXN1pfdXdleFMzZEo4Wm9lWFRYMUl3YlNEbi1ETmRUbW5xVUEwWXlHb3RZUWVWanFZcWFLUWtjWkZCNHI5Y3Z0TC1HVXc?oc=5"
+      "category": "ŚWIAT / GEOPOLITYKA",
+      "title": "🌍 BRICS w cieniu wojny",
+      "summary": "Eskalacja konfliktu z udziałem Iranu zmienia układ sił w grupie BRICS, jednocześnie obnażając głębokie podziały między państwami członkowskimi.",
+      "comment": "Sojusze autorytarne często wyglądają solidnie tylko na papierze, a w obliczu realnego kryzysu interesy narodowe biorą górę nad ideą jedności.",
+      "image_query": "brics flags meeting",
+      "link": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GOSPODARKA / TECHNOLOGIE",
-      "title": "🇬🇧 Wielka Brytania narzuca kwantowe standardy",
-      "summary": "Rząd brytyjski ogłosił pierwsze na świecie narodowe ramy dla standardów technologii kwantowych. Krok ten ma zapewnić krajowi pozycję globalnego lidera w nadchodzącej, wartej miliardy dolarów rewolucji technologicznej.",
-      "comment": "Kto pierwszy ustali zasady gry w cyfrowym świecie, ten zbierze największe zyski z patentów w nadchodzących dekadach.",
-      "image_query": "quantum computing lab",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObXgwb0JPcktlZDljY3VrTXlwT3RaNzdfalJqQU9qbFFkcFhDVXFtX09Kc3RRV2lrRkljWGlBQ2cxOVRocXRZYVNyU3lzT3BoRFpsNkowNDdFclJGcS0yNWg2V1FwWjZtemFQbUh2R2JlalNvaXBLQUlmN25oLVU0QnR1eGFudkZsUVg4bWpRUXd3bWVkWVpLaGdsbzF6OXAyNGdfX2tHMFVCeTYxRWlYYi1naHdNWDloVmF4Mmo3UkRKaEttc0stUDNUR2NKRjN5b1R0S3dWWnRUek9ITy1SQ1pBbw?oc=5"
+      "category": "ŚWIAT / KONFLIKTY",
+      "title": "🛢️ Zaskakujący apel Trumpa do Kijowa",
+      "summary": "Donald Trump wezwał Wołodymyra Zełenskiego do zaprzestania ukraińskich ataków na rosyjskie rafinerie, obawiając się globalnych zawirowań na rynku paliw.",
+      "comment": "To wyraźny sygnał, że amerykańska polityka wewnętrzna i ceny na stacjach benzynowych mogą dyktować warunki na wschodnioeuropejskim froncie.",
+      "image_query": "oil refinery fire",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-13/trump-urges-zelenskyy-to-stop-hitting-russia-s-diesel-refineries"
     },
     {
-      "category": "GOSPODARKA / EDUKACJA",
-      "title": "🎓 Koniec 'złotego biletu'? Drastyczny spadek na studiach IT",
-      "summary": "Informatyka, do niedawna uważana za pewną przepustkę do bogactwa, notuje największy spadek rekrutacji spośród wszystkich kierunków od sześciu lat. Rynek pracy brutalnie weryfikuje oczekiwania absolwentów.",
-      "comment": "Bańka w branży technologicznej wydaje się stabilizować. Zmienia to rynek, który teraz poszukuje specjalistów od AI i analityków, a nie masowych programistów od prostych zadań.",
-      "image_query": "empty university lecture",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX0VZcms3YWZldEZrbDJ2UGstanR4UFU3b2xBV2RZLUJ3dmhGN3laLW9mRndzd1p6eWFWQTNMNlJJNmV3NGpueFR6T2t5X3E1aGYyUENkU3p5d3I3MFMzSGhUQmxMc054STFvcC1NRk9XWTJreklRTE5BeHR1UEpyYzRFaXEtM1l6RlFtZzBlNlo0d3V1M1U5bXpuRGVnbm53MEZ6VlJUWQ?oc=5"
+      "category": "GOSPODARKA / RYNKI",
+      "title": "📈 Wall Street ignoruje widmo bańki",
+      "summary": "Mimo nastrojów przypominających bańkę dot-comów z końca lat 90., analitycy z Wall Street doradzają inwestorom pozostanie przy akcjach.",
+      "comment": "Historia lubi się powtarzać, ale rynek woli wierzyć, że 'tym razem jest inaczej'. Czas pokaże, czy hossa technologiczna ma stabilniejsze fundamenty.",
+      "image_query": "wall street graph",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-13/wall-street-says-stay-with-stocks-despite-late-90s-dot-com-vibe"
     },
     {
-      "category": "GOSPODARKA / FINANSE",
-      "title": "🏦 Światowe Forum Ekonomiczne pod lupą: Kwantowe finanse",
-      "summary": "Największe instytucje finansowe zaczynają przygotowywać się na nadejście technologii kwantowej, która zrewolucjonizuje analizę ryzyka i szyfrowanie danych. Organizacje ostrzegają przed koniecznością szybkiej adaptacji infrastruktury.",
-      "comment": "Komputery kwantowe to w finansach obosieczny miecz – mogą złamać obecne zabezpieczenia każdego banku na świecie, ale jednocześnie stworzyć niezwykle precyzyjne modele przewidywania kryzysów.",
-      "image_query": "holographic financial charts",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObzVhTkV3ZnF2bWdZMk9ORzRVRjV3eW5QTVp6b3R3WnA0akFnSWZONzcyb1FPZGQzQko2bjFLaXpiNEMwUlpsTGY1MnN6bmt5Y2tBamNBX0QwbTJsZWdwX19nYVVvd29PMUpRSHN6VG5uM0dMMnY1cENHbTRMang3aHVEM2s0QjdzcUJWSzBWZHpHV0wtMTc1SFdzV2hiYzk1LURVNkJFc2lvMnlRelZla2R1Q2xzczlqeFkw?oc=5"
+      "category": "GOSPODARKA / LOGISTYKA",
+      "title": "🚢 Chiny dominują na morzach",
+      "summary": "Zmiany geopolityczne i przetasowania w globalnych łańcuchach dostaw sprawiły, że chińskie porty kontenerowe drastycznie umocniły swoją pozycję w światowych rankingach.",
+      "comment": "Kto kontroluje porty, ten kontroluje handel. Zachód próbuje się uniezależnić, ale infrastrukturalna przewaga Pekinu wciąż rośnie.",
+      "image_query": "container port cranes",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNal84T09hM1JnYVVOM0QzXzZ5WUhTRk9BTUFpQUluUUt0RVBWNGZjTnNTS2Nfenp4TTI2YWV1NnYzTjU3Tkd6YjUxUUhlWk5IcDhqd0hfdUh0OV8zQ0FOaG94dGZXRlQzNHl5VnA2RF9DSUc0ZnIyNC0yMTJTLVp0bm1LWml6aFJjUTRRLWtqcVNNcW5GeGU5UF8xMG9pS0FJekE0Z01n?oc=5"
     },
     {
-      "category": "GEOPOLITYKA",
-      "title": "🕊️ Zakamuflowane warunki: USA reaguje na żądania Putina",
-      "summary": "Amerykańska dyplomacja oficjalnie zapoznała się z twardymi warunkami postawionymi przez Władimira Putina. Strona ukraińska kategorycznie odrzuca możliwość ich spełnienia, uznając postulaty za próbę wymuszenia kapitulacji.",
-      "comment": "Międzynarodowe negocjacje kuluarowe to skomplikowane przeciąganie liny, w którym strony publicznie stawiają zaporowe warunki, testując cierpliwość sojuszników przeciwnika.",
-      "image_query": "diplomatic negotiation table",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeF9HM1V3TE1xVEVEenlwV1ZWVlpGZC15LXczV0RObTRDV3dfRWdPMFdEZjNiU0hoY3ZHM045UE1xRWhMS3ZRbTJFUUpIV0R3ekZ2SC1ZaHRtdVdISTVPWVprdXVlSzZqMEFvR0p1a1dwUkk1cXVqS0l4Qm11bjQySFp5THlyVFp6UHBaakFPYm9wNGE3MlJ6cGxWWHFXR1pzNWhBbVVmN2JEQXVmNHdhNjVtcW8ySnJGSGRSVQ?oc=5"
+      "category": "TECHNOLOGIE / BIZNES",
+      "title": "💼 OpenAI opóźnia giełdowy debiut",
+      "summary": "Sam Altman stwierdził, że wprowadzenie OpenAI na giełdę w 2026 roku byłoby 'nierozważne', ucinając spekulacje o szybkim IPO giganta AI.",
+      "comment": "Pozostanie spółką prywatną daje liderom AI swobodę w podejmowaniu ryzykownych decyzji badawczych bez presji kwartalnych wyników i kaprysów akcjonariuszy.",
+      "image_query": "stock market ai",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised"
     },
     {
-      "category": "ŚWIAT / POLITYKA",
-      "title": "🗳️ Polacy walczą o głosy w szwedzkich wyborach",
-      "summary": "Kandydaci polskiego pochodzenia startują z list wyborczych w Szwecji, starając się wpłynąć na lokalną politykę na szczeblu samorządowym. Ich główne postulaty skupiają się na bezpieczeństwie, kwestiach integracyjnych i rozwoju przedsiębiorczości.",
-      "comment": "Polonia na świecie coraz rzadziej zamyka się w hermetycznych społecznościach, a coraz odważniej sięga po realną władzę publiczną w krajach swojego zamieszkania.",
-      "image_query": "voting ballot box",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPY0syUnFWdUV0UUk5R093WUtKVVpTWTFtVEVNb0oyUjZLVGNEUVdlZDVkUVF2OGVrREc4eUZINUlTQXlJMVQ0RmNJYl93ekZOWUJ2eU1NN2VRVUhQd1Q0YjdyV2dnV2htODZtbDBVd3lrdm52cUwtRGhMRVZGbGlXZDZnTFNWSkpRWUJMN0hR?oc=5"
+      "category": "TECHNOLOGIE / OBRONNOŚĆ",
+      "title": "⚡ Fuzja jądrowa na celowniku wojska",
+      "summary": "Startupy pracujące nad fuzją jądrową znajdują hojnych partnerów w sektorze obronnym, co ma drastycznie przyspieszyć rozwój czystej i nieograniczonej energii.",
+      "comment": "Technologie militarne zawsze były motorem napędowym innowacji. Zastrzyk gotówki od armii może być przełomem, na który czekała fizyka plazmy.",
+      "image_query": "nuclear fusion reactor",
+      "link": "https://techcrunch.com/2026/09/13/fusion-power-startups-find-new-partners-in-the-defense-world/"
     },
     {
-      "category": "ŚWIAT / SPOŁECZEŃSTWO",
-      "title": "📢 Gorące powitanie: Protesty na trasie Donalda Trumpa",
-      "summary": "Przeciwnicy byłego prezydenta USA zorganizowali głośne demonstracje na ulicach w związku z jego wizytą. Protestujący tłumnie wyrazili głęboki sprzeciw wobec jego dotychczasowej, mocno kontrowersyjnej retoryki.",
-      "comment": "Ogromna polaryzacja polityczna ciągnie się za Donaldem Trumpem wszędzie, niczym burzowa chmura – wzbudzając skrajne emocje od fanatycznego uwielbienia po otwartą niechęć.",
-      "image_query": "street protest megaphones",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTkNaVnh0MkNFTzhIVGx2WjRFOElWWnU0ZHl1R3BFV2VlOTBxcXZmaDI4YlpSUkZoc0ZSRGZHZ2NkWGVjNFNCb3V1eXJzVG1UcVpWOFd0QWIxM0x3YVBwUDNTVTJXY09VZmUzMk05eEF2aUJtWndFanZfbjVTZHFubE8yN3hlek9rdDU5b09oRm4wTGtfZ3BtemFyYmw5SUE2T0FubzJPUUxwekE?oc=5"
+      "category": "GOSPODARKA / SPORT",
+      "title": "⛳ Arabskie miliardy i widmo bankructwa",
+      "summary": "Wspierana przez saudyjski kapitał prestiżowa liga LIV Golf, po zainwestowaniu 5 miliardów dolarów, stoi w obliczu potencjalnego bankructwa.",
+      "comment": "Nawet nieograniczone fundusze państwowe z Bliskiego Wschodu nie gwarantują sukcesu biznesowego, jeśli projekt nie potrafi utrzymać lojalnej bazy fanów.",
+      "image_query": "golf course money",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-13/liv-golf-s-5-billion-path-to-bankruptcy"
     },
     {
-      "category": "POLITYKA / KRAJ",
-      "title": "🤦‍♂️ Echa skandalu: Ukraina reaguje na incydenty w polskim Sejmie",
-      "summary": "Radosław Sikorski otwarcie przyznał, że kontrowersyjne zachowanie posła Grzegorza Brauna jest szeroko i negatywnie komentowane na ukraińskich szczytach władzy. Dyplomacja polska musi obecnie zażegnywać niepotrzebny kryzys wizerunkowy.",
-      "comment": "Krajowe wybryki parlamentarne dawno przestały być wyłącznie politycznym folklorem, stając się niebezpieczną amunicją używaną do dezinformacji w trakcie poważnych konfliktów zbrojnych.",
-      "image_query": "politician press conference",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSklpSzZGV1JjMUxWdjRrUkpFZGN2T2MwQXQzdE9uWHJDVFJ1ZEg1THlDNjYtRVVNY1ZsckltUVVWSEFLcGhqNHByMm95cl95MlRkWWQ5aGNwU0ctSDliUWZoZUZrSzhETW5USDFiMGFZNlpxbzB3QnYtUjRjMWQwX05HdVVSTkthOWZRbUl2cVQzcUJLOXc?oc=5"
+      "category": "ŚWIAT / OBRONNOŚĆ",
+      "title": "💥 Drony paraliżują logistykę",
+      "summary": "Precyzyjne uderzenia ukraińskich bezzałogowców w kluczowe węzły komunikacyjne doprowadziły do zniszczenia infrastruktury obsługującej dziesiątki tysięcy ciężarówek.",
+      "comment": "Wojna asymetryczna w pełnej krasie. Stosunkowo tanie drony uderzeniowe potrafią wywołać wielomilionowe straty w łańcuchach dostaw mocarstwa.",
+      "image_query": "military drone strike",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQajRGWDJwaHphMGxmeVBiMUlYekdpNTNINWxzRHpqVi1rMHlCQjg1dXJXX0lMZDdwMjg2U3VBMGxuOC1RWnoxVE8wU3FYekRudEY1eV85NkR1WE5jdWlYQmtJeGhoc1JJLThKRmpIY1NrM0lqZ0tWQU54TXpycGJOQ1c2ZFZyUGQ3TVhrOExfMFdJSlBPUl90RDFmMjRQUWxnQW9QVDZmS1dUVWZYUWc?oc=5"
     },
     {
-      "category": "ŚWIAT / TECHNOLOGIE",
-      "title": "🔬 Amerykanie ruszają z 'Projektem Triada'",
-      "summary": "Narodowa Fundacja Nauki w USA zainaugurowała strategiczną inicjatywę mającą na celu błyskawiczne wdrożenie wynalazków bazujących na technologii kwantowej. Projekt skupia się na rozwiązaniach dla realnego przemysłu i obronności.",
-      "comment": "Wyścig zbrojeń technologicznych nabiera niesamowitego tempa – supermocarstwa wiedzą, że to algorytmy nowej generacji, a nie tradycyjna armia, wyznaczą dominację w XXI wieku.",
-      "image_query": "advanced science laboratory",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQV1dGdkVYamQ4LUowMFFrM21fOXo3N3VTVGt3MnpYQnY4WE9ZYWllWUozUllESXlFVGE4TmQzZlBjOTZNU015MG91akVCZmdSY2kzbXFIOTBTbTFhRXl1enQ3NjlRZ2ROWmo1Q3hUZkc4VXJRM1RKbUZJX1JWWE1vVjhzRGQtdTU5SlNn?oc=5"
+      "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
+      "title": "🛩️ Niespokojne niebo nad Bałtykiem",
+      "summary": "W wyniku nagłych i niespodziewanych alarmów nad przestrzenią powietrzną Litwy, polski samolot pasażerski musiał zostać pilnie zawrócony tuż przy granicy.",
+      "comment": "Rosnące napięcie w regionie państw bałtyckich sprawia, że rutynowe loty cywilne coraz częściej padają ofiarą wojskowych prowokacji.",
+      "image_query": "passenger plane radar",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2VNTmgwVnhGTXVxY2Vlam9QSVgtVEQtd1BFbnN6TFZMREVBOWlVc3Y5WE9naUY2TkVsNkFpdWFYdTlhZmRnY3hLd013QTFzdkF1SkZGa2Y4dW1KRUR4OGt2ZVlHOURzU2dudTJBOXhmbjdycXc4LVItTlJBVTI2cEc5ZlhYd05iazgtNWVhbEtod1pOUmxlblZTN0Q?oc=5"
     },
     {
-      "category": "ŚWIAT / GOSPODARKA",
-      "title": "🏆 MIT Sloan na szczycie: Prestiżowy ranking MBA ogłoszony",
-      "summary": "'Financial Times' opublikował wyczekiwany przez biznesmenów ranking programów MBA, w którym najwyższą pozycję zajęła znana na całym świecie szkoła MIT Sloan. Zestawienie to od lat wskazuje trendy w edukacji dla kadry zarządzającej.",
-      "comment": "Prestiżowy dyplom wyższej uczelni wciąż funkcjonuje niczym magiczny klucz do najważniejszych rad nadzorczych, choć sam rynek pracy coraz bardziej ceni twarde kompetencje.",
-      "image_query": "university campus graduation",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M0xuenR0N0g0ZW94ZWttT1c2S21ORU8zUUJtNGRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
-    },
-    {
-      "category": "FAKTY / POLSKA",
-      "title": "🚑 Dramat w konińskim szpitalu: Kobieta wypadła z okna",
-      "summary": "Służby badają wstrząsające okoliczności śmierci 88-letniej pacjentki, która wypadła z okna na terenie lokalnej placówki medycznej w Koninie. Pod lupę wzięto wewnętrzne procedury nadzoru nad pacjentami.",
-      "comment": "Tragedie tego formatu niemal zawsze stanowią bolesny bodziec do natychmiastowych audytów bezpieczeństwa i odnawiają dyskusję o obciążeniu personelu medycznego w Polsce.",
-      "image_query": "hospital building exterior",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUDZNMVVrRjZxRi1SdENxMmtFV2tZekROTUFmV2s5NVo2NXRHMlBCdkcwS3dUVmlaLVpaNzY0N0drOERfN2FHOTRRWUtLdHZ6RklCWWFieUZlamgxQmRoOEgzVDV5eVdVYWZscGFfdzI1NjJRb3AwWUFULTFoRlFQVGc1R0Nza3ZaZ0RxXzdLT1RoYVN4NVB4bjZieGlCVFJKaGNFaDJRRW9lck5RSUlnaHZNdVFWb1hTZ0ZZejBrWXBZekdJ?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / LIFE",
-      "title": "♻️ Ikoniczna 'Kopuła' zyskuje nietypowe drugie życie",
-      "summary": "Kanadyjski Science World postanowił w kreatywny sposób poddać upcyclingowi swoją kultową instalację – The Beautiful Dome. Zamiast lądować na śmietniku, geometryczne segmenty posłużą do budowy ekologicznych, użytkowych projektów miejskich.",
-      "comment": "Architektura w duchu zero waste pokazuje, że wyburzenie starych konstrukcji to ostateczność. Kreatywny recykling jest nowym wyznacznikiem odpowiedzialnego projektowania.",
-      "image_query": "geodesic dome structure",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVHl2OUx2blRCXy1sTnlzaHE2YzN4STdvRndjcXRjN19UaVkwS0hFUzRRNWVQSlRuaUNsZzlwOW16YTZRYUs5RTdTUDYtWnlyUFE2NWpDSjRqbHlWYXhKVG9qU1ExRWlBVEhEeVJ6OFBqbnJLZF9LWGhTWTFMemlVNHp4WEdzQmhFYk9XZVNXdGpmN3pic0xhdmZiNF9qZUx4dS1hWUlmVQ?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / EDUKACJA",
-      "title": "🦉 Biznes po amerykańsku: Zaskakujący triumf uczelni w Indianie",
-      "summary": "Mniej znana, a wysoce innowacyjna Daniels School of Business na uniwersytecie Purdue oficjalnie przypieczętowała tytuł najlepszej szkoły liderów w stanie Indiana. Placówka zasłynęła nietypowym włączaniem najnowszej technologii AI w struktury nauczania.",
-      "comment": "Starcie akademickich gigantów w Stanach Zjednoczonych udowadnia, że innowacyjność mniejszych, zwinnych placówek często pokonuje historyczny i nieco skostniały prestiż najdroższych szkół.",
-      "image_query": "students studying library",
-      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV1NLckxDd2VBa01kN09DeGhYakZrMUZseDN1OW5SRlVlRDVBcGhGUmNubFdjZFZGVkxLUi1wcF9UYXhidm51YXNaYk5kbUctQnpTR1BsakdmcjJjSmJ0R2VXQTEzWG9hcUI5a0pEMVRLZmpVeXBuWE1fVHJzMWVMYmFNWXdOY3VwX2kwR1lkNXJiSkVjZmNUTHUzSndpZXVQR3Q1YjJzOEtpSVc5Z1dlazlxZjU5bmNsX1djdVQwMlpMMnlFYnJwUlJoOWwzZncwZEFDY2ZrdkxFYUZFUXJtR3JxY2gyNWg5MkpMeElvZzhfaklCYUtsbklOdnFVajhQNGhOY1llNA?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / TECHNOLOGIE",
-      "title": "🤖 Mityczny 'Claude Mythos': Algorytmy piszą własną filozofię",
-      "summary": "Badacze wykazali, że zaawansowany model językowy AI od firmy Anthropic podświadomie wykształcił swój własny 'Mythos' – unikalny zestaw cyfrowych przekonań. Sieć BBC zastanawia się, do czego zdolne są programy z własnym, zawiłym poczuciem moralności.",
-      "comment": "Kiedy maszyny zaczynają generować niezrozumiałe dla twórców zręby cyfrowej kultury i swoistych 'wierzeń', granica między programowaniem a świadomością staje się mocno nieostra.",
-      "image_query": "artificial intelligence brain",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RQ080QjNmR3N5VElKQnh1WXRFSk9iR0JxTy1ZaDNRY0dXNUFXZ0w1Wk1XUWs2MTdTR3dUZVpfMHYwVUJSZ1ZTQlVPaWFFODdFSHRKdXJxazVfUQ?oc=5"
+      "category": "ŚWIAT / KLIMAT",
+      "title": "🏝️ Pacyfik gra kartą polityczną",
+      "summary": "Małe narody wyspiarskie Pacyfiku sprytnie wykorzystują rosnącą rywalizację światowych mocarstw, by pozyskać potężne fundusze na walkę ze skutkami zmian klimatu.",
+      "comment": "To mistrzowska dyplomacja w wydaniu mikro-państw: manewrowanie między Waszyngtonem a Pekinem to dla nich dosłownie kwestia przetrwania ponad poziomem morza.",
+      "image_query": "pacific island flooding",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
     },
     {
       "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🧠 Od utopii do dystopii: Odwieczny lęk ludzkości przed kodem",
-      "summary": "Encyklopedia Britannica odświeżyła monumentalną debatę na temat zalet i filozoficznych zagrożeń sztucznej inteligencji. Jak się okazuje, od dekad boimy się dokładnie tych samych schematów, pomimo niewyobrażalnego rozwoju mocy obliczeniowych.",
-      "comment": "Nasza natura się nie zmienia – kiedyś wpadaliśmy w popłoch na widok pędzącego parowozu, dziś odczuwamy podobny dyskomfort przed układem zer i jedynek zgrabnie piszącym ludzką poezję.",
-      "image_query": "robot typing computer",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLOFRoZ3JOQjhkUWhpMGQ1RmRWT0tPRWd3TEpmN2kzV1A0b3N5NmpNTGs2eVR3QXVZNEhBMkZnU2xPd3RwZU43Z2dVVkdEUUJfVklHQ2Q1eUFEU3VCMm5OVEJlWDdvTEFIeDMzN29nSmJlbnhfM3c?oc=5"
+      "title": "🐝 Kosmiczne wypieki z plastiku",
+      "summary": "Naukowcy z sukcesem opracowali innowacyjną, biochemiczną metodę przekształcania szkodliwych plastikowych odpadów w jadalne, bezpieczne dla ludzi ciastka.",
+      "comment": "Choć brzmi to jak kulinarny eksperyment szaleńca, proces ten może na zawsze rozwiązać problem zanieczyszczenia oceanów i utylizacji śmieci na stacjach orbitalnych.",
+      "image_query": "plastic recycling food",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260912220033.htm"
+    },
+    {
+      "category": "CIEKAWOSTKA / PRAWO",
+      "title": "🤖 Prawnik ofiarą halucynacji AI",
+      "summary": "Amerykański prawnik używający ChatGPT w pracy został surowo ukarany za zacytowanie w sądzie całkowicie zmyślonych zeznań i nieistniejących akt spraw.",
+      "comment": "To bolesna lekcja dla nowoczesnych profesjonalistów: sztuczna inteligencja potrafi być błyskotliwym asystentem, ale kłamie jak z nut, gdy brakuje jej faktów.",
+      "image_query": "lawyer robot court",
+      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/"
+    },
+    {
+      "category": "CIEKAWOSTKA / MEDYCYNA",
+      "title": "🧠 Algorytmy prześwietlają Reddita",
+      "summary": "Sztuczna inteligencja bezbłędnie przeanalizowała 400 tysięcy luźnych wpisów na forach internetowych, odkrywając ukryte skutki uboczne hitowego leku Ozempic.",
+      "comment": "Głosy anonimowego tłumu pacjentów, połączone z analityczną mocą maszyn, tworzą dziś najszybszy system ostrzegania w światowej farmakologii.",
+      "image_query": "ai medical data",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260912222856.htm"
+    },
+    {
+      "category": "CIEKAWOSTKA / KOSMOS",
+      "title": "🚀 Operacje zaćmy w stanie nieważkości",
+      "summary": "Medycy wojskowi przewidują, że planowane wieloletnie misje międzyplanetarne wymuszą przeprowadzanie skomplikowanych operacji oczu u astronautów na orbicie.",
+      "comment": "Kosmiczne promieniowanie to bezlitosny wróg ludzkiego DNA. Okazuje się, że podbój Marsa to wyzwanie nie tylko dla inżynierów, ale i dla gwiezdnych okulistów.",
+      "image_query": "surgeon space station",
+      "link": "https://phys.org/news/2026-09-cataract-surgery-space-surgeon.html"
     }
   ]
 }
