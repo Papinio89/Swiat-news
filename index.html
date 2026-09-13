@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- html2canvas do zapisywania kafelków jako obrazki -->
+    <!-- html2canvas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
@@ -27,64 +28,77 @@
         }
     </script>
     <style>
-        body { background-color: #020617; color: #f8fafc; }
-        .glass-header {
-            background: rgba(2, 6, 23, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        body { 
+            font-family: 'Inter', sans-serif; 
+            transition: background-color 0.3s, color 0.3s;
         }
         
+        .glass-header {
+            backdrop-filter: blur(12px);
+        }
+        
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Shimmer (Ładowanie) */
         .shimmer {
-            background: linear-gradient(90deg, #0f172a 8%, #1e293b 18%, #0f172a 33%);
             background-size: 200% 100%;
             animation: shimmer-anim 1.5s infinite;
         }
+        .dark .shimmer { background-image: linear-gradient(90deg, #0f172a 8%, #1e293b 18%, #0f172a 33%); }
+        .shimmer { background-image: linear-gradient(90deg, #e2e8f0 8%, #f1f5f9 18%, #e2e8f0 33%); }
+        
         @keyframes shimmer-anim { 
             0% { background-position: 200% 0; } 
             100% { background-position: -200% 0; } 
         }
 
-        /* Ukrywanie scrollbara dla płynniejszego wyglądu */
+        /* Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #020617; }
-        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .dark ::-webkit-scrollbar-thumb { background: #1e293b; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col">
+<body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
     <!-- Modal do zapisu obrazu na telefonach -->
-    <div id="save-modal" class="fixed inset-0 z-[100] bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
-        <p class="text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
-        <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-700" alt="Gotowa karta">
+    <div id="save-modal" class="fixed inset-0 z-[100] bg-white/95 dark:bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
+        <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
+        <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-200 dark:border-slate-700" alt="Gotowa karta">
         <div class="flex flex-wrap justify-center gap-3">
             <a id="save-link" href="#" download="swiatwminute.jpg" class="px-6 py-3 bg-brand-500 text-slate-900 font-bold rounded-xl shadow-lg hover:bg-brand-400 transition text-center">
                 Pobierz na dysk
             </a>
-            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-800 text-white font-bold rounded-xl border border-slate-700 hover:bg-slate-700 transition">
+            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-700 transition">
                 Zamknij
             </button>
         </div>
-        <p class="text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
+        <p class="text-slate-500 dark:text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
             Na iPhone (Safari): dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
         </p>
     </div>
 
     <!-- Nagłówek -->
-    <header class="sticky top-0 z-50 glass-header">
+    <header class="sticky top-0 z-50 glass-header bg-white/85 dark:bg-[rgba(2,6,23,0.85)] border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center shadow-lg shadow-amber-500/20">
-                    <i class="fa-solid fa-earth-americas text-slate-900 text-lg"></i>
+                    <i class="fa-solid fa-earth-americas text-white dark:text-slate-900 text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="font-black text-xl tracking-tight leading-none text-white">Świat <span class="text-brand-400">w Minutę</span></h1>
-                    <p id="header-date" class="text-[11px] font-medium text-slate-400 mt-1 uppercase tracking-wider">Najważniejsze z kraju i ze świata</p>
+                    <h1 class="font-black text-xl tracking-tight leading-none text-slate-900 dark:text-white">Świat <span class="text-brand-500 dark:text-brand-400">w Minutę</span></h1>
+                    <p id="header-date" class="text-[11px] font-medium text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Najważniejsze z kraju i ze świata</p>
                 </div>
             </div>
-            <div>
-                <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
-                    <i class="fa-brands fa-instagram"></i> <span class="hidden sm:inline">Obserwuj</span>
+            <div class="flex items-center gap-3">
+                <!-- Theme Toggle -->
+                <button onclick="toggleTheme()" class="w-10 h-10 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
+                    <i class="fa-brands fa-instagram"></i> Obserwuj
                 </a>
             </div>
         </div>
@@ -94,54 +108,81 @@
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         
         <div class="mb-6 text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Przegląd Dnia</h2>
-            <p class="text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat.</p>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-3">Przegląd Dnia</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat.</p>
         </div>
 
-        <!-- Narzędzia: Przełącznik zakładek i Archiwum -->
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10 bg-slate-900/40 p-2 sm:p-4 rounded-3xl border border-slate-800/50">
+        <!-- Pasek Narzędzi -->
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-4 mb-10 bg-white dark:bg-slate-900/40 p-2 sm:p-4 rounded-3xl border border-slate-200 dark:border-slate-800/50 shadow-sm dark:shadow-none transition-colors duration-300">
+            
             <!-- Zakładki -->
-            <div class="flex gap-2 w-full sm:w-auto">
-                <button id="tab-full" onclick="switchTab('full')" class="flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+            <div class="flex gap-2 w-full lg:w-auto">
+                <button id="tab-full" onclick="switchTab('full')" class="flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                     <i class="fa-solid fa-layer-group mr-1.5"></i> Pełne Karty
                 </button>
-                <button id="tab-fast" onclick="switchTab('fast')" class="flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700">
+                <button id="tab-fast" onclick="switchTab('fast')" class="flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                     <i class="fa-solid fa-list-ul mr-1.5"></i> Fast Review
                 </button>
             </div>
             
-            <!-- Archiwum Dropdown -->
-            <div class="relative w-full sm:w-64">
-                <select id="archive-select" onchange="loadEdition(this.value)" class="w-full appearance-none bg-slate-800 border border-slate-700 text-slate-300 text-sm font-semibold py-2.5 pl-4 pr-10 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer shadow-lg hover:bg-slate-700 transition">
-                    <option value="">Dzisiejsze wydanie</option>
-                </select>
-                <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none text-xs"></i>
+            <div class="flex flex-col sm:flex-row w-full lg:w-auto gap-3">
+                <!-- Wyszukiwarka -->
+                <div class="relative w-full sm:w-64">
+                    <input type="text" id="search-input" onkeyup="filterNews()" placeholder="Szukaj wiadomości..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2.5 pl-10 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                </div>
+
+                <!-- Archiwum Dropdown -->
+                <div class="relative w-full sm:w-64">
+                    <select id="archive-select" onchange="loadEdition(this.value)" class="w-full appearance-none bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2.5 pl-4 pr-10 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                        <option value="">Dzisiejsze wydanie</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                </div>
             </div>
         </div>
 
         <!-- Ładowanie -->
         <div id="loader" class="flex flex-col items-center justify-center py-16">
-            <i class="fa-solid fa-circle-notch fa-spin text-brand-400 text-4xl mb-4"></i>
+            <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
             <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
+        </div>
+
+        <!-- Brak wyników (wyszukiwanie) -->
+        <div id="no-results" class="hidden flex-col items-center justify-center py-12 text-slate-500">
+            <i class="fa-regular fa-face-frown-open text-4xl mb-3"></i>
+            <p class="font-medium">Nic nie znaleziono dla tego zapytania.</p>
         </div>
 
         <!-- Widok: Pełne Karty -->
         <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 transition-opacity duration-500 hidden">
-            <!-- Karty wstrzykiwane przez JS -->
+            <!-- Karty -->
         </div>
 
         <!-- Widok: Fast Review -->
-        <div id="fast-list" class="flex-col gap-3 max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            <!-- Lista wstrzykiwana przez JS -->
+        <div id="fast-list-container" class="max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
+            <!-- Lista artykułów -->
+            <div id="fast-list" class="flex flex-col gap-3 mb-8"></div>
+            
+            <!-- Eksport do Threads -->
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-sm">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider"><i class="fa-brands fa-threads text-brand-500"></i> Gotowe pod Threads</h3>
+                    <button onclick="copyThreadsText()" class="px-4 py-1.5 bg-brand-500 text-white dark:text-slate-900 font-bold text-xs rounded-full hover:bg-brand-400 transition shadow-sm">
+                        Kopiuj tekst
+                    </button>
+                </div>
+                <textarea id="threads-output" readonly class="w-full h-48 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 focus:outline-none resize-none"></textarea>
+            </div>
         </div>
 
     </main>
 
     <!-- Stopka -->
-    <footer class="border-t border-slate-800/50 mt-auto bg-slate-900/30">
+    <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
-            <p class="text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem API Pexels & AI.</p>
+            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem API Pexels & AI.</p>
         </div>
     </footer>
 
@@ -151,11 +192,34 @@
         const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
 
-        // Zmienne globalne na potrzeby archiwum
         let globalNewsData = { items: [] };
         let globalRozData = { items: [] };
         let archiveNews = {};
         let archiveRoz = {};
+        let currentRenderedItems = []; // Przechowuje wyrenderowane obiekty dla wyszukiwarki i Threads
+
+        // Ustawienia motywu (Dzień/Noc)
+        function initTheme() {
+            if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+                document.documentElement.classList.remove('dark');
+                document.getElementById('theme-icon').className = 'fa-solid fa-sun';
+            } else {
+                document.documentElement.classList.add('dark');
+                document.getElementById('theme-icon').className = 'fa-solid fa-moon';
+            }
+        }
+        
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+                document.getElementById('theme-icon').className = 'fa-solid fa-sun';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+                document.getElementById('theme-icon').className = 'fa-solid fa-moon';
+            }
+        }
 
         function closeSaveModal() {
             document.getElementById('save-modal').classList.add('hidden');
@@ -183,16 +247,21 @@
             downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
             
             try {
+                // Wymuszamy na chwilę dark mode dla eksportu, żeby karta zawsze wyglądała dobrze
+                const wasLight = !document.documentElement.classList.contains('dark');
+                if(wasLight) document.documentElement.classList.add('dark');
+
                 const canvas = await html2canvas(card, {
                     scale: 2, 
                     useCORS: true, 
                     allowTaint: true,
-                    backgroundColor: '#020617',
+                    backgroundColor: '#020617', // Zawsze tło nocy pod kąty
                     logging: false
                 });
+
+                if(wasLight) document.documentElement.classList.remove('dark');
                 
                 const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
-                
                 const safeName = title.replace(/[^a-ząćęłńóśźż0-9]/gi, '_').toLowerCase().substring(0, 30);
                 const fileName = `swiatwminute_${safeName}.jpg`;
                 
@@ -205,7 +274,7 @@
                 
             } catch (err) {
                 console.error('Błąd generowania obrazka:', err);
-                alert('Wystąpił błąd podczas tworzenia grafiki. Upewnij się, że masz stabilne połączenie z internetem.');
+                alert('Błąd tworzenia grafiki.');
             } finally {
                 downloadBtn.innerHTML = originalHtml;
             }
@@ -215,55 +284,107 @@
             const btnFull = document.getElementById('tab-full');
             const btnFast = document.getElementById('tab-fast');
             const grid = document.getElementById('news-grid');
-            const list = document.getElementById('fast-list');
+            const listContainer = document.getElementById('fast-list-container');
+
+            const activeBtnClass = "flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+            const inactiveBtnClass = "flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
 
             if (tab === 'full') {
-                btnFull.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-                btnFast.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
-                
+                btnFull.className = activeBtnClass;
+                btnFast.className = inactiveBtnClass;
                 grid.classList.remove('hidden');
-                list.classList.add('hidden');
-                
+                listContainer.classList.add('hidden');
                 setTimeout(() => {
                     grid.classList.remove('opacity-0');
-                    list.classList.add('opacity-0');
+                    listContainer.classList.add('opacity-0');
                 }, 50);
             } else {
-                btnFast.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-                btnFull.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
-                
-                list.classList.remove('hidden');
+                btnFast.className = activeBtnClass;
+                btnFull.className = inactiveBtnClass;
+                listContainer.classList.remove('hidden');
                 grid.classList.add('hidden');
-                
                 setTimeout(() => {
-                    list.classList.remove('opacity-0');
+                    listContainer.classList.remove('opacity-0');
                     grid.classList.add('opacity-0');
                 }, 50);
             }
         }
 
+        // Wyszukiwarka
+        function filterNews() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            let visibleCount = 0;
+
+            currentRenderedItems.forEach(item => {
+                const card = document.getElementById(`card-${item.id}`);
+                const listItem = document.getElementById(`list-${item.id}`);
+                
+                const searchableText = `${item.title} ${item.summary} ${item.category} ${item.comment}`.toLowerCase();
+                
+                if (searchableText.includes(query)) {
+                    if (card) card.style.display = '';
+                    if (listItem) listItem.style.display = '';
+                    visibleCount++;
+                } else {
+                    if (card) card.style.display = 'none';
+                    if (listItem) listItem.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('no-results');
+            if (visibleCount === 0 && currentRenderedItems.length > 0) {
+                noResults.classList.remove('hidden');
+                noResults.classList.add('flex');
+            } else {
+                noResults.classList.add('hidden');
+                noResults.classList.remove('flex');
+            }
+        }
+
+        // Generator Threads
+        function generateThreadsContent(items, dateText) {
+            let txt = `🌍 Świat w Minutę - ${dateText}\n\n`;
+            items.forEach(item => {
+                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0].trim() : (item.isFun ? '🎉' : '📌');
+                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '').trim() : item.title.trim();
+                txt += `${emoji} ${rawTitle}\n`;
+            });
+            txt += `\n👉 Pełne wiadomości: swiatwminute.vercel.app`; // Podmień na docelowy krótki link
+            document.getElementById('threads-output').value = txt;
+        }
+
+        function copyThreadsText() {
+            const textarea = document.getElementById('threads-output');
+            textarea.select();
+            document.execCommand('copy');
+            alert('Skopiowano treść pod Threads!');
+            // Odznaczenie tekstu po skopiowaniu
+            window.getSelection().removeAllRanges();
+        }
+
         function getCategoryColors(cat, isFun) {
-            if (isFun) return "text-fuchsia-400 bg-fuchsia-400/10 border-fuchsia-400/20";
+            if (isFun) return "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
             const c = (cat || "").toUpperCase();
-            if (/AI|TECHNOLOG/.test(c)) return "text-violet-400 bg-violet-400/10 border-violet-400/20";
-            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "text-emerald-400 bg-emerald-400/10 border-emerald-400/20";
-            if (/NAUKA/.test(c)) return "text-teal-400 bg-teal-400/10 border-teal-400/20";
-            if (/POLSKA/.test(c)) return "text-red-400 bg-red-400/10 border-red-400/20";
-            if (/OBRONN|WOJSK/.test(c)) return "text-slate-300 bg-slate-300/10 border-slate-300/20";
-            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "text-blue-400 bg-blue-400/10 border-blue-400/20";
-            return "text-brand-400 bg-brand-400/10 border-brand-400/20";
+            if (/AI|TECHNOLOG/.test(c)) return "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+            if (/NAUKA/.test(c)) return "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+            if (/POLSKA/.test(c)) return "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+            if (/OBRONN|WOJSK/.test(c)) return "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+            return "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
         }
 
         function getCommentColors(isFun) {
-            if (isFun) return "bg-fuchsia-950/20 border-fuchsia-900/30 text-fuchsia-200 border-l-4 border-l-fuchsia-500";
-            return "bg-slate-800/40 border-slate-700/50 text-slate-300 border-l-4 border-l-brand-400";
+            if (isFun) return "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
+            return "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
         }
 
         function highlightTitle(title, isFun) {
             const words = title.trim().split(/\s+/);
             if (words.length >= 3) {
                 const last = words.pop();
-                return `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-400' : 'text-brand-400'}">${last}</span>`;
+                return `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
             }
             return title;
         }
@@ -284,6 +405,7 @@
         }
 
         async function init() {
+            initTheme();
             try {
                 const [newsRes, rozRes, archNewsRes, archRozRes] = await Promise.all([
                     fetch('news.json').catch(() => null),
@@ -297,7 +419,6 @@
                 archiveNews = (archNewsRes && archNewsRes.ok) ? await archNewsRes.json() : {};
                 archiveRoz = (archRozRes && archRozRes.ok) ? await archRozRes.json() : {};
 
-                // Budowanie listy wyboru w Archiwum
                 const select = document.getElementById('archive-select');
                 const keys = Object.keys(archiveNews).sort().reverse();
                 
@@ -305,32 +426,33 @@
                     const data = archiveNews[key];
                     const option = document.createElement('option');
                     option.value = key;
-                    
                     let edName = key.includes('poranne') ? 'Poranne' : (key.includes('wieczorne') ? 'Wieczorne' : 'Wydanie');
                     let dateStr = data.date || key.split('_')[0];
                     option.textContent = `${dateStr} • ${edName}`;
                     select.appendChild(option);
                 });
 
-                // Uruchomienie z domyślnymi (najnowszymi) danymi
                 await loadEdition('');
 
             } catch (error) {
                 console.error("Inicjalizacja:", error);
-                document.getElementById('loader').innerHTML = '<p class="text-red-400">Brak połączenia. Odśwież stronę.</p>';
+                document.getElementById('loader').innerHTML = '<p class="text-red-500 font-medium">Brak połączenia. Odśwież stronę.</p>';
             }
         }
 
-        // Ładowanie konkretnego wydania
         async function loadEdition(archiveKey) {
             const grid = document.getElementById('news-grid');
-            const list = document.getElementById('fast-list');
+            const listContainer = document.getElementById('fast-list-container');
+            document.getElementById('search-input').value = '';
             
             grid.classList.add('opacity-0');
-            list.classList.add('opacity-0');
+            listContainer.classList.add('opacity-0');
+            document.getElementById('no-results').classList.add('hidden');
+            document.getElementById('no-results').classList.remove('flex');
             document.getElementById('loader').style.display = 'flex';
             
             let currentNews, currentRoz;
+            let displayDate = "";
 
             if (!archiveKey) {
                 currentNews = globalNewsData;
@@ -338,6 +460,7 @@
             } else {
                 currentNews = archiveNews[archiveKey] || { items: [] };
                 const dateKey = archiveKey.split('_')[0];
+                // Wyszukiwanie odpowiednika rozrywkowego w pliku archiwalnym dla danej daty
                 currentRoz = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
             }
 
@@ -345,10 +468,10 @@
                 let edition = (currentNews.time && currentNews.time < "12:00") ? "Poranne" : "Wieczorne";
                 if (archiveKey && archiveKey.includes('poranne')) edition = "Poranne";
                 if (archiveKey && archiveKey.includes('wieczorne')) edition = "Wieczorne";
-                document.getElementById('header-date').textContent = `${currentNews.date} • Wydanie ${edition}`;
+                displayDate = `${currentNews.date} • Wydanie ${edition}`;
+                document.getElementById('header-date').textContent = displayDate;
             }
 
-            // Tasowanie: 3 newsy -> 1 rozrywka
             let combined = [];
             let nItems = currentNews.items || [];
             let rItems = currentRoz.items || [];
@@ -365,6 +488,8 @@
                 }
             }
 
+            currentRenderedItems = combined;
+            generateThreadsContent(combined, displayDate);
             await renderData(combined);
         }
 
@@ -383,42 +508,41 @@
                 const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
                 
                 const titleHtml = highlightTitle(rawTitle, item.isFun);
-
                 const safeTitle = item.title.replace(/'/g, "\\'");
                 const safeSummary = (item.summary || '').replace(/'/g, "\\'");
                 const safeLink = item.link || window.location.href;
 
-                // KARTA - Optyczne wycentrowanie tekstu kategorii przez paddingi i translate
+                // KARTA
                 const cardHtml = `
-                    <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
+                    <article id="card-${item.id}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
                         <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
-                            <button onclick="downloadCard('card-${item.id}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę (dla Social Media)">
+                            <button onclick="downloadCard('card-${item.id}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
                                 <i class="fa-solid fa-download text-sm"></i>
                             </button>
-                            <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
+                            <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
                                 <i class="fa-solid fa-share-nodes text-sm"></i>
                             </button>
                         </div>
 
                         <div class="h-48 w-full relative shimmer overflow-hidden img-container">
                             <img src="" crossorigin="anonymous" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
+                            <!-- Cień by tekst był zawsze czytelny w eksporcie -->
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                         </div>
 
                         <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                             <div class="flex items-center mb-3">
-                                <!-- Idealne wycentrowanie tekstu (pt-1 pb-0.5 + translate) -->
                                 <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
                                     <span class="-translate-y-px">${item.category || 'Wiadomość'}</span>
                                 </span>
                             </div>
                             
-                            <h3 class="text-lg font-bold text-white mb-3 leading-snug">
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">
                                 ${emoji}${titleHtml}
                             </h3>
                             
-                            <p class="text-slate-400 text-sm mb-6 flex-1">
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
                                 ${item.summary}
                             </p>
                             
@@ -433,7 +557,7 @@
                             </div>
                             
                             ${item.link && item.link !== '#' ? `
-                            <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
+                            <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
                                 ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
                             </a>
                             ` : ''}
@@ -444,7 +568,7 @@
 
                 // FAST REVIEW
                 const listHtml = `
-                    <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center hover:border-slate-700 hover:bg-slate-800/40 transition">
+                    <div id="list-${item.id}" class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
                         <div class="text-3xl hidden sm:block">${emoji}</div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center gap-2 mb-2">
@@ -453,13 +577,13 @@
                                     <span class="-translate-y-px">${item.category}</span>
                                 </span>
                             </div>
-                            <h3 class="text-slate-100 font-semibold text-sm sm:text-base leading-snug">
+                            <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
                                 ${item.link && item.link !== '#' ? 
-                                `<a href="${item.link}" target="_blank" class="hover:text-brand-400 transition">${rawTitle}</a>` : 
+                                `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${rawTitle}</a>` : 
                                 rawTitle}
                             </h3>
                         </div>
-                        <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition" title="Udostępnij">
+                        <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij">
                             <i class="fa-solid fa-share-nodes"></i>
                         </button>
                     </div>
@@ -468,11 +592,10 @@
             });
 
             document.getElementById('loader').style.display = 'none';
-            // Zachowaj wybrany aktualnie widok
             const isFast = document.getElementById('tab-fast').classList.contains('bg-brand-500');
             switchTab(isFast ? 'fast' : 'full'); 
 
-            // Dociąganie obrazów z Pexels w tle
+            // Pobieranie obrazów w tle
             for (const item of items) {
                 const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
                 const imgUrl = await fetchPexelsImage(query);
@@ -488,8 +611,6 @@
                     };
                     imgEl.src = imgUrl;
                 }
-                
-                // Krótka pauza, by nie zadławić API Pexels
                 await new Promise(r => setTimeout(r, 150)); 
             }
         }
