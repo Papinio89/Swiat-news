@@ -90,6 +90,7 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "title": Krótki, chwytliwy nagłówek z dopasowaną emotikoną na początku (np. "🐝 Dzień Pszczół: Niezwykłe odkrycia...").
 - "summary": Konkretny, krótki opis w 1-2 zdaniach.
 - "comment": Trafny, lekki lub wnikliwy komentarz analityczny (odpowiednik idei żarówki).
+- "image_query": 2-3 precyzyjne, konkretne słowa kluczowe w języku ANGIELSKIM do wyszukiwania zdjęcia stockowego (np. "military fighter jet", "data center servers", "cute raccoon", "diplomacy meeting", "quantum processor").
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
@@ -104,7 +105,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-       model='gemini-3.1-pro-preview',
+        model='gemini-3.1-pro-preview',
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -121,6 +122,7 @@ except Exception as e:
         "title": f"📌 {art['title']}",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
         "link": art['link']
     } for art in raw_articles[:15]]
 
