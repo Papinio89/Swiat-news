@@ -310,7 +310,6 @@
                     const rawC = item.category || "Wiadomość";
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
                     
-                    // NAPRAWIONY BŁĄD: Zmienne nazwane poprawnie jako catStyle i comStyle
                     let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
                     let comStyle = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
                     
@@ -362,8 +361,8 @@
 
                             <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                                 <div class="flex items-center mb-3">
-                                    <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
-                                        <span class="-translate-y-px">${rawC}</span>
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
+                                        ${rawC}
                                     </span>
                                 </div>
                                 
@@ -426,8 +425,8 @@
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                    <span class="inline-flex items-center px-2 pt-1 pb-[3px] rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
-                                        <span class="-translate-y-px">${rawC}</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
+                                        ${rawC}
                                     </span>
                                 </div>
                                 <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
