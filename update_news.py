@@ -8,9 +8,27 @@ from google import genai
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 RSS_URLS = [
-    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    # --- GLOBALNE / GEOPOLITYKA ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
-    "https://news.google.com/rss/search?q=world+news+finance+tech+science&hl=en-US&gl=US&ceid=US:en",
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
+    
+    # --- BIZNES / RYNKI / GOSPODARKA ---
+    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    "https://feeds.bloomberg.com/markets/news.rss",
+    "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
+    
+    # --- TECHNOLOGIA / AI / CYBER ---
+    "https://techcrunch.com/feed/",
+    "https://www.theverge.com/rss/index.xml",
+    "https://arstechnica.com/feed/",
+    
+    # --- NAUKA / KOSMOS / CIEKAWOSTKI ---
+    "https://www.sciencedaily.com/rss/top/science.xml",
+    "https://phys.org/rss-feed/",
+    "https://www.nasa.gov/feed/",
+    
+    # --- POLSKA ---
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl"
 ]
 
@@ -18,7 +36,7 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:15]:
+        for entry in feed.entries[:7]:  # 7 najświeższych wpisów z każdego feeda
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
