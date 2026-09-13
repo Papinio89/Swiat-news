@@ -2,127 +2,135 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Świat w Minutę</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat w Minutę - Przegląd Wiadomości</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Systemowe fonty Apple/Segoe UI jak w oryginale -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: #020617; 
-            color: #f1f5f9; 
-            margin: 0;
-            -webkit-font-smoothing: antialiased;
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    }
+                }
+            }
         }
-
-        /* Ładowanie obrazka (Shimmer) */
-        .img-loading {
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .glass-header {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        .shimmer {
             background: linear-gradient(90deg, #0f172a 8%, #1e293b 18%, #0f172a 33%);
             background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
+            animation: shimmer-anim 1.5s infinite;
         }
-        @keyframes shimmer { 
+        @keyframes shimmer-anim { 
             0% { background-position: 200% 0; } 
             100% { background-position: -200% 0; } 
         }
-
-        /* Ucinanie długich tekstów */
-        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col items-center p-4 sm:p-8">
+<body class="antialiased min-h-screen flex flex-col">
 
-    <!-- Kontener w stylu "Mobile Feed" -->
-    <main class="w-full max-w-[420px] flex flex-col gap-8 pb-12" id="feed-container">
+    <!-- Nagłówek -->
+    <header class="sticky top-0 z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                    <i class="fa-solid fa-earth-americas text-slate-900 text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-black text-xl tracking-tight leading-none text-white">Świat <span class="text-brand-400">w Minutę</span></h1>
+                    <p id="header-date" class="text-[11px] font-medium text-slate-400 mt-1 uppercase tracking-wider">Najważniejsze z kraju i ze świata</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-slate-700 transition">
+                    <i class="fa-brands fa-instagram text-brand-400"></i> Obserwuj
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Główna zawartość (Blog Grid) -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         
-        <!-- Pusty stan ładowania -->
-        <div id="loader" class="flex flex-col items-center justify-center py-24 text-slate-500">
-            <div class="w-12 h-12 border-4 border-slate-800 border-t-amber-400 rounded-full animate-spin mb-4"></div>
-            <p class="text-sm font-semibold tracking-wide">Pobieranie newsów...</p>
+        <div class="mb-10 text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Przegląd Dnia</h2>
+            <p class="text-slate-400 text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat, bez zbędnego szumu.</p>
+        </div>
+
+        <div id="loader" class="flex flex-col items-center justify-center py-20">
+            <i class="fa-solid fa-circle-notch fa-spin text-brand-400 text-4xl mb-4"></i>
+            <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
+        </div>
+
+        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 transition-opacity duration-500">
+            <!-- Karty newsów będą wstrzykiwane tutaj -->
         </div>
 
     </main>
 
-    <footer class="mt-auto w-full max-w-[420px] text-center border-t border-slate-800 pt-6 pb-4">
-        <p class="text-[10px] text-slate-500 font-medium tracking-wide uppercase">Świat w Minutę &copy; <span id="year"></span></p>
+    <!-- Stopka -->
+    <footer class="border-t border-slate-800/50 mt-auto bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
+            <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
+            <p class="text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem API Pexels & AI.</p>
+        </div>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // ----------------------------------------------------
-        // SYSTEM KOLORÓW I EMOTEK Z TWOJEGO ORYGINALNEGO KODU
-        // ----------------------------------------------------
-        function catColor(cat) {
-            var c = (cat || "").toUpperCase();
-            if (/AI|TECHNOLOG/.test(c)) return "bg-violet-600";
-            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "bg-emerald-600";
-            if (/NAUKA/.test(c)) return "bg-teal-600";
-            if (/POLSKA/.test(c)) return "bg-red-500";
-            if (/OBRONN|WOJSK/.test(c)) return "bg-slate-600";
-            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "bg-blue-600";
-            if (/SPOŁECZ|SAMORZĄD/.test(c)) return "bg-orange-500";
-            return "bg-red-600";
+        const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
+        const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
+
+        // Style dla kategorii
+        function getCategoryColors(cat, isFun) {
+            if (isFun) return "text-fuchsia-400 bg-fuchsia-400/10 border-fuchsia-400/20";
+            const c = (cat || "").toUpperCase();
+            if (/AI|TECHNOLOG/.test(c)) return "text-violet-400 bg-violet-400/10 border-violet-400/20";
+            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "text-emerald-400 bg-emerald-400/10 border-emerald-400/20";
+            if (/NAUKA/.test(c)) return "text-teal-400 bg-teal-400/10 border-teal-400/20";
+            if (/POLSKA/.test(c)) return "text-red-400 bg-red-400/10 border-red-400/20";
+            if (/OBRONN|WOJSK/.test(c)) return "text-slate-300 bg-slate-300/10 border-slate-300/20";
+            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "text-blue-400 bg-blue-400/10 border-blue-400/20";
+            return "text-brand-400 bg-brand-400/10 border-brand-400/20";
         }
 
-        function catEmoji(cat, isFun, title) {
-            if (isFun) return "🎉";
-            var c = (cat || "").toUpperCase();
-            if (/AI|TECHNOLOG/.test(c)) return "🤖";
-            if (/GOSPODARK|INWESTYC/.test(c)) return "🏢";
-            if (/FINANS|RYNK/.test(c)) return "📈";
-            if (/NAUKA/.test(c)) return "🔬";
-            if (/POLSKA/.test(c)) return "🇵🇱";
-            if (/OBRONN|WOJSK/.test(c)) return "🛡️";
-            if (/GEOPOLITYK/.test(c)) return "🌍";
-            if (/ŚWIAT/.test(c)) return "🌐";
-            if (/POLITYK/.test(c)) return "🏛️";
-            if (/SPOŁECZ|SAMORZĄD/.test(c)) return "👥";
-            if (/SPORT/.test(c)) return "🏆";
-            return "📌";
+        function getCommentColors(isFun) {
+            if (isFun) return "bg-fuchsia-950/20 border-fuchsia-900/30 text-fuchsia-200 border-l-4 border-l-fuchsia-500";
+            return "bg-slate-800/40 border-slate-700/50 text-slate-300 border-l-4 border-l-brand-400";
         }
 
-        function commentBox(cat, isFun) {
-            if (isFun) return { bg: "rgba(154,52,18,0.92)", border: "rgba(251,146,60,0.3)", text: "#fff7ed", icon: "#fdba74", label: "💬 CIEKAWOSTKA ŚWIATA W MINUTĘ" };
-            var c = (cat || "").toUpperCase();
-            if (/AI|TECHNOLOG/.test(c)) return { bg: "rgba(91,33,182,0.92)", border: "rgba(167,139,250,0.35)", text: "#ede9fe", icon: "#c4b5fd", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return { bg: "rgba(6,78,59,0.92)", border: "rgba(52,211,153,0.3)", text: "#ecfdf5", icon: "#6ee7b7", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            if (/NAUKA/.test(c)) return { bg: "rgba(19,78,74,0.92)", border: "rgba(45,212,191,0.3)", text: "#f0fdfa", icon: "#5eead4", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            if (/POLSKA/.test(c)) return { bg: "rgba(127,29,29,0.92)", border: "rgba(248,113,113,0.3)", text: "#fef2f2", icon: "#fca5a5", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            if (/OBRONN|WOJSK/.test(c)) return { bg: "rgba(30,41,59,0.95)", border: "rgba(148,163,184,0.3)", text: "#f1f5f9", icon: "#94a3b8", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return { bg: "rgba(30,58,138,0.92)", border: "rgba(96,165,250,0.3)", text: "#eff6ff", icon: "#93c5fd", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-            return { bg: "rgba(127,29,29,0.92)", border: "rgba(248,113,113,0.3)", text: "#fef2f2", icon: "#fca5a5", label: "💬 KOMENTARZ ŚWIATA W MINUTĘ" };
-        }
-
-        // Formatowanie podświetlenia ostatniego słowa
-        function highlightTitle(title) {
-            if (!title) return "Temat dnia";
-            var words = title.trim().split(/\s+/);
-            if (words.length >= 3) {
-                var last = words[words.length - 1];
-                if (last.replace(/[.,:!?…]$/, "").length >= 4) {
-                    words[words.length - 1] = '<span style="color:#fbbf24">' + last + '</span>';
-                    return words.join(" ");
+        // Pobieranie obrazu z Pexels
+        async function fetchPexelsImage(query) {
+            try {
+                const response = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, {
+                    headers: { Authorization: PEXELS_API_KEY }
+                });
+                const data = await response.json();
+                if (data.photos && data.photos.length > 0) {
+                    return data.photos[0].src.large || data.photos[0].src.medium;
                 }
+            } catch (err) {
+                console.error("Błąd Pexels:", err);
             }
-            return title;
+            return FALLBACK_IMG;
         }
 
-        // Natywne udostępnianie (Web Share API)
-        async function shareArticle(title, text, url) {
-            if (navigator.share) {
-                try {
-                    await navigator.share({ title: title, text: text, url: url });
-                } catch (err) { console.log('Share error:', err); }
-            } else {
-                navigator.clipboard.writeText(url);
-                alert('Skopiowano link do schowka!');
-            }
-        }
-
-        // Funkcja główna
         async function init() {
             try {
                 const [newsRes, rozRes] = await Promise.all([
@@ -133,68 +141,12 @@
                 let newsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
                 let rozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
 
-                const container = document.getElementById('feed-container');
-                container.innerHTML = ''; // Usuń loader
-
-                // 1. RENDEROWANIE KARTY INTRO (Skopiowane z Twojego obrazka #3)
                 if (newsData.date) {
-                    let dateParts = newsData.date.split(" ");
-                    let day = dateParts[0] || "";
-                    let monthYear = (dateParts.slice(1).join(" ") || "").toUpperCase();
-                    let edition = (newsData.time && newsData.time < "12:00") ? "PORANNE" : "WIECZORNE";
-                    let count = (newsData.items || []).length;
-                    
-                    const introHtml = `
-                        <div class="relative w-full h-[450px] rounded-[28px] overflow-hidden shadow-2xl bg-[#020617] flex flex-col border border-slate-800">
-                            <!-- Tło -->
-                            <img class="absolute inset-0 w-full h-full object-cover filter brightness-[0.72] contrast-[1.12] saturate-[1.1]" 
-                                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop" alt="Intro bg">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[rgba(2,6,23,0.92)] via-[rgba(2,6,23,0.45)] to-[rgba(2,6,23,0.2)]"></div>
-                            
-                            <!-- Znak wodny -->
-                            <div class="absolute right-4 top-[12%] z-15 pointer-events-none text-right">
-                                <div class="text-[44px] font-[900] leading-none tracking-[0.02em] text-[rgba(96,165,250,0.5)] uppercase rotate-[-20deg] origin-center" style="text-shadow: 0 2px 20px rgba(30,58,138,0.3);">NEWSY</div>
-                            </div>
-
-                            <div class="relative z-10 flex flex-col p-[20px] h-full">
-                                <div class="flex justify-between items-start">
-                                    <div class="w-12 h-12 rounded-[14px] bg-[rgba(251,191,36,0.22)] border border-[rgba(251,191,36,0.55)] flex items-center justify-center text-[24px]">🌐</div>
-                                </div>
-
-                                <div class="flex-1 flex flex-col justify-center gap-3.5 mt-4">
-                                    <div>
-                                        <h1 class="text-[34px] font-[900] leading-[0.95] m-0 text-white">Świat <br><span class="text-[#fbbf24]">w minutę</span></h1>
-                                        <p class="mt-2.5 text-[13px] text-slate-200 font-[500]">Najważniejsze newsy z kraju i ze świata</p>
-                                    </div>
-                                    
-                                    <!-- Żółty panel informacyjny -->
-                                    <div class="bg-[rgba(251,191,36,0.95)] rounded-[20px] p-[14px_16px]" style="box-shadow: 0 10px 28px rgba(251,191,36,0.35);">
-                                        <div class="flex items-center gap-3">
-                                            <div class="text-[52px] font-[900] text-[#0f172a] leading-[0.9] tracking-[-0.03em]">${day}</div>
-                                            <div class="min-w-0 flex-1">
-                                                <div class="text-[13px] font-[900] text-[#0f172a] tracking-[0.04em] uppercase leading-[1.15]">${monthYear}</div>
-                                                <div class="mt-1 inline-block bg-[#0f172a] text-[#fbbf24] text-[11px] font-[800] px-2.5 py-1 rounded-full tracking-[0.04em] uppercase">${edition}</div>
-                                            </div>
-                                            <div class="text-right flex-shrink-0 pl-2">
-                                                <div class="text-[28px] font-[900] text-[#0f172a] leading-none">${count}</div>
-                                                <div class="text-[9px] font-[800] text-[#0f172a] opacity-75 tracking-[0.04em] uppercase mt-1">newsów</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Przycisk -->
-                                    <a href="https://instagram.com" target="_blank" class="bg-[#fbbf24] text-[#0f172a] font-[700] rounded-[18px] p-[12px_16px] flex items-center justify-between text-[13px] w-full mt-2">
-                                        <span>🔔 Obserwuj, aby być na bieżąco!</span>
-                                        <span class="opacity-60">›</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                    container.insertAdjacentHTML('beforeend', introHtml);
+                    let edition = (newsData.time && newsData.time < "12:00") ? "Poranne" : "Wieczorne";
+                    document.getElementById('header-date').textContent = `${newsData.date} • Wydanie ${edition}`;
                 }
 
-                // Mieszanie: 3 newsy -> 1 rozrywka -> 3 newsy
+                // Mieszanie: 3 newsy -> 1 rozrywka
                 let combined = [];
                 let nItems = newsData.items || [];
                 let rItems = rozData.items || [];
@@ -202,82 +154,112 @@
 
                 while (nIdx < nItems.length || rIdx < rItems.length) {
                     for(let i=0; i<3 && nIdx < nItems.length; i++) {
-                        combined.push({...nItems[nIdx], isFun: false});
+                        combined.push({...nItems[nIdx], isFun: false, id: `n-${nIdx}`});
                         nIdx++;
                     }
                     if (rIdx < rItems.length) {
-                        combined.push({...rItems[rIdx], isFun: true});
+                        combined.push({...rItems[rIdx], isFun: true, id: `r-${rIdx}`});
                         rIdx++;
                     }
                 }
 
-                // 2. RENDEROWANIE KART NEWSÓW (Skopiowane z Twojego obrazka #4)
-                const fallbackImg = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
-
-                combined.forEach((item, index) => {
-                    const query = encodeURIComponent(item.image_query || item.category + " " + item.title.split(' ').slice(0,3).join(' '));
-                    const imgUrl = `https://image.pollinations.ai/prompt/${query}?width=600&height=800&nologo=true&seed=${index}`;
-                    
-                    const catClass = item.isFun ? "bg-fuchsia-600" : catColor(item.category);
-                    const box = commentBox(item.category, item.isFun);
-                    const em = catEmoji(item.category, item.isFun, item.title);
-                    
-                    const cardHtml = `
-                        <article class="relative w-full h-[520px] rounded-[28px] overflow-hidden shadow-2xl bg-[#020617] flex flex-col border border-slate-800 img-loading group">
-                            
-                            <!-- Bezpieczne ładowanie obrazu - podmieni na domyślny jeśli AI zawiedzie -->
-                            <img class="absolute inset-0 w-full h-full object-cover filter brightness-[0.72] contrast-[1.12] saturate-[1.1] transition duration-500 group-hover:scale-105" 
-                                 src="${imgUrl}" 
-                                 alt="Tło"
-                                 onload="this.parentElement.classList.remove('img-loading')"
-                                 onerror="this.onerror=null; this.src='${fallbackImg}'; this.parentElement.classList.remove('img-loading');">
-                            
-                            <!-- Gradient nakładka (zgodna z oryginałem) -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-[rgba(2,6,23,0.92)] via-[rgba(2,6,23,0.45)] to-[rgba(2,6,23,0.2)]"></div>
-                            
-                            <!-- Wewnętrzna struktura -->
-                            <div class="relative z-10 flex flex-col flex-1 p-[18px]">
-                                
-                                <!-- Kategoria i Udostępnianie -->
-                                <div class="flex justify-between items-start mb-auto">
-                                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[9px] font-[800] tracking-[0.04em] uppercase text-white shadow-md ${catClass}">
-                                        ${em} ${item.category || 'Wiadomość'}
-                                    </span>
-                                    <button onclick="shareArticle('${item.title.replace(/'/g, "\\'")}', '${item.summary.replace(/'/g, "\\'")}', '${item.link || window.location.href}')" class="w-8 h-8 rounded-full bg-slate-800/60 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-slate-700 transition">
-                                        <i class="fa-solid fa-share text-xs"></i>
-                                    </button>
-                                </div>
-                                
-                                <div class="flex-1 flex flex-col justify-end gap-2.5 min-h-0">
-                                    <!-- Tytuł z podświetleniem -->
-                                    <h2 class="text-[21px] font-[900] leading-[1.22] text-white m-0 drop-shadow-lg">
-                                        ${em} ${highlightTitle(item.title)}
-                                    </h2>
-                                    
-                                    <!-- Box z opisem -->
-                                    <div class="bg-[rgba(15,23,42,0.72)] border border-[rgba(255,255,255,0.12)] rounded-[14px] p-[12px_13px] backdrop-blur-[6px]">
-                                        <p class="text-[13px] text-[#f1f5f9] leading-[1.45] m-0 line-clamp-3">${item.summary}</p>
-                                    </div>
-                                    
-                                    <!-- Box z komentarzem -->
-                                    <div class="rounded-[14px] p-[11px_12px] border" style="background:${box.bg}; border-color:${box.border}">
-                                        <div class="text-[8px] font-[800] tracking-[0.05em] mb-1 uppercase" style="color:${box.icon}">${box.label}</div>
-                                        <p class="text-[12px] leading-[1.4] font-[500] m-0 line-clamp-3" style="color:${box.text}">${item.comment}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    `;
-                    container.insertAdjacentHTML('beforeend', cardHtml);
-                });
+                await renderCards(combined);
 
             } catch (error) {
-                console.error("Błąd podczas pobierania danych:", error);
-                document.getElementById('loader').innerHTML = '<p class="text-red-400 font-medium">Brak połączenia. Spróbuj odświeżyć stronę.</p>';
+                console.error("Inicjalizacja:", error);
+                document.getElementById('loader').innerHTML = '<p class="text-red-400">Brak połączenia. Odśwież stronę.</p>';
             }
         }
 
-        // Start aplikacji
+        async function renderCards(items) {
+            const grid = document.getElementById('news-grid');
+            grid.innerHTML = '';
+
+            // Generowanie szkieletu HTML dla wszystkich kart (z Shimmerem)
+            items.forEach((item) => {
+                const catStyle = getCategoryColors(item.category, item.isFun);
+                const comStyle = getCommentColors(item.isFun);
+                const emoji = item.title.match(/^[\p{Emoji}\s]+/u) ? '' : (item.isFun ? '🎉 ' : '📌 ');
+                
+                // Formaty podświetlania ostatniego słowa
+                const titleWords = item.title.trim().split(/\s+/);
+                let titleHtml = item.title;
+                if (titleWords.length >= 3) {
+                    const last = titleWords.pop();
+                    titleHtml = `${titleWords.join(" ")} <span class="${item.isFun ? 'text-fuchsia-400' : 'text-brand-400'}">${last}</span>`;
+                }
+
+                const cardHtml = `
+                    <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col">
+                        <!-- Miejsce na zdjęcie (domyślnie Shimmer) -->
+                        <div class="h-48 w-full relative shimmer overflow-hidden img-container">
+                            <img src="" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
+                        </div>
+
+                        <!-- Treść -->
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="px-2.5 py-1 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle}">
+                                    ${item.category || 'Wiadomość'}
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-lg font-bold text-white mb-3 leading-snug line-clamp-3">
+                                ${emoji}${titleHtml}
+                            </h3>
+                            
+                            <p class="text-slate-400 text-sm mb-6 flex-1 line-clamp-3">
+                                ${item.summary}
+                            </p>
+                            
+                            <!-- Komentarz redakcji -->
+                            <div class="mt-auto rounded-xl p-4 border ${comStyle}">
+                                <div class="flex items-center gap-2 mb-1.5 opacity-80">
+                                    <i class="fa-solid fa-lightbulb text-[10px]"></i>
+                                    <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
+                                </div>
+                                <p class="text-sm font-medium leading-relaxed italic">
+                                    "${item.comment}"
+                                </p>
+                            </div>
+
+                            ${item.link && item.link !== '#' ? `
+                            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
+                                CZYTAJ CAŁOŚĆ <i class="fa-solid fa-angle-right ml-1"></i>
+                            </a>
+                            ` : ''}
+                        </div>
+                    </article>
+                `;
+                grid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+
+            document.getElementById('loader').style.display = 'none';
+            grid.classList.remove('opacity-0');
+
+            // Asynchroniczne ładowanie obrazów Pexels dla wstawionych kart
+            for (const item of items) {
+                const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
+                const imgUrl = await fetchPexelsImage(query);
+                
+                const card = document.getElementById(`card-${item.id}`);
+                if (card) {
+                    const imgEl = card.querySelector('img');
+                    const imgContainer = card.querySelector('.img-container');
+                    
+                    imgEl.onload = () => {
+                        imgEl.classList.remove('opacity-0');
+                        imgContainer.classList.remove('shimmer');
+                    };
+                    imgEl.src = imgUrl;
+                }
+                
+                // Krótkie opóźnienie między żądaniami, aby nie obciążyć Pexels API (rate limit)
+                await new Promise(r => setTimeout(r, 150)); 
+            }
+        }
+
+        // Start
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
