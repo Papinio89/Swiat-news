@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Świat w Minutę - Przegląd Wiadomości</title>
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- html2canvas do zapisywania kafelków jako obrazki -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <script>
         tailwind.config = {
@@ -63,8 +68,8 @@
                 </div>
             </div>
             <div>
-                <!-- Pamiętaj podmienić URL na swój profil Instagram -->
-                <a href="https://instagram.com/twoj_profil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
+                <!-- Prawidłowy link do Instagrama -->
+                <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
                     <i class="fa-brands fa-instagram"></i> <span class="hidden sm:inline">Obserwuj</span>
                 </a>
             </div>
@@ -133,6 +138,46 @@
             }
         }
 
+        // Pobieranie Karty jako JPG (dla social mediów)
+        async function downloadCard(cardId, title) {
+            const card = document.getElementById(cardId);
+            if (!card) return;
+            
+            // Podmiana ikony na loader
+            const downloadBtn = card.querySelector('.fa-download').parentElement;
+            const originalHtml = downloadBtn.innerHTML;
+            downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
+            
+            try {
+                // Wykorzystanie html2canvas do wygenerowania grafiki z DOM
+                const canvas = await html2canvas(card, {
+                    scale: 2, // Wysoka jakość zrzutu (Retina)
+                    useCORS: true, // Niezbędne do zdjęć z zewnątrz (Pexels)
+                    allowTaint: true,
+                    backgroundColor: '#020617', // Tło pod zaokrągleniami
+                    logging: false
+                });
+                
+                const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
+                
+                // Formatowanie nazwy pliku
+                const safeName = title.replace(/[^a-ząćęłńóśźż0-9]/gi, '_').toLowerCase().substring(0, 30);
+                const fileName = `swiatwminute_${safeName}.jpg`;
+                
+                // Wyzwolenie pobierania
+                const link = document.createElement('a');
+                link.download = fileName;
+                link.href = dataUrl;
+                link.click();
+                
+            } catch (err) {
+                console.error('Błąd generowania obrazka:', err);
+                alert('Wystąpił błąd podczas zapisywania grafiki. Upewnij się, że masz stabilne połączenie.');
+            } finally {
+                downloadBtn.innerHTML = originalHtml;
+            }
+        }
+
         // Zmiana zakładek
         function switchTab(tab) {
             const btnFull = document.getElementById('tab-full');
@@ -141,15 +186,12 @@
             const list = document.getElementById('fast-list');
 
             if (tab === 'full') {
-                // Style przycisków
                 btnFull.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
                 btnFast.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
                 
-                // Widoczność
                 grid.classList.remove('hidden');
                 list.classList.add('hidden');
                 
-                // Animacja wejścia
                 setTimeout(() => {
                     grid.classList.remove('opacity-0');
                     list.classList.add('opacity-0');
@@ -252,7 +294,6 @@
                 const catStyle = getCategoryColors(item.category, item.isFun);
                 const comStyle = getCommentColors(item.isFun);
                 
-                // Bezpieczne wstawianie Emoji i tytułu
                 const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
                 const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
                 const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
@@ -274,13 +315,19 @@
                 const cardHtml = `
                     <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
-                        <!-- Przycisk udostępniania na karcie -->
-                        <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg opacity-0 group-hover:opacity-100 sm:opacity-100" title="Udostępnij">
-                            <i class="fa-solid fa-share-nodes text-sm"></i>
-                        </button>
+                        <!-- Panel Akcji (Udostępnij / Pobierz). Atrybut 'data-html2canvas-ignore' zapobiega wyeksportowaniu tego elementu do obrazka JPG -->
+                        <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
+                            <button onclick="downloadCard('card-${item.id}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę (dla Social Media)">
+                                <i class="fa-solid fa-download text-sm"></i>
+                            </button>
+                            <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
+                                <i class="fa-solid fa-share-nodes text-sm"></i>
+                            </button>
+                        </div>
 
                         <div class="h-48 w-full relative shimmer overflow-hidden img-container">
-                            <img src="" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
+                            <!-- Ważne: crossorigin="anonymous" aby Pexels nie blokował eksportu canvas -->
+                            <img src="" crossorigin="anonymous" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                         </div>
 
@@ -308,9 +355,10 @@
                                     "${item.comment}"
                                 </p>
                             </div>
-
+                            
+                            <!-- Przycisk Czytaj Całość (też go ukrywamy na eksportowanym jpegu, bo na Insta i tak nie da się go kliknąć) -->
                             ${item.link && item.link !== '#' ? `
-                            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
+                            <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
                                 ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
                             </a>
                             ` : ''}
