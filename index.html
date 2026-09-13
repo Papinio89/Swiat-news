@@ -93,19 +93,30 @@
     <!-- Główna zawartość -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         
-        <div class="mb-8 text-center max-w-2xl mx-auto">
+        <div class="mb-6 text-center max-w-2xl mx-auto">
             <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Przegląd Dnia</h2>
             <p class="text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat.</p>
         </div>
 
-        <!-- Przełącznik zakładek -->
-        <div class="flex justify-center gap-3 mb-10">
-            <button id="tab-full" onclick="switchTab('full')" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
-                <i class="fa-solid fa-layer-group mr-1.5"></i> Pełne Karty
-            </button>
-            <button id="tab-fast" onclick="switchTab('fast')" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700">
-                <i class="fa-solid fa-list-ul mr-1.5"></i> Fast Review
-            </button>
+        <!-- Narzędzia: Przełącznik zakładek i Archiwum -->
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10 bg-slate-900/40 p-2 sm:p-4 rounded-3xl border border-slate-800/50">
+            <!-- Zakładki -->
+            <div class="flex gap-2 w-full sm:w-auto">
+                <button id="tab-full" onclick="switchTab('full')" class="flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+                    <i class="fa-solid fa-layer-group mr-1.5"></i> Pełne Karty
+                </button>
+                <button id="tab-fast" onclick="switchTab('fast')" class="flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700">
+                    <i class="fa-solid fa-list-ul mr-1.5"></i> Fast Review
+                </button>
+            </div>
+            
+            <!-- Archiwum Dropdown -->
+            <div class="relative w-full sm:w-64">
+                <select id="archive-select" onchange="loadEdition(this.value)" class="w-full appearance-none bg-slate-800 border border-slate-700 text-slate-300 text-sm font-semibold py-2.5 pl-4 pr-10 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer shadow-lg hover:bg-slate-700 transition">
+                    <option value="">Dzisiejsze wydanie</option>
+                </select>
+                <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none text-xs"></i>
+            </div>
         </div>
 
         <!-- Ładowanie -->
@@ -139,6 +150,12 @@
 
         const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
+
+        // Zmienne globalne na potrzeby archiwum
+        let globalNewsData = { items: [] };
+        let globalRozData = { items: [] };
+        let archiveNews = {};
+        let archiveRoz = {};
 
         function closeSaveModal() {
             document.getElementById('save-modal').classList.add('hidden');
@@ -201,8 +218,8 @@
             const list = document.getElementById('fast-list');
 
             if (tab === 'full') {
-                btnFull.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-                btnFast.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
+                btnFull.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+                btnFast.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
                 
                 grid.classList.remove('hidden');
                 list.classList.add('hidden');
@@ -212,8 +229,8 @@
                     list.classList.add('opacity-0');
                 }, 50);
             } else {
-                btnFast.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-                btnFull.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
+                btnFast.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+                btnFull.className = "flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
                 
                 list.classList.remove('hidden');
                 grid.classList.add('hidden');
@@ -268,41 +285,87 @@
 
         async function init() {
             try {
-                const [newsRes, rozRes] = await Promise.all([
+                const [newsRes, rozRes, archNewsRes, archRozRes] = await Promise.all([
                     fetch('news.json').catch(() => null),
-                    fetch('rozrywka.json').catch(() => null)
+                    fetch('rozrywka.json').catch(() => null),
+                    fetch('archive.json').catch(() => null),
+                    fetch('archive_rozrywka.json').catch(() => null)
                 ]);
 
-                let newsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
-                let rozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
+                globalNewsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
+                globalRozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
+                archiveNews = (archNewsRes && archNewsRes.ok) ? await archNewsRes.json() : {};
+                archiveRoz = (archRozRes && archRozRes.ok) ? await archRozRes.json() : {};
 
-                if (newsData.date) {
-                    let edition = (newsData.time && newsData.time < "12:00") ? "Poranne" : "Wieczorne";
-                    document.getElementById('header-date').textContent = `${newsData.date} • Wydanie ${edition}`;
-                }
+                // Budowanie listy wyboru w Archiwum
+                const select = document.getElementById('archive-select');
+                const keys = Object.keys(archiveNews).sort().reverse();
+                
+                keys.forEach(key => {
+                    const data = archiveNews[key];
+                    const option = document.createElement('option');
+                    option.value = key;
+                    
+                    let edName = key.includes('poranne') ? 'Poranne' : (key.includes('wieczorne') ? 'Wieczorne' : 'Wydanie');
+                    let dateStr = data.date || key.split('_')[0];
+                    option.textContent = `${dateStr} • ${edName}`;
+                    select.appendChild(option);
+                });
 
-                let combined = [];
-                let nItems = newsData.items || [];
-                let rItems = rozData.items || [];
-                let nIdx = 0, rIdx = 0;
-
-                while (nIdx < nItems.length || rIdx < rItems.length) {
-                    for(let i=0; i<3 && nIdx < nItems.length; i++) {
-                        combined.push({...nItems[nIdx], isFun: false, id: `n-${nIdx}`});
-                        nIdx++;
-                    }
-                    if (rIdx < rItems.length) {
-                        combined.push({...rItems[rIdx], isFun: true, id: `r-${rIdx}`});
-                        rIdx++;
-                    }
-                }
-
-                await renderData(combined);
+                // Uruchomienie z domyślnymi (najnowszymi) danymi
+                await loadEdition('');
 
             } catch (error) {
                 console.error("Inicjalizacja:", error);
                 document.getElementById('loader').innerHTML = '<p class="text-red-400">Brak połączenia. Odśwież stronę.</p>';
             }
+        }
+
+        // Ładowanie konkretnego wydania
+        async function loadEdition(archiveKey) {
+            const grid = document.getElementById('news-grid');
+            const list = document.getElementById('fast-list');
+            
+            grid.classList.add('opacity-0');
+            list.classList.add('opacity-0');
+            document.getElementById('loader').style.display = 'flex';
+            
+            let currentNews, currentRoz;
+
+            if (!archiveKey) {
+                currentNews = globalNewsData;
+                currentRoz = globalRozData;
+            } else {
+                currentNews = archiveNews[archiveKey] || { items: [] };
+                const dateKey = archiveKey.split('_')[0];
+                currentRoz = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
+            }
+
+            if (currentNews.date) {
+                let edition = (currentNews.time && currentNews.time < "12:00") ? "Poranne" : "Wieczorne";
+                if (archiveKey && archiveKey.includes('poranne')) edition = "Poranne";
+                if (archiveKey && archiveKey.includes('wieczorne')) edition = "Wieczorne";
+                document.getElementById('header-date').textContent = `${currentNews.date} • Wydanie ${edition}`;
+            }
+
+            // Tasowanie: 3 newsy -> 1 rozrywka
+            let combined = [];
+            let nItems = currentNews.items || [];
+            let rItems = currentRoz.items || [];
+            let nIdx = 0, rIdx = 0;
+
+            while (nIdx < nItems.length || rIdx < rItems.length) {
+                for(let i=0; i<3 && nIdx < nItems.length; i++) {
+                    combined.push({...nItems[nIdx], isFun: false, id: `n-${nIdx}`});
+                    nIdx++;
+                }
+                if (rIdx < rItems.length) {
+                    combined.push({...rItems[rIdx], isFun: true, id: `r-${rIdx}`});
+                    rIdx++;
+                }
+            }
+
+            await renderData(combined);
         }
 
         async function renderData(items) {
@@ -325,7 +388,7 @@
                 const safeSummary = (item.summary || '').replace(/'/g, "\\'");
                 const safeLink = item.link || window.location.href;
 
-                // KARTA - Poprawione centrowanie w h-6 i items-center
+                // KARTA - Optyczne wycentrowanie tekstu kategorii przez paddingi i translate
                 const cardHtml = `
                     <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
@@ -345,9 +408,9 @@
 
                         <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                             <div class="flex items-center mb-3">
-                                <!-- Idealne centrowanie tekstu -->
-                                <span class="inline-flex items-center justify-center px-2.5 h-6 rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
-                                    ${item.category || 'Wiadomość'}
+                                <!-- Idealne wycentrowanie tekstu (pt-1 pb-0.5 + translate) -->
+                                <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
+                                    <span class="-translate-y-px">${item.category || 'Wiadomość'}</span>
                                 </span>
                             </div>
                             
@@ -379,16 +442,15 @@
                 `;
                 grid.insertAdjacentHTML('beforeend', cardHtml);
 
-                // FAST REVIEW - Poprawione centrowanie w h-5
+                // FAST REVIEW
                 const listHtml = `
                     <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center hover:border-slate-700 hover:bg-slate-800/40 transition">
                         <div class="text-3xl hidden sm:block">${emoji}</div>
                         <div class="flex-1 min-w-0">
                             <div class="flex items-center gap-2 mb-2">
                                 <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                <!-- Idealne centrowanie tekstu -->
-                                <span class="inline-flex items-center justify-center px-2 h-5 rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
-                                    ${item.category}
+                                <span class="inline-flex items-center px-2 pt-1 pb-[3px] rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
+                                    <span class="-translate-y-px">${item.category}</span>
                                 </span>
                             </div>
                             <h3 class="text-slate-100 font-semibold text-sm sm:text-base leading-snug">
@@ -406,9 +468,11 @@
             });
 
             document.getElementById('loader').style.display = 'none';
-            switchTab('full'); 
+            // Zachowaj wybrany aktualnie widok
+            const isFast = document.getElementById('tab-fast').classList.contains('bg-brand-500');
+            switchTab(isFast ? 'fast' : 'full'); 
 
-            // Dociąganie obrazów z Pexels
+            // Dociąganie obrazów z Pexels w tle
             for (const item of items) {
                 const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
                 const imgUrl = await fetchPexelsImage(query);
@@ -425,6 +489,7 @@
                     imgEl.src = imgUrl;
                 }
                 
+                // Krótka pauza, by nie zadławić API Pexels
                 await new Promise(r => setTimeout(r, 150)); 
             }
         }
