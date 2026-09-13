@@ -1,98 +1,119 @@
 {
-  "date": "12 September 2026",
-  "time": "18:46",
-  "timestamp": "2026-09-12_18:46",
+  "date": "13 September 2026",
+  "time": "06:36",
+  "timestamp": "2026-09-13_06:36",
   "items": [
     {
-      "category": "BEZPIECZEŃSTWO / GEOPOLITYKA",
-      "title": "🛡️ Polskie wojsko w podwyższonej gotowości po atakach przy granicy",
-      "summary": "Masywne rosyjskie uderzenia na zachodnią Ukrainę wywołały natychmiastową reakcję polskich sił zbrojnych. W przestrzeń powietrzną poderwano myśliwce w celu zabezpieczenia polskich granic.",
-      "comment": "Geograficzne zbliżanie się działań wojennych do granic NATO zwiększa ryzyko incydentów i nakłada ogromną presję na systemy wczesnego ostrzegania.",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSkFtd19PQ2NXNDl5dnJYa1F5MlRmS0lVZFo3dV9wd3JLNUxsMng2enpYcVlpZUFIb2FyRXVreGR4OXdMYkxtYkh0MTF1VVVfUEZlaEVXNnpoUE5tcTdlQWNsRDR4Sm9uVk5aWUtMOEpUbnljN3hMeTdXRHFuWnAtNHNxZ2hNclh6RWVodXVmcjItbHZGVHI4em81TkJKNHNDRWZrQg?oc=5"
+      "category": "ŚWIAT / WOJNA",
+      "title": "💥 Rosyjski atak na polską fabrykę na Ukrainie",
+      "summary": "Rosyjskie wojska przeprowadziły uderzenie na zakład produkcyjny należący do polskiej firmy działającej na terenie Ukrainy. Informację tę oficjalnie potwierdził prezydent Wołodymyr Zełenski.",
+      "comment": "Ataki na infrastrukturę zagranicznych inwestorów to próba dalszego zastraszenia biznesu wspierającego ukraińską gospodarkę.",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRGRaSlVVLXJ1cmF5V3dCWDdNUFdPZmg5OE1QbUZBd01RMjlYdllIYUlCRVZrVjNUTHlSWlRQdl94TjVWaEtiS2x1cmlGcktXYU5TYWhLN1haMXlKN2pna3FkVFBZRWlOWlhkbWFRSFZtR3piTmEwUG9VNGZhRDcwbEJoakdoRjJXNHFWZFhJYU94d2F1TXFQZnhnNUtxY3A2OXNKdzZ4bnNHeWVDZk11QlVYWWI2N0QzU3c?oc=5"
     },
     {
-      "category": "DYPLOMACJA / ŚWIAT",
-      "title": "🕊️ Zełenski deklaruje gotowość do bezpośrednich rozmów z Putinem",
-      "summary": "Prezydent Ukrainy po raz kolejny wyraził otwartość na dyplomatyczne rozwiązanie konfliktu i spotkanie z przywódcą Rosji. Podkreślił jednak potrzebę twardych gwarancji bezpieczeństwa.",
-      "comment": "Deklaracja ta ma wymiar głównie strategiczny – wskazuje zachodnim sojusznikom, że Kijów nie blokuje ścieżki dyplomatycznej, przenosząc ciężar decyzji na Moskwę.",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMjBjZlhDTDYxc0daUFpZcWg3ZzV0SkV2MmZ4NlZHd0o0QlNZTFBPNkVPMnBzNVdTNkJseDJmWWtVa2NSc0JJMEY1dDZQa2VkS29yZGxFVHVoejJhZU8zR3dWWEtMSUtNSmhaSGlYTlVwU1NRcGZZQTJMRHRLV3Bwd0Z1TWwwOWp6b3NBb296eVRzUGczTWxxamllZmV1SU4ySURlYS1n?oc=5"
+      "category": "GEOPOLITYKA",
+      "title": "🕊️ USA znają żądania Putina, Ukraina odpowiada odmową",
+      "summary": "Waszyngton zapoznał się z najnowszymi warunkami stawianymi przez Władimira Putina w kontekście ewentualnych negocjacji. Kijów stanowczo odrzuca propozycje uległości terytorialnej.",
+      "comment": "Brak wspólnego mianownika sprawia, że szanse na szybki przełom dyplomatyczny pozostają znikome.",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeF9HM1V3TE1xVEVEenlwV1ZWVlpGZC15LXczV0RObTRDV3dfRWdPMFdEZjNiU0hoY3ZHM045UE1xRWhMS3ZRbTJFUUpIV0R3ekZ2SC1ZaHRtdVdISTVPWVprdXVlSzZqMEFvR0p1a1dwUkk1cXVqS0l4Qm11bjQySFp5THlyVFp6UHBaakFPYm9wNGE3MlJ6cGxWWHFXR1pzNWhBbVVmN2JEQXVmNHdhNjVtcW8ySnJGSGRSVQ?oc=5"
     },
     {
-      "category": "GOSPODARKA / INWESTYCJE",
-      "title": "🌐 Centra danych napędzają nową falę globalnych inwestycji",
-      "summary": "Raport UNCTAD wskazuje, że rozbudowa infrastruktury cyfrowej staje się kluczowym czynnikiem przyciągającym bezpośrednie inwestycje zagraniczne. Centra danych wyprzedzają tradycyjne sektory przemysłu.",
-      "comment": "Zapotrzebowanie na moc obliczeniową AI przekształca mapę kapitałową świata, stawiając energię i łączność w centrum geopolityki gospodarczej.",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUjRCYUxydGxYalVKSHJfSU9hamJCbU9zLTF2bjd5eXA2WkVuWmNMSU1IZHFvVUhqNnVCTWhDT2U1dmJvVEJBYXdvcTZsWm9CTElVSzYyektyZjFGd0s3U1UwcUo2LWFrQzVyZXFMYVB2TmkwSTNNZ0hYWDZCTjI0RVNKeVQ?oc=5"
+      "category": "GOSPODARKA / BIZNES",
+      "title": "📉 Masowe zwolnienia w Booksy – 200 osób traci pracę",
+      "summary": "Założyciel Booksy Stefan Batory poinformował o zwolnieniu około 200 pracowników. W tle reorganizacji firmy leży automatyzacja oraz wdrażanie rozwiązań opartych na sztucznej inteligencji.",
+      "comment": "To kolejny dowód na to, jak automatyzacja AI przekształca struktury zatrudnienia w polskich i globalnych spółkach technologicznych.",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZVhBNVZNVFU5bktsbFJJREZzZVQ4dVMtSlNFcWh0dlY2UG5fU25KTGJ4cFExWHozaTJnQWY0TlZpX2p1VHNzVEJsbWR4MnZOVDBlb1otVVhScVRlWVdVQjNWN1Z1WGZ4cTBLanpkV3c0dHF6SVUzaWpWMVY0ZFlhS0ZuajBhWUs1UzZ0MUh4bk14aHAwb3E4WjQ0bDgzTjh2Mk5td1ZJUlZ2OFd5cHZIZ3I0RQ?oc=5"
     },
     {
-      "category": "GEOPOLITYKA / HANDEL",
-      "title": "🇺🇸 Zmiana strategii Chin wobec zapowiedzi handlowych USA",
-      "summary": "Pekin modyfikuje politykę gospodarczą w odpowiedzi na propozycje taryfowe z Waszyngtonu. Ekonomiści zwracają uwagę na rosnący opór Chin przed narzucanymi ograniczeniami handlowymi.",
-      "comment": "Wojna handlowa wchodzi w fazę dojrzałą – Chiny nie tylko reagują defensywnie, ale budują własne, niezależne od dolara i rynku amerykańskiego sieci dostaw.",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdXlIdXByeHV1ZjN0bkZZWm8yV3A3X0E0T1FCdDg1RFlhVFBmSWlDVEFEbExnRUNrM1hibENVT2VteGtyN200MVJRYWZwVE5fTEhRY1p3ZHhSMEpDYlFIV1pxUVdXTGYxVWc1ZHItOWVnQ1hzQUhweXItMTlnbEhaVnZmb2g4ZWt5OVlzejE2aXVrc3pVSU50TmQ3aU4zR01zbUExNzFGSEJ4eEFMSkhzRzd1OWNPQQ?oc=5"
+      "category": "RYNKI / ENERGETYKA",
+      "title": "🛢️ Incydent w Arabii Saudyjskiej grozi skokiem cen paliw",
+      "summary": "Ostatni atak na obiekty naftowe w Arabii Saudyjskiej wywołał powracające obawy o destabilizację dostaw ropy. Analitycy ostrzegają przed ryzykiem skoku cen paliwa na stacjach nawet do 10 zł za litr.",
+      "comment": "Rynki energii są niezwykle czułe na jakiekolwiek zakłócenia na Bliskim Wschodzie, co natychmiast uderza w kieszenie kierowców.",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTjlmY3J1SmJfUG9XelpEUDdzcmwxTm1JX05HUzF5X3ZzSk5yUWtjWlNnMVNNbFNZLW83SVFlZnhpbVhfMTFjRHFUSThsa0lkckcwSGlmRUx2QVYwWTU2d1RDODA2RTlXYktQZkhWX3dCWGxTTWx2eEpSaFYxdGZZLTFfbU5mZWFtZkFTRDlmOWdwUGVBcnZQNk96dmg2RENEcVc5MnpmWjg2d3JWaHVHcVhCRQ?oc=5"
     },
     {
-      "category": "ŚWIAT / BEZPIECZEŃSTWO",
-      "title": "💥 Pożar i eksplozje w bułgarskim magazynie broni",
-      "summary": "W zakładach wojskowych w Bułgarii doszło do serii wybuchów i pożaru infrastruktury magazynowej. Służby potwierdzają brak ofiar w ludziach oraz prowadzą śledztwo w sprawie przyczyn zdarzenia.",
-      "comment": "Kolejny incydent w europejskiej fabryce zbrojeniowej rodzi pytania o standardy bezpieczeństwa i potencjalne akty dywersji w krajach wschodniej flanki NATO.",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbGtkbzA5a0pmWGJ1elp0NkNBZkVXdDZLaGVGdGgtemRScFJvT3NJJnZNcHQwR3lfZy1scE00elhQOXo2THNNcGVDQV9ZZ1pSTE9oRkdsQnJtSzV6MkhNcHF2RVJsbVU5dWlfSWlVcFdrTl9KYzFuR3VaSVRENXZpMlRLcDRTYlJ1Y3pjbGJtLW5MYTZsX09JSnhfZ1owdndOUjhxdlhXOFR0T1N5T3NnZm1MZw?oc=5"
+      "category": "POLSKA / GOSPODARKA",
+      "title": "🚆 Protest maszynistów sparaliżował ruch kolejowy",
+      "summary": "Maszyniści z całej Polski celowo opóźnili kursowanie pociągów na skalę masową, protestując przeciwko warunkom pracy. Przedstawiciele branży podkreślają ogromny odzew środowiska.",
+      "comment": "Sektor kolejowy boryka się z brakiem kadry i napięciami płacowymi, co przekłada się bezpośrednio na pasażerów.",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWFdZa1ZZaF9Jbk9Ob3lBbGhaWGdibjRYZzEyZmFXM3o3NTBzd1JjSkQ3N1VPdWdrYmk2S19qWmJHRm44cGJuWnJabnZwbHhMaUQ5X0I0bGVhcFV0Wnoxb2ZTMW1wanc1VGpTVmwtYmJESm1BMFVMdGRlRzFSaXNUZldRbXh3dV9pa0RXRFQ2UGZRejdlWlZVUTBqbno3eUFCNy1RdkhtVVBnTExVTE5KRFFtTG1UN1JXeGd3?oc=5"
     },
     {
-      "category": "MILITARIA / ANALIZA",
-      "title": "📉 Rosnące straty osobowe Rosji na froncie ukraińskim",
-      "summary": "Analizy wywiadowcze i wojskowe pokazują gwałtowny wzrost strat ludzkich po stronie rosyjskiej. Zmiana taktyki szturmowej prowadzi do drenażu zasobów mobilizacyjnych.",
-      "comment": "Ilościowa przewaga przestaje rekompensować braki w wyszkoleniu i sprzęcie, co w długiej perspektywie zmusi Moskwę do kolejnej fali niepopularnej społecznie mobilizacji.",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPalBJT09UV2xvSk91QjY5VWl3b0pxLXNNZGlxYTkxcnZuNmQ3WjY5S2NTTmxHRlhtRWhhV0k0dURlNUpQazRaVDhTX2dkenFWNmVCQnk4QnBIYWZVdkdmXzctRjgzV2E1THRPT0U1bzZ5N0tiWFBiUW5CU28tTGlYWS1sUnNoMWt6YVNrRERlNGFvWEhteFl1WTBFMTBveVY0dG00SXJOYUFVQ21aeU5pZ1ZrUllPUm9WTERSQ09wcWVZYWFKS1U0MlRHbTd0elU?oc=5"
+      "category": "ŚWIAT / POLITYKA",
+      "title": "🇸🇪 Nadchodzą wybory w Szwecji z liczną Polonią na listach",
+      "summary": "W zbliżających się wyborach parlamentarnych i samorządowych w Szwecji wystartuje niemal stu kandydatów polskiego pochodzenia. To historyczna reprezentacja polskiej mniejszości w tym kraju.",
+      "comment": "Rosnąca aktywność polityczna Polonii pokazuje jej wprowadzanie się do ścisłego życia publicznego Skandynawii.",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaUhwMUtaSmhJR1VjNFN4WUJPNWZlT0F0UFl4elY1NHdlOXJ2N1d5aGdUbGl1Q3VoV0tLb0o3MWdBNTc5SEJOLW1kelc4Mk9WMGM4Nm9FSkNNdUM4WldydDJ1bEw5eG1UM2xxTDQ3ajF6YUNoY0tURUZKS2xNS3Z0QWpNX1ZCNVhGQ19jNVNhYjNqNEtDcURNM0g4LW5faDVsNWRyelZoZ1I?oc=5"
     },
     {
-      "category": "POLSKA / FINANSE",
-      "title": "⏰ Ostateczny termin do 25 września: Urzędnicy zapowiadają kary",
-      "summary": "Brak uregulowania wymaganych płatności do 25 września grozi sankcjami finansowymi i zajęciami komorniczymi świadczeń. Urzędy przypominają o nieprzekraczalnej dacie.",
-      "comment": "Dyscyplina skarbonowa w warunkach napiętego budżetu staje się priorytetem dla administracji państwowej, która uszczelnia system ściągalności.",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbVI1OGxLZnlubDN1OUJGem1kVktIdHVha3p6cEt2NFN3RWp0RDdmbFlMVmo4QVNFZjlodk5HdGxoT2Jhb2Nzal8xdDh0Yk5JbmN3ZlZZT21WWkptTHpNTmhpb3c4T3JpaE1MbEhYeE5VYnlSaEFjbVhsSDBSWmxTQkxkeGRUVjVlaXRpMnNhejU3UzB4Q3dqLUh3cXlVMEs1VEdpTnVSbFdjckJlTjVGLW1vMmI5TmF2ZGx2eGtGc3hIOGxsOHhPUHBMaF9mdTA0TlI1SzVCc1R1clcw?oc=5"
+      "category": "ŚWIAT / POLITYKA",
+      "title": "🗳️ Kontrowersyjny skład nowych deputowanych AfD",
+      "summary": "Media przeanalizowały życiorysy nowo wybranych polityków skrajnie prawicowej AfD, ujawniając postacie powiązane w przeszłości z branżą erotyczną, dawnym Stasi czy środowiskami neonazistowskimi.",
+      "comment": "Kontrowersje wokół kadr AfD stawiają pytania o standardy polityczne i wpływ skrajnych frakcji na niemiecką scenę.",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbUVLY29CN1N3eTlVNk15dTlUVU8xb1lyTG5GUlVkV2VSNjFPV21mcTZoR0ZwNTBwUm1OTTFPcWpZNkJoa05HbGV4V1k3dE1YeERhY3pNU0w5eGhUVldISFNKSVh4ZXh5TTFDNUZ6S3A1VjJSZ2E3Slp0Tnc5al9tV0VBcXVsaERELUdJcnF1dzVUVDJqYVkyclM1OVpmTkdxR1FTZEFvSVdscTFZSjNTZGlreTRnNnluM3w3Q0I0MXp4dw?oc=5"
     },
     {
-      "category": "POLITYKA / DYPLOMACJA",
-      "title": "🇵🇱 Wizyta Radosława Sikorskiego w Kijowie i wymowny sygnał MSZ",
-      "summary": "Szef polskiej dyplomacji złożył wizytę na Ukrainie, potwierdzając niezmienne wsparcie dla sąsiada. Rzecznik MSZ opublikował jednoznaczny wpis podkreślający wspólnotę interesów.",
-      "comment": "Relacje polsko-ukraińskie wchodzą w etap pragmatycznej współpracy, gdzie obok kwestii bezpieczeństwa coraz częściej podnosi się tematykę odbudowy i gospodarki.",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcGZaYUNwWnVFQVJfUkI5bVpQU0ZscWF6VHY3Um1ic3RVRXJnZkVfVUJmRUhqaXNVdEtBSVlBdzJpRVc4NzlTU2gwVXdzRkRNaHhEMk56cGg2WkVoVVRxSmdscGU0M1pZY1BXaFhwVlg0UGI0UUx6UkRlN3NCVFBCZHJYXzZmdkUtQVgtVEdBRnpNdmc2aThBbEo2NWlyRmZZSlAyVFduNGZhaVk?oc=5"
+      "category": "OBRONNOŚĆ / TECHNOLOGIE",
+      "title": "🛡️ Wóz bojowy Niedźwiedź ma trafić do produkcji w 2029 r.",
+      "summary": "Zaprezentowano demonstrator ciężkiego bojowego wozu piechoty Niedźwiedź. Harmonogram zakłada rozpoczęcie pełnej produkcji seryjnej tej zaawansowanej maszyny w 2029 roku.",
+      "comment": "Kluczowy element modernizacji Wojska Polskiego w odpowiedzi na wyzwania bezpieczeństwa w regionie.",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOY2luaHRwSFZSUnpKeGZmQl9nSmNBTUFtRzZNWjIycEhGb1BVX3k1SVNsNlAwWjlIdVZmOHhTTlhjVEVCeXdaQ0hRaWQxR3FqeXJ3aWdtRGpYTHpfVjhzRXk0cmFiSk1aZ1UyRjN2cjljY0tpWk84X3BoODNKOU9LSGx3T2dzSTRDeGZzTkZMT1BiU08xTGpkaExDRTg1SWRIOGdZak1XSmR6b2VxajREUg?oc=5"
     },
     {
-      "category": "FINANSE / TECHNOLOGIE",
-      "title": "📊 Analiza 380 bilionów tokenów AI ukazuje transformację giełd",
-      "summary": "Badacze z Yale przeanalizowali gigantyczny zbiór danych AI, udowadniając przemożny wpływ sztucznej inteligencji na współczesne rynki finansowe i wycenę aktywów.",
-      "comment": "Algorytmy przestały być jedynie narzędziem pomocniczym – stały się głównym animatorem płynności i wyznacznikiem trendów na globalnych parkietach.",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc3MyaFR2VlpzZUU2TVhENmZNcUljdElUcjlPd1l2Z09JZHAxNWtMd01YSFFKWUEtUWtKR3ROdEpEZEY5NG9LVGNsTE5McnVKOVFFVWdJSjlLd1JfRVZHSUExVElER05xRVNHSzEtblphWGlIU1dhUHFoeVRrOEFRTDNKclBHemNHV09rZmFOb1FFUTNJanJtTFJzX2FneThtWGtEUWNGUUZNdnd5VlVqRFBrZWxVSm5Rbnc?oc=5"
+      "category": "POLSKA / POLITYKA",
+      "title": "🏛️ Prawny spór polityków o decyzję Sejmu ws. Nawrockiego",
+      "summary": "Głosy po decyzjach parlamentu podzieliły prawników i polityków. Były szef TK Jerzy Stępień skrytykował ruch Sejmu, stając w obronie Karola Nawrockiego.",
+      "comment": "Debata polityczno-prawna nad procedurami sejmowymi rozgrzewa polską scenę publiczną przed kolejnymi wyborami.",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNVhsVld0ZWIycTlWZ2FoMDFzOHFqSGR5SzdZTWZkTjVITlhxOFBMdzNPQWtndmFNR2V1X3Y1eUU1MTBxeUNZaW9tWjJKSE5seTZuQ3RhUGJOM1hqMzdZS2Rlc2p1bEVTa0t3NF9lSC1mOTRFeVNzNGhNQ2ZVN2ZlYmdZVDhReE1rWlhzT3R1ZXZ4ZHhjdzhSZ3FR0gGYAUFVX3lxTE92NExGSmppcjFjLUF0Q2o2NzlIQzg3NDBySjYwN2tsOGIzeUxXeVl1NkNOdGNaSEEwMFEzZGFDOGxuczhoVFlGalMwT3Z1X25OdFVSNk1aVXBqNUhtQVlKZTN3Y1pSek1wTkVYY1BVS1VDcGJCcGc4RUF3TF9LUnlMOTFlcEk3T212NkY1ejRuRGRpOHFXNVJr?oc=5"
+    },
+    {
+      "category": "POLSKA / WIADOMOŚCI",
+      "title": "⚠️ Wykolejenie pociągu pod Przysuchą – relacja świadków",
+      "summary": "Pasażerowie pociągu, który wykoleił się w okolicach Przysuchy, dzielą się dramatycznymi zdjęciami i opowieściami z momentu zdarzenia. Na miejscu interweniowały służby.",
+      "comment": "Incydent po raz kolejny zwraca uwagę na stan infrastruktury kolejowej oraz bezpieczeństwo podróżnych.",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVkFIZFhudDR0UXR3WGZ3d0ZYZ2tRalpDYkhxR3dKaUc3a1RGWEVFYWkxeG41Y2tIU2hUbU1ZU29CVERSZ0JpMGw2LXhqVHMwUTZIUTl0RUs3UWJvYVc3U19NVkhQZWJfWkt3Vi1YVWNYRk1nRzd6N0VmSDZqYlpuR21QSzdNRnRDZEk4cDJDTGVKWGdfRHJsQW54TWdIUG5vTnJ4XzcyM092TTJ1OFhLTUdYcWNvOGZOaWZTdVJYSm9JOXRQZldMVktlTQ?oc=5"
+    },
+    {
+      "category": "EDUKACJA / GOSPODARKA",
+      "title": "🎓 MIT Sloan na szczycie globalnego rankingu MBA 2026",
+      "summary": "Financial Times ogłosił najnowsze zestawienie programów MBA na rok 2026. Szkoła MIT Sloan wywalczyła 1. miejsce, wyprzedzając tradycyjnych rywali.",
+      "comment": "Silny nacisk MIT na innowacje technologiczne i analitykę przyciąga przyszłych liderów światowego biznesu.",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXFJazlkY1JWYnhuUVNGZXM0d203RkdIeUtJcGVYMTdSeXFMbVExVk5rc2pBai1XWXNKcmRSbjNVY1c5bHhYcmxjSlZqMnVPVlZoT1V1UzB4M0xuenR0N0g0ZW94ZWttT1c2S21ORU8zUUJtNDRMRWRTSkpDdG85YktCY0hacXZTZVE2ODhZRQ?oc=5"
+    },
+    {
+      "category": "RYNKI / TECHNOLOGIE",
+      "title": "⚛️ WEF: Rynki finansowe szykują się na erę kwantową",
+      "summary": "Światowe Forum Ekonomiczne zwraca uwagę na postępującą adaptację technologii kwantowych w sektorze finansowym oraz konieczność przygotowania rynków na cyfrowe przełomy.",
+      "comment": "Kwantowe algorytmy mogą wkrótce zrewolucjonizować optymalizację portfeli inwestycyjnych oraz kryptografię.",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObzVhTkV3ZnF2bWdZMk9ORzRVRjV3eW5QTVp6b3R3WnA0akFnSWZONzcyb1FPZGQzQko2bjFLaXpiNEMwUlpsTGY1MnN6bmt5Y2tBamNBX0QwbTJsZWdwX19nYVVvd29PMUpRSHN6VG5uM0dMMnY1cENHbTRMang3aHVEM2s0QjdzcUJWSzBWZHpHV0wtMTc1SFdzV2hiYzk1LURVNkJFc2lvMnlRelZla2R1Q2xzczlqeFkw?oc=5"
+    },
+    {
+      "category": "CIEKAWOSTKA / EKO",
+      "title": "♻️ Drugie życie słynnej kopuły Science World",
+      "summary": "Kultowa kopuła „The Beautiful Dome” w Science World zyska nową formę dzięki nowatorskiemu projektowi upcyklingu, dając materiałom z budynku drugi żywot.",
+      "comment": "Świetny przykład, jak architektura i ekologia mogą tworzyć unikalne pamiątki i ograniczać odpady budowlane.",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVHl2OUx2blRCXy1sTnlzaHE2YzN4STdvRndjcXRjN19UaVkwS0hFUzRRNWVQSlRuaUNsZzlwOW16YTZRYUs5RTdTUDYtWnlyUFE2NWpDSjRqbHlWYXhKVG9qU1ExRWlBVEhEeVJ6OFBqbnJLZF9LWGhTWTFMemlVNHp4WEdzQmhFYk9XZVNXdGpmN3pic0xhdmZiNF9qZUx4dS1hWUlmVQ?oc=5"
     },
     {
       "category": "CIEKAWOSTKA / LIFE",
-      "title": "🏫 Szkolne otrzęsiny wymknęły się spod kontroli: Interwencja policji",
-      "summary": "Tradycyjna impreza powitalna dla nowych uczniów w jednej z placówek zakończyła się przyjazdem policji po tym, jak młodzież zaczęła zażywać woreczki z nikotyną (snusy).",
-      "comment": "Niewinna tradycja szkolna zderzyła się z nowymi trendami wśród młodzieży, zmuszając dyrekcję i służby do natychmiastowej edukacji w zakresie używek.",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbGhfU3BYTXlqRHRoM1RPNktSd0NzSmlRTjkyVjNiV3AxQUFvYV9GYTNqSGF1MmpPbUVhRkFFUUNqYVctZ011NnlVSy1TMllMTG5vTWRyMGNXQ1dYRmhVYmROQXpTLWtWSVBJZHU2M2VyMUJxdE1INTFFT3YtMGlyVDdEckpEVWRGbHM5OWNtNUx1bkJqcHctTTBEMnRIc1dLcW05YzdjeDUtYS1KNWZ2cg?oc=5"
+      "title": "🌦️ Pogodowy podział Polski – co nas czeka w niedzielę?",
+      "summary": "Prognozy na weekend wskazują na wyraźny podział kraju: podczas gdy jedna połowa Polski będzie cieszyć się słońcem, drugą nawiedzą opady deszczu.",
+      "comment": "Warto sprawdzić aurę przed niedzielnym spacerem, bo pogoda przygotowała wyjątkowy kontrast regionalny.",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOUk0SjE1X0hEVHRxNmZjNHl0YWRNbWJSNDFBWGZXdFg3VUZBdldtWThhTHlyaDRZOW5odC1XUXkyanI4Sl81enNSdHl5VDJxUWs2bll0dGdiNlA2bnpmcmdfcDVRVW9PeERucHlWSExWd2JNa0Vid040ZV83T0cxb3pjVEp4WEszWWZvTVlKZjA1TW5IUjNhV0diMDdsNXNHVDdCV213ZVFIX2I4VXYw?oc=5"
     },
     {
-      "category": "NAUKA / SPOŁECZEŃSTWO",
-      "title": "🧠 Kobiety w nauce przełamują kolejne bariery systemowe",
-      "summary": "Inicjatywy ONZ podsumowują postępy w niwelowaniu luki płciowej w sektorze STEM, wskazując na rekordowy udział kobiet w innowacyjnych projektach badawczych.",
-      "comment": "Równomierny dostęp do kariery naukowej to nie tylko kwestia równości, ale też warunek przyspieszenia globalnego postępu technologicznego.",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1lZ0VuUl9PaGNpSVZCVGFrcFpkaU8tNWYxQURxWWw5Skp2eEtCejBZd3lPb0FZZVJkdW1WRDM2TERCaEJjVlBJN3Q5mTBNRnBlbDFIdWZMWQ?oc=5"
+      "category": "CIEKAWOSTKA / WYDARZENIA",
+      "title": "🪖 Army Days 2026 – Kielce szykują wojskowe show",
+      "summary": "W Kielcach trwają intensywne przygotowania do weekendu pełnego militarnych atrakcji w ramach Army Days 2026. Zwiedzający będą mogli zobaczyć m.in. nowoczesny sprzęt bojowy.",
+      "comment": "Wydarzenie przyciąga rzesze pasjonatów wojskowości i technologii obronnych z całej Polski.",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaGFSdUtwY2lpdXhqenI0Q250YzEyX0NiOXBKdk9kaVUwR0VrMEV1QUlkaW56Xy15em1fcGRYYmhtLW1LNW5tMU03QWlEX3FMYTRjTTB3WnBXaXlWVjFVQ2ZwWXVsdEd5VkdULXRvXzhDdkdYZjBBSGpzY0hYYlNPZnZySF84V081RWZSNHFZVEpBQjhMWDFsUkVvTTd0Q3h5U3lBOVE2MWFaamIxV251Z1ZnTkllcmlheVRRazg4LUxoOUpCSS03NzZvNEZKTm0wTEE?oc=5"
     },
     {
-      "category": "EDUKACJA / TRENDY",
-      "title": "🚀 Rewolucja Fintech: Nowe wyzwania i pożądane kompetencje",
-      "summary": "Uczelnie wyższe rosnąco dostosowują programy do rynku nowoczesnych finansów, łącząc bankowość z programowaniem i analizą danych.",
-      "comment": "Sektor finansowy nie szuka już tradycyjnych ekonomistów – przyszłość należy do hybrydowych specjalistów łączących kodowanie z wiedzą rynkową.",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1TYUtKcUVURF9sS2tYdlNBaVB2QWtmck1XRjZtLXljWHZFazJyZTNtZzNVc0cxMVhjYUZ3dW5reEJwU3JKblJRSkZTbGtvVXBuU1pXR3daTkdLOHJISXhiaHY5ZWVSMkl0OVlzdV9Yd2Z1ZWt6VVdaSUN3?oc=5"
-    },
-    {
-      "category": "MEDIA / CIEKAWOSTKA",
-      "title": "🤖 News.cx debiutuje z darmowym serwisem informacyjnym",
-      "summary": "Na rynku pojawiła się nowa platforma serwująca codzienne syntezy z zakresu technologii, nauki i gospodarki bez opłat subskrypcyjnych.",
-      "comment": "W epoce płatnych ścianek (paywalli) otwarty dostęp do dobrej jakości skrótów informacyjnych może przyciągnąć szerokie grono odbiorców poszukujących faktów bez spamu.",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNHR0UDlndEptb3RkNmU4MWZJbU5sSS1HelpKbTlLUjE2aFp2WnNWZDc4N0VlZVRCMmEtRzZHdDVJSUJtY1lybUFpeWR2SVVMSXU3aXdtNWZHd1BFUkNIUkhUcVdYUkpfTWhwaUM1dkJRVmZCRC1mdWlOZ0tyVDE0X2RIV3d4TXMzT2l6TTBBQQ?oc=5"
+      "category": "CIEKAWOSTKA / NAUKA",
+      "title": "🤖 Sztuczna inteligencja na celowniku encyklopedii Britannica",
+      "summary": "Britannica przygotowała obszerne opracowanie analizujące plusy, minusy oraz największe kontrowersje wokół rozwoju sztucznej inteligencji.",
+      "comment": "Debata nad tym, czy AI stanie się wybawieniem, czy zagrożeniem dla ludzkości, nabiera jeszcze większego tempa.",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLOFRoZ3JOQjhkUWhpMGQ1RmRWT0tPRWd3TEpmN2kzV1A0b3N5NmpNTGs2eVR3QXVZNEhBMkZnU2xPd3RwZU43Z2dVVkdEUUJfVklHQ2Q1eUFEU3VCMm5OVEJlWDdvTEFIeDMzN29nSmJlbnhfM3c?oc=5"
     }
   ]
 }
