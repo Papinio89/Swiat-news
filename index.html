@@ -3,459 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Świat w pigułce – Minimalist News</title>
+    <title>Świat w Minutę - Najważniejsze informacje ze świata</title>
+    
+    <!-- Tailwind CSS (via CDN dla ułatwienia) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --bg-color: #fdfdfd;
-            --text-color: #222;
-            --text-muted: #666;
-            --border-color: #eaeaea;
-            --link-color: #1a0dab;
-            --link-visited: #551a8b;
-            --input-bg: #fff;
-            --btn-hover: #f1f3f4;
-            --badge-bg: #f1f3f4;
-            --progress-bar: #1a0dab;
-            --card-bg: #fff;
-            --comment-bg: #f4f8f4;
-            --comment-border: #d0e8d0;
+        body { background-color: #020617; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-
-        [data-theme="dark"] {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --text-muted: #a0a0a0;
-            --border-color: #2d2d2d;
-            --link-color: #8ab4f8;
-            --link-visited: #c58af9;
-            --input-bg: #1e1e1e;
-            --btn-hover: #2a2a2a;
-            --badge-bg: #2a2a2a;
-            --progress-bar: #8ab4f8;
-            --card-bg: #1a1a1a;
-            --comment-bg: #16221a;
-            --comment-border: #204028;
-        }
-
-        #progress-container {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 3px; background: transparent; z-index: 1000;
-        }
-        #progress-bar { height: 100%; background: var(--progress-bar); width: 0%; transition: width 0.1s; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: var(--text-color);
-            background: var(--bg-color);
-            line-height: 1.5;
-            transition: background 0.3s, color 0.3s;
-        }
-        header {
-            display: flex; justify-content: space-between; align-items: flex-start;
-            border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;
-        }
-        .header-left h1 { font-size: 1.4rem; margin: 0 0 4px 0; }
-        #date-display { font-size: 0.85rem; color: var(--text-muted); }
+        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         
-        .icon-btn {
-            background: var(--input-bg); border: 1px solid var(--border-color); color: var(--text-color);
-            padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; transition: background 0.2s;
+        /* Shimmer effect for loading images */
+        .img-loading {
+            background: #1e293b;
+            background: linear-gradient(90deg, #1e293b 8%, #334155 18%, #1e293b 33%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
         }
-        .icon-btn:hover { background: var(--btn-hover); }
-
-        .controls-bar { display: flex; gap: 12px; margin-bottom: 15px; flex-wrap: wrap; }
-        .archive-box, .search-box { flex: 1; min-width: 200px; }
-        select, input {
-            width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color);
-            background: var(--input-bg); color: var(--text-color); font-size: 0.9rem; box-sizing: border-box;
-        }
-
-        .tabs-bar { display: flex; gap: 10px; margin-bottom: 15px; }
-        .tab-btn {
-            background: var(--input-bg); border: 1px solid var(--border-color); color: var(--text-color);
-            padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 500;
-        }
-        .tab-btn.active { background: var(--link-color); color: #fff; border-color: var(--link-color); }
-        [data-theme="dark"] .tab-btn.active { color: #121212; }
-        
-        .stats-bar {
-            font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;
-            display: flex; justify-content: space-between; align-items: center;
-            background: var(--badge-bg); padding: 8px 12px; border-radius: 6px;
-        }
-
-        /* Nowe style dla kafelków newsów */
-        ul { list-style: none; padding: 0; margin: 0; }
-        .news-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
-            transition: border-color 0.2s;
-        }
-        .news-header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 10px;
-        }
-        .news-meta {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            flex: 1;
-        }
-        .news-category {
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            letter-spacing: 0.5px;
-        }
-        .news-title {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--link-color);
-            text-decoration: none;
-            display: inline-block;
-        }
-        .news-title:hover { text-decoration: underline; }
-        .news-title.read { color: var(--link-visited); opacity: 0.75; }
-
-        .news-summary {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            margin-top: 8px;
-            margin-bottom: 12px;
-        }
-
-        /* Przyciski akcji i rozwijania */
-        .card-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid var(--border-color);
-            padding-top: 10px;
-            margin-top: 8px;
-        }
-        .expand-toggle-btn {
-            background: none; border: none; color: var(--link-color); cursor: pointer;
-            font-size: 0.85rem; font-weight: 500; padding: 0; display: flex; align-items: center; gap: 4px;
-        }
-        .expand-toggle-btn:hover { text-decoration: underline; }
-
-        .actions-group { display: flex; gap: 6px; align-items: center; }
-        .star-btn { background: none; border: none; cursor: pointer; font-size: 1rem; opacity: 0.4; transition: opacity 0.2s; }
-        .star-btn.starred, .star-btn:hover { opacity: 1; }
-        .copy-btn {
-            background: var(--badge-bg); border: 1px solid var(--border-color); cursor: pointer;
-            color: var(--text-muted); font-size: 0.75rem; padding: 3px 6px; border-radius: 4px;
-        }
-
-        /* Komentarz (ukryty domyślnie, rozwijany) */
-        .news-comment {
-            display: none;
-            background: var(--comment-bg);
-            border: 1px solid var(--comment-border);
-            border-radius: 6px;
-            padding: 10px 12px;
-            margin-top: 10px;
-            font-size: 0.85rem;
-            gap: 8px;
-            align-items: flex-start;
-        }
-        .news-comment.open { display: flex; }
-        .comment-icon { font-size: 1rem; line-height: 1.2; }
-
-        footer {
-            margin-top: 45px; font-size: 0.8rem; color: var(--text-muted);
-            border-top: 1px solid var(--border-color); padding-top: 15px; text-align: center;
-        }
+        @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
     </style>
 </head>
-<body data-theme="light">
+<body class="antialiased min-h-screen flex flex-col">
 
-    <div id="progress-container"><div id="progress-bar"></div></div>
-
-    <header>
-        <div class="header-left">
-            <h1>🌍 Świat w pigułce</h1>
-            <div id="date-display">Ładowanie...</div>
-        </div>
-        <div class="header-right">
-            <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" title="Przełącz motyw">🌙</button>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                    <i class="fa-solid fa-earth-americas text-slate-900 text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-black text-xl tracking-tight leading-none text-white">Świat <span class="text-brand-400">w Minutę</span></h1>
+                    <p id="header-date" class="text-[11px] font-medium text-slate-400 mt-1 uppercase tracking-wider">Ładowanie najnowszych wiadomości...</p>
+                </div>
+            </div>
+            <div>
+                <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                </a>
+            </div>
         </div>
     </header>
 
-    <div class="controls-bar">
-        <div class="archive-box">
-            <select id="archive-select" onchange="loadArchiveSession(this.value)">
-                <option value="">Najnowsze wydanie</option>
-            </select>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <div class="mb-10 text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Przegląd Dnia. <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-red-500">Krótko i na temat.</span></h2>
+            <p class="text-slate-400 text-sm sm:text-base">Merytoryczne newsy i dawka rozrywki. Wyselekcjonowane przez sztuczną inteligencję, żebyś nie tracił czasu na clickbaity.</p>
         </div>
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="🔍 Szukaj w tym wydaniu..." oninput="renderNews()">
+
+        <div id="loader" class="flex flex-col items-center justify-center py-20">
+            <i class="fa-solid fa-circle-notch fa-spin text-brand-400 text-4xl mb-4"></i>
+            <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
         </div>
-    </div>
 
-    <div class="tabs-bar">
-        <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">Wszystkie newsy</button>
-        <button class="tab-btn" id="tab-starred" onclick="switchTab('starred')">⭐ Na potem (<span id="starred-count">0</span>)</button>
-    </div>
+        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 transition-opacity duration-500">
+            <!-- News Cards will be injected here -->
+        </div>
 
-    <div class="stats-bar">
-        <span id="progress-text">Przeczytane: 0/0 (0%)</span>
-        <span id="comment-text" style="font-weight: 500;">Zaczynamy!</span>
-    </div>
+    </main>
 
-    <ul id="news-list">
-        <li>Pobieranie wiadomości...</li>
-    </ul>
-
-    <footer>Minimalistyczny aggregator AI • 0 tokenów przy przeglądaniu</footer>
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
+            <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center mb-4">
+                <i class="fa-solid fa-bolt text-brand-400 text-sm"></i>
+            </div>
+            <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
+            <p class="text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
+        </div>
+    </footer>
 
     <script>
-        let archiveData = {};
-        let currentItems = [];
-        let activeTab = 'all';
-        let starredLinks = JSON.parse(localStorage.getItem('starred_news') || '[]');
-        let readLinks = JSON.parse(localStorage.getItem('read_news') || '[]');
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        window.onscroll = function() {
-            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let scrolled = (winScroll / height) * 100;
-            document.getElementById("progress-bar").style.width = scrolled + "%";
-        };
-
-        function initTheme() {
-            const savedTheme = localStorage.getItem('news_theme') || 'light';
-            document.body.setAttribute('data-theme', savedTheme);
-            document.getElementById('theme-toggle').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+        // Helper: Share button API (działa świetnie na telefonach)
+        async function shareArticle(title, text, url) {
+            if (navigator.share) {
+                try {
+                    await navigator.share({ title: title, text: text, url: url });
+                } catch (err) { console.log('Share error:', err); }
+            } else {
+                navigator.clipboard.writeText(url);
+                alert('Skopiowano link do schowka!');
+            }
         }
 
-        function toggleTheme() {
-            const current = document.body.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.body.setAttribute('data-theme', next);
-            localStorage.setItem('news_theme', next);
-            document.getElementById('theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
+        // Helper: Kolory dla kategorii
+        function getCategoryStyle(cat, isFun) {
+            if (isFun) return "text-fuchsia-400 bg-fuchsia-400/10 border-fuchsia-400/20";
+            const c = (cat || "").toUpperCase();
+            if (/AI|TECHNOLOG/.test(c)) return "text-violet-400 bg-violet-400/10 border-violet-400/20";
+            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "text-emerald-400 bg-emerald-400/10 border-emerald-400/20";
+            if (/NAUKA/.test(c)) return "text-teal-400 bg-teal-400/10 border-teal-400/20";
+            if (/POLSKA/.test(c)) return "text-red-400 bg-red-400/10 border-red-400/20";
+            if (/OBRONN|WOJSK/.test(c)) return "text-slate-300 bg-slate-300/10 border-slate-300/20";
+            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "text-blue-400 bg-blue-400/10 border-blue-400/20";
+            return "text-brand-400 bg-brand-400/10 border-brand-400/20";
+        }
+
+        function getCommentStyle(cat, isFun) {
+            if (isFun) return "bg-fuchsia-950/30 border-fuchsia-900/50 text-fuchsia-100";
+            return "bg-slate-800/60 border-slate-700/50 text-slate-300";
         }
 
         async function init() {
-            initTheme();
             try {
-                const archiveRes = await fetch('archive.json');
-                if (archiveRes.ok) {
-                    archiveData = await archiveRes.json();
-                    const select = document.getElementById('archive-select');
-                    const sortedKeys = Object.keys(archiveData).sort().reverse();
-                    for (const key of sortedKeys) {
-                        const item = archiveData[key];
-                        const opt = document.createElement('option');
-                        opt.value = key;
-                        let sessionType = (item.time && item.time < "12:00") ? "🌅 Poranne" : "🌆 Wieczorne";
-                        opt.textContent = `${item.date || key} (${sessionType} - ${item.time || '19:00'})`;
-                        select.appendChild(opt);
+                // Pobieramy oba pliki jednocześnie
+                const [newsRes, rozRes] = await Promise.all([
+                    fetch('news.json').catch(() => null),
+                    fetch('rozrywka.json').catch(() => null)
+                ]);
+
+                let newsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
+                let rozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
+
+                // Ustawienie daty
+                if (newsData.date) {
+                    let edition = (newsData.time && newsData.time < "12:00") ? "Poranne" : "Wieczorne";
+                    document.getElementById('header-date').textContent = `${newsData.date} • Wydanie ${edition}`;
+                }
+
+                // Mieszanie: 3 newsy -> 1 rozrywka -> 3 newsy -> 1 rozrywka
+                let combined = [];
+                let nItems = newsData.items || [];
+                let rItems = rozData.items || [];
+                let nIdx = 0, rIdx = 0;
+
+                while (nIdx < nItems.length || rIdx < rItems.length) {
+                    // Dodaj max 3 newsy
+                    for(let i=0; i<3 && nIdx < nItems.length; i++) {
+                        combined.push({...nItems[nIdx], isFun: false});
+                        nIdx++;
+                    }
+                    // Dodaj 1 fun (jeśli dostępny)
+                    if (rIdx < rItems.length) {
+                        combined.push({...rItems[rIdx], isFun: true});
+                        rIdx++;
                     }
                 }
-            } catch (e) { console.log("Brak pliku archiwum."); }
-            loadLatestNews();
-        }
 
-        async function loadLatestNews() {
-            try {
-                const res = await fetch('news.json');
-                const data = await res.json();
-                processData(data);
-            } catch (e) {
-                document.getElementById('news-list').innerHTML = '<li>⚠️ Nie udało się załadować aktualności.</li>';
+                renderCards(combined);
+
+            } catch (error) {
+                console.error("Błąd podczas pobierania danych:", error);
+                document.getElementById('loader').innerHTML = '<p class="text-red-400">Nie udało się załadować wiadomości. Spróbuj ponownie później.</p>';
             }
         }
 
-        function loadArchiveSession(sessionKey) {
-            if (!sessionKey) { loadLatestNews(); return; }
-            if (archiveData[sessionKey]) processData(archiveData[sessionKey]);
-        }
+        function renderCards(items) {
+            const grid = document.getElementById('news-grid');
+            grid.innerHTML = '';
 
-        function processData(data) {
-            let timeInfo = data.time ? ` • Pobrano o ${data.time}` : '';
-            document.getElementById('date-display').textContent = (data.date || '') + timeInfo;
-            currentItems = data.items || [];
-            document.getElementById('search-input').value = '';
-            renderNews();
-        }
-
-        function switchTab(tab) {
-            activeTab = tab;
-            document.getElementById('tab-all').classList.toggle('active', tab === 'all');
-            document.getElementById('tab-starred').classList.toggle('active', tab === 'starred');
-            renderNews();
-        }
-
-        function toggleStar(link) {
-            if (starredLinks.includes(link)) {
-                starredLinks = starredLinks.filter(l => l !== link);
-            } else {
-                starredLinks.push(link);
-            }
-            localStorage.setItem('starred_news', JSON.stringify(starredLinks));
-            renderNews();
-        }
-
-        function markAsRead(link) {
-            if (!readLinks.includes(link)) {
-                readLinks.push(link);
-                localStorage.setItem('read_news', JSON.stringify(readLinks));
-            }
-            renderNews();
-        }
-
-        function renderNews() {
-            const list = document.getElementById('news-list');
-            list.innerHTML = '';
-            document.getElementById('starred-count').textContent = starredLinks.length;
-
-            let itemsToDisplay = currentItems;
-            if (activeTab === 'starred') {
-                itemsToDisplay = itemsToDisplay.filter(item => starredLinks.includes(item.link));
-            }
-
-            const query = document.getElementById('search-input').value.toLowerCase().trim();
-            if (query) {
-                itemsToDisplay = itemsToDisplay.filter(item => 
-                    (item.title && item.title.toLowerCase().includes(query)) || 
-                    (item.summary && item.summary.toLowerCase().includes(query)) ||
-                    (item.category && item.category.toLowerCase().includes(query))
-                );
-            }
-
-            if (itemsToDisplay.length === 0) {
-                list.innerHTML = activeTab === 'starred' 
-                    ? '<li>Brak zapisanych wiadomości na potem.</li>' 
-                    : '<li>Brak pasujących wiadomości w tym wydaniu.</li>';
-                updateStats();
-                return;
-            }
-
-            itemsToDisplay.forEach((item) => {
-                const li = document.createElement('li');
+            items.forEach((item, index) => {
+                // Generowanie tła za darmo przez Pollinations AI (bez API key!) na podstawie image_query
+                const query = encodeURIComponent(item.image_query || item.category + " " + item.title.split(' ').slice(0,3).join(' '));
+                // Dodajemy index jako seed żeby zdjęcia były unikalne nawet przy tym samym query
+                const imgUrl = `https://image.pollinations.ai/prompt/${query}?width=600&height=400&nologo=true&seed=${index}`;
                 
-                const card = document.createElement('div');
-                card.className = 'news-card';
+                const catStyle = getCategoryStyle(item.category, item.isFun);
+                const comStyle = getCommentStyle(item.category, item.isFun);
+                const emoji = item.title.match(/^[\p{Emoji}\s]+/u) ? '' : (item.isFun ? '🎉 ' : '📌 '); // zabezpieczenie na wypadek braku emoji w tytule
 
-                const headerRow = document.createElement('div');
-                headerRow.className = 'news-header-row';
+                const cardHtml = `
+                    <article class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:border-slate-700 transition-all duration-300 flex flex-col group">
+                        <!-- Sekcja zdjęcia -->
+                        <div class="h-48 w-full relative img-loading overflow-hidden">
+                            <img src="${imgUrl}" alt="Ilustracja" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition duration-500" loading="lazy" onload="this.parentElement.classList.remove('img-loading')">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent"></div>
+                            
+                            <!-- Kategoria na zdjęciu -->
+                            <div class="absolute bottom-4 left-5 right-5 flex justify-between items-end">
+                                <span class="px-3 py-1.5 rounded-xl border text-[10px] font-bold uppercase tracking-wider backdrop-blur-md ${catStyle}">
+                                    ${item.category || 'Wiadomość'}
+                                </span>
+                                <button onclick="shareArticle('${item.title.replace(/'/g, "\'")}', '${item.summary.replace(/'/g, "\'")}', '${item.link || window.location.href}')" class="w-8 h-8 rounded-full bg-slate-800/80 backdrop-blur border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:bg-brand-500 hover:border-brand-500 transition">
+                                    <i class="fa-solid fa-share-nodes text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
 
-                const meta = document.createElement('div');
-                meta.className = 'news-meta';
-
-                // 1. Kategoria
-                if (item.category) {
-                    const cat = document.createElement('span');
-                    cat.className = 'news-category';
-                    cat.textContent = item.category;
-                    meta.appendChild(cat);
-                }
-
-                // 2. Główny nagłówek
-                const titleA = document.createElement('a');
-                titleA.href = item.link || '#';
-                titleA.target = '_blank';
-                titleA.className = `news-title ${readLinks.includes(item.link) ? 'read' : ''}`;
-                titleA.textContent = item.title || item.text;
-                titleA.onclick = () => markAsRead(item.link);
-                meta.appendChild(titleA);
-
-                headerRow.appendChild(meta);
-                card.appendChild(headerRow);
-
-                // 3. Skrótowy opis
-                if (item.summary) {
-                    const summaryDiv = document.createElement('div');
-                    summaryDiv.className = 'news-summary';
-                    summaryDiv.textContent = item.summary;
-                    card.appendChild(summaryDiv);
-                }
-
-                // Dolny pasek: Przycisk rozwijania komentarza + gwiazdka/kopiowanie
-                const cardActions = document.createElement('div');
-                cardActions.className = 'card-actions';
-
-                if (item.comment) {
-                    const expandBtn = document.createElement('button');
-                    expandBtn.className = 'expand-toggle-btn';
-                    expandBtn.innerHTML = '<span>➕</span> Pokaż komentarz';
-                    expandBtn.onclick = () => {
-                        commentDiv.classList.toggle('open');
-                        const isOpen = commentDiv.classList.contains('open');
-                        expandBtn.innerHTML = isOpen ? '<span>➖</span> Ukryj komentarz' : '<span>➕</span> Pokaż komentarz';
-                    };
-                    cardActions.appendChild(expandBtn);
-                } else {
-                    cardActions.appendChild(document.createElement('div')); // placeholder
-                }
-
-                const actionsGroup = document.createElement('div');
-                actionsGroup.className = 'actions-group';
-
-                const starBtn = document.createElement('button');
-                const isStarred = starredLinks.includes(item.link);
-                starBtn.className = `star-btn ${isStarred ? 'starred' : ''}`;
-                starBtn.textContent = isStarred ? '⭐' : '☆';
-                starBtn.onclick = () => toggleStar(item.link);
-
-                const copyBtn = document.createElement('button');
-                copyBtn.className = 'copy-btn';
-                copyBtn.textContent = 'Kopiuj';
-                copyBtn.onclick = () => {
-                    navigator.clipboard.writeText(item.link);
-                    copyBtn.textContent = 'Skopiowano!';
-                    setTimeout(() => copyBtn.textContent = 'Kopiuj', 1500);
-                };
-
-                actionsGroup.appendChild(starBtn);
-                actionsGroup.appendChild(copyBtn);
-                cardActions.appendChild(actionsGroup);
-                card.appendChild(cardActions);
-
-                // 4. Komentarz (ukryty / rozwijany)
-                let commentDiv = null;
-                if (item.comment) {
-                    commentDiv = document.createElement('div');
-                    commentDiv.className = 'news-comment';
-                    commentDiv.innerHTML = `<span class="comment-icon">💡</span> <div>${item.comment}</div>`;
-                    card.appendChild(commentDiv);
-                }
-
-                li.style.display = 'block'; // Nadpisujemy domyślny flex z poprzedniego CSS dla li
-                li.appendChild(card);
-                list.appendChild(li);
+                        <!-- Sekcja treści -->
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="text-lg font-bold text-white mb-3 leading-snug line-clamp-3">
+                                ${emoji}${item.title}
+                            </h3>
+                            <p class="text-slate-400 text-sm mb-5 flex-1 line-clamp-3">
+                                ${item.summary}
+                            </p>
+                            
+                            <!-- Komentarz redakcji -->
+                            <div class="mt-auto rounded-2xl p-4 border ${comStyle}">
+                                <div class="flex items-center gap-2 mb-2 opacity-80">
+                                    <i class="fa-solid fa-lightbulb text-[10px]"></i>
+                                    <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
+                                </div>
+                                <p class="text-sm font-medium leading-relaxed italic">
+                                    "${item.comment}"
+                                </p>
+                            </div>
+                            
+                            ${item.link && item.link !== '#' ? `
+                            <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
+                                ZOBACZ ŹRÓDŁO <i class="fa-solid fa-arrow-up-right-from-square ml-1 opacity-70"></i>
+                            </a>
+                            ` : ''}
+                        </div>
+                    </article>
+                `;
+                grid.insertAdjacentHTML('beforeend', cardHtml);
             });
 
-            updateStats();
+            document.getElementById('loader').style.display = 'none';
+            grid.classList.remove('opacity-0');
         }
 
-        function updateStats() {
-            const totalCount = currentItems.length;
-            const readInCurrent = currentItems.filter(item => readLinks.includes(item.link)).length;
-            const percent = totalCount > 0 ? Math.round((readInCurrent / totalCount) * 100) : 0;
-            
-            let comment = "Zaczynamy!";
-            if (percent > 0 && percent <= 30) comment = "Jeszcze jeden news?";
-            else if (percent > 30 && percent <= 75) comment = "Czytaj dalej!";
-            else if (percent > 75 && percent < 100) comment = "Już prawie wszystko!";
-            else if (percent >= 100 && totalCount > 0) comment = "Wszystko zaliczone!";
-
-            document.getElementById('progress-text').textContent = `Przeczytane: ${readInCurrent}/${totalCount} (${percent}%)`;
-            document.getElementById('comment-text').textContent = comment;
-        }
-
-        init();
+        // Start
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>
