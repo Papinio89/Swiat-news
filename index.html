@@ -40,6 +40,12 @@
             0% { background-position: 200% 0; } 
             100% { background-position: -200% 0; } 
         }
+
+        /* Ukrywanie scrollbara dla płynniejszego wyglądu */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col">
@@ -57,28 +63,46 @@
                 </div>
             </div>
             <div>
-                <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-slate-700 transition">
-                    <i class="fa-brands fa-instagram text-brand-400"></i> Obserwuj
+                <!-- Pamiętaj podmienić URL na swój profil Instagram -->
+                <a href="https://instagram.com/twoj_profil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
+                    <i class="fa-brands fa-instagram"></i> <span class="hidden sm:inline">Obserwuj</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Główna zawartość (Blog Grid) -->
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+    <!-- Główna zawartość -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         
-        <div class="mb-10 text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Przegląd Dnia</h2>
-            <p class="text-slate-400 text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat, bez zbędnego szumu.</p>
+        <div class="mb-8 text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3">Przegląd Dnia</h2>
+            <p class="text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat.</p>
         </div>
 
-        <div id="loader" class="flex flex-col items-center justify-center py-20">
+        <!-- Przełącznik zakładek -->
+        <div class="flex justify-center gap-3 mb-10">
+            <button id="tab-full" onclick="switchTab('full')" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+                <i class="fa-solid fa-layer-group mr-1.5"></i> Pełne Karty
+            </button>
+            <button id="tab-fast" onclick="switchTab('fast')" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700">
+                <i class="fa-solid fa-list-ul mr-1.5"></i> Fast Review
+            </button>
+        </div>
+
+        <!-- Ładowanie -->
+        <div id="loader" class="flex flex-col items-center justify-center py-16">
             <i class="fa-solid fa-circle-notch fa-spin text-brand-400 text-4xl mb-4"></i>
             <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
         </div>
 
-        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 transition-opacity duration-500">
-            <!-- Karty newsów będą wstrzykiwane tutaj -->
+        <!-- Widok: Pełne Karty -->
+        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 transition-opacity duration-500 hidden">
+            <!-- Karty wstrzykiwane przez JS -->
+        </div>
+
+        <!-- Widok: Fast Review -->
+        <div id="fast-list" class="flex-col gap-3 max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
+            <!-- Lista wstrzykiwana przez JS -->
         </div>
 
     </main>
@@ -96,6 +120,53 @@
 
         const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
+
+        // Natywne udostępnianie (Web Share API)
+        async function shareArticle(title, text, url) {
+            if (navigator.share) {
+                try {
+                    await navigator.share({ title: title, text: text, url: url });
+                } catch (err) { console.log('Share error:', err); }
+            } else {
+                navigator.clipboard.writeText(url);
+                alert('Skopiowano link do schowka!');
+            }
+        }
+
+        // Zmiana zakładek
+        function switchTab(tab) {
+            const btnFull = document.getElementById('tab-full');
+            const btnFast = document.getElementById('tab-fast');
+            const grid = document.getElementById('news-grid');
+            const list = document.getElementById('fast-list');
+
+            if (tab === 'full') {
+                // Style przycisków
+                btnFull.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+                btnFast.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
+                
+                // Widoczność
+                grid.classList.remove('hidden');
+                list.classList.add('hidden');
+                
+                // Animacja wejścia
+                setTimeout(() => {
+                    grid.classList.remove('opacity-0');
+                    list.classList.add('opacity-0');
+                }, 50);
+            } else {
+                btnFast.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+                btnFull.className = "px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700";
+                
+                list.classList.remove('hidden');
+                grid.classList.add('hidden');
+                
+                setTimeout(() => {
+                    list.classList.remove('opacity-0');
+                    grid.classList.add('opacity-0');
+                }, 50);
+            }
+        }
 
         // Style dla kategorii
         function getCategoryColors(cat, isFun) {
@@ -146,7 +217,7 @@
                     document.getElementById('header-date').textContent = `${newsData.date} • Wydanie ${edition}`;
                 }
 
-                // Mieszanie: 3 newsy -> 1 rozrywka
+                // Tasowanie: 3 newsy -> 1 rozrywka
                 let combined = [];
                 let nItems = newsData.items || [];
                 let rItems = rozData.items || [];
@@ -163,7 +234,7 @@
                     }
                 }
 
-                await renderCards(combined);
+                await renderData(combined);
 
             } catch (error) {
                 console.error("Inicjalizacja:", error);
@@ -171,35 +242,51 @@
             }
         }
 
-        async function renderCards(items) {
+        async function renderData(items) {
             const grid = document.getElementById('news-grid');
+            const list = document.getElementById('fast-list');
             grid.innerHTML = '';
+            list.innerHTML = '';
 
-            // Generowanie szkieletu HTML dla wszystkich kart (z Shimmerem)
             items.forEach((item) => {
                 const catStyle = getCategoryColors(item.category, item.isFun);
                 const comStyle = getCommentColors(item.isFun);
-                const emoji = item.title.match(/^[\p{Emoji}\s]+/u) ? '' : (item.isFun ? '🎉 ' : '📌 ');
                 
-                // Formaty podświetlania ostatniego słowa
-                const titleWords = item.title.trim().split(/\s+/);
-                let titleHtml = item.title;
+                // Bezpieczne wstawianie Emoji i tytułu
+                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
+                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
+                
+                const titleWords = rawTitle.trim().split(/\s+/);
+                let titleHtml = rawTitle;
                 if (titleWords.length >= 3) {
                     const last = titleWords.pop();
                     titleHtml = `${titleWords.join(" ")} <span class="${item.isFun ? 'text-fuchsia-400' : 'text-brand-400'}">${last}</span>`;
                 }
 
+                const safeTitle = item.title.replace(/'/g, "\\'");
+                const safeSummary = (item.summary || '').replace(/'/g, "\\'");
+                const safeLink = item.link || window.location.href;
+
+                // ==========================
+                // 1. KARTA WIDOKU GŁÓWNEGO
+                // ==========================
                 const cardHtml = `
-                    <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col">
-                        <!-- Miejsce na zdjęcie (domyślnie Shimmer) -->
+                    <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
+                        
+                        <!-- Przycisk udostępniania na karcie -->
+                        <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg opacity-0 group-hover:opacity-100 sm:opacity-100" title="Udostępnij">
+                            <i class="fa-solid fa-share-nodes text-sm"></i>
+                        </button>
+
                         <div class="h-48 w-full relative shimmer overflow-hidden img-container">
                             <img src="" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                         </div>
 
-                        <!-- Treść -->
-                        <div class="p-6 flex-1 flex flex-col">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="px-2.5 py-1 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle}">
+                        <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
+                            <div class="flex items-center mb-3">
+                                <span class="px-2.5 py-1 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
                                     ${item.category || 'Wiadomość'}
                                 </span>
                             </div>
@@ -212,7 +299,6 @@
                                 ${item.summary}
                             </p>
                             
-                            <!-- Komentarz redakcji -->
                             <div class="mt-auto rounded-xl p-4 border ${comStyle}">
                                 <div class="flex items-center gap-2 mb-1.5 opacity-80">
                                     <i class="fa-solid fa-lightbulb text-[10px]"></i>
@@ -225,19 +311,45 @@
 
                             ${item.link && item.link !== '#' ? `
                             <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
-                                CZYTAJ CAŁOŚĆ <i class="fa-solid fa-angle-right ml-1"></i>
+                                ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
                             </a>
                             ` : ''}
                         </div>
                     </article>
                 `;
                 grid.insertAdjacentHTML('beforeend', cardHtml);
+
+                // ==========================
+                // 2. ELEMENT FAST REVIEW
+                // ==========================
+                const listHtml = `
+                    <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center hover:border-slate-700 hover:bg-slate-800/40 transition">
+                        <div class="text-3xl hidden sm:block">${emoji}</div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-3xl sm:hidden leading-none">${emoji}</span>
+                                <span class="text-[9px] font-bold uppercase tracking-wider ${catStyle} px-2 py-0.5 rounded border inline-block whitespace-nowrap">
+                                    ${item.category}
+                                </span>
+                            </div>
+                            <h3 class="text-slate-100 font-semibold text-sm sm:text-base leading-snug line-clamp-2">
+                                ${item.link && item.link !== '#' ? 
+                                `<a href="${item.link}" target="_blank" class="hover:text-brand-400 transition">${rawTitle}</a>` : 
+                                rawTitle}
+                            </h3>
+                        </div>
+                        <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition" title="Udostępnij">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+                    </div>
+                `;
+                list.insertAdjacentHTML('beforeend', listHtml);
             });
 
             document.getElementById('loader').style.display = 'none';
-            grid.classList.remove('opacity-0');
+            switchTab('full'); // Pokaż domyślną zakładkę
 
-            // Asynchroniczne ładowanie obrazów Pexels dla wstawionych kart
+            // Dociąganie obrazów
             for (const item of items) {
                 const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
                 const imgUrl = await fetchPexelsImage(query);
@@ -254,12 +366,11 @@
                     imgEl.src = imgUrl;
                 }
                 
-                // Krótkie opóźnienie między żądaniami, aby nie obciążyć Pexels API (rate limit)
                 await new Promise(r => setTimeout(r, 150)); 
             }
         }
 
-        // Start
+        // Uruchomienie aplikacji
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
