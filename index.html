@@ -33,8 +33,6 @@
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         
         .shimmer {
             background: linear-gradient(90deg, #0f172a 8%, #1e293b 18%, #0f172a 33%);
@@ -55,6 +53,23 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col">
 
+    <!-- Modal do zapisu obrazu na telefonach -->
+    <div id="save-modal" class="fixed inset-0 z-[100] bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
+        <p class="text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
+        <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-700" alt="Gotowa karta">
+        <div class="flex flex-wrap justify-center gap-3">
+            <a id="save-link" href="#" download="swiatwminute.jpg" class="px-6 py-3 bg-brand-500 text-slate-900 font-bold rounded-xl shadow-lg hover:bg-brand-400 transition text-center">
+                Pobierz na dysk
+            </a>
+            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-800 text-white font-bold rounded-xl border border-slate-700 hover:bg-slate-700 transition">
+                Zamknij
+            </button>
+        </div>
+        <p class="text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
+            Na iPhone (Safari): dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
+        </p>
+    </div>
+
     <!-- Nagłówek -->
     <header class="sticky top-0 z-50 glass-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -68,7 +83,6 @@
                 </div>
             </div>
             <div>
-                <!-- Prawidłowy link do Instagrama -->
                 <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
                     <i class="fa-brands fa-instagram"></i> <span class="hidden sm:inline">Obserwuj</span>
                 </a>
@@ -126,7 +140,12 @@
         const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
 
-        // Natywne udostępnianie (Web Share API)
+        function closeSaveModal() {
+            document.getElementById('save-modal').classList.add('hidden');
+            document.getElementById('save-modal').classList.remove('flex');
+            document.getElementById('save-img').src = '';
+        }
+
         async function shareArticle(title, text, url) {
             if (navigator.share) {
                 try {
@@ -138,47 +157,43 @@
             }
         }
 
-        // Pobieranie Karty jako JPG (dla social mediów)
         async function downloadCard(cardId, title) {
             const card = document.getElementById(cardId);
             if (!card) return;
             
-            // Podmiana ikony na loader
             const downloadBtn = card.querySelector('.fa-download').parentElement;
             const originalHtml = downloadBtn.innerHTML;
             downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
             
             try {
-                // Wykorzystanie html2canvas do wygenerowania grafiki z DOM
                 const canvas = await html2canvas(card, {
-                    scale: 2, // Wysoka jakość zrzutu (Retina)
-                    useCORS: true, // Niezbędne do zdjęć z zewnątrz (Pexels)
+                    scale: 2, 
+                    useCORS: true, 
                     allowTaint: true,
-                    backgroundColor: '#020617', // Tło pod zaokrągleniami
+                    backgroundColor: '#020617',
                     logging: false
                 });
                 
                 const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
                 
-                // Formatowanie nazwy pliku
                 const safeName = title.replace(/[^a-ząćęłńóśźż0-9]/gi, '_').toLowerCase().substring(0, 30);
                 const fileName = `swiatwminute_${safeName}.jpg`;
                 
-                // Wyzwolenie pobierania
-                const link = document.createElement('a');
-                link.download = fileName;
-                link.href = dataUrl;
-                link.click();
+                document.getElementById('save-img').src = dataUrl;
+                document.getElementById('save-link').download = fileName;
+                document.getElementById('save-link').href = dataUrl;
+                
+                document.getElementById('save-modal').classList.remove('hidden');
+                document.getElementById('save-modal').classList.add('flex');
                 
             } catch (err) {
                 console.error('Błąd generowania obrazka:', err);
-                alert('Wystąpił błąd podczas zapisywania grafiki. Upewnij się, że masz stabilne połączenie.');
+                alert('Wystąpił błąd podczas tworzenia grafiki. Upewnij się, że masz stabilne połączenie z internetem.');
             } finally {
                 downloadBtn.innerHTML = originalHtml;
             }
         }
 
-        // Zmiana zakładek
         function switchTab(tab) {
             const btnFull = document.getElementById('tab-full');
             const btnFast = document.getElementById('tab-fast');
@@ -210,7 +225,6 @@
             }
         }
 
-        // Style dla kategorii
         function getCategoryColors(cat, isFun) {
             if (isFun) return "text-fuchsia-400 bg-fuchsia-400/10 border-fuchsia-400/20";
             const c = (cat || "").toUpperCase();
@@ -228,7 +242,15 @@
             return "bg-slate-800/40 border-slate-700/50 text-slate-300 border-l-4 border-l-brand-400";
         }
 
-        // Pobieranie obrazu z Pexels
+        function highlightTitle(title, isFun) {
+            const words = title.trim().split(/\s+/);
+            if (words.length >= 3) {
+                const last = words.pop();
+                return `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-400' : 'text-brand-400'}">${last}</span>`;
+            }
+            return title;
+        }
+
         async function fetchPexelsImage(query) {
             try {
                 const response = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, {
@@ -259,7 +281,6 @@
                     document.getElementById('header-date').textContent = `${newsData.date} • Wydanie ${edition}`;
                 }
 
-                // Tasowanie: 3 newsy -> 1 rozrywka
                 let combined = [];
                 let nItems = newsData.items || [];
                 let rItems = rozData.items || [];
@@ -298,24 +319,16 @@
                 const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
                 const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
                 
-                const titleWords = rawTitle.trim().split(/\s+/);
-                let titleHtml = rawTitle;
-                if (titleWords.length >= 3) {
-                    const last = titleWords.pop();
-                    titleHtml = `${titleWords.join(" ")} <span class="${item.isFun ? 'text-fuchsia-400' : 'text-brand-400'}">${last}</span>`;
-                }
+                const titleHtml = highlightTitle(rawTitle, item.isFun);
 
                 const safeTitle = item.title.replace(/'/g, "\\'");
                 const safeSummary = (item.summary || '').replace(/'/g, "\\'");
                 const safeLink = item.link || window.location.href;
 
-                // ==========================
-                // 1. KARTA WIDOKU GŁÓWNEGO
-                // ==========================
+                // KARTA
                 const cardHtml = `
                     <article id="card-${item.id}" class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
-                        <!-- Panel Akcji (Udostępnij / Pobierz). Atrybut 'data-html2canvas-ignore' zapobiega wyeksportowaniu tego elementu do obrazka JPG -->
                         <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
                             <button onclick="downloadCard('card-${item.id}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/10 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę (dla Social Media)">
                                 <i class="fa-solid fa-download text-sm"></i>
@@ -326,7 +339,6 @@
                         </div>
 
                         <div class="h-48 w-full relative shimmer overflow-hidden img-container">
-                            <!-- Ważne: crossorigin="anonymous" aby Pexels nie blokował eksportu canvas -->
                             <img src="" crossorigin="anonymous" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                         </div>
@@ -338,11 +350,11 @@
                                 </span>
                             </div>
                             
-                            <h3 class="text-lg font-bold text-white mb-3 leading-snug line-clamp-3">
+                            <h3 class="text-lg font-bold text-white mb-3 leading-snug">
                                 ${emoji}${titleHtml}
                             </h3>
                             
-                            <p class="text-slate-400 text-sm mb-6 flex-1 line-clamp-3">
+                            <p class="text-slate-400 text-sm mb-6 flex-1">
                                 ${item.summary}
                             </p>
                             
@@ -356,7 +368,6 @@
                                 </p>
                             </div>
                             
-                            <!-- Przycisk Czytaj Całość (też go ukrywamy na eksportowanym jpegu, bo na Insta i tak nie da się go kliknąć) -->
                             ${item.link && item.link !== '#' ? `
                             <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-800/80 text-slate-300 text-xs font-semibold hover:bg-slate-700 hover:text-white transition">
                                 ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
@@ -367,9 +378,7 @@
                 `;
                 grid.insertAdjacentHTML('beforeend', cardHtml);
 
-                // ==========================
-                // 2. ELEMENT FAST REVIEW
-                // ==========================
+                // FAST REVIEW
                 const listHtml = `
                     <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center hover:border-slate-700 hover:bg-slate-800/40 transition">
                         <div class="text-3xl hidden sm:block">${emoji}</div>
@@ -380,7 +389,7 @@
                                     ${item.category}
                                 </span>
                             </div>
-                            <h3 class="text-slate-100 font-semibold text-sm sm:text-base leading-snug line-clamp-2">
+                            <h3 class="text-slate-100 font-semibold text-sm sm:text-base leading-snug">
                                 ${item.link && item.link !== '#' ? 
                                 `<a href="${item.link}" target="_blank" class="hover:text-brand-400 transition">${rawTitle}</a>` : 
                                 rawTitle}
@@ -395,9 +404,9 @@
             });
 
             document.getElementById('loader').style.display = 'none';
-            switchTab('full'); // Pokaż domyślną zakładkę
+            switchTab('full'); 
 
-            // Dociąganie obrazów
+            // Dociąganie obrazów z Pexels
             for (const item of items) {
                 const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
                 const imgUrl = await fetchPexelsImage(query);
@@ -418,7 +427,6 @@
             }
         }
 
-        // Uruchomienie aplikacji
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
