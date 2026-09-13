@@ -37,7 +37,7 @@
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         
-        /* Shimmer (Ładowanie) */
+        /* Shimmer (Efekt ładowania tła) */
         .shimmer {
             background-size: 200% 100%;
             animation: shimmer-anim 1.5s infinite;
@@ -90,10 +90,12 @@
                 </div>
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Desktop Search -->
                 <div class="relative w-40 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="filterNews()" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
                 </div>
+                <!-- Tryb nocny / dzienny -->
                 <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
                     <i id="theme-icon" class="fa-solid fa-moon"></i>
                 </button>
@@ -102,10 +104,10 @@
                 </a>
             </div>
         </div>
-        <!-- Wyszukiwarka mobilna pod nagłówkiem -->
+        <!-- Mobile Search -->
         <div class="md:hidden px-4 pb-3">
             <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="filterNewsMobile()" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
             </div>
         </div>
@@ -135,7 +137,7 @@
         <!-- Ładowanie -->
         <div id="loader" class="flex flex-col items-center justify-center py-16">
             <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
-            <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
+            <p class="text-slate-500 font-medium mt-4">Kompilowanie wiadomości...</p>
         </div>
 
         <!-- 1. Widok: Dzisiejsze -->
@@ -184,7 +186,7 @@
     <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
-            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
+            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem API Pexels & AI.</p>
             <p class="text-brand-500 text-[10px] mt-1 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
         </div>
     </footer>
@@ -199,7 +201,7 @@
         let todayItems = [];
         let archiveGroups = [];
         let allNewsFlat = [];
-        let cardCounter = 0;
+        let cardCounter = 0; // Unikalny licznik HTML ID kart
 
         // Inicjalizacja Theme
         function initTheme() {
@@ -247,6 +249,7 @@
             const originalHtml = downloadBtn.innerHTML;
             downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
             try {
+                // Wymuś ciemny motyw na moment renderowania (żeby karta wyglądała perfekcyjnie)
                 const wasLight = !document.documentElement.classList.contains('dark');
                 if(wasLight) document.documentElement.classList.add('dark');
 
@@ -265,44 +268,55 @@
                 
                 document.getElementById('save-modal').classList.remove('hidden');
                 document.getElementById('save-modal').classList.add('flex');
-            } catch (err) { alert('Błąd tworzenia grafiki.'); } 
+            } catch (err) { alert('Błąd tworzenia grafiki. Spróbuj jeszcze raz.'); } 
             finally { downloadBtn.innerHTML = originalHtml; }
         }
 
-        // Lazy Loading obrazów przez Intersection Observer (Ochrona limitu Pexels)
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(async entry => {
-                if (entry.isIntersecting) {
-                    const card = entry.target;
-                    const imgEl = card.querySelector('img.lazy-pexels');
-                    if (imgEl && !imgEl.dataset.loaded) {
-                        imgEl.dataset.loaded = 'true';
-                        const query = imgEl.dataset.query;
-                        
-                        try {
-                            const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, { headers: { Authorization: PEXELS_API_KEY } });
-                            const data = await res.json();
-                            imgEl.src = (data.photos && data.photos.length > 0) ? (data.photos[0].src.large || data.photos[0].src.medium) : FALLBACK_IMG;
-                        } catch (e) {
-                            imgEl.src = FALLBACK_IMG;
-                        }
+        // --- SEKWENCYJNE ŁADOWANIE ZDJĘĆ Z PEXELS (BEZPIECZNE DLA API) ---
+        async function fetchPexelsImage(query) {
+            try {
+                const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, { headers: { Authorization: PEXELS_API_KEY } });
+                const data = await res.json();
+                return (data.photos && data.photos.length > 0) ? (data.photos[0].src.large || data.photos[0].src.medium) : FALLBACK_IMG;
+            } catch (e) { return FALLBACK_IMG; }
+        }
 
+        // Ładuje zdjęcia do gotowych kontenerów HTML
+        async function loadImagesSequentially(tasks) {
+            // Przetwarzaj po 3 obrazki na raz
+            for (let i = 0; i < tasks.length; i += 3) {
+                const batch = tasks.slice(i, i + 3);
+                await Promise.all(batch.map(async (task) => {
+                    const card = document.getElementById(task.cardId);
+                    if (!card) return;
+                    const imgEl = card.querySelector('img');
+                    const imgContainer = card.querySelector('.img-container');
+                    
+                    if (imgEl && !imgEl.src) {
+                        const imgUrl = await fetchPexelsImage(task.query);
+                        // onload przypisany PRZED przypisaniem src
                         imgEl.onload = () => {
                             imgEl.classList.remove('opacity-0');
-                            imgEl.parentElement.classList.remove('shimmer');
+                            imgContainer.classList.remove('shimmer');
                         };
+                        imgEl.src = imgUrl;
                     }
-                    observer.unobserve(card);
-                }
-            });
-        }, { rootMargin: '300px 0px' });
+                }));
+                // Pauza 250ms przed kolejną paczką
+                await new Promise(r => setTimeout(r, 250));
+            }
+        }
 
-        // Logika renderowania kart (uniwersalna funkcja)
+        // Renderuje zadaną listę itemów do konkretnego diva
         function renderCardsToContainer(container, items) {
             container.innerHTML = '';
+            let imageTasks = [];
+
             items.forEach((item) => {
                 const isFun = item.isFun;
-                const cat = item.category;
+                const rawT = item.title || "";
+                const rawC = item.category || "";
+                
                 let catClass = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
                 let comClass = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
                 
@@ -310,7 +324,7 @@
                     catClass = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
                     comClass = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
                 } else {
-                    const c = (cat || "").toUpperCase();
+                    const c = rawC.toUpperCase();
                     if (/AI|TECHNOLOG/.test(c)) catClass = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
                     else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catClass = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
                     else if (/NAUKA/.test(c)) catClass = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
@@ -319,26 +333,28 @@
                     else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catClass = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
                 }
 
-                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
-                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
-                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
+                const emojiMatch = rawT.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0] : (isFun ? '🎉 ' : '📌 ');
+                const cleanTitle = emojiMatch ? rawT.replace(/^[\p{Emoji}\s]+/u, '') : rawT;
                 
-                const words = rawTitle.trim().split(/\s+/);
-                let titleHtml = rawTitle;
+                const words = cleanTitle.trim().split(/\s+/);
+                let titleHtml = cleanTitle;
                 if (words.length >= 3) {
                     const last = words.pop();
                     titleHtml = `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
                 }
 
-                const safeTitle = item.title.replace(/'/g, "\\'");
+                const safeTitle = cleanTitle.replace(/'/g, "\\'");
                 const safeSummary = (item.summary || '').replace(/'/g, "\\'");
                 const safeLink = item.link || SITE_URL;
-                const queryPexels = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
-
+                
+                const queryPexels = item.image_query || `${rawC} ${cleanTitle.split(' ').slice(0,2).join(' ')}`;
                 const cardId = `card-gen-${cardCounter++}`;
 
+                imageTasks.push({ cardId, query: queryPexels });
+
                 const cardHtml = `
-                    <article id="${cardId}" class="news-card bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
+                    <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
                         
                         <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
                             <button onclick="downloadCard('${cardId}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
@@ -350,26 +366,26 @@
                         </div>
 
                         <div class="h-48 w-full relative shimmer overflow-hidden img-container">
-                            <img class="lazy-pexels w-full h-full object-cover opacity-0 transition-opacity duration-700" data-query="${queryPexels}" crossorigin="anonymous" alt="Ilustracja">
+                            <img class="w-full h-full object-cover opacity-0 transition-opacity duration-700" crossorigin="anonymous" alt="Ilustracja">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                         </div>
 
                         <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
                             <div class="flex items-center mb-3">
                                 <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
-                                    <span class="-translate-y-px">${item.category || 'Wiadomość'}</span>
+                                    <span class="-translate-y-px">${rawC || 'Wiadomość'}</span>
                                 </span>
                             </div>
                             
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">${emoji}${titleHtml}</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">${item.summary}</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">${item.summary || ''}</p>
                             
                             <div class="mt-auto rounded-xl p-4 border ${comStyle}">
                                 <div class="flex items-center gap-2 mb-1.5 opacity-80">
                                     <i class="fa-solid fa-lightbulb text-[10px]"></i>
                                     <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
                                 </div>
-                                <p class="text-sm font-medium leading-relaxed italic">"${item.comment}"</p>
+                                <p class="text-sm font-medium leading-relaxed italic">"${item.comment || ''}"</p>
                             </div>
                             
                             ${item.link && item.link !== '#' ? `
@@ -383,10 +399,8 @@
                 container.insertAdjacentHTML('beforeend', cardHtml);
             });
 
-            // Aktywacja Intersection Observer dla nowych obrazków
-            container.querySelectorAll('.news-card').forEach(card => {
-                imageObserver.observe(card);
-            });
+            // Uruchom ładowanie obrazów
+            loadImagesSequentially(imageTasks);
         }
 
         // Render Fast Review
@@ -396,22 +410,25 @@
             
             items.forEach((item) => {
                 const isFun = item.isFun;
-                let catClass = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-                if (isFun) catClass = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
+                const rawC = item.category || "";
+                const rawT = item.title || "";
+
+                let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
+                if (isFun) catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
                 else {
-                    const c = (item.category || "").toUpperCase();
-                    if (/AI|TECHNOLOG/.test(c)) catClass = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-                    else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catClass = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-                    else if (/NAUKA/.test(c)) catClass = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-                    else if (/POLSKA/.test(c)) catClass = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-                    else if (/OBRONN|WOJSK/.test(c)) catClass = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-                    else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catClass = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+                    const c = rawC.toUpperCase();
+                    if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+                    else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+                    else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+                    else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+                    else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+                    else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
                 }
 
-                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
-                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
-                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
-                const safeTitle = item.title.replace(/'/g, "\\'");
+                const emojiMatch = rawT.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0] : (isFun ? '🎉 ' : '📌 ');
+                const cleanTitle = emojiMatch ? rawT.replace(/^[\p{Emoji}\s]+/u, '') : rawT;
+                const safeTitle = cleanTitle.replace(/'/g, "\\'");
                 const safeLink = item.link || SITE_URL;
 
                 const listHtml = `
@@ -421,12 +438,12 @@
                             <div class="flex items-center gap-2 mb-2">
                                 <span class="text-3xl sm:hidden leading-none">${emoji}</span>
                                 <span class="inline-flex items-center px-2 pt-1 pb-[3px] rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
-                                    <span class="-translate-y-px">${item.category}</span>
+                                    <span class="-translate-y-px">${rawC}</span>
                                 </span>
                             </div>
                             <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
                                 ${item.link && item.link !== '#' ? 
-                                `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${rawTitle}</a>` : rawTitle}
+                                `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${cleanTitle}</a>` : cleanTitle}
                             </h3>
                         </div>
                         <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij">
@@ -441,10 +458,11 @@
         function generateThreadsContent(items, dateText) {
             let txt = `🌍 Świat w Minutę - ${dateText}\n\n`;
             items.forEach(item => {
-                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
+                const rawT = item.title || "";
+                const emojiMatch = rawT.match(/^[\p{Emoji}\s]+/u);
                 const emoji = emojiMatch ? emojiMatch[0].trim() : (item.isFun ? '🎉' : '📌');
-                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '').trim() : item.title.trim();
-                txt += `${emoji} ${rawTitle}\n`;
+                const cleanTitle = emojiMatch ? rawT.replace(/^[\p{Emoji}\s]+/u, '').trim() : rawT.trim();
+                txt += `${emoji} ${cleanTitle}\n`;
             });
             txt += `\n👉 Pełne wiadomości: ${SITE_URL}`;
             document.getElementById('threads-output').value = txt;
@@ -489,12 +507,12 @@
                 archiveNews = (archNewsRes && archNewsRes.ok) ? await archNewsRes.json() : {};
                 archiveRoz = (archRozRes && archRozRes.ok) ? await archRozRes.json() : {};
 
-                // Tworzenie bazy Dzisiejszych
+                // Dzisiejsze wydanie
                 todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
                 let displayDate = globalNewsData.date || "Dzisiaj";
-                document.getElementById('header-date').textContent = `${displayDate} • Dzisiejsze wydanie`;
+                document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
 
-                // Tworzenie bazy Archiwum
+                // Archiwum - grupujemy i renderujemy w tle
                 const keys = Object.keys(archiveNews).sort().reverse();
                 keys.forEach(key => {
                     const data = archiveNews[key];
@@ -509,12 +527,12 @@
                     allNewsFlat = allNewsFlat.concat(mixed);
                 });
 
-                // Dołączenie dzisiejszych do płaskiej bazy wszystkich newsów (dla wyszukiwarki)
+                // Dołącz dzisiejsze do płaskiej tablicy dla Wyszukiwarki
                 allNewsFlat = [...todayItems, ...allNewsFlat];
 
                 document.getElementById('loader').style.display = 'none';
                 
-                // Domyślny render
+                // Generuj początkowe widoki
                 renderCardsToContainer(document.getElementById('today-grid'), todayItems);
                 renderFastReview(todayItems);
                 generateThreadsContent(todayItems, displayDate);
@@ -528,34 +546,31 @@
             }
         }
 
+        // Renderowanie całego Archiwum
         function renderArchive() {
             const container = document.getElementById('archive-container');
             container.innerHTML = '';
             
-            archiveGroups.forEach(group => {
+            archiveGroups.forEach((group, index) => {
+                const groupId = `archive-group-${index}`;
                 const groupHtml = `
                     <div>
                         <div class="flex items-center gap-4 mb-6">
                             <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">${group.title}</h3>
                             <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group-grid"></div>
+                        <div id="${groupId}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', groupHtml);
-                const grids = container.querySelectorAll('.group-grid');
-                renderCardsToContainer(grids[grids.length - 1], group.items);
+                renderCardsToContainer(document.getElementById(groupId), group.items);
             });
         }
 
-        // Zakładki (Dzisiejsze, Fast Review, Archiwum)
+        // Zakładki (Dzisiejsze, Fast Review, Archiwum, Wyszukiwarka)
         function switchTab(tabId) {
-            // Ukrycie wszystkich widoków
-            document.querySelectorAll('.view-section').forEach(el => {
-                el.classList.add('hidden', 'opacity-0');
-            });
+            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden', 'opacity-0'));
             
-            // Ukrycie tytułów z głównej strony
             if(tabId === 'search') {
                 document.getElementById('main-titles').classList.add('hidden');
                 document.getElementById('tabs-container').classList.add('hidden');
@@ -563,24 +578,19 @@
                 document.getElementById('main-titles').classList.remove('hidden');
                 document.getElementById('tabs-container').classList.remove('hidden');
                 
-                // Resetowanie stylów przycisków
+                // Styl aktywny dla zakładek
                 document.querySelectorAll('.tab-btn').forEach(btn => {
                     btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
                     btn.classList.remove('active');
                 });
                 
-                // Aktywowanie wybranego przycisku
                 const activeBtn = document.getElementById(`tab-btn-${tabId}`);
                 if(activeBtn) {
                     activeBtn.className = "tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
+                    activeBtn.classList.add('active');
                 }
-                
-                // Wyczyszczenie paska wyszukiwania przy ręcznej zmianie zakładki
-                document.getElementById('search-input').value = '';
-                document.getElementById('search-input-mobile').value = '';
             }
 
-            // Pokaż cel
             const targetView = document.getElementById(`view-${tabId}`);
             if(targetView) {
                 targetView.classList.remove('hidden');
@@ -589,16 +599,19 @@
         }
 
         // Globalna Wyszukiwarka
-        function filterNewsMobile() {
-            document.getElementById('search-input').value = document.getElementById('search-input-mobile').value;
-            filterNews();
-        }
-
-        function filterNews() {
-            const query = document.getElementById('search-input').value.toLowerCase().trim();
+        function filterNews(sourceId) {
+            let val = '';
+            if(sourceId === 'desktop') {
+                val = document.getElementById('search-input').value;
+                document.getElementById('search-input-mobile').value = val;
+            } else {
+                val = document.getElementById('search-input-mobile').value;
+                document.getElementById('search-input').value = val;
+            }
+            
+            const query = val.toLowerCase().trim();
             
             if (query.length === 0) {
-                // Jeśli usunięto tekst, wracamy do aktywnej zakładki
                 const activeTab = document.querySelector('.tab-btn.active');
                 switchTab(activeTab ? activeTab.dataset.tab : 'today');
                 return;
