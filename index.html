@@ -56,7 +56,6 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
-    <!-- Okno Modal do zapisu obrazu na telefonach -->
     <div id="save-modal" class="fixed inset-0 z-[100] bg-white/95 dark:bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
         <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
         <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-200 dark:border-slate-700" alt="Gotowa karta">
@@ -73,7 +72,6 @@
         </p>
     </div>
 
-    <!-- Nagłówek -->
     <header class="sticky top-0 z-50 glass-header bg-white/85 dark:bg-[rgba(2,6,23,0.85)] border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -130,13 +128,11 @@
             <p class="text-slate-500 font-medium mt-4">Kompilowanie wiadomości...</p>
         </div>
 
-        <!-- Okno Błędu (ukryte domyślnie) -->
         <div id="error-box" class="hidden flex-col items-center justify-center py-12 text-slate-500">
             <i class="fa-solid fa-triangle-exclamation text-red-500 text-5xl mb-4 opacity-80"></i>
             <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że plik JSON się zaktualizował z błędem.</p>
         </div>
 
-        <!-- Widoki -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
@@ -173,7 +169,6 @@
 
     </main>
 
-    <!-- Stopka -->
     <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
@@ -194,7 +189,6 @@
         let allNewsFlat = [];
         let cardCounter = 0; 
 
-        // Motyw ciemny/jasny
         function initTheme() {
             if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
                 document.documentElement.classList.remove('dark');
@@ -222,7 +216,6 @@
             document.getElementById('save-img').src = '';
         }
 
-        // Globalne funkcje wywoływane z HTML-a
         window.doShare = async function(safeTitle, safeSummary, safeLink) {
             const title = decodeURIComponent(safeTitle);
             const text = decodeURIComponent(safeSummary);
@@ -262,7 +255,7 @@
                 
                 document.getElementById('save-modal').classList.remove('hidden');
                 document.getElementById('save-modal').classList.add('flex');
-            } catch (err) { alert('Błąd tworzenia grafiki.'); } 
+            } catch (err) { alert('Błąd tworzenia grafiki. Spróbuj jeszcze raz.'); } 
             finally { downloadBtn.innerHTML = originalHtml; }
         };
 
@@ -296,11 +289,9 @@
             }
         }
 
-        // BARDZO BEZPIECZNE wyciąganie Emotikonki - działa w każdej, nawet starszej przeglądarce
         function getSafeEmojiAndTitle(rawTitle, isFun) {
             const clean = (rawTitle || '').trim();
             const firstWord = clean.split(/\s+/)[0] || '';
-            // Jeśli pierwsze słowo ma max 2 znaki i nie jest literą/cyfrą, to prawdopodobnie jest to emotka
             const isEmoji = firstWord.length <= 2 && /^[^\w\s.,!?a-zA-Z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(firstWord);
             
             if (isEmoji) {
@@ -319,20 +310,21 @@
                     const rawC = item.category || "Wiadomość";
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
                     
-                    let catClass = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-                    let comClass = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
+                    // NAPRAWIONY BŁĄD: Zmienne nazwane poprawnie jako catStyle i comStyle
+                    let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
+                    let comStyle = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
                     
                     if (isFun) {
-                        catClass = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
-                        comClass = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
+                        catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
+                        comStyle = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
                     } else {
                         const c = rawC.toUpperCase();
-                        if (/AI|TECHNOLOG/.test(c)) catClass = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-                        else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catClass = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-                        else if (/NAUKA/.test(c)) catClass = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-                        else if (/POLSKA/.test(c)) catClass = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-                        else if (/OBRONN|WOJSK/.test(c)) catClass = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-                        else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catClass = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+                        if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+                        else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+                        else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+                        else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+                        else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+                        else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
                     }
 
                     const words = cleanTitle.split(/\s+/);
@@ -342,7 +334,6 @@
                         titleHtml = `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
                     }
 
-                    // Kodowanie zapobiega "złamaniu" HTML-a przez cudzysłowy i nową linię
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encSummary = encodeURIComponent(item.summary || '');
                     const encLink = encodeURIComponent(item.link || SITE_URL);
