@@ -33,10 +33,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         
-        .glass-header {
-            backdrop-filter: blur(12px);
-        }
-        
+        .glass-header { backdrop-filter: blur(12px); }
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         
@@ -92,9 +89,12 @@
                     <p id="header-date" class="text-[11px] font-medium text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Najważniejsze z kraju i ze świata</p>
                 </div>
             </div>
-            <div class="flex items-center gap-3">
-                <!-- Theme Toggle -->
-                <button onclick="toggleTheme()" class="w-10 h-10 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+            <div class="flex items-center gap-2 sm:gap-4">
+                <div class="relative w-40 sm:w-64 hidden md:block">
+                    <input type="text" id="search-input" onkeyup="filterNews()" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                </div>
+                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
                     <i id="theme-icon" class="fa-solid fa-moon"></i>
                 </button>
                 <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
@@ -102,44 +102,34 @@
                 </a>
             </div>
         </div>
+        <!-- Wyszukiwarka mobilna pod nagłówkiem -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative w-full">
+                <input type="text" id="search-input-mobile" onkeyup="filterNewsMobile()" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+            </div>
+        </div>
     </header>
 
     <!-- Główna zawartość -->
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
         
-        <div class="mb-6 text-center max-w-2xl mx-auto">
+        <div class="mb-8 text-center max-w-2xl mx-auto" id="main-titles">
             <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-3">Przegląd Dnia</h2>
-            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez sztuczną inteligencję. Krótko i na temat.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez AI. Krótko i na temat.</p>
         </div>
 
-        <!-- Pasek Narzędzi -->
-        <div class="flex flex-col lg:flex-row justify-between items-center gap-4 mb-10 bg-white dark:bg-slate-900/40 p-2 sm:p-4 rounded-3xl border border-slate-200 dark:border-slate-800/50 shadow-sm dark:shadow-none transition-colors duration-300">
-            
-            <!-- Zakładki -->
-            <div class="flex gap-2 w-full lg:w-auto">
-                <button id="tab-full" onclick="switchTab('full')" class="flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
-                    <i class="fa-solid fa-layer-group mr-1.5"></i> Pełne Karty
-                </button>
-                <button id="tab-fast" onclick="switchTab('fast')" class="flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
-                    <i class="fa-solid fa-list-ul mr-1.5"></i> Fast Review
-                </button>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row w-full lg:w-auto gap-3">
-                <!-- Wyszukiwarka -->
-                <div class="relative w-full sm:w-64">
-                    <input type="text" id="search-input" onkeyup="filterNews()" placeholder="Szukaj wiadomości..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2.5 pl-10 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
-                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                </div>
-
-                <!-- Archiwum Dropdown -->
-                <div class="relative w-full sm:w-64">
-                    <select id="archive-select" onchange="loadEdition(this.value)" class="w-full appearance-none bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2.5 pl-4 pr-10 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                        <option value="">Dzisiejsze wydanie</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                </div>
-            </div>
+        <!-- Zakładki -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10" id="tabs-container">
+            <button id="tab-btn-today" data-tab="today" onclick="switchTab('today')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
+                <i class="fa-solid fa-calendar-day mr-1.5"></i> Dzisiejsze
+            </button>
+            <button id="tab-btn-fast" data-tab="fast" onclick="switchTab('fast')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
+                <i class="fa-solid fa-bolt mr-1.5"></i> Fast Review
+            </button>
+            <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
+                <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
+            </button>
         </div>
 
         <!-- Ładowanie -->
@@ -148,23 +138,15 @@
             <p class="text-slate-500 font-medium">Kompilowanie wiadomości...</p>
         </div>
 
-        <!-- Brak wyników (wyszukiwanie) -->
-        <div id="no-results" class="hidden flex-col items-center justify-center py-12 text-slate-500">
-            <i class="fa-regular fa-face-frown-open text-4xl mb-3"></i>
-            <p class="font-medium">Nic nie znaleziono dla tego zapytania.</p>
+        <!-- 1. Widok: Dzisiejsze -->
+        <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
+            <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
-        <!-- Widok: Pełne Karty -->
-        <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-0 transition-opacity duration-500 hidden">
-            <!-- Karty -->
-        </div>
-
-        <!-- Widok: Fast Review -->
-        <div id="fast-list-container" class="max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            <!-- Lista artykułów -->
+        <!-- 2. Widok: Fast Review -->
+        <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
             <div id="fast-list" class="flex flex-col gap-3 mb-8"></div>
             
-            <!-- Eksport do Threads -->
             <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-sm">
                 <div class="flex justify-between items-center mb-3">
                     <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider"><i class="fa-brands fa-threads text-brand-500"></i> Gotowe pod Threads</h3>
@@ -176,13 +158,34 @@
             </div>
         </div>
 
+        <!-- 3. Widok: Archiwum -->
+        <div id="view-archive" class="view-section opacity-0 transition-opacity duration-500 hidden">
+            <div id="archive-container" class="flex flex-col gap-12"></div>
+        </div>
+
+        <!-- 4. Widok: Wyniki wyszukiwania -->
+        <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
+            <div class="mb-6 flex justify-between items-end">
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
+                <span id="search-count" class="text-brand-500 font-bold text-sm bg-brand-500/10 px-3 py-1 rounded-full">0</span>
+            </div>
+            
+            <div id="no-results" class="hidden flex-col items-center justify-center py-16 text-slate-500">
+                <i class="fa-regular fa-face-frown-open text-5xl mb-4 opacity-50"></i>
+                <p class="font-medium">Nic nie znaleziono dla tego zapytania.</p>
+            </div>
+
+            <div id="search-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+
     </main>
 
     <!-- Stopka -->
     <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
-            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem API Pexels & AI.</p>
+            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
+            <p class="text-brand-500 text-[10px] mt-1 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
         </div>
     </footer>
 
@@ -191,14 +194,14 @@
 
         const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
+        const SITE_URL = "https://swiat-w-minut.vercel.app";
 
-        let globalNewsData = { items: [] };
-        let globalRozData = { items: [] };
-        let archiveNews = {};
-        let archiveRoz = {};
-        let currentRenderedItems = []; // Przechowuje wyrenderowane obiekty dla wyszukiwarki i Threads
+        let todayItems = [];
+        let archiveGroups = [];
+        let allNewsFlat = [];
+        let cardCounter = 0;
 
-        // Ustawienia motywu (Dzień/Noc)
+        // Inicjalizacja Theme
         function initTheme() {
             if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
                 document.documentElement.classList.remove('dark');
@@ -208,7 +211,6 @@
                 document.getElementById('theme-icon').className = 'fa-solid fa-moon';
             }
         }
-        
         function toggleTheme() {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
@@ -241,107 +243,201 @@
         async function downloadCard(cardId, title) {
             const card = document.getElementById(cardId);
             if (!card) return;
-            
             const downloadBtn = card.querySelector('.fa-download').parentElement;
             const originalHtml = downloadBtn.innerHTML;
             downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
-            
             try {
-                // Wymuszamy na chwilę dark mode dla eksportu, żeby karta zawsze wyglądała dobrze
                 const wasLight = !document.documentElement.classList.contains('dark');
                 if(wasLight) document.documentElement.classList.add('dark');
 
                 const canvas = await html2canvas(card, {
-                    scale: 2, 
-                    useCORS: true, 
-                    allowTaint: true,
-                    backgroundColor: '#020617', // Zawsze tło nocy pod kąty
-                    logging: false
+                    scale: 2, useCORS: true, allowTaint: true, backgroundColor: '#020617', logging: false
                 });
 
                 if(wasLight) document.documentElement.classList.remove('dark');
                 
                 const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
                 const safeName = title.replace(/[^a-ząćęłńóśźż0-9]/gi, '_').toLowerCase().substring(0, 30);
-                const fileName = `swiatwminute_${safeName}.jpg`;
                 
                 document.getElementById('save-img').src = dataUrl;
-                document.getElementById('save-link').download = fileName;
+                document.getElementById('save-link').download = `swiatwminute_${safeName}.jpg`;
                 document.getElementById('save-link').href = dataUrl;
                 
                 document.getElementById('save-modal').classList.remove('hidden');
                 document.getElementById('save-modal').classList.add('flex');
-                
-            } catch (err) {
-                console.error('Błąd generowania obrazka:', err);
-                alert('Błąd tworzenia grafiki.');
-            } finally {
-                downloadBtn.innerHTML = originalHtml;
-            }
+            } catch (err) { alert('Błąd tworzenia grafiki.'); } 
+            finally { downloadBtn.innerHTML = originalHtml; }
         }
 
-        function switchTab(tab) {
-            const btnFull = document.getElementById('tab-full');
-            const btnFast = document.getElementById('tab-fast');
-            const grid = document.getElementById('news-grid');
-            const listContainer = document.getElementById('fast-list-container');
+        // Lazy Loading obrazów przez Intersection Observer (Ochrona limitu Pexels)
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(async entry => {
+                if (entry.isIntersecting) {
+                    const card = entry.target;
+                    const imgEl = card.querySelector('img.lazy-pexels');
+                    if (imgEl && !imgEl.dataset.loaded) {
+                        imgEl.dataset.loaded = 'true';
+                        const query = imgEl.dataset.query;
+                        
+                        try {
+                            const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, { headers: { Authorization: PEXELS_API_KEY } });
+                            const data = await res.json();
+                            imgEl.src = (data.photos && data.photos.length > 0) ? (data.photos[0].src.large || data.photos[0].src.medium) : FALLBACK_IMG;
+                        } catch (e) {
+                            imgEl.src = FALLBACK_IMG;
+                        }
 
-            const activeBtnClass = "flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-            const inactiveBtnClass = "flex-1 lg:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
-
-            if (tab === 'full') {
-                btnFull.className = activeBtnClass;
-                btnFast.className = inactiveBtnClass;
-                grid.classList.remove('hidden');
-                listContainer.classList.add('hidden');
-                setTimeout(() => {
-                    grid.classList.remove('opacity-0');
-                    listContainer.classList.add('opacity-0');
-                }, 50);
-            } else {
-                btnFast.className = activeBtnClass;
-                btnFull.className = inactiveBtnClass;
-                listContainer.classList.remove('hidden');
-                grid.classList.add('hidden');
-                setTimeout(() => {
-                    listContainer.classList.remove('opacity-0');
-                    grid.classList.add('opacity-0');
-                }, 50);
-            }
-        }
-
-        // Wyszukiwarka
-        function filterNews() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            let visibleCount = 0;
-
-            currentRenderedItems.forEach(item => {
-                const card = document.getElementById(`card-${item.id}`);
-                const listItem = document.getElementById(`list-${item.id}`);
-                
-                const searchableText = `${item.title} ${item.summary} ${item.category} ${item.comment}`.toLowerCase();
-                
-                if (searchableText.includes(query)) {
-                    if (card) card.style.display = '';
-                    if (listItem) listItem.style.display = '';
-                    visibleCount++;
-                } else {
-                    if (card) card.style.display = 'none';
-                    if (listItem) listItem.style.display = 'none';
+                        imgEl.onload = () => {
+                            imgEl.classList.remove('opacity-0');
+                            imgEl.parentElement.classList.remove('shimmer');
+                        };
+                    }
+                    observer.unobserve(card);
                 }
             });
+        }, { rootMargin: '300px 0px' });
 
-            const noResults = document.getElementById('no-results');
-            if (visibleCount === 0 && currentRenderedItems.length > 0) {
-                noResults.classList.remove('hidden');
-                noResults.classList.add('flex');
-            } else {
-                noResults.classList.add('hidden');
-                noResults.classList.remove('flex');
-            }
+        // Logika renderowania kart (uniwersalna funkcja)
+        function renderCardsToContainer(container, items) {
+            container.innerHTML = '';
+            items.forEach((item) => {
+                const isFun = item.isFun;
+                const cat = item.category;
+                let catClass = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
+                let comClass = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
+                
+                if (isFun) {
+                    catClass = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
+                    comClass = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
+                } else {
+                    const c = (cat || "").toUpperCase();
+                    if (/AI|TECHNOLOG/.test(c)) catClass = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+                    else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catClass = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+                    else if (/NAUKA/.test(c)) catClass = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+                    else if (/POLSKA/.test(c)) catClass = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+                    else if (/OBRONN|WOJSK/.test(c)) catClass = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+                    else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catClass = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+                }
+
+                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
+                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
+                
+                const words = rawTitle.trim().split(/\s+/);
+                let titleHtml = rawTitle;
+                if (words.length >= 3) {
+                    const last = words.pop();
+                    titleHtml = `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
+                }
+
+                const safeTitle = item.title.replace(/'/g, "\\'");
+                const safeSummary = (item.summary || '').replace(/'/g, "\\'");
+                const safeLink = item.link || SITE_URL;
+                const queryPexels = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
+
+                const cardId = `card-gen-${cardCounter++}`;
+
+                const cardHtml = `
+                    <article id="${cardId}" class="news-card bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
+                        
+                        <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
+                            <button onclick="downloadCard('${cardId}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
+                                <i class="fa-solid fa-download text-sm"></i>
+                            </button>
+                            <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
+                                <i class="fa-solid fa-share-nodes text-sm"></i>
+                            </button>
+                        </div>
+
+                        <div class="h-48 w-full relative shimmer overflow-hidden img-container">
+                            <img class="lazy-pexels w-full h-full object-cover opacity-0 transition-opacity duration-700" data-query="${queryPexels}" crossorigin="anonymous" alt="Ilustracja">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
+                            <div class="flex items-center mb-3">
+                                <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
+                                    <span class="-translate-y-px">${item.category || 'Wiadomość'}</span>
+                                </span>
+                            </div>
+                            
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">${emoji}${titleHtml}</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">${item.summary}</p>
+                            
+                            <div class="mt-auto rounded-xl p-4 border ${comStyle}">
+                                <div class="flex items-center gap-2 mb-1.5 opacity-80">
+                                    <i class="fa-solid fa-lightbulb text-[10px]"></i>
+                                    <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
+                                </div>
+                                <p class="text-sm font-medium leading-relaxed italic">"${item.comment}"</p>
+                            </div>
+                            
+                            ${item.link && item.link !== '#' ? `
+                            <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                                ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
+                            </a>
+                            ` : ''}
+                        </div>
+                    </article>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHtml);
+            });
+
+            // Aktywacja Intersection Observer dla nowych obrazków
+            container.querySelectorAll('.news-card').forEach(card => {
+                imageObserver.observe(card);
+            });
         }
 
-        // Generator Threads
+        // Render Fast Review
+        function renderFastReview(items) {
+            const list = document.getElementById('fast-list');
+            list.innerHTML = '';
+            
+            items.forEach((item) => {
+                const isFun = item.isFun;
+                let catClass = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
+                if (isFun) catClass = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
+                else {
+                    const c = (item.category || "").toUpperCase();
+                    if (/AI|TECHNOLOG/.test(c)) catClass = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+                    else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catClass = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+                    else if (/NAUKA/.test(c)) catClass = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+                    else if (/POLSKA/.test(c)) catClass = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+                    else if (/OBRONN|WOJSK/.test(c)) catClass = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+                    else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catClass = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+                }
+
+                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
+                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
+                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
+                const safeTitle = item.title.replace(/'/g, "\\'");
+                const safeLink = item.link || SITE_URL;
+
+                const listHtml = `
+                    <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
+                        <div class="text-3xl hidden sm:block">${emoji}</div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-3xl sm:hidden leading-none">${emoji}</span>
+                                <span class="inline-flex items-center px-2 pt-1 pb-[3px] rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
+                                    <span class="-translate-y-px">${item.category}</span>
+                                </span>
+                            </div>
+                            <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
+                                ${item.link && item.link !== '#' ? 
+                                `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${rawTitle}</a>` : rawTitle}
+                            </h3>
+                        </div>
+                        <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+                    </div>
+                `;
+                list.insertAdjacentHTML('beforeend', listHtml);
+            });
+        }
+
         function generateThreadsContent(items, dateText) {
             let txt = `🌍 Świat w Minutę - ${dateText}\n\n`;
             items.forEach(item => {
@@ -350,7 +446,7 @@
                 const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '').trim() : item.title.trim();
                 txt += `${emoji} ${rawTitle}\n`;
             });
-            txt += `\n👉 Pełne wiadomości: swiatwminute.vercel.app`; // Podmień na docelowy krótki link
+            txt += `\n👉 Pełne wiadomości: ${SITE_URL}`;
             document.getElementById('threads-output').value = txt;
         }
 
@@ -359,49 +455,23 @@
             textarea.select();
             document.execCommand('copy');
             alert('Skopiowano treść pod Threads!');
-            // Odznaczenie tekstu po skopiowaniu
             window.getSelection().removeAllRanges();
         }
 
-        function getCategoryColors(cat, isFun) {
-            if (isFun) return "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
-            const c = (cat || "").toUpperCase();
-            if (/AI|TECHNOLOG/.test(c)) return "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-            if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) return "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-            if (/NAUKA/.test(c)) return "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-            if (/POLSKA/.test(c)) return "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-            if (/OBRONN|WOJSK/.test(c)) return "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-            if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) return "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
-            return "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-        }
-
-        function getCommentColors(isFun) {
-            if (isFun) return "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
-            return "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
-        }
-
-        function highlightTitle(title, isFun) {
-            const words = title.trim().split(/\s+/);
-            if (words.length >= 3) {
-                const last = words.pop();
-                return `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
-            }
-            return title;
-        }
-
-        async function fetchPexelsImage(query) {
-            try {
-                const response = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, {
-                    headers: { Authorization: PEXELS_API_KEY }
-                });
-                const data = await response.json();
-                if (data.photos && data.photos.length > 0) {
-                    return data.photos[0].src.large || data.photos[0].src.medium;
+        function mixItems(nItems, rItems) {
+            let combined = [];
+            let nIdx = 0, rIdx = 0;
+            while (nIdx < nItems.length || rIdx < rItems.length) {
+                for(let i=0; i<3 && nIdx < nItems.length; i++) {
+                    combined.push({...nItems[nIdx], isFun: false});
+                    nIdx++;
                 }
-            } catch (err) {
-                console.error("Błąd Pexels:", err);
+                if (rIdx < rItems.length) {
+                    combined.push({...rItems[rIdx], isFun: true});
+                    rIdx++;
+                }
             }
-            return FALLBACK_IMG;
+            return combined;
         }
 
         async function init() {
@@ -414,25 +484,43 @@
                     fetch('archive_rozrywka.json').catch(() => null)
                 ]);
 
-                globalNewsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
-                globalRozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
+                const globalNewsData = (newsRes && newsRes.ok) ? await newsRes.json() : { items: [] };
+                const globalRozData = (rozRes && rozRes.ok) ? await rozRes.json() : { items: [] };
                 archiveNews = (archNewsRes && archNewsRes.ok) ? await archNewsRes.json() : {};
                 archiveRoz = (archRozRes && archRozRes.ok) ? await archRozRes.json() : {};
 
-                const select = document.getElementById('archive-select');
+                // Tworzenie bazy Dzisiejszych
+                todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
+                let displayDate = globalNewsData.date || "Dzisiaj";
+                document.getElementById('header-date').textContent = `${displayDate} • Dzisiejsze wydanie`;
+
+                // Tworzenie bazy Archiwum
                 const keys = Object.keys(archiveNews).sort().reverse();
-                
                 keys.forEach(key => {
                     const data = archiveNews[key];
-                    const option = document.createElement('option');
-                    option.value = key;
+                    const dateKey = key.split('_')[0];
+                    const rData = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
+                    const mixed = mixItems(data.items || [], rData.items || []);
+                    
                     let edName = key.includes('poranne') ? 'Poranne' : (key.includes('wieczorne') ? 'Wieczorne' : 'Wydanie');
-                    let dateStr = data.date || key.split('_')[0];
-                    option.textContent = `${dateStr} • ${edName}`;
-                    select.appendChild(option);
+                    let dateStr = data.date || dateKey;
+                    
+                    archiveGroups.push({ title: `${dateStr} • ${edName}`, items: mixed });
+                    allNewsFlat = allNewsFlat.concat(mixed);
                 });
 
-                await loadEdition('');
+                // Dołączenie dzisiejszych do płaskiej bazy wszystkich newsów (dla wyszukiwarki)
+                allNewsFlat = [...todayItems, ...allNewsFlat];
+
+                document.getElementById('loader').style.display = 'none';
+                
+                // Domyślny render
+                renderCardsToContainer(document.getElementById('today-grid'), todayItems);
+                renderFastReview(todayItems);
+                generateThreadsContent(todayItems, displayDate);
+                renderArchive();
+
+                switchTab('today');
 
             } catch (error) {
                 console.error("Inicjalizacja:", error);
@@ -440,178 +528,104 @@
             }
         }
 
-        async function loadEdition(archiveKey) {
-            const grid = document.getElementById('news-grid');
-            const listContainer = document.getElementById('fast-list-container');
-            document.getElementById('search-input').value = '';
+        function renderArchive() {
+            const container = document.getElementById('archive-container');
+            container.innerHTML = '';
             
-            grid.classList.add('opacity-0');
-            listContainer.classList.add('opacity-0');
-            document.getElementById('no-results').classList.add('hidden');
-            document.getElementById('no-results').classList.remove('flex');
-            document.getElementById('loader').style.display = 'flex';
-            
-            let currentNews, currentRoz;
-            let displayDate = "";
-
-            if (!archiveKey) {
-                currentNews = globalNewsData;
-                currentRoz = globalRozData;
-            } else {
-                currentNews = archiveNews[archiveKey] || { items: [] };
-                const dateKey = archiveKey.split('_')[0];
-                // Wyszukiwanie odpowiednika rozrywkowego w pliku archiwalnym dla danej daty
-                currentRoz = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
-            }
-
-            if (currentNews.date) {
-                let edition = (currentNews.time && currentNews.time < "12:00") ? "Poranne" : "Wieczorne";
-                if (archiveKey && archiveKey.includes('poranne')) edition = "Poranne";
-                if (archiveKey && archiveKey.includes('wieczorne')) edition = "Wieczorne";
-                displayDate = `${currentNews.date} • Wydanie ${edition}`;
-                document.getElementById('header-date').textContent = displayDate;
-            }
-
-            let combined = [];
-            let nItems = currentNews.items || [];
-            let rItems = currentRoz.items || [];
-            let nIdx = 0, rIdx = 0;
-
-            while (nIdx < nItems.length || rIdx < rItems.length) {
-                for(let i=0; i<3 && nIdx < nItems.length; i++) {
-                    combined.push({...nItems[nIdx], isFun: false, id: `n-${nIdx}`});
-                    nIdx++;
-                }
-                if (rIdx < rItems.length) {
-                    combined.push({...rItems[rIdx], isFun: true, id: `r-${rIdx}`});
-                    rIdx++;
-                }
-            }
-
-            currentRenderedItems = combined;
-            generateThreadsContent(combined, displayDate);
-            await renderData(combined);
-        }
-
-        async function renderData(items) {
-            const grid = document.getElementById('news-grid');
-            const list = document.getElementById('fast-list');
-            grid.innerHTML = '';
-            list.innerHTML = '';
-
-            items.forEach((item) => {
-                const catStyle = getCategoryColors(item.category, item.isFun);
-                const comStyle = getCommentColors(item.isFun);
-                
-                const emojiMatch = item.title.match(/^[\p{Emoji}\s]+/u);
-                const emoji = emojiMatch ? emojiMatch[0] : (item.isFun ? '🎉 ' : '📌 ');
-                const rawTitle = emojiMatch ? item.title.replace(/^[\p{Emoji}\s]+/u, '') : item.title;
-                
-                const titleHtml = highlightTitle(rawTitle, item.isFun);
-                const safeTitle = item.title.replace(/'/g, "\\'");
-                const safeSummary = (item.summary || '').replace(/'/g, "\\'");
-                const safeLink = item.link || window.location.href;
-
-                // KARTA
-                const cardHtml = `
-                    <article id="card-${item.id}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
-                        
-                        <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
-                            <button onclick="downloadCard('card-${item.id}', '${safeTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
-                                <i class="fa-solid fa-download text-sm"></i>
-                            </button>
-                            <button onclick="shareArticle('${safeTitle}', '${safeSummary}', '${safeLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
-                                <i class="fa-solid fa-share-nodes text-sm"></i>
-                            </button>
+            archiveGroups.forEach(group => {
+                const groupHtml = `
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">${group.title}</h3>
+                            <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                         </div>
-
-                        <div class="h-48 w-full relative shimmer overflow-hidden img-container">
-                            <img src="" crossorigin="anonymous" alt="Ilustracja" class="w-full h-full object-cover opacity-0 transition-opacity duration-700">
-                            <!-- Cień by tekst był zawsze czytelny w eksporcie -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
-                        </div>
-
-                        <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
-                            <div class="flex items-center mb-3">
-                                <span class="inline-flex items-center px-2.5 pt-1 pb-[3px] rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
-                                    <span class="-translate-y-px">${item.category || 'Wiadomość'}</span>
-                                </span>
-                            </div>
-                            
-                            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">
-                                ${emoji}${titleHtml}
-                            </h3>
-                            
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">
-                                ${item.summary}
-                            </p>
-                            
-                            <div class="mt-auto rounded-xl p-4 border ${comStyle}">
-                                <div class="flex items-center gap-2 mb-1.5 opacity-80">
-                                    <i class="fa-solid fa-lightbulb text-[10px]"></i>
-                                    <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
-                                </div>
-                                <p class="text-sm font-medium leading-relaxed italic">
-                                    "${item.comment}"
-                                </p>
-                            </div>
-                            
-                            ${item.link && item.link !== '#' ? `
-                            <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
-                                ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
-                            </a>
-                            ` : ''}
-                        </div>
-                    </article>
-                `;
-                grid.insertAdjacentHTML('beforeend', cardHtml);
-
-                // FAST REVIEW
-                const listHtml = `
-                    <div id="list-${item.id}" class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
-                        <div class="text-3xl hidden sm:block">${emoji}</div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                <span class="inline-flex items-center px-2 pt-1 pb-[3px] rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
-                                    <span class="-translate-y-px">${item.category}</span>
-                                </span>
-                            </div>
-                            <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
-                                ${item.link && item.link !== '#' ? 
-                                `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${rawTitle}</a>` : 
-                                rawTitle}
-                            </h3>
-                        </div>
-                        <button onclick="shareArticle('${safeTitle}', '', '${safeLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij">
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </button>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group-grid"></div>
                     </div>
                 `;
-                list.insertAdjacentHTML('beforeend', listHtml);
+                container.insertAdjacentHTML('beforeend', groupHtml);
+                const grids = container.querySelectorAll('.group-grid');
+                renderCardsToContainer(grids[grids.length - 1], group.items);
             });
+        }
 
-            document.getElementById('loader').style.display = 'none';
-            const isFast = document.getElementById('tab-fast').classList.contains('bg-brand-500');
-            switchTab(isFast ? 'fast' : 'full'); 
-
-            // Pobieranie obrazów w tle
-            for (const item of items) {
-                const query = item.image_query || `${item.category} ${item.title.split(' ').slice(0,2).join(' ')}`;
-                const imgUrl = await fetchPexelsImage(query);
+        // Zakładki (Dzisiejsze, Fast Review, Archiwum)
+        function switchTab(tabId) {
+            // Ukrycie wszystkich widoków
+            document.querySelectorAll('.view-section').forEach(el => {
+                el.classList.add('hidden', 'opacity-0');
+            });
+            
+            // Ukrycie tytułów z głównej strony
+            if(tabId === 'search') {
+                document.getElementById('main-titles').classList.add('hidden');
+                document.getElementById('tabs-container').classList.add('hidden');
+            } else {
+                document.getElementById('main-titles').classList.remove('hidden');
+                document.getElementById('tabs-container').classList.remove('hidden');
                 
-                const card = document.getElementById(`card-${item.id}`);
-                if (card) {
-                    const imgEl = card.querySelector('img');
-                    const imgContainer = card.querySelector('.img-container');
-                    
-                    imgEl.onload = () => {
-                        imgEl.classList.remove('opacity-0');
-                        imgContainer.classList.remove('shimmer');
-                    };
-                    imgEl.src = imgUrl;
+                // Resetowanie stylów przycisków
+                document.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
+                    btn.classList.remove('active');
+                });
+                
+                // Aktywowanie wybranego przycisku
+                const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+                if(activeBtn) {
+                    activeBtn.className = "tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
                 }
-                await new Promise(r => setTimeout(r, 150)); 
+                
+                // Wyczyszczenie paska wyszukiwania przy ręcznej zmianie zakładki
+                document.getElementById('search-input').value = '';
+                document.getElementById('search-input-mobile').value = '';
+            }
+
+            // Pokaż cel
+            const targetView = document.getElementById(`view-${tabId}`);
+            if(targetView) {
+                targetView.classList.remove('hidden');
+                setTimeout(() => targetView.classList.remove('opacity-0'), 50);
+            }
+        }
+
+        // Globalna Wyszukiwarka
+        function filterNewsMobile() {
+            document.getElementById('search-input').value = document.getElementById('search-input-mobile').value;
+            filterNews();
+        }
+
+        function filterNews() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            
+            if (query.length === 0) {
+                // Jeśli usunięto tekst, wracamy do aktywnej zakładki
+                const activeTab = document.querySelector('.tab-btn.active');
+                switchTab(activeTab ? activeTab.dataset.tab : 'today');
+                return;
+            }
+
+            switchTab('search');
+            
+            const results = allNewsFlat.filter(item => 
+                (item.title && item.title.toLowerCase().includes(query)) || 
+                (item.summary && item.summary.toLowerCase().includes(query)) ||
+                (item.category && item.category.toLowerCase().includes(query)) ||
+                (item.comment && item.comment.toLowerCase().includes(query))
+            );
+
+            document.getElementById('search-count').textContent = results.length;
+            
+            const searchGrid = document.getElementById('search-grid');
+            const noResults = document.getElementById('no-results');
+            
+            if (results.length > 0) {
+                noResults.classList.add('hidden');
+                noResults.classList.remove('flex');
+                renderCardsToContainer(searchGrid, results);
+            } else {
+                searchGrid.innerHTML = '';
+                noResults.classList.remove('hidden');
+                noResults.classList.add('flex');
             }
         }
 
