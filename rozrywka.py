@@ -7,18 +7,21 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Bardziej ukierunkowane źródła na absurdalne ciekawostki, dziwne zwierzęta i luźny humor
+# Rozszerzona baza RSS skupiona na dziwnych faktach, absurdach i rozrywce
 RSS_URLS = [
     "https://news.google.com/rss/search?q=weird+animal+facts+quirky+funny+history+bizarre&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=dziwne+fakty+śmieszne+ciekawostki+absurdalne+zwierzęta&hl=pl&gl=PL&ceid=PL:pl",
-    "https://news.google.com/rss/search?q=dziwna+historia+nietypowe+rekordy+humor&hl=pl&gl=PL&ceid=PL:pl"
+    "https://news.google.com/rss/search?q=dziwna+historia+nietypowe+rekordy+humor&hl=pl&gl=PL&ceid=PL:pl",
+    "https://www.huffpost.com/section/weird-news/feed",
+    "https://www.sciencenews.org/topic/weird-science/feed",
+    "https://www.mentalfloss.com/rss.xml"
 ]
 
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:15]:
+        for entry in feed.entries[:7]:  # Pobieramy 7 najświeższych wpisów na źródło
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -84,6 +87,7 @@ Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
 - "title": Krótki, chwytliwy i zabawny nagłówek z unikalną, dopasowaną emotikoną na początku (np. "🐼 Leniwe pandy i ich życiowe motto: Jak przetrwać dzień na leżąco").
 - "summary": Konkretny, zabawny opis w 1-2 zdaniach przedstawiający kuriozalny fakt.
 - "comment": Dowcipny, sarkastyczny lub ironiczny komentarz z lekkim żartem.
+- "image_query": 2-3 precyzyjne, konkretne słowa kluczowe w języku ANGIELSKIM do wyszukiwania śmiesznego lub adekwatnego zdjęcia stockowego (np. "cute lazy panda", "weird historical hat", "funny otter swimming", "vintage beer glass").
 - "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli ciekawostka nie ma bezpośredniego linku, przypisz pierwszy lepszy URL z listy).
 
 ZASADY:
@@ -98,7 +102,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.6-flash',
+        model='gemini-3.1-pro-preview',
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -115,6 +119,7 @@ except Exception as e:
         "title": f"🦦 {art['title']}",
         "summary": "Nietypowy i szalony fakt z życia przyrody.",
         "comment": "Natura naprawdę ma poczucie humoru!",
+        "image_query": "funny cute animal",
         "link": art['link']
     } for art in raw_articles[:10]]
 
