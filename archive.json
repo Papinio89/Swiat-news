@@ -1301,5 +1301,116 @@
         "link": "https://phys.org/news/2026-09-cataract-surgery-space-surgeon.html"
       }
     ]
+  },
+  "2026-09-14_poranne": {
+    "date": "14 September 2026",
+    "time": "05:49",
+    "timestamp": "2026-09-14_05:49",
+    "items": [
+      {
+        "category": "ŚWIAT / GEOPOLITYKA",
+        "title": "🚂 Atak na ukraiński pociąg tuż po wizycie VIP-ów",
+        "summary": "Rosyjskie rakiety uderzyły w ukraińską stację kolejową krótko po tym, jak opuścił ją Boris Johnson oraz czołowi europejscy dyplomaci.",
+        "comment": "Precyzja uderzenia i jego czas sugerują, że Moskwa uważnie śledzi ruchy zachodnich urzędników, traktując infrastrukturę jako cel psychologicznego nacisku.",
+        "image_query": "ukraine train destruction",
+        "link": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "TECHNOLOGIE / GEOPOLITYKA",
+        "title": "🇺🇸 Trump bagatelizuje ryzyko związane z AI",
+        "summary": "Donald Trump stwierdził, że ostrzeżenia dotyczące sztucznej inteligencji są przesadzone, argumentując to koniecznością wygrania technologicznego wyścigu z Chinami.",
+        "comment": "To zderzenie obaw etycznych z twardą geopolityką. Dla polityków utrzymanie hegemonii technologicznej nad Pekinem staje się ważniejsze niż potencjalne zagrożenia egzystencjalne ze strony algorytmów.",
+        "image_query": "ai geopolitical race",
+        "link": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "ŚWIAT / POLITYKA",
+        "title": "🗳️ Polityczny pat w Szwecji",
+        "summary": "Szwedzki blok lewicowy ma minimalną przewagę w wyborach, jednak wyniki są na tyle wyrównane, że oficjalny zwycięzca wciąż pozostaje niepewny.",
+        "comment": "Tamtejsza scena polityczna jest coraz bardziej spolaryzowana, co może znacznie utrudnić stworzenie stabilnego rządu w kluczowym dla bezpieczeństwa regionu momencie.",
+        "image_query": "sweden election voting",
+        "link": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "ŚWIAT / WYPADKI",
+        "title": "🚢 Tragedia na Morzu Jawajskim",
+        "summary": "Sześć osób zginęło, a aż 130 uważa się za zaginione po fatalnym przewróceniu się promu pasażerskiego w Indonezji.",
+        "comment": "To kolejne tragiczne przypomnienie o niedofinansowaniu i słabym stanie bezpieczeństwa transportu morskiego w gęsto zaludnionych archipelagach Azji Południowo-Wschodniej.",
+        "image_query": "sinking ferry rescue",
+        "link": "https://www.bbc.co.uk/news/articles/cvgykzgljlyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "ŚWIAT / SPOŁECZEŃSTWO",
+        "title": "🚔 Nocne obławy policyjne w Turcji",
+        "summary": "Turecka policja zatrzymała kilkadziesiąt osób w trakcie zmasowanych nalotów na bary oraz domy działaczy na rzecz praw LGBTQ+.",
+        "comment": "Narastająca fala represji udowadnia, że tureckie władze coraz śmielej wykorzystują kwestie obyczajowe do zaostrzania państwowej kontroli nad społeczeństwem obywatelskim.",
+        "image_query": "police raid lights",
+        "link": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "ŚWIAT / GEOPOLITYKA",
+        "title": "⚔️ Rośnie napięcie na linii Teheran-Waszyngton",
+        "summary": "Widmo eskalacji otwartego konfliktu między Iranem a USA zaczyna coraz mocniej rzutować na nastroje geopolityczne na świecie.",
+        "comment": "Niestabilność w tym regionie natychmiast uderza w rynki ropy, zamieniając Bliski Wschód w tykającą bombę dla całej światowej gospodarki.",
+        "image_query": "military conflict middle east",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5"
+      },
+      {
+        "category": "GOSPODARKA / SUROWCE",
+        "title": "⛽ Pakistan drży o strategiczne dostawy gazu",
+        "summary": "Pakistański terminal GasPort rewiduje swoje prognozy dotyczące LNG w obliczu realnego ryzyka zamknięcia kluczowej dla handlu cieśniny Ormuz.",
+        "comment": "Kraje wschodzące i uzależnione od importu są najbardziej narażone na ewentualną blokadę morskich szlaków, co w skrajnym wypadku odetnie je od elektryczności.",
+        "image_query": "lng tanker ship",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-14/pakistan-s-gasport-on-lng-outlook-amid-hormuz-closure-video"
+      },
+      {
+        "category": "GOSPODARKA / RYNKI",
+        "title": "💰 Miliardowa wolta szefa Oracle",
+        "summary": "Założyciel i szef giganta technologicznego, Larry Ellison, w ostatniej chwili anulował wyprzedaż akcji swojej firmy o wartości 7,5 miliarda dolarów.",
+        "comment": "Nagłe wstrzymanie sprzedaży przez głównego insidera zwykle sygnalizuje, że wewnętrzne prognozy firmy lub plany na rozwój są znacznie bardziej optymistyczne, niż zakłada ulica.",
+        "image_query": "stock market trading",
+        "link": "https://techcrunch.com/2026/09/13/larry-ellison-cancels-7-5-billion-sale-of-oracle-stock/"
+      },
+      {
+        "category": "ŚWIAT / PRAWO",
+        "title": "⚖️ Szokująca afera finansowa w Malezji",
+        "summary": "Kolejny czołowy polityk partii UMNO otrzymał zarzuty kryminalne w następstwie wielkiego śledztwa dotyczącego nadużyć w narodowym funduszu pielgrzymkowym.",
+        "comment": "Korupcja, która bezpośrednio uszczupla religijne oszczędności obywateli, to potężny cios wizerunkowy zdolny do przemodelowania układu sił politycznych w całym kraju.",
+        "image_query": "gavel and money",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-14/malaysia-charges-second-umno-leader-after-pilgrimage-fund-probe"
+      },
+      {
+        "category": "CIEKAWOSTKA / TECHNOLOGIE",
+        "title": "🤖 Autonomiczna taksówka sama wezwała policję",
+        "summary": "Pojazd systemu Waymo zjechał na pobocze i skontaktował się z organami ścigania, gdy czujniki zidentyfikowały u pasażera obecność niezarejestrowanej broni palnej.",
+        "comment": "To otwiera niepokojący i fascynujący rozdział inwigilacji – maszyny przestają nas tylko wozić, a zaczynają aktywnie egzekwować prawo na tylnym siedzeniu.",
+        "image_query": "autonomous car police",
+        "link": "https://www.theverge.com/transportation/994405/waymo-pulls-over-calls-cops-on-riders-with-a-ghost-gun"
+      },
+      {
+        "category": "CIEKAWOSTKA / GADŻETY",
+        "title": "🐕 Elektroniczny przyjaciel za grube pieniądze",
+        "summary": "Pewien entuzjasta nowinek wydał równe 4000 dolarów na sprowadzanego z Chin psa-robota, aby przetestować jego użyteczność w codziennym życiu miejskim.",
+        "comment": "Pół dekady temu takie maszyny kosztowały setki tysięcy i służyły niemal wyłącznie wojsku. Dziś powoli stają się elitarnymi zabawkami klasy premium.",
+        "image_query": "robotic dog outdoor",
+        "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/"
+      },
+      {
+        "category": "CIEKAWOSTKA / MEDYCYNA",
+        "title": "🏰 Dmuchany zamek okazał się bombą biologiczną",
+        "summary": "Zabawa na wynajmowanym, dmuchanym zamku zakończyła się potężnym ogniskiem zakażeń zmutowanym gronkowcem (MRSA), które dotknęło prawie 50 dzieci w Irlandii.",
+        "comment": "Mimo beztroskiego wyglądu, dziecięce rozrywki stają się idealnymi inkubatorami dla lekoopornych drobnoustrojów z powodu wilgoci i trudności w dezynfekcji plastiku.",
+        "image_query": "bouncy castle kids",
+        "link": "https://arstechnica.com/health/2026/09/bouncy-castle-launches-horrifying-mrsa-outbreak-striking-48-kids-in-ireland/"
+      },
+      {
+        "category": "CIEKAWOSTKA / NAUKA",
+        "title": "🧠 Odkryto tajną warstwę Alzheimera w naszym DNA",
+        "summary": "Naukowcy zidentyfikowali zupełnie nowy, genetyczny mechanizm rozwoju choroby Alzheimera, który dotąd pozostawał ukryty głęboko w ludzkim genomie.",
+        "comment": "To gigantyczny przełom tłumaczący oporność choroby na dotychczasowe leczenie. Takie przepisanie mapy DNA może zrewolucjonizować terapie neurologiczne w obecnej dekadzie.",
+        "image_query": "dna strand glowing",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260912220051.htm"
+      }
+    ]
   }
 }

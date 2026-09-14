@@ -1,119 +1,111 @@
 {
-  "date": "13 September 2026",
-  "time": "16:07",
-  "timestamp": "2026-09-13_16:07",
+  "date": "14 September 2026",
+  "time": "05:49",
+  "timestamp": "2026-09-14_05:49",
   "items": [
     {
       "category": "ŚWIAT / GEOPOLITYKA",
-      "title": "🌍 BRICS w cieniu wojny",
-      "summary": "Eskalacja konfliktu z udziałem Iranu zmienia układ sił w grupie BRICS, jednocześnie obnażając głębokie podziały między państwami członkowskimi.",
-      "comment": "Sojusze autorytarne często wyglądają solidnie tylko na papierze, a w obliczu realnego kryzysu interesy narodowe biorą górę nad ideą jedności.",
-      "image_query": "brics flags meeting",
-      "link": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&at_campaign=rss"
+      "title": "🚂 Atak na ukraiński pociąg tuż po wizycie VIP-ów",
+      "summary": "Rosyjskie rakiety uderzyły w ukraińską stację kolejową krótko po tym, jak opuścił ją Boris Johnson oraz czołowi europejscy dyplomaci.",
+      "comment": "Precyzja uderzenia i jego czas sugerują, że Moskwa uważnie śledzi ruchy zachodnich urzędników, traktując infrastrukturę jako cel psychologicznego nacisku.",
+      "image_query": "ukraine train destruction",
+      "link": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "ŚWIAT / KONFLIKTY",
-      "title": "🛢️ Zaskakujący apel Trumpa do Kijowa",
-      "summary": "Donald Trump wezwał Wołodymyra Zełenskiego do zaprzestania ukraińskich ataków na rosyjskie rafinerie, obawiając się globalnych zawirowań na rynku paliw.",
-      "comment": "To wyraźny sygnał, że amerykańska polityka wewnętrzna i ceny na stacjach benzynowych mogą dyktować warunki na wschodnioeuropejskim froncie.",
-      "image_query": "oil refinery fire",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-13/trump-urges-zelenskyy-to-stop-hitting-russia-s-diesel-refineries"
+      "category": "TECHNOLOGIE / GEOPOLITYKA",
+      "title": "🇺🇸 Trump bagatelizuje ryzyko związane z AI",
+      "summary": "Donald Trump stwierdził, że ostrzeżenia dotyczące sztucznej inteligencji są przesadzone, argumentując to koniecznością wygrania technologicznego wyścigu z Chinami.",
+      "comment": "To zderzenie obaw etycznych z twardą geopolityką. Dla polityków utrzymanie hegemonii technologicznej nad Pekinem staje się ważniejsze niż potencjalne zagrożenia egzystencjalne ze strony algorytmów.",
+      "image_query": "ai geopolitical race",
+      "link": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "category": "ŚWIAT / POLITYKA",
+      "title": "🗳️ Polityczny pat w Szwecji",
+      "summary": "Szwedzki blok lewicowy ma minimalną przewagę w wyborach, jednak wyniki są na tyle wyrównane, że oficjalny zwycięzca wciąż pozostaje niepewny.",
+      "comment": "Tamtejsza scena polityczna jest coraz bardziej spolaryzowana, co może znacznie utrudnić stworzenie stabilnego rządu w kluczowym dla bezpieczeństwa regionu momencie.",
+      "image_query": "sweden election voting",
+      "link": "https://www.bbc.co.uk/news/articles/c0qx5d79kdeo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "category": "ŚWIAT / WYPADKI",
+      "title": "🚢 Tragedia na Morzu Jawajskim",
+      "summary": "Sześć osób zginęło, a aż 130 uważa się za zaginione po fatalnym przewróceniu się promu pasażerskiego w Indonezji.",
+      "comment": "To kolejne tragiczne przypomnienie o niedofinansowaniu i słabym stanie bezpieczeństwa transportu morskiego w gęsto zaludnionych archipelagach Azji Południowo-Wschodniej.",
+      "image_query": "sinking ferry rescue",
+      "link": "https://www.bbc.co.uk/news/articles/cvgykzgljlyo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "category": "ŚWIAT / SPOŁECZEŃSTWO",
+      "title": "🚔 Nocne obławy policyjne w Turcji",
+      "summary": "Turecka policja zatrzymała kilkadziesiąt osób w trakcie zmasowanych nalotów na bary oraz domy działaczy na rzecz praw LGBTQ+.",
+      "comment": "Narastająca fala represji udowadnia, że tureckie władze coraz śmielej wykorzystują kwestie obyczajowe do zaostrzania państwowej kontroli nad społeczeństwem obywatelskim.",
+      "image_query": "police raid lights",
+      "link": "https://www.bbc.co.uk/news/articles/cpve191wy47o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "category": "ŚWIAT / GEOPOLITYKA",
+      "title": "⚔️ Rośnie napięcie na linii Teheran-Waszyngton",
+      "summary": "Widmo eskalacji otwartego konfliktu między Iranem a USA zaczyna coraz mocniej rzutować na nastroje geopolityczne na świecie.",
+      "comment": "Niestabilność w tym regionie natychmiast uderza w rynki ropy, zamieniając Bliski Wschód w tykającą bombę dla całej światowej gospodarki.",
+      "image_query": "military conflict middle east",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5"
+    },
+    {
+      "category": "GOSPODARKA / SUROWCE",
+      "title": "⛽ Pakistan drży o strategiczne dostawy gazu",
+      "summary": "Pakistański terminal GasPort rewiduje swoje prognozy dotyczące LNG w obliczu realnego ryzyka zamknięcia kluczowej dla handlu cieśniny Ormuz.",
+      "comment": "Kraje wschodzące i uzależnione od importu są najbardziej narażone na ewentualną blokadę morskich szlaków, co w skrajnym wypadku odetnie je od elektryczności.",
+      "image_query": "lng tanker ship",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-14/pakistan-s-gasport-on-lng-outlook-amid-hormuz-closure-video"
     },
     {
       "category": "GOSPODARKA / RYNKI",
-      "title": "📈 Wall Street ignoruje widmo bańki",
-      "summary": "Mimo nastrojów przypominających bańkę dot-comów z końca lat 90., analitycy z Wall Street doradzają inwestorom pozostanie przy akcjach.",
-      "comment": "Historia lubi się powtarzać, ale rynek woli wierzyć, że 'tym razem jest inaczej'. Czas pokaże, czy hossa technologiczna ma stabilniejsze fundamenty.",
-      "image_query": "wall street graph",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-13/wall-street-says-stay-with-stocks-despite-late-90s-dot-com-vibe"
+      "title": "💰 Miliardowa wolta szefa Oracle",
+      "summary": "Założyciel i szef giganta technologicznego, Larry Ellison, w ostatniej chwili anulował wyprzedaż akcji swojej firmy o wartości 7,5 miliarda dolarów.",
+      "comment": "Nagłe wstrzymanie sprzedaży przez głównego insidera zwykle sygnalizuje, że wewnętrzne prognozy firmy lub plany na rozwój są znacznie bardziej optymistyczne, niż zakłada ulica.",
+      "image_query": "stock market trading",
+      "link": "https://techcrunch.com/2026/09/13/larry-ellison-cancels-7-5-billion-sale-of-oracle-stock/"
     },
     {
-      "category": "GOSPODARKA / LOGISTYKA",
-      "title": "🚢 Chiny dominują na morzach",
-      "summary": "Zmiany geopolityczne i przetasowania w globalnych łańcuchach dostaw sprawiły, że chińskie porty kontenerowe drastycznie umocniły swoją pozycję w światowych rankingach.",
-      "comment": "Kto kontroluje porty, ten kontroluje handel. Zachód próbuje się uniezależnić, ale infrastrukturalna przewaga Pekinu wciąż rośnie.",
-      "image_query": "container port cranes",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNal84T09hM1JnYVVOM0QzXzZ5WUhTRk9BTUFpQUluUUt0RVBWNGZjTnNTS2Nfenp4TTI2YWV1NnYzTjU3Tkd6YjUxUUhlWk5IcDhqd0hfdUh0OV8zQ0FOaG94dGZXRlQzNHl5VnA2RF9DSUc0ZnIyNC0yMTJTLVp0bm1LWml6aFJjUTRRLWtqcVNNcW5GeGU5UF8xMG9pS0FJekE0Z01n?oc=5"
+      "category": "ŚWIAT / PRAWO",
+      "title": "⚖️ Szokująca afera finansowa w Malezji",
+      "summary": "Kolejny czołowy polityk partii UMNO otrzymał zarzuty kryminalne w następstwie wielkiego śledztwa dotyczącego nadużyć w narodowym funduszu pielgrzymkowym.",
+      "comment": "Korupcja, która bezpośrednio uszczupla religijne oszczędności obywateli, to potężny cios wizerunkowy zdolny do przemodelowania układu sił politycznych w całym kraju.",
+      "image_query": "gavel and money",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-14/malaysia-charges-second-umno-leader-after-pilgrimage-fund-probe"
     },
     {
-      "category": "TECHNOLOGIE / BIZNES",
-      "title": "💼 OpenAI opóźnia giełdowy debiut",
-      "summary": "Sam Altman stwierdził, że wprowadzenie OpenAI na giełdę w 2026 roku byłoby 'nierozważne', ucinając spekulacje o szybkim IPO giganta AI.",
-      "comment": "Pozostanie spółką prywatną daje liderom AI swobodę w podejmowaniu ryzykownych decyzji badawczych bez presji kwartalnych wyników i kaprysów akcjonariuszy.",
-      "image_query": "stock market ai",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised"
+      "category": "CIEKAWOSTKA / TECHNOLOGIE",
+      "title": "🤖 Autonomiczna taksówka sama wezwała policję",
+      "summary": "Pojazd systemu Waymo zjechał na pobocze i skontaktował się z organami ścigania, gdy czujniki zidentyfikowały u pasażera obecność niezarejestrowanej broni palnej.",
+      "comment": "To otwiera niepokojący i fascynujący rozdział inwigilacji – maszyny przestają nas tylko wozić, a zaczynają aktywnie egzekwować prawo na tylnym siedzeniu.",
+      "image_query": "autonomous car police",
+      "link": "https://www.theverge.com/transportation/994405/waymo-pulls-over-calls-cops-on-riders-with-a-ghost-gun"
     },
     {
-      "category": "TECHNOLOGIE / OBRONNOŚĆ",
-      "title": "⚡ Fuzja jądrowa na celowniku wojska",
-      "summary": "Startupy pracujące nad fuzją jądrową znajdują hojnych partnerów w sektorze obronnym, co ma drastycznie przyspieszyć rozwój czystej i nieograniczonej energii.",
-      "comment": "Technologie militarne zawsze były motorem napędowym innowacji. Zastrzyk gotówki od armii może być przełomem, na który czekała fizyka plazmy.",
-      "image_query": "nuclear fusion reactor",
-      "link": "https://techcrunch.com/2026/09/13/fusion-power-startups-find-new-partners-in-the-defense-world/"
-    },
-    {
-      "category": "GOSPODARKA / SPORT",
-      "title": "⛳ Arabskie miliardy i widmo bankructwa",
-      "summary": "Wspierana przez saudyjski kapitał prestiżowa liga LIV Golf, po zainwestowaniu 5 miliardów dolarów, stoi w obliczu potencjalnego bankructwa.",
-      "comment": "Nawet nieograniczone fundusze państwowe z Bliskiego Wschodu nie gwarantują sukcesu biznesowego, jeśli projekt nie potrafi utrzymać lojalnej bazy fanów.",
-      "image_query": "golf course money",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-13/liv-golf-s-5-billion-path-to-bankruptcy"
-    },
-    {
-      "category": "ŚWIAT / OBRONNOŚĆ",
-      "title": "💥 Drony paraliżują logistykę",
-      "summary": "Precyzyjne uderzenia ukraińskich bezzałogowców w kluczowe węzły komunikacyjne doprowadziły do zniszczenia infrastruktury obsługującej dziesiątki tysięcy ciężarówek.",
-      "comment": "Wojna asymetryczna w pełnej krasie. Stosunkowo tanie drony uderzeniowe potrafią wywołać wielomilionowe straty w łańcuchach dostaw mocarstwa.",
-      "image_query": "military drone strike",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQajRGWDJwaHphMGxmeVBiMUlYekdpNTNINWxzRHpqVi1rMHlCQjg1dXJXX0lMZDdwMjg2U3VBMGxuOC1RWnoxVE8wU3FYekRudEY1eV85NkR1WE5jdWlYQmtJeGhoc1JJLThKRmpIY1NrM0lqZ0tWQU54TXpycGJOQ1c2ZFZyUGQ3TVhrOExfMFdJSlBPUl90RDFmMjRQUWxnQW9QVDZmS1dUVWZYUWc?oc=5"
-    },
-    {
-      "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
-      "title": "🛩️ Niespokojne niebo nad Bałtykiem",
-      "summary": "W wyniku nagłych i niespodziewanych alarmów nad przestrzenią powietrzną Litwy, polski samolot pasażerski musiał zostać pilnie zawrócony tuż przy granicy.",
-      "comment": "Rosnące napięcie w regionie państw bałtyckich sprawia, że rutynowe loty cywilne coraz częściej padają ofiarą wojskowych prowokacji.",
-      "image_query": "passenger plane radar",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPR2VNTmgwVnhGTXVxY2Vlam9QSVgtVEQtd1BFbnN6TFZMREVBOWlVc3Y5WE9naUY2TkVsNkFpdWFYdTlhZmRnY3hLd013QTFzdkF1SkZGa2Y4dW1KRUR4OGt2ZVlHOURzU2dudTJBOXhmbjdycXc4LVItTlJBVTI2cEc5ZlhYd05iazgtNWVhbEtod1pOUmxlblZTN0Q?oc=5"
-    },
-    {
-      "category": "ŚWIAT / KLIMAT",
-      "title": "🏝️ Pacyfik gra kartą polityczną",
-      "summary": "Małe narody wyspiarskie Pacyfiku sprytnie wykorzystują rosnącą rywalizację światowych mocarstw, by pozyskać potężne fundusze na walkę ze skutkami zmian klimatu.",
-      "comment": "To mistrzowska dyplomacja w wydaniu mikro-państw: manewrowanie między Waszyngtonem a Pekinem to dla nich dosłownie kwestia przetrwania ponad poziomem morza.",
-      "image_query": "pacific island flooding",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
-    },
-    {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🐝 Kosmiczne wypieki z plastiku",
-      "summary": "Naukowcy z sukcesem opracowali innowacyjną, biochemiczną metodę przekształcania szkodliwych plastikowych odpadów w jadalne, bezpieczne dla ludzi ciastka.",
-      "comment": "Choć brzmi to jak kulinarny eksperyment szaleńca, proces ten może na zawsze rozwiązać problem zanieczyszczenia oceanów i utylizacji śmieci na stacjach orbitalnych.",
-      "image_query": "plastic recycling food",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260912220033.htm"
-    },
-    {
-      "category": "CIEKAWOSTKA / PRAWO",
-      "title": "🤖 Prawnik ofiarą halucynacji AI",
-      "summary": "Amerykański prawnik używający ChatGPT w pracy został surowo ukarany za zacytowanie w sądzie całkowicie zmyślonych zeznań i nieistniejących akt spraw.",
-      "comment": "To bolesna lekcja dla nowoczesnych profesjonalistów: sztuczna inteligencja potrafi być błyskotliwym asystentem, ale kłamie jak z nut, gdy brakuje jej faktów.",
-      "image_query": "lawyer robot court",
-      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/"
+      "category": "CIEKAWOSTKA / GADŻETY",
+      "title": "🐕 Elektroniczny przyjaciel za grube pieniądze",
+      "summary": "Pewien entuzjasta nowinek wydał równe 4000 dolarów na sprowadzanego z Chin psa-robota, aby przetestować jego użyteczność w codziennym życiu miejskim.",
+      "comment": "Pół dekady temu takie maszyny kosztowały setki tysięcy i służyły niemal wyłącznie wojsku. Dziś powoli stają się elitarnymi zabawkami klasy premium.",
+      "image_query": "robotic dog outdoor",
+      "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/"
     },
     {
       "category": "CIEKAWOSTKA / MEDYCYNA",
-      "title": "🧠 Algorytmy prześwietlają Reddita",
-      "summary": "Sztuczna inteligencja bezbłędnie przeanalizowała 400 tysięcy luźnych wpisów na forach internetowych, odkrywając ukryte skutki uboczne hitowego leku Ozempic.",
-      "comment": "Głosy anonimowego tłumu pacjentów, połączone z analityczną mocą maszyn, tworzą dziś najszybszy system ostrzegania w światowej farmakologii.",
-      "image_query": "ai medical data",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260912222856.htm"
+      "title": "🏰 Dmuchany zamek okazał się bombą biologiczną",
+      "summary": "Zabawa na wynajmowanym, dmuchanym zamku zakończyła się potężnym ogniskiem zakażeń zmutowanym gronkowcem (MRSA), które dotknęło prawie 50 dzieci w Irlandii.",
+      "comment": "Mimo beztroskiego wyglądu, dziecięce rozrywki stają się idealnymi inkubatorami dla lekoopornych drobnoustrojów z powodu wilgoci i trudności w dezynfekcji plastiku.",
+      "image_query": "bouncy castle kids",
+      "link": "https://arstechnica.com/health/2026/09/bouncy-castle-launches-horrifying-mrsa-outbreak-striking-48-kids-in-ireland/"
     },
     {
-      "category": "CIEKAWOSTKA / KOSMOS",
-      "title": "🚀 Operacje zaćmy w stanie nieważkości",
-      "summary": "Medycy wojskowi przewidują, że planowane wieloletnie misje międzyplanetarne wymuszą przeprowadzanie skomplikowanych operacji oczu u astronautów na orbicie.",
-      "comment": "Kosmiczne promieniowanie to bezlitosny wróg ludzkiego DNA. Okazuje się, że podbój Marsa to wyzwanie nie tylko dla inżynierów, ale i dla gwiezdnych okulistów.",
-      "image_query": "surgeon space station",
-      "link": "https://phys.org/news/2026-09-cataract-surgery-space-surgeon.html"
+      "category": "CIEKAWOSTKA / NAUKA",
+      "title": "🧠 Odkryto tajną warstwę Alzheimera w naszym DNA",
+      "summary": "Naukowcy zidentyfikowali zupełnie nowy, genetyczny mechanizm rozwoju choroby Alzheimera, który dotąd pozostawał ukryty głęboko w ludzkim genomie.",
+      "comment": "To gigantyczny przełom tłumaczący oporność choroby na dotychczasowe leczenie. Takie przepisanie mapy DNA może zrewolucjonizować terapie neurologiczne w obecnej dekadzie.",
+      "image_query": "dna strand glowing",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260912220051.htm"
     }
   ]
 }
