@@ -1412,5 +1412,124 @@
         "link": "https://www.sciencedaily.com/releases/2026/09/260912220051.htm"
       }
     ]
+  },
+  "2026-09-14_wieczorne": {
+    "date": "14 September 2026",
+    "time": "17:17",
+    "timestamp": "2026-09-14_17:17",
+    "items": [
+      {
+        "category": "GEOPOLITYKA / TECHNOLOGIE",
+        "title": "🇨🇳 Chiny odrzucają oskarżenia o rywalizację w AI",
+        "summary": "Pekin oficjalnie krytykuje narrację sugerującą, że bierze udział w złośliwym i nieuczciwym wyścigu zbrojeń w obszarze sztucznej inteligencji.",
+        "comment": "Technologiczna zimna wojna nabiera rumieńców, a polityczna retoryka staje się równie ważna co nowo powstające algorytmy.",
+        "image_query": "ai microchip china",
+        "link": "https://www.bbc.co.uk/news/articles/cn8me133119o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "ŚWIAT / SPOŁECZEŃSTWO",
+        "title": "🇲🇽 Tysiące Meksykanów na ulicach przeciwko kartelom",
+        "summary": "Mieszkańcy jednego z najbardziej zapalnych regionów w Meksyku masowo protestują, żądając od władz położenia kresu brutalnej przemocy narkotykowej.",
+        "comment": "Społeczna desperacja sięga zenitu, gdy lokalne społeczności muszą same upominać się o podstawowe prawo do życia w bezpieczeństwie.",
+        "image_query": "protest crowd mexico",
+        "link": "https://www.bbc.co.uk/news/articles/cde06rxw5g6o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🕊️ Szef ONZ alarmuje: Światowy porządek się kruszy",
+        "summary": "Sekretarz Generalny ONZ ostrzega przed globalnymi podziałami i mnożącymi się wojnami, które stanowią bezpośrednie zagrożenie dla dotychczasowego ładu międzynarodowego.",
+        "comment": "Rosnąca polaryzacja sprawia, że międzynarodowe instytucje stają się coraz bardziej bezradne wobec siły państw narodowych.",
+        "image_query": "united nations assembly",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5CckMxM3NwSE1TZDZaYm5yRU4zWnZScmtyT0EyaVJKVlBlVnVUSWsxTnc0WXBzME9ReVBMbkJHN0NHdEhyc19taGFzY0MxalVDc0VHc0xDbw?oc=5"
+      },
+      {
+        "category": "GOSPODARKA / ZDROWIE",
+        "title": "💊 Polityka lekowa Trumpa może uderzyć w inne kraje",
+        "summary": "Z najnowszych badań wynika, że plany administracji Donalda Trumpa dotyczące obniżenia cen leków w USA mogą drastycznie ograniczyć ich dostępność na rynkach zagranicznych.",
+        "comment": "Efekt motyla w farmacji – tańsze pigułki za oceanem mogą oznaczać potężne deficyty w europejskich i azjatyckich aptekach.",
+        "image_query": "pharmacy pills market",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-13/trump-s-drug-pricing-push-to-cut-access-outside-us-study-finds"
+      },
+      {
+        "category": "RYNKI / FINANSE",
+        "title": "📉 Złoto tanieje w cieniu cen ropy i decyzji FED",
+        "summary": "Ceny kruszcu spadają, ponieważ rosnące koszty ropy naftowej skłaniają inwestorów do przewidywań, że amerykański bank centralny utrzyma wysoką stopę procentową.",
+        "comment": "Złoto zazwyczaj służy jako tarcza przed inflacją, ale wizja drogiego pieniądza skutecznie zniechęca rynkowych optymistów.",
+        "image_query": "gold bars chart",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-14/gold-edges-lower-as-hot-us-inflation-bolsters-fed-rate-hike-bets"
+      },
+      {
+        "category": "GOSPODARKA / BIZNES",
+        "title": "✈️ Wojna cenowa arabskich linii lotniczych chroni pasażerów",
+        "summary": "Linie lotnicze Etihad poinformowały, że ostra konkurencja między przewoźnikami z Bliskiego Wschodu zapobiega przerzucaniu rosnących kosztów na klientów.",
+        "comment": "Biznesowa duma i walka o prestiż w Zatoce Perskiej to wyjątkowo dobra wiadomość dla portfeli pasażerów na trasach międzykontynentalnych.",
+        "image_query": "passenger airplane flight",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-14/etihad-says-mideast-rivalry-shields-passengers-from-higher-fares"
+      },
+      {
+        "category": "POLSKA / FINANSE",
+        "title": "💰 Milionowa pensja prezesa PKOl budzi kontrowersje",
+        "summary": "Ujawniono, że roczne wynagrodzenie szefa Polskiego Komitetu Olimpijskiego przekroczyło okrągły milion złotych, co wywołało ostrą debatę o finansowaniu krajowego sportu.",
+        "comment": "Podczas gdy sportowcom brakuje środków na podstawowe treningi, gabinety działaczy funkcjonują w odrębnej, luksusowej rzeczywistości.",
+        "image_query": "business money suit",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbFQ2Mm04LWNfYS0tZTlHcFc1Mk5Rek5CZFZXVEZiaTNmT1J3MzdYQWFwa1dYX1A0c0p3czJPZV9jd0RHMW0xNGMzajdSN21NazdicG5lVFBzLTlnbFNUak5Ec2RBQ2VjWmJseHRWSnlqeFA0ekFGR1BXMGdQRHVpLUF6a0dxOWhFSW5NbkprYW5aenhmS0ZQN1dGV1lEcG9JekI5SVZ2cEJHT2JKM3pJdHh3?oc=5"
+      },
+      {
+        "category": "POLSKA / BEZPIECZEŃSTWO",
+        "title": "🚁 Tajemniczy wojskowy dron wylądował na polskiej plaży",
+        "summary": "Wojsko Polskie prowadzi śledztwo w sprawie bezzałogowca odnalezionego nad Bałtykiem, a wstępne raporty armii wskazują na rosyjskie pochodzenie maszyny.",
+        "comment": "Incydent brutalnie przypomina, że echa wschodniego konfliktu mogą w każdej chwili dosłownie wylądować na naszym podwórku.",
+        "image_query": "military drone beach",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUlFBYWtjX3JfR3Nlczd2WkNTaThPOFlnWE15bW9KWVFQeVU4YXRIRTJXeWF0OENNZ0ZrWEhmOHhVM2Z3TFlvMGRRc2MzUWJTYU1URHNZbHk3TllBd0h0WWE4UWk2Tk10MklPS2lac3pPQUJoY2s1Z3lwUzY5YnNOMmlVZExJQUVPYlBQTFVKOFNGV20tTWpkZ2ZTbFNGTHNBVDJwcFBGZkp0SHFKcGpV?oc=5"
+      },
+      {
+        "category": "DYPLOMACJA / GEOPOLITYKA",
+        "title": "🗣️ Ostre starcie dyplomatyczne na linii Warszawa-Moskwa",
+        "summary": "Słowa Radosława Sikorskiego o ewentualnym szybkim zwycięstwie nad Rosją spotkały się z natychmiastową i agresywną reakcją Marii Zacharowej z MSZ Rosji.",
+        "comment": "Klasyczna dyplomacja odeszła do lamusa, ustępując miejsca medialnej wojnie informacyjnej, w której każde słowo jest amunicją.",
+        "image_query": "diplomacy conflict microphone",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSGNzR1RKU2o2WGRad1YyQkxMd0dCZ1ZrZ2FFSml0VWxVdnkzTVd1TnFFbXdfLU1WSUpsWUg3S1d0enBNcEpGbDJzeVNxakVFTmhyWUhJeERwQWJ2aE1vT3ZQZWlHSGNqSlF6d3htNERab3RBN1lJeDhZMHFHTXB5MGtJT0N4RlZ4VXVMUDN6Rm1henc2SEpYVXRSNDUtU18zTW5wV2RLdC1RTlR5NUxZMXNmZEFGRnVBS05NQlNCNA?oc=5"
+      },
+      {
+        "category": "BIZNES / TECHNOLOGIE",
+        "title": "💼 Fuzja na rynku cyfrowych asystentów biurowych",
+        "summary": "Platforma e-mailowa Superhuman przejęła startup Fathom, w odpowiedzi na rosnący popyt korporacji na inteligentnych, zautomatyzowanych asystentów pracy.",
+        "comment": "Wyścig o to, kto szybciej uporządkuje nasz chaos w skrzynce pocztowej, wchodzi w fazę korporacyjnych przejęć na grube miliony.",
+        "image_query": "business handshake tech",
+        "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/"
+      },
+      {
+        "category": "TECHNOLOGIE / MOTORYZACJA",
+        "title": "🚀 Aerodynamiczny przełom Volkswagena bije rekordy",
+        "summary": "Nowy projekt samochodu elektrycznego od VW okazał się tak opływowy, że zdołał bez wysiłku pobić szereg rygorystycznych rekordów wydajności energetycznej.",
+        "comment": "W erze elektromobilności walka nie toczy się o pojemność baku, lecz o to, kto zdoła najskuteczniej przechytrzyć opór wiatru.",
+        "image_query": "futuristic electric car",
+        "link": "https://www.theverge.com/transportation/994670/volkswagen-mission-efficiency-ev-aero-drag-record"
+      },
+      {
+        "category": "NAUKA / CIEKAWOSTKA",
+        "title": "🧠 Podręczniki do chemii myliły się przez równe 100 lat",
+        "summary": "Najnowsze badania udowodniły, że jedna z kluczowych reguł chemicznych powszechnie nauczanych w szkołach od stulecia jest w rzeczywistości błędna.",
+        "comment": "To piękny dowód na to, że nauka nie jest nienaruszalnym zbiorem dogmatów, ale ekscytującym procesem obalania mitów.",
+        "image_query": "chemistry laboratory textbooks",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260913082157.htm"
+      },
+      {
+        "category": "LIFESTYLE / TECHNOLOGIE",
+        "title": "🤖 Winyle zamiast algorytmów: Nietypowy startup w sercu Tokio",
+        "summary": "Kameralny bar płytowy w modnej dzielnicy Shibuya funkcjonuje jako ceniony startup muzyczny, który świadomie odrzucił generowanie list odtwarzania przez sztuczną inteligencję.",
+        "comment": "W świecie całkowicie zdominowanym przez chłodne podpowiedzi maszyn, niedoskonały ludzki gust powraca jako produkt luksusowy.",
+        "image_query": "vinyl record playing bar",
+        "link": "https://techcrunch.com/2026/09/14/a-vinyl-bar-in-shibuya-is-a-startup-offering-fun-music-apps-without-any-ai-prompting/"
+      },
+      {
+        "category": "NATURA / CIEKAWOSTKA",
+        "title": "🐝 Błąd w systemie natury: Krokodyle zgubiły drogę",
+        "summary": "Naukowcy odkryli, że badane krokodyle – gady słynące z niesamowitego, biologicznego zmysłu nawigacji – kompletnie straciły orientację w terenie.",
+        "comment": "Wydaje się, że nawet najbardziej niezawodny naturalny kompas potrzebuje czasem resetu. Przyroda wciąż potrafi nas mocno zaskoczyć.",
+        "image_query": "crocodile looking lost",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260913081913.htm"
+      }
+    ]
   }
 }
