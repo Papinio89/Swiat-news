@@ -1,77 +1,87 @@
 {
-  "date": "13 September 2026",
-  "time": "07:17",
-  "timestamp": "2026-09-13_07:17",
+  "date": "14 September 2026",
+  "time": "14:49",
+  "timestamp": "2026-09-14_14:49",
   "items": [
     {
       "category": "ZWIERZAKI",
-      "title": "🦝 Szop Jimothy – niekoronowany król lokalnego śmietnika i gwiazda internetu",
-      "summary": "Szop imieniem Jimothy stał się absolutną sensacją w Seattle, terroryzując i jednocześnie zachwycając mieszkańców swoimi bezczelnymi podchodami pod ludzkie jedzenie.",
-      "comment": "Kiedy twój życiowy sukces to zostanie liderem lokalnej szajki włamywaczy śmietnikowych.",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yQVhzM1AyTlI5VEpPNnNjVy1fM3FOSzhqdmprdC1pVklEbVVBVjFVb1BuU3V3Z1RVejJMVk5zSEN2R25TS3dJaFJqMDdTa0U5TWEwZ29aZThsZmM?oc=5"
+      "title": "🦥 Leniwce i ich ekstremalnie ryzykowna toaleta raz w tygodniu",
+      "summary": "Leniwce załatwiają swoje potrzeby fizjologiczne tylko raz w tygodniu, złażąc z drzewa by wykonać dziwaczny taniec, w trakcie którego zrzucają z siebie do jednej trzeciej wagi ciała.",
+      "comment": "Ty narzekasz, gdy skończy się papier toaletowy, a one dosłownie ryzykują pożarcie przez jaguara dla chwili ulgi.",
+      "image_query": "funny sloth tree",
+      "link": "https://news.google.com/rss/articles/CBMic0FV_yqLOo8MyLGP7vfynI1eSdQN926i8yHMFUKwY7p_ZKbdR1h9LqWAA_75o4HURPVO6EgIxkw5ekd243cyJt-d7KGUVGm4BZ19JmoVSAM2zBurC2yyY?oc=5"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🐰 Armia puszystych potworów, czyli jak króliki pokonały Napoleona",
-      "summary": "Podczas polowania zorganizowanego dla Napoleona Bonaparte, tysiące wypuszczonych królików zamiast uciekać, rzuciły się do zmasowanej szarży na cesarza, zmuszając go do rejterady.",
-      "comment": "Najpotężniejszy człowiek w Europie musiał salwować się ucieczką przed armią uszatków szukających darmowej marchewki.",
+      "title": "🪖 Wielka wojna z Emu, którą wojsko z hukiem przegrało",
+      "summary": "W 1932 roku australijska armia wytoczyła ciężkie karabiny maszynowe przeciwko stadu wielkich ptaków emu, które pustoszyły uprawy rolników. Ptaki zastosowały sprytną taktykę rozpraszania się i z kretesem pokonały wojsko.",
+      "comment": "Wyobraź sobie generała tłumaczącego przełożonym, że jego elitarny oddział został wymanewrowany przez bandę nielotów z małymi móżdżkami.",
+      "image_query": "funny running emu",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
     },
     {
-      "category": "MORSKIE AGENTKI",
-      "title": "🐙 Ośmiornica mimetyczna, czyli mistrzyni podwodnego teatru",
-      "summary": "Ta sprytna głowonóg potrafi w kilka sekund zmienić kształt, kolor i styl poruszania się, by perfekcyjnie udawać groźnego węża morskiego i odstraszyć wroga.",
-      "comment": "Gdyby w oceanie przyznawano Oscary za rolę drugoplanową, ten mięczak zgarnąłby całą kolekcję Statuetek.",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxMdlFta2RtYkdyc3dpNXRScTBIVFFHZXpqN01FcTdYTllyQURVQXdFdDhMVTg0NXBDYk9Mb2FfRkcyTXJVbnJVMWRtMDFGWVBydHBUUk92a2hfUjc2bnc5U2ZvQ2V3UV8tUjdqYWpwaVB0ZnpaSk5jTzdjMDR5YWxNejd2RGVsQQ?oc=5"
+      "category": "DZIWNE JEDZENIE",
+      "title": "🍅 Ketchup z apteki, czyli jak leczono żołądek w XIX wieku",
+      "summary": "W latach 30. XIX wieku ketchup pomidorowy nie leżał na półkach obok musztardy, lecz był sprzedawany w aptekach jako wybitny cud-lek na niestrawność, biegunkę i żółtaczkę.",
+      "comment": "Dzisiejsi lekarze wypisują recepty na drogie probiotyki, a kiedyś wystarczyło solidnie zalać pacjenta sosem do frytek.",
+      "image_query": "vintage ketchup bottle",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
     },
     {
-      "category": "DZIWADŁA NATURY",
-      "title": "🥊 Krewetka modliszkowa z ciosem silniejszym niż pocisk",
-      "summary": "Krewetka modliszkowa wyprowadza ciosy swoimi odnóżami z prędkością pocisku wystrzelonego z broni palnej, gotując wodę wokół siebie i rozbijając akwarystyczne szyby.",
-      "comment": "Zdecydowanie nie jest to najlepszy kandydat na towarzysza spokojnych kąpieli w akwarium.",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1kaFFMUE04Wk9fblF5SVpFcmZYMHVzNjJ6d1hkQXVBbVEzck1PdkJNM1FPYUhaODY2bjlNZzBsdFJQMnNnMUpOcHR3T0xrV0JiTUxVeVBsZHFjNlppdHc?oc=5"
+      "category": "ABSURDY ŚWIATA",
+      "title": "✈️ Francuz, który ze smakiem zjadł cały samolot pasażerski",
+      "summary": "Michel Lotito, znany jako Pan Wszystkożerny, miał tak dziwaczny układ trawienny, że zjadł na części całą awionetkę Cessna 150, popijając kawałki blachy wodą i olejem mineralnym.",
+      "comment": "Zajęło mu to dwa lata, co i tak jest lepszym wynikiem niż czas oczekiwania na niektóre bagaże na współczesnych lotniskach.",
+      "image_query": "man eating metal",
+      "link": "https://www.mentalfloss.com/random-facts/fun-facts-about-me-icebreaker-ideas?utm_source=RSS"
     },
     {
-      "category": "ABSURDY NAZEWNICTWA",
-      "title": "🩷 Różowy pancernik bajeczny: Rycerz w przesłodkiej zbroi",
-      "summary": "Niezwykle osobliwy różowy pancernik bajeczny wygląda dokładnie tak, jakby był połączeniem kretowiska z miniaturową puszystą maskotką w różowym pancerzu.",
-      "comment": "Biologowie nadający mu nazwę musieli bezpośrednio przed pracą obejrzeć cały maraton bajek o kucykach.",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPakJDeDFJLXFEa1hvd2lid0NuMEVTYkFIMXA5aEREYkdiVUQ1bHRXb1IzZzExOU42THlyeEs3cHBudUZQVUkxaG0xekIzeVZURVB2RDlRb1Z0RzAtR0h6M1VyMk1UYW00Z1lMWmRkRUdvQkt0OVJqMnk1dlNfeEh4aGE?oc=5"
-    },
-    {
-      "category": "SZALONA EWOLUCJA",
-      "title": "🐧 Pingwiny i ewolucyjny zwrot: Po co latać, skoro można nurkować?",
-      "summary": "Przodkowie pingwinów przodowali w ewolucyjnym oddawaniu skrzydeł, decydując się na zamianę latających piór na idealne płeetwy do nurkowania.",
-      "comment": "Ewolucja w praktyce: oddali bilety lotnicze i kupili dożywotni karnet na basen.",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQkNSbnhRcDdRLVJKM2hHUFByeW9YZW9TUVFTOGVjdks4NUxJUUlQSm9WWmpPbklSUFZpZEdZcUVhSGZKdjRxV1VlMmktTkg0blFhY1VCX0RWamlEQ0lCQlM4OHJaeklSQlR3ZDE0QWI3YnJPajcySC1yV25BZ0hUMmRqME1qbWc?oc=5"
-    },
-    {
-      "category": "PSI ŚWIAT",
-      "title": "🐩 Grzywacz chiński, czyli stylowy irokez i brak futra",
-      "summary": "Grzywacz chiński to rasa psa, która wygląda, jakby żyła według mody z lat 80. – ma bujną fryzurę na głowie i całkowicie łysą resztę ciała.",
-      "comment": "Pies, który oszczędza na szamponie do ciała, ale wydaje małą fortunę na odżywki do włosów.",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1PbEVvelAzNlpMWjloMm9IVDZMR0RkZXg5b1k1MTJCVV9MYW13LTZYdW03VFZkTTlueVJhMmU0Z3lJLV9xVEFYT0lBQkIxMEdUOEhVMFV6STJUUlo3SXQ1UFlqUnBWUHJwRS13cS05dGJPZGpjdVJER3pXTkY?oc=5"
+      "category": "ZWIERZAKI",
+      "title": "🐒 Kapucynki i ich szokujący patent na luksusowe perfumy",
+      "summary": "Samce małp kapucynek, chcąc maksymalnie zaimponować samicom podczas godów, dokładnie myją ręce i stopy we własnym moczu, wierząc, że ten aromat zadziała na płeć przeciwną.",
+      "comment": "W świecie małp to odpowiednik wylania na siebie połowy flakonu drogich perfum tuż przed pierwszą randką.",
+      "image_query": "funny capuchin monkey",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🛡️ Bieganie w zbroi, czyli obłęd starożytnych igrzysk",
-      "summary": "W starożytnej Grecji zawodnicy ścigali się w dyscyplinie hoplitodromos, sprinterskim biegu w pełnym rynsztunku bojowym ważącym ponad dwadzieścia kilogramów.",
-      "comment": "Idealny sport treningowy dla każdego, kto narzeka na wnikanie z siatkami zakupów na czwarte piętro bez windy.",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcTBqLWxfazhCNUZPbFVySFhIVF9pN3d0YWdOcldjbzVIRlFfeXAwX3N3NUpoWVNrbllCYk1Vb3J2SHMyU1FNeHdoOVIwSjcxYmxpOUpZcUFrSEQ4WkpQQ3Q3a0dIZDIyN1RtbDd4RGJqa0g4SE5sNWhta1lCc3dTUVVuQUN5M2FLZXl4YVF4YWZFQjQ?oc=5"
+      "title": "🥞 Boston pod lepką falą, czyli najsłodsza katastrofa w dziejach",
+      "summary": "W 1919 roku w Bostonie pękł gigantyczny zbiornik, zalewając całą dzielnicę falą gorącej, brązowej melasy o wysokości 8 metrów, która pędziła ulicami z prędkością 56 km/h.",
+      "comment": "Brzmi jak absolutne marzenie każdego fana naleśników, dopóki nie zdasz sobie sprawy, że trzeba było przed tym w panice uciekać.",
+      "image_query": "boston molasses flood",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
     },
     {
-      "category": "BEKA Z NAUKI",
-      "title": "🧊 Wombaty i ich idealnie sześcianowe niespodzianki",
-      "summary": "Wombat jest jedynym znanym zwierzęciem na świecie, którego jelita produkują odchody w kształcie idealnych, małych kostek.",
-      "comment": "Matka Natura postanowiła stworzyć własne klocki LEGO w najbardziej zaskakujący sposób.",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN1_Dd2t3S0hua3RYV04?oc=5"
+      "category": "ZWIERZAKI",
+      "title": "🦦 Wydry morskie i ich uroczy sposób na sen bez niespodzianek",
+      "summary": "Aby nie odpłynąć od siebie z silnym nurtem rzeki w trakcie głębokiej drzemki, wydry morskie zawsze śpią na plecach, mocno trzymając się za łapki ze swoimi bliskimi.",
+      "comment": "To uchodzi za najbardziej romantyczną rzecz na świecie, dopóki nie uświadomisz sobie, że robią to po prostu ze strachu przed przebudzeniem w innej strefie klimatycznej.",
+      "image_query": "otters holding hands",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1kaFFMUE04Wk9fblF5SVpFcmZYMHVzNjJ6d1hkQXVBbVEzck1PdkJNM1FPYUhaODY2bjlNZzBsdFJQMnNnMUpOcHR3T0xrV0JiTUxVeVBsZHFjNlppdHc?oc=5"
     },
     {
-      "category": "PREHISTORIA NA WESOŁO",
-      "title": "👾 Potwór z Tully: Prehistoryczny koszmar czy pomyłka natury?",
-      "summary": "Skamieniałości stwora zwanego Tullimonstrum do dziś wprawiają badaczy w osłupienie – zwierzę posiadało oczy na długich szypułkach i chwytak na kijku zamiast zwykłego pyska.",
-      "comment": "Wygląda jak szalony projekt z plasteliny wykonany przez trzylatka, który próbował narysować kosmitę.",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRUlGM2dhOUExT0JPQkZXaE52RElKOGFsMnlTREhYeVhUSkVrQVhBc3g0a1dpRGRULUE2eEVCY1BGRkdKc1haUXhJaFVPSU5yVV9VZ0N2RC1FaFVpdlpZJnlLNFRla3lJNlNmTW5NSmVHblAxMU9RaE5MZWFrM0FxTHFRakptRDRPQ0w5OVBrVk8?oc=5"
+      "category": "SZALONA HISTORIA",
+      "title": "🦷 Starożytny Rzym i mrożąca krew w żyłach pasta do zębów",
+      "summary": "Zanim wynaleziono urocze, miętowe żele, starożytni Rzymianie dbali o higienę jamy ustnej, szorując zęby miksturą ze sproszkowanych mózgów myszy i popiołu ze spalonych kopyt.",
+      "comment": "Nagle ta tania pasta z marketu o dziwnym smaku eukaliptusa przestaje wydawać się taka zła, prawda?",
+      "image_query": "ancient roman hygiene",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
+    },
+    {
+      "category": "SZALONA HISTORIA",
+      "title": "👑 Król Karol VI, który panicznie bał się, że się stłucze",
+      "summary": "Francuski władca Karol VI cierpiał na kuriozalne urojenia – był przekonany, że jest w całości zrobiony ze szkła. Z tego powodu nosił w ubraniach żelazne pręty i zakazał komukolwiek go dotykać.",
+      "comment": "A ty myślałeś, że chodzenie zimą po oblodzonym chodniku to duży stres – wyobraź sobie być szklanym królem na zatłoczonym dworze.",
+      "image_query": "medieval king crazy",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOTQ3em1zSEtZZEwyVkxRUU9GMUdCeDZvYk0yV2RaeFo4WUtzcEdJOFEtRjVCMzFjNmZ5cVcwZ2UydUE5d1dkYU5xTkZkS2VxN0VWNmhpQmxCLTgybDRBbXJ0NXJ4ekktNFVkTzJuTk5HZ2txbThsR28xbmtLdmxnazBkOXpFTnJnb0pkRDc4QzlZMjdZZEQ0UUZQSk80Y2NpV1hkbjdzWGR4R0dtVnN3TlRjcEo3OWYySVNvaUFaalgzRlk?oc=5"
+    },
+    {
+      "category": "ZWIERZAKI",
+      "title": "🐦 Ptasi kawalerowie, którzy budują wille z niebieskich śmieci",
+      "summary": "Samce z rodziny altanników uwodzą partnerki, budując spektakularne tunele z gałązek i obsesyjnie dekorując je wyłącznie niebieskimi przedmiotami, takimi jak jagody, szkiełka i plastikowe nakrętki.",
+      "comment": "Ci goście dosłownie budują domy z cudzych odpadków, a i tak wykazują w tym więcej inicjatywy niż wielu bywalców portali randkowych.",
+      "image_query": "bowerbird blue nest",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
     }
   ]
 }
