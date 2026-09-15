@@ -1531,5 +1531,124 @@
         "link": "https://www.sciencedaily.com/releases/2026/09/260913081913.htm"
       }
     ]
+  },
+  "2026-09-15_poranne": {
+    "date": "15 September 2026",
+    "time": "06:00",
+    "timestamp": "2026-09-15_06:00",
+    "items": [
+      {
+        "category": "ŚWIAT / BEZPIECZEŃSTWO",
+        "title": "🛰️ Kosmiczny wyścig zbrojeń staje się faktem",
+        "summary": "Amerykańskie wojsko po raz pierwszy oficjalnie potwierdziło rozmieszczenie systemów uzbrojenia na orbicie okołoziemskiej.",
+        "comment": "To przełomowy moment w historii wojskowości, który może wymusić zmiany w międzynarodowych traktatach o przestrzeni kosmicznej.",
+        "image_query": "space satellite military",
+        "link": "https://www.bbc.co.uk/news/articles/ck790xg41ygro?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "GEOPOLITYKA / EUROPA",
+        "title": "🛩️ NATO przechwytuje drona nad Litwą",
+        "summary": "Myśliwce Sojuszu Północnoatlantyckiego zestrzeliły bezzałogowiec, który nielegalnie naruszył przestrzeń powietrzną Litwy.",
+        "comment": "Testowanie granic i czasów reakcji obrony przeciwlotniczej wschodniej flanki NATO wciąż przybiera na sile.",
+        "image_query": "military fighter jet",
+        "link": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "BLISKI WSCHÓD / GEOPOLITYKA",
+        "title": "⚔️ Próżnia władzy nakręca rewoltę Huti",
+        "summary": "Analitycy wskazują, że brak stabilnych ośrodków władzy w świecie arabskim pozwala bojówkom Huti na eskalację napięć w regionie.",
+        "comment": "Niestabilność polityczna na Bliskim Wschodzie tradycyjnie sprzyja ugrupowaniom, które potrafią wykorzystać chaos do realizacji własnych interesów.",
+        "image_query": "middle east conflict",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOY0xoQzNuN2ljUm1zQXdUc2I2My1HREQyWjFFZTRUNEpyV0FnX1BiSkUyeDRuUFpfWUlPX041VEprX3lrdXFHVmV5allxOGRrdU1Fb3lZcWc4Z0xzUS00Z3RZZzQ1UE1BX05DZVRxMWl2S0VZcGJES1VaRGR4SVllWHk2b09CZlNiNE5N?oc=5"
+      },
+      {
+        "category": "ŚWIAT / KLIMAT",
+        "title": "🏝️ Pacyfik monetyzuje geopolitykę w walce z klimatem",
+        "summary": "Kraje wyspiarskie Pacyfiku próbują wykorzystać globalną rywalizację mocarstw, aby zdobyć fundusze na ratunek przed rosnącym poziomem oceanów.",
+        "comment": "Mistrzowskie rozegranie dyplomatyczne – przekucie strategicznego położenia na twarde środki ratujące ich państwa przed fizycznym zniknięciem.",
+        "image_query": "tropical island storm",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      },
+      {
+        "category": "GOSPODARKA / ŁAŃCUCHY DOSTAW",
+        "title": "🚢 Chińskie porty rosną w siłę na globalnych przetasowaniach",
+        "summary": "Nowe rankingi światowych portów kontenerowych pokazują, że Chiny umacniają swoją pozycję, czerpiąc zyski z geopolitycznych zmian w łańcuchach dostaw.",
+        "comment": "Mimo prób przenoszenia produkcji poza Państwo Środka, chińska infrastruktura logistyczna wciąż pozostaje fundamentem globalnego handlu.",
+        "image_query": "container ship port",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNal84T09hM1JnYVVOM0QzXzZ5WUhTRk9BTUFpQUluUUt0RVBWNGZjTnNTS2Nfenp4TTI2YWV1NnYzTjU3Tkd6YjUxUUhlWk5IcDhqd0hfdUh0OV8zQ0FOaG94dGZXRlQzNHl5VnA2RF9DSUc0ZnIyNC0yMTJTLVp0bm1LWml6aFJjUTRRLWtqcVNNcW5GeGU5UF8xMG9pS0FJekE0Z01n?oc=5"
+      },
+      {
+        "category": "USA / POLITYKA",
+        "title": "⚖️ Sąd Najwyższy USA blokuje zmiany w głosowaniu korespondencyjnym",
+        "summary": "Amerykański Sąd Najwyższy powstrzymał inicjatywę Donalda Trumpa mającą na celu wprowadzenie prawnych restrykcji dotyczących kart wyborczych.",
+        "comment": "Decyzja ta ma kolosalne znaczenie dla nadchodzących wyborów, w których frekwencja zależy w ogromnej mierze od elastyczności form oddawania głosu.",
+        "image_query": "mail ballot box",
+        "link": "https://www.bbc.co.uk/news/articles/c5yjpdy4gjlo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "RYNKI / GOSPODARKA",
+        "title": "📈 Euforia wokół debiutu giełdowego Tata Group",
+        "summary": "Akcje spółek z indyjskiego konglomeratu Tata Group notują silne wzrosty na fali rosnącego optymizmu przed planowanym debiutem spółki holdingowej.",
+        "comment": "Rynek indyjski wyrasta na jednego z najbardziej perspektywicznych graczy globalnych, skutecznie przyciągając głodnych nowych rynków inwestorów.",
+        "image_query": "stock market display",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/tata-group-stocks-rise-on-optimism-over-holding-company-ipo"
+      },
+      {
+        "category": "AZJA / GOSPODARKA",
+        "title": "💱 Słaby bat ratuje tajlandzką gospodarkę",
+        "summary": "Przedstawiciele rządu Tajlandii informują, że osłabienie krajowej waluty przynosi wymierne korzyści dla perspektyw eksportowych oraz turystyki.",
+        "comment": "Podręcznikowy przykład ekonomii – tańsza waluta potrafi błyskawicznie ożywić handel i przyciągnąć zagraniczny kapitał, stając się poduszką dla gospodarki.",
+        "image_query": "thai currency travel",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-15/weaker-baht-boosts-thai-export-tourism-prospects-official-says"
+      },
+      {
+        "category": "BIZNES / TECHNOLOGIE",
+        "title": "📸 Gigantyczne zakupy OpenAI za 300 milionów dolarów",
+        "summary": "Firma OpenAI przejęła startup Glass Imaging, specjalizujący się w technologiach nowoczesnych aparatów w smartfonach.",
+        "comment": "Sztuczna inteligencja na dobre wychodzi z tekstu – następnym krokiem deweloperów jest przejęcie interfejsu wizualnego naszych telefonów.",
+        "image_query": "smartphone camera lens",
+        "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/"
+      },
+      {
+        "category": "POLSKA / BEZPIECZEŃSTWO",
+        "title": "🛡️ Były szef GROM uświadamia o realiach współczesnego konfliktu",
+        "summary": "Według byłego dowódcy elitarnej jednostki wojskowej, ewentualna wojna nie będzie polegała na bombardowaniach, lecz przyjmie formę głęboko hybrydową.",
+        "comment": "Społeczeństwo często tkwi w militarnych schematach z XX wieku, tymczasem paraliż infrastruktury krytycznej to dziś potężniejsza broń niż konwencjonalny arsenał.",
+        "image_query": "special forces soldier",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQk9feTNidU8wdnk3OEc1a1BacXE2ekY4SHR1Q3ByNGRycHRpcjJWODVoTVh5ekd6TW5LTVpnNTg4X0Z5UW5hSWlnMlE0ZTMyWkpOUDZ6LVRIcllnNTlPblhWZUtYY2tiMlRPTHo3MFlFemFjU1JkMnlKLUVkRXlPY2VmZmZ2bmwxZWQ5cWpJaTE5d1BsS3dhR242eGd4dHJpaWd5NzJBY0U5OWFTQXU3TGVNZ1hjRFJsNWJfd0lnalI5Q1U?oc=5"
+      },
+      {
+        "category": "CIEKAWOSTKA / NATURA",
+        "title": "🐕 Epicka wędrówka miłosna na dystansie 2500 mil",
+        "summary": "Dzikie psy w Afryce ustanowiły niezwykły rekord, przemierzając całą Zambię w wytrwałym poszukiwaniu odpowiedniego partnera do rozrodu.",
+        "comment": "Instynkt przetrwania gatunku potrafi pchnąć dziką naturę do fizycznych wyczynów, o których najlepsi ludzcy maratończycy mogą tylko pomarzyć.",
+        "image_query": "african wild dog",
+        "link": "https://www.bbc.co.uk/news/articles/cy459y5y9yxo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "CIEKAWOSTKA / HISTORIA",
+        "title": "💣 Tykająca bomba z czasów I wojny światowej na dnie morza",
+        "summary": "Niemiecki okręt podwodny zatopiony w 1917 roku nadal stanowi poważne zagrożenie, powoli uwalniając do oceanu toksyczne TNT.",
+        "comment": "Historia lubi o sobie przypominać – stare, niemal zapomniane konflikty zbrojne nadal potrafią skutecznie zatruwać nasze dzisiejsze środowisko naturalne.",
+        "image_query": "underwater submarine wreck",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260913081919.htm"
+      },
+      {
+        "category": "CIEKAWOSTKA / NAUKA",
+        "title": "🚀 Rewolucyjny silnik napędzany... rzadkim powietrzem",
+        "summary": "Inżynierowie opracowali nowatorski projekt napędu plazmowego, który w wyższych partiach atmosfery nie potrzebuje paliwa, zadowalając się otaczającym gazem.",
+        "comment": "Innowacja o kolosalnym znaczeniu, która może znacząco odchudzić satelity orbitalne, obniżając koszty misji i rewolucjonizując przemysł kosmiczny.",
+        "image_query": "plasma engine thruster",
+        "link": "https://phys.org/news/2026-09-plasma-fuels-thin-air.html"
+      },
+      {
+        "category": "CIEKAWOSTKA / INTERNET",
+        "title": "🤖 Armia botów zalewa media społecznościowe cyfrowym szumem",
+        "summary": "Zautomatyzowane konta AI o nazwach takich jak \"Timmy\", \"Ren\" czy \"Jackie\" masowo produkują i zalewają internet całkowicie wygenerowanym przez maszynę spamem.",
+        "comment": "Zbliżamy się do ery \"martwego internetu\", gdzie spora część wirtualnej dyskusji to wyłącznie bezrefleksyjny monolog między algorytmami.",
+        "image_query": "robot typing computer",
+        "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/"
+      }
+    ]
   }
 }
