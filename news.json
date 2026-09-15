@@ -1,119 +1,119 @@
 {
   "date": "15 September 2026",
-  "time": "06:00",
-  "timestamp": "2026-09-15_06:00",
+  "time": "16:03",
+  "timestamp": "2026-09-15_16:03",
   "items": [
     {
       "category": "ŚWIAT / BEZPIECZEŃSTWO",
-      "title": "🛰️ Kosmiczny wyścig zbrojeń staje się faktem",
-      "summary": "Amerykańskie wojsko po raz pierwszy oficjalnie potwierdziło rozmieszczenie systemów uzbrojenia na orbicie okołoziemskiej.",
-      "comment": "To przełomowy moment w historii wojskowości, który może wymusić zmiany w międzynarodowych traktatach o przestrzeni kosmicznej.",
-      "image_query": "space satellite military",
-      "link": "https://www.bbc.co.uk/news/articles/ck790xg41ygro?at_medium=RSS&at_campaign=rss"
+      "title": "🚆 Sabotaż paraliżuje holenderską kolej",
+      "summary": "Poważne zakłócenia na niderlandzkiej sieci kolejowej zostały wstępnie zidentyfikowane jako efekt celowego sabotażu. Incydent wywołał chaos komunikacyjny w całym kraju.",
+      "comment": "Infrastruktura krytyczna w Europie staje się coraz częstszym celem ataków, co zmusza rządy do gwałtownej rewizji procedur bezpieczeństwa.",
+      "image_query": "railway tracks disruption",
+      "link": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GEOPOLITYKA / EUROPA",
-      "title": "🛩️ NATO przechwytuje drona nad Litwą",
-      "summary": "Myśliwce Sojuszu Północnoatlantyckiego zestrzeliły bezzałogowiec, który nielegalnie naruszył przestrzeń powietrzną Litwy.",
-      "comment": "Testowanie granic i czasów reakcji obrony przeciwlotniczej wschodniej flanki NATO wciąż przybiera na sile.",
-      "image_query": "military fighter jet",
-      "link": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss"
+      "category": "GEOPOLITYKA",
+      "title": "🌍 Napięcia na linii Iran-USA eskalują",
+      "summary": "Konflikt na Bliskim Wschodzie zatacza coraz szersze kręgi, a narastające tarcia między Waszyngtonem a Teheranem stają się kluczowym ryzykiem geopolitycznym tego miesiąca.",
+      "comment": "Rynki z niepokojem patrzą na region, obawiając się, że każda iskra może doprowadzić do niekontrolowanego wybuchu i załamania łańcuchów dostaw.",
+      "image_query": "middle east diplomacy",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5"
     },
     {
-      "category": "BLISKI WSCHÓD / GEOPOLITYKA",
-      "title": "⚔️ Próżnia władzy nakręca rewoltę Huti",
-      "summary": "Analitycy wskazują, że brak stabilnych ośrodków władzy w świecie arabskim pozwala bojówkom Huti na eskalację napięć w regionie.",
-      "comment": "Niestabilność polityczna na Bliskim Wschodzie tradycyjnie sprzyja ugrupowaniom, które potrafią wykorzystać chaos do realizacji własnych interesów.",
-      "image_query": "middle east conflict",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOY0xoQzNuN2ljUm1zQXdUc2I2My1HREQyWjFFZTRUNEpyV0FnX1BiSkUyeDRuUFpfWUlPX041VEprX3lrdXFHVmV5allxOGRrdU1Fb3lZcWc4Z0xzUS00Z3RZZzQ1UE1BX05DZVRxMWl2S0VZcGJES1VaRGR4SVllWHk2b09CZlNiNE5N?oc=5"
+      "category": "RYNKI FINANSOWE",
+      "title": "📉 Wall Street w dół przez rekordowe rentowności",
+      "summary": "Amerykańskie giełdy odnotowały wyraźne spadki po tym, jak rentowność 10-letnich obligacji skarbowych USA osiągnęła najwyższy poziom od 2007 roku.",
+      "comment": "Kapitał ucieka z ryzykownych aktywów do bezpiecznych obligacji, co stanowi jasny sygnał, że era taniego pieniądza definitywnie się zakończyła.",
+      "image_query": "red stock chart",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-15/us-stock-futures-drop-as-10-year-treasury-yield-passes-5"
     },
     {
-      "category": "ŚWIAT / KLIMAT",
-      "title": "🏝️ Pacyfik monetyzuje geopolitykę w walce z klimatem",
-      "summary": "Kraje wyspiarskie Pacyfiku próbują wykorzystać globalną rywalizację mocarstw, aby zdobyć fundusze na ratunek przed rosnącym poziomem oceanów.",
-      "comment": "Mistrzowskie rozegranie dyplomatyczne – przekucie strategicznego położenia na twarde środki ratujące ich państwa przed fizycznym zniknięciem.",
-      "image_query": "tropical island storm",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      "category": "GOSPODARKA / SUROWCE",
+      "title": "🚢 Gazowy odwrót od Cieśniny Ormuz",
+      "summary": "Nabywcy skroplonego gazu ziemnego (LNG) masowo zwracają się ku dostawcom z USA, aby zabezpieczyć się przed ewentualną blokadą kluczowego szlaku handlowego na Bliskim Wschodzie.",
+      "comment": "To strategiczny ruch, który z jednej strony marginalizuje ryzyko, a z drugiej utrwala pozycję Stanów Zjednoczonych jako globalnego mocarstwa energetycznego.",
+      "image_query": "lng cargo ship",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-15/lng-buyers-look-to-us-to-hedge-future-risk-of-hormuz-disruption"
     },
     {
-      "category": "GOSPODARKA / ŁAŃCUCHY DOSTAW",
-      "title": "🚢 Chińskie porty rosną w siłę na globalnych przetasowaniach",
-      "summary": "Nowe rankingi światowych portów kontenerowych pokazują, że Chiny umacniają swoją pozycję, czerpiąc zyski z geopolitycznych zmian w łańcuchach dostaw.",
-      "comment": "Mimo prób przenoszenia produkcji poza Państwo Środka, chińska infrastruktura logistyczna wciąż pozostaje fundamentem globalnego handlu.",
-      "image_query": "container ship port",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNal84T09hM1JnYVVOM0QzXzZ5WUhTRk9BTUFpQUluUUt0RVBWNGZjTnNTS2Nfenp4TTI2YWV1NnYzTjU3Tkd6YjUxUUhlWk5IcDhqd0hfdUh0OV8zQ0FOaG94dGZXRlQzNHl5VnA2RF9DSUc0ZnIyNC0yMTJTLVp0bm1LWml6aFJjUTRRLWtqcVNNcW5GeGU5UF8xMG9pS0FJekE0Z01n?oc=5"
+      "category": "ŚWIAT / GOSPODARKA",
+      "title": "🛢️ Rosja zwiększa eksport ropy w cieniu wojny",
+      "summary": "Zawirowania zbrojne na Bliskim Wschodzie wywindowały ceny surowców, co skrzętnie wykorzystuje Moskwa, dynamicznie zwiększając wolumen eksportowanej ropy.",
+      "comment": "Paradoksalnie, im więcej chaosu u zachodnich sojuszników, tym łatwiej rosyjskiej gospodarce łatać luki w budżecie spowodowane sankcjami.",
+      "image_query": "oil pump jack",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-15/russia-boosts-oil-exports-as-middle-east-war-sends-prices-soaring"
     },
     {
-      "category": "USA / POLITYKA",
-      "title": "⚖️ Sąd Najwyższy USA blokuje zmiany w głosowaniu korespondencyjnym",
-      "summary": "Amerykański Sąd Najwyższy powstrzymał inicjatywę Donalda Trumpa mającą na celu wprowadzenie prawnych restrykcji dotyczących kart wyborczych.",
-      "comment": "Decyzja ta ma kolosalne znaczenie dla nadchodzących wyborów, w których frekwencja zależy w ogromnej mierze od elastyczności form oddawania głosu.",
-      "image_query": "mail ballot box",
-      "link": "https://www.bbc.co.uk/news/articles/c5yjpdy4gjlo?at_medium=RSS&at_campaign=rss"
+      "category": "ŚWIAT / POLITYKA",
+      "title": "🇺🇦 Polityczne trzęsienie ziemi w ukraińskich strukturach",
+      "summary": "Niespodziewane przetasowania na szczytach władzy w Kijowie wywołała sytuacja, w której szef prokuratury nagle opuścił Ukrainę, potęgując lawinę spekulacji.",
+      "comment": "Zawirowania wewnętrzne w trakcie toczącego się konfliktu mogą podkopać kruche zaufanie zachodnich sojuszników, co jest ryzykiem, na które Kijów nie może sobie pozwolić.",
+      "image_query": "kiev government building",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWwyT2ZfU0dUOVNIUE1mNDJsM1N1QkRUNVd1aUZIS0kyUzVkWWRxcV9laFZlaTI2eldQeHRaTWVuLWVqazdaY2VGa0diUjhnNEVvUFlfODlDSjlYbnZjZnFWTThfM3c0OWJfM1kxM0VCZ2NJb1pvbFFxeTJLcWFfcmRMUFRubHFrUlB6YmRPSWNXTmFsNWZaTF9vQmtBRFZvX2M0?oc=5"
     },
     {
-      "category": "RYNKI / GOSPODARKA",
-      "title": "📈 Euforia wokół debiutu giełdowego Tata Group",
-      "summary": "Akcje spółek z indyjskiego konglomeratu Tata Group notują silne wzrosty na fali rosnącego optymizmu przed planowanym debiutem spółki holdingowej.",
-      "comment": "Rynek indyjski wyrasta na jednego z najbardziej perspektywicznych graczy globalnych, skutecznie przyciągając głodnych nowych rynków inwestorów.",
-      "image_query": "stock market display",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-15/tata-group-stocks-rise-on-optimism-over-holding-company-ipo"
+      "category": "TECHNOLOGIE / BIZNES",
+      "title": "🛡️ Wirtualna obroża na nieposłuszną sztuczną inteligencję",
+      "summary": "Byli kluczowi pracownicy firm zajmujących się sztuczną inteligencją opracowali mechanizm, który ma skutecznie kontrolować 'zbuntowane' agenty AI i powstrzymywać je przed działaniem na szkodę systemów.",
+      "comment": "Wyścig zbrojeń w technologiach cyfrowych trwa, ale to pozytywny sygnał, że giganci zaczynają inwestować w hamulce na równi z silnikiem napędowym.",
+      "image_query": "artificial intelligence lock",
+      "link": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/"
     },
     {
-      "category": "AZJA / GOSPODARKA",
-      "title": "💱 Słaby bat ratuje tajlandzką gospodarkę",
-      "summary": "Przedstawiciele rządu Tajlandii informują, że osłabienie krajowej waluty przynosi wymierne korzyści dla perspektyw eksportowych oraz turystyki.",
-      "comment": "Podręcznikowy przykład ekonomii – tańsza waluta potrafi błyskawicznie ożywić handel i przyciągnąć zagraniczny kapitał, stając się poduszką dla gospodarki.",
-      "image_query": "thai currency travel",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-15/weaker-baht-boosts-thai-export-tourism-prospects-official-says"
+      "category": "GOSPODARKA / STARTUPY",
+      "title": "🦄 Włoski jednorożec na fali fizycznej sztucznej inteligencji",
+      "summary": "Startup Exein błyskawicznie dołączył do elitarnego grona jednorożców, rozwijając zaawansowane systemy AI integrowane bezpośrednio ze sprzętem i fizycznymi maszynami.",
+      "comment": "Koniec z AI zamkniętym wyłącznie w wirtualnej chmurze – inteligentne algorytmy wkraczają na hale produkcyjne i do sprzętów codziennego użytku.",
+      "image_query": "robotics factory ai",
+      "link": "https://techcrunch.com/2026/09/15/new-italian-unicorn-exein-rides-the-physical-ai-wave/"
     },
     {
-      "category": "BIZNES / TECHNOLOGIE",
-      "title": "📸 Gigantyczne zakupy OpenAI za 300 milionów dolarów",
-      "summary": "Firma OpenAI przejęła startup Glass Imaging, specjalizujący się w technologiach nowoczesnych aparatów w smartfonach.",
-      "comment": "Sztuczna inteligencja na dobre wychodzi z tekstu – następnym krokiem deweloperów jest przejęcie interfejsu wizualnego naszych telefonów.",
-      "image_query": "smartphone camera lens",
-      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/"
+      "category": "BIZNES / GEOPOLITYKA",
+      "title": "⚽ Mundial w kleszczach wielkiej polityki",
+      "summary": "Analizy jednoznacznie wykazują, że organizacja i przebieg piłkarskich mistrzostw świata coraz mocniej splatają się z geopolityką, rzutując na interesy globalnych korporacji.",
+      "comment": "Sportwashing ewoluował – to już nie tylko chęć ocieplenia wizerunku, ale twarde narzędzie negocjacyjne na arenie międzynarodowej, gdzie gra toczy się o lukratywne kontrakty.",
+      "image_query": "soccer ball money",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbUdTcmh1bHZjdGZoY1JtRHJTMFdCckRsb1VKR0UtM1FBdGNvbFV3OTNqc1JTd2J1ejZZNElGNlVFUjUxVmxfempZcnVVUFdhU21hMUlQV0E0TjE4WEpuY282SmlCcGRTYWpvNGFMNGt5VE9wRU0zbnBtQUp1ekJtamRzQ2FFc2pqd29JMWJtSmlKTHJlVmZTRDI5cDRsY1VRR01MaFk0X2ktbzhSWGNLRFFNTTJoSGhJNXpUXw?oc=5"
     },
     {
-      "category": "POLSKA / BEZPIECZEŃSTWO",
-      "title": "🛡️ Były szef GROM uświadamia o realiach współczesnego konfliktu",
-      "summary": "Według byłego dowódcy elitarnej jednostki wojskowej, ewentualna wojna nie będzie polegała na bombardowaniach, lecz przyjmie formę głęboko hybrydową.",
-      "comment": "Społeczeństwo często tkwi w militarnych schematach z XX wieku, tymczasem paraliż infrastruktury krytycznej to dziś potężniejsza broń niż konwencjonalny arsenał.",
-      "image_query": "special forces soldier",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQk9feTNidU8wdnk3OEc1a1BacXE2ekY4SHR1Q3ByNGRycHRpcjJWODVoTVh5ekd6TW5LTVpnNTg4X0Z5UW5hSWlnMlE0ZTMyWkpOUDZ6LVRIcllnNTlPblhWZUtYY2tiMlRPTHo3MFlFemFjU1JkMnlKLUVkRXlPY2VmZmZ2bmwxZWQ5cWpJaTE5d1BsS3dhR242eGd4dHJpaWd5NzJBY0U5OWFTQXU3TGVNZ1hjRFJsNWJfd0lnalI5Q1U?oc=5"
+      "category": "NAUKA / KOSMOS",
+      "title": "🚀 Kosmiczne wiatry 100 razy potężniejsze niż sądzono",
+      "summary": "Najnowsze badania udowodniły, że wiatry generowane przez supermasywne czarne dziury uwalniają energię znacznie przewyższającą dotychczasowe szacunki astrofizyków.",
+      "comment": "Czarne dziury okazały się nie tylko potężnymi pożeraczami materii, ale również kosmicznymi wichrzycielami, które kształtują rozwój całych galaktyk.",
+      "image_query": "supermassive black hole",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm"
     },
     {
-      "category": "CIEKAWOSTKA / NATURA",
-      "title": "🐕 Epicka wędrówka miłosna na dystansie 2500 mil",
-      "summary": "Dzikie psy w Afryce ustanowiły niezwykły rekord, przemierzając całą Zambię w wytrwałym poszukiwaniu odpowiedniego partnera do rozrodu.",
-      "comment": "Instynkt przetrwania gatunku potrafi pchnąć dziką naturę do fizycznych wyczynów, o których najlepsi ludzcy maratończycy mogą tylko pomarzyć.",
-      "image_query": "african wild dog",
-      "link": "https://www.bbc.co.uk/news/articles/cy459y5y9yxo?at_medium=RSS&at_campaign=rss"
+      "category": "CIEKAWOSTKA / MEDYCYNA",
+      "title": "🧠 Ukryte obwody mózgu ratują starzejący się umysł",
+      "summary": "Naukowcy odkryli nieznane wcześniej połączenia nerwowe, które potrafią przejąć funkcje poznawcze i utrzymać bystrość umysłu nawet, gdy naturalna istota szara ulega zanikowi.",
+      "comment": "Nasz organizm udowadnia, że posiada system z wbudowaną zaawansowaną kopią zapasową – ewolucja stworzyła genialny plan awaryjny na wypadek starzenia.",
+      "image_query": "glowing brain synapses",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260913081921.htm"
     },
     {
-      "category": "CIEKAWOSTKA / HISTORIA",
-      "title": "💣 Tykająca bomba z czasów I wojny światowej na dnie morza",
-      "summary": "Niemiecki okręt podwodny zatopiony w 1917 roku nadal stanowi poważne zagrożenie, powoli uwalniając do oceanu toksyczne TNT.",
-      "comment": "Historia lubi o sobie przypominać – stare, niemal zapomniane konflikty zbrojne nadal potrafią skutecznie zatruwać nasze dzisiejsze środowisko naturalne.",
-      "image_query": "underwater submarine wreck",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260913081919.htm"
+      "category": "CIEKAWOSTKA / PRZYRODA",
+      "title": "🐝 Wybredne mrówki inwazyjne gustują w gotowanej wołowinie",
+      "summary": "Ku zaskoczeniu biologów, małe mrówki ogniste ignorują tradycyjne przynęty z tuńczykiem, wybierając zamiast tego zwykłe nasiona i... starannie ugotowaną wołowinę.",
+      "comment": "Ewolucyjne adaptacje mrówek przybierają komiczne formy – owady stają się powoli ekspertami kulinarnymi, wymuszając zmianę taktyki badawczej.",
+      "image_query": "fire ants macro",
+      "link": "https://phys.org/news/2026-09-invasive-ants-cooked-beef-seeds.html"
     },
     {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🚀 Rewolucyjny silnik napędzany... rzadkim powietrzem",
-      "summary": "Inżynierowie opracowali nowatorski projekt napędu plazmowego, który w wyższych partiach atmosfery nie potrzebuje paliwa, zadowalając się otaczającym gazem.",
-      "comment": "Innowacja o kolosalnym znaczeniu, która może znacząco odchudzić satelity orbitalne, obniżając koszty misji i rewolucjonizując przemysł kosmiczny.",
-      "image_query": "plasma engine thruster",
-      "link": "https://phys.org/news/2026-09-plasma-fuels-thin-air.html"
+      "category": "LIFESTYLE / PODRÓŻE",
+      "title": "🍸 Salonik VIP na lotnisku za jedyne 5 tysięcy dolarów",
+      "summary": "Rozwija się nowy trend dla bogatych pasażerów lotów komercyjnych – luksusowe, w pełni prywatne saloniki oczekiwania, których jednorazowy wynajem kosztuje fortunę.",
+      "comment": "Granica między prestiżem a absolutnym absurdem zaciera się, jednak chętnych do przepłacania za iluzję samotności w podróży wcale nie brakuje.",
+      "image_query": "luxury airport lounge",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-15/the-new-airport-luxury-is-a-5k-private-lounge-video"
     },
     {
-      "category": "CIEKAWOSTKA / INTERNET",
-      "title": "🤖 Armia botów zalewa media społecznościowe cyfrowym szumem",
-      "summary": "Zautomatyzowane konta AI o nazwach takich jak \"Timmy\", \"Ren\" czy \"Jackie\" masowo produkują i zalewają internet całkowicie wygenerowanym przez maszynę spamem.",
-      "comment": "Zbliżamy się do ery \"martwego internetu\", gdzie spora część wirtualnej dyskusji to wyłącznie bezrefleksyjny monolog między algorytmami.",
-      "image_query": "robot typing computer",
-      "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/"
+      "category": "CIEKAWOSTKA / TECHNOLOGIE",
+      "title": "🤖 Spotify ratuje statystyki przed muzyką dla dzieci",
+      "summary": "Najpopularniejsza platforma streamingowa w końcu umożliwiła rodzicom wykluczenie kołysanek i piosenek dziecięcych z muzycznych podsumowań roku oraz algorytmów rekomendacji.",
+      "comment": "Koniec wstydu przed znajomymi – w dorocznym zestawieniu 'Wrapped' obok ulubionych hitów z list przebojów nie będzie już wyskakiwał utwór o Śwince Peppie.",
+      "image_query": "smartphone music app",
+      "link": "https://techcrunch.com/2026/09/15/spotify-finally-lets-parents-exclude-kids-music-from-wrapped-and-recommendations/"
     }
   ]
 }
