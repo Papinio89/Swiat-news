@@ -1769,5 +1769,132 @@
         "link": "https://techcrunch.com/2026/09/15/spotify-finally-lets-parents-exclude-kids-music-from-wrapped-and-recommendations/"
       }
     ]
+  },
+  "2026-09-16_poranne": {
+    "date": "16 September 2026",
+    "time": "05:56",
+    "timestamp": "2026-09-16_05:56",
+    "items": [
+      {
+        "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
+        "title": "🚁 Rosyjski okręt strzela flarami w duński śmigłowiec",
+        "summary": "Duńskie siły zbrojne poinformowały o incydencie na Bałtyku, gdzie rosyjska jednostka wojskowa użyła flar przeciwko ich helikopterowi patrolowemu.",
+        "comment": "Morze Bałtyckie staje się coraz bardziej nerwowym akwenem, gdzie testowanie granic cierpliwości i procedur NATO to ze strony Rosji niemal codzienność.",
+        "image_query": "military helicopter flares",
+        "link": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "GOSPODARKA / SUROWCE",
+        "title": "🧊 Arktyka nowym polem bitwy o minerały krytyczne",
+        "summary": "Europa coraz mocniej zwraca uwagę na Arktykę w obliczu rosnącej konkurencji z Rosją oraz niepewności politycznej w USA, próbując zabezpieczyć łańcuchy dostaw surowców.",
+        "comment": "Kto kontroluje topniejące lody Północy, ten kontroluje zieloną transformację – Arktyka z lodowego pustkowia zamienia się w najważniejszy geopolityczny skarbiec dekady.",
+        "image_query": "arctic icebreaker ship",
+        "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOVjRRWEVxeXBjZDJldnNKYk41T1ZqdnRTU3dpRXlGMW9lS3gzczhoUWJCMzlsWmI1UWZjZk5NeHRtdWtKZ25PUGxzODFWZURDZ3pWVHltN3NKWlU0YUJRQ1RYZlVPRE01WVNZMW44WGZXOUdNM1ZIRDZoZDFnOEVpVWRBTjI2ZUlMY1dpV2FXUFpWcFJtckNZX1FqWDN6elE3dEg3R0JRcWJDUFdmdEZpQ0dFWk9xQlVOek0tdVVSXzBia2p1VkRaRFJ3SzJhMng0ZnJsN2lST2VfUWpjdE5qMDlkS3Y0Rm5lSFZrVy1VOXA3VUFpV3ozYURKVmpZYVlrWEpjRUNya1lZVndC0gGSAkFVX3lxTE9jR1dONHRmY1Z0Mkt6RmZxWU02OUJ1SzRESi1BOXQ3UzNPZlFtSmxjTnNEbm9ScmVKRV9zUl9zQjQtYW1UYnRUamsyVnV2Ry04akozYlZwWERua20xTFEtS0hyd2hoa3lzSkF1RWxNQXJPUFdpaGUxVFo4MnV2aENrbGVla0RxTWhQY2ZEUkJvZHJZRXROZzhDU1ZiWF9oNEo3QzZubnU3c2ljWl9EbmtScEpSMXZON3JSekpEY045aXpBTlE0N2ZFWGtKa0hqUnBuR3ZsUmVoSFRlY2hLcHVSZnpqNWN0NjQxaWhvQ3RKWk9IUllmemUzQ2NxTkZQeFFCVU13cWpLYWVqUU5ldFktUFE?oc=5"
+      },
+      {
+        "category": "ŚWIAT / SPOŁECZEŃSTWO",
+        "title": "🇿🇦 RPA w szoku po znalezieniu kolejnych ofiar",
+        "summary": "Prezydent Republiki Południowej Afryki zapowiada stanowcze działania po makabrycznym odkryciu ciał kolejnych zamordowanych kobiet na przedmieściach Johannesburga.",
+        "comment": "Fala przemocy wobec kobiet w RPA osiąga krytyczny poziom, stając się jednym z głównych wyzwań społecznych i politycznych dla tamtejszych władz.",
+        "image_query": "police tape johannesburg",
+        "link": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "GOSPODARKA / RYNKI",
+        "title": "📈 Złe wieści z USA: inflacja wymusi podwyżki stóp",
+        "summary": "Analitycy JPMorgan ostrzegają, że najnowsze, niekorzystne odczyty inflacyjne oznaczają wysokie prawdopodobieństwo powrotu do podwyżek stóp procentowych.",
+        "comment": "Marzenia rynków o tanim i łatwym pieniądzu znów oddalają się w czasie. Walka z uporczywą drożyzną okazuje się maratonem, a nie sprintem.",
+        "image_query": "stock market chart",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-16/inflation-data-points-to-rate-hike-jpmorgan-s-rasid-video"
+      },
+      {
+        "category": "GOSPODARKA / TECHNOLOGIE",
+        "title": "🔋 Bateryjny gigant CATL traci 10% na giełdzie",
+        "summary": "Akcje chińskiego lidera w produkcji akumulatorów do aut elektrycznych gwałtownie spadły w obliczu rosnących obaw o przyszłe zamówienia i globalny popyt.",
+        "comment": "Nawet najwięksi wygrani pierwszej fazy zielonej transformacji łapią zadyszkę. Rynek samochodów elektrycznych przechodzi właśnie bolesną weryfikację.",
+        "image_query": "ev battery manufacturing",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/catl-shares-drop-10-in-two-days-as-outlook-worries-mount"
+      },
+      {
+        "category": "ŚWIAT / DYPLOMACJA",
+        "title": "🤝 Ciche przygotowania do szczytu Trump-Xi",
+        "summary": "Kluczowy wysłannik z USA ma się spotkać z chińskim wicepremierem He Lifengiem, aby przygotować grunt gospodarczy pod potencjalne spotkanie przywódców obu mocarstw.",
+        "comment": "Zanim giganci usiądą do stołu w świetle fleszy, ich zaufani ludzie muszą w kuluarach rozdysponować najtrudniejsze karty. Gospodarka to w tej grze potężna broń.",
+        "image_query": "diplomacy handshake flags",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-16/bessent-to-meet-he-lifeng-ahead-of-trump-xi-summit-video"
+      },
+      {
+        "category": "ŚWIAT / GEOPOLITYKA",
+        "title": "⚠️ Szef ONZ ostrzega przed upadkiem światowego porządku",
+        "summary": "Sekretarz Generalny ONZ bije na alarm, twierdząc, że mnożące się wojny i rosnące pęknięcia geopolityczne powodują niebezpieczną erozję fundamentów ładu międzynarodowego.",
+        "comment": "Organizacja Narodów Zjednoczonych coraz częściej występuje w roli bezradnego kronikarza kryzysów w świecie, w którym prawo siły zaczyna wypierać siłę prawa.",
+        "image_query": "united nations headquarters",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5CckMxM3NwSE1TZDZaYm5yRU4zWnZScmtyT0EyaVJKVlBlVnVUSWsxTnc0WXBzME9ReVBMbkJHN0NHdEhyc19taGFzY0MxalVDc0VHc0xDbw?oc=5"
+      },
+      {
+        "category": "GOSPODARKA / ENERGETYKA",
+        "title": "💻 Boom na AI pochłonie gigantyczne ilości gazu",
+        "summary": "Najnowsze szacunki pokazują, że do 2035 roku amerykańskie serwerownie i centra danych będą zużywać więcej gazu ziemnego niż gospodarki Niemiec i Japonii razem wzięte.",
+        "comment": "Sztuczna inteligencja może i jest wirtualna, ale jej apetyt na energię jest brutalnie fizyczny. Infrastruktura cyfrowa to dziś potężne wyzwanie klimatyczne.",
+        "image_query": "data center servers",
+        "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/"
+      },
+      {
+        "category": "GOSPODARKA / SUROWCE",
+        "title": "🛢️ Topniejące rezerwy paliw w Chinach zagrażają rynkom",
+        "summary": "Spadające zapasy paliwowe w państwie środka wywołują rynkowe obawy, że Pekin może wkrótce wprowadzić twarde limity eksportowe na wyroby rafineryjne.",
+        "comment": "Kiedy smoku zaczyna brakować tchu, azjatyckie rynki natychmiast wstrzymują oddech. Ograniczenie eksportu wywołałoby natychmiastowy szok cenowy u sąsiadów Chin.",
+        "image_query": "oil refinery twilight",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-16/shrinking-chinese-fuel-inventories-raise-chance-of-export-curbs"
+      },
+      {
+        "category": "POLSKA / BEZPIECZEŃSTWO",
+        "title": "🔍 Zagadkowy bezzałogowiec na dnie Bałtyku",
+        "summary": "Polskie służby intensywnie badają obcego drona wyłowionego z wód Morza Bałtyckiego. Sprzęt może zawierać cenne dane zwiadowcze.",
+        "comment": "Tego typu znaleziska to technologiczna kopalnia złota dla kontrwywiadu. Każdy wrak pozwala lepiej zrozumieć taktykę i możliwości podglądaczy zza wschodniej granicy.",
+        "image_query": "military drone ocean",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNVF2ZU1lWXdTOFFLNGxHQU9XaG9EOS15c3A5VThZX05DQUw5ZDVMNmU1emdvV2g2dUh3ZE9kVUdxUV96RnZHVVNzalhkZDFra2FCams1amE4cFg0Zk1YdmNOdkVENVVKQW1aQzFrYkphZElFejJmWlp6NXBicDNnNmlab25PakRqV19iTDZ5Q3RIN1JXS1o1MC1TdkZkbTkxbVZDZzcwN2hhbUJlcm5GWg?oc=5"
+      },
+      {
+        "category": "CIEKAWOSTKA / ROBOTYKA",
+        "title": "🤖 Kulturalny robot kuca, by nie zrobić ci krzywdy",
+        "summary": "Firma Agility zaktualizowała swojego humanoidalnego robota tak, aby w kontakcie z ludzkim pracownikiem natychmiast się zatrzymywał i bezpiecznie kucał.",
+        "comment": "Wgrywanie maszynom swoistych \"dobrych manier\" to warunek konieczny, jeśli chcemy na co dzień mijać się z mechanicznymi tragarzami w fabrykach czy magazynach.",
+        "image_query": "humanoid robot warehouse",
+        "link": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/"
+      },
+      {
+        "category": "CIEKAWOSTKA / NAUKA",
+        "title": "🍫 Zapach czekolady tajemnicą siłownianych rekordów",
+        "summary": "Naukowcy udowodnili, że mężczyźni, którzy przed treningiem wdychali aromat czekolady, wykonywali więcej powtórzeń na sprzęcie, odczuwając mniejsze zmęczenie.",
+        "comment": "Okazuje się, że najlepsza przedtreningówka może obyć się bez kalorii. Zmysł węchu potrafi oszukać mózg i wyciągnąć z mięśni niespodziewane zapasy energii.",
+        "image_query": "gym workout chocolate",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260914102445.htm"
+      },
+      {
+        "category": "CIEKAWOSTKA / PALEONTOLOGIA",
+        "title": "🐊 Niewidzialny kamuflaż sprzed 125 milionów lat",
+        "summary": "Dzięki oświetleniu światłem ultrafioletowym, badacze dostrzegli na starożytnej skamieniałości krokodyla unikalne wzory kamuflujące, niewidoczne gołym okiem.",
+        "comment": "Detektywistyczne metody w paleontologii wciąż zadziwiają. Natura doskonaliła sztukę stapiania się z otoczeniem na miliony lat przed wojskowymi strategami.",
+        "image_query": "fossil uv light",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260914102436.htm"
+      },
+      {
+        "category": "CIEKAWOSTKA / HISTORIA",
+        "title": "🧠 Jaskinia skrywająca sekrety przez 25 tysiącleci",
+        "summary": "W odległej australijskiej grocie archeolodzy odnaleźli zdumiewające dowody na to, że rdzenna ludność nieprzerwanie odprawiała tam rytuały przez 25 tysięcy lat.",
+        "comment": "To fenomenalne świadectwo ciągłości ludzkiej kultury, która potrafiła przetrwać w jednym miejscu zmiany klimatyczne, epoki lodowcowe i bieg tysiącleci.",
+        "image_query": "ancient cave painting",
+        "link": "https://www.sciencedaily.com/releases/2026/09/260914102443.htm"
+      },
+      {
+        "category": "CIEKAWOSTKA / KOSMOS",
+        "title": "🚀 Kosmiczny teleskop z zaskakująco pełnym bakiem",
+        "summary": "Inżynierowie NASA z entuzjazmem ustalili, że nowy teleskop Roman będzie w stanie pracować na orbicie przez ponad 22 lata – ponad dwa razy dłużej niż początkowo zakładano.",
+        "comment": "W świecie misji kosmicznych, gdzie każdy gram ładunku kosztuje miliony, taki naddatek paliwa to niczym znalezienie podwójnej wygranej na loterii. To dekady dodatkowej nauki.",
+        "image_query": "space telescope orbit",
+        "link": "https://arstechnica.com/space/2026/09/the-roman-telescope-has-enough-gas-for-22-years-double-nasas-expectations/"
+      }
+    ]
   }
 }
