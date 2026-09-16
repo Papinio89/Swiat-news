@@ -1,87 +1,87 @@
 {
-  "date": "15 September 2026",
-  "time": "11:34",
-  "timestamp": "2026-09-15_11:34",
+  "date": "16 September 2026",
+  "time": "14:38",
+  "timestamp": "2026-09-16_14:38",
   "items": [
     {
-      "category": "ZWIERZAKI",
-      "title": "🦑 Kałamarnica w piżamie, czyli podwodny śpioch, który strzela śluzem",
-      "summary": "Ta maleńka kałamarnica wygląda, jakby ubrała się w pasiastą piżamkę na nocowanie, ale gdy się wkurzy, wydziela z siebie toksyczny śluz. Czasem zakopuje się w piasku tak głęboko, że na wierzchu zostają tylko jej wybałuszone oczy.",
-      "comment": "Idealny przykład na to, że nawet na dnie oceanu niektórzy po prostu nie mają ochoty wstawać rano z łóżka.",
-      "image_query": "striped pyjama squid",
+      "category": "ZWIERZĘCE SUPERMOCE",
+      "title": "🦎 Rogata jaszczurka z Teksasu i jej krwawy płacz",
+      "summary": "Kiedy ta niewielka jaszczurka czuje się zagrożona, napina mięśnie wokół gałek ocznych i dosłownie strzela w napastnika strumieniem własnej krwi prosto z oczu. Co więcej, potrafi celnie trafić drapieżnika z odległości nawet metra!",
+      "comment": "Wyobraź sobie, że używasz tej genialnej taktyki podczas kłótni o pilota do telewizora. Szach-mat, przeciwniku.",
+      "image_query": "horned lizard defense",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
     },
     {
-      "category": "SZALONA HISTORIA",
-      "title": "🐌 Epickie bitwy rycerzy z... gigantycznymi ślimakami na marginesach",
-      "summary": "Średniowieczni mnisi z niezrozumiałych powodów uwielbiali rysować na marginesach poważnych ksiąg ciężkozbrojnych rycerzy toczących śmiertelne boje z gigantycznymi ślimakami. Do dziś historycy nie mają absolutnie żadnego pojęcia, o co w tym trendzie chodziło.",
-      "comment": "Wyobraź sobie, że trenujesz całe życie walkę mieczem, a ostatecznie musisz zmierzyć się z gościem, który mknie do ataku centymetr na godzinę.",
-      "image_query": "medieval knight snail",
+      "category": "KOSZMARNA KUCHNIA",
+      "title": "🧅 Cebula faszerowana masłem orzechowym: kulinarny hit kryzysu",
+      "summary": "W czasach Wielkiego Kryzysu w USA, aby maksymalnie oszczędzać na jedzeniu, gospodynie piekły całe cebule wydrążone w środku i po brzegi wypełnione gęstym masłem orzechowym. Traktowano to jako pełnoprawny, pożywny obiad dla całej rodziny.",
+      "comment": "Gordon Ramsay na samą myśl o tej potrawie dostałby zawału, a potem zrezygnował z gotowania na zawsze.",
+      "image_query": "baked onion peanut",
+      "link": "https://www.mentalfloss.com/food/foods-families-ate-great-depression?utm_source=RSS"
+    },
+    {
+      "category": "ŚREDNIOWIECZNE BŁĘDY",
+      "title": "🦪 Ostryga, która okazała się... psem w muszli",
+      "summary": "Średniowieczni mnisi ilustrujący księgi rzadko opuszczali klasztory, więc egzotyczne zwierzęta rysowali wyłącznie z opisów innych ludzi. Efekt? W wielu manuskryptach ostrygi są przedstawiane jako miniaturowe pieski wygodnie siedzące w małżach.",
+      "comment": "Skoro pies to najlepszy przyjaciel człowieka, to dlaczego nie zabrać go na plażę w luksusowej, wapiennej kawalerce?",
+      "image_query": "medieval animal manuscript",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjRkTHZqUmlKT3I5WHJpRkdjTmktWDdEVklvWmR2eTcwWm1KTGxCalQteUwxNXNoMWt2cnJfSDJiSDgtYkNDTmR0dkhFLTBjeFJUaWRpbFotcTlxRmV1SmVMTjk0LUVNNFJRQUtFdFpIdUxrVDA4X2pqdjR4ZXE1UVRMMERVRkVUbDBuSHNrOWJ2dUk3aXdB?oc=5"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "🐸 Żaba, która połykała własne dzieci i bekała potomstwem",
-      "summary": "Australijska żaba gęborodna miała tak dziwny kaprys ewolucyjny, że połykała własne zapłodnione jaja, całkowicie zatrzymując trawienie i zamieniając żołądek w inkubator. Kiedy nadchodził czas porodu, dosłownie wypluwała w pełni ukształtowane małe żabki w serii potężnych beknięć.",
-      "comment": "To się dopiero nazywa mieć \"motyle w brzuchu\" w najdziwniejszej i najbardziej dosłownej wersji na świecie.",
-      "image_query": "open mouth frog",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQkNSbnhRcDdRLVJKM2hHUFByeW9YZW9TUVFTOGVjdks4NUxJUUlQSm9WWmpPbklSUFZpZEdZcUVhSGZKdjRxV1VlMmktTkg0blFhY1VCX0RWamlEQ0lCQlM4OHJaeklSQlR3ZDE0QWI3YnJPajcySC1yV25BZ0hUMmRqME1qbWc?oc=5"
-    },
-    {
-      "category": "DZIWNE JEDZENIE",
-      "title": "🍭 Wata cukrowa wynaleziona przez... dentystę z wybitnym zmysłem biznesowym",
-      "summary": "Maszynę do produkcji waty cukrowej, czyli czystego, lepkiego cukru w formie puszystej chmurki, wynalazł w 1897 roku dentysta William Morrison. Przysmak zadebiutował na targach pod niewinną nazwą \"Wróżkowy Pył\" i momentalnie zrujnował tysiące zębów.",
-      "comment": "Najlepszy model biznesowy w historii ludzkości: najpierw sprzedajesz ludziom problem za drobne, a potem kasujesz ich miliony za leczenie kanałowe.",
-      "image_query": "dentist cotton candy",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
-    },
-    {
       "category": "SZALONA HISTORIA",
-      "title": "💀 Papieski sąd nad trupem, czyli najbardziej makabryczny proces w dziejach",
-      "summary": "W 897 roku papież Stefan VI tak bardzo nienawidził swojego zmarłego poprzednika, Formozusa, że kazał wykopać jego zwłoki, ubrać w szaty i posadzić na tronie, by wytoczyć mu oficjalny proces. Trupowi przydzielono nawet przerażonego diakona, który miał za niego odpowiadać na pytania sędziego.",
-      "comment": "To historyczne wydarzenie całkowicie i bezpowrotnie zmienia znaczenie popularnej wymówki \"zrobię to po moim trupie\".",
-      "image_query": "pope skeleton throne",
+      "title": "🫘 Pitagoras i jego śmiertelny lęk przed fasolą",
+      "summary": "Genialny grecki matematyk miał tak ogromną, paraliżującą fobię na punkcie bobu i fasoli, że surowo zabronił swoim uczniom ich jedzenia. Według legendy, uciekając przed mordercami, zatrzymał się przed polem fasoli i wolał dać się zabić, niż przez nie przebiec.",
+      "comment": "Nowe Twierdzenie Pitagorasa: a² + b² = uciekajmy, to fasola!",
+      "image_query": "frightened man beans",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "🐕 Borzoj, czyli pies z nosem tak długim, że może nim wyprzedzić własny cień",
-      "summary": "Charty rosyjskie borzoj zostały pierwotnie wyhodowane do polowania, ale ich głowy z czasem ewoluowały w tak aerodynamiczny, absurdalnie długi stożek, że wyglądają jak skrzyżowanie psa z mrówkojadem. Z profilu przypominają po prostu uroczego, owłosionego węża z łapami.",
-      "comment": "Kiedy ten pies chce cię powąchać, musi rozpocząć procedurę zbliżania nosa jeszcze w sąsiednim województwie.",
-      "image_query": "borzoi long snout",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1PbEVvelAzNlpMWjloMm9IVDZMR0RkZXg5b1k1MTJCVV9MYW13LTZYdW03VFZkTTlueVJhMmU0Z3lJLV9xVEFYT0lBQkIxMEdUOEhVMFV6STJUUlo3SXQ1UFlqUnBWUHJwRS13cS05dGJPZGpjdVJER3pXTkY?oc=5"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "🐖 Sąd nad świnią i przydzielanie jej prawnika z urzędu",
-      "summary": "W średniowiecznej Europie zwierzęta z pełną powagą stawały przed sądem za popełnione zbrodnie. Zdarzało się regularnie, że świnie, agresywne krowy, a nawet roje niszczących plony owadów otrzymywały własnego obrońcę, który zawzięcie walczył o ich uniewinnienie.",
-      "comment": "Zawsze mnie zastanawiało, czy taki prawnik-obrońca pobierał swoje wynagrodzenie w gotówce, czy może raczej w workach żołędzi.",
-      "image_query": "medieval pig trial",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOTQ3em1zSEtZZEwyVkxRUU9GMUdCeDZvYk0yV2RaeFo4WUtzcEdJOFEtRjVCMzFjNmZ5cVcwZ2UydUE5d1dkYU5xTkZkS2VxN0VWNmhpQmxCLTgybDRBbXJ0NXJ4ekktNFVkTzJuTk5HZ2txbThsR28xbmtLdmxnazBkOXpFTnJnb0pkRDc4QzlZMjdZZEQ0UUZQSk80Y2NpV1hkbjdzWGR4R0dtVnN3TlRjcEo3OWYySVNvaUFaalgzRlk?oc=5"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "👠 Męskie obcasy, czyli jak perscy jeźdźcy wyznaczyli wybiegowe trendy",
-      "summary": "Zanim wysokie obcasy stały się ostatecznym symbolem damskiej mody, zostały wynalezione w X wieku specjalnie dla perskich żołnierzy. Wysoki obcas pozwalał stopie idealnie zahaczyć się o strzemię, co ułatwiało jeźdźcowi wstanie w siodle i celne strzelanie z łuku podczas galopu.",
-      "comment": "Zwykły spacer po miejskim bruku to dziś dla wielu wyzwanie, a tamci goście jeszcze robili przy tym akrobacje z bronią białą na pędzącym koniu.",
-      "image_query": "vintage man heels",
+      "category": "POLITYKA Z PAZUREM",
+      "title": "🐈 Burmistrz Stubbs: 20 lat kocich rządów w Alasce",
+      "summary": "Przez równe dwie dekady honorowym burmistrzem miasteczka Talkeetna na Alasce był rudy kot o imieniu Stubbs. Całe dnie spędzał w urzędzie (czyli lokalnym sklepie), pijąc wodę z kieliszka do margarity i przyjmując głaski od wdzięcznych wyborców.",
+      "comment": "Wreszcie uczciwy polityk, którego jedynym skandalem finansowym była kradzież puszki tuńczyka z budżetu miasta.",
+      "image_query": "funny cat politician",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
     },
     {
-      "category": "ABSURDY ŚWIATA",
-      "title": "👖 Ferret-legging, czyli kto najdłużej wytrzyma z dwiema fretkami w gaciach",
-      "summary": "Wielkiej Brytanii zawdzięczamy ekstremalny \"sport\" polegający na wrzuceniu dwóch żywych, wściekłych fretek do własnych spodni zaciśniętych na kostkach. Obecny rekordzista wytrzymał z tymi drapiącymi zwierzakami we własnej bieliźnie przez zawrotne pięć i pół godziny.",
-      "comment": "To chyba ten moment w życiu, kiedy powinieneś na chłodno zastanowić się nad znalezieniem sobie spokojniejszego hobby. Szydełkowanie podobno relaksuje.",
-      "image_query": "funny ferret pants",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+      "category": "ROŚLINNI TERRORYŚCI",
+      "title": "🌳 Drzewo dynamitowe, czyli najniebezpieczniejsze nasiona świata",
+      "summary": "Łaskotnia piaskowa to z pozoru urocze drzewo z Ameryki Południowej, którego owoce eksplodują z ogromnym hukiem przypominającym wystrzał z pistoletu. Rozrzucają one twarde nasiona we wszystkich kierunkach z prędkością nawet 240 km/h!",
+      "comment": "Spacer po tym lesie w sezonie owocowania przypomina grę w sapera, tylko bez możliwości wciśnięcia przycisku \"reset\".",
+      "image_query": "exploding tree fruit",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1PS0xZZGZ3cjNDV243MEc3ZzVadXU3cklhVV8zNkxwQ3hVbVItQXN2Nnd3QzJMTWllT085ZEZsVC0xVEZJOU9ETGZpbTNRSmpMUW9ZRy1VVVVrc2x3?oc=5"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "🦅 Hoacyn, ptasi buntownik, który postanowił zostać dinozaurem",
-      "summary": "Pisklęta amazońskiego ptaka o nazwie hoacyn wykluwają się z autentycznymi pazurami na zgięciach skrzydeł, zupełnie jak u prehistorycznych raptorów. Używają ich do zwinnego wspinania się po drzewach, gdy ratują się ucieczką przed drapieżnikami z gniazda.",
-      "comment": "Ten ptak dosłownie obejrzał \"Park Jurajski\", stwierdził, że to doskonały film dokumentalny i uznał go za świetny poradnik stylu życia.",
-      "image_query": "hoatzin bird claws",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQkNSbnhRcDdRLVJKM2hHUFByeW9YZW9TUVFTOGVjdks4NUxJUUlQSm9WWmpPbklSUFZpZEdZcUVhSGZKdjRxV1VlMmktTkg0blFhY1VCX0RWamlEQ0lCQlM4OHJaeklSQlR3ZDE0QWI3YnJPajcySC1yV25BZ0hUMmRqME1qbWc?oc=5"
+      "category": "BŁYSKAWICZNE BITWY",
+      "title": "⏱️ Wojna, która skończyła się przed przerwą na lunch",
+      "summary": "Wojna angielsko-zanzibarska z 1896 roku to bezapelacyjnie najkrótszy konflikt zbrojny w całej historii świata. Wojska brytyjskie zaatakowały pałac sułtana, a całe starcie trwało dokładnie 38 minut, po czym Zanzibar radośnie skapitulował.",
+      "comment": "Wysłuchanie wszystkich reklam przed seansem w kinie zajmuje znacznie więcej czasu niż ta historyczna batalia.",
+      "image_query": "quick clock historical",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
+    },
+    {
+      "category": "MROKI MEDYCYNY",
+      "title": "🍰 Wiedźmie ciastko z bardzo, ale to bardzo specjalnym składnikiem",
+      "summary": "Podczas słynnych procesów w Salem, aby zidentyfikować czarownicę, pieczono specjalne \"ciastko\" z mąki żytniej i... moczu ofiary rzekomych czarów. Następnie karmiono nim psa, mając absolutną pewność, że zwierzak wskaże winną.",
+      "comment": "Zdecydowanie nie był to pyszny wypiek, którym chciałbyś pochwalić się przed jurorami w popularnym kulinarnym show.",
+      "image_query": "ugly burnt cake",
+      "link": "https://www.mentalfloss.com/history/would-survived-salem-witch-trials?utm_source=RSS"
+    },
+    {
+      "category": "ZWIERZAKI Z KOSMOSU",
+      "title": "🥒 Strzykwa i jej wybuchowy sposób na radzenie sobie ze stresem",
+      "summary": "Kiedy morski ogórek (strzykwa) zostaje zaatakowany, z obrzydzenia do napastnika dosłownie wypluwa swoje własne narządy wewnętrzne przez odbyt. Zaskoczony drapieżnik zajmuje się posiłkiem, a strzykwa powoli ucieka, by później... po prostu odhodować nowe organy.",
+      "comment": "To się nazywa dosłowne i bardzo biologiczne \"wypruwanie sobie flaków\" ze stresu na widok szefa.",
+      "image_query": "funny sea cucumber",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNbFRWdTJodGt4UnV2YnVmQi1iS1MzVXlQeVA5LWUwOUo0d3pKME5vODNzZkR0ZUtKYVpOTktPOV83MElPWVQ0czkwNHNQNFc1NHVGaGpGa1R3dUJaYnYtMNIBcEFVX3lxTE5FWTdjTmFBX0puYUJBU0NnMUtMeXJ0NzNLUUFwdTlXMTlZamNGbWNhNzk3U2hTZ3ctTWFYSHY4ZHJnQnN4clZ3b25tWlNYMXM3ZXRKQnNNb0J5MUZraDBGVmR5elhMX0d0ckJrTGRlbEg?oc=5"
+    },
+    {
+      "category": "EKSTREMALNY SPORT",
+      "title": "🧀 Pogoń za rozpędzonym serem w dół śmiertelnie stromej góry",
+      "summary": "W brytyjskim hrabstwie Gloucestershire co roku tłum ludzi rzuca się w dół niemal pionowego wzgórza w szaleńczej pogoni za kręgiem sera ważącym 4 kilogramy. Ser pędzi w dół z prędkością 110 km/h, a uczestnicy radośnie łamią kończyny, by go złapać.",
+      "comment": "Wyobraź sobie tłumaczenie lekarzowi na ostrym dyżurze, że złamałeś oba żebra i obojczyk, bo miałeś ochotę na plaster darmowego cheddara.",
+      "image_query": "cheese rolling race",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
     }
   ]
 }
