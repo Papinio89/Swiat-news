@@ -1,119 +1,127 @@
 {
   "date": "17 September 2026",
-  "time": "05:57",
-  "timestamp": "2026-09-17_05:57",
+  "time": "16:34",
+  "timestamp": "2026-09-17_16:34",
   "items": [
     {
-      "category": "ŚWIAT / KONFLIKTY",
-      "title": "🏚️ Zawalenie uszkodzonego budynku w Strefie Gazy",
-      "summary": "21 osób, w tym ośmioro dzieci, zginęło w wyniku zawalenia się zniszczonego wojną budynku. Służby ratunkowe nadal przeszukują gruzowisko.",
-      "comment": "Tragiczne pokłosie konfliktów zbrojnych przypomina, że straty w infrastrukturze zbierają żniwo jeszcze długo po bezpośrednich atakach.",
-      "image_query": "collapsed building rescue",
-      "link": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Ninth woman's body found as South African police investigate string of deaths",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GOSPODARKA / SUROWCE",
-      "title": "🛢️ Niepewność wokół rosyjskiej ropy w Indiach",
-      "summary": "Najwięksi indyjscy nabywcy ropy naftowej zmagają się z dużą niepewnością dotyczącą przyszłych dostaw z Rosji w obliczu międzynarodowych zawirowań.",
-      "comment": "Indie przez długi czas korzystały na taniej ropie ze wschodu, jednak rosnąca presja sankcyjna może zmusić je do szybkiej dywersyfikacji źródeł energii.",
-      "image_query": "oil refinery india",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/russian-crude-uncertainty-hangs-over-india-s-largest-oil-buyers"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Assad regime planned US journalist's kidnap for weeks, BBC finds",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GOSPODARKA / FINANSE",
-      "title": "💴 Najtrudniejsza decyzja Banku Japonii od dekad",
-      "summary": "Japoński bank centralny staje przed historycznym dylematem dotyczącym stóp procentowych, próbując balansować między inflacją a stabilnością gospodarczą.",
-      "comment": "Zmiana ultra-luźnej polityki pieniężnej w Japonii może wywołać falę uderzeniową na globalnych rynkach finansowych, zmuszając inwestorów do zmiany strategii.",
-      "image_query": "bank of japan",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-17/the-bank-of-japan-s-hardest-decision-in-decades-video"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GOSPODARKA / RYNKI",
-      "title": "🥇 Singapur rośnie w siłę jako złote centrum",
-      "summary": "Ambicje Singapuru, by stać się głównym hubem obrotu złotem, zyskują na znaczeniu dzięki masowej rozbudowie skarbców przez bank DBS.",
-      "comment": "W czasach geopolitycznej niepewności, Azja fizycznie zabezpiecza swoje aktywa, przenosząc środek ciężkości rynku metali szlachetnych.",
-      "image_query": "gold bars vault",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-17/singapore-s-gold-hub-ambition-gets-lift-with-dbs-vault-expansion"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Swedish PM Kristersson resigns after election loss",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "TECHNOLOGIE / SPOŁECZEŃSTWO",
-      "title": "📱 Snapchat rozważa limity czasowe dla nastolatków",
-      "summary": "Szef popularnej platformy społecznościowej przyznał, że firma jest otwarta na wprowadzenie ograniczeń czasu spędzanego w aplikacji przez najmłodszych użytkowników.",
-      "comment": "To wyraźny sygnał, że giganci technologiczni zaczynają w końcu uginać się pod rosnącą presją regulatorów i zaniepokojonych rodziców.",
-      "image_query": "teen using smartphone",
-      "link": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 EU announces plan to restrict social media access for under-15s",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "ŚWIAT / POLITYKA",
-      "title": "⚖️ Kongres USA uderza we współpracownika Epsteina",
-      "summary": "Izba Reprezentantów USA zagłosowała za uznaniem miliardera Leona Blacka za winnego obrazy Kongresu w związku ze sprawą Jeffreya Epsteina.",
-      "comment": "Pętla wokół finansowych i biznesowych powiązań skompromitowanego finansisty zaciska się coraz bardziej, nie oszczędzając rekinów z Wall Street.",
-      "image_query": "us capitol gavel",
-      "link": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=RSS&at_campaign=rss"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Aztec document goes on display in Mexico after 186 years abroad",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/ck980qyy6d2zo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "ŚWIAT / GEOPOLITYKA",
-      "title": "🦅 Kongres USA szykuje ostre sankcje na Rosję",
-      "summary": "Amerykańscy ustawodawcy przygotowują się do głosowania nad kolejnym, niezwykle restrykcyjnym pakietem sankcji wymierzonym w rosyjską gospodarkę.",
-      "comment": "Mimo upływu czasu, Waszyngton wciąż szuka nowych sposobów na ekonomiczne odcięcie tlenu rosyjskiej machinie wojennej.",
-      "image_query": "us congress sanctions",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYXBvTThPQl9GdzhJOVNCSVM1OFJwMHJabmJ2MG41NnBCWXJWanFOQ0RDQTQ5YU44U0E1M3dBYXRUdGxEZFlkNHpQQ1F2bTJYRkxPcGxHbWEyU2lkempQNkFRNjZEUEdHSThoQmtsbXFSaDl4ZTlWU2p2Ry1JZVM5ZE1kMThIM0gyYnZqbnhzSk5Fak1ndkF2bjNlRjA5Y2pMQjRNTjJieGFBUGM?oc=5"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Klopp wants to 'reclaim' flag amid German elections",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmwyzk6xkrd0o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "TECHNOLOGIE / BIZNES",
-      "title": "🍎 Apple buduje potężne serwery dla sztucznej inteligencji",
-      "summary": "Według najnowszych doniesień, Apple projektuje własne serwery napędzane układami M-series Ultra, by sprostać wyzwaniom rewolucji AI.",
-      "comment": "Zamiast polegać na zewnętrznych dostawcach układów graficznych, gigant z Cupertino stawia na pełną niezależność sprzętową i własny ekosystem.",
-      "image_query": "data center servers",
-      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 LNG resilience tested as geopolitics reshapes global energy security - energypolicy.columbia.edu",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0cEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
     },
     {
-      "category": "TECHNOLOGIE / EKOLOGIA",
-      "title": "♻️ Ciemna strona AI: Góry elektrośmieci",
-      "summary": "Gwałtowny rozwój centrów danych napędzających sztuczną inteligencję generuje potężny i szybko rosnący problem odpadów elektronicznych.",
-      "comment": "Technologia przyszłości ma swój brudny sekret – wyścig zbrojeń w AI wymaga częstej wymiany potężnego sprzętu, co mocno obciąża środowisko naturalne.",
-      "image_query": "electronic waste motherboard",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 9/11@25: How Terrorism Reshaped Global Geopolitics - StratNews Global",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMGFidjhQc3NEeGRaWV9fYlVMb3pvQ3ZEOWR3WWlaUlppNEt0cjFWMG5nQ202QW5leE5oSzNGaG1SaDVkMUV4V2NPU2c4XzNEb3JKUEtwYkloV0QyQnpSWk05YUJiSzloRG5QbzJKbTBwZlZaeTVsLW0wNFZ2S0lONVZ2cjNobVZrckRiX2NyUnFGYk1FVUlqMHl3?oc=5"
     },
     {
-      "category": "NAUKA / ŚRODOWISKO",
-      "title": "💧 Przełom w odsalaniu wody morskiej",
-      "summary": "Naukowcy opracowali innowacyjną metodę zamiany wody morskiej w słodką bez produkowania szkodliwej, toksycznej solanki.",
-      "comment": "To może być absolutny punkt zwrotny dla regionów zmagających się z suszą, rozwiązujący dotychczasowy problem zanieczyszczeń oceanów z tradycyjnych odsalarni.",
-      "image_query": "clean water splash",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260915100137.htm"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Secretary-General of ASEAN Delivers Pre-Recorded Remarks at “ASEAN 2045: Geopolitics, Innovation and Opportunity in a Changing World” - asean.org",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUVdGdXo0QzdrSVlLa1lNSmRPSUxINTFLQVNOV2VnN1ZEbkNJRExXUHBCcWxjeGl0b1RzdjRwQlJlNG43Q1FrNHJoVlkzUkJUTmMzN1FJV0IxVHgtMTAteXE5Vy12czg0QnpRNWt3ek5fS1o3ZFAtdmhxcFh3RHAteVZacmJJaEkxTUpDVWdIaFJkYzNqNFU1bFE3MUd5Ykxwcl9MWml2WmpuMEFEN0VUMzN2MFhLNmpfOVpLWGx1X1dkM042RllnRU5qTG9QU0lxM3pxUklTM3dRdmoxOXFOaV9R?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / GASTRONOMIA",
-      "title": "🐜 Mandat za mrówki na talerzu w ekskluzywnej restauracji",
-      "summary": "Luksusowa restauracja w Seulu, wyróżniona gwiazdką Michelin, otrzymała grzywnę za używanie jadalnych mrówek jako elementu dekoracyjnego dań.",
-      "comment": "Fine dining czasem zderza się z twardą rzeczywistością przepisów sanitarnych. Mrówka na talerzu to dla jednych sztuka kulinarna, a dla inspektorów – zwykły problem.",
-      "image_query": "gourmet dish ants",
-      "link": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=RSS&at_campaign=rss"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 When infrastructure becomes a battleground: The geopolitics of global logistics - Gulf News",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOVNxZHBscFdQVTU3V0JfVS0tUUF4cnNybmJiMGk4Y0FrWDJURlRCLXcwQy1MWEplR09MbkxCMF8yNG1IUmtGOTRnMWV6Y25CUlc2bXdWbE9uX202Skt5UC1TQUJEWnJ3Mzh4NmFvTWlISUR2REgzdWlmQVdtZVY1NnlURzZNbWJ3eTRWMm5sYkE0MTZ5N3F5OU9hYW9UNVhNY29vRHBYMUQtajRHRmw2WkkyYlpQVXNjSWR3Q3BVenB6c3B60gHXAUFVX3lxTFAxeXNXYmFKTExESEFjRmh5TjctaXFyel9mY0ZhUjBTcVpmdWdDd2VGcmxVcEtCVmswZHZHRG5oS2RTdUZCaE5oazV6VGlES04tYjRuTDJVTVR4b1VlMFlQU0x0a3J2ZzNkX3VhdFJoOUZIWVNjUklmR2NxeDFZOXdtVjh4MU9fVU1XT3lYZzNaeFE0dExIVkU5NXNMcWtTUW02NnBWaGs2d1JGMkhKMGJEa25ER0VGeDdyWWNrMzk4OUpURmdUUEowOS1YWFU0VjlxS3d5djhz?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🧠 Ludzkie komórki w mózgu myszy",
-      "summary": "Badacze z powodzeniem wszczepili ludzkie komórki mózgowe w miejsce kory mózgowej myszy, obserwując, jak świetnie integrują się one z układem nerwowym zwierzęcia.",
-      "comment": "Brzmi jak fabuła filmu science fiction, ale to realny krok w stronę lepszego zrozumienia i leczenia skomplikowanych chorób neurodegeneracyjnych.",
-      "image_query": "glowing brain cells",
-      "link": "https://arstechnica.com/science/2026/09/researchers-swap-in-human-brain-cells-for-a-mouses-cortex/"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 AI, geopolitics are changing global power - Daily Monitor",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzNWNkY1aVFWX0RaOENKU0FWQm5WRXA5eUlhTGRxWU5mTFR2cVctUFJvMU1YR040Y3NQTWt5TVktQVgwY2s2SFpHTkh1emQ5RlZOLTc2QXRQa1lPNk1SdmR1VW9XdTNNS1pIM2VWc1hBcXBTdWFvWWNHejNDNnctTktJcWlUVU5jTVNELV91TDdiQ21WTDJaYmpB?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / KOSMOS",
-      "title": "🪐 Czy Wenus pożarła własny księżyc?",
-      "summary": "Najnowsze hipotezy astronomów sugerują, że w odległej przeszłości Wenus mogła zniszczyć i wchłonąć swojego własnego, naturalnego satelitę.",
-      "comment": "Ta intrygująca teoria mogłaby wreszcie wyjaśnić nietypowy, wsteczny kierunek rotacji planety, czyniąc Wenus bezwzględnym kosmicznym kanibalem.",
-      "image_query": "venus planet space",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260915232122.htm"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Pacific island nations seek to turn geopolitics into funding to offset climate change harm - ABC News - Breaking News, Latest News and Videos",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
     },
     {
-      "category": "CIEKAWOSTKA / MOTORYZACJA",
-      "title": "📻 Powrót tradycyjnego radia do nowoczesnych aut",
-      "summary": "Amerykańscy producenci samochodów mogą wkrótce zostać zmuszeni prawem do darmowego montowania tradycyjnych odbiorników fal AM w nowych pojazdach.",
-      "comment": "Mimo wszechobecnego streamingu internetowego, stare dobre fale AM pozostają niezawodnym kanałem komunikacji awaryjnej, gdy zawodzi nowoczesna infrastruktura.",
-      "image_query": "car radio dashboard",
-      "link": "https://techcrunch.com/2026/09/16/us-automakers-could-soon-be-forced-to-include-am-radio-for-free/"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Past is prologue for geopolitical developments - MIT News",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lVExESkpXWTRScENEdUZjTHJMVG5VTzFoQ2ZiTnU0bTlfS09UclBDWV81WmpkUWNlNXVBX2dHTlcwYm8tMDdpclZEa1BkSVFfTGY5WUlUS3FXRDdlbXpobW1lN2xieEQtajB3U3l1aUJxcVVpSENpVVFn?oc=5"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Stocks, Bonds Rise After Fed-Day Drop as Oil Falls: Markets Wrap",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-16/stock-market-today-dow-s-p-live-updates"
     }
   ]
 }
