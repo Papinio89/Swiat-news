@@ -1,127 +1,119 @@
 {
-  "date": "16 September 2026",
-  "time": "16:32",
-  "timestamp": "2026-09-16_16:32",
+  "date": "17 September 2026",
+  "time": "05:57",
+  "timestamp": "2026-09-17_05:57",
   "items": [
     {
-      "category": "ŚWIAT / GEOPOLITYKA",
-      "title": "🇨🇦 Kanada o krok od \"stowarzyszenia\" z Unią Europejską",
-      "summary": "Szefowa Komisji Europejskiej poparła plan przyznania Kanadzie statusu członka stowarzyszonego.",
-      "comment": "To bezprecedensowy ruch, który może zacieśnić transatlantyckie więzi gospodarcze i polityczne w obliczu globalnych zawirowań.",
-      "image_query": "EU Canada flags",
-      "link": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "category": "GOSPODARKA / TECHNOLOGIE",
-      "title": "🤖 Szef OpenAI: Strach przed AI jest uzasadniony",
-      "summary": "Sam Altman przyznał, że świat ma prawo obawiać się sztucznej inteligencji, ale jednocześnie zaapelował o zaufanie do wiodących firm technologicznych.",
-      "comment": "Klasyczny dylemat Doliny Krzemowej – twórzmy potężne narzędzia, ale prośmy o wiarę w nasze dobre intencje, by uniknąć surowych odgórnych regulacji.",
-      "image_query": "artificial intelligence code",
-      "link": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "category": "ŚWIAT / BEZPIECZEŃSTWO",
-      "title": "💣 Napięcia z Iranem uszczuplają amerykańskie zapasy broni",
-      "summary": "Inspektor Pentagonu potwierdził, że zaangażowanie militarne na Bliskim Wschodzie doprowadziło do wyraźnych niedoborów w amerykańskich magazynach wojskowych.",
-      "comment": "Zmiana priorytetów i konieczność ciągłego uzupełniania zapasów pokazują dobitnie, jak kosztowne i logistycznie trudne jest utrzymywanie roli globalnego policjanta.",
-      "image_query": "military ammunition crates",
-      "link": "https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&at_campaign=rss"
-    },
-    {
       "category": "ŚWIAT / KONFLIKTY",
-      "title": "🛡️ Saudyjczycy strącają drona na obrzeżach Mekki",
-      "summary": "Siły zbrojne Arabii Saudyjskiej przechwyciły bezzałogowca wystrzelonego przez bojowników Huti na południe od świętego miasta islamu.",
-      "comment": "Ataki w tak newralgicznych religijnie obszarach to nie tylko zagrożenie fizyczne, ale i gigantyczna prowokacja wizerunkowa obliczona na wywołanie paniki.",
-      "image_query": "military drone interception",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUUZLTGVJM2YyTXRaaGtvMVV3MWpEUUFsQWtBMVV3VHJMcHZLZExhcDFnbGhWaV9iNVNiUDUyVTJVTW9taDZzTnFZWWR3cTlFRmd0NENyZ0ZpRVhTVG9rMmVIeFcxTm5DN2Y2Ml8zQl82TnVyTXowUGNQUWlsZjFqTDJOXzEwRF9raTF3YTcwcy02MjdMUkltQWdFcWd0UXdNeTFrT3g2TWdEQnNUVjBUT2N4MVlMbVRQR1NkREV3?oc=5"
+      "title": "🏚️ Zawalenie uszkodzonego budynku w Strefie Gazy",
+      "summary": "21 osób, w tym ośmioro dzieci, zginęło w wyniku zawalenia się zniszczonego wojną budynku. Służby ratunkowe nadal przeszukują gruzowisko.",
+      "comment": "Tragiczne pokłosie konfliktów zbrojnych przypomina, że straty w infrastrukturze zbierają żniwo jeszcze długo po bezpośrednich atakach.",
+      "image_query": "collapsed building rescue",
+      "link": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "GOSPODARKA / LOGISTYKA",
-      "title": "🚢 Chiny dominują w nowym rankingu globalnych portów",
-      "summary": "Zawirowania geopolityczne sprawiły, że chińskie porty kontenerowe jeszcze mocniej ugruntowały swoją pozycję na szczycie światowych zestawień.",
-      "comment": "Mimo licznych prób dywersyfikacji łańcuchów dostaw przez kraje zachodnie, Pekin wciąż trzyma w garści lwią część globalnego handlu morskiego.",
-      "image_query": "busy cargo port",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNal84T09hM1JnYVVOM0QzXzZ5WUhTRk9BTUFpQUluUUt0RVBWNGZjTnNTS2Nfenp4TTI2YWV1NnYzTjU3Tkd6YjUxUUhlWk5IcDhqd0hfdUh0OV8zQ0FOaG94dGZXRlQzNHl5VnA2RF9DSUc0ZnIyNC0yMTJTLVp0bm1LWml6aFJjUTRRLWtqcVNNcW5GeGU5UF8xMG9pS0FJekE0Z01n?oc=5"
+      "category": "GOSPODARKA / SUROWCE",
+      "title": "🛢️ Niepewność wokół rosyjskiej ropy w Indiach",
+      "summary": "Najwięksi indyjscy nabywcy ropy naftowej zmagają się z dużą niepewnością dotyczącą przyszłych dostaw z Rosji w obliczu międzynarodowych zawirowań.",
+      "comment": "Indie przez długi czas korzystały na taniej ropie ze wschodu, jednak rosnąca presja sankcyjna może zmusić je do szybkiej dywersyfikacji źródeł energii.",
+      "image_query": "oil refinery india",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-16/russian-crude-uncertainty-hangs-over-india-s-largest-oil-buyers"
     },
     {
-      "category": "ŚWIAT / EKOLOGIA",
-      "title": "🏝️ Pacyficzne wyspy licytują geopolityką o klimat",
-      "summary": "Niewielkie państwa wyspiarskie wykorzystują rywalizację mocarstw, by zdobyć strategiczne fundusze na walkę ze skutkami zmian klimatu.",
-      "comment": "Sprytna i pragmatyczna dyplomacja małych graczy – wiedzą, że ich terytoria są niezwykle cenne w starciu na linii USA-Chiny, więc maksymalizują stawkę za wpływy.",
-      "image_query": "pacific island coastline",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      "category": "GOSPODARKA / FINANSE",
+      "title": "💴 Najtrudniejsza decyzja Banku Japonii od dekad",
+      "summary": "Japoński bank centralny staje przed historycznym dylematem dotyczącym stóp procentowych, próbując balansować między inflacją a stabilnością gospodarczą.",
+      "comment": "Zmiana ultra-luźnej polityki pieniężnej w Japonii może wywołać falę uderzeniową na globalnych rynkach finansowych, zmuszając inwestorów do zmiany strategii.",
+      "image_query": "bank of japan",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-17/the-bank-of-japan-s-hardest-decision-in-decades-video"
     },
     {
-      "category": "RYNKI / FINANSE",
-      "title": "📈 Giełdy w Europie rosną w oczekiwaniu na FED",
-      "summary": "Europejskie akcje zyskują na wartości przed kluczowym spotkaniem amerykańskiego banku centralnego, wspierane przez spadające rentowności obligacji.",
-      "comment": "Inwestorzy na Starym Kontynencie wstrzymują oddech. Każdy sygnał zza oceanu o łagodzeniu polityki monetarnej natychmiast poprawia rynkowe nastroje.",
-      "image_query": "stock market graph",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/european-stocks-advance-as-bond-selloff-eases-ahead-of-fed"
+      "category": "GOSPODARKA / RYNKI",
+      "title": "🥇 Singapur rośnie w siłę jako złote centrum",
+      "summary": "Ambicje Singapuru, by stać się głównym hubem obrotu złotem, zyskują na znaczeniu dzięki masowej rozbudowie skarbców przez bank DBS.",
+      "comment": "W czasach geopolitycznej niepewności, Azja fizycznie zabezpiecza swoje aktywa, przenosząc środek ciężkości rynku metali szlachetnych.",
+      "image_query": "gold bars vault",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-17/singapore-s-gold-hub-ambition-gets-lift-with-dbs-vault-expansion"
     },
     {
-      "category": "GOSPODARKA / BIZNES",
-      "title": "💻 SK Hynix i Intel mogą połączyć siły w USA",
-      "summary": "Południowokoreański producent pamięci prowadzi rozmowy z Intelem na temat budowy nowych zakładów produkujących półprzewodniki na terenie Stanów Zjednoczonych.",
-      "comment": "To bezpośredni i namacalny efekt amerykańskich megadotacji z CHIPS Act. Waszyngton skutecznie przyciąga technologiczną produkcję, izolując swoich rywali.",
-      "image_query": "semiconductor microchip fabrication",
-      "link": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/"
-    },
-    {
-      "category": "GOSPODARKA / PRACA",
-      "title": "📦 Amazon kusi pracowników dolarową podwyżką",
-      "summary": "Gigant branży e-commerce podnosi stawki godzinowe dla swoich pracowników operacyjnych i logistycznych o 1 dolara.",
-      "comment": "W obliczu rosnącej presji ze strony związków zawodowych oraz widma braków kadrowych przed szczytem świątecznym, Amazon musi głębiej sięgnąć do kieszeni.",
-      "image_query": "amazon warehouse workers",
-      "link": "https://techcrunch.com/2026/09/16/amazon-gives-its-workers-a-raise-of-1-per-hour/"
+      "category": "TECHNOLOGIE / SPOŁECZEŃSTWO",
+      "title": "📱 Snapchat rozważa limity czasowe dla nastolatków",
+      "summary": "Szef popularnej platformy społecznościowej przyznał, że firma jest otwarta na wprowadzenie ograniczeń czasu spędzanego w aplikacji przez najmłodszych użytkowników.",
+      "comment": "To wyraźny sygnał, że giganci technologiczni zaczynają w końcu uginać się pod rosnącą presją regulatorów i zaniepokojonych rodziców.",
+      "image_query": "teen using smartphone",
+      "link": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss"
     },
     {
       "category": "ŚWIAT / POLITYKA",
-      "title": "🇪🇺 \"Otwarcie wrogi świat\": Mocne orędzie Von der Leyen",
-      "summary": "Przewodnicząca Komisji Europejskiej wygłosiła stanowcze przemówienie o stanie Unii, wzywając państwa członkowskie do jedności w obliczu realnych zagrożeń zewnętrznych.",
-      "comment": "Europa ostatecznie budzi się z geopolitycznego letargu. Retoryka Brukseli wyraźnie ostrzeje, by przygotować obywateli na nadchodzące, trudne lata rywalizacji.",
-      "image_query": "european parliament speech",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOGV0MlZwMV9aVFd6WC1CQjZKbDRNTnNrSklEVEl0X1pydmkyakp2bEFVblBXamxXOWdRRnZzeVNwUzNjSmpUTXQ1Q09LUjZFUzVHQndyclZsVVhGM3pDQ1pQY0hXbDQ4ZGF3Q0NJb1kxdjhrQXA1c0R4akZJS0VBMlpueFY5YVJpQUNpSkczRjVnc2JRNUZ1Y1hubDdacXB5c19zRUZUUVJXNVN4b2dzdUhxQUlheVNpV2ZN0gGrAUFVX3lxTE43b2VuRFRoaU40NkVFVk5Ydy1tMWVpLXphUGE4UVJUZ1kwUVRfNUZaMVBOaV9XTFEzSlY3Y3ZtZ3lhOHdhUEFyZkFydzdKcWF4bnY4em51dDY3VGVOWlI1UVJqNTVBc0NVRzJpaE9ubVlKczBuTjVRaUU0RnZSd3pjb05zWTk4Vm5EeHR0RVZPcU5ibDVmNS0ydHczNzFKNjIwU3FpaHZVYkZROA?oc=5"
+      "title": "⚖️ Kongres USA uderza we współpracownika Epsteina",
+      "summary": "Izba Reprezentantów USA zagłosowała za uznaniem miliardera Leona Blacka za winnego obrazy Kongresu w związku ze sprawą Jeffreya Epsteina.",
+      "comment": "Pętla wokół finansowych i biznesowych powiązań skompromitowanego finansisty zaciska się coraz bardziej, nie oszczędzając rekinów z Wall Street.",
+      "image_query": "us capitol gavel",
+      "link": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=RSS&at_campaign=rss"
     },
     {
-      "category": "ŚWIAT / BEZPIECZEŃSTWO",
-      "title": "🦅 Rosyjski dron nad Polską skrywał głowicę bojową",
-      "summary": "Prokuratura poinformowała oficjalnie, że bezzałogowiec, który naruszył przestrzeń powietrzną, był realnie uzbrojony w ładunek wybuchowy.",
-      "comment": "Zimny prysznic dla procedur bezpieczeństwa. Ten incydent przypomina, że przygraniczne niebo wymaga bezbłędnych reakcji obrony przeciwlotniczej.",
-      "image_query": "military combat drone",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd0hUUGx4X3l3ZTNKZE5tOE8yZ05YSXlHR21kOHZwOGxZTFlTMGFyNFhUaGFON3lKQ0o1OGdILTlhUTBKa09ZX3V4NTJ2dGNIUHpDdjZFOUNfeVI3TjhMQ2YxVGFIdGtUUHBQZndaQ1hyNDJCNmk0RmlVcXp6QnFQeW1aTzgtRU9kVU45dnBmWG5nUDdjZ2RfV2lIcDQweTlFZFdYVEo1VzRkZw?oc=5"
+      "category": "ŚWIAT / GEOPOLITYKA",
+      "title": "🦅 Kongres USA szykuje ostre sankcje na Rosję",
+      "summary": "Amerykańscy ustawodawcy przygotowują się do głosowania nad kolejnym, niezwykle restrykcyjnym pakietem sankcji wymierzonym w rosyjską gospodarkę.",
+      "comment": "Mimo upływu czasu, Waszyngton wciąż szuka nowych sposobów na ekonomiczne odcięcie tlenu rosyjskiej machinie wojennej.",
+      "image_query": "us congress sanctions",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYXBvTThPQl9GdzhJOVNCSVM1OFJwMHJabmJ2MG41NnBCWXJWanFOQ0RDQTQ5YU44U0E1M3dBYXRUdGxEZFlkNHpQQ1F2bTJYRkxPcGxHbWEyU2lkempQNkFRNjZEUEdHSThoQmtsbXFSaDl4ZTlWU2p2Ry1JZVM5ZE1kMThIM0gyYnZqbnhzSk5Fak1ndkF2bjNlRjA5Y2pMQjRNTjJieGFBUGM?oc=5"
+    },
+    {
+      "category": "TECHNOLOGIE / BIZNES",
+      "title": "🍎 Apple buduje potężne serwery dla sztucznej inteligencji",
+      "summary": "Według najnowszych doniesień, Apple projektuje własne serwery napędzane układami M-series Ultra, by sprostać wyzwaniom rewolucji AI.",
+      "comment": "Zamiast polegać na zewnętrznych dostawcach układów graficznych, gigant z Cupertino stawia na pełną niezależność sprzętową i własny ekosystem.",
+      "image_query": "data center servers",
+      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/"
+    },
+    {
+      "category": "TECHNOLOGIE / EKOLOGIA",
+      "title": "♻️ Ciemna strona AI: Góry elektrośmieci",
+      "summary": "Gwałtowny rozwój centrów danych napędzających sztuczną inteligencję generuje potężny i szybko rosnący problem odpadów elektronicznych.",
+      "comment": "Technologia przyszłości ma swój brudny sekret – wyścig zbrojeń w AI wymaga częstej wymiany potężnego sprzętu, co mocno obciąża środowisko naturalne.",
+      "image_query": "electronic waste motherboard",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban"
+    },
+    {
+      "category": "NAUKA / ŚRODOWISKO",
+      "title": "💧 Przełom w odsalaniu wody morskiej",
+      "summary": "Naukowcy opracowali innowacyjną metodę zamiany wody morskiej w słodką bez produkowania szkodliwej, toksycznej solanki.",
+      "comment": "To może być absolutny punkt zwrotny dla regionów zmagających się z suszą, rozwiązujący dotychczasowy problem zanieczyszczeń oceanów z tradycyjnych odsalarni.",
+      "image_query": "clean water splash",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915100137.htm"
+    },
+    {
+      "category": "CIEKAWOSTKA / GASTRONOMIA",
+      "title": "🐜 Mandat za mrówki na talerzu w ekskluzywnej restauracji",
+      "summary": "Luksusowa restauracja w Seulu, wyróżniona gwiazdką Michelin, otrzymała grzywnę za używanie jadalnych mrówek jako elementu dekoracyjnego dań.",
+      "comment": "Fine dining czasem zderza się z twardą rzeczywistością przepisów sanitarnych. Mrówka na talerzu to dla jednych sztuka kulinarna, a dla inspektorów – zwykły problem.",
+      "image_query": "gourmet dish ants",
+      "link": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "category": "CIEKAWOSTKA / NAUKA",
-      "title": "🚀 Startup czerpie energię z atomowych \"śmieci\"",
-      "summary": "Innowacyjna firma Fluxnium twierdzi, że opracowała nowatorską technologię wyciągania mocy wprost ze składowanych odpadów nuklearnych.",
-      "comment": "Złoty graal energetyki – jeśli ta wizja się ziści, upieczemy dwie pieczenie na jednym ogniu: zyskamy czystą energię i pozbędziemy się najgroźniejszych odpadów.",
-      "image_query": "nuclear energy futuristic",
-      "link": "https://techcrunch.com/2026/09/16/clean-tech-startup-fluxnium-found-a-way-to-tap-50000-years-worth-of-nuclear-fuel/"
+      "title": "🧠 Ludzkie komórki w mózgu myszy",
+      "summary": "Badacze z powodzeniem wszczepili ludzkie komórki mózgowe w miejsce kory mózgowej myszy, obserwując, jak świetnie integrują się one z układem nerwowym zwierzęcia.",
+      "comment": "Brzmi jak fabuła filmu science fiction, ale to realny krok w stronę lepszego zrozumienia i leczenia skomplikowanych chorób neurodegeneracyjnych.",
+      "image_query": "glowing brain cells",
+      "link": "https://arstechnica.com/science/2026/09/researchers-swap-in-human-brain-cells-for-a-mouses-cortex/"
     },
     {
-      "category": "CIEKAWOSTKA / NATURA",
-      "title": "🧠 Szympansy niczym nauczyciele zawodowi",
-      "summary": "Najnowsze obserwacje naukowców dowodzą, że szympansy posiadają skomplikowany system uczenia swoich dzieci używania specyficznych narzędzi.",
-      "comment": "Szkoła przetrwania w dżungli wymaga czegoś więcej niż instynktu – te zwierzęta wykształciły unikalną formę międzypokoleniowego przekazu kulturowego.",
-      "image_query": "chimpanzee using tools",
-      "link": "https://arstechnica.com/science/2026/09/how-chimps-teach-their-kids-tool-tricks/"
+      "category": "CIEKAWOSTKA / KOSMOS",
+      "title": "🪐 Czy Wenus pożarła własny księżyc?",
+      "summary": "Najnowsze hipotezy astronomów sugerują, że w odległej przeszłości Wenus mogła zniszczyć i wchłonąć swojego własnego, naturalnego satelitę.",
+      "comment": "Ta intrygująca teoria mogłaby wreszcie wyjaśnić nietypowy, wsteczny kierunek rotacji planety, czyniąc Wenus bezwzględnym kosmicznym kanibalem.",
+      "image_query": "venus planet space",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232122.htm"
     },
     {
-      "category": "CIEKAWOSTKA / SPORT",
-      "title": "🏎️ Jeden mistrz kierownicy kontra 100 gokartów",
-      "summary": "W ramach szalonego eksperymentu motoryzacyjnego, najlepszy kierowca wyścigowy świata stanie na starcie naprzeciwko peletonu złożonego ze stu rywali.",
-      "comment": "To motoryzacyjny odpowiednik walki Goliata z armią zwinnych Dawidów, pokazujący, gdzie kończy się precyzja, a zaczyna czysty chaos tłumu na torze.",
-      "image_query": "go kart racing",
-      "link": "https://arstechnica.com/cars/2026/09/the-worlds-best-racing-driver-is-about-to-race-100-karts-at-once/"
-    },
-    {
-      "category": "CIEKAWOSTKA / TECHNOLOGIE",
-      "title": "🦠 Glukoza zamiast ropy w produkcji superklejów",
-      "summary": "Bioinżynierowie z powodzeniem zaprogramowali drobnoustroje tak, aby syntetyzowały zaawansowane materiały samoprzylepne, używając do tego tylko roztworu glukozy.",
-      "comment": "Słodki triumf zielonej chemii. Okazuje się, że matka natura w połączeniu ze sprytem laboratoryjnym potrafi całkowicie wyeliminować petrochemię z procesu.",
-      "image_query": "laboratory microbiology petri",
-      "link": "https://phys.org/news/2026-09-microbes-adhesive-materials-glucose-petroleum.html"
+      "category": "CIEKAWOSTKA / MOTORYZACJA",
+      "title": "📻 Powrót tradycyjnego radia do nowoczesnych aut",
+      "summary": "Amerykańscy producenci samochodów mogą wkrótce zostać zmuszeni prawem do darmowego montowania tradycyjnych odbiorników fal AM w nowych pojazdach.",
+      "comment": "Mimo wszechobecnego streamingu internetowego, stare dobre fale AM pozostają niezawodnym kanałem komunikacji awaryjnej, gdy zawodzi nowoczesna infrastruktura.",
+      "image_query": "car radio dashboard",
+      "link": "https://techcrunch.com/2026/09/16/us-automakers-could-soon-be-forced-to-include-am-radio-for-free/"
     }
   ]
 }

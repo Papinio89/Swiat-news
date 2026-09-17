@@ -1,42 +1,54 @@
 {
-  "date": "16 September 2026",
-  "time": "16:32",
-  "count": 70,
+  "date": "17 September 2026",
+  "time": "05:57",
+  "count": 69,
   "items": [
+    {
+      "title": "US interest rates raised for first time in three years",
+      "link": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Snapchat open to putting time limits on teens, boss tells BBC",
+      "link": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Photos show widespread damage at US sites from Iranian attacks",
+      "link": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss"
+    },
     {
       "title": "EU chief backs plan for Canada to become 'associate member'",
       "link": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
-      "link": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "title": "All support acts on Ed Sheeran's US tour quit after Macklemore dropped",
-      "link": "https://www.bbc.co.uk/news/articles/c3vgyn49y4l7o?at_medium=RSS&at_campaign=rss"
+      "title": "US House votes to hold billionaire Epstein associate Leon Black in contempt",
+      "link": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=RSS&at_campaign=rss"
     },
     {
       "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
       "link": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "Iran war has led to US munitions shortfalls, Pentagon inspector confirms",
-      "link": "https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&at_campaign=rss"
+      "title": "Michelin-starred Seoul restaurant fined for using ants as garnish",
+      "link": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "Saudi Arabia says it shot down Houthi drone south of Mecca",
-      "link": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_medium=RSS&at_campaign=rss"
+      "title": "LNG resilience tested as geopolitics reshapes global energy security - CGEP",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0cEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
     },
     {
-      "title": "Journalist and pilot among three killed after news helicopter crashes in LA",
-      "link": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=RSS&at_campaign=rss"
+      "title": "Secretary-General of ASEAN Delivers Pre-Recorded Remarks at “ASEAN 2045: Geopolitics, Innovation and Opportunity in a Changing World” - ASEAN Main Portal",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUVdGdXo0QzdrSVlLa1lNSmRPSUxINTFLQVNOV2VnN1ZEbkNJRExXUHBCcWxjeGl0b1RzdjRwQlJlNG43Q1FrNHJoVlkzUkJUTmMzN1FJV0IxVHgtMTAteXE5Vy12czg0QnpRNWt3ek5fS1o3ZFAtdmhxcFh3RHAteVZacmJJaEkxTUpDVWdIaFJkYzNqNFU1bFE3MUd5Ykxwcl9MWml2WmpuMEFEN0VUMzN2MFhLNmpfOVpLWGx1X1dkM042RllnRU5qTG9QU0lxM3pxUklTM3dRdmoxOXFOaV9R?oc=5"
     },
     {
-      "title": "Pacific island nations seek to turn geopolitics into funding to offset climate change harm - abcnews.com",
+      "title": "When infrastructure becomes a battleground: The geopolitics of global logistics - Gulf News",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOVNxZHBscFdQVTU3V0JfVS0tUUF4cnNybmJiMGk4Y0FrWDJURlRCLXcwQy1MWEplR09MbkxCMF8yNG1IUmtGOTRnMWV6Y25CUlc2bXdWbE9uX202Skt5UC1TQUJEWnJ3Mzh4NmFvTWlISUR2REgzdWlmQVdtZVY1NnlURzZNbWJ3eTRWMm5sYkE0MTZ5N3F5OU9hYW9UNVhNY29vRHBYMUQtajRHRmw2WkkyYlpQVXNjSWR3Q3BVenB6c3B60gHXAUFVX3lxTFAxeXNXYmFKTExESEFjRmh5TjctaXFyel9mY0ZhUjBTcVpmdWdDd2VGcmxVcEtCVmswZHZHRG5oS2RTdUZCaE5oazV6VGlES04tYjRuTDJVTVR4b1VlMFlQU0x0a3J2ZzNkX3VhdFJoOUZIWVNjUklmR2NxeDFZOXdtVjh4MU9fVU1XT3lYZzNaeFE0dExIVkU5NXNMcWtTUW02NnBWaGs2d1JGMkhKMGJEa25ER0VGeDdyWWNrMzk4OUpURmdUUEowOS1YWFU0VjlxS3d5djhz?oc=5"
+    },
+    {
+      "title": "Pacific island nations seek to turn geopolitics into funding to offset climate change harm - ABC News - Breaking News, Latest News and Videos",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
     },
     {
-      "title": "Iran-US war widens and other geopolitical stories to know this month - The World Economic Forum",
+      "title": "Iran-US war widens and other geopolitical stories to know this month - weforum.org",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5"
     },
     {
@@ -48,240 +60,224 @@
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5CckMxM3NwSE1TZDZaYm5yRU4zWnZScmtyT0EyaVJKVlBlVnVUSWsxTnc0WXBzME9ReVBMbkJHN0NHdEhyc19taGFzY0MxalVDc0VHc0xDbw?oc=5"
     },
     {
-      "title": "An Expert’s Guide to Geopolitics from SIPA Alumna Tina Fordham - Columbia SIPA | School of International and Public Affairs",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZmRsLWtUd3NGZHFZWWZ4WURLU3dPOVR6dTBucFhNZDFadm5seWRfazhJODRNVk5EZkVRR3oxMWxjUHN3NEE4Nnk2WTdSbkpocDhWR21rMGhZQlJGYVFsMDN5QTdfaElkVVpsTmdFVWdfUEF6TXJoSWFkUjRKY3c0OU5lLXpjODV2dHdXUFdB?oc=5"
+      "title": "Singapore’s Gold Hub Plan Gets Lift With DBS Vault Expansion",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-17/singapore-s-gold-hub-ambition-gets-lift-with-dbs-vault-expansion"
     },
     {
-      "title": "How the US-Iran conflict is reshaping Africa’s geopolitical opportunities - Al Jazeera",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWXlaeWhEeXU5OG4zdk1KV250N2kwS3NEb1JROVRvdWloOEsxTXV4ek52QklSaVFhdTFTVHRhd2I3V3NmSGxzQnhialUzMWF3eGlkeVhSV1hiY3RVUEx1dm5TQUFKYXV0N2RtZkJWYUdfc3FBaWVyNV9seC12dVpoaFFRYkw4MFpxVXpqNzJCaEhXZms5LTNIZ1hucHVWd0JXNTJQOGZfR0tzR25Eci15U0Vn0gG3AUFVX3lxTFBpSlliT1FMd2dmLTYwV21NRHRwcjlvb1Z0Nm5lVlBGV21xTEF2cFhzdEh5YTkwNGlqdEZsZHdaOWxYblFHQ19uZWZoek41ZjJnSk1BZG15c000OEtQS3R6VERTZGJvTzVodHJLdm1DZTQ3Tm1MYWpFVUY1UERoR3hxVHpWblZ4M01PbmVRY0prcU1BZTM1U1lDRzBnMWFRYnBJcHByRG5JU0MxcXlkbi05OUFucUcyWQ?oc=5"
+      "title": "Stock Futures Rebound, Bonds Pare Losses After Fed: Markets Wrap",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-16/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "FSI Scholars Examine AI, Biotech Advances, and Geopolitical Competition - Freeman Spogli Institute for International Studies",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT3plNXF3M3dzaGZXVGlQS3VLRGpiYm1NeG1HbFhpYVF2NE9mMGh6ZzRiOHpJWEJtb1ByMG1CODh6bEFzTE0zTWlHSWZBb3ZwWUhZSjgwSDFtYWNQUzhhNzc2MUFyakd0Tm5kRktOWVlONmFzWjJLenJWVlNRYkxRZU16MDVQQnhYZGNQX25lSXluUEo1cE4wa2dCaGNLY09F?oc=5"
+      "title": "Gold Rises as US Treasuries Pare Losses Following Fed Rate Hike",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-16/gold-holds-decline-after-fed-tilts-hawkish-and-raises-rates"
     },
     {
-      "title": "Stocks, Bonds Rise in Countdown to Fed Decision: Markets Wrap",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-15/asian-stocks-to-edge-higher-as-traders-await-fed-markets-wrap"
+      "title": "Russian Oil Uncertainty Hangs Over India’s Largest Buyers",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-16/russian-crude-uncertainty-hangs-over-india-s-largest-oil-buyers"
     },
     {
-      "title": "Turkey Stocks Trigger Circuit Breaker After Fund Redemptions",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/turkish-stocks-fall-more-than-5-as-fund-redemption-woes-deepen"
+      "title": "The Bank of Japan's Hardest Decision in Decades",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-17/the-bank-of-japan-s-hardest-decision-in-decades-video"
     },
     {
-      "title": "European Stocks Advance as Bond Yields and Oil Ease Ahead of Fed",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/european-stocks-advance-as-bond-selloff-eases-ahead-of-fed"
+      "title": "Copper Steadies as Traders Shrug Off Fed’s Hawkish Rate Signals",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-17/copper-steadies-as-traders-shrug-off-fed-s-hawkish-rate-signals"
     },
     {
-      "title": "SEC Moves to Scrap Shareholder Proxy Proposal Rules",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/sec-moves-to-scrap-shareholder-proxy-proposal-rules"
+      "title": "Tata Sons Board Takes Up RBI’s IPO Mandate and a Leadership Dilemma",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-09-17/tata-sons-board-takes-up-rbi-s-ipo-mandate-and-a-leadership-dilemma"
     },
     {
-      "title": "Pangestu: Indonesia May See Lower Budget Deficit in 2027",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-16/pangestu-indonesia-may-see-lower-budget-deficit-in-2027-video"
+      "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/"
     },
     {
-      "title": "Unloved Consumer Names Like Walmart Face Pressure as Rate Hike Draws Near",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/unloved-consumer-names-like-walmart-face-pressure-as-rate-hike-draws-near"
+      "title": "Snap tries to make the case again for its $2,200 smart glasses",
+      "link": "https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/"
     },
     {
-      "title": "Intel-SK Hynix Potential Tie Up; JB Hunt Lower on Costs | Stock Movers",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-16/intel-sk-hynix-potential-tie-up-jb-hunt-lower-on-costs-video"
+      "title": "Musk’s long-time backer is giving SpaceX stock to its investors",
+      "link": "https://techcrunch.com/2026/09/16/musks-long-time-backer-is-giving-spacex-stock-to-its-investors/"
     },
     {
-      "title": "Amazon gives its workers a raise of $1 per hour",
-      "link": "https://techcrunch.com/2026/09/16/amazon-gives-its-workers-a-raise-of-1-per-hour/"
+      "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
+      "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/"
     },
     {
-      "title": "Threads’ new features let podcasters promote shows and reach listeners",
-      "link": "https://techcrunch.com/2026/09/16/threads-new-features-let-podcasters-promote-shows-and-reach-listeners/"
+      "title": "US automakers could soon be forced to include AM radio for free",
+      "link": "https://techcrunch.com/2026/09/16/us-automakers-could-soon-be-forced-to-include-am-radio-for-free/"
     },
     {
-      "title": "Next wave of VCs judging Startup Battlefield 200 contenders at TechCrunch Disrupt 2026 revealed",
-      "link": "https://techcrunch.com/2026/09/16/next-wave-of-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026-revealed/"
+      "title": "Noise wants to help everyday people  become paid content creators",
+      "link": "https://techcrunch.com/2026/09/16/noise-wants-to-help-everyday-people-become-paid-content-creators/"
     },
     {
-      "title": "3 days left to exhibit: Get your brand in front of VCs and high-value leads at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/16/3-days-left-to-exhibit-at-techcrunch-disrupt-2026/"
+      "title": "Pulley, a Carta rival, is shutting down",
+      "link": "https://techcrunch.com/2026/09/16/pulley-a-carta-rival-is-shutting-down/"
     },
     {
-      "title": "SK Hynix reportedly in talks with Intel to build memory chips in US",
-      "link": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/"
+      "title": "The streamers are fighting over Halloween",
+      "link": "https://www.theverge.com/entertainment/996314/tiff-2026-halloween-streaming-below-crystal-lake-yaga-carrie"
     },
     {
-      "title": "Former Infosys chief’s AI startup nabs another $53M",
-      "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/"
+      "title": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
+      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac"
     },
     {
-      "title": "Clean tech startup Fluxnium found a way to tap 50,000 years’ worth of nuclear fuel",
-      "link": "https://techcrunch.com/2026/09/16/clean-tech-startup-fluxnium-found-a-way-to-tap-50000-years-worth-of-nuclear-fuel/"
+      "title": "I wore Snap’s $2,200 smart glasses",
+      "link": "https://www.theverge.com/tech/996422/snap-specs-hands-on-ar-glasses"
     },
     {
-      "title": "A brief history of AI executives calling for regulation",
-      "link": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation"
+      "title": "The 2.5-hour AI-generated Odyssey movie is 2.5 hours too long",
+      "link": "https://www.theverge.com/entertainment/996499/ai-odyssey-movie-review"
     },
     {
-      "title": "Nintendo opens up Fire Emblem with the gigantic Fortune’s Weave",
-      "link": "https://www.theverge.com/games/995539/fire-emblem-fortunes-weave-switch-2-review"
+      "title": "The AI data center e-waste problem is huge — and getting bigger",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban"
     },
     {
-      "title": "The iPhone 18 Pro’s big camera update is all about the small gains",
-      "link": "https://www.theverge.com/tech/995945/iphone-18-pro-max-review-camera-aperture"
+      "title": "Resident Evil is a comedy first and a thrilling nightmare second",
+      "link": "https://www.theverge.com/entertainment/996416/resident-zach-cregger-review"
     },
     {
-      "title": "Meta is reportedly ready to launch less pervy smart glasses",
-      "link": "https://www.theverge.com/tech/996138/meta-luna-ray-ban-smart-glasses-camera-free-connect"
+      "title": "Walmart takes a bite off the cost of Metroid Ravenous physical preorders",
+      "link": "https://www.theverge.com/gadgets/996379/metroid-ravenous-preorder-deal-sale"
     },
     {
-      "title": "The Boox Palma 3 gets stylus support and a sleek redesign",
-      "link": "https://www.theverge.com/tech/995826/boox-palma-3-e-ink-reader-pocket-smartphone-android-16"
+      "title": "Apple reportedly building server packed with M-series Ultra chips for AI",
+      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/"
     },
     {
-      "title": "The EOS R8 Mark II is Canon’s lightest full-frame camera with stabilization",
-      "link": "https://www.theverge.com/tech/995430/canon-eos-r8-mark-11-full-frame-digital-camera-pricing-availability"
+      "title": "Epstein had huge cache of child sex pics; victims sue to find out who's in them",
+      "link": "https://arstechnica.com/tech-policy/2026/09/lawsuit-trump-doj-notified-very-few-victims-in-epsteins-stash-of-child-sex-images/"
     },
     {
-      "title": "AI and data centers are incredibly unpopular in every poll",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september"
+      "title": "Nonprofit that tracks meteors taken down by \"critical blow\" from a cyberattack",
+      "link": "https://arstechnica.com/security/2026/09/nonprofit-that-tracks-meteors-taken-down-by-critical-blow-from-a-cyberattack/"
     },
     {
-      "title": "The world’s best racing driver is about to race 100 karts at once",
-      "link": "https://arstechnica.com/cars/2026/09/the-worlds-best-racing-driver-is-about-to-race-100-karts-at-once/"
+      "title": "Lionsgate releases a new trailer for Sunrise on the Reaping",
+      "link": "https://arstechnica.com/culture/2026/09/haymitch-gets-a-backstory-in-sunrise-on-the-reaping-trailer/"
     },
     {
-      "title": "Lawmakers target Flock cameras with a threat to highway funding",
-      "link": "https://arstechnica.com/tech-policy/2026/09/lawmakers-target-flock-cameras-with-a-threat-to-highway-funding/"
+      "title": "Not just Proton: Getting to know Valve's new SteamOS compatibility layers",
+      "link": "https://arstechnica.com/gaming/2026/09/not-just-proton-getting-to-know-valves-new-steamos-compatibility-layers/"
     },
     {
-      "title": "How chimps teach their kids tool tricks",
-      "link": "https://arstechnica.com/science/2026/09/how-chimps-teach-their-kids-tool-tricks/"
+      "title": "California may gut state net neutrality law to comply with Trump admin demand",
+      "link": "https://arstechnica.com/tech-policy/2026/09/california-may-gut-state-net-neutrality-law-to-comply-with-trump-admin-demand/"
     },
     {
-      "title": "The Roman telescope has enough gas for 22 years, double NASA's expectations",
-      "link": "https://arstechnica.com/space/2026/09/the-roman-telescope-has-enough-gas-for-22-years-double-nasas-expectations/"
+      "title": "Researchers swap in human brain cells for a mouse's cortex",
+      "link": "https://arstechnica.com/science/2026/09/researchers-swap-in-human-brain-cells-for-a-mouses-cortex/"
     },
     {
-      "title": "“Filmmaker” suing PassThePopcorn may be banned user out for revenge",
-      "link": "https://arstechnica.com/tech-policy/2026/09/filmmaker-suing-passthepopcorn-may-be-banned-user-out-for-revenge/"
+      "title": "Scientists “truly astonished” by discovery that challenges Earth’s origin story",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232132.htm"
     },
     {
-      "title": "18-year-old dies of measles in PA from severe neurological complication",
-      "link": "https://arstechnica.com/health/2026/09/measles-kills-18-year-old-in-pa-fourth-death-as-state-outbreak-nears-700-cases/"
+      "title": "Scientists find an immune “false alarm” that may drive rapid aging",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232130.htm"
     },
     {
-      "title": "SpaceX declares Starship ready for orbit, sets launch date next week",
-      "link": "https://arstechnica.com/space/2026/09/spacex-sets-launch-date-for-first-starship-orbital-flight/"
+      "title": "A 240-million-year-old fossil just changed the dinosaur timeline",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232128.htm"
     },
     {
-      "title": "Smelling chocolate helped men complete more reps without feeling more tired",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102445.htm"
+      "title": "James Webb reveals Chariklo’s mysterious rings are changing faster than expected",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232124.htm"
     },
     {
-      "title": "This Australian cave hid 25,000 years of ritual secrets",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102443.htm"
+      "title": "Venus may have swallowed its own moon",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232122.htm"
     },
     {
-      "title": "Scientists discover a major brain shift between ages 50 and 75",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102441.htm"
+      "title": "Scientists turn seawater into fresh water without harmful brine",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915100137.htm"
     },
     {
-      "title": "UV light reveals possible camouflage on a 125-million-year-old crocodile",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102436.htm"
+      "title": "Scientists recreated what mice saw from brain activity alone",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260914102449.htm"
     },
     {
-      "title": "The shape behind the Einstein problem just revealed strange new physics",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102432.htm"
+      "title": "What the Bayeux tapestry reveals about medieval buildings on both sides of the Channel",
+      "link": "https://phys.org/news/2026-09-bayeux-tapestry-reveals-medieval-sides.html"
     },
     {
-      "title": "Supermassive black hole winds are 100 times more powerful than scientists thought",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260914102429.htm"
+      "title": "Why Melbourne makes you sneeze in spring",
+      "link": "https://phys.org/news/2026-09-melbourne.html"
     },
     {
-      "title": "Nearly 10,000 patients reveal what works best for knee arthritis pain relief",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260913082208.htm"
+      "title": "Tracking visits to public points of interest can inform community health measures",
+      "link": "https://phys.org/news/2026-09-tracking-community-health.html"
     },
     {
-      "title": "Mathematician challenges a 2,000-year-old legend about the Parthenon's optical illusions",
-      "link": "https://phys.org/news/2026-09-mathematician-year-legend-parthenon-optical.html"
+      "title": "Sharks on the move expose the need for international conservation efforts",
+      "link": "https://phys.org/news/2026-09-sharks-expose-international-efforts.html"
     },
     {
-      "title": "Double dip: Sampling contaminants of emerging concern two ways improves accuracy",
-      "link": "https://phys.org/news/2026-09-dip-sampling-contaminants-emerging-ways.html"
+      "title": "Survey reveals significant gap across 64 countries between commitment to the rule of law and its implementation",
+      "link": "https://phys.org/news/2026-09-survey-reveals-significant-gap-countries.html"
     },
     {
-      "title": "New species of egg-eating snake discovered in Ethiopia's Harenna Forest",
-      "link": "https://phys.org/news/2026-09-species-egg-snake-ethiopia-harenna.html"
+      "title": "Forest structure matters more than topography in shaping plant diversity in Southern Apennine old-growth forests",
+      "link": "https://phys.org/news/2026-09-forest-topography-diversity-southern-apennine.html"
     },
     {
-      "title": "Growing up in poverty triples young people's likelihood of becoming NEET",
-      "link": "https://phys.org/news/2026-09-poverty-triples-young-people-likelihood.html"
+      "title": "Long-term oyster reef restoration shows clear success in murky waters",
+      "link": "https://phys.org/news/2026-09-term-oyster-reef-success-murky.html"
     },
     {
-      "title": "Caffeine pollution could disrupt crustacean defenses against predators",
-      "link": "https://phys.org/news/2026-09-caffeine-pollution-disrupt-crustacean-defenses.html"
+      "title": "Passion Meets Precision at NASA’s Flight Research Lab",
+      "link": "https://www.nasa.gov/people-of-nasa/armstrong-people/passion-meets-precision-at-nasas-flight-research-lab/"
     },
     {
-      "title": "Microbes can produce adhesive materials from glucose instead of petroleum",
-      "link": "https://phys.org/news/2026-09-microbes-adhesive-materials-glucose-petroleum.html"
+      "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+      "link": "https://science.nasa.gov/solar-system/moon/nasas-moon-orbiter-spots-new-once-in-century-moon-crater/"
     },
     {
-      "title": "Three questions: Putting nuclear waste into perspective",
-      "link": "https://phys.org/news/2026-09-nuclear-perspective.html"
+      "title": "NASA Celebrates Restoration of Guam Station Damaged by Typhoon Mawar",
+      "link": "https://www.nasa.gov/technology/space-comms/nasa-celebrates-restoration-of-guam-station-damaged-by-typhoon-mawar/"
     },
     {
-      "title": "APOD: 2026 September 16 – Webb’s View of M64",
-      "link": "https://science.nasa.gov/image-article/apod-2026-september-16-webbs-view-of-m64/"
+      "title": "NASA Watches Earth’s Weight, Finds Center of Mass",
+      "link": "https://www.nasa.gov/science-research/earth-science/nasa-watches-earths-weight-finds-center-of-mass/"
     },
     {
-      "title": "NASA Ames Stars of the Month: September 2026",
-      "link": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-september-2026/"
+      "title": "Indonesia’s Anak Krakatau",
+      "link": "https://www.nasa.gov/image-article/indonesias-anak-krakatau/"
     },
     {
-      "title": "NASA Invites Media to International Observe the Moon Night",
-      "link": "https://www.nasa.gov/news-release/nasa-invites-media-to-international-observe-the-moon-night/"
+      "title": "Curiosity Postcard Celebrates Rover’s 5,000th Day on Mars",
+      "link": "https://science.nasa.gov/photojournal/curiosity-postcard-celebrates-rovers-5000th-day-on-mars/"
     },
     {
-      "title": "Celebrate International Observe the Moon Night with NASA",
-      "link": "https://www.nasa.gov/centers-and-facilities/goddard/celebrate-international-observe-the-moon-night-with-nasa/"
+      "title": "NASA Visits Schools Strengthening Florida’s Skilled Workforce",
+      "link": "https://www.nasa.gov/image-article/nasa-visits-schools-strengthening-floridas-skilled-workforce/"
     },
     {
-      "title": "Artemis III Crew Visits NASA Kennedy’s Vehicle Assembly Building",
-      "link": "https://www.nasa.gov/image-article/artemis-iii-crew-visits-nasa-kennedys-vehicle-assembly-building/"
+      "title": "\"Nie ma takiego trybu\". Maciej Berek odpowiada prezydentowi - polsatnews.pl",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdzJPeVloajhpVDBZMHBOTjcwNUotb0xOdEpldnJ6bXkxREQxWXJqdTduQXZ3ZTdCZ19abU0xQzh4RXl6MEFJakJXVlhIWmR1c0hNb1VUWjEzTDZYcUZ3MFNtZ1NGT1YwM1h1bU1EZjN1dWVqS0dEWmhoaF9yYnh1MENRcHVxM3d3Qy1UU0MwdmVSZjhfcVkzeUJZY2xwSTFjckFqaw?oc=5"
     },
     {
-      "title": "Travel",
-      "link": "https://www.nasa.gov/centers-and-facilities/nssc/travel/"
+      "title": "W Kongresie USA będą głosować nad \"piekielnymi\" sankcjami na Rosję - Wyborcza.biz",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYXBvTThPQl9GdzhJOVNCSVM1OFJwMHJabmJ2MG41NnBCWXJWanFOQ0RDQTQ5YU44U0E1M3dBYXRUdGxEZFlkNHpQQ1F2bTJYRkxPcGxHbWEyU2lkempQNkFRNjZEUEdHSThoQmtsbXFSaDl4ZTlWU2p2Ry1JZVM5ZE1kMThIM0gyYnZqbnhzSk5Fak1ndkF2bjNlRjA5Y2pMQjRNTjJieGFBUGM?oc=5"
     },
     {
-      "title": "APOD: 2026 September 15 – A Daytime Eclipse: Moon Occults Venus",
-      "link": "https://science.nasa.gov/image-article/apod-2026-september-15-a-daytime-eclipse-moon-occults-venus/"
+      "title": "Von der Leyen zapowiada zacieśnienie sojuszu UE z Kanadą. To prztyczek w nos Trumpa - Business Insider Polska",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOGptXzdCUFQ4aEdKOXFMU1ZlcVd4c2ZsRnJhRV9uZWZJZmNaYlNvRHhmZXc3QzBZVUwxM3I1WnBLcmM1MFRVRjd5c0NDTndQM0FINHRLanRJelNHY2RjOXdlX182Zmw0S0swc2twZEZqelB4VTBfMFJpbFBJdk50X1J5S3hCTF9yMlZlSk5jNW4wOGRfajhldEl5M1NDWjRDVV8tRVl2Rkg1TkJqajd3TVUyVnpHcmk2MVJpLWdZNzA?oc=5"
     },
     {
-      "title": "Prawniczka odpowiada szefowi Kancelarii Prezydenta. \"Nie jest tak\" - Fakt",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeHVCcXRGeTFhTDBnRmdpS2lXc2NfUm8xa1lwT0NCWlpFaUdES3BQNUVjd3pVNEN2eW1keVJGamM5aEM1eXNTaU5STW5QVGpkYVdQZWV0U1paUkRyaF9Bd2kzS1F6dkpUdExGcnRPeWRuY1lBWU1FZWNIVWF4Q1RTdDUxYklMWHZEUVFHZFptaFMzdldsbGdnR0YwVVpSRUlUOEJwOW85QQ?oc=5"
+      "title": "Trump znowu grozi Europie. Tym razem poszło o plany wobec Kanady - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXpWTXNiWDJhaUNBem9iV1BTM0ZESW9fOE5md3pWOG9LQVI3MU44Q2ttZlA5dmRKZDc1WUZ4QVZ1R05icWl3Nm80T3RPN0Q2RUJvNDA2bkRGanlFZXQ3LW0zQmQtVk1MWWJ2UG5nWGdMVmU3REdQdmlSNzJaRkpDX3lOOVRhdTVjQVVRdDQyUFNTSFhMUUdCRzdKc0tELS1RTjdlTG15S1I4dw?oc=5"
     },
     {
-      "title": "\"Otwarcie wrogi świat\". Ursula von der Leyen wygłosiła orędzie o stanie UE - Do Rzeczy",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOGV0MlZwMV9aVFd6WC1CQjZKbDRNTnNrSklEVEl0X1pydmkyakp2bEFVblBXamxXOWdRRnZzeVNwUzNjSmpUTXQ1Q09LUjZFUzVHQndyclZsVVhGM3pDQ1pQY0hXbDQ4ZGF3Q0NJb1kxdjhrQXA1c0R4akZJS0VBMlpueFY5YVJpQUNpSkczRjVnc2JRNUZ1Y1hubDdacXB5c19zRUZUUVJXNVN4b2dzdUhxQUlheVNpV2ZN0gGrAUFVX3lxTE43b2VuRFRoaU40NkVFVk5Ydy1tMWVpLXphUGE4UVJUZ1kwUVRfNUZaMVBOaV9XTFEzSlY3Y3ZtZ3lhOHdhUEFyZkFydzdKcWF4bnY4em51dDY3VGVOWlI1UVJqNTVBc0NVRzJpaE9ubVlKczBuTjVRaUU0RnZSd3pjb05zWTk4Vm5EeHR0RVZPcU5ibDVmNS0ydHczNzFKNjIwU3FpaHZVYkZROA?oc=5"
+      "title": "Posłanka PiS opuściła budynek AWS. \"Nadal kontynuuję głodówkę\" - polsatnews.pl",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeE9MUlNOM1ZPamN6TnBmNmptMzlJQWhvSkVibHlnWHdaQlVCT3FkVFhMQ25IOUU2S3RVWEt0SlBUY1dyakVvZGN4WjduNW9kT1pheHFrWDVzalNXN3VFTlhSa2ZaTDVDcU9BZ193eDNNVC0tQVdwYjdTUU9uOV9oNmRmX2tqNEJDM1JHX0JoTUhSNHV3SlBCRkpfWUVkMzRGQzhYc19B?oc=5"
     },
     {
-      "title": "Dron wystrzelony w kierunku świętego miasta islamu. Huti odpierają zarzuty - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUUZLTGVJM2YyTXRaaGtvMVV3MWpEUUFsQWtBMVV3VHJMcHZLZExhcDFnbGhWaV9iNVNiUDUyVTJVTW9taDZzTnFZWWR3cTlFRmd0NENyZ0ZpRVhTVG9rMmVIeFcxTm5DN2Y2Ml8zQl82TnVyTXowUGNQUWlsZjFqTDJOXzEwRF9raTF3YTcwcy02MjdMUkltQWdFcWd0UXdNeTFrT3g2TWdEQnNUVjBUT2N4MVlMbVRQR1NkREV3?oc=5"
-    },
-    {
-      "title": "Rola Republiki w aferze. Te wątki do pilnej weryfikacji [OPINIA] - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUNubkJKaEpUeUlrMnZ0SjVhVzdxVFpwR295OC1NMUZ5cHJjYU1rVTlqTUNQOTY3QzlPTGMtNldSWTFTNnd5WGZpMnZZTjJFM2xpVWgtOUw5VUZLQ1BOQm9HMmVVMTlISlhhREtta1BodElwXzI4WndXRXVEX2wybkJXSExtRkE0OXVnWFd0eTVudFh3YTUyQ0JmM2prQTJENS1Qa19yOA?oc=5"
-    },
-    {
-      "title": "Rosyjski dron był uzbrojony w głowicę bojową. Prokuratura ujawnia - Wiadomości Onet",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd0hUUGx4X3l3ZTNKZE5tOE8yZ05YSXlHR21kOHZwOGxZTFlTMGFyNFhUaGFON3lKQ0o1OGdILTlhUTBKa09ZX3V4NTJ2dGNIUHpDdjZFOUNfeVI3TjhMQ2YxVGFIdGtUUHBQZndaQ1hyNDJCNmk0RmlVcXp6QnFQeW1aTzgtRU9kVU45dnBmWG5nUDdjZ2RfV2lIcDQweTlFZFdYVEo1VzRkZw?oc=5"
-    },
-    {
-      "title": "\"Amerykanie byli w szoku\". Warszawa dostała sygnał ws. Putina - polskieradio24.pl",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUS1vNE5PM01OSEJxRkJnVUdlUW9CV2d6NmpIYlF6UFQwNFlkaE03bUNicVlYZDZXeGpQVWVQZjNaMWhMakZyQTEyUjZJZ2VZU3d4U0dEczhsZzB3VVk2RGlaM2NjdmplNDlja0tXR0tYT2s2dGJ5Rk9UWl9NVExHRkRRMmN1Q0Iwc0Zua0x5bW8tTVU?oc=5"
-    },
-    {
-      "title": "Poseł Matecki sforsował płot Akademii Wymiaru Sprawiedliwości. Zdecydowany ruch nowego rektora - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNM3F6UUhmN09rTndFQm83VEU5b1lqYmhONzBza0MtUUtRdm81R0ZmN2x2RFlfZ2twbUJDM3RmZVdiVjJIakRWeEE3WG9IUHF6V3lJVHUwTGZUR3I4RnY3WXhaUDktR2FkV1JpdW9rbVhkSWFfaVBFSzNmcEJ5SGJVUDU3UlZ0UUNwWjEzcE1LbXFidDliMml5bXEyUlRIdUZCbHZ5cFhYa2RKbnJxd20yU1lDS0lFY0NsN29mZFlZZXJ4Zw?oc=5"
+      "title": "Posłanka PiS pokazała, co się dzieje w gabinecie rektora AWS. \"Włamał się!\" - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORXQ3LVZoNnFtNW5FTXJ2NGRaVnRrc21QS3VFa0F4WVVaQlNXaG1Ma09XSXlaaW9BZkZmeGh3S0QwM1AtcmJBUGtGd0FuQzFScUxsaHJ0akZzeU1XTENkRnNVakdobjlkSV9Jb0pWMzFDcG9YMFA0OTVFdUJfMVd4WDhhbTF2UUpDQmFqV2ZBMnN2a3RNdUktVURldTNya3Y1aXp6MlZjTllEY0VaZ09aLUU2VDEtZDlWV0E5d3V3a2thUQ?oc=5"
     }
   ]
 }
