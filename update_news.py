@@ -123,7 +123,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-2.5-flash-lite',
+        model='gemini-3.1-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
