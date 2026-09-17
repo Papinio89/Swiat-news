@@ -23,7 +23,7 @@ RSS_URLS = [
     "https://www.theverge.com/rss/index.xml",
     "https://arstechnica.com/feed/",
     
-    # --- NAUKA / KOSMOS / CIEKAWOSTKI ---
+    # --- NAUKA / KOSMOS ---
     "https://www.sciencedaily.com/rss/top/science.xml",
     "https://phys.org/rss-feed/",
     "https://www.nasa.gov/feed/",
@@ -96,20 +96,20 @@ if len(filtered_raw_articles) < 5:
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz dynamiczny przegląd globalny (przetłumacz i sformatuj na język polski).
+prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, dynamiczny przegląd najważniejszych wiadomości ze świata (przetłumacz i sformatuj na język polski).
 
-WYMAGANA STRUKTURA (12-16 elementów):
-Podziel wiadomości na dwie wyraźne grupy:
-1. FAKTY I GOSPODARKA (ok. 75% treści): Ważne wiadomości ze świata, geopolityka, rynki (waluty, surowce, konflikty, decyzje rządowe).
-2. CIEKAWOSTKI I LUŹNE TEMATY (ok. 25% treści, minimum 3-4 pozycje): Obowiązkowo dodaj zaskakujące, nietypowe lub lżejsze ciekawostki, anegdoty ze świata nauki, technologii lub codzienne smaczki (z unikalnymi emoji typu 🐝, 🤖, 🧠, 🚀).
+PROFIL WYDANIA:
+- 100% TWARDE FAKTY I GOSPODARKA (12-16 elementów).
+- Skup się WYŁĄCZNIE na istotnych wydarzeniach: geopolityka, rynki finansowe, surowce, decyzje rządowe/banków centralnych, obronność, kluczowe technologie oraz ważne wydarzenia z Polski i świata.
+- Całkowicie pomijaj luźne ciekawostki, śmieszne anegdoty czy tematy lifestylowe (od tego jest osobny serwis rozrywkowy).
 
 Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
-- "category": Kategoria pisana wielkimi literami (np. "ŚWIAT / GOSPODARKA", "TECHNOLOGIE", "CIEKAWOSTKA / LIFE").
-- "title": Krótki, chwytliwy nagłówek z dopasowaną emotikoną na początku (np. "🐝 Dzień Pszczół: Niezwykłe odkrycia...").
-- "summary": Konkretny, krótki opis w 1-2 zdaniach.
-- "comment": Trafny, lekki lub wnikliwy komentarz analityczny (odpowiednik idei żarówki).
-- "image_query": 2-3 precyzyjne, konkretne słowa kluczowe w języku ANGIELSKIM do wyszukiwania zdjęcia stockowego (np. "military fighter jet", "data center servers", "cute raccoon", "diplomacy meeting", "quantum processor").
-- "link": Dokładnie ten sam URL z wejścia dla danej wiadomości (jeśli to luźna ciekawostka bez linku, przypisz pierwszy lepszy URL z listy).
+- "category": Kategoria pisana WIELKIMI LITERAMI (np. "GEOPOLITYKA", "RYNKI I GOSPODARKA", "TECHNOLOGIE / AI", "POLSKA", "OBRONNOŚĆ", "NAUKA").
+- "title": Krótki, merytoryczny i chwytliwy nagłówek z dopasowaną emotikoną na początku (np. "📉 Rynki w dół: Nowe decyzje Fed...", "🛢️ Ropa drożeje po napięciach na Bliskim Wschodzie").
+- "summary": Rzeczowy, konkretny opis w 1-2 zdaniach, wyjaśniający sedno wydarzenia.
+- "comment": Celny, analityczny komentarz biznesowy, polityczny lub rynkowy (wyjaśniający konsekwencje lub szerszy kontekst).
+- "image_query": 2-3 precyzyjne, profesjonalne słowa kluczowe w języku ANGIELSKIM do wyszukiwania zdjęcia stockowego (np. "stock market board", "cargo container ship", "diplomacy meeting", "military aircraft", "server room datacenter").
+- "link": Dokładnie ten sam URL z wejścia dla danego artykułu.
 
 ZASADY:
 - BEZWZGLĘDNIE unikaj tematów powtarzających się z ostatniej historii archiwum: {json.dumps(previous_topics[:30], ensure_ascii=False)}
@@ -123,7 +123,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.1-pro-preview',
+        model='gemini-2.5-flash',
         contents=prompt,
     )
     text_res = response.text.strip()
