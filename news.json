@@ -1,127 +1,119 @@
 {
   "date": "17 September 2026",
-  "time": "16:46",
-  "timestamp": "2026-09-17_16:46",
+  "time": "16:48",
+  "timestamp": "2026-09-17_16:48",
   "items": [
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Ninth woman's body found as South African police investigate string of deaths",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+      "category": "POLSKA",
+      "title": "🚨 Alarmy przeciwlotnicze w Rzeszowie i Lublinie po atakach na Ukrainę",
+      "summary": "W Rzeszowie i Lublinie uruchomiono syreny alarmowe w związku z intensywnym ostrzałem rakietowym zachodnich rejonów Ukrainy przez siły rosyjskie. Polskie i sojusznicze lotnictwo zostało poderwane w celu zabezpieczenia przestrzeni powietrznej.",
+      "comment": "Wzmożona aktywność rosyjskiego lotnictwa przy polskiej granicy wymusza stałą gotowość bojową sił NATO i podnosi ryzyko incydentów granicznych.",
+      "image_query": "military radar antenna",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTkZVX2YwMTRwNVhPYUNSN3o3Yl8tSW9OSURoOC12ZFREZlp1dTh1QjVOaEUzek8yMnhNWElRT2w2MXVxZkw2TUx5NjJycXkwaE5OWmdzNy0ya2hJZ1V6Q05TZ1BnaXdKRzVmM3BfNmRmYmpCTkJBaFVOVGZiakpLQUhNSnVDbmdUalUwOEVGVzJnNExpVlVlSU1sd2NsVEU?oc=5"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Assad regime planned US journalist's kidnap for weeks, BBC finds",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss"
+      "category": "POLSKA",
+      "title": "🇵🇱 Eksperci ostrzegają przed presją ze strony Rosji",
+      "summary": "Analitycy ds. bezpieczeństwa wskazują, że Rosja wywiera stałą presję psychologiczną i hybrydową na Polskę, dążąc do destabilizacji sytuacji w regionie. Działania te obejmują prowokacje w przestrzeni powietrznej oraz ataki cybernetyczne.",
+      "comment": "Sytuacja wymaga dalszego wzmacniania infrastruktury krytycznej i odporności społecznej na operacje dezinformacyjne ze strony Kremla.",
+      "image_query": "geopolitics map europe",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNDN3TGtJTkl5bzktVmYwelJ4c3d0T0V3d0d5cGV1dVVvbk1CSmxjdFNhWFpSOWdkUDUzZHBmczVXMmp5T3N2N09jajdwcGZNV0Fib0lvaXhzNlNTWldwZ0hka1hLck1qX1c0NW5CV0w0Uy1rdG9zaUJINmVmMDExRC1RY1l4dEZUQ1RObTE5b3pXMzRQQ0E0?oc=5"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss"
+      "category": "RYNKI I GOSPODARKA",
+      "title": "📈 Obligacje skarbowe zyskują po spadku obaw inwestorów",
+      "summary": "Ceny amerykańskich obligacji skarbowych wzrosły, a ich rentowności spadły w reakcji na rosnące zaufanie rynku do wyznaczonego kierunku polityki antyinflacyjnej. Inwestorzy optymistycznie oceniają stabilizację stóp procentowych.",
+      "comment": "Uspokojenie na rynku długu sygnalizuje koniec fali wyprzedaży papierów skarbowych, co daje przestrzeń do uspokojenia na światowych rynkach akcji.",
+      "image_query": "treasury bond chart",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-17/global-bonds-recover-as-warsh-s-inflation-fight-calms-market"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Swedish PM Kristersson resigns after election loss",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
+      "category": "TECHNOLOGIE / AI",
+      "title": "💻 Huawei rzuca wyzwanie Nvidia z nowym procesorem AI",
+      "summary": "Chiński gigant technologiczny Huawei planuje premierę swojego najnowszego układu sztucznej inteligencji na pierwszy kwartał 2027 roku. Nowy chip ma stanowić bezpośrednią konkurencję dla flagowych procesorów firmy Nvidia.",
+      "comment": "Mimo amerykańskich sankcji technologicznych Pekin konsekwentnie buduje własny niezależny ekosystem półprzewodników najwyższej wydajności.",
+      "image_query": "microchip processor hardware",
+      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 EU announces plan to restrict social media access for under-15s",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&at_campaign=rss"
+      "category": "ENERGETYKA I TECHNOLOGIA",
+      "title": "⚡ Giganci AI łączą siły, by rozwiązać problem deficytu energii",
+      "summary": "Google, Nvidia oraz Anthropic wspierają inicjatywę Emerald AI, mającą na celu optymalizację przydziału mocy w sieciach energetycznych dla nowo powstających centrów danych sztucznej inteligencji.",
+      "comment": "Wąskie gardło w postaci braku energii elektrycznej staje się obecnie główną barierą wzrostu dla branży AI i wymusza inwestycje w inteligentne zarządzanie siecią.",
+      "image_query": "power grid data center",
+      "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Aztec document goes on display in Mexico after 186 years abroad",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/news/articles/ck980qyy6d2zo?at_medium=RSS&at_campaign=rss"
+      "category": "TECHNOLOGIE / AI",
+      "title": "🍏 Apple projektuje własne serwery AI z chipami M-Ultra",
+      "summary": "Apple pracuje nad autorskimi serwerami bazującymi na najpotężniejszych układach scalonych z serii M Ultra, aby zasilić własne centra danych dedykowane sztucznej inteligencji.",
+      "comment": "Uniezależnienie się od zewnętrznych dostawców infrastruktury chmurowej pozwoli Apple na znaczne obniżenie kosztów operacyjnych oraz lepszą ochronę prywatności danych.",
+      "image_query": "server room datacenter",
+      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Klopp wants to 'reclaim' flag amid German elections",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmwyzk6xkrd0o?at_medium=RSS&at_campaign=rss"
+      "category": "GEOPOLITYKA",
+      "title": "🇧🇷 Prezydent Lula zwiększa świadczenia socjalne przed wyborami",
+      "summary": "Prezydent Brazylii Luiz Inácio Lula da Silva ogłosił podwyżkę wypłat w ramach programów socjalnych w obliczu zbliżających się zaciętych wyborów prezydenckich.",
+      "comment": "Ekspansywna polityka fiskalna przed wyborami budzi niepokój inwestorów co do długoterminowej stabilności budżetowej największej gospodarki Ameryki Południowej.",
+      "image_query": "brazil flag brasilia",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-17/lula-boosts-social-welfare-payments-ahead-of-tight-election"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 LNG resilience tested as geopolitics reshapes global energy security - CGEP",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0cEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
+      "category": "RYNKI I GOSPODARKA",
+      "title": "📊 Lazard: Światowe rynki wkraczają w erę podażową",
+      "summary": "Eksperci banku inwestycyjnego Lazard wskazują, że globalna gospodarka przechodzi z ery stymulacji popytowej w okres ograniczony przez czynniki podażowe, takie jak surowce i energia.",
+      "comment": "Zmiana tego paradygmatu wymaga od inwestorów redefinicji strategii i alokacji kapitału w stronę infrastruktury, wydobycia oraz nowych technologii przemysłowych.",
+      "image_query": "financial chart analysis",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-17/lazard-s-van-nostrand-markets-entering-supply-side-era-video"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 9/11@25: How Terrorism Reshaped Global Geopolitics - StratNews Global",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMGFidjhQc3NEeGRaWV9fYlVMb3pvQ3ZEOWR3WWlaUlppNEt0cjFWMG5nQ202QW5leE5oSzNGaG1SaDVkMUV4V2NPU2c4XzNEb3JKUEtwYkloV0QyQnpSWk05YUJiSzloRG5QbzJKbTBwZlZaeTVsLW0wNFZ2S0lONVZ2cjNobVZrckRiX2NyUnFGYk1FVUlqMHl3?oc=5"
+      "category": "FINANSE I INWESTYCJE",
+      "title": "💼 Bain Capital Ventures uruchamia fundusz o wartości 1,6 mld USD",
+      "summary": "Bain Capital Ventures pozyskało 1,6 miliarda dolarów na nowy fundusz, który skupi się na finansowaniu startupów technologicznych z sektora AI, oprogramowania enterprise oraz infrastruktury.",
+      "comment": "Napływ świeżego kapitału venture capital dowodzi, że mimo spowolnienia gospodarczego sektor innowacyjnych technologii wciąż cieszy się dużym zaufaniem inwestorów.",
+      "image_query": "venture capital business",
+      "link": "https://techcrunch.com/2026/09/17/how-bain-capital-ventures-plans-to-deploy-its-fresh-1-6b-fund/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Secretary-General of ASEAN Delivers Pre-Recorded Remarks at “ASEAN 2045: Geopolitics, Innovation and Opportunity in a Changing World” - asean.org",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUVdGdXo0QzdrSVlLa1lNSmRPSUxINTFLQVNOV2VnN1ZEbkNJRExXUHBCcWxjeGl0b1RzdjRwQlJlNG43Q1FrNHJoVlkzUkJUTmMzN1FJV0IxVHgtMTAteXE5Vy12czg0QnpRNWt3ek5fS1o3ZFAtdmhxcFh3RHAteVZacmJJaEkxTUpDVWdIaFJkYzNqNFU1bFE3MUd5Ykxwcl9MWml2WmpuMEFEN0VUMzN2MFhLNmpfOVpLWGx1X1dkM042RllnRU5qTG9QU0lxM3pxUklTM3dRdmoxOXFOaV9R?oc=5"
+      "category": "CYBERBEZPIECZEŃSTWO",
+      "title": "🔍 Badacze ujawniają luki w systemach nadzoru kamer Flock",
+      "summary": "Eksperci ds. bezpieczeństwa przedstawili szczegółowy raport pokazujący, w jaki sposób rozległa sieć kamer Flock śledzi pojazdy i pieszych oraz jakie stwarza to zagrożenia dla prywatności.",
+      "comment": "Ujawnienie podatności w prywatnych systemach monitoringu używanych przez służby miejskie zaostrza debatę nad uregulowaniem masowej inwigilacji.",
+      "image_query": "surveillance camera security",
+      "link": "https://arstechnica.com/security/2026/09/hackers-reveal-how-flock-cameras-really-track-cars-and-people/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 When infrastructure becomes a battleground: The geopolitics of global logistics - Gulf News",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOVNxZHBscFdQVTU3V0JfVS0tUUF4cnNybmJiMGk4Y0FrWDJURlRCLXcwQy1MWEplR09MbkxCMF8yNG1IUmtGOTRnMWV6Y25CUlc2bXdWbE9uX202Skt5UC1TQUJEWnJ3Mzh4NmFvTWlISUR2REgzdWlmQVdtZVY1NnlURzZNbWJ3eTRWMm5sYkE0MTZ5N3F5OU9hYW9UNVhNY29vRHBYMUQtajRHRmw2WkkyYlpQVXNjSWR3Q3BVenB6c3B60gHXAUFVX3lxTFAxeXNXYmFKTExESEFjRmh5TjctaXFyel9mY0ZhUjBTcVpmdWdDd2VGcmxVcEtCVmswZHZHRG5oS2RTdUZCaE5oazV6VGlES04tYjRuTDJVTVR4b1VlMFlQU0x0a3J2ZzNkX3VhdFJoOUZIWVNjUklmR2NxeDFZOXdtVjh4MU9fVU1XT3lYZzNaeFE0dExIVkU5NXNMcWtTUW02NnBWaGs2d1JGMkhKMGJEa25ER0VGeDdyWWNrMzk4OUpURmdUUEowOS1YWFU0VjlxS3d5djhz?oc=5"
+      "category": "PRZEMYŚL KOSMICZNY",
+      "title": "🚀 NASA zamawia kolejne misje Starliner i certyfikuje nową rakietę",
+      "summary": "Agencja NASA zdecydowała o zakontraktowaniu kolejnych lotów kapsuły Boeing Starliner oraz wsparciu certyfikacji nowej rakiety nośnej, aby zapewnić ciągłość dostaw do stacji orbitalnej.",
+      "comment": "Dywersyfikacja środków transportu kosmicznego ma kluczowe znaczenie dla niezależności operacyjnej USA na niskiej orbicie okołoziemskiej.",
+      "image_query": "space rocket launch",
+      "link": "https://arstechnica.com/space/2026/09/nasa-to-order-more-starliner-missions-and-help-certify-a-new-rocket-to-keep-it-flying/"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 AI, geopolitics are changing global power - Daily Monitor",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzNWNkY1aVFWX0RaOENKU0FWQm5WRXA5eUlhTGRxWU5mTFR2cVctUFJvMU1YR040Y3NQTWt5TVktQVgwY2s2SFpHTkh1emQ5RlZOLTc2QXRQa1lPNk1SdmR1VW9XdTNNS1pIM2VWc1hBcXBTdWFvWWNHejNDNnctTktJcWlUVU5jTVNELV91TDdiQ21WTDJaYmpB?oc=5"
+      "category": "NAUKA I MEDYCYNA",
+      "title": "💊 Przełomowy lek na raka obraca mechanizmy obronne guza przeciw niemu",
+      "summary": "Naukowcy opracowali nowy lek przeciw międzybłoniakowi, który zmusza mechanizmy ochronne komórek nowotworowych do ich samozagłady.",
+      "comment": "Innowacyjne podejście do celowanej terapii onkologicznej może otworzyć drogę do leczenia innych dotąd nieuleczalnych postaci nowotworów.",
+      "image_query": "medical laboratory research",
+      "link": "https://www.sciencedaily.com/releases/2026/09/260915232136.htm"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Pacific island nations seek to turn geopolitics into funding to offset climate change harm - ABC News - Breaking News, Latest News and Videos",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      "category": "POLSKA",
+      "title": "🏛️ Spór polityczny wokół ustaleń wywiadu i sprawozdań rządowych",
+      "summary": "W polskim parlamencie trwa dyskusja dotycząca analiz wywiadowczych i informacji rzutujących na politykę zagraniczną państwa, stanowiąc przedmiot krytyki ze strony opozycji.",
+      "comment": "Kwestie bezpieczeństwa narodowego po raz kolejny stają się osią sporu politycznego przed nadchodzącymi rozstrzygnięciami wyborczymi.",
+      "image_query": "polish parliament building",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWjNQRXJRNklwM3dhRGtacGRDWks2dHJBRk5ZTlJDZG95WkdtN25OTzJnUGRnY3JaV0ppa295anVwdmZJUkFWbFZ0ZWJTaThZR3U5V1pNcEdYTmtfU2JHTXEwNktENGkwby1yYUN5MUh0NV9MZEMwN0ZuMWt2NW5TdUZZZWdCLWlpZUZFbWJndWRUTEd2U0RFekF4RHpVUjJWQ0UyYQ?oc=5"
     },
     {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Past is prologue for geopolitical developments - MIT News",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lVExESkpXWTRScENEdUZjTHJMVG5VTzFoQ2ZiTnU0bTlfS09UclBDWV81WmpkUWNlNXVBX2dHTlcwYm8tMDdpclZEa1BkSVFfTGY5WUlUS3FXRDdlbXpobW1lN2xieEQtajB3U3l1aUJxcVVpSENpVVFn?oc=5"
-    },
-    {
-      "category": "AKTUALNOŚCI",
-      "title": "📌 Stocks, Bonds Rise After Fed-Day Drop as Oil Falls: Markets Wrap",
-      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-      "comment": "Brak dodatkowego komentarza.",
-      "image_query": "world news global press",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-16/stock-market-today-dow-s-p-live-updates"
+      "category": "OBRONNOŚĆ I TECHNOLOGIA",
+      "title": "📡 NASA odbudowała kluczową stację łączności satelitarnej na Guam",
+      "summary": "NASA poinformowała o pełnym przywróceniu sprawności stacji komunikacji kosmicznej na wyspie Guam, która została uszkodzona przez tajfun Mawar.",
+      "comment": "Przywrócenie infrastruktury na Guam ma krytyczne znaczenie dla stabilności połączeń satelitarnych i monitoringu w kluczowym geostrategicznie rejonie Indopacyfiku.",
+      "image_query": "satellite dish antenna",
+      "link": "https://www.nasa.gov/technology/space-comms/nasa-celebrates-restoration-of-guam-station-damaged-by-typhoon-mawar/"
     }
   ]
 }

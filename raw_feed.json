@@ -1,6 +1,6 @@
 {
   "date": "17 September 2026",
-  "time": "16:46",
+  "time": "16:48",
   "count": 54,
   "items": [
     {
@@ -56,18 +56,6 @@
       "link": "https://techcrunch.com/2026/09/17/spotify-expands-its-partner-program-for-podcasts-to-35-new-countries/"
     },
     {
-      "title": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
-      "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude"
-    },
-    {
-      "title": "AI is feared globally as the destroyer of jobs",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs"
-    },
-    {
-      "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plugins",
-      "link": "https://www.theverge.com/tech/996860/lunacy-audio-nova-ai-music-plugin-vst"
-    },
-    {
       "title": "Bose’s next open earbuds have more bass, more volume, and more battery life",
       "link": "https://www.theverge.com/tech/996341/bose-ultra-open-earbuds-second-gen-wireless-sport"
     },
@@ -82,6 +70,18 @@
     {
       "title": "The Apple Watch Series 12 is the start of a new wearable era",
       "link": "https://www.theverge.com/tech/996715/apple-watch-series-12-review-wearables-smartwatch"
+    },
+    {
+      "title": "Inside the suddenly explosive world of AI safety",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic"
+    },
+    {
+      "title": "The streamers are fighting over Halloween",
+      "link": "https://www.theverge.com/entertainment/996314/tiff-2026-halloween-streaming-below-crystal-lake-yaga-carrie"
+    },
+    {
+      "title": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
+      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac"
     },
     {
       "title": "NASA to order more Starliner missions and help certify a new rocket to keep it flying",
@@ -204,12 +204,12 @@
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNDN3TGtJTkl5bzktVmYwelJ4c3d0T0V3d0d5cGV1dVVvbk1CSmxjdFNhWFpSOWdkUDUzZHBmczVXMmp5T3N2N09jajdwcGZNV0Fib0lvaXhzNlNTWldwZ0hka1hLck1qX1c0NW5CV0w0Uy1rdG9zaUJINmVmMDExRC1RY1l4dEZUQ1RObTE5b3pXMzRQQ0E0?oc=5"
     },
     {
-      "title": "\"Po prostu nieodpowiedzialnie\". Krytykuje Tuska ws. raportu CIA - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWjNQRXJRNklwM3dhRGtacGRDWks2dHJBRk5ZTlJDZG95WkdtN25OTzJnUGRnY3JaV0ppa295anVwdmZJUkFWbFZ0ZWJTaThZR3U5V1pNcEdYTmtfU2JHTXEwNktENGkwby1yYUN5MUh0NV9MZEMwN0ZuMWt2NW5TdUZZZWdCLWlpZUZFbWJndWRUTEd2U0RFekF4RHpVUjJWQ0UyYQ?oc=5"
+      "title": "Nawrocki w rocznicę agresji Rosji na Polskę. Oto co powiedział - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRGdnUVhBc1NBLW9QZFZoRTVBRzlFMTNUSFdNVERPSzk5ODBIMGhqandxZGN0Ni1wdjd2SGExV0daT2xJSTNfeU1IaG9RLTFydkFZemU1dG1YUVByTE56ek9PdDd2Ul96WC1Wd0xFSmZTdC0tSE5ZVG1MNHhQcGZZLTFvM0JENk5hUFl3MzFvYk5rYzdVVnZWTTB6cjVGYVFTS1AxbDl1QQ?oc=5"
     },
     {
-      "title": "Sielskie życie rektora Sopińskiego. Bali, Princeton, 22 tys. zł co miesiąc plus 5 tys. zł stypendium - OKO.press",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHF3WVdRSlNGdzZaTHFmM2NwTVRYZE4xNVVkTHd1eTg4dVhhUFBPTDN6QzlfMEpMcmxaNG5DOEE2djZOQUl1ZC1mLS1ObEtheWFyUm5lNVpHX1NodV9lSXowSTJxRXBCUThKbWI4TzVzU1czRDlCODJMbVZEQ09YeFdWdw?oc=5"
+      "title": "\"Po prostu nieodpowiedzialnie\". Krytykuje Tuska ws. raportu CIA - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWjNQRXJRNklwM3dhRGtacGRDWks2dHJBRk5ZTlJDZG95WkdtN25OTzJnUGRnY3JaV0ppa295anVwdmZJUkFWbFZ0ZWJTaThZR3U5V1pNcEdYTmtfU2JHTXEwNktENGkwby1yYUN5MUh0NV9MZEMwN0ZuMWt2NW5TdUZZZWdCLWlpZUZFbWJndWRUTEd2U0RFekF4RHpVUjJWQ0UyYQ?oc=5"
     },
     {
       "title": "Spór o ślubowanie Berka. Rzecznik KRS ocenił ruch Nawrockiego - Fakt",
