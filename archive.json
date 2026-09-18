@@ -2388,5 +2388,132 @@
         "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027"
       }
     ]
+  },
+  "2026-09-18_wieczorne": {
+    "date": "18 September 2026",
+    "time": "16:39",
+    "timestamp": "2026-09-18_16:39",
+    "items": [
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🛡️ Emmanuel Macron ostrzega przed nasileniem rosyjskich ataków hybrydowych",
+        "summary": "Prezydent Francji poinformował o gwałtownym wzroście rosyjskich działań hybrydowych celowanych w europejską infrastrukturę i procesy demokratyczne. Zaapelował o spójną i zdecydowaną odpowiedź państw Unii Europejskiej.",
+        "comment": "Rosnące zagrożenie hybrydowe wymusza na państwach UE zwiększenie wydatków na cyberbezpieczeństwo oraz ochronę krytycznej infrastruktury energetycznej i komunikacyjnej.",
+        "image_query": "macron hybrid warfare",
+        "link": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Spadki na Wall Street: S&P 500 traci w cieniu rosnących rentowności obligacji",
+        "summary": "Główne indeksy giełdowe w Nowym Jorku zanotowały spadki po tym, jak rentowności amerykańskich obligacji skarbowych wznowiły wzrosty. Inwestorzy analizują dalszą ścieżkę stóp procentowych Rezerwy Federalnej.",
+        "comment": "Wyższe rentowności długu rządu USA zwiększają koszty kapitału i odciągają inwestorów od rynku akcji, co wywiera presję zwłaszcza na spółki technologiczne.",
+        "image_query": "stock market chart",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "💶 Rekordowe ryzyko obligacji Francji: Premia dochodowości rośnie przez obawy budżetowe",
+        "summary": "Różnica w rentowności francuskich i niemieckich obligacji rządowych osiągnęła nowy poziom jednego punktu procentowego. Rynki finansowe reagują w ten sposób na trudności w uchwaleniu budżetu i rosnący dług Paryża.",
+        "comment": "Wzrost premii za ryzyko francuskiego długu sygnalizuje spadek zaufania inwestorów do dyscypliny fiskalnej strefy euro, co może utrudnić Francji pozyskiwanie taniego finansowania.",
+        "image_query": "euro currency finance",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/french-yield-premium-rises-to-one-percentage-point-on-debt-risks"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🏦 Rezerwa Federalna zapowiada rychłe finalizowanie zmian w testach warunków skrajnych",
+        "summary": "Przedstawicielka Fed Michelle Bowman oświadczyła, że ostateczne wersje zreformowanych testów warunków skrajnych dla banków zostaną opublikowane w najbliższych tygodniach. Zmiany mają na celu zwiększenie przejrzystości i dokładności wymogów kapitałowych.",
+        "comment": "Ostateczny kształt stress-testów określi wymogi rezerw kapitałowych dla największych banków w USA, co bezpośrednio wpłynie na ich zdolność do wypłaty dywidend i akcji kredytowej.",
+        "image_query": "federal reserve building",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-18/bowman-finalized-stress-test-changes-in-coming-weeks-video"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "💧 Thames Water walczy o czas: Brytyjscy parlamentarzyści naciskają na nacjonalizację",
+        "summary": "Największe przedsiębiorstwo wodociągowe w Wielkiej Brytanii szuka rozwiązań restrukturyzacyjnych pod presją wierzycieli. Tymczasem brytyjscy deputowani coraz głośniej apelują o przejęcie spółki przez państwo.",
+        "comment": "Kryzys w Thames Water staje się sprawdzianem dla brytyjskiego modelu prywatyzacji infrastruktury użyteczności publicznej oraz potencjalnym obciążeniem dla budżetu państwa.",
+        "image_query": "water treatment facility",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-17/uk-lawmakers-say-thames-creditors-have-been-joyriding-family-car"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🤝 Polska i Ukraina partnerami w nowej koalicji antybalistycznej",
+        "summary": "Prezydent Wołodymyr Zełenski zapowiedział ścisłą współpracę z Polską w ramach tworzącej się międzynarodowej koalicji na rzecz obrony przeciwrakietowej. Celem inicjatywy jest zwalczanie zagrożeń ze strony zaawansowanych pocisków balistycznych.",
+        "comment": "Sformowanie koalicji antybalistycznej podnosi poziom integracji obronnej państw wschodniej flanki NATO, odpowiadając na rosnącą presję rakietową ze strony Rosji.",
+        "image_query": "air defense missile",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVXpTWjlPNkgwWHNDVVppcDdWTTlJLWVlLXlCZThpSXNYSjZDN2dFM3UxdHRhX1hOSjRhVFlualdCaXJBQXo3RnVZelpaenAxOWRLQUdLVzByakRCU3VDZkJJYnFCczNnSUt0WEJGbWpzaFY5WW5xMU5YNktaRFYycDlDQUxMNGFJSENheUNsQ0FRNWZWaG5OekdGSVB0WnBXWTdJNDR6b0RmOUVQYnB4cG5zM0lWTkZmY2MtazFQR0I?oc=5"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "⚠️ Krytyczny moment wojny: Litwa potwierdza ostrzeżenia polskiego rządu",
+        "summary": "Władze Litwy poparły diagnozę polskiego premiera odnośnie nadchodzącego przełomowego etapu konfliktu na Ukrainie. Wilno wzywa do przyspieszenia dostaw sprzętu wojskowego i uszczelnienia granicy wschodniej.",
+        "comment": "Jednolity głos państw bałtyckich i Polski ma na celu wywarcie presji na zachodnich sojuszników, by zintensyfikowali wsparcie militarne przed spodziewanymi eskalacjami.",
+        "image_query": "military border guard",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUGFOWjZSNUU5cU1BamFoSHd4RGQzU00zSmJCbFl6U3U3eDk4UWRwMk9saVRyN1VhSGo5NUNzZzYwc1VQY2JPNXdFUXFDajNOQmJJdWo3Z3N1UHBPWTFpZ1ZIT0ZpSUx0RHRCLV9ndVYwZnJRUnpEV1VKdXBxNVFfbHZSWHFzUWNLdEhOM003WFFGNjBLMUpWNDdoRkZTM3VnMS1XWTE4cFhrWWoxcjkyN2RhR2Q?oc=5"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🌾 Amerykańscy producenci pszenicy zmagają się z suszą i chaosem geopolitycznym",
+        "summary": "Rolnicy w USA stawiają czoła skrajnym warunkom pogodowym oraz niepewności na globalnych rynkach rolnych. Zaburzenia w łańcuchach dostaw i fluktuacje cenowe utrudniają planowanie kolejnych zasiewów.",
+        "comment": "Niestabilność zbiorów w USA przy jednoczesnych konfliktach zbrojnych w kluczowych regionach rolniczych świata stwarza ryzyko dalszych skoków cen żywności i wzrostu inflacji globalnej.",
+        "image_query": "wheat field drought",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPN01TSnNxQ1poLUdQdXRuZlZ6RERDV21NekdOcWw4MEFyTjZ3bTZZNEpVRnhoVGlwN2xOVHFpeGZEYllPdEgwVXRGdnpleG5ONURFenRQWmVzSEcwbXFXMWxqVFBSMTBFQVBESTJBM2x2Wks2ZktFWENWVHRXcjlhMkJzdmpWTkxIOGc?oc=5"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🌐 Logistyka i infrastruktura w centrum globalnych napięć geopolitycznych",
+        "summary": "Szlaki handlowe, porty morskie i węzły przeładunkowe stają się celami presji politycznej i wojskowej. Zmiany w geopolityce zmuszają firmy transportowe do szukania alternatywnych korytarzy logistycznych.",
+        "comment": "Przekształcenie infrastruktury w pole walki gospodarczej trwale podnosi koszty transportu morskiego i przyspiesza proces przenieśnia produkcji bliżej rynków zbytu.",
+        "image_query": "cargo container ship",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOVNxZHBscFdQVTU3V0JfVS0tUUF4cnNybmJiMGk4Y0FrWDJURlRCLXcwQy1MWEplR09MbkxCMF8yNG1IUmtGOTRnMWV6Y25CUlc2bXdWbE9uX202Skt5UC1TQUJEWnJ3Mzh4NmFvTWlISUR2REgzdWlmQVdtZVY1NnlURzZNbWJ3eTRWMm5sYkE0MTZ5N3F5OU9hYW9UNVhNY29vRHBYMUQtajRHRmw2WkkyYlpQVXNjIWR3Q3BUzp..."
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🔐 Wykorzystali model Claude od Anthropic do przełamania zabezpieczeń OpenAI",
+        "summary": "Badacze zajmujący się bezpieczeństwem użyli modelu sztucznej inteligencji Claude do wykrycia luk podatności w systemach stworzonych przez OpenAI. Eksperyment wykazał nowe zagrożenia związane z automatyzacją cyberataków.",
+        "comment": "Incydent podkreśla wyścig zbrojeń w sektorze AI, gdzie zaawansowane modele językowe mogą być wykorzystywane zarówno do obrony, jak i zaawansowanej penetracji systemów rywali.",
+        "image_query": "cybersecurity server room",
+        "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "⚖️ Wiceprezes Microsoftu: Pobieranie danych dla AI to „największa kradzież pracy w historii”",
+        "summary": "Menedżer Microsoftu skrytykował niezgodne z prawem autorskim gromadzenie treści z internetu na potrzeby szkolenia modeli sztucznej inteligencji. Wypowiedź wpisuje się w narastający spór prawny między twórcami a gigantami technologicznymi.",
+        "comment": "Zaostrzenie krytyki ze strony kadry zarządzającej Big Tech wskazuje na nadchodzące twarde regulacje dotyczące praw autorskich i licencjonowania danych treningowych.",
+        "image_query": "ai data code",
+        "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🚘 Należąca do Amazona spółka Zoox znosi limit autonomicznych taksówek w Nevadzie",
+        "summary": "Firma Zoox otrzymała zgodę na zniesienie dotychczasowego limitu 100 pojazdów autonomicznych testowanych na drogach publicznych w stanie Nevada. Decyzja otwiera drogę do komercyjnego skalowania usług robotaxi.",
+        "comment": "Zniesienie ograniczeń regulacyjnych w USA pozwala Amazonowi zwiększyć presję konkurencyjną na liderów rynku pojazdów autonomicznych, takich jak Alphabet (Waymo).",
+        "image_query": "autonomous self-driving car",
+        "link": "https://techcrunch.com/2026/09/17/amazon-owned-zooxs-100-robotaxi-limit-in-nevada-is-about-to-disappear/"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 Google DeepMind powołuje nowy instytut do spraw dyskursu nad AGI",
+        "summary": "Laboratorium sztucznej inteligencji należące do Google uruchomiło jednostkę badawczą mającą na celu poszerzenie debaty nad ogólną sztuczną inteligencją (AGI). Instytut skupi się na społecznych i etycznych konsekwencjach rozwoju nowej technologii.",
+        "comment": "Inicjatywa ma pomóc Google w kształtowaniu globalnych standardów prawnych i etycznych zanim AGI stanie się rzeczywistością operacyjną.",
+        "image_query": "artificial intelligence research",
+        "link": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏛️ Przetasowania na polskiej scenie politycznej: Marcin Horała wybrany wicemarszałkiem",
+        "summary": "Poseł Marcin Horała został wybrany na funkcję wicemarszałka Sejmu. Analitycy polityczni wskazują na powracające roszady i zmiany układu sił po stronie prawicy.",
+        "comment": "Nowe nominacje w Sejmie odzwierciedlają dynamiczne przewartościowania i próby skonsolidowania zaplecza politycznego przed nadchodzącymi cyklami wyborczymi.",
+        "image_query": "polish parliament building",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLWdTXzhDek1ZbHFyYVRTMmJZU3VyV1lJZVhkUGNGODlhSUpLc1huM09NLW1UV3UtbWRER0xnd0c1V0RKelBrN0JGNWx2bV9HWkJPUng5VUtHTnZDa2hERjgzTU55d2s3aDRTd3NHcGYtN3NkdnptOGhJNWRicTZCeldTRDJpaGY3WFlhbEFQSG9hQnZnTXlXNVl1MU02dWdBVmdpeA?oc=5"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🏝️ Wyspiarskie kraje Pacyfiku przekuwają pozycję geopolityczną w fundusze klimatyczne",
+        "summary": "Państwa regionu Pacyfiku wykorzystują rywalizację mocarstw do pozyskania środków na przeciwdziałanie skutkom zmian klimatycznych. Przejmują inicjatywę w negocjacjach o finansowanie adaptacyjne.",
+        "comment": "Strategia państw oceanicznych pokazuje rosnącą sprawczość mniejszych narodów, które wykorzystują rywalizację USA i Chin do realizacji własnych celów rozwojowych.",
+        "image_query": "pacific island ocean",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyZnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      }
+    ]
   }
 }
