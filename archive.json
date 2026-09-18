@@ -2261,5 +2261,132 @@
         "link": "https://www.nasa.gov/technology/space-comms/nasa-celebrates-restoration-of-guam-station-damaged-by-typhoon-mawar/"
       }
     ]
+  },
+  "2026-09-18_poranne": {
+    "date": "18 September 2026",
+    "time": "06:07",
+    "timestamp": "2026-09-18_06:07",
+    "items": [
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇺🇳 Eksperci ONZ: Ataki USA w Iranie mogą stanowić zbrodnię wojenną",
+        "summary": "Rada Praw Człowieka ONZ opublikowała raport sugerujący, że amerykańskie uderzenia odwetowe na terytorium Iranu mogły naruszyć prawo międzynarodowe. Władze w Waszyngtonie odrzucają oskarżenia, wskazując na cele wojskowe.",
+        "comment": "Krytyka ze strony instytucji ONZ zwiększa presję dyplomatyczną na Biały Dom i utrudnia budowanie szerokiej koalicji stabilizacyjnej na Bliskim Wschodzie.",
+        "image_query": "united nations building",
+        "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "💴 Jen traci na wartości mimo podwyżki stóp procentowych w Japonii",
+        "summary": "Bank Japonii podniósł stopy procentowe, jednak decyzja zapadła przy podzielonych głosach wewnątrz zarządu. Niepewność co do dalszego tempa zacieśniania polityki pieniężnej przełożyła się na osłabienie waluty.",
+        "comment": "Brak jednomyślności w BOJ sygnalizuje inwestorom, że dalsze cykle podwyżek będą bardzo ostrożne, co utrudnia trwale odrobienie strat przez japońskiego jena.",
+        "image_query": "japan yen money",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/yen-drops-against-dollar-after-boj-raises-rates-as-expected"
+      },
+      {
+        "category": "ENERGETYKA",
+        "title": "🛢️ Napięcia geopolityczne testują odporność globalnego rynku LNG",
+        "summary": "Najnowszy raport CGEP wskazuje, że zmiana szlaków handlowych i rosnące ryzyka geopolityczne zmuszają importerów gazu skroplonego do ponownej weryfikacji umów długoterminowych.",
+        "comment": "Niestabilność szlaków morskich zwiększa koszty frachtu i skłania państwa do budowy większych rezerw strategicznych, co podbija koszty transformacji energetycznej.",
+        "image_query": "lng tanker ship",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0pEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
+      },
+      {
+        "category": "FINANSE I UBEZPIECZENIA",
+        "title": "📉 Fragmentacja finansowa zagraża globalnemu rynkowi ubezpieczeń",
+        "summary": "Według analizy Stowarzyszenia Genewskiego podziały geopolityczne oraz lokalne regulacje obniżają płynność na międzynarodowym rynku reasekuracji.",
+        "comment": "Dla globalnych korporacji oznacza to wyższe składki ubezpieczeniowe i ograniczoną dostępność ochrony przed ryzykami katastroficznymi oraz cybernetycznymi.",
+        "image_query": "finance insurance concept",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWGNUbWZzZGV6RmFoOXpHNmp5OWZKZDM3VWJDY25BS082X19WVWYzV0xHY2xJZVBFQS1RUUo3VlR1ME5yUGF4Q0lhbV82cWprLTBIWnRnbVNia1hEVFBxVkRibm9QWlJ2QlhIYjMyZjZaSHByS0J0WmVDOE9lRFNTY3NkbWx6WEtNWW4zZWR1cmZGa1hkdEZOZjZhNTIzT2UwTWlYU3BTWHNDWHYwRE5OOGpCT2FTYmJDT0s3TFdoSQ?oc=5"
+      },
+      {
+        "category": "RYNKI WSCHODZĄCE",
+        "title": "📈 Zagraniczne kapitały płyną do Wietnamu przed decyzją FTSE",
+        "summary": "Wietnamski rynek akcji odnotowuje wzmożony napływ inwestorów zagranicznych w oczekiwaniu na podniesienie statusu kraju do kategorii rynków wschodzących przez FTSE Russell.",
+        "comment": "Awanse w klasyfikacji indeksowej zazwyczaj przyciągają miliardy dolarów z funduszy pasywnych, znacząco zwiększając wyceny lokalnych spółek.",
+        "image_query": "stock market growth",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/vietnam-stocks-see-early-foreign-inflows-as-ftse-upgrade-nears"
+      },
+      {
+        "category": "BANKI CENTRALNE",
+        "title": "🏦 Bank centralny Australii rozważa dalsze kroki w walce z inflacją",
+        "summary": "Szefowa RBA Michele Bullock oświadczyła, że regulator musi ocenić, czy obecny poziom stóp procentowych jest wystarczająco jastrzębi, by sprowadzić inflację do celu.",
+        "comment": "Utrzymująca się presja cenowa w sektorze usług uniemożliwia szybkie przejście do cyklu obniżek stóp w Australii, co obciąża tamtejszy sektor nieruchomości.",
+        "image_query": "central bank building",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/rba-must-decide-if-rate-sufficient-to-cool-prices-bullock-says"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "💻 Crusoe pozyskuje 3,9 mld USD na budowę modułowych centrów danych AI",
+        "summary": "Start-up zajmujący się infrastrukturą obliczeniową zabezpieczył potężne finansowanie na rozwój wielkoskalowych fabryk sztucznej inteligencji.",
+        "comment": "Inwestycja pokazuje bezprecedensowe zapotrzebowanie na zieloną energię i moce obliczeniowe niezbędne do trenowania modeli kolejnej generacji.",
+        "image_query": "data center servers",
+        "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+      },
+      {
+        "category": "NOWOCZESNA ENERGETYKA",
+        "title": "🌋 Mazama Energy pozyskuje 135 mln USD na głębokie odwierty geotermalne",
+        "summary": "Spółka wspierana przez Khosla Ventures rozwija technologię pozyskiwania energii z gorących skał na dużych głębokościach, co ma zapewnić stałe źródło czystej energii.",
+        "comment": "Geotermia głęboka wyrasta na kluczowe uzupełnienie niestabilnych źródeł odnawialnych (OZE) w miksie energetycznym państw rozwiniętych.",
+        "image_query": "geothermal power plant",
+        "link": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/"
+      },
+      {
+        "category": "INFRASTRUKTURA I TECH",
+        "title": "✈️ Amerykańska FAA przeznaczy 875 mln USD na sztuczną inteligencję w kontroli lotów",
+        "summary": "Federalna Administracja Lotnictwa wdroży zaawansowane systemy AI, aby zoptymalizować zarządzanie ruchem lotniczym i zredukować opóźnienia na lotniskach.",
+        "comment": "Automatyzacja kontroli przestrzeni powietrznej to odpowiedź na skokowy wzrost ruchu pasażerskiego oraz chroniczny niedobór wykwalifikowanych kontrolerów.",
+        "image_query": "air traffic control",
+        "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🚁 Autonomiczne drony bojowe z lekkimi modelami AI wchodzą na pole walki",
+        "summary": "Start-up wspierany przez NATO opracował mikromodele AI pozwalające bezzałogowcom na autonomiczną identyfikację i atakowanie celów bez łączności z operatorem.",
+        "comment": "Rozwój autonomicznych broni typu 'fire-and-forget' odpornych na zagłuszanie radioelektroniczne rewolucjonizuje współczesne doktryny wojskowe.",
+        "image_query": "military drone technology",
+        "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/"
+      },
+      {
+        "category": "REGULACJE I TECH",
+        "title": "⚖️ Ustawa w USA nakazuje dostawcom VPN i ISP blokowanie stron pirackich",
+        "summary": "W Kongresie USA przedstawiono projekt przepisów, które zobowiązałyby dostawców internetu, serwery DNS oraz usługi VPN do filtrowania nielegalnych treści.",
+        "comment": "Propozycja budzi opór obrońców prywatności, którzy ostrzegają przed niebezpiecznym precedensem naruszania neutralności sieci i szyfrowania VPN.",
+        "image_query": "cybersecurity internet lock",
+        "link": "https://arstechnica.com/tech-policy/2026/09/republican-bill-would-order-isps-dns-providers-and-vpns-to-block-piracy-sites/"
+      },
+      {
+        "category": "POLSKA / OBRONNOŚĆ",
+        "title": "🇵🇱 Powidz lub Poznań lokalizacją nowej stałej bazy wojsk USA",
+        "summary": "Trwają zaawansowane ustalenia dotyczące utworzenia stałej infrastruktury bazowej dla amerykańskich sił zbrojnych w Wielkopolsce.",
+        "comment": "Przekształcenie rotacyjnej obecności w stałą bazę znacząco wzmacnia wschodnią flankę NATO i podnosi strategiczne bezpieczeństwo Polski.",
+        "image_query": "military base soldiers",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUzF3RVBZTlZxVmVTaVNXSUVNZkNzYjJNRW1mSGpQbkZodDRXbV91MTVvYVgzSVlyTlV0OFhJY1BIdWtZWGtGT05xREJaQklYWHVmUmR0SDhnTFB0a3RTZlp4MldYRXVyb2swSzlxb0NPRE1PUjYwZm1ReXU0VkRWejRpUUI4LTRtMjhTcVBONjNVTDlydFRnbTRVeXBnLVcx?oc=5"
+      },
+      {
+        "category": "POLSKA / PRAWO",
+        "title": "🏛️ Akcja CBA: Zatrzymano posła Koalicji Obywatelskiej",
+        "summary": "Centralne Biuro Antykorupcyjne dokonało zatrzymania posła Wojciecha Króla w związku z toczącym się śledztwem gospodarczym.",
+        "comment": "Zdarzenie wywołuje skutki polityczne wewnątrz obozu rządzącego i stanowi sprawdzian dla deklarowanej bezstronności służb śledczych.",
+        "image_query": "court building law",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTEwzNjlYam5RMlViLUctVUJTRjE2MnU4Q1V0NWJuSy14RnYtOTlsSExDcmU3b0dLZzJYV3Y5TUNpVXZWcFNnaDNSNDFuQTNLdHFlLVhidk1FaG45aXNCS1V2ekcybXRpR29jUTRIWGlpTHJFNE1ldWxlSi04b2ZDOVJienM4dw?oc=5"
+      },
+      {
+        "category": "POLSKA / GEOPOLITYKA",
+        "title": "🛡️ Gen. Pacek o zagrożeniu ze strony Rosji po orędziu premiera",
+        "summary": "Eksperci wojskowi oceniają, że presja hybrydowa ze strony Klemlowskiego reżimu będzie rosła, wymagając przyspieszenia procesów modernizacyjnych armii.",
+        "comment": "Konieczność dalszego zwiększania wydatków obronnych nakłada presję na budżet państwa, wymuszając trudne decyzje alokacyjne w polityce fiskalnej.",
+        "image_query": "geopolitics military defense",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGNhVURFRk9YSUlpUl9RVG9jWDU4eVFNdlZzNWhMdmtoSEU0R3hxdG1EVlhVTGJLdDltVFNtLTV4a0cyeUtSaGV3Zm5iX2V4R3FSbE9nY3pSU3NjUWE4Qy1fVnUzQl9QUVBrUEZ4alVkTjFTVmZhTVM0UlljZzdIVDlmOUNtdS15djdOUTBSajlGbGpObXNTN2hRUDdGUjlDV3FyVC1oNVlJazM4N3Nn?oc=5"
+      },
+      {
+        "category": "TECHNOLOGIE",
+        "title": "🚗 Waymo wybiera Singapur na swój pierwszy międzynarodowy rynek autonomiczny",
+        "summary": "Należąca do Alphabet spółka Waymo ogłosiła plan ekspansji swoich autonomicznych taksówek na rynek azjatycki z debiutem w Singapurze.",
+        "comment": "Singapur staje się kluczowym poligonem doświadczalnym dla komercyjnych aut autonomicznych poza Ameryką Północną ze względu na sprzyjające regulacje.",
+        "image_query": "autonomous car robotaxi",
+        "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027"
+      }
+    ]
   }
 }

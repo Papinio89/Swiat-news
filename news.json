@@ -1,119 +1,127 @@
 {
-  "date": "17 September 2026",
-  "time": "16:48",
-  "timestamp": "2026-09-17_16:48",
+  "date": "18 September 2026",
+  "time": "06:07",
+  "timestamp": "2026-09-18_06:07",
   "items": [
     {
-      "category": "POLSKA",
-      "title": "🚨 Alarmy przeciwlotnicze w Rzeszowie i Lublinie po atakach na Ukrainę",
-      "summary": "W Rzeszowie i Lublinie uruchomiono syreny alarmowe w związku z intensywnym ostrzałem rakietowym zachodnich rejonów Ukrainy przez siły rosyjskie. Polskie i sojusznicze lotnictwo zostało poderwane w celu zabezpieczenia przestrzeni powietrznej.",
-      "comment": "Wzmożona aktywność rosyjskiego lotnictwa przy polskiej granicy wymusza stałą gotowość bojową sił NATO i podnosi ryzyko incydentów granicznych.",
-      "image_query": "military radar antenna",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTkZVX2YwMTRwNVhPYUNSN3o3Yl8tSW9OSURoOC12ZFREZlp1dTh1QjVOaEUzek8yMnhNWElRT2w2MXVxZkw2TUx5NjJycXkwaE5OWmdzNy0ya2hJZ1V6Q05TZ1BnaXdKRzVmM3BfNmRmYmpCTkJBaFVOVGZiakpLQUhNSnVDbmdUalUwOEVGVzJnNExpVlVlSU1sd2NsVEU?oc=5"
-    },
-    {
-      "category": "POLSKA",
-      "title": "🇵🇱 Eksperci ostrzegają przed presją ze strony Rosji",
-      "summary": "Analitycy ds. bezpieczeństwa wskazują, że Rosja wywiera stałą presję psychologiczną i hybrydową na Polskę, dążąc do destabilizacji sytuacji w regionie. Działania te obejmują prowokacje w przestrzeni powietrznej oraz ataki cybernetyczne.",
-      "comment": "Sytuacja wymaga dalszego wzmacniania infrastruktury krytycznej i odporności społecznej na operacje dezinformacyjne ze strony Kremla.",
-      "image_query": "geopolitics map europe",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNDN3TGtJTkl5bzktVmYwelJ4c3d0T0V3d0d5cGV1dVVvbk1CSmxjdFNhWFpSOWdkUDUzZHBmczVXMmp5T3N2N09jajdwcGZNV0Fib0lvaXhzNlNTWldwZ0hka1hLck1qX1c0NW5CV0w0Uy1rdG9zaUJINmVmMDExRC1RY1l4dEZUQ1RObTE5b3pXMzRQQ0E0?oc=5"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "📈 Obligacje skarbowe zyskują po spadku obaw inwestorów",
-      "summary": "Ceny amerykańskich obligacji skarbowych wzrosły, a ich rentowności spadły w reakcji na rosnące zaufanie rynku do wyznaczonego kierunku polityki antyinflacyjnej. Inwestorzy optymistycznie oceniają stabilizację stóp procentowych.",
-      "comment": "Uspokojenie na rynku długu sygnalizuje koniec fali wyprzedaży papierów skarbowych, co daje przestrzeń do uspokojenia na światowych rynkach akcji.",
-      "image_query": "treasury bond chart",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-17/global-bonds-recover-as-warsh-s-inflation-fight-calms-market"
-    },
-    {
-      "category": "TECHNOLOGIE / AI",
-      "title": "💻 Huawei rzuca wyzwanie Nvidia z nowym procesorem AI",
-      "summary": "Chiński gigant technologiczny Huawei planuje premierę swojego najnowszego układu sztucznej inteligencji na pierwszy kwartał 2027 roku. Nowy chip ma stanowić bezpośrednią konkurencję dla flagowych procesorów firmy Nvidia.",
-      "comment": "Mimo amerykańskich sankcji technologicznych Pekin konsekwentnie buduje własny niezależny ekosystem półprzewodników najwyższej wydajności.",
-      "image_query": "microchip processor hardware",
-      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
-    },
-    {
-      "category": "ENERGETYKA I TECHNOLOGIA",
-      "title": "⚡ Giganci AI łączą siły, by rozwiązać problem deficytu energii",
-      "summary": "Google, Nvidia oraz Anthropic wspierają inicjatywę Emerald AI, mającą na celu optymalizację przydziału mocy w sieciach energetycznych dla nowo powstających centrów danych sztucznej inteligencji.",
-      "comment": "Wąskie gardło w postaci braku energii elektrycznej staje się obecnie główną barierą wzrostu dla branży AI i wymusza inwestycje w inteligentne zarządzanie siecią.",
-      "image_query": "power grid data center",
-      "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/"
-    },
-    {
-      "category": "TECHNOLOGIE / AI",
-      "title": "🍏 Apple projektuje własne serwery AI z chipami M-Ultra",
-      "summary": "Apple pracuje nad autorskimi serwerami bazującymi na najpotężniejszych układach scalonych z serii M Ultra, aby zasilić własne centra danych dedykowane sztucznej inteligencji.",
-      "comment": "Uniezależnienie się od zewnętrznych dostawców infrastruktury chmurowej pozwoli Apple na znaczne obniżenie kosztów operacyjnych oraz lepszą ochronę prywatności danych.",
-      "image_query": "server room datacenter",
-      "link": "https://arstechnica.com/ai/2026/09/apple-reportedly-building-server-packed-with-m-series-ultra-chips-for-ai/"
-    },
-    {
       "category": "GEOPOLITYKA",
-      "title": "🇧🇷 Prezydent Lula zwiększa świadczenia socjalne przed wyborami",
-      "summary": "Prezydent Brazylii Luiz Inácio Lula da Silva ogłosił podwyżkę wypłat w ramach programów socjalnych w obliczu zbliżających się zaciętych wyborów prezydenckich.",
-      "comment": "Ekspansywna polityka fiskalna przed wyborami budzi niepokój inwestorów co do długoterminowej stabilności budżetowej największej gospodarki Ameryki Południowej.",
-      "image_query": "brazil flag brasilia",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-17/lula-boosts-social-welfare-payments-ahead-of-tight-election"
+      "title": "🇺🇳 Eksperci ONZ: Ataki USA w Iranie mogą stanowić zbrodnię wojenną",
+      "summary": "Rada Praw Człowieka ONZ opublikowała raport sugerujący, że amerykańskie uderzenia odwetowe na terytorium Iranu mogły naruszyć prawo międzynarodowe. Władze w Waszyngtonie odrzucają oskarżenia, wskazując na cele wojskowe.",
+      "comment": "Krytyka ze strony instytucji ONZ zwiększa presję dyplomatyczną na Biały Dom i utrudnia budowanie szerokiej koalicji stabilizacyjnej na Bliskim Wschodzie.",
+      "image_query": "united nations building",
+      "link": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
     },
     {
       "category": "RYNKI I GOSPODARKA",
-      "title": "📊 Lazard: Światowe rynki wkraczają w erę podażową",
-      "summary": "Eksperci banku inwestycyjnego Lazard wskazują, że globalna gospodarka przechodzi z ery stymulacji popytowej w okres ograniczony przez czynniki podażowe, takie jak surowce i energia.",
-      "comment": "Zmiana tego paradygmatu wymaga od inwestorów redefinicji strategii i alokacji kapitału w stronę infrastruktury, wydobycia oraz nowych technologii przemysłowych.",
-      "image_query": "financial chart analysis",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-17/lazard-s-van-nostrand-markets-entering-supply-side-era-video"
+      "title": "💴 Jen traci na wartości mimo podwyżki stóp procentowych w Japonii",
+      "summary": "Bank Japonii podniósł stopy procentowe, jednak decyzja zapadła przy podzielonych głosach wewnątrz zarządu. Niepewność co do dalszego tempa zacieśniania polityki pieniężnej przełożyła się na osłabienie waluty.",
+      "comment": "Brak jednomyślności w BOJ sygnalizuje inwestorom, że dalsze cykle podwyżek będą bardzo ostrożne, co utrudnia trwale odrobienie strat przez japońskiego jena.",
+      "image_query": "japan yen money",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-18/yen-drops-against-dollar-after-boj-raises-rates-as-expected"
     },
     {
-      "category": "FINANSE I INWESTYCJE",
-      "title": "💼 Bain Capital Ventures uruchamia fundusz o wartości 1,6 mld USD",
-      "summary": "Bain Capital Ventures pozyskało 1,6 miliarda dolarów na nowy fundusz, który skupi się na finansowaniu startupów technologicznych z sektora AI, oprogramowania enterprise oraz infrastruktury.",
-      "comment": "Napływ świeżego kapitału venture capital dowodzi, że mimo spowolnienia gospodarczego sektor innowacyjnych technologii wciąż cieszy się dużym zaufaniem inwestorów.",
-      "image_query": "venture capital business",
-      "link": "https://techcrunch.com/2026/09/17/how-bain-capital-ventures-plans-to-deploy-its-fresh-1-6b-fund/"
+      "category": "ENERGETYKA",
+      "title": "🛢️ Napięcia geopolityczne testują odporność globalnego rynku LNG",
+      "summary": "Najnowszy raport CGEP wskazuje, że zmiana szlaków handlowych i rosnące ryzyka geopolityczne zmuszają importerów gazu skroplonego do ponownej weryfikacji umów długoterminowych.",
+      "comment": "Niestabilność szlaków morskich zwiększa koszty frachtu i skłania państwa do budowy większych rezerw strategicznych, co podbija koszty transformacji energetycznej.",
+      "image_query": "lng tanker ship",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0pEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
     },
     {
-      "category": "CYBERBEZPIECZEŃSTWO",
-      "title": "🔍 Badacze ujawniają luki w systemach nadzoru kamer Flock",
-      "summary": "Eksperci ds. bezpieczeństwa przedstawili szczegółowy raport pokazujący, w jaki sposób rozległa sieć kamer Flock śledzi pojazdy i pieszych oraz jakie stwarza to zagrożenia dla prywatności.",
-      "comment": "Ujawnienie podatności w prywatnych systemach monitoringu używanych przez służby miejskie zaostrza debatę nad uregulowaniem masowej inwigilacji.",
-      "image_query": "surveillance camera security",
-      "link": "https://arstechnica.com/security/2026/09/hackers-reveal-how-flock-cameras-really-track-cars-and-people/"
+      "category": "FINANSE I UBEZPIECZENIA",
+      "title": "📉 Fragmentacja finansowa zagraża globalnemu rynkowi ubezpieczeń",
+      "summary": "Według analizy Stowarzyszenia Genewskiego podziały geopolityczne oraz lokalne regulacje obniżają płynność na międzynarodowym rynku reasekuracji.",
+      "comment": "Dla globalnych korporacji oznacza to wyższe składki ubezpieczeniowe i ograniczoną dostępność ochrony przed ryzykami katastroficznymi oraz cybernetycznymi.",
+      "image_query": "finance insurance concept",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWGNUbWZzZGV6RmFoOXpHNmp5OWZKZDM3VWJDY25BS082X19WVWYzV0xHY2xJZVBFQS1RUUo3VlR1ME5yUGF4Q0lhbV82cWprLTBIWnRnbVNia1hEVFBxVkRibm9QWlJ2QlhIYjMyZjZaSHByS0J0WmVDOE9lRFNTY3NkbWx6WEtNWW4zZWR1cmZGa1hkdEZOZjZhNTIzT2UwTWlYU3BTWHNDWHYwRE5OOGpCT2FTYmJDT0s3TFdoSQ?oc=5"
     },
     {
-      "category": "PRZEMYŚL KOSMICZNY",
-      "title": "🚀 NASA zamawia kolejne misje Starliner i certyfikuje nową rakietę",
-      "summary": "Agencja NASA zdecydowała o zakontraktowaniu kolejnych lotów kapsuły Boeing Starliner oraz wsparciu certyfikacji nowej rakiety nośnej, aby zapewnić ciągłość dostaw do stacji orbitalnej.",
-      "comment": "Dywersyfikacja środków transportu kosmicznego ma kluczowe znaczenie dla niezależności operacyjnej USA na niskiej orbicie okołoziemskiej.",
-      "image_query": "space rocket launch",
-      "link": "https://arstechnica.com/space/2026/09/nasa-to-order-more-starliner-missions-and-help-certify-a-new-rocket-to-keep-it-flying/"
+      "category": "RYNKI WSCHODZĄCE",
+      "title": "📈 Zagraniczne kapitały płyną do Wietnamu przed decyzją FTSE",
+      "summary": "Wietnamski rynek akcji odnotowuje wzmożony napływ inwestorów zagranicznych w oczekiwaniu na podniesienie statusu kraju do kategorii rynków wschodzących przez FTSE Russell.",
+      "comment": "Awanse w klasyfikacji indeksowej zazwyczaj przyciągają miliardy dolarów z funduszy pasywnych, znacząco zwiększając wyceny lokalnych spółek.",
+      "image_query": "stock market growth",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-18/vietnam-stocks-see-early-foreign-inflows-as-ftse-upgrade-nears"
     },
     {
-      "category": "NAUKA I MEDYCYNA",
-      "title": "💊 Przełomowy lek na raka obraca mechanizmy obronne guza przeciw niemu",
-      "summary": "Naukowcy opracowali nowy lek przeciw międzybłoniakowi, który zmusza mechanizmy ochronne komórek nowotworowych do ich samozagłady.",
-      "comment": "Innowacyjne podejście do celowanej terapii onkologicznej może otworzyć drogę do leczenia innych dotąd nieuleczalnych postaci nowotworów.",
-      "image_query": "medical laboratory research",
-      "link": "https://www.sciencedaily.com/releases/2026/09/260915232136.htm"
+      "category": "BANKI CENTRALNE",
+      "title": "🏦 Bank centralny Australii rozważa dalsze kroki w walce z inflacją",
+      "summary": "Szefowa RBA Michele Bullock oświadczyła, że regulator musi ocenić, czy obecny poziom stóp procentowych jest wystarczająco jastrzębi, by sprowadzić inflację do celu.",
+      "comment": "Utrzymująca się presja cenowa w sektorze usług uniemożliwia szybkie przejście do cyklu obniżek stóp w Australii, co obciąża tamtejszy sektor nieruchomości.",
+      "image_query": "central bank building",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-18/rba-must-decide-if-rate-sufficient-to-cool-prices-bullock-says"
     },
     {
-      "category": "POLSKA",
-      "title": "🏛️ Spór polityczny wokół ustaleń wywiadu i sprawozdań rządowych",
-      "summary": "W polskim parlamencie trwa dyskusja dotycząca analiz wywiadowczych i informacji rzutujących na politykę zagraniczną państwa, stanowiąc przedmiot krytyki ze strony opozycji.",
-      "comment": "Kwestie bezpieczeństwa narodowego po raz kolejny stają się osią sporu politycznego przed nadchodzącymi rozstrzygnięciami wyborczymi.",
-      "image_query": "polish parliament building",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWjNQRXJRNklwM3dhRGtacGRDWks2dHJBRk5ZTlJDZG95WkdtN25OTzJnUGRnY3JaV0ppa295anVwdmZJUkFWbFZ0ZWJTaThZR3U5V1pNcEdYTmtfU2JHTXEwNktENGkwby1yYUN5MUh0NV9MZEMwN0ZuMWt2NW5TdUZZZWdCLWlpZUZFbWJndWRUTEd2U0RFekF4RHpVUjJWQ0UyYQ?oc=5"
+      "category": "TECHNOLOGIE / AI",
+      "title": "💻 Crusoe pozyskuje 3,9 mld USD na budowę modułowych centrów danych AI",
+      "summary": "Start-up zajmujący się infrastrukturą obliczeniową zabezpieczył potężne finansowanie na rozwój wielkoskalowych fabryk sztucznej inteligencji.",
+      "comment": "Inwestycja pokazuje bezprecedensowe zapotrzebowanie na zieloną energię i moce obliczeniowe niezbędne do trenowania modeli kolejnej generacji.",
+      "image_query": "data center servers",
+      "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
     },
     {
-      "category": "OBRONNOŚĆ I TECHNOLOGIA",
-      "title": "📡 NASA odbudowała kluczową stację łączności satelitarnej na Guam",
-      "summary": "NASA poinformowała o pełnym przywróceniu sprawności stacji komunikacji kosmicznej na wyspie Guam, która została uszkodzona przez tajfun Mawar.",
-      "comment": "Przywrócenie infrastruktury na Guam ma krytyczne znaczenie dla stabilności połączeń satelitarnych i monitoringu w kluczowym geostrategicznie rejonie Indopacyfiku.",
-      "image_query": "satellite dish antenna",
-      "link": "https://www.nasa.gov/technology/space-comms/nasa-celebrates-restoration-of-guam-station-damaged-by-typhoon-mawar/"
+      "category": "NOWOCZESNA ENERGETYKA",
+      "title": "🌋 Mazama Energy pozyskuje 135 mln USD na głębokie odwierty geotermalne",
+      "summary": "Spółka wspierana przez Khosla Ventures rozwija technologię pozyskiwania energii z gorących skał na dużych głębokościach, co ma zapewnić stałe źródło czystej energii.",
+      "comment": "Geotermia głęboka wyrasta na kluczowe uzupełnienie niestabilnych źródeł odnawialnych (OZE) w miksie energetycznym państw rozwiniętych.",
+      "image_query": "geothermal power plant",
+      "link": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/"
+    },
+    {
+      "category": "INFRASTRUKTURA I TECH",
+      "title": "✈️ Amerykańska FAA przeznaczy 875 mln USD na sztuczną inteligencję w kontroli lotów",
+      "summary": "Federalna Administracja Lotnictwa wdroży zaawansowane systemy AI, aby zoptymalizować zarządzanie ruchem lotniczym i zredukować opóźnienia na lotniskach.",
+      "comment": "Automatyzacja kontroli przestrzeni powietrznej to odpowiedź na skokowy wzrost ruchu pasażerskiego oraz chroniczny niedobór wykwalifikowanych kontrolerów.",
+      "image_query": "air traffic control",
+      "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "🚁 Autonomiczne drony bojowe z lekkimi modelami AI wchodzą na pole walki",
+      "summary": "Start-up wspierany przez NATO opracował mikromodele AI pozwalające bezzałogowcom na autonomiczną identyfikację i atakowanie celów bez łączności z operatorem.",
+      "comment": "Rozwój autonomicznych broni typu 'fire-and-forget' odpornych na zagłuszanie radioelektroniczne rewolucjonizuje współczesne doktryny wojskowe.",
+      "image_query": "military drone technology",
+      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/"
+    },
+    {
+      "category": "REGULACJE I TECH",
+      "title": "⚖️ Ustawa w USA nakazuje dostawcom VPN i ISP blokowanie stron pirackich",
+      "summary": "W Kongresie USA przedstawiono projekt przepisów, które zobowiązałyby dostawców internetu, serwery DNS oraz usługi VPN do filtrowania nielegalnych treści.",
+      "comment": "Propozycja budzi opór obrońców prywatności, którzy ostrzegają przed niebezpiecznym precedensem naruszania neutralności sieci i szyfrowania VPN.",
+      "image_query": "cybersecurity internet lock",
+      "link": "https://arstechnica.com/tech-policy/2026/09/republican-bill-would-order-isps-dns-providers-and-vpns-to-block-piracy-sites/"
+    },
+    {
+      "category": "POLSKA / OBRONNOŚĆ",
+      "title": "🇵🇱 Powidz lub Poznań lokalizacją nowej stałej bazy wojsk USA",
+      "summary": "Trwają zaawansowane ustalenia dotyczące utworzenia stałej infrastruktury bazowej dla amerykańskich sił zbrojnych w Wielkopolsce.",
+      "comment": "Przekształcenie rotacyjnej obecności w stałą bazę znacząco wzmacnia wschodnią flankę NATO i podnosi strategiczne bezpieczeństwo Polski.",
+      "image_query": "military base soldiers",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUzF3RVBZTlZxVmVTaVNXSUVNZkNzYjJNRW1mSGpQbkZodDRXbV91MTVvYVgzSVlyTlV0OFhJY1BIdWtZWGtGT05xREJaQklYWHVmUmR0SDhnTFB0a3RTZlp4MldYRXVyb2swSzlxb0NPRE1PUjYwZm1ReXU0VkRWejRpUUI4LTRtMjhTcVBONjNVTDlydFRnbTRVeXBnLVcx?oc=5"
+    },
+    {
+      "category": "POLSKA / PRAWO",
+      "title": "🏛️ Akcja CBA: Zatrzymano posła Koalicji Obywatelskiej",
+      "summary": "Centralne Biuro Antykorupcyjne dokonało zatrzymania posła Wojciecha Króla w związku z toczącym się śledztwem gospodarczym.",
+      "comment": "Zdarzenie wywołuje skutki polityczne wewnątrz obozu rządzącego i stanowi sprawdzian dla deklarowanej bezstronności służb śledczych.",
+      "image_query": "court building law",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTEwzNjlYam5RMlViLUctVUJTRjE2MnU4Q1V0NWJuSy14RnYtOTlsSExDcmU3b0dLZzJYV3Y5TUNpVXZWcFNnaDNSNDFuQTNLdHFlLVhidk1FaG45aXNCS1V2ekcybXRpR29jUTRIWGlpTHJFNE1ldWxlSi04b2ZDOVJienM4dw?oc=5"
+    },
+    {
+      "category": "POLSKA / GEOPOLITYKA",
+      "title": "🛡️ Gen. Pacek o zagrożeniu ze strony Rosji po orędziu premiera",
+      "summary": "Eksperci wojskowi oceniają, że presja hybrydowa ze strony Klemlowskiego reżimu będzie rosła, wymagając przyspieszenia procesów modernizacyjnych armii.",
+      "comment": "Konieczność dalszego zwiększania wydatków obronnych nakłada presję na budżet państwa, wymuszając trudne decyzje alokacyjne w polityce fiskalnej.",
+      "image_query": "geopolitics military defense",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGNhVURFRk9YSUlpUl9RVG9jWDU4eVFNdlZzNWhMdmtoSEU0R3hxdG1EVlhVTGJLdDltVFNtLTV4a0cyeUtSaGV3Zm5iX2V4R3FSbE9nY3pSU3NjUWE4Qy1fVnUzQl9QUVBrUEZ4alVkTjFTVmZhTVM0UlljZzdIVDlmOUNtdS15djdOUTBSajlGbGpObXNTN2hRUDdGUjlDV3FyVC1oNVlJazM4N3Nn?oc=5"
+    },
+    {
+      "category": "TECHNOLOGIE",
+      "title": "🚗 Waymo wybiera Singapur na swój pierwszy międzynarodowy rynek autonomiczny",
+      "summary": "Należąca do Alphabet spółka Waymo ogłosiła plan ekspansji swoich autonomicznych taksówek na rynek azjatycki z debiutem w Singapurze.",
+      "comment": "Singapur staje się kluczowym poligonem doświadczalnym dla komercyjnych aut autonomicznych poza Ameryką Północną ze względu na sprzyjające regulacje.",
+      "image_query": "autonomous car robotaxi",
+      "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027"
     }
   ]
 }
