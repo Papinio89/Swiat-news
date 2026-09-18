@@ -1,31 +1,31 @@
 {
   "date": "18 September 2026",
-  "time": "22:01",
-  "timestamp": "2026-09-18_22:01",
+  "time": "22:21",
+  "timestamp": "2026-09-18_22:21",
   "items": [
     {
-      "category": "GEOPOLITYKA",
-      "title": "🇨🇳 Chiny zacieśniają współpracę wojskową z Iranem",
-      "summary": "Chińskie wsparcie wojskowe dla Iranu grozi pogłębieniem podziałów geopolitycznych na Bliskim Wschodzie i narastaniem napięć z USA. Partnerstwo obu państw obejmuje transfer technologii wojskowych oraz sprzętu.",
-      "comment": "Zacieśnienie relacji na linii Pekin-Teheran stawia pod znakiem zapytania skuteczność zachodnich sankcji i tworzy nową oś przeciwwagi dla interesów Waszyngtonu.",
-      "image_query": "china iran military cooperation",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTm5aZ0dJN2l1dUNwZm5YaVZPTVF4MWhMaGhPeG5MV3FCb2pJa2djVjhfeHRmbDNac2VaY00zbFMyQ0lKNEhDYzIwT3hQcWIzR3pKc3ZqY083Zk94bWxyLXBpeW51MHdaVmRmNklFSDY2azkxUEVtbExUU19XQ1h5VGo4czczdzdkc2trVjdCd2dWbFFqZHk2ekhNSkRqZTBZRUZwdG5vZHdvbjYxOEdYY1VBSndGWWNKanhfUTdKMFdSWllP?oc=5"
+      "category": "OBRONNOŚĆ",
+      "title": "🛡️ Litwa wprowadza powszechny pobór",
+      "summary": "Litweskie władze przyspieszają przygotowania obronne, wdrażając powszechny pobór do wojska w obliczu rosnącego zagrożenia regionalnego.",
+      "comment": "Kraje bałtyckie systematycznie domykają swoje systemy rekrutacji, szykując się na każdy scenariusz.",
+      "image_query": "lithuanian military training",
+      "link": "https://defence24.pl/polityka-obronna/powszechny-pobor-do-wojska-coraz-blizej-litwa-przygotowuje-sie-najgorsze"
     },
     {
       "category": "GEOPOLITYKA",
-      "title": "🤖 Wyścig o dominację w AI przed szczytem USA-Chiny",
-      "summary": "Stany Zjednoczone i Chiny intensyfikują walkę o pozycję lidera w rozwoju sztucznej inteligencji przed nadchodzącym szczytem przywódców obu państw. Technologia AI stała się głównym polem bitwy w rywalizacji mocarstw.",
-      "comment": "Wynik tego wyścigu zdeterminuje globalny układ sił w gospodarce oraz przełoży się bezpośrednio na przyszłe przewagi militarne.",
-      "image_query": "us china technology competition",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/us-and-china-vie-for-ai-lead-before-trump-xi-summit-video"
+      "title": "⚛️ Japonia otwiera się na okręty atomowe",
+      "summary": "Japońskie władze sygnalizują gotowość do pozyskania okrętów podwodnych o napędzie jądrowym, co zmienia układ sił w regionie.",
+      "comment": "Tokio konsekwentnie rewiduje doktrynę obronną wobec presji ze strony Chin.",
+      "image_query": "submarine naval base",
+      "link": "https://www.twz.com/sea/japan-opens-the-door-to-acquiring-nuclear-powered-submarines"
     },
     {
-      "category": "BEZPIECZEŃSTWO",
-      "title": "🛡️ Fala fuzji przekształca europejski sektor obronny",
-      "summary": "Raport firmy Oaklins wskazuje, że rosnące zagrożenia geopolityczne wymuszają szybką konsolidację i falę przejęć w europejskim przemyśle zbrojeniowym. Europejskie firmy łączą siły, aby sprostać rosnącemu zapotrzebowaniu na produkcję wojskową.",
-      "comment": "Konsolidacja rynku zbrojeniowego w Europie jest niezbędnym krokiem do budowy niezależności strategicznej i zwiększenia mocy produkcyjnych Kontynentu.",
-      "image_query": "european defense industry consolidation",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbHFQaVpCTm9fSEFSc0laaF81S3JnMjVrbVBpTVdpYmpDbXpMMEhhd3Q5ajFicDBFMk81eWJGdUZWMlR3OEZCdFBQRFUxTkU0b3NBRktxQ0lRbHVYSzdMQldMWjFwRmwtelpIclExdGhYcWRPRHJ0cHR4TmZYcGZ2VnprMlRPWFIxSElDTGF5dnRPUW5RbTNjOTJseG5OcDRFVUd4dV930gGrAUFVX3lxTFB6bXRIREV3a093eWZ1VG9NSTAxV2F2M1UxQktiT0hBU0I4YUxXbk9KQ2JOaHdEWFlPYTIwWklOS3YwSGVEZ1Vvb3pKTzRlVHdEWGFrQW1QeTRON045OWdoT0tnTDdvSkh4VTYyMjdjRDRSZzd1NlZxUnhCVVdFT25jLWZpd2VTQU12bnVMelM0STBlVGlZSnNYVTd1RUI0R3cxam0yLWdVYUVFZw?oc=5"
+      "category": "KONFLIKTY",
+      "title": "🌊 Starcie na Morzu Południochińskim",
+      "summary": "Chińska straż przybrzęśna staranowała filipińską łódź rybacką podczas kolejnego incydentu na spornych wodach.",
+      "comment": "Pekin testuje granice wytrzymałości manewrów Manili oraz amerykańskich gwarancji bezpieczeństwa.",
+      "image_query": "coast guard ship collision",
+      "link": "https://news.usni.org/2026/09/18/video-china-coast-guard-rams-philippine-fisheries-vessel-in-south-china-sea"
     }
   ]
 }
