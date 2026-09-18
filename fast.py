@@ -7,20 +7,22 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Źródła ukierunkowane na politykę, obronność, geopolitykę i rynki
+# Źródła wyspecjalizowane w obronności, konfliktach i twardej geopolityce
 RSS_URLS = [
-    # --- GLOBALNE / GEOPOLITYKA / POLITYKA ---
+    # --- POLSKIE / REGIONALNE BEZPIECZEŃSTWO ---
+    "https://defence24.pl/rss",
+    "https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl",
+    
+    # --- GLOBALNY SEKTOR OBRONNY / KONFLIKTY ZBROJNE ---
+    "https://www.twz.com/feed",                           # The War Zone (taktyka, uzbrojenie, wywiad satelitarny)
+    "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",  # Defense News
+    "https://news.usni.org/feed",                         # US Naval Institute (incydenty morskie, marynarki wojenne)
+    
+    # --- GEOPOLITYKA / KONFLIKTY ŚWIATOWE ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=world+news+geopolitics+defense&hl=en-US&gl=US&ceid=US:en",
-    
-    # --- BIZNES / GOSPODARKA / RYNKI ---
-    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
-    "https://feeds.bloomberg.com/markets/news.rss",
-    "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
-    
-    # --- POLSKA / BEZPIECZEŃSTWO ---
-    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl"
+    "https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en"
 ]
 
 raw_articles = []
@@ -35,10 +37,10 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-# Zbieramy tematy do wykluczenia z archive.json ORAZ news.json
+# Zbieramy tematy do wykluczenia z archive.json oraz news.json
 excluded_topics = []
 
-# 1. Z archive.json (ostatnie sesje)
+# 1. Z archive.json
 archive_file = "archive.json"
 if os.path.exists(archive_file):
     try:
@@ -54,7 +56,7 @@ if os.path.exists(archive_file):
     except Exception:
         pass
 
-# 2. Z aktualnego news.json
+# 2. Z news.json
 news_file = "news.json"
 if os.path.exists(news_file):
     try:
@@ -68,7 +70,7 @@ if os.path.exists(news_file):
     except Exception:
         pass
 
-# Wstępna filtracja duplikatów po stronie Pythona
+# Wstępny filtr podobieństwa słów
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -92,25 +94,25 @@ if len(filtered_raw_articles) < 3:
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe surowe nagłówki i wybierz DOKŁADNIE 3 NAJWAŻNIEJSZE i NAJCIEKAWSZE wiadomości uzupełniające.
+prompt = f"""Przeanalizuj poniższe surowe nagłówki i wyselekcjonuj DOKŁADNIE 3 NAJMOCNIEJSZE tematy o najwyższym ładunku geopolitycznym i militarnym.
 
-KRYTERIA SELEKCJI:
-- Wybierz wyłącznie tematy z obszarów: POLITYKA, BEZPIECZEŃSTWO / OBRONNOŚĆ, GEOPOLITYKA lub GOSPODARKA / RYNKI.
-- Zero ciekawostek, lifestyle'u czy tematów pobocznych.
-- Wybierz tematy świeże i istotne, które stanowią mocne uzupełnienie dnia.
+KRYTERIUM WYBORU:
+- Bezwzględny priorytet: WOJNA, OBRONNOŚĆ, ATAKI, STARCIOM ZBROJNYM, TESTY RAKIETOWE, TWARDA POLITYKA MIĘDZYNARODOWA, RUCHY WOJSK, BEZPIECZEŃSTWO NARODOWE.
+- Zero lifestyle'u, ciekawostek, luźnego IT czy tematów pobocznych.
+- Wybierz tematy, które budzą największe zaangażowanie i dyskusję w mediach społecznościowych.
 
 Zwróć DOKŁADNIE 3 obiekty w czystej tablicy JSON. Każdy obiekt musi zawierać:
-- "category": Kategoria pisana WIELKIMI LITERAMI (np. "GEOPOLITYKA", "BEZPIECZEŃSTWO", "GOSPODARKA", "POLITYKA").
-- "title": Krótki, chwytliwy nagłówek w języku polskim z dopasowaną emotikoną na początku (np. "🛡️ Nowy pakt obronny...", "🏛️ Napięcia dyplomatyczne...").
-- "summary": Rzeczowe podsumowanie w 1-2 zdaniach wyjaśniające sedno sprawy.
-- "comment": Krótki, analityczny komentarz pokazujący znaczenie tego faktu.
-- "image_query": 2-3 profesjonalne słowa kluczowe po ANGIELSKU pod zdjęcie stockowe (np. "nato military summit", "central bank building", "defense radar system").
-- "link": Dokładny adres URL z wejścia przypisany do tej wiadomości.
+- "category": Kategoria pisana WIELKIMI LITERAMI (wyłącznie: "OBRONNOŚĆ", "KONFLIKTY", "GEOPOLITYKA", "BEZPIECZEŃSTWO").
+- "title": Krótki, mocny nagłówek po polsku z adekwatną emotikoną (np. 🚨, 🚀, 🛡️, ⚔️, 🪖, 🛑).
+- "summary": Rzeczowy, twardy opis w 1-2 zdaniach przedstawiający bezpośredni fakt i skalę wydarzenia.
+- "comment": Chłodna, strategiczna puenta analizująca bezpośrednie konsekwencje militarne, polityczne lub bezpieczeństwa.
+- "image_query": 2-3 konkretne słowa kluczowe po ANGIELSKU pod zdjęcie stockowe (np. "military missile launch", "war zone destruction", "soldier combat gear", "warship naval patrol").
+- "link": Dokładny adres URL z wejścia przypisany do tego artykułu.
 
-BEZWZGLĘDNY ZAKAZ POWIELANIA TEMATÓW Z TEJ LISTY (to już opublikowane wiadomości):
+ZAKAZ POWIELANIA TEMATÓW Z TEJ LISTY:
 {json.dumps(excluded_topics[:40], ensure_ascii=False)}
 
-Zwróć WYŁĄCZNIE poprawną tablicę JSON (bez ```json ani ```).
+Zwróć WYŁĄCZNIE poprawną tablicę JSON (bez formatowania markdown ```json ani ```).
 
 Dane wejściowe:
 {json.dumps(filtered_raw_articles, ensure_ascii=False)}
@@ -129,15 +131,15 @@ try:
         text_res = text_res[3:-3].strip()
     
     items = json.loads(text_res)
-    items = items[:3]  # Gwarancja dokładnie 3 newsów
+    items = items[:3]
 except Exception as e:
     print(f"Błąd AI: {e}")
     items = [{
-        "category": "FAST NEWS",
-        "title": f"📌 {art['title']}",
-        "summary": "Szybki news pobrany bezpośrednio z agencji prasowych.",
-        "comment": "Wydarzenie z ostatnich godzin.",
-        "image_query": "breaking news world politics",
+        "category": "BEZPIECZEŃSTWO",
+        "title": f"🚨 {art['title']}",
+        "summary": "Wiadomość z agencji prasowych.",
+        "comment": "Wydarzenie z sektora obronności.",
+        "image_query": "military defense combat",
         "link": art['link']
     } for art in filtered_raw_articles[:3]]
 
@@ -153,8 +155,7 @@ output_data = {
     "items": items
 }
 
-# Zapis do fast.json
 with open("fast.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-print(f"Pomyślnie wygenerowano fast.json z {len(items)} newsami o {time_pretty}.")
+print(f"Zapisano 3 twarde newsy do fast.json o {time_pretty}.")
