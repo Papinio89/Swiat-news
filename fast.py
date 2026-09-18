@@ -7,16 +7,15 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Źródła wyspecjalizowane w obronności, konfliktach i twardej geopolityce
 RSS_URLS = [
     # --- POLSKIE / REGIONALNE BEZPIECZEŃSTWO ---
     "https://defence24.pl/rss",
     "https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl",
     
     # --- GLOBALNY SEKTOR OBRONNY / KONFLIKTY ZBROJNE ---
-    "https://www.twz.com/feed",                           # The War Zone (taktyka, uzbrojenie, wywiad satelitarny)
-    "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",  # Defense News
-    "https://news.usni.org/feed",                         # US Naval Institute (incydenty morskie, marynarki wojenne)
+    "https://www.twz.com/feed",
+    "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
+    "https://news.usni.org/feed",
     
     # --- GEOPOLITYKA / KONFLIKTY ŚWIATOWE ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
@@ -29,15 +28,15 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:8]:
+        # Pobieramy tylko 3 najświeższe z każdego feeda, aby nie pompować tokenów
+        for entry in feed.entries[:3]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
-                raw_articles.append({"title": title, "link": link})
+                raw_articles.append({"title": title.strip(), "link": link.strip()})
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-# Zbieramy tematy do wykluczenia z archive.json oraz news.json
 excluded_topics = []
 
 # 1. Z archive.json
@@ -46,7 +45,7 @@ if os.path.exists(archive_file):
     try:
         with open(archive_file, "r", encoding="utf-8") as f:
             archive_data = json.load(f)
-            for session_key in sorted(archive_data.keys(), reverse=True)[:10]:
+            for session_key in sorted(archive_data.keys(), reverse=True)[:6]:
                 session_content = archive_data[session_key]
                 if isinstance(session_content, dict) and "items" in session_content:
                     for item in session_content.get("items", []):
@@ -70,7 +69,6 @@ if os.path.exists(news_file):
     except Exception:
         pass
 
-# Wstępny filtr podobieństwa słów
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -92,36 +90,32 @@ for art in raw_articles:
 if len(filtered_raw_articles) < 3:
     filtered_raw_articles = raw_articles
 
+# Maksymalnie 15 pozycji przekazywanych do AI (oszczędność na prompt wejściowy)
+articles_for_ai = filtered_raw_articles[:15]
+
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe surowe nagłówki i wyselekcjonuj DOKŁADNIE 3 NAJMOCNIEJSZE tematy o najwyższym ładunku geopolitycznym i militarnym.
+prompt = f"""Wybierz DOKŁADNIE 3 NAJMOCNIEJSZE tematy militarne, obronne lub geopolityczne z poniższej listy.
 
-KRYTERIUM WYBORU:
-- Bezwzględny priorytet: WOJNA, OBRONNOŚĆ, ATAKI, STARCIOM ZBROJNYM, TESTY RAKIETOWE, TWARDA POLITYKA MIĘDZYNARODOWA, RUCHY WOJSK, BEZPIECZEŃSTWO NARODOWE.
-- Zero lifestyle'u, ciekawostek, luźnego IT czy tematów pobocznych.
-- Wybierz tematy, które budzą największe zaangażowanie i dyskusję w mediach społecznościowych.
+Zwróć DOKŁADNIE 3 obiekty w czystej tablicy JSON:
+- "category": Kategoria (WIELKIE LITERY, np. "OBRONNOŚĆ", "KONFLIKTY", "GEOPOLITYKA", "BEZPIECZEŃSTWO").
+- "title": Zwięzły, mocny nagłówek z emoji (np. 🚨, 🚀, 🛡️, ⚔️).
+- "summary": Konkretny opis faktu (1-2 zdania).
+- "comment": Chłodna puenta strategiczna (1 zdanie).
+- "image_query": 2-3 angielskie słowa kluczowe stock photo.
+- "link": URL wejściowy dla danego newsa.
 
-Zwróć DOKŁADNIE 3 obiekty w czystej tablicy JSON. Każdy obiekt musi zawierać:
-- "category": Kategoria pisana WIELKIMI LITERAMI (wyłącznie: "OBRONNOŚĆ", "KONFLIKTY", "GEOPOLITYKA", "BEZPIECZEŃSTWO").
-- "title": Krótki, mocny nagłówek po polsku z adekwatną emotikoną (np. 🚨, 🚀, 🛡️, ⚔️, 🪖, 🛑).
-- "summary": Rzeczowy, twardy opis w 1-2 zdaniach przedstawiający bezpośredni fakt i skalę wydarzenia.
-- "comment": Chłodna, strategiczna puenta analizująca bezpośrednie konsekwencje militarne, polityczne lub bezpieczeństwa.
-- "image_query": 2-3 konkretne słowa kluczowe po ANGIELSKU pod zdjęcie stockowe (np. "military missile launch", "war zone destruction", "soldier combat gear", "warship naval patrol").
-- "link": Dokładny adres URL z wejścia przypisany do tego artykułu.
-
-ZAKAZ POWIELANIA TEMATÓW Z TEJ LISTY:
-{json.dumps(excluded_topics[:40], ensure_ascii=False)}
-
-Zwróć WYŁĄCZNIE poprawną tablicę JSON (bez formatowania markdown ```json ani ```).
+Unikaj tematów z tej listy: {json.dumps(excluded_topics[:10], ensure_ascii=False)}
+Zwróć WYŁĄCZNIE poprawną tablicę JSON (bez markdown ```json ani ```).
 
 Dane wejściowe:
-{json.dumps(filtered_raw_articles, ensure_ascii=False)}
+{json.dumps(articles_for_ai, ensure_ascii=False)}
 """
 
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.6-flash',
+        model='gemini-3.5-flash-lite',
         contents=prompt,
     )
     text_res = response.text.strip()
