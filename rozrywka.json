@@ -1,87 +1,87 @@
 {
-  "date": "17 September 2026",
-  "time": "13:42",
-  "timestamp": "2026-09-17_13:42",
+  "date": "18 September 2026",
+  "time": "05:58",
+  "timestamp": "2026-09-18_05:58",
   "items": [
     {
-      "category": "ZWIERZAKI",
-      "title": "🧊 Kwadratowe kupy wombatów, czyli australijska inżynieria kloaczna",
-      "summary": "Wombaty to jedyne stworzenia na naszej planecie, które wypróżniają się w kształcie perfekcyjnych sześcianów, by ich odchody nie staczały się z kamieni oznaczających terytorium.",
-      "comment": "Matka Natura najwyraźniej zatrudniła inżyniera z IKEI do zaprojektowania ich układu trawiennego. Gotowe do ułożenia jak klocki!",
-      "image_query": "wombat funny nature",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vOE15TEdQN3ZmeW5JMWVTZFFOOTI2aTh5SE1GVUt3WTdwX1pLYmRSMWg5THFXQUFfNzVvNEhVUlBWTzZFZ0l4a3c1ZWtkMjQzY3lKdC1kN0tHVVZHbTRCWjE5Sm1vVlNBTTJ6QnVyQzJ5eVk?oc=5"
-    },
-    {
-      "category": "KRYMINALNE ZWIERZAKI",
-      "title": "🐨 Złodziejskie łapki koali, które oszukują kryminalistykę",
-      "summary": "Linie papilarne misiów koala są tak łudząco podobne do ludzkich, że australijska policja wielokrotnie badała je na miejscach włamań, poważnie traktując torbacze jako potencjalnych podejrzanych.",
-      "comment": "Wyobraź sobie minę śledczego, który po trzech tygodniach żmudnego dochodzenia odkrywa, że seryjnym złodziejem jest tylko mały, pijany eukaliptusem zwierzak.",
-      "image_query": "koala mugshot funny",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vOE15TEdQN3ZmeW5JMWVTZFFOOTI2aTh5SE1GVUt3WTdwX1pLYmRSMWg5THFXQUFfNzVvNEhVUlBWTzZFZ0l4a3c1ZWtkMjQzY3lKdC1kN0tHVVZHbTRCWjE5Sm1vVlNBTTJ6QnVyQzJ5eVk?oc=5"
-    },
-    {
-      "category": "KOSZMARNA KUCHNIA",
-      "title": "🥧 Ciasto z samej wody, czyli kulinarna magia (i rozpacz) w jednym",
-      "summary": "Podczas Wielkiego Kryzysu w USA, ze względu na biedę, gospodynie domowe wypiekały słynne 'Water Pie' – ciasto, którego głównym, gęstym nadzieniem była dosłownie wrząca woda z odrobiną cukru, mąki i masła.",
-      "comment": "Jeśli kiedykolwiek narzekałeś na pizzę z ananasem, pomyśl o tym, że ktoś kiedyś podał gościom pokrojoną w trójkąty, upieczoną kałużę.",
-      "image_query": "weird vintage pie baking",
-      "link": "https://www.mentalfloss.com/food/foods-families-ate-great-depression?utm_source=RSS"
-    },
-    {
       "category": "SZALONA HISTORIA",
-      "title": "🎩 Abraham Lincoln dusił rywali na ringu długo przed polityką",
-      "summary": "Zanim został 16. prezydentem USA, Lincoln był absolutnie elitarnym zapaśnikiem; na około 300 brutalnych walk przegrał zaledwie jedną i oficjalnie trafił do Zapaśniczej Galerii Sław.",
-      "comment": "Po wygranej podobno rzucił w tłum: 'Jestem największym twardzielem w okolicy, ktoś jeszcze chce oberwać?'. Debaty prezydenckie dzisiaj to przy tym nuda.",
-      "image_query": "abraham lincoln wrestling funny",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
+      "title": "🚪 Gość z piekła rodem: Jak Hans Christian Andersen wykończył Charlesa Dickensa",
+      "summary": "Twórca 'Brzydkiego Kaczątka' wprosił się do domu Dickensa na 5 tygodni, ignorował wszelkie aluzje, płakał na trawniku i doprowadził gospodarza do absolutnej rozpaczy.",
+      "comment": "Dickens po jego wyjeździe wywiesił w pokoju kartkę: 'Hans Christian Andersen spał w tym pokoju przez 5 tygodni, które mojej rodzinie wydały się wiecznością'. Typowy uciążliwy teść.",
+      "image_query": "angry victorian man",
+      "link": "https://www.mentalfloss.com/literature/authors/hans-christian-andersen-charles-dickens-visit?utm_source=RSS"
+    },
+    {
+      "category": "KOSZMARNE JEDZENIE",
+      "title": "🏴‍☠️ Chrupiąca niespodzianka: Dlaczego piraci jedli po ciemku",
+      "summary": "Pirackie racje żywnościowe składały się głównie z sucharów tak bardzo zapchanych wołkami zbożowymi i larwami, że marynarze woleli jeść pod pokładem bez żadnej latarni.",
+      "comment": "Czego oczy nie widzą, to żołądek strawi. Zresztą to darmowe, chrupiące białko, więc współcześni kulturyści na masie byliby wręcz w siódmym niebie!",
+      "image_query": "pirate eating biscuit",
+      "link": "https://www.mentalfloss.com/history/foods-pirates-ate-sea?utm_source=RSS"
     },
     {
       "category": "ABSURDY ŚWIATA",
-      "title": "🏃 Maraton Igrzysk 1904: dzikie psy, trutka na szczury i jazda autostopem",
-      "summary": "Podczas Igrzysk w St. Louis jeden biegacz podjechał do mety autem, drugi uciekał z trasy goniony przez wściekłe psy w spodniach od garnituru, a zwycięzcę pojono koniakiem i trutką na szczury jako suplementem przedtreningowym.",
-      "comment": "Dzisiejsi sportowcy mierzą kalorie i piją izotoniki. Ponad wiek temu najważniejsze to było przeżyć atak zwierząt i nie zejść po dawce strychniny.",
-      "image_query": "vintage running marathon weird",
+      "title": "🪖 Wielka Wojna z Emu: Kiedy Australia przegrała z ptakami",
+      "summary": "W 1932 roku australijska armia wypowiedziała oficjalną wojnę nielotom, wysyłając żołnierzy z karabinami maszynowymi, by zneutralizować plądrującą uprawy plagę emu.",
+      "comment": "Ptaki okazały się mistrzami uników i taktyki partyzanckiej, w efekcie zmuszając uzbrojone wojsko do kapitulacji. Emu do dziś prawdopodobnie śmieją się z tego w swoich gniazdach.",
+      "image_query": "funny emu bird",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
     },
     {
-      "category": "BEKA Z NAUKI",
-      "title": "🐟 Ryba z przezroczystą czaszką, która widzi świat przez swój własny mózg",
-      "summary": "Głębinowa ryba znana jako straszak ma totalnie przezroczystą głowę wypełnioną płynem, a jej zielone oczy patrzą cały czas do góry, podglądając zdobycz dosłownie zza własnych zwojów mózgowych.",
-      "comment": "Kiedy myślisz, że miałeś dziwny dzień, przypomnij sobie, że w Rowie Mariańskim ewolucja potraktowała ryby kreatorem postaci ustawionym na opcję 'maksymalny koszmar z uśmiechem'.",
-      "image_query": "transparent head barreleye fish",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPblJKWnNkNzh4dE1STmJySkNRVnlwb1VibURocDJNWnNJM09rLTFJeUNJdU9vREJUa05OUzZyQ1AxeGgyQkdxM0pBM3d5NFlaNk1FTEpGLUlCU3lxbndNQUtPQW5TRGFXSk4tQUZUdWkzRkRjOW42dktmb3cwOEdyS0txYzY2VGhDeFFnSzFn?oc=5"
+      "category": "ZWIERZAKI",
+      "title": "🥊 Krewetka modliszkowa: Podwodny Mike Tyson na sterydach",
+      "summary": "To małe, kolorowe stworzonko wyprowadza ciosy swoimi szczypcami z prędkością pocisku kalibru .22, dosłownie gotując wodę wokół ofiary i tworząc błyski oślepiającego światła.",
+      "comment": "Gdyby uderzyła w ludzkich proporcjach, mogłaby posłać basebolla na orbitę okołoziemską. A ty myślałeś, że to twój mruczek ma mordercze zapędy, kiedy rano żąda chrupek.",
+      "image_query": "mantis shrimp funny",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🐘 Słonie w średniowieczu wyglądały jak grube trąbki z lękiem wysokości",
-      "summary": "Średniowieczni mnisi, ilustrując księgi, rysowali zwierzęta tylko ze słyszenia, przez co słonie kończyły z rurami od odkurzacza zamiast trąb, wielkimi jak balony nogami i zamkami noszonymi na plecach.",
-      "comment": "Zlecić komuś narysowanie zwierzaka z opisu kolegi, który nigdy go nie widział, to tak, jak grać w głuchy telefon, ale stawką jest dorobek kulturowy ludzkości.",
-      "image_query": "weird medieval animal drawings",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjRkTHZqUmlKT3I5WHJpRkdjTmktWDdEVklvWmR2eTcwWm1KTGxCalQteUwxNXNoMWt2cnJfSDJiSDgtYkNDTmR0dkhFLTBjeFJUaWRpbFotcTlxRmV1SmVMTjk0LUVNNFJRQUtFdFpIdUxrVDA4X2pqdjR4ZXE1UVRMMERVRkVUbDBuSHNrOWJ2dUk3aXdB?oc=5"
+      "title": "🍅 Leczniczy Ketchup: Z frytkami czy na receptę?",
+      "summary": "W latach 30. XIX wieku w USA ketchup pomidorowy wcale nie służył do maczania jedzenia, lecz był patentowanym lekiem sprzedawanym w pigułkach na biegunkę, żółtaczkę i reumatyzm.",
+      "comment": "Wyobraź sobie, że idziesz do apteki, bo cię kręci w brzuchu, a farmaceuta ładuje ci wielką strzykawkę z Heinza. Prawdziwa magia dawnej, niekonwencjonalnej medycyny!",
+      "image_query": "vintage medicine ketchup",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
     },
     {
       "category": "ZWIERZAKI",
-      "title": "🦛 Hipopotamy pocą się naturalnym, krwistoczerwonym żelem",
-      "summary": "Te ogromne zwierzaki wytwarzają własny krem z filtrem – pocą się grubą warstwą rudawo-czerwonej wydzieliny, która blokuje promienie UV, a przy okazji jest niesamowicie silnym antybiotykiem.",
-      "comment": "Wyobraź sobie nałożenie SPF 50, po którym wyglądasz jak po umazaniu się w ketchupie, ale nikt się z ciebie nie śmieje, bo ważysz półtorej tony i potrafisz złamać krokodyla wpół.",
-      "image_query": "hippo sweating red sun",
+      "title": "🍿 Pachnący binturong: Zwierzak o aromacie kina",
+      "summary": "Binturong orientalny, potocznie nazywany kotoniedźwiedziem, posiada gruczoły zapachowe, z których wydziela aromat do złudzenia przypominający świeży, gorący popcorn z masłem.",
+      "comment": "Wydaje się idealnym kompanem na seans w kinie, dopóki nie zdasz sobie sprawy, że ten piękny zapach to tak naprawdę jego mocz służący do oznaczania terytorium. Smacznego!",
+      "image_query": "funny binturong animal",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNbFRWdTJodGt4UnV2YnVmQi1iS1MzVXlQeVA5LWUwOUo0d3pKME5vODNzZkR0ZUtKYVpOTktPOV83MElPWVQ0czkwNHNQNFc1NHVGaGpGa1R3dUJaYnYtMNIBcEFVX3lxTE5FWTdjTmFBX0puYUJBU0NnMUtMeXJ0NzNLUUFwdTlXMTlZamNGbWNhNzk3U2hTZ3ctTWFYSHY4ZHJnQnN4clZ3b25tWlNYMXM3ZXRKQnNNb0J5MUZraDBGVmR5elhMX0d0ckJrTGRlbEg?oc=5"
     },
     {
-      "category": "SZALONA HISTORIA",
-      "title": "💃 Mordercza impreza z 1518, czyli disco polo z piekła rodem",
-      "summary": "W Strasburgu miała miejsce autentyczna 'plaga tańca', podczas której setki ludzi tańczyły na ulicach non-stop przez kilka tygodni z całkowicie niewyjaśnionych przyczyn, padając na zawały i z wyczerpania.",
-      "comment": "Lokalne władze wpadły na absurdalny pomysł ratunku – wynajęły trupom grajków z myślą, że 'gdy poskaczą szybciej, to w końcu im przejdzie'. No i wielu przeszło – na tamten świat.",
-      "image_query": "medieval dancing plague people",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
+      "category": "ZWIERZAKI",
+      "title": "👅 Dzięcioł inżynier: Język w roli kasku ochronnego",
+      "summary": "Dzięcioł uderza dziobem o drewno z gigantyczną siłą, a żeby zapobiec eksplozji własnej czaszki, owija swój nieproporcjonalnie długi język dookoła mózgu niczym biologiczną poduszkę powietrzną.",
+      "comment": "Wyobraź sobie, że musisz lizać własny mózg za każdym razem, gdy jesz schabowego. Matka Natura ewidentnie miała bardzo specyficzne poczucie humoru podczas projektowania ptaków.",
+      "image_query": "woodpecker funny beak",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vOE15TEdQN3ZmeW5JMWVTZFFOOTI2aTh5SE1GVUt3WTdwX1pLYmRSMWg5THFXQUFfNzVvNEhVUlBWTzZFZ0l4a3c1ZWtkMjQzY3lKdC1kN0tHVVZHbTRCWjE5Sm1vVlNBTTJ6QnVyQzJ5eVk?oc=5"
     },
     {
-      "category": "ABSURDY ŚWIATA",
-      "title": "🚗 Facet, który nosi Mini Coopera zamiast czapki na zimę",
-      "summary": "Brytyjski mistrz balansowania John Evans ustanowił szalony rekord świata – utrzymał na swojej łysiejącej głowie samochód Mini ważący ok. 160 kilogramów, spacerując pod nim jak z zakupami.",
-      "comment": "Biorąc pod uwagę współczesne ceny płatnego parkowania w miastach, noszenie własnego auta na głowie to wcale nie rekord, tylko sprytne zarządzanie budżetem.",
-      "image_query": "man balancing car on head",
+      "category": "SZALONA HISTORIA",
+      "title": "🦷 Rzymski uśmiech: Lśniące zęby dzięki... moczowi",
+      "summary": "Starożytni Rzymianie tak bardzo obsesyjnie pragnęli mieć śnieżnobiałe zęby, że używali ludzkiej uryny, najlepiej ekskluzywnie importowanej z Portugalii, jako codziennego płynu do płukania ust.",
+      "comment": "Influencerzy z tamtych lat z pewnością mieli promienny uśmiech na rzymskim TikToku, ale poranne buziaczki w Koloseum wymagały całkowitego braku węchu i godności.",
+      "image_query": "ancient roman smile",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+    },
+    {
+      "category": "ZWIERZAKI",
+      "title": "😠 Stado narzekających mopsów: Najtrafniejsza nazwa świata",
+      "summary": "W języku angielskim stado kruków to 'morderstwo', sów to 'parlament', ale grupa co najmniej trzech mopsów to oficjalnie 'grumble', co w dosłownym tłumaczeniu oznacza 'narzekanie'.",
+      "comment": "Patrząc na ich wiecznie oburzone pyszczki i ciągłe sapanie brzmiące jak stary odkurzacz bez filtra, w pełni rozumiemy biologiczną genezę tego wybitnie precyzyjnego terminu.",
+      "image_query": "pug funny face",
+      "link": "https://www.mentalfloss.com/random-facts/fun-facts-about-me-icebreaker-ideas?utm_source=RSS"
+    },
+    {
+      "category": "SZALONA HISTORIA",
+      "title": "🐈 Papież kontra mruczki: XIII-wieczna krucjata przeciw kotom",
+      "summary": "Papież Grzegorz IX wydał w XIII wieku oficjalny dokument, w którym uznał czarne koty za dosłowne wcielenie szatana, co wywołało w Europie masową eksterminację tych uroczych zwierząt.",
+      "comment": "Zabrakło kotów, więc myszy i szczury zorganizowały największą imprezę stulecia i w gratisie rozniosły po kontynencie dżumę. Błyskawiczna karma istnieje, a historia to potwierdza!",
+      "image_query": "medieval cat funny",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjRkTHZqUmlKT3I5WHJpRkdjTmktWDdEVklvWmR2eTcwWm1KTGxCalQteUwxNXNoMWt2cnJfSDJiSDgtYkNDTmR0dkhFLTBjeFJUaWRpbFotcTlxRmV1SmVMTjk0LUVNNFJRQUtFdFpIdUxrVDA4X2pqdjR4ZXE1UVRMMERVRkVUbDBuSHNrOWJ2dUk3aXdB?oc=5"
     }
   ]
 }

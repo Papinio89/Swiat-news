@@ -500,5 +500,92 @@
         "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
       }
     ]
+  },
+  "2026-09-18_rozrywka": {
+    "date": "18 September 2026",
+    "time": "05:58",
+    "timestamp": "2026-09-18_05:58",
+    "items": [
+      {
+        "category": "SZALONA HISTORIA",
+        "title": "🚪 Gość z piekła rodem: Jak Hans Christian Andersen wykończył Charlesa Dickensa",
+        "summary": "Twórca 'Brzydkiego Kaczątka' wprosił się do domu Dickensa na 5 tygodni, ignorował wszelkie aluzje, płakał na trawniku i doprowadził gospodarza do absolutnej rozpaczy.",
+        "comment": "Dickens po jego wyjeździe wywiesił w pokoju kartkę: 'Hans Christian Andersen spał w tym pokoju przez 5 tygodni, które mojej rodzinie wydały się wiecznością'. Typowy uciążliwy teść.",
+        "image_query": "angry victorian man",
+        "link": "https://www.mentalfloss.com/literature/authors/hans-christian-andersen-charles-dickens-visit?utm_source=RSS"
+      },
+      {
+        "category": "KOSZMARNE JEDZENIE",
+        "title": "🏴‍☠️ Chrupiąca niespodzianka: Dlaczego piraci jedli po ciemku",
+        "summary": "Pirackie racje żywnościowe składały się głównie z sucharów tak bardzo zapchanych wołkami zbożowymi i larwami, że marynarze woleli jeść pod pokładem bez żadnej latarni.",
+        "comment": "Czego oczy nie widzą, to żołądek strawi. Zresztą to darmowe, chrupiące białko, więc współcześni kulturyści na masie byliby wręcz w siódmym niebie!",
+        "image_query": "pirate eating biscuit",
+        "link": "https://www.mentalfloss.com/history/foods-pirates-ate-sea?utm_source=RSS"
+      },
+      {
+        "category": "ABSURDY ŚWIATA",
+        "title": "🪖 Wielka Wojna z Emu: Kiedy Australia przegrała z ptakami",
+        "summary": "W 1932 roku australijska armia wypowiedziała oficjalną wojnę nielotom, wysyłając żołnierzy z karabinami maszynowymi, by zneutralizować plądrującą uprawy plagę emu.",
+        "comment": "Ptaki okazały się mistrzami uników i taktyki partyzanckiej, w efekcie zmuszając uzbrojone wojsko do kapitulacji. Emu do dziś prawdopodobnie śmieją się z tego w swoich gniazdach.",
+        "image_query": "funny emu bird",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
+      },
+      {
+        "category": "ZWIERZAKI",
+        "title": "🥊 Krewetka modliszkowa: Podwodny Mike Tyson na sterydach",
+        "summary": "To małe, kolorowe stworzonko wyprowadza ciosy swoimi szczypcami z prędkością pocisku kalibru .22, dosłownie gotując wodę wokół ofiary i tworząc błyski oślepiającego światła.",
+        "comment": "Gdyby uderzyła w ludzkich proporcjach, mogłaby posłać basebolla na orbitę okołoziemską. A ty myślałeś, że to twój mruczek ma mordercze zapędy, kiedy rano żąda chrupek.",
+        "image_query": "mantis shrimp funny",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
+      },
+      {
+        "category": "SZALONA HISTORIA",
+        "title": "🍅 Leczniczy Ketchup: Z frytkami czy na receptę?",
+        "summary": "W latach 30. XIX wieku w USA ketchup pomidorowy wcale nie służył do maczania jedzenia, lecz był patentowanym lekiem sprzedawanym w pigułkach na biegunkę, żółtaczkę i reumatyzm.",
+        "comment": "Wyobraź sobie, że idziesz do apteki, bo cię kręci w brzuchu, a farmaceuta ładuje ci wielką strzykawkę z Heinza. Prawdziwa magia dawnej, niekonwencjonalnej medycyny!",
+        "image_query": "vintage medicine ketchup",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+      },
+      {
+        "category": "ZWIERZAKI",
+        "title": "🍿 Pachnący binturong: Zwierzak o aromacie kina",
+        "summary": "Binturong orientalny, potocznie nazywany kotoniedźwiedziem, posiada gruczoły zapachowe, z których wydziela aromat do złudzenia przypominający świeży, gorący popcorn z masłem.",
+        "comment": "Wydaje się idealnym kompanem na seans w kinie, dopóki nie zdasz sobie sprawy, że ten piękny zapach to tak naprawdę jego mocz służący do oznaczania terytorium. Smacznego!",
+        "image_query": "funny binturong animal",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNbFRWdTJodGt4UnV2YnVmQi1iS1MzVXlQeVA5LWUwOUo0d3pKME5vODNzZkR0ZUtKYVpOTktPOV83MElPWVQ0czkwNHNQNFc1NHVGaGpGa1R3dUJaYnYtMNIBcEFVX3lxTE5FWTdjTmFBX0puYUJBU0NnMUtMeXJ0NzNLUUFwdTlXMTlZamNGbWNhNzk3U2hTZ3ctTWFYSHY4ZHJnQnN4clZ3b25tWlNYMXM3ZXRKQnNNb0J5MUZraDBGVmR5elhMX0d0ckJrTGRlbEg?oc=5"
+      },
+      {
+        "category": "ZWIERZAKI",
+        "title": "👅 Dzięcioł inżynier: Język w roli kasku ochronnego",
+        "summary": "Dzięcioł uderza dziobem o drewno z gigantyczną siłą, a żeby zapobiec eksplozji własnej czaszki, owija swój nieproporcjonalnie długi język dookoła mózgu niczym biologiczną poduszkę powietrzną.",
+        "comment": "Wyobraź sobie, że musisz lizać własny mózg za każdym razem, gdy jesz schabowego. Matka Natura ewidentnie miała bardzo specyficzne poczucie humoru podczas projektowania ptaków.",
+        "image_query": "woodpecker funny beak",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vOE15TEdQN3ZmeW5JMWVTZFFOOTI2aTh5SE1GVUt3WTdwX1pLYmRSMWg5THFXQUFfNzVvNEhVUlBWTzZFZ0l4a3c1ZWtkMjQzY3lKdC1kN0tHVVZHbTRCWjE5Sm1vVlNBTTJ6QnVyQzJ5eVk?oc=5"
+      },
+      {
+        "category": "SZALONA HISTORIA",
+        "title": "🦷 Rzymski uśmiech: Lśniące zęby dzięki... moczowi",
+        "summary": "Starożytni Rzymianie tak bardzo obsesyjnie pragnęli mieć śnieżnobiałe zęby, że używali ludzkiej uryny, najlepiej ekskluzywnie importowanej z Portugalii, jako codziennego płynu do płukania ust.",
+        "comment": "Influencerzy z tamtych lat z pewnością mieli promienny uśmiech na rzymskim TikToku, ale poranne buziaczki w Koloseum wymagały całkowitego braku węchu i godności.",
+        "image_query": "ancient roman smile",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+      },
+      {
+        "category": "ZWIERZAKI",
+        "title": "😠 Stado narzekających mopsów: Najtrafniejsza nazwa świata",
+        "summary": "W języku angielskim stado kruków to 'morderstwo', sów to 'parlament', ale grupa co najmniej trzech mopsów to oficjalnie 'grumble', co w dosłownym tłumaczeniu oznacza 'narzekanie'.",
+        "comment": "Patrząc na ich wiecznie oburzone pyszczki i ciągłe sapanie brzmiące jak stary odkurzacz bez filtra, w pełni rozumiemy biologiczną genezę tego wybitnie precyzyjnego terminu.",
+        "image_query": "pug funny face",
+        "link": "https://www.mentalfloss.com/random-facts/fun-facts-about-me-icebreaker-ideas?utm_source=RSS"
+      },
+      {
+        "category": "SZALONA HISTORIA",
+        "title": "🐈 Papież kontra mruczki: XIII-wieczna krucjata przeciw kotom",
+        "summary": "Papież Grzegorz IX wydał w XIII wieku oficjalny dokument, w którym uznał czarne koty za dosłowne wcielenie szatana, co wywołało w Europie masową eksterminację tych uroczych zwierząt.",
+        "comment": "Zabrakło kotów, więc myszy i szczury zorganizowały największą imprezę stulecia i w gratisie rozniosły po kontynencie dżumę. Błyskawiczna karma istnieje, a historia to potwierdza!",
+        "image_query": "medieval cat funny",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjRkTHZqUmlKT3I5WHJpRkdjTmktWDdEVklvWmR2eTcwWm1KTGxCalQteUwxNXNoMWt2cnJfSDJiSDgtYkNDTmR0dkhFLTBjeFJUaWRpbFotcTlxRmV1SmVMTjk0LUVNNFJRQUtFdFpIdUxrVDA4X2pqdjR4ZXE1UVRMMERVRkVUbDBuSHNrOWJ2dUk3aXdB?oc=5"
+      }
+    ]
   }
 }
