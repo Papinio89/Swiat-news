@@ -1,6 +1,37 @@
 {
   "date": "19 września 2026",
-  "time": "12:52",
-  "timestamp": "2026-09-19_12:52",
-  "items": []
+  "time": "12:55",
+  "timestamp": "2026-09-19_12:55",
+  "items": [
+    {
+      "category": "PILNE",
+      "title": "🚨 Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+      "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Trwa gromadzenie szczegółowych informacji strategicznych.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg",
+      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg"
+    },
+    {
+      "category": "PILNE",
+      "title": "🚨 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+      "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Trwa gromadzenie szczegółowych informacji strategicznych.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+      "source_image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg",
+      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
+    },
+    {
+      "category": "PILNE",
+      "title": "🚨 Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+      "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Trwa gromadzenie szczegółowych informacji strategicznych.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
+      "source_image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg",
+      "image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg"
+    }
+  ]
 }
