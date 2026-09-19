@@ -2,8 +2,27 @@
 <html lang="pl" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Świat w Minutę - Przegląd Wiadomości</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Świat w Minutę – szybki przegląd najważniejszych wiadomości dnia: fakty, rynki, obronność i technologia. Krótko i na temat, generowane z pomocą AI.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Świat w Minutę - Przegląd Wiadomości">
+    <meta property="og:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiat-w-minut.vercel.app">
+    <meta property="og:locale" content="pl_PL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Świat w Minutę - Przegląd Wiadomości">
+    <meta name="twitter:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,8 +51,6 @@
         body { 
             font-family: 'Inter', sans-serif; 
             transition: background-color 0.3s, color 0.3s;
-            user-select: none;
-            -webkit-user-select: none;
         }
         .glass-header { backdrop-filter: blur(12px); }
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -98,13 +115,13 @@
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
                 <div class="relative w-48 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                    <input type="text" id="search-input" onkeyup="debouncedFilterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors" aria-label="Szukaj wiadomości">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
+                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs" aria-label="Wyczyść wyszukiwanie">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
+                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition" aria-label="Przełącz motyw jasny/ciemny">
                     <i id="theme-icon" class="fa-solid fa-moon"></i>
                 </button>
                 <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
@@ -114,9 +131,9 @@
         </div>
         <div class="md:hidden px-4 pb-3">
             <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <input type="text" id="search-input-mobile" onkeyup="debouncedFilterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors" aria-label="Szukaj wiadomości">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
+                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs" aria-label="Wyczyść wyszukiwanie">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
@@ -157,10 +174,9 @@
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
-        <!-- 2. Fast Review (z sekcją PILNE na samej górze) -->
+        <!-- 2. Fast Review -->
         <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
             
-            <!-- Blok PILNE z fast.json -->
             <div id="breaking-container" class="hidden mb-8">
                 <div class="flex items-center gap-2 mb-3">
                     <span class="flex h-3 w-3 relative">
@@ -199,7 +215,7 @@
 
     </main>
 
-    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40">
+    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40" aria-label="Wróć do góry">
         <i class="fa-solid fa-arrow-up text-sm font-black"></i>
     </button>
 
@@ -210,7 +226,11 @@
             
             <div class="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 <i class="fa-regular fa-eye text-amber-500"></i> Odwiedzin: 
-                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" alt="Licznik" class="inline-block h-4">
+                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" 
+                     alt="Licznik odwiedzin" 
+                     class="inline-block h-4"
+                     loading="lazy"
+                     referrerpolicy="no-referrer">
             </div>
 
             <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
@@ -227,17 +247,23 @@
         let fastReportItems = [];
         let archiveGroups = [];
         let allNewsFlat = [];
-        let cardCounter = 0; 
+        let cardCounter = 0;
+        let archiveNews = {};
+        let archiveRoz = {};
+        let archiveVisibleCount = 3; // ile wydań archiwum pokazujemy na start
 
-        document.addEventListener('contextmenu', e => e.preventDefault());
-        document.addEventListener('keydown', e => {
-            if (e.keyCode === 123 || 
-                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
-                (e.ctrlKey && e.keyCode === 85)) {
-                e.preventDefault();
-                return false;
-            }
-        });
+        // Debounce helper
+        function debounce(fn, delay) {
+            let timer;
+            return function(...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => fn.apply(this, args), delay);
+            };
+        }
+
+        const debouncedFilterNews = debounce(function(sourceId) {
+            filterNews(sourceId);
+        }, 280);
 
         window.addEventListener('scroll', () => {
             const winScroll = document.documentElement.scrollTop;
@@ -313,7 +339,7 @@
                 if(wasLight) document.documentElement.classList.remove('dark');
                 
                 const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
-                const safeName = title.replace(/[^a-ząćęłńóśźż0-9]/gi, '_').toLowerCase().substring(0, 30);
+                const safeName = title.replace(/[^a-ząćęłńóśźż0-9 ]/gi, '_').toLowerCase().substring(0, 30);
                 
                 document.getElementById('save-img').src = dataUrl;
                 document.getElementById('save-link').download = `swiatwminute_${safeName}.jpg`;
@@ -379,20 +405,21 @@
                         <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
                             
                             <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
-                                <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
+                                <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę" aria-label="Pobierz kartę jako obraz">
                                     <i class="fa-solid fa-download text-sm"></i>
                                 </button>
-                                <button onclick="doShare('${encTitle}', '${encSummary}', '${encLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
+                                <button onclick="doShare('${encTitle}', '${encSummary}', '${encLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij" aria-label="Udostępnij">
                                     <i class="fa-solid fa-share-nodes text-sm"></i>
                                 </button>
                             </div>
 
                             <div class="h-48 w-full relative overflow-hidden img-container bg-slate-800">
                                 <img src="${directImgUrl}" 
+                                     loading="lazy"
                                      onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
                                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                                      crossorigin="anonymous" 
-                                     alt="Ilustracja">
+                                     alt="${cleanTitle}">
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                             </div>
 
@@ -438,7 +465,6 @@
             breakingList.innerHTML = '';
             list.innerHTML = '';
 
-            // 1. Renderowanie sekcji PILNE (fast.json)
             if (fastItems && fastItems.length > 0) {
                 breakingContainer.classList.remove('hidden');
                 if (fastTime) timeBadge.textContent = `Aktualizacja: ${fastTime}`;
@@ -466,7 +492,7 @@
                                     ⚡ ${item.comment}
                                 </div>` : ''}
                             </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition" title="Udostępnij">
+                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition" title="Udostępnij" aria-label="Udostępnij">
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
@@ -477,7 +503,6 @@
                 breakingContainer.classList.add('hidden');
             }
 
-            // 2. Renderowanie standardowego skrótu (z news.json)
             items.forEach((item) => {
                 try {
                     const isFun = item.isFun;
@@ -514,7 +539,7 @@
                                     `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${cleanTitle}</a>` : cleanTitle}
                                 </h3>
                             </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij">
+                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij" aria-label="Udostępnij">
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
@@ -557,7 +582,6 @@
             try {
                 const cb = new Date().getTime(); 
                 
-                // Pobieramy dodatkowo fast.json
                 const [globalNewsData, globalFastData, globalRozData, aNewsData, aRozData] = await Promise.all([
                     safeFetchJson(`news.json?v=${cb}`),
                     safeFetchJson(`fast.json?v=${cb}`),
@@ -625,7 +649,7 @@
         function renderArchive() {
             const container = document.getElementById('archive-container');
             container.innerHTML = '';
-            
+
             if (archiveGroups.length === 0) {
                 container.innerHTML = `
                     <div class="text-center py-16 text-slate-500">
@@ -636,7 +660,9 @@
                 return;
             }
 
-            archiveGroups.forEach((group, index) => {
+            const groupsToShow = archiveGroups.slice(0, archiveVisibleCount);
+
+            groupsToShow.forEach((group, index) => {
                 const groupId = `archive-group-${index}`;
                 const groupHtml = `
                     <div>
@@ -650,6 +676,33 @@
                 container.insertAdjacentHTML('beforeend', groupHtml);
                 renderCardsToContainer(document.getElementById(groupId), group.items);
             });
+
+            // Przycisk "Pokaż starsze wydania"
+            if (archiveVisibleCount < archiveGroups.length) {
+                const remaining = archiveGroups.length - archiveVisibleCount;
+                const btnHtml = `
+                    <div class="text-center mt-4" id="archive-load-more">
+                        <button onclick="loadMoreArchive()" 
+                            class="px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
+                            Pokaż starsze wydania (${remaining})
+                        </button>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', btnHtml);
+            }
+        }
+
+        function loadMoreArchive() {
+            archiveVisibleCount += 3;
+            renderArchive();
+            
+            // Przewiń do przycisku, żeby użytkownik widział nowe treści
+            setTimeout(() => {
+                const btn = document.getElementById('archive-load-more');
+                if (btn) {
+                    btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 80);
         }
 
         function switchTab(tabId) {
