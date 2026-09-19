@@ -1,51 +1,79 @@
 {
   "date": "19 września 2026",
-  "time": "13:28",
-  "count": 35,
+  "time": "15:28",
+  "count": 41,
   "items": [
+    {
+      "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o"
+    },
+    {
+      "title": "Trump says he is banning CNN and Politico from White House",
+      "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo"
+    },
+    {
+      "title": "Google's Gemini AI hacked three companies in security test",
+      "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo"
+    },
+    {
+      "title": "Trump signs sweeping Russia sanctions bill",
+      "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo"
+    },
+    {
+      "title": "Grim discoveries of murdered women spark fear in South Africa",
+      "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o"
+    },
+    {
+      "title": "Shark attack prompts rare kill order in Western Australia as victim named",
+      "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo"
+    },
+    {
+      "title": "USA szykują wielki pakiet dla Ukrainy",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/usa-szykuja-wielki-pakiet-dla-ukrainy"
+    },
+    {
+      "title": "Setki lat szwedzkiej marynarki wojennej pod jednym dachem. Militarnym szlakiem",
+      "link": "https://defence24.pl/sily-zbrojne/setki-lat-szwedzkiej-marynarki-wojennej-pod-jednym-dachem-militarnym-szlakiem"
+    },
+    {
+      "title": "Grupa UMO stawia na autorskie systemy dronowe",
+      "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe"
+    },
     {
       "title": "Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
       "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow"
-    },
-    {
-      "title": "Redukcja wojsk amerykańskich w Europie. Nowe informacje",
-      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje"
     },
     {
       "title": "Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
       "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu"
     },
     {
-      "title": "Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
-      "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz"
+      "title": "UN Talks Offer a New Opening on Iran War",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/un-talks-offer-a-new-opening-on-iran-war-video"
     },
     {
-      "title": "Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
-      "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce"
+      "title": "Trump Moves to Bar Three News Outlets From White House",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/trump-moves-to-bar-three-news-outlets-from-white-house-video"
     },
     {
-      "title": "Europe’s Winter Power Surge Is Biggest Since Energy Crisis",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/europe-s-winter-power-surge-is-biggest-since-energy-crisis"
+      "title": "Buffett Son Takes Chair as Berkshire Transition Ends",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/buffett-son-takes-chair-as-berkshire-transition-ends-video"
     },
     {
-      "title": "A Goldman M&A Banker Helped Bring the Olympics to Los Angeles",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/a-goldman-m-a-banker-helped-bring-the-olympics-to-los-angeles"
+      "title": "AI Agents Test the Limits of Human Oversight",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/ai-agents-test-the-limits-of-human-oversight-video"
     },
     {
-      "title": "Odd Lots: Goldman’s Sykes on the 2028 Olympics Deal (Podcast)",
-      "link": "https://www.bloomberg.com/news/audio/2026-09-19/odd-lots-goldman-s-sykes-on-the-2028-olympics-deal-podcast"
+      "title": "JPMorgan Sees No Clear Endgame for Oil Markets",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/jpmorgan-sees-no-clear-endgame-for-oil-markets-video"
     },
     {
-      "title": "Pakistan Police Headquarters Attack Leaves 31 People Dead",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/pakistan-police-headquarters-attack-leaves-31-people-dead"
+      "title": "Can India Turn Its Promise Into Prosperity?",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/can-india-turn-its-promise-into-prosperity"
     },
     {
-      "title": "Bolivia Eliminates Diesel Subsidy After IMF Loan Approval",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/bolivia-eliminates-diesel-subsidy-after-imf-loan-approval-mu7ydf34"
-    },
-    {
-      "title": "Blackstone Sees India Nearing Tipping Point for Foreign Capital",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/blackstone-sees-india-nearing-tipping-point-for-foreign-capital"
+      "title": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
+      "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/"
     },
     {
       "title": "India forces caller-ID apps to feed spam reports to telcos",
@@ -66,10 +94,6 @@
     {
       "title": "AI hallucination nearly triggers US military operation",
       "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
-    },
-    {
-      "title": "Anthropic’s first embedded evaluator is … Accenture?",
-      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/"
     },
     {
       "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
@@ -120,28 +144,28 @@
       "link": "https://arstechnica.com/science/2026/09/finding-the-cells-that-put-our-brain-to-sleep/"
     },
     {
-      "title": "Rating Polski w dół. Oto co zapewne się teraz wydarzy [OPINIA] - Money.pl",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTGhZenBJTldrTzlQT1NuTm5ZOTRBWS1nM2d3dmNrazZMZlpvX1R6Q1ExTmJFQXl1TFJURWEzRkdrRVlreHRBeHRaVkV1OXYxNTdjTGE4SkVFMDgzYjZmcHZHMF8wWjlDMG1uZWN6dlJJOUJ5UVJ2SXdqd2RlMTkxb0lUTTFRMnlyTkhRUGZ6LTVFdm55UTd3TkhMMnBUZVdBbWozLW44M3dWY3RHLVdnRUM3TDg?oc=5"
+      "title": "Ma nową \"broń\" wobec Kremla. Ustawa podpisana. Tak reagują w Rosji - Money.pl",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcnpncVFKOF9oc1ZGTnVhSUItMi02b3ptY2p4SEoyb3dlWGd1ckdOamNfZ3JqeW9ud3RKUnhxMmxQcDJsY2JtVnBTTjhfVWxXTGcxWnZhZ3J2Z2NsbXlfakEza2tKaVhuWkg3OEhzZFBKUm96V09ydjFTVW1BR0ljdXppWERhc0VUY2wyY1pHQlRQekRVY1NpS292a0EyX0hldDhqaTF1ZjZIQWdFNVUxeVRWVnA?oc=5"
     },
     {
-      "title": "\"Nawrocki ma to pod kontrolą\". Trump o rosyjskim zagrożeniu - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUkZ4ZWthMm4ycExsNHU1U2gySEtXamtjSENGbU96WW5jdnBseUpWbUdSRmpnQ3pMU3pXRGJfMTdBSzNQQ05xZVFIVDVwOHgxd0I2dXdUZUl3MG1UaUF0WkVVQ0I1QUlWUmZCRFU2b25jUXRiUVU5N0JpdzNVUHZ6Nk5SOFJlQXM0WVZhdVFianE2Wjd3WF92cEtfcTNjWDR6NWZmYy1JOTFCdGdsZ0ljdkFTRQ?oc=5"
-    },
-    {
-      "title": "Działo się w nocy. Drony nad lotniskiem, wstrzymano loty w Luksemburgu - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeXBfcTVURXVVZ1c5NnVlbURJZ0FOSWRfSWpBdmpZUklEcTNaTWtpd2ZIOElST0xlZ2hrUTBjU00yZ21CdjVkcFM4SWUzN2hTZ01XV0hFVmNmc0Q0UVJyaGRPNFZnTHA4bUZKNFAwUGpJSDVXOEQ5d3RQLWlRaWFkRE1DVEFiYU0tNUMwalR0R1RnMEJUbHIxWFlpWi1RWVdfUlZkMWVqcHJRVUF6XzZRTw?oc=5"
+      "title": "Obniżka ratingu Polski. Co to znaczy dla rządu, inwestorów i Kowalskiego? - Business Insider Polska",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMWVHX0J2bWVjcEptRlJjalpEcTI4NFRBN1ZwWFJRcWZUVkZzNmNTd3NXMU5XOWhXcGZmckp3MDBUY3l2aGtKb3NSUkFuVHFFaTFhaW1NRmtkTUR5d0J6LV9QX2xmaW1fSmNYSjh4SW4zbjlLSDRWVDhJT1lzX1dSVTUwSEF1RDh2MjRzTS1nSHBxODAwbFVhbFZfbS1HTlBmNHJMOE0wZVFWbVVjSm1GazdsOXVEbXpKNWNR?oc=5"
     },
     {
       "title": "Operowanie myśliwców zakończone. \"Powróciły do standardowej działalności\" - PolsatNews.pl",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS0MzUDlqMVpoR3hWOEZwNTNsblFMcEptWklqUGxzUTFncEhMQ0hrQnIwVVI4U3FIVjl4YVRGVGc4N0piNFkxZE5aZ2YxNjg4WFUzWExKcEJzVnFvZmdJU3luTXFwc1kyN0gyTGNpbHRnQ085endnRXhpbVBHYjNyZE1aMGxOT3BXWkNjcmRacVpxX3RZZlhrZ0Jmai13eDYtOEplLS1LNnBUazlCSUVGdU9OWjQ1cGJI?oc=5"
     },
     {
-      "title": "Konfederacja. Nadzieja prawicy i rafy realnej polityki [OPINIA] - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZXpBZWFqWF9FZVIzZmEyVzR0WEt1RGNremdSVVdRUFp2THZOSERyZEVwVHNXbnE1dy0zdHJDLTZuMDdGR29SY1FUZ2k1Xy0yY1lSUmE5SzVvSXBsQ3JHRzM5UGtGNHd6Mk9LOGtYLWJDbGZFY1RScVNRWXVJWUlCMGRITURjczc1QWhnamIxSmlVVnFCMXFTODNiS1c0eEVuQW00eWZn?oc=5"
+      "title": "Mieszkanka zagaiła ministra, padła seria pytań. \"Nie ma co oszukiwać, nie będzie z dnia na dzień\" - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYklVdEtIMHdoRENvdW81ZHhXWTRKTmU4a1J3bUVMbDBtTXpMakNQRTdVdlFQUmphcDM2aWhpZ3VNVUZwdEtQUHpJWW9QTi1lV2lXR2I0c0RZYmZEcV9fWFg4blRQTGdjT3NZeUtycnBGRXplYkNMTWtTeU9BY0ZfMmxnTDBuTVNuU3RTLTRqMXJ2MEZiaEJXVVhadzB6NndiSmdOUHF4cjZFT2hhcG43bjdrNWZ5dU5VLWZCeFh2ZXZMXzNWT01lSi05YzdrQQ?oc=5"
     },
     {
-      "title": "Wyciekły jego dane. Teraz żąda od MyDr 30 tys. zł - o2",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZGFtVUkyelJ6aDVmWndUbEpqb2duVTNCcEZnV3hBNm9LdUtwZ0VjZUs1SWhBbmNDTnFzdTN4T3BwV0trd0lkaUtBLVJhZklFNHh5VFRtQm9MZHNXdUx5MFJvX001YnhqVHhqWm4wV0QtNFhYbDVMeFEyblRaaWRXQXVYVVNUZGV0LUhZOE9fdXhrWWVJWnJwTV9B?oc=5"
+      "title": "Tuskowi zarzucono kłamstwo. Szef BBN tłumaczy. \"Nie ma takiej kartki\" - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeTZNUUQyeXNpSTZ3VkNhZmxtUEZ1RnNKVUNQOS1GNTV5QVhORy11TTU2b3UtMDkxejNFWDQ4cll2ZVlabUdpZkRsWG1vd1JPdXhleEk5NlRRVy1XVEZPb21Cc0d1WmtIbEM4NjRlUF9wZWp0VkJLNXFJQTFpNjdsTkRtUVlLdWNwWlRQRVZHd0wzbjlwdnp4M3BlWTdZb2hxVzNKTjlzRkVlM1Ewb18tbw?oc=5"
+    },
+    {
+      "title": "Kolejna akcja Brauna. Chciał pochwalić się akcją w Krakowie - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObWRBRWhESWF6NlFybi0yNlc0WWF1ZEJuZnh3MUtzZjBNWkhUbFM3TFZNUm1KVzhIVkNWeHEwQkNySE4xLTl2NElMRUMyNjlJSWxyUENETExKWEI4RDhyRTB6LWlLbEhEX1NWbTlOLWVCRi0wM1lhSkx5bVlaNVRVVXg4VnRDSG9YZjY0enJuY0NJamlVcFcxeWxCd0lFZm9IM284?oc=5"
     }
   ]
 }
