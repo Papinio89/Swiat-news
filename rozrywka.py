@@ -12,11 +12,12 @@ from collections import Counter
 
 import feedparser
 from google import genai
+from google.genai import types
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
-FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
+FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
 RSS_URLS = [
     "https://news.google.com/rss/search?q=weird+animal+facts+quirky+funny+history+bizarre&hl=en-US&gl=US&ceid=US:en",
@@ -84,34 +85,43 @@ def is_recent(entry) -> bool:
         return True
 
 
-def validate_items(items: list) -> list:
-    required = {"category", "title", "summary", "comment", "image_query", "link"}
-    valid = []
-    for item in items:
-        if not isinstance(item, dict):
-            continue
-        if not required.issubset(item.keys()):
-            continue
+def fetch_article_image(url: str) -> str | None:
+    """Pobiera oryginalne zdjęcie ze strony artykułu (og:image / twitter:image)."""
+    if not url or url == "#" or "news.google.com" in url:
+        return None
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "Accept-Language": "pl,en-US;q=0.9,en;q=0.8"
+            }
+        )
+        with urllib.request.urlopen(req, timeout=6) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
 
-        title = sanitize_text(str(item.get("title", "")))
-        summary = sanitize_text(str(item.get("summary", "")))
-        comment = sanitize_text(str(item.get("comment", "")))
-        category = sanitize_text(str(item.get("category", "ABSRUDY ŚWIATA"))).upper()
-        image_query = sanitize_text(str(item.get("image_query", "funny weird fact")))
-        link = clean_link(str(item.get("link", "#")))
-
-        if len(title) < 10 or len(summary) < 25:
-            continue
-
-        valid.append({
-            "category": category,
-            "title": title,
-            "summary": summary,
-            "comment": comment,
-            "image_query": image_query,
-            "link": link
-        })
-    return valid
+        patterns = [
+            r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+            r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']'
+        ]
+        for pat in patterns:
+            m = re.search(pat, html, re.I)
+            if m:
+                img = m.group(1).strip()
+                if img.startswith("//"):
+                    img = "https:" + img
+                if img.startswith("http") and not img.endswith(".svg"):
+                    return img
+    except Exception as ex:
+        print(f"  [Scraper] Brak og:image dla {url[:45]}... ({ex})")
+    return None
 
 
 def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
@@ -138,6 +148,36 @@ def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
                 import time
                 time.sleep(1)
     return FALLBACK_IMG
+
+
+def validate_items(items: list) -> list:
+    required = {"category", "title", "summary", "comment", "image_query", "link"}
+    valid = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        if not required.issubset(item.keys()):
+            continue
+
+        title = sanitize_text(str(item.get("title", "")))
+        summary = sanitize_text(str(item.get("summary", "")))
+        comment = sanitize_text(str(item.get("comment", "")))
+        category = sanitize_text(str(item.get("category", "ABSURDY ŚWIATA"))).upper()
+        image_query = sanitize_text(str(item.get("image_query", "funny weird fact")))
+        link = clean_link(str(item.get("link", "#")))
+
+        if len(title) < 10 or len(summary) < 25:
+            continue
+
+        valid.append({
+            "category": category,
+            "title": title,
+            "summary": summary,
+            "comment": comment,
+            "image_query": image_query,
+            "link": link
+        })
+    return valid
 
 
 raw_articles = []
@@ -217,20 +257,20 @@ WYMAGANA STRUKTURA:
 - Ma być luźno, śmiesznie i czysto rozrywkowo.
 
 Każdy obiekt musi zawierać dokładnie te klucze:
-- "category": WIELKIMI LITERAMI (np. "ZWIERZAKI", "ABSRUDY ŚWIATA", "SZALONA HISTORIA", "BEKA Z NAUKI")
+- "category": WIELKIMI LITERAMI (np. "ZWIERZAKI", "ABSURDY ŚWIATA", "SZALONA HISTORIA", "BEKA Z NAUKI")
 - "title": krótki, chwytliwy i zabawny nagłówek z jedną prostą emotikoną na początku (unikaj flag państwowych i regionalnych)
 - "summary": konkretny, zabawny opis w 1-2 zdaniach
-- "comment": dowcipny, sarkastyczny lub ironiczny komentarz
+- "comment": dowcipny, sarkastyczny lub ironiczny komentarz (1 zdanie)
 - "image_query": 2-4 słowa kluczowe po angielsku
 - "link": dokładnie ten sam URL z wejścia
 
 Unikaj tematów podobnych do archiwum:
 {json.dumps(previous_topics[:25], ensure_ascii=False)}
 
-Zwróć WYŁĄCZNIE czystą tablicę JSON. Żadnego markdown, żadnych ```.
+Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów. Żadnego markdowna.
 
 Dane wejściowe:
-{json.dumps(filtered_raw_articles, ensure_ascii=False)}
+{json.dumps(filtered_raw_articles[:20], ensure_ascii=False)}
 """
 
 items = []
@@ -238,15 +278,18 @@ try:
     response = client.models.generate_content(
         model="gemini-3.6-flash",
         contents=prompt,
+        config=types.GenerateContentConfig(
+            response_mime_type="application/json",
+            temperature=0.3,
+            safety_settings=[
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
+            ]
+        )
     )
     text_res = response.text.strip()
-    if text_res.startswith("```json"):
-        text_res = text_res[7:]
-    if text_res.startswith("```"):
-        text_res = text_res[3:]
-    if text_res.endswith("```"):
-        text_res = text_res[:-3]
-    text_res = text_res.strip()
     raw_items = json.loads(text_res)
     items = validate_items(raw_items)
 except Exception as e:
@@ -271,10 +314,27 @@ if len(items) < MIN_ITEMS:
 else:
     print(f"Wygenerowano {len(items)} pozycji rozrywkowych – OK")
 
-print("Pobieranie linków do zdjęć z Pexels...")
+# --- POBIERANIE ZDJĘĆ: ŹRÓDŁO -> PEXELS -> FALLBACK ---
+print("Dobieranie zdjęć (Artykuł -> Pexels -> Fallback)...")
+source_ok = 0
 for item in items:
+    url = item.get("link", "")
     q = item.get("image_query", "funny weird fact")
-    item["image_url"] = fetch_pexels_image_url(q)
+    
+    # 1. Próba pobrania og:image z oryginalnego artykułu
+    article_img = fetch_article_image(url)
+    
+    if article_img:
+        item["source_image_url"] = article_img
+        item["image_url"] = article_img
+        source_ok += 1
+    else:
+        # 2. Jeśli brak, pobieramy z Pexels na bazie słów kluczowych
+        stock_img = fetch_pexels_image_url(q)
+        item["source_image_url"] = stock_img
+        item["image_url"] = stock_img
+
+print(f"Zdjęcia ze źródeł pobrane: {source_ok}/{len(items)} (pozostałe: Pexels/Fallback)")
 
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
@@ -294,4 +354,4 @@ archive_data[session_fixed_key] = output_data
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} ciekawostek rozrywkowych.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} ciekawostek rozrywkowych do rozrywka.json.")
