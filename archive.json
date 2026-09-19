@@ -2518,116 +2518,143 @@
   },
   "2026-09-19_poranne": {
     "date": "19 września 2026",
-    "time": "09:29",
-    "timestamp": "2026-09-19_09:29",
+    "time": "09:50",
+    "timestamp": "2026-09-19_09:50",
     "items": [
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 US and Denmark reach deal over Greenland after Trump annexation threats",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "POLSKA",
+        "title": "🛡️ Polska dołącza do Koalicji Antybalistycznej",
+        "summary": "Premier Donald Tusk ogłosił oficjalne przystąpienie Polski do międzynarodowej Koalicji Antybalistycznej. Inicjatywa ma na celu wzmocnienie ochrony przestrzeni powietrznej i obrony przed rakietami dalekiego zasięgu.",
+        "comment": "Udział w tym projekcie znacząco podnosi poziom bezpieczeństwa kraju w obliczu rosnącej aktywności rakietowej przy wschodniej granicy.",
+        "image_query": "missile defense system poland",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQmphYldRVDhLY2FOaDBEU2lTaFlCWlNvTFhyQmVGbWMweXFzdVVvYktLdVBYZkgyZWt5MGt1dnBOeVF2VkVtQ1lYalpKTjJOZVB3b2JleklZM1pJZHFUY3dfWVJKSVRROUoxdmh0NUQ1RHctZDZHb0QwUzdvTVZIME1qWQ?oc=5",
+        "image_url": "https://images.pexels.com/photos/39497100/pexels-photo-39497100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Trump says he is banning CNN and Politico from White House",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "POLSKA",
+        "title": "🚨 Rosyjski atak tuż przy polskiej granicy",
+        "summary": "Podczas obrad Sejmu doszło do rosyjskiego uderzenia rakietowego w bardzo bliskiej odległości od granicy z Polską. Kamery zarejestrowały natychmiastową reakcję obecnych na sali generałów.",
+        "comment": "Incydent podkreśla nieustające ryzyko incydentów przygranicznych i konieczność ciągłej gotowości bojowej wojska.",
+        "image_query": "military generals polish parliament",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQVA2bnBQOUtjcUJsQ25DNWZJY0tKOU9xSHRrdUlmc3lPeUZwRC0tNWhVUjNGMGhNRXVDWjRqcnZyYlFCSnYtV2dnTlloSlV3MEphT21RODRORU1rNW9xbTlSTWdDamtMWGVmbDQyeS1LVjVYWjNmV1NQX2ZxTXdfYWc0b0xwMGlaM3pJMlNhSmdFeFZHN25aLW1PeUZxTXdfYWc0b0xwMGlaM3pJMlNhSmdFeFZHN25aLW1PeUZ6MUtoNGRwV3l4ZmR4aDhpaHc?oc=5",
+        "image_url": "https://images.pexels.com/photos/27794284/pexels-photo-27794284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Google's Gemini AI hacked three companies in security test",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "POLSKA",
+        "title": "🤝 Trump komentuje sytuację na wschodniej flance",
+        "summary": "Donald Trump odniósł się do rosyjskiego zagrożenia dla Warszawy, stwierdzając, że polskie władze mają sytuację pod pełną kontrolą. Zapewnił przy tym o stałym wsparciu dla polskiego bezpieczeństwa.",
+        "comment": "Wypowiedź ta wpisuje się w kampanijną retorykę US oraz testowanie stabilności relacji transatlantyckich.",
+        "image_query": "trump poland security stance",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUkZ4ZWthMm4ycExsNHU1U2gySEtXamtjSENGbU96WW5jdnBseUpWbUdSRmpnQ3pMU3pXRGJfMTdBSzNQQ05xZVFIVDVwOHgxd0I2dXdUZUl3MG1UaUF0WkVVQ0I1QUlWUmZCRFU2b25jUXRiUVU5N0JpdzNVUHZ6Nk5SOFJlQXM0WVZhdVFianE2Wjd3WF92cEtfcTNjWDR6NWZmYy1JOTFCdGdsZ0ljdkFTRQ?oc=5",
+        "image_url": "https://images.pexels.com/photos/34693694/pexels-photo-34693694.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Trump signs sweeping Russia sanctions bill",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "POLSKA",
+        "title": "⚖️ Wniosek o areszt dla europosła KO",
+        "summary": "Śledczy skierowali wniosek o tymczasowe aresztowanie eurodeputowanego Koalicji Obywatelskiej Wojciecha Króla. Polityk stanowczo odpiera zarzuty i deklaruje niewinność.",
+        "comment": "Sprawa wywoła silne napięcia polityczne w kraju oraz wstrząs wewnątrz obozu rządzącego.",
+        "image_query": "court hall polish parliament",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPejl5OS1QeGlXYkF0ZHh4Z2ZhOTBLdl9OYW1jZml3YXA1OE44Q1pkUWNwbEY1dDl1N3FqTHFETWRFTkJROGU5MWdLeUcxNHV6UnpyZ3VjaEszcHI2a0JnMm5vMWRQTHFOVDVkQ2YtRDVDVTd6TE8xdm5iTWRUY2R1WnNxSXI4bVllOXZVbVBkRjliZzIyRDhVU1FvNmNUZlFsMVJVd0RvSzc1SXg2Tms3aTJEMEVrSnF4NURQTm9zMA?oc=5",
+        "image_url": "https://images.pexels.com/photos/37730955/pexels-photo-37730955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Grim discoveries of murdered women spark fear in South Africa",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "GEOPOLITYKA",
+        "title": "⛔ Piekielne sankcje przeciwko Rosji wchodzą w życie",
+        "summary": "Zaczęła obowiązywać kolejna, wyjątkowo surowa paczka obostrzeń finansowych wymierzona w Rosję oraz wspierające ją podmioty. Restrykcje mają na celu dalsze odcinanie Kremla od kapitału na prowadzenie wojny.",
+        "comment": "Kolejne obostrzenia zmuszą Moskwę do ponoszenia wyższych kosztów omijania sankcji poprzez szarą strefę.",
+        "image_query": "russia economic sanctions embargo",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaHFsckNTVnJtLW1aSDBpX1pIY3hsQ2xWT3l4NjNuLUgxV0JYRHRNSXlVSFhmem83a0wxeFAwYkEyTnVaN1BCSDZzOGxra01SaXVMSmlURjZpV1BBSUpiVmt3cURMOEdibm9BdGpUejE2Z2dRNEdvV0xBNmdxVkQ5MlUtOTcwVU8xMFg3d2xfZWIxMnNQMnhZM1hsdnhyNWZWWEN2MGhR?oc=5",
+        "image_url": "https://images.pexels.com/photos/7015765/pexels-photo-7015765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Iran-US war widens and other geopolitical stories to know this month - The World Economic Forum",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "GEOPOLITYKA",
+        "title": "🇨🇳 Chińska broń dla Iranu pogłębia globalny podział",
+        "summary": "Chińskie wsparcie wojskowe dla Teheranu grozi wywołaniem poważnego kryzysu w relacjach z USA i państwami Zachodu. Zacieśnianie współpracy militarnej Pekinu z Iranem budzi niepokój w Waszyngtonie.",
+        "comment": "Dozbrajanie Iranu przez Chiny utrudni próby dyplomatycznego wygaszenia konfliktów na Bliskim Wschodzie.",
+        "image_query": "china iran military alliance",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTm5aZ0dJN2l1dUNwZm5YaVZPTVF4MWhMaGhPeG5MV3FCb2pJa2djVjhfeHRmbDNac2VaY00zbFMyQ0lKNEhDYzIwT3hQcWIzR3pKc3ZqY083Zk94bWxyLXBpeW51MHdaVmRmNklFSDY2azkxUEVtbExUU19XQ1h5VGo4czczdzdkc2trVjdCd2dWbFFqZHk2ekhNSkRqZTBZRUZwdG5vZHdvbjYxOEdYY1VBSndGWWNKanhfUTdKMFdSWllP?oc=5",
+        "image_url": "https://images.pexels.com/photos/34739922/pexels-photo-34739922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Wars and geopolitical divisions constitute ‘dangerous erosion’ of world order, warns UN chief - news.un.org",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5CckMxM3NwSE1TZDZaYm5yRU4zWnZScmtyT0EyaVJKVlBlVnVUSWsxTnc0WXBzME9ReVBMbkJHN0NHdEhyc19taGFzY0MxalVDc0VHc0xDbw?oc=5",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "GEOPOLITYKA",
+        "title": "⚔️ Pakt Mekkański: Turcja i Pakistan wejdą do Jemenu?",
+        "summary": "Ankara i Islamabad rozważają wysłanie wojsk do Jemenu w celu spacyfikowania bojówek Huti atakujących statki na Czerwonym Morzu. Zbudowana koalicja chce zabezpieczyć kluczowe szlaki handlowe.",
+        "comment": "Bezpośrednia interwencja Turcji i Pakistanu diametralnie zmieni układ sił na Bliskim Wschodzie.",
+        "image_query": "turkey pakistan military force",
+        "link": "https://defence24.pl/geopolityka/pakistan-i-turcja-wysla-wojsko-do-jemenu-pakt-mekkanski-chce-rozprawic-sie-z-huti",
+        "image_url": "https://images.pexels.com/photos/13911679/pexels-photo-13911679.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Iran war shows military strength of US, but also its waning geopolitical power - The Christian Science Monitor",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNHBSR3NnWDFaZDVKUWJucHhlUkxUcldhbVprU2RlTzRxQzhyNEJYREx4R0FjbTQxbWhyTUc4eGVWUWVjQ1dCbWZNa3lyVk9kd2RJb3BoMm42b2o5eHNteVBFU29QUThhUXBxYWlqLXR0SlZ0bkZfdlI3VjJteXVlR3k2SmlMMXdlYmZFNFlrUENSeHBEYUNrQzg4V2pSdEpsYk1VRUZNaUxJaHJiOGpuU1NSYjlhTXB6WTU4?oc=5",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "GEOPOLITYKA",
+        "title": "🚫 Sojusznik USA odmawia udostępnienia wojsk przeciw Iranowi",
+        "summary": "Kluczowy partner strategiczny Waszyngtonu oświadczył, że nie pośle swoich żołnierzy do operacji przeciwko Iranowi. Władze kraju argumentują decyzję ryzykiem rozlania się konfliktu na cały region.",
+        "comment": "Brak jednomyślności wśród sojuszników USA ogranicza spójność amerykańskiej presji na Teheran.",
+        "image_query": "military alliance diplomacy meeting",
+        "link": "https://defence24.pl/geopolityka/sojusznik-usa-odmawia-udzialu-w-wojnie-z-iranem-nie-bedzie-wysylania-wojsk",
+        "image_url": "https://images.pexels.com/photos/29982340/pexels-photo-29982340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 What has conflict in Iran revealed about UK’s geopolitical standing and military readiness? - The Guardian",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ0oxOUNuMlBRV0ctQUN0bjlrMXN5bkQwQVM5TmFIRzRqV1duMWo5Rzh5R3FVZ2hMYUVnaEJPdzNDcWhXZGRzWmhhcjFRR013NTF5d0d2SlliVGhhQ053d0h5VjdvWDAxVk1LMmpwRmE3MmZRWWJaMVcxeXFLZ0txTFRRR3BrRVJOS2ZkR2hxZ0NQNm9IWWpXLUg0dXZxaERXcXNUT1JLRTF6TWpPMDFJY2JBcGFBMG8?oc=5",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "OBRONNOŚĆ",
+        "title": "🪖 US Army wycofuje zasłużone transportery opancerzone",
+        "summary": "Amerykańska armia kończy eksploatację starszych wozów bojowych i przechodzi na konstrukcje nowej generacji. W ramach umowy za miliardy dolarów wojsko otrzyma sprzęt dostosowany do nowocześniejszego pola walki.",
+        "comment": "Przebrojenie sił lądowych USA stanowi element przygotowań do konfliktów o wysokiej intensywności z równorzędnym przeciwnikiem.",
+        "image_query": "us army armored vehicle",
+        "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet",
+        "image_url": "https://images.pexels.com/photos/38038520/pexels-photo-38038520.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 The African Lion Roars In Real Time: Exercise African Lion 2026, Morocco’s Strategic Centrality, And The Geopolitics Of A Fractured World - Analysis - Eurasia Review",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPeUtSWmdoWjFwT1QtRXN4T3RPSjJrR3ZiVHU5bGMwRDVONEJYQmVNNXI3aW5tWlhuTWpWSnB0dkp0NXowWHR3Vi1IZGpwQVhTelZ3anFIN0FfODhJcXdKS1ZpcDVzeUZvc1VZQUE3SkVlVXl3ZlMtbFlwS0RtOFBmUTVka2N1TTBiV1c2bVRXU0RISkp5OUlrMGZIUXV5MmV4ZjBTUFpveDUyamVEcDFYZkRObnV4LXNfNEdNRjhCSmZjSkd4cVpzNEI3bnlmVGxiUWJiY1F0bnJaWkptdUQyeXgtMFhQaVVaSThRVGNVbHRMTDZ0a3BydjQ1MFJDRGNnOTFGMDNSNHZkNlJpY2Q0?oc=5",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "RYNKI I GOSPODARKA",
+        "title": "💰 Bliski Wschód przejmuje duży pakiet w Paramount",
+        "summary": "Amerykańska komisja FCC zezwoliła funduszom z Arabii Saudyjskiej, ZEA i Kataru na zakup 49,5% udziałów w koncernie Paramount. Umowa otwiera drogę państwom Zatoki Perskiej do rynku mediów w USA.",
+        "comment": "Zgoda regulatora wskazuje na rosnącą rolę arabskiego kapitału w kluczowych sektorach amerykańskiej gospodarki.",
+        "image_query": "paramount saudi arabia investment",
+        "link": "https://arstechnica.com/tech-policy/2026/09/fcc-lets-paramount-sell-49-5-equity-stake-to-saudi-arabia-uae-and-qatar/",
+        "image_url": "https://images.pexels.com/photos/39470846/pexels-photo-39470846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "RYNKI I GOSPODARKA",
+        "title": "⛽ Boliwia znosi dopłaty do paliw po pożyczce z MFW",
+        "summary": "Rząd Boliwii wycofał subwencje do oleju napędowego po otrzymaniu wsparcia finansowego z Międzynarodowego Funduszu Walutowego. Decyzja ma uchronić kraj przed załamaniem finansów publicznych.",
+        "comment": "Cięcie dopłat grozi falami protestów społecznych, ale jest krytyczne dla ratowania Boliwii przed zapaścią budżetową.",
+        "image_query": "bolivia diesel fuel station",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-19/bolivia-eliminates-diesel-subsidy-after-imf-loan-approval-mu7ydf34",
+        "image_url": "https://images.pexels.com/photos/39295708/pexels-photo-39295708.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "AKTUALNOŚCI",
-        "title": "📌 Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
-        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
-        "comment": "Brak dodatkowego komentarza.",
-        "image_query": "world news global press",
-        "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce",
-        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Cięcia wydatków budżetowych w Chinach pogłębiają się",
+        "summary": "Wydatki fiskalne Pekinu spadły kolejny miesiąc z rzędu, co hamuje próbę ożywienia drugiej gospodarki świata. Słabe dane rzucają cień na prognozy globalnego wzrostu.",
+        "comment": "Wstrzemięźliwość budżetowa władz w Pekinie utrudni przełamanie przedłużającej się stagnacji na chińskim rynku wewnętrznym.",
+        "image_query": "china economic growth slowdown",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps",
+        "image_url": "https://images.pexels.com/photos/28752877/pexels-photo-28752877.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "⚠️ Błąd AI niemal wywołał akcję zbrojną wojsk USA",
+        "summary": "Halucynacja generatywnej sztucznej inteligencji na temat chińskich komponentów jądrowych doprowadziła niemal do szturmu armii USA na chiński okręt. Katastrofy uniknięto w ostatniej chwili dzięki weryfikacji danych.",
+        "comment": "Incydent obnaża ogromne ryzyko związane ze zbyt szybką integracją niesprawdzonych algorytmów AI w systemach dowodzenia wojskowego.",
+        "image_query": "ai military command computer error",
+        "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/",
+        "image_url": "https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🔍 Rząd USA korzystał z niebezpiecznego modelu AI z Chin",
+        "summary": "Ujawniono, że oficjalny portal rządowy USA używał chińskiego modelu AI, przed którym wcześniej ostrzegało FBI. Służby uznały oprogramowanie za zagrożenie dla bezpieczeństwa danych.",
+        "comment": "Sytuacja ujawnia zaniedbania w procedurach bezpieczeństwa teleinformatycznego amerykańskich instytucji rządowych.",
+        "image_query": "us government cybersecurity warning",
+        "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+        "image_url": "https://images.pexels.com/photos/38486967/pexels-photo-38486967.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "NAUKA",
+        "title": "🧠 Przełomowe odkrycie neuronów sterujących snem",
+        "summary": "Naukowcy zlokalizowali w mózgu specyficzną grupę komórek odpowiedzialnych za bezpośrednie wprowadzanie organizmu w stan zasypiania. Odkrycie może rewolucjonizować leczenie uporczywej bezsenności.",
+        "comment": "Dokładne poznanie mechanizmu zasypiania stworzy szansę na opracowanie bezpieczniejszych leków nowej generacji.",
+        "image_query": "brain cells neurons sleep research",
+        "link": "https://arstechnica.com/science/2026/09/finding-the-cells-that-put-our-brain-to-sleep/",
+        "image_url": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
   }
