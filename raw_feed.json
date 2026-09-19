@@ -1,7 +1,7 @@
 {
   "date": "19 września 2026",
-  "time": "10:02",
-  "count": 40,
+  "time": "12:33",
+  "count": 41,
   "items": [
     {
       "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
@@ -24,8 +24,20 @@
       "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o"
     },
     {
-      "title": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
-      "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo"
+      "title": "Deadly shark attack prompts rare kill order in Western Australia",
+      "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo"
+    },
+    {
+      "title": "Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+      "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow"
+    },
+    {
+      "title": "Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje"
+    },
+    {
+      "title": "Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+      "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu"
     },
     {
       "title": "Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
@@ -40,12 +52,8 @@
       "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet"
     },
     {
-      "title": "Sojusznik USA odmawia udziału w wojnie z Iranem. „Nie będzie wysyłania wojsk”",
-      "link": "https://defence24.pl/geopolityka/sojusznik-usa-odmawia-udzialu-w-wojnie-z-iranem-nie-bedzie-wysylania-wojsk"
-    },
-    {
-      "title": "Powszechny pobór do wojska coraz bliżej. Litwa przygotowuje się na najgorsze",
-      "link": "https://defence24.pl/polityka-obronna/powszechny-pobor-do-wojska-coraz-blizej-litwa-przygotowuje-sie-na-najgorsze"
+      "title": "Europe’s Winter Power Surge Is Biggest Since Energy Crisis",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/europe-s-winter-power-surge-is-biggest-since-energy-crisis"
     },
     {
       "title": "A Goldman M&A Banker Helped Bring the Olympics to Los Angeles",
@@ -66,10 +74,6 @@
     {
       "title": "China’s Fiscal Pullback Extends to August as Spending Slumps",
       "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps"
-    },
-    {
-      "title": "South Korea’s Justice Minister Nominee Withdraws After Reshuffle",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/south-korea-s-justice-minister-nominee-withdraws-after-reshuffle"
     },
     {
       "title": "India forces caller-ID apps to feed spam reports to telcos",
@@ -120,6 +124,10 @@
       "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings"
     },
     {
+      "title": "Rings around a tiny body have changed over the past decade",
+      "link": "https://arstechnica.com/science/2026/09/rings-around-a-tiny-body-have-changed-over-the-past-decade/"
+    },
+    {
       "title": "AI hallucination of Chinese nuclear components almost led to US military attack",
       "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/"
     },
@@ -140,28 +148,24 @@
       "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/"
     },
     {
-      "title": "Meet the winner of Nikon's Small World in Motion video contest",
-      "link": "https://arstechnica.com/science/2026/09/meet-the-winner-of-nikons-small-world-in-motion-video-contest/"
-    },
-    {
-      "title": "Polskie myśliwce poderwane. \"Rozpoczęło się operowanie\" - PolsatNews.pl",
+      "title": "Operowanie myśliwców zakończone. \"Powróciły do standardowej działalności\" - PolsatNews.pl",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS0MzUDlqMVpoR3hWOEZwNTNsblFMcEptWklqUGxzUTFncEhMQ0hrQnIwVVI4U3FIVjl4YVRGVGc4N0piNFkxZE5aZ2YxNjg4WFUzWExKcEJzVnFvZmdJU3luTXFwc1kyN0gyTGNpbHRnQ085endnRXhpbVBHYjNyZE1aMGxOT3BXWkNjcmRacVpxX3RZZlhrZ0Jmai13eDYtOEplLS1LNnBUazlCSUVGdU9OWjQ1cGJI?oc=5"
     },
     {
-      "title": "Trump o potencjalnym ataku Rosjan w Polsce: Nawrocki ma to pod kontrolą - Interia Wydarzenia",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU05jNHZWb0FDUW5raFhXejN0YVlTaXZ1a2VhYzlqeTdHZXQyWUNmd0FpOGE0ZkJtTWduaUV3R1lIVHItZEdYZG9PR0hPdDFwOGlUc1Q5VFdlMlhoSkpqSXc3LWpnMk1EM3o0SzJ0d2p6OFkteXRXVXBxeW1LWkhLTTZoSWNTNmJoTTJNeU9CUWRGSk9kVlM3bTB2SFNpcTBCM1VMNERWUzNaXzhMOENrQlJWTWphbWpJREE?oc=5"
+      "title": "Zapytali Trumpa o ataki w pobliżu Polski. \"Nawrocki ma to pod kontrolą\" - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlZhWWxZbmFwVlduVlI2aFlFZWJJUVdaZDdvcmhRd3BWcVdJOWRXNXlFWnNsOGRJb0h0MWlzYTA1MDh0azQteG1WS2hJaVFNd0F5cVVkMk9EcEZ5VjVVbWVuWmx3b0wyT0JPOUcxcWdlVk00STJEcmxocks3WlNKOEV6M280Q0MyLVo3QTJlQ2lDZzRkOElmVEllZkNSLXlrLW1aUWZCaTRxZzBxOW5RZw?oc=5"
+    },
+    {
+      "title": "Rating Polski w dół. Oto co zapewne się teraz wydarzy [OPINIA] - Money.pl",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTGhZenBJTldrTzlQT1NuTm5ZOTRBWS1nM2d3dmNrazZMZlpvX1R6Q1ExTmJFQXl1TFJURWEzRkdrRVlreHRBeHRaVkV1OXYxNTdjTGE4SkVFMDgzYjZmcHZHMF8wWjlDMG1uZWN6dlJJOUJ5UVJ2SXdqd2RlMTkxb0lUTTFRMnlyTkhRUGZ6LTVFdm55UTd3TkhMMnBUZVdBbWozLW44M3dWY3RHLVdnRUM3TDg?oc=5"
     },
     {
       "title": "Donald Trump ogłasza przełomową decyzję w sprawie Grenlandii - Wiadomości Onet",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHp6bTNmMWRIRTVDSXdqbUxOOFNIdXVkUHlUTmxDT085YUpCd2tTNE9HV3k0M0F3aVRwaUFQaVJYeXRvMTM5ZkdTalBRb1JHTGdleUVrcVVGb3IwVXpndFBWR1E3VkczU2dfZFBFV0ZnVmVmNWs5RnFtZDg4YVZJZFdfVUdHUUVaUXFKb1RMYkRYMFBWeDhIbXBTeFlETEluV1NN?oc=5"
     },
     {
-      "title": "\"Ogarnijmy się\". Rating Polski w dół. Rząd uspokaja. Eksperci biją na alarm - Money.pl",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0xWbmptUDNla3VmMVhaUnNqRXMyTDRmSE9kTzJqQzZCa1hJM2NYMmgwSEUtdTVvVmh4b1R2VXQ5eFc3TFdWT2FHeXpSdDFRbVRiOUJmQ0RFY1ZiUHAzQS1IUk84bkUwc2dHMS1LTEk5WVNIZGw5WFpNTHBxRW1PRFdFWFpyOE9yb2xCUWZodXVaNTJlRkw1QXkxeUEtamFKdUUta2U0d0tYa1JvX3NIakhoRl9zUWRvNkE?oc=5"
-    },
-    {
-      "title": "Tusk z Morawieckim rozegrali Kaczyńskiego. Horała wicemarszałkiem Sejmu - Wyborcza.pl",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMFZiMUNXdUJ3WFdBMnkxRDdNMlBJdFlCVGdHb3lUd3NwRXEtSGRpdHhpb0hhams4YVRzbFVuOGdHQmM3Zmdob3NvbXVqVlc0c0pzZFZFR1dFNUFrWHhZWkloa0l0MjdqS0NRV1g2T1A0bG1wSVFvREJuWFN0U2Q3RXdvQUNBZnBVMEp0OW1UVHFWSjdQLUNNZTNHZnRsUU0wY1E?oc=5"
+      "title": "Ruch prokuratury w sprawie Wipler-Tusk. Pełnomocnik odpowiada - Fakt",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTjFBaGtyOVluUFlpYlZoejFJejBHckV4WHluS0pocXhXUEVibnNUZFpHY1hhVXBDQ1pBSDg4aXRzVHlweVNIZ2hkMlJydmY2LV85WXh6QXZHZnYtLVc4UjRtdVl4d190bFNSNVhtOEJFbV9iTC1GcXA1bUVVa3VueUVFbHRhdS1CT0VxMTM3a0lPYWdLSkZuSE5Xb2tnNllSNWtWeA?oc=5"
     }
   ]
 }

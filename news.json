@@ -1,124 +1,115 @@
 {
   "date": "19 września 2026",
-  "time": "10:02",
-  "timestamp": "2026-09-19_10:02",
+  "time": "12:33",
+  "timestamp": "2026-09-19_12:33",
   "items": [
     {
-      "category": "POLSKA",
-      "title": "✈️ Poderwane myśliwce nad Polską z powodu aktywności Rosji",
-      "summary": "Dowództwo Operacyjne Rodzajów Sił Zbrojnych aktywowało polskie i sojusznicze lotnictwo w związku z intensywną aktywnością rosyjskiego lotnictwa dalekiego zasięgu. Działania miały na celu zabezpieczenie przestrzeni powietrznej kraju.",
-      "comment": "Jest to kolejny sygnał utrzymującego się wysokiego zagrożenia incydentami lotniczymi przy wschodniej granicy NATO.",
-      "image_query": "fighter jet military runway",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS0MzUDlqMVpoR3hWOEZwNTNsblFMcEptWklqUGxzUTFncEhMQ0hrQnIwVVI4U3FIVjl4YVRGVGc4N0piNFkxZE5aZ2YxNjg4WFUzWExKcEJzVnFvZmdJU3luTXFwc1kyN0gyTGNpbHRnQ085endnRXhpbVBHYjNyZE1aMGxOT3BXWkNjcmRacVpxX3RZZlhrZ0Jmai13eDYtOEplLS1LNnBUazlCSUVGdU9OWjQ1cGJI?oc=5",
-      "image_url": "https://images.pexels.com/photos/16784503/pexels-photo-16784503.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "POLSKA",
-      "title": "📉 Cięcie ratingu Polski wywołuje niepokój analityków",
-      "summary": "Agencje ratingowe obniżyły ocenę wiarygodności kredytowej Polski, wskazując na rosnący deficyt budżetowy i brak reform fiskalnych. Rząd tonuje nastroje, zapewniając o stabilności finansów państwa.",
-      "comment": "Obniżka ocen wiarygodności może zwiększyć koszty obsługi polskiego długu na rynkach międzynarodowych.",
-      "image_query": "financial chart arrow down",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0xWbmptUDNla3VmMVhaUnNqRXMyTDRmSE9kTzJqQzZCa1hJM2NYMmgwSEUtdTVvVmh4b1R2VXQ5eFc3TFdWT2FHeXpSdDFRbVRiOUJmQ0RFY1ZiUHAzQS1IUk84bkUwc2dHMS1LTEk5WVNIZGw5WFpNTHBxRW1PRFdFWFpyOE9yb2xCUWZodXVaNTJlRkw1QXkxeUEtamFKdUUta2U0d0tYa1JvX3NIakhoRl9zUWRvNkE?oc=5",
-      "image_url": "https://images.pexels.com/photos/6289060/pexels-photo-6289060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "POLSKA",
-      "title": "🏛️ Polityczny zwrot w Sejmie: Horała wicemarszałkiem",
-      "summary": "W wyniku parlamentarnych negocjacji i podziałów w opozycji Marcin Horała objął stanowisko wicemarszałka Sejmu. Wybór ten stanowi wynik taktycznego porozumienia sił rządzących z częścią posłów.",
-      "comment": "Sytuacja pokazuje pogłębiającą się fragmentację wewnątrz największej partii opozycyjnej.",
-      "image_query": "polish parliament building",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMFZiMUNXdUJ3WFdBMnkxRDdNMlBJdFlCVGdHb3lUd3NwRXEtSGRpdHhpb0hhams4YVRzbFVuOGdHQmM3Zmdob3NvbXVqVlc0c0pzZFZFR1dFNUFrWHhZWkloa0l0MjdqS0NRV1g2T1A0bG1wSVFvREJuWFN0U2Q3RXdvQUNBZnBVMEp0OW1UVHFWSjdQLUNNZTNHZnRsUU0wY1E?oc=5",
-      "image_url": "https://images.pexels.com/photos/159412/budapest-parliament-danube-ship-passage-159412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "GEOPOLITYKA",
-      "title": "🇬🇱 Porozumienie USA i Danii w sprawie Grenlandii",
-      "summary": "Waszyngton i Kopenhaga osiągnęły kompromis dotyczący statusu strategicznej wyspy po wcześniejszych deklaracjach Donalda Trumpa o chęci jej przejęcia. Umowa zakłada rozbudowę obecności wojskowej USA przy zachowaniu duńskiej suwerenności.",
-      "comment": "Uregulowanie sporu uspokaja napięcia wewnątrz NATO, jednocześnie wzmacniając pozycję USA w Arktyce.",
-      "image_query": "greenland coast military",
+      "category": "AKTUALNOŚCI",
+      "title": "📌 US and Denmark reach deal over Greenland after Trump annexation threats",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
       "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
-      "image_url": "https://images.pexels.com/photos/39556004/pexels-photo-39556004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "GEOPOLITYKA",
-      "title": "📜 Nowy pakiet surowych sankcji USA przeciwko Rosji",
-      "summary": "Prezydent USA podpisał ustawę wprowadzającą dodatkowe obostrzenia gospodarcze celujące w rosyjski sektor energetyczny i bankowy. Ustawa ma na celu odcięcie Moskwie źródeł finansowania machiny wojennej.",
-      "comment": "Zaostrzenie restrykcji zwiększa presję na europejskich partnerów, by całkowicie zrezygnowali z rosyjskich surowców.",
-      "image_query": "capitol us flag economic sanctions",
-      "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
-      "image_url": "https://images.pexels.com/photos/20417783/pexels-photo-20417783.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "GEOPOLITYKA",
-      "title": "🚫 Trump nakłada zakaz wstępu do Białego Domu dla CNN i Politico",
-      "summary": "Donald Trump ogłosił cofnięcie akredytacji prasowych dziennikarzom stacji CNN oraz portalu Politico. Władze uzasadniają decyzję rzekomym brakiem rzetelności dziennikarskiej i rozpowszechnianiem fałszywych informacji.",
-      "comment": "Decyzja zaognia spór między administracją prezydencką a wolnymi mediami w Stanach Zjednoczonych.",
-      "image_query": "white house press room",
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Trump says he is banning CNN and Politico from White House",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
       "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo",
-      "image_url": "https://images.pexels.com/photos/7017138/pexels-photo-7017138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "GEOPOLITYKA",
-      "title": "🚨 Syreny alarmowe w Rijadzie po atakach Huti",
-      "summary": "W stolicy Arabii Saudyjskiej uruchomiono syreny przeciwlotnicze po wystrzeleniu rakiet i dronów przez wspieranych przez Iran rebeliantów Huti. To pierwsza taka sytuacja w Rijadzie od czasu ostatniej eskalacji w regionie.",
-      "comment": "Rozszerzenie zasięgu ataków Huti grozi destabilizacją kluczowych szlaków naftowych i infrastruktury Bliskiego Wschodu.",
-      "image_query": "riyadh skyline night alarm",
-      "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo",
-      "image_url": "https://images.pexels.com/photos/39470846/pexels-photo-39470846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Google's Gemini AI hacked three companies in security test",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🪖 Zmiana planów zakupowych: Czechy dostarczą artylerię",
-      "summary": "Zapadła decyzja o rezygnacji ze szwedzkich systemów artyleryjskich na rzecz konstrukcji z Czech. Przetarg wygrała oferta z szybszym terminem dostaw oraz lepszymi warunkami transferu technologii.",
-      "comment": "Wybór czeskiego dostawcy podkreśla priorytet natychmiastowego uzupełniania zapasów wojskowych w Europie Środkowej.",
-      "image_query": "artillery vehicle military",
-      "link": "https://defence24.pl/sily-zbrojne/zmieniają-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
-      "image_url": "https://images.pexels.com/photos/33961346/pexels-photo-33961346.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Trump signs sweeping Russia sanctions bill",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🪖 Litwa szykuje się do powszechnego poboru do wojska",
-      "summary": "Litewski rząd przyspiesza prace legislacyjne nad wprowadzeniem obowiązkowej służby wojskowej dla wszystkich dorosłych obywateli. Działania wynikają z oceny rosnącego zagrożenia ze strony Rosji i Białorusi.",
-      "comment": "Państwa bałtyckie konsekwentnie przechodzą na model całkowitej mobilizacji społecznej w celach odstraszania.",
-      "image_query": "lithuania military soldiers",
-      "link": "https://defence24.pl/polityka-obronna/powszechny-pobor-do-wojska-coraz-bliżej-litwa-przygotowuje-sie-na-najgorsze",
-      "image_url": "https://images.pexels.com/photos/3706685/pexels-photo-3706685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Grim discoveries of murdered women spark fear in South Africa",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "📉 Spadek wydatków budżetowych w Chinach pogłębia się",
-      "summary": "Dane za sierpień wskazują na dalsze ograniczenie wydatków rządowych w Pekinie, co odzwierciedla problemy z dochodami podatkowymi i kryzys na rynku nieruchomości. Analitycy ostrzegają przed spowolnieniem wzrostu PKB.",
-      "comment": "Pekin ma coraz mniejsze pole do stymulowania gospodarki poprzez tradycyjne inwestycje infrastrukturalne.",
-      "image_query": "china economy finance",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps",
-      "image_url": "https://images.pexels.com/photos/30839695/pexels-photo-30839695.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Deadly shark attack prompts rare kill order in Western Australia",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "⛽ Boliwia znosi dopłaty do paliwa po pożyczce z MFW",
-      "summary": "Rząd Boliwii całkowicie wycofał państwowe subsydia do oleju napędowego po zatwierdzeniu nowego programu finansowego przez Międzynarodowy Fundusz Walutowy. Decyzja ta wywołała natychmiastowy wzrost cen w transporcie.",
-      "comment": "Radykalny krok jest konieczny do zrównoważenia budżetu, jednak grozi masowymi protestami społecznymi.",
-      "image_query": "fuel pump station bolivia",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/bolivia-eliminates-diesel-subsidy-after-imf-loan-approval-mu7ydf34",
-      "image_url": "https://images.pexels.com/photos/34636185/pexels-photo-34636185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "TECHNOLOGIE / AI",
-      "title": "🛑 Kalifornia chce wdrożyć wyłącznik awaryjny dla sztucznej inteligencji",
-      "summary": "Gubernator Gavin Newsom forsuje przepisy nakładające na twórców zaawansowanych modeli AI obowiązek stworzenia mechanizmu natychmiastowego ich wyłączenia. Projekt ustawy ma zapobiec niekontrolowanemu działaniu autonomicznych systemów.",
-      "comment": "Regulacje kalifornijskie mogą stać się ogólnokrajowym standardem bezpieczeństwa dla sektora technologicznego w USA.",
-      "image_query": "artificial intelligence server emergency button",
-      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-      "image_url": "https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "TECHNOLOGIE / AI",
-      "title": "✈️ System AI za 875 mln USD uporządkuje ruch lotniczy w USA",
-      "summary": "Federalna Administracja Lotnictwa (FAA) wdraża zaawansowany system oparty na sztucznej inteligencji do zarządzania zatłoczeniem przestrzeni powietrznej. Projekt ma zredukować opóźnienia lotów i zoptymalizować trasy samolotów.",
-      "comment": "Inwestycja stanowi kluczowy krok w modernizacji przestarzałej infrastruktury kontroli ruchu lotniczego w Ameryce.",
-      "image_query": "air traffic control airport radar",
-      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
-      "image_url": "https://images.pexels.com/photos/35986954/pexels-photo-35986954.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "AKTUALNOŚCI",
+      "title": "📌 US Army odchodzi od starych transporterów opancerzonych. Kontrakt na nowy sprzęt",
+      "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+      "comment": "Brak dodatkowego komentarza.",
+      "image_query": "world news global press",
+      "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet",
+      "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
   ]
 }

@@ -2639,5 +2639,120 @@
         "image_url": "https://images.pexels.com/photos/35986954/pexels-photo-35986954.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
+  },
+  "2026-09-19_wieczorne": {
+    "date": "19 września 2026",
+    "time": "12:33",
+    "timestamp": "2026-09-19_12:33",
+    "items": [
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 US and Denmark reach deal over Greenland after Trump annexation threats",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Trump says he is banning CNN and Politico from White House",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Google's Gemini AI hacked three companies in security test",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Trump signs sweeping Russia sanctions bill",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Grim discoveries of murdered women spark fear in South Africa",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Deadly shark attack prompts rare kill order in Western Australia",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 US Army odchodzi od starych transporterów opancerzonych. Kontrakt na nowy sprzęt",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      }
+    ]
   }
 }
