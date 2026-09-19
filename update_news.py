@@ -1,11 +1,12 @@
 import json
 import os
-import re
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
+from time import mktime
 from zoneinfo import ZoneInfo
 from urllib.parse import urlparse, parse_qs
+from collections import Counter
 
 import feedparser
 from google import genai
@@ -43,21 +44,16 @@ POLISH_MONTHS = {
     9: "września", 10: "października", 11: "listopada", 12: "grudnia"
 }
 
+MAX_AGE_HOURS = 24
+MIN_ITEMS = 8
+
 
 def clean_link(url: str) -> str:
-    """Czyści linki (Google News + parametry śledzące)."""
+    """Czyści parametry śledzące. Linki Google News zostawiamy bez rozwijania."""
     if not url or url == "#":
         return "#"
 
     try:
-        # Google News – próba wyciągnięcia oryginalnego URL
-        if "news.google.com" in url:
-            parsed = urlparse(url)
-            qs = parse_qs(parsed.query)
-            if "url" in qs and qs["url"]:
-                return qs["url"][0]
-
-        # Usuwanie typowych parametrów trackingowych
         tracking_params = {
             "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
             "at_medium", "at_campaign", "fbclid", "gclid", "mc_cid", "mc_eid"
@@ -69,11 +65,24 @@ def clean_link(url: str) -> str:
             if clean_qs:
                 new_query = urllib.parse.urlencode(clean_qs)
                 return f"{parsed.scheme}://{parsed.netloc}{parsed.path}?{new_query}"
-            else:
-                return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+            return f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
         return url
     except Exception:
         return url
+
+
+def is_recent(entry) -> bool:
+    """Odrzuca wpisy starsze niż MAX_AGE_HOURS."""
+    published = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    if not published:
+        return True  # brak daty → zostawiamy
+
+    try:
+        pub_dt = datetime.fromtimestamp(mktime(published), tz=pl_tz)
+        age = datetime.now(pl_tz) - pub_dt
+        return age <= timedelta(hours=MAX_AGE_HOURS)
+    except Exception:
+        return True
 
 
 def validate_items(items: list) -> list:
@@ -94,7 +103,6 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        # Minimalne wymagania jakościowe
         if len(title) < 12 or len(summary) < 30:
             continue
 
@@ -110,25 +118,30 @@ def validate_items(items: list) -> list:
     return valid
 
 
-def fetch_pexels_image_url(query: str) -> str:
+def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
     if not PEXELS_API_KEY:
         return FALLBACK_IMG
 
-    url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(query)}&per_page=1&orientation=landscape"
-    req = urllib.request.Request(url, headers={
-        "Authorization": PEXELS_API_KEY,
-        "User-Agent": "SwiatWMinute-Bot/1.0"
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=6) as resp:
-            if resp.status == 200:
-                data = json.loads(resp.read().decode("utf-8"))
-                photos = data.get("photos", [])
-                if photos:
-                    src = photos[0].get("src", {})
-                    return src.get("large") or src.get("medium") or FALLBACK_IMG
-    except Exception as ex:
-        print(f"Błąd Pexels dla zapytania '{query}': {ex}")
+    for attempt in range(retries + 1):
+        try:
+            url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(query)}&per_page=1&orientation=landscape"
+            req = urllib.request.Request(url, headers={
+                "Authorization": PEXELS_API_KEY,
+                "User-Agent": "SwiatWMinute-Bot/1.0"
+            })
+            with urllib.request.urlopen(req, timeout=6) as resp:
+                if resp.status == 200:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    photos = data.get("photos", [])
+                    if photos:
+                        src = photos[0].get("src", {})
+                        return src.get("large") or src.get("medium") or FALLBACK_IMG
+        except Exception as ex:
+            if attempt == retries:
+                print(f"Błąd Pexels dla '{query}': {ex}")
+            else:
+                import time
+                time.sleep(1)
     return FALLBACK_IMG
 
 
@@ -137,13 +150,18 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:5]:  # mniej szumu
+        for entry in feed.entries[:6]:
+            if not is_recent(entry):
+                continue
+
             title = getattr(entry, "title", "").strip()
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 15:
                 raw_articles.append({"title": title, "link": link})
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
+
+print(f"Pobrano {len(raw_articles)} świeżych artykułów (max {MAX_AGE_HOURS}h)")
 
 # --- ARCHIWUM I DEDUPLIKACJA ---
 archive_file = "archive.json"
@@ -190,7 +208,7 @@ for art in raw_articles:
             if len(prev_words) > 2:
                 common = art_words.intersection(prev_words)
                 ratio = len(common) / min(len(art_words), len(prev_words))
-                if ratio > 0.40:  # lekko ostrzejsza deduplikacja
+                if ratio > 0.40:
                     is_duplicate = True
                     break
 
@@ -199,6 +217,8 @@ for art in raw_articles:
 
 if len(filtered_raw_articles) < 6:
     filtered_raw_articles = raw_articles
+
+print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
 # --- PROMPT ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
@@ -234,7 +254,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model="gemini-3.6-flash",  # poprawiona nazwa modelu (dostosuj jeśli używasz innej)
+        model="gemini-3.6-flash",
         contents=prompt,
     )
     text_res = response.text.strip()
@@ -260,6 +280,19 @@ except Exception as e:
         "image_query": "world news global press",
         "link": art["link"]
     } for art in filtered_raw_articles[:12]]
+
+# Logowanie kategorii
+if items:
+    cats = Counter([item["category"] for item in items])
+    print("Rozkład kategorii:")
+    for cat, count in cats.most_common():
+        print(f"  {cat}: {count}")
+
+# Zabezpieczenie przed słabym wydaniem
+if len(items) < MIN_ITEMS:
+    print(f"UWAGA: Tylko {len(items)} pozycji (minimum {MIN_ITEMS}). Sprawdź jakość źródeł / prompt.")
+else:
+    print(f"Wygenerowano {len(items)} pozycji – OK")
 
 # --- ZDJĘCIA ---
 print("Pobieranie linków do zdjęć z Pexels...")
