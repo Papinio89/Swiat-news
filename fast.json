@@ -1,6 +1,34 @@
 {
   "date": "19 września 2026",
-  "time": "13:00",
-  "timestamp": "2026-09-19_13:00",
-  "items": []
+  "time": "13:05",
+  "timestamp": "2026-09-19_13:05",
+  "items": [
+    {
+      "category": "PILNE",
+      "title": "🚨 Grupa UMO stawia na autorskie systemy dronowe",
+      "summary": "Najnowsze raporty agencji informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Oczekujemy na szczegółowe raporty analityczne.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe",
+      "image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png"
+    },
+    {
+      "category": "PILNE",
+      "title": "🚨 Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+      "summary": "Najnowsze raporty agencji informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Oczekujemy na szczegółowe raporty analityczne.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
+      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg"
+    },
+    {
+      "category": "PILNE",
+      "title": "🚨 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+      "summary": "Najnowsze raporty agencji informują o rozwoju sytuacji w tym obszarze.",
+      "comment": "Oczekujemy na szczegółowe raporty analityczne.",
+      "image_query": "breaking news military",
+      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
+    }
+  ]
 }
