@@ -4,6 +4,7 @@ import re
 import unicodedata
 import urllib.parse
 import urllib.request
+import traceback
 from datetime import datetime, timedelta
 from time import mktime
 from zoneinfo import ZoneInfo
@@ -283,21 +284,30 @@ try:
     response = client.models.generate_content(
         model="gemini-3.6-flash",
         contents=prompt,
+        config={
+            "response_mime_type": "application/json",
+            "max_output_tokens": 2048,
+            "temperature": 0.2,
+        },
     )
     text_res = response.text.strip()
-    if text_res.startswith("```json"):
-        text_res = text_res[7:]
-    if text_res.startswith("```"):
-        text_res = text_res[3:]
-    if text_res.endswith("```"):
-        text_res = text_res[:-3]
-    text_res = text_res.strip()
+    
+    # Ratowanie uciętego JSON-a
+    if not text_res.endswith("]"):
+        last_brace = text_res.rfind("}")
+        if last_brace != -1:
+            text_res = text_res[:last_brace + 1] + "]"
 
     raw_items = json.loads(text_res)
     items = validate_items(raw_items)
+    
+    if len(items) < MIN_ITEMS:
+        print(f"Walidacja odrzuciła za dużo pozycji ({len(items)}/{len(raw_items)}). Używam raw_items.")
+        items = raw_items
 
 except Exception as e:
-    print(f"Błąd AI: {e}")
+    print(f"Błąd AI: {type(e).__name__} - {e}")
+    traceback.print_exc()
     items = [{
         "category": "BEZPIECZEŃSTWO",
         "title": sanitize_text(f"🚨 {art['title']}"),
