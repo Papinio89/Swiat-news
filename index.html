@@ -2,7 +2,7 @@
 <html lang="pl" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Świat w Minutę - Przegląd Wiadomości</title>
     
     <!-- Tailwind CSS -->
@@ -55,6 +55,14 @@
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         .dark ::-webkit-scrollbar-thumb { background: #1e293b; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .badge-fixed {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1 !important;
+            padding-top: 6px !important;
+            padding-bottom: 5px !important;
+        }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
@@ -73,7 +81,7 @@
             </button>
         </div>
         <p class="text-slate-500 dark:text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
-            Na iPhone (Safari): dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
+            Na telefonie: dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
         </p>
     </div>
 
@@ -90,7 +98,7 @@
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
                 <div class="relative w-48 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
                     <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
                         <i class="fa-solid fa-xmark"></i>
@@ -106,7 +114,7 @@
         </div>
         <div class="md:hidden px-4 pb-3">
             <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
                 <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
                     <i class="fa-solid fa-xmark"></i>
@@ -119,7 +127,7 @@
         
         <div class="mb-8 text-center max-w-2xl mx-auto" id="main-titles">
             <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-3">Przegląd Dnia</h2>
-            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i ciekawostki wyselekcjonowane przez AI. Krótko i na temat.</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.</p>
         </div>
 
         <div class="flex flex-wrap justify-center gap-2 mb-10" id="tabs-container">
@@ -141,7 +149,7 @@
 
         <div id="error-box" class="hidden flex-col items-center justify-center py-12 text-slate-500">
             <i class="fa-solid fa-triangle-exclamation text-red-500 text-5xl mb-4 opacity-80"></i>
-            <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że plik JSON się zaktualizował z błędem.</p>
+            <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że trwa aktualizacja wydań.</p>
         </div>
 
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
@@ -191,7 +199,6 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        const PEXELS_API_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ";
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
         const SITE_URL = "https://swiat-w-minut.vercel.app";
 
@@ -296,36 +303,6 @@
             finally { downloadBtn.innerHTML = originalHtml; }
         };
 
-        async function fetchPexelsImage(query) {
-            try {
-                const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1&orientation=landscape`, { headers: { Authorization: PEXELS_API_KEY } });
-                const data = await res.json();
-                return (data.photos && data.photos.length > 0) ? (data.photos[0].src.large || data.photos[0].src.medium) : FALLBACK_IMG;
-            } catch (e) { return FALLBACK_IMG; }
-        }
-
-        async function loadImagesSequentially(tasks) {
-            for (let i = 0; i < tasks.length; i += 3) {
-                const batch = tasks.slice(i, i + 3);
-                await Promise.all(batch.map(async (task) => {
-                    const card = document.getElementById(task.cardId);
-                    if (!card) return;
-                    const imgEl = card.querySelector('img');
-                    const imgContainer = card.querySelector('.img-container');
-                    
-                    if (imgEl && !imgEl.getAttribute('src')) {
-                        const imgUrl = await fetchPexelsImage(task.query);
-                        imgEl.onload = () => {
-                            imgEl.classList.remove('opacity-0');
-                            imgContainer.classList.remove('shimmer');
-                        };
-                        imgEl.src = imgUrl;
-                    }
-                }));
-                await new Promise(r => setTimeout(r, 200));
-            }
-        }
-
         function getSafeEmojiAndTitle(rawTitle, isFun) {
             const clean = (rawTitle || '').trim();
             const firstWord = clean.split(/\s+/)[0] || '';
@@ -339,7 +316,6 @@
 
         function renderCardsToContainer(container, items) {
             container.innerHTML = '';
-            let imageTasks = [];
 
             items.forEach((item) => {
                 try {
@@ -374,10 +350,8 @@
                     const encSummary = encodeURIComponent(item.summary || '');
                     const encLink = encodeURIComponent(item.link || SITE_URL);
                     
-                    const queryPexels = item.image_query || `${rawC} ${cleanTitle.split(' ').slice(0,2).join(' ')}`;
                     const cardId = `card-gen-${cardCounter++}`;
-
-                    imageTasks.push({ cardId, query: queryPexels });
+                    const directImgUrl = item.image_url || FALLBACK_IMG;
 
                     const cardHtml = `
                         <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
@@ -391,14 +365,18 @@
                                 </button>
                             </div>
 
-                            <div class="h-48 w-full relative shimmer overflow-hidden img-container">
-                                <img class="w-full h-full object-cover opacity-0 transition-opacity duration-700" crossorigin="anonymous" alt="Ilustracja">
+                            <div class="h-48 w-full relative overflow-hidden img-container bg-slate-800">
+                                <img src="${directImgUrl}" 
+                                     onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
+                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                                     crossorigin="anonymous" 
+                                     alt="Ilustracja">
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                             </div>
 
                             <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
-                                <div class="flex items-center mb-3">
-                                    <span class="inline-flex items-center justify-center px-3 h-6 rounded-md border text-[10px] font-bold uppercase tracking-wider leading-none ${catStyle} shadow-md backdrop-blur-md">
+                                <div class="mb-3">
+                                    <span class="badge-fixed px-3 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
                                         ${rawC}
                                     </span>
                                 </div>
@@ -427,8 +405,6 @@
                     console.error("Błąd rysowania pojedynczej karty", e);
                 }
             });
-
-            loadImagesSequentially(imageTasks);
         }
 
         function renderFastReview(items) {
@@ -462,7 +438,7 @@
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-center gap-2 mb-2">
                                     <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                    <span class="inline-flex items-center justify-center px-2.5 h-5 rounded border text-[9px] font-bold uppercase tracking-wider leading-none ${catStyle} whitespace-nowrap">
+                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-bold uppercase tracking-wider ${catStyle} whitespace-nowrap">
                                         ${rawC}
                                     </span>
                                 </div>
