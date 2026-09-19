@@ -1,34 +1,37 @@
 {
   "date": "19 września 2026",
-  "time": "13:17",
-  "timestamp": "2026-09-19_13:17",
+  "time": "13:22",
+  "timestamp": "2026-09-19_13:22",
   "items": [
     {
       "category": "GEOPOLITYKA",
-      "title": "🚨 Rosyjskie ćwiczenia z NATO w tle: Polska w centrum uwagi Moskwy",
-      "summary": "Rosja prowadzi symulacje działań wojennych wymierzonych w pakt północnoatlantycki, uwzględniając Polskę jako kluczowy obszar operacyjny. Manewry stanowią ciągłą presję psychologiczną oraz test spójności obronnej wschodniej flanki NATO.",
-      "comment": "Rosyjskie manewry obronno-ofensywne od lat konsekwentnie wpisują terytorium Polski w scenariusze potencjalnego konfliktu na skalę regionalną. Działania te służą nie tylko weryfikacji gotowości własnych sił, ale stanowią przede wszystkim element wojny hybrydowej i zastraszania politycznego. Dla Warszawy oznacza to konieczność permanentnego podnoszenia gotowości operacyjnej oraz dalszej rozbudowy infrastruktury logistycznej dla wojsk sojuszniczych.",
-      "image_query": "russia military exercise",
+      "title": "⚔️ Rosja symuluje konflikt z NATO z uwzględnieniem Polski",
+      "summary": "Rosyjskie dowództwo prowadzi manewry i ćwiczenia sztabowe zakładające starcie z pakiem północnoatlantyckim. Terytorium Polski odgrywa kluczową rolę w scenariuszach operacyjnych agresora.",
+      "comment": "Systematyczne testowanie reakcji Sojuszu wymusza dalsze przyspieszenie budowy potencjału odstraszania na wschodniej flance.",
+      "image_query": "military map strategic",
       "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
-      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg"
+      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg"
     },
     {
       "category": "OBRONNOŚĆ",
-      "title": "⚠️ Planowana redukcja sił USA w Europie? Nowe uwarunkowania",
-      "summary": "Pojawiają się nowe szczegóły dotyczące możliwego przewartościowania obecności wojskowej Stanów Zjednoczonych na Starym Kontynencie. Potencjalne przesunięcia sił mogą wymusić na państwach europejskich szybsze przejęcie odpowiedzialności za własne bezpieczeństwo.",
-      "comment": "Ewentualna redukcja amerykańskiego dyslokowania w Europie to sygnał, że Waszyngton przesuwa środek ciężkości swojej strategii bezpieczeństwa w stronę rejonu Indopacyfiku. Państwa europejskie, w tym Polska, muszą liczyć się z koniecznością znacznego przyspieszenia własnych programów modernizacyjnych i realnego zwiększenia wydatków obronnych. Bez jednoznacznego przywództwa USA, spójność architektury obronnej NATO będzie wymagała znacznie ściślejszej integracji przemysłowej i operacyjnej wewnątrz UE.",
-      "image_query": "us military europe",
+      "title": "🛡️ Przyszłość amerykańskiej obecności wojskowej w Europie",
+      "summary": "Ujawniono nowe ustalenia dotyczące potencjalnej rekonfiguracji oraz redukcji sił zbrojnych USA na Starym Kontynencie. Waszyngton stopniowo przesuwa ciężar uwagi strategicznej w stronę rejonu Indopacyfiku.",
+      "comment": "Państwa europejskie muszą jak najszybciej przejąć większą odpowiedzialność za własną defensywę.",
+      "image_query": "us soldiers europe",
       "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
-      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
+      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
     },
     {
       "category": "KONFLIKTY",
-      "title": "🚀 Zmasowany atak na Ukrainę: Polskie myśliwce w powietrzu",
-      "summary": "W odpowiedzi na kolejną falę rosyjskich uderzeń rakietowych na Ukrainę, polskie i sojusznicze lotnictwo zostało poderwane w celu zabezpieczenia przestrzeni powietrznej RP. Działania miały charakter prewencyjny i miały zapewnić bezpieczeństwo we wschodnich rejonach kraju.",
-      "comment": "Regularne podrywanie par dyżurnych polskiego lotnictwa w trakcie rosyjskich ataków na zachodnią Ukrainę stało się standardową procedurą operacyjną, mającą na celu zapobieżenie incydentom naruszenia granicy. Tego typu zdarzenia generują znaczne koszty eksploatacyjne i podnoszą tempo zużycia sprzętu, jednocześnie utrzymując wojska rakietowe i lotnictwo w stanie ciągłego napięcia. Sytuacja ta jednoznacznie wskazuje na potrzebę dalszej rozbudowy wielowarstwowego systemu obrony przeciwlotniczej i przeciwrakietnej nad Polską.",
-      "image_query": "fighter jet takeoff",
+      "title": "🚀 Zmasowany atak na Ukrainę i polskie myśliwce w powietrzu",
+      "summary": "Kolejna fala rosyjskich uderzeń rakietowych objęła terytorium całej Ukrainy. W celu zabezpieczenia przestrzeni powietrznej Polski aktywowano dyżurne pary myśliwców.",
+      "comment": "Bliskość działań wojennych generuje stałe ryzyko naruszenia granic NATO i wymusza pełną gotowość bojową.",
+      "image_query": "fighter jet airforce",
       "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
-      "image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg"
+      "image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg"
     }
   ]
 }
