@@ -41,12 +41,9 @@ POLISH_MONTHS = {
 }
 
 MAX_AGE_HOURS = 12
-MIN_ITEMS = 1
 TARGET_ITEMS = 3
 
-
 def sanitize_text(text: str) -> str:
-    """Usuwa problematyczne znaki Unicode."""
     if not text:
         return ""
     text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
@@ -58,9 +55,7 @@ def sanitize_text(text: str) -> str:
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-
 def clean_link(url: str) -> str:
-    """Czyści parametry śledzące utm_* z linków."""
     if not url or url == "#":
         return "#"
     try:
@@ -80,9 +75,7 @@ def clean_link(url: str) -> str:
     except Exception:
         return url
 
-
 def is_recent(entry) -> bool:
-    """Odrzuca wpisy starsze niż MAX_AGE_HOURS."""
     published = entry.get("published_parsed") or entry.get("updated_parsed")
     if not published:
         return True
@@ -93,25 +86,22 @@ def is_recent(entry) -> bool:
     except Exception:
         return True
 
-
 def validate_items(items: list) -> list:
-    """Sprawdza i czyści odpowiedź zwróconą przez AI."""
-    required = {"category", "title", "summary", "comment", "image_query", "link"}
     valid = []
-
     for item in items:
         if not isinstance(item, dict):
             continue
-        if not required.issubset(item.keys()):
-            continue
-
+        
         title = sanitize_text(str(item.get("title", "")))
         summary = sanitize_text(str(item.get("summary", "")))
         comment = sanitize_text(str(item.get("comment", "")))
-        category = sanitize_text(str(item.get("category", "OBRONNOŚĆ"))).upper()
+        category = sanitize_text(str(item.get("category", "PILNE"))).upper()
         image_query = sanitize_text(str(item.get("image_query", "military defense")))
-        link = clean_link(str(item.get("link", "#")))
+        
+        # Bardzo liberalne szukanie linku (częsty błąd AI)
+        link = clean_link(str(item.get("link", item.get("url", "#"))))
 
+        # Łagodna walidacja – akceptujemy wszystko co ma jakikolwiek sensowny tekst
         if len(title) < 5 or len(summary) < 10:
             continue
 
@@ -126,23 +116,17 @@ def validate_items(items: list) -> list:
 
         if len(valid) >= TARGET_ITEMS:
             break
-
+            
     return valid
 
-
 def fetch_article_image(url: str) -> str | None:
-    """Pobiera oryginalne zdjęcie ze strony artykułu (pod rolkę)."""
     if not url or url == "#" or "news.google.com" in url:
         return None
     try:
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": (
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/120.0.0.0 Safari/537.36"
-                ),
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Accept": "text/html,application/xhtml+xml",
                 "Accept-Language": "en-US,en;q=0.9,pl;q=0.8",
             },
@@ -160,14 +144,11 @@ def fetch_article_image(url: str) -> str | None:
             m = re.search(pat, html, re.I)
             if m:
                 img = m.group(1).strip()
-                if img.startswith("//"):
-                    img = "https:" + img
-                if img.startswith("http"):
-                    return img
+                if img.startswith("//"): img = "https:" + img
+                if img.startswith("http"): return img
     except Exception:
         pass
     return None
-
 
 # --- ZBIERANIE RSS ---
 raw_articles = []
@@ -184,7 +165,6 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-# Tryb ratunkowy - jeśli jest ekstremalnie mało newsów (np. awaria po stronie serwerów RSS)
 if len(raw_articles) < TARGET_ITEMS:
     print("Zbyt mało nowości z 12h. Pobieram starsze by zapewnić wydanie...")
     for url in RSS_URLS:
@@ -258,7 +238,6 @@ for art in raw_articles:
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
-# Tryb ratunkowy deduplikacji
 if len(filtered_raw_articles) < TARGET_ITEMS:
     print("Zbyt mało unikalnych newsów po odrzuceniu duplikatów. Wyłączam filtrację...")
     seen_links = {a['link'] for a in filtered_raw_articles}
@@ -277,14 +256,14 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 prompt = f"""Wybierz DOKŁADNIE {TARGET_ITEMS} NAJMOCNIEJSZYCH tematów militarnych, obronnych lub geopolitycznych z poniższej listy.
 
 Zasady:
-- Tytuł: zwięzły, mocny, z jedną prostą emotikoną (🚨 🛡️ ⚔️ 🚀). Bez flag.
+- Tytuł: zwięzły, mocny, z jedną prostą emotikoną (🚨 🛡️ ⚔️ 🚀).
 - Summary: 1-2 zdania, konkretny fakt.
 - Comment: chłodna puenta strategiczna (1 zdanie).
-- Category: WIELKIE LITERY (OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA, BEZPIECZEŃSTWO).
+- Category: WIELKIE LITERY (np. OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA).
 - image_query: 2-3 angielskie słowa kluczowe.
 - link: dokładnie ten sam URL z wejścia.
 
-Zwróć DOKŁADNIE czystą tablicę JSON. Żadnego markdowna.
+Zwróć TYLKO czystą tablicę JSON.
 
 Unikaj tematów podobnych do:
 {json.dumps(excluded_topics[:12], ensure_ascii=False)}
@@ -300,41 +279,39 @@ try:
         model="gemini-3.6-flash",
         contents=prompt,
         config={
-            "response_mime_type": "application/json", # <-- TO BYŁ BRAKUJĄCY ZAPALNIK
-            "temperature": 0.3,
-            "safety_settings": [
-                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"}
-            ]
+            "response_mime_type": "application/json",
+            "temperature": 0.3
         }
     )
     
     text_res = response.text.strip()
-    
-    # Bezpieczne usunięcie zanieczyszczeń formatu
     text_res = text_res.replace("```json", "").replace("```", "").strip()
     
-    # Ratowanie uciętego JSON-a
     if not text_res.endswith("]"):
         last_brace = text_res.rfind("}")
         if last_brace != -1:
             text_res = text_res[:last_brace + 1] + "]"
 
     raw_items = json.loads(text_res)
+    
+    # Czasem AI zawija tablicę w obiekt {"items": [...]}
+    if isinstance(raw_items, dict):
+        if "items" in raw_items:
+            raw_items = raw_items["items"]
+        else:
+            raw_items = [raw_items]
+
     items = validate_items(raw_items)
 
 except Exception as e:
     print(f"Błąd AI (Tryb awaryjny): {e}")
     traceback.print_exc()
 
-# --- BLOK RATUNKOWY (Zabezpiecza przed pustym fast.json) ---
+# --- BLOK RATUNKOWY (Uzupełnia listę jeśli cokolwiek poszło nie tak) ---
 if len(items) < TARGET_ITEMS:
-    print("Ostrzeżenie: Model zwrócił za mało elementów. Uzupełniam braki systemowo.")
+    print(f"Ostrzeżenie: Model zwrócił {len(items)} elementów. Uzupełniam braki systemowo.")
     existing_links = {i.get('link') for i in items}
     
-    # Jeżeli z jakiegoś powodu RSS w ogóle nie zadziałał:
     if not articles_for_ai:
         articles_for_ai = [
             {"title": "Trwają ustalenia po najnowszych incydentach bezpieczeństwa", "link": "#"},
@@ -347,8 +324,8 @@ if len(items) < TARGET_ITEMS:
             items.append({
                 "category": "PILNE",
                 "title": sanitize_text(f"🚨 {art['title']}"),
-                "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
-                "comment": "Trwa gromadzenie szczegółowych informacji strategicznych.",
+                "summary": "Agencje prasowe informują o rozwoju sytuacji we wskazanym rejonie.",
+                "comment": "Trwa analizowanie szerszych konsekwencji tego wydarzenia.",
                 "image_query": "breaking news military",
                 "link": art["link"]
             })
@@ -365,13 +342,11 @@ for item in items:
     article_img = fetch_article_image(item.get("link", ""))
     if article_img:
         item["source_image_url"] = article_img
-        item["image_url"] = article_img  # spójność z generatorem
+        item["image_url"] = article_img
         source_ok += 1
     else:
         item["source_image_url"] = FALLBACK_IMG
         item["image_url"] = FALLBACK_IMG
-
-print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = fallback militarny)")
 
 # --- ZAPIS ---
 now_pl = datetime.now(pl_tz)
