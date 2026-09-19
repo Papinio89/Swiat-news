@@ -1,27 +1,59 @@
 {
   "date": "19 września 2026",
-  "time": "09:50",
-  "count": 30,
+  "time": "10:02",
+  "count": 40,
   "items": [
     {
-      "title": "How China's Military Weapons Aid of Iran May Cause Larger Geopolitical Rift - Military.com",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTm5aZ0dJN2l1dUNwZm5YaVZPTVF4MWhMaGhPeG5MV3FCb2pJa2djVjhfeHRmbDNac2VaY00zbFMyQ0lKNEhDYzIwT3hQcWIzR3pKc3ZqY083Zk94bWxyLXBpeW51MHdaVmRmNklFSDY2azkxUEVtbExUU19XQ1h5VGo4czczdzdkc2trVjdCd2dWbFFqZHk2ekhNSkRqZTBZRUZwdG5vZHdvbjYxOEdYY1VBSndGWWNKanhfUTdKMFdSWllP?oc=5"
+      "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o"
     },
     {
-      "title": "Three months in, is Trump losing the Iran war? - Reuters",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb0xrTW5YOXpZTlM3YmFKQzVXNlN2UUtDOEc0dldIUkh3dExmSVU0NmtvbThyTGs4ZTJVeFl1VkFQekZqS0ItTFhDYVQ3X09hRzN2S2taT1FYNjhPakE4OWJxM3p1V1BHcUxBQ0FRanpsZU16anhHRGVlQmwyRGdVeXVlM3QxczNNUWZNVldZM1l2QVNfc0dJ?oc=5"
+      "title": "Trump says he is banning CNN and Politico from White House",
+      "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo"
+    },
+    {
+      "title": "Google's Gemini AI hacked three companies in security test",
+      "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo"
+    },
+    {
+      "title": "Trump signs sweeping Russia sanctions bill",
+      "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo"
+    },
+    {
+      "title": "Grim discoveries of murdered women spark fear in South Africa",
+      "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o"
+    },
+    {
+      "title": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
+      "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo"
+    },
+    {
+      "title": "Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+      "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz"
+    },
+    {
+      "title": "Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
+      "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce"
     },
     {
       "title": "US Army odchodzi od starych transporterów opancerzonych. Kontrakt na nowy sprzęt",
       "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet"
     },
     {
-      "title": "Pakistan i Turcja wyślą wojsko do Jemenu? „Pakt mekkański” chce rozprawić się z Huti",
-      "link": "https://defence24.pl/geopolityka/pakistan-i-turcja-wysla-wojsko-do-jemenu-pakt-mekkanski-chce-rozprawic-sie-z-huti"
-    },
-    {
       "title": "Sojusznik USA odmawia udziału w wojnie z Iranem. „Nie będzie wysyłania wojsk”",
       "link": "https://defence24.pl/geopolityka/sojusznik-usa-odmawia-udzialu-w-wojnie-z-iranem-nie-bedzie-wysylania-wojsk"
+    },
+    {
+      "title": "Powszechny pobór do wojska coraz bliżej. Litwa przygotowuje się na najgorsze",
+      "link": "https://defence24.pl/polityka-obronna/powszechny-pobor-do-wojska-coraz-blizej-litwa-przygotowuje-sie-na-najgorsze"
+    },
+    {
+      "title": "A Goldman M&A Banker Helped Bring the Olympics to Los Angeles",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/a-goldman-m-a-banker-helped-bring-the-olympics-to-los-angeles"
+    },
+    {
+      "title": "Odd Lots: Goldman’s Sykes on the 2028 Olympics Deal (Podcast)",
+      "link": "https://www.bloomberg.com/news/audio/2026-09-19/odd-lots-goldman-s-sykes-on-the-2028-olympics-deal-podcast"
     },
     {
       "title": "Bolivia Eliminates Diesel Subsidy After IMF Loan Approval",
@@ -38,10 +70,6 @@
     {
       "title": "South Korea’s Justice Minister Nominee Withdraws After Reshuffle",
       "link": "https://www.bloomberg.com/news/articles/2026-09-19/south-korea-s-justice-minister-nominee-withdraws-after-reshuffle"
-    },
-    {
-      "title": "Mark Walter’s Lieutenants Give Prosecutors Firsthand Accounts",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/mark-walter-s-lieutenants-give-prosecutors-firsthand-accounts"
     },
     {
       "title": "India forces caller-ID apps to feed spam reports to telcos",
@@ -64,6 +92,10 @@
       "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
     },
     {
+      "title": "Anthropic’s first embedded evaluator is … Accenture?",
+      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/"
+    },
+    {
       "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero"
     },
@@ -82,6 +114,10 @@
     {
       "title": "Gavin Newsom is pushing for an AI kill switch",
       "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
+    },
+    {
+      "title": "What Hollywood thinks about existential AI warnings",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings"
     },
     {
       "title": "AI hallucination of Chinese nuclear components almost led to US military attack",
@@ -104,24 +140,28 @@
       "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/"
     },
     {
-      "title": "\"Nawrocki ma to pod kontrolą\". Trump o rosyjskim zagrożeniu - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUkZ4ZWthMm4ycExsNHU1U2gySEtXamtjSENGbU96WW5jdnBseUpWbUdSRmpnQ3pMU3pXRGJfMTdBSzNQQ05xZVFIVDVwOHgxd0I2dXdUZUl3MG1UaUF0WkVVQ0I1QUlWUmZCRFU2b25jUXRiUVU5N0JpdzNVUHZ6Nk5SOFJlQXM0WVZhdVFianE2Wjd3WF92cEtfcTNjWDR6NWZmYy1JOTFCdGdsZ0ljdkFTRQ?oc=5"
+      "title": "Meet the winner of Nikon's Small World in Motion video contest",
+      "link": "https://arstechnica.com/science/2026/09/meet-the-winner-of-nikons-small-world-in-motion-video-contest/"
     },
     {
-      "title": "Tusk ogłasza: Polska w „Koalicji Antybalistycznej” - Defence24",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQmphYldRVDhLY2FOaDBEU2lTaFlCWlNvTFhyQmVGbWMweXFzdVVvYktLdVBYZkgyZWt5MGt1dnBOeVF2VkVtQ1lYalpKTjJOZVB3b2JleklZM1pJZHFUY3dfWVJKSVRROUoxdmh0NUQ1RHctZDZHb0QwUzdvTVZIME1qWQ?oc=5"
+      "title": "Polskie myśliwce poderwane. \"Rozpoczęło się operowanie\" - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS0MzUDlqMVpoR3hWOEZwNTNsblFMcEptWklqUGxzUTFncEhMQ0hrQnIwVVI4U3FIVjl4YVRGVGc4N0piNFkxZE5aZ2YxNjg4WFUzWExKcEJzVnFvZmdJU3luTXFwc1kyN0gyTGNpbHRnQ085endnRXhpbVBHYjNyZE1aMGxOT3BXWkNjcmRacVpxX3RZZlhrZ0Jmai13eDYtOEplLS1LNnBUazlCSUVGdU9OWjQ1cGJI?oc=5"
     },
     {
-      "title": "Cios w Rosję i jej sojuszników. \"Piekielne sankcje\" wchodzą w życie - Wiadomości Onet",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaHFsckNTVnJtLW1aSDBpX1pIY3hsQ2xWT3l4NjNuLUgxV0JYRHRNSXlVSFhmem83a0wxeFAwYkEyTnVaN1BCSDZzOGxra01SaXVMSmlURjZpV1BBSUpiVmt3cURMOEdibm9BdGpUejE2Z2dRNEdvV0xBNmdxVkQ5MlUtOTcwVU8xMFg3d2xfZWIxMnNQMnhZM1hsdnhyNWZWWEN2MGhR?oc=5"
+      "title": "Trump o potencjalnym ataku Rosjan w Polsce: Nawrocki ma to pod kontrolą - Interia Wydarzenia",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU05jNHZWb0FDUW5raFhXejN0YVlTaXZ1a2VhYzlqeTdHZXQyWUNmd0FpOGE0ZkJtTWduaUV3R1lIVHItZEdYZG9PR0hPdDFwOGlUc1Q5VFdlMlhoSkpqSXc3LWpnMk1EM3o0SzJ0d2p6OFkteXRXVXBxeW1LWkhLTTZoSWNTNmJoTTJNeU9CUWRGSk9kVlM3bTB2SFNpcTBCM1VMNERWUzNaXzhMOENrQlJWTWphbWpJREE?oc=5"
     },
     {
-      "title": "Wniosek o areszt dla europosła KO. Wojciech Król nie przyznaje się do winy - Business Insider Polska",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPejl5OS1QeGlXYkF0ZHh4Z2ZhOTBLdl9OYW1jZml3YXA1OE44Q1pkUWNwbEY1dDl1N3FqTHFETWRFTkJROGU5MWdLeUcxNHV6UnpyZ3VjaEszcHI2a0JnMm5vMWRQTHFOVDVkQ2YtRDVDVTd6TE8xdm5iTWRUY2R1WnNxSXI4bVllOXZVbVBkRjliZzIyRDhVU1FvNmNUZlFsMVJVd0RvSzc1SXg2Tms3aTJEMEVrSnF4NURQTm9zMA?oc=5"
+      "title": "Donald Trump ogłasza przełomową decyzję w sprawie Grenlandii - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHp6bTNmMWRIRTVDSXdqbUxOOFNIdXVkUHlUTmxDT085YUpCd2tTNE9HV3k0M0F3aVRwaUFQaVJYeXRvMTM5ZkdTalBRb1JHTGdleUVrcVVGb3IwVXpndFBWR1E3VkczU2dfZFBFV0ZnVmVmNWs5RnFtZDg4YVZJZFdfVUdHUUVaUXFKb1RMYkRYMFBWeDhIbXBTeFlETEluV1NN?oc=5"
     },
     {
-      "title": "Rosyjski atak przy granicy z Polską. Kamery nagrały reakcję obecnych w Sejmie generałów - Wyborcza.pl",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQVA2bnBQOUtjcUJsQ25DNWZJY0tKOU9xSHRrdUlmc3lPeUZwRC0tNWhVUjNGMGhNRXVDWjRqcnZyYlFCSnYtV2dnTlloSlV3MEphT21RODRORU1rNW9xbTlSTWdDamtMWGVmbDQyeS1LVjVYWjNmV1NQX2ZxTXdfYWc0b0xwMGlaM3pJMlNhSmdFeFZHN25aLW1PeUZ6MUtoNGRwV3l4ZmR4aDhpaHc?oc=5"
+      "title": "\"Ogarnijmy się\". Rating Polski w dół. Rząd uspokaja. Eksperci biją na alarm - Money.pl",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0xWbmptUDNla3VmMVhaUnNqRXMyTDRmSE9kTzJqQzZCa1hJM2NYMmgwSEUtdTVvVmh4b1R2VXQ5eFc3TFdWT2FHeXpSdDFRbVRiOUJmQ0RFY1ZiUHAzQS1IUk84bkUwc2dHMS1LTEk5WVNIZGw5WFpNTHBxRW1PRFdFWFpyOE9yb2xCUWZodXVaNTJlRkw1QXkxeUEtamFKdUUta2U0d0tYa1JvX3NIakhoRl9zUWRvNkE?oc=5"
+    },
+    {
+      "title": "Tusk z Morawieckim rozegrali Kaczyńskiego. Horała wicemarszałkiem Sejmu - Wyborcza.pl",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMFZiMUNXdUJ3WFdBMnkxRDdNMlBJdFlCVGdHb3lUd3NwRXEtSGRpdHhpb0hhams4YVRzbFVuOGdHQmM3Zmdob3NvbXVqVlc0c0pzZFZFR1dFNUFrWHhZWkloa0l0MjdqS0NRV1g2T1A0bG1wSVFvREJuWFN0U2Q3RXdvQUNBZnBVMEp0OW1UVHFWSjdQLUNNZTNHZnRsUU0wY1E?oc=5"
     }
   ]
 }
