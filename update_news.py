@@ -1,11 +1,17 @@
 import json
 import os
+import urllib.parse
+import urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import feedparser
 from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
+
+# Konfiguracja Pexels
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
+FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
 RSS_URLS = [
     # --- GLOBALNE / GEOPOLITYKA / OBRONNOŚĆ ---
@@ -141,6 +147,35 @@ except Exception as e:
         "link": art['link']
     } for art in raw_articles[:15]]
 
+
+# --- POBIERANIE ZDJĘĆ Z PEXELS PO STRONIE PYTHON ---
+def fetch_pexels_image_url(query):
+    if not PEXELS_API_KEY:
+        return FALLBACK_IMG
+    
+    url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(query)}&per_page=1&orientation=landscape"
+    req = urllib.request.Request(url, headers={
+        "Authorization": PEXELS_API_KEY,
+        "User-Agent": "SwiatWMinute-Bot/1.0"
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            if resp.status == 200:
+                data = json.loads(resp.read().decode('utf-8'))
+                photos = data.get("photos", [])
+                if photos:
+                    src = photos[0].get("src", {})
+                    return src.get("large") or src.get("medium") or FALLBACK_IMG
+    except Exception as ex:
+        print(f"Błąd Pexels dla zapytania '{query}': {ex}")
+    return FALLBACK_IMG
+
+print("Pobieranie linków do zdjęć z Pexels...")
+for item in items:
+    q = item.get("image_query", "world news")
+    item["image_url"] = fetch_pexels_image_url(q)
+
+
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
 date_pretty = now_pl.strftime("%d %B %Y")
 time_pretty = now_pl.strftime("%H:%M")
@@ -167,3 +202,5 @@ raw_feed_output = {
 }
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
+
+print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów z gotowymi zdjęciami.")
