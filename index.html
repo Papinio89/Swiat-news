@@ -152,18 +152,39 @@
             <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że trwa aktualizacja wydań.</p>
         </div>
 
+        <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
+        <!-- 2. Fast Review (z sekcją PILNE na samej górze) -->
         <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
+            
+            <!-- Blok PILNE z fast.json -->
+            <div id="breaking-container" class="hidden mb-8">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="flex h-3 w-3 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+                    </span>
+                    <h3 class="text-sm font-black uppercase tracking-wider text-red-600 dark:text-red-400">PILNE / FLASH REPORT</h3>
+                    <span id="fast-time-badge" class="ml-auto text-[10px] font-mono text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md"></span>
+                </div>
+                <div id="breaking-list" class="flex flex-col gap-3"></div>
+            </div>
+
+            <div class="mb-3 flex items-center justify-between">
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Błyskawiczny skrót pozostałych tematów:</p>
+            </div>
             <div id="fast-list" class="flex flex-col gap-3"></div>
         </div>
 
+        <!-- 3. Archiwum -->
         <div id="view-archive" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="archive-container" class="flex flex-col gap-12"></div>
         </div>
 
+        <!-- 4. Wyszukiwarka -->
         <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div class="mb-6 flex justify-between items-end">
                 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
@@ -203,6 +224,7 @@
         const SITE_URL = "https://swiat-w-minut.vercel.app";
 
         let todayItems = [];
+        let fastReportItems = [];
         let archiveGroups = [];
         let allNewsFlat = [];
         let cardCounter = 0; 
@@ -407,10 +429,55 @@
             });
         }
 
-        function renderFastReview(items) {
+        function renderFastReview(items, fastItems, fastTime) {
+            const breakingContainer = document.getElementById('breaking-container');
+            const breakingList = document.getElementById('breaking-list');
+            const timeBadge = document.getElementById('fast-time-badge');
             const list = document.getElementById('fast-list');
-            list.innerHTML = '';
             
+            breakingList.innerHTML = '';
+            list.innerHTML = '';
+
+            // 1. Renderowanie sekcji PILNE (fast.json)
+            if (fastItems && fastItems.length > 0) {
+                breakingContainer.classList.remove('hidden');
+                if (fastTime) timeBadge.textContent = `Aktualizacja: ${fastTime}`;
+
+                fastItems.forEach(item => {
+                    const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, false);
+                    const encTitle = encodeURIComponent(cleanTitle);
+                    const encLink = encodeURIComponent(item.link || SITE_URL);
+
+                    const breakingHtml = `
+                        <div class="bg-red-500/5 dark:bg-red-950/20 border-2 border-red-500/40 rounded-2xl p-4 sm:p-5 flex gap-4 items-start shadow-sm hover:border-red-500 transition">
+                            <div class="text-3xl flex-shrink-0 mt-0.5">${emoji}</div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex items-center gap-2 mb-1.5">
+                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">
+                                        ${item.category || 'PILNE'}
+                                    </span>
+                                </div>
+                                <h4 class="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-snug mb-1.5">
+                                    ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:underline">${cleanTitle}</a>` : cleanTitle}
+                                </h4>
+                                <p class="text-slate-700 dark:text-slate-300 text-xs sm:text-sm mb-2 leading-relaxed">${item.summary || ''}</p>
+                                ${item.comment ? `
+                                <div class="text-xs font-semibold text-red-600 dark:text-red-400 italic">
+                                    ⚡ ${item.comment}
+                                </div>` : ''}
+                            </div>
+                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition" title="Udostępnij">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    `;
+                    breakingList.insertAdjacentHTML('beforeend', breakingHtml);
+                });
+            } else {
+                breakingContainer.classList.add('hidden');
+            }
+
+            // 2. Renderowanie standardowego skrótu (z news.json)
             items.forEach((item) => {
                 try {
                     const isFun = item.isFun;
@@ -481,7 +548,6 @@
                 if (!text.trim()) return { items: [] };
                 return JSON.parse(text);
             } catch (e) {
-                console.error(`Błąd pliku ${url}:`, e);
                 return { items: [] };
             }
         }
@@ -491,8 +557,10 @@
             try {
                 const cb = new Date().getTime(); 
                 
-                const [globalNewsData, globalRozData, aNewsData, aRozData] = await Promise.all([
+                // Pobieramy dodatkowo fast.json
+                const [globalNewsData, globalFastData, globalRozData, aNewsData, aRozData] = await Promise.all([
                     safeFetchJson(`news.json?v=${cb}`),
+                    safeFetchJson(`fast.json?v=${cb}`),
                     safeFetchJson(`rozrywka.json?v=${cb}`),
                     safeFetchJson(`archive.json?v=${cb}`),
                     safeFetchJson(`archive_rozrywka.json?v=${cb}`)
@@ -502,10 +570,11 @@
                 archiveRoz = aRozData;
 
                 todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
+                fastReportItems = globalFastData.items || [];
+                
                 let displayDate = globalNewsData.date || "Dzisiaj";
                 document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
 
-                // Pobieramy klucz dzisiejszej daty (YYYY-MM-DD), aby odsiać bieżący dzień z Archiwum
                 const now = new Date();
                 const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
                 
@@ -513,7 +582,6 @@
                 keys.forEach(key => {
                     const dateKey = key.split('_')[0];
 
-                    // Pomiń wydania z dzisiejszego dnia
                     if (dateKey === todayKey) {
                         return;
                     }
@@ -531,11 +599,11 @@
                     }
                 });
 
-                allNewsFlat = [...todayItems, ...allNewsFlat];
+                allNewsFlat = [...todayItems, ...fastReportItems, ...allNewsFlat];
 
                 document.getElementById('loader').style.display = 'none';
                 
-                if(todayItems.length === 0) {
+                if(todayItems.length === 0 && fastReportItems.length === 0) {
                     document.getElementById('error-box').classList.remove('hidden');
                     document.getElementById('error-box').classList.add('flex');
                     document.getElementById('tabs-container').classList.add('hidden');
@@ -543,7 +611,7 @@
                 }
 
                 renderCardsToContainer(document.getElementById('today-grid'), todayItems);
-                renderFastReview(todayItems);
+                renderFastReview(todayItems, fastReportItems, globalFastData.time);
                 renderArchive();
 
                 switchTab('today');
