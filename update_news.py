@@ -8,10 +8,11 @@ from google import genai
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 RSS_URLS = [
-    # --- GLOBALNE / GEOPOLITYKA ---
+    # --- GLOBALNE / GEOPOLITYKA / OBRONNOŚĆ ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=world+news+geopolitics+military&hl=en-US&gl=US&ceid=US:en",
+    "https://defence24.pl/rss",
     
     # --- BIZNES / RYNKI / GOSPODARKA ---
     "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
@@ -23,11 +24,6 @@ RSS_URLS = [
     "https://www.theverge.com/rss/index.xml",
     "https://arstechnica.com/feed/",
     
-    # --- NAUKA / KOSMOS ---
-    "https://www.sciencedaily.com/rss/top/science.xml",
-    "https://phys.org/rss-feed/",
-    "https://www.nasa.gov/feed/",
-    
     # --- POLSKA ---
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl"
 ]
@@ -36,7 +32,7 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:7]:  # 7 najświeższych wpisów z każdego feeda
+        for entry in feed.entries[:7]:
             title = getattr(entry, 'title', '')
             link = getattr(entry, 'link', '#')
             if title:
@@ -60,7 +56,6 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
-# Pobieramy tytuły z ostatnich 8 sesji w archiwum (ok. 4 dni wstecz) dla filtracji duplikatów
 previous_topics = []
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:8]
 for session_key in sorted_sessions:
@@ -71,7 +66,6 @@ for session_key in sorted_sessions:
                 clean_title = "".join([c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
                 previous_topics.append(clean_title)
 
-# Wstępna filtracja duplikatów w Pythonie (próg 35% pokrycia słów)
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join([c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()]).strip().lower()
@@ -90,7 +84,6 @@ for art in raw_articles:
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
-# Zabezpieczenie przed nadmiernym odfiltrowaniem
 if len(filtered_raw_articles) < 5:
     filtered_raw_articles = raw_articles
 
@@ -98,17 +91,21 @@ client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Przeanalizuj poniższe nagłówki i stwórz profesjonalny, dynamiczny przegląd najważniejszych wiadomości ze świata (przetłumacz i sformatuj na język polski).
 
-PROFIL WYDANIA:
-- 100% TWARDE FAKTY I GOSPODARKA (12-16 elementów).
-- Skup się WYŁĄCZNIE na istotnych wydarzeniach: geopolityka, rynki finansowe, surowce, decyzje rządowe/banków centralnych, obronność, kluczowe technologie oraz ważne wydarzenia z Polski i świata.
-- Całkowicie pomijaj luźne ciekawostki, śmieszne anegdoty czy tematy lifestylowe (od tego jest osobny serwis rozrywkowy).
+PROFIL I RESTRYKCJE PROPORCJI (12-16 elementów):
+1. MINIMUM 80% CAŁOŚCI MUSZĄ STANOWIĆ:
+   - GEOPOLITYKA, WOJNA, OBRONNOŚĆ, RYNKI FINANSOWE, SUROWCE, DECYZJE RZĄDÓW ORAZ POLSKA.
+2. TWARDE LIMITY DLA TECHNOLOGII I NAUKI:
+   - MAKSYMALNIE 2 pozycje z kategorii "TECHNOLOGIE / AI".
+   - MAKSYMALNIE 1 pozycja z kategorii "NAUKA / KOSMOS" (lub 0, jeśli nie ma przełomowego wydarzenia).
+   - Bezwzględny zakaz dominacji tematów o modelach LLM czy misjach satelitarnych.
+3. Całkowity zakaz ciekawostek, lifestyle'u i memów.
 
 Każdy obiekt na liście musi zawierać dokładnie następujące klucze:
-- "category": Kategoria pisana WIELKIMI LITERAMI (np. "GEOPOLITYKA", "RYNKI I GOSPODARKA", "TECHNOLOGIE / AI", "POLSKA", "OBRONNOŚĆ", "NAUKA").
+- "category": Kategoria pisana WIELKIMI LITERAMI (np. "GEOPOLITYKA", "RYNKI I GOSPODARKA", "OBRONNOŚĆ", "POLSKA", "TECHNOLOGIE / AI", "NAUKA").
 - "title": Krótki, merytoryczny i chwytliwy nagłówek z dopasowaną emotikoną na początku (np. "📉 Rynki w dół: Nowe decyzje Fed...", "🛢️ Ropa drożeje po napięciach na Bliskim Wschodzie").
-- "summary": Rzeczowy, konkretny opis w 1-2 zdaniach, wyjaśniający sedno wydarzenia.
-- "comment": Celny, analityczny komentarz biznesowy, polityczny lub rynkowy (wyjaśniający konsekwencje lub szerszy kontekst).
-- "image_query": 2-3 precyzyjne, profesjonalne słowa kluczowe w języku ANGIELSKIM do wyszukiwania zdjęcia stockowego (np. "stock market board", "cargo container ship", "diplomacy meeting", "military aircraft", "server room datacenter").
+- "summary": Rzeczowy opis w 1-2 zdaniach, wyjaśniający sedno wydarzenia.
+- "comment": Celny, analityczny komentarz biznesowy, polityczny lub strategiczny.
+- "image_query": 2-3 precyzyjne słowa kluczowe w języku ANGIELSKIM do wyszukiwania zdjęcia stockowego (np. "stock market board", "cargo container ship", "diplomacy meeting", "military aircraft").
 - "link": Dokładnie ten sam URL z wejścia dla danego artykułu.
 
 ZASADY:
@@ -155,16 +152,13 @@ output_data = {
     "items": items
 }
 
-# 1. Zapis głównego wydania newsów
 with open("news.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# 2. Zapis do archiwum wydań
 archive_data[session_fixed_key] = output_data
 with open("archive.json", "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-# 3. Zapis surowych tytułów z RSS pod szybkie wrzutki na Threads
 raw_feed_output = {
     "date": date_pretty,
     "time": time_pretty,
