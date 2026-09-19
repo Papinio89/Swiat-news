@@ -14,6 +14,8 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
+FALLBACK_IMG = "https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop"
+
 RSS_URLS = [
     # --- POLSKIE / REGIONALNE BEZPIECZEŃSTWO ---
     "https://defence24.pl/rss",
@@ -127,6 +129,45 @@ def validate_items(items: list) -> list:
     return valid
 
 
+def fetch_article_image(url: str) -> str | None:
+    """Pobiera og:image / twitter:image ze strony artykułu (pod rolkę / Top 3)."""
+    if not url or url == "#" or "news.google.com" in url:
+        return None
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "en-US,en;q=0.9,pl;q=0.8",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=7) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+
+        patterns = [
+            r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
+            r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']',
+        ]
+        for pat in patterns:
+            m = re.search(pat, html, re.I)
+            if m:
+                img = m.group(1).strip()
+                if img.startswith("//"):
+                    img = "https:" + img
+                if img.startswith("http"):
+                    return img
+    except Exception as ex:
+        print(f"  brak og:image ({url[:55]}…): {ex}")
+    return None
+
+
 # --- ZBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
@@ -206,7 +247,6 @@ for art in raw_articles:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# Jeśli po filtrach jest mało świeżych, unikalnych pozycji – nie pompujemy starymi
 if len(filtered_raw_articles) == 0:
     print("Brak świeżych, unikalnych tematów. Nie nadpisuję fast.json.")
     raise SystemExit(0)
@@ -267,12 +307,26 @@ except Exception as e:
         "link": art["link"]
     } for art in filtered_raw_articles[:TARGET_ITEMS]]
 
-# --- ZABEZPIECZENIE PRZED SŁABYM WYNIKIEM ---
 if len(items) < MIN_ITEMS:
     print(f"UWAGA: Tylko {len(items)} pozycji po walidacji. Nie nadpisuję fast.json.")
     raise SystemExit(0)
 
 print(f"Wybrano {len(items)} pozycji flash – OK")
+
+# --- ZDJĘCIA ZE ŹRÓDEŁ (pod rolkę / Top 3) ---
+print("Pobieranie zdjęć ze źródeł artykułów...")
+source_ok = 0
+for item in items:
+    article_img = fetch_article_image(item.get("link", ""))
+    if article_img:
+        item["source_image_url"] = article_img
+        item["image_url"] = article_img  # spójność z generatorem
+        source_ok += 1
+    else:
+        item["source_image_url"] = FALLBACK_IMG
+        item["image_url"] = FALLBACK_IMG
+
+print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = fallback militarny)")
 
 # --- ZAPIS ---
 now_pl = datetime.now(pl_tz)
