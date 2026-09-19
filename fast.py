@@ -15,23 +15,23 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-FALLBACK_IMG = "https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop"
+FALLBACK_IMG = "[https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop)"
 
 RSS_URLS = [
     # --- POLSKIE / REGIONALNE BEZPIECZEŃSTWO ---
-    "https://defence24.pl/rss",
-    "https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl",
+    "[https://defence24.pl/rss](https://defence24.pl/rss)",
+    "[https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl)",
 
     # --- GLOBALNY SEKTOR OBRONNY / KONFLIKTY ZBROJNE ---
-    "https://www.twz.com/feed",
-    "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
-    "https://news.usni.org/feed",
+    "[https://www.twz.com/feed](https://www.twz.com/feed)",
+    "[https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml](https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml)",
+    "[https://news.usni.org/feed](https://news.usni.org/feed)",
 
     # --- GEOPOLITYKA / KONFLIKTY ŚWIATOWE ---
-    "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en"
+    "[https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best](https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best)",
+    "[https://feeds.bbci.co.uk/news/world/rss.xml](https://feeds.bbci.co.uk/news/world/rss.xml)",
+    "[https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en)",
+    "[https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en)"
 ]
 
 POLISH_MONTHS = {
@@ -316,6 +316,70 @@ try:
 
     text_res = response.text.strip()
     
-    # Usuwanie jakiegokolwiek formatowania markdown w jakie model mógł zapakować wynik
-    text_res = re.sub(r"^```(?:json)?\s*", "", text_res, flags=re.IGNORECASE)
-    text_res = re.sub(r"\s*
+    # Bezpieczne usunięcie znaczników markdown bez wyrażeń regularnych (regex)
+    text_res = text_res.replace("```json", "").replace("```", "").strip()
+    
+    # Ratowanie uciętego JSON-a, domykanie klamry i nawiasu tablicy
+    if not text_res.endswith("]"):
+        last_brace = text_res.rfind("}")
+        if last_brace != -1:
+            text_res = text_res[:last_brace + 1] + "]"
+
+    raw_items = json.loads(text_res)
+    items = validate_items(raw_items)
+
+except Exception as e:
+    print(f"Błąd AI (Tryb awaryjny): {e}")
+    traceback.print_exc()
+
+# Gwarancja powrotu 3 elementów
+if len(items) < TARGET_ITEMS:
+    print("Ostrzeżenie: Model zwrócił za mało elementów. Uzupełniam braki ręcznie z RSS.")
+    existing_links = {i['link'] for i in items}
+    for art in articles_for_ai:
+        if art['link'] not in existing_links:
+            items.append({
+                "category": "PILNE",
+                "title": sanitize_text(f"🚨 {art['title']}"),
+                "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
+                "comment": "Trwa gromadzenie szczegółowych informacji.",
+                "image_query": "breaking news military",
+                "link": art["link"]
+            })
+        if len(items) >= TARGET_ITEMS:
+            break
+
+print(f"Wybrano {len(items)} pozycji flash – OK")
+
+# --- ZDJĘCIA ZE ŹRÓDEŁ (pod rolkę / Top 3) ---
+print("Pobieranie zdjęć ze źródeł artykułów...")
+source_ok = 0
+for item in items:
+    article_img = fetch_article_image(item.get("link", ""))
+    if article_img:
+        item["source_image_url"] = article_img
+        item["image_url"] = article_img  # spójność z generatorem
+        source_ok += 1
+    else:
+        item["source_image_url"] = FALLBACK_IMG
+        item["image_url"] = FALLBACK_IMG
+
+print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = fallback militarny)")
+
+# --- ZAPIS ---
+now_pl = datetime.now(pl_tz)
+date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
+time_pretty = now_pl.strftime("%H:%M")
+timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
+
+output_data = {
+    "date": date_pretty,
+    "time": time_pretty,
+    "timestamp": timestamp_key,
+    "items": items
+}
+
+with open("fast.json", "w", encoding="utf-8") as f:
+    json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+print(f"Zapisano {len(items)} twarde newsy do fast.json o {time_pretty}.")
