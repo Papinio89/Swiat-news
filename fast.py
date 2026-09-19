@@ -148,20 +148,20 @@ for url in RSS_URLS:
             if not is_recent(entry): continue
             title = getattr(entry, "title", "").strip()
             link = clean_link(getattr(entry, "link", "#"))
-            if title and len(title) > 12:
+            if title and len(title) > 6:
                 raw_articles.append({"title": title, "link": link})
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
 if len(raw_articles) < TARGET_ITEMS:
-    print("Zbyt mało nowości z 12h. Pobieram starsze by zapewnić wydanie...")
+    print("Zbyt mało nowości z 6h. Pobieram starsze by zapewnić wydanie...")
     for url in RSS_URLS:
         try:
             feed = feedparser.parse(url)
             for entry in feed.entries[:2]:
                 title = getattr(entry, "title", "").strip()
                 link = clean_link(getattr(entry, "link", "#"))
-                if title and len(title) > 12:
+                if title and len(title) > 6:
                     raw_articles.append({"title": title, "link": link})
         except: pass
 
