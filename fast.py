@@ -15,23 +15,25 @@ from google import genai
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-FALLBACK_IMG = "https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop"
+# Konfiguracja obrazów
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
+FALLBACK_IMG = "[https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop)"
 
 RSS_URLS = [
     # --- POLSKIE / REGIONALNE BEZPIECZEŃSTWO ---
-    "https://defence24.pl/rss",
-    "https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl",
+    "[https://defence24.pl/rss](https://defence24.pl/rss)",
+    "[https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl)",
 
     # --- GLOBALNY SEKTOR OBRONNY / KONFLIKTY ZBROJNE ---
-    "https://www.twz.com/feed",
-    "https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml",
-    "https://news.usni.org/feed",
+    "[https://www.twz.com/feed](https://www.twz.com/feed)",
+    "[https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml](https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml)",
+    "[https://news.usni.org/feed](https://news.usni.org/feed)",
 
     # --- GEOPOLITYKA / KONFLIKTY ŚWIATOWE ---
-    "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en"
+    "[https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best](https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best)",
+    "[https://feeds.bbci.co.uk/news/world/rss.xml](https://feeds.bbci.co.uk/news/world/rss.xml)",
+    "[https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=military+strike+missile+war+tensions&hl=en-US&gl=US&ceid=US:en)",
+    "[https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en)"
 ]
 
 POLISH_MONTHS = {
@@ -43,19 +45,9 @@ POLISH_MONTHS = {
 MAX_AGE_HOURS = 12
 TARGET_ITEMS = 3
 
-def sanitize_text(text: str) -> str:
-    if not text:
-        return ""
-    text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
-    text = "".join(
-        ch for ch in text
-        if unicodedata.category(ch) not in ("Cf", "Cc", "Cn") or ch in "\n\t"
-    )
-    text = re.sub(r'U\+[0-9A-Fa-f]{4,6}', '', text)
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
 
 def clean_link(url: str) -> str:
+    """Czyści parametry śledzące z linków."""
     if not url or url == "#":
         return "#"
     try:
@@ -75,8 +67,10 @@ def clean_link(url: str) -> str:
     except Exception:
         return url
 
+
 def is_recent(entry) -> bool:
-    published = entry.get("published_parsed") or entry.get("updated_parsed")
+    """Odrzuca wpisy starsze niż MAX_AGE_HOURS (12h)."""
+    published = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
     if not published:
         return True
     try:
@@ -86,47 +80,16 @@ def is_recent(entry) -> bool:
     except Exception:
         return True
 
-def validate_items(items: list) -> list:
-    valid = []
-    for item in items:
-        if not isinstance(item, dict):
-            continue
-        
-        title = sanitize_text(str(item.get("title", "")))
-        summary = sanitize_text(str(item.get("summary", "")))
-        comment = sanitize_text(str(item.get("comment", "")))
-        category = sanitize_text(str(item.get("category", "PILNE"))).upper()
-        image_query = sanitize_text(str(item.get("image_query", "military defense")))
-        
-        # Bardzo liberalne szukanie linku (częsty błąd AI)
-        link = clean_link(str(item.get("link", item.get("url", "#"))))
-
-        # Łagodna walidacja – akceptujemy wszystko co ma jakikolwiek sensowny tekst
-        if len(title) < 5 or len(summary) < 10:
-            continue
-
-        valid.append({
-            "category": category,
-            "title": title,
-            "summary": summary,
-            "comment": comment,
-            "image_query": image_query,
-            "link": link
-        })
-
-        if len(valid) >= TARGET_ITEMS:
-            break
-            
-    return valid
 
 def fetch_article_image(url: str) -> str | None:
+    """Pobiera og:image / twitter:image ze strony artykułu."""
     if not url or url == "#" or "news.google.com" in url:
         return None
     try:
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
                 "Accept": "text/html,application/xhtml+xml",
                 "Accept-Language": "en-US,en;q=0.9,pl;q=0.8",
             },
@@ -150,6 +113,30 @@ def fetch_article_image(url: str) -> str | None:
         pass
     return None
 
+
+def fetch_pexels_image_url(query):
+    """Pobiera zdjęcie z Pexels na podstawie słów kluczowych."""
+    if not PEXELS_API_KEY:
+        return FALLBACK_IMG
+    
+    url = f"[https://api.pexels.com/v1/search?query=](https://api.pexels.com/v1/search?query=){urllib.parse.quote(query)}&per_page=1&orientation=landscape"
+    req = urllib.request.Request(url, headers={
+        "Authorization": PEXELS_API_KEY,
+        "User-Agent": "SwiatWMinute-Bot/1.0"
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            if resp.status == 200:
+                data = json.loads(resp.read().decode('utf-8'))
+                photos = data.get("photos", [])
+                if photos:
+                    src = photos[0].get("src", {})
+                    return src.get("large") or src.get("medium") or FALLBACK_IMG
+    except Exception as ex:
+        print(f"Błąd Pexels dla zapytania '{query}': {ex}")
+    return FALLBACK_IMG
+
+
 # --- ZBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
@@ -158,28 +145,29 @@ for url in RSS_URLS:
         for entry in feed.entries[:4]:
             if not is_recent(entry):
                 continue
-            title = entry.get("title", "").strip()
-            link = clean_link(entry.get("link", "#"))
+            title = getattr(entry, "title", "").strip()
+            link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 12:
                 raw_articles.append({"title": title, "link": link})
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
+# Tryb ratunkowy - jeśli jest ekstremalnie mało newsów
 if len(raw_articles) < TARGET_ITEMS:
     print("Zbyt mało nowości z 12h. Pobieram starsze by zapewnić wydanie...")
     for url in RSS_URLS:
         try:
             feed = feedparser.parse(url)
             for entry in feed.entries[:3]:
-                title = entry.get("title", "").strip()
-                link = clean_link(entry.get("link", "#"))
+                title = getattr(entry, "title", "").strip()
+                link = clean_link(getattr(entry, "link", "#"))
                 if title and len(title) > 12:
                     raw_articles.append({"title": title, "link": link})
         except: pass
 
 print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
 
-# --- WYKLUCZENIA Z ARCHIWUM I NEWS.JSON ---
+# --- WYKLUCZENIA Z ARCHIWUM ---
 excluded_topics = []
 archive_file = "archive.json"
 if os.path.exists(archive_file):
@@ -191,10 +179,7 @@ if os.path.exists(archive_file):
                 if isinstance(session_content, dict) and "items" in session_content:
                     for item in session_content.get("items", []):
                         if "title" in item:
-                            clean = "".join(
-                                c for c in item["title"]
-                                if ord(c) > 127 or c.isalnum() or c.isspace()
-                            ).strip().lower()
+                            clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
                             excluded_topics.append(clean)
     except Exception:
         pass
@@ -207,10 +192,7 @@ if os.path.exists(news_file):
             if isinstance(news_data, dict) and "items" in news_data:
                 for item in news_data.get("items", []):
                     if "title" in item:
-                        clean = "".join(
-                            c for c in item["title"]
-                            if ord(c) > 127 or c.isalnum() or c.isspace()
-                        ).strip().lower()
+                        clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
                         excluded_topics.append(clean)
     except Exception:
         pass
@@ -218,11 +200,7 @@ if os.path.exists(news_file):
 # --- DEDUPLIKACJA ---
 filtered_raw_articles = []
 for art in raw_articles:
-    art_clean = "".join(
-        c for c in art["title"]
-        if ord(c) > 127 or c.isalnum() or c.isspace()
-    ).strip().lower()
-
+    art_clean = "".join(c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
     is_duplicate = False
     art_words = set(art_clean.split())
     if len(art_words) > 2:
@@ -230,14 +208,14 @@ for art in raw_articles:
             prev_words = set(prev.split())
             if len(prev_words) > 2:
                 common = art_words.intersection(prev_words)
-                ratio = len(common) / min(len(art_words), len(prev_words))
-                if ratio > 0.35:
+                if len(common) / min(len(art_words), len(prev_words)) > 0.35:
                     is_duplicate = True
                     break
 
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
+# Tryb ratunkowy deduplikacji
 if len(filtered_raw_articles) < TARGET_ITEMS:
     print("Zbyt mało unikalnych newsów po odrzuceniu duplikatów. Wyłączam filtrację...")
     seen_links = {a['link'] for a in filtered_raw_articles}
@@ -250,20 +228,20 @@ if len(filtered_raw_articles) < TARGET_ITEMS:
 
 articles_for_ai = filtered_raw_articles[:15]
 
-# --- PROMPT ---
+# --- PROMPT I WYSYŁKA DO AI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Wybierz DOKŁADNIE {TARGET_ITEMS} NAJMOCNIEJSZYCH tematów militarnych, obronnych lub geopolitycznych z poniższej listy.
 
 Zasady:
-- Tytuł: zwięzły, mocny, z jedną prostą emotikoną (🚨 🛡️ ⚔️ 🚀).
-- Summary: 1-2 zdania, konkretny fakt.
+- Tytuł: zwięzły, mocny, z jedną prostą emotikoną na początku (🚨 🛡️ ⚔️ 🚀). Bez flag.
+- Summary: 1-2 zdania, konkretny fakt i co to oznacza.
 - Comment: chłodna puenta strategiczna (1 zdanie).
-- Category: WIELKIE LITERY (np. OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA).
+- Category: WIELKIE LITERY (OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA, BEZPIECZEŃSTWO).
 - image_query: 2-3 angielskie słowa kluczowe.
 - link: dokładnie ten sam URL z wejścia.
 
-Zwróć TYLKO czystą tablicę JSON.
+Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów. Żadnego formatowania markdown (żadnego ```json ani ```).
 
 Unikaj tematów podobnych do:
 {json.dumps(excluded_topics[:12], ensure_ascii=False)}
@@ -272,60 +250,39 @@ Dane wejściowe:
 {json.dumps(articles_for_ai, ensure_ascii=False)}
 """
 
-# --- GENEROWANIE ---
 items = []
 try:
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model='gemini-3.6-flash',
         contents=prompt,
-        config={
-            "response_mime_type": "application/json",
-            "temperature": 0.3
-        }
     )
     
     text_res = response.text.strip()
-    text_res = text_res.replace("```json", "").replace("```", "").strip()
     
-    if not text_res.endswith("]"):
-        last_brace = text_res.rfind("}")
-        if last_brace != -1:
-            text_res = text_res[:last_brace + 1] + "]"
-
-    raw_items = json.loads(text_res)
+    # Ręczne czyszczenie, dokładnie tak samo jak działa w głównym news.json
+    if text_res.startswith("```json"):
+        text_res = text_res[7:-3].strip()
+    elif text_res.startswith("```"):
+        text_res = text_res[3:-3].strip()
+        
+    items = json.loads(text_res)
     
-    # Czasem AI zawija tablicę w obiekt {"items": [...]}
-    if isinstance(raw_items, dict):
-        if "items" in raw_items:
-            raw_items = raw_items["items"]
-        else:
-            raw_items = [raw_items]
-
-    items = validate_items(raw_items)
-
 except Exception as e:
     print(f"Błąd AI (Tryb awaryjny): {e}")
     traceback.print_exc()
 
-# --- BLOK RATUNKOWY (Uzupełnia listę jeśli cokolwiek poszło nie tak) ---
+# Gwarancja powrotu 3 elementów
 if len(items) < TARGET_ITEMS:
     print(f"Ostrzeżenie: Model zwrócił {len(items)} elementów. Uzupełniam braki systemowo.")
-    existing_links = {i.get('link') for i in items}
+    existing_links = {i.get('link') for i in items if isinstance(i, dict)}
     
-    if not articles_for_ai:
-        articles_for_ai = [
-            {"title": "Trwają ustalenia po najnowszych incydentach bezpieczeństwa", "link": "#"},
-            {"title": "Napięcia na arenie międzynarodowej. Szczyt dyplomatyczny", "link": "#"},
-            {"title": "Zmiany w strategiach obronnych kluczowych państw", "link": "#"}
-        ]
-        
     for art in articles_for_ai:
         if art['link'] not in existing_links:
             items.append({
                 "category": "PILNE",
-                "title": sanitize_text(f"🚨 {art['title']}"),
-                "summary": "Agencje prasowe informują o rozwoju sytuacji we wskazanym rejonie.",
-                "comment": "Trwa analizowanie szerszych konsekwencji tego wydarzenia.",
+                "title": f"🚨 {art['title']}",
+                "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
+                "comment": "Trwa analizowanie konsekwencji strategicznych.",
                 "image_query": "breaking news military",
                 "link": art["link"]
             })
@@ -333,20 +290,23 @@ if len(items) < TARGET_ITEMS:
         if len(items) >= TARGET_ITEMS:
             break
 
+# Przycinamy tablicę do dokładnie TARGET_ITEMS
+items = items[:TARGET_ITEMS]
+
 print(f"Wybrano {len(items)} pozycji flash – OK")
 
-# --- ZDJĘCIA ZE ŹRÓDEŁ (pod rolkę / Top 3) ---
-print("Pobieranie zdjęć ze źródeł artykułów...")
-source_ok = 0
+# --- ZDJĘCIA ZE ŹRÓDEŁ ---
+print("Pobieranie linków do zdjęć...")
 for item in items:
-    article_img = fetch_article_image(item.get("link", ""))
-    if article_img:
-        item["source_image_url"] = article_img
-        item["image_url"] = article_img
-        source_ok += 1
-    else:
-        item["source_image_url"] = FALLBACK_IMG
-        item["image_url"] = FALLBACK_IMG
+    # 1. Próbujemy pobrać zdjęcie oryginalne z serwisu (najbardziej wiarygodne dla newsów militarnych)
+    img_url = fetch_article_image(item.get("link", ""))
+    
+    # 2. Jeśli nie ma, pobieramy stockowe z Pexels na bazie zapytania AI
+    if not img_url:
+        q = item.get("image_query", "military conflict")
+        img_url = fetch_pexels_image_url(q)
+        
+    item["image_url"] = img_url
 
 # --- ZAPIS ---
 now_pl = datetime.now(pl_tz)
