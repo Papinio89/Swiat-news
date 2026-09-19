@@ -2641,9 +2641,9 @@
     ]
   },
   "2026-09-19_wieczorne": {
-    "date": "19 września 2026",
-    "time": "12:33",
-    "timestamp": "2026-09-19_12:33",
+    "date": "19 September 2026",
+    "time": "13:10",
+    "timestamp": "2026-09-19_13:10",
     "items": [
       {
         "category": "AKTUALNOŚCI",
@@ -2651,7 +2651,7 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
+        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
@@ -2660,7 +2660,7 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo",
+        "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
@@ -2669,7 +2669,7 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+        "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
@@ -2678,7 +2678,7 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
+        "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
@@ -2687,7 +2687,7 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o",
+        "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
@@ -2696,61 +2696,88 @@
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo",
+        "link": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 Rosja ćwiczy wojnę z NATO. Polska na mapie rosyjskich generałów",
+        "title": "📌 Millions without power as Cuba hit by latest major blackout",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
+        "link": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+        "title": "📌 Iran-US war widens and other geopolitical stories to know this month - The World Economic Forum",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+        "title": "📌 How China's Military Weapons Aid of Iran May Cause Larger Geopolitical Rift - Military.com",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTm5aZ0dJN2l1dUNwZm5YaVZPTVF4MWhMaGhPeG5MV3FCb2pJa2djVjhfeHRmbDNac2VaY00zbFMyQ0lKNEhDYzIwT3hQcWIzR3pKc3ZqY083Zk94bWxyLXBpeW51MHdaVmRmNklFSDY2azkxUEVtbExUU19XQ1h5VGo4czczdzdkc2trVjdCd2dWbFFqZHk2ekhNSkRqZTBZRUZwdG5vZHdvbjYxOEdYY1VBSndGWWNKanhfUTdKMFdSWllP?oc=5",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+        "title": "📌 Iran war shows military strength of US, but also its waning geopolitical power - The Christian Science Monitor",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNHBSR3NnWDFaZDVKUWJucHhlUkxUcldhbVprU2RlTzRxQzhyNEJYREx4R0FjbTQxbWhyTUc4eGVWUWVjQ1dCbWZNa3lyVk9kd2RJb3BoMm42b2o5eHNteVBFU29QUThhUXBxYWlqLXR0SlZ0bkZfdlI3VjJteXVlR3k2SmlMMXdlYmZFNFlrUENSeHBEYUNrQzg4V2pSdEpsYk1VRUZNaUxJaHJiOGpuU1NSYjlhTXB6WTU4?oc=5",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
+        "title": "📌 Three months in, is Trump losing the Iran war? - Reuters",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb0xrTW5YOXpZTlM3YmFKQzVXNlN2UUtDOEc0dldIUkh3dExmSVU0NmtvbThyTGs4ZTJVeFl1VkFQekZqS0ItTFhDYVQ3X09hRzN2S2taT1FYNjhPakE4OWJxM3p1V1BHcUxBQ0FRanpsZU16anhHRGVlQmwyRGdVeXVlM3QxczNNUWZNVldZM1l2QVNfc0dJ?oc=5",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "category": "AKTUALNOŚCI",
-        "title": "📌 US Army odchodzi od starych transporterów opancerzonych. Kontrakt na nowy sprzęt",
+        "title": "📌 What has conflict in Iran revealed about UK’s geopolitical standing and military readiness? - The Guardian",
         "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
         "comment": "Brak dodatkowego komentarza.",
         "image_query": "world news global press",
-        "link": "https://defence24.pl/przemysl/us-army-odchodzi-od-starych-transporterow-opancerzonych-kontrakt-na-nowy-sprzet",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ0oxOUNuMlBRV0ctQUN0bjlrMXN5bkQwQVM5TmFIRzRqV1duMWo5Rzh5R3FVZ2hMYUVnaEJPdzNDcWhXZGRzWmhhcjFRR013NTF5d0d2SlliVGhhQ053d0h5VjdvWDAxVk1LMmpwRmE3MmZRWWJaMVcxeXFLZ0txTFRRR3BrRVJOS2ZkR2hxZ0NQNm9IWWpXLUg0dXZxaERXcXNUT1JLRTF6TWpPMDFJY2JBcGFBMG8?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 In today’s top stories, Iran escalates tensions with the United States as its Army chief announces a $30,000 reward for capturing or killing U.S. military personnel. Meanwhile, Bangladesh’s potential Prime Minister Tariq Rahman visit to India remains uncertain, - WION",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMi3wxBVV95cUxOc2pIck5wM0tLSnBNWUJ2Ym1BVzhZUHJ4V2ExQ0tNM054cWhnaHJuU0JlXzFXVVZUNnBVQ2ZObU1CeE94UHhHakltQVQyZmRjWHlkUHo5ZWVJa1lDcXVPRmp4M0U0OGdldjVvNE1NZHcxRXRJSmVUbG0yeWJpamp5RGdXY3JrT2VOVFdLcUFfT3JDQ1NjUUdjRGw1NXZSX1pNazI3NWhVOUdJNExib012ajI1Vy10UnRyOXItZWtFNzR6RGhjYzRwTkVRbkpFNGV0UHoya01CcXdyYVo3TTZaRlB1MlhJVmJuakJMNzFYR0gxaVRvdi1WMGpCd0NMMXc5eWxfb1FjblRNZWd2aHl3LVU0eGRFR0xZRGtWX2pOU1hleFdxZWZHcC1vVHlwXzhLY3VOVFRuVWltOHZxU05tRHJFdmE0bS1XeGZQUUg3RVJ1N2l3MmZrUFdfbnVNSzlPWHVibk5LRGQ5YlB4ZGJ0bGZ0QWY0TWZxaUV0UlpXbVFIN0pVN2xzVExlTTB1SW8xUzZWb3dFMmpNM0Y4My1NUzlGdUhyOGRhWktUYlBXYmRYbHo0SXVPblVqTkF5eXIwRnlXR2xRQzYwNmU4QUREX2hqY1FCMmhkM2RGSllJU3hDSG5qNnBjbWhQX1p5V0drVUtWekRNTHVJSnlKb1lJRHZXb0JWcnE5LVp4UW9sYjdJeFNzMGFNVzVMbG5BTEkydDNWb05OV0pabHNmWklCZU5uN0hOWDQ2TUFUcVRKTm5uRHVnWDNaYnRJMHkxNHV2Q2RiU282WlFRbjFzdUM0dzlRMGpHYVlPdUQ2Uy1BMGkzMjBVd3RSUmJYRG1iZk1lcGktemNTdThBX0VjQ3oxRDI2VElFUnFjNzg2ZnZOdzJCTXcxMk56a1FBZERFZmxtNGlTeHF1RHpqOGNjOWlmRzkwdU5VOVBRT0FELXVtbjJmenhLRG5GdG1PQnlXbDlSVnlkc2Q0TGliLW5OVnQzYnRlUnNKQ0prOHBTMGFJbTAzclJjTVNMSnJMZmVCMjJqTVZObmRLZEJoQ1A4UDNYMFZaa3g0cjdKOWkyRGFPSHJSQzFKcDl3R3o5OTd2U0t6M1JNSFdzY3QzS3dkSFpBVkN6N25KUlN6Y3hxckhrRzNiUlZyeDN1c3RmNzRZSnliRnJYTVZnV2pGeVBiNU5CZmtrZWtEdjBwb3VadjVtMFdBMnVTdlVnWl9GdGZLNjhmUlRLSVdzaDF1SkJ5ODVMU2RnUDNhdV8zVG5LZE56bjduOXBtc3Q4M0d3cHYwc1R1dWdXWFFNN0UtenRtOWFXVVFJRFJCazVkZDRhS2JVZ19tSDRoNzdXX2hDekZwTjJuVTl0RUhVaVJ2UVFTanpVeVBubV9SUVl4VURjc1FYZGlsMm9neDVSdm16ckpKZnlPMjNDVEVQNnBmMk5razJkZ2hxMUh1QnV3RlFNeFhMMk5rLTc4Uy04MDFFeDdMeUwtOElPcmkzdFhnZGJEZ1Z0YV9LVGhHZTJaVUhOOEFRdTU5c3VrelIzR1R3U2pscU9ILTltZlNQaEZDVFVkN3BnM1VUMXVkUEo0dDJQNGN2ZFpPTHV1dXljVzJaQ1dQbmVSZTZOTldpNy1JaWtZS0FpT1lsZ2ZwTWJQRnF6dFRfSEdiZG5MLUllS1EyVVdtcUhEUzFXLUo3MnZQdWp3WV92UG1SOHZwVkc2TlFfS3dPQlhYMWtiOU1jQnhkak5FWVJVeFFVZFhHS3cyMGhZZzg3eXFWbGFpSnY5ODdKUGVEbE9VeXpUbURmaV9sWl9rZzdUR29VNk1CTTdiZFFWcXNkWmNJMktxM2pXZ0tueGNrM0RxUXlrUWFEX2Rldjd6eEtWcm4xVlVYNkFqbTZFbEJULWZaSnVRQk5HYmpWUDVCQlBuU01sR2pXVWxOX1diYzBXMWNMTl9yV21RcEVtcEtrSWJPUGozNnEybGNSSWlsSDlTdlUzbEFpRjVmcTJUWkE1aFc3a0RyaW41VFpDbGh1RXZwLVdJSDNaVTJaTXA2NFRSaHpZZDdta2tnTmNKYTFlbE9yZVgwNUVYNjhhOE9nQUU5SVkwTmhJMW5hRlQ0dDVVZkNtb2VTdTBmM3Jxc3czUUE3QVlZYnV5Mjl3cC1GOWVNSkoxUUQyUzFqbmVsZ9IB5AxBVV95cUxQZkNIeDVFdlhxRmgwSnM0QWdYNHVNZjBFVDNrU0ZVc2UyVlVkMEdwNkVfUlNOU2psdjBOSGViOURsTHBhVE9PRkh3R1JuNHExWTFQU2kyZ0h6dkc3RGxJMURLZWxXWXBqTlRMdWZWSUJYWUZIQlZBeVpxcFFMNVVMREFIWl9WTUhaQnFfdUxKNnF1d0xsclBxWk9Ib0FYNFFOdnhybDRwaXBFNllURGNlLV82cWNaaExWY2MwZlE2ZmRpYnEwWG9OaXJjaEJRU1hEZm5VYk5XNmcyXzRVSDdMTUQ5cGp3WHQwZk51VFprZkZlOUdEOWhKMnVFNDI1QVhYUzNvZG9yd2VsUUQxcVpoRmoxWkFVbFEtS0VyZy1MVkFZdS1UNTRSYTB5VlJPLXR6MDNTejNzV1FidW40X0lOYU4ycWFuRThVSW5HbWtXVFRHbFlwUnpoejMxWUNPX2NRajlCTGNJUnM5SG1KbDdmZkNRNGR2aHROU3l4VXF4a2w5WFdwYXNXX2ZSSUkyLWM4bUU2eGkzc3dhenY2V2pYSDNGNEd2OWo2MzJEMVoxZVNwSlUtWERfUDFnLWRFZjVMVHU5Z1BkNGI5c2FiRkFEZE90TzJKTTZObTJmOWdFRUlrQ1h1eTZMdEFfTEFZRUFUcjBzLWNpOGNpeERmUjd1UW10S2JadmlmcENTYnA1Qmk5STFTMVJRZm9GTDVoNHVNQjFIUmtOcmQ4ekI1UEd5VVRRR0RaaGxpNVZ1MXhIcnByTlBiSlpuWHZ3UHY2Y0toNEZRRVZMUjFCeGJOang5ZEFjV21ScVZpSnJRbGxQWFdmdEdwX3cwbWYzVm90THpfOUZUa3E4Ull5Q2UzNzNPOThHb2RPMzdNRG5uRHNGZXZfRjFPVmRwWFlqREhrZHJ5NEJWTVBoelZYX0xfUEU5Rmcxd25aMWYxY1NkYlJTV1YzZ3JfZS1FUWM4WlMtRDJIT0J1TkF0c1ZHRUVSaXdmYXFLWjRKdjV5aFpiWVJ2d1BuSEtTRjRnQTY0Y190dHMyMEFfekdUa0tkcjZjY3FYQTB0Z3NySzAwYllhUng1VkZjWno2cndlQVFhbXlScnRaLTdmZFpnQWlocmlXcVJxRHk2R3gtV0xmX0VWMGhoajU0NVpkV3N5d2xaODMtbkQ5UTBNYXlqdGdQYVlQR1NvRnBwTnlaZGV5dzhZVnQxRjFoSzJ0NGR4MTREd2VNWE9NdEhxbWtrSlBSdU5jeW5UNjh4YUlnTEFiYnBNTjVaOGJqbExLdXkwcWpWaVVpOTd4ZzJ2azFyamtaUzB3Z3B5bFppeG9qTlFIYTRuQnhqX2dPU0kxR0Rhdm5mQnd6cldCUy12d1VZbmRuc2hBdVdka3I3QXExa1psLVh5WlFpVmc0TTZZSWlxM0VXcGMyVXdtWEpuUkZ1dzN4TkpMSVluVzZHWmFWbm5JYzliNC1ySEUyd2xQWE5BZzZrV1dmU1RFY1RadTVxLUV1aTExVzgzYzZ4aUFzX1J5cFZ5MUNOQjVsenJaQy1nQ3JSRkNLSDIwQmttaHJLSEYxMllTTHBNb0preU52NkVabjRfNk9IQ2hvYWpNVTBCdzUzX0hjdHlfaUVpcTBRTk1PcFF3cFVuV2d5NUlJR1dONmVtOUphQWVlUmpYODRrLTAyTDRNdnItaGdKVDVpcmlod2dFeXNqUFlNakYxdnJiRlpqQktuTGJFX1NRM2g2QUd3c0VDdGhUVEFydmZtV05aRVZPelFjVEhwVHdhWUR5VTYwZWcxRks2RGtrcFVvd2lYbXJQN2lKVTZsaFR3emlWbk1PUHR3bWlTb1JSb1hZRTFHQlVONmdvUTZNVFh2VTFHTzJyMGlDUGc4MUUzc01IOTVSNG9xMWFDbDBWZ3JwS3FRSllEU3FCX3lwTnZDVkxiVkRYMHY2NV9kaXZpRHBnRURLQWFELXpfQjRlUmcwUEd5ME95NnlBTHBjWndsTko1UW54ZWRDZjVOZk9KOWZQZ0FMR2JRY3MyckVYNWlYN05qSHZkMlRVTDROVzJ5R3gzbGR5bGN3SVNGWTBmajYwWjVEUzA3aFpoS083SkRmaHlIRUwycFVVeHJLV3U4emdUMG5WMVQ1SDk5T1hScHo5V05XeUxxbUNUOFg1dDlKLU9SS1dZSXhhbjFC?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Changing geopolitics are in focus as France's Macron kicks off Kenya visit for an Africa summit - Audacy",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSzhORUk2M2FBV25PR0pMVjA0NlhZYWZtemNUamw0TzNKQ2hLMzNqZXhEaGNUZ0hkVU1PWFpDVGpZYURkMWJJTlkwcm54XzR0WThDMHB4Ty1SUEFZclpwSmtnU1JXN3FncHdwZmd4dGp1YWwzcGxaQ3NhbGF4dHhmUHVsWG0wdjk4bndpTmhQellILXp2NG90YWc5NVducmtxRHFhdVk5cFRKNUdFY2ljZFJ1dw?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Grupa UMO stawia na autorskie systemy dronowe",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe",
         "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
