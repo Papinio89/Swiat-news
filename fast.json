@@ -1,31 +1,37 @@
 {
-  "date": "19 September 2026",
-  "time": "07:00",
-  "timestamp": "2026-09-19_07:00",
+  "date": "19 września 2026",
+  "time": "11:11",
+  "timestamp": "2026-09-19_11:11",
   "items": [
     {
-      "category": "GEOPOLITYKA",
-      "title": "⚔️ Pakistan i Turcja planują operację w Jemenie",
-      "summary": "Inicjatywa nazwana „paktem mekkańskim” zakłada wysłanie wojsk przez Pakistan i Turcję w celu militarnego rozprawienia się z bojówkami Huti.",
-      "comment": "Tworzenie nowych regionalnych koalicji wojskowych poza strukturami zachodnimi zmienia układ sił na Bliskim Wschodzie.",
-      "image_query": "military troops desert",
-      "link": "https://defence24.pr/geopolityka/pakistan-i-turcja-wysla-wojsko-do-jemenu-pakt-mekkanski-chce-rozprawic-sie-z-huti"
+      "category": "BEZPIECZEŃSTWO",
+      "title": "🚨 Redukcja wojsk amerykańskich w Europie. Nowe informacje",
+      "summary": "Wiadomość z agencji prasowych.",
+      "comment": "Wydarzenie z sektora obronności.",
+      "image_query": "military defense combat",
+      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
+      "source_image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg",
+      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
     },
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🛡️ Polska przeznacza 428 mld zł na obronność",
-      "summary": "MON ogłosiło potężne kontrakty zbrojeniowe oraz budowę 200 kilometrów nowych umocnień w ramach wzmacniania wschodniej granicy.",
-      "comment": "Skala inwestycji potwierdza determinację kraju w odstraszaniu potencjalnego agresora ze wschodu.",
-      "image_query": "polish military border defense",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxORTMzNWZTX2dSNUREOWVGd0ZQOTNkaU9iRU5UaXYydTNzcE10aGVxam5rZU1MWTNIRXVtdEZaejRoc1ZzYjJzbnAwbXp6R3Q4ejhMcnNGZHVWdzhYV0IwZTNqbzJpZDg1aW5lTHY0aXY1Rk1lT1Y5bVdpT2R3V19paVZZLVZuWE82U1lBSDAwbjNHTHBVa2NLN19QRk1fQ1NiNjllZ1l4QS1zcWdKM295akFIMXc3amU5cmpITDVLNjkzR0J1bHlxSXpyblZMWGZ4aTlsQ3FGOHRKUHdYck90eDYybkdkMmpMWC0tMFJOdlFLeHQ4RWkxMndZRUg?oc=5"
+      "category": "BEZPIECZEŃSTWO",
+      "title": "🚨 Kolejny atak Rosji na Ukrainę. Polskie lotnictwo w powietrzu",
+      "summary": "Wiadomość z agencji prasowych.",
+      "comment": "Wydarzenie z sektora obronności.",
+      "image_query": "military defense combat",
+      "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
+      "source_image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg",
+      "image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg"
     },
     {
-      "category": "KONFLIKTY",
-      "title": "🚨 Starcie na Morzu Południowochińskim",
-      "summary": "Chińska straż wybrzeża staranowała filipińską łódź rybacką w spornym rejonie strategicznym.",
-      "comment": "Agresywne działania Pekinu na morzu stale podnoszą ryzyko eskalacji konfliktu z udziałem sojuszników USA.",
-      "image_query": "china coast guard ship collision",
-      "link": "https://news.usni.org/2026/09/18/video-china-coast-guard-rams-philippine-fisheries-vessel-in-south-china-sea"
+      "category": "BEZPIECZEŃSTWO",
+      "title": "🚨 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+      "summary": "Wiadomość z agencji prasowych.",
+      "comment": "Wydarzenie z sektora obronności.",
+      "image_query": "military defense combat",
+      "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
+      "source_image_url": "https://cdn.defence24.pl/2022/06/15/1440x810px/IJjBVUHJBCn3YYNePqTgjgXz9e71KjRy2h6FBTTo.jaok.jpg",
+      "image_url": "https://cdn.defence24.pl/2022/06/15/1440x810px/IJjBVUHJBCn3YYNePqTgjgXz9e71KjRy2h6FBTTo.jaok.jpg"
     }
   ]
 }
