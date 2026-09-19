@@ -1,87 +1,88 @@
 {
-  "date": "18 September 2026",
-  "time": "05:58",
-  "timestamp": "2026-09-18_05:58",
+  "date": "19 września 2026",
+  "time": "10:06",
+  "timestamp": "2026-09-19_10:06",
   "items": [
     {
       "category": "SZALONA HISTORIA",
-      "title": "🚪 Gość z piekła rodem: Jak Hans Christian Andersen wykończył Charlesa Dickensa",
-      "summary": "Twórca 'Brzydkiego Kaczątka' wprosił się do domu Dickensa na 5 tygodni, ignorował wszelkie aluzje, płakał na trawniku i doprowadził gospodarza do absolutnej rozpaczy.",
-      "comment": "Dickens po jego wyjeździe wywiesił w pokoju kartkę: 'Hans Christian Andersen spał w tym pokoju przez 5 tygodni, które mojej rodzinie wydały się wiecznością'. Typowy uciążliwy teść.",
-      "image_query": "angry victorian man",
-      "link": "https://www.mentalfloss.com/literature/authors/hans-christian-andersen-charles-dickens-visit?utm_source=RSS"
-    },
-    {
-      "category": "KOSZMARNE JEDZENIE",
-      "title": "🏴‍☠️ Chrupiąca niespodzianka: Dlaczego piraci jedli po ciemku",
-      "summary": "Pirackie racje żywnościowe składały się głównie z sucharów tak bardzo zapchanych wołkami zbożowymi i larwami, że marynarze woleli jeść pod pokładem bez żadnej latarni.",
-      "comment": "Czego oczy nie widzą, to żołądek strawi. Zresztą to darmowe, chrupiące białko, więc współcześni kulturyści na masie byliby wręcz w siódmym niebie!",
-      "image_query": "pirate eating biscuit",
-      "link": "https://www.mentalfloss.com/history/foods-pirates-ate-sea?utm_source=RSS"
+      "title": "🍎 Johnny Appleseed sadził jabłka, żeby naród mógł się upić",
+      "summary": "Słynny amerykański bohater wcale nie chciał dostarczać dzieciom owoców na szarlotkę. Sadził dzikie, kwaśne jabłka przeznaczone wyłącznie do produkcji mocnego cydru, stając się ulubieńcem XIX-wiecznych miłośników procentów.",
+      "comment": "Edukacja szkolna wolała przemilczeć fakt, że mały Johnny był tak naprawdę osiedlowym dostawcą surowca na bimber.",
+      "image_query": "johnny appleseed funny portrait",
+      "link": "https://www.mentalfloss.com/history/real-story-john-chapman-became-johnny-appleseed",
+      "image_url": "https://images.pexels.com/photos/543/black-and-white-man-person-cigarette.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "ABSURDY ŚWIATA",
-      "title": "🪖 Wielka Wojna z Emu: Kiedy Australia przegrała z ptakami",
-      "summary": "W 1932 roku australijska armia wypowiedziała oficjalną wojnę nielotom, wysyłając żołnierzy z karabinami maszynowymi, by zneutralizować plądrującą uprawy plagę emu.",
-      "comment": "Ptaki okazały się mistrzami uników i taktyki partyzanckiej, w efekcie zmuszając uzbrojone wojsko do kapitulacji. Emu do dziś prawdopodobnie śmieją się z tego w swoich gniazdach.",
-      "image_query": "funny emu bird",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdjhmYURwcnpPNXFyVzdTSjFvZEFIOUZvS0tQdzY0cXZqV18wMl82b1AwbktIb2ktNEV1WkZRQ2Z0MkswLWtCRklFcndEbVJGWEx3amoxUWNpci1yRF9BLVhCZFFDTU1wN3NrbnRDM2Y3Vlc0VmN5Qk1ENU82cENCcUtPbGZfLVVrMG9z?oc=5"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "🥊 Krewetka modliszkowa: Podwodny Mike Tyson na sterydach",
-      "summary": "To małe, kolorowe stworzonko wyprowadza ciosy swoimi szczypcami z prędkością pocisku kalibru .22, dosłownie gotując wodę wokół ofiary i tworząc błyski oślepiającego światła.",
-      "comment": "Gdyby uderzyła w ludzkich proporcjach, mogłaby posłać basebolla na orbitę okołoziemską. A ty myślałeś, że to twój mruczek ma mordercze zapędy, kiedy rano żąda chrupek.",
-      "image_query": "mantis shrimp funny",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnI3RjIxSDM0SFpiOWRHSER4TkFyS01EbkxLbUNtbjE4UW5yNjZxa05VenFNMUd6LWdGZE9wNkFDZThkTXhEOFdqaXp1dWw4NWI2STd1bnNPUm1ITllIa1EyMzMtUGhuaFBB?oc=5"
+      "title": "🫕 Garnek na głowie i brak butów jako styl życia",
+      "summary": "John Chapman chodząc po Ameryce z nasionami jabłek, zyskał sławę skrajnego dziwaka. Chodził całkowicie boso nawet w najostrzejsze zimy, a za czapkę służył mu blaszany garnek, w którym jednocześnie gotował obiad.",
+      "comment": "Prawdziwy pionier survivalu i ekstremalnej oszczędności miejsca w plecaku.",
+      "image_query": "man pot on head barefoot",
+      "link": "https://www.mentalfloss.com/history/real-story-john-chapman-became-johnny-appleseed",
+      "image_url": "https://images.pexels.com/photos/2939027/pexels-photo-2939027.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🍅 Leczniczy Ketchup: Z frytkami czy na receptę?",
-      "summary": "W latach 30. XIX wieku w USA ketchup pomidorowy wcale nie służył do maczania jedzenia, lecz był patentowanym lekiem sprzedawanym w pigułkach na biegunkę, żółtaczkę i reumatyzm.",
-      "comment": "Wyobraź sobie, że idziesz do apteki, bo cię kręci w brzuchu, a farmaceuta ładuje ci wielką strzykawkę z Heinza. Prawdziwa magia dawnej, niekonwencjonalnej medycyny!",
-      "image_query": "vintage medicine ketchup",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+      "title": "🧮 Prawo, które próbowało zmienić wartość liczby Pi na 3,2",
+      "summary": "W 1897 roku politycy ze stanu Indiana o mały włos nie uchwalili ustawy oficjalnie zmieniającej matematyczną wartość liczby Pi na 3,2. Lokalny lekarz uznał, że prawdziwa liczba jest zbyt skomplikowana i należy ją urzędowo uprościć.",
+      "comment": "Gdy matematyka okazuje się za trudna, po prostu zmień prawo – polityczna logika w pełnej krasie.",
+      "image_query": "confused mathematician chalkboard",
+      "link": "https://www.mentalfloss.com/quizzes/pass-3rd-grade-math-quiz-most-people-miss-one",
+      "image_url": "https://images.pexels.com/photos/39190918/pexels-photo-39190918.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "🍿 Pachnący binturong: Zwierzak o aromacie kina",
-      "summary": "Binturong orientalny, potocznie nazywany kotoniedźwiedziem, posiada gruczoły zapachowe, z których wydziela aromat do złudzenia przypominający świeży, gorący popcorn z masłem.",
-      "comment": "Wydaje się idealnym kompanem na seans w kinie, dopóki nie zdasz sobie sprawy, że ten piękny zapach to tak naprawdę jego mocz służący do oznaczania terytorium. Smacznego!",
-      "image_query": "funny binturong animal",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNbFRWdTJodGt4UnV2YnVmQi1iS1MzVXlQeVA5LWUwOUo0d3pKME5vODNzZkR0ZUtKYVpOTktPOV83MElPWVQ0czkwNHNQNFc1NHVGaGpGa1R3dUJaYnYtMNIBcEFVX3lxTE5FWTdjTmFBX0puYUJBU0NnMUtMeXJ0NzNLUUFwdTlXMTlZamNGbWNhNzk3U2hTZ3ctTWFYSHY4ZHJnQnN4clZ3b25tWlNYMXM3ZXRKQnNNb0J5MUZraDBGVmR5elhMX0d0ckJrTGRlbEg?oc=5"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "👅 Dzięcioł inżynier: Język w roli kasku ochronnego",
-      "summary": "Dzięcioł uderza dziobem o drewno z gigantyczną siłą, a żeby zapobiec eksplozji własnej czaszki, owija swój nieproporcjonalnie długi język dookoła mózgu niczym biologiczną poduszkę powietrzną.",
-      "comment": "Wyobraź sobie, że musisz lizać własny mózg za każdym razem, gdy jesz schabowego. Matka Natura ewidentnie miała bardzo specyficzne poczucie humoru podczas projektowania ptaków.",
-      "image_query": "woodpecker funny beak",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vOE15TEdQN3ZmeW5JMWVTZFFOOTI2aTh5SE1GVUt3WTdwX1pLYmRSMWg5THFXQUFfNzVvNEhVUlBWTzZFZ0l4a3c1ZWtkMjQzY3lKdC1kN0tHVVZHbTRCWjE5Sm1vVlNBTTJ6QnVyQzJ5eVk?oc=5"
+      "category": "DZIWNE JEDZENIE",
+      "title": "⛽ Benzyna jako płyn do mycia naczyń i szampon na wszy",
+      "summary": "Na początku XX wieku benzyna była tak tania i ogólnodostępna, że ludzie używali jej w domach do czyszczenia plam z dywanów, szorowania garnków, a nawet mycia głowy dzieciom w walce z wszami.",
+      "comment": "Zapach paliwa o poranku zyskał wtedy zupełnie nowy, ciepły i rodzinny wymiar.",
+      "image_query": "vintage gas station funny",
+      "link": "https://www.mentalfloss.com/live-smarter/money/how-much-gallon-gas-cost-year-born",
+      "image_url": "https://images.pexels.com/photos/19559059/pexels-photo-19559059.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🦷 Rzymski uśmiech: Lśniące zęby dzięki... moczowi",
-      "summary": "Starożytni Rzymianie tak bardzo obsesyjnie pragnęli mieć śnieżnobiałe zęby, że używali ludzkiej uryny, najlepiej ekskluzywnie importowanej z Portugalii, jako codziennego płynu do płukania ust.",
-      "comment": "Influencerzy z tamtych lat z pewnością mieli promienny uśmiech na rzymskim TikToku, ale poranne buziaczki w Koloseum wymagały całkowitego braku węchu i godności.",
-      "image_query": "ancient roman smile",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE03eFJWc2UyR2FHZUFCQzIxaHFUaWhPbEN5RTZQVFBDdEtMQ2IxbUJybmVEREVrU1FGZk9hSDBIN19Dd2t3S0hua3RYV04?oc=5"
+      "title": "🔥 Rzeki, które płonęły przez odpady po paliwie",
+      "summary": "Zanim wymyślono silniki spalinowe, benzyna była uważana za całkowicie bezużyteczny śmieć powstający przy produkcji nafty. Masowo wylewano ją do rzek, przez co lokalne akweny potrafiły nagle stanąć w płomieniach.",
+      "comment": "Ekologia XIX wieku: jeśli jakiś odpad ci przeszkadza, po prostu podpal go na wodzie.",
+      "image_query": "burning river historical photo",
+      "link": "https://www.mentalfloss.com/live-smarter/money/how-much-gallon-gas-cost-year-born",
+      "image_url": "https://images.pexels.com/photos/33622177/pexels-photo-33622177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "😠 Stado narzekających mopsów: Najtrafniejsza nazwa świata",
-      "summary": "W języku angielskim stado kruków to 'morderstwo', sów to 'parlament', ale grupa co najmniej trzech mopsów to oficjalnie 'grumble', co w dosłownym tłumaczeniu oznacza 'narzekanie'.",
-      "comment": "Patrząc na ich wiecznie oburzone pyszczki i ciągłe sapanie brzmiące jak stary odkurzacz bez filtra, w pełni rozumiemy biologiczną genezę tego wybitnie precyzyjnego terminu.",
-      "image_query": "pug funny face",
-      "link": "https://www.mentalfloss.com/random-facts/fun-facts-about-me-icebreaker-ideas?utm_source=RSS"
+      "category": "ABSURDY ŚWIATA",
+      "title": "🧙‍♀️ Prawdziwa klątwa na planie filmu o czarownicach",
+      "summary": "Podczas kręcenia filmu 'Totalna magia' producenci zatrudnili prawdziwą czarownicę jako konsultantkę. Gdy odmówili jej zapłaty dodatkowych pieniędzy, rzuciła na całą ekipę klątwę, po czym na planie natychmiast wybuchł pożar.",
+      "comment": "Nigdy nie spóźniaj się z przelewem dla kogoś, kto potrafi zamienić cię w ropuchę.",
+      "image_query": "witch spell movie set",
+      "link": "https://www.mentalfloss.com/entertainment/movies/magical-facts-about-practical-magic",
+      "image_url": "https://images.pexels.com/photos/35850359/pexels-photo-35850359.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "ABSURDY ŚWIATA",
+      "title": "❄️ Szkoci mają ponad 400 słów na określenie śniegu",
+      "summary": "Język szkocki posiada aż 421 oficjalnych określeń na śnieg, w tym 'feefle' (delikatne prószenie) czy 'flurrie' (lekka zamieć). Daje im to bogatszy słownik zimowy niż mają mieszkańcy Arktyki.",
+      "comment": "Kiedy twoja pogoda jest tak fatalna, że musisz stworzyć całą encyklopedię rodzajów opadów.",
+      "image_query": "snowy scotland landscape funny",
+      "link": "https://www.mentalfloss.com/entertainment/scottish-words-outlander-fans-should-know",
+      "image_url": "https://images.pexels.com/photos/30751946/pexels-photo-30751946.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "BEKA Z JĘZYKA",
+      "title": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 'Chłosta psa' czyli szkockie określenie na potężnego kaca",
+      "summary": "Szkoci wymyślili genialne słownictwo na cierpienia poimprezowe. Na syndrom dnia następnego mówią 'dog's skelp', co dosłownie tłumaczy się jako 'chłosta psa'.",
+      "comment": "Szkocki słownik to idealny poradnik psychologiczny po każdym udanym piątku.",
+      "image_query": "funny drunk scotland dog",
+      "link": "https://www.mentalfloss.com/entertainment/scottish-words-outlander-fans-should-know",
+      "image_url": "https://images.pexels.com/photos/5716744/pexels-photo-5716744.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🐈 Papież kontra mruczki: XIII-wieczna krucjata przeciw kotom",
-      "summary": "Papież Grzegorz IX wydał w XIII wieku oficjalny dokument, w którym uznał czarne koty za dosłowne wcielenie szatana, co wywołało w Europie masową eksterminację tych uroczych zwierząt.",
-      "comment": "Zabrakło kotów, więc myszy i szczury zorganizowały największą imprezę stulecia i w gratisie rozniosły po kontynencie dżumę. Błyskawiczna karma istnieje, a historia to potwierdza!",
-      "image_query": "medieval cat funny",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjRkTHZqUmlKT3I5WHJpRkdjTmktWDdEVklvWmR2eTcwWm1KTGxCalQteUwxNXNoMWt2cnJfSDJiSDgtYkNDTmR0dkhFLTBjeFJUaWRpbFotcTlxRmV1SmVMTjk0LUVNNFJRQUtFdFpIdUxrVDA4X2pqdjR4ZXE1UVRMMERVRkVUbDBuSHNrOWJ2dUk3aXdB?oc=5"
+      "title": "🥚 Bitwa na mąkę i jajka jako oficjalne święto narodowe",
+      "summary": "W hiszpańskim mieście Ibi co roku odbywa się tradycyjny festiwal Els Enfarinats, podczas którego mieszkańcy przebierają się w fałszywe mundury i przejmują władzę w mieście, obrzucając się nawzajem tysiącami jajek i kilogramami mąki.",
+      "comment": "Ostateczny dowód na to, że prawdziwa polityka wymaga po prostu odpowiedniej ilości rozbitych jaj.",
+      "image_query": "flour egg fight festival",
+      "link": "https://www.mentalfloss.com/culture/why-does-hispanic-heritage-month-start-middle-september",
+      "image_url": "https://images.pexels.com/photos/11554895/pexels-photo-11554895.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
   ]
 }
