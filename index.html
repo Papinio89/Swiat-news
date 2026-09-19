@@ -200,7 +200,7 @@
         document.getElementById('year').textContent = new Date().getFullYear();
 
         const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
-        const SITE_URL = "https://swiat-w-minute.vercel.app";
+        const SITE_URL = "https://swiat-w-minut.vercel.app";
 
         let todayItems = [];
         let archiveGroups = [];
@@ -505,10 +505,20 @@
                 let displayDate = globalNewsData.date || "Dzisiaj";
                 document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
 
+                // Pobieramy klucz dzisiejszej daty (YYYY-MM-DD), aby odsiać bieżący dzień z Archiwum
+                const now = new Date();
+                const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+                
                 const keys = Object.keys(archiveNews).sort().reverse();
                 keys.forEach(key => {
-                    const data = archiveNews[key];
                     const dateKey = key.split('_')[0];
+
+                    // Pomiń wydania z dzisiejszego dnia
+                    if (dateKey === todayKey) {
+                        return;
+                    }
+
+                    const data = archiveNews[key];
                     const rData = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
                     const mixed = mixItems(data.items || [], rData.items || []);
                     
@@ -548,6 +558,16 @@
             const container = document.getElementById('archive-container');
             container.innerHTML = '';
             
+            if (archiveGroups.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-16 text-slate-500">
+                        <i class="fa-solid fa-box-open text-4xl mb-3 opacity-40"></i>
+                        <p class="font-medium text-sm">Brak wcześniejszych wydań w archiwum.</p>
+                    </div>
+                `;
+                return;
+            }
+
             archiveGroups.forEach((group, index) => {
                 const groupId = `archive-group-${index}`;
                 const groupHtml = `
