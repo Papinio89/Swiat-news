@@ -2517,121 +2517,117 @@
     ]
   },
   "2026-09-19_poranne": {
-    "date": "19 September 2026",
-    "time": "07:01",
-    "timestamp": "2026-09-19_07:01",
+    "date": "19 września 2026",
+    "time": "09:29",
+    "timestamp": "2026-09-19_09:29",
     "items": [
       {
-        "category": "GEOPOLITYKA",
-        "title": "🇬🇱 Porozumienie USA i Danii w sprawie Grenlandii",
-        "summary": "Stany Zjednoczone oraz Dania osiągnęły porozumienie dotyczące statusu i współpracy na Grenlandii po wcześniejszych groźbach aneksji ze strony Donalda Trumpa.",
-        "comment": "Sfinalizowanie układu stabilizuje relacje wewnątrz NATO i zamyka spekulacje na temat jednostronnej ekspansji terytorialnej USA w strategicznym rejonie Arktyki.",
-        "image_query": "greenland arctic landscape",
-        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 US and Denmark reach deal over Greenland after Trump annexation threats",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "GEOPOLITYKA",
-        "title": "🚨 Arabia Saudyjska ogłasza alarmy przeciwlotnicze w Rijadzie",
-        "summary": "Władze Arabii Saudyjskiej uruchomiły syreny alarmowe w stolicy kraju po intensyfikacji ataków rakietowych ze strony wspieranych przez Iran rebeliantów Huti.",
-        "comment": "Odnowienie ostrzałów saudyjskiej stolicy stanowi zagrożenie dla kluczowej infrastruktury naftowej oraz bezpieczeństwa na całym Półwyspie Arabskim.",
-        "image_query": "riyadh city skyline",
-        "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Trump says he is banning CNN and Politico from White House",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "RYNKI I GOSPODARKA",
-        "title": "📈 Blackstone: Indie bliskie przełomu w napływie kapitału",
-        "summary": "Gigant inwestycyjny Blackstone ocenia, że Indie znajdują się w punkcie zwrotnym, który przyciągnie rekordowe strumienie zagranicznych inwestycji bezpośrednich.",
-        "comment": "Przenoszenie globalnych łańcuchów dostaw z Chin czyni z Indii głównego beneficjenta relokacji kapitałowej w Azji Południowo-Wschodniej.",
-        "image_query": "mumbai financial district",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-19/blackstone-sees-india-nearing-tipping-point-for-foreign-capital"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Google's Gemini AI hacked three companies in security test",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "RYNKI I GOSPODARKA",
-        "title": "📉 Chiny tną wydatki budżetowe w obliczu spowolnienia",
-        "summary": "Spadek wydatków fiskalnych w Chinach utrzymał się do sierpnia, sygnalizując dalsze osłabienie dynamiki gospodarczej i ostrożność władz w Pekinie.",
-        "comment": "Wstrzemięźliwość rządu w stymulowaniu gospodarki potęguje presję na niewypłacalny sektor nieruchomości oraz ogranicza popyt konsumpcyjny.",
-        "image_query": "china economy skyline",
-        "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Trump signs sweeping Russia sanctions bill",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "RYNKI I GOSPODARKA",
-        "title": "📺 FCC zezwala państwom Zatoki na przejęcie udziałów w Paramount",
-        "summary": "Amerykański regulator FCC wydał zgodę na sprzedaż 49,5% udziałów kapitałowych w koncernie Paramount inwestorom z Arabii Saudyjskiej, ZEA i Kataru.",
-        "comment": "Ekspansja bliskowschodnich państwowych funduszy majątkowych na zachodnim rynku mediów pokazuje rosnący wpływ kapitału z Zatoki na sektor rozrywki i informacji.",
-        "image_query": "media corporate building",
-        "link": "https://arstechnica.com/tech-policy/2026/09/fcc-lets-paramount-sell-49-5-equity-stake-to-saudi-arabia-uae-and-qatar/"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Grim discoveries of murdered women spark fear in South Africa",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "OBRONNOŚĆ / TECHNOLOGIE",
-        "title": "⚠️ Halucynacja AI omal nie doprowadziła do incydentu wojskowego USA",
-        "summary": "Błędna analiza wywiadowcza wygenerowana przez model AI dotycząca chińskich komponentów jądrowych o mało nie doprowadziła do szturmu armii USA na chiński statki.",
-        "comment": "Incydent obnaża krytyczne ryzyko związane z bezkrytycznym automatyzowaniem analityki wywiadowczej i wojskowej przed odpowiednią weryfikacją.",
-        "image_query": "military control room",
-        "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Iran-US war widens and other geopolitical stories to know this month - The World Economic Forum",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "TECHNOLOGIE / GOSPODARKA",
-        "title": "⚡ Wirginia nakłada ograniczenia na budowę centrów danych AI",
-        "summary": "Gubernator stanu Wirginia powołał specjalny zespół ds. sztucznej inteligencji i wprowadził kroki prawne ograniczające powstawanie nowych centrów danych.",
-        "comment": "Rosnące zapotrzebowanie na energię elektryczną ze strony infrastruktur AI staje się bezpośrednim zagrożeniem dla stabilności lokalnych sieci energetycznych.",
-        "image_query": "data center servers",
-        "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Wars and geopolitical divisions constitute ‘dangerous erosion’ of world order, warns UN chief - news.un.org",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5CckMxM3NwSE1TZDZaYm5yRU4zWnZScmtyT0EyaVJKVlBlVnVUSWsxTnc0WXBzME9ReVBMbkJHN0NHdEhyc19taGFzY0MxalVDc0VHc0xDbw?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "TECHNOLOGIE / PRAWO",
-        "title": "🛑 Kalifornia forsuje wymóg awaryjnego wyłącznika systemów AI",
-        "summary": "Gubernator Gavin Newsom prze do wprowadzenia przepisów nakazujących twórcom zaawansowanych modeli sztucznej inteligencji wdrożenie mechanizmu 'kill switch'.",
-        "comment": "Kalifornijskie regulacje ustalają faktyczny standard prawny dla amerykańskiego sektora tech, co wywołuje opór ze strony inwestorów i startupów.",
-        "image_query": "silicon valley technology",
-        "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Iran war shows military strength of US, but also its waning geopolitical power - The Christian Science Monitor",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNHBSR3NnWDFaZDVKUWJucHhlUkxUcldhbVprU2RlTzRxQzhyNEJYREx4R0FjbTQxbWhyTUc4eGVWUWVjQ1dCbWZNa3lyVk9kd2RJb3BoMm42b2o5eHNteVBFU29QUThhUXBxYWlqLXR0SlZ0bkZfdlI3VjJteXVlR3k2SmlMMXdlYmZFNFlrUENSeHBEYUNrQzg4V2pSdEpsYk1VRUZNaUxJaHJiOGpuU1NSYjlhTXB6WTU4?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "TECHNOLOGIE / AI",
-        "title": "🤖 100 milionów dolarów na rozwój fizycznej sztucznej inteligencji",
-        "summary": "Inkubator technologiczny pozyskał 100 mln USD w nowej rundzie finansowania, stawiając wyłącznie na startupy rozwijające AI w połączeniu z robotyką.",
-        "comment": "Fundusze VC wyraźnie przesuwają ciężar inwestycyjny z cyfrowych modeli językowych na autonomiczne systemy fizyczne i automatyzację przemysłową.",
-        "image_query": "industrial robotics lab",
-        "link": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 What has conflict in Iran revealed about UK’s geopolitical standing and military readiness? - The Guardian",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ0oxOUNuMlBRV0ctQUN0bjlrMXN5bkQwQVM5TmFIRzRqV1duMWo5Rzh5R3FVZ2hMYUVnaEJPdzNDcWhXZGRzWmhhcjFRR013NTF5d0d2SlliVGhhQ053d0h5VjdvWDAxVk1LMmpwRmE3MmZRWWJaMVcxeXFLZ0txTFRRR3BrRVJOS2ZkR2hxZ0NQNm9IWWpXLUg0dXZxaERXcXNUT1JLRTF6TWpPMDFJY2JBcGFBMG8?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "NAUKA / TECHNOLOGIE",
-        "title": "🧪 Anthropic otwiera własne laboratorium eksperymentów biologicznych",
-        "summary": "Twórca modelu Claude rozpoczął prowadzenie własnego laboratorium badawczego ukierunkowanego na praktyczne testowanie modeli AI w naukach o życiu.",
-        "comment": "Łączenie modeli generatywnych z fizyczną walidacją laboratoryjną ma przyspieszyć prace nad odkrywaniem nowych leków i biochemią.",
-        "image_query": "biotechnology laboratory research",
-        "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 The African Lion Roars In Real Time: Exercise African Lion 2026, Morocco’s Strategic Centrality, And The Geopolitics Of A Fractured World - Analysis - Eurasia Review",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPeUtSWmdoWjFwT1QtRXN4T3RPSjJrR3ZiVHU5bGMwRDVONEJYQmVNNXI3aW5tWlhuTWpWSnB0dkp0NXowWHR3Vi1IZGpwQVhTelZ3anFIN0FfODhJcXdKS1ZpcDVzeUZvc1VZQUE3SkVlVXl3ZlMtbFlwS0RtOFBmUTVka2N1TTBiV1c2bVRXU0RISkp5OUlrMGZIUXV5MmV4ZjBTUFpveDUyamVEcDFYZkRObnV4LXNfNEdNRjhCSmZjSkd4cVpzNEI3bnlmVGxiUWJiY1F0bnJaWkptdUQyeXgtMFhQaVVaSThRVGNVbHRMTDZ0a3BydjQ1MFJDRGNnOTFGMDNSNHZkNlJpY2Q0?oc=5",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "KOSMOS",
-        "title": "🚀 NASA przyznaje SpaceX dodatkowe misje załogowe na ISS",
-        "summary": "Agencja NASA zakontraktowała trzy kolejne loty załogowe od firmy SpaceX w ramach komercyjnego programu transportu na Międzynarodową Stację Kosmiczną.",
-        "comment": "Zlecenie umacnia dominację firmy Elona Muska w amerykańskim sektorze kosmicznym wobec opóźnień w programach konkurencyjnych podmiotów.",
-        "image_query": "space rocket launch",
-        "link": "https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Zmieniają decyzję. Rezygnują ze Szwedów i kupują czeską artylerię [KOMENTARZ]",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/sily-zbrojne/zmieniaja-decyzje-rezygnuja-ze-szwedow-i-kupuja-czeska-artylerie-komentarz",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
-        "category": "GEOPOLITYKA",
-        "title": "🛡️ Nowy pakiet surowych sankcji wobec Rosji wchodzi w życie",
-        "summary": "Wszedł w życie nowy pakiet restrykcji gospodarczych wycelowany w rosyjski sektor finansowy oraz podmioty zagraniczne pomagające w obchodzeniu obostrzeń.",
-        "comment": "Dokręcenie śruby przez Unię i USA ma na celu osłabienie zdolności finansowych Moskwy do prowadzenia działań wojennych i ograniczenie dochodów z surowców.",
-        "image_query": "sanctions economic pressure",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaHFsckNTVnJtLW1aSDBpX1pIY3hsQ2xWT3l4NjNuLUgxV0JYRHRNSXlVSFhmem83a0wxeFAwYkEyTnVaN1BCSDZzOGxra01SaXVMSmlURjZpV1BBSUpiVmt3cURMOEdibm9BdGpUejE2Z2dRNEdvV0xBNmdxVkQ5MlUtOTcwVU8xMFg3d2xfZWIxMnNQMnhZM1hsdnhyNWZWWEN2MGhR?oc=5"
-      },
-      {
-        "category": "POLSKA",
-        "title": "🏛️ Pat wokół Trybunału Konstytucyjnego w Polsce trwa",
-        "summary": "Brak porozumienia między Pałacem Prezydenckim a rządem i sędziami TK utrzymuje stan niepewności co do statusu ustrojowego kluczowych organów sądowych.",
-        "comment": "Przedłużający się konflikt instytucjonalny osłabia stabilność polskiego systemu prawnego i utrudnia proces legislacyjny w sprawach gospodarczych.",
-        "image_query": "court justice gavel",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNU9ydUxWZUZPSWFHZlJMRlFKdXlIakJFN3FBNGVQMS1GWW5yQkVhTjNxeS1NR1pQLWpWWi1FOXZ3WkM5blpybmJ5R2pXck4wamVhWTFpczZJdzF2LVVPSl9HX0RuamFqNHZ4RlV3MlotTm5yQXlXbGhRVE43cHpFbzc4N0hnYmROUFJvQ1BJRk1NVWNaUmhCU2RYYmplR0VBeTllUkdONlhhNGlWOWpGWERyNjJXakRGVl9qemxKNUVhWUV2NVE?oc=5"
-      },
-      {
-        "category": "NAUKA / BEZPIECZEŃSTWO",
-        "title": "⚛️ Podziemne testy jądrowe Korei Północnej wywołały setki wstrząsów",
-        "summary": "Z najnowszych analiz wynika, że wieloletnie próby nuklearne Pjongjangu naruszyły stabilność tektoniczną regionu i spowodowały setki wtórnych trzęsień ziemi.",
-        "comment": "Trwałe strukturalne uszkodzenia terenu wokół głównego poligonu podnoszą ryzyko wycieków substancji promieniotwórczych i katastrofy ekologicznej.",
-        "image_query": "nuclear test site",
-        "link": "https://phys.org/news/2026-09-north-korea-nuclear-triggered-hundreds.html"
+        "category": "AKTUALNOŚCI",
+        "title": "📌 Sztuczna inteligencja wesprze dowodzenie wielodomenowe. Thales prezentuje HexaForce",
+        "summary": "Pobrano nagłówek bezpośrednio ze źródła.",
+        "comment": "Brak dodatkowego komentarza.",
+        "image_query": "world news global press",
+        "link": "https://defence24.pl/przemysl/sztuczna-inteligencja-wesprze-dowodzenie-wielodomenowe-thales-prezentuje-hexaforce",
+        "image_url": "https://images.pexels.com/photos/29556470/pexels-photo-29556470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
   }
