@@ -28,9 +28,12 @@
         }
     </script>
     <style>
+        html { scroll-behavior: smooth; }
         body { 
             font-family: 'Inter', sans-serif; 
             transition: background-color 0.3s, color 0.3s;
+            user-select: none;
+            -webkit-user-select: none;
         }
         .glass-header { backdrop-filter: blur(12px); }
         .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -55,6 +58,8 @@
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
+
+    <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-amber-500 to-brand-400 z-[110] w-0 transition-all duration-100"></div>
 
     <div id="save-modal" class="fixed inset-0 z-[100] bg-white/95 dark:bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
         <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
@@ -84,9 +89,12 @@
                 </div>
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
-                <div class="relative w-40 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <div class="relative w-48 sm:w-64 hidden md:block">
+                    <input type="text" id="search-input" onkeyup="filterNews('desktop')" placeholder="Szukaj newsów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
                 <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
                     <i id="theme-icon" class="fa-solid fa-moon"></i>
@@ -98,8 +106,11 @@
         </div>
         <div class="md:hidden px-4 pb-3">
             <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-4 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
+                <input type="text" id="search-input-mobile" onkeyup="filterNews('mobile')" placeholder="Szukaj we wszystkich newsach..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -118,9 +129,6 @@
             <button id="tab-btn-fast" data-tab="fast" onclick="switchTab('fast')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-bolt mr-1.5"></i> Fast Review
             </button>
-            <button id="tab-btn-radar" data-tab="radar" onclick="switchTab('radar')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
-                <i class="fa-solid fa-tower-broadcast mr-1.5"></i> Radar (RAW)
-            </button>
             <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
             </button>
@@ -136,55 +144,18 @@
             <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że plik JSON się zaktualizował z błędem.</p>
         </div>
 
-        <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
-        <!-- 2. Fast Review -->
         <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            <div id="fast-list" class="flex flex-col gap-3 mb-8"></div>
-            
-            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-sm">
-                <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider"><i class="fa-brands fa-threads text-brand-500"></i> Gotowe pod Threads</h3>
-                    <button onclick="copyThreadsText()" class="px-4 py-1.5 bg-brand-500 text-white dark:text-slate-900 font-bold text-xs rounded-full hover:bg-brand-400 transition shadow-sm">
-                        Kopiuj tekst
-                    </button>
-                </div>
-                <textarea id="threads-output" readonly class="w-full h-48 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 focus:outline-none resize-none"></textarea>
-            </div>
+            <div id="fast-list" class="flex flex-col gap-3"></div>
         </div>
 
-        <!-- 3. Radar (RAW) -->
-        <div id="view-radar" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-sm mb-8">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-3">
-                    <div>
-                        <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
-                            <i class="fa-solid fa-tower-broadcast text-brand-500"></i> Masowe Kopiowanie RAW pod Threads
-                        </h3>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Wszystkie surowe nagłówki zebrane z kanałów RSS bez obróbki AI (<span id="radar-count" class="font-bold text-brand-500">0</span> wpisów).</p>
-                    </div>
-                    <button onclick="copyRadarMassText()" class="px-4 py-2 bg-brand-500 text-white dark:text-slate-900 font-bold text-xs rounded-full hover:bg-brand-400 transition shadow-sm flex items-center gap-1.5 whitespace-nowrap">
-                        <i class="fa-regular fa-copy"></i> Kopiuj wszystkie
-                    </button>
-                </div>
-                <textarea id="radar-mass-output" readonly class="w-full h-64 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-4 text-xs sm:text-sm text-slate-700 dark:text-slate-300 focus:outline-none resize-none leading-relaxed"></textarea>
-            </div>
-
-            <div class="mb-4 flex items-center justify-between">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Pojedyncze nagłówki</h4>
-            </div>
-            <div id="radar-list" class="flex flex-col gap-3"></div>
-        </div>
-
-        <!-- 4. Archiwum -->
         <div id="view-archive" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div id="archive-container" class="flex flex-col gap-12"></div>
         </div>
 
-        <!-- 5. Wyniki wyszukiwania -->
         <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div class="mb-6 flex justify-between items-end">
                 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
@@ -199,11 +170,21 @@
 
     </main>
 
+    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40">
+        <i class="fa-solid fa-arrow-up text-sm font-black"></i>
+    </button>
+
     <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
             <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
-            <p class="text-brand-500 text-[10px] mt-1 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
+            
+            <div class="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-[11px] text-slate-500 dark:text-slate-400 font-mono">
+                <i class="fa-regular fa-eye text-amber-500"></i> Odwiedzin: 
+                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" alt="Licznik" class="inline-block h-4">
+            </div>
+
+            <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
         </div>
     </footer>
 
@@ -217,8 +198,33 @@
         let todayItems = [];
         let archiveGroups = [];
         let allNewsFlat = [];
-        let rawFeedArticles = [];
         let cardCounter = 0; 
+
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.keyCode === 123 || 
+                (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+                (e.ctrlKey && e.keyCode === 85)) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('reading-progress').style.width = scrolled + '%';
+
+            const btt = document.getElementById('btn-back-to-top');
+            if (winScroll > 300) {
+                btt.classList.remove('opacity-0', 'pointer-events-none');
+                btt.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                btt.classList.add('opacity-0', 'pointer-events-none');
+                btt.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        });
 
         function initTheme() {
             if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
@@ -398,7 +404,7 @@
                                 </div>
                                 
                                 <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">${emoji} ${titleHtml}</h3>
-                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">${item.summary || ''}</p>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1 leading-relaxed">${item.summary || ''}</p>
                                 
                                 <div class="mt-auto rounded-xl p-4 border ${comStyle}">
                                     <div class="flex items-center gap-2 mb-1.5 opacity-80">
@@ -475,83 +481,6 @@
             });
         }
 
-        // Renderowanie zakładki RADAR (RAW Data)
-        function renderRadarView(rawArticles) {
-            const list = document.getElementById('radar-list');
-            const massTextarea = document.getElementById('radar-mass-output');
-            const countEl = document.getElementById('radar-count');
-            
-            list.innerHTML = '';
-            countEl.textContent = rawArticles.length;
-
-            let massText = `⚡ RADAR WIADOMOŚCI (${rawArticles.length} tematów z RSS):\n\n`;
-
-            rawArticles.forEach((art, index) => {
-                const title = (art.title || '').trim();
-                const link = art.link || '#';
-                const encTitle = encodeURIComponent(title);
-                const encLink = encodeURIComponent(link);
-
-                massText += `• ${title}\n`;
-
-                const itemHtml = `
-                    <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-3.5 sm:p-4 flex gap-3 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
-                        <span class="text-xs font-bold text-brand-500 w-6 text-center">${index + 1}.</span>
-                        <div class="flex-1 min-w-0">
-                            <h4 class="text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-medium leading-snug truncate">
-                                ${link !== '#' ? `<a href="${link}" target="_blank" class="hover:text-brand-500 transition">${title}</a>` : title}
-                            </h4>
-                        </div>
-                        <div class="flex gap-1.5 flex-shrink-0">
-                            <button onclick="copySingleRawTitle('${encTitle}')" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Kopiuj nagłówek">
-                                <i class="fa-regular fa-copy text-xs"></i>
-                            </button>
-                            ${link !== '#' ? `
-                            <a href="${link}" target="_blank" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="Otwórz źródło">
-                                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                            </a>
-                            ` : ''}
-                        </div>
-                    </div>
-                `;
-                list.insertAdjacentHTML('beforeend', itemHtml);
-            });
-
-            massTextarea.value = massText;
-        }
-
-        function copySingleRawTitle(encTitle) {
-            const title = decodeURIComponent(encTitle);
-            navigator.clipboard.writeText(title);
-            alert('Skopiowano nagłówek!');
-        }
-
-        function copyRadarMassText() {
-            const textarea = document.getElementById('radar-mass-output');
-            textarea.select();
-            document.execCommand('copy');
-            alert('Skopiowano wszystkie tytuły z Radaru!');
-            window.getSelection().removeAllRanges();
-        }
-
-        function generateThreadsContent(items, dateText) {
-            let txt = `🌍 Świat w Minutę - ${dateText}\n\n`;
-            items.forEach(item => {
-                const { emoji, title } = getSafeEmojiAndTitle(item.title, item.isFun);
-                txt += `${emoji} ${title}\n`;
-            });
-            txt += `\n👉 Pełne wiadomości: ${SITE_URL}`;
-            document.getElementById('threads-output').value = txt;
-        }
-
-        function copyThreadsText() {
-            const textarea = document.getElementById('threads-output');
-            textarea.select();
-            document.execCommand('copy');
-            alert('Skopiowano treść pod Threads!');
-            window.getSelection().removeAllRanges();
-        }
-
         function mixItems(nItems, rItems) {
             let combined = [];
             let nIdx = 0, rIdx = 0;
@@ -586,17 +515,15 @@
             try {
                 const cb = new Date().getTime(); 
                 
-                const [globalNewsData, globalRozData, aNewsData, aRozData, rawFeedData] = await Promise.all([
+                const [globalNewsData, globalRozData, aNewsData, aRozData] = await Promise.all([
                     safeFetchJson(`news.json?v=${cb}`),
                     safeFetchJson(`rozrywka.json?v=${cb}`),
                     safeFetchJson(`archive.json?v=${cb}`),
-                    safeFetchJson(`archive_rozrywka.json?v=${cb}`),
-                    safeFetchJson(`raw_feed.json?v=${cb}`)
+                    safeFetchJson(`archive_rozrywka.json?v=${cb}`)
                 ]);
 
                 archiveNews = aNewsData;
                 archiveRoz = aRozData;
-                rawFeedArticles = rawFeedData.items || [];
 
                 todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
                 let displayDate = globalNewsData.date || "Dzisiaj";
@@ -631,8 +558,6 @@
 
                 renderCardsToContainer(document.getElementById('today-grid'), todayItems);
                 renderFastReview(todayItems);
-                renderRadarView(rawFeedArticles);
-                generateThreadsContent(todayItems, displayDate);
                 renderArchive();
 
                 switchTab('today');
@@ -694,15 +619,28 @@
 
         function filterNews(sourceId) {
             let val = '';
+            const desktopInput = document.getElementById('search-input');
+            const mobileInput = document.getElementById('search-input-mobile');
+            const clearDesktop = document.getElementById('search-clear-desktop');
+            const clearMobile = document.getElementById('search-clear-mobile');
+
             if(sourceId === 'desktop') {
-                val = document.getElementById('search-input').value;
-                document.getElementById('search-input-mobile').value = val;
+                val = desktopInput.value;
+                mobileInput.value = val;
             } else {
-                val = document.getElementById('search-input-mobile').value;
-                document.getElementById('search-input').value = val;
+                val = mobileInput.value;
+                desktopInput.value = val;
             }
             
             const query = val.toLowerCase().trim();
+
+            if (val.length > 0) {
+                clearDesktop.classList.remove('hidden');
+                clearMobile.classList.remove('hidden');
+            } else {
+                clearDesktop.classList.add('hidden');
+                clearMobile.classList.add('hidden');
+            }
             
             if (query.length === 0) {
                 const activeTab = document.querySelector('.tab-btn.active');
@@ -733,6 +671,15 @@
                 noResults.classList.remove('hidden');
                 noResults.classList.add('flex');
             }
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('search-input-mobile').value = '';
+            document.getElementById('search-clear-desktop').classList.add('hidden');
+            document.getElementById('search-clear-mobile').classList.add('hidden');
+            const activeTab = document.querySelector('.tab-btn.active');
+            switchTab(activeTab ? activeTab.dataset.tab : 'today');
         }
 
         document.addEventListener('DOMContentLoaded', init);
