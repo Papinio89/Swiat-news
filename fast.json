@@ -1,37 +1,37 @@
 {
   "date": "19 września 2026",
-  "time": "13:22",
-  "timestamp": "2026-09-19_13:22",
+  "time": "14:38",
+  "timestamp": "2026-09-19_14:38",
   "items": [
     {
       "category": "GEOPOLITYKA",
-      "title": "⚔️ Rosja symuluje konflikt z NATO z uwzględnieniem Polski",
-      "summary": "Rosyjskie dowództwo prowadzi manewry i ćwiczenia sztabowe zakładające starcie z pakiem północnoatlantyckim. Terytorium Polski odgrywa kluczową rolę w scenariuszach operacyjnych agresora.",
-      "comment": "Systematyczne testowanie reakcji Sojuszu wymusza dalsze przyspieszenie budowy potencjału odstraszania na wschodniej flance.",
-      "image_query": "military map strategic",
-      "link": "https://defence24.pl/polityka-obronna/rosja-cwiczy-wojne-z-nato-polska-na-mapie-rosyjskich-generalow",
-      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/wuKhQRZLgEdBmHwD64WtHacIobOYC5fc5vtnAVtS.mytb.jpg"
+      "title": "🛡️ Porozumienie USA i Danii w sprawie Grenlandii",
+      "summary": "Stany Zjednoczone oraz Dania zawarły porozumienie regulujące status i kwestie bezpieczeństwa Grenlandii. Uzgodnienia kończą okres napięć dyplomatycznych wokół strategicznego terytorium arktycznego.",
+      "comment": "Sojusznicza stabilizacja Arktyki zabezpiecza kluczowe szlaki i infrastrukturę wczesnego ostrzegania.",
+      "image_query": "greenland military arctic",
+      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f1ad/live/fd353880-b421-11f1-8a8e-d9778c1036bb.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f1ad/live/fd353880-b421-11f1-8a8e-d9778c1036bb.jpg"
     },
     {
       "category": "OBRONNOŚĆ",
-      "title": "🛡️ Przyszłość amerykańskiej obecności wojskowej w Europie",
-      "summary": "Ujawniono nowe ustalenia dotyczące potencjalnej rekonfiguracji oraz redukcji sił zbrojnych USA na Starym Kontynencie. Waszyngton stopniowo przesuwa ciężar uwagi strategicznej w stronę rejonu Indopacyfiku.",
-      "comment": "Państwa europejskie muszą jak najszybciej przejąć większą odpowiedzialność za własną defensywę.",
-      "image_query": "us soldiers europe",
-      "link": "https://defence24.pl/polityka-obronna/redukcja-wojsk-amerykanskich-w-europie-nowe-informacje",
-      "image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/08/19/1920x1080px/xsBTJSzwhkS1ovnBsvlfyq33OrHilYwP3DMJHVLX.11zd.jpg"
+      "title": "🚀 Rekordowa misja lotniskowca USS Abraham Lincoln",
+      "summary": "Amerykański lotniskowiec USS Abraham Lincoln wszedł do portu na Guam w celu uzupełnienia zapasów. Misja grupy uderzeniowej trwa już 302 dni, co stanowi jedno z najdłuższych wdrożeń operacyjnych US Navy.",
+      "comment": "Ekstremalnie wydłużony dyżur bojowy zwiększa presję logistyczną i zużycie zasobów floty.",
+      "image_query": "aircraft carrier navy",
+      "link": "https://news.usni.org/2026/09/19/carrier-uss-abraham-lincoln-pulls-into-guam-for-logistics-stop-deployment-now-at-302-days",
+      "image_url": "https://images.pexels.com/photos/39422513/pexels-photo-39422513.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/39422513/pexels-photo-39422513.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
-      "category": "KONFLIKTY",
-      "title": "🚀 Zmasowany atak na Ukrainę i polskie myśliwce w powietrzu",
-      "summary": "Kolejna fala rosyjskich uderzeń rakietowych objęła terytorium całej Ukrainy. W celu zabezpieczenia przestrzeni powietrznej Polski aktywowano dyżurne pary myśliwców.",
-      "comment": "Bliskość działań wojennych generuje stałe ryzyko naruszenia granic NATO i wymusza pełną gotowość bojową.",
-      "image_query": "fighter jet airforce",
-      "link": "https://defence24.pl/sily-zbrojne/kolejny-atak-rosji-na-ukraine-polskie-lotnictwo-w-powietrzu",
-      "image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/07/13/1024x576px/QIK16clhV2ugHb9OlrL0arKNgS44lqaGcX2GBexx.lxtx.jpg"
+      "category": "PRZEMYŚL OBRONNY",
+      "title": "⚔️ Rozwój polskich systemów dronowych UMO",
+      "summary": "Polska Grupa UMO skupia się na rozwijaniu własnych, autorskich systemów bezzałogowych dla sił zbrojnych. Projekt wpisuje się w rosnące zapotrzebowanie sił obronnych na autonomiczne platformy rozpoznawcze i uderzeniowe.",
+      "comment": "Budowa krajowych kompetencji w sektorze dronowym wzmacnia suwerenność technologiczną sił zbrojnych.",
+      "image_query": "military drone technology",
+      "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe",
+      "image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png"
     }
   ]
 }
