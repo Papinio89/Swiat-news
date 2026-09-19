@@ -41,9 +41,12 @@ POLISH_MONTHS = {
 }
 
 MAX_AGE_HOURS = 12
+MIN_ITEMS = 1
 TARGET_ITEMS = 3
 
+
 def sanitize_text(text: str) -> str:
+    """Usuwa problematyczne znaki Unicode."""
     if not text:
         return ""
     text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
@@ -55,7 +58,9 @@ def sanitize_text(text: str) -> str:
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
+
 def clean_link(url: str) -> str:
+    """Czyści parametry śledzące utm_* z linków."""
     if not url or url == "#":
         return "#"
     try:
@@ -75,7 +80,9 @@ def clean_link(url: str) -> str:
     except Exception:
         return url
 
+
 def is_recent(entry) -> bool:
+    """Odrzuca wpisy starsze niż MAX_AGE_HOURS."""
     published = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
     if not published:
         return True
@@ -86,22 +93,26 @@ def is_recent(entry) -> bool:
     except Exception:
         return True
 
+
 def validate_items(items: list) -> list:
+    """Sprawdza i czyści odpowiedź zwróconą przez AI."""
     required = {"category", "title", "summary", "comment", "image_query", "link"}
     valid = []
+
     for item in items:
         if not isinstance(item, dict):
             continue
-        
+        if not required.issubset(item.keys()):
+            continue
+
         title = sanitize_text(str(item.get("title", "")))
         summary = sanitize_text(str(item.get("summary", "")))
         comment = sanitize_text(str(item.get("comment", "")))
-        category = sanitize_text(str(item.get("category", "PILNE"))).upper()
+        category = sanitize_text(str(item.get("category", "OBRONNOŚĆ"))).upper()
         image_query = sanitize_text(str(item.get("image_query", "military defense")))
         link = clean_link(str(item.get("link", "#")))
 
-        # Bardzo łagodna walidacja, aby nie odrzucać dobrych tekstów AI
-        if len(title) < 5 or len(summary) < 10:
+        if len(title) < 10 or len(summary) < 25:
             continue
 
         valid.append({
@@ -112,23 +123,31 @@ def validate_items(items: list) -> list:
             "image_query": image_query,
             "link": link
         })
+
         if len(valid) >= TARGET_ITEMS:
             break
+
     return valid
 
+
 def fetch_article_image(url: str) -> str | None:
+    """Pobiera oryginalne zdjęcie ze strony artykułu (pod rolkę)."""
     if not url or url == "#" or "news.google.com" in url:
         return None
     try:
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
                 "Accept": "text/html,application/xhtml+xml",
                 "Accept-Language": "en-US,en;q=0.9,pl;q=0.8",
             },
         )
-        with urllib.request.urlopen(req, timeout=5) as resp:
+        with urllib.request.urlopen(req, timeout=7) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
 
         patterns = [
@@ -141,18 +160,21 @@ def fetch_article_image(url: str) -> str | None:
             m = re.search(pat, html, re.I)
             if m:
                 img = m.group(1).strip()
-                if img.startswith("//"): img = "https:" + img
-                if img.startswith("http"): return img
+                if img.startswith("//"):
+                    img = "https:" + img
+                if img.startswith("http"):
+                    return img
     except Exception:
         pass
     return None
+
 
 # --- ZBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:4]:
+        for entry in feed.entries[:3]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
@@ -162,9 +184,9 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-# Mechanizm ratunkowy: jeśli wyjątkowo nic nie ma z ostatnich 12h, dobieramy niezależnie od czasu
+# Tryb ratunkowy - jeśli jest ekstremalnie mało newsów
 if len(raw_articles) < TARGET_ITEMS:
-    print("Brak wystarczającej liczby newsów z ostatnich 12h. Pobieram najświeższe bez limitu czasu...")
+    print("Zbyt mało nowości z 12h. Pobieram starsze by zapewnić wydanie...")
     for url in RSS_URLS:
         try:
             feed = feedparser.parse(url)
@@ -179,19 +201,24 @@ print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
 
 # --- WYKLUCZENIA Z ARCHIWUM I NEWS.JSON ---
 excluded_topics = []
+
 archive_file = "archive.json"
 if os.path.exists(archive_file):
     try:
         with open(archive_file, "r", encoding="utf-8") as f:
             archive_data = json.load(f)
-            for session_key in sorted(archive_data.keys(), reverse=True)[:5]:
+            for session_key in sorted(archive_data.keys(), reverse=True)[:6]:
                 session_content = archive_data.get(session_key)
                 if isinstance(session_content, dict) and "items" in session_content:
                     for item in session_content.get("items", []):
                         if "title" in item:
-                            clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+                            clean = "".join(
+                                c for c in item["title"]
+                                if ord(c) > 127 or c.isalnum() or c.isspace()
+                            ).strip().lower()
                             excluded_topics.append(clean)
-    except: pass
+    except Exception:
+        pass
 
 news_file = "news.json"
 if os.path.exists(news_file):
@@ -201,32 +228,40 @@ if os.path.exists(news_file):
             if isinstance(news_data, dict) and "items" in news_data:
                 for item in news_data.get("items", []):
                     if "title" in item:
-                        clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+                        clean = "".join(
+                            c for c in item["title"]
+                            if ord(c) > 127 or c.isalnum() or c.isspace()
+                        ).strip().lower()
                         excluded_topics.append(clean)
-    except: pass
+    except Exception:
+        pass
 
 # --- DEDUPLIKACJA ---
 filtered_raw_articles = []
 for art in raw_articles:
-    art_clean = "".join(c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+    art_clean = "".join(
+        c for c in art["title"]
+        if ord(c) > 127 or c.isalnum() or c.isspace()
+    ).strip().lower()
+
     is_duplicate = False
     art_words = set(art_clean.split())
-    
     if len(art_words) > 2:
         for prev in excluded_topics:
             prev_words = set(prev.split())
             if len(prev_words) > 2:
                 common = art_words.intersection(prev_words)
-                if len(common) / min(len(art_words), len(prev_words)) > 0.35:
+                ratio = len(common) / min(len(art_words), len(prev_words))
+                if ratio > 0.35:
                     is_duplicate = True
                     break
 
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
-# Mechanizm ratunkowy dla deduplikacji
+# Tryb ratunkowy deduplikacji
 if len(filtered_raw_articles) < TARGET_ITEMS:
-    print("Zbyt mało unikalnych newsów. Dobieram pomijając duplikaty, aby wygenerować pełne wydanie.")
+    print("Zbyt mało unikalnych newsów po odrzuceniu duplikatów. Wyłączam filtrację...")
     seen_links = {a['link'] for a in filtered_raw_articles}
     for art in raw_articles:
         if art['link'] not in seen_links:
@@ -240,17 +275,21 @@ articles_for_ai = filtered_raw_articles[:15]
 # --- PROMPT ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Twoim zadaniem jest wybranie DOKŁADNIE {TARGET_ITEMS} najważniejszych, najgorętszych tematów militarnych, obronnych lub geopolitycznych.
+prompt = f"""Wybierz DOKŁADNIE {TARGET_ITEMS} NAJMOCNIEJSZYCH tematów militarnych, obronnych lub geopolitycznych z poniższej listy.
 
-Zasady bezwzględne:
-- Tytuł ("title"): zwięzły, chwytliwy nagłówek z jedną prostą emotikoną na początku (np. 🚨, 🛡️, ⚔️, 🚀, 🛑). Ma przyciągać wzrok.
-- Opis ("summary"): 1-2 pełne zdania wyjaśniające najważniejsze fakty.
-- Komentarz ("comment"): 1 analityczne, chłodne zdanie oceniające sytuację.
-- Kategoria ("category"): np. OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA, BEZPIECZEŃSTWO.
-- Obraz ("image_query"): 2-3 słowa po angielsku dla bazy zdjęć.
-- Link ("link"): dokładnie ten sam z wejścia.
+Zasady:
+- Tytuł: zwięzły, mocny, z jedną prostą emotikoną (🚨 🛡️ ⚔️ 🚀). Bez flag.
+- Summary: 1-2 zdania, konkretny fakt.
+- Comment: chłodna puenta strategiczna (1 zdanie).
+- Category: WIELKIE LITERY (OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA, BEZPIECZEŃSTWO).
+- image_query: 2-3 angielskie słowa kluczowe.
+- link: dokładnie ten sam URL z wejścia.
 
-Zwróć DOKŁADNIE {TARGET_ITEMS} wpisów w formacie tablicy JSON.
+Zwróć DOKŁADNIE czystą tablicę JSON. Żadnego markdowna.
+
+Unikaj tematów podobnych do:
+{json.dumps(excluded_topics[:12], ensure_ascii=False)}
+
 Dane wejściowe:
 {json.dumps(articles_for_ai, ensure_ascii=False)}
 """
@@ -258,69 +297,25 @@ Dane wejściowe:
 # --- GENEROWANIE ---
 items = []
 try:
-    # KLUCZOWE: Wymuszenie czystego JSON (aby nie generowało pustych opisów i błędów parsowania)
     response = client.models.generate_content(
         model="gemini-3.6-flash",
         contents=prompt,
         config={
-            "response_mime_type": "application/json",
-            "max_output_tokens": 2048,
             "temperature": 0.3,
+            "safety_settings": [
+                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"}
+            ]
         }
     )
+    
+    if not response.text:
+        raise ValueError("AI zwróciło pustą odpowiedź. Prawdopodobnie zadziałały wewnętrzne blokady API.")
+
     text_res = response.text.strip()
     
-    raw_items = json.loads(text_res)
-    items = validate_items(raw_items)
-
-except Exception as e:
-    print(f"Błąd AI: {e}")
-    traceback.print_exc()
-
-# Gwarancja posiadania 3 elementów, nawet jeśli AI padnie (co nie powinno się już zdarzyć)
-if len(items) < TARGET_ITEMS:
-    print("Ostrzeżenie: Model zwrócił za mało elementów. Uzupełniam do 3 pozycji.")
-    existing_links = {i['link'] for i in items}
-    for art in articles_for_ai:
-        if art['link'] not in existing_links:
-            items.append({
-                "category": "PILNE",
-                "title": f"🚨 {art['title']}",
-                "summary": "Najnowsze raporty agencji prasowych informują o rozwoju sytuacji w tym obszarze.",
-                "comment": "Trwa gromadzenie szczegółowych informacji.",
-                "image_query": "breaking news military",
-                "link": art["link"]
-            })
-        if len(items) >= TARGET_ITEMS:
-            break
-
-# --- ZDJĘCIA ZE ŹRÓDEŁ ---
-print("Pobieranie zdjęć ze źródeł artykułów...")
-source_ok = 0
-for item in items:
-    article_img = fetch_article_image(item.get("link", ""))
-    if article_img:
-        item["source_image_url"] = article_img
-        item["image_url"] = article_img
-        source_ok += 1
-    else:
-        item["source_image_url"] = FALLBACK_IMG
-        item["image_url"] = FALLBACK_IMG
-
-# --- ZAPIS ---
-now_pl = datetime.now(pl_tz)
-date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
-time_pretty = now_pl.strftime("%H:%M")
-timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
-
-output_data = {
-    "date": date_pretty,
-    "time": time_pretty,
-    "timestamp": timestamp_key,
-    "items": items
-}
-
-with open("fast.json", "w", encoding="utf-8") as f:
-    json.dump(output_data, f, ensure_ascii=False, indent=2)
-
-print(f"Zapisano dokładnie {len(items)} newsów do fast.json o {time_pretty}.")
+    # Usuwanie jakiegokolwiek formatowania markdown w jakie model mógł zapakować wynik
+    text_res = re.sub(r"^```(?:json)?\s*", "", text_res, flags=re.IGNORECASE)
+    text_res = re.sub(r"\s*
