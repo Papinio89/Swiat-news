@@ -234,7 +234,7 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model="gemini-2.0-flash",  # poprawiona nazwa modelu (dostosuj jeśli używasz innej)
+        model="gemini-3.6-flash",  # poprawiona nazwa modelu (dostosuj jeśli używasz innej)
         contents=prompt,
     )
     text_res = response.text.strip()
