@@ -1,46 +1,46 @@
 {
-  "date": "18 September 2026",
-  "time": "16:39",
+  "date": "19 September 2026",
+  "time": "07:01",
   "count": 70,
   "items": [
+    {
+      "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Trump says he is banning CNN and Politico from White House",
+      "link": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Google's Gemini AI hacked three companies in security test",
+      "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
+      "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss"
+    },
     {
       "title": "Russian hybrid attacks against Europe intensifying, says Macron",
       "link": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "Three dead and eight injured in Philippines school shooting",
-      "link": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss"
+      "title": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
+      "link": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&at_campaign=rss"
     },
     {
-      "title": "Police begin operation to move migrants from Ceuta beaches",
-      "link": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
-      "link": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "title": "At least 16 killed after vehicle loaded with explosives rams into Pakistan mosque",
+      "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
       "link": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "title": "New wild cat species discovered - with only one known living member",
-      "link": "https://www.bbc.co.uk/news/articles/c6x2zgv9rr4ro?at_medium=RSS&at_campaign=rss"
-    },
-    {
-      "title": "Dozens of suspected illegal miners die in Nigerian custody",
-      "link": "https://www.bbc.co.uk/news/articles/cw980qp2n3p4o?at_medium=RSS&at_campaign=rss"
     },
     {
       "title": "US wheat farmers navigate uncertainty amid drought and geopolitical chaos - The Guardian",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPN01TSnNxQ1poLUdQdXRuZlZ6RERDV21NekdOcWw4MEFyTjZ3bTZZNEpVRnhoVGlwN2xOVHFpeGZEYllPdEgwVXRGdnpleG5ONURFenRQWmVzSEcwbXFXMWxqVFBSMTBFQVBESTJBM2x2Wks2ZktFWENWVHRXcjlhMkJzdmpWTkxIOGc?oc=5"
     },
     {
-      "title": "LNG resilience tested as geopolitics reshapes global energy security - energypolicy.columbia.edu",
+      "title": "LNG resilience tested as geopolitics reshapes global energy security - CGEP",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUR6a2dMb2ROSFp0cEZrcWJTV1R0YVg5TjZ6STJ0V0YwLXJvaE81aEZJS01kTnk1eTRmRUNxNXhmcG90WkhaSFNacGZCMmt1MUZQaks5TldBX213eVFYdTFyLVBLM1dzQy1iOU5LSDZMaHUxQU1Ga2pnaTVxeDBzYldtNmxTNlBSQVFOVTdidUhuT0kya2FKYU5XRUlfUVZ5cXdGWE5sQkllSEFBOExBVTFn?oc=5"
     },
     {
-      "title": "Geopolitics and financial fragmentation threaten global insurance markets: Geneva Association - Reinsurance News",
+      "title": "Geopolitics and financial fragmentation threaten global insurance markets: Geneva Association - reinsurancene.ws",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWGNUbWZzZGV6RmFoOXpHNmp5OWZKZDM3VWJDY25BS082X19WVWYzV0xHY2xJZVBFQS1RUUo3VlR1ME5yUGF4Q0lhbV82cWprLTBIWnRnbVNia1hEVFBxVkRibm9QWlJ2QlhIYjMyZjZaSHByS0J0WmVDOE9lRFNTY3NkbWx6WEtNWW4zZWR1cmZGa1hkdEZOZjZhNTIzT2UwTWlYU3BTWHNDWHYwRE5OOGpCT2FTYmJDT0s3TFdoSQ?oc=5"
     },
     {
@@ -48,100 +48,120 @@
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMGFidjhQc3NEeGRaWV9fYlVMb3pvQ3ZEOWR3WWlaUlppNEt0cjFWMG5nQ202QW5leE5oSzNGaG1SaDVkMUV4V2NPU2c4XzNEb3JKUEtwYkloV0QyQnpSWk05YUJiSzloRG5QbzJKbTBwZlZaeTVsLW0wNFZ2S0lONVZ2cjNobVZrckRiX2NyUnFGYk1FVUlqMHl3?oc=5"
     },
     {
-      "title": "Iran-US war widens and other geopolitical stories to know this month - The World Economic Forum",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjcxeFhxRUtiTVh2SFdZMjFoSEhONzNYTnlWZFJOQkVXMGVJNmtwZ1BYUTVaYUZhdnJZUWhJWVU2SHdXNUpOVnN6S0NXUjZHOW5OdGdfNTZKMEkzc0lTdDhKaUpYemh3YjBfbklJRnB3Q3ZPQV9aMndBcVZhQmZ1R1ZCWXpLNXdELXhUajdtbXZXRWRIOEFPNEg3ZjN5QVdQNnpuczc5eENfZU0wMFBFYXE0YmFxU1VvS0RqSDZB?oc=5"
+      "title": "Harri Tiido: Geopolitics in an era when rules no longer work - ERR",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVEtORm1aVF92VU5uQUdtM1B0aFZvRmxqNHJvZjZucTNGOEZZWDNJcHhlT29WSTgyVjc3RF9rVFBLWTZwY0pZaVc5QTBYNjBjOFkyeXJJZjJuaVZiTHAzeHBJd2ZCNG5hMEx5bFRpMGduRlB5dnAxVXhCUWhnXzIyWThReDRKWkdOckgzUzc0LWtsRkd0?oc=5"
+    },
+    {
+      "title": "Pacific island nations seek to turn geopolitics into funding to offset climate change harm - abcnews.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
     },
     {
       "title": "When infrastructure becomes a battleground: The geopolitics of global logistics - Gulf News",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOVNxZHBscFdQVTU3V0JfVS0tUUF4cnNybmJiMGk4Y0FrWDJURlRCLXcwQy1MWEplR09MbkxCMF8yNG1IUmtGOTRnMWV6Y25CUlc2bXdWbE9uX202Skt5UC1TQUJEWnJ3Mzh4NmFvTWlISUR2REgzdWlmQVdtZVY1NnlURzZNbWJ3eTRWMm5sYkE0MTZ5N3F5OU9hYW9UNVhNY29vRHBYMUQtajRHRmw2WkkyYlpQVXNjSWR3Q3BVenB6c3B60gHXAUFVX3lxTFAxeXNXYmFKTExESEFjRmh5TjctaXFyel9mY0ZhUjBTcVpmdWdDd2VGcmxVcEtCVmswZHZHRG5oS2RTdUZCaE5oazV6VGlES04tYjRuTDJVTVR4b1VlMFlQU0x0a3J2ZzNkX3VhdFJoOUZIWVNjUklmR2NxeDFZOXdtVjh4MU9fVU1XT3lYZzNaeFE0dExIVkU5NXNMcWtTUW02NnBWaGs2d1JGMkhKMGJEa25ER0VGeDdyWWNrMzk4OUpURmdUUEowOS1YWFU0VjlxS3d5djhz?oc=5"
     },
     {
-      "title": "Pacific island nations seek to turn geopolitics into funding to offset climate change harm - ABC News - Breaking News, Latest News and Videos",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyWnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
+      "title": "Blackstone Sees India Nearing Tipping Point for Foreign Capital",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/blackstone-sees-india-nearing-tipping-point-for-foreign-capital"
     },
     {
-      "title": "Thames Water Seeks to Buy Time as MPs Push for Nationalization",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-17/uk-lawmakers-say-thames-creditors-have-been-joyriding-family-car"
+      "title": "China’s Fiscal Pullback Extends to August as Spending Slumps",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps"
     },
     {
-      "title": "Bowman Expects Finalized Fed Stress Test Revisions in ‘Coming Weeks’",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/bowman-finalized-stress-test-changes-in-coming-weeks-video"
+      "title": "South Korea’s Justice Minister Nominee Withdraws After Reshuffle",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/south-korea-s-justice-minister-nominee-withdraws-after-reshuffle"
     },
     {
-      "title": "Prudential Exits AlexForbes as Motsepe’s ARC Boosts Stake",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/prudential-to-exit-alexforbes-as-tycoon-motsepe-s-arc-ups-stake"
+      "title": "Mark Walter’s Lieutenants Give Prosecutors Firsthand Accounts",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/mark-walter-s-lieutenants-give-prosecutors-firsthand-accounts"
     },
     {
-      "title": "Hyrox Risks Alienating Its Core Customers",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/opinion-hyrox-risks-alienating-its-core-customers-video"
+      "title": "Wall Street Week | India’s Growth Test, Bangalore’s Infrastructure Problem, Cricket Attracts Capital",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-18/wall-street-week-india-s-growth-test-video"
     },
     {
-      "title": "France Bond Risk Gauge Reaches New Milestone on Budget Risks",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/french-yield-premium-rises-to-one-percentage-point-on-debt-risks"
+      "title": "$370 'Home Alone Sundae' on The Plaza's Menu",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-18/-370-home-alone-sundae-on-the-plaza-s-menu-video"
     },
     {
-      "title": "What If “Cognitive Surrender” Is the Real Existential Risk?",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/is-cognitive-surrender-the-real-existential-risk-video"
+      "title": "JOOPITER Head of Sales on Michael Jordan Jersey Auction",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-18/joopiter-head-of-sales-on-michael-jordan-jersey-auction-video"
     },
     {
-      "title": "S&P 500 Falls as Treasury Yields Resume Advance: Markets Wrap",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates"
+      "title": "India forces caller-ID apps to feed spam reports to telcos",
+      "link": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/"
     },
     {
-      "title": "Inertia co-founder Jeff Lawson’s next big bet is fusion: Go inside it at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/18/jeff-lawsons-next-big-bet-is-fusion-go-inside-it-at-techcrunch-disrupt-2026/"
+      "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
+      "link": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/"
     },
     {
-      "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
-      "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/"
+      "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
+      "link": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/"
     },
     {
-      "title": "The clock is ticking: Final 24 hours to exhibit at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/18/final-24-hours-to-exhibit-at-techcrunch-disrupt-2026/"
+      "title": "Anthropic is operating a lab that conducts biology experiments",
+      "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/"
     },
     {
-      "title": "Khosla-backed Mazama Energy just raised $135M to drill deeper into superhot-rock geothermal",
-      "link": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/"
+      "title": "AI hallucination nearly triggers US military operation",
+      "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
     },
     {
-      "title": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
-      "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/"
+      "title": "Anthropic’s first embedded evaluator is … Accenture?",
+      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/"
     },
     {
-      "title": "Google DeepMind launches institute to widen the AGI debate",
-      "link": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/"
+      "title": "Automattic names interim CFO after exec departures",
+      "link": "https://techcrunch.com/2026/09/18/automattic-names-interim-cfo-after-exec-departures/"
     },
     {
-      "title": "Amazon-owned Zoox’s 100-robotaxi limit in Nevada is about to disappear",
-      "link": "https://techcrunch.com/2026/09/17/amazon-owned-zooxs-100-robotaxi-limit-in-nevada-is-about-to-disappear/"
+      "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero"
     },
     {
-      "title": "Flash floods can strike without warning — this new technology could change that",
-      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning"
+      "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force"
     },
     {
-      "title": "Waymo says Singapore will be its next international robotaxi city",
-      "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027"
+      "title": "Disney’s first CTO is Character.AI’s former CEO",
+      "link": "https://www.theverge.com/entertainment/997555/karandeep-anand-disney-character-ai"
     },
     {
-      "title": "The AI Superintelligence Slowdown",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic"
+      "title": "The real story of the iPhone 18 Pro&#8217;s camera",
+      "link": "https://www.theverge.com/podcast/997366/the-real-story-of-the-iphone-18-pros-camera"
     },
     {
-      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+      "title": "Gavin Newsom is pushing for an AI kill switch",
+      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
     },
     {
-      "title": "Save $30 or more on a refurbished Apple TV 4K",
-      "link": "https://www.theverge.com/gadgets/997009/refurbished-apple-tv-4k-ring-doorbell-deal-sale"
+      "title": "What Hollywood thinks about existential AI warnings",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings"
     },
     {
-      "title": "Xbox’s clever disc-to-digital feature was 15 years in the making",
-      "link": "https://www.theverge.com/tech/996826/microsoft-xbox-disc-to-digital-history-notepad"
+      "title": "Security researchers used Claude to help them hack into OpenAI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist"
     },
     {
-      "title": "Camp Snap’s 110D gives slim retro film cameras a digital upgrade",
-      "link": "https://www.theverge.com/tech/996453/camp-snap-110d-digital-camera-retro-horizontal-kodak-100-film"
+      "title": "AI hallucination of Chinese nuclear components almost led to US military attack",
+      "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/"
+    },
+    {
+      "title": "FAA tees up $875M AI tool to help manage air traffic congestion",
+      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/"
+    },
+    {
+      "title": "FCC lets Paramount sell 49.5% equity stake to Saudi Arabia, UAE, and Qatar",
+      "link": "https://arstechnica.com/tech-policy/2026/09/fcc-lets-paramount-sell-49-5-equity-stake-to-saudi-arabia-uae-and-qatar/"
+    },
+    {
+      "title": "Finding the cells that put our brain to sleep",
+      "link": "https://arstechnica.com/science/2026/09/finding-the-cells-that-put-our-brain-to-sleep/"
+    },
+    {
+      "title": "US government website used Chinese model the FBI called \"malicious\"",
+      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/"
     },
     {
       "title": "Meet the winner of Nikon's Small World in Motion video contest",
@@ -150,26 +170,6 @@
     {
       "title": "Researchers used Claude to hack OpenAI",
       "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/"
-    },
-    {
-      "title": "Rocket Report: China wants a Raptor 3 engine; SpaceX set for big Starship test",
-      "link": "https://arstechnica.com/space/2026/09/rocket-report-ula-flies-into-uncertain-future-falcon-9-family-hits-700-launches/"
-    },
-    {
-      "title": "RFK Jr. names 8 new members to influential preventive medicine task force",
-      "link": "https://arstechnica.com/health/2026/09/rfk-jr-stacks-another-influential-federal-panel-with-questionable-picks/"
-    },
-    {
-      "title": "Small AI models let drones autonomously identify and attack battlefield targets",
-      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/"
-    },
-    {
-      "title": "Google announces new experimental \"CC\" AI agent for families",
-      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/"
-    },
-    {
-      "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
-      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/"
     },
     {
       "title": "Scientists just named a new snake after Guns N’ Roses legend Slash",
@@ -200,32 +200,52 @@
       "link": "https://www.sciencedaily.com/releases/2026/09/260917003728.htm"
     },
     {
-      "title": "Why high levels of the amino acid cysteine are toxic to cells",
-      "link": "https://phys.org/news/2026-09-high-amino-acid-cysteine-toxic.html"
+      "title": "Improving urban flood forecasting with real-time hazardous rainfall detection",
+      "link": "https://phys.org/news/2026-09-urban-real-hazardous-rainfall.html"
     },
     {
-      "title": "Small gardens are a big barrier to supporting nature—but better planning could protect UK wildlife",
-      "link": "https://phys.org/news/2026-09-small-gardens-big-barrier-nature.html"
+      "title": "How rural policing gaps can make escaping domestic violence harder",
+      "link": "https://phys.org/news/2026-09-rural-policing-gaps-domestic-violence.html"
     },
     {
-      "title": "Closing the space gap: A more precise way to measure distance between quasar pairs",
-      "link": "https://phys.org/news/2026-09-space-gap-precise-distance-quasar.html"
+      "title": "Peer sexual harassment emerges early, highlighting need for prevention before Grade 4",
+      "link": "https://phys.org/news/2026-09-peer-sexual-emerges-early-highlighting.html"
     },
     {
-      "title": "How one plume of hot rock built two volcano chains off Australia's coast",
-      "link": "https://phys.org/news/2026-09-plume-hot-built-volcano-chains.html"
+      "title": "Scientists hope deeper-rooted soybeans can withstand climate extremes and store more carbon",
+      "link": "https://phys.org/news/2026-09-scientists-deeper-rooted-soybeans-climate.html"
     },
     {
-      "title": "In 2025, the ozone hole shrunk to one of its smallest sizes in decades",
-      "link": "https://phys.org/news/2026-09-ozone-hole-shrunk-smallest-sizes.html"
+      "title": "North Korea's nuclear testing may have triggered hundreds of earthquakes over several years",
+      "link": "https://phys.org/news/2026-09-north-korea-nuclear-triggered-hundreds.html"
     },
     {
-      "title": "Tiny atomic tweak makes plastic-eating enzymes more powerful",
-      "link": "https://phys.org/news/2026-09-tiny-atomic-tweak-plastic-enzymes.html"
+      "title": "Medieval Chinese skeleton may reveal first evidence of a brutal punishment",
+      "link": "https://phys.org/news/2026-09-medieval-chinese-skeleton-reveal-evidence.html"
     },
     {
-      "title": "From war to weather, Australian farmers are planting spring crops in an uncertain world",
-      "link": "https://phys.org/news/2026-09-war-weather-australian-farmers-crops.html"
+      "title": "Workplace AI adoption remains slow, informal and uneven, survey finds",
+      "link": "https://phys.org/news/2026-09-workplace-ai-uneven-survey.html"
+    },
+    {
+      "title": "APOD: 2026 September 19 – A Zodiacal Night",
+      "link": "https://science.nasa.gov/image-article/apod-2026-september-19-a-zodiacal-night/"
+    },
+    {
+      "title": "NASA Invites Media to Albania Artemis Accords Signing Ceremony",
+      "link": "https://www.nasa.gov/news-release/nasa-invites-media-to-albania-artemis-accords-signing-ceremony/"
+    },
+    {
+      "title": "NASA-JAXA XRISM Mission Sees Pulsar Gathering Companion’s ‘Wind’",
+      "link": "https://science.nasa.gov/missions/xrism/xrism-sees-pulsar-gathering-companions-wind/"
+    },
+    {
+      "title": "NASA Awards SpaceX Three Crew Flights to Space Station",
+      "link": "https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/"
+    },
+    {
+      "title": "COSI Telescope Comes Together",
+      "link": "https://www.nasa.gov/image-article/cosi-telescope-comes-together/"
     },
     {
       "title": "NASA’s Hubble Spots an Out-of-Sync Galaxy",
@@ -236,52 +256,32 @@
       "link": "https://science.nasa.gov/image-article/apod-2026-september-18-messier-33-the-triangulum-galaxy/"
     },
     {
-      "title": "NASA Awards Launch Services for StarBurst Gamma-Ray Detector",
-      "link": "https://www.nasa.gov/news-release/nasa-awards-launch-services-for-starburst-gamma-ray-detector/"
+      "title": "Tusk z Morawieckim rozegrali Kaczyńskiego. Horała wicemarszałkiem Sejmu - Wyborcza.pl",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMFZiMUNXdUJ3WFdBMnkxRDdNMlBJdFlCVGdHb3lUd3NwRXEtSGRpdHhpb0hhams4YVRzbFVuOGdHQmM3Zmdob3NvbXVqVlc0c0pzZFZFR1dFNUFrWHhZWkloa0l0MjdqS0NRV1g2T1A0bG1wSVFvREJuWFN0U2Q3RXdvQUNBZnBVMEp0OW1UVHFWSjdQLUNNZTNHZnRsUU0wY1E?oc=5"
     },
     {
-      "title": "NASA Invites Media to SpaceX’s 35th Resupply Launch to Space Station",
-      "link": "https://www.nasa.gov/news-release/nasa-invites-media-to-spacexs-35th-resupply-launch-to-space-station/"
+      "title": "Spokojnie już było. ISW: Rosja uderzy podstępem - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT1FVNUdvdkVsS1NnMmZrM2hubV9DejRoa2dPcWRpQWtJSmJ4QXFqblJGbUR3bWxVdW5qTDNJSVZmb2czN1B6SVNOWGdmSDJYVzdmdWRIVlh4LUtCMVMyNkVwZS1KMDJnaDl5eDRsbjRWaGdoZDBPUF9Gb3RyenA1ejR6WjRtZDl1c3ltcUxNcTBENVpW?oc=5"
     },
     {
-      "title": "NASA Unveils Enterprise, the First Space Shuttle",
-      "link": "https://www.nasa.gov/image-article/nasa-unveils-enterprise-the-first-space-shuttle/"
+      "title": "Cios w Rosję i jej sojuszników. \"Piekielne sankcje\" wchodzą w życie - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaHFsckNTVnJtLW1aSDBpX1pIY3hsQ2xWT3l4NjNuLUgxV0JYRHRNSXlVSFhmem83a0wxeFAwYkEyTnVaN1BCSDZzOGxra01SaXVMSmlURjZpV1BBSUpiVmt3cURMOEdibm9BdGpUejE2Z2dRNEdvV0xBNmdxVkQ5MlUtOTcwVU8xMFg3d2xfZWIxMnNQMnhZM1hsdnhyNWZWWEN2MGhR?oc=5"
     },
     {
-      "title": "APOD: 2026 September 17 – A Treasure Chest in the Carina Nebula",
-      "link": "https://science.nasa.gov/image-article/apod-2026-september-17-a-treasure-chest-in-the-carina-nebula/"
+      "title": "Zwrot w sprawie Wojciecha Króla. Sąd nie zgodził się na areszt - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSEVxRGtmUGQyb0d6U3hVTG1qZVBYWDBCQVpfdlUyRTgwLWVGbThsMXhXUEpta2s5VkNmN3lES0VMczFqa3lNMjRCVl9GdkZkVVBuN0E1R01Gbm1vYWtjNjZTSU00RGFrLWowdTh4OXM2SW1FNHROWm1JcjVpRS0ydUpoSVN4TEVjcFJQOWY4dXNzNERsUWk5MUd0dmFsbWlUckZOZ2c4VGFhN2Y3a0E?oc=5"
     },
     {
-      "title": "Summer Goes Out With a Heat Dome",
-      "link": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/"
+      "title": "Donald Trump ogłasza przełomową decyzję w sprawie Grenlandii - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHp6bTNmMWRIRTVDSXdqbUxOOFNIdXVkUHlUTmxDT085YUpCd2tTNE9HV3k0M0F3aVRwaUFQaVJYeXRvMTM5ZkdTalBRb1JHTGdleUVrcVVGb3IwVXpndFBWR1E3VkczU2dfZFBFV0ZnVmVmNWs5RnFtZDg4YVZJZFdfVUdHUUVaUXFKb1RMYkRYMFBWeDhIbXBTeFlETEluV1NN?oc=5"
     },
     {
-      "title": "Horała wicemarszałkiem. Dudek wskazuje, co może wydarzyć się na prawicy - Fakt",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLWdTXzhDek1ZbHFyYVRTMmJZU3VyV1lJZVhkUGNGODlhSUpLc1huM09NLW1UV3UtbWRER0xnd0c1V0RKelBrN0JGNWx2bV9HWkJPUng5VUtHTnZDa2hERjgzTU55d2s3aDRTd3NHcGYtN3NkdnptOGhJNWRicTZCeldTRDJpaGY3WFlhbEFQSG9hQnZnTXlXNVl1MU02dWdBVmdpeA?oc=5"
+      "title": "Prezydent kontra Maciej Berek i sędziowie TK. Sytuacja jest patowa [WYJAŚNIAMY] - Business Insider Polska",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNU9ydUxWZUZPSWFHZlJMRlFKdXlIakJFN3FBNGVQMS1HWW5yQkVhTjNxeS1NR1pQLWpWWi1FOXZ3WkM5blpybmJ5R2pXck4wamVhWTFpczZJdzF2LVVPSl9HX0RuamFqNHZ4RlV3MlotTm5yQXlXbGhRVE43cHpFbzc4N0hnYmROUFJvQ1BJRk1NVWNaUmhCU2RYYmplR0VBeTllUkdONlhhNGlWOWpGWERyNjJXakRGVl9qemxKNUVhWUV2NVE?oc=5"
     },
     {
-      "title": "Baza USA w Polsce. Gen. Koziej wskazuje haczyk w planie Trumpa - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbzRENVFYcHFMWDAzWWYtOGxWUTRRTU9EZzZqdDhOdksxTndMSnF0Q3g2OUVHNW5fUEJCeEpReFRRQXFKV1hNWjJwTFd4cUV2TXgwMERpVTZKNWhreVYtaE50X1Y0YWQ3RjBwVGpROFVLZUxITUExM0JTYVBOb0RFZGxxRlZNUl9vel9GNGFVOTMwamFvX05KaFplRFY5RVhmNHo5MER3?oc=5"
-    },
-    {
-      "title": "Nadchodzi krytyczny moment wojny. Litwa potwierdza informacje Tuska - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUGFOWjZSNUU5cU1BamFoSHd4RGQzU00zSmJCbFl6U3U3eDk4UWRwMk9saVRyN1VhSGo5NUNzZzYwc1VQY2JPNXdFUXFDajNOQmJJdWo3Z3N1UHBPWTFpZ1ZIT0ZpSUx0RHRCLV9ndVYwZnJRUnpEV1VKdXBxNVFfbHZSWHFzUWNLdEhOM003WFFGNjBLMUpWNDdoRkZTM3VnMS1XWTE4cFhrWWoxcjkyN2RhR2Q?oc=5"
-    },
-    {
-      "title": "Wołodymyr Zełenski: będziemy z Polską partnerami w ramach koalicji antybalistycznej - wiadomosci.onet.pl",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVXpTWjlPNkgwWHNDVVppcDdWTTlJLWVlLXlCZThpSXNYSjZDN2dFM3UxdHRhX1hOSjRhVFlualdCaXJBQXo3RnVZelpaenAxOWRLQUdLVzByakRCU3VDZkJJYnFCczNnSUt0WEJGbWpzaFY5WW5xMU5YNktaRFYycDlDQUxMNGFJSENheUNsQ0FRNWZWaG5OekdGSVB0WnBXWTdJNGR6b0RmOUVQYnB4cG5zM0lWTkZmY2MtazFQR0I?oc=5"
-    },
-    {
-      "title": "Poseł KO doprowadzony do prokuratury. \"Czuję się niewinny\" - wiadomosci.onet.pl",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObmo4OUpaX2c2NUdFVzB1dlNRWGR0WU4welFfcTFFVzU0d3djYnAtckxaREtISlNCUEI3M1ZRVW1TbXk3R1dsakQ2OERSMEFYZm1TWFpPaG16T2hGYlREMDJTbUctNFh6elZ3X0kwLWVvbGlTT3RNcHFQdV82YTdxdEsxdW13T3VtV3lZUmlVN2VwbG96c2hxemo5WQ?oc=5"
-    },
-    {
-      "title": "Syreny na wschodzie, poderwano myśliwce. \"Systemy w stanie gotowości\" - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcXdrV1F2VjR6aUVrR3FFRlBQUVUxQzVZaWRia3otYkg0X0dHRDlUTkM1c3Yya01fX2V0R2drNEJjWll1XzRpZmE0WkZBTGY4RlhjZnZLZ214QzVpdXBiRklIczlCWmJvVi1wdmZRakNsdWJUdE5SeTgtZmJMZUV2Z094eFo3STdFS0xMNzZYbWxVQWxTMXJaR1VzQmREVmd6YVliR3l4V1MtNi1PcENQSE5lOEh0enV3?oc=5"
-    },
-    {
-      "title": "Potężny pożar i eksplozja pod Radziejowem. Są osoby ranne - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMUpGVnhDUTBRd2JGNVpCXzVSWC1RTlQ3SXZCZnIxLUNqcVZuU3dsMDBKSHBEbzVSbFNqN0F1NlA4clBBMS1HaXlRNk5pVUxiY3VIS1FuWUNEQ3NqN3RlUURvZmloQ0sxOXBCMVRyamFkSGpzMUJGTWs5MUVtTFdaTDRTaWkwSFlVUi1qbUJOQjRTU1JmUlQzaFc2cUFyTjVidm5FNmd5NA?oc=5"
+      "title": "Złe wieści dla Szymona Hołowni. Polacy nie chcą go w rządzie [SONDAŻ] - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdEQyQW5OeVFsbXNaUGNUTkNqOGk2blNHV2sxX2VRVW92TjM4c0lSWmtZRHVLclkwZ3pBaVJqRllSZ1gxYzhoNHZSMFgtRVFsLWlhSFNOSEEyY09RMUhCZ3diZkFOWmZaS0xCWnFaLUloVTVQY1R4dE93RnFSMFl4WE1EZVVib3p5cWVHNFFhQXlwVklLZW00MHk0SW9hZEJ3WUtv?oc=5"
     }
   ]
 }

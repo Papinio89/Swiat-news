@@ -2515,5 +2515,124 @@
         "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWMyaEJwZHFVSWtNSEF6T09nWmZPNTdIck9sZFlqUDFtWGtVVHJONmdMZ19ZelZwMXRPMEhhMXdZSVJzcl9pZHgyQjRwM0FuNlJEM2RKQ0htOGhaelJFam9MMVJKcWhzemhTTzdHT184WEFpOG9QbGh0UEdrZE4xVXg4UzFmTnZmdHp5UVdLUlNJSHFjelF6Mm1ROEg5YnhkSk9raGh1dXBJMzJVTU5BS0FRNNIBuAFBVV95cUxPWm1FOC1pZGk3S0ZfMExxWmpySk02YndSZWttdkdWQlZzbnZBQUVFSHVCMjBOX3JTWTJXY3RyZnU0VEN1OEhzWkhPZFZGVDMzNUN6UEJLcHZsVUJnMGktRGdkcVF2Wms0MHRiZmJzT1pkTm9EQjFwZlJvYWdldlRPdjY1Y1FCcVlPYzk2NWRyUlQtRGNYeFZDb1dPdTBreE43eFJSMVB2YkpRT3RReVJzUkNwWk94VGF1?oc=5"
       }
     ]
+  },
+  "2026-09-19_poranne": {
+    "date": "19 September 2026",
+    "time": "07:01",
+    "timestamp": "2026-09-19_07:01",
+    "items": [
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇬🇱 Porozumienie USA i Danii w sprawie Grenlandii",
+        "summary": "Stany Zjednoczone oraz Dania osiągnęły porozumienie dotyczące statusu i współpracy na Grenlandii po wcześniejszych groźbach aneksji ze strony Donalda Trumpa.",
+        "comment": "Sfinalizowanie układu stabilizuje relacje wewnątrz NATO i zamyka spekulacje na temat jednostronnej ekspansji terytorialnej USA w strategicznym rejonie Arktyki.",
+        "image_query": "greenland arctic landscape",
+        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🚨 Arabia Saudyjska ogłasza alarmy przeciwlotnicze w Rijadzie",
+        "summary": "Władze Arabii Saudyjskiej uruchomiły syreny alarmowe w stolicy kraju po intensyfikacji ataków rakietowych ze strony wspieranych przez Iran rebeliantów Huti.",
+        "comment": "Odnowienie ostrzałów saudyjskiej stolicy stanowi zagrożenie dla kluczowej infrastruktury naftowej oraz bezpieczeństwa na całym Półwyspie Arabskim.",
+        "image_query": "riyadh city skyline",
+        "link": "https://www.bbc.co.uk/news/articles/cmed7el18dxpo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📈 Blackstone: Indie bliskie przełomu w napływie kapitału",
+        "summary": "Gigant inwestycyjny Blackstone ocenia, że Indie znajdują się w punkcie zwrotnym, który przyciągnie rekordowe strumienie zagranicznych inwestycji bezpośrednich.",
+        "comment": "Przenoszenie globalnych łańcuchów dostaw z Chin czyni z Indii głównego beneficjenta relokacji kapitałowej w Azji Południowo-Wschodniej.",
+        "image_query": "mumbai financial district",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-19/blackstone-sees-india-nearing-tipping-point-for-foreign-capital"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Chiny tną wydatki budżetowe w obliczu spowolnienia",
+        "summary": "Spadek wydatków fiskalnych w Chinach utrzymał się do sierpnia, sygnalizując dalsze osłabienie dynamiki gospodarczej i ostrożność władz w Pekinie.",
+        "comment": "Wstrzemięźliwość rządu w stymulowaniu gospodarki potęguje presję na niewypłacalny sektor nieruchomości oraz ogranicza popyt konsumpcyjny.",
+        "image_query": "china economy skyline",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-18/china-s-fiscal-pullback-stretches-into-august-as-spending-slumps"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📺 FCC zezwala państwom Zatoki na przejęcie udziałów w Paramount",
+        "summary": "Amerykański regulator FCC wydał zgodę na sprzedaż 49,5% udziałów kapitałowych w koncernie Paramount inwestorom z Arabii Saudyjskiej, ZEA i Kataru.",
+        "comment": "Ekspansja bliskowschodnich państwowych funduszy majątkowych na zachodnim rynku mediów pokazuje rosnący wpływ kapitału z Zatoki na sektor rozrywki i informacji.",
+        "image_query": "media corporate building",
+        "link": "https://arstechnica.com/tech-policy/2026/09/fcc-lets-paramount-sell-49-5-equity-stake-to-saudi-arabia-uae-and-qatar/"
+      },
+      {
+        "category": "OBRONNOŚĆ / TECHNOLOGIE",
+        "title": "⚠️ Halucynacja AI omal nie doprowadziła do incydentu wojskowego USA",
+        "summary": "Błędna analiza wywiadowcza wygenerowana przez model AI dotycząca chińskich komponentów jądrowych o mało nie doprowadziła do szturmu armii USA na chiński statki.",
+        "comment": "Incydent obnaża krytyczne ryzyko związane z bezkrytycznym automatyzowaniem analityki wywiadowczej i wojskowej przed odpowiednią weryfikacją.",
+        "image_query": "military control room",
+        "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/"
+      },
+      {
+        "category": "TECHNOLOGIE / GOSPODARKA",
+        "title": "⚡ Wirginia nakłada ograniczenia na budowę centrów danych AI",
+        "summary": "Gubernator stanu Wirginia powołał specjalny zespół ds. sztucznej inteligencji i wprowadził kroki prawne ograniczające powstawanie nowych centrów danych.",
+        "comment": "Rosnące zapotrzebowanie na energię elektryczną ze strony infrastruktur AI staje się bezpośrednim zagrożeniem dla stabilności lokalnych sieci energetycznych.",
+        "image_query": "data center servers",
+        "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force"
+      },
+      {
+        "category": "TECHNOLOGIE / PRAWO",
+        "title": "🛑 Kalifornia forsuje wymóg awaryjnego wyłącznika systemów AI",
+        "summary": "Gubernator Gavin Newsom prze do wprowadzenia przepisów nakazujących twórcom zaawansowanych modeli sztucznej inteligencji wdrożenie mechanizmu 'kill switch'.",
+        "comment": "Kalifornijskie regulacje ustalają faktyczny standard prawny dla amerykańskiego sektora tech, co wywołuje opór ze strony inwestorów i startupów.",
+        "image_query": "silicon valley technology",
+        "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 100 milionów dolarów na rozwój fizycznej sztucznej inteligencji",
+        "summary": "Inkubator technologiczny pozyskał 100 mln USD w nowej rundzie finansowania, stawiając wyłącznie na startupy rozwijające AI w połączeniu z robotyką.",
+        "comment": "Fundusze VC wyraźnie przesuwają ciężar inwestycyjny z cyfrowych modeli językowych na autonomiczne systemy fizyczne i automatyzację przemysłową.",
+        "image_query": "industrial robotics lab",
+        "link": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/"
+      },
+      {
+        "category": "NAUKA / TECHNOLOGIE",
+        "title": "🧪 Anthropic otwiera własne laboratorium eksperymentów biologicznych",
+        "summary": "Twórca modelu Claude rozpoczął prowadzenie własnego laboratorium badawczego ukierunkowanego na praktyczne testowanie modeli AI w naukach o życiu.",
+        "comment": "Łączenie modeli generatywnych z fizyczną walidacją laboratoryjną ma przyspieszyć prace nad odkrywaniem nowych leków i biochemią.",
+        "image_query": "biotechnology laboratory research",
+        "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/"
+      },
+      {
+        "category": "KOSMOS",
+        "title": "🚀 NASA przyznaje SpaceX dodatkowe misje załogowe na ISS",
+        "summary": "Agencja NASA zakontraktowała trzy kolejne loty załogowe od firmy SpaceX w ramach komercyjnego programu transportu na Międzynarodową Stację Kosmiczną.",
+        "comment": "Zlecenie umacnia dominację firmy Elona Muska w amerykańskim sektorze kosmicznym wobec opóźnień w programach konkurencyjnych podmiotów.",
+        "image_query": "space rocket launch",
+        "link": "https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🛡️ Nowy pakiet surowych sankcji wobec Rosji wchodzi w życie",
+        "summary": "Wszedł w życie nowy pakiet restrykcji gospodarczych wycelowany w rosyjski sektor finansowy oraz podmioty zagraniczne pomagające w obchodzeniu obostrzeń.",
+        "comment": "Dokręcenie śruby przez Unię i USA ma na celu osłabienie zdolności finansowych Moskwy do prowadzenia działań wojennych i ograniczenie dochodów z surowców.",
+        "image_query": "sanctions economic pressure",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaHFsckNTVnJtLW1aSDBpX1pIY3hsQ2xWT3l4NjNuLUgxV0JYRHRNSXlVSFhmem83a0wxeFAwYkEyTnVaN1BCSDZzOGxra01SaXVMSmlURjZpV1BBSUpiVmt3cURMOEdibm9BdGpUejE2Z2dRNEdvV0xBNmdxVkQ5MlUtOTcwVU8xMFg3d2xfZWIxMnNQMnhZM1hsdnhyNWZWWEN2MGhR?oc=5"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏛️ Pat wokół Trybunału Konstytucyjnego w Polsce trwa",
+        "summary": "Brak porozumienia między Pałacem Prezydenckim a rządem i sędziami TK utrzymuje stan niepewności co do statusu ustrojowego kluczowych organów sądowych.",
+        "comment": "Przedłużający się konflikt instytucjonalny osłabia stabilność polskiego systemu prawnego i utrudnia proces legislacyjny w sprawach gospodarczych.",
+        "image_query": "court justice gavel",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNU9ydUxWZUZPSWFHZlJMRlFKdXlIakJFN3FBNGVQMS1GWW5yQkVhTjNxeS1NR1pQLWpWWi1FOXZ3WkM5blpybmJ5R2pXck4wamVhWTFpczZJdzF2LVVPSl9HX0RuamFqNHZ4RlV3MlotTm5yQXlXbGhRVE43cHpFbzc4N0hnYmROUFJvQ1BJRk1NVWNaUmhCU2RYYmplR0VBeTllUkdONlhhNGlWOWpGWERyNjJXakRGVl9qemxKNUVhWUV2NVE?oc=5"
+      },
+      {
+        "category": "NAUKA / BEZPIECZEŃSTWO",
+        "title": "⚛️ Podziemne testy jądrowe Korei Północnej wywołały setki wstrząsów",
+        "summary": "Z najnowszych analiz wynika, że wieloletnie próby nuklearne Pjongjangu naruszyły stabilność tektoniczną regionu i spowodowały setki wtórnych trzęsień ziemi.",
+        "comment": "Trwałe strukturalne uszkodzenia terenu wokół głównego poligonu podnoszą ryzyko wycieków substancji promieniotwórczych i katastrofy ekologicznej.",
+        "image_query": "nuclear test site",
+        "link": "https://phys.org/news/2026-09-north-korea-nuclear-triggered-hundreds.html"
+      }
+    ]
   }
 }
