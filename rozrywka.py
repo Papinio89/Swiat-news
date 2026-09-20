@@ -39,7 +39,7 @@ MIN_ITEMS = 6
 
 
 def sanitize_text(text: str) -> str:
-    """Usuwa problematyczne znaki Unicode (tag characters, bidi, ukryte kontrolne)."""
+    """Usuwa problematyczne znaki Unicode."""
     if not text:
         return ""
     text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
@@ -249,20 +249,15 @@ print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Przeanalizuj poniższe nagłówki i stwórz czysto rozrywkową, lekką i ekstremalnie zabawną listę 8-10 ciekawostek (przetłumacz i sformatuj na język polski).
+prompt = f"""Jesteś genialnym, dowcipnym redaktorem magazynu ciekawostek i absurdów. Przeanalizuj poniższe nagłówki i stwórz listę 8-10 niezwykle wciągających, zaskakujących i zabawnych ciekawostek w języku polskim.
 
-WYMAGANA STRUKTURA:
-- Skup się WYŁĄCZNIE na: absurdalnych faktach, dziwnych zachowaniach zwierząt, szalonej historii, dziwnym jedzeniu/piciu oraz zakręconych rekordach świata.
-- Kategoryczny zakaz: poważne badania naukowe, psychologia, socjologia, sztuka, recenzje książek, rocznice miast/architektury.
-- Ma być luźno, śmiesznie i czysto rozrywkowo.
-
-Każdy obiekt musi zawierać dokładnie te klucze:
-- "category": WIELKIMI LITERAMI (np. "ZWIERZAKI", "ABSURDY ŚWIATA", "SZALONA HISTORIA", "BEKA Z NAUKI")
-- "title": krótki, chwytliwy i zabawny nagłówek z jedną prostą emotikoną na początku (unikaj flag państwowych i regionalnych)
-- "summary": konkretny, zabawny opis w 1-2 zdaniach
-- "comment": dowcipny, sarkastyczny lub ironiczny komentarz (1 zdanie)
-- "image_query": 2-4 słowa kluczowe po angielsku
-- "link": dokładnie ten sam URL z wejścia
+STYL I FORMAT (wzoruj się na najlepszych karuzelach):
+- "title": Krótki, chwytliwy, intrygujący nagłówek z jedną pasującą emotikoną na początku (np. 🍎, 🐙, 🧠, 🐒). Bez nudnych i oczywistych tytułów.
+- "summary": Konkretny, soczysty i bogaty w ciekawe szczegóły opis (2-3 zdania). Ma wciągnąć czytelnika i ujawnić zaskakujący twist lub absurdalny fakt.
+- "comment": Ostrý, dowcipny, sarkastyczny lub ironiczny komentarz (1 zdanie), który celnie podsumowuje temat z przymrużeniem oka (tak jak w dobrym stand-upie).
+- "category": WIELKIMI LITERAMI (np. "SZALONA HISTORIA", "ABSURDY ŚWIATA", "ZWierzAKI", "BEKA Z NAUKI").
+- "image_query": 2-4 precyzyjne słowa kluczowe po angielsku pod bazę zdjęć.
+- "link": Dokładnie ten sam URL z wejścia.
 
 Unikaj tematów podobnych do archiwum:
 {json.dumps(previous_topics[:25], ensure_ascii=False)}
@@ -280,7 +275,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.3,
+            temperature=0.4,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -297,8 +292,8 @@ except Exception as e:
     items = [{
         "category": "ZWIERZAKI",
         "title": f"🦦 {art['title']}",
-        "summary": "Nietypowy i szalony fakt z życia przyrody.",
-        "comment": "Natura naprawdę ma poczucie humoru!",
+        "summary": "Nietypowy i szalony fakt z życia przyrody, który całkowicie zaskakuje.",
+        "comment": "Natura po raz kolejny udowadnia, że nie ma sobie równych w robieniu dziwnych rzeczy.",
         "image_query": "funny cute animal",
         "link": art["link"]
     } for art in filtered_raw_articles[:10]]
@@ -321,7 +316,7 @@ for item in items:
     url = item.get("link", "")
     q = item.get("image_query", "funny weird fact")
     
-    # 1. Próba pobrania og:image z oryginalnego artykułu
+    # 1. Próba pobrania oryginalnego og:image ze strony artykułu
     article_img = fetch_article_image(url)
     
     if article_img:
@@ -329,7 +324,7 @@ for item in items:
         item["image_url"] = article_img
         source_ok += 1
     else:
-        # 2. Jeśli brak, pobieramy z Pexels na bazie słów kluczowych
+        # 2. Jeśli brak, pobieramy z Pexels API
         stock_img = fetch_pexels_image_url(q)
         item["source_image_url"] = stock_img
         item["image_url"] = stock_img
@@ -352,6 +347,6 @@ with open("rozrywka.json", "w", encoding="utf-8") as f:
 
 archive_data[session_fixed_key] = output_data
 with open(archive_file, "w", encoding="utf-8") as f:
-    json.dump(archive_data, f, ensure_ascii=False, indent=2)
+    json.dump(archive_data, f, encoding="utf-8", indent=2)
 
 print(f"Zakończono pomyślnie. Zapisano {len(items)} ciekawostek rozrywkowych do rozrywka.json.")
