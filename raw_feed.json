@@ -1,11 +1,19 @@
 {
   "date": "20 września 2026",
-  "time": "06:50",
+  "time": "14:47",
   "count": 38,
   "items": [
     {
-      "title": "Ed Sheeran admits 'mistakes' as he addresses Macklemore controversy at Philadelphia show",
+      "title": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
+      "link": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo"
+    },
+    {
+      "title": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
       "link": "https://www.bbc.co.uk/news/articles/cm780ll1de18o"
+    },
+    {
+      "title": "German elections under way which could decide fate of Chancellor Merz",
+      "link": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o"
     },
     {
       "title": "Houthis say they targeted Saudi capital with ballistic missiles",
@@ -20,60 +28,48 @@
       "link": "https://www.bbc.co.uk/news/articles/cg4d9vly636o"
     },
     {
-      "title": "Journalists denied White House access after Trump banned some media outlets",
-      "link": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo"
+      "title": "Pułki rangersów w ukraińskich siłach specjalnych",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/pulki-rangersow-w-ukrainskich-silach-specjalnych"
     },
     {
-      "title": "Cultural treasures are being destroyed by war, and people want justice",
-      "link": "https://www.bbc.co.uk/news/articles/cvgy1q2k2z0o"
+      "title": "Abrams, K9A1 i Rosomak. „Żelazna Dywizja” pokazała jak się zmienia",
+      "link": "https://defence24.pl/sily-zbrojne/abrams-k9a1-i-rosomak-zelazna-dywizja-pokazala-jak-sie-zmienia"
     },
     {
-      "title": "Polska może produkować TNT w Kanadzie. Rozmowy na szczeblu rządowym",
-      "link": "https://defence24.pl/przemysl/polska-moze-produkowac-tnt-w-kanadzie-rozmowy-na-szczeblu-rzadowym"
+      "title": "Czeskie pancerne nowości w Kielcach. Nowa generacja Tatry Force debiutuje na MSPO",
+      "link": "https://defence24.pl/przemysl/czeskie-pancerne-nowosci-w-kielcach-nowa-generacja-tatry-force-debiutuje-na-mspo"
     },
     {
-      "title": "Wybory w Rosji kończą się – jakie partie kandydują i kto prawdopodobnie wygra?",
-      "link": "https://defence24.pl/geopolityka/wybory-w-rosji-koncza-sie-jakie-partie-kandyduja-i-kto-prawdopodobnie-wygra"
+      "title": "NATO: Sojusz jest gotowy zareagować na rosyjską eskalację",
+      "link": "https://defence24.pl/geopolityka/nato-sojusz-jest-gotowy-zareagowac-na-rosyjska-eskalacje"
     },
     {
-      "title": "Białoruś zakończyła ćwiczenia wojskowe przy granicy z Polską i Litwą",
-      "link": "https://defence24.pl/sily-zbrojne/bialorus-zakonczyla-cwiczenia-wojskowe-przy-granicy-z-polska-i-litwa"
+      "title": "Sojusz Rzymu i Aten. Dwie włoskie fregaty wzmocnią grecką flotę",
+      "link": "https://defence24.pl/sily-zbrojne/sojusz-rzymu-i-aten-dwie-wloskie-fregaty-wzmocnia-grecka-flote"
     },
     {
-      "title": "Rosja poniżej progu wojny. Jak długo to potrwa?",
-      "link": "https://defence24.pl/geopolityka/rosja-ponizej-progu-wojny-jak-dlugo-to-potrwa"
+      "title": "Francuscy politycy potępiają działania Rosji. Ostrzegają przed eskalacją",
+      "link": "https://defence24.pl/geopolityka/francuscy-politycy-potepiaja-dzialania-rosji-ostrzegaja-przed-eskalacja"
     },
     {
-      "title": "Eksplozje i dym nad Rijadem. Paraliż lotniska w stolicy",
-      "link": "https://defence24.pl/polityka-obronna/eksplozje-i-dym-nad-rijadem-paraliz-lotniska-w-stolicy"
+      "title": "Qatar Airways Bets on Fleet and Cargo Growth",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-20/qatar-airways-bets-on-fleet-and-cargo-growth-video"
     },
     {
-      "title": "BBN ostrzega przed zimową eskalacją wojny na Ukrainie",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/bbn-ostrzega-przed-zimowa-eskalacja-wojny-na-ukrainie"
+      "title": "Global Conflicts Shape High Stakes UN Meetings",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-20/global-conflicts-shape-high-stakes-un-meetings-video"
     },
     {
-      "title": "Heavy Rain Disrupts Trains in Japan as Tropical Storm Approaches",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/heavy-rain-disrupts-trains-in-japan-as-tropical-storm-approaches"
+      "title": "EM Investors Are Favoring Local Bonds as Dollar Debt Lags",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/em-investors-are-favoring-local-bonds-as-dollar-debt-lags"
     },
     {
-      "title": "Australia Home Auction Clearance Rates Fall Amid Rate Hike Fears",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/australia-home-auction-clearance-rates-fall-amid-rate-hike-fears"
+      "title": "Volvo Car Picks Škoda Boss Zellmer as New CEO to Oversee Revamp",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/volvo-car-picks-skoda-boss-zellmer-as-new-ceo-to-oversee-revamp"
     },
     {
-      "title": "Venezuela, TotalEnergies Pave Way for Oil Company’s Return",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/venezuela-totalenergies-pave-way-for-oil-company-s-return"
-    },
-    {
-      "title": "Hormuz Oil Shipments Hit Six-Month High, US Commander Says",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/hormuz-oil-shipments-hit-six-month-high-us-commander-says"
-    },
-    {
-      "title": "Companies Avoid Selling the Bonds Investors Crave: Credit Weekly",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-19/companies-avoid-selling-the-bonds-investors-crave-credit-weekly"
-    },
-    {
-      "title": "Trump Reignites Kennedy Center Fight",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-19/trump-reignites-kennedy-center-fight-video"
+      "title": "Inside Jefferies’ Months-Long Tussle With Glencore Over Radiant",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/inside-jefferies-months-long-tussle-with-glencore-over-radiant"
     },
     {
       "title": "Flock reportedly tries to shrink workforce with employee buyouts",
@@ -100,60 +96,64 @@
       "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/"
     },
     {
+      "title": "A24’s reputation is on the line with the SCP Foundation movie",
+      "link": "https://www.theverge.com/entertainment/997853/a24-scp-movie-creative-commons-license"
+    },
+    {
+      "title": "A great new video game movie",
+      "link": "https://www.theverge.com/tech/997322/resident-evil-steam-frame-fire-emblem-fortunes-weave"
+    },
+    {
+      "title": "The hidden monopoly behind your TI graphing calculator",
+      "link": "https://www.theverge.com/podcast/997725/the-hidden-monopoly-behind-your-ti-graphing-calculator"
+    },
+    {
+      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
+      "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure"
+    },
+    {
+      "title": "All roads lead to cable",
+      "link": "https://www.theverge.com/column/997843/streamers-cable-fast-channels"
+    },
+    {
       "title": "Meta’s Muse is creepy, but maybe not for the reasons you think",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy"
     },
     {
-      "title": "Trump treads further on free speech with new journalist bans",
-      "link": "https://www.theverge.com/policy/997805/trump-cnn-msnow-politico-ban"
+      "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
+      "link": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/"
     },
     {
-      "title": "Gemini went rogue, hacked three companies, and Google hid it",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack"
+      "title": "Don't call it an SUV: The Ferrari Purosangue review",
+      "link": "https://arstechnica.com/cars/2026/09/dont-call-it-an-suv-the-ferrari-purosangue-review/"
     },
     {
-      "title": "Anamanaguchi has ‘too goddamn many’ browser tabs open right now",
-      "link": "https://www.theverge.com/entertainment/996855/anamanaguchi-anyway-yeah-i-guess-interview-music"
+      "title": "T. rex teeth indicate it ran as warm as an elephant",
+      "link": "https://arstechnica.com/science/2026/09/t-rex-teeth-indicate-it-ran-as-warm-as-an-elephant/"
     },
     {
-      "title": "The colorful, unique Hyte X50 PC case is $50 off",
-      "link": "https://www.theverge.com/gadgets/997467/hyte-x50-pc-case-deal-sale"
+      "title": "Pieniądze za spotkanie z Nawrockim wywołały burzę. Jest odpowiedź Pałacu - money.pl",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ2lzUUJvdGdvQlp2azhnSkNYZ3dfZG5VQmZMcmNaTHo1RGwtQXpqajljYnNsdEI2anMwWkdiSmFxRnhNSzV0ODdaY0RfcDljcjdSV21FanFtUHg3V0twdzlSSXF2cURadHlYSzNiemJLUUZKOGpXUWZCSkREWmllUFNKY0N2QmdlcTRicHJWemJrekdqWFBxcWdtd3VSVDJTaFl3UzJmS3d4aG9QQXBvZlJ3c091QQ?oc=5"
     },
     {
-      "title": "Does AI need an antitrust exemption so it doesn&#8217;t kill everyone????",
-      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition"
+      "title": "Gen. Polko wprost po ciosie w Moskwę. Wskazał na strategię - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdFFYS3Bnd2hEcHJzMUpIYVJxMTdLU0prajZPZVUyQ2tHbXFRWkllV2YyaEpvS2tuVGF1bVo1OGhoOGtPdVZsel9OTHM5V0Fkc0ExY1o4UXVVZnBmVUhWUWFPaUVVcGpLcGhwZ1FfMzhzWHVtWDQ2S0RNSFBRRUZkbU82TTJZVERoNDhYVDEtT29OZE9YMl9Rek9jamM3X1FU?oc=5"
     },
     {
-      "title": "Learning another language may be one of the best ways to keep your brain healthy",
-      "link": "https://arstechnica.com/science/2026/09/learning-another-language-may-be-one-of-the-best-ways-to-keep-your-brain-healthy/"
+      "title": "Kto zostanie prezydentem Krakowa? Mamy wyniki najnowszego sondażu - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3VWbWZSYk4xVERvVS1HRjU4ekNkTVZqb25ZVVFCXzNtVXRqb1RyTkJyZkpBZGl1WmxBMTU0VUVQNmo2eGpGRTR0RTRod195bGUwMWM5bXdKNXA0Z3pmU3kyd21qeW82Vmt4TUd1RkFXZ3R2Z3BPMFZZZmpVd1g2YjNscFJ0N29QN29mUlFUVkJRRXFNenh4ZGJoc3N4eWlrd01saEk0RmZ6d2N4TUwxd0hn?oc=5"
     },
     {
-      "title": "Rings around a tiny body have changed over the past decade",
-      "link": "https://arstechnica.com/science/2026/09/rings-around-a-tiny-body-have-changed-over-the-past-decade/"
+      "title": "Gdzie jest dla NATO próg wojny? \"Decyduje wiele czynników\" - Fakt",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZG11bXFFUC1GUGU1TnRvRHhqQVZoOV9uRWc2WldBS1NCZUlsYkxsaWxNOTF3QXNZWlAwUUxYZXBnZnZ4UklxZzRNaDJuVnpLcTJHM1QtcWFEYWFKa0hPT0RuUUlnSDlaN3k0R3RaN1J2MmpLSTQzUmJYSHBoVk5IdkViMXAtZlVrVnVTVElTblIyQXNTQVYtY3NWTkI0amgwUGNqRy1xa0dRSWhYMjVYSA?oc=5"
     },
     {
-      "title": "Wielka kumulacja w Lotto. Padła główna wygrana. Sprawdź szczęśliwe liczby - polsatnews.pl",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY3JHaEFVNGVPT0xGbG9pQ01ocU5lOUdwWExuSVoweUpyTTk1T0lBdWtKTHh4dC1xeTlaOUFueDFnZkEtMDZBLU53cFhtLVNoSkpKNjUzU0RIMkRUSHIwcVp0ejVBRk5JNHdtdEx3Z3hWZWJvRlhmWnUyODVINkpQSTV2OHJBUVdldDZnZ2NUQ2Q5YjBOa1FnYw?oc=5"
+      "title": "Polacy ocenili Donalda Tuska. Większość Polaków niezadowolona z szefa rządu - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONzg3M3JnUVRrX1BUckhhWjFCcnlBRzNuY05xSmpkOWJLSWphcDBCYUtiMUZielNubW5ybGRtSVk1X0NyaW9kUEFDQXF3QzFvMVlLbnpaM2dhU0FMSzZ3R096cXFFNV9pdEJ2ZlJtenRVaXpHZkoxQXJ1NG1NTXc0a1JkSXBnOUdwNGl0REloVjB0SXZBbVVZVE9HQ2NwZU8wOXkzYV9tZy1XZndCdlh5ZmQtdFA0bTZx?oc=5"
     },
     {
-      "title": "Pilna zmiana planów Donalda Trumpa. Prezydent USA wraca do Białego Domu - Wiadomości Onet",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSmp4c0tGcjdQSkk3V1ptZzNwRUNCcXpBVFJ4Y2h4cFU3ZVAzbFowY3BjWnkwSXJEYUVEeENXejA5SzBwZDdFOVduZGc0b1dMQTRsU0p5bldXNG5KaUlzRVU1ejlCSXdrS3loM1NSVFk5czVFbkRmMWYweXpvMS00aFZjUmZIZ1BkLVlxa1AtRlRaNGJkZS1uYV9adVItcnZZOGY4OGNFYXFyQVgzTjNOQmVMdw?oc=5"
-    },
-    {
-      "title": "Kaczyński zapowiedział konwencję ekonomiczną PiS. Wskazał kluczowy temat - Money.pl",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmtWMVItd1Uzdkh0UEMwaktCY2c4c0paa2MxTWhpSENaMFIxY0VTTXN2TUpVV2hDalJNOWx6ZGNJb0dHUU1lVWVFSmNIQ2MwOVEzX0dHS25ZMHRIbEFSaWZUT01za0xmblduTlBVZkJpVmcyek9IMlE1S0pral9PamhSMHcxSC1QbEdxRmU2NmJfYm9pV3VvVlJtLVhmWU05alhHcVZmSXBNZ29Yc1NFeXNQUXpXRlZYTWhNVll3LXE3dXY0?oc=5"
-    },
-    {
-      "title": "Rosyjskie drony pod lupą. Gen. Polko: Europa ma przewagę technologiczną - Fakt",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd0pkZzQ5MDJBcnAwcjJjbE1HNE15ajNicC13SVpCbmZxOVYyWGJuT0dib3c1YThZVlhQbjU5a1pGaFEzWGI2Z0EzdGUwVlB5bEtyMGk3WXdzcUFaUVc4QVJxLXVpYlJGcjBSSmlBeGl6Q0ZLRy1jTTdIRzJtTzRlazhIeFpIdW9USjFrbWN5SXlqcVhxV3JmdG5VX1B0OTFYTXNvS3JoV1d1anRrRFE?oc=5"
-    },
-    {
-      "title": "Nawroccy już w USA. Zaczęli od symbolicznego gestu - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY2VCLW5UUUJCbmxWR1VsbzNJUktOb2hKWk9mRTJURzViTEZFdDhUcEswbG5mZ2Q4LVNCSG04SFk3akxQQVhXaVBWcG5GSjRBdWRHcU96T09iSUZhMG1TdXNtRlBGNWlpdVctWGNSbUxjVmNHM3pCWVhDVFR1cGZObzJRcEg5eVRfZjd5NDd0S2IwOGZXdWxN?oc=5"
-    },
-    {
-      "title": "„Kradną, kłamią i zadłużają naszą Ojczyznę”. Politycy biją w rząd po decyzji Moody's - Rzeczpospolita",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQWo4M2ttcG5JYklPS1hJQjA5UmJieEVLWDRjZ2FSWmxqb0tmME9ucjhZcDVCUmt3NzZpSEFRX0ZXalFSOXVXY0ZPanJUNm1xbGJIMVJTcVRfYVpnel9QQkswYWFLUTJBYVc5TTg5M3VDSkNyQnFnbFhfNWQwczVzNFEwTEFKcGlDMzRQbTRBeTdmblVlUWRNNWpDZkhkTHJ5c0JUVG1QTmc0UFJEc1AwTmQxc1N4S3ZJclVnUE5JdDJpdmRMNVJoMThR?oc=5"
+      "title": "Nie wrócili na noc. Policja szuka 10- i 11-latka - o2.pl",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdVNUU2p0TUh4aWtMWm1ZYk5obFhwaVY0VVd2cThubzZ2bnV3b2VfUHRoWEVLckpobXdlNGx2TkY4QW8zQWJHMktpbzJKS29qYnRpSl9EU3hRWmFZV05oWXRqMVV1UFkzYlVibVVBcTB0aVNaS0tzOWhqZWthVnQ2ZEhpZmhObmRBbGhha3NFamVRM0tLUkNzRQ?oc=5"
     }
   ]
 }

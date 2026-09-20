@@ -2923,5 +2923,162 @@
         "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/image-1-1152x648.png"
       }
     ]
+  },
+  "2026-09-20_wieczorne": {
+    "date": "20 września 2026",
+    "time": "14:47",
+    "timestamp": "2026-09-20_14:47",
+    "items": [
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "💥 Zmasowany atak na Moskwę: Setki ukraińskich dronów w powietrzu",
+        "summary": "Ukraina przeprowadziła jeden z największych ataków bezzałogowców na stolicę Rosji od początku konfliktu. Władze Moskwy zgłaszają masowe próby zestrzeleń oraz poważne zakłócenia w ruchu lotniczym.",
+        "comment": "Przeniesienie działań bojowych w głąb rosyjskiego terytorium podważa narrację Kremla o pełnej skuteczności własnej obrony powietrznej.",
+        "image_query": "moscow drone attack military",
+        "link": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo",
+        "image_url": "https://images.pexels.com/photos/16525965/pexels-photo-16525965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/15c3/live/41153930-b4bb-11f1-b1d1-571ed4d7ff2c.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🗳️ Wybory w Niemczech: Ważą się losy kandydata na kanclerza",
+        "summary": "W Niemczech trwa głosowanie, które zweryfikuje układ sił politycznych i zdecyduje o przyszłości Friedricha Merza. Wyniki wyznaczą nowy kierunek dla największej gospodarki Unii Europejskiej.",
+        "comment": "Ewentualna zmiana układu rządzącego w Berlinie bezpośrednio wpłynie na europejską politykę fiskalną oraz tempo wsparcia wojskowego dla Kijowa.",
+        "image_query": "german election voting poll",
+        "link": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o",
+        "image_url": "https://images.pexels.com/photos/7103079/pexels-photo-7103079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1012/live/d74ee600-b4d2-11f1-b1d1-571ed4d7ff2c.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🚀 Huti uderzają w saudyjską stolicę rakietami balistycznymi",
+        "summary": "Jemeńscy rebelianci Huti poinformowali o przeprowadzeniu ataku rakietowego na stolice Arabii Saudyjskiej, Rijad. Zdarzenie to oznacza gwałtowne zaognienie sytuacji na Półwyspie Arabskim.",
+        "comment": "Powrót do bezpośrednich uderzeń w saudyjską infrastrukturę grozi załamaniem lokalnych porozumień i wzrostem ryzyka dla żeglugi na Bliskim Wschodzie.",
+        "image_query": "houthi missile strike saudi",
+        "link": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o",
+        "image_url": "https://images.pexels.com/photos/39497100/pexels-photo-39497100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39c5/live/a0844fe0-b45d-11f1-b213-1db858c3e27c.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🧊 NATO popiera umowę w sprawie Grenlandii pod presją USA",
+        "summary": "Sojusz Północnoatlantycki przyjął nowe porozumienie dotyczące Grenlandii, podczas gdy Donald Trump zadeklarował uzyskanie stałej kontroli bezpieczeństwa nad wyspą przez USA.",
+        "comment": "Rosnące znaczenie strategiczne Arktyki zmusza pakt NATO do szybkiej reakcji na rywalizację o szlaki morskie z Rosją i Chinami.",
+        "image_query": "greenland nato military base",
+        "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
+        "image_url": "https://images.pexels.com/photos/39523782/pexels-photo-39523782.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f1ad/live/fd353880-b421-11f1-8a8e-d9778c1036bb.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🪖 Nowe pułki rangersów wzmacniają ukraińskie siły specjalne",
+        "summary": "Ukraińskie Siły Operacji Specjalnych formują wyspecjalizowane jednostki rangersów dedykowane do zadań szturmowych i rozpoznawczych. Pododdziały są szkolone według standardów państw NATO.",
+        "comment": "Dalsza profesjonalizacja formacji specjalnych ma zapewnić większą precyzję operacyjną w kluczowych rejonach walki.",
+        "image_query": "ukraine special forces military",
+        "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/pulki-rangersow-w-ukrainskich-silach-specjalnych",
+        "image_url": "https://images.pexels.com/photos/16147348/pexels-photo-16147348.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/20/1440x810px/4z2NhWPUSX860ew3luOWMIp3XhNYlY9wXKG65HVL.edkf.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🇵🇱 Żelazna Dywizja demonstruje pancerną potęgę Wojska Polskiego",
+        "summary": "18. Dywizja Zmechanizowana zaprezentowała proces wdrażania nowoczesnego uzbrojenia, w tym czołgów Abrams, armatohaubic K9A1 oraz transporterów Rosomak.",
+        "comment": "Szybka modernizacja techniczna wojsk na wschodniej flance NATO stanowi kluczowy element budowania potencjału odstraszania w regionie.",
+        "image_query": "polish army abrams tank",
+        "link": "https://defence24.pl/sily-zbrojne/abrams-k9a1-i-rosomak-zelazna-dywizja-pokazala-jak-sie-zmienia",
+        "image_url": "https://images.pexels.com/photos/31595009/pexels-photo-31595009.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/P1aqR2EDkCJKwinXUgOlqxONKts8IFJVynqhtcU9.j0n5.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🚛 Czesi debiutują w Kielcach z nową generacją wozów Tatra Force",
+        "summary": "Na targach MSPO w Kielcach zaprezentowano nową odsłonę ciężarówek wojskowych Tatra Force. Czeski producent dąży do rozszerzenia obecności na rynkach Europy Środkowo-Wschodniej.",
+        "comment": "Rozwój lokalnych zdolności w zakresie wojskowych nośników logistycznych zwiększa samowystarczalność państw regionu.",
+        "image_query": "tatra force military truck",
+        "link": "https://defence24.pl/przemysl/czeskie-pancerne-nowosci-w-kielcach-nowa-generacja-tatry-force-debiutuje-na-mspo",
+        "image_url": "https://images.pexels.com/photos/28975879/pexels-photo-28975879.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/YDKE8RjlX1CzzVS4smg4IhdBRjXPUpkdCIPSgZ1n.gh53.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "⚓ Włoskie fregaty wzmocnią grecką flotę wojenną",
+        "summary": "Włochy i Grecja zacieśniają współpracę morską, w ramach której dwie włoskie fregaty zasilą grecką marynarkę wojenną.",
+        "comment": "Transfer okrętów wyraźnie wzmacnia potencjał operacyjny NATO we wschodniej części Morza Śródziemnego.",
+        "image_query": "navy frigate warship europe",
+        "link": "https://defence24.pl/sily-zbrojne/sojusz-rzymu-i-aten-dwie-wloskie-fregaty-wzmocnia-grecka-flote",
+        "image_url": "https://images.pexels.com/photos/34468690/pexels-photo-34468690.png?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/EzPw1orgSbKMwkj7xQ6fiGa1UJ19sOrMzblATCWf.mqc9.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📈 Inwestorzy wybierają obligacje rynków wschodzących w lokalnych walutach",
+        "summary": "Inwestorzy instytucjonalni przenoszą kapitał do obligacji skarbowych emitowanych w walutach lokalnych państw rozwijających się, omijając dług w dolarach.",
+        "comment": "Spadek atrakcyjności amerykańskiego długu skłania fundusze do poszukiwania wyższych stóp zwrotu na rynkach wschodzących.",
+        "image_query": "emerging market bonds trading",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-20/em-investors-are-favoring-local-bonds-as-dollar-debt-lags",
+        "image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🚗 Były szef Skody stanie na czele Volvo Car",
+        "summary": "Klaus Zellmer objął stanowisko dyrektora generalnego Volvo Car, zastępując dotychczasowe kierownictwo. Jego celem będzie przeprowadzenie restrukturyzacji i przyspieszenie elektryfikacji oferty.",
+        "comment": "Zmiana menedżerska pokazuje presję, pod jaką znajdują się europejscy producenci w obliczu spadku popytu i mocnej konkurencji z Azji.",
+        "image_query": "volvo car executive office",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-20/volvo-car-picks-skoda-boss-zellmer-as-new-ceo-to-oversee-revamp",
+        "image_url": "https://images.pexels.com/photos/15513826/pexels-photo-15513826.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/15513826/pexels-photo-15513826.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏛️ Kontrowersje wokół płatnych spotkań: Pałac Prezydencki odpowiada",
+        "summary": "Informacje o opłatach za udział w wydarzeniach z udziałem kandydata na prezydenta wywołały dyskusję polityczną. Kancelaria Prezydenta wydała oświadczenie odpierające zarzuty opozycji.",
+        "comment": "Spór wokół transparentności finansowania spotkań wpisuje się w narastającą dynamikę zbliżającej się kampanii wyborczej.",
+        "image_query": "poland presidential palace warsaw",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ2lzUUJvdGdvQlp2azhnSkNYZ3dfZG5VQmZMcmNaTHo1RGwtQXpqajljYnNsdEI2anMwWkdiSmFxRnhNSzV0ODdaY0RfcDljcjdSV21FanFtUHg3V0twdzlSSXF2cURadHlYSzNiemJLUUZKOGpXUWZCSkREWmllUFNKY0N2QmdlcTRicHJWemJrekdqWFBxcWdtd3VSVDJTaFl3UzJmS3d4aG9QQXBvZlJ3c091QQ?oc=5",
+        "image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "POLSKA",
+        "title": "📉 Sondaż: Większość Polaków krytycznie ocenia premiera",
+        "summary": "Z najnowszego badania opinii wynika, że ponad połowa respondentów negatywnie ocenia pracę szefa rządu Donalda Tuska.",
+        "comment": "Spadek ocen rządu jest konsekwencją powolnego tempa realizacji zapowiedzi oraz rosnących kosztów utrzymania.",
+        "image_query": "donald tusk poland prime minister",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONzg3M3JnUVRrX1BUckhhWjFCcnlBRzNuY05xSmpkOWJLSWphcDBCYUtiMUZielNubW5ybGRtSVk1X0NyaW9kUEFDQXF3QzFvMVlLbnpaM2dhU0FMSzZ3R096cXFFNV9pdEJ2ZlJtenRVaXpHZkoxQXJ1NG1NTXc0a1JkSXBnOUdwNGl0REloVjB0SXZBbVVZVE9HQ2NwZU8wOXkzYV9tZy1XZndCdlh5ZmQtdFA0bTZx?oc=5",
+        "image_url": "https://images.pexels.com/photos/27794292/pexels-photo-27794292.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/27794292/pexels-photo-27794292.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 AI w rękach hakerów: Gemini wykorzystane do cyberataków",
+        "summary": "Model językowy Gemini od Google został użyty przez grupy hakerskie do przełamywania zabezpieczeń w celach komercyjnych.",
+        "comment": "Wykorzystanie komercyjnych modeli AI do automatyzacji włamań wymusza zmianę w podejściu do ochrony infrastruktury IT.",
+        "image_query": "ai cybersecurity hacking network",
+        "link": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
+        "image_url": "https://images.pexels.com/photos/37694202/pexels-photo-37694202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "⚡ Błąd ludzki głównym zagrożeniem dla sieci energetycznych",
+        "summary": "Analizy bezpieczeństwa pokazują, że największym ryzykiem dla infrastruktury energetycznej pozostają błędy personelu, a nie zaawansowane ataki AI.",
+        "comment": "Słabość procedur i czynnik ludzki nieustannie stanowią najłatwiejszy punkt wejścia dla wrogich cyberoperacji.",
+        "image_query": "power grid cybersecurity human",
+        "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+        "image_url": "https://images.pexels.com/photos/8090302/pexels-photo-8090302.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/akrales_220309_4977_0292.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200"
+      },
+      {
+        "category": "NAUKA",
+        "title": "🦖 Zęby T. rexa ujawniają prawdę o jego metabolizmie",
+        "summary": "Badania izotopowe szkliwa Tyrannosaurus rex dowodzą, że utrzymał on stałą, wysoką temperaturę ciała porównywalną ze słoniami.",
+        "comment": "Odkrycie ostatecznie potwierdza hipotezę o stałocieplności dużych teropodów, zmieniając naukowe spojrzenie na ich zapotrzebowanie energetyczne.",
+        "image_query": "tyrannosaurus rex dinosaur paleontology",
+        "link": "https://arstechnica.com/science/2026/09/t-rex-teeth-indicate-it-ran-as-warm-as-an-elephant/",
+        "image_url": "https://images.pexels.com/photos/33563219/pexels-photo-33563219.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1485364132-1152x648-1789756447.jpg"
+      }
+    ]
   }
 }
