@@ -1,37 +1,37 @@
 {
   "date": "20 września 2026",
-  "time": "09:33",
-  "timestamp": "2026-09-20_09:33",
+  "time": "12:18",
+  "timestamp": "2026-09-20_12:18",
   "items": [
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🚀 Ponad miliard dolarów na dalekosiężne pociski PrSM",
-      "summary": "Stany Zjednoczone przeznaczają ponad miliard dolarów na rozwój nowej wersji pocisków Precision Strike Missile o zasięgu do 500 kilometrów. Broń ta ma zastąpić używane dotychczas systemy ATACMS w artylerii rakietowej.",
-      "comment": "Zwiększenie zasięgu artylerii rakietowej znacząco podnosi zdolności odstraszania oraz rażenia celów na głębokim zapleczu wroga.",
-      "image_query": "precision missile launcher",
-      "link": "https://defence24.pl/przemysl/ponad-miliard-dolarow-na-nowa-wersje-pociskow-prsm-nawet-500-km-zasiegu",
-      "image_url": "https://cdn.defence24.pl/2021/08/16/1920x1080px/bmIN37GCmYalO3BrC1QdMbT0PRULbuoKqk9QaEI2.tkko.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2021/08/16/1920x1080px/bmIN37GCmYalO3BrC1QdMbT0PRULbuoKqk9QaEI2.tkko.jpg"
-    },
-    {
       "category": "KONFLIKTY",
-      "title": "🚨 Zmasowany atak ukraińskich dronów na obwód moskiewski",
-      "summary": "Ukraińskie bezzałogowce przeprowadziły na dużą skalę uderzenie na cele w obwodzie moskiewskim. W wyniku ataku odnotowano straty materialne oraz ofiary śmiertelne po stronie rosyjskiej.",
-      "comment": "Przeniesienie działań wojennych w rejon stolicy Rosji osłabia poczucie bezpieczeństwa wewnątrz kraju i przeciąża rosyjską obronę powietrzną.",
-      "image_query": "military drone night",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukrainskie-drony-uderzaja-w-moskwe",
-      "image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/tCqaHs0VTPgcfQ0M43HkXBAmz5A5MiX1YKjPtSWb.mxac.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/tCqaHs0VTPgcfQ0M43HkXBAmz5A5MiX1YKjPtSWb.mxac.jpg"
-    },
-    {
-      "category": "GEOPOLITYKA",
-      "title": "⚔️ Jemeńscy Huti uderzają rakietami w stolicę Arabii Saudyjskiej",
-      "summary": "Ruch Huti poinformował o przeprowadzeniu ataku rakietami balistycznymi na cele strategiczne w Rijadzie. Jest to kolejna odsłona eskalacji napięć w rejonie Półwyspu Arabskiego.",
-      "comment": "Ataki na saudyjską stolicę stanowią bezpośrednie zagrożenie dla stabilności infrastruktury energetycznej oraz bezpieczeństwa regionalnego szlaku.",
+      "title": "🚀 Huti wystrzelili rakiety balistyczne w stolicę Arabii Saudyjskiej",
+      "summary": "Jemeńscy rebelianci Huti poinformowali o przeprowadzeniu ataku rakietami balistycznymi na saudyjską stolicę. Działania te stanowią kolejną eskalację napięć w kluczowym dla globalnego handlu regionie Bliskiego Wschodu.",
+      "comment": "Nasilenie ataków dalekiego zasięgu bezpośrednio zagraża stabilności regionalnej infrastruktury krytycznej.",
       "image_query": "ballistic missile launch",
       "link": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o",
       "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39c5/live/a0844fe0-b45d-11f1-b213-1db858c3e27c.jpg",
       "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39c5/live/a0844fe0-b45d-11f1-b213-1db858c3e27c.jpg"
+    },
+    {
+      "category": "KONFLIKTY",
+      "title": "⚔️ Zmasowany atak ukraińskich dronów na obwód moskiewski",
+      "summary": "W wyniku zmasowanego nalotu ukraińskich bezzałogowców na obwód moskiewski zginęły co najmniej dwie osoby. Była to jedna z najbardziej rozległych operacji dronowych wymierzonych w rejon stolicy Rosji.",
+      "comment": "Przenoszenie ciężaru działań na dalekie zaplecze przeciwnika skutecznie wiąże rosyjskie systemy obrony powietrznej.",
+      "image_query": "military drone attack",
+      "link": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/15c3/live/41153930-b4bb-11f1-b1d1-571ed4d7ff2c.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/15c3/live/41153930-b4bb-11f1-b1d1-571ed4d7ff2c.jpg"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "🛡️ Włoskie fregaty wzmocnią grecką flotę wojenną",
+      "summary": "Grecja oraz Włochy zacieśniają partnerstwo strategiczne, w ramach którego dwie włoskie fregaty zasilą grecką marynarkę wojenną. Umowa ma na celu podniesienie potencjału odstraszania we wschodnim rejonie Morza Śródziemnego.",
+      "comment": "Konsolidacja potencjału morskiego Rzymu i Aten znacząco wzmacnia południową flankę Sojuszu Północnoatlantyckiego.",
+      "image_query": "frigate warship navy",
+      "link": "https://defence24.pl/sily-zbrojne/sojusz-rzymu-i-aten-dwie-wloskie-fregaty-wzmocnia-grecka-flote",
+      "image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/EzPw1orgSbKMwkj7xQ6fiGa1UJ19sOrMzblATCWf.mqc9.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1920x1080px/EzPw1orgSbKMwkj7xQ6fiGa1UJ19sOrMzblATCWf.mqc9.jpg"
     }
   ]
 }
