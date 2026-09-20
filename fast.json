@@ -1,37 +1,37 @@
 {
-  "date": "19 września 2026",
-  "time": "14:38",
-  "timestamp": "2026-09-19_14:38",
+  "date": "20 września 2026",
+  "time": "09:33",
+  "timestamp": "2026-09-20_09:33",
   "items": [
     {
-      "category": "GEOPOLITYKA",
-      "title": "🛡️ Porozumienie USA i Danii w sprawie Grenlandii",
-      "summary": "Stany Zjednoczone oraz Dania zawarły porozumienie regulujące status i kwestie bezpieczeństwa Grenlandii. Uzgodnienia kończą okres napięć dyplomatycznych wokół strategicznego terytorium arktycznego.",
-      "comment": "Sojusznicza stabilizacja Arktyki zabezpiecza kluczowe szlaki i infrastrukturę wczesnego ostrzegania.",
-      "image_query": "greenland military arctic",
-      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f1ad/live/fd353880-b421-11f1-8a8e-d9778c1036bb.jpg",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f1ad/live/fd353880-b421-11f1-8a8e-d9778c1036bb.jpg"
-    },
-    {
       "category": "OBRONNOŚĆ",
-      "title": "🚀 Rekordowa misja lotniskowca USS Abraham Lincoln",
-      "summary": "Amerykański lotniskowiec USS Abraham Lincoln wszedł do portu na Guam w celu uzupełnienia zapasów. Misja grupy uderzeniowej trwa już 302 dni, co stanowi jedno z najdłuższych wdrożeń operacyjnych US Navy.",
-      "comment": "Ekstremalnie wydłużony dyżur bojowy zwiększa presję logistyczną i zużycie zasobów floty.",
-      "image_query": "aircraft carrier navy",
-      "link": "https://news.usni.org/2026/09/19/carrier-uss-abraham-lincoln-pulls-into-guam-for-logistics-stop-deployment-now-at-302-days",
-      "image_url": "https://images.pexels.com/photos/39422513/pexels-photo-39422513.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/39422513/pexels-photo-39422513.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "🚀 Ponad miliard dolarów na dalekosiężne pociski PrSM",
+      "summary": "Stany Zjednoczone przeznaczają ponad miliard dolarów na rozwój nowej wersji pocisków Precision Strike Missile o zasięgu do 500 kilometrów. Broń ta ma zastąpić używane dotychczas systemy ATACMS w artylerii rakietowej.",
+      "comment": "Zwiększenie zasięgu artylerii rakietowej znacząco podnosi zdolności odstraszania oraz rażenia celów na głębokim zapleczu wroga.",
+      "image_query": "precision missile launcher",
+      "link": "https://defence24.pl/przemysl/ponad-miliard-dolarow-na-nowa-wersje-pociskow-prsm-nawet-500-km-zasiegu",
+      "image_url": "https://cdn.defence24.pl/2021/08/16/1920x1080px/bmIN37GCmYalO3BrC1QdMbT0PRULbuoKqk9QaEI2.tkko.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2021/08/16/1920x1080px/bmIN37GCmYalO3BrC1QdMbT0PRULbuoKqk9QaEI2.tkko.jpg"
     },
     {
-      "category": "PRZEMYŚL OBRONNY",
-      "title": "⚔️ Rozwój polskich systemów dronowych UMO",
-      "summary": "Polska Grupa UMO skupia się na rozwijaniu własnych, autorskich systemów bezzałogowych dla sił zbrojnych. Projekt wpisuje się w rosnące zapotrzebowanie sił obronnych na autonomiczne platformy rozpoznawcze i uderzeniowe.",
-      "comment": "Budowa krajowych kompetencji w sektorze dronowym wzmacnia suwerenność technologiczną sił zbrojnych.",
-      "image_query": "military drone technology",
-      "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe",
-      "image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png"
+      "category": "KONFLIKTY",
+      "title": "🚨 Zmasowany atak ukraińskich dronów na obwód moskiewski",
+      "summary": "Ukraińskie bezzałogowce przeprowadziły na dużą skalę uderzenie na cele w obwodzie moskiewskim. W wyniku ataku odnotowano straty materialne oraz ofiary śmiertelne po stronie rosyjskiej.",
+      "comment": "Przeniesienie działań wojennych w rejon stolicy Rosji osłabia poczucie bezpieczeństwa wewnątrz kraju i przeciąża rosyjską obronę powietrzną.",
+      "image_query": "military drone night",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukrainskie-drony-uderzaja-w-moskwe",
+      "image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/tCqaHs0VTPgcfQ0M43HkXBAmz5A5MiX1YKjPtSWb.mxac.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/tCqaHs0VTPgcfQ0M43HkXBAmz5A5MiX1YKjPtSWb.mxac.jpg"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "⚔️ Jemeńscy Huti uderzają rakietami w stolicę Arabii Saudyjskiej",
+      "summary": "Ruch Huti poinformował o przeprowadzeniu ataku rakietami balistycznymi na cele strategiczne w Rijadzie. Jest to kolejna odsłona eskalacji napięć w rejonie Półwyspu Arabskiego.",
+      "comment": "Ataki na saudyjską stolicę stanowią bezpośrednie zagrożenie dla stabilności infrastruktury energetycznej oraz bezpieczeństwa regionalnego szlaku.",
+      "image_query": "ballistic missile launch",
+      "link": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39c5/live/a0844fe0-b45d-11f1-b213-1db858c3e27c.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/39c5/live/a0844fe0-b45d-11f1-b213-1db858c3e27c.jpg"
     }
   ]
 }
