@@ -39,7 +39,7 @@ MIN_ITEMS = 6
 
 
 def sanitize_text(text: str) -> str:
-    """Usuwa problematyczne znaki Unicode."""
+    """Usuwa problematyczne znaki Unicode (tag characters, bidi, ukryte kontrolne)."""
     if not text:
         return ""
     text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
@@ -347,6 +347,6 @@ with open("rozrywka.json", "w", encoding="utf-8") as f:
 
 archive_data[session_fixed_key] = output_data
 with open(archive_file, "w", encoding="utf-8") as f:
-    json.dump(archive_data, f, encoding="utf-8", indent=2)
+    json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
 print(f"Zakończono pomyślnie. Zapisano {len(items)} ciekawostek rozrywkowych do rozrywka.json.")
