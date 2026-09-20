@@ -1,127 +1,157 @@
 {
-  "date": "19 września 2026",
-  "time": "15:28",
-  "timestamp": "2026-09-19_15:28",
+  "date": "20 września 2026",
+  "time": "06:50",
+  "timestamp": "2026-09-20_06:50",
   "items": [
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🇺🇸 Gigantyczna pomoc z USA dla Kijowa",
-      "summary": "Stany Zjednoczone przygotowują nowy, masowy pakiet wsparcia wojskowego dla Ukrainy. Uzbrojenie ma kluczowe znaczenie w odpieraniu rosyjskich natarć.",
-      "comment": "Decyzja Waszyngtonu ma zrekompensować opóźnienia w dostawach i wzmocnić pozycję obronną Ukrainy na kluczowych odcinkach frontu.",
-      "image_query": "us military aid ukraine",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/usa-szykuja-wielki-pakiet-dla-ukrainy",
-      "image_url": "https://images.pexels.com/photos/11834883/pexels-photo-11834883.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.defence24.pl//2022/12/17/originals/QadJP2qovllLGXHBullzqoi63Gg7iJymlLqQFAqH.jpg"
-    },
-    {
-      "category": "OBRONNOŚĆ",
-      "title": "🇵🇱 Polski przemysł stawia na własne drony",
-      "summary": "Grupa UMO rozwija autorskie bezzałogowce przeznaczone dla wojska i służb mundurowych. Firma chce uniezależnić krajowy rynek od zagranicznych dostawców.",
-      "comment": "Rozwój rodzimych technologii dronowych jest fundamentem budowania nowoczesnej i niezależnej obronności w regionie.",
-      "image_query": "military drone production",
-      "link": "https://defence24.pl/przemysl/grupa-umo-stawia-na-autorskie-systemy-dronowe",
-      "image_url": "https://images.pexels.com/photos/32769115/pexels-photo-32769115.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/18/1920x1080px/2adina61Vnf865KhsOJaPrN0aGS95GiFkF63OHd8.jltb.png"
+      "category": "POLSKA",
+      "title": "🏭 Polska planuje produkcję trotylu w Kanadzie",
+      "summary": "Polski rząd prowadzi rozmowy z władzami w Ottawie dotyczące uruchomienia produkcji materiałów wybuchowych TNT na terenie Kanady. Inicjatywa ma na celu zabezpieczenie dostaw kluczowych surowców dla krajowego przemysłu zbrojeniowego.",
+      "comment": "Dywersyfikacja geograficzna produkcji trotylu zmniejsza ryzyko operacyjne w przypadku bezpośredniego zagrożenia militarnego w Europie Środkowej.",
+      "image_query": "military explosives factory",
+      "link": "https://defence24.pl/przemysl/polska-moze-produkowac-tnt-w-kanadzie-rozmowy-na-szczeblu-rzadowym",
+      "image_url": "https://images.pexels.com/photos/11849155/pexels-photo-11849155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/19/1024x576px/tCTEqimnEAFpNFfbaiFY3QgH3fMbliiwBRB3e6ew.uzug.jpg"
     },
     {
       "category": "GEOPOLITYKA",
-      "title": "🕊️ Szansa na przełom w dyplomacji z Iranem",
-      "summary": "Podczas rozmów na forum ONZ pojawiła się nowa propozycja dyplomatyczna w sprawie konfliktu wokół Iranu. Negocjatorzy szukają dróg deeskalacji napięć.",
-      "comment": "Ewentualny kompromis z Teheranem powstrzyma skokowy wzrost cen surowców energetycznych i ustabilizuje bliskowschodni węzeł geopolityczny.",
-      "image_query": "un diplomacy iran talks",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-19/un-talks-offer-a-new-opening-on-iran-war-video",
-      "image_url": "https://images.pexels.com/photos/16459372/pexels-photo-16459372.png?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/16459372/pexels-photo-16459372.png?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "🛢️ JPMorgan ostrzega przed chaosem na rynku ropy",
-      "summary": "Analitycy JPMorgan wskazują na brak jasnego scenariusza zakończenia niepewności na globalnym rynku ropy naftowej. Ceny surowca pozostają pod presją geopolityki.",
-      "comment": "Brak przewidywalności wydobycia i popytu uderza bezpośrednio w kalkulacje budżetowe krajów importerów surowców.",
-      "image_query": "oil market chart barrels",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-19/jpmorgan-sees-no-clear-endgame-for-oil-markets-video",
-      "image_url": "https://images.pexels.com/photos/38150961/pexels-photo-38150961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/38150961/pexels-photo-38150961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "👔 Era sukcesji w Berkshire Hathaway domknięta",
-      "summary": "Syn Warrena Buffetta oficjalnie przejmuje przewodnictwo w radzie nadzorczej konglomeratu Berkshire Hathaway. Kończy to wieloletni proces sukcesji w gigancie finansowym.",
-      "comment": "Nowe kierownictwo stanie przed wyzwaniem utrzymania historycznie wysokich stóp zwrotu w dobie zmieniającego się otoczenia makroekonomicznego.",
-      "image_query": "berkshire hathaway corporate boardroom",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-19/buffett-son-takes-chair-as-berkshire-transition-ends-video",
-      "image_url": "https://images.pexels.com/photos/36149083/pexels-photo-36149083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/36149083/pexels-photo-36149083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "🇮🇳 Indie walczą o przekucie obietnic w dobrobyt",
-      "summary": "Mimo szybkiego wzrostu gospodarczego Indie zmagają się z problemem nierównomiernego podziału bogactwa i wydajności przemysłowej. Rząd szuka nowych impulsów rozwojowych.",
-      "comment": "Kluczem do sukcesu Nowego Delhi będzie sprawna modernizacja infrastruktury oraz przyciągnięcie bezpośrednich inwestycji zagranicznych.",
-      "image_query": "india economy infrastructure development",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-19/can-india-turn-its-promise-into-prosperity",
-      "image_url": "https://images.pexels.com/photos/28672606/pexels-photo-28672606.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/28672606/pexels-photo-28672606.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "✈️ USA inwestują 875 mln USD w automatyzację lotów",
-      "summary": "Federalna Administracja Lotnictwa (FAA) wdraża zaawansowane narzędzie do zarządzania zatłoczoną przestrzenią powietrzną. Inwestycja ma zredukować opóźnienia i zwiększyć bezpieczeństwo.",
-      "comment": "Modernizacja państwowej infrastruktury lotniczej to kluczowy krok w stronę optymalizacji kosztów operacyjnych przewoźników i usprawnienia transportu.",
-      "image_query": "air traffic control airport",
-      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
-      "image_url": "https://images.pexels.com/photos/15273870/pexels-photo-15273870.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/DCA-airport-2560x1440.jpg"
-    },
-    {
-      "category": "POLSKA",
-      "title": "🇵🇱 BBN prostuje doniesienia w sprawie szefa rządu",
-      "summary": "Szef Biura Bezpieczeństwa Narodowego wyjaśnił kontrowersje wokół rzekomych dokumentów dotyczących bezpieczeństwa państwa. BBN zaprzeczyło istnieniu notatki powoływanej w sporze.",
-      "comment": "Szybka reakcja BBN ma na celu uniknięcie politycznej destabilizacji wokół kluczowych instytucji odpowiedzialnych za obronność.",
-      "image_query": "poland government bbn building",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeTZNUUQyeXNpSTZ3VkNhZmxtUEZ1RnNKVUNQOS1GNTV5QVhORy11TTU2b3UtMDkxejNFWDQ4cll2ZVlabUdpZkRsWG1vd1JPdXhleEk5NlRRVy1XVEZPb21Cc0d1WmtIbEM4NjRlUF9wZWp0VkJLNXFJQTFpNjdsTkRtUVlLdWNwWlRQRVZHd0wzbjlwdnp4M3BlWTdZb2hxVzNKTjlzRkVlM1Ewb18tbw?oc=5",
-      "image_url": "https://images.pexels.com/photos/7316956/pexels-photo-7316956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/7316956/pexels-photo-7316956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "POLSKA",
-      "title": "⚡ Rząd szczerze o kosztach transformacji energetycznej",
-      "summary": "Ministerstwo przyznaje, że obniżki cen energii nie nastąpią natychmiastowo z powodu wymogów modernizacji sieci. Proces przebudowy polskiego miksu energetycznego potrwa lata.",
-      "comment": "Szczery przekaz rządu przygotowuje gospodarstwa domowe i przemysł na długofalowy proces zmian w cenach prądu.",
-      "image_query": "power grid electricity pylons",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYklVdEtIMHdoRENvdW81ZHhXWTRKTmU4a1J3bUVMbDBtTXpMakNQRTdVdlFQUmphcDM2aWhpZ3VNVUZwdEtQUHpJWW9QTi1lV2lXR2I0c0RZYmZEcV9fWFg4blRQTGdjT3NZeUtycnBGRXplYkNMTWtTeU9BY0ZfMmxnTDBuTVNuU3RTLTRqMXJ2MEZiaEJXVVhadzB6NndiSmdOUHF4cjZFT2hhcG43bjdrNWZ5dU5VLWZCeFh2ZXZMXzNWT01lSi05YzdrQQ?oc=5",
-      "image_url": "https://images.pexels.com/photos/10189390/pexels-photo-10189390.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/10189390/pexels-photo-10189390.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "🗳️ Rosja kończy reżyserowane wybory parlamentarne",
+      "summary": "W Federacji Rosyjskiej dobiega końca głosowanie w wyborach, w których udział biorą wyłącznie podmioty zatwierdzone przez kremlowską administrację. Wynik jest z góry przesądzony na korzyść partii rządzącej i jej sterowanej opozycji.",
+      "comment": "Fikcyjny proces wyborczy służy reżimowi jedynie do legitymizacji kolejnych decyzji mobilizacyjnych oraz budżetowych związanych z machiną wojenną.",
+      "image_query": "russia election ballot",
+      "link": "https://defence24.pl/geopolityka/wybory-w-rosji-koncza-sie-jakie-partie-kandyduja-i-kto-prawdopodobnie-wygra",
+      "image_url": "https://images.pexels.com/photos/8849362/pexels-photo-8849362.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/19/1024x576px/wq8jxDTKARonmTNee3BtDenpzKdHBqeoI9s5T7GB.coyi.jpg"
     },
     {
       "category": "OBRONNOŚĆ",
-      "title": "⚓ Szwedzka flota prezentuje wieki militarnej potęgi",
-      "summary": "Szwecja zgromadziła bogate dziedzictwo swojej marynarki wojennej w nowym centrum wystawienniczym. Ekspozycja ukazuje ewolucję strategiczną na Bałtyku.",
-      "comment": "Wejście Szwecji do NATO podnosi znaczenie historycznych doświadczeń morskich Sztokholmu dla bezpieczeństwa całego akwenu.",
-      "image_query": "swedish navy warship ocean",
-      "link": "https://defence24.pl/sily-zbrojne/setki-lat-szwedzkiej-marynarki-wojennej-pod-jednym-dachem-militarnym-szlakiem",
+      "title": "🪖 Białoruś wycofuje wojska spod polskiej granicy",
+      "summary": "Mińsk oficjalnie zakończył manewry wojskowe prowadzone w bezpośrednim sąsiedztwie granic z Polską i Litwą. Jednostki zostały skierowane z powrotem do stałych miejsc stacjonowania.",
+      "comment": "Cykliczne manewry przy granicach NATO są stałym elementem presji psychologicznej oraz testowania czasu reakcji sił sojuszniczych.",
+      "image_query": "military vehicles exercise",
+      "link": "https://defence24.pl/sily-zbrojne/bialorus-zakonczyla-cwiczenia-wojskowe-przy-granicy-z-polska-i-litwa",
+      "image_url": "https://images.pexels.com/photos/12357501/pexels-photo-12357501.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/19/1024x576px/5DTHlJcewfd9wydrkpAU0fVjp1LO6YBPMnYyQhaA.ej5z.jpg"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "⚠️ Rosja nasila działania poniżej progu otwartej wojny",
+      "summary": "Eksperci wskazują na rosnącą intensywność rosyjskich operacji hybrydowych, w tym dywersji i cyberataków, celujących w infrastrukturę państw NATO. Działania te mają na celu dezorganizację państw Zachodu bez wywoływania odpowiedzi z art. 5.",
+      "comment": "Sojusz musi wypracować nowe mechanizmy odstraszania w szarej strefie, aby przeciwdziałać ciągłej destabilizacji bez wchodzenia w otwarty konflikt.",
+      "image_query": "hybrid warfare security",
+      "link": "https://defence24.pl/geopolityka/rosja-ponizej-progu-wojny-jak-dlugo-to-potrwa",
+      "image_url": "https://images.pexels.com/photos/12357501/pexels-photo-12357501.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1440x810px/XaJRYzFgzMcbi1LpS9aAQ2TQmkQ98jfVrC7vJXWl.pn2h.jpg"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "❄️ BBN ostrzega przed zimową eskalacją walk na Ukrainie",
+      "summary": "Biuro Bezpieczeństwa Narodowego prognozuje zmasowane rosyjskie ataki na ukraińską infrastrukturę krytyczną w okresie zimowym. Celem ma być złamanie morale ludności cywilnej oraz wywołanie nowej fali migracyjnej.",
+      "comment": "Kluczowym wyzwaniem dla państw Zachodu będzie natychmiastowe dostarczenie dodatkowych systemów obrony powietrznej do ochrony ukraińskich miast.",
+      "image_query": "ukraine winter military",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/bbn-ostrzega-przed-zimowa-eskalacja-wojny-na-ukrainie",
+      "image_url": "https://images.pexels.com/photos/36664328/pexels-photo-36664328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2025/10/31/1920x1080px/44Nj2yEhhURlMC7wgHw30Vqh4itb99WZlCzyuT3d.blis.jpg"
+    },
+    {
+      "category": "RYNKI I GOSPODARKA",
+      "title": "🛢️ Rekordowy wolumen transportu ropy przez Ormuz",
+      "summary": "Przepływ surowca przez strategiczną cieśninę Ormuz osiągnął najwyższy poziom od pół roku, jak poinformowało dowództwo amerykańskiej floty. Zwiększona ochrona militarna uspokoiła armatorów na Bliskim Wschodzie.",
+      "comment": "Utrzymanie płynności żeglugi w Ormuz zmniejsza presję wzrostową na globalne ceny ropy w obliczu napięć geopolitycznych.",
+      "image_query": "oil tanker strait",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/hormuz-oil-shipments-hit-six-month-high-us-commander-says",
+      "image_url": "https://images.pexels.com/photos/15673384/pexels-photo-15673384.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/15673384/pexels-photo-15673384.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "RYNKI I GOSPODARKA",
+      "title": "🛢️ TotalEnergies przygotowuje powrót do Wenezueli",
+      "summary": "Francuski gigant energetyczny negocjuje warunki wznowienia operacji w Wenezueli po częściowym złagodzeniu amerykańskich sankcji. Firma dąży do zabezpieczenia swoich dawnych aktywów naftowych.",
+      "comment": "Powrót zachodnich koncernów do Wenezueli może stopniowo zwiększyć podaż ropy na świecie, choć odbudowa infrastruktury zajmie lata.",
+      "image_query": "oil refinery plant",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/venezuela-totalenergies-pave-way-for-oil-company-s-return",
+      "image_url": "https://images.pexels.com/photos/5884386/pexels-photo-5884386.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/5884386/pexels-photo-5884386.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "RYNKI I GOSPODARKA",
+      "title": "📉 Brak obligacji korporacyjnych zderza się z dużym popytem",
+      "summary": "Firmy powstrzymują się od nowej emisji długu ze względu na niepewność co do kosztów kapitału i stóp procentowych. Zjawisko to prowadzi do niedoboru aktywów dla inwestorów poszukujących stabilnych stóp zwrotu.",
+      "comment": "Ostrzejsza selektywność emitentów wskazuje na rosnącą ostrożność finansową przedsiębiorstw w oczekiwaniu na dalsze decyzje banków centralnych.",
+      "image_query": "corporate bonds market",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/companies-avoid-selling-the-bonds-investors-crave-credit-weekly",
+      "image_url": "https://images.pexels.com/photos/5912592/pexels-photo-5912592.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/5912592/pexels-photo-5912592.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "RYNKI I GOSPODARKA",
+      "title": "🏠 Rynek nieruchomości w Australii hamuje przez stopy",
+      "summary": "Wskaźnik aukcji nieruchomości w Australii znacząco spadł w odpowiedzi na obawy inwestorów przed kolejnymi podwyżkami stóp procentowych. Kupujący przyjmują postawę wyczekującą, obawiając się wzrostu kosztów kredytu.",
+      "comment": "Utrzymująca się presja inflacyjna zmusza rynki do przewartościowania aktywów majątkowych i spowolnienia na rynku kredytów hipotecznych.",
+      "image_query": "australia real estate",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/australia-home-auction-clearance-rates-fall-amid-rate-hike-fears",
+      "image_url": "https://images.pexels.com/photos/17598082/pexels-photo-17598082.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/17598082/pexels-photo-17598082.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "⚓ US Navy przedstawia priorytety technologiczne",
+      "summary": "Szefowie techniczni amerykańskiej marynarki wojennej ujawnili priorytety inwestycyjne obejmujące bezzałogowe systemy nawodne i autonomiczną nawigację. Wojsko szuka dostawców nowatorskich rozwiązań do walki w rozproszonym środowisku.",
+      "comment": "Konkurencja technologiczna na Pacyfiku wymusza na US Navy szybsze wdrażanie komercyjnych innowacji bezpośrednio na okręty bojowe.",
+      "image_query": "navy warship technology",
+      "link": "https://techcrunch.com/2026/09/19/even-mid-sprint-to-a-secret-flight-the-navys-tech-chief-had-a-pitch-for-investors/",
       "image_url": "https://images.pexels.com/photos/34468690/pexels-photo-34468690.png?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/17/1440x810px/6b0a5cizPDmKzquSUJsuueJyvt9bEeICqMGM2IwD.ioqc.jpg"
+      "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/Navy-shopping-cart.png?resize=1200,800"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "🛡️ Gen. Polko: Europa przeważa technologicznie nad dronami Rosji",
+      "summary": "Generał Roman Polko podkreśla, że europejskie wojska posiadają zaawansowane systemy walki elektronicznej pozwalające skutecznie neutralizować rosyjskie bezzałogowce. Kluczowe jest jednak zwiększenie skali produkcji tych rozwiązań.",
+      "comment": "Przewaga jakościowa systemów antydronowych daje Europie atut, lecz brak masowej produkcji pozostaje wąskim gardłem obronności.",
+      "image_query": "drone defense system",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd0pkZzQ5MDJBcnAwcjJjbE1HNE15ajNicC13SVpCbmZxOVYyWGJuT0dib3c1YThZVlhQbjU5a1pGaFEzWGI2Z0EzdGUwVlB5bEtyMGk3WXdzcUFaUVc4QVJxLXVpYlJGcjBSSmlBeGl6Q0ZLRy1jTTdIRzJtTzRlakpIZ1BkLVlxa1AtRlRaNGJkZS1uYV9adVItcnZZOGY4OGNFYXFyQVgzTjNOQmVMdw?oc=5",
+      "image_url": "https://images.pexels.com/photos/28975873/pexels-photo-28975873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/28975873/pexels-photo-28975873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "POLSKA",
+      "title": "📊 PiS zapowiada konwencję poświęconą gospodarcze i budżetowi",
+      "summary": "Jarosław Kaczyński ogłosił organizację nowej konwencji programowej skupionej na stanie finansów publicznych oraz propozycji zmian podatkowych. Wydarzenie ma stanowić odpowiedź na obecną politykę budżetową rządu.",
+      "comment": "Opozycja mobilizuje narrację wokół kwestii gospodarczych, dążąc do narzucenia tematu stabilności budżetu w nadchodzących dyskusjach politycznych.",
+      "image_query": "poland parliament press",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmtWMVItd1Uzdkh0UEMwaktCY2c4c0paa2MxTWhpSENaMFIxY0VTTXN2TUpVV2hDalJNOWx6ZGNJb0dHUU1lVWVFSmNIQ2MwOVEzX0dHS25ZMHRIbEFSaWZUT01za0xmblduTlBVZkJpVmcyek9IMlE1S0pral9PamhSMHcxSC1QbEdxRmU2NmJfYm9pV3VvVlJtLVhmWU05alhHcVZmSXBNZ29Yc1NFeXNQUXpXRlZYTWhNVll3LXE3dXY0?oc=5",
+      "image_url": "https://images.pexels.com/photos/37730955/pexels-photo-37730955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/37730955/pexels-photo-37730955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "TECHNOLOGIE / AI",
-      "title": "💻 Gemini AI włamało się do firm w testach bezpieczeństwa",
-      "summary": "Model sztucznej inteligencji Gemini od Google pomyślnie przeprowadził próbne cyberataki na trzy przedsiębiorstwa. Eksperyment wywołał dyskusję o ryzyku automatyzacji hakerstwa.",
-      "comment": "Wyniki testów zmuszą sektory finansowy i technologiczny do natychmiastowego uszczelnienia infrastruktury przed autonomicznymi zagrożeniami.",
-      "image_query": "cybersecurity artificial intelligence hacking",
-      "link": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
-      "image_url": "https://images.pexels.com/photos/37694202/pexels-photo-37694202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/754e/live/31c59420-b3e9-11f1-9fb5-25be39d7a18e.jpg"
+      "title": "🤖 Trump zapowiada powołanie sił zbrojnych AI Force",
+      "summary": "Donald Trump zasugerował zmianę nazewnictwa sztucznej inteligencji oraz powołanie nowej gałęzi wojska dedykowanej technologiom autonomicznym i AI. Plan zakłada centralizację militarnych projektów zaawansowanych algorytmów.",
+      "comment": "Zapowiedź utworzenia odrębnego komponentu sił zbrojnych podkreśla rosnące znaczenie dominacji algorytmicznej w nowoczesnych konfliktach zbrojnych.",
+      "image_query": "military artificial intelligence",
+      "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
+      "image_url": "https://images.pexels.com/photos/28975850/pexels-photo-28975850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/06/donald-trump-open-mouth.jpg?resize=1200,800"
+    },
+    {
+      "category": "TECHNOLOGIE / AI",
+      "title": "⚖️ Branża AI domaga się wyłączeń z praw antymonopolowych",
+      "summary": "W USA trwa dyskusja nad przyznaniem gigantom technologicznym zwolnienia z przepisów antymonopolowych w celu przyspieszenia rozwoju sztucznej inteligencji. Uczestnicy rynku argumentują to potrzebą wyścigu z Chinami.",
+      "comment": "Poluzowanie regulacji konkurencji może umocnić pozycję największych korporacji, ograniczając powstawanie niezależnych startupów.",
+      "image_query": "tech antitrust court",
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "image_url": "https://images.pexels.com/photos/6077797/pexels-photo-6077797.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DCD_2026-09-19_Kanter.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.711631919237%2C100%2C78.576736161526&amp;w=1200"
     },
     {
       "category": "NAUKA",
-      "title": "🧠 Naukowcy zidentyfikowali komórki wywołujące sen",
-      "summary": "Badacze odkryli w mózgu specyficzne neurowyłączniki odpowiedzialne za natychmiastowe wprowadzanie organizmu w stan głębokiego snu. Odkrycie może rewolucjonizować leczenie bezsenności.",
-      "comment": "Precyzyjne namierzenie tych mechanizmów otwiera drogę do stworzenia nowych leków na zaburzenia neurologiczne bez efektów ubocznych.",
-      "image_query": "brain neurons sleep science",
-      "link": "https://arstechnica.com/science/2026/09/finding-the-cells-that-put-our-brain-to-sleep/",
-      "image_url": "https://images.pexels.com/photos/17483867/pexels-photo-17483867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-623682073-1152x648.jpg"
+      "title": "🪐 Zdumiewające zmiany w pierścieniach planetoidy Chariklo",
+      "summary": "Obserwacje astronomiczne wykazały, że system pierścieni otaczający małe ciało niebieskie Chariklo ewoluował w ciągu ostatniej dekady. Odkrycie to podważa dotychczasowe teorie na temat stabilności struktur pyłowych wokół małych obiektów.",
+      "comment": "Zrozumienie mechanizmów fizycznych na Chariklo pomoże astrofizykom dokładniej wymodelować wczesny etap formowania się układów planetarnych.",
+      "image_query": "asteroid rings space",
+      "link": "https://arstechnica.com/science/2026/09/rings-around-a-tiny-body-have-changed-over-the-past-decade/",
+      "image_url": "https://images.pexels.com/photos/12491599/pexels-photo-12491599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/image-1-1152x648.png"
     }
   ]
 }
