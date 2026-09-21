@@ -1,8 +1,12 @@
 {
-  "date": "20 września 2026",
-  "time": "14:47",
-  "count": 38,
+  "date": "21 września 2026",
+  "time": "06:01",
+  "count": 39,
   "items": [
+    {
+      "title": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
+      "link": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o"
+    },
     {
       "title": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
       "link": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo"
@@ -12,88 +16,104 @@
       "link": "https://www.bbc.co.uk/news/articles/cm780ll1de18o"
     },
     {
-      "title": "German elections under way which could decide fate of Chancellor Merz",
-      "link": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o"
+      "title": "Trump says triumphal arch will be military complex with drones and snipers",
+      "link": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo"
     },
     {
-      "title": "Houthis say they targeted Saudi capital with ballistic missiles",
-      "link": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o"
+      "title": "Man, 82, dies after beach fight with 76-year-old over sunlounger in Greece",
+      "link": "https://www.bbc.co.uk/news/articles/cqm27pnyd294o"
     },
     {
-      "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
-      "link": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o"
+      "title": "Sister of Pakistan's ex-PM Imran Khan arrested",
+      "link": "https://www.bbc.co.uk/news/articles/cm36l2pye2kwo"
     },
     {
-      "title": "Our head teacher was an abuser. We joined forces to get justice - now we're married",
-      "link": "https://www.bbc.co.uk/news/articles/cg4d9vly636o"
+      "title": "„Duma powinna być suwerenna”. Ławrow komentuje wynik wyborów",
+      "link": "https://defence24.pl/geopolityka/duma-powinna-byc-suwerenna-lawrow-komentuje-wynik-wyborow"
     },
     {
-      "title": "Pułki rangersów w ukraińskich siłach specjalnych",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/pulki-rangersow-w-ukrainskich-silach-specjalnych"
+      "title": "Huti atakuje stolicę Arabii Saudyjskiej. Eskalacja wisi na włosku",
+      "link": "https://defence24.pl/geopolityka/huti-atakuje-stolice-arabii-saudyjskiej-eskalacja-wisi-na-wlosku"
     },
     {
-      "title": "Abrams, K9A1 i Rosomak. „Żelazna Dywizja” pokazała jak się zmienia",
-      "link": "https://defence24.pl/sily-zbrojne/abrams-k9a1-i-rosomak-zelazna-dywizja-pokazala-jak-sie-zmienia"
+      "title": "Miedwiediew cieszy się z wyników wyborów. „Będziemy wcielać w życie kurs Putina”",
+      "link": "https://defence24.pl/geopolityka/miedwiediew-cieszy-sie-z-wynikow-wyborow-bedziemy-wcielac-w-zycie-kurs-putina"
     },
     {
-      "title": "Czeskie pancerne nowości w Kielcach. Nowa generacja Tatry Force debiutuje na MSPO",
-      "link": "https://defence24.pl/przemysl/czeskie-pancerne-nowosci-w-kielcach-nowa-generacja-tatry-force-debiutuje-na-mspo"
+      "title": "Wybory parlamentarne w Rosji zakończone. Znamy wyniki exit poll",
+      "link": "https://defence24.pl/geopolityka/wybory-parlamentarne-w-rosji-zakonczone-znamy-wyniki-exit-poll"
     },
     {
-      "title": "NATO: Sojusz jest gotowy zareagować na rosyjską eskalację",
-      "link": "https://defence24.pl/geopolityka/nato-sojusz-jest-gotowy-zareagowac-na-rosyjska-eskalacje"
+      "title": "Wybory w Rosji pod presją cyberataków. CKW informuje o szokującej skali",
+      "link": "https://defence24.pl/geopolityka/wybory-w-rosji-pod-presja-cyberatakow-ckw-informuje-o-szokujacej-skali"
     },
     {
-      "title": "Sojusz Rzymu i Aten. Dwie włoskie fregaty wzmocnią grecką flotę",
-      "link": "https://defence24.pl/sily-zbrojne/sojusz-rzymu-i-aten-dwie-wloskie-fregaty-wzmocnia-grecka-flote"
+      "title": "Rekordowa frekwencja w rosyjskich wyborach parlamentarnych",
+      "link": "https://defence24.pl/geopolityka/rekordowa-frekwencja-w-rosyjskich-wyborach-parlamentarnych"
     },
     {
-      "title": "Francuscy politycy potępiają działania Rosji. Ostrzegają przed eskalacją",
-      "link": "https://defence24.pl/geopolityka/francuscy-politycy-potepiaja-dzialania-rosji-ostrzegaja-przed-eskalacja"
+      "title": "BofA's Cabana: Front-End Yields Face Repricing Risk",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-21/bofa-s-cabana-front-end-yields-face-repricing-risk-video"
     },
     {
-      "title": "Qatar Airways Bets on Fleet and Cargo Growth",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-20/qatar-airways-bets-on-fleet-and-cargo-growth-video"
+      "title": "BlackRock's Vavrek: AI Hardware to Drive EM",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-21/blackrock-s-vavrek-ai-hardware-to-drive-em-video"
     },
     {
-      "title": "Global Conflicts Shape High Stakes UN Meetings",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-20/global-conflicts-shape-high-stakes-un-meetings-video"
+      "title": "Gold Edges Lower as Traders Weigh Inflation and Fed Rate Path",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/gold-steadies-as-traders-weigh-inflation-and-fed-hike-outlook"
     },
     {
-      "title": "EM Investors Are Favoring Local Bonds as Dollar Debt Lags",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/em-investors-are-favoring-local-bonds-as-dollar-debt-lags"
+      "title": "Taiwan Forms First Global Entity to Tackle Disasters as China Squeezes its Space",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-21/taiwan-forms-first-global-entity-to-tackle-disasters-as-china-squeezes-its-space"
     },
     {
-      "title": "Volvo Car Picks Škoda Boss Zellmer as New CEO to Oversee Revamp",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/volvo-car-picks-skoda-boss-zellmer-as-new-ceo-to-oversee-revamp"
+      "title": "Firmus Seeks to Raise $5 Billion in Landmark Australian IPO",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-21/firmus-seeks-to-raise-5-billion-in-landmark-australian-ipo"
     },
     {
-      "title": "Inside Jefferies’ Months-Long Tussle With Glencore Over Radiant",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/inside-jefferies-months-long-tussle-with-glencore-over-radiant"
+      "title": "Latest Oil Market News and Analysis for Sept. 21",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/latest-oil-market-news-and-analysis-for-sept-21"
     },
     {
-      "title": "Flock reportedly tries to shrink workforce with employee buyouts",
-      "link": "https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/"
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/"
     },
     {
-      "title": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
-      "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/"
+      "title": "World model companies are keeping a lot of secrets",
+      "link": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/"
     },
     {
-      "title": "Google’s Gemini is the latest AI model to hack other companies",
-      "link": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/"
+      "title": "Elon Musk’s latest Boring Company pitch involves a Hyperloop between Austin and San Antonio",
+      "link": "https://techcrunch.com/2026/09/20/elon-musks-latest-boring-company-pitch-involves-a-hyperloop-between-austin-and-san-antonio/"
     },
     {
-      "title": "The US Navy just told us what’s on its tech wish list for the next several years",
-      "link": "https://techcrunch.com/2026/09/19/even-mid-sprint-to-a-secret-flight-the-navys-tech-chief-had-a-pitch-for-investors/"
+      "title": "Is the AI industry really ready to slow down?",
+      "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/"
     },
     {
-      "title": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
-      "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/"
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
     },
     {
-      "title": "AI safety conversations have gotten unbelievable",
-      "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/"
+      "title": "ScrollEd wants to turn textbooks into TikTok",
+      "link": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/"
+    },
+    {
+      "title": "No Dogs in Space is back to feed your need for obsessive music history",
+      "link": "https://www.theverge.com/report/997948/no-dogs-in-space-is-back-punk-2-0-music-history-podcast"
+    },
+    {
+      "title": "No one is surprised that Nvidia&#8217;s Jensen Huang thinks AI fears are overblown.",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown"
+    },
+    {
+      "title": "Kojima Productions disputes reports the studio is in trouble",
+      "link": "https://www.theverge.com/games/997880/hideo-kojima-productions-physint-xbox-sony-playstation"
+    },
+    {
+      "title": "Trump now says he wants to form an ‘AI Force’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar"
     },
     {
       "title": "A24’s reputation is on the line with the SCP Foundation movie",
@@ -102,22 +122,6 @@
     {
       "title": "A great new video game movie",
       "link": "https://www.theverge.com/tech/997322/resident-evil-steam-frame-fire-emblem-fortunes-weave"
-    },
-    {
-      "title": "The hidden monopoly behind your TI graphing calculator",
-      "link": "https://www.theverge.com/podcast/997725/the-hidden-monopoly-behind-your-ti-graphing-calculator"
-    },
-    {
-      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-      "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure"
-    },
-    {
-      "title": "All roads lead to cable",
-      "link": "https://www.theverge.com/column/997843/streamers-cable-fast-channels"
-    },
-    {
-      "title": "Meta’s Muse is creepy, but maybe not for the reasons you think",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy"
     },
     {
       "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
@@ -132,28 +136,28 @@
       "link": "https://arstechnica.com/science/2026/09/t-rex-teeth-indicate-it-ran-as-warm-as-an-elephant/"
     },
     {
-      "title": "Pieniądze za spotkanie z Nawrockim wywołały burzę. Jest odpowiedź Pałacu - money.pl",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ2lzUUJvdGdvQlp2azhnSkNYZ3dfZG5VQmZMcmNaTHo1RGwtQXpqajljYnNsdEI2anMwWkdiSmFxRnhNSzV0ODdaY0RfcDljcjdSV21FanFtUHg3V0twdzlSSXF2cURadHlYSzNiemJLUUZKOGpXUWZCSkREWmllUFNKY0N2QmdlcTRicHJWemJrekdqWFBxcWdtd3VSVDJTaFl3UzJmS3d4aG9QQXBvZlJ3c091QQ?oc=5"
+      "title": "\"Katastrofa\". Merz o wynikach exit poll w kolejnych wyborach lokalnych - Money.pl",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNV291UlBQYVBzWmR1Y3hwclRMSlI3VmxMWHFwa2lLSkl1Q2lLWm85aVAwZkR6aUY0a21VcG5YNzBTZDF4bkpzeDU3b09DeW9mY3QwcXRnQUpWazJBem5ycWhMSmRKaFI4ZWY0d2JieDJEdmZnQ29yTG1BSUZDV25aZGl6MkNLVTNuaWtfS0hyMDlQNlFBYjdCVG5xSnZyOUh1amRoQWFwX29KdnE3VUFrWk1n?oc=5"
     },
     {
-      "title": "Gen. Polko wprost po ciosie w Moskwę. Wskazał na strategię - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdFFYS3Bnd2hEcHJzMUpIYVJxMTdLU0prajZPZVUyQ2tHbXFRWkllV2YyaEpvS2tuVGF1bVo1OGhoOGtPdVZsel9OTHM5V0Fkc0ExY1o4UXVVZnBmVUhWUWFPaUVVcGpLcGhwZ1FfMzhzWHVtWDQ2S0RNSFBRRUZkbU82TTJZVERoNDhYVDEtT29OZE9YMl9Rek9jamM3X1FU?oc=5"
+      "title": "Zakończyły się wybory w Rosji. Centralna Komisja podała wyniki - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaFlMalRxLWhkVGFsczdyY2htcDNSSjRnZVRpVWR6RFo1ZGk2Q0xrUjhpUVBvYmt5cjFianBhM0ZqVVByNTNoRXF0WkhfVnc5TlRYdk5kdmlDZmZYTE96WVNPM1N6ZU9SVkkwSzVLamJ1X2lfMFl3X0sxdjRhRWlFVW93OVpnSzhPbGN3d1RPblJfTi1ERDNEag?oc=5"
     },
     {
-      "title": "Kto zostanie prezydentem Krakowa? Mamy wyniki najnowszego sondażu - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3VWbWZSYk4xVERvVS1HRjU4ekNkTVZqb25ZVVFCXzNtVXRqb1RyTkJyZkpBZGl1WmxBMTU0VUVQNmo2eGpGRTR0RTRod195bGUwMWM5bXdKNXA0Z3pmU3kyd21qeW82Vmt4TUd1RkFXZ3R2Z3BPMFZZZmpVd1g2YjNscFJ0N29QN29mUlFUVkJRRXFNenh4ZGJoc3N4eWlrd01saEk0RmZ6d2N4TUwxd0hn?oc=5"
+      "title": "Nawrocki na mszy w USA. Uwagę przykuł jeden z uczestników mszy - Fakt",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdHVhdHJSWW4wc0NCTTZyZ0hmQ1RxNVFaX3pPamRvT01tYThSblZORGRjYXpqV3Z2ak1NcXZqcTNqb3lHbmgzYTNvdERmMXhRZml3MjJjdEpMUmk3UEVYQWhNWkRncVB0TGhiZExIUHlDaVEwaHNBeHF1cW5FcWNVVXBmSUlnbUlEdlJVM2NsLTJ5YVBCOEFRN3Vn?oc=5"
     },
     {
-      "title": "Gdzie jest dla NATO próg wojny? \"Decyduje wiele czynników\" - Fakt",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZG11bXFFUC1GUGU1TnRvRHhqQVZoOV9uRWc2WldBS1NCZUlsYkxsaWxNOTF3QXNZWlAwUUxYZXBnZnZ4UklxZzRNaDJuVnpLcTJHM1QtcWFEYWFKa0hPT0RuUUlnSDlaN3k0R3RaN1J2MmpLSTQzUmJYSHBoVk5IdkViMXAtZlVrVnVTVElTblIyQXNTQVYtY3NWTkI0amgwUGNqRy1xa0dRSWhYMjVYSA?oc=5"
+      "title": "Córka Andrzeja Dudy trafiła do szpitala. Miała wypadek koło Kielc - Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNY2I1NWJ3U1dsaTBqb1dnMVhZTVNKNXg5NmNuQlpEQ1lCa1MzeGlEMmJfSno5dE9CeVR4UmN5Z0tMR2VKaTFEcFhMaVRHelNzcEdqUFhHMXJVenppRy1rNFhQU0RIZTNhYlNyMTRtZlFZajZfUEZkQVVJN19PT1BMcjVPcEJPZjJIbThFNXRIT0Z6OEVFTFZjRDVQMjFRdzZ3MU04U0xHUQ?oc=5"
     },
     {
-      "title": "Polacy ocenili Donalda Tuska. Większość Polaków niezadowolona z szefa rządu - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxONzg3M3JnUVRrX1BUckhhWjFCcnlBRzNuY05xSmpkOWJLSWphcDBCYUtiMUZielNubW5ybGRtSVk1X0NyaW9kUEFDQXF3QzFvMVlLbnpaM2dhU0FMSzZ3R096cXFFNV9pdEJ2ZlJtenRVaXpHZkoxQXJ1NG1NTXc0a1JkSXBnOUdwNGl0REloVjB0SXZBbVVZVE9HQ2NwZU8wOXkzYV9tZy1XZndCdlh5ZmQtdFA0bTZx?oc=5"
+      "title": "100 tys. dolarów za spotkanie z Nawrockim? Pałac oskarża rząd - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNY0VTRUNJd0pZVk82VnZvd3o0QlFveGpwR2xMclZfQk5sRTBRUVJ0T3NnZ2paYndmam9sX213S3dMdk1iVUhGcVRqVkg3WDV3bTVCOHpWcmVsSEFsMDczN3RwY1lwTVhYWWV0UU9ReE13MXgtSlpvZVR0SF9SS0NScnViUDg5VG43WG5OdHZtdndSdlBhUHlWSW9RVTVQSXlUaWpZNg?oc=5"
     },
     {
-      "title": "Nie wrócili na noc. Policja szuka 10- i 11-latka - o2.pl",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdVNUU2p0TUh4aWtMWm1ZYk5obFhwaVY0VVd2cThubzZ2bnV3b2VfUHRoWEVLckpobXdlNGx2TkY4QW8zQWJHMktpbzJKS29qYnRpSl9EU3hRWmFZV05oWXRqMVV1UFkzYlVibVVBcTB0aVNaS0tzOWhqZWthVnQ2ZEhpZmhObmRBbGhha3NFamVRM0tLUkNzRQ?oc=5"
+      "title": "Strzelanina w Bukownie. Wielka obława zakończona zatrzymaniem 52-latka. Dwóch poszkodowanych przebywa w szpitalu - Gazeta Krakowska",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdk9uOHg4Wi1mTnA5UTVqZlI3YUoyNzlySHVkTk1WeWs5MTlVcmJ4QThOSmQwZEU3MExaZ3RIRFJiQjNMX0lQYlZLUnhacjdBMnBRZHhHREE2cHc5MWZ4ZzFxY2d0bE9IQW5pbC1Da0d1MmZXRllBWUw3SmNtMDFDV0hPeEh0VHZxeDFKTksyaUl0TWU0QUM0UmV5b0h1dWxfTS1uZUJVQ0k2VGpYZ0Jxc0VRdWY0dTF6a2xFcHZXQW1VRHV1QkdCdzlNdFp4MWs2c3JOUDFFNEs1ZnV4VF9DczhNVE1hMlU2c0E?oc=5"
     }
   ]
 }
