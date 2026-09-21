@@ -1,37 +1,37 @@
 {
-  "date": "20 września 2026",
-  "time": "18:58",
-  "timestamp": "2026-09-20_18:58",
+  "date": "21 września 2026",
+  "time": "15:56",
+  "timestamp": "2026-09-21_15:56",
   "items": [
     {
       "category": "GEOPOLITYKA",
-      "title": "🚨 Rekordowa frekwencja w rosyjskich wyborach",
-      "summary": "Oficjalne komunikaty wskazują na wyjątkowo wysoką frekwencję w rosyjskich wyborach parlamentarnych. Wyniki te mają posłużyć Kremlowi do zademonstrowania pełnego poparcia społecznego.",
-      "comment": "Wysokie wskaźniki frekwencji stanowią element legitymizacji dalszej polityki władz na Kremlu.",
-      "image_query": "russia election vote",
-      "link": "https://defence24.pl/geopolityka/rekordowa-frekwencja-w-rosyjskich-wyborach-parlamentarnych",
-      "image_url": "https://cdn.defence24.pl/2026/09/20/1024x576px/G3GAiUFk14C7D7BjO1K1Rd83qis90mKBEsn1Z0PQ.ni8h.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/20/1024x576px/G3GAiUFk14C7D7BjO1K1Rd83qis90mKBEsn1Z0PQ.ni8h.jpg"
-    },
-    {
-      "category": "KONFLIKTY",
-      "title": "⚔️ Analiza ryzyka wojny z Iranem",
-      "summary": "Eskalacja napięć wokół Cieśniny Ormuz z udziałem USA i Izraela zagraża globalnym dostawom ropy naftowej. Analizy wskazują na wysokie ryzyko rozszerzenia się konfliktu na cały Bliski Wschód.",
-      "comment": "Ewentualne zamknięcie szlaku w Cieśninie Ormuz wywoła natychmiastowy wstrząs na rynku surowców.",
-      "image_query": "iran warship strait",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-      "image_url": "https://images.pexels.com/photos/17623243/pexels-photo-17623243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/17623243/pexels-photo-17623243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "🛡️ Dania: NATO współodpowiedzialne za bezpieczeństwo Arktyki",
+      "summary": "Kopenhaga wskazuje, że nowe porozumienie dotyczące Grenlandii zakłada bezpośrednie zaangażowanie NATO w ochronę regionu arktycznego. Wzrost aktywności rywali na Północy wymusza zacieśnienie obrony Sojuszu.",
+      "comment": "Arktyka staje się kluczowym teatrem rywalizacji strategicznej, wymagającym stałej obecności sił Sojuszu.",
+      "image_query": "arctic military nato",
+      "link": "https://www.defensenews.com/global/europe/2026/09/21/denmark-says-nato-shares-responsibility-for-arctic-security-under-greenland-deal/",
+      "image_url": "https://www.armytimes.com/resizer/v2/QQUBRNDB6RGFDKEUN5JGWWPOTE.jpg?width=1200&amp;auth=c84781f9c964a48f65511c1dd61945add864b556590865a0139b14860324b1fe",
+      "source_image_url": "https://www.armytimes.com/resizer/v2/QQUBRNDB6RGFDKEUN5JGWWPOTE.jpg?width=1200&amp;auth=c84781f9c964a48f65511c1dd61945add864b556590865a0139b14860324b1fe"
     },
     {
       "category": "OBRONNOŚĆ",
-      "title": "🚀 Nowe drony Flamingo i Pelican w akcji",
-      "summary": "Ukraińskie siły przeprowadziły nocny atak w regionie moskiewskim z użyciem bezzałogowców Flamingo oraz Pelican. Nowe konstrukcje charakteryzują się większym zasięgiem i odpornością na zagłuszanie.",
-      "comment": "Wdrożenie nowych platform bezzałogowych wymusza na przeciwniku reorganizację systemów obrony powietrznej.",
-      "image_query": "military drone launch",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/nocny-atak-na-region-moskiewski-flamingo-i-pelican-w-akcji",
-      "image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/OMXkQ7E2oW2nleFUFL1xXZqmj4N9GFBAy6T3inme.tss6.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/20/320x180px/OMXkQ7E2oW2nleFUFL1xXZqmj4N9GFBAy6T3inme.tss6.jpg"
+      "title": "🚀 Napęd z F-15EX dla polskiego bezzałogowego skrzydłowego",
+      "summary": "Koncern General Electric analizuje możliwość wykorzystania silników z myśliwca F-15EX w polskim programie autonomicznego drona bojowego. Partnerstwo może przyspieszyć prace nad krajowym systemem bezzałogowym.",
+      "comment": "Wykorzystanie sprawdzonych napędów lotniczych drastycznie redukuje ryzyko technologiczne polskiego programu.",
+      "image_query": "jet engine fighter",
+      "link": "https://defence24.pl/przemysl/ge-silnik-do-f-15ex-takze-w-polskim-bezzalogowym-skrzydlowym",
+      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/fwOXlT0QPuuklTynzaf7RQKrw0msYBcoaSNSpkKB.t9nn.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/fwOXlT0QPuuklTynzaf7RQKrw0msYBcoaSNSpkKB.t9nn.png"
+    },
+    {
+      "category": "KONFLIKTY",
+      "title": "⚔️ Nowy sojusz siedmiu grup rebelianckich w Etiopii",
+      "summary": "Siedem ugrupowań partyzanckich w Etiopii połączyło siły, tworząc wspólny front przeciwko władzom centralnym w Addisie Abebie. Konsolidacja rebelii grozi nową falą destabilizacji w Rogu Afryki.",
+      "comment": "Zjednoczenie opozycji zbrojnej drastycznie podnosi ryzyko eskalacji konfliktu do poziomu wojny domowej.",
+      "image_query": "rebel soldiers Africa",
+      "link": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg"
     }
   ]
 }
