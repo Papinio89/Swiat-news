@@ -71,7 +71,6 @@
             padding-bottom: 4px !important;
         }
 
-        /* Category filters */
         #category-filters {
             scrollbar-width: none;
             -ms-overflow-style: none;
@@ -86,7 +85,6 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
-    <!-- Reading progress -->
     <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-amber-500 to-brand-400 z-[110] w-0 transition-all duration-100"></div>
 
     <!-- Save Modal -->
@@ -94,12 +92,8 @@
         <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
         <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-200 dark:border-slate-700" alt="Gotowa karta">
         <div class="flex flex-wrap justify-center gap-3">
-            <a id="save-link" href="#" download="swiatwminute.jpg" class="px-6 py-3 bg-brand-500 text-slate-900 font-bold rounded-xl shadow-lg hover:bg-brand-400 transition text-center">
-                Pobierz na dysk
-            </a>
-            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-700 transition">
-                Zamknij
-            </button>
+            <a id="save-link" href="#" download="swiatwminute.jpg" class="px-6 py-3 bg-brand-500 text-slate-900 font-bold rounded-xl shadow-lg hover:bg-brand-400 transition text-center">Pobierz na dysk</a>
+            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-700 transition">Zamknij</button>
         </div>
         <p class="text-slate-500 dark:text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
             Na telefonie: dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
@@ -164,20 +158,51 @@
             </p>
         </div>
 
-        <!-- Weather Widget -->
-        <div id="weather-widget" class="max-w-md mx-auto mb-7 hidden">
-            <div class="flex items-center justify-between gap-4 px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
-                <div class="flex items-center gap-3">
-                    <div id="weather-icon" class="text-3xl leading-none">🌤️</div>
-                    <div>
-                        <div class="flex items-baseline gap-2">
-                            <span id="weather-temp" class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">--°</span>
-                            <span id="weather-city" class="text-xs font-medium text-slate-500">Warszawa</span>
+        <!-- Weather + Currency -->
+        <div id="info-widgets" class="max-w-2xl mx-auto mb-7 hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <!-- Pogoda -->
+                <div class="flex items-center justify-between gap-4 px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
+                    <div class="flex items-center gap-3">
+                        <div id="weather-icon" class="text-3xl leading-none">🌤️</div>
+                        <div>
+                            <div class="flex items-baseline gap-2">
+                                <span id="weather-temp" class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">--°</span>
+                                <span class="text-xs font-medium text-slate-500">Warszawa</span>
+                            </div>
+                            <p id="weather-desc" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Ładowanie...</p>
                         </div>
-                        <p id="weather-desc" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Ładowanie...</p>
+                    </div>
+                    <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">—</div>
+                </div>
+
+                <!-- Kursy walut -->
+                <div class="flex items-center px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
+                    <div class="w-full">
+                        <div class="flex items-center gap-2 mb-1.5">
+                            <i class="fa-solid fa-coins text-brand-500 text-sm"></i>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Kursy NBP</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">EUR</span>
+                                <span id="rate-eur" class="font-bold text-slate-900 dark:text-white">—</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">USD</span>
+                                <span id="rate-usd" class="font-bold text-slate-900 dark:text-white">—</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">CHF</span>
+                                <span id="rate-chf" class="font-bold text-slate-900 dark:text-white">—</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">GBP</span>
+                                <span id="rate-gbp" class="font-bold text-slate-900 dark:text-white">—</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">—</div>
             </div>
         </div>
 
@@ -220,7 +245,6 @@
                     <h3 class="text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400">Najważniejsze dziś</h3>
                 </div>
                 <div id="hero-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
-                
                 <div class="flex items-center gap-4 my-8">
                     <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                     <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pozostałe tematy</span>
@@ -266,7 +290,6 @@
             </div>
             <div id="search-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
         </div>
-
     </main>
 
     <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40">
@@ -277,11 +300,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
             <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
             <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
-            
             <div class="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 <i class="fa-regular fa-eye text-amber-500"></i> Odwiedzin: 
-                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" 
-                     alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
+                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
             </div>
             <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider">
                 <a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a>
@@ -393,7 +414,7 @@
                 document.getElementById('save-link').href = dataUrl;
                 document.getElementById('save-modal').classList.remove('hidden');
                 document.getElementById('save-modal').classList.add('flex');
-            } catch (err) { alert('Błąd tworzenia grafiki. Spróbuj jeszcze raz.'); } 
+            } catch (err) { alert('Błąd tworzenia grafiki.'); } 
             finally { downloadBtn.innerHTML = originalHtml; }
         };
 
@@ -526,7 +547,7 @@
                     const encLink = encodeURIComponent(item.link || SITE_URL);
                     const domain = item.link ? getDomain(item.link) : null;
 
-                    const breakingHtml = `
+                    breakingList.insertAdjacentHTML('beforeend', `
                         <div class="bg-red-500/5 dark:bg-red-950/20 border-2 border-red-500/40 rounded-2xl p-4 sm:p-5 flex gap-4 items-start shadow-sm hover:border-red-500 transition">
                             <div class="text-3xl flex-shrink-0 mt-0.5">${emoji}</div>
                             <div class="flex-1 min-w-0">
@@ -544,8 +565,7 @@
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
-                    `;
-                    breakingList.insertAdjacentHTML('beforeend', breakingHtml);
+                    `);
                 });
             } else {
                 breakingContainer.classList.add('hidden');
@@ -561,7 +581,7 @@
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encLink = encodeURIComponent(item.link || SITE_URL);
 
-                    const listHtml = `
+                    list.insertAdjacentHTML('beforeend', `
                         <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
                             <div class="text-3xl hidden sm:block">${emoji}</div>
                             <div class="flex-1 min-w-0">
@@ -578,8 +598,7 @@
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
-                    `;
-                    list.insertAdjacentHTML('beforeend', listHtml);
+                    `);
                 } catch(e){}
             });
         }
@@ -600,33 +619,48 @@
             return combined;
         }
 
-        // ========== FILTRY KATEGORII (wspólne dla Today + Archive) ==========
-        function getAllCategories() {
-            const cats = new Set();
-            todayItems.forEach(i => cats.add(i.category || 'Inne'));
-            archiveGroups.forEach(g => g.items.forEach(i => cats.add(i.category || 'Inne')));
-            return [...cats];
+        // ========== FILTRY KATEGORII ==========
+        function getCategoryCounts() {
+            const counts = {};
+            let sourceItems = [];
+
+            if (currentTab === 'today') {
+                sourceItems = todayItems;
+            } else if (currentTab === 'archive') {
+                archiveGroups.forEach(g => sourceItems = sourceItems.concat(g.items));
+            }
+
+            sourceItems.forEach(item => {
+                const cat = item.category || 'Inne';
+                counts[cat] = (counts[cat] || 0) + 1;
+            });
+            return counts;
         }
 
         function buildCategoryFilters() {
             const priority = ['Polska', 'Obronność', 'Geopolityka', 'Gospodarka', 'Świat'];
-            const allCats = getAllCategories();
+            const counts = getCategoryCounts();
+            const availableCats = Object.keys(counts).filter(cat => counts[cat] > 0);
+
             const ordered = [
-                ...priority.filter(c => allCats.includes(c)),
-                ...allCats.filter(c => !priority.includes(c)).sort()
+                ...priority.filter(c => availableCats.includes(c)),
+                ...availableCats.filter(c => !priority.includes(c)).sort()
             ];
 
             const container = document.getElementById('category-filters');
+            
             let html = `
                 <button data-cat="all" class="cat-chip rounded-full font-bold transition border ${currentCategory === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
                     Wszystkie
                 </button>
             `;
+
             ordered.forEach(cat => {
                 const isActive = currentCategory === cat;
+                const count = counts[cat] || 0;
                 html += `
                     <button data-cat="${cat}" class="cat-chip rounded-full font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
-                        ${cat}
+                        ${cat} <span class="opacity-70 font-medium">(${count})</span>
                     </button>
                 `;
             });
@@ -658,7 +692,7 @@
                 renderTodayWithHero(filtered);
                 updateCounter(filtered.length);
             } else if (currentTab === 'archive') {
-                renderArchive(); // wewnątrz filtruje
+                renderArchive();
             }
         }
 
@@ -720,13 +754,29 @@
                 document.getElementById('weather-temp').textContent = Math.round(current.temperature_2m) + '°';
                 document.getElementById('weather-icon').textContent = icons[code] || '🌡️';
                 document.getElementById('weather-desc').textContent = descriptions[code] || 'Warunki atmosferyczne';
-                document.getElementById('weather-extra').innerHTML = `
-                    Wiatr ${Math.round(current.wind_speed_10m)} km/h<br>
-                    Wilgotność ${current.relative_humidity_2m}%
-                `;
-                document.getElementById('weather-widget').classList.remove('hidden');
+                document.getElementById('weather-extra').innerHTML = `Wiatr ${Math.round(current.wind_speed_10m)} km/h<br>Wilgotność ${current.relative_humidity_2m}%`;
             } catch (e) {
                 console.log('Pogoda niedostępna');
+            }
+        }
+
+        async function loadCurrencyRates() {
+            try {
+                const res = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
+                const data = await res.json();
+                const rates = data[0].rates;
+
+                const findRate = (code) => {
+                    const r = rates.find(x => x.code === code);
+                    return r ? r.mid.toFixed(2) : '—';
+                };
+
+                document.getElementById('rate-eur').textContent = findRate('EUR');
+                document.getElementById('rate-usd').textContent = findRate('USD');
+                document.getElementById('rate-chf').textContent = findRate('CHF');
+                document.getElementById('rate-gbp').textContent = findRate('GBP');
+            } catch (e) {
+                console.log('Kursy walut niedostępne');
             }
         }
 
@@ -812,9 +862,13 @@
                     return;
                 }
 
-                buildCategoryFilters();
                 renderFastReview(todayItems, fastReportItems, globalFastData.time);
+                
+                // Ładujemy pogodę i kursy
                 loadWeather();
+                loadCurrencyRates();
+                document.getElementById('info-widgets').classList.remove('hidden');
+
                 switchTab('today');
 
             } catch (error) {
@@ -842,7 +896,6 @@
             const groupsToShow = archiveGroups.slice(0, archiveVisibleCount);
 
             groupsToShow.forEach((group, index) => {
-                // Filtruj po kategorii
                 let items = group.items;
                 if (currentCategory !== 'all') {
                     items = items.filter(i => (i.category || 'Inne') === currentCategory);
@@ -851,7 +904,7 @@
 
                 totalShown += items.length;
                 const groupId = `archive-group-${index}`;
-                const groupHtml = `
+                container.insertAdjacentHTML('beforeend', `
                     <div>
                         <div class="flex items-center gap-4 mb-6">
                             <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">${group.title}</h3>
@@ -859,8 +912,7 @@
                         </div>
                         <div id="${groupId}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
                     </div>
-                `;
-                container.insertAdjacentHTML('beforeend', groupHtml);
+                `);
                 renderCardsToContainer(document.getElementById(groupId), items);
             });
 
@@ -893,9 +945,9 @@
             
             const filtersWrapper = document.getElementById('filters-wrapper');
             
-            // Filtry pokazujemy tylko na Today i Archive
             if (tabId === 'today' || tabId === 'archive') {
                 filtersWrapper.classList.remove('hidden');
+                buildCategoryFilters(); // przebuduj z aktualnymi liczbami
             } else {
                 filtersWrapper.classList.add('hidden');
             }
@@ -903,12 +955,12 @@
             if (tabId === 'search') {
                 document.getElementById('main-titles').classList.add('hidden');
                 document.getElementById('tabs-container').classList.add('hidden');
-                document.getElementById('weather-widget').classList.add('hidden');
+                document.getElementById('info-widgets').classList.add('hidden');
                 document.getElementById('new-edition-banner').classList.add('hidden');
             } else {
                 document.getElementById('main-titles').classList.remove('hidden');
                 document.getElementById('tabs-container').classList.remove('hidden');
-                document.getElementById('weather-widget').classList.remove('hidden');
+                document.getElementById('info-widgets').classList.remove('hidden');
                 
                 document.querySelectorAll('.tab-btn').forEach(btn => {
                     btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
@@ -922,7 +974,6 @@
                 }
             }
 
-            // Render odpowiedniej zakładki
             if (tabId === 'today') {
                 applyFilters();
             } else if (tabId === 'archive') {
