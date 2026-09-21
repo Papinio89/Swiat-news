@@ -1,137 +1,147 @@
 {
   "date": "21 września 2026",
-  "time": "06:01",
-  "timestamp": "2026-09-21_06:01",
+  "time": "17:09",
+  "timestamp": "2026-09-21_17:09",
   "items": [
     {
+      "category": "OBRONNOŚĆ",
+      "title": "✈️ Amerykańskie silniki GE w polskim dronie bojowym",
+      "summary": "GE Aerospace rozważa zastosowanie silnika z myśliwców F-15EX w polskim programie bezzałogowego skrzydłowego. Napęd ma zapewnić nowej konstrukcji zasięg oraz wysokie osiągi operacyjne.",
+      "comment": "Szybkie wdrożenie sprawdzonego zespołu napędowego znacząco przyspieszy rozwój polskich autonomicznych systemów powietrznych.",
+      "image_query": "jet engine fighter drone",
+      "link": "https://defence24.pl/przemysl/ge-silnik-do-f-15ex-takze-w-polskim-bezzalogowym-skrzydlowym",
+      "image_url": "https://images.pexels.com/photos/33335141/pexels-photo-33335141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1024x576px/UmBqTw863DSt3lFpziaTvI4vlMzAnxxZHGqnce1U.zcvb.png"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "⚓ Pociski Spike NLOS dla polskiej Marynarki Wojennej",
+      "summary": "Polska Marynarka Wojenna pozyska szybkie łodzie przechwytujące uzbrojone w precyzyjne pociski kierowane SPIKE NLOS. Nowy sprzęt ma drastycznie zwiększyć zdolności ochrony wybrzeża oraz obrony infrastruktury krytycznej.",
+      "comment": "Wyposażenie małych jednostek w dalekosiężne pociski przeciwpancerne tworzy skuteczną barierę przed zagrożeniami asymetrycznymi na Bałtyku.",
+      "image_query": "military interceptor speed boat",
+      "link": "https://defence24.pl/sily-zbrojne/wzmocnienie-mw-rp-szybkimi-lodziami-przechwytujacych-z-pociskami-spike-nlos",
+      "image_url": "https://images.pexels.com/photos/32651382/pexels-photo-32651382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/tcl1GJAixevfpBJJXFfnLXUuRjkXU7gVbLZ3CrUX.cm0t.jpg"
+    },
+    {
+      "category": "POLSKA",
+      "title": "🇵🇱 MON reaguje na doniesienia o 15 tysiącach żołnierzy USA",
+      "summary": "Ministerstwo Obrony Narodowej odniosło się do informacji o możliwym zwiększeniu amerykańskiego kontyngentu wojskowego w Polsce do 15 tysięcy żołnierzy. Trwają rozmowy dotyczące szczegółowych ustaleń logistycznych.",
+      "comment": "Dalsze zwiększanie sił USA w Polsce kluczowo wzmacnia potencjał odstraszania NATO na wschodniej flance.",
+      "image_query": "us army soldiers poland",
+      "link": "https://defence24.pl/polityka-obronna/do-polski-trafi-nawet-15-tysiecy-amerykanskich-zolnierzy-glos-z-mon",
+      "image_url": "https://images.pexels.com/photos/34693641/pexels-photo-34693641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/11/800x450px/kPD6OHwlpss57I6oNzHcTZAeI0wzwFqATXtYLHsI.hsll.jpg"
+    },
+    {
+      "category": "POLSKA",
+      "title": "🏛️ Maciej Berek pisze do prezydenta w sprawie Trybunału",
+      "summary": "Wybrany do Trybunału Konstytucyjnego Maciej Berek skierował oficjalny list do Prezydenta RP. Krok ten wpisuje się w nierozstrzygnięty spór o legalność i obsadę kluczowych organów sądowniczych.",
+      "comment": "Trwający konflikt instytucjonalny utrudnia stabilizację systemu prawnego w kraju.",
+      "image_query": "presidential palace warsaw poland",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSE5vYmljQ2g5cFZTSks3MjdrbGVjZk5SbV85R1dZMDRvNTVHQmVaa2ZHQk9PZUVxUGp0d2VadWg0VzkwYjBvOWZxSkdmLVZQSDdVZ3puaWxRdVhwN3gtRXU5RFpJa1FLVFlLMGdBbWFhWVhOMGtVdlhRcEZMSXhKMWNDVVJMYVEyd2JPcG0tbG5WYUNsQnFVUFVtQkNqcUdRT0xYQlZ1WQ?oc=5",
+      "image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
       "category": "GEOPOLITYKA",
-      "title": "🇹🇼 Tajwan tworzy globalny sojusz ratunkowy mimo nacisków Pekinu",
-      "summary": "Tajpej powołuje pierwszą międzynarodową organizację do spraw zarządzania kryzysowego i katastrof. To odpowiedź na rosnącą izolację dyplomatyczną ze strony Chin.",
-      "comment": "Inicjatywa umożliwia Tajwanowi budowanie relacji międzynarodowych z pominięciem formalnych kanałów dyplomatycznych blokowanych przez Pekin.",
-      "image_query": "taiwan disaster relief international",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-21/taiwan-forms-first-global-entity-to-tackle-disasters-as-china-squeezes-its-space",
-      "image_url": "https://images.pexels.com/photos/35872865/pexels-photo-35872865.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/35872865/pexels-photo-35872865.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "🇺🇦 Zełenski alarmuje przed rozszerzeniem rosyjskiej agresji",
+      "summary": "Prezydent Wołodymyr Zełenski ostrzega, że Rosja planuje eskalację działań zbrojnych i otwarcie nowych kierunków uderzeń. Kijów ponownie wzywa sojuszników do przyspieszenia dostaw obrony powietrznej i amunicji.",
+      "comment": "Zapowiedzi intensyfikacji walk pokazują, że Moskwa stawia na wyczerpanie ukraińskich zasobów przed ewentualnymi rokowaniami.",
+      "image_query": "volodymyr zelensky ukraine war",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSWVVVVFud3NuTjFIM0JKb0C2eTEtQ3E3bXlwcXM0dWxjdjJpR252UUhLUzdXWU5RQ2VMVGM4MnA0RDJQaWZlTXcyTnZrYmluQ0M3R1hrS1I5R3BnUDlnU2haeEJLSHpRVzBAt75Vem83RmdVamRyLUNBejdTNGRBUnVNMWxMa0p3ZXE2bVpOWUpSQnVELVA5SlBubmMwVlY?oc=5",
+      "image_url": "https://images.pexels.com/photos/11421241/pexels-photo-11421241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/11421241/pexels-photo-11421241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "🇷🇺 Kreml wykorzystuje fasadowe wybory do kontroli społecznej",
+      "summary": "Analizy pokazują, że niedawne rosyjskie wybory posłużyły władzom do weryfikacji lojalności regionalnych aparatów oraz legitymizacji kolejnych decyzji. Wyborcza fasada ma utrzymać pozory stabilności systemu politycznego.",
+      "comment": "Utrwalenie kontroli nad aparatem państwowym ułatwi Moskwie wdrażanie niepopularnych decyzji społeczno-gospodarczych.",
+      "image_query": "kremlin moscow russia",
+      "link": "https://defence24.pl/geopolityka/rosja-fasadowe-wybory-jako-narzedzie-wielofunkcyjne",
+      "image_url": "https://images.pexels.com/photos/36767209/pexels-photo-36767209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1440x810px/MDUzvQSfYu2IP9RcsGnm0kJVXBKoFoQ811tmeQaZ.tw7q.png"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "🇩🇪 Merz walczy o stabilność koalicji po porażce",
+      "summary": "Lider CDU Friedrich Merz zadeklarował wolę utrzymania koalicji rządowej mimo historycznie słabych wyników wyborczych. Wewnątrz ugrupowania narasta presja na zmiany programowe i personalne.",
+      "comment": "Niestabilność polityczna w Berlinie grozi spowolnieniem podejmowania kluczowych decyzji na szczeblu Unii Europejskiej.",
+      "image_query": "friedrich merz germany cdu",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZm1saUhtM2xzQ3pSSzNoY1VkQmdTUTZBRThvNVV1YUdNMWdKV0ptX2dDUnhvSUx0cWpZTTdqNjZBelBjYlhxenVvZlJBNHctOFMyN3gwYTkxaHNaaWkzQW9NUDh5U1Mxc0N6VjhMaVd6T0ZMeTZaZjhVMVh1djZCakZFdlVGcWZZaXV5YWJGYTdKZHpPM3ZIS1daRnNxNjBIdnh3MFF0UDI3ekF3YlJjXzJBdWNwbFdwV29jZ2dR?oc=5",
+      "image_url": "https://images.pexels.com/photos/8428093/pexels-photo-8428093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/8428093/pexels-photo-8428093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "OBRONNOŚĆ",
+      "title": "🇳🇴 Norwegia apeluje o ściślejszy sojusz zbrojeniowy z USA",
+      "summary": "Norweskie władze i przedstawiciele przemysłu sprzeciwiają się zamykaniu europejskiego rynku obronnego przed dostawcami ze Stanów Zjednoczonych. Oslo podkreśla, że transatlantycka kooperacja jest kluczem do bezpieczeństwa NATO.",
+      "comment": "Postawa Norwegii odzwierciedla obawy państw wschodniej i północnej flanki przed osłabieniem amerykańskich gwarancji bezpieczeństwa.",
+      "image_query": "norwegian military defense industry",
+      "link": "https://defence24.pl/przemysl/wspolpraca-zbrojeniowa-europy-i-usa-stanowczy-glos-z-norwegii",
+      "image_url": "https://images.pexels.com/photos/34468690/pexels-photo-34468690.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://cdn.defence24.pl//2023/03/27/originals/8rUSaPfZkEJGGBKnvns7IwY3nLPH0GZ4n41x78yh.jpg"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "🇪🇹 Siedem grup rebelianckich w Etiopii tworzy wspólny front",
+      "summary": "Kluczowe ugrupowania rebelianckie w Etiopii ogłosiły powstanie sojuszu wymierzonego w rząd centralny. Zjednoczenie sił opozycyjnych grozi ponowną eskalacją konfliktu w Rogu Afryki.",
+      "comment": "Konsolidacja rebelii ograniczy zdolności operacyjne władz w Addis Abebie i pogłębi kryzys humanitarny.",
+      "image_query": "ethiopia military conflict",
+      "link": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo",
+      "image_url": "https://images.pexels.com/photos/30541601/pexels-photo-30541601.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg"
+    },
+    {
+      "category": "GEOPOLITYKA",
+      "title": "🇺🇳 ONZ podważa legalność ataków USA na łodzie karteli",
+      "summary": "Eksperci ONZ oceniają, że amerykańskie uderzenia wojskowe na domniemane jednostki przemytnicze mogą spełniać znamiona zbrodni przeciwko ludzkości. Waszyngton odrzuca te zarzuty, broniąc bezwzględnej walki z narco-biznesem.",
+      "comment": "Naruszenie procedur międzynarodowych może wywołać napięcia dyplomatyczne między USA a partnerami z Ameryki Łacińskiej.",
+      "image_query": "united nations coast guard patrol",
+      "link": "https://www.bbc.co.uk/news/articles/ck5ye7v88qy7o",
+      "image_url": "https://images.pexels.com/photos/13988593/pexels-photo-13988593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9f80/live/a313f290-b5a9-11f1-a430-4d16ee157c41.jpg"
     },
     {
       "category": "RYNKI I GOSPODARKA",
-      "title": "🪙 Złoto pod presją przed kluczowymi decyzjami Rezerwy Federalnej",
-      "summary": "Ceny złota lekko spadają, gdy inwestorzy analizują dane o inflacji i szacują dalszą ścieżkę stóp procentowych Fed.",
-      "comment": "Niepewność co do tempa obniżek stóp w USA skłania kapitał do krótkoterminowej ucieczki w rentowne obligacje.",
-      "image_query": "gold trading fed rate",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/gold-steadies-as-traders-weigh-inflation-and-fed-hike-outlook",
-      "image_url": "https://images.pexels.com/photos/6120252/pexels-photo-6120252.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/6120252/pexels-photo-6120252.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "📊 BofA ostrzega przed gwałtownym przeszacowaniem rentowności obligacji",
-      "summary": "Bank of America wskazuje na rosnące ryzyko repricingu na krótkim końcu krzywej rentowności w USA.",
-      "comment": "Gwałtowna korekta oczekiwań rynkowych dotyczących polityki Fed może wywołać wyższą zmienność na globalnym rynku długu.",
-      "image_query": "bond yields bofa trading",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-21/bofa-s-cabana-front-end-yields-face-repricing-risk-video",
+      "title": "📈 Rynki rosną w nadziei na porozumienie USA-Chiny",
+      "summary": "Światowe giełdy notują wzrosty przed nadchodzącym szczytem przywódców Stanów Zjednoczonych i Chin. Inwestorzy oczekują przedłużenia rozejmu handlowego i uniknięcia kolejnych ciosów taryfowych.",
+      "comment": "Ewentualny kompromis gospodarczy między Waszyngtonem a Pekinem zredukuje ryzyko globalnej stagnacji handlowej.",
+      "image_query": "stock market trading wall street",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-21/us-stocks-climb-ahead-of-trump-xi-meeting-as-oil-slips",
       "image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "RYNKI I GOSPODARKA",
-      "title": "🛢️ Zawirowania na rynku ropy naftowej w cieniu niepewności podażowej",
-      "summary": "Notowania ropy reagują na najnowsze dane dotyczące poziomu wydobycia oraz utrzymujące się napięcia na Bliskim Wschodzie.",
-      "comment": "Dalszy rozwój cen zależy od stabilności ciągów dostaw oraz decyzji rozszerzonego formatu OPEC+.",
-      "image_query": "oil market barrels refinery",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-20/latest-oil-market-news-and-analysis-for-sept-21",
-      "image_url": "https://images.pexels.com/photos/6150117/pexels-photo-6150117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/6150117/pexels-photo-6150117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "🇦🇺 Firmus planuje gigantyczny debiut na giełdzie w Australii",
-      "summary": "Spółka Firmus chce pozyskać 5 miliardów dolarów w ramach jednej z największych ofert publicznych (IPO) w historii Australii.",
-      "comment": "Udany debiut może ożywić rynek pierwotny w regionie Azji i Pacyfiku po długim okresie spowolnienia.",
-      "image_query": "australian stock exchange ipo",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-21/firmus-seeks-to-raise-5-billion-in-landmark-australian-ipo",
-      "image_url": "https://images.pexels.com/photos/16594724/pexels-photo-16594724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/16594724/pexels-photo-16594724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "GEOPOLITYKA",
-      "title": "🇵🇰 Aresztowanie siostry Imrana Khana zaostrza kryzys w Pakistanie",
-      "summary": "Pakistańskie służby zatrzymały siostrę byłego premiera Imrana Khana w kontekście narastających protestów opozycji.",
-      "comment": "Presja władz na otoczenie polityczne Khana grozi kolejną falą destabilizacji społecznej w kraju.",
-      "image_query": "pakistan protest arrest islamabad",
-      "link": "https://www.bbc.co.uk/news/articles/cm36l2pye2kwo",
-      "image_url": "https://images.pexels.com/photos/37937785/pexels-photo-37937785.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/015a/live/88adf260-b523-11f1-b1e2-034207760e32.jpg"
-    },
-    {
-      "category": "OBRONNOŚĆ",
-      "title": "🕵️ Analityk Google infiltruje groźną grupę hakerską",
-      "summary": "Ekspert ds. bezpieczeństwa Google, działając pod przykrywką, przeniknął do struktur grupy hakerskiej atakującej łańcuchy dostaw oprogramowania.",
-      "comment": "Operacja ujawnia rosnące zaangażowanie gigantów technologicznych w bezpośrednie zwalczanie zaawansowanych zagrożeń cybernetycznych.",
-      "image_query": "cybersecurity undercover hacker gang",
-      "link": "https://arstechnica.com/security/2026-09-an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/",
-      "image_url": "https://images.pexels.com/photos/5380652/pexels-photo-5380652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/5380652/pexels-photo-5380652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "GEOPOLITYKA",
-      "title": "💻 Zmasowane cyberataki na infrastrukturę wyborczą w Rosji",
-      "summary": "Centralna Komisja Wyborcza w Rosji poinformowała o rekordowej skali ataków teleinformatycznych wymierzonych w systemy głosowania.",
-      "comment": "Doniesienia o cyberatakach są wykorzystywane przez Kreml do wzmacniania narracji o zewnętrznej agresji ze strony państw Zachodu.",
-      "image_query": "russia elections cyberattack infrastructure",
-      "link": "https://defence24.pl/geopolityka/wybory-w-rosji-pod-presja-cyberatakow-ckw-informuje-o-szokujacej-skali",
-      "image_url": "https://images.pexels.com/photos/5117624/pexels-photo-5117624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/20/1920x1080px/HpGIbv6v9Sg0XZzDG6McwWcRk4csFrYljEIEepDe.vysm.jpg"
-    },
-    {
-      "category": "OBRONNOŚĆ",
-      "title": "🇺🇸 Donald Trump proponuje utworzenie dedykowanych sił AI Force",
-      "summary": "Donald Trump zapowiedział pomysł powołania nowej formacji wojskowej „AI Force” oraz stanowiska specjalnego pełnomocnika ds. sztucznej inteligencji.",
-      "comment": "Propozycja odzwierciedla postrzeganie technologii sztucznej inteligencji jako kluczowego obszaru przyszłej rywalizacji geostrategicznej.",
-      "image_query": "us military artificial intelligence",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-      "image_url": "https://images.pexels.com/photos/18799047/pexels-photo-18799047.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25334825/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200"
-    },
-    {
-      "category": "POLSKA",
-      "title": "🇵🇱 Duża akcja policji w Bukownie po strzelaninie",
-      "summary": "Małopolska policja zatrzymała 52-latka podejrzanego o zranienie dwóch osób z broni palnej po szeroko zakrojonej obławie.",
-      "comment": "Szybkie ujęcie sprawcy zapobiegło dalszemu zagrożeniu, jednak incydent odnawia debatę o bezpieczeństwie publicznym.",
-      "image_query": "poland police operation bukowitz",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdk9uOHg4Wi1mTnA5UTVqZlI3YUoyNzlySHVkTk1WeWs5MTlVcmJ4QThOSmQwZEU3MExaZ3RIRFJiQjNMX0lQYlZLUnhacjdBMnBRZHhHREE2cHc5MWZ4ZzFxY2d0bE9IQW5pbC1Da0d1MmZXRllBWUw3SmNtMDFDV0hPeEh0VHZxeDFKTksyaUl0TWU0QUM0UmV5b0h1dWxfTS1uZUJVQ0k2VGpYZ0Jxc0VRdWY0dTF6a2xFcHZXQW1VRHV1QkdCdzlNdFp4MWs2c3JOUDFFNEs1ZnV4VF9DczhNVE1hMlU2c0E?oc=5",
-      "image_url": "https://images.pexels.com/photos/581312/pexels-photo-581312.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/581312/pexels-photo-581312.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "🛢️ Drożejący diesel podbija światową presję inflacyjną",
+      "summary": "Ceny oleju napędowego w USA sięgają rekordów z powodu globalnego deficytu paliw rafinowanych. Wzrost kosztów transportu towarowego bezpośrednio przekłada się na wyższe ceny produktów dla konsumentów.",
+      "comment": "Utrzymujące się wysokie ceny diesla zmuszą banki centralne do dłuższego utrzymywania stóp procentowych na podwyższonym poziomie.",
+      "image_query": "diesel fuel pump refinery",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-21/us-diesel-tops-record-as-global-crunch-feeds-inflation",
+      "image_url": "https://images.pexels.com/photos/12377481/pexels-photo-12377481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/12377481/pexels-photo-12377481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "TECHNOLOGIE / AI",
-      "title": "🤖 BlackRock: Sprzęt dla sztucznej inteligencji napędzi rynki wschodzące",
-      "summary": "Według analityków BlackRock popyt na infrastrukturę sprzętową AI stanie się głównym motorem wzrostu dla gospodarek wschodzących.",
-      "comment": "Państwa azjatyckie produkujące półprzewodniki i komponenty elektroniczne mogą zyskać najwięcej na globalnym wyścigu technologicznym.",
-      "image_query": "semiconductor microchip ai blackrock",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-21/blackrock-s-vavrek-ai-hardware-to-drive-em-video",
-      "image_url": "https://images.pexels.com/photos/34924856/pexels-photo-34924856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/34924856/pexels-photo-34924856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "title": "💻 Google stawia na nową generację laptopów AI",
+      "summary": "Google ogłasza premierę urządzeń Googlebook z głęboką integracją modelu Gemini, których ceny startują od 899 dolarów. Koncern chce wyznaczyć nowy standard rynkowy oparty na sprzętowym wsparciu sztucznej inteligencji.",
+      "comment": "Premiera pokaże, czy bezpośrednia integracja modeli AI jest w stanie napędzić falę wymiany komputerów osobistych.",
+      "image_query": "googlebook laptop ai",
+      "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "image_url": "https://images.pexels.com/photos/30530416/pexels-photo-30530416.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/intelligence_hero.width-2200.format-webp.webp?resize=1200,675"
     },
     {
       "category": "TECHNOLOGIE / AI",
-      "title": "🌐 Twórcy cyfrowych modeli świata utajniają swoje technologie",
-      "summary": "Firmy rozwijające tak zwane „world models” w obszarze AI ograniczają dostęp do szczegółów dotyczących architektury oraz danych treningowych.",
-      "comment": "Brak przejrzystości w rozwoju zaawansowanych modeli budzi obawy o monopolizację rynku i bezpieczeństwo rozwiązań AI.",
-      "image_query": "artificial intelligence world model",
-      "link": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
-      "image_url": "https://images.pexels.com/photos/18069697/pexels-photo-18069697.png?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/ALLIN_16-09-AM_melanieolmsteadphotographe-635.jpg?w=1024"
-    },
-    {
-      "category": "RYNKI I GOSPODARKA",
-      "title": "🚇 Elon Musk proponuje trasę Hyperloop między Austin a San Antonio",
-      "summary": "Firma The Boring Company przedstawiła koncepcję budowy podziemnego połączenia ultraszybkiej kolei Hyperloop w Teksasie.",
-      "comment": "Realizacja projektu wymaga pokonania barier regulacyjnych oraz pozyskania wielomiliardowego finansowania.",
-      "image_query": "boring company hyperloop tunnel",
-      "link": "https://techcrunch.com/2026/09/20/elon-musks-latest-boring-company-pitch-involves-a-hyperloop-between-austin-and-san-antonio/",
-      "image_url": "https://images.pexels.com/photos/36520209/pexels-photo-36520209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/04/musk-court-2273245544.jpg?resize=1200,801"
+      "title": "🤖 Koncentracja rynku AI utrudnia pracę funduszom",
+      "summary": "Gwałtowny wzrost wycen spółek technologicznych związanych z AI utrudnia inwestorom skuteczną dywersyfikację portfeli. Cały rynek staje się coraz bardziej zależny od wyników wąskiej grupy rynkowych liderów.",
+      "comment": "Wysoki poziom koncentracji indeksów zwiększa podatność całego rynku na nagłe rozczarowania wynikami sektora AI.",
+      "image_query": "wall street stock market charts",
+      "link": "https://www.bloomberg.com/news/features/2026-09-20/ai-boom-is-making-diversifying-investments-tough-for-wall-street",
+      "image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
   ]
 }

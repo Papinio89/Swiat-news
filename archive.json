@@ -3217,5 +3217,152 @@
         "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/04/musk-court-2273245544.jpg?resize=1200,801"
       }
     ]
+  },
+  "2026-09-21_wieczorne": {
+    "date": "21 września 2026",
+    "time": "17:09",
+    "timestamp": "2026-09-21_17:09",
+    "items": [
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "✈️ Amerykańskie silniki GE w polskim dronie bojowym",
+        "summary": "GE Aerospace rozważa zastosowanie silnika z myśliwców F-15EX w polskim programie bezzałogowego skrzydłowego. Napęd ma zapewnić nowej konstrukcji zasięg oraz wysokie osiągi operacyjne.",
+        "comment": "Szybkie wdrożenie sprawdzonego zespołu napędowego znacząco przyspieszy rozwój polskich autonomicznych systemów powietrznych.",
+        "image_query": "jet engine fighter drone",
+        "link": "https://defence24.pl/przemysl/ge-silnik-do-f-15ex-takze-w-polskim-bezzalogowym-skrzydlowym",
+        "image_url": "https://images.pexels.com/photos/33335141/pexels-photo-33335141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/21/1024x576px/UmBqTw863DSt3lFpziaTvI4vlMzAnxxZHGqnce1U.zcvb.png"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "⚓ Pociski Spike NLOS dla polskiej Marynarki Wojennej",
+        "summary": "Polska Marynarka Wojenna pozyska szybkie łodzie przechwytujące uzbrojone w precyzyjne pociski kierowane SPIKE NLOS. Nowy sprzęt ma drastycznie zwiększyć zdolności ochrony wybrzeża oraz obrony infrastruktury krytycznej.",
+        "comment": "Wyposażenie małych jednostek w dalekosiężne pociski przeciwpancerne tworzy skuteczną barierę przed zagrożeniami asymetrycznymi na Bałtyku.",
+        "image_query": "military interceptor speed boat",
+        "link": "https://defence24.pl/sily-zbrojne/wzmocnienie-mw-rp-szybkimi-lodziami-przechwytujacych-z-pociskami-spike-nlos",
+        "image_url": "https://images.pexels.com/photos/32651382/pexels-photo-32651382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/tcl1GJAixevfpBJJXFfnLXUuRjkXU7gVbLZ3CrUX.cm0t.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🇵🇱 MON reaguje na doniesienia o 15 tysiącach żołnierzy USA",
+        "summary": "Ministerstwo Obrony Narodowej odniosło się do informacji o możliwym zwiększeniu amerykańskiego kontyngentu wojskowego w Polsce do 15 tysięcy żołnierzy. Trwają rozmowy dotyczące szczegółowych ustaleń logistycznych.",
+        "comment": "Dalsze zwiększanie sił USA w Polsce kluczowo wzmacnia potencjał odstraszania NATO na wschodniej flance.",
+        "image_query": "us army soldiers poland",
+        "link": "https://defence24.pl/polityka-obronna/do-polski-trafi-nawet-15-tysiecy-amerykanskich-zolnierzy-glos-z-mon",
+        "image_url": "https://images.pexels.com/photos/34693641/pexels-photo-34693641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/11/800x450px/kPD6OHwlpss57I6oNzHcTZAeI0wzwFqATXtYLHsI.hsll.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏛️ Maciej Berek pisze do prezydenta w sprawie Trybunału",
+        "summary": "Wybrany do Trybunału Konstytucyjnego Maciej Berek skierował oficjalny list do Prezydenta RP. Krok ten wpisuje się w nierozstrzygnięty spór o legalność i obsadę kluczowych organów sądowniczych.",
+        "comment": "Trwający konflikt instytucjonalny utrudnia stabilizację systemu prawnego w kraju.",
+        "image_query": "presidential palace warsaw poland",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSE5vYmljQ2g5cFZTSks3MjdrbGVjZk5SbV85R1dZMDRvNTVHQmVaa2ZHQk9PZUVxUGp0d2VadWg0VzkwYjBvOWZxSkdmLVZQSDdVZ3puaWxRdVhwN3gtRXU5RFpJa1FLVFlLMGdBbWFhWVhOMGtVdlhRcEZMSXhKMWNDVVJMYVEyd2JPcG0tbG5WYUNsQnFVUFVtQkNqcUdRT0xYQlZ1WQ?oc=5",
+        "image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38487662/pexels-photo-38487662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇺🇦 Zełenski alarmuje przed rozszerzeniem rosyjskiej agresji",
+        "summary": "Prezydent Wołodymyr Zełenski ostrzega, że Rosja planuje eskalację działań zbrojnych i otwarcie nowych kierunków uderzeń. Kijów ponownie wzywa sojuszników do przyspieszenia dostaw obrony powietrznej i amunicji.",
+        "comment": "Zapowiedzi intensyfikacji walk pokazują, że Moskwa stawia na wyczerpanie ukraińskich zasobów przed ewentualnymi rokowaniami.",
+        "image_query": "volodymyr zelensky ukraine war",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSWVVVVFud3NuTjFIM0JKb0C2eTEtQ3E3bXlwcXM0dWxjdjJpR252UUhLUzdXWU5RQ2VMVGM4MnA0RDJQaWZlTXcyTnZrYmluQ0M3R1hrS1I5R3BnUDlnU2haeEJLSHpRVzBAt75Vem83RmdVamRyLUNBejdTNGRBUnVNMWxMa0p3ZXE2bVpOWUpSQnVELVA5SlBubmMwVlY?oc=5",
+        "image_url": "https://images.pexels.com/photos/11421241/pexels-photo-11421241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/11421241/pexels-photo-11421241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇷🇺 Kreml wykorzystuje fasadowe wybory do kontroli społecznej",
+        "summary": "Analizy pokazują, że niedawne rosyjskie wybory posłużyły władzom do weryfikacji lojalności regionalnych aparatów oraz legitymizacji kolejnych decyzji. Wyborcza fasada ma utrzymać pozory stabilności systemu politycznego.",
+        "comment": "Utrwalenie kontroli nad aparatem państwowym ułatwi Moskwie wdrażanie niepopularnych decyzji społeczno-gospodarczych.",
+        "image_query": "kremlin moscow russia",
+        "link": "https://defence24.pl/geopolityka/rosja-fasadowe-wybory-jako-narzedzie-wielofunkcyjne",
+        "image_url": "https://images.pexels.com/photos/36767209/pexels-photo-36767209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/21/1440x810px/MDUzvQSfYu2IP9RcsGnm0kJVXBKoFoQ811tmeQaZ.tw7q.png"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇩🇪 Merz walczy o stabilność koalicji po porażce",
+        "summary": "Lider CDU Friedrich Merz zadeklarował wolę utrzymania koalicji rządowej mimo historycznie słabych wyników wyborczych. Wewnątrz ugrupowania narasta presja na zmiany programowe i personalne.",
+        "comment": "Niestabilność polityczna w Berlinie grozi spowolnieniem podejmowania kluczowych decyzji na szczeblu Unii Europejskiej.",
+        "image_query": "friedrich merz germany cdu",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZm1saUhtM2xzQ3pSSzNoY1VkQmdTUTZBRThvNVV1YUdNMWdKV0ptX2dDUnhvSUx0cWpZTTdqNjZBelBjYlhxenVvZlJBNHctOFMyN3gwYTkxaHNaaWkzQW9NUDh5U1Mxc0N6VjhMaVd6T0ZMeTZaZjhVMVh1djZCakZFdlVGcWZZaXV5YWJGYTdKZHpPM3ZIS1daRnNxNjBIdnh3MFF0UDI3ekF3YlJjXzJBdWNwbFdwV29jZ2dR?oc=5",
+        "image_url": "https://images.pexels.com/photos/8428093/pexels-photo-8428093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/8428093/pexels-photo-8428093.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🇳🇴 Norwegia apeluje o ściślejszy sojusz zbrojeniowy z USA",
+        "summary": "Norweskie władze i przedstawiciele przemysłu sprzeciwiają się zamykaniu europejskiego rynku obronnego przed dostawcami ze Stanów Zjednoczonych. Oslo podkreśla, że transatlantycka kooperacja jest kluczem do bezpieczeństwa NATO.",
+        "comment": "Postawa Norwegii odzwierciedla obawy państw wschodniej i północnej flanki przed osłabieniem amerykańskich gwarancji bezpieczeństwa.",
+        "image_query": "norwegian military defense industry",
+        "link": "https://defence24.pl/przemysl/wspolpraca-zbrojeniowa-europy-i-usa-stanowczy-glos-z-norwegii",
+        "image_url": "https://images.pexels.com/photos/34468690/pexels-photo-34468690.png?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl//2023/03/27/originals/8rUSaPfZkEJGGBKnvns7IwY3nLPH0GZ4n41x78yh.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇪🇹 Siedem grup rebelianckich w Etiopii tworzy wspólny front",
+        "summary": "Kluczowe ugrupowania rebelianckie w Etiopii ogłosiły powstanie sojuszu wymierzonego w rząd centralny. Zjednoczenie sił opozycyjnych grozi ponowną eskalacją konfliktu w Rogu Afryki.",
+        "comment": "Konsolidacja rebelii ograniczy zdolności operacyjne władz w Addis Abebie i pogłębi kryzys humanitarny.",
+        "image_query": "ethiopia military conflict",
+        "link": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo",
+        "image_url": "https://images.pexels.com/photos/30541601/pexels-photo-30541601.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇺🇳 ONZ podważa legalność ataków USA na łodzie karteli",
+        "summary": "Eksperci ONZ oceniają, że amerykańskie uderzenia wojskowe na domniemane jednostki przemytnicze mogą spełniać znamiona zbrodni przeciwko ludzkości. Waszyngton odrzuca te zarzuty, broniąc bezwzględnej walki z narco-biznesem.",
+        "comment": "Naruszenie procedur międzynarodowych może wywołać napięcia dyplomatyczne między USA a partnerami z Ameryki Łacińskiej.",
+        "image_query": "united nations coast guard patrol",
+        "link": "https://www.bbc.co.uk/news/articles/ck5ye7v88qy7o",
+        "image_url": "https://images.pexels.com/photos/13988593/pexels-photo-13988593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9f80/live/a313f290-b5a9-11f1-a430-4d16ee157c41.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📈 Rynki rosną w nadziei na porozumienie USA-Chiny",
+        "summary": "Światowe giełdy notują wzrosty przed nadchodzącym szczytem przywódców Stanów Zjednoczonych i Chin. Inwestorzy oczekują przedłużenia rozejmu handlowego i uniknięcia kolejnych ciosów taryfowych.",
+        "comment": "Ewentualny kompromis gospodarczy między Waszyngtonem a Pekinem zredukuje ryzyko globalnej stagnacji handlowej.",
+        "image_query": "stock market trading wall street",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-21/us-stocks-climb-ahead-of-trump-xi-meeting-as-oil-slips",
+        "image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🛢️ Drożejący diesel podbija światową presję inflacyjną",
+        "summary": "Ceny oleju napędowego w USA sięgają rekordów z powodu globalnego deficytu paliw rafinowanych. Wzrost kosztów transportu towarowego bezpośrednio przekłada się na wyższe ceny produktów dla konsumentów.",
+        "comment": "Utrzymujące się wysokie ceny diesla zmuszą banki centralne do dłuższego utrzymywania stóp procentowych na podwyższonym poziomie.",
+        "image_query": "diesel fuel pump refinery",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-21/us-diesel-tops-record-as-global-crunch-feeds-inflation",
+        "image_url": "https://images.pexels.com/photos/12377481/pexels-photo-12377481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/12377481/pexels-photo-12377481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "💻 Google stawia na nową generację laptopów AI",
+        "summary": "Google ogłasza premierę urządzeń Googlebook z głęboką integracją modelu Gemini, których ceny startują od 899 dolarów. Koncern chce wyznaczyć nowy standard rynkowy oparty na sprzętowym wsparciu sztucznej inteligencji.",
+        "comment": "Premiera pokaże, czy bezpośrednia integracja modeli AI jest w stanie napędzić falę wymiany komputerów osobistych.",
+        "image_query": "googlebook laptop ai",
+        "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+        "image_url": "https://images.pexels.com/photos/30530416/pexels-photo-30530416.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/intelligence_hero.width-2200.format-webp.webp?resize=1200,675"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 Koncentracja rynku AI utrudnia pracę funduszom",
+        "summary": "Gwałtowny wzrost wycen spółek technologicznych związanych z AI utrudnia inwestorom skuteczną dywersyfikację portfeli. Cały rynek staje się coraz bardziej zależny od wyników wąskiej grupy rynkowych liderów.",
+        "comment": "Wysoki poziom koncentracji indeksów zwiększa podatność całego rynku na nagłe rozczarowania wynikami sektora AI.",
+        "image_query": "wall street stock market charts",
+        "link": "https://www.bloomberg.com/news/features/2026-09-20/ai-boom-is-making-diversifying-investments-tough-for-wall-street",
+        "image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      }
+    ]
   }
 }
