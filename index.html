@@ -71,7 +71,7 @@
             padding-bottom: 4px !important;
         }
 
-        /* Category filters - horizontal scroll */
+        /* Category filters */
         #category-filters {
             scrollbar-width: none;
             -ms-overflow-style: none;
@@ -82,17 +82,6 @@
             font-size: 11px !important;
             padding: 5px 12px !important;
         }
-
-        /* Compact mode */
-        body.compact-mode #hero-section { display: none !important; }
-        body.compact-mode #today-grid article .img-container { height: 100px !important; }
-        body.compact-mode #today-grid article p.summary-text { display: none !important; }
-        body.compact-mode #today-grid article .comment-box { display: none !important; }
-        body.compact-mode #today-grid article .read-time { display: none !important; }
-        body.compact-mode #today-grid { gap: 1rem !important; }
-        body.compact-mode #today-grid article h3 { font-size: 0.92rem !important; margin-bottom: 0.4rem !important; }
-        body.compact-mode #weather-widget { display: none !important; }
-        body.compact-mode #new-edition-banner { display: none !important; }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
@@ -188,13 +177,11 @@
                         <p id="weather-desc" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Ładowanie...</p>
                     </div>
                 </div>
-                <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">
-                    —
-                </div>
+                <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">—</div>
             </div>
         </div>
 
-        <!-- TABS + COMPACT -->
+        <!-- TABS -->
         <div class="flex flex-wrap justify-center items-center gap-2 mb-5" id="tabs-container">
             <button id="tab-btn-today" data-tab="today" onclick="switchTab('today')" class="tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                 <i class="fa-solid fa-calendar-day mr-1.5"></i> Dzisiejsze
@@ -205,15 +192,13 @@
             <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
             </button>
-            
-            <button id="compact-toggle" onclick="toggleCompact()" 
-                class="ml-1 sm:ml-2 px-4 py-2.5 rounded-full text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
-                <i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>
-            </button>
         </div>
 
-        <!-- CATEGORY FILTERS -->
-        <div id="category-filters" class="flex flex-nowrap overflow-x-auto justify-start sm:justify-center gap-2 mb-7 pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 hidden"></div>
+        <!-- CATEGORY FILTERS + COUNTER -->
+        <div id="filters-wrapper" class="mb-7 hidden">
+            <div id="category-filters" class="flex flex-nowrap overflow-x-auto justify-start sm:justify-center gap-2 pb-1 -mx-4 px-4 sm:mx-0 sm:px-0"></div>
+            <p id="filter-counter" class="text-center text-xs text-slate-400 mt-3 hidden">Pokazuję <span id="filter-count">0</span> tematów</p>
+        </div>
 
         <div id="loader" class="flex flex-col items-center justify-center py-16">
             <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
@@ -227,8 +212,6 @@
 
         <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
-            
-            <!-- HERO -->
             <div id="hero-section" class="mb-10 hidden">
                 <div class="flex items-center gap-2 mb-5">
                     <div class="w-7 h-7 rounded-lg bg-brand-500/15 flex items-center justify-center">
@@ -244,7 +227,6 @@
                     <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                 </div>
             </div>
-
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
         </div>
 
@@ -261,7 +243,6 @@
                 </div>
                 <div id="breaking-list" class="flex flex-col gap-3"></div>
             </div>
-
             <div class="mb-3 flex items-center justify-between">
                 <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Błyskawiczny skrót pozostałych tematów:</p>
             </div>
@@ -302,7 +283,6 @@
                 <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" 
                      alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
             </div>
-
             <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider">
                 <a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a>
             </p>
@@ -323,8 +303,8 @@
         let archiveNews = {};
         let archiveRoz = {};
         let archiveVisibleCount = 3;
-        let currentCategory = 'all';
-        let isCompact = localStorage.getItem('compactMode') === 'true';
+        let currentCategory = localStorage.getItem('selectedCategory') || 'all';
+        let currentTab = 'today';
 
         function debounce(fn, delay) {
             let timer;
@@ -337,7 +317,6 @@
             filterNews(sourceId);
         }, 280);
 
-        // Progress bar + back to top
         window.addEventListener('scroll', () => {
             const winScroll = document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -372,25 +351,6 @@
                 document.documentElement.classList.add('dark');
                 localStorage.theme = 'dark';
                 document.getElementById('theme-icon').className = 'fa-solid fa-moon';
-            }
-        }
-
-        function applyCompactState() {
-            if (isCompact) {
-                document.body.classList.add('compact-mode');
-                document.getElementById('compact-toggle').innerHTML = '<i class="fa-solid fa-expand mr-1.5"></i> <span class="hidden sm:inline">Pełny widok</span><span class="sm:hidden">Pełny</span>';
-            } else {
-                document.body.classList.remove('compact-mode');
-                document.getElementById('compact-toggle').innerHTML = '<i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>';
-            }
-        }
-        function toggleCompact() {
-            isCompact = !isCompact;
-            localStorage.setItem('compactMode', isCompact);
-            applyCompactState();
-            // re-render today to respect compact (hero hide)
-            if (document.getElementById('view-today') && !document.getElementById('view-today').classList.contains('hidden')) {
-                applyCategoryFilter();
             }
         }
 
@@ -450,7 +410,6 @@
             catch { return null; }
         }
 
-        // Szacowany czas czytania (ok. 200 słów / min)
         function estimateReadTime(text) {
             if (!text) return '1 min';
             const words = text.trim().split(/\s+/).length;
@@ -503,7 +462,6 @@
 
                     const cardHtml = `
                         <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
-                            
                             <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
                                 <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
                                     <i class="fa-solid fa-download text-sm"></i>
@@ -512,41 +470,33 @@
                                     <i class="fa-solid fa-share-nodes text-sm"></i>
                                 </button>
                             </div>
-
                             <div class="h-48 w-full relative overflow-hidden img-container bg-slate-800">
                                 <img src="${directImgUrl}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
                                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                                      crossorigin="anonymous" alt="${cleanTitle}">
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                             </div>
-
                             <div class="p-5 sm:p-6 flex-1 flex flex-col -mt-10 relative z-10">
                                 <div class="mb-2.5 flex items-center justify-between gap-2">
-                                    <span class="badge-fixed px-2.5 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
-                                        ${rawC}
-                                    </span>
-                                    <span class="read-time text-[10px] text-slate-400 font-medium flex items-center gap-1">
+                                    <span class="badge-fixed px-2.5 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">${rawC}</span>
+                                    <span class="text-[10px] text-slate-400 font-medium flex items-center gap-1">
                                         <i class="fa-regular fa-clock text-[9px]"></i> ${readTime}
                                     </span>
                                 </div>
-                                
                                 <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2.5 leading-snug">${emoji} ${titleHtml}</h3>
-                                <p class="summary-text text-slate-600 dark:text-slate-400 text-sm mb-5 flex-1 leading-relaxed">${item.summary || ''}</p>
-                                
-                                <div class="comment-box mt-auto rounded-xl p-3.5 border ${comStyle}">
+                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-5 flex-1 leading-relaxed">${item.summary || ''}</p>
+                                <div class="mt-auto rounded-xl p-3.5 border ${comStyle}">
                                     <div class="flex items-center gap-2 mb-1 opacity-80">
                                         <i class="fa-solid fa-lightbulb text-[10px]"></i>
                                         <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
                                     </div>
                                     <p class="text-sm font-medium leading-relaxed italic">"${item.comment || ''}"</p>
                                 </div>
-                                
                                 ${item.link && item.link !== '#' ? `
                                 <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" 
                                    class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
                                     ${domain ? `Źródło: ${domain}` : 'ZOBACZ ŹRÓDŁO'} <i class="fa-solid fa-angle-right ml-1"></i>
-                                </a>
-                                ` : ''}
+                                </a>` : ''}
                             </div>
                         </article>
                     `;
@@ -581,9 +531,7 @@
                             <div class="text-3xl flex-shrink-0 mt-0.5">${emoji}</div>
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">
-                                        ${item.category || 'PILNE'}
-                                    </span>
+                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">${item.category || 'PILNE'}</span>
                                     ${domain ? `<span class="text-[10px] text-slate-400 font-medium">${domain}</span>` : ''}
                                 </div>
                                 <h4 class="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-snug mb-1.5">
@@ -652,25 +600,30 @@
             return combined;
         }
 
+        // ========== FILTRY KATEGORII (wspólne dla Today + Archive) ==========
+        function getAllCategories() {
+            const cats = new Set();
+            todayItems.forEach(i => cats.add(i.category || 'Inne'));
+            archiveGroups.forEach(g => g.items.forEach(i => cats.add(i.category || 'Inne')));
+            return [...cats];
+        }
+
         function buildCategoryFilters() {
             const priority = ['Polska', 'Obronność', 'Geopolityka', 'Gospodarka', 'Świat'];
-            const allCats = [...new Set(todayItems.map(i => i.category || 'Inne'))];
+            const allCats = getAllCategories();
             const ordered = [
                 ...priority.filter(c => allCats.includes(c)),
                 ...allCats.filter(c => !priority.includes(c)).sort()
             ];
 
             const container = document.getElementById('category-filters');
-            const savedCat = localStorage.getItem('selectedCategory') || 'all';
-            currentCategory = savedCat;
-
             let html = `
-                <button data-cat="all" class="cat-chip rounded-full font-bold transition border ${savedCat === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
+                <button data-cat="all" class="cat-chip rounded-full font-bold transition border ${currentCategory === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
                     Wszystkie
                 </button>
             `;
             ordered.forEach(cat => {
-                const isActive = savedCat === cat;
+                const isActive = currentCategory === cat;
                 html += `
                     <button data-cat="${cat}" class="cat-chip rounded-full font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
                         ${cat}
@@ -679,7 +632,6 @@
             });
 
             container.innerHTML = html;
-            container.classList.remove('hidden');
 
             container.querySelectorAll('.cat-chip').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -692,16 +644,33 @@
                     });
                     btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
                     btn.classList.add('bg-brand-500', 'text-white', 'border-brand-500');
-                    applyCategoryFilter();
+                    
+                    applyFilters();
                 });
             });
         }
 
-        function applyCategoryFilter() {
-            const filtered = currentCategory === 'all' 
-                ? todayItems 
-                : todayItems.filter(i => (i.category || 'Inne') === currentCategory);
-            renderTodayWithHero(filtered);
+        function applyFilters() {
+            if (currentTab === 'today') {
+                const filtered = currentCategory === 'all' 
+                    ? todayItems 
+                    : todayItems.filter(i => (i.category || 'Inne') === currentCategory);
+                renderTodayWithHero(filtered);
+                updateCounter(filtered.length);
+            } else if (currentTab === 'archive') {
+                renderArchive(); // wewnątrz filtruje
+            }
+        }
+
+        function updateCounter(count) {
+            const counterEl = document.getElementById('filter-counter');
+            const countSpan = document.getElementById('filter-count');
+            if (count > 0) {
+                countSpan.textContent = count;
+                counterEl.classList.remove('hidden');
+            } else {
+                counterEl.classList.add('hidden');
+            }
         }
 
         function renderTodayWithHero(items) {
@@ -709,7 +678,7 @@
             const heroGrid = document.getElementById('hero-grid');
             const todayGrid = document.getElementById('today-grid');
 
-            if (isCompact || items.length <= 3) {
+            if (items.length <= 3) {
                 heroSection.classList.add('hidden');
                 renderCardsToContainer(todayGrid, items);
                 return;
@@ -775,7 +744,6 @@
 
         async function init() {
             initTheme();
-            applyCompactState();
 
             try {
                 const cb = new Date().getTime(); 
@@ -797,20 +765,20 @@
                 let displayDate = globalNewsData.date || "Dzisiaj";
                 document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
 
-                // Ostatnia aktualizacja + banner
                 const now = new Date();
                 const timeStr = now.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' });
                 document.getElementById('update-time').textContent = timeStr;
                 document.getElementById('last-update').classList.remove('hidden');
                 
-                // Banner nowego wydania (pokazujemy zawsze przy świeżym załadowaniu)
                 document.getElementById('banner-time').textContent = `• ${timeStr}`;
                 document.getElementById('new-edition-banner').classList.remove('hidden');
-                // Ukryj banner po 8 sekundach
                 setTimeout(() => {
                     const banner = document.getElementById('new-edition-banner');
-                    if (banner) banner.style.opacity = '0';
-                    setTimeout(() => banner?.classList.add('hidden'), 400);
+                    if (banner) {
+                        banner.style.transition = 'opacity 0.4s';
+                        banner.style.opacity = '0';
+                        setTimeout(() => banner.classList.add('hidden'), 400);
+                    }
                 }, 8000);
 
                 const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
@@ -845,11 +813,8 @@
                 }
 
                 buildCategoryFilters();
-                applyCategoryFilter();
                 renderFastReview(todayItems, fastReportItems, globalFastData.time);
-                renderArchive();
                 loadWeather();
-
                 switchTab('today');
 
             } catch (error) {
@@ -869,11 +834,22 @@
                         <p class="font-medium text-sm">Brak wcześniejszych wydań w archiwum.</p>
                     </div>
                 `;
+                updateCounter(0);
                 return;
             }
 
+            let totalShown = 0;
             const groupsToShow = archiveGroups.slice(0, archiveVisibleCount);
+
             groupsToShow.forEach((group, index) => {
+                // Filtruj po kategorii
+                let items = group.items;
+                if (currentCategory !== 'all') {
+                    items = items.filter(i => (i.category || 'Inne') === currentCategory);
+                }
+                if (items.length === 0) return;
+
+                totalShown += items.length;
                 const groupId = `archive-group-${index}`;
                 const groupHtml = `
                     <div>
@@ -885,8 +861,10 @@
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', groupHtml);
-                renderCardsToContainer(document.getElementById(groupId), group.items);
+                renderCardsToContainer(document.getElementById(groupId), items);
             });
+
+            updateCounter(totalShown);
 
             if (archiveVisibleCount < archiveGroups.length) {
                 const remaining = archiveGroups.length - archiveVisibleCount;
@@ -910,11 +888,17 @@
         }
 
         function switchTab(tabId) {
+            currentTab = tabId;
             document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden', 'opacity-0'));
             
-            const catFilters = document.getElementById('category-filters');
-            if (tabId === 'today') catFilters.classList.remove('hidden');
-            else catFilters.classList.add('hidden');
+            const filtersWrapper = document.getElementById('filters-wrapper');
+            
+            // Filtry pokazujemy tylko na Today i Archive
+            if (tabId === 'today' || tabId === 'archive') {
+                filtersWrapper.classList.remove('hidden');
+            } else {
+                filtersWrapper.classList.add('hidden');
+            }
 
             if (tabId === 'search') {
                 document.getElementById('main-titles').classList.add('hidden');
@@ -924,7 +908,7 @@
             } else {
                 document.getElementById('main-titles').classList.remove('hidden');
                 document.getElementById('tabs-container').classList.remove('hidden');
-                if (!isCompact) document.getElementById('weather-widget').classList.remove('hidden');
+                document.getElementById('weather-widget').classList.remove('hidden');
                 
                 document.querySelectorAll('.tab-btn').forEach(btn => {
                     btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
@@ -936,6 +920,13 @@
                     activeBtn.className = "tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
                     activeBtn.dataset.tab = tabId;
                 }
+            }
+
+            // Render odpowiedniej zakładki
+            if (tabId === 'today') {
+                applyFilters();
+            } else if (tabId === 'archive') {
+                renderArchive();
             }
 
             const targetView = document.getElementById(`view-${tabId}`);
@@ -971,8 +962,7 @@
             }
             
             if (query.length === 0) {
-                const activeTab = document.querySelector('.tab-btn.active');
-                switchTab(activeTab ? activeTab.dataset.tab : 'today');
+                switchTab(currentTab || 'today');
                 return;
             }
 
@@ -1006,8 +996,7 @@
             document.getElementById('search-input-mobile').value = '';
             document.getElementById('search-clear-desktop').classList.add('hidden');
             document.getElementById('search-clear-mobile').classList.add('hidden');
-            const activeTab = document.querySelector('.tab-btn.active');
-            switchTab(activeTab ? activeTab.dataset.tab : 'today');
+            switchTab(currentTab || 'today');
         }
 
         document.addEventListener('DOMContentLoaded', init);
