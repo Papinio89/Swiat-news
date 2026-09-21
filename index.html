@@ -80,12 +80,22 @@
             padding-top: 6px !important;
             padding-bottom: 5px !important;
         }
+
+        /* === COMPACT MODE === */
+        body.compact-mode #hero-section { display: none !important; }
+        body.compact-mode #today-grid article .img-container { height: 110px !important; }
+        body.compact-mode #today-grid article p.summary-text { display: none !important; }
+        body.compact-mode #today-grid article .comment-box { display: none !important; }
+        body.compact-mode #today-grid { gap: 1.25rem !important; }
+        body.compact-mode #today-grid article h3 { font-size: 0.95rem !important; margin-bottom: 0.5rem !important; }
+        body.compact-mode #category-filters { margin-bottom: 1.25rem !important; }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
     <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-amber-500 to-brand-400 z-[110] w-0 transition-all duration-100"></div>
 
+    <!-- Save Modal -->
     <div id="save-modal" class="fixed inset-0 z-[100] bg-white/95 dark:bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
         <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
         <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-200 dark:border-slate-700" alt="Gotowa karta">
@@ -102,6 +112,7 @@
         </p>
     </div>
 
+    <!-- HEADER -->
     <header class="sticky top-0 z-50 glass-header bg-white/85 dark:bg-[rgba(2,6,23,0.85)] border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -142,12 +153,13 @@
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
         
-        <div class="mb-8 text-center max-w-2xl mx-auto" id="main-titles">
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-3">Przegląd Dnia</h2>
+        <div class="mb-6 text-center max-w-2xl mx-auto" id="main-titles">
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-2">Przegląd Dnia</h2>
             <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-2 mb-10" id="tabs-container">
+        <!-- TABS + COMPACT TOGGLE -->
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-6" id="tabs-container">
             <button id="tab-btn-today" data-tab="today" onclick="switchTab('today')" class="tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                 <i class="fa-solid fa-calendar-day mr-1.5"></i> Dzisiejsze
             </button>
@@ -157,7 +169,15 @@
             <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
                 <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
             </button>
+            
+            <button id="compact-toggle" onclick="toggleCompact()" 
+                class="ml-1 sm:ml-3 px-4 py-2.5 rounded-full text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
+                <i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>
+            </button>
         </div>
+
+        <!-- CATEGORY FILTERS -->
+        <div id="category-filters" class="flex flex-wrap justify-center gap-2 mb-8 hidden"></div>
 
         <div id="loader" class="flex flex-col items-center justify-center py-16">
             <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
@@ -171,6 +191,24 @@
 
         <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
+            
+            <!-- HERO TOP 3 -->
+            <div id="hero-section" class="mb-10 hidden">
+                <div class="flex items-center gap-2 mb-5">
+                    <div class="w-8 h-8 rounded-lg bg-brand-500/15 flex items-center justify-center">
+                        <i class="fa-solid fa-star text-brand-500 text-sm"></i>
+                    </div>
+                    <h3 class="text-sm font-black uppercase tracking-wider text-slate-700 dark:text-slate-300">Najważniejsze dziś</h3>
+                </div>
+                <div id="hero-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+                
+                <div class="flex items-center gap-4 my-8">
+                    <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Pozostałe tematy</span>
+                    <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
+                </div>
+            </div>
+
             <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
 
@@ -250,7 +288,9 @@
         let cardCounter = 0;
         let archiveNews = {};
         let archiveRoz = {};
-        let archiveVisibleCount = 3; // ile wydań archiwum pokazujemy na start
+        let archiveVisibleCount = 3;
+        let currentCategory = 'all';
+        let isCompact = localStorage.getItem('compactMode') === 'true';
 
         // Debounce helper
         function debounce(fn, delay) {
@@ -300,6 +340,23 @@
                 localStorage.theme = 'dark';
                 document.getElementById('theme-icon').className = 'fa-solid fa-moon';
             }
+        }
+
+        // === COMPACT MODE ===
+        function applyCompactState() {
+            if (isCompact) {
+                document.body.classList.add('compact-mode');
+                document.getElementById('compact-toggle').innerHTML = '<i class="fa-solid fa-expand mr-1.5"></i> <span class="hidden sm:inline">Pełny widok</span><span class="sm:hidden">Pełny</span>';
+            } else {
+                document.body.classList.remove('compact-mode');
+                document.getElementById('compact-toggle').innerHTML = '<i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>';
+            }
+        }
+
+        function toggleCompact() {
+            isCompact = !isCompact;
+            localStorage.setItem('compactMode', isCompact);
+            applyCompactState();
         }
 
         function closeSaveModal() {
@@ -362,6 +419,33 @@
             return { emoji: (isFun ? '🎉' : '📌'), title: clean };
         }
 
+        function getDomain(url) {
+            try {
+                return new URL(url).hostname.replace(/^www\./, '');
+            } catch {
+                return null;
+            }
+        }
+
+        function getCategoryStyle(rawC, isFun) {
+            let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
+            let comStyle = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
+            
+            if (isFun) {
+                catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
+                comStyle = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
+            } else {
+                const c = (rawC || '').toUpperCase();
+                if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
+                else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
+                else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
+                else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
+                else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
+                else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
+            }
+            return { catStyle, comStyle };
+        }
+
         function renderCardsToContainer(container, items) {
             container.innerHTML = '';
 
@@ -370,22 +454,7 @@
                     const isFun = item.isFun;
                     const rawC = item.category || "Wiadomość";
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
-                    
-                    let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-                    let comStyle = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
-                    
-                    if (isFun) {
-                        catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
-                        comStyle = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
-                    } else {
-                        const c = rawC.toUpperCase();
-                        if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-                        else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-                        else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-                        else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-                        else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-                        else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
-                    }
+                    const { catStyle, comStyle } = getCategoryStyle(rawC, isFun);
 
                     const words = cleanTitle.split(/\s+/);
                     let titleHtml = cleanTitle;
@@ -400,6 +469,7 @@
                     
                     const cardId = `card-gen-${cardCounter++}`;
                     const directImgUrl = item.image_url || FALLBACK_IMG;
+                    const domain = item.link ? getDomain(item.link) : null;
 
                     const cardHtml = `
                         <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
@@ -431,9 +501,9 @@
                                 </div>
                                 
                                 <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">${emoji} ${titleHtml}</h3>
-                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1 leading-relaxed">${item.summary || ''}</p>
+                                <p class="summary-text text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1 leading-relaxed">${item.summary || ''}</p>
                                 
-                                <div class="mt-auto rounded-xl p-4 border ${comStyle}">
+                                <div class="comment-box mt-auto rounded-xl p-4 border ${comStyle}">
                                     <div class="flex items-center gap-2 mb-1.5 opacity-80">
                                         <i class="fa-solid fa-lightbulb text-[10px]"></i>
                                         <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
@@ -443,7 +513,7 @@
                                 
                                 ${item.link && item.link !== '#' ? `
                                 <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
-                                    ZOBACZ ŹRÓDŁO <i class="fa-solid fa-angle-right ml-1"></i>
+                                    ${domain ? `Źródło: ${domain}` : 'ZOBACZ ŹRÓDŁO'} <i class="fa-solid fa-angle-right ml-1"></i>
                                 </a>
                                 ` : ''}
                             </div>
@@ -473,6 +543,7 @@
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, false);
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encLink = encodeURIComponent(item.link || SITE_URL);
+                    const domain = item.link ? getDomain(item.link) : null;
 
                     const breakingHtml = `
                         <div class="bg-red-500/5 dark:bg-red-950/20 border-2 border-red-500/40 rounded-2xl p-4 sm:p-5 flex gap-4 items-start shadow-sm hover:border-red-500 transition">
@@ -482,6 +553,7 @@
                                     <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">
                                         ${item.category || 'PILNE'}
                                     </span>
+                                    ${domain ? `<span class="text-[10px] text-slate-400 font-medium">${domain}</span>` : ''}
                                 </div>
                                 <h4 class="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-snug mb-1.5">
                                     ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:underline">${cleanTitle}</a>` : cleanTitle}
@@ -508,18 +580,8 @@
                     const isFun = item.isFun;
                     const rawC = item.category || "Wiadomość";
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
-
-                    let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-                    if (isFun) catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
-                    else {
-                        const c = rawC.toUpperCase();
-                        if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-                        else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-                        else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-                        else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-                        else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-                        else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
-                    }
+                    const { catStyle } = getCategoryStyle(rawC, isFun);
+                    const domain = item.link ? getDomain(item.link) : null;
 
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encLink = encodeURIComponent(item.link || SITE_URL);
@@ -528,11 +590,12 @@
                         <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
                             <div class="text-3xl hidden sm:block">${emoji}</div>
                             <div class="flex-1 min-w-0">
-                                <div class="flex items-center gap-2 mb-2">
+                                <div class="flex items-center gap-2 mb-2 flex-wrap">
                                     <span class="text-3xl sm:hidden leading-none">${emoji}</span>
                                     <span class="badge-fixed px-2.5 rounded border text-[9px] font-bold uppercase tracking-wider ${catStyle} whitespace-nowrap">
                                         ${rawC}
                                     </span>
+                                    ${domain ? `<span class="text-[10px] text-slate-400">${domain}</span>` : ''}
                                 </div>
                                 <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
                                     ${item.link && item.link !== '#' ? 
@@ -565,6 +628,79 @@
             return combined;
         }
 
+        // === CATEGORY FILTERS ===
+        function buildCategoryFilters() {
+            const cats = [...new Set(todayItems.map(i => i.category || 'Inne'))].sort();
+            const container = document.getElementById('category-filters');
+            
+            // Przywróć zapisaną kategorię
+            const savedCat = localStorage.getItem('selectedCategory') || 'all';
+            currentCategory = savedCat;
+
+            let html = `
+                <button data-cat="all" class="cat-chip px-4 py-1.5 rounded-full text-xs font-bold transition border ${savedCat === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
+                    Wszystkie
+                </button>
+            `;
+            
+            cats.forEach(cat => {
+                const isActive = savedCat === cat;
+                html += `
+                    <button data-cat="${cat}" class="cat-chip px-4 py-1.5 rounded-full text-xs font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
+                        ${cat}
+                    </button>
+                `;
+            });
+
+            container.innerHTML = html;
+            container.classList.remove('hidden');
+
+            container.querySelectorAll('.cat-chip').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentCategory = btn.dataset.cat;
+                    localStorage.setItem('selectedCategory', currentCategory);
+                    
+                    // Update active styles
+                    container.querySelectorAll('.cat-chip').forEach(b => {
+                        b.classList.remove('bg-brand-500', 'text-white', 'border-brand-500');
+                        b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
+                    });
+                    btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
+                    btn.classList.add('bg-brand-500', 'text-white', 'border-brand-500');
+
+                    applyCategoryFilter();
+                });
+            });
+        }
+
+        function applyCategoryFilter() {
+            const filtered = currentCategory === 'all' 
+                ? todayItems 
+                : todayItems.filter(i => (i.category || 'Inne') === currentCategory);
+            
+            renderTodayWithHero(filtered);
+        }
+
+        function renderTodayWithHero(items) {
+            const heroSection = document.getElementById('hero-section');
+            const heroGrid = document.getElementById('hero-grid');
+            const todayGrid = document.getElementById('today-grid');
+
+            // W trybie kompaktowym lub gdy mało itemów – bez hero
+            if (isCompact || items.length <= 3) {
+                heroSection.classList.add('hidden');
+                renderCardsToContainer(todayGrid, items);
+                return;
+            }
+
+            const hero = items.slice(0, 3);
+            const rest = items.slice(3);
+
+            heroSection.classList.remove('hidden');
+            renderCardsToContainer(heroGrid, hero);
+            renderCardsToContainer(todayGrid, rest);
+        }
+
         async function safeFetchJson(url) {
             try {
                 const res = await fetch(url);
@@ -579,6 +715,8 @@
 
         async function init() {
             initTheme();
+            applyCompactState();
+
             try {
                 const cb = new Date().getTime(); 
                 
@@ -634,7 +772,8 @@
                     return;
                 }
 
-                renderCardsToContainer(document.getElementById('today-grid'), todayItems);
+                buildCategoryFilters();
+                applyCategoryFilter(); // to też renderuje hero + grid
                 renderFastReview(todayItems, fastReportItems, globalFastData.time);
                 renderArchive();
 
@@ -677,7 +816,6 @@
                 renderCardsToContainer(document.getElementById(groupId), group.items);
             });
 
-            // Przycisk "Pokaż starsze wydania"
             if (archiveVisibleCount < archiveGroups.length) {
                 const remaining = archiveGroups.length - archiveVisibleCount;
                 const btnHtml = `
@@ -696,7 +834,6 @@
             archiveVisibleCount += 3;
             renderArchive();
             
-            // Przewiń do przycisku, żeby użytkownik widział nowe treści
             setTimeout(() => {
                 const btn = document.getElementById('archive-load-more');
                 if (btn) {
@@ -708,6 +845,14 @@
         function switchTab(tabId) {
             document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden', 'opacity-0'));
             
+            // Pokaż/ukryj filtry kategorii tylko na zakładce Dzisiejsze
+            const catFilters = document.getElementById('category-filters');
+            if (tabId === 'today') {
+                catFilters.classList.remove('hidden');
+            } else {
+                catFilters.classList.add('hidden');
+            }
+
             if(tabId === 'search') {
                 document.getElementById('main-titles').classList.add('hidden');
                 document.getElementById('tabs-container').classList.add('hidden');
