@@ -5,32 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Świat w Minutę - Przegląd Wiadomości</title>
     
-    <!-- SEO -->
     <meta name="description" content="Świat w Minutę – szybki przegląd najważniejszych wiadomości dnia: fakty, rynki, obronność i technologia. Krótko i na temat, generowane z pomocą AI.">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph -->
     <meta property="og:title" content="Świat w Minutę - Przegląd Wiadomości">
     <meta property="og:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://swiat-w-minute.vercel.app">
     <meta property="og:locale" content="pl_PL">
     
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Świat w Minutę - Przegląd Wiadomości">
     <meta name="twitter:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
     
-    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- html2canvas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <script>
@@ -53,7 +45,6 @@
             transition: background-color 0.3s, color 0.3s;
         }
         .glass-header { backdrop-filter: blur(12px); }
-        .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
         
         .shimmer {
             background-size: 200% 100%;
@@ -71,28 +62,42 @@
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
         .dark ::-webkit-scrollbar-thumb { background: #1e293b; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
         .badge-fixed {
             display: inline-block;
             vertical-align: middle;
             line-height: 1 !important;
-            padding-top: 6px !important;
-            padding-bottom: 5px !important;
+            padding-top: 5px !important;
+            padding-bottom: 4px !important;
         }
 
-        /* === COMPACT MODE === */
+        /* Category filters - horizontal scroll */
+        #category-filters {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        #category-filters::-webkit-scrollbar { display: none; }
+        .cat-chip {
+            white-space: nowrap;
+            font-size: 11px !important;
+            padding: 5px 12px !important;
+        }
+
+        /* Compact mode */
         body.compact-mode #hero-section { display: none !important; }
-        body.compact-mode #today-grid article .img-container { height: 110px !important; }
+        body.compact-mode #today-grid article .img-container { height: 100px !important; }
         body.compact-mode #today-grid article p.summary-text { display: none !important; }
         body.compact-mode #today-grid article .comment-box { display: none !important; }
-        body.compact-mode #today-grid { gap: 1.25rem !important; }
-        body.compact-mode #today-grid article h3 { font-size: 0.95rem !important; margin-bottom: 0.5rem !important; }
-        body.compact-mode #category-filters { margin-bottom: 1.25rem !important; }
+        body.compact-mode #today-grid article .read-time { display: none !important; }
+        body.compact-mode #today-grid { gap: 1rem !important; }
+        body.compact-mode #today-grid article h3 { font-size: 0.92rem !important; margin-bottom: 0.4rem !important; }
+        body.compact-mode #weather-widget { display: none !important; }
+        body.compact-mode #new-edition-banner { display: none !important; }
     </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
+    <!-- Reading progress -->
     <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-amber-500 to-brand-400 z-[110] w-0 transition-all duration-100"></div>
 
     <!-- Save Modal -->
@@ -126,13 +131,13 @@
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
                 <div class="relative w-48 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="debouncedFilterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors" aria-label="Szukaj wiadomości">
+                    <input type="text" id="search-input" onkeyup="debouncedFilterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs" aria-label="Wyczyść wyszukiwanie">
+                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition" aria-label="Przełącz motyw jasny/ciemny">
+                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
                     <i id="theme-icon" class="fa-solid fa-moon"></i>
                 </button>
                 <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
@@ -142,9 +147,9 @@
         </div>
         <div class="md:hidden px-4 pb-3">
             <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="debouncedFilterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors" aria-label="Szukaj wiadomości">
+                <input type="text" id="search-input-mobile" onkeyup="debouncedFilterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
                 <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs" aria-label="Wyczyść wyszukiwanie">
+                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
@@ -153,13 +158,44 @@
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
         
-        <div class="mb-6 text-center max-w-2xl mx-auto" id="main-titles">
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-2">Przegląd Dnia</h2>
-            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.</p>
+        <!-- New edition banner -->
+        <div id="new-edition-banner" class="hidden mb-6">
+            <div class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-600 dark:text-brand-400 text-sm font-semibold">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Nowe wydanie jest dostępne</span>
+                <span id="banner-time" class="text-xs font-normal opacity-80"></span>
+            </div>
         </div>
 
-        <!-- TABS + COMPACT TOGGLE -->
-        <div class="flex flex-wrap justify-center items-center gap-2 mb-6" id="tabs-container">
+        <div class="mb-5 text-center max-w-2xl mx-auto" id="main-titles">
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-2">Przegląd Dnia</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.</p>
+            <p id="last-update" class="text-xs text-slate-400 dark:text-slate-500 mt-2 hidden">
+                <i class="fa-regular fa-clock mr-1"></i> Ostatnia aktualizacja: <span id="update-time">—</span>
+            </p>
+        </div>
+
+        <!-- Weather Widget -->
+        <div id="weather-widget" class="max-w-md mx-auto mb-7 hidden">
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
+                <div class="flex items-center gap-3">
+                    <div id="weather-icon" class="text-3xl leading-none">🌤️</div>
+                    <div>
+                        <div class="flex items-baseline gap-2">
+                            <span id="weather-temp" class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">--°</span>
+                            <span id="weather-city" class="text-xs font-medium text-slate-500">Warszawa</span>
+                        </div>
+                        <p id="weather-desc" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Ładowanie...</p>
+                    </div>
+                </div>
+                <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">
+                    —
+                </div>
+            </div>
+        </div>
+
+        <!-- TABS + COMPACT -->
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-5" id="tabs-container">
             <button id="tab-btn-today" data-tab="today" onclick="switchTab('today')" class="tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
                 <i class="fa-solid fa-calendar-day mr-1.5"></i> Dzisiejsze
             </button>
@@ -171,13 +207,13 @@
             </button>
             
             <button id="compact-toggle" onclick="toggleCompact()" 
-                class="ml-1 sm:ml-3 px-4 py-2.5 rounded-full text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
+                class="ml-1 sm:ml-2 px-4 py-2.5 rounded-full text-sm font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
                 <i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>
             </button>
         </div>
 
         <!-- CATEGORY FILTERS -->
-        <div id="category-filters" class="flex flex-wrap justify-center gap-2 mb-8 hidden"></div>
+        <div id="category-filters" class="flex flex-nowrap overflow-x-auto justify-start sm:justify-center gap-2 mb-7 pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 hidden"></div>
 
         <div id="loader" class="flex flex-col items-center justify-center py-16">
             <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
@@ -192,29 +228,28 @@
         <!-- 1. Dzisiejsze -->
         <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
             
-            <!-- HERO TOP 3 -->
+            <!-- HERO -->
             <div id="hero-section" class="mb-10 hidden">
                 <div class="flex items-center gap-2 mb-5">
-                    <div class="w-8 h-8 rounded-lg bg-brand-500/15 flex items-center justify-center">
-                        <i class="fa-solid fa-star text-brand-500 text-sm"></i>
+                    <div class="w-7 h-7 rounded-lg bg-brand-500/15 flex items-center justify-center">
+                        <i class="fa-solid fa-star text-brand-500 text-xs"></i>
                     </div>
-                    <h3 class="text-sm font-black uppercase tracking-wider text-slate-700 dark:text-slate-300">Najważniejsze dziś</h3>
+                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400">Najważniejsze dziś</h3>
                 </div>
                 <div id="hero-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
                 
                 <div class="flex items-center gap-4 my-8">
                     <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
-                    <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Pozostałe tematy</span>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pozostałe tematy</span>
                     <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                 </div>
             </div>
 
-            <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
         </div>
 
         <!-- 2. Fast Review -->
         <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            
             <div id="breaking-container" class="hidden mb-8">
                 <div class="flex items-center gap-2 mb-3">
                     <span class="flex h-3 w-3 relative">
@@ -238,7 +273,7 @@
             <div id="archive-container" class="flex flex-col gap-12"></div>
         </div>
 
-        <!-- 4. Wyszukiwarka -->
+        <!-- 4. Search -->
         <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
             <div class="mb-6 flex justify-between items-end">
                 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
@@ -248,12 +283,12 @@
                 <i class="fa-regular fa-face-frown-open text-5xl mb-4 opacity-50"></i>
                 <p class="font-medium">Nic nie znaleziono dla tego zapytania.</p>
             </div>
-            <div id="search-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            <div id="search-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
         </div>
 
     </main>
 
-    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40" aria-label="Wróć do góry">
+    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40">
         <i class="fa-solid fa-arrow-up text-sm font-black"></i>
     </button>
 
@@ -265,13 +300,12 @@
             <div class="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 <i class="fa-regular fa-eye text-amber-500"></i> Odwiedzin: 
                 <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" 
-                     alt="Licznik odwiedzin" 
-                     class="inline-block h-4"
-                     loading="lazy"
-                     referrerpolicy="no-referrer">
+                     alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
             </div>
 
-            <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider"><a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a></p>
+            <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider">
+                <a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a>
+            </p>
         </div>
     </footer>
 
@@ -292,7 +326,6 @@
         let currentCategory = 'all';
         let isCompact = localStorage.getItem('compactMode') === 'true';
 
-        // Debounce helper
         function debounce(fn, delay) {
             let timer;
             return function(...args) {
@@ -300,15 +333,15 @@
                 timer = setTimeout(() => fn.apply(this, args), delay);
             };
         }
-
         const debouncedFilterNews = debounce(function(sourceId) {
             filterNews(sourceId);
         }, 280);
 
+        // Progress bar + back to top
         window.addEventListener('scroll', () => {
             const winScroll = document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
+            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
             document.getElementById('reading-progress').style.width = scrolled + '%';
 
             const btt = document.getElementById('btn-back-to-top');
@@ -342,7 +375,6 @@
             }
         }
 
-        // === COMPACT MODE ===
         function applyCompactState() {
             if (isCompact) {
                 document.body.classList.add('compact-mode');
@@ -352,11 +384,14 @@
                 document.getElementById('compact-toggle').innerHTML = '<i class="fa-solid fa-compress mr-1.5"></i> <span class="hidden sm:inline">Tryb 1 minuty</span><span class="sm:hidden">1 min</span>';
             }
         }
-
         function toggleCompact() {
             isCompact = !isCompact;
             localStorage.setItem('compactMode', isCompact);
             applyCompactState();
+            // re-render today to respect compact (hero hide)
+            if (document.getElementById('view-today') && !document.getElementById('view-today').classList.contains('hidden')) {
+                applyCategoryFilter();
+            }
         }
 
         function closeSaveModal() {
@@ -369,9 +404,8 @@
             const title = decodeURIComponent(safeTitle);
             const text = decodeURIComponent(safeSummary);
             const url = decodeURIComponent(safeLink);
-            
             if (navigator.share) {
-                try { await navigator.share({ title: title, text: text, url: url }); } catch (err) {}
+                try { await navigator.share({ title, text, url }); } catch (err) {}
             } else {
                 navigator.clipboard.writeText(url);
                 alert('Skopiowano link do schowka!');
@@ -387,21 +421,16 @@
             downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
             try {
                 const wasLight = !document.documentElement.classList.contains('dark');
-                if(wasLight) document.documentElement.classList.add('dark');
-
+                if (wasLight) document.documentElement.classList.add('dark');
                 const canvas = await html2canvas(card, {
                     scale: 2, useCORS: true, allowTaint: true, backgroundColor: '#020617', logging: false
                 });
-
-                if(wasLight) document.documentElement.classList.remove('dark');
-                
+                if (wasLight) document.documentElement.classList.remove('dark');
                 const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
                 const safeName = title.replace(/[^a-ząćęłńóśźż0-9 ]/gi, '_').toLowerCase().substring(0, 30);
-                
                 document.getElementById('save-img').src = dataUrl;
                 document.getElementById('save-link').download = `swiatwminute_${safeName}.jpg`;
                 document.getElementById('save-link').href = dataUrl;
-                
                 document.getElementById('save-modal').classList.remove('hidden');
                 document.getElementById('save-modal').classList.add('flex');
             } catch (err) { alert('Błąd tworzenia grafiki. Spróbuj jeszcze raz.'); } 
@@ -412,19 +441,21 @@
             const clean = (rawTitle || '').trim();
             const firstWord = clean.split(/\s+/)[0] || '';
             const isEmoji = firstWord.length <= 2 && /^[^\w\s.,!?a-zA-Z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(firstWord);
-            
-            if (isEmoji) {
-                return { emoji: firstWord, title: clean.substring(firstWord.length).trim() };
-            }
+            if (isEmoji) return { emoji: firstWord, title: clean.substring(firstWord.length).trim() };
             return { emoji: (isFun ? '🎉' : '📌'), title: clean };
         }
 
         function getDomain(url) {
-            try {
-                return new URL(url).hostname.replace(/^www\./, '');
-            } catch {
-                return null;
-            }
+            try { return new URL(url).hostname.replace(/^www\./, ''); } 
+            catch { return null; }
+        }
+
+        // Szacowany czas czytania (ok. 200 słów / min)
+        function estimateReadTime(text) {
+            if (!text) return '1 min';
+            const words = text.trim().split(/\s+/).length;
+            const minutes = Math.max(1, Math.ceil(words / 200));
+            return minutes === 1 ? '1 min' : `${minutes} min`;
         }
 
         function getCategoryStyle(rawC, isFun) {
@@ -448,7 +479,6 @@
 
         function renderCardsToContainer(container, items) {
             container.innerHTML = '';
-
             items.forEach((item) => {
                 try {
                     const isFun = item.isFun;
@@ -466,45 +496,45 @@
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encSummary = encodeURIComponent(item.summary || '');
                     const encLink = encodeURIComponent(item.link || SITE_URL);
-                    
                     const cardId = `card-gen-${cardCounter++}`;
                     const directImgUrl = item.image_url || FALLBACK_IMG;
                     const domain = item.link ? getDomain(item.link) : null;
+                    const readTime = estimateReadTime((item.summary || '') + ' ' + (item.comment || ''));
 
                     const cardHtml = `
                         <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
                             
                             <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
-                                <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę" aria-label="Pobierz kartę jako obraz">
+                                <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
                                     <i class="fa-solid fa-download text-sm"></i>
                                 </button>
-                                <button onclick="doShare('${encTitle}', '${encSummary}', '${encLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij" aria-label="Udostępnij">
+                                <button onclick="doShare('${encTitle}', '${encSummary}', '${encLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
                                     <i class="fa-solid fa-share-nodes text-sm"></i>
                                 </button>
                             </div>
 
                             <div class="h-48 w-full relative overflow-hidden img-container bg-slate-800">
-                                <img src="${directImgUrl}" 
-                                     loading="lazy"
-                                     onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
+                                <img src="${directImgUrl}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
                                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                                     crossorigin="anonymous" 
-                                     alt="${cleanTitle}">
+                                     crossorigin="anonymous" alt="${cleanTitle}">
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
                             </div>
 
-                            <div class="p-6 flex-1 flex flex-col -mt-10 relative z-10">
-                                <div class="mb-3">
-                                    <span class="badge-fixed px-3 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
+                            <div class="p-5 sm:p-6 flex-1 flex flex-col -mt-10 relative z-10">
+                                <div class="mb-2.5 flex items-center justify-between gap-2">
+                                    <span class="badge-fixed px-2.5 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">
                                         ${rawC}
+                                    </span>
+                                    <span class="read-time text-[10px] text-slate-400 font-medium flex items-center gap-1">
+                                        <i class="fa-regular fa-clock text-[9px]"></i> ${readTime}
                                     </span>
                                 </div>
                                 
-                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 leading-snug">${emoji} ${titleHtml}</h3>
-                                <p class="summary-text text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1 leading-relaxed">${item.summary || ''}</p>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2.5 leading-snug">${emoji} ${titleHtml}</h3>
+                                <p class="summary-text text-slate-600 dark:text-slate-400 text-sm mb-5 flex-1 leading-relaxed">${item.summary || ''}</p>
                                 
-                                <div class="comment-box mt-auto rounded-xl p-4 border ${comStyle}">
-                                    <div class="flex items-center gap-2 mb-1.5 opacity-80">
+                                <div class="comment-box mt-auto rounded-xl p-3.5 border ${comStyle}">
+                                    <div class="flex items-center gap-2 mb-1 opacity-80">
                                         <i class="fa-solid fa-lightbulb text-[10px]"></i>
                                         <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
                                     </div>
@@ -512,7 +542,8 @@
                                 </div>
                                 
                                 ${item.link && item.link !== '#' ? `
-                                <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                                <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" 
+                                   class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
                                     ${domain ? `Źródło: ${domain}` : 'ZOBACZ ŹRÓDŁO'} <i class="fa-solid fa-angle-right ml-1"></i>
                                 </a>
                                 ` : ''}
@@ -521,7 +552,7 @@
                     `;
                     container.insertAdjacentHTML('beforeend', cardHtml);
                 } catch(e) {
-                    console.error("Błąd rysowania pojedynczej karty", e);
+                    console.error("Błąd karty", e);
                 }
             });
         }
@@ -549,7 +580,7 @@
                         <div class="bg-red-500/5 dark:bg-red-950/20 border-2 border-red-500/40 rounded-2xl p-4 sm:p-5 flex gap-4 items-start shadow-sm hover:border-red-500 transition">
                             <div class="text-3xl flex-shrink-0 mt-0.5">${emoji}</div>
                             <div class="flex-1 min-w-0">
-                                <div class="flex items-center gap-2 mb-1.5">
+                                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
                                     <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">
                                         ${item.category || 'PILNE'}
                                     </span>
@@ -559,12 +590,9 @@
                                     ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:underline">${cleanTitle}</a>` : cleanTitle}
                                 </h4>
                                 <p class="text-slate-700 dark:text-slate-300 text-xs sm:text-sm mb-2 leading-relaxed">${item.summary || ''}</p>
-                                ${item.comment ? `
-                                <div class="text-xs font-semibold text-red-600 dark:text-red-400 italic">
-                                    ⚡ ${item.comment}
-                                </div>` : ''}
+                                ${item.comment ? `<div class="text-xs font-semibold text-red-600 dark:text-red-400 italic">⚡ ${item.comment}</div>` : ''}
                             </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition" title="Udostępnij" aria-label="Udostępnij">
+                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition">
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
@@ -582,7 +610,6 @@
                     const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
                     const { catStyle } = getCategoryStyle(rawC, isFun);
                     const domain = item.link ? getDomain(item.link) : null;
-
                     const encTitle = encodeURIComponent(cleanTitle);
                     const encLink = encodeURIComponent(item.link || SITE_URL);
 
@@ -592,17 +619,14 @@
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-center gap-2 mb-2 flex-wrap">
                                     <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-bold uppercase tracking-wider ${catStyle} whitespace-nowrap">
-                                        ${rawC}
-                                    </span>
+                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-bold uppercase tracking-wider ${catStyle} whitespace-nowrap">${rawC}</span>
                                     ${domain ? `<span class="text-[10px] text-slate-400">${domain}</span>` : ''}
                                 </div>
                                 <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
-                                    ${item.link && item.link !== '#' ? 
-                                    `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${cleanTitle}</a>` : cleanTitle}
+                                    ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${cleanTitle}</a>` : cleanTitle}
                                 </h3>
                             </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition" title="Udostępnij" aria-label="Udostępnij">
+                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition">
                                 <i class="fa-solid fa-share-nodes"></i>
                             </button>
                         </div>
@@ -628,25 +652,27 @@
             return combined;
         }
 
-        // === CATEGORY FILTERS ===
         function buildCategoryFilters() {
-            const cats = [...new Set(todayItems.map(i => i.category || 'Inne'))].sort();
+            const priority = ['Polska', 'Obronność', 'Geopolityka', 'Gospodarka', 'Świat'];
+            const allCats = [...new Set(todayItems.map(i => i.category || 'Inne'))];
+            const ordered = [
+                ...priority.filter(c => allCats.includes(c)),
+                ...allCats.filter(c => !priority.includes(c)).sort()
+            ];
+
             const container = document.getElementById('category-filters');
-            
-            // Przywróć zapisaną kategorię
             const savedCat = localStorage.getItem('selectedCategory') || 'all';
             currentCategory = savedCat;
 
             let html = `
-                <button data-cat="all" class="cat-chip px-4 py-1.5 rounded-full text-xs font-bold transition border ${savedCat === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
+                <button data-cat="all" class="cat-chip rounded-full font-bold transition border ${savedCat === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
                     Wszystkie
                 </button>
             `;
-            
-            cats.forEach(cat => {
+            ordered.forEach(cat => {
                 const isActive = savedCat === cat;
                 html += `
-                    <button data-cat="${cat}" class="cat-chip px-4 py-1.5 rounded-full text-xs font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
+                    <button data-cat="${cat}" class="cat-chip rounded-full font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
                         ${cat}
                     </button>
                 `;
@@ -660,14 +686,12 @@
                     currentCategory = btn.dataset.cat;
                     localStorage.setItem('selectedCategory', currentCategory);
                     
-                    // Update active styles
                     container.querySelectorAll('.cat-chip').forEach(b => {
                         b.classList.remove('bg-brand-500', 'text-white', 'border-brand-500');
                         b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
                     });
                     btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
                     btn.classList.add('bg-brand-500', 'text-white', 'border-brand-500');
-
                     applyCategoryFilter();
                 });
             });
@@ -677,7 +701,6 @@
             const filtered = currentCategory === 'all' 
                 ? todayItems 
                 : todayItems.filter(i => (i.category || 'Inne') === currentCategory);
-            
             renderTodayWithHero(filtered);
         }
 
@@ -686,7 +709,6 @@
             const heroGrid = document.getElementById('hero-grid');
             const todayGrid = document.getElementById('today-grid');
 
-            // W trybie kompaktowym lub gdy mało itemów – bez hero
             if (isCompact || items.length <= 3) {
                 heroSection.classList.add('hidden');
                 renderCardsToContainer(todayGrid, items);
@@ -695,10 +717,48 @@
 
             const hero = items.slice(0, 3);
             const rest = items.slice(3);
-
             heroSection.classList.remove('hidden');
             renderCardsToContainer(heroGrid, hero);
             renderCardsToContainer(todayGrid, rest);
+        }
+
+        async function loadWeather() {
+            try {
+                const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.23&longitude=21.01&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m&timezone=Europe%2FWarsaw');
+                const data = await res.json();
+                const current = data.current;
+                const code = current.weather_code;
+
+                const icons = {
+                    0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
+                    45: '🌫️', 48: '🌫️',
+                    51: '🌦️', 53: '🌦️', 55: '🌧️',
+                    61: '🌧️', 63: '🌧️', 65: '🌧️',
+                    71: '🌨️', 73: '🌨️', 75: '❄️',
+                    80: '🌦️', 81: '🌧️', 82: '⛈️',
+                    95: '⛈️', 96: '⛈️', 99: '⛈️'
+                };
+                const descriptions = {
+                    0: 'Bezchmurnie', 1: 'Przeważnie słonecznie', 2: 'Częściowe zachmurzenie', 3: 'Pochmurno',
+                    45: 'Mgła', 48: 'Mgła',
+                    51: 'Lekka mżawka', 53: 'Mżawka', 55: 'Silna mżawka',
+                    61: 'Lekki deszcz', 63: 'Deszcz', 65: 'Ulewny deszcz',
+                    71: 'Lekki śnieg', 73: 'Śnieg', 75: 'Intensywny śnieg',
+                    80: 'Przelotne opady', 81: 'Deszcz', 82: 'Ulewne opady',
+                    95: 'Burza', 96: 'Burza z gradem', 99: 'Silna burza'
+                };
+
+                document.getElementById('weather-temp').textContent = Math.round(current.temperature_2m) + '°';
+                document.getElementById('weather-icon').textContent = icons[code] || '🌡️';
+                document.getElementById('weather-desc').textContent = descriptions[code] || 'Warunki atmosferyczne';
+                document.getElementById('weather-extra').innerHTML = `
+                    Wiatr ${Math.round(current.wind_speed_10m)} km/h<br>
+                    Wilgotność ${current.relative_humidity_2m}%
+                `;
+                document.getElementById('weather-widget').classList.remove('hidden');
+            } catch (e) {
+                console.log('Pogoda niedostępna');
+            }
         }
 
         async function safeFetchJson(url) {
@@ -737,16 +797,28 @@
                 let displayDate = globalNewsData.date || "Dzisiaj";
                 document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
 
+                // Ostatnia aktualizacja + banner
                 const now = new Date();
+                const timeStr = now.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' });
+                document.getElementById('update-time').textContent = timeStr;
+                document.getElementById('last-update').classList.remove('hidden');
+                
+                // Banner nowego wydania (pokazujemy zawsze przy świeżym załadowaniu)
+                document.getElementById('banner-time').textContent = `• ${timeStr}`;
+                document.getElementById('new-edition-banner').classList.remove('hidden');
+                // Ukryj banner po 8 sekundach
+                setTimeout(() => {
+                    const banner = document.getElementById('new-edition-banner');
+                    if (banner) banner.style.opacity = '0';
+                    setTimeout(() => banner?.classList.add('hidden'), 400);
+                }, 8000);
+
                 const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
                 
                 const keys = Object.keys(archiveNews).sort().reverse();
                 keys.forEach(key => {
                     const dateKey = key.split('_')[0];
-
-                    if (dateKey === todayKey) {
-                        return;
-                    }
+                    if (dateKey === todayKey) return;
 
                     const data = archiveNews[key];
                     const rData = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
@@ -755,7 +827,7 @@
                     let edName = key.includes('poranne') ? 'Poranne' : (key.includes('wieczorne') ? 'Wieczorne' : 'Wydanie');
                     let dateStr = data.date || dateKey;
                     
-                    if(mixed.length > 0) {
+                    if (mixed.length > 0) {
                         archiveGroups.push({ title: `${dateStr} • ${edName}`, items: mixed });
                         allNewsFlat = allNewsFlat.concat(mixed);
                     }
@@ -765,7 +837,7 @@
 
                 document.getElementById('loader').style.display = 'none';
                 
-                if(todayItems.length === 0 && fastReportItems.length === 0) {
+                if (todayItems.length === 0 && fastReportItems.length === 0) {
                     document.getElementById('error-box').classList.remove('hidden');
                     document.getElementById('error-box').classList.add('flex');
                     document.getElementById('tabs-container').classList.add('hidden');
@@ -773,14 +845,15 @@
                 }
 
                 buildCategoryFilters();
-                applyCategoryFilter(); // to też renderuje hero + grid
+                applyCategoryFilter();
                 renderFastReview(todayItems, fastReportItems, globalFastData.time);
                 renderArchive();
+                loadWeather();
 
                 switchTab('today');
 
             } catch (error) {
-                console.error("Krytyczny błąd połączenia:", error);
+                console.error("Krytyczny błąd:", error);
                 document.getElementById('loader').innerHTML = '<p class="text-red-500 font-medium">Brak połączenia.</p>';
             }
         }
@@ -800,7 +873,6 @@
             }
 
             const groupsToShow = archiveGroups.slice(0, archiveVisibleCount);
-
             groupsToShow.forEach((group, index) => {
                 const groupId = `archive-group-${index}`;
                 const groupHtml = `
@@ -809,7 +881,7 @@
                             <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">${group.title}</h3>
                             <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
                         </div>
-                        <div id="${groupId}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                        <div id="${groupId}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
                     </div>
                 `;
                 container.insertAdjacentHTML('beforeend', groupHtml);
@@ -818,47 +890,41 @@
 
             if (archiveVisibleCount < archiveGroups.length) {
                 const remaining = archiveGroups.length - archiveVisibleCount;
-                const btnHtml = `
+                container.insertAdjacentHTML('beforeend', `
                     <div class="text-center mt-4" id="archive-load-more">
-                        <button onclick="loadMoreArchive()" 
-                            class="px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
+                        <button onclick="loadMoreArchive()" class="px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
                             Pokaż starsze wydania (${remaining})
                         </button>
                     </div>
-                `;
-                container.insertAdjacentHTML('beforeend', btnHtml);
+                `);
             }
         }
 
         function loadMoreArchive() {
             archiveVisibleCount += 3;
             renderArchive();
-            
             setTimeout(() => {
                 const btn = document.getElementById('archive-load-more');
-                if (btn) {
-                    btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
+                if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 80);
         }
 
         function switchTab(tabId) {
             document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden', 'opacity-0'));
             
-            // Pokaż/ukryj filtry kategorii tylko na zakładce Dzisiejsze
             const catFilters = document.getElementById('category-filters');
-            if (tabId === 'today') {
-                catFilters.classList.remove('hidden');
-            } else {
-                catFilters.classList.add('hidden');
-            }
+            if (tabId === 'today') catFilters.classList.remove('hidden');
+            else catFilters.classList.add('hidden');
 
-            if(tabId === 'search') {
+            if (tabId === 'search') {
                 document.getElementById('main-titles').classList.add('hidden');
                 document.getElementById('tabs-container').classList.add('hidden');
+                document.getElementById('weather-widget').classList.add('hidden');
+                document.getElementById('new-edition-banner').classList.add('hidden');
             } else {
                 document.getElementById('main-titles').classList.remove('hidden');
                 document.getElementById('tabs-container').classList.remove('hidden');
+                if (!isCompact) document.getElementById('weather-widget').classList.remove('hidden');
                 
                 document.querySelectorAll('.tab-btn').forEach(btn => {
                     btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
@@ -866,14 +932,14 @@
                 });
                 
                 const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-                if(activeBtn) {
+                if (activeBtn) {
                     activeBtn.className = "tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
                     activeBtn.dataset.tab = tabId;
                 }
             }
 
             const targetView = document.getElementById(`view-${tabId}`);
-            if(targetView) {
+            if (targetView) {
                 targetView.classList.remove('hidden');
                 setTimeout(() => targetView.classList.remove('opacity-0'), 50);
             }
@@ -886,7 +952,7 @@
             const clearDesktop = document.getElementById('search-clear-desktop');
             const clearMobile = document.getElementById('search-clear-mobile');
 
-            if(sourceId === 'desktop') {
+            if (sourceId === 'desktop') {
                 val = desktopInput.value;
                 mobileInput.value = val;
             } else {
