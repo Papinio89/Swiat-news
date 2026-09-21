@@ -1,37 +1,37 @@
 {
   "date": "21 września 2026",
-  "time": "15:56",
-  "timestamp": "2026-09-21_15:56",
+  "time": "22:07",
+  "timestamp": "2026-09-21_22:07",
   "items": [
     {
-      "category": "GEOPOLITYKA",
-      "title": "🛡️ Dania: NATO współodpowiedzialne za bezpieczeństwo Arktyki",
-      "summary": "Kopenhaga wskazuje, że nowe porozumienie dotyczące Grenlandii zakłada bezpośrednie zaangażowanie NATO w ochronę regionu arktycznego. Wzrost aktywności rywali na Północy wymusza zacieśnienie obrony Sojuszu.",
-      "comment": "Arktyka staje się kluczowym teatrem rywalizacji strategicznej, wymagającym stałej obecności sił Sojuszu.",
-      "image_query": "arctic military nato",
-      "link": "https://www.defensenews.com/global/europe/2026/09/21/denmark-says-nato-shares-responsibility-for-arctic-security-under-greenland-deal/",
-      "image_url": "https://www.armytimes.com/resizer/v2/QQUBRNDB6RGFDKEUN5JGWWPOTE.jpg?width=1200&amp;auth=c84781f9c964a48f65511c1dd61945add864b556590865a0139b14860324b1fe",
-      "source_image_url": "https://www.armytimes.com/resizer/v2/QQUBRNDB6RGFDKEUN5JGWWPOTE.jpg?width=1200&amp;auth=c84781f9c964a48f65511c1dd61945add864b556590865a0139b14860324b1fe"
+      "category": "OBRONNOŚĆ",
+      "title": "🚀 Autonomiczny dron Vengeance w powietrzu z myśliwcami USAF",
+      "summary": "Bezzałogowy aparat latający FQ-42A Vengeance odbył wspólne loty operacyjne z załogowymi myśliwcami Sił Powietrznych USA. Próby te stanowią kluczowy kamień milowy w rozwoju programu lojalnego skrzydłowego.",
+      "comment": "Integracja autonomicznych platform z lotnictwem załogowym drastycznie zwiększa potencjał przełamywania obrony powietrznej wroga.",
+      "image_query": "stealth drone jet",
+      "link": "https://www.twz.com/air/general-atomics-fq-42a-vengeance-cca-now-flying-together-with-usaf-fighters",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/fq-42-f-35a-f-15e-formation.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/fq-42-f-35a-f-15e-formation.jpg?w=1200"
     },
     {
       "category": "OBRONNOŚĆ",
-      "title": "🚀 Napęd z F-15EX dla polskiego bezzałogowego skrzydłowego",
-      "summary": "Koncern General Electric analizuje możliwość wykorzystania silników z myśliwca F-15EX w polskim programie autonomicznego drona bojowego. Partnerstwo może przyspieszyć prace nad krajowym systemem bezzałogowym.",
-      "comment": "Wykorzystanie sprawdzonych napędów lotniczych drastycznie redukuje ryzyko technologiczne polskiego programu.",
-      "image_query": "jet engine fighter",
-      "link": "https://defence24.pl/przemysl/ge-silnik-do-f-15ex-takze-w-polskim-bezzalogowym-skrzydlowym",
-      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/fwOXlT0QPuuklTynzaf7RQKrw0msYBcoaSNSpkKB.t9nn.png",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/fwOXlT0QPuuklTynzaf7RQKrw0msYBcoaSNSpkKB.t9nn.png"
+      "title": "⚔️ US Army zamawia pierwszą partię morskich pocisków precyzyjnych",
+      "summary": "Armia USA podpisała umowę na pierwszą partię pocisków precyzyjnych przeznaczonych do rażenia celów morskich. Nowa broń ma wzmocnić zdolności odstraszania wojsk lądowych w rejonie Indopacyfiku.",
+      "comment": "Wprowadzenie lądowych pocisków przeciwokrętowych znacząco rozszerza koncepcję A2/AD amerykańskich sił zbrojnych.",
+      "image_query": "precision strike missile",
+      "link": "https://news.usni.org/2026/09/21/u-s-army-contracts-first-batch-of-maritime-precision-strike-missiles",
+      "image_url": "https://images.pexels.com/photos/16660293/pexels-photo-16660293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/16660293/pexels-photo-16660293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "KONFLIKTY",
-      "title": "⚔️ Nowy sojusz siedmiu grup rebelianckich w Etiopii",
-      "summary": "Siedem ugrupowań partyzanckich w Etiopii połączyło siły, tworząc wspólny front przeciwko władzom centralnym w Addisie Abebie. Konsolidacja rebelii grozi nową falą destabilizacji w Rogu Afryki.",
-      "comment": "Zjednoczenie opozycji zbrojnej drastycznie podnosi ryzyko eskalacji konfliktu do poziomu wojny domowej.",
-      "image_query": "rebel soldiers Africa",
-      "link": "https://www.bbc.co.uk/news/articles/ckp84pj8zpngo",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/cb9c/live/d7511890-b585-11f1-b2a3-f56f2cdf83e9.jpg"
+      "title": "🛡️ Ukraina otrzymała 82 czołgi M1 Abrams",
+      "summary": "Ukraińskie siły zbrojne przejęły łącznie 82 czołgi podstawowe M1 Abrams przekazane przez zagranicznych partnerów. Żołnierze chwalą wysoką przeżywalność załogi oraz zaawansowane systemy optoelektroniczne.",
+      "comment": "Czołgi zachodniej produkcji pozostają kluczowym elementem obrony, lecz wymagają ciągłej adaptacji do walki z dronami.",
+      "image_query": "abrams tank military",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-dostala-82-abramsy-zolnierze-oceniaja-ich-wartosc",
+      "image_url": "https://cdn.defence24.pl/2026/06/15/1920x1080px/AGfnYuvNceTayl3cS3fMnX5PD6H9mT6FsUffhez4.wknb.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/06/15/1920x1080px/AGfnYuvNceTayl3cS3fMnX5PD6H9mT6FsUffhez4.wknb.jpg"
     }
   ]
 }
