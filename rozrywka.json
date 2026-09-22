@@ -1,87 +1,67 @@
 {
-  "date": "21 września 2026",
-  "time": "14:09",
-  "timestamp": "2026-09-21_14:09",
+  "date": "22 września 2026",
+  "time": "13:14",
+  "timestamp": "2026-09-22_13:14",
   "items": [
     {
-      "category": "MĄDRE GŁOWY",
-      "title": "🔨 Ukryta funkcja samochodowego zagłówka",
-      "summary": "Jeśli twój samochód zacznie tonąć i drzwi zablokuje ciśnienie wody, nie panikuj. Metalowe pręty zagłówka fotela zostały zaprojektowane tak, aby łatwo je wyciągnąć i użyć do rozbicia szyby w jej najsłabszym rogu.",
-      "comment": "Miło wiedzieć, że projektanci aut przewidzieli naszą potencjalną katastrofę, zanim my sami wjechaliśmy w staw.",
-      "image_query": "car headrest window break",
-      "link": "https://www.mentalfloss.com/random-facts/life-saving-facts-everyone-should-know",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg"
-    },
-    {
-      "category": "JAK PRZETRWAĆ",
-      "title": "🏊 Jak nie dać się porwać oceanowi",
-      "summary": "Gdy wciągnie cię prąd wsteczny na plaży, instynkt każe płynąć prosto do brzegu, co jest najszybszą drogą do utonięcia z wycieńczenia. Zamiast walczyć z wodą, musisz płynąć równolegle do plaży, aby wydostać się z niewidzialnego strumienia.",
-      "comment": "To urocze, jak ludzki instynkt przetrwania w sytuacjach kryzysowych niemal zawsze wybiera opcję ostateczną.",
-      "image_query": "rip current ocean safety",
-      "link": "https://www.mentalfloss.com/random-facts/life-saving-facts-everyone-should-know",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg"
-    },
-    {
-      "category": "MĄDRE GŁOWY",
-      "title": "🔥 Ostatni błąd na płonącej patelni",
-      "summary": "Wlanie wody na płonący na patelni olej powoduje natychmiastową eksplozję kuli ognia i gwarantuje pożar całej kuchni. Jedynym skutecznym sposobem na ugaszenie takiego pożaru jest odcięcie tlenu poprzez przykrycie patelni pokrywką lub wilgotną ściereczką.",
-      "comment": "Fizyka jest bezlitosna – próba ugaszenia oleju wodą zamienia cię w kucharza bez brwi w mniej niż sekundę.",
-      "image_query": "grease fire kitchen danger",
-      "link": "https://www.mentalfloss.com/random-facts/life-saving-facts-everyone-should-know",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2rra3pwe8a5mpna37.jpg"
+      "category": "ZWIERZAKI",
+      "title": "🦝 Obóz przetrwania dla małych szopów",
+      "summary": "W Missisipi działa specjalny ośrodek szkoleniowy dla osieroconych szopów praczy, gdzie zwierzęta uczą się kluczowych umiejętności życiowych. Zamiast szukania jedzenia w lesie, instruktorzy ćwiczą z nimi otwieranie pojemników na śmieci i pokonywanie przeszkód. Wszystko po to, by radziły sobie po powrocie na wolność.",
+      "comment": "Wreszcie państwowy program edukacyjny, który przygotowuje do realnego życia w zawodzie śmietnikowego włamywacza.",
+      "image_query": "baby raccoon forest",
+      "link": "https://www.huffpost.com/entry/raccoon-boot-camp-mississippi_n_6ab14760e4b043d6b56732ed",
+      "source_image_url": "https://img.huffingtonpost.com/asset/6ab147611800000a30f149ad.jpeg?cache=RthntVmQWi&amp;ops=1200_630",
+      "image_url": "https://img.huffingtonpost.com/asset/6ab147611800000a30f149ad.jpeg?cache=RthntVmQWi&amp;ops=1200_630"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "🌭 Przydrożny sprzedawca, który przeraził Kinga",
-      "summary": "Nawet król horroru Stephen King ma swoje lęki, a inspirację do stworzenia jednej ze swoich najbardziej niepokojących historii zaczerpnął od przydrożnego handlarza. Zwykła rozmowa przy wiejskiej drodze zmieniła się w obsesję, z której powstało mroczne opowiadanie.",
-      "comment": "Nigdy nie wiesz, czy pan sprzedający jagody przy drodze po prostu zarabia na chleb, czy właśnie trafia na karty bestsellera jako nowy potwór.",
-      "image_query": "stephen king roadside vendor",
-      "link": "https://www.mentalfloss.com/literature/authors/roadside-vendor-inspired-stephen-king-unsettling-stories",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_302,w_3259,h_1833/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nysr3sevm9tg6swc.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_302,w_3259,h_1833/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nysr3sevm9tg6swc.jpg"
-    },
-    {
-      "category": "KULTURA I POPCORN",
-      "title": "🤡 Najgorsza książka według Stephena Kinga",
-      "summary": "Stephen King szczerze nienawidzi swojej własnej powieści 'Stukostrachy', nazywając ją okropnie napisanym gniotem stworzonym w mrokach uzależnienia. Za swoje najlepsze i najbardziej dopracowane dzieło uważa natomiast 'Historię Lisey'.",
-      "comment": "Wspaniale wiedzieć, że nawet gigant literatury ma w dorobku coś, czego wstydzi się bardziej niż Ty swoich zdjęć z gimnazjum.",
-      "image_query": "stephen king writing typewriter",
-      "link": "https://www.mentalfloss.com/literature/authors/stephen-king-favorite-least-favorite-stephen-king-novels",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_94,w_2007,h_1128/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2r1wq85kr8kcxe03w.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_94,w_2007,h_1128/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2r1wq85kr8kcxe03w.jpg"
+      "title": "🇲🇽 Dlaczego amerykańscy giganci mówią po hiszpańsku",
+      "summary": "Nazwy takie jak Los Angeles, Las Vegas czy San Francisco nie powstały w głowach amerykańskich urbanistów, lecz są pamiątką po hiszpańskich misjonarzach i meksykańskich osadnikach. Zanim stany te trafiły pod skrzydła USA, całe tereny były już dokładnie nazwane, opisane i poświęcone konkretnym świętym.",
+      "comment": "Szanuję amerykański patriotyzm, ale ich najsłynniejsze miasta to w dosłownym tłumaczeniu Anioły i Łąki.",
+      "image_query": "los angeles sign street",
+      "link": "https://www.mentalfloss.com/language/words/why-us-cities-have-spanish-names",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_108,w_3096,h_1741/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m33bg9esa49abkvhpy.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_108,w_3096,h_1741/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m33bg9esa49abkvhpy.jpg"
     },
     {
       "category": "ABSURDY ŚWIATA",
-      "title": "🧀 Stefania kontra gotowce i cywilizacja",
-      "summary": "W ukrytej włoskiej wiosce żyje rolniczka Stefania, która odrzuca współczesne ułatwienia i tworzy absolutnie wszystko od zera – od mąki po dojrzałe sery. Jej ortodoksyjne podejście do tradycyjnej kuchni zawstydza najbardziej utytułowanych szefów kuchni na świecie.",
-      "comment": "Szacunek za robienie wszystkiego od zera, podczas gdy większość z nas przeżywa kryzys tożsamości przy otwieraniu puszek z pomidorami.",
-      "image_query": "italian female farmer traditional food",
-      "link": "https://www.mentalfloss.com/culture/hidden-italy-meet-stefania-farmer-makes-everything-from-scratch",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tnq9wse6y3j69pmg.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tnq9wse6y3j69pmg.jpg"
+      "title": "🍂 Równonoc jesienna i jej najdziwniejsze rytuały",
+      "summary": "Kiedy dzień zrównuje się z nocą, starożytne i współczesne kultury na całym świecie odprawiają przedziwne rytuały. W Meksyku ludzie gromadzą się przy piramidzie, na której cień układa się w pełzającego węża, a w innych zakątkach globu pali się ogniska i świętuje plony, nim nadejdzie zimowa chandra.",
+      "comment": "W Polsce głównym rytuałem na równonoc jest wyciągnięcie zimowej kurtki i kometa narzekania na kaloryfery.",
+      "image_query": "autumn equinox pyramid shadow",
+      "link": "https://www.mentalfloss.com/holidays/autumn-equinox-celebrations-around-world",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_29,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tqw49g088tdd27zf.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_29,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tqw49g088tdd27zf.jpg"
     },
     {
-      "category": "LINGWISTYCZNE PUŁAPKI",
-      "title": "🍜 Słynna zupa, której nazwę wymawiasz źle",
-      "summary": "Popularna wietnamska zupa Pho nie ma nic wspólnego z wymową 'Fo', jak sądzi większość z nas. Prawidłowa wymowa przypomina pytające 'Fe?' lub 'Fuh?', a sama nazwa wywodzi się najprawdopodobniej z francuskiego dania 'pot-au-feu'.",
-      "comment": "Czyli przez te wszystkie lata zamawiając 'Fo', prosiłeś kelnera o miskę lingwistycznego wstydu.",
-      "image_query": "pho soup vietnamese noodles",
-      "link": "https://www.mentalfloss.com/language/words/how-to-pronounce-pho",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_97,w_1250,h_703/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2p5ashq6p9qptest3.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_97,w_1250,h_703/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2p5ashq6p9qptest3.jpg"
+      "category": "SZALONA HISTORIA",
+      "title": "💵 Płaca minimalna, która była ponurym żartem",
+      "summary": "W 1940 roku stawka minimalna w USA wynosiła zaledwie 30 centów za godzinę, co nawet przy ówczesnych cenach było kwotą raczej symboliczną. Analiza progów z kolejnych dekad pokazuje, że siła nabywcza najmniej zarabiających wcale nie rosła liniowo wraz ze wzrostem cyfr na wypłacie.",
+      "comment": "Miło wiedzieć, że tradycja zarabiania groszy i narzekania na drożyznę ma tak bogatą historyczną tradycję.",
+      "image_query": "vintage us dollar cash",
+      "link": "https://www.mentalfloss.com/live-smarter/money/minimum-wage-year-born-1940-2010",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_197,w_5616,h_3159/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m324ddt5r8xakq8mbd.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_197,w_5616,h_3159/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m324ddt5r8xakq8mbd.jpg"
     },
     {
-      "category": "KULTURA I POPCORN",
-      "title": "👂 Odcięte ucho i mroczny sekret Lyncha",
-      "summary": "Kultowa i makabryczna scena z odciętym uchem na łące w kinowym arcydziele 'Błękitny aksamit' Davida Lyncha czerpała z klasycznej literatury detektywistycznej. Reżyser zmieszał mroczne inspiracje książkowe z własnymi snami, zmieniając współczesny thriller na zawsze.",
-      "comment": "Gdy normalny człowiek widzi ludzkie ucho w trawie, dzwoni na policję, ale David Lynch robi z tego klasyk kina noir.",
-      "image_query": "david lynch blue velvet cinema",
-      "link": "https://www.mentalfloss.com/entertainment/movies/literary-influence-hiding-david-lynch-blue-velvet",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_141,w_3072,h_1728/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nxm0z0qtvzkcc3yn.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_141,w_3072,h_1728/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nxm0z0qtvzkcc3yn.jpg"
+      "category": "SZALONA HISTORIA",
+      "title": "🧙♀️ Ciasto z moczu jako wykrywacz czarownic",
+      "summary": "Mieszkańcy Salem wymyślili wyjątkowo obrzydliwy test na obecność sił nieczystych: piekli tak zwane ciasto czarownic z mąki żytniej i moczu rzekomo opętanych osób. Następnie wypiek dawano do zjedzenia psu, wierząc, że bestia po rozkodowaniu magii wskaże winnego rzucenia uroku.",
+      "comment": "Nic tak nie podsumowuje dawnej medycyny sądowej jak karmienie psa sikami w celach śledczych.",
+      "image_query": "witch trial salem ancient",
+      "link": "https://www.mentalfloss.com/history/gross-witch-cake-salem-residents-detect-witchcraft",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2ra5r8hqfcaqfvaga.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2ra5r8hqfcaqfvaga.jpg"
+    },
+    {
+      "category": "ABSURDY ŚWIATA",
+      "title": "📼 Dźwięki jesieni z lat 90., które wywołują ciarki",
+      "summary": "Jesień w latach 90. brzmiała zupełnie inaczej niż dzisiaj – zdominowana była przez trzeszczący pisk modemu dial-up czy charakterystyczny chrobot głośno przewijających się kaset VHS. Te nostalgiczne odgłosy tworzyły niepowtarzalny klimat ponurych, przedwieczornych seansów w domowym zaciszu.",
+      "comment": "Dźwięk łączenia z internetem skutecznie odstraszał wszystkie duchy w promieniu pięciu kilometrów.",
+      "image_query": "vhs cassette tape player",
+      "link": "https://www.mentalfloss.com/nostalgia/90s/sounds-defined-fall-1990s",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_28,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tjw7dxp9jpkv6rkn.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_28,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m2tjw7dxp9jpkv6rkn.jpg"
     }
   ]
 }
