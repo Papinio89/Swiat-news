@@ -1,40 +1,43 @@
 {
   "date": "22 września 2026",
-  "time": "06:47",
-  "timestamp": "2026-09-22_06:47",
+  "time": "06:55",
+  "timestamp": "2026-09-22_06:55",
   "items": [
     {
-      "category": "PILNE",
-      "title": "🚨 Koreański moździerz na MSPO 2026. Propozycja dla Teryto",
-      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
-      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
-      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
-      "image_query": "military conflict alert",
+      "category": "OBRONNOŚĆ / POLSKA",
+      "title": "🎯 Koreański moździerz dla WOT na MSPO 2026",
+      "hook": "Wojska Obrony Terytorialnej mogą zyskać potężny skok w sile ognia bezpośredniego wsparcia.",
+      "summary": "Koreański koncern oferuje Polsce nowoczesny system moździerzowy, zaprojektowany z myślą o lekkiej piechocie. Rozwiązanie to ma załatać lukę w mobilnym wsparciu ogniowym pododdziałów WOT na szczeblu batalionu.",
+      "comment": "Szybkie nasycenie brygad Terytorialsów bronią wsparcia jest kluczowe dla skutecznej obrony uporczywej w rejonach przygranicznych.",
+      "question": "Czy WOT powinien kupować koreańskie moździerze, czy jednak poczekać na opracowanie pełnego polskiego odpowiednika?",
+      "image_query": "military mortar firing",
       "link": "https://defence24.pl/przemysl/koreanski-mozdzierz-na-mspo-2026-propozycja-dla-terytorialsow",
       "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg",
       "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg"
     },
     {
-      "category": "PILNE",
-      "title": "🚨 Hit w Europie i USA. Airbus proponuje Polsce śmigłowiec",
-      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
-      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
-      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
-      "image_query": "military conflict alert",
-      "link": "https://defence24.pl/polityka-obronna/hit-w-europie-i-usa-airbus-proponuje-polsce-smiglowiec-szkoleniowy",
-      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png"
-    },
-    {
-      "category": "PILNE",
-      "title": "🚨 Chinese Next-Generation Submarine Developments Spotted ",
-      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
-      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
-      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
-      "image_query": "military conflict alert",
+      "category": "GEOPOLITYKA / CHINY",
+      "title": "🌊 Chińskie okręty podwodne nowej generacji",
+      "hook": "Zdjęcia satelitarne ujawniają gwałtowny postęp Pekinu w budowie wyciszonych okrętów podwodnych.",
+      "summary": "Na najnowszych ujęciach z chińskich stoczni dostrzeżono nowe jednostki podwodne o zmienionej geometrii kadłuba i zaawansowanym napędzie. To jednoznaczny sygnał, że Chiny skutecznie niwelują przewagę technologiczną US Navy w domenie podwodnej na Pacyfiku.",
+      "comment": "Cicha flota podwodna to dla Pekinu kluczowy element do ewentualnego odcięcia Tajwanu i zablokowania amerykańskiej odsieczy.",
+      "question": "Czy Amerykanie będą w stanie utrzymać dominację pod wodą na Pacyfiku wobec tak szybkiej rozbudowy floty Chin?",
+      "image_query": "submarine ocean water",
       "link": "https://www.twz.com/sea/chinese-next-generation-submarine-developments-spotted-in-new-satellite-imagery",
       "image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200",
       "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200"
+    },
+    {
+      "category": "OBRONNOŚĆ / POLSKA",
+      "title": "🚁 Airbus oferuje Polsce hity szkoleniowe",
+      "hook": "Polska potrzebuje pilnej wymiany przestarzałej floty śmigłowców szkolnych dla przyszłych pilotów.",
+      "summary": "Airbus Helicopters wyciąga rękę do Warszawy z propozycją maszyn sprawdzonej konstrukcji, z których korzystają już siły powietrzne USA i krajów europejskich. Nowe śmigłowce mają stworzyć spójny system szkolenia przed przesiadką podchorążych na ciężkie maszyny bojowe.",
+      "comment": "Bez nowoczesnej bazy szkoleniowej zakup najnowszych śmigłowców bojowych staje się wyłącznie kosztownym eksponatem.",
+      "question": "Powinniśmy stawiać na europejską ofertę Airbusa, czy trzymać się ściśle zakupów wyłącznie od amerykańskich dostawców?",
+      "image_query": "military helicopter flight",
+      "link": "https://defence24.pl/polityka-obronna/hit-w-europie-i-usa-airbus-proponuje-polsce-smiglowiec-szkoleniowy",
+      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png"
     }
   ]
 }
