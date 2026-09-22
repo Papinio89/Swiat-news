@@ -1,37 +1,40 @@
 {
-  "date": "21 września 2026",
-  "time": "22:07",
-  "timestamp": "2026-09-21_22:07",
+  "date": "22 września 2026",
+  "time": "06:47",
+  "timestamp": "2026-09-22_06:47",
   "items": [
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🚀 Autonomiczny dron Vengeance w powietrzu z myśliwcami USAF",
-      "summary": "Bezzałogowy aparat latający FQ-42A Vengeance odbył wspólne loty operacyjne z załogowymi myśliwcami Sił Powietrznych USA. Próby te stanowią kluczowy kamień milowy w rozwoju programu lojalnego skrzydłowego.",
-      "comment": "Integracja autonomicznych platform z lotnictwem załogowym drastycznie zwiększa potencjał przełamywania obrony powietrznej wroga.",
-      "image_query": "stealth drone jet",
-      "link": "https://www.twz.com/air/general-atomics-fq-42a-vengeance-cca-now-flying-together-with-usaf-fighters",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/fq-42-f-35a-f-15e-formation.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/fq-42-f-35a-f-15e-formation.jpg?w=1200"
+      "category": "PILNE",
+      "title": "🚨 Koreański moździerz na MSPO 2026. Propozycja dla Teryto",
+      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
+      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
+      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
+      "image_query": "military conflict alert",
+      "link": "https://defence24.pl/przemysl/koreanski-mozdzierz-na-mspo-2026-propozycja-dla-terytorialsow",
+      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg"
     },
     {
-      "category": "OBRONNOŚĆ",
-      "title": "⚔️ US Army zamawia pierwszą partię morskich pocisków precyzyjnych",
-      "summary": "Armia USA podpisała umowę na pierwszą partię pocisków precyzyjnych przeznaczonych do rażenia celów morskich. Nowa broń ma wzmocnić zdolności odstraszania wojsk lądowych w rejonie Indopacyfiku.",
-      "comment": "Wprowadzenie lądowych pocisków przeciwokrętowych znacząco rozszerza koncepcję A2/AD amerykańskich sił zbrojnych.",
-      "image_query": "precision strike missile",
-      "link": "https://news.usni.org/2026/09/21/u-s-army-contracts-first-batch-of-maritime-precision-strike-missiles",
-      "image_url": "https://images.pexels.com/photos/16660293/pexels-photo-16660293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/16660293/pexels-photo-16660293.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "PILNE",
+      "title": "🚨 Hit w Europie i USA. Airbus proponuje Polsce śmigłowiec",
+      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
+      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
+      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
+      "image_query": "military conflict alert",
+      "link": "https://defence24.pl/polityka-obronna/hit-w-europie-i-usa-airbus-proponuje-polsce-smiglowiec-szkoleniowy",
+      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png"
     },
     {
-      "category": "KONFLIKTY",
-      "title": "🛡️ Ukraina otrzymała 82 czołgi M1 Abrams",
-      "summary": "Ukraińskie siły zbrojne przejęły łącznie 82 czołgi podstawowe M1 Abrams przekazane przez zagranicznych partnerów. Żołnierze chwalą wysoką przeżywalność załogi oraz zaawansowane systemy optoelektroniczne.",
-      "comment": "Czołgi zachodniej produkcji pozostają kluczowym elementem obrony, lecz wymagają ciągłej adaptacji do walki z dronami.",
-      "image_query": "abrams tank military",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-dostala-82-abramsy-zolnierze-oceniaja-ich-wartosc",
-      "image_url": "https://cdn.defence24.pl/2026/06/15/1920x1080px/AGfnYuvNceTayl3cS3fMnX5PD6H9mT6FsUffhez4.wknb.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/06/15/1920x1080px/AGfnYuvNceTayl3cS3fMnX5PD6H9mT6FsUffhez4.wknb.jpg"
+      "category": "PILNE",
+      "title": "🚨 Chinese Next-Generation Submarine Developments Spotted ",
+      "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
+      "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
+      "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
+      "image_query": "military conflict alert",
+      "link": "https://www.twz.com/sea/chinese-next-generation-submarine-developments-spotted-in-new-satellite-imagery",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200"
     }
   ]
 }
