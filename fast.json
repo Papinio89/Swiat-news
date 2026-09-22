@@ -1,43 +1,43 @@
 {
   "date": "22 września 2026",
-  "time": "15:33",
-  "timestamp": "2026-09-22_15:33",
+  "time": "21:39",
+  "timestamp": "2026-09-22_21:39",
   "items": [
     {
-      "category": "GEOPOLITYKA / ARKTYKA",
-      "title": "🇺🇸 USA przejmują Arktykę? Nowe bazy!",
-      "hook": "Amerykanie bezgłośnie zamieniają lód Grenlandii w kluczową twierdzę dalekiej północy.",
-      "summary": "Waszyngton dopina umowę na budowę dwóch nowych baz wojskowych na wyspie. Ruch ten ma na celu uszczelnienie wczesnego ostrzegania przed rosyjskimi pociskami i zablokowanie chińskich wpływów na szlakach arktycznych.",
-      "comment": "Kontrola nad Arktyką to nie przyszłość, a dzisiejszy fundament bezpieczeństwa całej przestrzeni transatlantyckiej.",
-      "question": "Czy NATO powinno oficjalnie uczynić ochronę szlaków arktycznych jednym ze swoich głównych priorytetów?",
-      "image_query": "arctic military base",
-      "link": "https://defence24.pl/geopolityka/usa-planuja-dwie-nowe-bazy-na-grenlandii-umowa-jeszcze-dzis",
-      "image_url": "https://cdn.defence24.pl/2025/06/30/1920x1080px/5RqmdMuZr6zNzWAKMaro8rQmwkbJYqn39WpCyr9x.jcvy.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2025/06/30/1920x1080px/5RqmdMuZr6zNzWAKMaro8rQmwkbJYqn39WpCyr9x.jcvy.jpg"
+      "category": "GEOPOLITYKA / WOJNA MORSKA",
+      "title": "🛸 Strzał z bezzałogowego okrętu podwodnego!",
+      "hook": "Marynarki USA i Wielkiej Brytanii wykonały historyczny krok w wojnie podwodnej, po raz pierwszy wystrzeliwując ciężką torpedę z autonomicznego okrętu.",
+      "summary": "Pomyślny test z użyciem torpedy Mk 48 potwierdza, że bezzałogowce podwodne przestają pełnić jedynie funkcje zwiadowcze i zyskują pełną zdolność bojową. Wprowadzenie takich jednostek pozwoli na skokowe zwiększenie obecności w rejonach wysokiego ryzyka bez narażania życia załóg.",
+      "comment": "Autonomizacja uzbrojenia podwodnego nieodwracalnie obniża próg użycia siły w konfliktach morskich na Pacyfiku i Atlantyku.",
+      "question": "Czy Waszym zdaniem autonomiczne okręty podwodne z czasem całkowicie zastąpią tradycyjne jednostki załogowe?",
+      "image_query": "unmanned submarine torpedo",
+      "link": "https://www.twz.com/sea/torpedo-fired-from-uncrewed-submarine-for-the-first-time-by-u-s-u-k",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/excalibur-uuv-mk-48-torpedo-launch-test-us-uk.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/excalibur-uuv-mk-48-torpedo-launch-test-us-uk.jpg?w=1200"
+    },
+    {
+      "category": "GEOPOLITYKA / AZJA",
+      "title": "🚀 Pjongjang testuje nową broń naddźwiękową",
+      "hook": "Korea Północna przeprowadziła kolejny udany udar testowy z użyciem manewrującego pocisku hipersonicznego Hwasong-11Ma.",
+      "summary": "Nowy glider hipersoniczny został zaprojektowany tak, aby omijać amerykańskie i południowokoreańskie systemy obrony przeciwrakietowej THAAD i Aegis poprzez manewrowanie w gęstych warstwach atmosfery. Pjongjang konsekwentnie rozbudowuje arsenał zdolny do precyzyjnego rażenia strategicznych baz USA w regionie.",
+      "comment": "Rozwój technologii hipersonicznych przez reżim Kima drastycznie skraca czas reakcji obrony i podważa dotychczasową architekturę odstraszania w Azji.",
+      "question": "Czy Sojusz USA, Japonii i Korei Płd. jest w stanie stworzyć skuteczną tarczę przeciwko pociskom hipersonicznym?",
+      "image_query": "hypersonic missile launch",
+      "link": "https://www.twz.com/land/north-korea-tests-new-hwasong-11ma-hypersonic-missile",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/Ha-11-Ma-test_9-to-edit.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/Ha-11-Ma-test_9-to-edit.jpg?w=1200"
     },
     {
       "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🎒 Nowy szpej dla polskiego żołnierza",
-      "hook": "Polski sprzęt taktyczny Direct Action podbija targi MSPO i wyznacza nowe standardy dla piechoty.",
-      "summary": "Na targach zaprezentowano najnowsze kamizelki, ładownice i oporządzenie stworzone z myślą o współczesnym, dynamicznym polu walki. Nowy wojskowy wyposażenie zastępuje przestarzałe taśmy Cordura lżejszymi, wycinanymi laserowo laminatami, poprawiając mobilność żołnierzy.",
-      "comment": "Lżejszy i bardziej funkcjonalny sprzęt indywidualny bezpośrednio przekłada się na przeżywalność operatora na pierwszej linii.",
-      "question": "Co według Was jest ważniejsze na współczesnym polu walki: maksymalna ochrona balistyczna czy lekkość i mobilność?",
-      "image_query": "tactical military gear",
-      "link": "https://defence24.pl/operacja-szpej/ogladamy-szpej-direct-action-na-mspo",
-      "image_url": "https://images.pexels.com/photos/11735385/pexels-photo-11735385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/11735385/pexels-photo-11735385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    },
-    {
-      "category": "OBRONNOŚĆ / EUROPA",
-      "title": "🇱🇹 Litwa gotowa do walki i ewakuacji",
-      "hook": "Wilno nie czeka na rozwój wypadków – obok planów twardej obrony przygotowuje masowe ewakuacje cywilów.",
-      "summary": "Otwarta deklaracja premier Litwy ujawnia, że kraj szykuje się na każdy scenariusz agresji ze strony Rosji. Połączenie planów obrony terytorialnej z kompleksowym systemem ewakuacji ludności ma zapobiec paraliżowi państwa w pierwszych godzinach ewentualnego konfliktu.",
-      "comment": "Skuteczne odstraszanie to nie tylko czołgi na granicy, ale przede wszystkim odporność całego społeczeństwa na szok wojenny.",
-      "question": "Czy Polska również powinna jawnie przestawić się na model obrony powszechnej z powszechnymi ćwiczeniami ewakuacyjnymi?",
-      "image_query": "baltic military defense",
-      "link": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4e66/live/e66f3610-b646-11f1-bc1f-3f186ca4140c.jpg",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4e66/live/e66f3610-b646-11f1-bc1f-3f186ca4140c.jpg"
+      "title": "🚨 Obcy dron nad amerykańską bazą w Polsce",
+      "hook": "Niezidentyfikowany bezzałogowiec pojawił się bezpośrednio nad terenem użytkowanym przez wojska USA na terytorium Polski.",
+      "summary": "Incydent dobitnie pokazuje rosnącą aktywność rozpoznawczą wokół kluczowej infrastruktury wojskowej NATO na wschodniej flance. Wobec zagrożeń hybrydowych konieczne jest natychmiastowe załatanie luk w systemach detekcji i zwalczania mikro-dronów chroniących Sojuszników.",
+      "comment": "Brak twardej neutralizacji obiektów szpiegowskich przy bazach NATO zachęca przeciwnika do kolejnych, bardziej zuchwałych prowokacji.",
+      "question": "Czy polskie służby powinny bezwarunkowo zestrzeliwać każdego niezidentyfikowanego drona w pobliżu obiektów wojskowych?",
+      "image_query": "military drone sky",
+      "link": "https://defence24.pl/polityka-obronna/dron-nad-amerykanska-baza-w-polsce",
+      "image_url": "https://cdn.defence24.pl/2026/09/09/1920x1080px/pXke6SRnpfLcvjwx3WWQ98MvpVgHq6oLwfifGxPl.e7vq.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/09/1920x1080px/pXke6SRnpfLcvjwx3WWQ98MvpVgHq6oLwfifGxPl.e7vq.jpg"
     }
   ]
 }
