@@ -42,13 +42,14 @@ POLISH_MONTHS = {
 MAX_AGE_HOURS = 12
 TARGET_ITEMS = 3
 
-# --- STRUKTURA DANYCH DLA AI (PYDANTIC) ---
+# --- STRUKTURA DANYCH DLA AI (PYDANTIC Z ZASADAMI WIRALOWYMI) ---
 class NewsItem(BaseModel):
-    category: str = Field(description="Kategoria artykułu: np. OBRONNOŚĆ, KONFLIKTY, GEOPOLITYKA.")
-    title: str = Field(description="Krótki, merytoryczny i chwytliwy nagłówek z emotikoną na początku (np. 🚨, 🛡️, ⚔️, 🚀).")
-    summary: str = Field(description="Zwięzły opis sedna wydarzenia w 1-2 krótkich zdaniach.")
-    comment: str = Field(description="Bardzo krótki, chłodny komentarz strategiczny - DOKŁADNIE 1 ZWIĘZŁE ZDANIE (pointa).")
-    image_query: str = Field(description="2-3 precyzyjne angielskie słowa kluczowe do bazy zdjęć Pexels np. 'stealth fighter military'.")
+    category: str = Field(description="Kategoria artykułu: np. OBRONNOŚĆ, BEZPIECZEŃSTWO, GEOPOLITYKA.")
+    title: str = Field(description="Krótki, magnetyczny nagłówek (max 60 znaków) z emotikoną na początku (np. 🚨, 🛡️, 💥, ✈️, 🪖).")
+    hook: str = Field(description="Mocne, 1-zdaniowe uderzenie burzące mit lub pokazujące stawkę (np. 'Wszyscy patrzą na czołgi, ale prawdziwy paraliż uderzy w ujęcia wody').")
+    summary: str = Field(description="2 dynamiczne, plastyczne zdania faktograficzne. Używaj konkretnych słów, które tworzą film w głowie czytelnika.")
+    comment: str = Field(description="1 bezlitosne, chłodne zdanie wskazujące realne konsekwencje dla bezpieczeństwa Polski, regionu lub zwykłych ludzi.")
+    image_query: str = Field(description="2-3 precyzyjne angielskie słowa kluczowe do bazy Pexels (np. 'fighter jet cockpit night', 'soldier border patrol').")
     link: str = Field(description="Dokładnie ten sam URL wejściowy przypisany do artykułu.")
 
 class NewsOutput(BaseModel):
@@ -81,7 +82,6 @@ def is_recent(entry) -> bool:
         return True
 
 def fetch_article_image(url: str) -> str | None:
-    """Krok 1: Próba pobrania oryginalnego zdjęcia ze strony artykułu (og:image / twitter:image)."""
     if not url or url == "#" or "news.google.com" in url:
         return None
     try:
@@ -118,7 +118,6 @@ def fetch_article_image(url: str) -> str | None:
     return None
 
 def fetch_pexels_image_url(query: str) -> str | None:
-    """Krok 2: Fallback do Pexels API, gdy strona artykułu nie ma og:image."""
     if not PEXELS_API_KEY:
         return None
     url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(query)}&per_page=1&orientation=landscape"
@@ -221,18 +220,30 @@ if len(filtered_raw_articles) < TARGET_ITEMS:
 
 articles_for_ai = filtered_raw_articles[:15]
 
-# --- PROMPT AI Z OPTYMALIZACJĄ DŁUGOŚCI ---
+# --- PROMPT AI Z PSYCHOLOGIĄ SOCIAL MEDIA ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś analitykiem militarnym przygotowującym zwięzły format FLASH REPORT.
-Wybierz i przetłumacz na język polski DOKŁADNIE {TARGET_ITEMS} NAJWAŻNIEJSZE tematy z listy.
+prompt = f"""Jesteś twórcą topowych formatów militarno-geopolitycznych w social mediach (Threads/Instagram).
+Twoim celem jest wyciągnięcie DOKŁADNIE {TARGET_ITEMS} NAJWAŻNIEJSZYCH tematów i przedstawienie ich tak, by zatrzymały użytkownika w biegu i wywołały falę dyskusji oraz zapisów.
 
-ZASADY FORMATOWANIA:
-- Tytuł: mocny, zwięzły, z pojedynczą emotikoną (🚨, 🛡️, ⚔️, 🚀).
-- Summary: 1-2 zwięzłe zdania faktograficzne.
-- Comment: MAKSYMALNIE 1 KRÓTKIE, CHŁODNE ZDANIE STRATEGICZNE. Bezwzględny zakaz długich wywodów. Pointa w jednym zdaniu.
-- image_query: 2-3 słowa po angielsku.
-- link: dokładnie URL z danego artykułu.
+ZASADY VIRALOWEGO FORMATU FLASH:
+1. ZAKAZ SUCHEGO RAPORTOWANIA:
+   - Zamiast „Eksperci oceniają wdrożenie procedur” -> „Dowódcy ostrzegają: te błędy mogą sparaliżować obronę”.
+   - Pisz plastycznie: czołgi, blackout, drony, rakiety, portfele, ujęcia wody, paraliż radarów.
+2. ZASADA BEZPOŚREDNIEJ STAWKI:
+   - Czytelnik musi w sekundę poczuć, dlaczego to wydarzenie ma dla niego znaczenie (bezpieczeństwo granic, stabilność kraju, widmo eskalacji).
+3. KONKRETNY AUTORYTET I KONTRAST:
+   - Wskaż instytucję lub postać (Pentagon, piloci, wywiad, sztab generalny).
+   - Stosuj schemat kontrastu: „Wszyscy patrzyli na punkt A, podczas gdy decydujący cios padł w punkcie B”.
+
+WYMOGI STRUKTURY:
+- Wybierz dokładnie {TARGET_ITEMS} pozycje o najwyższej wadze strategicznej.
+- "title": [Mocna emotikona] + zwięzły, konkretny nagłówek (max 55-60 znaków).
+- "hook": 1 magnetyczne zdanie – obalenie powszechnego przekonania lub uderzająca teza.
+- "summary": 2 zdania faktów operujących rzeczownikami tworzącymi obraz w wyobraźni.
+- "comment": DOKŁADNIE 1 ZDANIE. Chłodna, uderzająca pointa strategiczna.
+- "image_query": 2-3 konkretne słowa kluczowe po angielsku (konkretny sprzęt, dynamiczne sytuacje, np. "anti aircraft missile night", "special forces stealth").
+- "link": Dokładnie ten sam URL z danych wejściowych.
 
 Unikaj tematów podobnych do: {json.dumps(excluded_topics[:10], ensure_ascii=False)}
 
@@ -243,12 +254,12 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-3.6-flash',
+        model='gemini-2.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
             response_schema=NewsOutput,
-            temperature=0.2,
+            temperature=0.3,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -273,10 +284,11 @@ while len(items) < TARGET_ITEMS:
         if art['link'] not in existing_links and art['link'] != "#":
             items.append({
                 "category": "PILNE",
-                "title": f"🚨 {art.get('title', 'Wiadomość z agencji prasowych')}",
-                "summary": "Najnowsze doniesienia wskazują na dynamiczny rozwój wydarzeń w tym rejonie.",
-                "comment": "Sytuacja wymaga dalszego monitorowania.",
-                "image_query": "military conflict",
+                "title": f"🚨 {art.get('title', 'Zdarzenie na wschodniej flance')[:55]}",
+                "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
+                "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
+                "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
+                "image_query": "military conflict alert",
                 "link": art.get("link", "#")
             })
             existing_links.add(art['link'])
@@ -293,14 +305,9 @@ for item in items:
     url = item.get("link", "")
     q = item.get("image_query", "military")
     
-    # 1. Zdjęcie z oryginalnego artykułu
     selected_img = fetch_article_image(url)
-    
-    # 2. Jeśli brak, zapytanie do Pexels
     if not selected_img:
         selected_img = fetch_pexels_image_url(q)
-        
-    # 3. Jeśli Pexels zawiedzie, fallback
     if not selected_img:
         selected_img = FALLBACK_IMG
         
