@@ -1,43 +1,43 @@
 {
   "date": "22 września 2026",
-  "time": "06:55",
-  "timestamp": "2026-09-22_06:55",
+  "time": "15:33",
+  "timestamp": "2026-09-22_15:33",
   "items": [
     {
-      "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🎯 Koreański moździerz dla WOT na MSPO 2026",
-      "hook": "Wojska Obrony Terytorialnej mogą zyskać potężny skok w sile ognia bezpośredniego wsparcia.",
-      "summary": "Koreański koncern oferuje Polsce nowoczesny system moździerzowy, zaprojektowany z myślą o lekkiej piechocie. Rozwiązanie to ma załatać lukę w mobilnym wsparciu ogniowym pododdziałów WOT na szczeblu batalionu.",
-      "comment": "Szybkie nasycenie brygad Terytorialsów bronią wsparcia jest kluczowe dla skutecznej obrony uporczywej w rejonach przygranicznych.",
-      "question": "Czy WOT powinien kupować koreańskie moździerze, czy jednak poczekać na opracowanie pełnego polskiego odpowiednika?",
-      "image_query": "military mortar firing",
-      "link": "https://defence24.pl/przemysl/koreanski-mozdzierz-na-mspo-2026-propozycja-dla-terytorialsow",
-      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/t3Sk1hgVTuxKsdHkGfxYN5evhvvPAGXXMsOcZfiZ.6mnf.jpg"
-    },
-    {
-      "category": "GEOPOLITYKA / CHINY",
-      "title": "🌊 Chińskie okręty podwodne nowej generacji",
-      "hook": "Zdjęcia satelitarne ujawniają gwałtowny postęp Pekinu w budowie wyciszonych okrętów podwodnych.",
-      "summary": "Na najnowszych ujęciach z chińskich stoczni dostrzeżono nowe jednostki podwodne o zmienionej geometrii kadłuba i zaawansowanym napędzie. To jednoznaczny sygnał, że Chiny skutecznie niwelują przewagę technologiczną US Navy w domenie podwodnej na Pacyfiku.",
-      "comment": "Cicha flota podwodna to dla Pekinu kluczowy element do ewentualnego odcięcia Tajwanu i zablokowania amerykańskiej odsieczy.",
-      "question": "Czy Amerykanie będą w stanie utrzymać dominację pod wodą na Pacyfiku wobec tak szybkiej rozbudowy floty Chin?",
-      "image_query": "submarine ocean water",
-      "link": "https://www.twz.com/sea/chinese-next-generation-submarine-developments-spotted-in-new-satellite-imagery",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/new-chinese-submarine-construction-insights.jpg?w=1200"
+      "category": "GEOPOLITYKA / ARKTYKA",
+      "title": "🇺🇸 USA przejmują Arktykę? Nowe bazy!",
+      "hook": "Amerykanie bezgłośnie zamieniają lód Grenlandii w kluczową twierdzę dalekiej północy.",
+      "summary": "Waszyngton dopina umowę na budowę dwóch nowych baz wojskowych na wyspie. Ruch ten ma na celu uszczelnienie wczesnego ostrzegania przed rosyjskimi pociskami i zablokowanie chińskich wpływów na szlakach arktycznych.",
+      "comment": "Kontrola nad Arktyką to nie przyszłość, a dzisiejszy fundament bezpieczeństwa całej przestrzeni transatlantyckiej.",
+      "question": "Czy NATO powinno oficjalnie uczynić ochronę szlaków arktycznych jednym ze swoich głównych priorytetów?",
+      "image_query": "arctic military base",
+      "link": "https://defence24.pl/geopolityka/usa-planuja-dwie-nowe-bazy-na-grenlandii-umowa-jeszcze-dzis",
+      "image_url": "https://cdn.defence24.pl/2025/06/30/1920x1080px/5RqmdMuZr6zNzWAKMaro8rQmwkbJYqn39WpCyr9x.jcvy.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2025/06/30/1920x1080px/5RqmdMuZr6zNzWAKMaro8rQmwkbJYqn39WpCyr9x.jcvy.jpg"
     },
     {
       "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🚁 Airbus oferuje Polsce hity szkoleniowe",
-      "hook": "Polska potrzebuje pilnej wymiany przestarzałej floty śmigłowców szkolnych dla przyszłych pilotów.",
-      "summary": "Airbus Helicopters wyciąga rękę do Warszawy z propozycją maszyn sprawdzonej konstrukcji, z których korzystają już siły powietrzne USA i krajów europejskich. Nowe śmigłowce mają stworzyć spójny system szkolenia przed przesiadką podchorążych na ciężkie maszyny bojowe.",
-      "comment": "Bez nowoczesnej bazy szkoleniowej zakup najnowszych śmigłowców bojowych staje się wyłącznie kosztownym eksponatem.",
-      "question": "Powinniśmy stawiać na europejską ofertę Airbusa, czy trzymać się ściśle zakupów wyłącznie od amerykańskich dostawców?",
-      "image_query": "military helicopter flight",
-      "link": "https://defence24.pl/polityka-obronna/hit-w-europie-i-usa-airbus-proponuje-polsce-smiglowiec-szkoleniowy",
-      "image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/21/1920x1080px/Om59NEXT8Tlrxva7vZ8qGwSIV6n60yelqJzMuqwo.8orr.png"
+      "title": "🎒 Nowy szpej dla polskiego żołnierza",
+      "hook": "Polski sprzęt taktyczny Direct Action podbija targi MSPO i wyznacza nowe standardy dla piechoty.",
+      "summary": "Na targach zaprezentowano najnowsze kamizelki, ładownice i oporządzenie stworzone z myślą o współczesnym, dynamicznym polu walki. Nowy wojskowy wyposażenie zastępuje przestarzałe taśmy Cordura lżejszymi, wycinanymi laserowo laminatami, poprawiając mobilność żołnierzy.",
+      "comment": "Lżejszy i bardziej funkcjonalny sprzęt indywidualny bezpośrednio przekłada się na przeżywalność operatora na pierwszej linii.",
+      "question": "Co według Was jest ważniejsze na współczesnym polu walki: maksymalna ochrona balistyczna czy lekkość i mobilność?",
+      "image_query": "tactical military gear",
+      "link": "https://defence24.pl/operacja-szpej/ogladamy-szpej-direct-action-na-mspo",
+      "image_url": "https://images.pexels.com/photos/11735385/pexels-photo-11735385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/11735385/pexels-photo-11735385.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "category": "OBRONNOŚĆ / EUROPA",
+      "title": "🇱🇹 Litwa gotowa do walki i ewakuacji",
+      "hook": "Wilno nie czeka na rozwój wypadków – obok planów twardej obrony przygotowuje masowe ewakuacje cywilów.",
+      "summary": "Otwarta deklaracja premier Litwy ujawnia, że kraj szykuje się na każdy scenariusz agresji ze strony Rosji. Połączenie planów obrony terytorialnej z kompleksowym systemem ewakuacji ludności ma zapobiec paraliżowi państwa w pierwszych godzinach ewentualnego konfliktu.",
+      "comment": "Skuteczne odstraszanie to nie tylko czołgi na granicy, ale przede wszystkim odporność całego społeczeństwa na szok wojenny.",
+      "question": "Czy Polska również powinna jawnie przestawić się na model obrony powszechnej z powszechnymi ćwiczeniami ewakuacyjnymi?",
+      "image_query": "baltic military defense",
+      "link": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4e66/live/e66f3610-b646-11f1-bc1f-3f186ca4140c.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/4e66/live/e66f3610-b646-11f1-bc1f-3f186ca4140c.jpg"
     }
   ]
 }
