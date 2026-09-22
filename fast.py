@@ -1,7 +1,6 @@
 import json
 import os
 import re
-import unicodedata
 import urllib.parse
 import urllib.request
 import traceback
@@ -9,7 +8,6 @@ from datetime import datetime, timedelta
 from time import mktime
 from zoneinfo import ZoneInfo
 from urllib.parse import urlparse, parse_qs
-from pydantic import BaseModel, Field
 
 import feedparser
 from google import genai
@@ -17,7 +15,6 @@ from google.genai import types
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-# Konfiguracja obrazów
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop"
 
@@ -41,19 +38,6 @@ POLISH_MONTHS = {
 
 MAX_AGE_HOURS = 12
 TARGET_ITEMS = 3
-
-# --- STRUKTURA DANYCH DLA AI (PYDANTIC Z ZASADAMI WIRALOWYMI) ---
-class NewsItem(BaseModel):
-    category: str = Field(description="Kategoria artykułu: np. OBRONNOŚĆ, BEZPIECZEŃSTWO, GEOPOLITYKA.")
-    title: str = Field(description="Krótki, magnetyczny nagłówek (max 60 znaków) z emotikoną na początku (np. 🚨, 🛡️, 💥, ✈️, 🪖).")
-    hook: str = Field(description="Mocne, 1-zdaniowe uderzenie burzące mit lub pokazujące stawkę (np. 'Wszyscy patrzą na czołgi, ale prawdziwy paraliż uderzy w ujęcia wody').")
-    summary: str = Field(description="2 dynamiczne, plastyczne zdania faktograficzne. Używaj konkretnych słów, które tworzą film w głowie czytelnika.")
-    comment: str = Field(description="1 bezlitosne, chłodne zdanie wskazujące realne konsekwencje dla bezpieczeństwa Polski, regionu lub zwykłych ludzi.")
-    image_query: str = Field(description="2-3 precyzyjne angielskie słowa kluczowe do bazy Pexels (np. 'fighter jet cockpit night', 'soldier border patrol').")
-    link: str = Field(description="Dokładnie ten sam URL wejściowy przypisany do artykułu.")
-
-class NewsOutput(BaseModel):
-    items: list[NewsItem]
 
 
 def clean_link(url: str) -> str:
@@ -153,7 +137,6 @@ for url in RSS_URLS:
         print(f"Błąd RSS z {url}: {e}")
 
 if len(raw_articles) < TARGET_ITEMS:
-    print("Zbyt mało nowości z 6h. Pobieram starsze by zapewnić wydanie...")
     for url in RSS_URLS:
         try:
             feed = feedparser.parse(url)
@@ -199,7 +182,6 @@ filtered_raw_articles = []
 seen_titles = set()
 for art in raw_articles:
     t = "".join(c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
-    
     is_duplicate = False
     art_words = set(t.split())
     if len(art_words) > 2:
@@ -220,32 +202,37 @@ if len(filtered_raw_articles) < TARGET_ITEMS:
 
 articles_for_ai = filtered_raw_articles[:15]
 
-# --- PROMPT AI Z PSYCHOLOGIĄ SOCIAL MEDIA ---
+# --- PROMPT AI Z BEZWZGLĘDNYM NAKAZEM UNIKALNOŚCI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś twórcą topowych formatów militarno-geopolitycznych w social mediach (Threads/Instagram).
-Twoim celem jest wyciągnięcie DOKŁADNIE {TARGET_ITEMS} NAJWAŻNIEJSZYCH tematów i przedstawienie ich tak, by zatrzymały użytkownika w biegu i wywołały falę dyskusji oraz zapisów.
+prompt = f"""Jesteś autorem topowego konta o obronności i geopolityce. Tworzysz posty o potężnych zasięgach (styl konkretny, plastyczny, angażujący).
 
-ZASADY VIRALOWEGO FORMATU FLASH:
-1. ZAKAZ SUCHEGO RAPORTOWANIA:
-   - Zamiast „Eksperci oceniają wdrożenie procedur” -> „Dowódcy ostrzegają: te błędy mogą sparaliżować obronę”.
-   - Pisz plastycznie: czołgi, blackout, drony, rakiety, portfele, ujęcia wody, paraliż radarów.
-2. ZASADA BEZPOŚREDNIEJ STAWKI:
-   - Czytelnik musi w sekundę poczuć, dlaczego to wydarzenie ma dla niego znaczenie (bezpieczeństwo granic, stabilność kraju, widmo eskalacji).
-3. KONKRETNY AUTORYTET I KONTRAST:
-   - Wskaż instytucję lub postać (Pentagon, piloci, wywiad, sztab generalny).
-   - Stosuj schemat kontrastu: „Wszyscy patrzyli na punkt A, podczas gdy decydujący cios padł w punkcie B”.
+Zadanie: Wybierz DOKŁADNIE {TARGET_ITEMS} RÓŻNE tematy z podanej listy i stwórz dla każdego unikalny wpis w formacie JSON.
 
-WYMOGI STRUKTURY:
-- Wybierz dokładnie {TARGET_ITEMS} pozycje o najwyższej wadze strategicznej.
-- "title": [Mocna emotikona] + zwięzły, konkretny nagłówek (max 55-60 znaków).
-- "hook": 1 magnetyczne zdanie – obalenie powszechnego przekonania lub uderzająca teza.
-- "summary": 2 zdania faktów operujących rzeczownikami tworzącymi obraz w wyobraźni.
-- "comment": DOKŁADNIE 1 ZDANIE. Chłodna, uderzająca pointa strategiczna.
-- "image_query": 2-3 konkretne słowa kluczowe po angielsku (konkretny sprzęt, dynamiczne sytuacje, np. "anti aircraft missile night", "special forces stealth").
-- "link": Dokładnie ten sam URL z danych wejściowych.
+ZASADY TREŚCI:
+1. ZAKAZ UNIWERSALNYCH SZABLONÓW:
+   - Każdy wpis MUSI dotyczyć dokładnie tego sprzętu lub wydarzenia, o którym mowa w tytule (np. jeśli mowa o moździerzu – pisz o moździerzu, sile ognia, WOT; jeśli o śmigłowcu – pisz o flocie i transporcie; jeśli o okręcie podwodnym – o skradaniu pod wodą i Pacyfiku).
+   - ZAKAZ pisania ogólników typu „Najnowsze doniesienia z linii frontu wskazują na przyspieszenie działań” tam, gdzie nie ma to sensu.
+2. ZASADA NAMACALNEJ STAWKI:
+   - Napisz wprost, co ten zakup lub ruch oznacza (kto zyska przewagę, co zastąpi stary sprzęt, jakie luki załata).
+3. UNIKALNE PYTANIE NA KOŃCU (field "question"):
+   - Każdy news musi mieć inne, precyzyjne pytanie do dyskusji pod swój temat (np. „Czy WOT powinien dostać broń tego kalibru?”, „Wolicie śmigłowce z USA czy europejskiego Airbusa?”).
 
-Unikaj tematów podobnych do: {json.dumps(excluded_topics[:10], ensure_ascii=False)}
+STRUKTURA JSON (zwróć WYŁĄCZNIE czysty JSON):
+[
+  {{
+    "category": "OBRONNOŚĆ / POLSKA / GEOPOLITYKA",
+    "title": "[Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków]",
+    "hook": "1 zdanie uderzające w sedno (np. 'Polska szuka sposobu na skokowe zwiększenie siły ognia piechoty.')",
+    "summary": "2 zdania konkretów o tym konkretnym wydarzeniu/sprzęcie z nagłówka.",
+    "comment": "1 mocne, chłodne zdanie wniosku strategicznego.",
+    "question": "1 angażujące, unikalne pytanie skierowane do czytelników w tym konkretnym temacie.",
+    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels (np. 'military mortar firing', 'military helicopter flight')",
+    "link": "dokładnie URL artykułu"
+  }}
+]
+
+Unikaj tematów z archiwum: {json.dumps(excluded_topics[:8], ensure_ascii=False)}
 
 Dane wejściowe:
 {json.dumps(articles_for_ai, ensure_ascii=False)}
@@ -254,41 +241,45 @@ Dane wejściowe:
 items = []
 try:
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model='gemini-3.6-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            response_schema=NewsOutput,
             temperature=0.3,
-            safety_settings=[
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
-            ]
         ),
     )
     
-    raw_data = json.loads(response.text)
-    items = raw_data.get("items", [])
+    text = response.text.strip()
+    if text.startswith("```json"): text = text[7:]
+    if text.startswith("```"): text = text[3:]
+    if text.endswith("```"): text = text[:-3]
+    text = text.strip()
     
+    parsed = json.loads(text)
+    if isinstance(parsed, list):
+        items = parsed
+    elif isinstance(parsed, dict) and "items" in parsed:
+        items = parsed["items"]
+
 except Exception as e:
     print(f"Błąd AI: {e}")
     traceback.print_exc()
 
-# Blok awaryjny (uzupełnienie, jeśli model zwrócił za mało)
+# Awaryjne uzupełnienie (jeśli AI zawiodło całkowicie) - z dynamicznym tytułem, bez kopiuj-wklej
 while len(items) < TARGET_ITEMS:
     existing_links = {i.get('link') for i in items if isinstance(i, dict)}
     added = False
     for art in articles_for_ai:
         if art['link'] not in existing_links and art['link'] != "#":
+            clean_t = art.get('title', 'Nowe doniesienia')
             items.append({
-                "category": "PILNE",
-                "title": f"🚨 {art.get('title', 'Zdarzenie na wschodniej flance')[:55]}",
-                "hook": "Nowy incydent bezpieczeństwa natychmiast stawia służby w stan podwyższonej gotowości.",
-                "summary": "Najnowsze doniesienia z linii frontu wskazują na nagłe przyspieszenie działań operacyjnych. Zespoły reagowania analizują skalę zagrożenia.",
-                "comment": "Każde naruszenie dotychczasowych zasad gry bezpośrednio zbliża konflikt do granic państw sojuszniczych.",
-                "image_query": "military conflict alert",
+                "category": "OBRONNOŚĆ",
+                "title": f"🚨 {clean_t[:55]}",
+                "hook": f"Kluczowe doniesienia dotyczące projektu: {clean_t[:40]}.",
+                "summary": f"Trwają dyskusje wokół wdrożenia i zabezpieczenia kontraktu w tym obszarze. Przedstawiciele branży analizują szczegóły techniczne.",
+                "comment": "Decyzje w tym sektorze bezpośrednio zdefiniują potencjał operacyjny na kolejne lata.",
+                "question": "Jak oceniacie ten ruch z perspektywy modernizacji armii?",
+                "image_query": "military defense technology",
                 "link": art.get("link", "#")
             })
             existing_links.add(art['link'])
@@ -326,4 +317,4 @@ output_data = {
 with open("fast.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono. Pomyślnie zapisano {len(items)} pozycje w fast.json.")
+print(f"Zakończono. Pomyślnie zapisano {len(items)} unikalnych pozycji w fast.json.")
