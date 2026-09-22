@@ -3364,5 +3364,152 @@
         "source_image_url": "https://images.pexels.com/photos/38412413/pexels-photo-38412413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
+  },
+  "2026-09-22_poranne": {
+    "date": "22 września 2026",
+    "time": "06:01",
+    "timestamp": "2026-09-22_06:01",
+    "items": [
+      {
+        "category": "POLSKA",
+        "title": "✈️ Polska podrywa myśliwce w reakcji na zmasowany atak na Ukrainę",
+        "summary": "Dowództwo Operacyjne Rodzajów Sił Zbrojnych poderwało polskie i sojusznicze myśliwce w odpowiedzi na intensywny ostrzał rakietowy Ukrainy przez Rosję. Operacja miała na celu zabezpieczenie przestrzeni powietrznej w rejonach przygranicznych.",
+        "comment": "Incydent po raz kolejny podkreśla stałe ryzyko naruszenia polskiej przestrzeni powietrznej podczas zmasowanych ataków rakietowych w pobliżu granic NATO.",
+        "image_query": "polish f16 fighter jet",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUmUwU0ZBTl9XMkpYUkY3aWNWMEZzVEdxWkM5WVV4TXZHZGQ2Z2lWQWpPZktnN01wRXN4T0dib1BVTFdmTlZ6dlo5eFFmcnVHZWxXMTNDajlxNVVDVU9LZ0HXNVNFZXdseE9veVctVVFEN0Exel9TMGh3YUNMR0tSQmN5cWpCMGdyVnZLQjJablk?oc=5",
+        "image_url": "https://images.pexels.com/photos/12584013/pexels-photo-12584013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/12584013/pexels-photo-12584013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🛡️ Ponad 300 czołgów Abrams w służbie Wojska Polskiego",
+        "summary": "Polska zbliża się do zakończenia dostaw amerykańskich czołgów M1A1 i M1A2 SEPv3, a łączna liczba odebranych maszyn przekroczyła już 300 sztuk. Realizacja kontraktów znacząco podnosi potencjał bojowy wschodniej flanki.",
+        "comment": "Szybkie tempo dostaw przyspiesza wycofywanie posowieckiego sprzętu i ujednolicanie parku pancernego Sił Zbrojnych RP.",
+        "image_query": "abrams tank military army",
+        "link": "https://defence24.pl/sily-zbrojne/dostawy-na-finiszu-juz-ponad-300-czolgow-abrams-w-wojsku-polskim",
+        "image_url": "https://images.pexels.com/photos/8091790/pexels-photo-8091790.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2025/08/06/1440x810px/l97BQHapGyWjUagRlW7lpYZPctr7Iiacf2O6bBc0.blh2.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🇺🇸 Pilna prośba z USA: Wizyta szefa MON w Pentagonie przełożona",
+        "summary": "Zaplanowane spotkanie wicepremiera i ministra obrony narodowej Władysława Kosiniaka-Kamysza w Waszyngtonie zostało przełożone na wniosek strony amerykańskiej. Pentagon powołał się na pilne, nieprzewidziane obowiązki strategiczne.",
+        "comment": "Niespodziewana zmiana harmonogramu ze strony USA może wpłynąć na termin ustaleń dotyczących bilateralnych projektów obronnych.",
+        "image_query": "pentagon building washington dc",
+        "link": "https://defence24.pl/polityka-obronna/wizyta-kosiniaka-kamysza-w-pentagonie-przelozona-pilna-prosba-strony-amerykanskiej",
+        "image_url": "https://images.pexels.com/photos/36984941/pexels-photo-36984941.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/07/21/1440x810px/ctGHHM3TMOMfxvNI2Cby3uWrmy8V45LLkOM1ArjO.fz2w.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇪🇺 Unia Europejska znosi sankcje wobec części rosyjskich oligarchów",
+        "summary": "UE zgodziła się na wykreślenie wybranych rosyjskich biznesmenów z listy sankcyjnej w ramach okresowego przeglądu obostrzeń. Decyzja jest następstwem postępowań sądowych oraz ustaleń dyplomatycznych.",
+        "comment": "Krok ten wywoła krytykę państw opowiadających się za bezwzględnym utrzymaniem presji ekonomicznej na środowisko związane z Kremlem.",
+        "image_query": "european union flag brussels",
+        "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ue-zgodzila-sie-na-zniesienie-sankcji-wobec-rosyjskich-oligarchow",
+        "image_url": "https://images.pexels.com/photos/22046935/pexels-photo-22046935.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2025/05/22/1920x1080px/qAkF3NODZfDhO8Kv5IJlOZeAD5XhGt3UCiLYypuZ.tip8.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "💥 Ukraiński dron morski zatopił rosyjską łódź bezzałogową",
+        "summary": "Siły ukraińskie przeprowadziły udany atak przy użyciu dronu nawodnego, eliminując rosyjski autonomiczny aparat uderzeniowy na Morzu Czarnym. To pierwszy potwierdzony przypadek bezpośredniego starcia dwóch dronów morskich.",
+        "comment": "Udany atak potwierdza przełomową rolę autonomicznych systemów nawodnych w nowoczesnych konfrontacjach morskich.",
+        "image_query": "naval drone sea explosion",
+        "link": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+        "image_url": "https://images.pexels.com/photos/13315250/pexels-photo-13315250.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Ukraine-drone-boat-machine-gun-1152x648.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🪙 Rekordowy import złota do Chin przekroczył 1000 ton",
+        "summary": "Chińskie zakupy złota osiągnęły historyczny poziom w odpowiedzi na rosnący popyt inwestycyjny oraz zakupy banku centralnego. Utrzymująca się presja zakupowa wspiera wysokie wyceny kruszcu na światowych giełdach.",
+        "comment": "Masowa kumulacja metali szlachetnych przez Pekin stanowi element szerszej strategii ograniczania zależności od aktywów dolarowych.",
+        "image_query": "gold bars china reserve",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-22/china-s-gold-imports-top-1-000-tons-on-strong-investment-demand",
+        "image_url": "https://images.pexels.com/photos/8442318/pexels-photo-8442318.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/8442318/pexels-photo-8442318.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📈 Ceny miedzi blisko historycznych szczytów przez deficyt w Chinach",
+        "summary": "Notowania miedzi rosną szóstą sesję z rzędu z powodu skurczenia się zapasów surowca w chińskich hutach i stałego popytu przemysłowego. Ograniczona podaż z kopalń nasila obawy o globalny deficyt.",
+        "comment": "Drożejący surowiec zwiększy koszty realizacji inwestycji w energetykę odnawialną i produkcję pojazdów elektrycznych.",
+        "image_query": "copper mining industrial metal",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-22/copper-rises-for-a-sixth-day-toward-record-on-china-tightness",
+        "image_url": "https://images.pexels.com/photos/7984681/pexels-photo-7984681.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/7984681/pexels-photo-7984681.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🎬 Ugoda odblokowuje fuzję Paramount i Warner Bros za 110 mld USD",
+        "summary": "Paramount porozumiał się w sprawie wycofania pozwu blokującego połączenie z Warner Bros. Discovery. Ugoda usuwa główną przeszkodę prawną na drodze do utworzenia giganta medialnego.",
+        "comment": "Konsolidacja dwóch tradycyjnych potęg branży filmowej ma na celu skuteczniejszą rywalizację z dominującymi platformami streamingowymi.",
+        "image_query": "hollywood studio movie industry",
+        "link": "https://www.theverge.com/entertainment/998302/paramount-warner-bros-discovery-merger-settlement",
+        "image_url": "https://images.pexels.com/photos/5246036/pexels-photo-5246036.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STKB385_PARAMOUNT_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.728364100735%2C100%2C78.54327179853&amp;w=1200"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇾🇪 Walki w Jemeni przybierają na sile, tysiące cywilów ucieka",
+        "summary": "Intensyfikacja starć między bojownikami Huti a siłami wspieranymi przez Arabię Saudyjską doprowadziła do masowej ucieczki ludności cywilnej przez Morze Czerwone. Sytuacja humanitarna w regionie ulega gwałtownemu pogorszeniu.",
+        "comment": "Eskalacja konfliktu lądowego stwarza dodatkowe zagrożenie dla międzynarodowych szlaków handlowych na Bliskim Wschodzie.",
+        "image_query": "yemen conflict red sea refugees",
+        "link": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo",
+        "image_url": "https://images.pexels.com/photos/27198722/pexels-photo-27198722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5cd3/live/e6442550-b5c0-11f1-abb5-85e9be42cb76.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "⚖️ Amerykańskie media pozywają Biały Dom Trumpa",
+        "summary": "Stacje telewizyjne CNN i MS NOW oraz portal Politico złożyły wspólny pozew przeciwko administracji USA za cofnięcie akredytacji ich dziennikarzom. Redakcje zarzucają władzom naruszenie konstytucyjnej wolności prasy.",
+        "comment": "Otwarty spór prawny zapowiada dalsze zaostrzenie relacji między nowym kierownictwem Białego Domu a mediami informacyjnymi.",
+        "image_query": "white house press briefing room",
+        "link": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo",
+        "image_url": "https://images.pexels.com/photos/6950232/pexels-photo-6950232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5aa1/live/5ce86ed0-b60e-11f1-a054-8fb9a369004b.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇬🇧 Brytyjskie zarzuty za ludobójstwo w Rwandzie z 1994 roku",
+        "summary": "Służby w Wielkiej Brytanii po raz pierwszy postawiły zarzuty osobom podejrzanym o bezpośredni udział w masowych morderstwach w Rwandzie sprzed 30 lat. Podejrzani od lat zamieszkiwali na terytorium Zjednoczonego Królestwa.",
+        "comment": "Przełomowe zarzuty pokazują, że brytyjskie sądy są gotowe egzekwować jurysdykcję uniwersalną wobec zbrodni przeciwko ludzkości.",
+        "image_query": "court justice law gavel",
+        "link": "https://www.bbc.co.uk/news/articles/cr2092216nywo",
+        "image_url": "https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/517f/live/051f1c30-b5e1-11f1-aff1-eb6baa3fda4f.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "✈️ Przecięty kabel uszkodził systemy i sparaliżował loty w USA",
+        "summary": "Fizyczne uszkodzenie kluczowego łącza światłowodowego doprowadziło do awarii systemów kontroli lotów i odwołania setek rejsów w Stanach Zjednoczonych. Trwają prace nad usuwaniem skutków usterki.",
+        "comment": "Zdarzenie wykazało podatność krajowej infrastruktury lotniczej na punktowe awarie sieci telekomunikacyjnych.",
+        "image_query": "airport airplane flight control tower",
+        "link": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
+        "image_url": "https://images.pexels.com/photos/23897576/pexels-photo-23897576.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2242804026.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.752607989199%2C100%2C78.494784021602&amp;w=1200"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "⚛️ Samsung inwestuje 100 mln USD w reaktor jądrowy dla Google",
+        "summary": "Grupa Samsung przeznaczy fundusze na wsparcie budowy mikroreaktora Kairos Power, który ma zasilać centra danych Google. Projekt wpisuje się w poszukiwanie stabilnych źródeł energii dla infrastruktury obliczeniowej.",
+        "comment": "Dynamiczny rozwój modeli sztucznej inteligencji wymusza na koncernach technologicznych zwrot w stronę energetyki jądrowej.",
+        "image_query": "nuclear reactor technology data center",
+        "link": "https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/",
+        "image_url": "https://images.pexels.com/photos/39256645/pexels-photo-39256645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-531153042-e1729096517914.jpeg?resize=1200,660"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🧠 AI od OpenAI rozwiązuje ponad 100 problemów matematycznych",
+        "summary": "OpenAI powołało specjalny zespół doradztwa matematycznego po osiągnięciu sukcesu przez zaawansowane modele, które rozwiązały dotąd nierozstrzygnięte zadania naukowe. Nowe narzędzia mają wspierać naukowców w skomplikowanych obliczeniach.",
+        "comment": "Wykorzystanie AI do autonomicznego dowodzenia twierdzeń matematycznych znacznie przyspieszy tempo badań w naukach ścisłych.",
+        "image_query": "artificial intelligence mathematics science",
+        "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+        "image_url": "https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/51013975207_8dcac5cf72_k.jpg?resize=1200,900"
+      }
+    ]
   }
 }
