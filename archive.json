@@ -3801,5 +3801,180 @@
         "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-1152x648.jpg"
       }
     ]
+  },
+  "2026-09-23_wieczorne": {
+    "date": "23 września 2026",
+    "time": "16:49",
+    "timestamp": "2026-09-23_16:49",
+    "items": [
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🚨 Polskie myśliwce w akcji nad Bałtykiem",
+        "hook": "Gdy cywilne niebo zamiera, polscy piloci F-16 musieli wejść w bezpośredni kontakt z rosyjskim szpiegiem.",
+        "summary": "Rosyjski samolot rozpoznawczy Il-20 wykonywał misję bez zgłoszonego planu lotu i z wyłączonym transponderem nad wodami międzynarodowymi Bałtyku. Polskie i sojusznicze myśliwce natychmiast poderwano do przechwycenia i eskortowania intruza poza strefę zagrożenia.",
+        "comment": "To czytelny sygnał, że Rosja nieprzerwanie testuje czas reakcji i procedury obronne NATO na naszej północnej flance.",
+        "question": "Czy Waszym zdaniem Polska powinna jeszcze ostrzej reagować na prowokacje powietrzne w rejonie Bałtyku?",
+        "image_query": "jet fighter interception military",
+        "link": "https://defence24.pl/polityka-obronna/polska-przechwycila-rosyjski-samolot-nad-baltykiem",
+        "image_url": "https://images.pexels.com/photos/87088/fighter-jet-jet-aircraft-army-87088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/23/1024x576px/ab2sdDoNTDV4go9xScYqqnusP1sM11j32J2mfEKp.iuib.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🚁 Rosyjski śmigłowiec w polskiej przestrzeni",
+        "hook": "Incydent przy granicy wywołał alarm, ale wojsko tonuje emocje i ujawnia szczegóły.",
+        "summary": "Rosyjska maszyna na krótki moment wleciała w polską przestrzeń powietrzną w Rejonie Królewca. Systemy radarowe zidentyfikowały obiekt, a dowództwo natychmiast poderwało pary dyżurne bez konieczności użycia broni.",
+        "comment": "Naruszenia granicy stają się orężem w wojnie nerwów, sprawdzającym czujność naszych systemów radiolokacyjnych.",
+        "question": "Jak oceniacie reakcję polskich służb na incydenty graniczne z udziałem rosyjskich maszyn?",
+        "image_query": "military helicopter patrol border",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONzFMM1JxRlhfdnNxNHBJa004cWhPQVZ6WkFXaENrWGdCWGhtdUlId3B1X1k2UWhzemljSW03T25CMEM4YWVIaGQwRnVhNE1tYUd3eTlqMkt6QzAta2tOaWwyZ1ozbzBiZloyMmV1VktmUXJydUxCT0tWb0Nyc1BNdVQwRWMwcDZFR2lPVmdGWG5MOS1ZendxdldFbmJIZHZTMko1eEo4eUVqYjdS?oc=5",
+        "image_url": "https://images.pexels.com/photos/16600256/pexels-photo-16600256.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/16600256/pexels-photo-16600256.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🕊️ Przełomowe rozmowy USA z Iranem",
+        "hook": "Mimo ostrzeżeń o groźbie konfrontacji, dyplomaci obu mocarstw usiedli przy jednym stole.",
+        "summary": "Przedstawiciele Waszyngtonu i Teheranu odbyli pierwsze bezpośrednie rokowania od czerwca, by powstrzymać groźbę wybuchu pełnoskalowego konfliktu na Bliskim Wschodzie. Rozmowy skupiły się na programie nuklearnym oraz wycofaniu sankcji gospodarczych.",
+        "comment": "Nawet najostrzejsza retoryka ustępuje miejsca kalkulacji, gdy stawką staje się globalny kryzys naftowy.",
+        "question": "Czy dyplomacja ma jeszcze szansę powstrzymać otwartą wojnę między USA a Iranem?",
+        "image_query": "diplomacy meeting summit room",
+        "link": "https://www.bbc.co.uk/news/articles/ck62m1631d7po",
+        "image_url": "https://images.pexels.com/photos/6949994/pexels-photo-6949994.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/94af/live/1e4085d0-b714-11f1-8d21-19ad84e0e822.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇨🇳 Twarde ultimatum Pekinu przed szczytem",
+        "hook": "Zamiast uśmiechów i uścisków dłoni, chińscy dyplomaci stawiają na stole twarde granice ustępstw.",
+        "summary": "Chiński ambasador publicznie zakreślił nieprzekraczalne ramy polityczne dotyczące Tajwanu i ceł przed nadchodzącym spotkaniem przywódców USA i Chin. Pekin daje do zrozumienia, że nie ugnie się pod presją handlową Białego Domu.",
+        "comment": "Pojedynek dwóch największych gospodarek świata wchodzi w fazę, w której błąd w sztuce grozi załamaniem łańcuchów dostaw.",
+        "question": "Czy ustępstwa gospodarcze są w stanie powstrzymać konflikt militarny o Tajwan?",
+        "image_query": "china us flag diplomacy",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQk5TeHZXWjhCWG5rQkhLd2tMQW1oeDZUVVJENjgwdjV2WkpQNWRaVE5YcERIQXpfUlFVbHlNRmpqdmhJRG1VOHY4SnFrMFpsREVpNWlDdDRtam01MS13THBFRm55NmRCUG5YLVZDaHFKSmltRDVMTFFnMEFuZ3pxWFAxajBiSnJQMkwtZV9WWlBkRWVtQjBfMTZMTExmcFA5eHI1cg?oc=5",
+        "image_url": "https://images.pexels.com/photos/4386345/pexels-photo-4386345.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/4386345/pexels-photo-4386345.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Skok cen ropy uderza w giełdy",
+        "hook": "Rynki finansowe znowu drżą przed inflacją, gdy ceny surowców osiągają krytyczne poziomy.",
+        "summary": "Gwałtowny wzrost cen ropy doprowadził do przeceny na giełdach i wyprzedaży obligacji skarbowych. Inwestorzy obawiają się, że banki centralne ponownie podniosą stopy procentowe, utrudniając spłatę kredytów.",
+        "comment": "Droga ropa natychmiast przekłada się na droższy pieniądz i wyższe rachunki w portfelach konsumentów.",
+        "question": "Czy obawiasz się, że stopy procentowe i raty kredytów znowu pójdą w górę?",
+        "image_query": "oil refinery stock market drop",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-22/stock-market-today-dow-s-p-live-updates",
+        "image_url": "https://images.pexels.com/photos/15893881/pexels-photo-15893881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/15893881/pexels-photo-15893881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🇵🇱 Dyplomatyczny zwrot na wschodzie",
+        "hook": "Po miesiącach chłodnej wojny Warszawa sygnalizuje gotowość do pierwszego dyplomatycznego ruchu.",
+        "summary": "Ministerstwo Spraw Zagranicznych zapowiedziało gotowość do podjęcia rozmów z Mińskiem w celu odblokowania kanałów komunikacji strategicznej. Warunkiem pozostaje jednak wstrzymanie hybrydowej presji migracyjnej na polskiej granicy.",
+        "comment": "Próba otwarcia drzwi dyplomacji to gra o wysokie stawki, w której liczą się twarde gwarancje bezpieczeństwa.",
+        "question": "Czy Polska powinna rozmawiać z reżimem Łukaszenki, by zmniejszyć napięcie na granicy?",
+        "image_query": "border crossing fence patrol",
+        "link": "https://defence24.pl/polityka-obronna/polska-odmraza-relacje-z-bialorusia-sikorski-jestesmy-gotowi-zrobic-pierwszy-krok",
+        "image_url": "https://images.pexels.com/photos/38879828/pexels-photo-38879828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/23/1024x576px/xL06sAbY1Np7YHHvrDEpT22eBsi58h9fYXWj58x4.8nl3.png"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🇾🇪 Rozpad Jemenu zmieni układ sił",
+        "hook": "Podczas gdy świat patrzy na Morze Czerwone, rebelianci wcielają w życie plan podziału kraju.",
+        "summary": "Ruch Huti dąży do formalnego rozbicia Jemenu, aby utrwalić swoją kontrolę nad kluczowymi portami i szlakami morskimi. Taki scenariusz daje proirańskim bojownikom stałą bazę do paraliżowania handlu płynącego przez kanał Sueski.",
+        "comment": "Geograficzny podział Jemenu przypieczętuje stałe zagrożenie dla tankowców i kontenerowców na kluczowym szlaku handlowym.",
+        "question": "Jak Zachód powinien odpowiedzieć na trwałą kontrolę Huti nad szlakami morskimi?",
+        "image_query": "cargo ship red sea navy",
+        "link": "https://defence24.pl/geopolityka/podzial-na-dwa-panstwa-strategiczny-plan-huti",
+        "image_url": "https://images.pexels.com/photos/13102532/pexels-photo-13102532.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/23/1440x810px/YJxn2vuz0Bzc9uUaWosOfsp5lg1PpQBG4ZdrZIVv.sus6.png"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🔋 Pekin trzyma Zachód w szachu",
+        "hook": "Amerykanie zrezygnowali z wydobycia kluczowych minerałów, oddając monopolistyczną władzę Chinom.",
+        "summary": "Stany Zjednoczone przez dekady ignorowały własne złoża metali ziem rzadkich, pozwalając Chinom opanować niemal cały rynek przetwórstwa. Dziś bez chińskich dostaw przerwana zostanie produkcja rakiet, silników myśliwców F-35 i baterii.",
+        "comment": "Uzależnienie obronności od surowców głównego rywala to największa luka strategiczna współczesnego Zachodu.",
+        "question": "Czy Zachód zdąży uniezależnić się od chińskich minerałów przed ewentualnym konfliktem?",
+        "image_query": "rare earth mine industrial",
+        "link": "https://arstechnica.com/reviews/2026/09/how-the-us-handed-china-control-of-the-rare-earth-supply-chain/",
+        "image_url": "https://images.pexels.com/photos/6542371/pexels-photo-6542371.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/mpmaterials-1152x648-1790170607.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "⚔️ Groźba nowej wojny w Afryce",
+        "hook": "Kruchy pokój w Rogu Afryki właśnie legł w gruzach po wzajemnych oskarżeniach o atak.",
+        "summary": "Rząd Etiopii oraz rebelianci z Tigray oskarżają się nawzajem o wznowienie walk na dużą skalę i ściąganie ciężkiego sprzętu. Nowa eskalacja grozi katastrofą humanitarną i destabilacją kluczowego regionu handlowego.",
+        "comment": "Wznowienie walk w Etiopii to kolejny punkt zapalny, który rozciągnie i tak obciążone zasoby pomocy międzynarodowej.",
+        "question": "Czy narastające konflikty lokalne mogą doprowadzić do kolejnego wielkiego kryzysu migracyjnego?",
+        "image_query": "soldiers desert military trucks",
+        "link": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo",
+        "image_url": "https://images.pexels.com/photos/6256808/pexels-photo-6256808.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/dd1c/live/f9fdfbe0-b74e-11f1-a430-4d16ee157c41.png"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🚨 Akcja służb na Węgrzech",
+        "hook": "Śledztwo w sprawie polskiego polityka przenosi się na poziom międzynarodowych działań służb.",
+        "summary": "Na Węgrzech przeprowadzono skoordynowane czynności służb w związku ze sprawą posła Marcina Romanowskiego. Działania dotyczą zabezpieczenia dowodów oraz weryfikacji majątku i powiązań finansowych poza granicami kraju.",
+        "comment": "Sprawa pokazuje, że międzynarodowa współpraca śledcza przełamuje dotychczasowe granice jurysdykcji politycznych.",
+        "question": "Czy służby powinny bez przeszkód działać na terenie innych państw UE w sprawach polityków?",
+        "image_query": "police officer investigation crime scene",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdmxxQVVUbUR4R2JTazJIUEFiYTJZbzJleWRCdnkxV09LUGJqRUxLQXJVbG1ZMVVtN3RpeFVPa3NRYXdubHNTUkhIbGgtT0hSZmlkdkNrOXFIUm92LVdBM2JOaF9TeTYxcmpjRUh2b3AwMVJkZGNhSy1fcFZuSlFIQnBJTl9OZmNrV216T1B2Q0dQNjNlSTBjemV6UQ?oc=5",
+        "image_url": "https://images.pexels.com/photos/10480637/pexels-photo-10480637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/10480637/pexels-photo-10480637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "POLSKA",
+        "title": "⚖️ Zatrzymania CBA w otoczeniu władzy",
+        "hook": "Agentury antykorupcyjne wkraczają do gabinetów na szczytach władzy samorządowej i państwowej.",
+        "summary": "CBA zatrzymało dwie osoby w ramach śledztwa dotyczącego nieprawidłowości finansowych i powoływania się na wpływy. Wśród ujętych znalazła się doradczyni szefa Instytutu Pamięci Narodowej Karola Nawrockiego.",
+        "comment": "Niezależnie od barw politycznych, uderzenie agentów w bezpośrednie otoczenie decydentów wstrząsa zaufaniem do instytucji.",
+        "question": "Czy zatrzymania CBA przed wyborami to skuteczna walka z korupcją, czy gra polityczna?",
+        "image_query": "cba officers handcuffs arrest",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcVFZY283Y1BTS1o3b0xZZk1rUE9aUjJDUV83MzVDN3ZITS1lLVIzRXJmMDhuQnFXOTNWc21VbjY0VzBwVGxzc0ljcEQwZGowSTFWcHF2UHdIMWt6cURFYnJ2QWhDcW5YY0p1eExCQnpDbnlCU1BRV243YUV1SzFWVjVjM0p3eGpDUXFWTlh2d2IwQjlQZURfTzR2TkFIUkhOMGpmM3Fnd2hLMXdrSWo3UVRKSnY?oc=5",
+        "image_url": "https://images.pexels.com/photos/6065259/pexels-photo-6065259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/6065259/pexels-photo-6065259.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🛡️ Potężna demonstracja siły NATO",
+        "hook": "Sojusz pokazał pełne spektrum powietrznej dominacji tuż przy polskiej granicy.",
+        "summary": "Podczas Dni NATO w Ostrawie na jednym lotnisku zgromadzono najnowocześniejsze myśliwce, samoloty stealth oraz ciężkie bombowce z państw Sojuszu. Zaprezentowano pełną gotowość do zintegrowanej obrony flanki wschodniej przed agresją.",
+        "comment": "Pokaz siły na ziemi i w powietrzu ma jednoznacznie odstraszać ewentualnego agresora od jakichkolwiek kalkulacji.",
+        "question": "Czy publiczne pokazy uzbrojenia NATO rzeczywiście skutecznie odstraszają Rosję?",
+        "image_query": "f35 fighter jet runway nato",
+        "link": "https://defence24.pl/geopolityka/nato-silne-w-ostrawie",
+        "image_url": "https://images.pexels.com/photos/31617630/pexels-photo-31617630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/23/1920x1080px/bUsfIEXMihkVZl8oMf9c04NxE7GV6lmOI97JMAPZ.cpul.png"
+      },
+      {
+        "category": "TECHNOLOGIE",
+        "title": "🛰️ Kosmiczny tłok grozi blackoutem",
+        "hook": "Ponad 17 tysięcy satelitów pędzących wokół Ziemi tworzy pole minowe dla infrastruktury.",
+        "summary": "Najnowszy raport europejskich agencji ostrzega przed drastycznym wzrostem ryzyka katastrofalnych kolizji na niskiej orbicie. Zniszczenie kluczowych satelitów wojskowych i komunikacyjnych może zablokować łączność oraz nawigację GPS.",
+        "comment": "Zatłoczenie orbity to realne zagrożenie dla cywilnego życia i militarnego dowodzenia na Ziemi.",
+        "question": "Czy świat powinien wprowadzić twarde limity liczby satelitów wysyłanych na orbitę?",
+        "image_query": "satellites orbit earth space debris",
+        "link": "https://arstechnica.com/space/2026/09/there-are-now-17000-satellites-in-orbit-and-growing-should-we-be-concerned/",
+        "image_url": "https://images.pexels.com/photos/586056/pexels-photo-586056.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/08/debris-1152x648.jpg"
+      },
+      {
+        "category": "AI",
+        "title": "🤖 Cenowa wojna gigantów AI",
+        "hook": "OpenAI i Anthropic obniżają koszty sztucznej inteligencji, by zdominować biznesowy rynek.",
+        "summary": "Liderzy branży wypuszczają nowe modele AI, które oferują wyższą wydajność przy ułamku dotychczasowych kosztów obliczeniowych. Tani dostęp do potężnych algorytmów przyspiesza automatyzację miejsc pracy i wypycha mniejszych konkurentów.",
+        "comment": "Wojna cenowa na rynku AI przypieczętuje eliminację mniejszych graczy i uzależni korporacje od dwóch monopolistów.",
+        "question": "Czy drastyczny spadek cen modeli AI przyspieszy falę zwolnień w sektorze technologicznym?",
+        "image_query": "artificial intelligence server rack data",
+        "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+        "image_url": "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-1152x648-1790110487.jpg"
+      }
+    ]
   }
 }
