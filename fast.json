@@ -1,43 +1,43 @@
 {
-  "date": "22 września 2026",
-  "time": "21:39",
-  "timestamp": "2026-09-22_21:39",
+  "date": "23 września 2026",
+  "time": "12:44",
+  "timestamp": "2026-09-23_12:44",
   "items": [
     {
-      "category": "GEOPOLITYKA / WOJNA MORSKA",
-      "title": "🛸 Strzał z bezzałogowego okrętu podwodnego!",
-      "hook": "Marynarki USA i Wielkiej Brytanii wykonały historyczny krok w wojnie podwodnej, po raz pierwszy wystrzeliwując ciężką torpedę z autonomicznego okrętu.",
-      "summary": "Pomyślny test z użyciem torpedy Mk 48 potwierdza, że bezzałogowce podwodne przestają pełnić jedynie funkcje zwiadowcze i zyskują pełną zdolność bojową. Wprowadzenie takich jednostek pozwoli na skokowe zwiększenie obecności w rejonach wysokiego ryzyka bez narażania życia załóg.",
-      "comment": "Autonomizacja uzbrojenia podwodnego nieodwracalnie obniża próg użycia siły w konfliktach morskich na Pacyfiku i Atlantyku.",
-      "question": "Czy Waszym zdaniem autonomiczne okręty podwodne z czasem całkowicie zastąpią tradycyjne jednostki załogowe?",
-      "image_query": "unmanned submarine torpedo",
-      "link": "https://www.twz.com/sea/torpedo-fired-from-uncrewed-submarine-for-the-first-time-by-u-s-u-k",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/excalibur-uuv-mk-48-torpedo-launch-test-us-uk.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/excalibur-uuv-mk-48-torpedo-launch-test-us-uk.jpg?w=1200"
-    },
-    {
-      "category": "GEOPOLITYKA / AZJA",
-      "title": "🚀 Pjongjang testuje nową broń naddźwiękową",
-      "hook": "Korea Północna przeprowadziła kolejny udany udar testowy z użyciem manewrującego pocisku hipersonicznego Hwasong-11Ma.",
-      "summary": "Nowy glider hipersoniczny został zaprojektowany tak, aby omijać amerykańskie i południowokoreańskie systemy obrony przeciwrakietowej THAAD i Aegis poprzez manewrowanie w gęstych warstwach atmosfery. Pjongjang konsekwentnie rozbudowuje arsenał zdolny do precyzyjnego rażenia strategicznych baz USA w regionie.",
-      "comment": "Rozwój technologii hipersonicznych przez reżim Kima drastycznie skraca czas reakcji obrony i podważa dotychczasową architekturę odstraszania w Azji.",
-      "question": "Czy Sojusz USA, Japonii i Korei Płd. jest w stanie stworzyć skuteczną tarczę przeciwko pociskom hipersonicznym?",
-      "image_query": "hypersonic missile launch",
-      "link": "https://www.twz.com/land/north-korea-tests-new-hwasong-11ma-hypersonic-missile",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/Ha-11-Ma-test_9-to-edit.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/Ha-11-Ma-test_9-to-edit.jpg?w=1200"
+      "category": "OBRONNOŚĆ / POLSKA",
+      "title": "🇵🇱 Polskie komponenty do czołgów K2PL",
+      "hook": "Polski przemysł zbrojeniowy wkracza w kluczowy etap polonizacji południowokoreańskich czołgów K2.",
+      "summary": "Kluczowe podzespoły, w tym systemy kierowania ogniem oraz opancerzenie, będą produkowane bezpośrednio w krajowych zakładach. To decydujący krok do uzyskania niezależności serwisowej i stworzenia głęboko zmodyfikowanej wersji K2PL dostosowanej do wymogów Wojska Polskiego.",
+      "comment": "Lokalna produkcja komponentów to jedyna gwarancja utrzymania ciągłości bojowej floty pancernej w warunkach długotrwałego konfliktu.",
+      "question": "Czy polski przemysł zdoła sprawnie przejąć technologię i utrzymać tempo produkcji K2PL bez opóźnień?",
+      "image_query": "main battle tank",
+      "link": "https://defence24.pl/przemysl/kluczowe-podzespoly-do-czolgow-k2pl-powstana-w-polsce",
+      "image_url": "https://cdn.defence24.pl/2025/01/31/1920x1080px/DmTb32gI6FLlB2SIxNJ1gUe1TKtCZOstbn5DneLk.ai5n.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2025/01/31/1920x1080px/DmTb32gI6FLlB2SIxNJ1gUe1TKtCZOstbn5DneLk.ai5n.jpg"
     },
     {
       "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🚨 Obcy dron nad amerykańską bazą w Polsce",
-      "hook": "Niezidentyfikowany bezzałogowiec pojawił się bezpośrednio nad terenem użytkowanym przez wojska USA na terytorium Polski.",
-      "summary": "Incydent dobitnie pokazuje rosnącą aktywność rozpoznawczą wokół kluczowej infrastruktury wojskowej NATO na wschodniej flance. Wobec zagrożeń hybrydowych konieczne jest natychmiastowe załatanie luk w systemach detekcji i zwalczania mikro-dronów chroniących Sojuszników.",
-      "comment": "Brak twardej neutralizacji obiektów szpiegowskich przy bazach NATO zachęca przeciwnika do kolejnych, bardziej zuchwałych prowokacji.",
-      "question": "Czy polskie służby powinny bezwarunkowo zestrzeliwać każdego niezidentyfikowanego drona w pobliżu obiektów wojskowych?",
-      "image_query": "military drone sky",
-      "link": "https://defence24.pl/polityka-obronna/dron-nad-amerykanska-baza-w-polsce",
-      "image_url": "https://cdn.defence24.pl/2026/09/09/1920x1080px/pXke6SRnpfLcvjwx3WWQ98MvpVgHq6oLwfifGxPl.e7vq.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/09/1920x1080px/pXke6SRnpfLcvjwx3WWQ98MvpVgHq6oLwfifGxPl.e7vq.jpg"
+      "title": "🛡️ Prawda o polskich bateriach Patriot",
+      "hook": "Ochrona polskiego nieba wchodzi w kluczową fazę budowy wielowarstwowej tarczy przeciwrakietowej.",
+      "summary": "Szef MON ujawnia szczegóły dotyczące aktualnego stanu posiadania i harmonogramu wdrażania baterii Patriot w ramach programu Wisła. Nowe wyrzutnie i radary LTAMDS mają drastycznie podnieść zdolności wykrywania oraz niszczenia celów balistycznych.",
+      "comment": "Ograniczona liczba baterii na tym etapie wymusza ścisłą integrację Patriotów z systemami krótkiego zasięgu Narew.",
+      "question": "Czy priorytetem Polski powinny być kolejne kosztowne baterie Patriot, czy szybsza rozbudowa tańszej tarczy Narew?",
+      "image_query": "patriot missile system",
+      "link": "https://defence24.pl/polityka-obronna/ile-patriotow-ma-polska-szef-mon-o-obronie-przeciwlotniczej",
+      "image_url": "https://cdn.defence24.pl/2026/08/05/1024x576px/YrXntMy1fn3mGAcjsSYjsc6xhhTUpeAUgk66w1r7.ob4u.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/08/05/1024x576px/YrXntMy1fn3mGAcjsSYjsc6xhhTUpeAUgk66w1r7.ob4u.jpg"
+    },
+    {
+      "category": "OBRONNOŚĆ / GEOPOLITYKA",
+      "title": "🤖 Bezzałogowa rodzina pojazdów Taero",
+      "hook": "Polska spółka STEKOP rozwija rewolucyjną serię autonomicznych platform lądowych dla wojska.",
+      "summary": "Rodzina robotów Taero została zaprojektowana do zadań rozpoznawczych, ewakuacji medycznej MEDEVAC oraz transportu amunicji w najtrudniejszym terenie. Maszyny mają zastąpić żołnierzy w najbardziej niebezpiecznych strefach ostrzału.",
+      "comment": "Wdrożenie autonomicznych platform lądowych na szeroką skalę to jedyny sposób na drastyczne zmniejszenie strat ludzkich na pierwszej linii frontu.",
+      "question": "Widzicie zastosowanie dla robotów Taero bezpośrednio w szturmach, czy głównie w logistyce i ewakuacji?",
+      "image_query": "unmanned ground vehicle",
+      "link": "https://defence24.pl/technologie/nie-tylko-bluszcz-stekop-rozwija-cala-rodzine-pojazdow-taero",
+      "image_url": "https://cdn.defence24.pl/2026/09/23/1920x1080px/LGszcShXZpITPs6QezHlcg1oyeDjbYunJPGiuqz2.etrm.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/23/1920x1080px/LGszcShXZpITPs6QezHlcg1oyeDjbYunJPGiuqz2.etrm.png"
     }
   ]
 }
