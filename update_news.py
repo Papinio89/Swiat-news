@@ -19,17 +19,29 @@ PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvg
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
 RSS_URLS = [
+    # --- GLOBALNE / GEOPOLITYKA ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=world+news+geopolitics+military&hl=en-US&gl=US&ceid=US:en",
-    "https://defence24.pl/rss",
+    "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
+    
+    # --- BIZNES / GOSPODARKA / RYNKI GLOBALNE ---
     "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
     "https://feeds.bloomberg.com/markets/news.rss",
     "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
+    
+    # --- POLSKA: BIZNES, GOSPODARKA I OGÓLNE ---
+    "https://www.money.pl/rss/",
+    "https://businessinsider.com.pl/.rss",
+    "https://www.bankier.pl/rss/wiadomosci.xml",
+    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
+
+    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO BRANŻOWE) ---
+    "https://defence24.pl/rss",
+    
+    # --- TECHNOLOGIA / AI ---
     "https://techcrunch.com/feed/",
     "https://www.theverge.com/rss/index.xml",
-    "https://arstechnica.com/feed/",
-    "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl"
+    "https://arstechnica.com/feed/"
 ]
 
 POLISH_MONTHS = {
@@ -90,7 +102,7 @@ def validate_items(items: list) -> list:
         comment = str(item.get("comment", "")).strip()
         question = str(item.get("question", "")).strip()
         category = str(item.get("category", "AKTUALNOŚCI")).strip().upper()
-        image_query = str(item.get("image_query", "world news")).strip()
+        image_query = str(item.get("image_query", "business news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
         if len(title) < 10 or len(summary) < 25:
@@ -179,7 +191,7 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:6]:
+        for entry in feed.entries[:5]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
@@ -245,41 +257,39 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT WIRALOWY ---
+# --- PROMPT AI Z NOWYMI PROPORCJAMI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś redaktorem naczelnym topowego formatu informacyjnego w social mediach (Instagram/Threads). 
-Twoje posty zdobywają dziesiątki tysięcy odsłon, ponieważ piszesz obrazowo, unikasz nudnego żargonu i natychmiast pokazujesz czytelnikowi realną stawkę wydarzenia.
+prompt = f"""Jesteś redaktorem naczelnym topowego magazynu informacyjno-biznesowego w social mediach (Instagram/Threads). 
+Twoje posty zdobywają ogromne zasięgi, ponieważ piszesz merytorycznie, zwięźle, bez nudnego żargonu, skupiając się na realnych skutkach wydarzeń.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
-ZASADY WIRALOWEGO COPYWRITINGU:
-1. ZAKAZ KORPO-MOWY I OGÓLNIKÓW:
-   - Zamiast „kwestie instytucjonalne”, „dynamika makroekonomiczna”, „weryfikacja struktur” -> pisz o portfelach, cenach paliw, blackoutach, rakietach, granicach, czołgach i paraliżu lotnisk.
-   - Każdy wpis MUSI odnosić się dokładnie do faktów z danego nagłówka. Zakaz powtarzania tych samych formułek.
-2. ZASADA BEZPOŚREDNIEJ STAWKI:
-   - Pokaż, co to oznacza: czy wzrosną ceny, czy grozi nam eskalacja, czy Polska zyskuje przewagę, czy to tylko polityczny teatr.
-3. AUTORYTET I KONTRAST:
-   - Wskazuj konkret: „Piloci ostrzegają”, „Pentagon naciska”, „Główny ekonomista banku bije na alarm”.
-   - Stosuj obalanie mitów: „Wszyscy patrzyli na X, podczas gdy realne zagrożenie uderzyło w Y”.
-4. INDYWIDUALNE PYTANIE:
-   - Każdy news musi mieć inne, precyzyjne pytanie do dyskusji pod dany temat (do komentarzy).
+ŚCISŁY PODZIAŁ I PROPORCJE TEMATYCZNE (TWARDE REGUŁY):
+1. MINIMUM 60% CAŁOŚCI MUSZĄ STANOWIĆ:
+   - GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, INWESTYCJE, BUDŻET, WALUTY ORAZ POLSKA.
+2. OBRONNOŚĆ / WOJSKO / MILITARIA:
+   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutnie kluczowe wydarzenia geopolityczne o skali globalnej. 
+   - Bezwzględny zakaz dominacji tematów militarnych, pojedynczych zakupów amunicji czy lokalnych targów zbrojeniowych.
+3. TECHNOLOGIE / AI:
+   - DOKŁADNIE 2 POZYCJE (największe inwestycje, regulacje, energetyka pod centra danych lub przełomy rynkowe).
+4. ZERO plotek, celebrytów i lifestyle'u.
 
-PROPORCJE (twarde reguły):
-- Minimum 80% = Bezpieczeństwo, obronność, Polska, surowce, rynki finansowe, twarda geopolityka
-- Maksymalnie 2 pozycje TECHNOLOGIE / AI (tylko przełomy militarne, wielkie pieniądze lub realne zagrożenia)
-- ZERO plotek, celebrytów i nudnych komunikatów bez wpływu na rzeczywistość
+ZASADY WIRALOWEGO COPYWRITINGU:
+- Zamiast pustych słów pisz o konkretach: cenach paliw, stopach procentowych, spółkach, surowcach, podatkach, umowach handlowych i walutach.
+- Pokaż realną stawkę: co to oznacza dla konsumenta, inwestora lub gospodarki.
+- Każdy news musi mieć zróżnicowane, unikalne i trafne pytanie do dyskusji pod dany temat.
 
 STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
 [
   {{
-    "category": "GEOPOLITYKA / OBRONNOŚĆ / RYNKI I GOSPODARKA / POLSKA / TECHNOLOGIE / AI",
+    "category": "RYNKI I GOSPODARKA / POLSKA / BIZNES / GEOPOLITYKA / OBRONNOŚĆ / TECHNOLOGIE / AI",
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
-    "hook": "1 zdanie uderzające w sedno – kontrast lub obalenie mitu.",
-    "summary": "2 zwięzłe zdania faktów operujące obrazowymi rzeczownikami.",
-    "comment": "1 mocne, chłodne zdanie wniosku strategicznego (pointa).",
+    "hook": "1 zdanie uderzające w sedno – kontrast lub kluczowy fakt.",
+    "summary": "2 zwięzłe zdania faktów operujące twardymi danymi i konkretami.",
+    "comment": "1 mocne, chłodne zdanie wniosku strategicznego lub biznesowego.",
     "question": "1 unikalne, prowokujące do dyskusji pytanie pod dany temat.",
-    "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels (np. 'tank field maneuver', 'oil refinery fire night')",
+    "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels (np. 'stock market board', 'cargo ship container', 'wind turbine energy')",
     "link": "dokładnie URL artykułu"
   }}
 ]
@@ -300,6 +310,12 @@ try:
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
             temperature=0.35,
+            safety_settings=[
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
+            ]
         ),
     )
     text_res = response.text.strip()
@@ -324,20 +340,20 @@ except Exception as e:
     print(f"Błąd AI: {e}")
     items = []
 
-# Fallback awaryjny – bez powtarzania sztampowych szablonów
+# Fallback awaryjny
 if len(items) < MIN_ITEMS:
     existing_links = {i.get("link") for i in items}
     for art in filtered_raw_articles:
         if art["link"] not in existing_links and art["link"] != "#":
             clean_t = art.get("title", "Wydarzenie na arenie międzynarodowej")
             items.append({
-                "category": "AKTUALNOŚCI",
-                "title": f"📌 {clean_t[:55]}",
+                "category": "GOSPODARKA",
+                "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
-                "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji w tym obszarze. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Decyzje podejmowane w tym segmencie bezpośrednio przełożą się na równowagę sił w kolejnych miesiącach.",
+                "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
+                "comment": "Decyzje podejmowane w tym segmencie bezpośrednio przełożą się na równowagę gospodarczą w kolejnych miesiącach.",
                 "question": "Jak oceniasz potencjalne skutki tych doniesień?",
-                "image_query": "world news global politics",
+                "image_query": "financial market economy",
                 "link": art["link"]
             })
             existing_links.add(art["link"])
@@ -346,7 +362,7 @@ if len(items) < MIN_ITEMS:
 
 if items:
     cats = Counter([item["category"] for item in items])
-    print("Rozkład kategorii:")
+    print("Rozkład kategorii po aktualizacji:")
     for cat, count in cats.most_common():
         print(f"  {cat}: {count}")
 
@@ -356,7 +372,7 @@ print(f"Wygenerowano {len(items)} pozycji – OK")
 print("Pobieranie zdjęć: Pexels + źródła artykułów...")
 source_ok = 0
 for item in items:
-    q = item.get("image_query", "world news")
+    q = item.get("image_query", "business economy news")
     item["image_url"] = fetch_pexels_image_url(q)
 
     article_img = fetch_article_image(item.get("link", ""))
@@ -396,4 +412,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów.")
