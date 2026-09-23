@@ -1,43 +1,43 @@
 {
   "date": "23 września 2026",
-  "time": "12:44",
-  "timestamp": "2026-09-23_12:44",
+  "time": "14:27",
+  "timestamp": "2026-09-23_14:27",
   "items": [
     {
       "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🇵🇱 Polskie komponenty do czołgów K2PL",
-      "hook": "Polski przemysł zbrojeniowy wkracza w kluczowy etap polonizacji południowokoreańskich czołgów K2.",
-      "summary": "Kluczowe podzespoły, w tym systemy kierowania ogniem oraz opancerzenie, będą produkowane bezpośrednio w krajowych zakładach. To decydujący krok do uzyskania niezależności serwisowej i stworzenia głęboko zmodyfikowanej wersji K2PL dostosowanej do wymogów Wojska Polskiego.",
-      "comment": "Lokalna produkcja komponentów to jedyna gwarancja utrzymania ciągłości bojowej floty pancernej w warunkach długotrwałego konfliktu.",
-      "question": "Czy polski przemysł zdoła sprawnie przejąć technologię i utrzymać tempo produkcji K2PL bez opóźnień?",
-      "image_query": "main battle tank",
-      "link": "https://defence24.pl/przemysl/kluczowe-podzespoly-do-czolgow-k2pl-powstana-w-polsce",
-      "image_url": "https://cdn.defence24.pl/2025/01/31/1920x1080px/DmTb32gI6FLlB2SIxNJ1gUe1TKtCZOstbn5DneLk.ai5n.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2025/01/31/1920x1080px/DmTb32gI6FLlB2SIxNJ1gUe1TKtCZOstbn5DneLk.ai5n.jpg"
+      "title": "🚨 Rosyjski śmigłowiec nad Polską",
+      "hook": "Prowokacja czy błąd nawigacyjny na wschodniej granicy NATO?",
+      "summary": "Rosyjska maszyna na krótko przekroczyła polską przestrzeń powietrzną, wywołując natychmiastową reakcję systemów radiolokacyjnych. Polskie procedury Sojuszu i naziemne systemy obserwacji zostały postawione w stan podwyższonej gotowości.",
+      "comment": "Prowokowanie incydentów w powietrzu to klasyczne testowanie czasu reakcji i zimnej krwi obrony powietrznej NATO.",
+      "question": "Czy w przypadku takich naruszeń Polska powinna od razu stosować procedurę zestrzeliwania, czy zachować wstrzemięźliwość?",
+      "image_query": "military helicopter flight",
+      "link": "https://defence24.pl/polityka-obronna/rosyjski-smiglowiec-naruszyl-polska-przestrzen-powietrzna",
+      "image_url": "https://cdn.defence24.pl/2026/06/18/1920x1080px/GWfDw8ADhgFazgm8WRRjOieKiFNsdyjVtRdd0X4E.nqxj.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/06/18/1920x1080px/GWfDw8ADhgFazgm8WRRjOieKiFNsdyjVtRdd0X4E.nqxj.jpg"
     },
     {
-      "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🛡️ Prawda o polskich bateriach Patriot",
-      "hook": "Ochrona polskiego nieba wchodzi w kluczową fazę budowy wielowarstwowej tarczy przeciwrakietowej.",
-      "summary": "Szef MON ujawnia szczegóły dotyczące aktualnego stanu posiadania i harmonogramu wdrażania baterii Patriot w ramach programu Wisła. Nowe wyrzutnie i radary LTAMDS mają drastycznie podnieść zdolności wykrywania oraz niszczenia celów balistycznych.",
-      "comment": "Ograniczona liczba baterii na tym etapie wymusza ścisłą integrację Patriotów z systemami krótkiego zasięgu Narew.",
-      "question": "Czy priorytetem Polski powinny być kolejne kosztowne baterie Patriot, czy szybsza rozbudowa tańszej tarczy Narew?",
-      "image_query": "patriot missile system",
-      "link": "https://defence24.pl/polityka-obronna/ile-patriotow-ma-polska-szef-mon-o-obronie-przeciwlotniczej",
-      "image_url": "https://cdn.defence24.pl/2026/08/05/1024x576px/YrXntMy1fn3mGAcjsSYjsc6xhhTUpeAUgk66w1r7.ob4u.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/08/05/1024x576px/YrXntMy1fn3mGAcjsSYjsc6xhhTUpeAUgk66w1r7.ob4u.jpg"
+      "category": "OBRONNOŚĆ / PRZEMYŚŁ",
+      "title": "🤖 Autonomiczne roje zmienią front",
+      "hook": "Polska armia szykuje się na bezzałogową rewolucję łączącą ląd, powietrze i morze.",
+      "summary": "Targi MSPO 2026 stawiają na wielodomenowe systemy autonomiczne zdolne do współdziałania bez udziału operatora. Maszyny mają automatycznie wymieniać dane taktyczne i koordynować uderzenia w czasie rzeczywistym.",
+      "comment": "Automatyzacja pola walki to jedyna droga na zrównoważenie przewagi liczebnej potencjalnego agresora.",
+      "question": "Czy Waszym zdaniem sztuczna inteligencja powinna sama podejmować decyzję o otwarciu ognia na froncie?",
+      "image_query": "military drone technology",
+      "link": "https://defence24.pl/sily-zbrojne/mspo-2026-autonomiczne-wielodomenowe-systemy-bezzalogowe",
+      "image_url": "https://cdn.defence24.pl/2026/09/22/1920x1080px/jOLz0ZBHfaJG0OM5OQHDasKJKjjJHRL7Vw38nOhO.jh1k.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/22/1920x1080px/jOLz0ZBHfaJG0OM5OQHDasKJKjjJHRL7Vw38nOhO.jh1k.jpg"
     },
     {
-      "category": "OBRONNOŚĆ / GEOPOLITYKA",
-      "title": "🤖 Bezzałogowa rodzina pojazdów Taero",
-      "hook": "Polska spółka STEKOP rozwija rewolucyjną serię autonomicznych platform lądowych dla wojska.",
-      "summary": "Rodzina robotów Taero została zaprojektowana do zadań rozpoznawczych, ewakuacji medycznej MEDEVAC oraz transportu amunicji w najtrudniejszym terenie. Maszyny mają zastąpić żołnierzy w najbardziej niebezpiecznych strefach ostrzału.",
-      "comment": "Wdrożenie autonomicznych platform lądowych na szeroką skalę to jedyny sposób na drastyczne zmniejszenie strat ludzkich na pierwszej linii frontu.",
-      "question": "Widzicie zastosowanie dla robotów Taero bezpośrednio w szturmach, czy głównie w logistyce i ewakuacji?",
-      "image_query": "unmanned ground vehicle",
-      "link": "https://defence24.pl/technologie/nie-tylko-bluszcz-stekop-rozwija-cala-rodzine-pojazdow-taero",
-      "image_url": "https://cdn.defence24.pl/2026/09/23/1920x1080px/LGszcShXZpITPs6QezHlcg1oyeDjbYunJPGiuqz2.etrm.png",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/23/1920x1080px/LGszcShXZpITPs6QezHlcg1oyeDjbYunJPGiuqz2.etrm.png"
+      "category": "GEOPOLITYKA",
+      "title": "✈️ Rebelianci zajmują lotnisko",
+      "hook": "Siły z Tigray ponownie przejmują kontrolę nad kluczową infrastrukturą w Etiopii.",
+      "summary": "Lokalne oddziały zajęły główne lotnisko w północnej części kraju, odbierając je siłom policyjnym i rządowym. Odbicie portu lotniczego odcina władze w Addis Abebie od możliwości szybkiego przerzutu wojsk i zaopatrzenia drogą powietrzną.",
+      "comment": "Kontrola nad węzłami lotniczymi w afrykańskich konfliktach bezpośrednio decyduje o możliwości prowadzenia walk w izolowanych rejonach.",
+      "question": "Czy Róg Afryki stoi przed groźbą kolejnej pełnoskalowej wojny domowej i kryzysu migracyjnego?",
+      "image_query": "military airport runway",
+      "link": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/386d/live/58d271e0-b741-11f1-aa9c-3d062fa3aea7.png",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/386d/live/58d271e0-b741-11f1-aa9c-3d062fa3aea7.png"
     }
   ]
 }
