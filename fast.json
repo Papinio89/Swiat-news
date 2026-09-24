@@ -1,43 +1,43 @@
 {
-  "date": "23 września 2026",
-  "time": "14:27",
-  "timestamp": "2026-09-23_14:27",
+  "date": "24 września 2026",
+  "time": "06:19",
+  "timestamp": "2026-09-24_06:19",
   "items": [
     {
-      "category": "OBRONNOŚĆ / POLSKA",
-      "title": "🚨 Rosyjski śmigłowiec nad Polską",
-      "hook": "Prowokacja czy błąd nawigacyjny na wschodniej granicy NATO?",
-      "summary": "Rosyjska maszyna na krótko przekroczyła polską przestrzeń powietrzną, wywołując natychmiastową reakcję systemów radiolokacyjnych. Polskie procedury Sojuszu i naziemne systemy obserwacji zostały postawione w stan podwyższonej gotowości.",
-      "comment": "Prowokowanie incydentów w powietrzu to klasyczne testowanie czasu reakcji i zimnej krwi obrony powietrznej NATO.",
-      "question": "Czy w przypadku takich naruszeń Polska powinna od razu stosować procedurę zestrzeliwania, czy zachować wstrzemięźliwość?",
-      "image_query": "military helicopter flight",
-      "link": "https://defence24.pl/polityka-obronna/rosyjski-smiglowiec-naruszyl-polska-przestrzen-powietrzna",
-      "image_url": "https://cdn.defence24.pl/2026/06/18/1920x1080px/GWfDw8ADhgFazgm8WRRjOieKiFNsdyjVtRdd0X4E.nqxj.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/06/18/1920x1080px/GWfDw8ADhgFazgm8WRRjOieKiFNsdyjVtRdd0X4E.nqxj.jpg"
+      "category": "OBRONNOŚĆ",
+      "title": "🇹🇼 Tajwan przedstawia kołowy niszczyciel czołgów",
+      "hook": "Tajpej wprowadza lekki system kołowy 8x8 z armatą 105 mm, by błyskawicznie reagować na ewentualny desant Chin.",
+      "summary": "Nowy pojazd ma zapewnić wysoką mobilność na wyspie i skutecznie razić lekko opancerzone siły inwazyjne bez polegania na ciężkich czołgach. Konstrukcja pozwala na szybkie przerzucanie ognia w trudnym, zurbanizowanym terenie przybrzeżnym.",
+      "comment": "To wyraźny sygnał, że Tajwan stawia na asymetryczną, mobilną obronę zamiast statycznych pozycji.",
+      "question": "Czy kołowe niszczyciele czołgów to lepsze rozwiązanie na wyspiarski teren niż ciężkie Abramsy?",
+      "image_query": "armored vehicle firing",
+      "link": "https://www.twz.com/land/this-is-taiwans-new-105mm-8x8-mobile-gun-system",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/Taiwan-105mm-mobile-gun-system.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/Taiwan-105mm-mobile-gun-system.jpg?w=1200"
     },
     {
-      "category": "OBRONNOŚĆ / PRZEMYŚŁ",
-      "title": "🤖 Autonomiczne roje zmienią front",
-      "hook": "Polska armia szykuje się na bezzałogową rewolucję łączącą ląd, powietrze i morze.",
-      "summary": "Targi MSPO 2026 stawiają na wielodomenowe systemy autonomiczne zdolne do współdziałania bez udziału operatora. Maszyny mają automatycznie wymieniać dane taktyczne i koordynować uderzenia w czasie rzeczywistym.",
-      "comment": "Automatyzacja pola walki to jedyna droga na zrównoważenie przewagi liczebnej potencjalnego agresora.",
-      "question": "Czy Waszym zdaniem sztuczna inteligencja powinna sama podejmować decyzję o otwarciu ognia na froncie?",
-      "image_query": "military drone technology",
-      "link": "https://defence24.pl/sily-zbrojne/mspo-2026-autonomiczne-wielodomenowe-systemy-bezzalogowe",
-      "image_url": "https://cdn.defence24.pl/2026/09/22/1920x1080px/jOLz0ZBHfaJG0OM5OQHDasKJKjjJHRL7Vw38nOhO.jh1k.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/22/1920x1080px/jOLz0ZBHfaJG0OM5OQHDasKJKjjJHRL7Vw38nOhO.jh1k.jpg"
+      "category": "OBRONNOŚĆ",
+      "title": "🇺🇸 Koniec epoki legendarnych A-10 Warthog",
+      "hook": "Słynny 'Gatling na skrzydłach' definitywnie znika z bazy Nellis, ustępując miejsca maszynom nowej generacji.",
+      "summary": "Amerykańskie siły powietrzne oficjalnie zakończyły stacjonowanie samolotów szturmowych A-10 Thunderbolt II w kluczowym ośrodku testowym w Nevadzie. Decyzja ta przypieczętowuje wycofywanie konstrukcji dedykowanej do bezpośredniego wsparcia wojsk lądowych na rzecz wielozadaniowych platform stealth.",
+      "comment": "Nawet najbardziej ikoniczne wsparcie piechoty musi ustąpić miejsca w erze nowoczesnej obrony powietrznej i dronów.",
+      "question": "Czy wycofanie A-10 to błąd, czy konieczność na nowoczesnym, nasyconym rakietami froncie?",
+      "image_query": "military attack aircraft",
+      "link": "https://www.twz.com/air/the-a-10-era-is-over-at-nellis-afb",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/a-10-nellis-ends.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/a-10-nellis-ends.jpg?w=1200"
     },
     {
-      "category": "GEOPOLITYKA",
-      "title": "✈️ Rebelianci zajmują lotnisko",
-      "hook": "Siły z Tigray ponownie przejmują kontrolę nad kluczową infrastrukturą w Etiopii.",
-      "summary": "Lokalne oddziały zajęły główne lotnisko w północnej części kraju, odbierając je siłom policyjnym i rządowym. Odbicie portu lotniczego odcina władze w Addis Abebie od możliwości szybkiego przerzutu wojsk i zaopatrzenia drogą powietrzną.",
-      "comment": "Kontrola nad węzłami lotniczymi w afrykańskich konfliktach bezpośrednio decyduje o możliwości prowadzenia walk w izolowanych rejonach.",
-      "question": "Czy Róg Afryki stoi przed groźbą kolejnej pełnoskalowej wojny domowej i kryzysu migracyjnego?",
-      "image_query": "military airport runway",
-      "link": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo",
-      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/386d/live/58d271e0-b741-11f1-aa9c-3d062fa3aea7.png",
-      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/386d/live/58d271e0-b741-11f1-aa9c-3d062fa3aea7.png"
+      "category": "GEOPOLITYKA / OBRONNOŚĆ",
+      "title": "🇫🇷 Francja planuje wizję obronną do 2050 roku",
+      "hook": "Paryż szykuje potężne inwestycje w wojsko, chcąc stać się głównym filarem bezpieczeństwa Starego Kontynentu.",
+      "summary": "Długofalowy plan zakłada rozbudowę potencjału odstraszania nuklearnego, autonomii przemysłowej oraz zaawansowanych technologii kosmicznych i cybernetycznych. Francja dąży do zbudowania niezależnej Europy obronnej zdolnej do działania bez ciągłego wsparcia USA.",
+      "comment": "Paryż otwarcie walczy o przywództwo wojskowe w Europie, wykorzystując geostrategiczne wycofanie się Ameryki.",
+      "question": "Czy Europa jest w stanie zbudować własny parasol ochronny bez dominującej roli USA?",
+      "image_query": "french military fleet",
+      "link": "https://defence24.pl/sily-zbrojne/czy-francja-obroni-europe-paryz-planuje-inwestycje-do-2050-roku",
+      "image_url": "https://cdn.defence24.pl//2023/12/06/originals/x76ftUHnsrV6bZiyQl4UQA4dp2tRF7PKvyQYGCEY.jpg",
+      "source_image_url": "https://cdn.defence24.pl//2023/12/06/originals/x76ftUHnsrV6bZiyQl4UQA4dp2tRF7PKvyQYGCEY.jpg"
     }
   ]
 }
