@@ -1,183 +1,191 @@
 {
   "date": "24 września 2026",
-  "time": "06:01",
-  "count": 44,
+  "time": "17:03",
+  "count": 46,
   "items": [
     {
-      "title": "OpenAI agent 'infiltrated' Australian government website, PM says",
+      "title": "White House 'repeatedly violated' court order to restore press access, say media outlets",
+      "link": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo"
+    },
+    {
+      "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
       "link": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo"
     },
     {
-      "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
-      "link": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo"
+      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+      "link": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o"
     },
     {
-      "title": "Iran's president tells Trump it will never 'bend the knee'",
-      "link": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo"
+      "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+      "link": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o"
     },
     {
-      "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
-      "link": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo"
-    },
-    {
-      "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
-      "link": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o"
+      "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+      "link": "https://www.bbc.co.uk/news/articles/cqevwm09w4xmo"
     },
     {
       "title": "AI looms large over Trump-Xi meeting amid deep distrust between US and China | US foreign policy - The Guardian",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRER5Q0NmbkNwZWRBdlRBUkpobm1MZUdaNHJMSWNuNzZtMGNxTldqc3MtY0hDS25xZG04YkxLVkE1a2tmdkhmX1lIaEtvV1Z3VkxFSTVWOU5ySk9jOE9fc0E2NS0yZFNvSVdVb2ZyYmRXYkVZZGRTdzJ3dFlLZlUxOUtYUQ?oc=5"
     },
     {
-      "title": "Strengthening Dialogue Between Muslims and Jews Amid Turbulent Geopolitics - The Times of Israel",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMDUwTzJCbnVGS25xc1lheU5IRUhKTWRnTDZfMURJQmlBM04tOVFaclVVa2NTVllYUzN0TnZNWnFTUzc1S2p3RlI1QndRY2pLa2JVS2lQcVBScGh6djhweGI3MWpDUXM5THJVSDhrOHd0dGs4dTByWjZKYjRaT2EzT3ZydGV6dVBXN1VIU1FoSHIyc0t1ZHpuU1h2dEwzVmZPcWl4eVpkdjNva2c?oc=5"
+      "title": "Gold Falls as Traders Monitor Oil Rebound and Fed Rate Path",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-24/gold-holds-drop-as-higher-oil-and-hot-us-data-fan-rate-hike-bets"
     },
     {
-      "title": "Bond Selloff Deepens as Fed Rate-Hike Bets Build: Markets Wrap",
+      "title": "Scott Sheffield Claims Exxon CEO Betrayed Him in $60 Billion Pioneer Deal",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-24/scott-sheffield-claims-exxon-ceo-betrayed-him-in-60-billion-pioneer-deal"
+    },
+    {
+      "title": "The Deal: How AI is Changing the Fan Experience",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-24/the-deal-how-ai-is-changing-the-fan-experience-video"
+    },
+    {
+      "title": "Stocks Drop as Oil Rally Fuels Treasury Volatility: Markets Wrap",
       "link": "https://www.bloomberg.com/news/articles/2026-09-23/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "Tumbling Global Government Bonds Put Yields on Brink of 4%",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-24/tumbling-global-government-bonds-put-yields-on-brink-of-4"
+      "title": "Fed’s Hammack Says Shocks Risk an Inflationary Mindset",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-24/fed-s-hammack-says-shocks-risk-an-inflationary-mindset-video"
     },
     {
-      "title": "Latest Oil Market News and Analysis for Sept. 24",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-23/latest-oil-market-news-and-analysis-for-sept-24"
+      "title": "Brzoska uderza w Metę. Pokazał, ile płaci podatku w Polsce",
+      "link": "https://www.money.pl/podatki/brzoska-uderza-w-mete-pokazal-ile-placi-podatku-w-polsce-7332850717350112a.html"
     },
     {
-      "title": "Gasoline to Cost More If US Diesel Ban Hits, Morgan Stanley Says",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-24/gasoline-to-cost-more-if-us-diesel-ban-hits-morgan-stanley-says"
+      "title": "Przepis na \"pompę\" po turecku. 40 000 proc. zysku i aresztowania w otoczeniu Erdoğana",
+      "link": "https://www.money.pl/biznes/przepis-na-pompe-po-turecku-40-000-proc-zysku-i-aresztowania-w-otoczeniu-erdogana-7332799306336512a.html"
     },
     {
-      "title": "Philippines to Sell, Switch Short-Term Retail Peso Bonds as Rates Rise",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-24/philippines-to-sell-switch-short-term-retail-peso-bonds-as-rates-rise"
+      "title": "Ile kosztuje euro? Kurs euro do złotego PLN/EUR 24.09.2026",
+      "link": "https://www.money.pl/pieniadze/ile-kosztuje-euro-kurs-euro-do-zlotego-pln-eur-24-09-2026-7332766299326720a.html"
     },
     {
-      "title": "Inwestorzy zignorowali ocenę Moody's? Ekonomista: jeszcze to wykorzystają",
-      "link": "https://www.money.pl/gospodarka/inwestorzy-zignorowali-ocene-moody-s-ekonomista-jeszcze-to-wykorzystaja-7331805365704960a.html"
+      "title": "Ile kosztuje funt? Kurs funta do złotego PLN/GBP 24.09.2026",
+      "link": "https://www.money.pl/pieniadze/ile-kosztuje-funt-kurs-funta-do-zlotego-pln-gbp-24-09-2026-7332766234233088a.html"
     },
     {
-      "title": "Rolnicy mają problem. Dopłaty od państwa zamrożone. Wielu nie wie",
-      "link": "https://www.money.pl/finanse/rolnicy-maja-problem-doplaty-od-panstwa-zamrozone-wielu-nie-wie-7332479197882624a.html"
+      "title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 24.09.2026",
+      "link": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-24-09-2026-7332766216542464a.html"
     },
     {
-      "title": "Zaczynał od stodoły. Dziś sprzedaje tysiące stołów rocznie",
-      "link": "https://www.money.pl/gospodarka/zaczynal-od-stodoly-dzis-sprzedaje-tysiace-stolow-rocznie-7332146381066817v.html"
+      "title": "Kolejny wyciek danych klientów Revoluta. Włamano się do firmy obsługującej handel akcjami",
+      "link": "https://www.bankier.pl/wiadomosc/Kolejny-wyciek-danych-klientow-Revoluta-Wlamano-sie-do-firmy-obslugujacej-handel-akcjami-9202253.html"
     },
     {
-      "title": "Milcząca zgoda fiskusa. Te decyzje mają zapadać na korzyść obywateli",
-      "link": "https://www.money.pl/podatki/milczaca-zgoda-fiskusa-te-decyzje-maja-zapadac-na-korzysc-obywateli-7332553052592352a.html"
+      "title": "Wszystkie zlecenia na GPW zostaną anulowane przy wdrożeniu WATS. O czym pamiętać w nowym systemie transakcyjnym?",
+      "link": "https://www.bankier.pl/wiadomosc/Wszystkie-zlecenia-na-GPW-zostana-anulowane-przy-wdrozeniu-WATS-O-czym-pamietac-w-nowym-systemie-transakcyjnym-9202144.html"
     },
     {
-      "title": "Co zrobisz z 10 tys. zł? Odpowiedz i wygraj wejściówkę na konferencję o finansach i inwestowaniu. Invest Cuffs czeka",
-      "link": "https://www.money.pl/gielda/co-zrobisz-z-10-tys-zl-odpowiedz-i-wygraj-wejsciowke-na-konferencje-o-finansach-i-inwestowaniu-invest-cuffs-czeka-7332530709485824a.html"
+      "title": "TVP nie płaci od miesięcy. \"Dopóki nie otrzymam wypłaty, do pracy nie przychodzę\"",
+      "link": "https://www.bankier.pl/wiadomosc/TVP-nie-placi-od-miesiecy-Dopoki-nie-otrzymam-wyplaty-do-pracy-nie-przychodze-9202047.html"
     },
     {
-      "title": "Droższa ropa i dolar przerwały marsz po nowe szczyty na giełdzie. Rekordy rentowności obligacji straszą rynki akcji",
-      "link": "https://www.bankier.pl/wiadomosc/Drozsza-ropa-i-dolar-przerwaly-marsz-po-nowe-szczyty-na-gieldzie-Rekordy-rentownosc-obligacji-strasza-rynki-akcji-9201603.html"
+      "title": "Tyle zarobią obligacje skarbowe w październiku. MF podało stawki",
+      "link": "https://www.bankier.pl/wiadomosc/Tyle-zarobia-obligacje-skarbowe-w-pazdzierniku-MF-podalo-stawki-9202201.html"
     },
     {
-      "title": "Polacy gotowi na OKI. Także ci, którzy dotąd nie inwestowali",
-      "link": "https://www.bankier.pl/wiadomosc/Polacy-gotowi-na-OKI-Raport-dla-PKO-BP-i-GPW-9201330.html"
+      "title": "Dania ostrzega przed Rosją. „Sytuacja najpoważniejsza od zakończenia zimnej wojny”",
+      "link": "https://www.bankier.pl/wiadomosc/Dania-ostrzega-przed-Rosja-Sytuacja-najpowazniejsza-od-zakonczenia-zimnej-wojny-9202064.html"
     },
     {
-      "title": "Jeszcze większa afera w Orlenie i 4,6 mld zł kar w grze. Są nowe szczegóły",
-      "link": "https://www.bankier.pl/wiadomosc/Jeszcze-wieksza-afera-w-Orlenie-i-4-6-mld-zl-kar-w-grze-Sa-nowe-szczegoly-9201400.html"
+      "title": "Atak nożownika w Jarosławiu. Jedna osoba nie żyje. Prokuratura: 31-letni Ukrainiec przyjechał do Polski z Niemiec - wiadomosci.gazeta.pl",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSlZlSHVFV0o2QUpGVjc2UW1TUUZxRW5tWWpwVW9wZFJzUXg0OWpCamE3Rk5KR1NGbEdKdkppTHd6S29sTngxVms1bEc0VmJobk9UUnJQQXcxbVRpVW1mOEtwMUZUOWQxNEYyRlJQZnVHc001dzNRcnNxcFlKS3hiUC12TUFiSU5fanlEa0I1d3Q2VVZkYkUyYjE5NjFPNl9MVUVmVGpya1MtVXM?oc=5"
     },
     {
-      "title": "Klamka zapadła? Trump w rozmowie z Nawrockim Trump potwierdza zielone światło dla bazy USA",
-      "link": "https://www.bankier.pl/wiadomosc/Klamka-zapadla-Trump-w-rozmowie-z-Nawrockim-Trump-potwierdza-zielone-swiatlo-dla-bazy-USA-9201705.html"
+      "title": "Jedlinka. Zwrot ws. podłożenia bloków na torach. Służby ustaliły winnego - Interia Wydarzenia",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS2JTcF9FR3FkQmpwbVVNSWNWMTdFZms0OUJZWmlXTVk3TW5fNi1yU2R4SXhXZ3hrRVIyWWhqRS1zc2lvdjVWRVZlaEFhY1JTNFBFRDdjM001ZjBCU0JGZTB2OFhEYVF5YzZuYVZ4ZHdYWWNyeXpVWmd0d0s4SFllZ3NoVDhtR3NkZVhRNWp5WUswaDdhUFM0b2k2dENKNWE3cGNNMGRpck9uUnRZTS1CeWFUQlVGZENvLXc?oc=5"
     },
     {
-      "title": "Domański do prezydenta ws. podatku od zysków: Niech Pan nie szuka wymówek, tylko podpisze",
-      "link": "https://www.bankier.pl/wiadomosc/Domanski-do-prezydenta-ws-podatku-od-zyskow-Niech-Pan-nie-szuka-wymowek-tylko-podpisze-9201591.html"
+      "title": "Media: CIA ostrzegła trzy kraje. Rosja przygotowuje atak z morza - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYVA2V1dvUXZmZmUwOXo2dDBFRmg1QWltd3NVa0o4am8td25TOTNWQTZkUmIwdzNsSEo3NjQybTlIQXJjakE3cS1KTEZuM0Z1RV9kLTA5ejBIZWppQW5hRnZydy1KUXZvUUVuZThFZHlPNDZMQktiaWI0bmNLRS1vY2hmaG5iWk9Cb3BuUWR2Njl6eDBCZTRmdUVKS1owWTJBNnZyR0ZjaERoc2k4bDFrcjhVVTQwX1R1?oc=5"
     },
     {
-      "title": "Nawrocki uderza w Rosję. \"Imperialna pycha\" - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcVBMUHlUTUlkWFNhZndkdTZrYTR1YkhzMGNvcW1DblQ1Q3J1a0doYlUzOThiM01ndTFQckxJaEJ6R2N1RVpPd1Voa2YzWnRpSXFQWWxIZ1NTZ1lwb1loOUd0TlJyX3p4c2Nzd0RfSnBnSFNJT1gxdzhQN2FERnhkZGJpOEh1aUFKYzB3?oc=5"
+      "title": "Plamy na dłoniach Trumpa przykuły uwagę. Wystarczyło jedno zdjęcie - fakt.pl",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNDJHSXNnNjA0RVpfMUJBdjVoZllLVGtRMklMd041R2dmOVlZUmQ0QzNWSzZtbWNrcHA0a25LajdxM2VoSktoOVcwdmdiVmJwVTItZU1YTG1sSDlxS0VPUFFodVVSWUlzSGxNM05NQm82UTl1cjJkMG85dDl6LU9lcnNOWWZYOU93UTVPS0tSRUxnZjkzQ0Z4aHFiUzUwOHhMc1l3TzBqalVWdVAwM2dtcEpsOA?oc=5"
     },
     {
-      "title": "\"Przekaż swojemu szefowi\". Sikorski zwrócił się do Ławrowa na forum ONZ - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORzhJc1A0bDU3b1VVQldXd2NQbjdNcmhyM1VING9HQm1neEw4emppUllhT2FvMXNURGhKanpzTFZIODgwZ1hrd196T21yeVJLTmdkcjRxLVo1WTU4QzFDUTBlOW9UOEYyR2VRX0ppZW5LTDBhRGNwNHJlTmxXem5nbU90d1ltXzJIMWtleUV2TzNxeEVEUlAyWjNuV2FEUjdOdUhxbA?oc=5"
+      "title": "Polska Fundacja Narodowa bez pieniędzy od państwowych gigantów. \"Muszą się rozejrzeć\" - Business Insider Polska",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVU00S09JVVZObGJMd1NzMGw3YVBrTG9qdm13U1hoYk5TS20yYWtQMDZONUlvZGQwMTV1NnJrQ1JGMHNqdDV2UW9hdUpkTVp5SzJRNkw2cWZzekRMbnVCTWVwbTZOTGV6dDZaeEljekx1SUN5QXcwMlo4WDlQTjFlVktWVUQ2MmFJMWppc3R0a0lITVNSWG9vb29DXzJLMDVrUlVPNWRyQlF1QUZRa2hYcU9EbUZyODZrX3pLVQ?oc=5"
     },
     {
-      "title": "Marcin Przydacz: Karol Nawrocki rozmawiał z Donaldem Trumpem o stałej bazie USA w Polsce - TVN24",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb2tWRm9Ud3VYUmIzemFseDBQbU1YVWdlLU5CR2FKaEh1OW0zN24yMk5waVR2eklVYXktRW1Ia2thS1RtZFpkMjJsczlNV01lRF9pdXFhdVJvX19sTE05UXpVSjBBbXAzR0pJWHY0NUpZTmNGTmM3VlVaYWk3bWdBSWl0aXFPMG1iWmxfVHBjNUlBc1laeE1WYS1CVnZNekVHVzMxZnk3R3FkWGExR1BUTGtwSGI5dXVCYm1GUHgxTlh0aW1vdEN6ajEwUnBBLVpteUJYQlBLamt4OW8?oc=5"
+      "title": "134 mld euro na obronność z KE. Francja mówi „nie” dla sprzętu z USA",
+      "link": "https://defence24.pl/przemysl/134-mld-euro-na-obronnosc-z-ke-francja-mowi-nie-dla-sprzetu-z-usa"
     },
     {
-      "title": "Nawrocki: Polska będzie głosem regionu Europy Środkowej w formacie G20",
-      "link": "https://defence24.pl/geopolityka/nawrocki-polska-bedzie-glosem-regionu-europy-srodkowej-w-formacie-g20"
+      "title": "„Nie zamierzamy przerywać”. Ławrow mówi o wojnie i oskarża Europę",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/nie-zamierzamy-przerywac-lawrow-mowi-o-wojnie-i-oskarza-europe"
     },
     {
-      "title": "Nawrocki: Rosja wykazuje się imperialną pychą, która w przeszłości prowadziła do dwóch wojen światowych",
-      "link": "https://defence24.pl/geopolityka/nawrocki-rosja-wykazuje-sie-imperialna-pycha-ktora-w-przeszlosci-prowadzila-do-dwoch-wojen-swiatowych"
+      "title": "Dlaczego Polska nie zestrzeliła rosyjskiego Mi-8? Następnym razem może być inaczej",
+      "link": "https://defence24.pl/polityka-obronna/dlaczego-polska-nie-zestrzelila-rosyjskiego-mi-8-nastepnym-razem-moze-byc-inaczej"
     },
     {
-      "title": "Wiceszef MON wprost o zagrożeniu dla Polski. Mówi o „czarnym scenariuszu”",
-      "link": "https://defence24.pl/polityka-obronna/wiceszef-mon-wprost-o-zagrozeniu-dla-polski-mowi-o-czarnym-scenariuszu"
+      "title": "Prezentacja PCO S.A. na MSPO: System C-OBRA, inwestycje w Warszawie i 100 lat tradycji! Rozmowa z Bogumiłem Wodyńskim",
+      "link": "https://defence24.pl/przemysl/prezentacja-pco-sa-na-mspo-system-c-obra-inwestycje-w-warszawie-i-100-lat-tradycji-rozmowa-z-bogumilem-wodynskim"
     },
     {
-      "title": "Putin wróci na szczyt G20? Waszyngton potwierdza zaproszenie",
-      "link": "https://defence24.pl/geopolityka/putin-wroci-na-szczyt-g20-waszyngton-potwierdza-zaproszenie"
+      "title": "Rosja buduje wpływy na Madagaskarze: wojsko, wywiad i propaganda",
+      "link": "https://defence24.pl/polityka-obronna/rosja-buduje-wplywy-na-madagaskarze-wojsko-wywiad-i-propaganda"
     },
     {
-      "title": "Everything new coming to Meta’s AI agent Muse",
-      "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/"
+      "title": "Shield AI, Waabi, and General Motors on building AI when failure is not an option at TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/09/24/shield-ai-waabi-and-general-motors-on-building-ai-when-failure-is-not-an-option-at-techcrunch-disrupt-2026/"
     },
     {
-      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-      "link": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/"
+      "title": "Lovable’s annualized revenue crosses $600M as vibe coding takes off",
+      "link": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
     },
     {
-      "title": "Meta is trying VR glasses (again), this time with more IMAX",
-      "link": "https://techcrunch.com/2026/09/23/meta-is-trying-vr-glasses-again-this-time-with-more-imax/"
+      "title": "Ando wants to take on Slack with a team messaging app that lets humans and agents work together",
+      "link": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/"
     },
     {
-      "title": "Meta introduces camera-free AI glasses",
-      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/"
+      "title": "TechCrunch Disrupt 2026: Cal AI’s Zach Yadegari on how to create viral growth and capitalize on it",
+      "link": "https://techcrunch.com/2026/09/24/techcrunch-disrupt-2026-cal-ais-zach-yadegari-on-how-to-create-viral-growth-and-capitalize-on-it/"
     },
     {
-      "title": "Vogue sent robots down the runway at Vogue World, and people were not impressed",
-      "link": "https://techcrunch.com/2026/09/23/vogue-sent-robots-down-the-runway-at-vogue-world-and-people-were-not-impressed/"
+      "title": "2 days left to save up to $200 on a TechCrunch Disrupt 2026 pass — reason 4 of 5 to attend",
+      "link": "https://techcrunch.com/2026/09/24/2-days-left-to-save-up-to-200-on-techcrunch-disrupt-2026-reason-5-7-to-attend/"
     },
     {
-      "title": "Meta is making a standalone Muse AI gadget",
-      "link": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware"
+      "title": "Why can’t we just keep rogue AIs off the internet?",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999881/why-cant-we-airgap-rogue-ai-agents"
     },
     {
-      "title": "Meta Connect 2026: The 7 biggest announcements",
-      "link": "https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced"
+      "title": "Google is sending an AI satellite into space next week",
+      "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher"
     },
     {
-      "title": "Meta’s next VR device isn’t a headset — it’s glasses",
-      "link": "https://www.theverge.com/tech/999517/meta-vr-glasses-connect-2026-hands-on"
+      "title": "The vibes are bad for Flock in Washington",
+      "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing"
     },
     {
-      "title": "Muse is coming to Meta smart glasses",
-      "link": "https://www.theverge.com/tech/999673/meta-connect-2026-muse-glasses-features"
+      "title": "I have some questions for Mark Zuckerberg",
+      "link": "https://www.theverge.com/podcast/999383/mark-zuckerberg-meta-glasses-ai-teen-safety-surveillance-data-centers"
     },
     {
-      "title": "Meta ditches the camera on its newest smart glasses",
-      "link": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026"
+      "title": "Waymo’s driverless cars continue to crash less often than people",
+      "link": "https://www.theverge.com/transportation/999891/waymo-safety-data-injury-crash-human-driver"
+    },
+    {
+      "title": "NASA chief concerned China may deny access to parts of South Pole",
+      "link": "https://arstechnica.com/space/2026/09/nasa-chief-concerned-china-may-deny-access-to-parts-of-south-pole/"
+    },
+    {
+      "title": "Meta puts its AI assistant on a keychain",
+      "link": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain/"
+    },
+    {
+      "title": "There's a new way to break RSA that's faster than anything we've seen before",
+      "link": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/"
+    },
+    {
+      "title": "Review: Apple's hyper-pricey M5 Ultra Mac Studio made me into a vibe coder",
+      "link": "https://arstechnica.com/gadgets/2026/09/review-apples-hyper-pricey-m5-ultra-mac-studio-made-me-into-a-vibe-coder/"
     },
     {
       "title": "RFK Jr.'s CDC isn’t letting states order COVID-19 shots for kids, blocking access",
       "link": "https://arstechnica.com/health/2026/09/rfk-jr-s-cdc-isnt-letting-states-order-covid-19-shots-for-kids-blocking-access/"
-    },
-    {
-      "title": "FBI rushes to investigate if ShinyHunters hack of thousands of employees is real",
-      "link": "https://arstechnica.com/tech-policy/2026/09/fbi-rushes-to-investigate-if-shinyhunters-hack-of-thousands-of-employees-is-real/"
-    },
-    {
-      "title": "Disney+ and Hulu raise prices by up to 13 percent after doubling profits",
-      "link": "https://arstechnica.com/gadgets/2026/09/disney-and-hulu-raise-prices-by-up-to-13-percent-after-doubling-profits/"
-    },
-    {
-      "title": "Here's the Torcal, the first fully electric Bentley",
-      "link": "https://arstechnica.com/cars/2026/09/heres-the-torcal-the-first-fully-electric-bentley/"
-    },
-    {
-      "title": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
-      "link": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts/"
     }
   ]
 }
