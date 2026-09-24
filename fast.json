@@ -1,43 +1,43 @@
 {
   "date": "24 września 2026",
-  "time": "06:19",
-  "timestamp": "2026-09-24_06:19",
+  "time": "15:26",
+  "timestamp": "2026-09-24_15:26",
   "items": [
     {
       "category": "OBRONNOŚĆ",
-      "title": "🇹🇼 Tajwan przedstawia kołowy niszczyciel czołgów",
-      "hook": "Tajpej wprowadza lekki system kołowy 8x8 z armatą 105 mm, by błyskawicznie reagować na ewentualny desant Chin.",
-      "summary": "Nowy pojazd ma zapewnić wysoką mobilność na wyspie i skutecznie razić lekko opancerzone siły inwazyjne bez polegania na ciężkich czołgach. Konstrukcja pozwala na szybkie przerzucanie ognia w trudnym, zurbanizowanym terenie przybrzeżnym.",
-      "comment": "To wyraźny sygnał, że Tajwan stawia na asymetryczną, mobilną obronę zamiast statycznych pozycji.",
-      "question": "Czy kołowe niszczyciele czołgów to lepsze rozwiązanie na wyspiarski teren niż ciężkie Abramsy?",
-      "image_query": "armored vehicle firing",
-      "link": "https://www.twz.com/land/this-is-taiwans-new-105mm-8x8-mobile-gun-system",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/Taiwan-105mm-mobile-gun-system.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/Taiwan-105mm-mobile-gun-system.jpg?w=1200"
+      "title": "🛡️ Rodzima stal pancerne dla Borsuków i Krabów",
+      "hook": "Polska zwiększa samowystarczalność w produkcji kluczowych stali pancernej dla sprzętu wojskowego.",
+      "summary": "Huta Miilux Poland dostarcza specjalistyczne blachy pancerne chroniące polskie pojazdy bojowe przed podnoszącą się siłą rażenia wroga. To absolutny fundament bezpieczeństwa łańcucha dostaw w dobie potencjalnego konfliktu o wysokiej intensywności.",
+      "comment": "Bez niezależnego hutnictwa pancernego każda nowoczesna armia staje się całkowicie zależna od zagranicznych dostaw w pierwszym tygodniu wojny.",
+      "question": "Czy Polska powinna za wszelką cenę utrzymać cały łańcuch produkcji stali pancernej w kraju, nawet przy wyższych kosztach?",
+      "image_query": "armored steel vehicle",
+      "link": "https://defence24.pl/przemysl/stale-specjalne-i-pancerne-od-miilux-poland-sp-z-oo",
+      "image_url": "https://cdn.defence24.pl/2026/09/24/1920x1080px/B70n8EVejvQKTDPcf49w1VVsCQC0WaFDTv6RckAl.yu3p.png",
+      "source_image_url": "https://cdn.defence24.pl/2026/09/24/1920x1080px/B70n8EVejvQKTDPcf49w1VVsCQC0WaFDTv6RckAl.yu3p.png"
     },
     {
-      "category": "OBRONNOŚĆ",
-      "title": "🇺🇸 Koniec epoki legendarnych A-10 Warthog",
-      "hook": "Słynny 'Gatling na skrzydłach' definitywnie znika z bazy Nellis, ustępując miejsca maszynom nowej generacji.",
-      "summary": "Amerykańskie siły powietrzne oficjalnie zakończyły stacjonowanie samolotów szturmowych A-10 Thunderbolt II w kluczowym ośrodku testowym w Nevadzie. Decyzja ta przypieczętowuje wycofywanie konstrukcji dedykowanej do bezpośredniego wsparcia wojsk lądowych na rzecz wielozadaniowych platform stealth.",
-      "comment": "Nawet najbardziej ikoniczne wsparcie piechoty musi ustąpić miejsca w erze nowoczesnej obrony powietrznej i dronów.",
-      "question": "Czy wycofanie A-10 to błąd, czy konieczność na nowoczesnym, nasyconym rakietami froncie?",
-      "image_query": "military attack aircraft",
-      "link": "https://www.twz.com/air/the-a-10-era-is-over-at-nellis-afb",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/a-10-nellis-ends.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/a-10-nellis-ends.jpg?w=1200"
+      "category": "POLSKA",
+      "title": "🔥 Podpalenie Starlinka w Polsce to sabotaż",
+      "hook": "Wojna hybrydowa wkracza w fazę bezpośredniego niszczenia krytycznej infrastruktury łączności w Polsce.",
+      "summary": "Pożar stacji łączności satelitarnej Starlink na terytorium Polski został oficjalnie uznany za aktywne działanie sabotażowe. W tym samym czasie Dania bije na alarm w sprawie rosnącego dywersyjnego zagrożenia ze strony rosyjskich służb w całym regionie Bałtyku.",
+      "comment": "Paraliżowanie łączności satelitarnej na zapleczu frontu to klasyczny wstęp do destabilizacji państw NATO bez wypowiadania otwartej wojny.",
+      "question": "Jak Waszym zdaniem Polska powinna odpowiedzieć na skryte akty sabotażu na własnym terytorium?",
+      "image_query": "satellite dish night",
+      "link": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o",
+      "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/34f4/live/bd885cd0-b7ff-11f1-97e1-83bf52ec4acd.jpg",
+      "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/34f4/live/bd885cd0-b7ff-11f1-97e1-83bf52ec4acd.jpg"
     },
     {
-      "category": "GEOPOLITYKA / OBRONNOŚĆ",
-      "title": "🇫🇷 Francja planuje wizję obronną do 2050 roku",
-      "hook": "Paryż szykuje potężne inwestycje w wojsko, chcąc stać się głównym filarem bezpieczeństwa Starego Kontynentu.",
-      "summary": "Długofalowy plan zakłada rozbudowę potencjału odstraszania nuklearnego, autonomii przemysłowej oraz zaawansowanych technologii kosmicznych i cybernetycznych. Francja dąży do zbudowania niezależnej Europy obronnej zdolnej do działania bez ciągłego wsparcia USA.",
-      "comment": "Paryż otwarcie walczy o przywództwo wojskowe w Europie, wykorzystując geostrategiczne wycofanie się Ameryki.",
-      "question": "Czy Europa jest w stanie zbudować własny parasol ochronny bez dominującej roli USA?",
-      "image_query": "french military fleet",
-      "link": "https://defence24.pl/sily-zbrojne/czy-francja-obroni-europe-paryz-planuje-inwestycje-do-2050-roku",
-      "image_url": "https://cdn.defence24.pl//2023/12/06/originals/x76ftUHnsrV6bZiyQl4UQA4dp2tRF7PKvyQYGCEY.jpg",
-      "source_image_url": "https://cdn.defence24.pl//2023/12/06/originals/x76ftUHnsrV6bZiyQl4UQA4dp2tRF7PKvyQYGCEY.jpg"
+      "category": "GEOPOLITYKA",
+      "title": "🚨 Ostrzeżenie CIA: Drony z floty na Śródziemnym",
+      "hook": "Rosja przygotowuje nową formę szantażu strategicznego u południowych wybrzeży Europy.",
+      "summary": "Amerykański wywiad ostrzega państwa europejskie przed potencjalnym atakiem dronów wystrzeliwanych z cywilnych i wojskowych statków rosyjskich na Morzu Śródziemnym. Taki ruch otwiera nowy, bezzałogowy front wymierzony w infrastrukturę krytyczną południowej flanki NATO.",
+      "comment": "Rozszerzenie zasięgu działań bezzałogowych na domenę morską pokazuje, że Europa nie ma już bezpiecznego, zdemilitaryzowanego zaplecza.",
+      "question": "Czy południowa flanka NATO jest gotowa na odparcie masowego ataku dronów z nieoznakowanych jednostek morskich?",
+      "image_query": "warship navy sea",
+      "link": "https://www.defensenews.com/global/europe/2026/09/24/report-cia-warned-europe-of-russian-drone-attack-from-vessels-in-the-mediterranean/",
+      "image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/5PIUG2BHDNC2NKMUML6K5OIJBM.jpg?width=1200&amp;auth=dadd0e3a80f885be5353d16b63032bf585d21082906d7acc8a220d822b77ad66",
+      "source_image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/5PIUG2BHDNC2NKMUML6K5OIJBM.jpg?width=1200&amp;auth=dadd0e3a80f885be5353d16b63032bf585d21082906d7acc8a220d822b77ad66"
     }
   ]
 }
