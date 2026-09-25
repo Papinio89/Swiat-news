@@ -4405,5 +4405,144 @@
         "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/PrismML-Snapdragon-smartglasses.png?w=612"
       }
     ]
+  },
+  "2026-09-25_wieczorne": {
+    "date": "25 września 2026",
+    "time": "15:36",
+    "timestamp": "2026-09-25_15:36",
+    "items": [
+      {
+        "category": "POLSKA",
+        "title": "💸 40 tysięcy zł składki na ZUS i NFZ od etatu",
+        "hook": "Koszt zatrudnienia pracownika w Polsce osiąga absurdalne rejony, czyniąc legalny etat luksusem.",
+        "summary": "W 2027 roku roczne obciążenia z tytułu ZUS i NFZ za jednego pracownika zarabiającego średnią krajową przekroczą 40 tysięcy złotych. To efekt planowanych waloryzacji oraz progresywnych wzrostów bazy wymiaru składek dla firm.",
+        "comment": "Państwo rzekomo walczy o prawa pracowników, sprawiając, że za chwilę jedyną legalną formą pracy w Polsce pozostanie ucieczka na samozatrudnienie.",
+        "question": "Czy państwo nie dobije w ten sposób tradycyjnego rynku pracy?",
+        "image_query": "tax payment calculator",
+        "link": "https://www.money.pl/podatki/skladki-zus-i-nfz-w-2027-r-ponad-40-tys-zl-za-pracujacego-7333119592511712a.html",
+        "image_url": "https://images.pexels.com/photos/7111516/pexels-photo-7111516.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/ZWQwMjhldTYwFTtZRxd4I3NNbwMBTnZ1JFV3SEddY2VhD2IMAQA_JTQHIkQPHi8nMAA9RBgAdTYhHmIcWUM-PiIHIQsRQz86MxIpRQxfbWFlTitYRV05NGlaeQsLXHc2MEB8R1pUODI1R39SDQ9oMnMK"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🚨 Europa ma problem z olejem napędowym",
+        "hook": "Choć rynek ropy wydawał się stabilny, europejski przemysł znów stoi przed widmem braku diesla.",
+        "summary": "Wstrzymanie dostaw z kluczowych rafineryjnych kierunków wschodnich i remonty infrastruktury powodują drastyczny spadek zapasów oleju napędowego w Unii Europejskiej. Sytuację pogarszają rosnące marże rafineryjne i wyższe koszty logistyki na Starym Kontynencie.",
+        "comment": "Europejska transformacja energetyczna uderza w ścianę rzeczywistości, w której bez diesla ciężarówki z dostawami po prostu nie wyjadą na ulice.",
+        "question": "Jakie podwyżki na stacjach paliw wykończą polskie firmy transportowe?",
+        "image_query": "fuel pump refinery",
+        "link": "https://www.bankier.pl/wiadomosc/Olej-napedowy-bedzie-coraz-trudniej-dostepny-Europa-znowu-ma-problem-9202812.html",
+        "image_url": "https://images.pexels.com/photos/12377481/pexels-photo-12377481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/0/5/18d55c6d1ce712-948-568-379-1230-2970-1782.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Francja skończy jak Grecja w 2010 roku?",
+        "hook": "Druga gospodarka strefy euro balansuje na krawędzi utraty zaufania inwestorów.",
+        "summary": "Analitycy rynku długu ostrzegają, że wskaźniki zadłużenia Francji oraz rosnące rentowności jej obligacji przypominają początek kryzysu w Grecji z 2010 roku. Deficyt budżetowy Paryża przekroczył 5,5% PKB, wywołując panikę na rynku długu skarbowego.",
+        "comment": "Bruksela chętnie dyscyplinuje mniejsze kraje, ale przymyka oczy, gdy finansowe domino zaczyna się walić w samym sercu Unii.",
+        "question": "Czy Unia Europejska przetrwa potencjalną niewypłacalność francuskiego budżetu?",
+        "image_query": "france stock chart",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-25/why-one-bond-investor-says-france-outlook-echoes-greece-in-2010",
+        "image_url": "https://images.pexels.com/photos/39494584/pexels-photo-39494584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/39494584/pexels-photo-39494584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "BIZNES",
+        "title": "✈️ Ryanair chce droższych paliw lotniczych",
+        "hook": "Gdy cała branża drży przed wzrostem kosztów, gigant tanich lotów otwiera szampana.",
+        "summary": "Szefostwo Ryanaira deklaruje, że drogie paliwo sprzyja firmie, eliminując z rynku słabszych i zadłużonych konkurentów. Przewoźnik zabezpieczył ceny paliwa na nadchodzące miesiące i prognozuje dalszy wzrost cen biletów lotniczych.",
+        "comment": "Kiedy klienci płacą więcej za bilety, korporacje celebrują wykańczanie konkurencji jako idealną strategię rynkową.",
+        "question": "Czy monopol kilku tanich linii lotniczych doprowadzi do końca ery tanich podróży?",
+        "image_query": "ryanair airplane runway",
+        "link": "https://www.bankier.pl/wiadomosc/Licze-ze-ceny-wzrosna-a-inni-upadna-Ryanair-widzi-szanse-w-drogim-paliwie-9202568.html",
+        "image_url": "https://images.pexels.com/photos/38121313/pexels-photo-38121313.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/f/3/436febc81368ac-948-568-100-250-3900-2339.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏙️ Kraków popada w biznesową stagnację",
+        "hook": "Dawna stolica Polski traci dystans do Warszawy i ugrzęzła w inwestycyjnym dołku.",
+        "summary": "Raporty rynkowe wskazują na wyhamowanie wzrostu gospodarczego w Krakowie i spadek liczby nowych rejestracji spółek. Przedsiębiorcy narzekają na brak terenów pod inwestycje technologiczne oraz wysokie koszty najmu powierzchni biurowych.",
+        "comment": "Samym turyzmem i obwarzankami nie zbuduje się innowacyjnej metropolii, która mogłaby rywalizować o globalny kapitał.",
+        "question": "Co powinno zrobić miasto, aby zatrzymać odpływ zagranicznych inwestorów do stolicy?",
+        "image_query": "krakow city aerial",
+        "link": "https://www.money.pl/firma/krakow-probuje-dogonic-warszawe-ale-ma-problem-dostrzegamy-stagnacje-martwi-wiele-firm-7332854781827328a.html",
+        "image_url": "https://images.pexels.com/photos/11789842/pexels-photo-11789842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/MzNkZGRjYhsvCSx0fRFvDmxReC47SGFYO0lgZX1bdEh-E3UhOwYoCCsbNWk1GDgKLxwqaSIGYhs-AnUxY0UpEz0bNiYrRSgXLA4-aGEIK0h8CWIlf10sQitGbnU2WmAbels5ajdbLEl9Dz4jMQx-TGwW"
+      },
+      {
+        "category": "BIZNES",
+        "title": "🏭 Koniec znanej polskiej odlewni stali",
+        "hook": "Kolejny zakład przemysłowy w Polsce kapituluje pod naporem kosztów energii.",
+        "summary": "Historyczny zakład odlewniczy trafił na sprzedaż, a cała 70-osobowa załoga otrzymała wypowiedzenia. Główną przyczyną likwidacji były drastycznie rosnące rachunki za prąd oraz spadek zamówień z przemysłu ciężkiego.",
+        "comment": "Zielony ład i koszty energii w praktyce likwidują polski przemysł tradycyjny na rzecz importu z Azji.",
+        "question": "Jakie sektory polskiej gospodarki jako następne ugną się pod ciężarem cen energii?",
+        "image_query": "factory steel foundry",
+        "link": "https://www.bankier.pl/wiadomosc/Znana-odlewnia-na-sprzedaz-Prace-straci-ponad-70-osob-9202701.html",
+        "image_url": "https://images.pexels.com/photos/6804260/pexels-photo-6804260.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/2/3/4e1774189f0a6b-948-568-30-90-1966-1179.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🤝 Szczyt Trump-Xi bez twardych ustępstw",
+        "hook": "Czerwony dywan i uściski dłoni nie przysłoniły braku porozumienia w sprawach gospodarczych.",
+        "summary": "Donald Trump i Xi Jinping zakończyli rozmowy dyplomatyczne deklaracjami o dobrych relacjach, lecz nie osiągnęli przełomu w kwestiach ceł i eksportu technologii. Chiny podtrzymują swoje żądania zniesienia sankcji na mikroprocesory, podczas gdy USA żądają zbalansowania wymiany handlowej.",
+        "comment": "Teatralny dyplomatyczny spektakl ma uspokoić giełdy, ale wyścig o gospodarczą dominację świata trwa w najlepsze.",
+        "question": "Czy ustępstwa handlowe USA wobec Chin są jeszcze w ogóle możliwe?",
+        "image_query": "trump xi jinping summit",
+        "link": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o",
+        "image_url": "https://images.pexels.com/photos/32662254/pexels-photo-32662254.png?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/602f/live/4a515750-b8a7-11f1-a430-4d16ee157c41.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🛡️ Amerykańskie czołgi wracają na Litwę",
+        "hook": "Waszyngton ponownie wzmacnia wschodnią flankę NATO ciężką bronią pancerną.",
+        "summary": "Nieoficjalne doniesienia wskazują na powrót amerykańskich pododdziałów pancernych wyposażonych w czołgi Abrams do baz wojskowych na Litwie. Ruch ten jest bezpośrednią odpowiedzią na rozbudowę potencjału wojskowego w Obwodzie Królewieckim.",
+        "comment": "Obecność wojsk USA przy samej granicy to potężna polisa bezpieczeństwa, ale też jasny sygnał, że region jest stałym punktem zapalnym.",
+        "question": "Czy stała baza NATO na Bałtyku wystarczy do skutecznego odstraszania agresora?",
+        "image_query": "military tank transport",
+        "link": "https://defence24.pl/sily-zbrojne/amerykanskie-czolgi-wracaja-na-litwe-nieoficjalne-informacje",
+        "image_url": "https://images.pexels.com/photos/5275928/pexels-photo-5275928.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/02/12/1920x1080px/oiLum4ABuTrPQoygxPGbDuqFVMfQJatIgouSuMLn.r5ov.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🏭 Podziemna fabryka dronów w Rosji",
+        "hook": "Moskwa przenosi kluczowy przemysł zbrojeniowy pod ziemię, by ukryć go przed atakami.",
+        "summary": "Zdjęcia satelitarne ujawniły budowę rozległych kompleksów podziemnych w głębi Rosji przeznaczonych do masowej produkcji dronów bojowych. Projekt ma na celu zabezpieczenie linii montażowych przed uderzeniami ukraińskich bezzałogowców dalekiego zasięgu.",
+        "comment": "Wojna na wyczerpanie przechodzi w fazę przemysłowej kretywy i krycia strategicznych fabryk w schronach.",
+        "question": "Czy zaawansowane rozpoznanie satelitarne NATO zneutralizuje atut podziemnych fabryk?",
+        "image_query": "underground bunker military",
+        "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/rosja-rozbudowuje-podziemna-fabryke-dronow-chce-sie-chronic-przed-ukrainskimi-atakami",
+        "image_url": "https://images.pexels.com/photos/14923957/pexels-photo-14923957.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/24/1920x1080px/NMAHxKCHckK1kbthrJVjYPLaTvgbBzRFCUpV0LjO.wtwk.jpg"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 Microsoft tworzy „Super-Aplikację” Copilot",
+        "hook": "Amerykański gigant chce zastąpić wyszukiwarki i pakiety biurowe jednym ekosystemem AI.",
+        "summary": "Microsoft ogłosił transformację Copilota w uniwersalną super-aplikację łączącą generowanie kodu, automatyzację zadań biurowych i inteligentnego asystenta. Firma zakłada, że nowy produkt będzie miał wpływ na rynek porównywalny do debiutu pakietu Office.",
+        "comment": "Gigant z Redmond chce uzależnić od siebie użytkowników tak mocno, by tradycyjny system operacyjny przestał grać jakikolwiek znaczenie.",
+        "question": "Czy jesteśmy gotowi na powierzenie codziennej pracy jednej wszechwiedzącej aplikacji AI?",
+        "image_query": "microsoft copilot ai",
+        "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+        "image_url": "https://images.pexels.com/photos/35453772/pexels-photo-35453772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/New-Copilot.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "💰 250 milionów dolarów na fundusz AI",
+        "hook": "Fundusz Lightspeed inwestuje ogromny kapitał w start-upy sztucznej inteligencji.",
+        "summary": "Lightspeed Venture Partners pozyskuje 250 milionów dolarów na stworzenie nowego funduszu skupionego na wczesnym etapie rozwoju spółek AI w Azji. Inwestorzy stawiają na rozwój autorskich modeli uczenia maszynowego oraz infrastruktury chmurowej.",
+        "comment": "Nawet w obliczu rynkowego spowolnienia na giełdach, fundusze VC wciąż pompują setki milionów w obietnicę przełomu AI.",
+        "question": "Czy to kolejny racjonalny krok w rozwoju technologii, czy przedmuchiwanie bańki inwestycyjnej?",
+        "image_query": "venture capital investment",
+        "link": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
+        "image_url": "https://images.pexels.com/photos/6913351/pexels-photo-6913351.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2024/06/india-ai.jpg?w=1200"
+      }
+    ]
   }
 }
