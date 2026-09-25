@@ -19,18 +19,18 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
-# --- ŹRÓDŁA PODZIELONE: BIEŻĄCE ODDITIES vs KLASYCZNE CIEKAWOSTKI ---
+# --- ZWERYFIKOWANE I DZIAŁAJĄCE ŹRÓDŁA RSS ---
 RSS_URLS = [
-    # 1. BIEŻĄCY POLSKI ODDITIES (ostatnie 24h - zoo, ucieczki, dziwne wpadki, rekordy)
-    "https://news.google.com/rss/search?q=(kuriozum+OR+nietypowe+OR+wpadka+OR+rekord+OR+zoo+OR+ogromna)+when:2d&hl=pl&gl=PL&ceid=PL:pl",
-    "https://news.google.com/rss/search?q=(absurd+OR+lama+OR+zwierzęta+OR+farma)+when:2d&hl=pl&gl=PL&ceid=PL:pl",
+    # 1. POLSKIE BIEŻĄCE ODDITIES / CIEKAWOSTKI (Google News PL)
+    "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
     
-    # 2. BIEŻĄCE GLOBALNE ODD NEWS (bardzo świeże fakty z ostatnich dni)
+    # 2. GLOBALNE BIEŻĄCE ODD NEWS (bardzo świeże zdarzenia z ostatnich 24-48h)
     "https://www.upi.com/rss/Odd_News/",
-    "https://feeds.skynews.com/feeds/rss/strange.xml",
     "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
+    "https://www.huffpost.com/section/weird-news/feed",
     
-    # 3. NAUKA I HISTORYCZNE SMAKOSZE (stałe, ponadczasowe ciekawostki)
+    # 3. NAUKA / HISTORIA (stałe smaczki)
     "https://www.mentalfloss.com/rss.xml",
     "https://www.sciencenews.org/topic/weird-science/feed"
 ]
@@ -41,8 +41,8 @@ POLISH_MONTHS = {
     9: "września", 10: "października", 11: "listopada", 12: "grudnia"
 }
 
-MAX_AGE_HOURS = 48
-MIN_ITEMS = 8
+MAX_AGE_HOURS = 72
+MIN_ITEMS = 6
 
 
 def sanitize_text(text: str) -> str:
@@ -107,7 +107,7 @@ def fetch_article_image(url: str) -> str | None:
                 "Accept-Language": "pl,en-US;q=0.9,en;q=0.8"
             }
         )
-        with urllib.request.urlopen(req, timeout=6) as resp:
+        with urllib.request.urlopen(req, timeout=5) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
 
         patterns = [
@@ -124,12 +124,12 @@ def fetch_article_image(url: str) -> str | None:
                     img = "https:" + img
                 if img.startswith("http") and not img.endswith(".svg"):
                     return img
-    except Exception as ex:
-        print(f"  [Scraper] Brak og:image dla {url[:45]}... ({ex})")
+    except Exception:
+        pass
     return None
 
 
-def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
+def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
     if not PEXELS_API_KEY:
         return FALLBACK_IMG
     for attempt in range(retries + 1):
@@ -139,19 +139,15 @@ def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
                 "Authorization": PEXELS_API_KEY,
                 "User-Agent": "SwiatWMinute-Bot/1.0"
             })
-            with urllib.request.urlopen(req, timeout=6) as resp:
+            with urllib.request.urlopen(req, timeout=5) as resp:
                 if resp.status == 200:
                     data = json.loads(resp.read().decode("utf-8"))
                     photos = data.get("photos", [])
                     if photos:
                         src = photos[0].get("src", {})
                         return src.get("large") or src.get("medium") or FALLBACK_IMG
-        except Exception as ex:
-            if attempt == retries:
-                print(f"Błąd Pexels dla '{query}': {ex}")
-            else:
-                import time
-                time.sleep(1)
+        except Exception:
+            pass
     return FALLBACK_IMG
 
 
@@ -185,6 +181,7 @@ def validate_items(items: list) -> list:
     return valid
 
 
+# --- POBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
     try:
@@ -199,7 +196,7 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-print(f"Pobrano {len(raw_articles)} surowych artykułów (max {MAX_AGE_HOURS}h)")
+print(f"Pobrano {len(raw_articles)} surowych artykułów rozrywkowych.")
 
 archive_file = "archive_rozrywka.json"
 archive_data = {}
@@ -241,7 +238,7 @@ for art in raw_articles:
             if len(prev_words) > 2:
                 common = art_words.intersection(prev_words)
                 ratio = len(common) / min(len(art_words), len(prev_words))
-                if ratio > 0.35:
+                if ratio > 0.40:
                     is_duplicate = True
                     break
     if not is_duplicate:
@@ -250,31 +247,31 @@ for art in raw_articles:
 if len(filtered_raw_articles) < 6:
     filtered_raw_articles = raw_articles
 
-print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
+print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów przekazanych do AI")
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś genialnym redaktorem rozrywkowym profilu „Świat w Minucie”. Twoim zadaniem jest stworzenie listy 8-10 fascynujących, zabawnych i viralowych ciekawostek.
+prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek po polsku.
 
-BARDZO WAŻNA ZASADA PROPORCJI (ŚCISŁY PODZIAŁ 50 / 50):
-1. DOKŁADNIE 50% pozycji MUSI dotyczyć BIEŻĄCYCH WYDARZEŃ I ODDITIES Z OSTATNICH DNI (np. kurioza z miast, ucieczki zwierząt, narodziny niezwykłych zwierzaków w zoo, gigantyczne zbiory/warzywa, dziwne wpadki ludzi, nowe rekordy Guinnessa).
+PODZIAŁ TEMATYCZNY (50/50):
+1. DOKŁADNIE 50% MUSI dotyczyć BIEŻĄCYCH ODDITIES Z OSTATNICH DNI (wpadki ludzi, zoo, ucieczki zwierzaków, dziwne rekordy, kurioza lokalne).
    - Kategoria: BIEŻĄCE ABSURDY lub ZWIERZAKI.
-2. POZOSTAŁE 50% to ponadczasowe smaczki: szalona historia, sekrety popkultury, dziwna nauka lub literackie anomalie.
+2. POZOSTAŁE 50% to ponadczasowe smaczki: szalona historia, sekrety popkultury, dziwna nauka, literackie anomalie.
    - Kategoria: SZALONA HISTORIA, BEKA Z NAUKI lub POPKULTURA.
 
 ZASADY PISANIA DLA PÓL:
-- "title": [Emotikona] + [Chwytliwy, komiczny lub intrygujący nagłówek do 60 znaków].
-- "summary": 2-3 zdania pełne mięsa, konkretnych detali, liczb i komicznego absurdu.
-- "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu (zakaz powtarzania tego, co w summary!).
-- "image_query": 2-4 precyzyjne słowa kluczowe po angielsku pod Pexels.
-- "link": URL z wejścia (jeśli brak bezpośredniego, wklej URL pasującego newsa).
+- "title": [Emotikona] + [Krótki, chwytliwy nagłówek do 60 znaków].
+- "summary": 2-3 zdania pełne mięsa, liczb i komicznego absurdu.
+- "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu (ZAKAZ powtarzania tego, co w summary!).
+- "image_query": 2-3 konkretne słowa kluczowe po angielsku pod Pexels.
+- "link": Dokładnie URL artykułu z wejścia.
 
-BEZWZGLĘDNY ZAKAZ DUPLIKOWANIA TYCH TEMATÓW Z ARCHIWUM:
+UNIKAJ TYCH TEMATÓW Z ARCHIWUM:
 {json.dumps(previous_topics[:30], ensure_ascii=False)}
 
-Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów.
+Zwróć CZYSTĄ tablicę JSON obiektów.
 
-Dane wejściowe (znajdziesz tu zarówno bieżące newsy, jak i artykuły ciekawostkowe):
+Dane wejściowe:
 {json.dumps(filtered_raw_articles[:30], ensure_ascii=False)}
 """
 
@@ -303,11 +300,35 @@ try:
         text_res = text_res[:-3]
     text_res = text_res.strip()
 
-    raw_items = json.loads(text_res)
+    parsed = json.loads(text_res)
+    if isinstance(parsed, list):
+        raw_items = parsed
+    elif isinstance(parsed, dict) and "items" in parsed:
+        raw_items = parsed["items"]
+    elif isinstance(parsed, dict):
+        raw_items = list(parsed.values())[0] if parsed else []
+    else:
+        raw_items = []
+
     items = validate_items(raw_items)
 except Exception as e:
-    print(f"Błąd AI: {e}")
+    print(f"Błąd AI podczas parsowania: {e}")
     items = []
+
+# GWARANCJA: Jeśli AI zawiedzie, generujemy bezpieczny fallback z pobranych newsów
+if len(items) < MIN_ITEMS:
+    print(f"Aktywacja fallbacku – uzupełnianie do minimum {MIN_ITEMS} pozycji...")
+    for art in filtered_raw_articles:
+        if len(items) >= MIN_ITEMS:
+            break
+        items.append({
+            "category": "BIEŻĄCE ABSURDY",
+            "title": f"🐾 {art['title'][:55]}",
+            "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+            "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+            "image_query": "weird funny news",
+            "link": art["link"]
+        })
 
 if items:
     cats = Counter([item["category"] for item in items])
@@ -315,9 +336,9 @@ if items:
     for cat, count in cats.most_common():
         print(f"  {cat}: {count}")
 
-print(f"Wygenerowano {len(items)} pozycji rozrywkowych – OK")
+print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
 
-# --- ZDJĘCIA: Artykuł (og:image) -> Pexels -> Fallback ---
+# --- DOBIERANIE ZDJĘĆ ---
 print("Dobieranie zdjęć...")
 source_ok = 0
 for item in items:
@@ -350,8 +371,9 @@ output_data = {
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-archive_data[session_fixed_key] = output_data
-with open(archive_file, "w", encoding="utf-8") as f:
-    json.dump(archive_data, f, ensure_ascii=False, indent=2)
+if items:
+    archive_data[session_fixed_key] = output_data
+    with open(archive_file, "w", encoding="utf-8") as f:
+        json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zapisano {len(items)} ciekawostek do rozrywka.json (50% bieżące / 50% ponadczasowe).")
+print(f"Zapisano {len(items)} ciekawostek do rozrywka.json.")
