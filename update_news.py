@@ -257,11 +257,11 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z NOWYMI PROPORCJAMI ---
+# --- PROMPT AI Z PRECYZYJNĄ INSTRUKCJĄ DLA COMMENT ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś redaktorem naczelnym topowego magazynu informacyjno-biznesowego w social mediach (Instagram/Threads). 
-Twoje posty zdobywają ogromne zasięgi, ponieważ piszesz merytorycznie, zwięźle, bez nudnego żargonu, skupiając się na realnych skutkach wydarzeń.
+prompt = f"""Jesteś redaktorem naczelnym czołowego formatu informacyjno-biznesowego w social mediach („Świat w Minucie” na Instagramie i Threads). 
+Twoje posty zdobywają wiralowe zasięgi, ponieważ są ostre, merytoryczne, bezkompromisowe i całkowicie pozbawione nudnego żargonu czy urzędniczej nowomowy.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
@@ -272,13 +272,16 @@ Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wia
    - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutnie kluczowe wydarzenia geopolityczne o skali globalnej. 
    - Bezwzględny zakaz dominacji tematów militarnych, pojedynczych zakupów amunicji czy lokalnych targów zbrojeniowych.
 3. TECHNOLOGIE / AI:
-   - DOKŁADNIE 2 POZYCJE (największe inwestycje, regulacje, energetyka pod centra danych lub przełomy rynkowe).
+   - DOKŁADNIE 2 POZYCJE (największe inwestycje, regulacje, infrastruktura pod data centers lub przełomy rynkowe).
 4. ZERO plotek, celebrytów i lifestyle'u.
 
-ZASADY WIRALOWEGO COPYWRITINGU:
-- Zamiast pustych słów pisz o konkretach: cenach paliw, stopach procentowych, spółkach, surowcach, podatkach, umowach handlowych i walutach.
-- Pokaż realną stawkę: co to oznacza dla konsumenta, inwestora lub gospodarki.
-- Każdy news musi mieć zróżnicowane, unikalne i trafne pytanie do dyskusji pod dany temat.
+KLUCZOWE ZASADY COPYWRITINGU DLA PÓL:
+- "hook": 1 zdanie – silny kontrast, uderzenie w paradoks lub kluczowy fakt przyciągający uwagę w ułamku sekundy.
+- "summary": 2 zwięzłe zdania czystych faktów i liczb (ceny, stopy, kwoty, decyzje, spółki).
+- "comment": BEZWZGLĘDNY ZAKAZ STRESZCZANIA CZY PARAFRAZOWANIA "summary"! 
+  Nigdy nie pisz banałów w stylu: „to kluczowy krok”, „czas pokaże”, „to fundament stabilności”. 
+  "comment" to 1 mocna, autorska puenta twórcy z pazurem – obnażenie hipokryzji, wskazanie drugiego dna, ironiczne podsumowanie sytuacji lub bezpośrednie przełożenie decyzji na portfel zwykłego człowieka. Ma brzmieć jak cięty komentarz publicysty, a nie sucha notatka z banku.
+- "question": 1 zróżnicowane, konkretne i prowokujące do dyskusji pytanie pod dany temat (nie pytaj ogólnikowo „co o tym sądzisz?”).
 
 STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
 [
@@ -287,7 +290,7 @@ STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno – kontrast lub kluczowy fakt.",
     "summary": "2 zwięzłe zdania faktów operujące twardymi danymi i konkretami.",
-    "comment": "1 mocne, chłodne zdanie wniosku strategicznego lub biznesowego.",
+    "comment": "1 cięta, autorska puenta (zakaz parafrazowania summary, zero banałów i korpomowy).",
     "question": "1 unikalne, prowokujące do dyskusji pytanie pod dany temat.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels (np. 'stock market board', 'cargo ship container', 'wind turbine energy')",
     "link": "dokładnie URL artykułu"
@@ -309,7 +312,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.35,
+            temperature=0.45,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -351,8 +354,8 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Decyzje podejmowane w tym segmencie bezpośrednio przełożą się na równowagę gospodarczą w kolejnych miesiącach.",
-                "question": "Jak oceniasz potencjalne skutki tych doniesień?",
+                "comment": "Zamiast deklaracji liczą się twarde liczby w arkuszu – rynek bezlitośnie weryfikuje polityczne zapowiedzi.",
+                "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
                 "link": art["link"]
             })
