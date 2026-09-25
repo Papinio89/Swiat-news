@@ -1,1056 +1,304 @@
 <!DOCTYPE html>
 <html lang="pl" class="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Świat w Minutę - Przegląd Wiadomości</title>
-    
-    <meta name="description" content="Świat w Minutę – szybki przegląd najważniejszych wiadomości dnia: fakty, rynki, obronność i technologia. Krótko i na temat, generowane z pomocą AI.">
-    <meta name="robots" content="index, follow">
-    
-    <meta property="og:title" content="Świat w Minutę - Przegląd Wiadomości">
-    <meta property="og:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://swiat-w-minute.vercel.app">
-    <meta property="og:locale" content="pl_PL">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Świat w Minutę - Przegląd Wiadomości">
-    <meta name="twitter:description" content="Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.">
-    
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    colors: {
-                        brand: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        body { 
-            font-family: 'Inter', sans-serif; 
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .glass-header { backdrop-filter: blur(12px); }
-        
-        .shimmer {
-            background-size: 200% 100%;
-            animation: shimmer-anim 1.5s infinite;
-        }
-        .dark .shimmer { background-image: linear-gradient(90deg, #0f172a 8%, #1e293b 18%, #0f172a 33%); }
-        .shimmer { background-image: linear-gradient(90deg, #e2e8f0 8%, #f1f5f9 18%, #e2e8f0 33%); }
-        
-        @keyframes shimmer-anim { 
-            0% { background-position: 200% 0; } 
-            100% { background-position: -200% 0; } 
-        }
-
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        .dark ::-webkit-scrollbar-thumb { background: #1e293b; }
-
-        .badge-fixed {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 1 !important;
-            padding-top: 5px !important;
-            padding-bottom: 4px !important;
-        }
-
-        #category-filters {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        #category-filters::-webkit-scrollbar { display: none; }
-        .cat-chip {
-            white-space: nowrap;
-            font-size: 11px !important;
-            padding: 5px 12px !important;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Świat w Minutę — Najważniejsze informacje dnia</title>
+<meta name="description" content="Świat w Minutę — najważniejsze informacje z Polski i świata w około 60 sekund. Fakty, rynki, obronność i technologia, krótko i konkretnie.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#020617">
+<meta property="og:title" content="Świat w Minutę — Najważniejsze informacje dnia">
+<meta property="og:description" content="60 sekund. Najważniejsze informacje. Wiesz, co się dzieje.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://swiat-w-minut.vercel.app/">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Świat w Minutę — Najważniejsze informacje dnia">
+<meta name="twitter:description" content="60 sekund. Najważniejsze informacje.">
+<link rel="canonical" href="https://swiat-w-minut.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{brand:{400:'#fbbf24',500:'#f59e0b',600:'#d97706'}}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}body{font-family:Inter,sans-serif}
+.glass{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hide-scrollbar{scrollbar-width:none}.hide-scrollbar::-webkit-scrollbar{display:none}
+.hero-glow{box-shadow:0 20px 80px rgba(245,158,11,.10)}
+.card-hover{transition:.25s ease}.card-hover:hover{transform:translateY(-3px)}
+.fade-in{animation:fade .45s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.progress{transition:width .15s linear}
+.breaking-pulse{animation:pulse 1.8s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+.safe-area{padding-bottom:max(1rem,env(safe-area-inset-bottom))}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
 </head>
-<body class="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-f8fafc">
 
-    <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-amber-500 to-brand-400 z-[110] w-0 transition-all duration-100"></div>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-slate-100 antialiased">
+<div id="reading-progress" class="fixed left-0 top-0 z-[120] h-1 w-0 bg-gradient-to-r from-amber-500 to-yellow-300 progress"></div>
 
-    <!-- Save Modal -->
-    <div id="save-modal" class="fixed inset-0 z-[100] bg-white/95 dark:bg-slate-950/95 flex-col items-center justify-center p-4 hidden backdrop-blur-sm">
-        <p class="text-brand-500 dark:text-brand-400 text-lg font-bold text-center mb-4">Przytrzymaj obraz, aby zapisać 👇</p>
-        <img id="save-img" src="" class="max-w-full max-h-[60vh] rounded-2xl shadow-2xl mb-6 border border-slate-200 dark:border-slate-700" alt="Gotowa karta">
-        <div class="flex flex-wrap justify-center gap-3">
-            <a id="save-link" href="#" download="swiatwminute.jpg" class="px-6 py-3 bg-brand-500 text-slate-900 font-bold rounded-xl shadow-lg hover:bg-brand-400 transition text-center">Pobierz na dysk</a>
-            <button onclick="closeSaveModal()" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-bold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-300 dark:hover:bg-slate-700 transition">Zamknij</button>
-        </div>
-        <p class="text-slate-500 dark:text-slate-400 text-xs text-center mt-4 max-w-xs leading-relaxed">
-            Na telefonie: dłużej przytrzymaj powyższe zdjęcie i wybierz <b>"Zapisz w Zdjęciach"</b>.
-        </p>
+<!-- SAVE IMAGE MODAL -->
+<div id="save-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4 backdrop-blur-md">
+  <div class="max-w-lg text-center">
+    <p class="mb-4 font-bold text-amber-400">Gotowa karta — przytrzymaj obraz, aby zapisać</p>
+    <img id="save-img" alt="Karta wiadomości" class="mx-auto max-h-[65vh] rounded-2xl shadow-2xl">
+    <div class="mt-5 flex justify-center gap-3">
+      <a id="save-link" href="#" download class="rounded-xl bg-amber-500 px-5 py-3 font-bold text-slate-950">Pobierz</a>
+      <button onclick="closeSaveModal()" class="rounded-xl bg-slate-800 px-5 py-3 font-bold text-white">Zamknij</button>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 dark:border-white/5 dark:bg-[#020617]/90 glass">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <button onclick="goTop()" class="flex items-center gap-3 text-left">
+      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-amber-600 to-yellow-300 shadow-lg shadow-amber-500/20">
+        <i class="fa-solid fa-earth-europe text-lg text-slate-950"></i>
+      </div>
+      <div>
+        <div class="text-lg font-black leading-none tracking-tight">Świat <span class="text-amber-500">w Minutę</span></div>
+        <div id="header-date" class="mt-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">Ładowanie…</div>
+      </div>
+    </button>
+    <div class="flex items-center gap-2">
+      <div class="relative hidden md:block">
+        <input id="search-input" oninput="debouncedSearch()" placeholder="Szukaj tematów…" class="w-56 rounded-full border border-slate-200 bg-slate-100 py-2 pl-9 pr-9 text-sm font-semibold outline-none focus:ring-2 focus:ring-amber-500 dark:border-slate-800 dark:bg-slate-900">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400"></i>
+        <button id="search-clear" onclick="clearSearch()" class="absolute right-3 top-1/2 hidden -translate-y-1/2 text-slate-400"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="flex h-9 w-9 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+      <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white transition hover:bg-amber-500 hover:text-slate-950 sm:flex">
+        <i class="fa-brands fa-instagram"></i> Obserwuj
+      </a>
+    </div>
+  </div>
+  <div class="px-4 pb-3 md:hidden">
+    <div class="relative">
+      <input id="search-mobile" oninput="debouncedSearch()" placeholder="Szukaj tematów…" class="w-full rounded-full border border-slate-200 bg-slate-100 py-2.5 pl-9 pr-9 text-sm font-semibold outline-none focus:ring-2 focus:ring-amber-500 dark:border-slate-800 dark:bg-slate-900">
+      <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400"></i>
+    </div>
+  </div>
+</header>
+
+<main class="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+  <!-- HERO / VALUE PROPOSITION -->
+  <section id="daily-hero" class="hero-glow mb-8 overflow-hidden rounded-3xl border border-amber-500/20 bg-gradient-to-br from-white via-white to-amber-50 p-6 dark:from-slate-950 dark:via-slate-950 dark:to-amber-950/20 sm:p-8">
+    <div class="mx-auto max-w-4xl text-center">
+      <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-amber-600 dark:text-amber-400">
+        <span class="h-2 w-2 rounded-full bg-amber-500 breaking-pulse"></span> Najnowsze wydanie
+      </div>
+      <h1 class="text-3xl font-black tracking-tight sm:text-5xl">Co dziś naprawdę ma znaczenie?</h1>
+      <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
+        Najważniejsze informacje z Polski i świata. Bez szumu, bez przewijania kilkunastu portali.
+      </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-2 text-[11px] font-bold">
+        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🌍 Świat</span>
+        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🇵🇱 Polska</span>
+        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">💰 Rynki</span>
+        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🤖 Technologia</span>
+        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🛡️ Obrona</span>
+      </div>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <button onclick="document.getElementById('top-topics').scrollIntoView({behavior:'smooth'})" class="rounded-full bg-amber-500 px-6 py-3 text-sm font-black text-slate-950 shadow-lg shadow-amber-500/20 hover:bg-amber-400">
+          <i class="fa-solid fa-bolt mr-2"></i>Zaczynamy — 60 sekund
+        </button>
+        <span id="read-estimate" class="text-xs font-semibold text-slate-500">⏱ około 60 sekund</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAILY DASHBOARD -->
+  <section id="info-widgets" class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">Warszawa</div>
+      <div class="mt-1 flex items-end gap-2"><span id="weather-temp" class="text-2xl font-black">—°</span><span id="weather-icon">🌤️</span></div>
+      <div id="weather-desc" class="mt-1 text-[10px] text-slate-500">Pogoda</div>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">EUR / PLN</div>
+      <div id="rate-eur" class="mt-1 text-2xl font-black">—</div><div class="text-[10px] text-slate-500">kurs NBP</div>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">USD / PLN</div>
+      <div id="rate-usd" class="mt-1 text-2xl font-black">—</div><div class="text-[10px] text-slate-500">kurs NBP</div>
+    </div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">Dziś</div>
+      <div id="progress-text" class="mt-1 text-2xl font-black">0/0</div><div class="text-[10px] text-slate-500">przeczytane</div>
+    </div>
+  </section>
+
+  <!-- TABS -->
+  <nav class="mb-6 flex gap-2 overflow-x-auto hide-scrollbar" aria-label="Nawigacja">
+    <button id="tab-today" onclick="switchTab('today')" class="tab active shrink-0 rounded-full bg-amber-500 px-5 py-2.5 text-sm font-black text-slate-950">60 sekund</button>
+    <button id="tab-all" onclick="switchTab('all')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">Wszystkie</button>
+    <button id="tab-fast" onclick="switchTab('fast')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">⚡ Flash</button>
+    <button id="tab-archive" onclick="switchTab('archive')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">Archiwum</button>
+  </nav>
+
+  <!-- FILTERS -->
+  <div id="filters" class="mb-7 flex gap-2 overflow-x-auto hide-scrollbar"></div>
+
+  <!-- SEARCH VIEW -->
+  <section id="search-view" class="hidden">
+    <div class="mb-5 flex items-center justify-between">
+      <h2 class="text-2xl font-black">Wyniki wyszukiwania</h2>
+      <span id="search-count" class="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-black text-amber-500">0</span>
+    </div>
+    <div id="search-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="no-results" class="hidden py-16 text-center text-slate-500">Nic nie znaleziono.</div>
+  </section>
+
+  <!-- 60 SECOND VIEW -->
+  <section id="today-view">
+    <div id="top-topics" class="mb-5 flex items-end justify-between">
+      <div>
+        <div class="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-500">Dzisiejsza minuta</div>
+        <h2 class="text-2xl font-black sm:text-3xl">Najważniejsze dziś</h2>
+      </div>
+      <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-400"></div>
+    </div>
+    <div id="top-grid" class="grid gap-6 lg:grid-cols-3"></div>
+
+    <div id="three-numbers" class="my-10 hidden rounded-3xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900/60">
+      <div class="mb-5 flex items-center gap-2"><span class="text-xl">📊</span><h3 class="font-black">Dziś w liczbach</h3></div>
+      <div id="numbers-grid" class="grid gap-4 sm:grid-cols-3"></div>
     </div>
 
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 glass-header bg-white/85 dark:bg-[rgba(2,6,23,0.85)] border-b border-slate-200 dark:border-white/5 transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center shadow-lg shadow-amber-500/20">
-                    <i class="fa-solid fa-earth-americas text-white dark:text-slate-900 text-lg"></i>
-                </div>
-                <div>
-                    <h1 class="font-black text-xl tracking-tight leading-none text-slate-900 dark:text-white">Świat <span class="text-brand-500 dark:text-brand-400">w Minutę</span></h1>
-                    <p id="header-date" class="text-[11px] font-medium text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">Ładowanie...</p>
-                </div>
-            </div>
-            <div class="flex items-center gap-2 sm:gap-4">
-                <div class="relative w-48 sm:w-64 hidden md:block">
-                    <input type="text" id="search-input" onkeyup="debouncedFilterNews('desktop')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                    <button id="search-clear-desktop" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <button onclick="toggleTheme()" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 transition">
-                    <i id="theme-icon" class="fa-solid fa-moon"></i>
-                </button>
-                <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 dark:bg-slate-800 text-sm font-semibold text-white hover:bg-brand-500 hover:text-slate-900 transition duration-300">
-                    <i class="fa-brands fa-instagram"></i> Obserwuj
-                </a>
-            </div>
-        </div>
-        <div class="md:hidden px-4 pb-3">
-            <div class="relative w-full">
-                <input type="text" id="search-input-mobile" onkeyup="debouncedFilterNews('mobile')" placeholder="Szukaj tematów..." class="w-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-300 text-base sm:text-sm font-semibold py-2 pl-9 pr-9 rounded-full focus:outline-none focus:ring-2 focus:ring-brand-500 transition-colors">
-                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
-                <button id="search-clear-mobile" onclick="clearSearch()" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-white text-xs">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full">
-        
-        <!-- New edition banner -->
-        <div id="new-edition-banner" class="hidden mb-6">
-            <div class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-600 dark:text-brand-400 text-sm font-semibold">
-                <i class="fa-solid fa-sparkles"></i>
-                <span>Nowe wydanie jest dostępne</span>
-                <span id="banner-time" class="text-xs font-normal opacity-80"></span>
-            </div>
-        </div>
-
-        <div class="mb-5 text-center max-w-2xl mx-auto" id="main-titles">
-            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-2">Przegląd Dnia</h2>
-            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">Fakty, rynki i obronność wyselekcjonowane przez AI. Krótko i na temat.</p>
-            <p id="last-update" class="text-xs text-slate-400 dark:text-slate-500 mt-2 hidden">
-                <i class="fa-regular fa-clock mr-1"></i> Ostatnia aktualizacja: <span id="update-time">—</span>
-            </p>
-        </div>
-
-        <!-- Weather + Currency -->
-        <div id="info-widgets" class="max-w-2xl mx-auto mb-7 hidden">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <!-- Pogoda -->
-                <div class="flex items-center justify-between gap-4 px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
-                    <div class="flex items-center gap-3">
-                        <div id="weather-icon" class="text-3xl leading-none">🌤️</div>
-                        <div>
-                            <div class="flex items-baseline gap-2">
-                                <span id="weather-temp" class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">--°</span>
-                                <span class="text-xs font-medium text-slate-500">Warszawa</span>
-                            </div>
-                            <p id="weather-desc" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Ładowanie...</p>
-                        </div>
-                    </div>
-                    <div id="weather-extra" class="text-right text-[11px] text-slate-400 leading-tight">—</div>
-                </div>
-
-                <!-- Kursy walut -->
-                <div class="flex items-center px-5 py-3.5 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur">
-                    <div class="w-full">
-                        <div class="flex items-center gap-2 mb-1.5">
-                            <i class="fa-solid fa-coins text-brand-500 text-sm"></i>
-                            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Kursy NBP</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">EUR</span>
-                                <span id="rate-eur" class="font-bold text-slate-900 dark:text-white">—</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">USD</span>
-                                <span id="rate-usd" class="font-bold text-slate-900 dark:text-white">—</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">CHF</span>
-                                <span id="rate-chf" class="font-bold text-slate-900 dark:text-white">—</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-slate-500">GBP</span>
-                                <span id="rate-gbp" class="font-bold text-slate-900 dark:text-white">—</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TABS -->
-        <div class="flex flex-wrap justify-center items-center gap-2 mb-5" id="tabs-container">
-            <button id="tab-btn-today" data-tab="today" onclick="switchTab('today')" class="tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]">
-                <i class="fa-solid fa-calendar-day mr-1.5"></i> Dzisiejsze
-            </button>
-            <button id="tab-btn-fast" data-tab="fast" onclick="switchTab('fast')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
-                <i class="fa-solid fa-bolt mr-1.5"></i> Fast Review
-            </button>
-            <button id="tab-btn-archive" data-tab="archive" onclick="switchTab('archive')" class="tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700">
-                <i class="fa-solid fa-box-archive mr-1.5"></i> Archiwum
-            </button>
-        </div>
-
-        <!-- CATEGORY FILTERS + COUNTER -->
-        <div id="filters-wrapper" class="mb-7 hidden">
-            <div id="category-filters" class="flex flex-nowrap overflow-x-auto justify-start sm:justify-center gap-2 pb-1 -mx-4 px-4 sm:mx-0 sm:px-0"></div>
-            <p id="filter-counter" class="text-center text-xs text-slate-400 mt-3 hidden">Pokazuję <span id="filter-count">0</span> tematów</p>
-        </div>
-
-        <div id="loader" class="flex flex-col items-center justify-center py-16">
-            <i class="fa-solid fa-circle-notch fa-spin text-brand-500 dark:text-brand-400 text-4xl mb-4"></i>
-            <p class="text-slate-500 font-medium mt-4">Kompilowanie wiadomości...</p>
-        </div>
-
-        <div id="error-box" class="hidden flex-col items-center justify-center py-12 text-slate-500">
-            <i class="fa-solid fa-triangle-exclamation text-red-500 text-5xl mb-4 opacity-80"></i>
-            <p class="font-medium text-center px-4">Brak dzisiejszych wiadomości. Możliwe, że trwa aktualizacja wydań.</p>
-        </div>
-
-        <!-- 1. Dzisiejsze -->
-        <div id="view-today" class="view-section opacity-0 transition-opacity duration-500 hidden">
-            <div id="hero-section" class="mb-10 hidden">
-                <div class="flex items-center gap-2 mb-5">
-                    <div class="w-7 h-7 rounded-lg bg-brand-500/15 flex items-center justify-center">
-                        <i class="fa-solid fa-star text-brand-500 text-xs"></i>
-                    </div>
-                    <h3 class="text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400">Najważniejsze dziś</h3>
-                </div>
-                <div id="hero-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
-                <div class="flex items-center gap-4 my-8">
-                    <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
-                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Pozostałe tematy</span>
-                    <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
-                </div>
-            </div>
-            <div id="today-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
-        </div>
-
-        <!-- 2. Fast Review -->
-        <div id="view-fast" class="view-section max-w-3xl mx-auto w-full opacity-0 transition-opacity duration-500 hidden">
-            <div id="breaking-container" class="hidden mb-8">
-                <div class="flex items-center gap-2 mb-3">
-                    <span class="flex h-3 w-3 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
-                    </span>
-                    <h3 class="text-sm font-black uppercase tracking-wider text-red-600 dark:text-red-400">PILNE / FLASH REPORT</h3>
-                    <span id="fast-time-badge" class="ml-auto text-[10px] font-mono text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-md"></span>
-                </div>
-                <div id="breaking-list" class="flex flex-col gap-3"></div>
-            </div>
-            <div class="mb-3 flex items-center justify-between">
-                <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Błyskawiczny skrót pozostałych tematów:</p>
-            </div>
-            <div id="fast-list" class="flex flex-col gap-3"></div>
-        </div>
-
-        <!-- 3. Archiwum -->
-        <div id="view-archive" class="view-section opacity-0 transition-opacity duration-500 hidden">
-            <div id="archive-container" class="flex flex-col gap-12"></div>
-        </div>
-
-        <!-- 4. Search -->
-        <div id="view-search" class="view-section opacity-0 transition-opacity duration-500 hidden">
-            <div class="mb-6 flex justify-between items-end">
-                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Wyniki wyszukiwania</h3>
-                <span id="search-count" class="text-brand-500 font-bold text-sm bg-brand-500/10 px-3 py-1 rounded-full">0</span>
-            </div>
-            <div id="no-results" class="hidden flex-col items-center justify-center py-16 text-slate-500">
-                <i class="fa-regular fa-face-frown-open text-5xl mb-4 opacity-50"></i>
-                <p class="font-medium">Nic nie znaleziono dla tego zapytania.</p>
-            </div>
-            <div id="search-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
-        </div>
-    </main>
-
-    <button id="btn-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-brand-500 text-slate-900 shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-40">
-        <i class="fa-solid fa-arrow-up text-sm font-black"></i>
-    </button>
-
-    <footer class="border-t border-slate-200 dark:border-slate-800/50 mt-auto bg-white dark:bg-slate-900/30 transition-colors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center flex flex-col items-center">
-            <p class="text-slate-500 text-sm font-medium">Świat w Minutę &copy; <span id="year"></span></p>
-            <p class="text-slate-400 dark:text-slate-600 text-xs mt-1">Generowane automatycznie z wykorzystaniem AI.</p>
-            <div class="mt-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-[11px] text-slate-500 dark:text-slate-400 font-mono">
-                <i class="fa-regular fa-eye text-amber-500"></i> Odwiedzin: 
-                <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minut.vercel.app&labelColor=transparent&countColor=%23f59e0b&style=flat" alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
-            </div>
-            <p class="text-brand-500 text-[10px] mt-2 font-semibold tracking-wider">
-                <a href="https://swiat-w-minut.vercel.app">swiat-w-minut.vercel.app</a>
-            </p>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        const FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
-        const SITE_URL = "https://swiat-w-minut.vercel.app";
-
-        let todayItems = [];
-        let fastReportItems = [];
-        let archiveGroups = [];
-        let allNewsFlat = [];
-        let cardCounter = 0;
-        let archiveNews = {};
-        let archiveRoz = {};
-        let archiveVisibleCount = 3;
-        let currentCategory = localStorage.getItem('selectedCategory') || 'all';
-        let currentTab = 'today';
-
-        function debounce(fn, delay) {
-            let timer;
-            return function(...args) {
-                clearTimeout(timer);
-                timer = setTimeout(() => fn.apply(this, args), delay);
-            };
-        }
-        const debouncedFilterNews = debounce(function(sourceId) {
-            filterNews(sourceId);
-        }, 280);
-
-        window.addEventListener('scroll', () => {
-            const winScroll = document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-            document.getElementById('reading-progress').style.width = scrolled + '%';
-
-            const btt = document.getElementById('btn-back-to-top');
-            if (winScroll > 300) {
-                btt.classList.remove('opacity-0', 'pointer-events-none');
-                btt.classList.add('opacity-100', 'pointer-events-auto');
-            } else {
-                btt.classList.add('opacity-0', 'pointer-events-none');
-                btt.classList.remove('opacity-100', 'pointer-events-auto');
-            }
-        });
-
-        function initTheme() {
-            if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-                document.documentElement.classList.remove('dark');
-                document.getElementById('theme-icon').className = 'fa-solid fa-sun';
-            } else {
-                document.documentElement.classList.add('dark');
-                document.getElementById('theme-icon').className = 'fa-solid fa-moon';
-            }
-        }
-        function toggleTheme() {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark');
-                localStorage.theme = 'light';
-                document.getElementById('theme-icon').className = 'fa-solid fa-sun';
-            } else {
-                document.documentElement.classList.add('dark');
-                localStorage.theme = 'dark';
-                document.getElementById('theme-icon').className = 'fa-solid fa-moon';
-            }
-        }
-
-        function closeSaveModal() {
-            document.getElementById('save-modal').classList.add('hidden');
-            document.getElementById('save-modal').classList.remove('flex');
-            document.getElementById('save-img').src = '';
-        }
-
-        window.doShare = async function(safeTitle, safeSummary, safeLink) {
-            const title = decodeURIComponent(safeTitle);
-            const text = decodeURIComponent(safeSummary);
-            const url = decodeURIComponent(safeLink);
-            if (navigator.share) {
-                try { await navigator.share({ title, text, url }); } catch (err) {}
-            } else {
-                navigator.clipboard.writeText(url);
-                alert('Skopiowano link do schowka!');
-            }
-        };
-
-        window.doDownload = async function(cardId, safeTitle) {
-            const card = document.getElementById(cardId);
-            if (!card) return;
-            const title = decodeURIComponent(safeTitle);
-            const downloadBtn = card.querySelector('.fa-download').parentElement;
-            const originalHtml = downloadBtn.innerHTML;
-            downloadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-sm"></i>';
-            try {
-                const wasLight = !document.documentElement.classList.contains('dark');
-                if (wasLight) document.documentElement.classList.add('dark');
-                const canvas = await html2canvas(card, {
-                    scale: 2, useCORS: true, allowTaint: true, backgroundColor: '#020617', logging: false
-                });
-                if (wasLight) document.documentElement.classList.remove('dark');
-                const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
-                const safeName = title.replace(/[^a-ząćęłńóśźż0-9 ]/gi, '_').toLowerCase().substring(0, 30);
-                document.getElementById('save-img').src = dataUrl;
-                document.getElementById('save-link').download = `swiatwminute_${safeName}.jpg`;
-                document.getElementById('save-link').href = dataUrl;
-                document.getElementById('save-modal').classList.remove('hidden');
-                document.getElementById('save-modal').classList.add('flex');
-            } catch (err) { alert('Błąd tworzenia grafiki.'); } 
-            finally { downloadBtn.innerHTML = originalHtml; }
-        };
-
-        function getSafeEmojiAndTitle(rawTitle, isFun) {
-            const clean = (rawTitle || '').trim();
-            const firstWord = clean.split(/\s+/)[0] || '';
-            const isEmoji = firstWord.length <= 2 && /^[^\w\s.,!?a-zA-Z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(firstWord);
-            if (isEmoji) return { emoji: firstWord, title: clean.substring(firstWord.length).trim() };
-            return { emoji: (isFun ? '🎉' : '📌'), title: clean };
-        }
-
-        function getDomain(url) {
-            try { return new URL(url).hostname.replace(/^www\./, ''); } 
-            catch { return null; }
-        }
-
-        function estimateReadTime(text) {
-            if (!text) return '1 min';
-            const words = text.trim().split(/\s+/).length;
-            const minutes = Math.max(1, Math.ceil(words / 200));
-            return minutes === 1 ? '1 min' : `${minutes} min`;
-        }
-
-        function getCategoryStyle(rawC, isFun) {
-            let catStyle = "text-brand-600 bg-brand-100 border-brand-200 dark:text-brand-400 dark:bg-brand-400/10 dark:border-brand-400/20";
-            let comStyle = "bg-slate-50 border-slate-200 text-slate-800 border-l-4 border-l-brand-500 dark:bg-slate-800/40 dark:border-slate-700/50 dark:text-slate-300";
-            
-            if (isFun) {
-                catStyle = "text-fuchsia-600 bg-fuchsia-100 border-fuchsia-200 dark:text-fuchsia-400 dark:bg-fuchsia-400/10 dark:border-fuchsia-400/20";
-                comStyle = "bg-fuchsia-50 border-fuchsia-200 text-fuchsia-900 border-l-4 border-l-fuchsia-500 dark:bg-fuchsia-950/20 dark:border-fuchsia-900/30 dark:text-fuchsia-200";
-            } else {
-                const c = (rawC || '').toUpperCase();
-                if (/AI|TECHNOLOG/.test(c)) catStyle = "text-violet-600 bg-violet-100 border-violet-200 dark:text-violet-400 dark:bg-violet-400/10 dark:border-violet-400/20";
-                else if (/GOSPODARK|RYNK|INWESTYC|FINANS/.test(c)) catStyle = "text-emerald-600 bg-emerald-100 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-400/10 dark:border-emerald-400/20";
-                else if (/NAUKA/.test(c)) catStyle = "text-teal-600 bg-teal-100 border-teal-200 dark:text-teal-400 dark:bg-teal-400/10 dark:border-teal-400/20";
-                else if (/POLSKA/.test(c)) catStyle = "text-red-600 bg-red-100 border-red-200 dark:text-red-400 dark:bg-red-400/10 dark:border-red-400/20";
-                else if (/OBRONN|WOJSK/.test(c)) catStyle = "text-slate-600 bg-slate-200 border-slate-300 dark:text-slate-300 dark:bg-slate-300/10 dark:border-slate-300/20";
-                else if (/GEOPOLITYK|ŚWIAT|POLITYK/.test(c)) catStyle = "text-blue-600 bg-blue-100 border-blue-200 dark:text-blue-400 dark:bg-blue-400/10 dark:border-blue-400/20";
-            }
-            return { catStyle, comStyle };
-        }
-
-        function renderCardsToContainer(container, items) {
-            container.innerHTML = '';
-            items.forEach((item) => {
-                try {
-                    const isFun = item.isFun;
-                    const rawC = item.category || "Wiadomość";
-                    const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
-                    const { catStyle, comStyle } = getCategoryStyle(rawC, isFun);
-
-                    const words = cleanTitle.split(/\s+/);
-                    let titleHtml = cleanTitle;
-                    if (words.length >= 3) {
-                        const last = words.pop();
-                        titleHtml = `${words.join(" ")} <span class="${isFun ? 'text-fuchsia-500 dark:text-fuchsia-400' : 'text-brand-500 dark:text-brand-400'}">${last}</span>`;
-                    }
-
-                    const encTitle = encodeURIComponent(cleanTitle);
-                    const encSummary = encodeURIComponent(item.summary || '');
-                    const encLink = encodeURIComponent(item.link || SITE_URL);
-                    const cardId = `card-gen-${cardCounter++}`;
-                    const directImgUrl = item.image_url || FALLBACK_IMG;
-                    const domain = item.link ? getDomain(item.link) : null;
-                    const readTime = estimateReadTime((item.summary || '') + ' ' + (item.comment || ''));
-
-                    const cardHtml = `
-                        <article id="${cardId}" class="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition duration-300 flex flex-col relative group">
-                            <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 sm:opacity-100 transition-opacity" data-html2canvas-ignore="true">
-                                <button onclick="doDownload('${cardId}', '${encTitle}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Pobierz kartę">
-                                    <i class="fa-solid fa-download text-sm"></i>
-                                </button>
-                                <button onclick="doShare('${encTitle}', '${encSummary}', '${encLink}')" class="w-9 h-9 rounded-full bg-slate-900/70 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-brand-500 hover:text-slate-900 transition shadow-lg" title="Udostępnij">
-                                    <i class="fa-solid fa-share-nodes text-sm"></i>
-                                </button>
-                            </div>
-                            <div class="h-48 w-full relative overflow-hidden img-container bg-slate-800">
-                                <img src="${directImgUrl}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}';" 
-                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                                     crossorigin="anonymous" alt="${cleanTitle}">
-                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
-                            </div>
-                            <div class="p-5 sm:p-6 flex-1 flex flex-col -mt-10 relative z-10">
-                                <div class="mb-2.5 flex items-center justify-between gap-2">
-                                    <span class="badge-fixed px-2.5 rounded-md border text-[10px] font-bold uppercase tracking-wider ${catStyle} shadow-md backdrop-blur-md">${rawC}</span>
-                                    <span class="text-[10px] text-slate-400 font-medium flex items-center gap-1">
-                                        <i class="fa-regular fa-clock text-[9px]"></i> ${readTime}
-                                    </span>
-                                </div>
-                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2.5 leading-snug">${emoji} ${titleHtml}</h3>
-                                <p class="text-slate-600 dark:text-slate-400 text-sm mb-5 flex-1 leading-relaxed">${item.summary || ''}</p>
-                                <div class="mt-auto rounded-xl p-3.5 border ${comStyle}">
-                                    <div class="flex items-center gap-2 mb-1 opacity-80">
-                                        <i class="fa-solid fa-lightbulb text-[10px]"></i>
-                                        <span class="text-[9px] font-black uppercase tracking-widest">Komentarz</span>
-                                    </div>
-                                    <p class="text-sm font-medium leading-relaxed italic">"${item.comment || ''}"</p>
-                                </div>
-                                ${item.link && item.link !== '#' ? `
-                                <a data-html2canvas-ignore="true" href="${item.link}" target="_blank" rel="noopener noreferrer" 
-                                   class="mt-4 block text-center w-full py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition">
-                                    ${domain ? `Źródło: ${domain}` : 'ZOBACZ ŹRÓDŁO'} <i class="fa-solid fa-angle-right ml-1"></i>
-                                </a>` : ''}
-                            </div>
-                        </article>
-                    `;
-                    container.insertAdjacentHTML('beforeend', cardHtml);
-                } catch(e) {
-                    console.error("Błąd karty", e);
-                }
-            });
-        }
-
-        function renderFastReview(items, fastItems, fastTime) {
-            const breakingContainer = document.getElementById('breaking-container');
-            const breakingList = document.getElementById('breaking-list');
-            const timeBadge = document.getElementById('fast-time-badge');
-            const list = document.getElementById('fast-list');
-            
-            breakingList.innerHTML = '';
-            list.innerHTML = '';
-
-            if (fastItems && fastItems.length > 0) {
-                breakingContainer.classList.remove('hidden');
-                if (fastTime) timeBadge.textContent = `Aktualizacja: ${fastTime}`;
-
-                fastItems.forEach(item => {
-                    const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, false);
-                    const encTitle = encodeURIComponent(cleanTitle);
-                    const encLink = encodeURIComponent(item.link || SITE_URL);
-                    const domain = item.link ? getDomain(item.link) : null;
-
-                    breakingList.insertAdjacentHTML('beforeend', `
-                        <div class="bg-red-500/5 dark:bg-red-950/20 border-2 border-red-500/40 rounded-2xl p-4 sm:p-5 flex gap-4 items-start shadow-sm hover:border-red-500 transition">
-                            <div class="text-3xl flex-shrink-0 mt-0.5">${emoji}</div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center gap-2 mb-1.5 flex-wrap">
-                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-black uppercase tracking-wider bg-red-600 text-white border-red-500">${item.category || 'PILNE'}</span>
-                                    ${domain ? `<span class="text-[10px] text-slate-400 font-medium">${domain}</span>` : ''}
-                                </div>
-                                <h4 class="text-slate-900 dark:text-white font-bold text-base sm:text-lg leading-snug mb-1.5">
-                                    ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:underline">${cleanTitle}</a>` : cleanTitle}
-                                </h4>
-                                <p class="text-slate-700 dark:text-slate-300 text-xs sm:text-sm mb-2 leading-relaxed">${item.summary || ''}</p>
-                                ${item.comment ? `<div class="text-xs font-semibold text-red-600 dark:text-red-400 italic">⚡ ${item.comment}</div>` : ''}
-                            </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-white dark:bg-slate-900 border border-red-200 dark:border-red-900/50 flex-shrink-0 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </button>
-                        </div>
-                    `);
-                });
-            } else {
-                breakingContainer.classList.add('hidden');
-            }
-
-            items.forEach((item) => {
-                try {
-                    const isFun = item.isFun;
-                    const rawC = item.category || "Wiadomość";
-                    const { emoji, title: cleanTitle } = getSafeEmojiAndTitle(item.title, isFun);
-                    const { catStyle } = getCategoryStyle(rawC, isFun);
-                    const domain = item.link ? getDomain(item.link) : null;
-                    const encTitle = encodeURIComponent(cleanTitle);
-                    const encLink = encodeURIComponent(item.link || SITE_URL);
-
-                    list.insertAdjacentHTML('beforeend', `
-                        <div class="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 sm:p-5 flex gap-4 items-center shadow-sm dark:shadow-none hover:border-brand-300 dark:hover:border-slate-700 transition">
-                            <div class="text-3xl hidden sm:block">${emoji}</div>
-                            <div class="flex-1 min-w-0">
-                                <div class="flex items-center gap-2 mb-2 flex-wrap">
-                                    <span class="text-3xl sm:hidden leading-none">${emoji}</span>
-                                    <span class="badge-fixed px-2.5 rounded border text-[9px] font-bold uppercase tracking-wider ${catStyle} whitespace-nowrap">${rawC}</span>
-                                    ${domain ? `<span class="text-[10px] text-slate-400">${domain}</span>` : ''}
-                                </div>
-                                <h3 class="text-slate-900 dark:text-slate-100 font-semibold text-sm sm:text-base leading-snug">
-                                    ${item.link && item.link !== '#' ? `<a href="${item.link}" target="_blank" class="hover:text-brand-500 dark:hover:text-brand-400 transition">${cleanTitle}</a>` : cleanTitle}
-                                </h3>
-                            </div>
-                            <button onclick="doShare('${encTitle}', '', '${encLink}')" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex-shrink-0 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-brand-500 hover:text-white dark:hover:text-slate-900 transition">
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </button>
-                        </div>
-                    `);
-                } catch(e){}
-            });
-        }
-
-        function mixItems(nItems, rItems) {
-            let combined = [];
-            let nIdx = 0, rIdx = 0;
-            while (nIdx < nItems.length || rIdx < rItems.length) {
-                for(let i=0; i<3 && nIdx < nItems.length; i++) {
-                    combined.push({...nItems[nIdx], isFun: false});
-                    nIdx++;
-                }
-                if (rIdx < rItems.length) {
-                    combined.push({...rItems[rIdx], isFun: true});
-                    rIdx++;
-                }
-            }
-            return combined;
-        }
-
-        // ========== FILTRY KATEGORII ==========
-        function getCategoryCounts() {
-            const counts = {};
-            let sourceItems = [];
-
-            if (currentTab === 'today') {
-                sourceItems = todayItems;
-            } else if (currentTab === 'archive') {
-                archiveGroups.forEach(g => sourceItems = sourceItems.concat(g.items));
-            }
-
-            sourceItems.forEach(item => {
-                const cat = item.category || 'Inne';
-                counts[cat] = (counts[cat] || 0) + 1;
-            });
-            return counts;
-        }
-
-        function buildCategoryFilters() {
-            const priority = ['Polska', 'Obronność', 'Geopolityka', 'Gospodarka', 'Świat'];
-            const counts = getCategoryCounts();
-            const availableCats = Object.keys(counts).filter(cat => counts[cat] > 0);
-
-            const ordered = [
-                ...priority.filter(c => availableCats.includes(c)),
-                ...availableCats.filter(c => !priority.includes(c)).sort()
-            ];
-
-            const container = document.getElementById('category-filters');
-            
-            let html = `
-                <button data-cat="all" class="cat-chip rounded-full font-bold transition border ${currentCategory === 'all' ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
-                    Wszystkie
-                </button>
-            `;
-
-            ordered.forEach(cat => {
-                const isActive = currentCategory === cat;
-                const count = counts[cat] || 0;
-                html += `
-                    <button data-cat="${cat}" class="cat-chip rounded-full font-bold transition border ${isActive ? 'bg-brand-500 text-white border-brand-500' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700'}">
-                        ${cat} <span class="opacity-70 font-medium">(${count})</span>
-                    </button>
-                `;
-            });
-
-            container.innerHTML = html;
-
-            container.querySelectorAll('.cat-chip').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    currentCategory = btn.dataset.cat;
-                    localStorage.setItem('selectedCategory', currentCategory);
-                    
-                    container.querySelectorAll('.cat-chip').forEach(b => {
-                        b.classList.remove('bg-brand-500', 'text-white', 'border-brand-500');
-                        b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
-                    });
-                    btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border-slate-200', 'dark:border-slate-700');
-                    btn.classList.add('bg-brand-500', 'text-white', 'border-brand-500');
-                    
-                    applyFilters();
-                });
-            });
-        }
-
-        function applyFilters() {
-            if (currentTab === 'today') {
-                const filtered = currentCategory === 'all' 
-                    ? todayItems 
-                    : todayItems.filter(i => (i.category || 'Inne') === currentCategory);
-                renderTodayWithHero(filtered);
-                updateCounter(filtered.length);
-            } else if (currentTab === 'archive') {
-                renderArchive();
-            }
-        }
-
-        function updateCounter(count) {
-            const counterEl = document.getElementById('filter-counter');
-            const countSpan = document.getElementById('filter-count');
-            if (count > 0) {
-                countSpan.textContent = count;
-                counterEl.classList.remove('hidden');
-            } else {
-                counterEl.classList.add('hidden');
-            }
-        }
-
-        function renderTodayWithHero(items) {
-            const heroSection = document.getElementById('hero-section');
-            const heroGrid = document.getElementById('hero-grid');
-            const todayGrid = document.getElementById('today-grid');
-
-            if (items.length <= 3) {
-                heroSection.classList.add('hidden');
-                renderCardsToContainer(todayGrid, items);
-                return;
-            }
-
-            const hero = items.slice(0, 3);
-            const rest = items.slice(3);
-            heroSection.classList.remove('hidden');
-            renderCardsToContainer(heroGrid, hero);
-            renderCardsToContainer(todayGrid, rest);
-        }
-
-        async function loadWeather() {
-            try {
-                const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.23&longitude=21.01&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m&timezone=Europe%2FWarsaw');
-                const data = await res.json();
-                const current = data.current;
-                const code = current.weather_code;
-
-                const icons = {
-                    0: '☀️', 1: '🌤️', 2: '⛅', 3: '☁️',
-                    45: '🌫️', 48: '🌫️',
-                    51: '🌦️', 53: '🌦️', 55: '🌧️',
-                    61: '🌧️', 63: '🌧️', 65: '🌧️',
-                    71: '🌨️', 73: '🌨️', 75: '❄️',
-                    80: '🌦️', 81: '🌧️', 82: '⛈️',
-                    95: '⛈️', 96: '⛈️', 99: '⛈️'
-                };
-                const descriptions = {
-                    0: 'Bezchmurnie', 1: 'Przeważnie słonecznie', 2: 'Częściowe zachmurzenie', 3: 'Pochmurno',
-                    45: 'Mgła', 48: 'Mgła',
-                    51: 'Lekka mżawka', 53: 'Mżawka', 55: 'Silna mżawka',
-                    61: 'Lekki deszcz', 63: 'Deszcz', 65: 'Ulewny deszcz',
-                    71: 'Lekki śnieg', 73: 'Śnieg', 75: 'Intensywny śnieg',
-                    80: 'Przelotne opady', 81: 'Deszcz', 82: 'Ulewne opady',
-                    95: 'Burza', 96: 'Burza z gradem', 99: 'Silna burza'
-                };
-
-                document.getElementById('weather-temp').textContent = Math.round(current.temperature_2m) + '°';
-                document.getElementById('weather-icon').textContent = icons[code] || '🌡️';
-                document.getElementById('weather-desc').textContent = descriptions[code] || 'Warunki atmosferyczne';
-                document.getElementById('weather-extra').innerHTML = `Wiatr ${Math.round(current.wind_speed_10m)} km/h<br>Wilgotność ${current.relative_humidity_2m}%`;
-            } catch (e) {
-                console.log('Pogoda niedostępna');
-            }
-        }
-
-        async function loadCurrencyRates() {
-            try {
-                const res = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
-                const data = await res.json();
-                const rates = data[0].rates;
-
-                const findRate = (code) => {
-                    const r = rates.find(x => x.code === code);
-                    return r ? r.mid.toFixed(2) : '—';
-                };
-
-                document.getElementById('rate-eur').textContent = findRate('EUR');
-                document.getElementById('rate-usd').textContent = findRate('USD');
-                document.getElementById('rate-chf').textContent = findRate('CHF');
-                document.getElementById('rate-gbp').textContent = findRate('GBP');
-            } catch (e) {
-                console.log('Kursy walut niedostępne');
-            }
-        }
-
-        async function safeFetchJson(url) {
-            try {
-                const res = await fetch(url);
-                if (!res.ok) return { items: [] };
-                const text = await res.text();
-                if (!text.trim()) return { items: [] };
-                return JSON.parse(text);
-            } catch (e) {
-                return { items: [] };
-            }
-        }
-
-        async function init() {
-            initTheme();
-
-            try {
-                const cb = new Date().getTime(); 
-                
-                const [globalNewsData, globalFastData, globalRozData, aNewsData, aRozData] = await Promise.all([
-                    safeFetchJson(`news.json?v=${cb}`),
-                    safeFetchJson(`fast.json?v=${cb}`),
-                    safeFetchJson(`rozrywka.json?v=${cb}`),
-                    safeFetchJson(`archive.json?v=${cb}`),
-                    safeFetchJson(`archive_rozrywka.json?v=${cb}`)
-                ]);
-
-                archiveNews = aNewsData;
-                archiveRoz = aRozData;
-
-                todayItems = mixItems(globalNewsData.items || [], globalRozData.items || []);
-                fastReportItems = globalFastData.items || [];
-                
-                let displayDate = globalNewsData.date || "Dzisiaj";
-                document.getElementById('header-date').textContent = `${displayDate} • Najnowsze wydanie`;
-
-                const now = new Date();
-                const timeStr = now.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' });
-                document.getElementById('update-time').textContent = timeStr;
-                document.getElementById('last-update').classList.remove('hidden');
-                
-                document.getElementById('banner-time').textContent = `• ${timeStr}`;
-                document.getElementById('new-edition-banner').classList.remove('hidden');
-                setTimeout(() => {
-                    const banner = document.getElementById('new-edition-banner');
-                    if (banner) {
-                        banner.style.transition = 'opacity 0.4s';
-                        banner.style.opacity = '0';
-                        setTimeout(() => banner.classList.add('hidden'), 400);
-                    }
-                }, 8000);
-
-                const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-                
-                const keys = Object.keys(archiveNews).sort().reverse();
-                keys.forEach(key => {
-                    const dateKey = key.split('_')[0];
-                    if (dateKey === todayKey) return;
-
-                    const data = archiveNews[key];
-                    const rData = archiveRoz[`${dateKey}_rozrywka`] || { items: [] };
-                    const mixed = mixItems(data.items || [], rData.items || []);
-                    
-                    let edName = key.includes('poranne') ? 'Poranne' : (key.includes('wieczorne') ? 'Wieczorne' : 'Wydanie');
-                    let dateStr = data.date || dateKey;
-                    
-                    if (mixed.length > 0) {
-                        archiveGroups.push({ title: `${dateStr} • ${edName}`, items: mixed });
-                        allNewsFlat = allNewsFlat.concat(mixed);
-                    }
-                });
-
-                allNewsFlat = [...todayItems, ...fastReportItems, ...allNewsFlat];
-
-                document.getElementById('loader').style.display = 'none';
-                
-                if (todayItems.length === 0 && fastReportItems.length === 0) {
-                    document.getElementById('error-box').classList.remove('hidden');
-                    document.getElementById('error-box').classList.add('flex');
-                    document.getElementById('tabs-container').classList.add('hidden');
-                    return;
-                }
-
-                renderFastReview(todayItems, fastReportItems, globalFastData.time);
-                
-                // Ładujemy pogodę i kursy
-                loadWeather();
-                loadCurrencyRates();
-                document.getElementById('info-widgets').classList.remove('hidden');
-
-                switchTab('today');
-
-            } catch (error) {
-                console.error("Krytyczny błąd:", error);
-                document.getElementById('loader').innerHTML = '<p class="text-red-500 font-medium">Brak połączenia.</p>';
-            }
-        }
-
-        function renderArchive() {
-            const container = document.getElementById('archive-container');
-            container.innerHTML = '';
-
-            if (archiveGroups.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center py-16 text-slate-500">
-                        <i class="fa-solid fa-box-open text-4xl mb-3 opacity-40"></i>
-                        <p class="font-medium text-sm">Brak wcześniejszych wydań w archiwum.</p>
-                    </div>
-                `;
-                updateCounter(0);
-                return;
-            }
-
-            let totalShown = 0;
-            const groupsToShow = archiveGroups.slice(0, archiveVisibleCount);
-
-            groupsToShow.forEach((group, index) => {
-                let items = group.items;
-                if (currentCategory !== 'all') {
-                    items = items.filter(i => (i.category || 'Inne') === currentCategory);
-                }
-                if (items.length === 0) return;
-
-                totalShown += items.length;
-                const groupId = `archive-group-${index}`;
-                container.insertAdjacentHTML('beforeend', `
-                    <div>
-                        <div class="flex items-center gap-4 mb-6">
-                            <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">${group.title}</h3>
-                            <div class="h-px bg-slate-200 dark:bg-slate-800 flex-1"></div>
-                        </div>
-                        <div id="${groupId}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
-                    </div>
-                `);
-                renderCardsToContainer(document.getElementById(groupId), items);
-            });
-
-            updateCounter(totalShown);
-
-            if (archiveVisibleCount < archiveGroups.length) {
-                const remaining = archiveGroups.length - archiveVisibleCount;
-                container.insertAdjacentHTML('beforeend', `
-                    <div class="text-center mt-4" id="archive-load-more">
-                        <button onclick="loadMoreArchive()" class="px-6 py-3 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-brand-500 hover:text-slate-900 hover:border-brand-500 transition">
-                            Pokaż starsze wydania (${remaining})
-                        </button>
-                    </div>
-                `);
-            }
-        }
-
-        function loadMoreArchive() {
-            archiveVisibleCount += 3;
-            renderArchive();
-            setTimeout(() => {
-                const btn = document.getElementById('archive-load-more');
-                if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 80);
-        }
-
-        function switchTab(tabId) {
-            currentTab = tabId;
-            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden', 'opacity-0'));
-            
-            const filtersWrapper = document.getElementById('filters-wrapper');
-            
-            if (tabId === 'today' || tabId === 'archive') {
-                filtersWrapper.classList.remove('hidden');
-                buildCategoryFilters(); // przebuduj z aktualnymi liczbami
-            } else {
-                filtersWrapper.classList.add('hidden');
-            }
-
-            if (tabId === 'search') {
-                document.getElementById('main-titles').classList.add('hidden');
-                document.getElementById('tabs-container').classList.add('hidden');
-                document.getElementById('info-widgets').classList.add('hidden');
-                document.getElementById('new-edition-banner').classList.add('hidden');
-            } else {
-                document.getElementById('main-titles').classList.remove('hidden');
-                document.getElementById('tabs-container').classList.remove('hidden');
-                document.getElementById('info-widgets').classList.remove('hidden');
-                
-                document.querySelectorAll('.tab-btn').forEach(btn => {
-                    btn.className = "tab-btn flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700";
-                    btn.classList.remove('active');
-                });
-                
-                const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-                if (activeBtn) {
-                    activeBtn.className = "tab-btn active flex-1 sm:flex-none px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-brand-500 text-white dark:text-slate-900 shadow-[0_0_15px_rgba(245,158,11,0.3)]";
-                    activeBtn.dataset.tab = tabId;
-                }
-            }
-
-            if (tabId === 'today') {
-                applyFilters();
-            } else if (tabId === 'archive') {
-                renderArchive();
-            }
-
-            const targetView = document.getElementById(`view-${tabId}`);
-            if (targetView) {
-                targetView.classList.remove('hidden');
-                setTimeout(() => targetView.classList.remove('opacity-0'), 50);
-            }
-        }
-
-        function filterNews(sourceId) {
-            let val = '';
-            const desktopInput = document.getElementById('search-input');
-            const mobileInput = document.getElementById('search-input-mobile');
-            const clearDesktop = document.getElementById('search-clear-desktop');
-            const clearMobile = document.getElementById('search-clear-mobile');
-
-            if (sourceId === 'desktop') {
-                val = desktopInput.value;
-                mobileInput.value = val;
-            } else {
-                val = mobileInput.value;
-                desktopInput.value = val;
-            }
-            
-            const query = val.toLowerCase().trim();
-
-            if (val.length > 0) {
-                clearDesktop.classList.remove('hidden');
-                clearMobile.classList.remove('hidden');
-            } else {
-                clearDesktop.classList.add('hidden');
-                clearMobile.classList.add('hidden');
-            }
-            
-            if (query.length === 0) {
-                switchTab(currentTab || 'today');
-                return;
-            }
-
-            switchTab('search');
-            
-            const results = allNewsFlat.filter(item => 
-                (item.title && item.title.toLowerCase().includes(query)) || 
-                (item.summary && item.summary.toLowerCase().includes(query)) ||
-                (item.category && item.category.toLowerCase().includes(query)) ||
-                (item.comment && item.comment.toLowerCase().includes(query))
-            );
-
-            document.getElementById('search-count').textContent = results.length;
-            
-            const searchGrid = document.getElementById('search-grid');
-            const noResults = document.getElementById('no-results');
-            
-            if (results.length > 0) {
-                noResults.classList.add('hidden');
-                noResults.classList.remove('flex');
-                renderCardsToContainer(searchGrid, results);
-            } else {
-                searchGrid.innerHTML = '';
-                noResults.classList.remove('hidden');
-                noResults.classList.add('flex');
-            }
-        }
-
-        function clearSearch() {
-            document.getElementById('search-input').value = '';
-            document.getElementById('search-input-mobile').value = '';
-            document.getElementById('search-clear-desktop').classList.add('hidden');
-            document.getElementById('search-clear-mobile').classList.add('hidden');
-            switchTab(currentTab || 'today');
-        }
-
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
+    <div class="my-10 flex items-center gap-4">
+      <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
+      <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Pozostałe ważne tematy</span>
+      <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
+    </div>
+    <div id="rest-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+
+    <!-- INSTAGRAM CTA -->
+    <section class="my-12 rounded-3xl border border-fuchsia-500/20 bg-gradient-to-br from-fuchsia-500/10 to-amber-500/10 p-7 text-center">
+      <div class="mx-auto max-w-xl">
+        <div class="mb-2 text-3xl">📲</div>
+        <h2 class="text-2xl font-black">Nie masz minuty?</h2>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">Najważniejsze informacje publikujemy również na Instagramie. Krótkie karuzele, grafiki i najważniejsze fakty.</p>
+        <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-fuchsia-500 to-amber-500 px-6 py-3 text-sm font-black text-white shadow-lg">
+          <i class="fa-brands fa-instagram"></i> Obserwuj @swiatwminute
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ALL VIEW -->
+  <section id="all-view" class="hidden">
+    <div id="all-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+  </section>
+
+  <!-- FAST VIEW -->
+  <section id="fast-view" class="mx-auto hidden max-w-3xl">
+    <div id="breaking"></div>
+    <div class="mb-4 text-xs font-semibold text-slate-500">Błyskawiczny skrót pozostałych tematów</div>
+    <div id="fast-list" class="space-y-3"></div>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section id="archive-view" class="hidden">
+    <div id="archive-container" class="space-y-12"></div>
+    <button id="archive-more" onclick="loadMoreArchive()" class="mx-auto mt-8 hidden rounded-full bg-slate-100 px-6 py-3 text-sm font-black dark:bg-slate-800"></button>
+  </section>
+
+  <div id="loader" class="py-20 text-center">
+    <i class="fa-solid fa-circle-notch fa-spin text-4xl text-amber-500"></i>
+    <p class="mt-4 text-sm font-semibold text-slate-500">Kompilowanie najważniejszych informacji…</p>
+  </div>
+  <div id="error" class="hidden py-20 text-center">
+    <div class="text-4xl">⚠️</div><p class="mt-3 font-bold">Nie udało się pobrać najnowszego wydania.</p>
+    <button onclick="location.reload()" class="mt-4 rounded-full bg-amber-500 px-5 py-2 text-sm font-bold text-slate-950">Spróbuj ponownie</button>
+  </div>
+</main>
+
+<footer class="mt-auto border-t border-slate-200 bg-white dark:border-slate-800/50 dark:bg-slate-950">
+  <div class="mx-auto max-w-7xl px-4 py-10 text-center sm:px-6">
+    <div class="text-lg font-black">Świat <span class="text-amber-500">w Minutę</span></div>
+    <p class="mx-auto mt-2 max-w-xl text-xs leading-relaxed text-slate-500">Selekcja i opracowanie wspierane przez AI. Źródła informacji są wskazywane przy każdym materiale. AI pomaga skrócić i uporządkować informacje, ale nie zastępuje oryginalnych źródeł.</p>
+    <div class="mt-5 flex flex-wrap justify-center gap-3 text-xs font-bold">
+      <button onclick="openAbout()" class="rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800">Jak powstaje Świat w Minutę?</button>
+      <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800"><i class="fa-brands fa-instagram mr-1"></i> Instagram</a>
+    </div>
+    <p class="mt-6 text-[10px] text-slate-400">© <span id="year"></span> Świat w Minutę</p>
+  </div>
+</footer>
+
+<!-- ABOUT -->
+<div id="about-modal" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+  <div class="max-h-[85vh] max-w-xl overflow-auto rounded-3xl bg-white p-7 dark:bg-slate-900">
+    <div class="flex items-center justify-between"><h2 class="text-xl font-black">Jak powstaje Świat w Minutę?</h2><button onclick="closeAbout()" class="text-slate-400"><i class="fa-solid fa-xmark"></i></button></div>
+    <div class="mt-6 space-y-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+      <p><b>1. Źródła.</b> Zbieramy informacje z różnych źródeł i przypisujemy link do materiału źródłowego.</p>
+      <p><b>2. Selekcja.</b> System pomaga wyłapać tematy, które mogą mieć znaczenie dla odbiorcy.</p>
+      <p><b>3. Opracowanie.</b> Informacje są skracane do formatu, który można przeczytać w około minutę.</p>
+      <p><b>4. Kontekst.</b> Przy wybranych tematach dodajemy sekcję „Dlaczego to ważne?” zamiast samego powtarzania nagłówka.</p>
+      <p><b>5. Źródło.</b> Zawsze, gdy dostępny jest link, możesz przejść do oryginalnego materiału.</p>
+      <p class="rounded-2xl bg-amber-500/10 p-4 text-xs">AI może popełniać błędy. Przy ważnych informacjach warto sprawdzić materiał źródłowy.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const SITE_URL='https://swiat-w-minut.vercel.app';
+const FALLBACK_IMG='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop';
+let todayItems=[],fastItems=[],archiveGroups=[],allItems=[],archiveVisible=3,currentTab='today',currentCategory=localStorage.getItem('swmCategory')||'all',cardCounter=0;
+const readKey='swmRead_'+new Date().toISOString().slice(0,10);
+
+function $(id){return document.getElementById(id)}
+function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function domain(url){try{return new URL(url).hostname.replace(/^www\./,'')}catch{return''}}
+function debounce(fn,ms){let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms)}}
+function safeFetch(url){return fetch(url).then(r=>r.ok?r.text():'').then(t=>t.trim()?JSON.parse(t):{items:[]}).catch(()=>({items:[]}))}
+function mix(a,b){let o=[],i=0,j=0;while(i<a.length||j<b.length){for(let n=0;n<3&&i<a.length;n++)o.push({...a[i++],isFun:false});if(j<b.length)o.push({...b[j++],isFun:true})}return o}
+function getTitle(t){t=String(t||'').trim();const parts=t.split(/\s+/);const first=parts[0]||'';const emoji=/^[^\w\s.,!?ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(first)&&first.length<=3;return emoji?{emoji:first,title:t.slice(first.length).trim()}:{emoji:'📰',title:t}}
+function estimate(t){const w=String(t||'').trim().split(/\s+/).filter(Boolean).length;return Math.max(8,Math.ceil(w/3))}
+function categoryClass(c,fun=false){if(fun)return'border-fuchsia-500/20 bg-fuchsia-500/10 text-fuchsia-500';c=(c||'').toUpperCase();if(/AI|TECH/.test(c))return'border-violet-500/20 bg-violet-500/10 text-violet-500';if(/GOSPODARK|RYNK|FINANS|INWEST/.test(c))return'border-emerald-500/20 bg-emerald-500/10 text-emerald-500';if(/POLSK/.test(c))return'border-red-500/20 bg-red-500/10 text-red-500';if(/OBRON|WOJSK/.test(c))return'border-slate-400/20 bg-slate-500/10 text-slate-400';return'border-blue-500/20 bg-blue-500/10 text-blue-500'}
+function isRead(item){try{return JSON.parse(localStorage.getItem(readKey)||'[]').includes(item._readId)}catch{return false}}
+function markRead(item){try{let a=JSON.parse(localStorage.getItem(readKey)||'[]');if(!a.includes(item._readId))a.push(item._readId);localStorage.setItem(readKey,JSON.stringify(a))}catch{}updateProgress()}
+function updateProgress(){const total=todayItems.length;if(!total){$('progress-text').textContent='0/0';return}const read=todayItems.filter(isRead).length;$('progress-text').textContent=`${read}/${total}`;const pct=Math.round(read/total*100);$('read-estimate').textContent=pct?`✓ ${pct}% przeczytane`:'⏱ około 60 sekund'}
+function card(item,compact=false){item._readId=item._readId||btoa(unescape(encodeURIComponent((item.title||'')+'|'+(item.link||'')))).slice(0,40);const {emoji,title}=getTitle(item.title), cat=item.category||'Wiadomość',img=item.image_url||FALLBACK_IMG,src=domain(item.link),read=isRead(item),id='card-'+(++cardCounter),summary=item.summary||'',why=item.why_it_matters||item.why||item.comment||'Brak dodatkowego kontekstu.';const encTitle=encodeURIComponent(title),encSummary=encodeURIComponent(summary),encLink=encodeURIComponent(item.link||SITE_URL);return `<article id="${id}" data-read-id="${escapeHtml(item._readId)}" class="card-hover overflow-hidden rounded-3xl border ${read?'border-emerald-500/20':'border-slate-200 dark:border-slate-800'} bg-white shadow-sm dark:bg-slate-900/60">
+<div class="relative h-52 overflow-hidden bg-slate-800"><img src="${escapeHtml(img)}" crossorigin="anonymous" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}'" class="h-full w-full object-cover transition duration-500 hover:scale-105" alt="${escapeHtml(title)}"><div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div><div class="absolute bottom-3 left-4 right-4 flex items-end justify-between gap-2"><span class="rounded-md border px-2 py-1 text-[9px] font-black uppercase tracking-wider backdrop-blur ${categoryClass(cat,item.isFun)}">${escapeHtml(cat)}</span><span class="text-[10px] font-bold text-white/80">⏱ ${estimate(summary+' '+why)} sek.</span></div></div>
+<div class="p-5 sm:p-6">
+<div class="flex items-start justify-between gap-3"><h3 class="text-xl font-black leading-snug">${emoji} ${escapeHtml(title)}</h3><button onclick="shareItem('${encTitle}','${encSummary}','${encLink}')" class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-500 dark:bg-slate-800" title="Udostępnij"><i class="fa-solid fa-share-nodes text-xs"></i></button></div>
+<p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">${escapeHtml(summary)}</p>
+<div class="mt-5 rounded-2xl border-l-4 border-amber-500 bg-amber-500/5 p-4"><div class="mb-1 text-[9px] font-black uppercase tracking-widest text-amber-500">Dlaczego to ważne?</div><p class="text-sm font-semibold leading-relaxed text-slate-700 dark:text-slate-300">${escapeHtml(why)}</p></div>
+<div class="mt-4 flex items-center justify-between gap-3"><span class="text-[10px] font-semibold text-slate-400">${src?'Źródło: '+escapeHtml(src):'Źródło niedostępne'}</span><div class="flex gap-2"><button onclick="toggleRead('${id}')" class="rounded-full px-3 py-2 text-[10px] font-black ${read?'bg-emerald-500/10 text-emerald-500':'bg-slate-100 text-slate-500 dark:bg-slate-800'}">${read?'✓ Przeczytane':'Oznacz ✓'}</button>${item.link&&item.link!=='#'?`<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="rounded-full bg-slate-950 px-3 py-2 text-[10px] font-black text-white dark:bg-white dark:text-slate-950">Źródło →</a>`:''}</div></div>
+</div></article>`}
+function toggleRead(id){const el=$(id);if(!el)return;const item=todayItems.find(x=>x._readId===el.dataset.readId)||allItems.find(x=>x._readId===el.dataset.readId);if(!item)return;markRead(item);renderCurrent()}
+function renderCurrent(){if(currentTab==='today')renderToday();else if(currentTab==='all')renderAll();updateProgress()}
+function filtered(items){return currentCategory==='all'?items:items.filter(x=>(x.category||'Inne')===currentCategory)}
+function renderToday(){let items=filtered(todayItems);const top=items.slice(0,3),rest=items.slice(3);$('top-grid').innerHTML=top.map(x=>card(x)).join('');$('rest-grid').innerHTML=rest.map(x=>card(x)).join('');renderNumbers(items);$('edition-time').textContent=`${items.length} tematów · ${$('header-date').textContent}`)}
+function renderAll(){$('all-grid').innerHTML=filtered(todayItems).map(x=>card(x)).join('')}
+function renderNumbers(items){const box=$('three-numbers'),grid=$('numbers-grid');const numbers=items.filter(x=>x.number||x.stat||x.value).slice(0,3);if(!numbers.length){box.classList.add('hidden');return}box.classList.remove('hidden');grid.innerHTML=numbers.map(x=>`<div class="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800/70"><div class="text-2xl font-black text-amber-500">${escapeHtml(x.number||x.stat||x.value)}</div><div class="mt-1 text-xs font-semibold text-slate-500">${escapeHtml(x.number_label||x.stat_label||x.label||x.title||'')}</div></div>`).join('')}
+function renderFast(){const b=$('breaking'),list=$('fast-list');b.innerHTML=fastItems.length?`<div class="mb-5"><div class="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-wider text-red-500"><span class="h-2.5 w-2.5 rounded-full bg-red-500 breaking-pulse"></span>PILNE / FLASH</div><div class="space-y-3">${fastItems.map(x=>`<div class="rounded-2xl border-2 border-red-500/30 bg-red-500/5 p-5"><div class="text-[9px] font-black uppercase text-red-500">${escapeHtml(x.category||'PILNE')}</div><h3 class="mt-1 text-lg font-black">${getTitle(x.title).emoji} ${escapeHtml(getTitle(x.title).title)}</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-400">${escapeHtml(x.summary||'')}</p>${x.link&&x.link!=='#'?`<a class="mt-3 inline-block text-xs font-bold text-red-500" href="${escapeHtml(x.link)}" target="_blank" rel="noopener noreferrer">Źródło →</a>`:''}</div>`).join('')}</div></div>`:'';list.innerHTML=filtered(todayItems).map(x=>`<div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/50"><div class="flex gap-3"><div class="text-2xl">${getTitle(x.title).emoji}</div><div class="min-w-0 flex-1"><span class="text-[9px] font-black uppercase text-amber-500">${escapeHtml(x.category||'Wiadomość')}</span><h3 class="mt-1 font-bold">${escapeHtml(getTitle(x.title).title)}</h3></div></div></div>`).join('')}
+function renderArchive(){const c=$('archive-container');c.innerHTML='';const groups=archiveGroups.slice(0,archiveVisible);groups.forEach(g=>{const items=currentCategory==='all'?g.items:g.items.filter(x=>(x.category||'Inne')===currentCategory);if(!items.length)return;c.insertAdjacentHTML('beforeend',`<section><div class="mb-5 flex items-center gap-4"><h2 class="text-xl font-black">${escapeHtml(g.title)}</h2><div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div></div><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">${items.map(x=>card(x)).join('')}</div></section>`)});const btn=$('archive-more');if(archiveVisible<archiveGroups.length){btn.classList.remove('hidden');btn.textContent=`Pokaż starsze wydania (${archiveGroups.length-archiveVisible})`}else btn.classList.add('hidden')}
+function loadMoreArchive(){archiveVisible+=3;renderArchive()}
+function buildFilters(){const counts={};filteredSource().forEach(x=>counts[x.category||'Inne']=(counts[x.category||'Inne']||0)+1);const cats=Object.keys(counts).sort();$('filters').innerHTML=[['all','Wszystkie'],...cats.map(c=>[c,`${c} (${counts[c]})`])].map(([v,t])=>`<button onclick="setCategory('${encodeURIComponent(v)}')" class="shrink-0 rounded-full border px-3 py-2 text-[10px] font-black ${currentCategory===v?'border-amber-500 bg-amber-500 text-slate-950':'border-slate-200 bg-slate-100 text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300'}">${escapeHtml(t)}</button>`).join('')}
+function filteredSource(){return currentTab==='archive'?archiveGroups.flatMap(g=>g.items):todayItems}
+function setCategory(v){currentCategory=decodeURIComponent(v);localStorage.setItem('swmCategory',currentCategory);buildFilters();currentTab==='archive'?renderArchive():renderCurrent()}
+function switchTab(tab){currentTab=tab;document.querySelectorAll('.tab').forEach(x=>x.className='tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300');$('tab-'+tab).className='tab active shrink-0 rounded-full bg-amber-500 px-5 py-2.5 text-sm font-black text-slate-950';['today-view','all-view','fast-view','archive-view','search-view'].forEach(id=>$(id).classList.add('hidden'));$('filters').classList.toggle('hidden',tab==='fast');$(tab==='today'?'today-view':tab==='all'?'all-view':tab==='fast'?'fast-view':'archive-view').classList.remove('hidden');buildFilters();if(tab==='today')renderToday();if(tab==='all')renderAll();if(tab==='fast')renderFast();if(tab==='archive')renderArchive();window.scrollTo({top:0,behavior:'smooth'})}
+function search(){const q=($('search-input').value||$('search-mobile').value).toLowerCase().trim();$('search-input').value=q;$('search-mobile').value=q;$('search-clear').classList.toggle('hidden',!q);if(!q){$('search-view').classList.add('hidden');switchTab(currentTab);return}document.querySelectorAll('.tab').forEach(x=>x.classList.remove('bg-amber-500'));['today-view','all-view','fast-view','archive-view'].forEach(id=>$(id).classList.add('hidden'));$('filters').classList.add('hidden');$('search-view').classList.remove('hidden');const r=allItems.filter(x=>[x.title,x.summary,x.comment,x.category].some(v=>String(v||'').toLowerCase().includes(q)));$('search-count').textContent=r.length;$('search-grid').innerHTML=r.map(x=>card(x)).join('');$('no-results').classList.toggle('hidden',!!r.length)}
+const debouncedSearch=debounce(search,250);function clearSearch(){$('search-input').value='';$('search-mobile').value='';$('search-clear').classList.add('hidden');switchTab(currentTab)}
+async function shareItem(t,s,u){t=decodeURIComponent(t);s=decodeURIComponent(s);u=decodeURIComponent(u);if(navigator.share){try{await navigator.share({title:t,text:s,url:u})}catch{}}else{try{await navigator.clipboard.writeText(u);alert('Link skopiowany.')}catch{}}}
+async function downloadCard(id,title){const el=$(id);if(!el)return;try{const canvas=await html2canvas(el,{scale:2,useCORS:true,backgroundColor:'#020617'});const data=canvas.toDataURL('image/jpeg',.92);$('save-img').src=data;$('save-link').href=data;$('save-link').download='swiatwminute_'+decodeURIComponent(title).slice(0,40).replace(/[^a-z0-9ąćęłńóśźż ]/gi,'_')+'.jpg';$('save-modal').classList.remove('hidden');$('save-modal').classList.add('flex')}catch(e){alert('Nie udało się przygotować grafiki.')}}
+function closeSaveModal(){$('save-modal').classList.add('hidden');$('save-modal').classList.remove('flex');$('save-img').src=''}
+function openAbout(){$('about-modal').classList.remove('hidden');$('about-modal').classList.add('flex')}function closeAbout(){$('about-modal').classList.add('hidden');$('about-modal').classList.remove('flex')}
+function goTop(){window.scrollTo({top:0,behavior:'smooth'})}
+function theme(){if(localStorage.theme==='light'||(!localStorage.theme&&matchMedia('(prefers-color-scheme:light)').matches)){document.documentElement.classList.remove('dark');$('theme-icon').className='fa-solid fa-sun'}else{document.documentElement.classList.add('dark');$('theme-icon').className='fa-solid fa-moon'}}
+function toggleTheme(){localStorage.theme=document.documentElement.classList.contains('dark')?'light':'dark';theme()}
+async function loadWeather(){try{const d=await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.23&longitude=21.01&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw').then(r=>r.json());$('weather-temp').textContent=Math.round(d.current.temperature_2m)+'°';const m={0:['☀️','Bezchmurnie'],1:['🌤️','Przeważnie słonecznie'],2:['⛅','Częściowe zachmurzenie'],3:['☁️','Pochmurno'],61:['🌧️','Deszcz'],63:['🌧️','Deszcz'],65:['🌧️','Ulewa'],71:['🌨️','Śnieg'],73:['❄️','Śnieg'],80:['🌦️','Przelotne opady'],95:['⛈️','Burza']};const x=m[d.current.weather_code]||['🌡️','Warunki atmosferyczne'];$('weather-icon').textContent=x[0];$('weather-desc').textContent=x[1]}catch{}}
+async function loadRates(){try{const d=await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json').then(r=>r.json());const r=d[0].rates;for(const c of ['EUR','USD']){const x=r.find(a=>a.code===c);$('rate-'+c.toLowerCase()).textContent=x?x.mid.toFixed(2):'—'}}catch{}}
+async function init(){theme();$('year').textContent=new Date().getFullYear();try{const cb=Date.now();const [n,f,r,a,ar]=await Promise.all([safeFetch('news.json?v='+cb),safeFetch('fast.json?v='+cb),safeFetch('rozrywka.json?v='+cb),safeFetch('archive.json?v='+cb),safeFetch('archive_rozrywka.json?v='+cb)]);todayItems=mix(n.items||[],r.items||[]);fastItems=f.items||[];todayItems.forEach((x,i)=>x._readId='t'+i+'_'+btoa(unescape(encodeURIComponent(x.title||''))).slice(0,20));$('header-date').textContent=(n.date||'Dzisiaj')+' • najnowsze wydanie';$('edition-time').textContent=f.time?'Flash: '+f.time:'';const today=new Date().toISOString().slice(0,10);Object.keys(a||{}).sort().reverse().forEach(k=>{if(k.startsWith(today))return;const date=k.split('_')[0],rd=ar[date+'_rozrywka']||{items:[]},items=mix(a[k].items||[],rd.items||[]);if(items.length)archiveGroups.push({title:(a[k].date||date)+' • '+(k.includes('poranne')?'Poranne':k.includes('wieczorne')?'Wieczorne':'Wydanie'),items})});allItems=[...todayItems,...fastItems,...archiveGroups.flatMap(g=>g.items)];$('loader').classList.add('hidden');loadWeather();loadRates();buildFilters();switchTab('today');updateProgress()}catch(e){console.error(e);$('loader').classList.add('hidden');$('error').classList.remove('hidden')}}
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;$('reading-progress').style.width=(h>0?(scrollY/h*100):0)+'%'});
+document.addEventListener('DOMContentLoaded',init);
+</script>
 </body>
 </html>
