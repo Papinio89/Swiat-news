@@ -4254,5 +4254,156 @@
         "source_image_url": "https://images.pexels.com/photos/34468690/pexels-photo-34468690.png?auto=compress&cs=tinysrgb&h=650&w=940"
       }
     ]
+  },
+  "2026-09-25_poranne": {
+    "date": "25 września 2026",
+    "time": "06:01",
+    "timestamp": "2026-09-25_06:01",
+    "items": [
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🌾 Ceny zbóż spadają po szczycie USA-Chiny",
+        "hook": "Brak ustaleń rolnych na szczycie Trump-Xi wywołał natychmiastową przecenę na giełdach surowcowych.",
+        "summary": "Ceny zbóż na światowych giełdach zanotowały wyraźny spadek po tym, jak rozmowy przywódców USA i Chin nie przyniosły konkretów dotyczących handlu rolnego. Inwestorzy oczekiwali twardych deklaracji zakupowych, jednak brak porozumienia doprowadził do wyprzedaży kontraktów futures.",
+        "comment": "Rynki rolne pozostają niezwykle wrażliwe na polityczne deklaracje niepoparte wiążącymi umowami handlowymi.",
+        "question": "Czy spadek cen zbóż na giełdach przełoży się wkrótce na niższe ceny żywności w sklepach?",
+        "image_query": "grain wheat field",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-25/grains-drop-with-trump-xi-summit-yet-to-offer-farm-trade-details",
+        "image_url": "https://images.pexels.com/photos/38129076/pexels-photo-38129076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/38129076/pexels-photo-38129076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🥇 Złoto tanieje? Fundusz zapowiada szybkie odbicie",
+        "hook": "Fundusz z rewelacyjną stopą zwrotu 235% twierdzi, że spadki cen kruszcu to jedynie krótkotrwała korekta.",
+        "summary": "Mimo obecnej presji spadkowej na wycenę złota, analitycy topowego funduszu hedgingowego zalecają wykorzystanie dołków cenowych. Ich zdaniem fundamentalne czynniki makroekonomiczne nadal przemawiają za niedawnymi rekordami wartości kruszcu.",
+        "comment": "Gwałtowne korekty na rynku złota są historycznie najlepszym momentem na wejście dla długoterminowego kapitału.",
+        "question": "Traktujesz obecne spadki cen złota jako okazję inwestycyjną czy sygnał do ucieczki z rynku?",
+        "image_query": "gold bars trading",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-24/hedge-fund-with-235-return-says-gold-price-decline-is-temporary",
+        "image_url": "https://images.pexels.com/photos/346547/pexels-photo-346547.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/346547/pexels-photo-346547.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🤝 Rozmowy USA-Chiny: Xi ostrzega przed konfliktem",
+        "hook": "Xi Jinping apeluje do USA o utrzymanie sztywnych granic bezpieczeństwa i uniknięcie bezpośredniej konfrontacji.",
+        "summary": "Podczas spotkania z Donaldem Trumpem przywódca Chin podkreślił konieczność strategicznej stabilności między dwoma największymi gospodarkami świata. Choć rozmowy ociepliły wizerunkowo relacje, rynki pozostają ostrożne wobec braku twardych ustaleń gospodarczych.",
+        "comment": "Unikanie bezpośredniego konfliktu mocarstw to absolutny fundament stabilności globalnych łańcuchów dostaw.",
+        "question": "Czy deklaracje o unikania konfliktu wystarczą do trwałego uspokojenia globalnych inwestorów?",
+        "image_query": "flags us china",
+        "link": "https://www.bankier.pl/wiadomosc/Xi-Jinping-Chiny-i-USA-musza-utrzymac-granice-braku-konfliktu-9202399.html",
+        "image_url": "https://images.pexels.com/photos/4386345/pexels-photo-4386345.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/7/7/72890be9945af0-948-568-0-583-3707-2224.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "🏛️ Reorganizacja w polskich urzędach skarbowych",
+        "hook": "Ministerstwo Finansów podpisuje reformę mającą usprawnić i uszczelnić strukturę urzędów skarbowych.",
+        "summary": "Nowe regulacje mają na celu podniesienie efektywności analitycznej oraz zwiększenie poziomu cyfryzacji w polskich organach podatkowych. Zmiany obejmą procedury obsługi podatników oraz sprawniejsze wykrywanie luk w ściągalności podatków.",
+        "comment": "Cyfryzacja fiskusa oznacza jeszcze wyższą wykrywalność ewentualnych błędów i nieprawidłowości w rozliczeniach.",
+        "question": "Czy reorganizacja urzędów skarbowych realnie ułatwi życie uczciwym polskim przedsiębiorcom?",
+        "image_query": "tax office finance",
+        "link": "https://www.money.pl/podatki/podpisalem-bedzie-zmiana-w-polskich-urzedach-skarbowych-7332951829817600a.html",
+        "image_url": "https://images.pexels.com/photos/7111544/pexels-photo-7111544.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/MjY0NTAxYgs4UjhnbgNvHnsKbD0oWmFILBJ0dm5Je11rSHdgcFcrAzVVPDExF2MNK0U-NTYIYxo1Hy8kKFc7W3ZUJycxFCwTdlUjNiQcYgw9AHxhdk8vR29UfjJsTHVSPB12Z3IcYAs9BXxidU19W2xTe3Y8"
+      },
+      {
+        "category": "BIZNES",
+        "title": "📉 Afera w PISF: Zorganizowane wyprowadzanie milionów",
+        "hook": "Ujawniono zorganizowany mechanizm finansowy, który kosztował państwową instytucję miliony złotych.",
+        "summary": "Śledczy i kontrolerzy wskazują na wielomilionowe szkody wynikające z celowego procederu wyprowadzania środków z Polskiego Instytutu Sztuki Filmowej. Sprawa dotyczy poważnej niegospodarności oraz nielegalnych transferów do zewnętrznych podmiotów.",
+        "comment": "Niewystarczający nadzór nad publicznymi funduszami nieuchronnie prowadzi do wielkich patologii finansowych.",
+        "question": "Jakie mechanizmy należy wprowadzić, aby skutecznie chronić państwowe instytuty przed nadużyciami?",
+        "image_query": "fraud court money",
+        "link": "https://www.money.pl/finanse/miliony-zlotych-szkod-to-byl-zorganizowany-mechanizm-wyprowadzania-pieniedzy-7332935832844544a.html",
+        "image_url": "https://images.pexels.com/photos/6266302/pexels-photo-6266302.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/NmM3Y2E0YQwsUS8BaktsGW8Je1ssEmJPOBFjEGoBd199S3ZULFwrHyhDNhwiQjsdLEQpHDVcYQw9WnZEdB8qBD5DNVM8HysAL1Y9HSMAdw95AjpTaAN9DCgebQR2AWMMflZpHyZTL1suBDpTcQB-WG9O"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "⚡ Wykup Energi i duży kontrakt Polimeksu na GPW",
+        "hook": "Giełdowy gigant przechodzi przez przymusowy wykup akcji, podczas gdy Polimex zdobywa kluczową umowę.",
+        "summary": "Na warszawskiej giełdzie doszło do znaczących ruchów w sektorze energetyczno-budowlanym. Przymusowy wykup akcji Energi zamyka ważny etap dla spółki, a Polimex-Mostostal pozyskuje duży kontrakt wykonawczy w branży energetycznej.",
+        "comment": "Dalsze wycofywanie dużych podmiotów z GPW drastycznie ogranicza opcje inwestycyjne dla kapitału detalicznego.",
+        "question": "Czy zmniejszająca się liczba spółek na GPW zniechęci Polaków do inwestowania na rodzimym rynku?",
+        "image_query": "stock exchange board",
+        "link": "https://www.bankier.pl/wiadomosc/Przymusowy-wykup-Energi-i-kontrakt-Polimeksu-w-swietle-gieldowych-reflektorow-Duze-spolki-powstaly-9202300.html",
+        "image_url": "https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/5/e/2ed41239853c2d-948-568-806-691-2822-1693.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🌍 BRICS umacnia pozycję w nowym ładzie światowym",
+        "hook": "Blok BRICS coraz silniej kwestionuje dominację zachodnich instytucji finansowych i dolara.",
+        "summary": "Najnowsze analizy geopolityczne wskazują na rosnące znaczenie państw BRICS w budowie wielobiegunowego systemu gospodarczego. Rozszerzenie bloku zwiększa jego udział w światowym PKB oraz globalnym handlu surowcami energetycznymi.",
+        "comment": "Tworzenie alternatywnych systemów rozliczeniowych BRICS stanowi długofalowe wyzwanie dla hegemonii walutowej USA.",
+        "question": "Czy krajom BRICS uda się realnie stworzyć alternatywę dla zachodniego systemu finansowego?",
+        "image_query": "world economy map",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZVRFc3NTUTJvZUI3ejk1N3BiX3RqdnpBVHYwMzdWbmc5MFdsRjR3c3ZCdDlJcjQyaXQxLTlNbVBsTGNZQnpYYTZZWkNIQVRSMy1QLTNuZGdsWTg0cG9ObGFUUGpFTXJ4U09DclQyVk54UmtaY0JSRTk4d1JmeDYyMHBFOFk3amtQSlN4bTI3Y2tYSXR2UkE4N25hemdOa0dpbFFoa1NsQ1JILUVzc1RiQ01NbDRMdnloZGRLLXlwa1QtTHFLRnFycEJ0cU0?oc=5",
+        "image_url": "https://images.pexels.com/photos/7412089/pexels-photo-7412089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/7412089/pexels-photo-7412089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "⚖️ Nowy Jork chce zablokować giełdę zakłady Polymarket",
+        "hook": "Stan Nowy Jork występuje do sądu o natychmiastowe zamknięcie platformy zakłady predykcyjnych.",
+        "summary": "Władze stanowe zarzucają platformie Polymarket prowadzenie nielegalnej działalności hazardowej i obrót instrumentami pochodnymi bez zezwolenia. To kolejny cios regulacyjny w rynek zdecentralizowanych giełd prognozujących finanse i politykę.",
+        "comment": "Zaostrzenie kursu prawnego zagraża dynamicznie rozwijającemu się rynkowi cyfrowych kontraktów predykcyjnych.",
+        "question": "Czy platformy predykcyjne powinny podlegać regulacjom giełdowym, czy być traktowane jak hazard?",
+        "image_query": "gavel judge law",
+        "link": "https://arstechnica.com/tech-policy/2026/09/new-york-asks-court-to-shut-down-polymarkets-illegal-gambling-operation/",
+        "image_url": "https://images.pexels.com/photos/6077447/pexels-photo-6077447.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/polymarket-mlb-all-star-game-1152x648-1790274426.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "⚠️ Sikorski ostrzega przed prowokacjami ze strony Rosji",
+        "hook": "Szef polskiej dyplomacji ujawnia, że wywiad posiada informacje o przygotowywanych działaniach dywersyjnych.",
+        "summary": "Radosław Sikorski poinformował o niepokojących doniesieniach dotyczących potencjalnych operacji hybrydowych ze strony Rosji przed końcem roku. Służby państw NATO w Europie Środkowej pozostają w stanie podwyższonej gotowości.",
+        "comment": "Presja ze strony wschodniego sąsiada przenosi się z klasycznego frontu na agresywne działania hybrydowe.",
+        "question": "Czy infrastruktura krytyczna w Polsce jest wystarczająco zabezpieczona przed cyfrowym i fizycznym sabotażem?",
+        "image_query": "military radar satellite",
+        "link": "https://defence24.pl/geopolityka/sikorski-otrzymujemy-informacje-ze-rosjanie-szykuja-cos-duzego",
+        "image_url": "https://images.pexels.com/photos/38038508/pexels-photo-38038508.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2024/06/17/1920x1080px/OO76fu6k81FrjMQILpX8zFJnFHVJPqqfxkBXUc6h.jkmh.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🛡️ Polska tworzy nową agencję do walki z sabotażem",
+        "hook": "Rząd planuje powołanie specjalnej instytucji dedykowanej ochronie przed atakami hybrydowymi.",
+        "summary": "Nowa agencja państwowa ma skoncentrować się na koordynacji służb i ochronie kluczowej infrastruktury przed zagranicznymi aktami dywersji. Decyzja jest odpowiedzią na rosnącą liczbę prowokacji, wycieków oraz podpaleń w kraju.",
+        "comment": "Ochrona infrastruktury energetycznej i telekomunikacyjnej staje się warunkiem ciągłości biznesu w Polsce.",
+        "question": "Czy utworzenie nowej jednostki państwowej realnie podniesie poziom bezpieczeństwa obywateli?",
+        "image_query": "cyber security server",
+        "link": "https://defence24.pl/polityka-obronna/tusk-ma-powolac-nowa-instytucje-tak-chce-walczyc-z-atakami-rosji",
+        "image_url": "https://images.pexels.com/photos/6466141/pexels-photo-6466141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/24/1024x576px/YfvIrDymwoXjaFlCCPWRIJy02ntA6eTsqOEY5H2u.ef1e.jpg"
+      },
+      {
+        "category": "TECHNOLOGIE",
+        "title": "👤 Google Gemini 3.8 zyskuje wirtualną twarz",
+        "hook": "Google prezentuje technologię Live Avatar, nadając swojemu asystentowi AI trójwymiarową postać.",
+        "summary": "Nowa wersja Gemini umożliwia interakcję w czasie rzeczywistym z cyfrowym awatarem generowanym przez sztuczną inteligencję. Innowacja ma rewolucjonizować obsługę klienta oraz sposób, w jaki ludzie komunikują się z algorytmami.",
+        "comment": "Humanizacja interfejsów AI to milowy krok w stronę powszechnej integracji botów w życiu codziennym.",
+        "question": "Czy chętniej skorzystasz z pomocy sztucznej inteligencji, jeśli wejdzie z Tobą w interakcję wizualną?",
+        "image_query": "artificial intelligence face",
+        "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+        "image_url": "https://images.pexels.com/photos/18799044/pexels-photo-18799044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gemini-live-avatar-animated.png?quality=90&amp;strip=all&amp;crop=0%2C10.856319364173%2C94.893468926603%2C78.287361271654&amp;w=1200"
+      },
+      {
+        "category": "AI",
+        "title": "👓 Mikro-modele AI trafiają do smart-okularów Qualcomm",
+        "hook": "Startup PrismML integruje zminiaturyzowane modele językowe z układami scalonymi do okularów AR.",
+        "summary": "Rozwiązanie PrismML przenosi lokalne modele LLM bezpośrednio na procesory Qualcomm stosowane w inteligentnych okularach. Pozwala to na przetwarzanie komend sztucznej inteligencji bezpośrednio na urządzeniu bez konieczności łączności z chmurą.",
+        "comment": "Przetwarzanie AI na krawędzi (Edge AI) eliminuje opóźnienia i podnosi standard ochrony prywatności użytkownika.",
+        "question": "Czy smart-okulary wyposażone w lokalną sztuczną inteligencję wyprą w tej dekadzie tradycyjne smartfony?",
+        "image_query": "smart glasses technology",
+        "link": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
+        "image_url": "https://images.pexels.com/photos/631164/pexels-photo-631164.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/09/PrismML-Snapdragon-smartglasses.png?w=612"
+      }
+    ]
   }
 }
