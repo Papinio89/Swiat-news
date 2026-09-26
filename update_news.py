@@ -88,7 +88,7 @@ def is_recent(entry) -> bool:
 
 
 def validate_items(items: list) -> list:
-    required = {"category", "title", "hook", "summary", "comment", "question", "image_query", "link"}
+    required = {"category", "title", "hook", "summary", "comment", "threads_post", "question", "image_query", "link"}
     valid = []
     for item in items:
         if not isinstance(item, dict):
@@ -100,12 +100,13 @@ def validate_items(items: list) -> list:
         hook = str(item.get("hook", "")).strip()
         summary = str(item.get("summary", "")).strip()
         comment = str(item.get("comment", "")).strip()
+        threads_post = str(item.get("threads_post", "")).strip()
         question = str(item.get("question", "")).strip()
         category = str(item.get("category", "AKTUALNOŚCI")).strip().upper()
         image_query = str(item.get("image_query", "business news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 25:
+        if len(title) < 10 or len(summary) < 20 or len(threads_post) < 80:
             continue
 
         valid.append({
@@ -114,6 +115,7 @@ def validate_items(items: list) -> list:
             "hook": hook,
             "summary": summary,
             "comment": comment,
+            "threads_post": threads_post,
             "question": question,
             "image_query": image_query,
             "link": link
@@ -257,31 +259,33 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z PRECYZYJNĄ INSTRUKCJĄ DLA COMMENT ---
+# --- PROMPT AI Z PODWÓJNYM ŚWIATEM: KARUZELA + THREADS ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś redaktorem naczelnym czołowego formatu informacyjno-biznesowego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje posty zdobywają wiralowe zasięgi, ponieważ są ostre, merytoryczne, bezkompromisowe i całkowicie pozbawione nudnego żargonu czy urzędniczej nowomowy.
+prompt = f"""Jesteś autorem czołowego profilu informacyjno-analitycznego w mediach społecznościowych („Świat w Minucie”). 
+Twoje posty na Threads generują ogromne organiczne zasięgi (dziesiątki tysięcy wyświetleń i setki komentarzy), ponieważ piszesz w sposób żywy, publicystyczny, z trafnym tłem i bezkompromisową pointą.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
-ŚCISŁY PODZIAŁ I PROPORCJE TEMATYCZNE (TWARDE REGUŁY):
-1. MINIMUM 60% CAŁOŚCI MUSZĄ STANOWIĆ:
+ŚCISŁY PODZIAŁ TEMATYCZNY (TWARDE REGUŁY):
+1. MINIMUM 60% CAŁOŚCI:
    - GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, INWESTYCJE, BUDŻET, WALUTY ORAZ POLSKA.
 2. OBRONNOŚĆ / WOJSKO / MILITARIA:
-   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutnie kluczowe wydarzenia geopolityczne o skali globalnej. 
-   - Bezwzględny zakaz dominacji tematów militarnych, pojedynczych zakupów amunicji czy lokalnych targów zbrojeniowych.
+   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutne przełomy geopolityczne (żadnych drobnych zakupów czy sprzętu z targów).
 3. TECHNOLOGIE / AI:
-   - DOKŁADNIE 2 POZYCJE (największe inwestycje, regulacje, infrastruktura pod data centers lub przełomy rynkowe).
+   - DOKŁADNIE 2 POZYCJE (największe inwestycje, energetyka pod data centers, przełomy rynkowe).
 4. ZERO plotek, celebrytów i lifestyle'u.
 
-KLUCZOWE ZASADY COPYWRITINGU DLA PÓL:
-- "hook": 1 zdanie – silny kontrast, uderzenie w paradoks lub kluczowy fakt przyciągający uwagę w ułamku sekundy.
-- "summary": 2 zwięzłe zdania czystych faktów i liczb (ceny, stopy, kwoty, decyzje, spółki).
-- "comment": BEZWZGLĘDNY ZAKAZ STRESZCZANIA CZY PARAFRAZOWANIA "summary"! 
-  Nigdy nie pisz banałów w stylu: „to kluczowy krok”, „czas pokaże”, „to fundament stabilności”. 
-  "comment" to 1 mocna, autorska puenta twórcy z pazurem – obnażenie hipokryzji, wskazanie drugiego dna, ironiczne podsumowanie sytuacji lub bezpośrednie przełożenie decyzji na portfel zwykłego człowieka. Ma brzmieć jak cięty komentarz publicysty, a nie sucha notatka z banku.
-- "question": 1 zróżnicowane, konkretne i prowokujące do dyskusji pytanie pod dany temat (nie pytaj ogólnikowo „co o tym sądzisz?”).
+ZASADA ROZDZIELENIA TREŚCI SLAJD VS THREADS (KLUCZ DO SUKCESU):
+- Na karuzelę Instagrama ("summary" i "comment"): pisz krótko, syntetycznie i merytorycznie. Summary to 2 zdania faktów, comment to 1 zdanie wniosku.
+- Na Threads ("threads_post"): BEZWZGLĘDNY ZAKAZ przepisania 1:1 słów ze slajdu!
+  Napisz wciągający, bogaty post publicystyczny (dokładnie 3-4 naturalne akapity).
+  Wzoruj się na poniższym schemacie:
+  Akapit 1: Tytuł z trafną emotikoną (np. 🛡️, 📉, 🚀, ⚔️).
+  Akapit 2: Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "Koniec napięć w Arktyce: USA i Dania dopięły umowę ws. Grenlandii! 🇬🇱🇺🇸🇩🇰").
+  Akapit 3: Pogłębione rozwinięcie sytuacji, którego NIE MA na grafice (szersze tło strategiczne/gospodarcze, dlaczego to wydarzyło się akurat teraz, kto zyskuje, a kto traci).
+  Akapit 4: Cięta pointa z dedykowanymi emotikonami (np. ❄️🛡️, 🌊⚓, 🛸🪖, 📊💸).
+  Akapit 5: Konkretne pytanie prowokujące do dyskusji pod dany temat (np. "Arktyka pozostanie bezpieczną strefą współpracy zachodu? 🌐👇💬").
 
 STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
 [
@@ -289,10 +293,11 @@ STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
     "category": "RYNKI I GOSPODARKA / POLSKA / BIZNES / GEOPOLITYKA / OBRONNOŚĆ / TECHNOLOGIE / AI",
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno – kontrast lub kluczowy fakt.",
-    "summary": "2 zwięzłe zdania faktów operujące twardymi danymi i konkretami.",
-    "comment": "1 cięta, autorska puenta (zakaz parafrazowania summary, zero banałów i korpomowy).",
-    "question": "1 unikalne, prowokujące do dyskusji pytanie pod dany temat.",
-    "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels (np. 'stock market board', 'cargo ship container', 'wind turbine energy')",
+    "summary": "2 zwięzłe zdania faktów na slajd (dane, liczby, fakty).",
+    "comment": "1 mocna pointa w chmurce na slajdzie.",
+    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, bogata w kontekst i unikalna względem summary).",
+    "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
+    "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
   }}
 ]
@@ -354,7 +359,8 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Zamiast deklaracji liczą się twarde liczby w arkuszu – rynek bezlitośnie weryfikuje polityczne zapowiedzi.",
+                "comment": "Decyzje podejmowane w tym segmencie bezpośrednio przełożą się na równowagę gospodarczą w kolejnych miesiącach.",
+                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach rynkowych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
                 "link": art["link"]
@@ -415,4 +421,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z pełnymi postami Threads.")
