@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#020617">
 <title>Świat w Minutę — Wiadomości</title>
+<meta name="description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność — krótko i na temat.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://swiat-w-minute.vercel.app/">
+<meta property="og:title" content="Świat w Minutę — Przegląd dnia">
+<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność.">
+<meta property="og:image" content="https://swiat-w-minute.vercel.app/og-image.jpg">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Świat w Minutę">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
+<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność.">
+<meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.jpg">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -163,21 +180,41 @@ body{background:#f8fafc;color:#0f172a}
 
 </main>
 
+<!-- Ładniejszy disclaimer -->
 <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-  <div class="mx-auto max-w-6xl px-4 py-6">
-    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 transition">
-      ℹ️ Ważne informacje o stronie
-    </button>
-    <div id="disclaimer" class="mt-3 hidden rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-slate-700 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-slate-300">
-      <h3 class="mb-2 font-black text-amber-700 dark:text-amber-400">Disclaimer</h3>
-      <ul class="space-y-1.5 text-xs">
-        <li>• Strona automatycznie zbiera i streści wiadomości z użyciem AI.</li>
-        <li>• Treści mogą zawierać błędy, uproszczenia lub nieaktualne informacje.</li>
-        <li>• Zawsze sprawdzaj oryginalne źródło przed podejmowaniem decyzji.</li>
-        <li>• Nie ponosimy odpowiedzialności za treść zewnętrznych linków.</li>
-        <li>• Kursy walut i pogoda mają charakter orientacyjny.</li>
-      </ul>
-      <p class="mt-3 text-[11px] text-slate-500">Świat w Minutę © <span id="year"></span> · Generowane automatycznie z pomocą AI</p>
+  <div class="mx-auto max-w-6xl px-4 py-8">
+    
+    <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 p-5 sm:p-6">
+      <div class="flex items-start gap-3">
+        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-950/50">ℹ️</div>
+        <div class="min-w-0">
+          <h3 class="text-sm font-black text-slate-900 dark:text-white">Informacja o stronie</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+            Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem sztucznej inteligencji. 
+            Treści mogą zawierać uproszczenia lub nieścisłości. Zawsze weryfikuj informacje w oryginalnym źródle.
+          </p>
+          
+          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-slate-500">
+            <div class="flex items-center gap-2">
+              <span class="text-amber-500">•</span> Generowane automatycznie przez AI
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-amber-500">•</span> Kursy i pogoda mają charakter orientacyjny
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-amber-500">•</span> Nie ponosimy odpowiedzialności za treści zewnętrzne
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-amber-500">•</span> Linki prowadzą do oryginalnych źródeł
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+      <p>Świat w Minutę © <span id="year"></span></p>
+      <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
     </div>
   </div>
 </footer>
@@ -233,7 +270,6 @@ async function translateToPolish(text) {
     const data = await res.json();
     let translated = data?.responseData?.translatedText?.trim();
     if (translated && translated.toLowerCase() !== text.toLowerCase() && !translated.includes('MYMEMORY')) {
-      // Mała kosmetyka – wielka litera na początku
       translated = translated.charAt(0).toUpperCase() + translated.slice(1);
       titleCache[key] = translated;
       try { localStorage.setItem('swm-title-cache', JSON.stringify(titleCache)); } catch(e){}
@@ -243,6 +279,30 @@ async function translateToPolish(text) {
     console.warn('Tłumaczenie nieudane', e);
   }
   return text;
+}
+
+/* Inteligentne dobieranie emotki */
+function pickEmoji(title, cat) {
+  const t = (title + ' ' + (cat || '')).toLowerCase();
+
+  if (/trump|biden|white house|prezydent|wybor|usa|ameryk/.test(t)) return '🇺🇸';
+  if (/china|chiny|xi|pekin|beijing/.test(t)) return '🇨🇳';
+  if (/russia|rosja|putin|moskwa|moscow|kreml/.test(t)) return '🇷🇺';
+  if (/ukraine|ukraina|kijów|kyiv|zelenski|zełeński/.test(t)) return '🇺🇦';
+  if (/israel|gaza|hamas|palestyn/.test(t)) return '🇮🇱';
+  if (/nato|wojna|atak|missile|rakiet|obron|wojsk|army|military|żołnier/.test(t)) return '🛡️';
+  if (/oil|ropa|paliw|diesel|gaz|energy|energetyk|benzyn/.test(t)) return '⛽️';
+  if (/ai|sztuczn|chatgpt|openai|gemini|claude|sztuczna inteligencja/.test(t)) return '🤖';
+  if (/bank|inflacj|gospodark|rynek|market|stock|dollar|euro|walut|finanse|podatek|pit/.test(t)) return '💰';
+  if (/tech|apple|google|microsoft|meta|tesla|elon|musk|komputer|software/.test(t)) return '💻';
+  if (/climate|klimat|pogod|flood|powódź|hurricane|katastrof/.test(t)) return '🌍';
+  if (/health|zdrow|covid|szczep|hospital|szpital|wirus/.test(t)) return '🏥';
+  if (/sport|piłk|olympi|mecz|liga/.test(t)) return '⚽';
+  if (/kosmos|nasa|space|rakiet|satelit/.test(t)) return '🚀';
+  if (/polska|warszawa|polski|rp\b/.test(t)) return '🇵🇱';
+  if (/ue\b|unia europejska|bruksela|europe/.test(t)) return '🇪🇺';
+  if (/wyciek|dane|hack|cyber|bezpieczeństw/.test(t)) return '🕵️';
+  return '📰';
 }
 
 function normalize(s) {
@@ -335,12 +395,11 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-/* ========== Wiersz listy (60s) ========== */
 function headlineRow(item, displayTitle, emoji) {
   const link = sourceLink(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
-  const em = emoji || getTitle(item.title).emoji || '•';
+  const em = emoji || '📰';
   const title = displayTitle || getTitle(item.title).title;
 
   return `
@@ -360,7 +419,6 @@ function headlineRow(item, displayTitle, emoji) {
     </div>`;
 }
 
-/* ========== Pełna karta – summary CAŁE ========== */
 function card(item) {
   const t = getTitle(item.title);
   const img = imageOf(item);
@@ -391,15 +449,12 @@ function card(item) {
       </div>
       <div class="p-3.5 flex flex-col flex-1">
         <h3 class="text-[15px] font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
-        
         ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>` : ''}
-        
         ${comment ? `
           <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/30">
             <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Komentarz</div>
             <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
-        
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
           <span class="truncate text-[10px] font-semibold text-slate-500">${escapeHtml(sourceName(item))}</span>
           ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
@@ -417,30 +472,36 @@ function funMini(item) {
     </article>`;
 }
 
-/* ========== 60 sekund z tłumaczeniem ========== */
 async function renderToday() {
   const items = uniqueByKey([...newsItems, ...rawFeedItems]);
   $('edition-time').textContent = `${items.length} tematów`;
 
-  // Najpierw pokaż oryginały (szybko)
+  // Szybkie pokazanie oryginałów
   $('headline-list').innerHTML = items.length
     ? items.map(item => {
         const t = getTitle(item.title);
-        return headlineRow(item, t.title, t.emoji || '•');
+        const emoji = t.emoji || pickEmoji(t.title, category(item));
+        return headlineRow(item, t.title, emoji);
       }).join('')
     : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
 
-  // Tłumacz angielskie tytuły równolegle
+  // Tłumaczenie + emotki
   const translated = await Promise.all(items.map(async (item) => {
     const t = getTitle(item.title);
     let title = t.title;
+    let emoji = t.emoji;
+
     if (isEnglishTitle(title)) {
       title = await translateToPolish(title);
     }
-    return { item, title, emoji: t.emoji || '•' };
+
+    if (!emoji || emoji === '•') {
+      emoji = pickEmoji(title, category(item));
+    }
+
+    return { item, title, emoji };
   }));
 
-  // Podmień listę na przetłumaczoną
   $('headline-list').innerHTML = translated.map(({ item, title, emoji }) =>
     headlineRow(item, title, emoji)
   ).join('');
@@ -537,7 +598,8 @@ function search() {
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
       ${hits.slice(0, 30).map(item => {
         const t = getTitle(item.title);
-        return headlineRow(item, t.title, t.emoji || '•');
+        const emoji = t.emoji || pickEmoji(t.title, category(item));
+        return headlineRow(item, t.title, emoji);
       }).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
     </div>`;
 }
@@ -558,8 +620,6 @@ function toggleDark() {
 function loadTheme() {
   if (localStorage.getItem('swm-dark') === '1') document.documentElement.classList.add('dark');
 }
-
-function toggleDisclaimer() { $('disclaimer').classList.toggle('hidden'); }
 
 async function loadJson(url, fallback) {
   try {
