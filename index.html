@@ -21,8 +21,15 @@ body{background:#f8fafc;color:#0f172a}
 #toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
 #toast.show{transform:translateY(0);opacity:1}
 .headline-item{transition:background .15s}
-.headline-item:hover{background:rgba(245,158,11,.08)}
-.dark .headline-item:hover{background:rgba(245,158,11,.12)}
+.headline-item:hover{background:rgba(245,158,11,.07)}
+.dark .headline-item:hover{background:rgba(245,158,11,.1)}
+.headline-item.read{opacity:.55}
+.headline-item.read .title{text-decoration:line-through;text-decoration-color:#94a3b8}
+.card.read{opacity:.7}
+.check-btn{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:.15s}
+.check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
+.dark .check-btn{border-color:#475569}
+.dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b}
 </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
@@ -30,7 +37,7 @@ body{background:#f8fafc;color:#0f172a}
 <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
     <a href="#" onclick="goTop();return false" class="flex items-center gap-3">
-      <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-xl shadow-sm dark:bg-white">🌍</div>
+      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg shadow-sm dark:bg-white">🌍</div>
       <div>
         <div class="text-sm font-black tracking-tight">Świat w Minutę</div>
         <div class="text-[10px] font-medium text-slate-500">Najważniejsze wiadomości bez zbędnego szumu</div>
@@ -38,127 +45,123 @@ body{background:#f8fafc;color:#0f172a}
     </a>
     <div class="flex items-center gap-2">
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
-      <button onclick="toggleDark()" class="h-10 w-10 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900" aria-label="Tryb ciemny">☾</button>
+      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900" aria-label="Tryb ciemny">☾</button>
     </div>
   </div>
 </header>
 
-<main class="mx-auto max-w-6xl px-4 pb-24 pt-5">
+<main class="mx-auto max-w-6xl px-4 pb-28 pt-4">
 
-  <!-- Header + widgets -->
-  <section class="mb-5">
-    <div class="mb-3 flex items-end justify-between gap-3">
+  <!-- Header + małe widgety -->
+  <section class="mb-4">
+    <div class="mb-2.5 flex items-end justify-between gap-3">
       <div>
-        <div class="text-xs font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div>
-        <h1 class="text-2xl font-black tracking-tight sm:text-3xl">Świat w Minutę</h1>
+        <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div>
+        <h1 class="text-xl font-black tracking-tight sm:text-2xl">Świat w Minutę</h1>
       </div>
       <div id="last-update" class="text-right text-[10px] text-slate-500">Ładowanie…</div>
     </div>
-    <div id="info-widgets" class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[10px] font-bold uppercase text-slate-500">Warszawa</div>
-        <div class="mt-1 flex items-center gap-2 text-lg font-black">
+    <div id="info-widgets" class="grid grid-cols-4 gap-1.5">
+      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
+        <div class="text-[9px] font-bold uppercase text-slate-500">WAW</div>
+        <div class="mt-0.5 flex items-center gap-1 text-sm font-black">
           <span id="weather-temp">—°</span>
-          <span id="weather-icon">🌤️</span>
+          <span id="weather-icon" class="text-sm">🌤️</span>
         </div>
-        <div id="weather-desc" class="text-[10px] text-slate-500">Pogoda</div>
       </div>
-      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[10px] font-bold uppercase text-slate-500">EUR / PLN</div>
-        <div id="eur-rate" class="mt-1 text-lg font-black">—</div>
-        <div class="text-[10px] text-slate-500">kurs orientacyjny</div>
+      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
+        <div class="text-[9px] font-bold uppercase text-slate-500">EUR</div>
+        <div id="eur-rate" class="mt-0.5 text-sm font-black">—</div>
       </div>
-      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[10px] font-bold uppercase text-slate-500">USD / PLN</div>
-        <div id="usd-rate" class="mt-1 text-lg font-black">—</div>
-        <div class="text-[10px] text-slate-500">kurs orientacyjny</div>
+      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
+        <div class="text-[9px] font-bold uppercase text-slate-500">USD</div>
+        <div id="usd-rate" class="mt-0.5 text-sm font-black">—</div>
       </div>
-      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[10px] font-bold uppercase text-slate-500">Dziś</div>
-        <div id="progress-text" class="mt-1 text-lg font-black">0/0</div>
-        <div class="text-[10px] text-slate-500">przeczytane</div>
+      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
+        <div class="text-[9px] font-bold uppercase text-slate-500">Dziś</div>
+        <div id="progress-text" class="mt-0.5 text-sm font-black">0/0</div>
       </div>
     </div>
   </section>
 
-  <!-- Search (jedno pole) -->
-  <section class="mb-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+  <!-- Search -->
+  <section class="mb-3 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
     <div class="relative">
-      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">⌕</span>
+      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">⌕</span>
       <input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" 
-             class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950" 
+             class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950" 
              placeholder="Szukaj wiadomości…">
       <button onclick="clearSearch()" class="absolute right-2 top-1/2 hidden -translate-y-1/2 px-2 text-slate-400" id="search-clear">×</button>
     </div>
-    <div id="search-results" class="mt-3 hidden"></div>
+    <div id="search-results" class="mt-2.5 hidden"></div>
   </section>
 
   <!-- Tabs -->
-  <nav class="mb-5 flex gap-2 overflow-x-auto pb-1" aria-label="Nawigacja">
-    <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
-    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('all')">Dzisiejsze news</button>
-    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Pilne</button>
-    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fun')">✨ Ciekawostki</button>
-    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
+  <nav class="mb-4 flex gap-1.5 overflow-x-auto pb-1" aria-label="Nawigacja">
+    <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
+    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('all')">Dzisiejsze news</button>
+    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Fast</button>
+    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fun')">✨ Ciekawostki</button>
+    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
   <!-- 60 sekund -->
   <section id="today-view">
-    <div class="mb-4 flex items-end justify-between gap-3">
+    <div class="mb-3 flex items-end justify-between gap-3">
       <div>
-        <div class="text-xs font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div>
-        <h2 class="text-xl font-black">Najważniejsze dziś</h2>
+        <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div>
+        <h2 class="text-lg font-black">Najważniejsze dziś</h2>
       </div>
       <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500"></div>
     </div>
     <div id="headline-list" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden"></div>
     
-    <div id="fun-preview" class="mt-7 hidden">
-      <div class="mb-3 flex items-center justify-between">
+    <div id="fun-preview" class="mt-6 hidden">
+      <div class="mb-2.5 flex items-center justify-between">
         <div>
-          <div class="text-xs font-bold uppercase tracking-[.18em] text-fuchsia-500">Na koniec</div>
-          <h2 class="text-lg font-black">✨ Ciekawostki</h2>
+          <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Na koniec</div>
+          <h2 class="text-base font-black">✨ Ciekawostki</h2>
         </div>
-        <button onclick="switchTab('fun')" class="text-xs font-bold text-amber-500">Zobacz więcej →</button>
+        <button onclick="switchTab('fun')" class="text-xs font-bold text-amber-500">Więcej →</button>
       </div>
       <div id="fun-preview-grid" class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4"></div>
     </div>
   </section>
 
-  <!-- Dzisiejsze news (pełne karty) -->
+  <!-- Dzisiejsze news -->
   <section id="all-view" class="hidden">
-    <div class="mb-4">
-      <div class="text-xs font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
-      <h2 class="text-xl font-black">📰 Dzisiejsze news</h2>
-      <p class="mt-1 text-xs text-slate-500">Pełne karty ze zdjęciem, streszczeniem i komentarzem.</p>
+    <div class="mb-3">
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
+      <h2 class="text-lg font-black">📰 Dzisiejsze news</h2>
     </div>
-    <div id="all-grid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
-    <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-6 hidden rounded-xl bg-slate-950 px-5 py-3 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż 5 kolejnych</button>
+    <div id="all-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+    <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- Pilne -->
+  <!-- Fast (unikalne z news + raw_feed) -->
   <section id="fast-view" class="hidden">
-    <div class="mb-4">
-      <div class="text-xs font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
-      <h2 class="text-xl font-black">🚨 Pilne</h2>
+    <div class="mb-3">
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Szybki skrót</div>
+      <h2 class="text-lg font-black">🚨 Fast</h2>
+      <p class="mt-0.5 text-[11px] text-slate-500">Unikalne tematy z news.json + raw_feed.json</p>
     </div>
-    <div id="breaking" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="breaking" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden"></div>
   </section>
 
   <!-- Ciekawostki -->
   <section id="fun-view" class="hidden">
-    <div class="mb-4">
-      <div class="text-xs font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka / ciekawostki</div>
-      <h2 class="text-xl font-black">✨ Ciekawostki</h2>
+    <div class="mb-3">
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
+      <h2 class="text-lg font-black">✨ Ciekawostki</h2>
     </div>
-    <div id="fun-grid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="fun-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
 
   <!-- Archiwum -->
   <section id="archive-view" class="hidden">
-    <div class="mb-4">
-      <div class="text-xs font-bold uppercase tracking-[.18em] text-slate-500">Historia</div>
-      <h2 class="text-xl font-black">🗂 Archiwum</h2>
+    <div class="mb-3">
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Historia</div>
+      <h2 class="text-lg font-black">🗂 Archiwum</h2>
     </div>
     <div id="archive-content"></div>
   </section>
@@ -167,15 +170,14 @@ body{background:#f8fafc;color:#0f172a}
 
 <!-- Disclaimer -->
 <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
-  <div class="mx-auto max-w-6xl px-4 py-8">
-    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition">
-      <span>ℹ️</span> Ważne informacje o stronie
+  <div class="mx-auto max-w-6xl px-4 py-6">
+    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 transition">
+      ℹ️ Ważne informacje o stronie
     </button>
-    
-    <div id="disclaimer" class="mt-4 hidden rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-slate-700 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-slate-300">
+    <div id="disclaimer" class="mt-3 hidden rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-slate-700 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-slate-300">
       <h3 class="mb-2 font-black text-amber-700 dark:text-amber-400">Disclaimer</h3>
-      <ul class="space-y-2 text-xs sm:text-sm">
-        <li>• Strona automatycznie zbiera i streści wiadomości z użyciem sztucznej inteligencji.</li>
+      <ul class="space-y-1.5 text-xs">
+        <li>• Strona automatycznie zbiera i streści wiadomości z użyciem AI.</li>
         <li>• Treści mogą zawierać błędy, uproszczenia lub nieaktualne informacje.</li>
         <li>• Zawsze sprawdzaj oryginalne źródło przed podejmowaniem decyzji.</li>
         <li>• Nie ponosimy odpowiedzialności za treść zewnętrznych linków.</li>
@@ -186,17 +188,21 @@ body{background:#f8fafc;color:#0f172a}
   </div>
 </footer>
 
-<button id="back-top" onclick="goTop()" aria-label="Wróć na górę" class="fixed bottom-5 right-5 z-50 hidden h-12 w-12 rounded-full bg-slate-950 text-lg font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">↑</button>
-<div id="toast" class="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-3 text-xs font-bold text-white shadow-xl"></div>
+<button id="back-top" onclick="goTop()" aria-label="Wróć na górę" 
+  class="fixed bottom-5 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">
+  ↑
+</button>
+<div id="toast" class="fixed bottom-5 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl"></div>
 
 <script>
 'use strict';
 const $ = id => document.getElementById(id);
-let newsItems = [], fastItems = [], funItems = [], archiveGroups = [];
+let newsItems = [], rawFeedItems = [], fastItems = [], funItems = [], archiveGroups = [];
 let currentTab = 'today', allShown = 6, readKeys = new Set();
 
 const DATA_FILES = {
   news: 'news.json',
+  raw: 'raw_feed.json',
   fast: 'fast.json',
   fun: 'rozrywka.json',
   archive: 'archive.json',
@@ -223,7 +229,7 @@ function normalize(s) {
 }
 
 function keyOf(x) {
-  return String(x.link || '').trim().toLowerCase().replace(/\/$/, '') ||
+  return String(x.link || x.url || '').trim().toLowerCase().replace(/\/$/, '') ||
          normalize(getTitle(x.title).title);
 }
 
@@ -244,7 +250,6 @@ function sourceName(x) { return x.source_name || x.sourceName || x.source || '';
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
 function imageOf(x) { return x.image || x.image_url || x.imageUrl || x.img || x.photo || ''; }
-function isUrgent(x) { const k = keyOf(x); return fastItems.some(f => keyOf(f) === k); }
 
 function categoryClass(cat) {
   const c = normalize(cat);
@@ -254,43 +259,88 @@ function categoryClass(cat) {
   if (c.includes('obronn') || c.includes('wojsk')) return 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200';
   if (c.includes('geopolityk') || c.includes('świat') || c.includes('polityk')) return 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300';
   if (c.includes('polska')) return 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300';
-  if (c.includes('sport')) return 'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300';
   return 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
 }
 
-function markRead(x) {
+function isRead(x) { return readKeys.has(keyOf(x)); }
+
+function toggleRead(x, ev) {
+  if (ev) ev.preventDefault();
+  if (ev) ev.stopPropagation();
   const k = keyOf(x);
-  if (k) { readKeys.add(k); saveRead(); updateProgress(); }
+  if (!k) return;
+  if (readKeys.has(k)) readKeys.delete(k);
+  else readKeys.add(k);
+  saveRead();
+  updateProgress();
+  renderCurrent();
 }
+
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
+
 function updateProgress() {
-  const total = uniqueByKey([...newsItems, ...fastItems]).length;
-  const read = [...readKeys].filter(k => uniqueByKey([...newsItems, ...fastItems]).some(x => keyOf(x) === k)).length;
+  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems]);
+  const total = pool.length;
+  const read = pool.filter(x => isRead(x)).length;
   $('progress-text').textContent = read + '/' + total;
 }
+
 function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e) { return '#'; } }
 
-/* ========== 60 sekund – prosta lista ========== */
+async function shareItem(item, ev) {
+  if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+  const t = getTitle(item.title);
+  const url = sourceLink(item);
+  const title = t.title;
+  const text = getSummary(item) || title;
+  
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url: url !== '#' ? url : location.href });
+      showToast('Udostępniono');
+    } catch(e) {}
+  } else {
+    try {
+      await navigator.clipboard.writeText(url !== '#' ? url : location.href);
+      showToast('Link skopiowany');
+    } catch(e) {
+      showToast('Nie udało się skopiować');
+    }
+  }
+}
+
+function showToast(msg) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+/* ========== 60 sekund + Fast – lista ========== */
 function headlineRow(item, i) {
   const t = getTitle(item.title);
-  const urgent = isUrgent(item);
   const link = sourceLink(item);
-  const emoji = t.emoji || (urgent ? '🚨' : '•');
-  
+  const read = isRead(item);
+  const emoji = t.emoji || '•';
+  const itemJson = encodeURIComponent(JSON.stringify(item));
+
   return `
-    <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
-       ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
-       onclick="markRead(${JSON.stringify(item).replace(/"/g, '&quot;')})"
-       class="headline-item flex items-start gap-3 px-4 py-3.5 border-b border-slate-100 last:border-0 dark:border-slate-800/80">
-      <span class="mt-0.5 text-lg leading-none shrink-0">${escapeHtml(emoji)}</span>
-      <div class="min-w-0 flex-1">
-        <div class="text-[15px] font-semibold leading-snug text-slate-900 dark:text-slate-100">
-          ${escapeHtml(t.title)}
-        </div>
-        ${urgent ? '<span class="mt-1 inline-block text-[10px] font-bold text-red-500">PILNE</span>' : ''}
-      </div>
-    </a>`;
+    <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800/70 ${read ? 'read' : ''}">
+      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Oznacz jako nieprzeczytane' : 'Oznacz jako przeczytane'}">
+        ${read ? '✓' : ''}
+      </button>
+      <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
+         ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
+         class="min-w-0 flex-1 flex items-start gap-2">
+        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(emoji)}</span>
+        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">${escapeHtml(t.title)}</span>
+      </a>
+      <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
+              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 transition" 
+              title="Udostępnij">↗</button>
+    </div>`;
 }
 
 /* ========== Pełna karta ========== */
@@ -301,29 +351,38 @@ function card(item) {
   const summary = getSummary(item);
   const comment = getComment(item);
   const cat = category(item);
+  const read = isRead(item);
+  const itemJson = encodeURIComponent(JSON.stringify(item));
 
   return `
-    <article class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900 flex flex-col">
+    <article class="card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900 flex flex-col ${read ? 'read' : ''}">
       <div class="relative overflow-hidden bg-slate-200 dark:bg-slate-800">
         ${img 
-          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-4xl\\'>📰</div>'">`
-          : `<div class="flex aspect-video items-center justify-center text-4xl">📰</div>`}
-        <div class="absolute left-3 top-3 flex gap-1.5">
-          <span class="rounded-full px-2.5 py-1 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
-          ${isUrgent(item) ? '<span class="rounded-full bg-red-500 px-2.5 py-1 text-[9px] font-extrabold text-white shadow">PILNE</span>' : ''}
+          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-3xl\\'>📰</div>'">`
+          : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
+        <div class="absolute left-2.5 top-2.5 flex gap-1.5">
+          <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
+        </div>
+        <div class="absolute right-2.5 top-2.5 flex gap-1.5">
+          <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
+                  class="check-btn ${read ? 'checked' : ''} bg-white/90 dark:bg-slate-900/90 shadow" title="Przeczytane">
+            ${read ? '✓' : ''}
+          </button>
+          <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
+                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600 dark:text-slate-300" title="Udostępnij">↗</button>
         </div>
       </div>
-      <div class="p-4 flex flex-col flex-1">
-        <h3 class="text-base font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
-        ${summary ? `<p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-3">${escapeHtml(summary)}</p>` : ''}
+      <div class="p-3.5 flex flex-col flex-1">
+        <h3 class="text-[15px] font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        ${summary ? `<p class="mt-1.5 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-3">${escapeHtml(summary)}</p>` : ''}
         ${comment ? `
-          <div class="mt-3 rounded-2xl bg-amber-50 p-3 text-xs dark:bg-amber-950/30">
-            <div class="mb-1 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Komentarz</div>
+          <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/30">
+            <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Komentarz</div>
             <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
-        <div class="mt-auto pt-3 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
+        <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
           <span class="truncate text-[10px] font-semibold text-slate-500">${escapeHtml(sourceName(item))}</span>
-          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Czytaj źródło →</a>` : ''}
+          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
         </div>
       </div>
     </article>`;
@@ -332,8 +391,8 @@ function card(item) {
 function funMini(item) {
   const t = getTitle(item.title);
   return `
-    <article class="rounded-2xl border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900">
-      <div class="mb-1 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
+    <article class="rounded-xl border border-slate-200 bg-white p-2.5 dark:border-slate-800 dark:bg-slate-900">
+      <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
       <h3 class="line-clamp-3 text-sm font-extrabold">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
     </article>`;
 }
@@ -343,8 +402,8 @@ function renderToday() {
   const items = uniqueByKey([...newsItems, ...fastItems]);
   $('headline-list').innerHTML = items.length 
     ? items.map((item, i) => headlineRow(item, i)).join('') 
-    : '<div class="p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
-  $('edition-time').textContent = `${items.length} tematów · szybki przegląd`;
+    : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
+  $('edition-time').textContent = `${items.length} tematów`;
 
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);
@@ -355,7 +414,7 @@ function renderAll() {
   const items = newsItems.slice(0, allShown);
   $('all-grid').innerHTML = items.length 
     ? items.map(card).join('') 
-    : '<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 md:col-span-2 lg:col-span-3">Brak wiadomości.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
   $('all-more').classList.toggle('hidden', allShown >= newsItems.length);
 }
 
@@ -365,16 +424,17 @@ function loadMoreAll() {
 }
 
 function renderFast() {
-  const items = fastItems.slice(0, 5);
+  // Unikalne tytuły z news.json + raw_feed.json
+  const items = uniqueByKey([...newsItems, ...rawFeedItems]);
   $('breaking').innerHTML = items.length 
-    ? items.map(card).join('') 
-    : '<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak pilnych wiadomości.</div>';
+    ? items.map((item, i) => headlineRow(item, i)).join('') 
+    : '<div class="p-6 text-center text-sm text-slate-500">Brak tematów.</div>';
 }
 
 function renderFun() {
   $('fun-grid').innerHTML = funItems.length 
     ? funItems.map(card).join('') 
-    : '<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 md:col-span-2 lg:col-span-3">Brak ciekawostek.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
 }
 
 function renderArchive() {
@@ -383,12 +443,12 @@ function renderArchive() {
     return;
   }
   $('archive-content').innerHTML = archiveGroups.map(g => `
-    <section class="mb-8">
-      <div class="mb-3 flex items-end justify-between">
-        <h3 class="text-lg font-black">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
+    <section class="mb-7">
+      <div class="mb-2.5 flex items-end justify-between">
+        <h3 class="text-base font-black">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
         <span class="text-[10px] text-slate-500">${(g.items || []).length} wiadomości</span>
       </div>
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         ${(g.items || []).map(card).join('')}
       </div>
     </section>
@@ -412,8 +472,8 @@ function switchTab(tab) {
   ['today-view', 'all-view', 'fast-view', 'fun-view', 'archive-view'].forEach(id => $(id).classList.add('hidden'));
   $('search-results').classList.add('hidden');
   
-  const id = tab === 'today' ? 'today-view' : tab === 'all' ? 'all-view' : tab === 'fast' ? 'fast-view' : tab === 'fun' ? 'fun-view' : 'archive-view';
-  $(id).classList.remove('hidden');
+  const map = { today: 'today-view', all: 'all-view', fast: 'fast-view', fun: 'fun-view', archive: 'archive-view' };
+  $(map[tab]).classList.remove('hidden');
   
   if (tab === 'all') allShown = 6;
   renderCurrent();
@@ -427,7 +487,7 @@ function search() {
     $('search-results').classList.add('hidden');
     return;
   }
-  const pool = uniqueByKey([...newsItems, ...fastItems, ...funItems, ...archiveGroups.flatMap(g => g.items || [])]);
+  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveGroups.flatMap(g => g.items || [])]);
   const words = normalize(q).split(' ').filter(Boolean);
   const hits = pool.filter(x => {
     const hay = normalize([x.title, getSummary(x), getComment(x), category(x), sourceName(x)].join(' '));
@@ -435,9 +495,9 @@ function search() {
   });
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `
-    <div class="mb-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
+    <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-      ${hits.slice(0, 25).map((x, i) => headlineRow(x, i)).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
+      ${hits.slice(0, 30).map((x, i) => headlineRow(x, i)).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
     </div>`;
 }
 
@@ -447,7 +507,9 @@ function clearSearch() {
   $('search-clear').classList.add('hidden');
 }
 
-function goTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+function goTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 function toggleDark() {
   document.documentElement.classList.toggle('dark');
@@ -479,7 +541,6 @@ function normalizeArchive(data) {
   if (Array.isArray(data.items)) return [{ label: data.date || 'Archiwum', items: data.items }];
   if (Array.isArray(data.groups)) return data.groups;
 
-  // Format: { "2026-09-20_poranne": { date: "...", items: [...] }, ... }
   const out = [];
   const keys = Object.keys(data).sort().reverse();
   for (const key of keys) {
@@ -488,8 +549,7 @@ function normalizeArchive(data) {
     if (Array.isArray(v)) {
       out.push({ label: key, items: v });
     } else if (Array.isArray(v.items)) {
-      const label = v.date || key.replace(/_/g, ' • ');
-      out.push({ label, items: v.items });
+      out.push({ label: v.date || key.replace(/_/g, ' • '), items: v.items });
     }
   }
   return out;
@@ -499,8 +559,9 @@ async function init() {
   loadTheme();
   loadRead();
 
-  const [n, f, r, a, af] = await Promise.all([
+  const [n, raw, f, r, a, af] = await Promise.all([
     loadJson(DATA_FILES.news, { items: [] }),
+    loadJson(DATA_FILES.raw, { items: [] }),
     loadJson(DATA_FILES.fast, { items: [] }),
     loadJson(DATA_FILES.fun, { items: [] }),
     loadJson(DATA_FILES.archive, {}),
@@ -508,15 +569,13 @@ async function init() {
   ]);
 
   newsItems = Array.isArray(n) ? n : (n.items || []);
-  fastItems = (Array.isArray(f) ? f : (f.items || [])).slice(0, 5);
+  rawFeedItems = Array.isArray(raw) ? raw : (raw.items || []);
+  fastItems = Array.isArray(f) ? f : (f.items || []);
   funItems = Array.isArray(r) ? r : (r.items || []);
   
   archiveGroups = normalizeArchive(a);
   const archiveFun = normalizeArchive(af);
-  // Połącz archiwum + rozrywkę jeśli są
-  if (archiveFun.length) {
-    archiveGroups = [...archiveGroups, ...archiveFun];
-  }
+  if (archiveFun.length) archiveGroups = [...archiveGroups, ...archiveFun];
 
   $('last-update').textContent = new Date().toLocaleString('pl-PL', {
     day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
@@ -533,15 +592,14 @@ async function loadWidgets() {
     const d = await w.json();
     $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
     $('weather-icon').textContent = weatherEmoji(d.current.weather_code);
-    $('weather-desc').textContent = weatherText(d.current.weather_code);
   } catch (e) {}
 
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache: 'no-store' });
     const d = await r.json();
     const rates = d[0].rates;
-    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid || 0).toFixed(4);
-    $('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(4);
+    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid || 0).toFixed(2);
+    $('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
   } catch (e) {}
 }
 
@@ -554,19 +612,19 @@ function weatherEmoji(c) {
   if (c <= 82) return '🌦️';
   return '⛈️';
 }
-function weatherText(c) {
-  if (c === 0) return 'Słonecznie';
-  if (c <= 3) return 'Pogodnie';
-  if (c <= 48) return 'Mgła / zachmurzenie';
-  if (c <= 67) return 'Deszcz';
-  if (c <= 77) return 'Śnieg';
-  if (c <= 82) return 'Przelotnie';
-  return 'Burza';
-}
 
+// Naprawiona strzałka do góry
 window.addEventListener('scroll', () => {
-  $('back-top').classList.toggle('hidden', window.scrollY < 500);
-});
+  const btn = $('back-top');
+  if (window.scrollY > 400) {
+    btn.classList.remove('hidden');
+    btn.classList.add('flex');
+  } else {
+    btn.classList.add('hidden');
+    btn.classList.remove('flex');
+  }
+}, { passive: true });
+
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') clearSearch();
 });
