@@ -4544,5 +4544,144 @@
         "source_image_url": "https://techcrunch.com/wp-content/uploads/2024/06/india-ai.jpg?w=1200"
       }
     ]
+  },
+  "2026-09-26_poranne": {
+    "date": "26 września 2026",
+    "time": "07:24",
+    "timestamp": "2026-09-26_07:24",
+    "items": [
+      {
+        "category": "POLSKA",
+        "title": "⛽ Państwo tuczy się na drożyźnie przy dystrybutorach",
+        "hook": "Kierowcy płacą rekordowe rachunki na stacjach, podczas gdy budżet państwa po cichu zgarnia dodatkowe miliardy z podatków.",
+        "summary": "Rosnące ceny paliw przekładają się na gigantyczne, nieplanowane wpływy z podatku VAT oraz akcyzy bezpośrednio do budżetu państwa. Szacuje się, że każde dodatkowe 10 groszy na litrze przynosi skarbowi państwa setki milionów złotych w skali roku.",
+        "comment": "Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.",
+        "question": "Czy rząd powinien tymczasowo obniżyć stawkę VAT na paliwa, by ulżyć polskim kierowcom?",
+        "image_query": "gas station pump",
+        "link": "https://www.money.pl/mobility/tak-panstwo-zarabia-na-drogim-paliwie-dodatkowe-wplywy-siegaja-miliardow-7332836750010592a.html",
+        "image_url": "https://images.pexels.com/photos/3971795/pexels-photo-3971795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/ZWZlMDhjdTY7Djt3RxF4I3hWby0BSHZ1L053ZkdbY2VqFGIiAQY_JT8cImoPGC8nOxs9ahgGdTYqBWIyWUU-PikcISURRT86OAkpa1xeaDNsWnomRQlqMWNBeXYOU3c2aQp8aQsIYjI8CX18C15pZHgR"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📈 Rekordy Bitcoina przy rosnących kosztach kredytu",
+        "hook": "Tradycyjna gospodarka zmaga się z drożejącym pieniądzem, podczas gdy kryptowaluty biją historyczne rekordy wycen.",
+        "summary": "Najnowsze dane ze strefy euro zaskoczyły analityków, a rynki finansowe stoją w obliczu dalszego wzrostu kosztów kredytów konsumenckich. Jednocześnie cena Bitcoina przebiła dotychczasowe szczyty, napędzana napływem kapitału do funduszy spotowych.",
+        "comment": "Gdy banki centralne każą płacić słono za zwykłą hipotekę, kapitał ucieka tam, gdzie nie sięga ręka państwowego regulatora.",
+        "question": "Czy Bitcoin ostatecznie zastąpi tradycyjne aktywa w czasach wysokich stóp procentowych?",
+        "image_query": "bitcoin stock chart",
+        "link": "https://www.bankier.pl/wiadomosc/Niespodzianka-w-strefie-euro-rekordowy-Bitcoin-i-drozsze-kredyty-Co-dzieje-sie-z-gospodarka-9202605.html",
+        "image_url": "https://images.pexels.com/photos/39494584/pexels-photo-39494584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/f/6/10e95b3f8d2232-948-568-0-0-2670-1601.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Wall Street ostrzega przed brutalną korektą",
+        "hook": "Inwestorzy wyczekują rajdu św. Mikołaja, ale czołowi analitycy wieszczą najpierw gwałtowne tąpnięcie na giełdach.",
+        "summary": "Analitycy z Wall Street wskazują na rosnące ryzyko głębokiej korekty cen akcji przed ewentualną końcoworoczną falą wzrostów. Kluczowe wskaźniki cenowe i wyceny spółek technologicznych sygnalizują krótkoterminowe przegrzanie rynku.",
+        "comment": "Ślepa wiara w wieczne wzrosty na giełdzie to najszybsza droga do wyczyszczenia portfela przed świętami.",
+        "question": "Wyprzedajesz akcje przed korektą czy traktujesz spadki jako okazję do zakupów?",
+        "image_query": "wall street crash",
+        "link": "https://www.bankier.pl/wiadomosc/Ostrzezenie-z-Wall-Street-Zanim-nadejdzie-rajd-na-koniec-roku-akcje-moga-zaliczyc-spadki-9202966.html",
+        "image_url": "https://images.pexels.com/photos/35784044/pexels-photo-35784044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/1/0/1ad44670164c26-948-567-0-0-1000-599.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🚨 Rekordowa drożyzna u sąsiada: skok kosztów życia",
+        "hook": "Nasi sąsiedzi mierzą się z najszybszym wzrostem kosztów utrzymania od dwóch dekad, co uderza w ich siłę nabywczą.",
+        "summary": "Wskaźniki kosztów utrzymania gospodarstw domowych osiągnęły poziom nienotowany od 20 lat, napędzane cenami energii i żywności. Problem ten wymusza wyraźne cięcia wydatków konsumenckich oraz mocno osłabia lokalną sprzedaż detaliczną.",
+        "comment": "Skutki błędnej polityki energetycznej dopadają nawet najbogatsze społeczeństwa regionu, obnażając iluzję taniego dobrobytu.",
+        "question": "Czy wzrost kosztów życia w sąsiednich krajach przełoży się na spadek polskiego eksportu?",
+        "image_query": "grocery inflation shopping",
+        "link": "https://www.bankier.pl/wiadomosc/Tego-nie-bylo-od-20-lat-Dramatyczny-wzrost-kosztow-zycia-u-naszego-sasiada-9202627.html",
+        "image_url": "https://images.pexels.com/photos/4124939/pexels-photo-4124939.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/b/2/c95b4032efd7a7-948-568-0-400-3783-2270.jpg"
+      },
+      {
+        "category": "BIZNES",
+        "title": "💰 Larry Ellison zastawia akcje Oracle za 9,2 mld $",
+        "hook": "Miliarder bierze gigantyczne pożyczki pod zastaw udziałów w firmie, by uniknąć płacenia podatku od sprzedaży akcji.",
+        "summary": "Larry Ellison zabezpieczył dodatkowe akcje spółki Oracle o wartości 9,2 miliarda dolarów jako zastaw pod prywatne kredyty bankowe. Całkowita wartość zastawionych przez niego walorów giganta oprogramowania osiągnęła rekordowe rozmiary na giełdzie.",
+        "comment": "Najbogatsi ludzie świata nie potrzebują klasycznej pensji – żyją na bezpodatkowy kredyt bankowy zabezpieczony własnym majątkiem.",
+        "question": "Czy rządy powinny wprowadzić opodatkowanie pożyczek branych pod zastaw akcji przez miliarderów?",
+        "image_query": "corporate billionaire money",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-25/ellison-pledges-9-2-billion-more-in-oracle-shares-as-collateral",
+        "image_url": "https://images.pexels.com/photos/14856619/pexels-photo-14856619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/14856619/pexels-photo-14856619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "BIZNES",
+        "title": "🏢 Gigantyczny debiut REIT za 1 miliard dolarów",
+        "hook": "Tajlandzki magnat nieruchomości szykuje jeden z największych debiutów giełdowych funduszy REIT w historii Azji.",
+        "summary": "Spółka Asset World, kontrolowana przez miliardera Charoena Sirivadhanabhakdi, planuje pozyskać 1 miliard dolarów z oferty publicznej funduszu REIT. Środki z giełdy mają sfinansować ekspansję portfela luksusowych hoteli oraz obiektów komercyjnych.",
+        "comment": "Gdy zachodnie fundusze uciekają od nieruchomości komercyjnych, azjatyccy tygrysi budują potęgę za pieniądze inwestorów detalicznych.",
+        "question": "Czy fundusze REIT lokujące w luksusowe nieruchomości to dobra inwestycja na trudne czasy?",
+        "image_query": "luxury hotel skyscraper",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-26/billionaire-charoen-s-asset-world-targets-1-billion-reit-ipo",
+        "image_url": "https://images.pexels.com/photos/60103/pexels-photo-60103.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/60103/pexels-photo-60103.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🛢️ Iran stawia warunki otwarcia Cieśniny Hormuz",
+        "hook": "Teheran daje Waszyngtonowi siedem dni na zaakceptowanie umowy odblokowującej kluczowy szlak transportu światowej ropy.",
+        "summary": "Władze Iranu złożyły Stanom Zjednoczonym formalną propozycję porozumienia w celu ponownego otwarcia Cieśniny Hormuz w ciągu tygodnia. W zamian Teheran żąda natychmiastowego zniesienia części sankcji gospodarczych oraz wstrzymania operacji militarnych.",
+        "comment": "Geopolityczny szantaż naftowy na morskiej żyle złota pokazuje, jak łatwo doprowadzić światową gospodarkę do nagłego paraliżu.",
+        "question": "Czy USA powinny ustąpić pod presją Iranu, aby zapobiec kryzysowi energetycznemu na świecie?",
+        "image_query": "oil tanker sea",
+        "link": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko",
+        "image_url": "https://images.pexels.com/photos/33284879/pexels-photo-33284879.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5316/live/c3211510-b930-11f1-902b-af1a6d672907.jpg"
+      },
+      {
+        "category": "AI",
+        "title": "🤖 Pentagon wygrywa w sądzie z twórcami AI Claude",
+        "hook": "Twórcy sztucznej inteligencji odmówili wojsku dostępu do bojowych funkcji, więc sąd zezwolił na ich wpisanie na czarną listę.",
+        "summary": "Sąd federalny orzekł, że Pentagon ma prawo umieścić firmę Anthropic na czarnej liście dostawców za odmowę odblokowania bojowych funkcji modelu Claude. Wyrok ten stanowi przełomowy precedens prawny w relacjach między rządem USA a sektorem zaawansowanej AI.",
+        "comment": "Dolina Krzemowa uwielbia głosić etyczne manifesty o sztucznej inteligencji, dopóki nie zderzy się z twardą pięścią machiny wojennej.",
+        "question": "Czy firmy technologiczne powinny mieć prawo ograniczać wykorzystanie swoich algorytmów przez armię?",
+        "image_query": "artificial intelligence military",
+        "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+        "image_url": "https://images.pexels.com/photos/28975850/pexels-photo-28975850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/claude-app-1152x648.jpg"
+      },
+      {
+        "category": "TECHNOLOGIE",
+        "title": "⚡ Porzucono projekt centrum AI za 1,25 mld $",
+        "hook": "Ambitny plan zasilania potężnych serwerowni sztucznej inteligencji specjalnymi turbinami gazowymi legł w gruzasch.",
+        "summary": "Firma Crusoe oficjalnie wycofała się z wartej 1,25 miliarda dolarów inwestycji w zasilanie centrów danych AI przy użyciu turbin Boom. Powodem decyzji były gwałtownie rosnące koszty operacyjne oraz niespełnienie wyśrubowanych norm środowiskowych.",
+        "comment": "Giga-apetyt sztucznej inteligencji na energię elektryczną weryfikuje nawet najbardziej poetyckie wizje inwestorów.",
+        "question": "Czy wąskie gardło w dostawach energii ostatecznie zahamuje wyścig w rozwoju modeli AI?",
+        "image_query": "data center server",
+        "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+        "image_url": "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2025/12/Boom_Superpower_Hero_Dec2025.jpg?resize=1200,675"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🛡️ Ukraina z licencją na produkcję rakiet Patriot",
+        "hook": "Donald Trump podjął przełomową decyzję i wyraził zgodę na uruchomienie produkcji amerykańskich rakiet w Kijowie.",
+        "summary": "Ukraina uzyskała oficjalne licencje technologiczne pozwalające na samodzielną produkcję pocisków i podzespołów do systemów Patriot. Zgoda Waszyngtonu ma skrócić łańcuchy dostaw oraz odciążyć przeciążone amerykańskie zakłady zbrojeniowe.",
+        "comment": "Przekazanie licencji to sprytny ruch polityczny – Ameryka zdejmuje z siebie ciężar dostaw, przerzucając całe ryzyko bezpośrednio na linię frontu.",
+        "question": "Czy budowa fabryk broni na terenie Ukrainy skutecznie zabezpieczy jej dostawy amunicji?",
+        "image_query": "air defense missile",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNY3Z4SFY1Uzg0NnZwMjdXcGE0ZUV0RGpLMUM2VXdBaXd4cVQ4QjJGZ1pLYmEtZ0NqeHlIcmVhVFZHRTdoZ0FXa2ZKblYwbWo3bHZ0YlFtTnFJWlVFa1FqclYxOUFRLXZybGJnUVJxRG5RWHjrMmZVcG5MUVZuYXBkNkJsVGdaUXVIaXd2b2VIVE9hbUVMd01zWmlUYTJvUXhHb0RN?oc=5",
+        "image_url": "https://images.pexels.com/photos/28975873/pexels-photo-28975873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/28975873/pexels-photo-28975873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🇵🇱 Stała baza wojsk USA w Polsce ma termin",
+        "hook": "Lata rotacyjnej obecności sojuszników mogą wkrótce ustąpić miejsca stałemu garnizonowi wojsk amerykańskich nad Wisłą.",
+        "summary": "Zgodnie z informacjami z Waszyngtonu, decyzja w sprawie przekształcenia rotacyjnej obecności wojsk USA w Polsce w stałą bazę zapadnie w ciągu najbliższych miesięcy. Przejście na stały garnizon wymaga rozbudowy infrastruktury logistycznej oraz znacznych nakładów.",
+        "comment": "Stały garnizon to potężny symbol strategiczny, za którego utrzymanie i rozbudowę i tak zapłacą w podatkach Polacy.",
+        "question": "Czy stała baza wojsk USA rzeczywiście przyniesie Polsce większe bezpieczeństwo niż rotacyjne stacjonowanie?",
+        "image_query": "military base soldiers",
+        "link": "https://defence24.pl/polityka-obronna/stala-baza-usa-w-polsce-coraz-blizej-padl-mozliwy-termin-decyzji",
+        "image_url": "https://images.pexels.com/photos/13742002/pexels-photo-13742002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/25/1024x576px/LGoPKY5hlS8qMwGiNZF95bUhDs0z2i4DJqq2cWDO.unmt.jpg"
+      }
+    ]
   }
 }
