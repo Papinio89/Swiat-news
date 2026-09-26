@@ -15,7 +15,6 @@ body{background:#f8fafc;color:#0f172a}
 .dark body{background:#020617;color:#e2e8f0}
 .card-img{aspect-ratio:16/9;object-fit:cover}
 .line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.line-clamp-3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .tab.active{background:#0f172a;color:white}
 .dark .tab.active{background:#f8fafc;color:#0f172a}
 #toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
@@ -25,11 +24,13 @@ body{background:#f8fafc;color:#0f172a}
 .dark .headline-item:hover{background:rgba(245,158,11,.1)}
 .headline-item.read{opacity:.55}
 .headline-item.read .title{text-decoration:line-through;text-decoration-color:#94a3b8}
-.card.read{opacity:.7}
-.check-btn{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:.15s}
+.card.read{opacity:.72}
+.check-btn{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:.15s;font-size:11px}
 .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
 .dark .check-btn{border-color:#475569}
 .dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b}
+.summary-full{display:none}
+.summary-full.open{display:block}
 </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
@@ -52,7 +53,6 @@ body{background:#f8fafc;color:#0f172a}
 
 <main class="mx-auto max-w-6xl px-4 pb-28 pt-4">
 
-  <!-- Header + małe widgety -->
   <section class="mb-4">
     <div class="mb-2.5 flex items-end justify-between gap-3">
       <div>
@@ -84,7 +84,6 @@ body{background:#f8fafc;color:#0f172a}
     </div>
   </section>
 
-  <!-- Search -->
   <section class="mb-3 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
     <div class="relative">
       <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">⌕</span>
@@ -96,16 +95,15 @@ body{background:#f8fafc;color:#0f172a}
     <div id="search-results" class="mt-2.5 hidden"></div>
   </section>
 
-  <!-- Tabs -->
   <nav class="mb-4 flex gap-1.5 overflow-x-auto pb-1" aria-label="Nawigacja">
     <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
     <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('all')">Dzisiejsze news</button>
-    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Fast</button>
+    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Pilne</button>
     <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fun')">✨ Ciekawostki</button>
     <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
-  <!-- 60 sekund -->
+  <!-- 60 sekund = News + raw_feed -->
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
@@ -128,7 +126,7 @@ body{background:#f8fafc;color:#0f172a}
     </div>
   </section>
 
-  <!-- Dzisiejsze news -->
+  <!-- Dzisiejsze news – pełne karty, summary w całości -->
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
@@ -138,17 +136,16 @@ body{background:#f8fafc;color:#0f172a}
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- Fast (unikalne z news + raw_feed) -->
+  <!-- Pilne = fast.json + top 5 News -->
   <section id="fast-view" class="hidden">
     <div class="mb-3">
-      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Szybki skrót</div>
-      <h2 class="text-lg font-black">🚨 Fast</h2>
-      <p class="mt-0.5 text-[11px] text-slate-500">Unikalne tematy z news.json + raw_feed.json</p>
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
+      <h2 class="text-lg font-black">🚨 Pilne</h2>
+      <p class="mt-0.5 text-[11px] text-slate-500">fast.json + top 5 dzisiejszych newsów</p>
     </div>
-    <div id="breaking" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden"></div>
+    <div id="breaking" class="space-y-4"></div>
   </section>
 
-  <!-- Ciekawostki -->
   <section id="fun-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
@@ -157,7 +154,6 @@ body{background:#f8fafc;color:#0f172a}
     <div id="fun-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
 
-  <!-- Archiwum -->
   <section id="archive-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Historia</div>
@@ -168,7 +164,6 @@ body{background:#f8fafc;color:#0f172a}
 
 </main>
 
-<!-- Disclaimer -->
 <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
   <div class="mx-auto max-w-6xl px-4 py-6">
     <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 transition">
@@ -189,9 +184,7 @@ body{background:#f8fafc;color:#0f172a}
 </footer>
 
 <button id="back-top" onclick="goTop()" aria-label="Wróć na górę" 
-  class="fixed bottom-5 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">
-  ↑
-</button>
+  class="fixed bottom-5 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">↑</button>
 <div id="toast" class="fixed bottom-5 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl"></div>
 
 <script>
@@ -220,7 +213,25 @@ function escapeHtml(v) {
 function getTitle(v) {
   const s = String(v || '').trim();
   const m = s.match(/^(\p{Extended_Pictographic})\s*/u);
-  return m ? { emoji: m[1], title: s.slice(m[0].length) } : { emoji: '', title: s };
+  return m ? { emoji: m[1], title: s.slice(m[0].length).trim() } : { emoji: '', title: s };
+}
+
+/* Prosta detekcja angielskiego + spójny format wyświetlania */
+function looksEnglish(text) {
+  const t = String(text || '');
+  // Dużo angielskich słów / brak polskich znaków + typowe angielskie wzorce
+  const hasPolish = /[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/.test(t);
+  if (hasPolish) return false;
+  const engHints = /\b(the|and|for|with|from|that|this|will|have|been|says|said|after|over|into|about|china|russia|trump|ukraine|israel|gaza|market|oil|price|attack|plan)\b/i;
+  return engHints.test(t) || (t.split(/\s+/).length > 4 && !hasPolish);
+}
+
+function displayTitle(item) {
+  const t = getTitle(item.title);
+  let title = t.title;
+  // Jeśli wygląda na angielski – zostawiamy oryginał, ale oznaczamy spójnie
+  // (pełne tłumaczenie AI wymaga backendu; tu dbamy o spójność formatu)
+  return { emoji: t.emoji || '•', title };
 }
 
 function normalize(s) {
@@ -265,8 +276,7 @@ function categoryClass(cat) {
 function isRead(x) { return readKeys.has(keyOf(x)); }
 
 function toggleRead(x, ev) {
-  if (ev) ev.preventDefault();
-  if (ev) ev.stopPropagation();
+  if (ev) { ev.preventDefault(); ev.stopPropagation(); }
   const k = keyOf(x);
   if (!k) return;
   if (readKeys.has(k)) readKeys.delete(k);
@@ -279,10 +289,10 @@ function toggleRead(x, ev) {
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
 
+/* Licznik tylko po pełnych newsach (news.json) */
 function updateProgress() {
-  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems]);
-  const total = pool.length;
-  const read = pool.filter(x => isRead(x)).length;
+  const total = newsItems.length;
+  const read = newsItems.filter(x => isRead(x)).length;
   $('progress-text').textContent = read + '/' + total;
 }
 
@@ -290,11 +300,10 @@ function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e) { 
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const t = getTitle(item.title);
+  const t = displayTitle(item);
   const url = sourceLink(item);
   const title = t.title;
   const text = getSummary(item) || title;
-  
   if (navigator.share) {
     try {
       await navigator.share({ title, text, url: url !== '#' ? url : location.href });
@@ -304,9 +313,7 @@ async function shareItem(item, ev) {
     try {
       await navigator.clipboard.writeText(url !== '#' ? url : location.href);
       showToast('Link skopiowany');
-    } catch(e) {
-      showToast('Nie udało się skopiować');
-    }
+    } catch(e) { showToast('Nie udało się skopiować'); }
   }
 }
 
@@ -318,24 +325,27 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-/* ========== 60 sekund + Fast – lista ========== */
-function headlineRow(item, i) {
-  const t = getTitle(item.title);
+/* ========== Lista (60s + Pilne) ========== */
+function headlineRow(item) {
+  const t = displayTitle(item);
   const link = sourceLink(item);
   const read = isRead(item);
-  const emoji = t.emoji || '•';
   const itemJson = encodeURIComponent(JSON.stringify(item));
+  const isEn = looksEnglish(t.title);
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800/70 ${read ? 'read' : ''}">
-      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Oznacz jako nieprzeczytane' : 'Oznacz jako przeczytane'}">
+      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Nieprzeczytane' : 'Przeczytane'}">
         ${read ? '✓' : ''}
       </button>
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
          ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2">
-        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(emoji)}</span>
-        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">${escapeHtml(t.title)}</span>
+        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(t.emoji)}</span>
+        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">
+          ${escapeHtml(t.title)}
+          ${isEn ? '<span class="ml-1 text-[9px] font-medium text-slate-400">(EN)</span>' : ''}
+        </span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
               class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 transition" 
@@ -343,9 +353,9 @@ function headlineRow(item, i) {
     </div>`;
 }
 
-/* ========== Pełna karta ========== */
+/* ========== Pełna karta – summary w całości ========== */
 function card(item) {
-  const t = getTitle(item.title);
+  const t = displayTitle(item);
   const img = imageOf(item);
   const link = sourceLink(item);
   const summary = getSummary(item);
@@ -353,6 +363,7 @@ function card(item) {
   const cat = category(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
+  const cardId = 'c-' + keyOf(item).slice(0, 24).replace(/\W/g, '');
 
   return `
     <article class="card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900 flex flex-col ${read ? 'read' : ''}">
@@ -360,7 +371,7 @@ function card(item) {
         ${img 
           ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-3xl\\'>📰</div>'">`
           : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
-        <div class="absolute left-2.5 top-2.5 flex gap-1.5">
+        <div class="absolute left-2.5 top-2.5">
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
@@ -369,17 +380,27 @@ function card(item) {
             ${read ? '✓' : ''}
           </button>
           <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600 dark:text-slate-300" title="Udostępnij">↗</button>
+                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600" title="Udostępnij">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="text-[15px] font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
-        ${summary ? `<p class="mt-1.5 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-3">${escapeHtml(summary)}</p>` : ''}
+        <h3 class="text-[15px] font-black leading-snug">${t.emoji && t.emoji !== '•' ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        
+        ${summary ? `
+          <div class="mt-2">
+            <p id="${cardId}-short" class="text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary.length > 180 ? summary.slice(0, 180) + '…' : summary)}</p>
+            ${summary.length > 180 ? `
+              <p id="${cardId}-full" class="summary-full text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>
+              <button onclick="toggleSummary('${cardId}')" id="${cardId}-btn" class="mt-1 text-[11px] font-bold text-amber-600 hover:underline">Pokaż więcej</button>
+            ` : ''}
+          </div>` : ''}
+        
         ${comment ? `
           <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/30">
             <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Komentarz</div>
             <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
+        
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
           <span class="truncate text-[10px] font-semibold text-slate-500">${escapeHtml(sourceName(item))}</span>
           ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
@@ -388,20 +409,31 @@ function card(item) {
     </article>`;
 }
 
+function toggleSummary(id) {
+  const short = $(id + '-short');
+  const full = $(id + '-full');
+  const btn = $(id + '-btn');
+  if (!full) return;
+  const open = full.classList.toggle('open');
+  short.style.display = open ? 'none' : 'block';
+  btn.textContent = open ? 'Zwiń' : 'Pokaż więcej';
+}
+
 function funMini(item) {
-  const t = getTitle(item.title);
+  const t = displayTitle(item);
   return `
     <article class="rounded-xl border border-slate-200 bg-white p-2.5 dark:border-slate-800 dark:bg-slate-900">
       <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
-      <h3 class="line-clamp-3 text-sm font-extrabold">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+      <h3 class="line-clamp-3 text-sm font-extrabold">${t.emoji && t.emoji !== '•' ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
     </article>`;
 }
 
 /* ========== Render ========== */
 function renderToday() {
-  const items = uniqueByKey([...newsItems, ...fastItems]);
+  // 60 sekund = News + raw_feed (unikalne)
+  const items = uniqueByKey([...newsItems, ...rawFeedItems]);
   $('headline-list').innerHTML = items.length 
-    ? items.map((item, i) => headlineRow(item, i)).join('') 
+    ? items.map(headlineRow).join('') 
     : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
   $('edition-time').textContent = `${items.length} tematów`;
 
@@ -424,11 +456,12 @@ function loadMoreAll() {
 }
 
 function renderFast() {
-  // Unikalne tytuły z news.json + raw_feed.json
-  const items = uniqueByKey([...newsItems, ...rawFeedItems]);
+  // Pilne = fast.json + top 5 z News (unikalne)
+  const topNews = newsItems.slice(0, 5);
+  const items = uniqueByKey([...fastItems, ...topNews]);
   $('breaking').innerHTML = items.length 
-    ? items.map((item, i) => headlineRow(item, i)).join('') 
-    : '<div class="p-6 text-center text-sm text-slate-500">Brak tematów.</div>';
+    ? items.map(card).join('') 
+    : '<div class="p-6 text-center text-sm text-slate-500">Brak pilnych wiadomości.</div>';
 }
 
 function renderFun() {
@@ -483,10 +516,8 @@ function switchTab(tab) {
 function search() {
   const q = ($('search-input').value || '').toLowerCase().trim();
   $('search-clear').classList.toggle('hidden', !q);
-  if (!q) {
-    $('search-results').classList.add('hidden');
-    return;
-  }
+  if (!q) { $('search-results').classList.add('hidden'); return; }
+  
   const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveGroups.flatMap(g => g.items || [])]);
   const words = normalize(q).split(' ').filter(Boolean);
   const hits = pool.filter(x => {
@@ -497,7 +528,7 @@ function search() {
   $('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-      ${hits.slice(0, 30).map((x, i) => headlineRow(x, i)).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
+      ${hits.slice(0, 30).map(headlineRow).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
     </div>`;
 }
 
@@ -507,9 +538,7 @@ function clearSearch() {
   $('search-clear').classList.add('hidden');
 }
 
-function goTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+function goTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
 function toggleDark() {
   document.documentElement.classList.toggle('dark');
@@ -520,9 +549,7 @@ function loadTheme() {
   if (localStorage.getItem('swm-dark') === '1') document.documentElement.classList.add('dark');
 }
 
-function toggleDisclaimer() {
-  $('disclaimer').classList.toggle('hidden');
-}
+function toggleDisclaimer() { $('disclaimer').classList.toggle('hidden'); }
 
 async function loadJson(url, fallback) {
   try {
@@ -540,17 +567,13 @@ function normalizeArchive(data) {
   if (Array.isArray(data)) return [{ label: 'Archiwum', items: data }];
   if (Array.isArray(data.items)) return [{ label: data.date || 'Archiwum', items: data.items }];
   if (Array.isArray(data.groups)) return data.groups;
-
   const out = [];
   const keys = Object.keys(data).sort().reverse();
   for (const key of keys) {
     const v = data[key];
     if (!v) continue;
-    if (Array.isArray(v)) {
-      out.push({ label: key, items: v });
-    } else if (Array.isArray(v.items)) {
-      out.push({ label: v.date || key.replace(/_/g, ' • '), items: v.items });
-    }
+    if (Array.isArray(v)) out.push({ label: key, items: v });
+    else if (Array.isArray(v.items)) out.push({ label: v.date || key.replace(/_/g, ' • '), items: v.items });
   }
   return out;
 }
@@ -593,7 +616,6 @@ async function loadWidgets() {
     $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
     $('weather-icon').textContent = weatherEmoji(d.current.weather_code);
   } catch (e) {}
-
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache: 'no-store' });
     const d = await r.json();
@@ -613,7 +635,6 @@ function weatherEmoji(c) {
   return '⛈️';
 }
 
-// Naprawiona strzałka do góry
 window.addEventListener('scroll', () => {
   const btn = $('back-top');
   if (window.scrollY > 400) {
@@ -625,9 +646,7 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-window.addEventListener('keydown', e => {
-  if (e.key === 'Escape') clearSearch();
-});
+window.addEventListener('keydown', e => { if (e.key === 'Escape') clearSearch(); });
 
 init();
 </script>
