@@ -45,27 +45,48 @@ body{background:#f8fafc;color:#0f172a}
 .headline-item.read .title{text-decoration:line-through;text-decoration-color:#94a3b8}
 .card.read{opacity:.72}
 
-.check-btn{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:.15s;font-size:11px}
+.check-btn{
+  width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;
+  display:inline-flex;align-items:center;justify-content:center;
+  flex-shrink:0;cursor:pointer;transition:.15s;font-size:11px;
+  background:transparent;color:transparent;
+}
 .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
-.dark .check-btn{border-color:#475569}
-.dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b}
+.dark .check-btn{border-color:#64748b}
+.dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
 
-/* Dark mode – karty i listy nie rażą */
-.dark #headline-list,
-.dark #breaking {
-  background-color: #0f172a !important;
-  border-color: #1e293b !important;
+/* === DARK MODE – czytelne teksty === */
+.dark #headline-list{
+  background:#0f172a !important;
+  border-color:#1e293b !important;
 }
-.dark .headline-item {
-  border-color: #1e293b !important;
+.dark .headline-item{
+  border-color:#1e293b !important;
 }
-.dark .card {
-  background-color: #0f172a !important;
-  border-color: #1e293b !important;
+.dark .headline-item .title,
+.dark .headline-item a,
+.dark .headline-item span.title{
+  color:#f1f5f9 !important;
 }
-.dark #search-results .rounded-xl {
-  background-color: #0f172a !important;
-  border-color: #1e293b !important;
+.dark .card{
+  background:#0f172a !important;
+  border-color:#1e293b !important;
+}
+.dark .card h3{
+  color:#f8fafc !important;
+}
+.dark .card p{
+  color:#cbd5e1 !important;
+}
+.dark .card .text-slate-500{
+  color:#94a3b8 !important;
+}
+.dark #search-results .rounded-xl{
+  background:#0f172a !important;
+  border-color:#1e293b !important;
+}
+.dark #breaking{
+  background:transparent !important;
 }
 </style>
 </head>
@@ -77,12 +98,12 @@ body{background:#f8fafc;color:#0f172a}
       <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg shadow-sm dark:bg-white">🌍</div>
       <div>
         <div class="text-sm font-black tracking-tight">Świat w Minutę</div>
-        <div class="text-[10px] font-medium text-slate-500">Najważniejsze wiadomości bez zbędnego szumu</div>
+        <div class="text-[10px] font-medium text-slate-500 dark:text-slate-400">Najważniejsze wiadomości bez zbędnego szumu</div>
       </div>
     </a>
     <div class="flex items-center gap-2">
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
-      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900" aria-label="Tryb ciemny">☾</button>
+      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200" aria-label="Tryb ciemny">☾</button>
     </div>
   </div>
 </header>
@@ -95,26 +116,26 @@ body{background:#f8fafc;color:#0f172a}
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div>
         <h1 class="text-xl font-black tracking-tight sm:text-2xl">Świat w Minutę</h1>
       </div>
-      <div id="last-update" class="text-right text-[10px] text-slate-500">Ładowanie…</div>
+      <div id="last-update" class="text-right text-[10px] text-slate-500 dark:text-slate-400">Ładowanie…</div>
     </div>
     <div id="info-widgets" class="grid grid-cols-4 gap-1.5">
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[9px] font-bold uppercase text-slate-500">WAW</div>
+        <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">WAW</div>
         <div class="mt-0.5 flex items-center gap-1 text-sm font-black">
           <span id="weather-temp">—°</span>
           <span id="weather-icon" class="text-sm">🌤️</span>
         </div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[9px] font-bold uppercase text-slate-500">EUR</div>
+        <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">EUR</div>
         <div id="eur-rate" class="mt-0.5 text-sm font-black">—</div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[9px] font-bold uppercase text-slate-500">USD</div>
+        <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">USD</div>
         <div id="usd-rate" class="mt-0.5 text-sm font-black">—</div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
-        <div class="text-[9px] font-bold uppercase text-slate-500">Dziś</div>
+        <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">Dziś</div>
         <div id="progress-text" class="mt-0.5 text-sm font-black">0/0</div>
       </div>
     </div>
@@ -124,7 +145,7 @@ body{background:#f8fafc;color:#0f172a}
     <div class="relative">
       <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">⌕</span>
       <input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" 
-             class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950" 
+             class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100" 
              placeholder="Szukaj wiadomości…">
       <button onclick="clearSearch()" class="absolute right-2 top-1/2 hidden -translate-y-1/2 px-2 text-slate-400" id="search-clear">×</button>
     </div>
@@ -133,10 +154,10 @@ body{background:#f8fafc;color:#0f172a}
 
   <nav class="mb-4 flex gap-1.5 overflow-x-auto pb-1" aria-label="Nawigacja">
     <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
-    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('all')">Dzisiejsze news</button>
-    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Pilne</button>
-    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fun')">✨ Ciekawostki</button>
-    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
+    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('all')">Dzisiejsze news</button>
+    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('fast')">🚨 Pilne</button>
+    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('fun')">✨ Ciekawostki</button>
+    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
   <!-- 60 sekund -->
@@ -146,7 +167,7 @@ body{background:#f8fafc;color:#0f172a}
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div>
         <h2 class="text-lg font-black">Najważniejsze dziś</h2>
       </div>
-      <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500"></div>
+      <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500 dark:text-slate-400"></div>
     </div>
     <div id="headline-list" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden">
       <div class="p-6 text-center text-sm text-slate-500">Ładowanie…</div>
@@ -179,7 +200,7 @@ body{background:#f8fafc;color:#0f172a}
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
       <h2 class="text-lg font-black">🚨 Pilne</h2>
-      <p class="mt-0.5 text-[11px] text-slate-500">fast.json + top 5 dzisiejszych newsów</p>
+      <p class="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">fast.json + top 5 dzisiejszych newsów</p>
     </div>
     <div id="breaking" class="space-y-4"></div>
   </section>
@@ -221,7 +242,7 @@ body{background:#f8fafc;color:#0f172a}
             Treści mogą zawierać uproszczenia lub nieścisłości. Zawsze weryfikuj informacje w oryginalnym źródle.
           </p>
           
-          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-slate-500">
+          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-slate-500 dark:text-slate-400">
             <div class="flex items-center gap-2">
               <span class="text-amber-500">•</span> Generowane automatycznie przez AI
             </div>
@@ -310,7 +331,6 @@ async function translateToPolish(text) {
 
 function pickEmoji(title, cat) {
   const t = (title + ' ' + (cat || '')).toLowerCase();
-
   if (/trump|biden|white house|prezydent|wybor|usa|ameryk/.test(t)) return '🇺🇸';
   if (/china|chiny|xi|pekin|beijing/.test(t)) return '🇨🇳';
   if (/russia|rosja|putin|moskwa|moscow|kreml/.test(t)) return '🇷🇺';
@@ -433,18 +453,18 @@ function headlineRow(item, displayTitle, emoji) {
   const title = displayTitle || getTitle(item.title).title;
 
   return `
-    <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800/70 ${read ? 'read' : ''}">
+    <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800 ${read ? 'read' : ''}">
       <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Nieprzeczytane' : 'Przeczytane'}">
         ${read ? '✓' : ''}
       </button>
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
          ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
-         class="min-w-0 flex-1 flex items-start gap-2">
+         class="min-w-0 flex-1 flex items-start gap-2 no-underline">
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
         <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">${escapeHtml(title)}</span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 transition" 
+              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 dark:text-slate-400 transition" 
               title="Udostępnij">↗</button>
     </div>`;
 }
@@ -486,7 +506,7 @@ function card(item) {
             <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
-          <span class="truncate text-[10px] font-semibold text-slate-500">${escapeHtml(sourceName(item))}</span>
+          <span class="truncate text-[10px] font-semibold text-slate-500 dark:text-slate-400">${escapeHtml(sourceName(item))}</span>
           ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
         </div>
       </div>
@@ -522,11 +542,9 @@ async function renderToday() {
     if (isEnglishTitle(title)) {
       title = await translateToPolish(title);
     }
-
     if (!emoji || emoji === '•') {
       emoji = pickEmoji(title, category(item));
     }
-
     return { item, title, emoji };
   }));
 
@@ -575,7 +593,7 @@ function renderArchive() {
     <section class="mb-7">
       <div class="mb-2.5 flex items-end justify-between">
         <h3 class="text-base font-black text-slate-900 dark:text-white">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
-        <span class="text-[10px] text-slate-500">${(g.items || []).length} wiadomości</span>
+        <span class="text-[10px] text-slate-500 dark:text-slate-400">${(g.items || []).length} wiadomości</span>
       </div>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         ${(g.items || []).map(card).join('')}
@@ -622,7 +640,7 @@ function search() {
   });
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `
-    <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
+    <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900">
       ${hits.slice(0, 30).map(item => {
         const t = getTitle(item.title);
