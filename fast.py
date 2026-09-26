@@ -41,7 +41,8 @@ TARGET_ITEMS = 3
 
 
 def clean_link(url: str) -> str:
-    if not url or url == "#": return "#"
+    if not url or url == "#":
+        return "#"
     try:
         tracking_params = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "at_medium", "at_campaign", "fbclid", "gclid"}
         parsed = urlparse(url)
@@ -55,15 +56,18 @@ def clean_link(url: str) -> str:
     except Exception:
         return url
 
+
 def is_recent(entry) -> bool:
     published = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
-    if not published: return True
+    if not published:
+        return True
     try:
         pub_dt = datetime.fromtimestamp(mktime(published), tz=pl_tz)
         age = datetime.now(pl_tz) - pub_dt
         return age <= timedelta(hours=MAX_AGE_HOURS)
     except Exception:
         return True
+
 
 def fetch_article_image(url: str) -> str | None:
     if not url or url == "#" or "news.google.com" in url:
@@ -94,12 +98,14 @@ def fetch_article_image(url: str) -> str | None:
             m = re.search(pat, html, re.I)
             if m:
                 img = m.group(1).strip()
-                if img.startswith("//"): img = "https:" + img
+                if img.startswith("//"):
+                    img = "https:" + img
                 if img.startswith("http") and not img.endswith(".svg"):
                     return img
     except Exception as ex:
         print(f"  [Foto-Scraper] Brak og:image dla {url[:45]}... ({ex})")
     return None
+
 
 def fetch_pexels_image_url(query: str) -> str | None:
     if not PEXELS_API_KEY:
@@ -122,13 +128,50 @@ def fetch_pexels_image_url(query: str) -> str | None:
     return None
 
 
+def validate_items(items: list) -> list:
+    required = {"category", "title", "hook", "summary", "comment", "threads_post", "question", "image_query", "link"}
+    valid = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        if not required.issubset(item.keys()):
+            continue
+
+        title = str(item.get("title", "")).strip()
+        hook = str(item.get("hook", "")).strip()
+        summary = str(item.get("summary", "")).strip()
+        comment = str(item.get("comment", "")).strip()
+        threads_post = str(item.get("threads_post", "")).strip()
+        question = str(item.get("question", "")).strip()
+        category = str(item.get("category", "OBRONNOŚĆ")).strip().upper()
+        image_query = str(item.get("image_query", "military")).strip()
+        link = clean_link(str(item.get("link", "#")))
+
+        if len(title) < 10 or len(summary) < 20 or len(threads_post) < 80:
+            continue
+
+        valid.append({
+            "category": category,
+            "title": title,
+            "hook": hook,
+            "summary": summary,
+            "comment": comment,
+            "threads_post": threads_post,
+            "question": question,
+            "image_query": image_query,
+            "link": link
+        })
+    return valid
+
+
 # --- ZBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
         for entry in feed.entries[:4]:
-            if not is_recent(entry): continue
+            if not is_recent(entry):
+                continue
             title = getattr(entry, "title", "").strip()
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 6:
@@ -145,7 +188,8 @@ if len(raw_articles) < TARGET_ITEMS:
                 link = clean_link(getattr(entry, "link", "#"))
                 if title and len(title) > 6:
                     raw_articles.append({"title": title, "link": link})
-        except: pass
+        except:
+            pass
 
 print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
 
@@ -163,7 +207,8 @@ if os.path.exists(archive_file):
                         if "title" in item:
                             clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
                             excluded_topics.append(clean)
-    except: pass
+    except:
+        pass
 
 news_file = "news.json"
 if os.path.exists(news_file):
@@ -175,7 +220,8 @@ if os.path.exists(news_file):
                     if "title" in item:
                         clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
                         excluded_topics.append(clean)
-    except: pass
+    except:
+        pass
 
 # --- DEDUPLIKACJA ---
 filtered_raw_articles = []
@@ -202,32 +248,36 @@ if len(filtered_raw_articles) < TARGET_ITEMS:
 
 articles_for_ai = filtered_raw_articles[:15]
 
-# --- PROMPT AI Z BEZWZGLĘDNYM NAKAZEM UNIKALNOŚCI ---
+# --- PROMPT AI Z PODZIAŁEM NA SLAJD I PUBLICYSTYCZNY POST THREADS ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem topowego konta o obronności i geopolityce. Tworzysz posty o potężnych zasięgach (styl konkretny, plastyczny, angażujący).
+prompt = f"""Jesteś autorem czołowego konta analityczno-militarnego w mediach społecznościowych („Świat w Minucie”). 
+Twoje posty na Threads generują ogromne organiczne zasięgi (dziesiątki tysięcy wyświetleń i setki komentarzy), ponieważ piszesz w sposób żywy, publicystyczny, z trafnym tłem strategicznym i bezkompromisową pointą.
 
-Zadanie: Wybierz DOKŁADNIE {TARGET_ITEMS} RÓŻNE tematy z podanej listy i stwórz dla każdego unikalny wpis w formacie JSON.
+Zadanie: Wybierz DOKŁADNIE {TARGET_ITEMS} RÓŻNE, NAJCIEKAWSZE tematy z podanej listy i stwórz dla każdego unikalny wpis w formacie JSON.
 
-ZASADY TREŚCI:
-1. ZAKAZ UNIWERSALNYCH SZABLONÓW:
-   - Każdy wpis MUSI dotyczyć dokładnie tego sprzętu lub wydarzenia, o którym mowa w tytule (np. jeśli mowa o moździerzu – pisz o moździerzu, sile ognia, WOT; jeśli o śmigłowcu – pisz o flocie i transporcie; jeśli o okręcie podwodnym – o skradaniu pod wodą i Pacyfiku).
-   - ZAKAZ pisania ogólników typu „Najnowsze doniesienia z linii frontu wskazują na przyspieszenie działań” tam, gdzie nie ma to sensu.
-2. ZASADA NAMACALNEJ STAWKI:
-   - Napisz wprost, co ten zakup lub ruch oznacza (kto zyska przewagę, co zastąpi stary sprzęt, jakie luki załata).
-3. UNIKALNE PYTANIE NA KOŃCU (field "question"):
-   - Każdy news musi mieć inne, precyzyjne pytanie do dyskusji pod swój temat (np. „Czy WOT powinien dostać broń tego kalibru?”, „Wolicie śmigłowce z USA czy europejskiego Airbusa?”).
+ZASADA ROZDZIELENIA TREŚCI SLAJD VS THREADS:
+- Na karuzelę Instagrama ("summary" i "comment"): pisz krótko, syntetycznie i merytorycznie. Summary to 2 zdania faktów o konkretnym sprzęcie/wydarzeniu, comment to 1 zdanie wniosku strategicznego.
+- Na Threads ("threads_post"): BEZWZGLĘDNY ZAKAZ przepisania 1:1 słów ze slajdu!
+  Napisz wciągający, bogaty post publicystyczny (dokładnie 3-4 naturalne akapity).
+  Wzoruj się na poniższym schemacie:
+  Akapit 1: Tytuł z trafną emotikoną (np. 🛡️, 🚀, ⚔️, ⚠️).
+  Akapit 2: Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "302 dni na oceanie: Historyczny i wyczerpujący dyżur USS Abraham Lincoln! 🚀🇺🇸").
+  Akapit 3: Pogłębione rozwinięcie sytuacji, którego NIE MA na grafice (szersze tło strategiczne, zmęczenie załóg, zużycie sprzętu, realna presja logistyczna).
+  Akapit 4: Cięta pointa z dedykowanymi emotikonami (np. 🌊⚓, 🛸🪖, ❄️🛡️).
+  Akapit 5: Konkretne pytanie prowokujące do dyskusji pod dany temat (np. "Czy US Navy nie nadwyręża zbytnio wytrzymałości swoich załóg? 🚢👇💬").
 
 STRUKTURA JSON (zwróć WYŁĄCZNIE czysty JSON):
 [
   {{
     "category": "OBRONNOŚĆ / POLSKA / GEOPOLITYKA",
     "title": "[Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków]",
-    "hook": "1 zdanie uderzające w sedno (np. 'Polska szuka sposobu na skokowe zwiększenie siły ognia piechoty.')",
-    "summary": "2 zdania konkretów o tym konkretnym wydarzeniu/sprzęcie z nagłówka.",
+    "hook": "1 zdanie uderzające w sedno.",
+    "summary": "2 zwięzłe zdania konkretów na slajd.",
     "comment": "1 mocne, chłodne zdanie wniosku strategicznego.",
+    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, bogata w kontekst i unikalna względem summary).",
     "question": "1 angażujące, unikalne pytanie skierowane do czytelników w tym konkretnym temacie.",
-    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels (np. 'military mortar firing', 'military helicopter flight')",
+    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels (np. 'aircraft carrier ocean', 'military drone flight')",
     "link": "dokładnie URL artykułu"
   }}
 ]
@@ -245,27 +295,41 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.3,
+            temperature=0.4,
+            safety_settings=[
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
+            ]
         ),
     )
     
     text = response.text.strip()
-    if text.startswith("```json"): text = text[7:]
-    if text.startswith("```"): text = text[3:]
-    if text.endswith("```"): text = text[:-3]
+    if text.startswith("```json"):
+        text = text[7:]
+    if text.startswith("```"):
+        text = text[3:]
+    if text.endswith("```"):
+        text = text[:-3]
     text = text.strip()
     
     parsed = json.loads(text)
     if isinstance(parsed, list):
-        items = parsed
+        raw_items = parsed
     elif isinstance(parsed, dict) and "items" in parsed:
-        items = parsed["items"]
+        raw_items = parsed["items"]
+    else:
+        raw_items = []
+
+    items = validate_items(raw_items)
 
 except Exception as e:
     print(f"Błąd AI: {e}")
     traceback.print_exc()
+    items = []
 
-# Awaryjne uzupełnienie (jeśli AI zawiodło całkowicie) - z dynamicznym tytułem, bez kopiuj-wklej
+# Awaryjne uzupełnienie
 while len(items) < TARGET_ITEMS:
     existing_links = {i.get('link') for i in items if isinstance(i, dict)}
     added = False
@@ -278,13 +342,15 @@ while len(items) < TARGET_ITEMS:
                 "hook": f"Kluczowe doniesienia dotyczące projektu: {clean_t[:40]}.",
                 "summary": f"Trwają dyskusje wokół wdrożenia i zabezpieczenia kontraktu w tym obszarze. Przedstawiciele branży analizują szczegóły techniczne.",
                 "comment": "Decyzje w tym sektorze bezpośrednio zdefiniują potencjał operacyjny na kolejne lata.",
+                "threads_post": f"🚨 {clean_t[:55]}\n\nKluczowy zwrot na wschodniej flance: zapadają strategiczne decyzje! 🛡️⚡\n\nPrzedstawiciele resortów obrony i sztabów analizują najnowsze dane operacyjne. Presja czasu i wyzwania logistyczne zmuszają do weryfikacji dotychczasowych planów zaopatrzeniowych.\n\nTo wyraźny sygnał, że deklaracje polityczne muszą natychmiast znaleźć odzwierciedlenie w realnych mocach produkcyjnych przemysłu. 🪖⏳\n\nKrajowy i sojuszniczy przemysł zbrojeniowy sprosta wyzwaniom nowej ery? 🏭👇💬",
                 "question": "Jak oceniacie ten ruch z perspektywy modernizacji armii?",
                 "image_query": "military defense technology",
                 "link": art.get("link", "#")
             })
             existing_links.add(art['link'])
             added = True
-            if len(items) >= TARGET_ITEMS: break
+            if len(items) >= TARGET_ITEMS:
+                break
     if not added:
         break
 
@@ -292,18 +358,23 @@ items = items[:TARGET_ITEMS]
 
 # --- KASKADOWE POBIERANIE ZDJĘĆ ---
 print("Dobieranie zdjęć (Artykuł -> Pexels -> Fallback)...")
+source_ok = 0
 for item in items:
     url = item.get("link", "")
     q = item.get("image_query", "military")
     
     selected_img = fetch_article_image(url)
-    if not selected_img:
+    if selected_img:
+        source_ok += 1
+    else:
         selected_img = fetch_pexels_image_url(q)
     if not selected_img:
         selected_img = FALLBACK_IMG
         
     item["image_url"] = selected_img
     item["source_image_url"] = selected_img
+
+print(f"Zdjęcia ze źródeł pobrane: {source_ok}/{len(items)}")
 
 # --- ZAPIS ---
 now_pl = datetime.now(pl_tz)
