@@ -7,7 +7,6 @@
 <title>Świat w Minutę — Wiadomości</title>
 <meta name="description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność — krótko i na temat.">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://swiat-w-minute.vercel.app/">
 <meta property="og:title" content="Świat w Minutę — Przegląd dnia">
@@ -16,10 +15,9 @@
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Świat w Minutę">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
-<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność.">
+<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund.">
 <meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.jpg">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +30,7 @@ body{background:#f8fafc;color:#0f172a}
 .dark body{background:#020617;color:#e2e8f0}
 
 .card-img{aspect-ratio:16/9;object-fit:cover}
-.tab.active{background:#0f172a;color:white}
+.tab.active{background:#0f172a;color:#fff}
 .dark .tab.active{background:#f8fafc;color:#0f172a}
 
 #toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
@@ -55,38 +53,40 @@ body{background:#f8fafc;color:#0f172a}
 .dark .check-btn{border-color:#64748b}
 .dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
 
-/* === DARK MODE – czytelne teksty === */
-.dark #headline-list{
-  background:#0f172a !important;
-  border-color:#1e293b !important;
-}
-.dark .headline-item{
-  border-color:#1e293b !important;
-}
+/* Dark mode – listy i karty */
+.dark #headline-list{background:#0f172a !important;border-color:#1e293b !important}
+.dark .headline-item{border-color:#1e293b !important}
 .dark .headline-item .title,
 .dark .headline-item a,
-.dark .headline-item span.title{
-  color:#f1f5f9 !important;
-}
-.dark .card{
-  background:#0f172a !important;
+.dark .headline-item span.title{color:#f1f5f9 !important}
+.dark .card{background:#0f172a !important;border-color:#1e293b !important}
+.dark .card h3{color:#f8fafc !important}
+.dark .card p{color:#cbd5e1 !important}
+.dark .card .text-slate-500{color:#94a3b8 !important}
+.dark #search-results .rounded-xl{background:#0f172a !important;border-color:#1e293b !important}
+
+/* Dark mode – header, widgety, search */
+.dark header{
+  background:rgba(2,6,23,.95) !important;
   border-color:#1e293b !important;
 }
-.dark .card h3{
-  color:#f8fafc !important;
+.dark #info-widgets > div{
+  background:#0f172a !important;
+  border-color:#1e293b !important;
+  color:#e2e8f0 !important;
 }
-.dark .card p{
-  color:#cbd5e1 !important;
-}
-.dark .card .text-slate-500{
+.dark #info-widgets .text-slate-500,
+.dark #info-widgets [class*="text-slate-5"]{
   color:#94a3b8 !important;
 }
-.dark #search-results .rounded-xl{
+.dark #search-box,
+.dark #search-box input{
   background:#0f172a !important;
   border-color:#1e293b !important;
+  color:#f1f5f9 !important;
 }
-.dark #breaking{
-  background:transparent !important;
+.dark #search-box{
+  border-color:#1e293b !important;
 }
 </style>
 </head>
@@ -95,15 +95,15 @@ body{background:#f8fafc;color:#0f172a}
 <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
     <a href="#" onclick="goTop();return false" class="flex items-center gap-3">
-      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg shadow-sm dark:bg-white">🌍</div>
+      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg shadow-sm dark:bg-white dark:text-slate-900">🌍</div>
       <div>
-        <div class="text-sm font-black tracking-tight">Świat w Minutę</div>
+        <div class="text-sm font-black tracking-tight text-slate-900 dark:text-white">Świat w Minutę</div>
         <div class="text-[10px] font-medium text-slate-500 dark:text-slate-400">Najważniejsze wiadomości bez zbędnego szumu</div>
       </div>
     </a>
     <div class="flex items-center gap-2">
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
-      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200" aria-label="Tryb ciemny">☾</button>
+      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200" aria-label="Tryb ciemny">☾</button>
     </div>
   </div>
 </header>
@@ -114,34 +114,34 @@ body{background:#f8fafc;color:#0f172a}
     <div class="mb-2.5 flex items-end justify-between gap-3">
       <div>
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div>
-        <h1 class="text-xl font-black tracking-tight sm:text-2xl">Świat w Minutę</h1>
+        <h1 class="text-xl font-black tracking-tight sm:text-2xl text-slate-900 dark:text-white">Świat w Minutę</h1>
       </div>
       <div id="last-update" class="text-right text-[10px] text-slate-500 dark:text-slate-400">Ładowanie…</div>
     </div>
     <div id="info-widgets" class="grid grid-cols-4 gap-1.5">
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
         <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">WAW</div>
-        <div class="mt-0.5 flex items-center gap-1 text-sm font-black">
+        <div class="mt-0.5 flex items-center gap-1 text-sm font-black text-slate-900 dark:text-white">
           <span id="weather-temp">—°</span>
           <span id="weather-icon" class="text-sm">🌤️</span>
         </div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
         <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">EUR</div>
-        <div id="eur-rate" class="mt-0.5 text-sm font-black">—</div>
+        <div id="eur-rate" class="mt-0.5 text-sm font-black text-slate-900 dark:text-white">—</div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
         <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">USD</div>
-        <div id="usd-rate" class="mt-0.5 text-sm font-black">—</div>
+        <div id="usd-rate" class="mt-0.5 text-sm font-black text-slate-900 dark:text-white">—</div>
       </div>
       <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-800 dark:bg-slate-900">
         <div class="text-[9px] font-bold uppercase text-slate-500 dark:text-slate-400">Dziś</div>
-        <div id="progress-text" class="mt-0.5 text-sm font-black">0/0</div>
+        <div id="progress-text" class="mt-0.5 text-sm font-black text-slate-900 dark:text-white">0/0</div>
       </div>
     </div>
   </section>
 
-  <section class="mb-3 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+  <section id="search-box" class="mb-3 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
     <div class="relative">
       <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">⌕</span>
       <input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" 
@@ -160,12 +160,11 @@ body{background:#f8fafc;color:#0f172a}
     <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
-  <!-- 60 sekund -->
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div>
-        <h2 class="text-lg font-black">Najważniejsze dziś</h2>
+        <h2 class="text-lg font-black text-slate-900 dark:text-white">Najważniejsze dziś</h2>
       </div>
       <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500 dark:text-slate-400"></div>
     </div>
@@ -177,7 +176,7 @@ body{background:#f8fafc;color:#0f172a}
       <div class="mb-2.5 flex items-center justify-between">
         <div>
           <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Na koniec</div>
-          <h2 class="text-base font-black">✨ Ciekawostki</h2>
+          <h2 class="text-base font-black text-slate-900 dark:text-white">✨ Ciekawostki</h2>
         </div>
         <button onclick="switchTab('fun')" class="text-xs font-bold text-amber-500">Więcej →</button>
       </div>
@@ -185,21 +184,19 @@ body{background:#f8fafc;color:#0f172a}
     </div>
   </section>
 
-  <!-- Dzisiejsze news -->
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
-      <h2 class="text-lg font-black">📰 Dzisiejsze news</h2>
+      <h2 class="text-lg font-black text-slate-900 dark:text-white">📰 Dzisiejsze news</h2>
     </div>
     <div id="all-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- Pilne -->
   <section id="fast-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
-      <h2 class="text-lg font-black">🚨 Pilne</h2>
+      <h2 class="text-lg font-black text-slate-900 dark:text-white">🚨 Pilne</h2>
       <p class="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">fast.json + top 5 dzisiejszych newsów</p>
     </div>
     <div id="breaking" class="space-y-4"></div>
@@ -208,7 +205,7 @@ body{background:#f8fafc;color:#0f172a}
   <section id="fun-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
-      <h2 class="text-lg font-black">✨ Ciekawostki</h2>
+      <h2 class="text-lg font-black text-slate-900 dark:text-white">✨ Ciekawostki</h2>
     </div>
     <div id="fun-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
@@ -216,22 +213,20 @@ body{background:#f8fafc;color:#0f172a}
   <section id="archive-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Historia</div>
-      <h2 class="text-lg font-black">🗂 Archiwum</h2>
+      <h2 class="text-lg font-black text-slate-900 dark:text-white">🗂 Archiwum</h2>
     </div>
     <div id="archive-content"></div>
+    <button id="archive-more" onclick="loadMoreArchive()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż starsze wydania</button>
   </section>
 
 </main>
 
-<!-- Disclaimer – po kliknięciu -->
 <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
   <div class="mx-auto max-w-6xl px-4 py-8">
-    
     <button onclick="toggleDisclaimer()" 
             class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition">
       ℹ️ Ważne informacje o stronie
     </button>
-
     <div id="disclaimer" class="mt-4 hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 p-5 sm:p-6">
       <div class="flex items-start gap-3">
         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-950/50">ℹ️</div>
@@ -241,25 +236,15 @@ body{background:#f8fafc;color:#0f172a}
             Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem sztucznej inteligencji. 
             Treści mogą zawierać uproszczenia lub nieścisłości. Zawsze weryfikuj informacje w oryginalnym źródle.
           </p>
-          
           <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-slate-500 dark:text-slate-400">
-            <div class="flex items-center gap-2">
-              <span class="text-amber-500">•</span> Generowane automatycznie przez AI
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-amber-500">•</span> Kursy i pogoda mają charakter orientacyjny
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-amber-500">•</span> Nie ponosimy odpowiedzialności za treści zewnętrzne
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="text-amber-500">•</span> Linki prowadzą do oryginalnych źródeł
-            </div>
+            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Generowane automatycznie przez AI</div>
+            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Kursy i pogoda mają charakter orientacyjny</div>
+            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Nie ponosimy odpowiedzialności za treści zewnętrzne</div>
+            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Linki prowadzą do oryginalnych źródeł</div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
       <p>Świat w Minutę © <span id="year"></span></p>
       <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
@@ -275,7 +260,7 @@ body{background:#f8fafc;color:#0f172a}
 'use strict';
 const $ = id => document.getElementById(id);
 let newsItems = [], rawFeedItems = [], fastItems = [], funItems = [], archiveGroups = [];
-let currentTab = 'today', allShown = 6, readKeys = new Set();
+let currentTab = 'today', allShown = 6, archiveShown = 2, readKeys = new Set();
 const titleCache = JSON.parse(localStorage.getItem('swm-title-cache') || '{}');
 
 const DATA_FILES = {
@@ -311,7 +296,6 @@ function isEnglishTitle(text) {
 async function translateToPolish(text) {
   const key = text.trim().toLowerCase();
   if (titleCache[key]) return titleCache[key];
-
   try {
     const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0, 500))}&langpair=en|pl`;
     const res = await fetch(url);
@@ -323,9 +307,7 @@ async function translateToPolish(text) {
       try { localStorage.setItem('swm-title-cache', JSON.stringify(titleCache)); } catch(e){}
       return translated;
     }
-  } catch (e) {
-    console.warn('Tłumaczenie nieudane', e);
-  }
+  } catch (e) {}
   return text;
 }
 
@@ -538,13 +520,8 @@ async function renderToday() {
     const t = getTitle(item.title);
     let title = t.title;
     let emoji = t.emoji;
-
-    if (isEnglishTitle(title)) {
-      title = await translateToPolish(title);
-    }
-    if (!emoji || emoji === '•') {
-      emoji = pickEmoji(title, category(item));
-    }
+    if (isEnglishTitle(title)) title = await translateToPolish(title);
+    if (!emoji || emoji === '•') emoji = pickEmoji(title, category(item));
     return { item, title, emoji };
   }));
 
@@ -552,6 +529,7 @@ async function renderToday() {
     headlineRow(item, title, emoji)
   ).join('');
 
+  // Preview ciekawostek – max 4
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);
   $('fun-preview-grid').innerHTML = fp.map(funMini).join('');
@@ -579,6 +557,7 @@ function renderFast() {
 }
 
 function renderFun() {
+  // Wszystkie ciekawostki
   $('fun-grid').innerHTML = funItems.length
     ? funItems.map(card).join('')
     : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
@@ -587,9 +566,12 @@ function renderFun() {
 function renderArchive() {
   if (!archiveGroups.length) {
     $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak archiwum.</div>';
+    $('archive-more').classList.add('hidden');
     return;
   }
-  $('archive-content').innerHTML = archiveGroups.map(g => `
+
+  const groups = archiveGroups.slice(0, archiveShown);
+  $('archive-content').innerHTML = groups.map(g => `
     <section class="mb-7">
       <div class="mb-2.5 flex items-end justify-between">
         <h3 class="text-base font-black text-slate-900 dark:text-white">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
@@ -600,6 +582,16 @@ function renderArchive() {
       </div>
     </section>
   `).join('');
+
+  $('archive-more').classList.toggle('hidden', archiveShown >= archiveGroups.length);
+  if (archiveShown < archiveGroups.length) {
+    $('archive-more').textContent = `Pokaż starsze wydania (${archiveGroups.length - archiveShown})`;
+  }
+}
+
+function loadMoreArchive() {
+  archiveShown += 2;
+  renderArchive();
 }
 
 function renderCurrent() {
@@ -623,6 +615,7 @@ function switchTab(tab) {
   $(map[tab]).classList.remove('hidden');
   
   if (tab === 'all') allShown = 6;
+  if (tab === 'archive') archiveShown = 2;
   renderCurrent();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -678,14 +671,25 @@ async function loadJson(url, fallback) {
   }
 }
 
+function todayKey() {
+  const n = new Date();
+  return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`;
+}
+
 function normalizeArchive(data) {
   if (!data) return [];
   if (Array.isArray(data)) return [{ label: 'Archiwum', items: data }];
   if (Array.isArray(data.items)) return [{ label: data.date || 'Archiwum', items: data.items }];
   if (Array.isArray(data.groups)) return data.groups;
+
   const out = [];
+  const today = todayKey();
   const keys = Object.keys(data).sort().reverse();
+
   for (const key of keys) {
+    // Pomiń dzisiejsze wydanie
+    if (key.startsWith(today)) continue;
+
     const v = data[key];
     if (!v) continue;
     if (Array.isArray(v)) out.push({ label: key, items: v });
@@ -712,9 +716,13 @@ async function init() {
   fastItems = Array.isArray(f) ? f : (f.items || []);
   funItems = Array.isArray(r) ? r : (r.items || []);
   
+  // Archiwum bez dzisiejszego dnia
   archiveGroups = normalizeArchive(a);
   const archiveFun = normalizeArchive(af);
-  if (archiveFun.length) archiveGroups = [...archiveGroups, ...archiveFun];
+  if (archiveFun.length) {
+    // Dołącz rozrywkę do istniejących grup lub jako osobne
+    archiveGroups = [...archiveGroups, ...archiveFun];
+  }
 
   $('last-update').textContent = new Date().toLocaleString('pl-PL', {
     day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
