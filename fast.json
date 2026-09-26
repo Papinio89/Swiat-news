@@ -1,43 +1,46 @@
 {
   "date": "26 września 2026",
-  "time": "07:59",
-  "timestamp": "2026-09-26_07:59",
+  "time": "10:31",
+  "timestamp": "2026-09-26_10:31",
   "items": [
     {
-      "category": "OBRONNOŚĆ / USA",
-      "title": "🚀 Hipersoniczny F/A-18! USA podnoszą poprzeczkę",
-      "hook": "Amerykańskie lotnictwo pokładowe testuje nową broń, która całkowicie zmienia zasady walki na oceanach.",
-      "summary": "Pocisk hipersoniczny Blackbeard został po raz pierwszy dostrzeżony pod podwieszeniem myśliwca F/A-18 Super Hornet. To krok w stronę wyposażenia lotniskowców w broń zdolną razić cele z ogromną prędkością i przełamywać obronę antyrakietową wroga.",
-      "comment": "Szybka integracja hipersoników z istniejącą flotą Super Hornetów daje US Navy natychmiastowy skok zdolności bez czekania na nowe platformy.",
-      "question": "Czy myśliwce pokładowe z bronią hipersoniczną zdołają zneutralizować zagrożenie ze strony chińskiej floty na Pacyfiku?",
+      "category": "GEOPOLITYKA / BEZPIECZEŃSTWO",
+      "title": "🇲🇽 Kartele z Meksyku ułożą wojnę na nowo",
+      "hook": "Narco-wojownicy czerpią brutalne lekcje z ukraińskiego teatru działań.",
+      "summary": "Meksykańskie kartele narkotykowe wysyłają swoich obserwatorów na Ukrainę, by zdobywać doświadczenie w nowoczesnej wojnie. Interesuje ich nie tylko wykorzystanie dronów FPV, ale także taktyka miejska oraz szyfrowana łączność.",
+      "comment": "Globalizacja konfliktów oznacza, że innowacje taktyczne z wojny w Europie błyskawicznie trafią na ulice Ameryki.",
+      "threads_post": "🚀 Wojna, która zmienia świat przestępczości!\n\n🇲🇽🇺🇦 Od FPV po szyfrowaną łączność: Meksykańskie kartele uczą się na wojnie w Ukrainie! ⚠️\n\nDoświadczenia z ukraińskiego frontu nie zostają wyłącznie w okopach Donbasu. Meksykańskie syndykaty zbrodni, takie jak CJNG czy Kartel z Sinaloa, traktują ten konflikt jak najnowocześniejszy poligon doświadczalny. Ich wysłannicy analizują masowe wykorzystanie tanich dronów komercyjnych, taktyki szturmowe oraz sposoby na omijanie zagłuszarek walki elektronicznej.\n\nTa przerażająca fuzja wojskowej technologii z bezwzględnością przestępczości zorganizowanej stworzy całkowicie nowe zagrożenie w Ameryce Północnej. Gdy ci ludzie wrócą do kraju, służby zderzą się z armiami przestępczymi nowej ery.\n\n💀🌵 Czy wojska USA i Meksyku będą musiały dostosować swoją taktykę do hybrydowych zagrożeń narco-dronów? 🇲🇽🇺🇸👇💬",
+      "question": "Czy wojska USA i Meksyku będą musiały dostosować swoją taktykę do hybrydowych zagrożeń narco-dronów?",
+      "image_query": "drone military cartel",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/meksykanskie-kartele-ucza-sie-walczyc-na-ukrainie-i-nie-chodzi-tylko-o-drony",
+      "image_url": "https://cdn.defence24.pl/2025/12/29/1024x576px/1lYvI37nq1vtysdDTfn3Ra8D4v4oCKrYxkK0hMlI.u6mt.png",
+      "source_image_url": "https://cdn.defence24.pl/2025/12/29/1024x576px/1lYvI37nq1vtysdDTfn3Ra8D4v4oCKrYxkK0hMlI.u6mt.png"
+    },
+    {
+      "category": "OBRONNOŚĆ / LOTNICTWO",
+      "title": "🚀 Pocisk hipersoniczny Blackbeard na F/A-18",
+      "hook": "Flota USA zyskuje zabójczą broń nowej generacji.",
+      "summary": "Podczas testów w locie po raz pierwszy dostrzeżono pocisk hipersoniczny Blackbeard podwieszony pod myśliwcem F/A-18 Super Hornet. Broń ta ma zapewnić amerykańskiemu lotnictwu pokładowemu możliwość precyzyjnego rażenia dalekosiężnych celów z prędkościami przekraczającymi Mach 5.",
+      "comment": "Zintegrowanie broni hipersonicznej ze starszymi platformami to kluczowy krok US Navy w walce o przewagę na Pacyfiku.",
+      "threads_post": "💥 Przyszłość broni hipersonicznej jest bliżej, niż myślimy!\n\n🚀🇺🇸 Pocisk Blackbeard po raz pierwszy pod skrzydłami F/A-18 Super Hornet! 🌊\n\nAmerykańska marynarka wojenna konsekwentnie zwiększa zasięg i siłę rażenia swojego lotnictwa pokładowego. Zdjęcia ujawniające testy tajemniczego pocisku hipersonicznego Blackbeard na klasycznym Super Hornecie pokazują strategiczny zwrot US Navy. Nie chodzi tylko o budowę drogich samolotów stealth, ale o błyskawiczną modernizację sprawdzonej floty.\n\nW dobie rosnącej potęgi chińskiej marynarki na Pacyfiku, możliwość odpalania hipersonicznych efektorów z pokładów lotniskowców bez wchodzenia w strefę rażenia wroga staje się dla Waszyngtonu priorytetem.\n\n🎯⚓ Czy dostosowanie broni hipersonicznej do F/A-18 zrównoważy przewagę Chin w cieśninie tajwańskiej? 🇺🇸🇨🇳👇💬",
+      "question": "Czy dostosowanie broni hipersonicznej do F/A-18 zrównoważy przewagę Chin w cieśninie tajwańskiej?",
       "image_query": "fighter jet missile",
       "link": "https://www.twz.com/air/blackbeard-hypersonic-missile-seen-flying-on-f-a-18-super-hornet-for-the-first-time",
       "image_url": "https://www.twz.com/wp-content/uploads/2026/09/blackbeard-hypersonic-super-hornet-flight-testing.jpg?w=1200",
       "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/blackbeard-hypersonic-super-hornet-flight-testing.jpg?w=1200"
     },
     {
-      "category": "OBRONNOŚĆ / NATO",
-      "title": "💥 Łotwa kupuje tanie pociski manewrujące od Anduril",
-      "hook": "Ryga zamawia nowoczesne pociski Barracuda, by zamknąć lukę w zdolnościach rażenia dalekiego zasięgu.",
-      "summary": "Łotewskie siły zbrojne zdecydowały się na zakup pocisków manewrujących Barracuda produkowanych przez amerykański startup Anduril. Konstrukcja ta została zaprojektowana z myślą o masowej i taniej produkcji, co ma zapewnić państwom bałtyckim możliwość rażenia zaplecza wroga.",
-      "comment": "Masowa produkcja tanich pocisków manewrujących to klucz do nasycenia pola bitwy i efektywnego odstraszania na wschodniej flance NATO.",
-      "question": "Czy Polska i pozostałe kraje bałtyckie powinny inwestować w tanie pociski manewrujące nowej generacji zamiast drogiej broni konwencjonalnej?",
-      "image_query": "cruise missile launch",
-      "link": "https://www.twz.com/news-features/latvia-to-order-andurils-barracuda-cruise-missile-for-long-range-strike-capability",
-      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/ANDURIL-BARRACUDA-500M-1.jpg?w=1200",
-      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/ANDURIL-BARRACUDA-500M-1.jpg?w=1200"
-    },
-    {
-      "category": "GEOPOLITYKA / AZJA",
-      "title": "🌊 Chiny blokują Filipiny na Morzu Południowochińskim",
-      "hook": "Chińska straż przybrzeżna i okręty wojenne uniemożliwiły filipińską misję zaopatrzeniową w rejonie Second Thomas Shoal.",
-      "summary": "Kilkadziesiąt chińskich jednostek odcięło drogę filipińskim statkom próbującym dostarczyć zapasy na stacjonujący na rafie okręt BRP Sierra Madre. Presja Pekinu stale rośnie, zwiększając ryzyko bezpośredniego incydentu z udziałem sił USA.",
-      "comment": "Pekin konsekwentnie stosuje taktykę szarej strefy, by bez wystrzału stopniowo przejmować kontrolę nad spornymi akwenami.",
-      "question": "Czy USA powinny bezpośrednio eskortować filipińskie konwoje, ryzykując otwarty konflikt z Chinami?",
-      "image_query": "warship ocean patrol",
-      "link": "https://news.usni.org/2026/09/25/chinese-cutters-warships-block-philippine-resupply-mission-to-second-thomas-shoal",
-      "image_url": "https://images.pexels.com/photos/13342949/pexels-photo-13342949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "source_image_url": "https://images.pexels.com/photos/13342949/pexels-photo-13342949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "OBRONNOŚĆ / PRZEMYŚŁ",
+      "title": "🇮🇹 Włochy wydadzą 5 mld euro na nowe czołgi",
+      "hook": "Rzym wchodzi na pełnych obrotach w europejski wyścig zbrojeń.",
+      "summary": "Włochy zatwierdziły program modernizacji wojsk pancernych o wartości 5 miliardów euro na zakup fabrycznie nowych czołgów podstawowych. Inwestycja ma na celu zastąpienie starzejących się wozów Ariete i radykalne wzmocnienie południowej flanki NATO.",
+      "comment": "Europejskie potęgi zrozumiały, że bez ciężkiej stali wojsk lądowych nie ma mowy o skutecznym odstraszaniu.",
+      "threads_post": "⚔️ Włochy stawiają na pancerną potęgę!\n\n🇮🇹🛡️ 5 miliardów euro na nowe czołgi: Rzym potężnie zbroi wojska lądowe! 🇮🇹\n\nPo latach zaniedbań i skupiania się głównie na operacjach morskich czy misjach stabilizacyjnych, Włochy dokonują radykalnego zwrotu. Kwota 5 miliardów euro na nową flotę czołgów podstawowych to jasny sygnał, że Europa Południowa traktuje zagrożenia pełnoskalowym konfliktem ze wszech miar poważnie. Pieniądze trafią na zakup nowoczesnych maszyn we współpracy z gigantami przemysłu zbrojeniowego.\n\nProjekt ten wpisuje się w szerszy trend odbudowy europejskich zdolności wojsk pancernych po dekadach rozbrojenia. Zmęczenie sprzętowe floty Ariete i nowe wymagania pola walki wymuszają bezprecedensowe nakłady.\n\n🚜💨 Czy europejski przemysł zbrojeniowy zdąży z dostawami wozów bojowych dla całej floty NATO? 🇪🇺🛡️👇💬",
+      "question": "Czy europejski przemysł zbrojeniowy zdąży z dostawami wozów bojowych dla całej floty NATO?",
+      "image_query": "military tank desert",
+      "link": "https://defence24.pl/przemysl/wlochy-inwestuja-w-pancerne-jutro-wydadza-5-mld-euro-na-nowy-czolg",
+      "image_url": "https://cdn.defence24.pl/2026/06/16/1920x1080px/bBy3oOVsOc40MWWgVxlD310WM26ia9lQdj8GonZO.sutf.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/06/16/1920x1080px/bBy3oOVsOc40MWWgVxlD310WM26ia9lQdj8GonZO.sutf.jpg"
     }
   ]
 }
