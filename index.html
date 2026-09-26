@@ -21,98 +21,116 @@
 <meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.jpg">
 
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          surface: {
+            DEFAULT: '#ffffff',
+            dark: '#0f172a'
+          }
+        }
+      }
+    }
+  }
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-html,body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-body{background:#f8fafc;color:#0f172a}
-.dark body{background:#020617;color:#e2e8f0}
+  :root {
+    --bg: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-muted: #f1f5f9;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    --header-bg: rgba(255,255,255,0.95);
+  }
+  .dark {
+    --bg: #020617;
+    --bg-card: #0f172a;
+    --bg-muted: #1e293b;
+    --border: #1e293b;
+    --text: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --header-bg: rgba(2,6,23,0.95);
+  }
 
-.card-img{aspect-ratio:16/9;object-fit:cover}
-.tab.active{background:#0f172a;color:#fff}
-.dark .tab.active{background:#f8fafc;color:#0f172a}
+  html, body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
 
-#toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
-#toast.show{transform:translateY(0);opacity:1}
+  .card-img { aspect-ratio: 16/9; object-fit: cover; }
 
-.headline-item{transition:background .15s}
-.headline-item:hover{background:rgba(245,158,11,.07)}
-.dark .headline-item:hover{background:rgba(245,158,11,.12)}
-.headline-item.read{opacity:.55}
-.headline-item.read .title{text-decoration:line-through;text-decoration-color:#94a3b8}
-.card.read{opacity:.72}
+  .tab.active {
+    background: #0f172a;
+    color: #fff;
+  }
+  .dark .tab.active {
+    background: #f8fafc;
+    color: #0f172a;
+  }
 
-.check-btn{
-  width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;
-  display:inline-flex;align-items:center;justify-content:center;
-  flex-shrink:0;cursor:pointer;transition:.15s;font-size:11px;
-  background:transparent;color:transparent;
-}
-.check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
-.dark .check-btn{border-color:#64748b}
-.dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
+  #toast {
+    transform: translateY(120px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .25s;
+  }
+  #toast.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-/* Dark mode – listy i karty */
-.dark #headline-list{background:#0f172a !important;border-color:#1e293b !important}
-.dark .headline-item{border-color:#1e293b !important}
-.dark .headline-item .title,
-.dark .headline-item a,
-.dark .headline-item span.title{color:#f1f5f9 !important}
-.dark .card{background:#0f172a !important;border-color:#1e293b !important}
-.dark .card h3{color:#f8fafc !important}
-.dark .card p{color:#cbd5e1 !important}
-.dark .card .text-slate-500{color:#94a3b8 !important}
-.dark #search-results .rounded-xl{background:#0f172a !important;border-color:#1e293b !important}
+  .headline-item { transition: background .15s; }
+  .headline-item:hover { background: rgba(245,158,11,.08); }
+  .headline-item.read { opacity: .55; }
+  .headline-item.read .title {
+    text-decoration: line-through;
+    text-decoration-color: #94a3b8;
+  }
+  .card.read { opacity: .72; }
 
-/* Dark mode – header */
-.dark header{
-  background:rgba(2,6,23,.95) !important;
-  border-color:#1e293b !important;
-}
+  .check-btn {
+    width: 18px; height: 18px; border-radius: 5px;
+    border: 1.5px solid #cbd5e1;
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0; cursor: pointer; transition: .15s; font-size: 11px;
+    background: transparent; color: transparent;
+  }
+  .check-btn.checked {
+    background: #f59e0b; border-color: #f59e0b; color: #111;
+  }
+  .dark .check-btn { border-color: #64748b; }
 
-/* Dark mode – widgety (pogoda, kursy, licznik) */
-.dark #info-widgets > div{
-  background:#0f172a !important;
-  border-color:#1e293b !important;
-}
-.dark #info-widgets .label{
-  color:#94a3b8 !important;
-}
-.dark #info-widgets .value,
-.dark #weather-temp,
-.dark #eur-rate,
-.dark #usd-rate,
-.dark #progress-text{
-  color:#f1f5f9 !important;
-}
-
-/* Dark mode – search */
-.dark #search-box{
-  background:#0f172a !important;
-  border-color:#1e293b !important;
-}
-.dark #search-box input{
-  background:#020617 !important;
-  border-color:#334155 !important;
-  color:#f1f5f9 !important;
-}
+  /* Systemowe powierzchnie */
+  .surface { background: var(--bg-card); border-color: var(--border); }
+  .text-main { color: var(--text); }
+  .text-sec { color: var(--text-secondary); }
+  .text-mute { color: var(--text-muted); }
 </style>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+<body class="min-h-screen">
 
-<header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+<header class="sticky top-0 z-40 border-b backdrop-blur" style="background: var(--header-bg); border-color: var(--border);">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
     <a href="#" onclick="goTop();return false" class="flex items-center gap-3">
-      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg shadow-sm dark:bg-white dark:text-slate-900">🌍</div>
+      <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-lg text-white shadow-sm dark:bg-white dark:text-slate-900">🌍</div>
       <div>
-        <div class="text-sm font-black tracking-tight text-slate-900 dark:text-white">Świat w Minutę</div>
-        <div class="text-[10px] font-medium text-slate-500 dark:text-slate-400">Najważniejsze wiadomości bez zbędnego szumu</div>
+        <div class="text-sm font-black tracking-tight text-main">Świat w Minutę</div>
+        <div class="text-[10px] font-medium text-sec">Najważniejsze wiadomości bez zbędnego szumu</div>
       </div>
     </a>
     <div class="flex items-center gap-2">
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
-      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200" aria-label="Tryb ciemny">☾</button>
+      <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Tryb ciemny">☾</button>
     </div>
   </div>
 </header>
@@ -123,71 +141,71 @@ body{background:#f8fafc;color:#0f172a}
     <div class="mb-2.5 flex items-end justify-between gap-3">
       <div>
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div>
-        <h1 class="text-xl font-black tracking-tight sm:text-2xl text-slate-900 dark:text-white">Świat w Minutę</h1>
+        <h1 class="text-xl font-black tracking-tight sm:text-2xl text-main">Świat w Minutę</h1>
       </div>
-      <div id="last-update" class="text-right text-[10px] text-slate-500 dark:text-slate-400">Ładowanie…</div>
+      <div id="last-update" class="text-right text-[10px] text-sec">Ładowanie…</div>
     </div>
 
-    <!-- Widgety z jawnymi klasami kolorów -->
     <div id="info-widgets" class="grid grid-cols-4 gap-1.5">
-      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-700 dark:bg-slate-900">
-        <div class="label text-[9px] font-bold uppercase text-slate-500">WAW</div>
-        <div class="mt-0.5 flex items-center gap-1 text-sm font-black">
-          <span id="weather-temp" class="value text-slate-900">—°</span>
+      <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
+        <div class="text-[9px] font-bold uppercase text-sec">WAW</div>
+        <div class="mt-0.5 flex items-center gap-1 text-sm font-black text-main">
+          <span id="weather-temp">—°</span>
           <span id="weather-icon" class="text-sm">🌤️</span>
         </div>
       </div>
-      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-700 dark:bg-slate-900">
-        <div class="label text-[9px] font-bold uppercase text-slate-500">EUR</div>
-        <div id="eur-rate" class="value mt-0.5 text-sm font-black text-slate-900">—</div>
+      <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
+        <div class="text-[9px] font-bold uppercase text-sec">EUR</div>
+        <div id="eur-rate" class="mt-0.5 text-sm font-black text-main">—</div>
       </div>
-      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-700 dark:bg-slate-900">
-        <div class="label text-[9px] font-bold uppercase text-slate-500">USD</div>
-        <div id="usd-rate" class="value mt-0.5 text-sm font-black text-slate-900">—</div>
+      <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
+        <div class="text-[9px] font-bold uppercase text-sec">USD</div>
+        <div id="usd-rate" class="mt-0.5 text-sm font-black text-main">—</div>
       </div>
-      <div class="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 dark:border-slate-700 dark:bg-slate-900">
-        <div class="label text-[9px] font-bold uppercase text-slate-500">Dziś</div>
-        <div id="progress-text" class="value mt-0.5 text-sm font-black text-slate-900">0/0</div>
+      <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
+        <div class="text-[9px] font-bold uppercase text-sec">Dziś</div>
+        <div id="progress-text" class="mt-0.5 text-sm font-black text-main">0/0</div>
       </div>
     </div>
   </section>
 
-  <section id="search-box" class="mb-3 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+  <section id="search-box" class="mb-3 rounded-2xl border p-2.5 shadow-sm surface" style="border-color: var(--border);">
     <div class="relative">
-      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">⌕</span>
+      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-mute text-sm">⌕</span>
       <input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" 
-             class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100" 
+             class="w-full rounded-xl border py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 text-main"
+             style="background: var(--bg-muted); border-color: var(--border); color: var(--text);"
              placeholder="Szukaj wiadomości…">
-      <button onclick="clearSearch()" class="absolute right-2 top-1/2 hidden -translate-y-1/2 px-2 text-slate-400" id="search-clear">×</button>
+      <button onclick="clearSearch()" class="absolute right-2 top-1/2 hidden -translate-y-1/2 px-2 text-mute" id="search-clear">×</button>
     </div>
     <div id="search-results" class="mt-2.5 hidden"></div>
   </section>
 
   <nav class="mb-4 flex gap-1.5 overflow-x-auto pb-1" aria-label="Nawigacja">
-    <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
-    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('all')">Dzisiejsze news</button>
-    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('fast')">🚨 Pilne</button>
-    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('fun')">✨ Ciekawostki</button>
-    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700 dark:text-slate-300" onclick="switchTab('archive')">Archiwum</button>
+    <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold" style="border-color: var(--border);" onclick="switchTab('today')">60 sekund</button>
+    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('all')">Dzisiejsze news</button>
+    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('fast')">🚨 Pilne</button>
+    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('fun')">✨ Ciekawostki</button>
+    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
         <div class="text-[10px] font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div>
-        <h2 class="text-lg font-black text-slate-900 dark:text-white">Najważniejsze dziś</h2>
+        <h2 class="text-lg font-black text-main">Najważniejsze dziś</h2>
       </div>
-      <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500 dark:text-slate-400"></div>
+      <div id="edition-time" class="text-right text-[10px] font-semibold text-sec"></div>
     </div>
-    <div id="headline-list" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden">
-      <div class="p-6 text-center text-sm text-slate-500">Ładowanie…</div>
+    <div id="headline-list" class="rounded-2xl border overflow-hidden surface" style="border-color: var(--border);">
+      <div class="p-6 text-center text-sm text-sec">Ładowanie…</div>
     </div>
     
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
         <div>
           <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Na koniec</div>
-          <h2 class="text-base font-black text-slate-900 dark:text-white">✨ Ciekawostki</h2>
+          <h2 class="text-base font-black text-main">✨ Ciekawostki</h2>
         </div>
         <button onclick="switchTab('fun')" class="text-xs font-bold text-amber-500">Więcej →</button>
       </div>
@@ -198,7 +216,7 @@ body{background:#f8fafc;color:#0f172a}
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
-      <h2 class="text-lg font-black text-slate-900 dark:text-white">📰 Dzisiejsze news</h2>
+      <h2 class="text-lg font-black text-main">📰 Dzisiejsze news</h2>
     </div>
     <div id="all-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
@@ -207,8 +225,8 @@ body{background:#f8fafc;color:#0f172a}
   <section id="fast-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
-      <h2 class="text-lg font-black text-slate-900 dark:text-white">🚨 Pilne</h2>
-      <p class="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">fast.json + top 5 dzisiejszych newsów</p>
+      <h2 class="text-lg font-black text-main">🚨 Pilne</h2>
+      <p class="mt-0.5 text-[11px] text-sec">fast.json + top 5 dzisiejszych newsów</p>
     </div>
     <div id="breaking" class="space-y-4"></div>
   </section>
@@ -216,15 +234,15 @@ body{background:#f8fafc;color:#0f172a}
   <section id="fun-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
-      <h2 class="text-lg font-black text-slate-900 dark:text-white">✨ Ciekawostki</h2>
+      <h2 class="text-lg font-black text-main">✨ Ciekawostki</h2>
     </div>
     <div id="fun-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
 
   <section id="archive-view" class="hidden">
     <div class="mb-3">
-      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-slate-500">Historia</div>
-      <h2 class="text-lg font-black text-slate-900 dark:text-white">🗂 Archiwum</h2>
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-sec">Historia</div>
+      <h2 class="text-lg font-black text-main">🗂 Archiwum</h2>
     </div>
     <div id="archive-content"></div>
     <button id="archive-more" onclick="loadMoreArchive()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż starsze wydania</button>
@@ -232,22 +250,23 @@ body{background:#f8fafc;color:#0f172a}
 
 </main>
 
-<footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+<footer class="border-t" style="background: var(--bg-card); border-color: var(--border);">
   <div class="mx-auto max-w-6xl px-4 py-8">
     <button onclick="toggleDisclaimer()" 
-            class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition">
+            class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec transition hover:border-amber-300"
+            style="background: var(--bg-muted); border-color: var(--border);">
       ℹ️ Ważne informacje o stronie
     </button>
-    <div id="disclaimer" class="mt-4 hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 p-5 sm:p-6">
+    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 sm:p-6" style="background: var(--bg-muted); border-color: var(--border);">
       <div class="flex items-start gap-3">
         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-950/50">ℹ️</div>
         <div class="min-w-0">
-          <h3 class="text-sm font-black text-slate-900 dark:text-white">Informacja o stronie</h3>
-          <p class="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+          <h3 class="text-sm font-black text-main">Informacja o stronie</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-sec">
             Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem sztucznej inteligencji. 
             Treści mogą zawierać uproszczenia lub nieścisłości. Zawsze weryfikuj informacje w oryginalnym źródle.
           </p>
-          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-slate-500 dark:text-slate-400">
+          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-mute">
             <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Generowane automatycznie przez AI</div>
             <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Kursy i pogoda mają charakter orientacyjny</div>
             <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Nie ponosimy odpowiedzialności za treści zewnętrzne</div>
@@ -256,7 +275,7 @@ body{background:#f8fafc;color:#0f172a}
         </div>
       </div>
     </div>
-    <div class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+    <div class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-mute">
       <p>Świat w Minutę © <span id="year"></span></p>
       <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
     </div>
@@ -446,7 +465,7 @@ function headlineRow(item, displayTitle, emoji) {
   const title = displayTitle || getTitle(item.title).title;
 
   return `
-    <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800 ${read ? 'read' : ''}">
+    <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
       <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Nieprzeczytane' : 'Przeczytane'}">
         ${read ? '✓' : ''}
       </button>
@@ -454,10 +473,10 @@ function headlineRow(item, displayTitle, emoji) {
          ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2 no-underline">
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
-        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">${escapeHtml(title)}</span>
+        <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 dark:text-slate-400 transition" 
+              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500 transition" 
               title="Udostępnij">↗</button>
     </div>`;
 }
@@ -473,8 +492,8 @@ function card(item) {
   const itemJson = encodeURIComponent(JSON.stringify(item));
 
   return `
-    <article class="card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900 flex flex-col ${read ? 'read' : ''}">
-      <div class="relative overflow-hidden bg-slate-200 dark:bg-slate-800">
+    <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
+      <div class="relative overflow-hidden" style="background: var(--bg-muted);">
         ${img 
           ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-3xl\\'>📰</div>'">`
           : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
@@ -483,23 +502,23 @@ function card(item) {
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
           <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="check-btn ${read ? 'checked' : ''} bg-white/90 dark:bg-slate-900/90 shadow" title="Przeczytane">
+                  class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);" title="Przeczytane">
             ${read ? '✓' : ''}
           </button>
           <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600 dark:text-slate-300" title="Udostępnij">↗</button>
+                  class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec" style="background: var(--bg-card);" title="Udostępnij">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="text-[15px] font-black leading-snug text-slate-900 dark:text-slate-100">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
-        ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>` : ''}
+        <h3 class="text-[15px] font-black leading-snug text-main">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-sec">${escapeHtml(summary)}</p>` : ''}
         ${comment ? `
-          <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/40">
+          <div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);">
             <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div>
-            <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
+            <div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
-        <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
-          <span class="truncate text-[10px] font-semibold text-slate-500 dark:text-slate-400">${escapeHtml(sourceName(item))}</span>
+        <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
+          <span class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item))}</span>
           ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
         </div>
       </div>
@@ -509,9 +528,9 @@ function card(item) {
 function funMini(item) {
   const t = getTitle(item.title);
   return `
-    <article class="rounded-xl border border-slate-200 bg-white p-2.5 dark:border-slate-800 dark:bg-slate-900">
+    <article class="rounded-xl border p-2.5 surface" style="border-color: var(--border);">
       <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
-      <h3 class="text-sm font-extrabold leading-snug text-slate-900 dark:text-slate-100">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+      <h3 class="text-sm font-extrabold leading-snug text-main">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
     </article>`;
 }
 
@@ -525,7 +544,7 @@ async function renderToday() {
         const emoji = t.emoji || pickEmoji(t.title, category(item));
         return headlineRow(item, t.title, emoji);
       }).join('')
-    : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
+    : '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
 
   const translated = await Promise.all(items.map(async (item) => {
     const t = getTitle(item.title);
@@ -549,7 +568,7 @@ function renderAll() {
   const items = newsItems.slice(0, allShown);
   $('all-grid').innerHTML = items.length
     ? items.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak wiadomości.</div>';
   $('all-more').classList.toggle('hidden', allShown >= newsItems.length);
 }
 
@@ -563,18 +582,18 @@ function renderFast() {
   const items = uniqueByKey([...fastItems, ...topNews]);
   $('breaking').innerHTML = items.length
     ? items.map(card).join('')
-    : '<div class="p-6 text-center text-sm text-slate-500">Brak pilnych wiadomości.</div>';
+    : '<div class="p-6 text-center text-sm text-sec">Brak pilnych wiadomości.</div>';
 }
 
 function renderFun() {
   $('fun-grid').innerHTML = funItems.length
     ? funItems.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak ciekawostek.</div>';
 }
 
 function renderArchive() {
   if (!archiveGroups.length) {
-    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak archiwum.</div>';
+    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak archiwum.</div>';
     $('archive-more').classList.add('hidden');
     return;
   }
@@ -583,8 +602,8 @@ function renderArchive() {
   $('archive-content').innerHTML = groups.map(g => `
     <section class="mb-7">
       <div class="mb-2.5 flex items-end justify-between">
-        <h3 class="text-base font-black text-slate-900 dark:text-white">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
-        <span class="text-[10px] text-slate-500 dark:text-slate-400">${(g.items || []).length} wiadomości</span>
+        <h3 class="text-base font-black text-main">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
+        <span class="text-[10px] text-sec">${(g.items || []).length} wiadomości</span>
       </div>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         ${(g.items || []).map(card).join('')}
@@ -642,13 +661,13 @@ function search() {
   });
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `
-    <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Wyniki: ${hits.length}</div>
-    <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900">
+    <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div>
+    <div class="rounded-xl border overflow-hidden surface" style="border-color: var(--border);">
       ${hits.slice(0, 30).map(item => {
         const t = getTitle(item.title);
         const emoji = t.emoji || pickEmoji(t.title, category(item));
         return headlineRow(item, t.title, emoji);
-      }).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
+      }).join('') || '<div class="p-4 text-sm text-sec">Nie znaleziono.</div>'}
     </div>`;
 }
 
@@ -696,7 +715,7 @@ function normalizeArchive(data) {
   const keys = Object.keys(data).sort().reverse();
 
   for (const key of keys) {
-    if (key.startsWith(today)) continue; // bez dzisiejszego dnia
+    if (key.startsWith(today)) continue;
     const v = data[key];
     if (!v) continue;
     if (Array.isArray(v)) out.push({ label: key, items: v });
