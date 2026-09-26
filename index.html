@@ -1,313 +1,153 @@
 <!DOCTYPE html>
-<html lang="pl" class="dark">
+<html lang="pl" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Świat w Minutę — Najważniejsze informacje dnia</title>
-<meta name="description" content="Świat w Minutę — najważniejsze informacje z Polski i świata w około 60 sekund. Fakty, rynki, obronność i technologia, krótko i konkretnie.">
-<meta name="robots" content="index,follow">
 <meta name="theme-color" content="#020617">
-<meta property="og:title" content="Świat w Minutę — Najważniejsze informacje dnia">
-<meta property="og:description" content="60 sekund. Najważniejsze informacje. Wiesz, co się dzieje.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://swiat-w-minut.vercel.app/">
-<meta property="og:locale" content="pl_PL">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Świat w Minutę — Najważniejsze informacje dnia">
-<meta name="twitter:description" content="60 sekund. Najważniejsze informacje.">
-<link rel="canonical" href="https://swiat-w-minut.vercel.app/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+<title>Świat w Minutę — Wiadomości</title>
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script>
-tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{brand:{400:'#fbbf24',500:'#f59e0b',600:'#d97706'}}}}}
-</script>
 <style>
-html{scroll-behavior:smooth}body{font-family:Inter,sans-serif}
-.glass{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.hide-scrollbar{scrollbar-width:none}.hide-scrollbar::-webkit-scrollbar{display:none}
-.hero-glow{box-shadow:0 20px 80px rgba(245,158,11,.10)}
-.card-hover{transition:.25s ease}.card-hover:hover{transform:translateY(-3px)}
-.fade-in{animation:fade .45s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.progress{transition:width .15s linear}
-.breaking-pulse{animation:pulse 1.8s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
-.safe-area{padding-bottom:max(1rem,env(safe-area-inset-bottom))}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+html,body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{background:#f8fafc;color:#0f172a}
+.dark body{background:#020617;color:#e2e8f0}
+.card-img{aspect-ratio:16/9;object-fit:cover}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.line-clamp-3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tab.active{background:#0f172a;color:white}
+.dark .tab.active{background:#f8fafc;color:#0f172a}
+.filter-btn.active{background:#f59e0b;color:#111827;border-color:#f59e0b}
+#toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
+#toast.show{transform:translateY(0);opacity:1}
 </style>
 </head>
-
-<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#020617] dark:text-slate-100 antialiased">
-<div id="reading-progress" class="fixed left-0 top-0 z-[120] h-1 w-0 bg-gradient-to-r from-amber-500 to-yellow-300 progress"></div>
-
-<!-- SAVE IMAGE MODAL -->
-<div id="save-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-4 backdrop-blur-md">
-  <div class="max-w-lg text-center">
-    <p class="mb-4 font-bold text-amber-400">Gotowa karta — przytrzymaj obraz, aby zapisać</p>
-    <img id="save-img" alt="Karta wiadomości" class="mx-auto max-h-[65vh] rounded-2xl shadow-2xl">
-    <div class="mt-5 flex justify-center gap-3">
-      <a id="save-link" href="#" download class="rounded-xl bg-amber-500 px-5 py-3 font-bold text-slate-950">Pobierz</a>
-      <button onclick="closeSaveModal()" class="rounded-xl bg-slate-800 px-5 py-3 font-bold text-white">Zamknij</button>
-    </div>
-  </div>
-</div>
-
-<header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 dark:border-white/5 dark:bg-[#020617]/90 glass">
-  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-    <button onclick="goTop()" class="flex items-center gap-3 text-left">
-      <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-amber-600 to-yellow-300 shadow-lg shadow-amber-500/20">
-        <i class="fa-solid fa-earth-europe text-lg text-slate-950"></i>
-      </div>
-      <div>
-        <div class="text-lg font-black leading-none tracking-tight">Świat <span class="text-amber-500">w Minutę</span></div>
-        <div id="header-date" class="mt-1 text-[10px] font-bold uppercase tracking-widest text-slate-500">Ładowanie…</div>
-      </div>
-    </button>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+<header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+    <a href="#" onclick="goTop();return false" class="flex items-center gap-3">
+      <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-xl shadow-sm dark:bg-white">🌍</div>
+      <div><div class="text-sm font-black tracking-tight">Świat w Minutę</div><div class="text-[10px] font-medium text-slate-500">Najważniejsze wiadomości bez zbędnego szumu</div></div>
+    </a>
     <div class="flex items-center gap-2">
-      <div class="relative hidden md:block">
-        <input id="search-input" oninput="debouncedSearch()" placeholder="Szukaj tematów…" class="w-56 rounded-full border border-slate-200 bg-slate-100 py-2 pl-9 pr-9 text-sm font-semibold outline-none focus:ring-2 focus:ring-amber-500 dark:border-slate-800 dark:bg-slate-900">
-        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400"></i>
-        <button id="search-clear" onclick="clearSearch()" class="absolute right-3 top-1/2 hidden -translate-y-1/2 text-slate-400"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <button onclick="toggleTheme()" class="flex h-9 w-9 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
-      <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="hidden items-center gap-2 rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white transition hover:bg-amber-500 hover:text-slate-950 sm:flex">
-        <i class="fa-brands fa-instagram"></i> Obserwuj
-      </a>
-    </div>
-  </div>
-  <div class="px-4 pb-3 md:hidden">
-    <div class="relative">
-      <input id="search-mobile" oninput="debouncedSearch()" placeholder="Szukaj tematów…" class="w-full rounded-full border border-slate-200 bg-slate-100 py-2.5 pl-9 pr-9 text-sm font-semibold outline-none focus:ring-2 focus:ring-amber-500 dark:border-slate-800 dark:bg-slate-900">
-      <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400"></i>
+      <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
+      <button onclick="toggleDark()" class="h-10 w-10 rounded-xl border border-slate-200 bg-white text-sm dark:border-slate-700 dark:bg-slate-900" aria-label="Tryb ciemny">☾</button>
     </div>
   </div>
 </header>
 
-<main class="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-  <!-- HERO / VALUE PROPOSITION -->
-  <section id="daily-hero" class="hero-glow mb-8 overflow-hidden rounded-3xl border border-amber-500/20 bg-gradient-to-br from-white via-white to-amber-50 p-6 dark:from-slate-950 dark:via-slate-950 dark:to-amber-950/20 sm:p-8">
-    <div class="mx-auto max-w-4xl text-center">
-      <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-amber-600 dark:text-amber-400">
-        <span class="h-2 w-2 rounded-full bg-amber-500 breaking-pulse"></span> Najnowsze wydanie
-      </div>
-      <h1 class="text-3xl font-black tracking-tight sm:text-5xl">Co dziś naprawdę ma znaczenie?</h1>
-      <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
-        Najważniejsze informacje z Polski i świata. Bez szumu, bez przewijania kilkunastu portali.
-      </p>
-      <div class="mt-5 flex flex-wrap justify-center gap-2 text-[11px] font-bold">
-        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🌍 Świat</span>
-        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🇵🇱 Polska</span>
-        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">💰 Rynki</span>
-        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🤖 Technologia</span>
-        <span class="rounded-full bg-slate-100 px-3 py-1.5 dark:bg-slate-800">🛡️ Obrona</span>
-      </div>
-      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-        <button onclick="document.getElementById('top-topics').scrollIntoView({behavior:'smooth'})" class="rounded-full bg-amber-500 px-6 py-3 text-sm font-black text-slate-950 shadow-lg shadow-amber-500/20 hover:bg-amber-400">
-          <i class="fa-solid fa-bolt mr-2"></i>Zaczynamy — 60 sekund
-        </button>
-        <span id="read-estimate" class="text-xs font-semibold text-slate-500">⏱ około 60 sekund</span>
-      </div>
+<main class="mx-auto max-w-6xl px-4 pb-24 pt-5">
+  <section class="mb-5">
+    <div class="mb-3 flex items-end justify-between gap-3">
+      <div><div class="text-xs font-bold uppercase tracking-[.18em] text-amber-500">Dzisiaj</div><h1 class="text-2xl font-black tracking-tight sm:text-3xl">Świat w Minutę</h1></div>
+      <div id="last-update" class="text-right text-[10px] text-slate-500">Ładowanie…</div>
+    </div>
+    <div id="info-widgets" class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900"><div class="text-[10px] font-bold uppercase text-slate-500">Warszawa</div><div class="mt-1 flex items-center gap-2 text-lg font-black"><span id="weather-temp">—°</span><span id="weather-icon">🌤️</span></div><div id="weather-desc" class="text-[10px] text-slate-500">Pogoda</div></div>
+      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900"><div class="text-[10px] font-bold uppercase text-slate-500">EUR / PLN</div><div id="eur-rate" class="mt-1 text-lg font-black">—</div><div class="text-[10px] text-slate-500">kurs orientacyjny</div></div>
+      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900"><div class="text-[10px] font-bold uppercase text-slate-500">USD / PLN</div><div id="usd-rate" class="mt-1 text-lg font-black">—</div><div class="text-[10px] text-slate-500">kurs orientacyjny</div></div>
+      <div class="rounded-2xl border border-slate-200 bg-white px-3 py-2 dark:border-slate-800 dark:bg-slate-900"><div class="text-[10px] font-bold uppercase text-slate-500">Dziś</div><div id="progress-text" class="mt-1 text-lg font-black">0/0</div><div class="text-[10px] text-slate-500">przeczytane</div></div>
     </div>
   </section>
 
-  <!-- DAILY DASHBOARD -->
-  <section id="info-widgets" class="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
-      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">Warszawa</div>
-      <div class="mt-1 flex items-end gap-2"><span id="weather-temp" class="text-2xl font-black">—°</span><span id="weather-icon">🌤️</span></div>
-      <div id="weather-desc" class="mt-1 text-[10px] text-slate-500">Pogoda</div>
+  <section class="mb-4 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <div class="flex flex-col gap-2 sm:flex-row">
+      <div class="relative flex-1"><span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">⌕</span><input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950" placeholder="Szukaj wiadomości…"><button onclick="clearSearch()" class="absolute right-2 top-1/2 hidden -translate-y-1/2 px-2 text-slate-400" id="search-clear">×</button></div>
+      <div class="relative flex-1 sm:hidden"><span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">⌕</span><input id="search-mobile" oninput="search()" onkeydown="if(event.key==='Enter')search()" class="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-9 text-sm outline-none focus:border-amber-400 dark:border-slate-700 dark:bg-slate-950" placeholder="Szukaj…"></div>
     </div>
-    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
-      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">EUR / PLN</div>
-      <div id="rate-eur" class="mt-1 text-2xl font-black">—</div><div class="text-[10px] text-slate-500">kurs NBP</div>
-    </div>
-    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
-      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">USD / PLN</div>
-      <div id="rate-usd" class="mt-1 text-2xl font-black">—</div><div class="text-[10px] text-slate-500">kurs NBP</div>
-    </div>
-    <div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/60">
-      <div class="text-[9px] font-black uppercase tracking-widest text-slate-400">Dziś</div>
-      <div id="progress-text" class="mt-1 text-2xl font-black">0/0</div><div class="text-[10px] text-slate-500">przeczytane</div>
-    </div>
+    <div id="search-results" class="mt-3 hidden"></div>
   </section>
 
-  <!-- TABS -->
-  <nav class="mb-6 flex gap-2 overflow-x-auto hide-scrollbar" aria-label="Nawigacja">
-    <button id="tab-today" onclick="switchTab('today')" class="tab active shrink-0 rounded-full bg-amber-500 px-5 py-2.5 text-sm font-black text-slate-950">60 sekund</button>
-    <button id="tab-all" onclick="switchTab('all')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">Wszystkie</button>
-    <button id="tab-fast" onclick="switchTab('fast')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">⚡ Flash</button>
-    <button id="tab-archive" onclick="switchTab('archive')" class="tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">Archiwum</button>
+  <nav class="mb-5 flex gap-2 overflow-x-auto pb-1" aria-label="Nawigacja">
+    <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('today')">60 sekund</button>
+    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('all')">Wszystkie</button>
+    <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fast')">🚨 Pilne</button>
+    <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('fun')">✨ Ciekawostki</button>
+    <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-4 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
-  <!-- FILTERS -->
-  <div id="filters" class="mb-7 flex gap-2 overflow-x-auto hide-scrollbar"></div>
-
-  <!-- SEARCH VIEW -->
-  <section id="search-view" class="hidden">
-    <div class="mb-5 flex items-center justify-between">
-      <h2 class="text-2xl font-black">Wyniki wyszukiwania</h2>
-      <span id="search-count" class="rounded-full bg-amber-500/10 px-3 py-1 text-xs font-black text-amber-500">0</span>
-    </div>
-    <div id="search-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
-    <div id="no-results" class="hidden py-16 text-center text-slate-500">Nic nie znaleziono.</div>
+  <section id="filters" class="mb-5">
+    <div id="filter-list" class="flex flex-wrap gap-2"></div>
   </section>
 
-  <!-- 60 SECOND VIEW -->
   <section id="today-view">
-    <div id="top-topics" class="mb-5 flex items-end justify-between">
-      <div>
-        <div class="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-500">Dzisiejsza minuta</div>
-        <h2 class="text-2xl font-black sm:text-3xl">Najważniejsze dziś</h2>
-      </div>
-      <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-400"></div>
-    </div>
-    <div id="top-grid" class="grid gap-6 lg:grid-cols-3"></div>
-
-    <div id="three-numbers" class="my-10 hidden rounded-3xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900/60">
-      <div class="mb-5 flex items-center gap-2"><span class="text-xl">📊</span><h3 class="font-black">Dziś w liczbach</h3></div>
-      <div id="numbers-grid" class="grid gap-4 sm:grid-cols-3"></div>
-    </div>
-
-    <div class="my-10 flex items-center gap-4">
-      <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
-      <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Pozostałe ważne tematy</span>
-      <div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div>
-    </div>
-    <div id="rest-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
-
-    <!-- INSTAGRAM CTA -->
-    <section class="my-12 rounded-3xl border border-fuchsia-500/20 bg-gradient-to-br from-fuchsia-500/10 to-amber-500/10 p-7 text-center">
-      <div class="mx-auto max-w-xl">
-        <div class="mb-2 text-3xl">📲</div>
-        <h2 class="text-2xl font-black">Nie masz minuty?</h2>
-        <p class="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">Najważniejsze informacje publikujemy również na Instagramie. Krótkie karuzele, grafiki i najważniejsze fakty.</p>
-        <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-fuchsia-500 to-amber-500 px-6 py-3 text-sm font-black text-white shadow-lg">
-          <i class="fa-brands fa-instagram"></i> Obserwuj @swiatwminute
-        </a>
-      </div>
-    </section>
+    <div id="top-topics" class="mb-4 flex items-end justify-between gap-3"><div><div class="text-xs font-bold uppercase tracking-[.18em] text-amber-500">Dzisiejsza minuta</div><h2 class="text-xl font-black">Najważniejsze dziś</h2></div><div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500"></div></div>
+    <div id="headline-list" class="grid gap-2 sm:grid-cols-2"></div>
+    <div id="fun-preview" class="mt-7 hidden"><div class="mb-3 flex items-center justify-between"><div><div class="text-xs font-bold uppercase tracking-[.18em] text-fuchsia-500">Na koniec</div><h2 class="text-lg font-black">✨ Ciekawostki</h2></div><button onclick="switchTab('fun')" class="text-xs font-bold text-amber-500">Zobacz więcej →</button></div><div id="fun-preview-grid" class="grid gap-2 sm:grid-cols-2 lg:grid-cols-4"></div></div>
   </section>
 
-  <!-- ALL VIEW -->
-  <section id="all-view" class="hidden">
-    <div class="mb-6">
-      <div class="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-500">Pełny przegląd</div>
-      <h2 class="text-2xl font-black sm:text-3xl">Wszystkie wiadomości</h2>
-      <p id="all-status" class="mt-1 text-xs font-semibold text-slate-500"></p>
-    </div>
-    <div id="all-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
-    <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-8 hidden rounded-full bg-slate-100 px-6 py-3 text-sm font-black dark:bg-slate-800"></button>
-  </section>
+  <section id="all-view" class="hidden"><div class="mb-4"><div class="text-xs font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div><h2 class="text-xl font-black">📰 Wszystkie wiadomości</h2><p class="mt-1 text-xs text-slate-500">Pełne karty z pliku <code>news.json</code>.</p></div><div id="all-grid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div><button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-6 hidden rounded-xl bg-slate-950 px-5 py-3 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż 5 kolejnych</button></section>
 
-  <!-- FAST VIEW -->
-  <section id="fast-view" class="mx-auto hidden max-w-3xl">
-    <div id="breaking"></div>
-    <div class="mb-4 text-xs font-semibold text-slate-500">Błyskawiczny skrót pozostałych tematów</div>
-    <div id="fast-list" class="space-y-3"></div>
-  </section>
+  <section id="fast-view" class="hidden"><div class="mb-4"><div class="text-xs font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div><h2 class="text-xl font-black">🚨 Pilne</h2><p class="mt-1 text-xs text-slate-500">Tylko 3 pozycje z pliku <code>fast.json</code>.</p></div><div id="breaking" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div></section>
 
-  <!-- ARCHIVE -->
-  <section id="archive-view" class="hidden">
-    <div id="archive-container" class="space-y-12"></div>
-    <button id="archive-more" onclick="loadMoreArchive()" class="mx-auto mt-8 hidden rounded-full bg-slate-100 px-6 py-3 text-sm font-black dark:bg-slate-800"></button>
-  </section>
+  <section id="fun-view" class="hidden"><div class="mb-4"><div class="text-xs font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka / ciekawostki</div><h2 class="text-xl font-black">✨ Ciekawostki</h2><p class="mt-1 text-xs text-slate-500">Treści z pliku <code>rozrywka.json</code>.</p></div><div id="fun-grid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div></section>
 
-  <div id="loader" class="py-20 text-center">
-    <i class="fa-solid fa-circle-notch fa-spin text-4xl text-amber-500"></i>
-    <p class="mt-4 text-sm font-semibold text-slate-500">Kompilowanie najważniejszych informacji…</p>
-  </div>
-  <div id="error" class="hidden py-20 text-center">
-    <div class="text-4xl">⚠️</div><p class="mt-3 font-bold">Nie udało się pobrać najnowszego wydania.</p>
-    <button onclick="location.reload()" class="mt-4 rounded-full bg-amber-500 px-5 py-2 text-sm font-bold text-slate-950">Spróbuj ponownie</button>
-  </div>
+  <section id="archive-view" class="hidden"><div class="mb-4"><div class="text-xs font-bold uppercase tracking-[.18em] text-slate-500">Historia</div><h2 class="text-xl font-black">🗂 Archiwum</h2></div><div id="archive-content"></div></section>
+
+  <section id="numbers" class="mt-8 hidden"><div class="mb-3 text-xs font-bold uppercase tracking-[.18em] text-slate-500">W skrócie</div><div id="numbers-grid" class="grid gap-3 sm:grid-cols-3"></div></section>
 </main>
 
-<footer class="mt-auto border-t border-slate-200 bg-white dark:border-slate-800/50 dark:bg-slate-950">
-  <div class="mx-auto max-w-7xl px-4 py-10 text-center sm:px-6">
-    <div class="text-lg font-black">Świat <span class="text-amber-500">w Minutę</span></div>
-    <p class="mx-auto mt-2 max-w-xl text-xs leading-relaxed text-slate-500">Selekcja i opracowanie wspierane przez AI. Źródła informacji są wskazywane przy każdym materiale. AI pomaga skrócić i uporządkować informacje, ale nie zastępuje oryginalnych źródeł.</p>
-    <div class="mt-5 flex flex-wrap justify-center gap-3 text-xs font-bold">
-      <button onclick="openAbout()" class="rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800">Jak powstaje Świat w Minutę?</button>
-      <a href="https://instagram.com/swiatwminute" target="_blank" rel="noopener noreferrer" class="rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800"><i class="fa-brands fa-instagram mr-1"></i> Instagram</a>
-    </div>
-    <p class="mt-6 text-[10px] text-slate-400">© <span id="year"></span> Świat w Minutę</p>
-  </div>
-</footer>
-
-<!-- ABOUT -->
-<div id="about-modal" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
-  <div class="max-h-[85vh] max-w-xl overflow-auto rounded-3xl bg-white p-7 dark:bg-slate-900">
-    <div class="flex items-center justify-between"><h2 class="text-xl font-black">Jak powstaje Świat w Minutę?</h2><button onclick="closeAbout()" class="text-slate-400"><i class="fa-solid fa-xmark"></i></button></div>
-    <div class="mt-6 space-y-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-      <p><b>1. Źródła.</b> Zbieramy informacje z różnych źródeł i przypisujemy link do materiału źródłowego.</p>
-      <p><b>2. Selekcja.</b> System pomaga wyłapać tematy, które mogą mieć znaczenie dla odbiorcy.</p>
-      <p><b>3. Opracowanie.</b> Informacje są skracane do formatu, który można przeczytać w około minutę.</p>
-      <p><b>4. Kontekst.</b> Przy wybranych tematach dodajemy sekcję „Dlaczego to ważne?” zamiast samego powtarzania nagłówka.</p>
-      <p><b>5. Źródło.</b> Zawsze, gdy dostępny jest link, możesz przejść do oryginalnego materiału.</p>
-      <p class="rounded-2xl bg-amber-500/10 p-4 text-xs">AI może popełniać błędy. Przy ważnych informacjach warto sprawdzić materiał źródłowy.</p>
-    </div>
-  </div>
-</div>
+<button id="back-top" onclick="goTop()" aria-label="Wróć na górę" class="fixed bottom-5 right-5 z-50 hidden h-12 w-12 rounded-full bg-slate-950 text-lg font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">↑</button>
+<div id="toast" class="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-3 text-xs font-bold text-white shadow-xl"></div>
 
 <script>
-const SITE_URL='https://swiat-w-minut.vercel.app';
-const FALLBACK_IMG='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop';
-let todayItems=[],fastItems=[],archiveGroups=[],allItems=[],archiveVisible=3,currentTab='today',currentCategory=localStorage.getItem('swmCategory')||'all',cardCounter=0;
-const readKey='swmRead_'+new Date().toISOString().slice(0,10);
+'use strict';
+const $=id=>document.getElementById(id);
+let newsItems=[],fastItems=[],funItems=[],archiveGroups=[];
+let currentTab='today',activeCategory='ALL',allShown=5,readKeys=new Set();
+const DATA_FILES={news:'news.json',fast:'fast.json',fun:'rozrywka.json',archive:'archive.json',archiveFun:'archive_rozrywka.json'};
 
-function $(id){return document.getElementById(id)}
-function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-function domain(url){try{return new URL(url).hostname.replace(/^www\./,'')}catch{return''}}
-function debounce(fn,ms){let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms)}}
-function safeFetch(url){return fetch(url).then(r=>r.ok?r.text():'').then(t=>t.trim()?JSON.parse(t):{items:[]}).catch(()=>({items:[]}))}
-function mix(a,b){let o=[],i=0,j=0;while(i<a.length||j<b.length){for(let n=0;n<3&&i<a.length;n++)o.push({...a[i++],isFun:false});if(j<b.length)o.push({...b[j++],isFun:true})}return o}
-function getTitle(t){t=String(t||'').trim();const parts=t.split(/\s+/);const first=parts[0]||'';const emoji=/^[^\w\s.,!?ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]+$/.test(first)&&first.length<=3;return emoji?{emoji:first,title:t.slice(first.length).trim()}:{emoji:'📰',title:t}}
-function estimate(t){const w=String(t||'').trim().split(/\s+/).filter(Boolean).length;return Math.max(8,Math.ceil(w/3))}
-function categoryClass(c,fun=false){if(fun)return'border-fuchsia-500/20 bg-fuchsia-500/10 text-fuchsia-500';c=(c||'').toUpperCase();if(/AI|TECH/.test(c))return'border-violet-500/20 bg-violet-500/10 text-violet-500';if(/GOSPODARK|RYNK|FINANS|INWEST/.test(c))return'border-emerald-500/20 bg-emerald-500/10 text-emerald-500';if(/POLSK/.test(c))return'border-red-500/20 bg-red-500/10 text-red-500';if(/OBRON|WOJSK/.test(c))return'border-slate-400/20 bg-slate-500/10 text-slate-400';return'border-blue-500/20 bg-blue-500/10 text-blue-500'}
-function isRead(item){try{return JSON.parse(localStorage.getItem(readKey)||'[]').includes(item._readId)}catch{return false}}
-function markRead(item){try{let a=JSON.parse(localStorage.getItem(readKey)||'[]');if(!a.includes(item._readId))a.push(item._readId);localStorage.setItem(readKey,JSON.stringify(a))}catch{}updateProgress()}
-function updateProgress(){const total=todayItems.length;if(!total){$('progress-text').textContent='0/0';return}const read=todayItems.filter(isRead).length;$('progress-text').textContent=`${read}/${total}`;const pct=Math.round(read/total*100);$('read-estimate').textContent=pct?`✓ ${pct}% przeczytane`:'⏱ około 60 sekund'}
-function card(item,compact=false){item._readId=item._readId||btoa(unescape(encodeURIComponent((item.title||'')+'|'+(item.link||'')))).slice(0,40);const {emoji,title}=getTitle(item.title), cat=item.category||'Wiadomość',img=item.image_url||FALLBACK_IMG,src=domain(item.link),read=isRead(item),id='card-'+(++cardCounter),summary=item.summary||'',why=item.why_it_matters||item.why||item.comment||'Brak dodatkowego kontekstu.';const encTitle=encodeURIComponent(title),encSummary=encodeURIComponent(summary),encLink=encodeURIComponent(item.link||SITE_URL);return `<article id="${id}" data-read-id="${escapeHtml(item._readId)}" class="card-hover overflow-hidden rounded-3xl border ${read?'border-emerald-500/20':'border-slate-200 dark:border-slate-800'} bg-white shadow-sm dark:bg-slate-900/60">
-<div class="relative h-52 overflow-hidden bg-slate-800"><img src="${escapeHtml(img)}" crossorigin="anonymous" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}'" class="h-full w-full object-cover transition duration-500 hover:scale-105" alt="${escapeHtml(title)}"><div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div><div class="absolute bottom-3 left-4 right-4 flex items-end justify-between gap-2"><span class="rounded-md border px-2 py-1 text-[9px] font-black uppercase tracking-wider backdrop-blur ${categoryClass(cat,item.isFun)}">${escapeHtml(cat)}</span><span class="text-[10px] font-bold text-white/80">⏱ ${estimate(summary+' '+why)} sek.</span></div></div>
-<div class="p-5 sm:p-6">
-<div class="flex items-start justify-between gap-3"><h3 class="text-xl font-black leading-snug">${emoji} ${escapeHtml(title)}</h3><button onclick="shareItem('${encTitle}','${encSummary}','${encLink}')" class="shrink-0 rounded-full bg-slate-100 p-2 text-slate-500 dark:bg-slate-800" title="Udostępnij"><i class="fa-solid fa-share-nodes text-xs"></i></button></div>
-<p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">${escapeHtml(summary)}</p>
-<div class="mt-5 rounded-2xl border-l-4 border-amber-500 bg-amber-500/5 p-4"><div class="mb-1 text-[9px] font-black uppercase tracking-widest text-amber-500">Dlaczego to ważne?</div><p class="text-sm font-semibold leading-relaxed text-slate-700 dark:text-slate-300">${escapeHtml(why)}</p></div>
-<div class="mt-4 flex items-center justify-between gap-3"><span class="text-[10px] font-semibold text-slate-400">${src?'Źródło: '+escapeHtml(src):'Źródło niedostępne'}</span><div class="flex gap-2"><button onclick="toggleRead('${id}')" class="rounded-full px-3 py-2 text-[10px] font-black ${read?'bg-emerald-500/10 text-emerald-500':'bg-slate-100 text-slate-500 dark:bg-slate-800'}">${read?'✓ Przeczytane':'Oznacz ✓'}</button>${item.link&&item.link!=='#'?`<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="rounded-full bg-slate-950 px-3 py-2 text-[10px] font-black text-white dark:bg-white dark:text-slate-950">Źródło →</a>`:''}</div></div>
-</div></article>`}
-function toggleRead(id){const el=$(id);if(!el)return;const item=todayItems.find(x=>x._readId===el.dataset.readId)||allItems.find(x=>x._readId===el.dataset.readId);if(!item)return;markRead(item);renderCurrent()}
-function renderCurrent(){if(currentTab==='today')renderToday();else if(currentTab==='all')renderAll();updateProgress()}
-function filtered(items){return currentCategory==='all'?items:items.filter(x=>(x.category||'Inne')===currentCategory)}
-function renderToday(){let items=filtered(todayItems);const top=items.slice(0,5);$('top-grid').innerHTML=top.map(x=>card(x,true)).join('');$('rest-grid').innerHTML='';renderNumbers(items);$('edition-time').textContent=`${items.length} tematów · około 60 sekund`}
-let allVisible=5;
-function renderAll(){const items=filtered(todayItems),shown=items.slice(0,allVisible);$('all-grid').innerHTML=shown.map(x=>card(x)).join('');$('all-status').textContent=`Pokazano ${shown.length} z ${items.length} wiadomości` ;const btn=$('all-more');if(allVisible<items.length){btn.classList.remove('hidden');btn.textContent=`Pokaż 5 kolejnych (${items.length-allVisible} pozostało)`}else btn.classList.add('hidden')}
-function loadMoreAll(){allVisible+=5;renderAll();}
-function renderNumbers(items){const box=$('three-numbers'),grid=$('numbers-grid');const numbers=items.filter(x=>x.number||x.stat||x.value).slice(0,3);if(!numbers.length){box.classList.add('hidden');return}box.classList.remove('hidden');grid.innerHTML=numbers.map(x=>`<div class="rounded-2xl bg-slate-50 p-4 dark:bg-slate-800/70"><div class="text-2xl font-black text-amber-500">${escapeHtml(x.number||x.stat||x.value)}</div><div class="mt-1 text-xs font-semibold text-slate-500">${escapeHtml(x.number_label||x.stat_label||x.label||x.title||'')}</div></div>`).join('')}
-function renderFast(){const b=$('breaking'),list=$('fast-list');b.innerHTML=fastItems.length?`<div class="mb-5"><div class="mb-3 flex items-center gap-2 text-sm font-black uppercase tracking-wider text-red-500"><span class="h-2.5 w-2.5 rounded-full bg-red-500 breaking-pulse"></span>PILNE / FLASH</div><div class="space-y-3">${fastItems.map(x=>`<div class="rounded-2xl border-2 border-red-500/30 bg-red-500/5 p-5"><div class="text-[9px] font-black uppercase text-red-500">${escapeHtml(x.category||'PILNE')}</div><h3 class="mt-1 text-lg font-black">${getTitle(x.title).emoji} ${escapeHtml(getTitle(x.title).title)}</h3><p class="mt-2 text-sm text-slate-600 dark:text-slate-400">${escapeHtml(x.summary||'')}</p>${x.link&&x.link!=='#'?`<a class="mt-3 inline-block text-xs font-bold text-red-500" href="${escapeHtml(x.link)}" target="_blank" rel="noopener noreferrer">Źródło →</a>`:''}</div>`).join('')}</div></div>`:'';list.innerHTML=filtered(todayItems).map(x=>`<div class="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900/50"><div class="flex gap-3"><div class="text-2xl">${getTitle(x.title).emoji}</div><div class="min-w-0 flex-1"><span class="text-[9px] font-black uppercase text-amber-500">${escapeHtml(x.category||'Wiadomość')}</span><h3 class="mt-1 font-bold">${escapeHtml(getTitle(x.title).title)}</h3></div></div></div>`).join('')}
-function renderArchive(){const c=$('archive-container');c.innerHTML='';const groups=archiveGroups.slice(0,archiveVisible);groups.forEach(g=>{const items=currentCategory==='all'?g.items:g.items.filter(x=>(x.category||'Inne')===currentCategory);if(!items.length)return;c.insertAdjacentHTML('beforeend',`<section><div class="mb-5 flex items-center gap-4"><h2 class="text-xl font-black">${escapeHtml(g.title)}</h2><div class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></div></div><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">${items.map(x=>card(x)).join('')}</div></section>`)});const btn=$('archive-more');if(archiveVisible<archiveGroups.length){btn.classList.remove('hidden');btn.textContent=`Pokaż starsze wydania (${archiveGroups.length-archiveVisible})`}else btn.classList.add('hidden')}
-function loadMoreArchive(){archiveVisible+=3;renderArchive()}
-function buildFilters(){const counts={};filteredSource().forEach(x=>counts[x.category||'Inne']=(counts[x.category||'Inne']||0)+1);const cats=Object.keys(counts).sort();$('filters').innerHTML=[['all','Wszystkie'],...cats.map(c=>[c,`${c} (${counts[c]})`])].map(([v,t])=>`<button onclick="setCategory('${encodeURIComponent(v)}')" class="shrink-0 rounded-full border px-3 py-2 text-[10px] font-black ${currentCategory===v?'border-amber-500 bg-amber-500 text-slate-950':'border-slate-200 bg-slate-100 text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300'}">${escapeHtml(t)}</button>`).join('')}
-function filteredSource(){return currentTab==='archive'?archiveGroups.flatMap(g=>g.items):todayItems}
-function setCategory(v){currentCategory=decodeURIComponent(v);localStorage.setItem('swmCategory',currentCategory);allVisible=5;buildFilters();currentTab==='archive'?renderArchive():renderCurrent()}
-function switchTab(tab){currentTab=tab;document.querySelectorAll('.tab').forEach(x=>x.className='tab shrink-0 rounded-full bg-slate-100 px-5 py-2.5 text-sm font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300');$('tab-'+tab).className='tab active shrink-0 rounded-full bg-amber-500 px-5 py-2.5 text-sm font-black text-slate-950';['today-view','all-view','fast-view','archive-view','search-view'].forEach(id=>$(id).classList.add('hidden'));$('filters').classList.toggle('hidden',tab==='fast');$(tab==='today'?'today-view':tab==='all'?'all-view':tab==='fast'?'fast-view':'archive-view').classList.remove('hidden');buildFilters();if(tab==='today')renderToday();if(tab==='all')renderAll();if(tab==='fast')renderFast();if(tab==='archive')renderArchive();window.scrollTo({top:0,behavior:'smooth'})}
-function search(){const desktop=$('search-input').value||'',mobile=$('search-mobile').value||'',q=(desktop||mobile).toLowerCase().trim();$('search-input').value=q;$('search-mobile').value=q;$('search-clear').classList.toggle('hidden',!q);if(!q){$('search-view').classList.add('hidden');switchTab(currentTab);return}document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active','bg-amber-500','text-slate-950'));['today-view','all-view','fast-view','archive-view'].forEach(id=>$(id).classList.add('hidden'));$('filters').classList.add('hidden');$('search-view').classList.remove('hidden');const pool=[...todayItems,...fastItems,...archiveGroups.flatMap(g=>g.items)];const seen=new Set();const r=pool.filter(x=>{const key=(x.link||'')+'|'+(x.title||'');if(seen.has(key))return false;seen.add(key);const hay=[x.title,x.summary,x.comment,x.why,x.why_it_matters,x.category,x.source,x.source_name].map(v=>String(v||'').toLowerCase()).join(' ');return hay.includes(q)});$('search-count').textContent=r.length;$('search-grid').innerHTML=r.map(x=>card(x)).join('');$('no-results').classList.toggle('hidden',!!r.length)}
-const debouncedSearch=debounce(search,250);function clearSearch(){$('search-input').value='';$('search-mobile').value='';$('search-clear').classList.add('hidden');$('search-view').classList.add('hidden');switchTab(currentTab)}
-async function shareItem(t,s,u){t=decodeURIComponent(t);s=decodeURIComponent(s);u=decodeURIComponent(u);if(navigator.share){try{await navigator.share({title:t,text:s,url:u})}catch{}}else{try{await navigator.clipboard.writeText(u);alert('Link skopiowany.')}catch{}}}
-async function downloadCard(id,title){const el=$(id);if(!el)return;try{const canvas=await html2canvas(el,{scale:2,useCORS:true,backgroundColor:'#020617'});const data=canvas.toDataURL('image/jpeg',.92);$('save-img').src=data;$('save-link').href=data;$('save-link').download='swiatwminute_'+decodeURIComponent(title).slice(0,40).replace(/[^a-z0-9ąćęłńóśźż ]/gi,'_')+'.jpg';$('save-modal').classList.remove('hidden');$('save-modal').classList.add('flex')}catch(e){alert('Nie udało się przygotować grafiki.')}}
-function closeSaveModal(){$('save-modal').classList.add('hidden');$('save-modal').classList.remove('flex');$('save-img').src=''}
-function openAbout(){$('about-modal').classList.remove('hidden');$('about-modal').classList.add('flex')}function closeAbout(){$('about-modal').classList.add('hidden');$('about-modal').classList.remove('flex')}
+function escapeHtml(v){return String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+function getTitle(v){const s=String(v||'').trim();const m=s.match(/^(\p{Extended_Pictographic})\s*/u);return m?{emoji:m[1],title:s.slice(m[0].length)}:{emoji:'',title:s}}
+function normalize(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function keyOf(x){return String(x.link||'').trim().toLowerCase().replace(/\/$/,'')||normalize(getTitle(x.title).title)}
+function uniqueByKey(items){const seen=new Set(),out=[];for(const x of items||[]){const k=keyOf(x);if(!k||seen.has(k))continue;seen.add(k);out.push(x)}return out}
+function getSummary(x){return x.summary||x.description||x.excerpt||''}
+function getWhy(x){return x.why||x.whyImportant||x.important||''}
+function sourceName(x){return x.source_name||x.sourceName||x.source||''}
+function sourceLink(x){return x.link||x.url||'#'}
+function category(x){return x.category||x.cat||'WIADOMOŚCI'}
+function categoryClass(cat){const c=normalize(cat);if(c.includes('ai')||c.includes('technolog'))return 'bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300';if(c.includes('gospod')||c.includes('finans')||c.includes('rynk'))return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300';if(c.includes('nauk'))return 'bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-300';if(c.includes('sport'))return 'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300';if(c.includes('polityk')||c.includes('polska'))return 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300';return 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'}
+function imageOf(x){return x.image||x.image_url||x.imageUrl||x.img||x.photo||''}
+function isUrgent(x){const k=keyOf(x);return fastItems.some(f=>keyOf(f)===k)}
+function markRead(x){const k=keyOf(x);if(k){readKeys.add(k);saveRead();updateProgress()}}
+function saveRead(){try{localStorage.setItem('swm-read',JSON.stringify([...readKeys]))}catch(e){}}
+function loadRead(){try{readKeys=new Set(JSON.parse(localStorage.getItem('swm-read')||'[]'))}catch(e){readKeys=new Set()}}
+function updateProgress(){const total=uniqueByKey([...newsItems,...fastItems]).length;const read=[...readKeys].filter(k=>uniqueByKey([...newsItems,...fastItems]).some(x=>keyOf(x)===k)).length;$('progress-text').textContent=read+'/'+total}
+function safeUrl(u){try{return new URL(u,location.href).href}catch(e){return '#'}}
+
+function headlineRow(item,i){const t=getTitle(item.title);const urgent=isUrgent(item);const link=sourceLink(item);return `<article onclick='markRead(${JSON.stringify(item)})' class="group flex min-h-[88px] gap-3 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-amber-500"><div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-xs font-black text-slate-600 dark:bg-slate-800 dark:text-slate-300">${i+1}</div><div class="min-w-0 flex-1"><div class="mb-1 flex flex-wrap items-center gap-1.5"><span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase ${categoryClass(category(item))}">${escapeHtml(category(item))}</span>${urgent?'<span class="rounded-full bg-red-500 px-2 py-0.5 text-[9px] font-extrabold text-white">PILNE</span>':''}</div><h3 class="line-clamp-2 text-sm font-extrabold leading-snug">${t.emoji?escapeHtml(t.emoji)+' ':''}${escapeHtml(t.title)}</h3>${link&&link!=='#'?`<a onclick="event.stopPropagation()" href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="mt-2 inline-block text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>`:''}</div></article>`}
+function funMini(item){const t=getTitle(item.title);return `<article onclick='markRead(${JSON.stringify(item)})' class="rounded-2xl border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900"><div class="mb-1 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item)||'CIEKAWOSTKA')}</div><h3 class="line-clamp-3 text-sm font-extrabold">${t.emoji?escapeHtml(t.emoji)+' ':''}${escapeHtml(t.title)}</h3></article>`}
+function card(item){const t=getTitle(item.title);const img=imageOf(item);const link=sourceLink(item);return `<article onclick='markRead(${JSON.stringify(item)})' class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900"><div class="relative overflow-hidden bg-slate-200 dark:bg-slate-800">${img?`<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'flex aspect-video items-center justify-center text-4xl\'>📰</div>'">`:'<div class="flex aspect-video items-center justify-center text-4xl">📰</div>'}<div class="absolute left-3 top-3 flex gap-1.5"><span class="rounded-full px-2.5 py-1 text-[9px] font-extrabold uppercase shadow ${categoryClass(category(item))}">${escapeHtml(category(item))}</span>${isUrgent(item)?'<span class="rounded-full bg-red-500 px-2.5 py-1 text-[9px] font-extrabold text-white shadow">PILNE</span>':''}</div></div><div class="p-4"><h3 class="line-clamp-3 text-base font-black leading-snug">${t.emoji?escapeHtml(t.emoji)+' ':''}${escapeHtml(t.title)}</h3>${getSummary(item)?`<p class="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(getSummary(item))}</p>`:''}${getWhy(item)?`<div class="mt-3 rounded-2xl bg-amber-50 p-3 text-xs dark:bg-amber-950/30"><div class="mb-1 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Dlaczego to ważne?</div><div class="leading-relaxed text-slate-700 dark:text-slate-200">${escapeHtml(getWhy(item))}</div></div>`:''}<div class="mt-3 flex items-center justify-between gap-2 border-t border-slate-100 pt-3 dark:border-slate-800"><span class="truncate text-[10px] font-semibold text-slate-500">${escapeHtml(sourceName(item))}</span>${link&&link!=='#'?`<a onclick="event.stopPropagation()" href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600">Czytaj źródło →</a>`:''}</div></div></article>`}
+
+function filtered(items){if(activeCategory==='ALL')return items||[];return (items||[]).filter(x=>normalize(category(x))===normalize(activeCategory))}
+function uniqueHeadlines(items){return uniqueByKey(items)}
+function renderToday(){const items=uniqueHeadlines(filtered([...newsItems,...fastItems]));$('headline-list').innerHTML=items.length?items.map(headlineRow).join(''):'<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700 sm:col-span-2">Brak wiadomości.</div>';$('top-topics').querySelector('h2').textContent='Dzisiejsze nagłówki';$('edition-time').textContent=`${items.length} unikalnych tematów · szybki przegląd`;$('numbers').classList.add('hidden');const fp=funItems.slice(0,4);$('fun-preview').classList.toggle('hidden',!fp.length);$('fun-preview-grid').innerHTML=fp.map(funMini).join('')}
+function renderAll(){const items=filtered(newsItems).slice(0,allShown);$('all-grid').innerHTML=items.length?items.map(card).join(''):'<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700 md:col-span-2 lg:col-span-3">Brak wiadomości.</div>';$('all-more').classList.toggle('hidden',allShown>=filtered(newsItems).length)}
+function loadMoreAll(){allShown+=5;renderAll()}
+function renderFast(){const items=fastItems.slice(0,3);$('breaking').innerHTML=items.length?items.map(card).join(''):'<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700">Brak pilnych wiadomości.</div>'}
+function renderFun(){const items=filtered(funItems);$('fun-grid').innerHTML=items.length?items.map(card).join(''):'<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700 md:col-span-2 lg:col-span-3">Brak ciekawostek.</div>'}
+function renderArchive(){if(!archiveGroups.length){$('archive-content').innerHTML='<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500 dark:border-slate-700">Brak archiwum.</div>';return}$('archive-content').innerHTML=archiveGroups.map(g=>`<section class="mb-8"><div class="mb-3 flex items-end justify-between"><h3 class="text-lg font-black">${escapeHtml(g.label||g.date||'Archiwum')}</h3><span class="text-[10px] text-slate-500">${(g.items||[]).length} wiadomości</span></div><div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">${(g.items||[]).map(card).join('')}</div></section>`).join('')}
+function renderCurrent(){if(currentTab==='today')renderToday();else if(currentTab==='all')renderAll();else if(currentTab==='fast')renderFast();else if(currentTab==='fun')renderFun();else renderArchive();updateProgress()}
+function switchTab(tab){currentTab=tab;document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));$('tab-'+tab).classList.add('active');['today-view','all-view','fast-view','fun-view','archive-view'].forEach(id=>$(id).classList.add('hidden'));$('filters').classList.toggle('hidden',tab==='fast'||tab==='fun');$('search-results').classList.add('hidden');const id=tab==='today'?'today-view':tab==='all'?'all-view':tab==='fast'?'fast-view':tab==='fun'?'fun-view':'archive-view';$(id).classList.remove('hidden');buildFilters();if(tab==='all')allShown=5;renderCurrent();window.scrollTo({top:0,behavior:'smooth'})}
+function buildFilters(){const source=currentTab==='all'?newsItems:currentTab==='fun'?funItems:uniqueByKey([...newsItems,...fastItems]);const cats=['ALL',...new Set(source.map(category))];$('filter-list').innerHTML=cats.map(c=>`<button onclick="setCategory(${JSON.stringify(c)})" class="filter-btn ${activeCategory===c?'active':''} rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[10px] font-bold dark:border-slate-700 dark:bg-slate-900">${c==='ALL'?'Wszystkie':escapeHtml(c)}</button>`).join('')}
+function setCategory(c){activeCategory=c;buildFilters();renderCurrent()}
+function search(){const active=document.activeElement?.id;const desktop=$('search-input').value||'';const mobile=$('search-mobile').value||'';const q=((active==='search-mobile'?mobile:desktop)||mobile||desktop).toLowerCase().trim();if(active==='search-mobile')$('search-input').value=mobile;else if(active==='search-input')$('search-mobile').value=desktop;$('search-clear').classList.toggle('hidden',!q);if(!q){$('search-results').classList.add('hidden');return}const pool=uniqueByKey([...newsItems,...fastItems,...funItems,...archiveGroups.flatMap(g=>g.items||[])]);const words=normalize(q).split(' ').filter(Boolean);const hits=pool.filter(x=>{const hay=normalize([x.title,getSummary(x),x.comment,getWhy(x),category(x),sourceName(x)].join(' '));return words.every(w=>hay.includes(w))});$('search-results').classList.remove('hidden');$('search-results').innerHTML=`<div class="mb-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div><div class="grid gap-2 sm:grid-cols-2">${hits.slice(0,30).map((x,i)=>headlineRow(x,i)).join('')||'<div class="text-sm text-slate-500">Nie znaleziono.</div>'}</div>`}
+function clearSearch(){$('search-input').value='';$('search-mobile').value='';$('search-results').classList.add('hidden');$('search-clear').classList.add('hidden')}
 function goTop(){window.scrollTo({top:0,behavior:'smooth'})}
-function theme(){if(localStorage.theme==='light'||(!localStorage.theme&&matchMedia('(prefers-color-scheme:light)').matches)){document.documentElement.classList.remove('dark');$('theme-icon').className='fa-solid fa-sun'}else{document.documentElement.classList.add('dark');$('theme-icon').className='fa-solid fa-moon'}}
-function toggleTheme(){localStorage.theme=document.documentElement.classList.contains('dark')?'light':'dark';theme()}
-async function loadWeather(){try{const d=await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.23&longitude=21.01&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw').then(r=>r.json());$('weather-temp').textContent=Math.round(d.current.temperature_2m)+'°';const m={0:['☀️','Bezchmurnie'],1:['🌤️','Przeważnie słonecznie'],2:['⛅','Częściowe zachmurzenie'],3:['☁️','Pochmurno'],61:['🌧️','Deszcz'],63:['🌧️','Deszcz'],65:['🌧️','Ulewa'],71:['🌨️','Śnieg'],73:['❄️','Śnieg'],80:['🌦️','Przelotne opady'],95:['⛈️','Burza']};const x=m[d.current.weather_code]||['🌡️','Warunki atmosferyczne'];$('weather-icon').textContent=x[0];$('weather-desc').textContent=x[1]}catch{}}
-async function loadRates(){try{const d=await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json').then(r=>r.json());const r=d[0].rates;for(const c of ['EUR','USD']){const x=r.find(a=>a.code===c);$('rate-'+c.toLowerCase()).textContent=x?x.mid.toFixed(2):'—'}}catch{}}
-async function init(){theme();$('year').textContent=new Date().getFullYear();try{const cb=Date.now();const [n,f,r,a,ar]=await Promise.all([safeFetch('news.json?v='+cb),safeFetch('fast.json?v='+cb),safeFetch('rozrywka.json?v='+cb),safeFetch('archive.json?v='+cb),safeFetch('archive_rozrywka.json?v='+cb)]);todayItems=mix(n.items||[],r.items||[]);fastItems=f.items||[];todayItems.forEach((x,i)=>x._readId='t'+i+'_'+btoa(unescape(encodeURIComponent(x.title||''))).slice(0,20));$('header-date').textContent=(n.date||'Dzisiaj')+' • najnowsze wydanie';$('edition-time').textContent=f.time?'Flash: '+f.time:'';const today=new Date().toISOString().slice(0,10);Object.keys(a||{}).sort().reverse().forEach(k=>{if(k.startsWith(today))return;const date=k.split('_')[0],rd=ar[date+'_rozrywka']||{items:[]},items=mix(a[k].items||[],rd.items||[]);if(items.length)archiveGroups.push({title:(a[k].date||date)+' • '+(k.includes('poranne')?'Poranne':k.includes('wieczorne')?'Wieczorne':'Wydanie'),items})});allItems=[...todayItems,...fastItems,...archiveGroups.flatMap(g=>g.items)];$('loader').classList.add('hidden');loadWeather();loadRates();buildFilters();switchTab('today');updateProgress()}catch(e){console.error(e);$('loader').classList.add('hidden');$('error').classList.remove('hidden')}}
-window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;$('reading-progress').style.width=(h>0?(scrollY/h*100):0)+'%';$('back-top').classList.toggle('hidden',scrollY<500)});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&($('search-input').value||$('search-mobile').value))clearSearch();if(e.key==='Enter'&&document.activeElement&&['search-input','search-mobile'].includes(document.activeElement.id))search();});
-document.addEventListener('DOMContentLoaded',init);
+function toggleDark(){document.documentElement.classList.toggle('dark');localStorage.setItem('swm-dark',document.documentElement.classList.contains('dark')?'1':'0')}
+function loadTheme(){if(localStorage.getItem('swm-dark')==='1')document.documentElement.classList.add('dark')}
+function showToast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>t.classList.remove('show'),2200)}
+async function loadJson(url,fallback){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){console.warn('Nie udało się pobrać',url,e);return fallback}}
+function normalizeArchive(data){if(!data)return[];if(Array.isArray(data))return[{label:'Archiwum',items:data}];if(Array.isArray(data.items))return[{label:data.date||'Archiwum',items:data.items}];if(Array.isArray(data.groups))return data.groups;const out=[];for(const [k,v] of Object.entries(data)){if(Array.isArray(v))out.push({label:k,items:v})}return out}
+async function init(){loadTheme();loadRead();const [n,f,r,a,af]=await Promise.all([loadJson(DATA_FILES.news,{items:[]}),loadJson(DATA_FILES.fast,{items:[]}),loadJson(DATA_FILES.fun,{items:[]}),loadJson(DATA_FILES.archive,{items:[]}),loadJson(DATA_FILES.archiveFun,{items:[]})]);newsItems=Array.isArray(n)?n:(n.items||[]);fastItems=(Array.isArray(f)?f:(f.items||[])).slice(0,3);funItems=Array.isArray(r)?r:(r.items||[]);archiveGroups=normalizeArchive(a);const archiveFun=normalizeArchive(af);archiveGroups=[...archiveGroups,...archiveFun];$('last-update').textContent=new Date().toLocaleString('pl-PL',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});buildFilters();renderToday();updateProgress();loadWidgets()}
+async function loadWidgets(){try{const w=await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw',{cache:'no-store'});const d=await w.json();$('weather-temp').textContent=Math.round(d.current.temperature_2m)+'°';$('weather-icon').textContent=weatherEmoji(d.current.weather_code);$('weather-desc').textContent=weatherText(d.current.weather_code)}catch(e){}try{const r=await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json',{cache:'no-store'});const d=await r.json();const rates=d[0].rates;$('eur-rate').textContent=(rates.find(x=>x.code==='EUR')?.mid||0).toFixed(4);$('usd-rate').textContent=(rates.find(x=>x.code==='USD')?.mid||0).toFixed(4)}catch(e){}}
+function weatherEmoji(c){if(c===0)return'☀️';if(c<=3)return'🌤️';if(c<=48)return'🌫️';if(c<=67)return'🌧️';if(c<=77)return'🌨️';if(c<=82)return'🌦️';return'⛈️'}
+function weatherText(c){if(c===0)return'Słonecznie';if(c<=3)return'Pogodnie';if(c<=48)return'Mgła / zachmurzenie';if(c<=67)return'Deszcz';if(c<=77)return'Śnieg';if(c<=82)return'Przelotnie';return'Burza'}
+window.addEventListener('scroll',()=>{$('back-top').classList.toggle('hidden',window.scrollY<500)});
+window.addEventListener('keydown',e=>{if(e.key==='Escape')clearSearch()});
+init();
 </script>
 </body>
 </html>
