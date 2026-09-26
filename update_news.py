@@ -106,7 +106,7 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "business news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 20 or len(threads_post) < 80:
+        if len(title) < 10 or len(summary) < 20 or len(comment) < 25 or len(threads_post) < 80:
             continue
 
         valid.append({
@@ -259,11 +259,11 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z PODWÓJNYM ŚWIATEM: KARUZELA + THREADS ---
+# --- PROMPT AI Z BOGATYM KOMENTARZEM I DEDYKOWANYM POSTEM THREADS ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem czołowego profilu informacyjno-analitycznego w mediach społecznościowych („Świat w Minucie”). 
-Twoje posty na Threads generują ogromne organiczne zasięgi (dziesiątki tysięcy wyświetleń i setki komentarzy), ponieważ piszesz w sposób żywy, publicystyczny, z trafnym tłem i bezkompromisową pointą.
+prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
+Twoje treści zdobywają wiralowe zasięgi, ponieważ łączysz twardą faktografię z błyskotliwą, trafną publicystyką, chłodnym realizmem i bezkompromisowym komentarzem.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
@@ -271,31 +271,39 @@ Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wia
 1. MINIMUM 60% CAŁOŚCI:
    - GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, INWESTYCJE, BUDŻET, WALUTY ORAZ POLSKA.
 2. OBRONNOŚĆ / WOJSKO / MILITARIA:
-   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutne przełomy geopolityczne (żadnych drobnych zakupów czy sprzętu z targów).
+   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutne przełomy geopolityczne (żadnych drobnych zakupów czy sprzętu z lokalnych targów).
 3. TECHNOLOGIE / AI:
    - DOKŁADNIE 2 POZYCJE (największe inwestycje, energetyka pod data centers, przełomy rynkowe).
 4. ZERO plotek, celebrytów i lifestyle'u.
 
-ZASADA ROZDZIELENIA TREŚCI SLAJD VS THREADS (KLUCZ DO SUKCESU):
-- Na karuzelę Instagrama ("summary" i "comment"): pisz krótko, syntetycznie i merytorycznie. Summary to 2 zdania faktów, comment to 1 zdanie wniosku.
-- Na Threads ("threads_post"): BEZWZGLĘDNY ZAKAZ przepisania 1:1 słów ze slajdu!
-  Napisz wciągający, bogaty post publicystyczny (dokładnie 3-4 naturalne akapity).
-  Wzoruj się na poniższym schemacie:
-  Akapit 1: Tytuł z trafną emotikoną (np. 🛡️, 📉, 🚀, ⚔️).
-  Akapit 2: Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "Koniec napięć w Arktyce: USA i Dania dopięły umowę ws. Grenlandii! 🇬🇱🇺🇸🇩🇰").
-  Akapit 3: Pogłębione rozwinięcie sytuacji, którego NIE MA na grafice (szersze tło strategiczne/gospodarcze, dlaczego to wydarzyło się akurat teraz, kto zyskuje, a kto traci).
-  Akapit 4: Cięta pointa z dedykowanymi emotikonami (np. ❄️🛡️, 🌊⚓, 🛸🪖, 📊💸).
-  Akapit 5: Konkretne pytanie prowokujące do dyskusji pod dany temat (np. "Arktyka pozostanie bezpieczną strefą współpracy zachodu? 🌐👇💬").
+KLUCZOWE WYMAGANIA DOTYCZĄCE TREŚCI (ZADBAJ O WYSOKĄ JAKOŚĆ):
+- "title": [Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków].
+- "hook": 1 dynamiczne zdanie uderzające w sedno (kontrast, paradoks lub kluczowy fakt).
+- "summary": 2 zwięzłe zdania czystych faktów i liczb na slajd (dane, spółki, kwoty, decyzje).
+- "comment": BOGATY, TRAFNY I CIĘTY KOMENTARZ PUBLICYSTYCZNY (2-3 ZDANIA):
+  * Kategoryczny zakaz jednozdaniowych ogólników typu „czas pokaże”, „to kluczowy krok”, „wpłynie to na sytuację”.
+  * Pokaż strategiczne tło, drugie dno decyzji, obnaż polityczny teatr lub wskaż bezpośrednie konsekwencje dla rynków, budżetu i portfeli obywateli. 
+  * Ma brzmieć jak najlepszy komentarz doświadczonego analityka gospodarczego lub geopolitycznego – z pazurem, realizmem i trafną puentą.
+- "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
+  * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
+  * Układ:
+    1. Nagłówek z emotikoną
+    2. Mocny, podwójny hook z flagami i wykrzyknikiem (np. „Front wkracza w decydującą fazę: Wilno w pełni podziela obawy Warszawy! ⚠️🇱🇹🇵🇱”)
+    3. Rozszerzone tło wydarzenia z detalami, których NIE MA na slajdzie
+    4. Cięta pointa z dedykowanymi emotikonami (np. ❄️🛡️, 🌊⚓, 🛸🪖, 📊💸)
+    5. Prowokujące, unikalne pytanie do dyskusji kończące się „👇💬”
+- "question": 1 zróżnicowane, konkretne pytanie do dyskusji pod dany temat.
+- "image_query": 2-3 konkretne słowa kluczowe po angielsku do bazy zdjęć Pexels.
 
 STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
 [
   {{
     "category": "RYNKI I GOSPODARKA / POLSKA / BIZNES / GEOPOLITYKA / OBRONNOŚĆ / TECHNOLOGIE / AI",
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
-    "hook": "1 zdanie uderzające w sedno – kontrast lub kluczowy fakt.",
-    "summary": "2 zwięzłe zdania faktów na slajd (dane, liczby, fakty).",
-    "comment": "1 mocna pointa w chmurce na slajdzie.",
-    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, bogata w kontekst i unikalna względem summary).",
+    "hook": "1 zdanie uderzające w sedno.",
+    "summary": "2 zwięzłe zdania faktów na slajd.",
+    "comment": "2-3 zdania głębokiego, celnego komentarza analitycznego z pazurem.",
+    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, unikalna względem summary).",
     "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
@@ -359,8 +367,8 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Decyzje podejmowane w tym segmencie bezpośrednio przełożą się na równowagę gospodarczą w kolejnych miesiącach.",
-                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach rynkowych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
+                "comment": "Zamiast uspokajających deklaracji liczą się twarde liczby w arkuszu. Rynki bezlitośnie weryfikują polityczne zapowiedzi, a koszt zaniechań natychmiast uderzy w rentowności obligacji i portfele konsumentów.",
+                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
                 "link": art["link"]
@@ -421,4 +429,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z pełnymi postami Threads.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z bogatym komentarzem i pełnymi postami Threads.")
