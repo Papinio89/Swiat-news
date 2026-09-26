@@ -30,21 +30,43 @@
 html,body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 body{background:#f8fafc;color:#0f172a}
 .dark body{background:#020617;color:#e2e8f0}
+
 .card-img{aspect-ratio:16/9;object-fit:cover}
 .tab.active{background:#0f172a;color:white}
 .dark .tab.active{background:#f8fafc;color:#0f172a}
+
 #toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
 #toast.show{transform:translateY(0);opacity:1}
+
 .headline-item{transition:background .15s}
 .headline-item:hover{background:rgba(245,158,11,.07)}
-.dark .headline-item:hover{background:rgba(245,158,11,.1)}
+.dark .headline-item:hover{background:rgba(245,158,11,.12)}
 .headline-item.read{opacity:.55}
 .headline-item.read .title{text-decoration:line-through;text-decoration-color:#94a3b8}
 .card.read{opacity:.72}
+
 .check-btn{width:18px;height:18px;border-radius:5px;border:1.5px solid #cbd5e1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:.15s;font-size:11px}
 .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
 .dark .check-btn{border-color:#475569}
 .dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b}
+
+/* Dark mode – karty i listy nie rażą */
+.dark #headline-list,
+.dark #breaking {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+}
+.dark .headline-item {
+  border-color: #1e293b !important;
+}
+.dark .card {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+}
+.dark #search-results .rounded-xl {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
+}
 </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
@@ -180,11 +202,16 @@ body{background:#f8fafc;color:#0f172a}
 
 </main>
 
-<!-- Ładniejszy disclaimer -->
+<!-- Disclaimer – po kliknięciu -->
 <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950">
   <div class="mx-auto max-w-6xl px-4 py-8">
     
-    <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 p-5 sm:p-6">
+    <button onclick="toggleDisclaimer()" 
+            class="mx-auto flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-xs font-bold text-slate-600 hover:bg-amber-50 hover:border-amber-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition">
+      ℹ️ Ważne informacje o stronie
+    </button>
+
+    <div id="disclaimer" class="mt-4 hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 p-5 sm:p-6">
       <div class="flex items-start gap-3">
         <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-950/50">ℹ️</div>
         <div class="min-w-0">
@@ -281,7 +308,6 @@ async function translateToPolish(text) {
   return text;
 }
 
-/* Inteligentne dobieranie emotki */
 function pickEmoji(title, cat) {
   const t = (title + ' ' + (cat || '')).toLowerCase();
 
@@ -395,6 +421,10 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
+function toggleDisclaimer() {
+  $('disclaimer').classList.toggle('hidden');
+}
+
 function headlineRow(item, displayTitle, emoji) {
   const link = sourceLink(item);
   const read = isRead(item);
@@ -444,15 +474,15 @@ function card(item) {
             ${read ? '✓' : ''}
           </button>
           <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600" title="Udostępnij">↗</button>
+                  class="h-[18px] w-[18px] rounded-[5px] bg-white/90 dark:bg-slate-900/90 shadow flex items-center justify-center text-[10px] text-slate-600 dark:text-slate-300" title="Udostępnij">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="text-[15px] font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        <h3 class="text-[15px] font-black leading-snug text-slate-900 dark:text-slate-100">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
         ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>` : ''}
         ${comment ? `
-          <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/30">
-            <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600">Komentarz</div>
+          <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/40">
+            <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div>
             <div class="leading-relaxed text-slate-700 dark:text-slate-200 italic">"${escapeHtml(comment)}"</div>
           </div>` : ''}
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800">
@@ -468,7 +498,7 @@ function funMini(item) {
   return `
     <article class="rounded-xl border border-slate-200 bg-white p-2.5 dark:border-slate-800 dark:bg-slate-900">
       <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
-      <h3 class="text-sm font-extrabold leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+      <h3 class="text-sm font-extrabold leading-snug text-slate-900 dark:text-slate-100">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
     </article>`;
 }
 
@@ -476,7 +506,6 @@ async function renderToday() {
   const items = uniqueByKey([...newsItems, ...rawFeedItems]);
   $('edition-time').textContent = `${items.length} tematów`;
 
-  // Szybkie pokazanie oryginałów
   $('headline-list').innerHTML = items.length
     ? items.map(item => {
         const t = getTitle(item.title);
@@ -485,7 +514,6 @@ async function renderToday() {
       }).join('')
     : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
 
-  // Tłumaczenie + emotki
   const translated = await Promise.all(items.map(async (item) => {
     const t = getTitle(item.title);
     let title = t.title;
@@ -515,7 +543,7 @@ function renderAll() {
   const items = newsItems.slice(0, allShown);
   $('all-grid').innerHTML = items.length
     ? items.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
   $('all-more').classList.toggle('hidden', allShown >= newsItems.length);
 }
 
@@ -535,18 +563,18 @@ function renderFast() {
 function renderFun() {
   $('fun-grid').innerHTML = funItems.length
     ? funItems.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
+    : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
 }
 
 function renderArchive() {
   if (!archiveGroups.length) {
-    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak archiwum.</div>';
+    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-8 text-center text-sm text-slate-500">Brak archiwum.</div>';
     return;
   }
   $('archive-content').innerHTML = archiveGroups.map(g => `
     <section class="mb-7">
       <div class="mb-2.5 flex items-end justify-between">
-        <h3 class="text-base font-black">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
+        <h3 class="text-base font-black text-slate-900 dark:text-white">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
         <span class="text-[10px] text-slate-500">${(g.items || []).length} wiadomości</span>
       </div>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -595,7 +623,7 @@ function search() {
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
-    <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+    <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900">
       ${hits.slice(0, 30).map(item => {
         const t = getTitle(item.title);
         const emoji = t.emoji || pickEmoji(t.title, category(item));
