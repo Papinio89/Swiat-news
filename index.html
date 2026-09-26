@@ -14,7 +14,6 @@ html,body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI
 body{background:#f8fafc;color:#0f172a}
 .dark body{background:#020617;color:#e2e8f0}
 .card-img{aspect-ratio:16/9;object-fit:cover}
-.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .tab.active{background:#0f172a;color:white}
 .dark .tab.active{background:#f8fafc;color:#0f172a}
 #toast{transform:translateY(120px);opacity:0;pointer-events:none;transition:.25s}
@@ -29,8 +28,6 @@ body{background:#f8fafc;color:#0f172a}
 .check-btn.checked{background:#f59e0b;border-color:#f59e0b;color:#111}
 .dark .check-btn{border-color:#475569}
 .dark .check-btn.checked{background:#f59e0b;border-color:#f59e0b}
-.summary-full{display:none}
-.summary-full.open{display:block}
 </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
@@ -103,7 +100,7 @@ body{background:#f8fafc;color:#0f172a}
     <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border border-slate-200 px-3.5 py-2 text-xs font-bold dark:border-slate-700" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
-  <!-- 60 sekund = News + raw_feed -->
+  <!-- 60 sekund -->
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
@@ -112,7 +109,9 @@ body{background:#f8fafc;color:#0f172a}
       </div>
       <div id="edition-time" class="text-right text-[10px] font-semibold text-slate-500"></div>
     </div>
-    <div id="headline-list" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden"></div>
+    <div id="headline-list" class="rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 overflow-hidden">
+      <div class="p-6 text-center text-sm text-slate-500">Ładowanie…</div>
+    </div>
     
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
@@ -126,7 +125,7 @@ body{background:#f8fafc;color:#0f172a}
     </div>
   </section>
 
-  <!-- Dzisiejsze news – pełne karty, summary w całości -->
+  <!-- Dzisiejsze news -->
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
@@ -136,7 +135,7 @@ body{background:#f8fafc;color:#0f172a}
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- Pilne = fast.json + top 5 News -->
+  <!-- Pilne -->
   <section id="fast-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
@@ -192,6 +191,7 @@ body{background:#f8fafc;color:#0f172a}
 const $ = id => document.getElementById(id);
 let newsItems = [], rawFeedItems = [], fastItems = [], funItems = [], archiveGroups = [];
 let currentTab = 'today', allShown = 6, readKeys = new Set();
+const titleCache = JSON.parse(localStorage.getItem('swm-title-cache') || '{}');
 
 const DATA_FILES = {
   news: 'news.json',
@@ -216,22 +216,33 @@ function getTitle(v) {
   return m ? { emoji: m[1], title: s.slice(m[0].length).trim() } : { emoji: '', title: s };
 }
 
-/* Prosta detekcja angielskiego + spójny format wyświetlania */
-function looksEnglish(text) {
+function isEnglishTitle(text) {
   const t = String(text || '');
-  // Dużo angielskich słów / brak polskich znaków + typowe angielskie wzorce
-  const hasPolish = /[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/.test(t);
-  if (hasPolish) return false;
-  const engHints = /\b(the|and|for|with|from|that|this|will|have|been|says|said|after|over|into|about|china|russia|trump|ukraine|israel|gaza|market|oil|price|attack|plan)\b/i;
-  return engHints.test(t) || (t.split(/\s+/).length > 4 && !hasPolish);
+  if (/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/.test(t)) return false;
+  return /\b(the|and|for|with|from|that|this|will|have|been|says|said|after|china|russia|trump|ukraine|israel|market|oil|price|attack|plan|billion|million|president|government|officials|announced|report|according)\b/i.test(t)
+    || (t.split(/\s+/).length >= 5 && !/[ąćęłńóśźż]/i.test(t));
 }
 
-function displayTitle(item) {
-  const t = getTitle(item.title);
-  let title = t.title;
-  // Jeśli wygląda na angielski – zostawiamy oryginał, ale oznaczamy spójnie
-  // (pełne tłumaczenie AI wymaga backendu; tu dbamy o spójność formatu)
-  return { emoji: t.emoji || '•', title };
+async function translateToPolish(text) {
+  const key = text.trim().toLowerCase();
+  if (titleCache[key]) return titleCache[key];
+
+  try {
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0, 500))}&langpair=en|pl`;
+    const res = await fetch(url);
+    const data = await res.json();
+    let translated = data?.responseData?.translatedText?.trim();
+    if (translated && translated.toLowerCase() !== text.toLowerCase() && !translated.includes('MYMEMORY')) {
+      // Mała kosmetyka – wielka litera na początku
+      translated = translated.charAt(0).toUpperCase() + translated.slice(1);
+      titleCache[key] = translated;
+      try { localStorage.setItem('swm-title-cache', JSON.stringify(titleCache)); } catch(e){}
+      return translated;
+    }
+  } catch (e) {
+    console.warn('Tłumaczenie nieudane', e);
+  }
+  return text;
 }
 
 function normalize(s) {
@@ -289,7 +300,6 @@ function toggleRead(x, ev) {
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
 
-/* Licznik tylko po pełnych newsach (news.json) */
 function updateProgress() {
   const total = newsItems.length;
   const read = newsItems.filter(x => isRead(x)).length;
@@ -300,7 +310,7 @@ function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e) { 
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const t = displayTitle(item);
+  const t = getTitle(item.title);
   const url = sourceLink(item);
   const title = t.title;
   const text = getSummary(item) || title;
@@ -325,13 +335,13 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-/* ========== Lista (60s + Pilne) ========== */
-function headlineRow(item) {
-  const t = displayTitle(item);
+/* ========== Wiersz listy (60s) ========== */
+function headlineRow(item, displayTitle, emoji) {
   const link = sourceLink(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
-  const isEn = looksEnglish(t.title);
+  const em = emoji || getTitle(item.title).emoji || '•';
+  const title = displayTitle || getTitle(item.title).title;
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b border-slate-100 last:border-0 dark:border-slate-800/70 ${read ? 'read' : ''}">
@@ -341,11 +351,8 @@ function headlineRow(item) {
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
          ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2">
-        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(t.emoji)}</span>
-        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">
-          ${escapeHtml(t.title)}
-          ${isEn ? '<span class="ml-1 text-[9px] font-medium text-slate-400">(EN)</span>' : ''}
-        </span>
+        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
+        <span class="title text-[14px] font-semibold leading-snug text-slate-900 dark:text-slate-100">${escapeHtml(title)}</span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
               class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-100 hover:text-amber-500 dark:hover:bg-slate-800 transition" 
@@ -353,9 +360,9 @@ function headlineRow(item) {
     </div>`;
 }
 
-/* ========== Pełna karta – summary w całości ========== */
+/* ========== Pełna karta – summary CAŁE ========== */
 function card(item) {
-  const t = displayTitle(item);
+  const t = getTitle(item.title);
   const img = imageOf(item);
   const link = sourceLink(item);
   const summary = getSummary(item);
@@ -363,7 +370,6 @@ function card(item) {
   const cat = category(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
-  const cardId = 'c-' + keyOf(item).slice(0, 24).replace(/\W/g, '');
 
   return `
     <article class="card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900 flex flex-col ${read ? 'read' : ''}">
@@ -384,16 +390,9 @@ function card(item) {
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="text-[15px] font-black leading-snug">${t.emoji && t.emoji !== '•' ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        <h3 class="text-[15px] font-black leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
         
-        ${summary ? `
-          <div class="mt-2">
-            <p id="${cardId}-short" class="text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary.length > 180 ? summary.slice(0, 180) + '…' : summary)}</p>
-            ${summary.length > 180 ? `
-              <p id="${cardId}-full" class="summary-full text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>
-              <button onclick="toggleSummary('${cardId}')" id="${cardId}-btn" class="mt-1 text-[11px] font-bold text-amber-600 hover:underline">Pokaż więcej</button>
-            ` : ''}
-          </div>` : ''}
+        ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300">${escapeHtml(summary)}</p>` : ''}
         
         ${comment ? `
           <div class="mt-2.5 rounded-xl bg-amber-50 p-2.5 text-xs dark:bg-amber-950/30">
@@ -409,33 +408,42 @@ function card(item) {
     </article>`;
 }
 
-function toggleSummary(id) {
-  const short = $(id + '-short');
-  const full = $(id + '-full');
-  const btn = $(id + '-btn');
-  if (!full) return;
-  const open = full.classList.toggle('open');
-  short.style.display = open ? 'none' : 'block';
-  btn.textContent = open ? 'Zwiń' : 'Pokaż więcej';
-}
-
 function funMini(item) {
-  const t = displayTitle(item);
+  const t = getTitle(item.title);
   return `
     <article class="rounded-xl border border-slate-200 bg-white p-2.5 dark:border-slate-800 dark:bg-slate-900">
       <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
-      <h3 class="line-clamp-3 text-sm font-extrabold">${t.emoji && t.emoji !== '•' ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+      <h3 class="text-sm font-extrabold leading-snug">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
     </article>`;
 }
 
-/* ========== Render ========== */
-function renderToday() {
-  // 60 sekund = News + raw_feed (unikalne)
+/* ========== 60 sekund z tłumaczeniem ========== */
+async function renderToday() {
   const items = uniqueByKey([...newsItems, ...rawFeedItems]);
-  $('headline-list').innerHTML = items.length 
-    ? items.map(headlineRow).join('') 
-    : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
   $('edition-time').textContent = `${items.length} tematów`;
+
+  // Najpierw pokaż oryginały (szybko)
+  $('headline-list').innerHTML = items.length
+    ? items.map(item => {
+        const t = getTitle(item.title);
+        return headlineRow(item, t.title, t.emoji || '•');
+      }).join('')
+    : '<div class="p-6 text-center text-sm text-slate-500">Brak wiadomości.</div>';
+
+  // Tłumacz angielskie tytuły równolegle
+  const translated = await Promise.all(items.map(async (item) => {
+    const t = getTitle(item.title);
+    let title = t.title;
+    if (isEnglishTitle(title)) {
+      title = await translateToPolish(title);
+    }
+    return { item, title, emoji: t.emoji || '•' };
+  }));
+
+  // Podmień listę na przetłumaczoną
+  $('headline-list').innerHTML = translated.map(({ item, title, emoji }) =>
+    headlineRow(item, title, emoji)
+  ).join('');
 
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);
@@ -444,8 +452,8 @@ function renderToday() {
 
 function renderAll() {
   const items = newsItems.slice(0, allShown);
-  $('all-grid').innerHTML = items.length 
-    ? items.map(card).join('') 
+  $('all-grid').innerHTML = items.length
+    ? items.map(card).join('')
     : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak wiadomości.</div>';
   $('all-more').classList.toggle('hidden', allShown >= newsItems.length);
 }
@@ -456,17 +464,16 @@ function loadMoreAll() {
 }
 
 function renderFast() {
-  // Pilne = fast.json + top 5 z News (unikalne)
   const topNews = newsItems.slice(0, 5);
   const items = uniqueByKey([...fastItems, ...topNews]);
-  $('breaking').innerHTML = items.length 
-    ? items.map(card).join('') 
+  $('breaking').innerHTML = items.length
+    ? items.map(card).join('')
     : '<div class="p-6 text-center text-sm text-slate-500">Brak pilnych wiadomości.</div>';
 }
 
 function renderFun() {
-  $('fun-grid').innerHTML = funItems.length 
-    ? funItems.map(card).join('') 
+  $('fun-grid').innerHTML = funItems.length
+    ? funItems.map(card).join('')
     : '<div class="col-span-full rounded-2xl border border-dashed border-slate-300 p-8 text-center text-sm text-slate-500">Brak ciekawostek.</div>';
 }
 
@@ -528,7 +535,10 @@ function search() {
   $('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-500">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
-      ${hits.slice(0, 30).map(headlineRow).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
+      ${hits.slice(0, 30).map(item => {
+        const t = getTitle(item.title);
+        return headlineRow(item, t.title, t.emoji || '•');
+      }).join('') || '<div class="p-4 text-sm text-slate-500">Nie znaleziono.</div>'}
     </div>`;
 }
 
@@ -604,7 +614,7 @@ async function init() {
     day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
   });
 
-  renderToday();
+  await renderToday();
   updateProgress();
   loadWidgets();
 }
