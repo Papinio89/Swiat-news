@@ -1,43 +1,43 @@
 {
-  "date": "25 września 2026",
-  "time": "14:16",
-  "timestamp": "2026-09-25_14:16",
+  "date": "26 września 2026",
+  "time": "07:59",
+  "timestamp": "2026-09-26_07:59",
   "items": [
     {
-      "category": "OBRONNOŚĆ / WOJNA W UKRAINIE",
-      "title": "🏗️ Podziemne fabryki dronów w Rosji",
-      "hook": "Moskwa przenosi produkcję kluczowych systemów bezzałogowych głęboko pod ziemię, by uchronić je przed ukraińskimi uderzeniami dalekiego zasięgu.",
-      "summary": "Rosyjski przemysł zbrojeniowy adaptuje się do ciągłego zagrożenia ze strony ukraińskich dronów i rakiet, budując schowane pod ziemią zakłady produkcyjne. Taka infrastruktura ma zapewnić nieprzerwane dostawy tanich dronów uderzeniowych na front bez ryzyka natychmiastowego zniszczenia horyzontalnych hal montażowych.",
-      "comment": "Przeniesienie produkcji pod ziemię zwiększa odporność rosyjskiego zaplecza, wymuszając na Kijowie zdobycie cięższej broni do niszczenia umocnionych celów.",
-      "question": "Czy zachodnie rakiety typu bunker-buster powinny natychmiast trafić na wyposażenie sił ukraińskich?",
-      "image_query": "underground bunker military",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/rosja-rozbudowuje-podziemna-fabryke-dronow-chce-sie-chronic-przed-ukrainskimi-atakami",
-      "image_url": "https://cdn.defence24.pl/2026/09/24/1920x1080px/NMAHxKCHckK1kbthrJVjYPLaTvgbBzRFCUpV0LjO.wtwk.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/24/1920x1080px/NMAHxKCHckK1kbthrJVjYPLaTvgbBzRFCUpV0LjO.wtwk.jpg"
+      "category": "OBRONNOŚĆ / USA",
+      "title": "🚀 Hipersoniczny F/A-18! USA podnoszą poprzeczkę",
+      "hook": "Amerykańskie lotnictwo pokładowe testuje nową broń, która całkowicie zmienia zasady walki na oceanach.",
+      "summary": "Pocisk hipersoniczny Blackbeard został po raz pierwszy dostrzeżony pod podwieszeniem myśliwca F/A-18 Super Hornet. To krok w stronę wyposażenia lotniskowców w broń zdolną razić cele z ogromną prędkością i przełamywać obronę antyrakietową wroga.",
+      "comment": "Szybka integracja hipersoników z istniejącą flotą Super Hornetów daje US Navy natychmiastowy skok zdolności bez czekania na nowe platformy.",
+      "question": "Czy myśliwce pokładowe z bronią hipersoniczną zdołają zneutralizować zagrożenie ze strony chińskiej floty na Pacyfiku?",
+      "image_query": "fighter jet missile",
+      "link": "https://www.twz.com/air/blackbeard-hypersonic-missile-seen-flying-on-f-a-18-super-hornet-for-the-first-time",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/blackbeard-hypersonic-super-hornet-flight-testing.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/blackbeard-hypersonic-super-hornet-flight-testing.jpg?w=1200"
     },
     {
-      "category": "GEOPOLITYKA / BLISKI WSCHÓD",
-      "title": "🇫🇷 Francuski żelazny parasol na Czerwonym",
-      "hook": "Francja wyśle siły wojskowe do ochrony saudyjskich szlaków naftowych przed rosnącym zagrożeniem na Morzu Czerwonym.",
-      "summary": "Paryż przejmuje inicjatywę w zabezpieczeniu kluczowych dla światowej gospodarki szlaków morskich łączących Azję i Europę. Misja ma obronić saudyjskie tankowce przed atakami Huti i ustabilizować rosnące ceny frachtu morskiego.",
-      "comment": "Macron wyraźnie buduje niezależną pozycję Francji jako strategicznego gwaranta bezpieczeństwa energii na Bliskim Wschodzie.",
-      "question": "Czy Europa powinna budować własne misje morskie, czy polegać wyłącznie na obecności US Navy?",
-      "image_query": "navy frigate escort",
-      "link": "https://www.defensenews.com/global/europe/2026/09/25/france-to-send-military-to-protect-saudi-arabia-on-red-sea-oil-route-macron-says/",
-      "image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/PSTJLSOQ45H7TMLNN7VAXQI5VE.jpg?width=1200&amp;auth=10688e7f6a9b71b55c3f6166ff51c7dd3979290f33adbc4820cb0e03203643e7",
-      "source_image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/PSTJLSOQ45H7TMLNN7VAXQI5VE.jpg?width=1200&amp;auth=10688e7f6a9b71b55c3f6166ff51c7dd3979290f33adbc4820cb0e03203643e7"
+      "category": "OBRONNOŚĆ / NATO",
+      "title": "💥 Łotwa kupuje tanie pociski manewrujące od Anduril",
+      "hook": "Ryga zamawia nowoczesne pociski Barracuda, by zamknąć lukę w zdolnościach rażenia dalekiego zasięgu.",
+      "summary": "Łotewskie siły zbrojne zdecydowały się na zakup pocisków manewrujących Barracuda produkowanych przez amerykański startup Anduril. Konstrukcja ta została zaprojektowana z myślą o masowej i taniej produkcji, co ma zapewnić państwom bałtyckim możliwość rażenia zaplecza wroga.",
+      "comment": "Masowa produkcja tanich pocisków manewrujących to klucz do nasycenia pola bitwy i efektywnego odstraszania na wschodniej flance NATO.",
+      "question": "Czy Polska i pozostałe kraje bałtyckie powinny inwestować w tanie pociski manewrujące nowej generacji zamiast drogiej broni konwencjonalnej?",
+      "image_query": "cruise missile launch",
+      "link": "https://www.twz.com/news-features/latvia-to-order-andurils-barracuda-cruise-missile-for-long-range-strike-capability",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/09/ANDURIL-BARRACUDA-500M-1.jpg?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/09/ANDURIL-BARRACUDA-500M-1.jpg?w=1200"
     },
     {
-      "category": "OBRONNOŚĆ / INDO-PACYFIK",
-      "title": "🛩️ F-35 debiutują na ćwiczeniach w Indiach",
-      "hook": "Amerykańskie myśliwce 5. generacji po raz pierwszy wezmą udział w wielonarodowych manewrach lotniczych na terenie Indii.",
-      "summary": "Wysyłając F-35 do Indii, Waszyngton daje jasny sygnał Pekinowi o zacieśnianiu relacji wojskowych z Nowym Delhi. Dla hinduskiego lotnictwa to unikalna okazja do przetestowania współdziałania z najnowocześniejszymi maszynami stealth w regionie.",
-      "comment": "Amerykanie konsekwentnie wciągają Indie w swoją orbitę technologiczną, podkopując tradycyjne pozycje rosyjskiego uzbrojenia w tym kraju.",
-      "question": "Czy Indie ostatecznie zdecydują się na zakup amerykańskich myśliwców F-35, odrzucając rosyjskie Su-57?",
-      "image_query": "f35 fighter jet",
-      "link": "https://www.defensenews.com/global/asia-pacific/2026/09/25/us-f-35-fighters-to-debut-in-indian-multinational-air-exercise/",
-      "image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/7HKDZ6ZBTNCZZK2VMGIYLF3K4U.jpg?width=1200&amp;auth=3fd005228367e96504bf32d9ff7e4734463bf8b60ea8ffcdf45280c0bf253e15",
-      "source_image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/7HKDZ6ZBTNCZZK2VMGIYLF3K4U.jpg?width=1200&amp;auth=3fd005228367e96504bf32d9ff7e4734463bf8b60ea8ffcdf45280c0bf253e15"
+      "category": "GEOPOLITYKA / AZJA",
+      "title": "🌊 Chiny blokują Filipiny na Morzu Południowochińskim",
+      "hook": "Chińska straż przybrzeżna i okręty wojenne uniemożliwiły filipińską misję zaopatrzeniową w rejonie Second Thomas Shoal.",
+      "summary": "Kilkadziesiąt chińskich jednostek odcięło drogę filipińskim statkom próbującym dostarczyć zapasy na stacjonujący na rafie okręt BRP Sierra Madre. Presja Pekinu stale rośnie, zwiększając ryzyko bezpośredniego incydentu z udziałem sił USA.",
+      "comment": "Pekin konsekwentnie stosuje taktykę szarej strefy, by bez wystrzału stopniowo przejmować kontrolę nad spornymi akwenami.",
+      "question": "Czy USA powinny bezpośrednio eskortować filipińskie konwoje, ryzykując otwarty konflikt z Chinami?",
+      "image_query": "warship ocean patrol",
+      "link": "https://news.usni.org/2026/09/25/chinese-cutters-warships-block-philippine-resupply-mission-to-second-thomas-shoal",
+      "image_url": "https://images.pexels.com/photos/13342949/pexels-photo-13342949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source_image_url": "https://images.pexels.com/photos/13342949/pexels-photo-13342949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
   ]
 }
