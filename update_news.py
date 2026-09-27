@@ -259,11 +259,11 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z BOGATYM KOMENTARZEM I DEDYKOWANYM POSTEM THREADS ---
+# --- PROMPT AI Z BEZKOMPROMISOWYM, DOSADNYM KOMENTARZEM ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje treści zdobywają wiralowe zasięgi, ponieważ łączysz twardą faktografię z błyskotliwą, trafną publicystyką, chłodnym realizmem i bezkompromisowym komentarzem.
+Twoje treści zdobywają wiralowe zasięgi, ponieważ jesteś dosadny, cyniczny, bezlitosny wobec hipokryzji polityków i korporacji oraz piszesz z potężnym pazurem.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
@@ -276,22 +276,29 @@ Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wia
    - DOKŁADNIE 2 POZYCJE (największe inwestycje, energetyka pod data centers, przełomy rynkowe).
 4. ZERO plotek, celebrytów i lifestyle'u.
 
-KLUCZOWE WYMAGANIA DOTYCZĄCE TREŚCI (ZADBAJ O WYSOKĄ JAKOŚĆ):
-- "title": [Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków].
+KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL (CZYTAJ UWAŻNIE):
+- "title": [Emotikona] [Konkretny, chwytliwy, prowokujący nagłówek do 60 znaków].
 - "hook": 1 dynamiczne zdanie uderzające w sedno (kontrast, paradoks lub kluczowy fakt).
-- "summary": 2 zwięzłe zdania czystych faktów i liczb na slajd (dane, spółki, kwoty, decyzje).
-- "comment": KRÓTKA, ZASKAKUJĄCA POINTA (DOKŁADNIE 1 ZDANIE):
-  * Komentarz na slajdzie MUSI BYĆ KRÓTSZY NIŻ SUMMARY!
-  * Zamiast długich wywodów, daj jedno ostre, cięte zdanie obnażające drugie dno, polityczny teatr lub brutalną rynkową prawdę. Z przymrużeniem oka lub analitycznym pazurem.
-  * Zakaz banałów („czas pokaże”, „kluczowy krok”).
+- "summary": 2 zwięzłe zdania czystych faktów, liczb i konkretów na slajd.
+
+- "comment": DOSADNY, CYNICZNY I ZASKAKUJĄCY KOMENTARZ (1-2 KRÓTKIE ZDANIA):
+  * KOMENTARZ MUSI BYĆ WIZUALNIE KRÓTSZY NIŻ SUMMARY!
+  * ZAKAZ SZTYWNEGO AKADEMICKIEGO GĘGANIA (typu: „Gdy w grę wchodzą zarzuty o cenzurę, big tech woli ulec presji”, „To kluczowy krok dla stabilności”, „Czas pokaże”).
+  * Pisz jak wkurzony, ale diabelnie inteligentny publicysta. Obnażaj hipokryzję, pieniądze pod stołem i to, jak cierpi na tym zwykły człowiek.
+  * WZORZEC IDEALNEGO KOMENTARZA:
+    - „Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.”
+    - „Gdy Twój majątek jest warty więcej w skupie złomu niż w banku, wiesz, że ekonomia oficjalnie zawiodła.”
+    - „Rząd obiecuje ulgi podatkowe, zapominając dodać, że najpierw zabierze dwa razy tyle tylnymi drzwiami.”
+    - „Wszyscy udają walkę o wolność słowa, dopóki na stole nie pojawią się kary finansowe i odpływ reklamodawców.”
+
 - "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
   * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
   * Układ:
     1. Nagłówek z emotikoną
-    2. Mocny, podwójny hook z flagami i wykrzyknikiem (np. „Front wkracza w decydującą fazę: Wilno w pełni podziela obawy Warszawy! ⚠️🇱🇹🇵🇱”)
+    2. Mocny, podwójny hook z flagami i wykrzyknikiem
     3. Rozszerzone tło wydarzenia z detalami, których NIE MA na slajdzie
-    4. Cięta pointa z dedykowanymi emotikonami (np. ❄️🛡️, 🌊⚓, 🛸🪖, 📊💸)
-    5. Prowokujące, unikalne pytanie do dyskusji kończące się „👇💬”
+    4. Cięta pointa z dedykowanymi emotikonami
+    5. Prowokujące pytanie do dyskusji kończące się „👇💬”
 - "question": 1 zróżnicowane, konkretne pytanie do dyskusji pod dany temat.
 - "image_query": 2-3 konkretne słowa kluczowe po angielsku do bazy zdjęć Pexels.
 
@@ -302,7 +309,7 @@ STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
     "summary": "2 zwięzłe zdania faktów na slajd.",
-    "comment": "1 krótkie, cięte zdanie z puentą (zawsze krótsze niż summary!).",
+    "comment": "1-2 cięte, dosadne zdania bezlitośnie obnażające hipokryzję (krótsze niż summary).",
     "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, unikalna względem summary).",
     "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
@@ -325,7 +332,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.45,
+            temperature=0.55,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -367,7 +374,7 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Rynek bezlitośnie weryfikuje polityczne obietnice, a rachunek zawsze płaci konsument.",
+                "comment": "Urzędnicy znowu zapewniają, że panują nad sytuacją, zapominając dodać, że rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
                 "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
@@ -429,4 +436,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z krótkim komentarzem i pełnymi postami Threads.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów z bezkompromisowym, dosadnym komentarzem.")
