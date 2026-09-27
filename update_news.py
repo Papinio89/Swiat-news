@@ -106,7 +106,7 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "business news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 20 or len(comment) < 25 or len(threads_post) < 80:
+        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 80:
             continue
 
         valid.append({
@@ -280,10 +280,10 @@ KLUCZOWE WYMAGANIA DOTYCZĄCE TREŚCI (ZADBAJ O WYSOKĄ JAKOŚĆ):
 - "title": [Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków].
 - "hook": 1 dynamiczne zdanie uderzające w sedno (kontrast, paradoks lub kluczowy fakt).
 - "summary": 2 zwięzłe zdania czystych faktów i liczb na slajd (dane, spółki, kwoty, decyzje).
-- "comment": BOGATY, TRAFNY I CIĘTY KOMENTARZ PUBLICYSTYCZNY (2-3 ZDANIA):
-  * Kategoryczny zakaz jednozdaniowych ogólników typu „czas pokaże”, „to kluczowy krok”, „wpłynie to na sytuację”.
-  * Pokaż strategiczne tło, drugie dno decyzji, obnaż polityczny teatr lub wskaż bezpośrednie konsekwencje dla rynków, budżetu i portfeli obywateli. 
-  * Ma brzmieć jak najlepszy komentarz doświadczonego analityka gospodarczego lub geopolitycznego – z pazurem, realizmem i trafną puentą.
+- "comment": KRÓTKA, ZASKAKUJĄCA POINTA (DOKŁADNIE 1 ZDANIE):
+  * Komentarz na slajdzie MUSI BYĆ KRÓTSZY NIŻ SUMMARY!
+  * Zamiast długich wywodów, daj jedno ostre, cięte zdanie obnażające drugie dno, polityczny teatr lub brutalną rynkową prawdę. Z przymrużeniem oka lub analitycznym pazurem.
+  * Zakaz banałów („czas pokaże”, „kluczowy krok”).
 - "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
   * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
   * Układ:
@@ -302,7 +302,7 @@ STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
     "summary": "2 zwięzłe zdania faktów na slajd.",
-    "comment": "2-3 zdania głębokiego, celnego komentarza analitycznego z pazurem.",
+    "comment": "1 krótkie, cięte zdanie z puentą (zawsze krótsze niż summary!).",
     "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, unikalna względem summary).",
     "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
@@ -367,7 +367,7 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Zamiast uspokajających deklaracji liczą się twarde liczby w arkuszu. Rynki bezlitośnie weryfikują polityczne zapowiedzi, a koszt zaniechań natychmiast uderzy w rentowności obligacji i portfele konsumentów.",
+                "comment": "Rynek bezlitośnie weryfikuje polityczne obietnice, a rachunek zawsze płaci konsument.",
                 "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
@@ -429,4 +429,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z bogatym komentarzem i pełnymi postami Threads.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów z krótkim komentarzem i pełnymi postami Threads.")
