@@ -1,87 +1,87 @@
 {
-  "date": "26 września 2026",
-  "time": "11:28",
-  "timestamp": "2026-09-26_11:28",
+  "date": "27 września 2026",
+  "time": "10:03",
+  "timestamp": "2026-09-27_10:03",
   "items": [
     {
+      "category": "ZWIERZAKI",
+      "title": "🦝 Szop pracz zdemolował sklep i padł",
+      "summary": "Wczoraj w USA szop pracz włamał się w nocy do sklepu z alkoholem, wybił kilkanaście butelek drogiego burbona i wypił plamę z podłogi. Pracownicy znaleźli go rano leżącego bezprzytomnie obok pustej kasety na pieniądze.",
+      "comment": "Gość po prostu zrealizował typowy polski plan na piątkowy wieczór, tylko bez płacenia.",
+      "image_query": "funny raccoon alcohol",
+      "link": "https://www.mentalfloss.com/animals/cryptids-that-turned-out-to-be-real",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🧀 Skradziono 22 tony sera Cheddar!",
+      "summary": "W Londynie doszło do zuchwałej kradzieży ekskluzywnego sera o wartości ponad 300 tysięcy funtów. Złodzieje podszyli się pod hurtowego dystrybutora i wywieźli ser ciężarówkami, nie zostawiając żadnych śladów.",
+      "comment": "Policja szuka sprawców, ale z takim zapasem to oni teraz robią największe zapiekanki w historii świata.",
+      "image_query": "giant cheese block",
+      "link": "https://www.mentalfloss.com/quizzes/pass-4th-grade-science-today-take-quiz",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg"
+    },
+    {
+      "category": "ZWIERZAKI",
+      "title": "🦜 Papuga wyzywała strażaków",
+      "summary": "Strażacy zostali wezwani na pomoc papudze, która utknęła na dachu i nie chciała zejść przez 3 dni. Gdy ratownik wszedł na drabinę z jedzeniem, ptak krzyknął do niego „Spieprzaj!” i odleciał na sąsiednie drzewo.",
+      "comment": "Prawdziwy wzór asertywności – wolała umrzeć z głodu niż rozmawiać z obcym facetem w mundurze.",
+      "image_query": "angry parrot roof",
+      "link": "https://www.mentalfloss.com/animals/cryptids-that-turned-out-to-be-real",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🤖 AI wygrało konkurs poetycki",
+      "summary": "Mężczyzna wygrał lokalny turniej poetycki, zgłaszając tekst wygenerowany w 5 sekund przez sztuczną inteligencję. Baza jury oceniła go jako „głęboko poruszający i czysto ludzki manifest cierpienia”.",
+      "comment": "Wystarczyło zmiksować słowa „mrok”, „deszcz” i „pustka”, żeby oszukać ludzi z dyplomami z polonistyki.",
+      "image_query": "robot writing poem",
+      "link": "https://www.mentalfloss.com/quizzes/pass-4th-grade-science-today-take-quiz",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg"
+    },
+    {
       "category": "BEKA Z NAUKI",
-      "title": "🌮 Słowa po hiszpańsku, które mówisz co dzień",
-      "summary": "Myślisz, że nie znasz hiszpańskiego? Słowa takie jak „macho”, „vanilla” czy „rodeo” weszły do naszego słownika tak po cichu, że używasz ich bez wiedzy o ich pochodzeniu. Co ciekawe, słowo „vanilla” pochodzi bezpośrednio od hiszpańskiego słowa oznaczającego „małą pochwę” ze względu na specyficzny kształt strąka wanilii.",
-      "comment": "To wyjaśnia, dlaczego zamawianie lodów waniliowych zawsze brzmi odrobinę niezręcznie w głowie językoznawcy.",
-      "image_query": "vanilla pod plant",
-      "link": "https://www.mentalfloss.com/language/words/spanish-words-you-use-every-day",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_67,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3akmm6k8kc1zjmxtn.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_67,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3akmm6k8kc1zjmxtn.jpg"
+      "title": "🧪 Test z 4 klasy zagina dorosłych",
+      "summary": "Z badań wynika, że ponad 60% dorosłych z wyższym wykształceniem oblałoby dzisiejszy test z przyrody dla czwartoklasistów. Największe problemy sprawiają pytania o cykl wody w przyrodzie oraz odróżnienie minerału od skały.",
+      "comment": "Całe szczęście, że w dorosłym życiu wystarczy wiedzieć, jak włączyć ekspres do kawy i udawać, że się pracuje.",
+      "image_query": "confused adult test",
+      "link": "https://www.mentalfloss.com/quizzes/pass-4th-grade-science-today-take-quiz",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg"
     },
     {
-      "category": "POPKULTURA",
-      "title": "🍸 Wszystkie ekranizacje Wielkiego Gatsby’ego",
-      "summary": "Powieść „Wielki Gatsby” przenoszono na ekran aż 5 razy, ale pierwsza wersja z 1926 roku została bezpowrotnie utracona i przetrwał z niej zaledwie minutowy zwiastun. Z kolei superprodukcja z Leonardo DiCaprio z 2013 roku zdobyła tylko 48% ocen na Rotten Tomatoes, przegrywając w zestawieniach z niemym czarno-białym klasykiem.",
-      "comment": "Wygląda na to, że uniesiony kieliszek szampana Leo nie wystarczył, by przekonać krytyków do odrobienia lekcji z lektur.",
-      "image_query": "gatsby party 1920s",
-      "link": "https://www.mentalfloss.com/entertainment/movies/great-gatsby-movies-ranked-rotten-tomatoes",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3000,h_1687/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nx07tjpmdk1ajy5v.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3000,h_1687/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2nx07tjpmdk1ajy5v.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🍬 Wojny cukierkowe na Halloween w USA",
-      "summary": "Amerykanie wydadzą w tym roku astronomiczne 3,6 miliarda dolarów na same słodycze halloweenowe. Z opublikowanych map wynika, że w niektórych stanach wciąż wygrywa kontrowersyjny Candy Corn, chociaż ponad 80% badanych deklaruje, że smakuje on jak aromatyzowany wosk ze świecy.",
-      "comment": "Zjadanie świeczek w cenie steku to najwyższy znany nauce poziom poświęcenia dla podtrzymania tradycji.",
-      "image_query": "halloween candy map",
-      "link": "https://www.mentalfloss.com/geography/maps/most-popular-halloween-candy-in-each-state-2026-map",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1399,h_786/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37w6s6nzqzz07tz6k.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1399,h_786/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37w6s6nzqzz07tz6k.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🌕 Pełnia Księżyca Żniwiarzy i jej absurd",
-      "summary": "Tegoroczny Harvest Moon to zjawisko, podczas którego Księżyc wschodzi niemal tuż po zachodzie słońca, dając rolnikom dawniej kilka dodatkowych godzin światła. Dzisiaj ludzie wykorzystują ten astronomiczny fenomen głównie do „ładowania kryształów” na parapetach i tłumaczenia swoich dziwnych decyzji życiowych.",
-      "comment": "Nareszcie mam oficjalną wymówkę: to nie ja spłukałem się na wyprzedażach, to grawitacja Księżyca pociągnęła moją kartę.",
-      "image_query": "full harvest moon",
-      "link": "https://www.mentalfloss.com/culture/folklore-mythology/spiritual-meaning-harvest-moon",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_4,y_0,w_996,h_560/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37gwr2v5j7xzzb71k.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_4,y_0,w_996,h_560/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37gwr2v5j7xzzb71k.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🇳🇱 Bar przecięty granicą dwóch państw",
-      "summary": "W miasteczku Baarle linia państwowa między Holandią a Belgią przechodzi przez środki domów, sklepów i kawiarni. Przesunięcie krzesła o pół metra w lokalnej restauracji sprawia, że zaczynają cię obowiązywać zupełnie inne zasady podatkowe oraz inne godziny zamknięcia lokalu.",
-      "comment": "Wyobraź sobie minę kelnera, który musi zmienić prawo pracy i walutę w drodze z kuchni do stolika numer cztery.",
-      "image_query": "baarle border line",
-      "link": "https://www.mentalfloss.com/geography/wanderlust/most-unusual-borders-around-the-world",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_360,w_3456,h_1944/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m37ptd20qtm04k7erb.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_360,w_3456,h_1944/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m37ptd20qtm04k7erb.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "🎬 Szalona historia za nowym filmem Pattinsona",
-      "summary": "Nadchodzący thriller Roberta Pattinsona „Primetime” bazuje na autentycznym artykule prasowym z 2007 roku o kulisach kontrowersyjnego show „To Catch a Predator”. Dziennikarze śledczy udawali w sieci nieletnich, co doprowadziło do zatrzymania ponad 300 osób przed kamerami w telewizji na żywo.",
-      "comment": "Reality show w XXI wieku przeszło drogę od płaczących tancerzy do aresztowań w czasie antenowym bez przerwy na reklamę.",
-      "image_query": "pattinson camera set",
-      "link": "https://www.mentalfloss.com/entertainment/movies/magazine-story-behind-robert-pattinson-primetime",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3838,h_2158/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cqknh54tf51xnkw1.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3838,h_2158/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cqknh54tf51xnkw1.jpg"
+      "category": "BEKA Z NAUKI",
+      "title": "🦑 Mityczny Kraken istnieje naprawdę",
+      "summary": "Przez stulecia żeglarze opowiadali o Krakenie – gigantycznym potworze morskim zatapiającym statki. Naukowcy uważali to za pijackie bajki, dopóki na brzeg nie wyrzuciło kałamarnicy olbrzymiej o długości 13 metrów.",
+      "comment": "Morał jest prosty: jeśli spity marynarz w karczmie twierdzi, że widział potwora, to lepiej nie wchodź do wody.",
+      "image_query": "giant squid ocean",
+      "link": "https://www.mentalfloss.com/animals/cryptids-that-turned-out-to-be-real",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d46cfc93pvardnxg.jpg"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "💣 Genialny matematyk z chatki w lesie",
-      "summary": "Ted Kaczynski dostał się na Harvard w wieku 16 lat i legitymował się IQ na poziomie 167, ale po latach odrzucił cywilizację i zamieszkał w drewutni bez prądu. FBI tropiło go przez 17 lat i wpadł tylko dlatego, że jego własny brat rozpoznał unikalny styl pisania w 35-tysięcznym manifeście opublikowanym w gazecie.",
-      "comment": "Gdy twój własny brat robi ci najgorszy fakt-checking w historii i wysyła do ciebie jednostkę SWAT.",
-      "image_query": "wooden cabin forest",
-      "link": "https://www.mentalfloss.com/crime/unabomber-facts",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_220,y_539,w_4607,h_2591/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m35f0jq64nyv61zj5b.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_220,y_539,w_4607,h_2591/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m35f0jq64nyv61zj5b.jpg"
+      "title": "📞 Brutalne zasady telefonu stacjonarnego",
+      "summary": "W latach 80. i 90. telefon stacjonarny w domu wymagał przejścia skomplikowanego protokołu społecznego. Musiałeś najpierw znieść przesłuchanie ojca swojej sympatii, zanim w ogóle dostałeś ją do telefonu na 3 minuty.",
+      "comment": "Dzisiejsze pokolenie dostaje ataku paniki na widok nieznanego numeru, a my negocjowaliśmy z teściem bez widzenia go na oczy.",
+      "image_query": "retro telephone 80s",
+      "link": "https://www.mentalfloss.com/nostalgia/80s/social-rules-family-landline-forced-everyone-learn",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4308,h_2423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2hr002kynx8619hat.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4308,h_2423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2hr002kynx8619hat.jpg"
     },
     {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🍿 Ewolucja cen kina i popcornowy rabunek",
-      "summary": "Historyczne zestawienia cen pokazują, jak koszty wyjścia na seans poszybowały w kosmos, ale prawdziwym hitem jest marża na kinowym popcornie sięgająca obecnie 1275%. W efekcie zestaw przekąsek kosztuje dzisiaj więcej niż budżet produkcyjny niejednego filmu niezależnego.",
-      "comment": "Kupując dużą colę i prażoną kukurydzę, czujesz się, jakbyś dokładał się bezpośrednio do gaży głównego aktora.",
-      "image_query": "cinema popcorn bucket",
-      "link": "https://www.mentalfloss.com/entertainment/movies/how-much-movie-ticket-cost-year-you-were-born",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37wbqn5brajre84ss.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m37wbqn5brajre84ss.jpg"
+      "category": "POPKULTURA",
+      "title": "📚 Mroczne tło klasyków literatury",
+      "summary": "Wiele jesiennych klasyków literatury, takich jak „Wichrowe Wzgórza”, powstawało w potwornych warunkach zimna i braku światła. Autorki pisały je przy świecach w zamarzających izbach, co tłumaczy gęsty, dołujący klimat tych powieści.",
+      "comment": "Kiedy Twoje mieszkanie nie ma ogrzewania, napisanie historii o duchach i depresji wychodzi całkowicie naturalnie.",
+      "image_query": "old book fireplace",
+      "link": "https://www.mentalfloss.com/literature/books/classic-novels-perfect-autumn-read",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cx0f1nsxdkvrfhse.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cx0f1nsxdkvrfhse.jpg"
     }
   ]
 }
