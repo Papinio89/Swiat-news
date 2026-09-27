@@ -4970,5 +4970,142 @@
         "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DCD_2026-09-26_Prince.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200"
       }
     ]
+  },
+  "2026-09-27_wieczorne": {
+    "date": "27 września 2026",
+    "time": "15:24",
+    "timestamp": "2026-09-27_15:24",
+    "items": [
+      {
+        "category": "POLSKA",
+        "title": "💸 Rekordowe świadczenia w ZUS",
+        "hook": "Podczas gdy zwykły emeryt przelicza grosze na leki, byli politycy pobierają kilkudziesięciotysięczne pensje z państwowej kasy.",
+        "summary": "Hanna Gronkiewicz-Waltz po osiągnięciu wieku emerytalnego otrzyma drugie świadczenie, a jej łączna emerytura przekroczy 20 tysięcy złotych miesięcznie. Wysokość wypłat wynika z wieloletniego łączenia funkcji w Narodowym Banku Polskim, UE oraz na uczelni.",
+        "comment": "System emerytalny jest niewydolny tylko dla tych, którzy na niego pracują, a nie dla tych, którzy go tworzą.",
+        "threads_post": "💸 Rekordowe wypłaty dla politycznej elity! 🇵🇱💥\n\nPodczas gdy przeciętny senior zastanawia się, czy wykupić receptę, czy zapłacić rachunek za gaz, ZUS wylicza kolejne rekordowe wypłaty dla byłych urzędników państwowych.\n\nHanna Gronkiewicz-Waltz dostanie drugie świadczenie emerytalne, co wyśrubuje jej miesięczną pensję z ZUS do poziomu ponad 20 tysięcy złotych. Wszystko dzięki łączeniu przez dekady stanowisk w NBP, europarlamencie i na uniwersytecie, co pozwoliło uzbierać astronomiczny kapitał.\n\nZwykły obywatel słyszy o głodowych emeryturach i konieczności pracy do śmierci, ale system okazuje się wyjątkowo hojny dla wybranych.\n\nCzy państwowe emerytury powinny mieć ustawowy limit dla byłych polityków? 👇💬",
+        "question": "Czy maksymalna wysokość emerytury wypłacanej z ZUS powinna zostać ustawowo ograniczona?",
+        "image_query": "pension money cash",
+        "link": "https://www.money.pl/emerytury/ponad-20-tys-zl-emerytury-z-zus-gronkiewicz-waltz-dostanie-drugie-swiadczenie-7333948122925312a.html",
+        "image_url": "https://images.pexels.com/photos/32975306/pexels-photo-32975306.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/ZDFhNDMwdSUnCjh3Ygx4MGRSbC0kVXZmM0p0ZmJGaXd1EHZ8elg8LSoNPCE9GHQjNB0-JToHdDQqRy80JFgsdWkMJzc9Gzs9aQ0jJigTdXZ-DC1xekU5aXYMLXdgQ2J9dEV2dnQVdyd3XCp1LENpdHNeLGYw"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🛍️ Zagraniczne miliardy w Polsce",
+        "hook": "Zagraniczni turyści i pracownicy zostawiają w polskich sklepach rekordowe kwoty, ratując krajowe statystyki handlowe.",
+        "summary": "Wydatki cudzoziemców w Polsce wzrosły o kilkanaście procent rok do roku, osiągając wartość wielomiliardową. Największy udział w zakupach przygranicznych i konsumpcji mają obywatele państw sąsiednich.",
+        "comment": "Polakom brakuje do pierwszego, ale zagraniczny kapitał ratuje statystyki handlowe rządowych analityków.",
+        "threads_post": "🛍️ Rekordowe wydatki obcokrajowców w Polsce! 🇵🇱💰\n\nKiedy polski konsument zaciska pasa z powodu drożyzny, zagraniczne portfele pompują miliardy w nasz rodzimy handel i usługi.\n\nNajnowsze dane pokazują gwałtowny wzrost wydatków cudzoziemców na terenie Polski, szczególnie w rejonach przygranicznych. Turyści i pracownicy z zagranicy zostawiają u nas miliardy złotych, kupując żywność, paliwo i usługi, które za granicą są znacznie droższe.\n\nTo bezlitośnie obnaża różnice w zamożności – Polska staje się tanim marketem dla sąsiadów, podczas gdy dla nas ceny wciąż pozostają wygórowane.\n\nCzy wzrost wydatków cudzoziemców zatrzyma rosnące ceny w polskich sklepach? 👇💬",
+        "question": "Czy wysokie wydatki obcokrajowców w Polsce pomogą powstrzymać wzrost cen w sklepach?",
+        "image_query": "shopping retail money",
+        "link": "https://www.bankier.pl/wiadomosc/Cudzoziemcy-wydali-miliardy-Polska-przyciaga-zagraniczne-portfele-9202029.html",
+        "image_url": "https://images.pexels.com/photos/6720588/pexels-photo-6720588.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/4/d/43025a28945235-948-568-0-247-2400-1440.jpg"
+      },
+      {
+        "category": "BIZNES",
+        "title": "🏭 Klęska europejskich chipów",
+        "hook": "Europa marzy o technologicznej niezależności, ale biurokracja w Brukseli skutecznie blokuje kluczowe inwestycje.",
+        "summary": "Unijny program Chips Act 2.0 utknął w procedurach legislacyjnych, co opóźnia budowę nowoczesnych fabryk półprzewodników na Starym Kontynencie. W tym samym czasie Azja i USA przeznaczają setki miliardów dolarów na dotacje dla własnych gigantów.",
+        "comment": "Urzędnicy w Unii potrafią sprawnie uchwalać dyrektywy, dopóki nie trzeba stworzyć czegoś, co realnie działa na rynku.",
+        "threads_post": "🏭 Europa zostaje w tyle za USA i Azją w wyścigu o chipy! 🇪🇺📉\n\nAmbitne plany budowy niezależnego przemysłu półprzewodników w Unii Europejskiej zderzają się z brutalną rzeczywistością brukselskiej biurokracji.\n\nProgram Chips Act 2.0 opóźnia się o kolejne miesiące przez spory o finansowanie i regulacje, podczas gdy Waszyngton i Pekin zasypują swoje rodzime firmy setkami miliardów dolarów. Zamiast budować nowoczesne fabryki, Unia tworzy kolejne komitety i analizy.\n\nBez własnych mikroprocesorów europejski przemysł motoryzacyjny i technologiczny pozostanie jedynie uzależnionym klientem światowych potęg.\n\nCzy UE jest w stanie konkurować z USA i Chinami bez zmiany biurokratycznego systemu? 👇💬",
+        "question": "Czy Europa ma jeszcze szansę zredukować technologiczną zależność od USA i Azji?",
+        "image_query": "microchip semiconductor factory",
+        "link": "https://www.bankier.pl/wiadomosc/Europa-na-lasce-Azji-i-USA-Chips-Act-2-0-slimaczy-sie-w-Brukseli-9203319.html",
+        "image_url": "https://images.pexels.com/photos/5554948/pexels-photo-5554948.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/b/3/4788ab62f74afc-948-568-74-627-3369-2021.jpg"
+      },
+      {
+        "category": "GEOPOLITYKA",
+        "title": "🤝 Kruchy rozejm gigantów",
+        "hook": "Waszyngton i Pekin przedłużają porozumienie handlowe, lecz kluczowe cła i sankcje wciąż pozostają w mocy.",
+        "summary": "Stany Zjednoczone i Chiny uzgodniły kontynuację tymczasowego rozejmu handlowego, unikając natychmiastowej eskalacji ceł. Przemysł krytykuje jednak brak rozstrzygnięć w kwestii dostępu do metali ziem rzadkich i technologii.",
+        "comment": "Szumne deklaracje o pokoju handlowym służą jedynie uspokojeniu giełd przed kolejną rundą cichego podgryzania.",
+        "threads_post": "🤝 USA i Chiny odraczają wojnę handlową! 🇺🇸🇨🇳\n\nSupermocarstwa podpisały przedłużenie rozejmu, ale pod powierzchnią politycznego kompromisu aż wrzy od nierozwiązanych konfliktów.\n\nPorozumienie zapobiega natychmiastowemu nałożeniu nowych gigantycznych ceł, lecz zachowuje dotychczasowe restrykcje nałożone na zaawansowaną technologię i surowce strategiczne. Przedsiębiorcy wskazują, że brak trwałego układu uniemożliwia długoterminowe planowanie inwestycji.\n\nTo tylko chwilowa pauza w brutalnym starciu o gospodarczą dominację nad światem.\n\nCzy wierzycie w trwały kompromis gospodarczy między USA a Chinami? 👇💬",
+        "question": "Czy obecny rozejm handlowy między USA a Chinami przeobrazi się w trwałe porozumienie?",
+        "image_query": "container ship trade",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVE1KRVowMmx4aEZrZklDc1ZOdGI2d1dSclNTX1c1c2FkYmQwQ3A1ZjU5RzAxaFdwOUhDc0VuS2poRGRZZklUazdHdFl0QUlJTkN5bVA2V1lXcWpPSnVOUUUtYXVmdldqRTlzUUFLUnoybDZXVXEtczgwM2VDbzlLMjVzVi1RR1E1NVkxUllVUXZlZ2dUMHlrbzdJVkduNHdHbi0yOF91TVVwbnBKQnJJZDIyUVNDQVNf?oc=5",
+        "image_url": "https://images.pexels.com/photos/24246926/pexels-photo-24246926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/24246926/pexels-photo-24246926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "BIZNES",
+        "title": "🍏 Rekordowa kara dla Apple",
+        "hook": "Gigant z Cupertino musi zapłacić miliardy dolarów za bezprawne wykorzystanie technologii haptycznej w swoich urządzeniach.",
+        "summary": "Sąd wydał wyrok nakazujący Apple zapłatę 5,7 miliarda dolarów odszkodowania za naruszenie patentów związanych z wibracjami i reakcją dotykową. Decyzja ta stanowi jedną z największych kar w historii branży technologicznej.",
+        "comment": "W świecie Big Techu łatwiej ukraść cudzy patent i płacić prawnikom przez dekadę niż od razu uczciwie kupić licencję.",
+        "threads_post": "🍏 Gigant z Cupertino ukarany na 5,7 miliarda dolarów! 🇺🇸⚖️\n\nSąd nie miał litości dla Apple w sporze patentowym dotyczącym technologii wibracji i reakcji dotykowej stosowanej w iPhone’ach.\n\nFirma została zobowiązana do zapłaty kosmicznej kwoty 5,7 miliarda dolarów odszkodowania na rzecz właściciela patentów. Sędziowie uznali, że Apple celowo i długofalowo wykorzystywało cudzą własność intelektualną bez uiszczania opłat licencyjnych.\n\nDla koncernu o miliardowych zyskach to bolesny cios w wizerunek i dowód na to, że nawet korporacyjni giganci nie są ponad prawem.\n\nCzy korporacje technologiczne powszechnie żerują na mniejszych innowatorach? 👇💬",
+        "question": "Czy astronomiczne kary finansowe zmienią podejście gigantów technologicznych do praw autorskich?",
+        "image_query": "apple smartphone court",
+        "link": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents",
+        "image_url": "https://images.pexels.com/photos/13844013/pexels-photo-13844013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268738_Apple_Watch_Series_12_AKrales_0277.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200"
+      },
+      {
+        "category": "BIZNES",
+        "title": "📱 TikTok płaci milionową ugodę",
+        "hook": "Chiński gigant społecznościowy wykłada gotówkę, by uniknąć procesu o wyciąganie danych i wpływ na młodzież.",
+        "summary": "TikTok zgodził się zapłacić co najmniej 100 milionów dolarów w ramach ugody sądowej w stanie Alabama. Pozew dotyczył negatywnego wpływu algorytmów na zdrowie psychiczne nieletnich oraz naruszeń prywatności.",
+        "comment": "Koszt niszczenia psychiki dzieci to dla korporacji zaledwie drobiny wpisane w stały budżet reprezentacyjny.",
+        "threads_post": "📱 TikTok wyciąga portfel i płaci 100 milionów dolarów ugody! 🇺🇸💰\n\nAplikacja woli zapłacić ogromne odszkodowanie w stanie Alabama, niż otworzyć swoje tajne algorytmy przed ławą przysięgłych.\n\nSprawa dotyczyła uzależniającego mechanizmu podsuwania treści i braku wystarczającej ochrony danych osobowych niepełnoletnich użytkowników. Decyzja o ugodzie pozwala TikTokowi uniknąć publicznego procesu, który ujawniłby wewnętrzne praktyki firmy.\n\nDla firmy osiągającej miliardowe przychody z reklam taki wydatek to jedynie drobny koszt prowadzenia interesów.\n\nCzy ugody finansowe rozwiązują problem szkodliwości algorytmów w mediach społecznościowych? 👇💬",
+        "question": "Czy giganci społecznościowi powinni ponosić odpowiedzialność karną za wpływ algorytmów na dzieci?",
+        "image_query": "tiktok smartphone money",
+        "link": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
+        "image_url": "https://images.pexels.com/photos/13797847/pexels-photo-13797847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2026/03/tiktok-icon-badged-GettyImages-2246518404.jpg?resize=1200,795"
+      },
+      {
+        "category": "TECHNOLOGIE",
+        "title": "🖥️ Wall Street boi się data centers",
+        "hook": "Inwestorzy wpompowali miliardy w serwerownie pod AI, ale teraz żądają twardych dowodów na opłacalność.",
+        "summary": "Analitycy finansowi wyrażają rosnący sceptycyzm wobec olbrzymich nakładów inwestycyjnych na budowę nowych centrów danych dla AI. Rynek obawia się, że przychody z usług AI nie pokryją rosnących kosztów infrastruktury i energii.",
+        "comment": "Giełda uświadomiła sobie, że same obietnice cyfrowej rewolucji nie zapłacą rachunków za prąd z elektrowni.",
+        "threads_post": "🖥️ Wall Street zaczyna panikować przez centra danych dla AI! 🇺🇸📉\n\nPo miesiącach ślepego zachwytu technologią AI, analitycy finansowi wreszcie zaczynają liczyć realne koszty budowy gigantycznych serwerowni.\n\nWymagania energetyczne i sprzętowe nowych centrów danych rosną w zastraszającym tempie, pochłaniając dziesiątki miliardów dolarów. Problem w tym, że komercyjne przychody z aplikacji sztucznej inteligencji wciąż pozostają daleko w tyle za wydatkami na infrastrukturę.\n\nInwestorzy obawiają się, że mamy do czynienia z bańką inwestycyjną, która zderzy się z twardą ścianą opłacalności.\n\nCzy zachwyt nad AI doprowadzi do pęknięcia bańki w sektorze technologicznym? 👇💬",
+        "question": "Czy inwestycje w infrastrukturę pod AI przyniosą oczekiwane zyski inwestorom na giełdzie?",
+        "image_query": "data center servers",
+        "link": "https://www.bloomberg.com/news/videos/2026-09-27/data-center-boom-faces-wall-street-skepticism-video",
+        "image_url": "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/37730212/pexels-photo-37730212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "AI",
+        "title": "📊 Skrajne emocje na akcjach AI",
+        "hook": "Wall Street miota się między chciwością a strachem, powodując gwałtowne wahania wycen spółek technologicznych.",
+        "summary": "Akcje firm rozwijających sztuczną inteligencję doświadczają drastycznych skoków i spadków wartości z powodu zmiennych nastrojów inwestorów. Zmiany ocen analityków natychmiast przekładają się na wahania rynkowe rzędu setek miliardów dolarów.",
+        "comment": "Sektor technologiczny przypomina dziś kasyno, w którym wycenami steruje panika i brak twardych fundamentów.",
+        "threads_post": "📊 Szalone wahania cen akcji w sektorze AI! 🇺🇸📈\n\nSentyment rynkowy na Wall Street przeskakuje ze skrajnego strachu do ślepej chciwości w zaledwie kilka godzin.\n\nWyceny spółek zajmujących się sztuczną inteligencją podlegają ogromnej zmienności, reagując panicznie na każde doniesienie o kosztach lub regulacjach. Jednego dnia inwestorzy masowo wyprzedają papiery w obawie przed korektą, by drugiego dnia kupować je na pniu po huraoptymistycznych raportach.\n\nTaka niestabilność wskazuje na brak dojrzałości rynku i ogromne spekulacyjne napięcie na spółkach z branży AI.\n\nCzy inwestowanie w spółki AI na obecnym etapie to ciągle szansa czy już hazard? 👇💬",
+        "question": "Czy tak duża zmienność wycen spółek AI zagraża stabilności rynków finansowych?",
+        "image_query": "stock market chart trading",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-27/ai-whiplash-jolts-stocks-as-sentiment-lurches-from-fear-to-greed",
+        "image_url": "https://images.pexels.com/photos/16594725/pexels-photo-16594725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/16594725/pexels-photo-16594725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🇨🇭 Koniec szwajcarskiej neutralności?",
+        "hook": "Obywatele Szwajcarii decydują w referendum o zacieśnieniu współpracy wojskowej z NATO i nakładaniu sankcji.",
+        "summary": "W Szwajcarii trwa kluczowe głosowanie, które może formalnie przedefiniować historyczną neutralność tego państwa. Ewentualne zmiany pozwolą na pełniejsze uczestnictwo w ćwiczeniach wojskowych NATO oraz sprawniejsze dołączanie do sankcji gospodarczych.",
+        "comment": "Wojna w Europie sprawiła, że nawet szwajcarskie banki zrozumiały, iż udawanie ślepego przestało się opłacać.",
+        "threads_post": "🇨🇭 Szwajcaria stoi przed przełomowym referendum wojskowym! 🇨🇭🛡️\n\nSetki lat absolutnej neutralności mogą wkrótce przejść do historii z powodu zmian w europejskiej architekturze bezpieczeństwa.\n\nSzwajcarzy głosują nad nową definicją polityki zagranicznej, która otwiera drogę do ścisłej koordynacji obronnej z NATO oraz automatycznego przyłączania się do międzynarodowych sankcji. Zwolennicy wskazują na konieczność Sojuszu w obliczu zagrożenia ze strony Rosji, podczas gdy przeciwnicy ostrzegają przed utratą tożsamości.\n\nTo historyczny moment, który pokazuje, jak głęboko wojna na Ukrainie zmieniła postrzeganie bezpieczeństwa na Starym Kontynencie.\n\nCzy Szwajcaria powinna całkowicie zrezygnować ze swojej historycznej neutralności? 👇💬",
+        "question": "Czy Szwajcaria powinna zrezygnować z neutralności na rzecz pełnego współdziałania z NATO?",
+        "image_query": "swiss flag military",
+        "link": "https://defence24.pl/geopolityka/szwajcaria-glosuje-nad-neutralnoscia-stawka-wspolpraca-z-nato-i-sankcje-wobec-rosji",
+        "image_url": "https://images.pexels.com/photos/28248492/pexels-photo-28248492.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/27/1440x810px/IR6YIfImdWCqb2zHomCliBHeRLb5yAfZpzf3VkiU.3uet.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🕊️ Pierwsze rozmowy Berlin-Moskwa",
+        "hook": "Ministrowie spraw zagranicznych Niemiec i Rosji rozmawiali bezpośrednio po raz pierwszy od wybuchu pełnoskalowej wojny.",
+        "summary": "Doszło do dyplomatycznego przełomu w postaci bezpośredniego spotkania szefów dyplomacji Niemiec i Rosji na neutralnym gruncie. Rozmowy dotyczyły ewentualnych kanałów komunikacji i warunków wznowienia negocjacji pokojowych.",
+        "comment": "Gdy dyplomaci zaczynają po cichu rozmawiać za kulisami, wiadomo, że politycy przygotowują grunt pod podział rachunku.",
+        "threads_post": "🕊️ Przełom na linii Berlin-Moskwa po latach milczenia! 🇩🇪🇷🇺\n\nSzefowie dyplomacji obu państw spotkali się na bezpośrednich rozmowach po raz pierwszy od momentu rosyjskiej inwazji na Ukrainę.\n\nSpotkanie na neutralnym gruncie miało na celu wysondowanie możliwości wznowienia oficjalnych kanałów dyplomatycznych i omówienie warunków ewentualnego zawieszenia broni. Choć oficjalne komunikaty są powściągliwe, sam fakt podjęcia dialogu sygnalizuje zmianę w dotychczasowej twardej postawie.\n\nZa zamkniętymi drzwiami rozpoczyna się nowa gra o przyszły kształt bezpieczeństwa w naszej części Europy.\n\nCzy bezpośrednie rozmowy dyplomatyczne z Rosją są na tym etapie uzasadnione? 👇💬",
+        "question": "Czy bezpośrednie rozmowy dyplomatyczne państw UE z Rosją przybliżają pokój na Ukrainie?",
+        "image_query": "diplomacy handshake flags",
+        "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/szefowie-dyplomacji-niemiec-i-rosji-spotkali-sie-po-raz-pierwszy-od-inwazji",
+        "image_url": "https://images.pexels.com/photos/6949994/pexels-photo-6949994.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/27/800x450px/c3UHteRImaTCBfMoa6cY0eercN3XtmQFCGoqe8h1.t65j.jpg"
+      }
+    ]
   }
 }

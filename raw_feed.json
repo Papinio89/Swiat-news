@@ -1,99 +1,103 @@
 {
   "date": "27 września 2026",
-  "time": "07:35",
-  "count": 34,
+  "time": "15:24",
+  "count": 35,
   "items": [
     {
-      "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
-      "link": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko"
+      "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
+      "link": "https://www.bbc.co.uk/news/articles/cmvgyyw2jeego"
     },
     {
-      "title": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
-      "link": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro"
+      "title": "'Scourge' of abuse must be rooted out, says Pope, during Lourdes visit",
+      "link": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o"
     },
     {
-      "title": "British national among six dead in building explosion close to Acropolis in Athens",
-      "link": "https://www.bbc.co.uk/news/articles/c6p3kk78l4l1o"
+      "title": "Two mass shootings in South Africa leave 27 dead",
+      "link": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o"
     },
     {
-      "title": "German town bans 'stumbling stone' memorials to Nazi victims",
-      "link": "https://www.bbc.co.uk/news/articles/cqm2mm4y5dkko"
+      "title": "Killer Christa Pike is to be executed within days but her defence say she's a victim too",
+      "link": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo"
     },
     {
-      "title": "Nor'easter brings flooding as New York and New Jersey declare emergency",
-      "link": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo"
+      "title": "Ten climbers missing after avalanche hits Himalayan base camp",
+      "link": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o"
     },
     {
-      "title": "El Niño Could Push Up Food Prices in Southern Africa",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-27/el-nino-could-push-up-food-prices-in-southern-africa-video"
+      "title": "Data Center Boom Faces Wall Street Skepticism",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-27/data-center-boom-faces-wall-street-skepticism-video"
     },
     {
-      "title": "China Dispatches Pair of Pandas to Atlanta Zoo: CCTV Reports",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/china-dispatches-pair-of-pandas-to-atlanta-zoo-cctv-reports"
+      "title": "AI Whiplash Jolts Stocks as Sentiment Lurches From Fear to Greed",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-27/ai-whiplash-jolts-stocks-as-sentiment-lurches-from-fear-to-greed"
     },
     {
-      "title": "Thai PM Anutin’s Support Drops in Latest Poll as Pressures Rise",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/thai-pm-anutin-s-support-drops-in-latest-poll-as-pressures-rise"
+      "title": "Northeast Storm Brings Wind, Rain and Flooding",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-27/northeast-storm-brings-wind-rain-and-flooding-video"
     },
     {
-      "title": "Australia Home Auction Clearances Hit 10-Week Low as Rate Hike Looms",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/australia-home-auction-clearances-hit-10-week-low-as-rate-hike-looms"
+      "title": "Rubenstein on the Billion Dollar Sports Boom",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-27/rubenstein-on-the-billion-dollar-sports-boom-video"
     },
     {
-      "title": "China’s Consumer Stocks Face Lost Decade as AI Steals Spotlight",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/china-s-consumer-stocks-face-lost-decade-as-ai-steals-spotlight"
+      "title": "IAEA Says Iran Nuclear Oversight Can Resume Fast",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-27/iaea-says-iran-nuclear-oversight-can-resume-fast-video"
     },
     {
-      "title": "Nawet 400 zł miesięcznie. Ci emeryci zyskają od stycznia 2027 r.",
-      "link": "https://www.money.pl/finanse/nawet-400-zl-miesiecznie-ci-emeryci-zyskaja-od-stycznia-2027-r-7333541008279808a.html"
+      "title": "Ponad 20 tys. zł emerytury z ZUS. Gronkiewicz-Waltz dostanie drugie świadczenie",
+      "link": "https://www.money.pl/emerytury/ponad-20-tys-zl-emerytury-z-zus-gronkiewicz-waltz-dostanie-drugie-swiadczenie-7333948122925312a.html"
     },
     {
-      "title": "Geniusz kuchni czy monarcha biznesu? Przeżył katastrofę w Alpach, potem zdobył 18 gwiazdek",
-      "link": "https://www.bankier.pl/wiadomosc/Geniusz-kuchni-czy-monarcha-biznesu-Przezyl-katastrofe-w-Alpach-potem-zdobyl-18-gwiazdek-9202649.html"
+      "title": "Ile z ceny paliwa zabiera państwo? Tak wypada Polska na tle UE",
+      "link": "https://www.money.pl/mobility/ile-z-ceny-paliwa-zabiera-panstwo-tak-wypada-polska-na-tle-ue-7332890415102176a.html"
     },
     {
-      "title": "Ekspert: Rządowy windfall tax to dość prosty mechanizm, prezydencki projekt - poważniejsza ingerencja",
-      "link": "https://www.bankier.pl/wiadomosc/Ekspert-Rzadowy-windfall-tax-to-dosc-prosty-mechanizm-prezydencki-projekt-powazniejsza-ingerencja-9202488.html"
+      "title": "Europa na łasce Azji i USA. Chips Act 2.0 ślimaczy się w Brukseli",
+      "link": "https://www.bankier.pl/wiadomosc/Europa-na-lasce-Azji-i-USA-Chips-Act-2-0-slimaczy-sie-w-Brukseli-9203319.html"
     },
     {
-      "title": "Włochy wprowadzają  limit 30 proc. cudzoziemskich uczniów w klasie",
-      "link": "https://www.bankier.pl/wiadomosc/Wlochy-wprowadzaja-limit-30-proc-cudzoziemskich-uczniow-w-klasie-9202450.html"
+      "title": "Cudzoziemcy wydali miliardy. Polska przyciąga zagraniczne portfele",
+      "link": "https://www.bankier.pl/wiadomosc/Cudzoziemcy-wydali-miliardy-Polska-przyciaga-zagraniczne-portfele-9202029.html"
     },
     {
-      "title": "Nikolę Grbicia puściło po finale. Emocjonalne słowa o dwóch siatkarzach - Interia Sport",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUHkxWnh1Mml1bk12ZWdnRmZfSWhSd2libVVpZ09xUHZSWXlJTnJZTG8yVXRYSURTYmpWVVZEZ0dGTnpXNWUyQy1FTUV6ZFdsMXFxZXozcVkyTEliN05wRkp5Q3h5djhrOTExdjhpenI4dHVhRTJyVVVRT25PckZSV0dHYnNhNlF2VU5MdkE4QUt5QVF1VjQ2ZXhPLXhBSUhPSGlLS2N4Umx5U200ckdURGpjTkFEMFJKSWRRM040dWxVR2NYYXdJX2psY1V4YWxyaEVkSXJPd1g?oc=5"
+      "title": "Mistrzowie Europy wrócili do Polski. Tak przywitali siatkarzy, euforia na lotnisku - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXFYcXpTWFhqWnVLQklIRzlLbkJnZ2lRS0ROeVc4Q0xZSnVDc2pieC15NWdvLUpjdm1vTjdFWGl3VGZzS1VNQ0ZNWjBzWV9rWTlEZmxrQnBVaUhRR2d2T1NtZlR1ckZTcV9RcjZvNjdBZ1BJeFNOeFZSM1NpbGN6aW80ZDlxZ2JrMnZJaFhJaDdMLTdCUjlscS1paldTUVJZUEx4SHlhb3ZIZ2twblRvZkNBT0VYRHZtUjBJ?oc=5"
     },
     {
-      "title": "Nawrocki i Putin na szczycie G20. Kwaśniewski: Ręki bym mu nie podał - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSm5KT2tJU0RFZFpKUzRmaTBjem1YYi04MUl6VDRRc2hyQjBMZGJ0MC1OWnZMWjhxT204R1BHTGtrQW1BbjdSMTVfM0JOT29IMGxXOVNja01ORXJkS2k3TXYxZEZ1MWVZakpDWmxUZWJUR0NwN0pPc0tiU21JMklYQ0diVEkxb2M4dGV3b1ExYXNzeGYyRjY1R3A3WkxUMzI1clNSQzhWRHVlb0RPTlZVS2pwbTRaTE5xR2E2UTdIU0ZsTmhG?oc=5"
+      "title": "Trwają wybory w Krakowie. Komisja podsumowała pierwsze godziny - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMGNQQzJFa0lmZkFaTkVXd09tYlBaTEFuc1RrV0tGbFk0WUdWT25keHIzNUFzZ2JOVktlYVlrNzlQSTV1VmJBNURZTUMySmtOc1gxSnJURENNYTNDRFM3UV9xMFh0b3JES2tBbXg1YVYtQ2NuWmVIUzNnQVdad3ViN0VYR1NPMnRTZEVHV0Y4Q2ZxM1RXQWJnNGJvNDJ4SndrbGU5eHg0OA?oc=5"
     },
     {
-      "title": "Kreml chce paraliżu. Flanka widzi, do czego dąży reżim Putina - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNODZjT0MyeTFxSGpWcVQzSFY3RjBWNGpDWUZXbVE0eTgzUXRHd0FYcmFKOVBVZ2hLa3VMeWpzVWxDMkpINjNLVVA3aHQ4eFVtcF9ybjNmeDFEaTUtQk1FQkV6a1dMX1hhekI5X1lpQjYydGhCaTVFdmdMQlcxSmRfb3RSeGFLbkEwUjVZem9aODhOclF5MC1SVWw4X2VhQi0zZ2xvWg?oc=5"
+      "title": "USA i Chiny przedłużają rozejm handlowy. Jeden szczegół budzi sprzeciw - Business Insider Polska",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVE1KRVowMmx4aEZrZklDc1ZOdGI2d1dSclNTX1c1c2FkYmQwQ3A1ZjU5RzAxaFdwOUhDc0VuS2poRGRZZklUazdHdFl0QUlJTkN5bVA2V1lXcWpPSnVOUUUtYXVmdldqRTlzUUFLUnoybDZXVXEtczgwM2VDbzlLMjVzVi1RR1E1NVkxUllVUXZlZ2dUMHlrbzdJVkduNHdHbi0yOF91TVVwbnBKQnJJZDIyUVNDQVNf?oc=5"
     },
     {
-      "title": "Marsz Ciszy w Jarosławiu po ataku Ukraińca. Tysiące osób - o2",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSUhoWW5fcXF0ZFBuWTh1b0VRMkZfbWR0OURUbEtaUGxjM2RwVG8zMmU2TWp6TGR2c3hCaGpNcExWalhoWTdhanU3b1pGcE5lYnRsUDdpNUo1Z1IwYjlIeEdkYWRCeXMtVWtaUDRIVmwxSnRNY3NFS212Q3ZoNHh3VWsxVVVsMmJ4dWZyRVJYT29nNThqUWRnQm1sSzM1eUJuNVZybg?oc=5"
+      "title": "Śmierć 6-latka pod Włocławkiem. \"Intensywne czynności\" - o2",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjgwLXRoMTBLa05aWm9RMC1pUGpOTENBZFQ1NWxvSTgwVW95V1d6bllIRFkzb1dZSlpvc2RoRXExZTJsQmpObWlCWWp4dkdkZGxFaV9qeDl3R0IxeW5RQllTeG5ubV9SODlnbnh3dkpfZ1lRcWI3TnJ6bGNQSXA1cW5MdE50T3ZzbnFwU21oNW5VMVFqVnZ1Zkk2bkxnMXM?oc=5"
     },
     {
-      "title": "14-latka potrącona przez samochód podczas relacji reportera TVP Info - tvp.info",
-      "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOWjBqNFZpNnNHTjdEYVFUaWdmMFNMRXZfZmFWQ2FKUTlSTGd3Q2lxV2U3MG1YMjg0WjhkQi1lREF5bnIzM3ZMcEg3UTZlak9IRnlnaEY2ZklaaFJBRW1mckN5X2l6czVtR3lXRlVDUVMzS1h5NUpVWUg2ZG50Zjg1YTFEd2ltS1J3VXV1LVFiaC00VXItRUwteGljLUNXeVoyN3Ntb1h5NVRDZ2VfWEQ5NEd6SVVwMTU4YmpYUG9wUjNNbmxPdkduQ0hINVRMclZVZEhuaFNjbVNFM1NrVzNnZk05TUNNN25zSnp1VkZwdnZyVjZ1a1Nuek1Rck5Fa2UyNFdJQkRHV0tkSjJReDM3ckZaMXBsaFk?oc=5"
+      "title": "Poważny incydent przy bazie USA w UK. Aresztowania i ewakuacja mieszkańców - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObFpiTUpqOWYxLXdWaE1hRjdGYWdBTHFRYUxyeTBna0Z1d1JQLTM0eHpfa3J4ZC1IckFTZVhwc1U4dy1rSWRVa1M0N2QwREVQcEdhSUF5MGFCR001VndvWG02LXV6NlpCTTFJQUt6dy1pZC1nZzdtdk9Ubi1CdHpOWGQzaGlPY0dtaWpVcUhzU2lDM21veFh4LXFoem5rcURtMUhSWVp5aUMzYmJIVWFmQVNNVDd3UW8?oc=5"
     },
     {
-      "title": "Drugi kraj na świecie z takimi możliwościami. Litwini będą serwisować CAEASR-y",
-      "link": "https://defence24.pl/przemysl/drugi-kraj-na-swiecie-z-takimi-mozliwosciami-litwini-beda-serwisowac-caeasr-y"
+      "title": "Szwajcaria głosuje nad neutralnością. Stawką współpraca z NATO i sankcje wobec Rosji",
+      "link": "https://defence24.pl/geopolityka/szwajcaria-glosuje-nad-neutralnoscia-stawka-wspolpraca-z-nato-i-sankcje-wobec-rosji"
     },
     {
-      "title": "Obowiązkowe szkolenia i 800 zł za gotowość. PiS przedstawia plan dla armii",
-      "link": "https://defence24.pl/polityka-obronna/obowiazkowe-szkolenia-i-800-zl-za-gotowosc-pis-przedstawia-plan-dla-armii"
+      "title": "Szefowie dyplomacji Niemiec i Rosji spotkali się po raz pierwszy od inwazji",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/szefowie-dyplomacji-niemiec-i-rosji-spotkali-sie-po-raz-pierwszy-od-inwazji"
     },
     {
-      "title": "Co robić w razie ataku z powietrza? Specjalna instrukcja i zalecenia",
-      "link": "https://defence24.pl/polityka-obronna/co-robic-w-razie-ataku-z-powietrza-specjalna-instrukcja-i-zalecenia"
+      "title": "Ukraina zmienia taktykę pod Łymanem. Najpierw odcina rosyjskie posiłki",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-zmienia-taktyke-pod-lymanem-najpierw-odcina-rosyjskie-posilki"
     },
     {
-      "title": "Rosja zaatakuje Europę? Putin wprost o krajach bałtyckich",
-      "link": "https://defence24.pl/geopolityka/rosja-zaatakuje-europe-putin-wprost-o-krajach-baltyckich"
+      "title": "Baza RAF Fairford pod specjalnym nadzorem. Incydent z materiałami wybuchowymi w pobliżu bazy lotniczej",
+      "link": "https://defence24.pl/polityka-obronna/baza-raf-fairford-pod-specjalnym-nadzorem-incydent-z-materialami-wybuchowymi-w-poblizu-bazy-lotniczej"
+    },
+    {
+      "title": "Wyścig o artykuł 5 NATO. Jak broni się Polska?",
+      "link": "https://defence24.pl/polityka-obronna/wyscig-o-artykul-5-nato-jak-broni-sie-polska"
     },
     {
       "title": "PNOE’s new face mask wants to make lab-grade breath testing a self-serve affair",
@@ -116,6 +120,18 @@
       "link": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/"
     },
     {
+      "title": "Why OLPC’s $100 laptop never stood a chance",
+      "link": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance"
+    },
+    {
+      "title": "Googlebooks might be the real deal",
+      "link": "https://www.theverge.com/tech/1000424/googlebooks-meta-ray-ban-audio-control-resonant-microsoft-surface-mouse"
+    },
+    {
+      "title": "The smart home graveyard is getting crowded",
+      "link": "https://www.theverge.com/column/1000778/smart-home-june-oven-graveyard"
+    },
+    {
       "title": "Apple hit with $5.7 billion in damages over haptic patents",
       "link": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents"
     },
@@ -124,20 +140,8 @@
       "link": "https://www.theverge.com/report/1000994/decap-drums-that-knock-interview"
     },
     {
-      "title": "Kids turned the comment section of an NPR podcast into a group chat",
-      "link": "https://www.theverge.com/entertainment/1001056/this-american-life-npr-kids-group-chat-comment-section"
-    },
-    {
-      "title": "OpenAI pauses training of its ‘most capable models’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause"
-    },
-    {
-      "title": "Can Cloudflare CEO Matthew Prince save the web from AI?",
-      "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising"
-    },
-    {
-      "title": "Tesla’s big electric truck faces an even bigger infrastructure challenge",
-      "link": "https://arstechnica.com/cars/2026/09/teslas-big-electric-truck-faces-an-even-bigger-infrastructure-challenge/"
+      "title": "How the Smithsonian became the latest front in Trump’s culture war",
+      "link": "https://arstechnica.com/tech-policy/2026/09/how-the-smithsonian-became-the-latest-front-in-trumps-culture-war/"
     }
   ]
 }
