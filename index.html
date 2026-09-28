@@ -110,7 +110,6 @@
   }
   .dark .check-btn { border-color: #64748b; }
 
-  /* Systemowe powierzchnie */
   .surface { background: var(--bg-card); border-color: var(--border); }
   .text-main { color: var(--text); }
   .text-sec { color: var(--text-secondary); }
@@ -146,7 +145,7 @@
       <div id="last-update" class="text-right text-[10px] text-sec">Ładowanie…</div>
     </div>
 
-    <div id="info-widgets" class="grid grid-cols-4 gap-1.5">
+    <div id="info-widgets" class="grid grid-cols-3 gap-1.5">
       <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
         <div class="text-[9px] font-bold uppercase text-sec">WAW</div>
         <div class="mt-0.5 flex items-center gap-1 text-sm font-black text-main">
@@ -161,10 +160,6 @@
       <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
         <div class="text-[9px] font-bold uppercase text-sec">USD</div>
         <div id="usd-rate" class="mt-0.5 text-sm font-black text-main">—</div>
-      </div>
-      <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
-        <div class="text-[9px] font-bold uppercase text-sec">Dziś</div>
-        <div id="progress-text" class="mt-0.5 text-sm font-black text-main">0/0</div>
       </div>
     </div>
   </section>
@@ -226,7 +221,6 @@
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
       <h2 class="text-lg font-black text-main">🚨 Pilne</h2>
-      <p class="mt-0.5 text-[11px] text-sec">fast.json + top 5 dzisiejszych newsów</p>
     </div>
     <div id="breaking" class="space-y-4"></div>
   </section>
@@ -275,9 +269,18 @@
         </div>
       </div>
     </div>
-    <div class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-mute">
-      <p>Świat w Minutę © <span id="year"></span></p>
-      <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
+
+    <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
+      <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border" style="background: var(--bg-muted); border-color: var(--border);">
+        <span class="text-amber-500">👁</span>
+        <span class="font-medium">Odwiedzin:</span>
+        <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minute.vercel.app&labelColor=%2300000000&countColor=%23f59e0b&style=flat&label=." 
+             alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 w-full max-w-md text-center sm:text-left">
+        <p>Świat w Minutę © <span id="year"></span></p>
+        <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
+      </div>
     </div>
   </div>
 </footer>
@@ -411,18 +414,11 @@ function toggleRead(x, ev) {
   if (readKeys.has(k)) readKeys.delete(k);
   else readKeys.add(k);
   saveRead();
-  updateProgress();
   renderCurrent();
 }
 
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
-
-function updateProgress() {
-  const total = newsItems.length;
-  const read = newsItems.filter(x => isRead(x)).length;
-  $('progress-text').textContent = read + '/' + total;
-}
 
 function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e) { return '#'; } }
 
@@ -628,7 +624,6 @@ function renderCurrent() {
   else if (currentTab === 'fast') renderFast();
   else if (currentTab === 'fun') renderFun();
   else renderArchive();
-  updateProgress();
 }
 
 function switchTab(tab) {
@@ -751,7 +746,6 @@ async function init() {
   });
 
   await renderToday();
-  updateProgress();
   loadWidgets();
 }
 
@@ -798,3 +792,5 @@ init();
 </script>
 </body>
 </html>
+```
+
