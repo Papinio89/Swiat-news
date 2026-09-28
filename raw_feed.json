@@ -1,47 +1,43 @@
 {
-  "date": "27 września 2026",
-  "time": "15:24",
+  "date": "28 września 2026",
+  "time": "06:03",
   "count": 35,
   "items": [
     {
-      "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
-      "link": "https://www.bbc.co.uk/news/articles/cmvgyyw2jeego"
+      "title": "Inside Yemen's front-line city as Houthis battle for control",
+      "link": "https://www.bbc.co.uk/news/articles/cw98005ndz7no"
     },
     {
-      "title": "'Scourge' of abuse must be rooted out, says Pope, during Lourdes visit",
-      "link": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o"
+      "title": "Embattled Serbian president resigns, paving way for early elections",
+      "link": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo"
+    },
+    {
+      "title": "Two bodies found after avalanche hits Himalayan climbing group",
+      "link": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o"
     },
     {
       "title": "Two mass shootings in South Africa leave 27 dead",
       "link": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o"
     },
     {
-      "title": "Killer Christa Pike is to be executed within days but her defence say she's a victim too",
-      "link": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo"
+      "title": "Cuba Warns US Sanctions Are Blocking Reform",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-28/cuba-warns-us-sanctions-are-blocking-reform-video"
     },
     {
-      "title": "Ten climbers missing after avalanche hits Himalayan base camp",
-      "link": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o"
+      "title": "Bond Selloff Resumes as Oil Rises After Trump Spurns Iran Offer",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/bond-selloff-resumes-as-oil-rises-after-trump-spurns-iran-offer"
     },
     {
-      "title": "Data Center Boom Faces Wall Street Skepticism",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-27/data-center-boom-faces-wall-street-skepticism-video"
+      "title": "Bonds Drop With Stocks as Iran Tensions Boost Oil: Markets Wrap",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-27/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "AI Whiplash Jolts Stocks as Sentiment Lurches From Fear to Greed",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/ai-whiplash-jolts-stocks-as-sentiment-lurches-from-fear-to-greed"
+      "title": "Japan’s Two-Year Bond Yield Nears 2% as BOJ Rate Hike Bets Mount",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/japan-s-two-year-bond-yield-nears-2-as-boj-rate-hike-bets-mount"
     },
     {
-      "title": "Northeast Storm Brings Wind, Rain and Flooding",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-27/northeast-storm-brings-wind-rain-and-flooding-video"
-    },
-    {
-      "title": "Rubenstein on the Billion Dollar Sports Boom",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-27/rubenstein-on-the-billion-dollar-sports-boom-video"
-    },
-    {
-      "title": "IAEA Says Iran Nuclear Oversight Can Resume Fast",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-27/iaea-says-iran-nuclear-oversight-can-resume-fast-video"
+      "title": "Copper Slides as China Industrial Data Weighs on Demand Outlook",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/copper-slides-as-china-industrial-data-weighs-on-demand-outlook"
     },
     {
       "title": "Ponad 20 tys. zł emerytury z ZUS. Gronkiewicz-Waltz dostanie drugie świadczenie",
@@ -52,72 +48,88 @@
       "link": "https://www.money.pl/mobility/ile-z-ceny-paliwa-zabiera-panstwo-tak-wypada-polska-na-tle-ue-7332890415102176a.html"
     },
     {
+      "title": "Siedem dni na rozejm? Trump odrzuca plan Iranu i grozi powrotem do bombardowań",
+      "link": "https://www.bankier.pl/wiadomosc/Siedem-dni-na-rozejm-Trump-odrzuca-plan-Iranu-i-grozi-powrotem-do-bombardowan-9203386.html"
+    },
+    {
+      "title": "Skandaliczne słowa izraelskiego ministra o Zachodnim Brzegu. „Zrobić tam to, co w Strefie Gazy”.",
+      "link": "https://www.bankier.pl/wiadomosc/Skandaliczne-slowa-izraelskiego-ministra-o-Zachodnim-Brzegu-Zrobic-tam-to-co-w-Strefie-Gazy-9203388.html"
+    },
+    {
       "title": "Europa na łasce Azji i USA. Chips Act 2.0 ślimaczy się w Brukseli",
       "link": "https://www.bankier.pl/wiadomosc/Europa-na-lasce-Azji-i-USA-Chips-Act-2-0-slimaczy-sie-w-Brukseli-9203319.html"
     },
     {
-      "title": "Cudzoziemcy wydali miliardy. Polska przyciąga zagraniczne portfele",
-      "link": "https://www.bankier.pl/wiadomosc/Cudzoziemcy-wydali-miliardy-Polska-przyciaga-zagraniczne-portfele-9202029.html"
+      "title": "Już wszystko jasne. Oficjalne wyniki pierwszej tury wyborów w Krakowie - onet.pl",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMmhTdnltaXJCbkJyX2x5aV9wd1UtUm9XNU4tM3kwZVM1TlBPRmNtUkhqNl9zaFJ6aEgwNGh2RkJhWVE3Zm9uR2NxZ0UyY1FjcHhwM3dlb2hrX2I2b2szMG1TMExyMWZOYzMyZ3BkXzlvNXd6bVJZMXlhcjBocnl6Mm5VcThocEtYSU9EbkNWd1EzNktJVUFTQU1xRC1lUWVBaWtIWnNRaVBybHM5N3d4aUNLVTdaUQ?oc=5"
     },
     {
-      "title": "Mistrzowie Europy wrócili do Polski. Tak przywitali siatkarzy, euforia na lotnisku - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXFYcXpTWFhqWnVLQklIRzlLbkJnZ2lRS0ROeVc4Q0xZSnVDc2pieC15NWdvLUpjdm1vTjdFWGl3VGZzS1VNQ0ZNWjBzWV9rWTlEZmxrQnBVaUhRR2d2T1NtZlR1ckZTcV9RcjZvNjdBZ1BJeFNOeFZSM1NpbGN6aW80ZDlxZ2JrMnZJaFhJaDdMLTdCUjlscS1paldTUVJZUEx4SHlhb3ZIZ2twblRvZkNBT0VYRHZtUjBJ?oc=5"
+      "title": "\"Zrobić to samo, co w Gazie\". Skandaliczne słowa izraelskiego ministra - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNWhGU2cybHpLTzMxLXMyUHJNMktFMXVUY1BraXNYVkkzNFhrUnc1SmtPb3pPd0xDYkVaSFNFZmJGaGlrVk42Y1NpUjlnTk4tX3dCdTQzaVpyZ2piekNCelJGamx1Skg2bzNQUl9GQzBtX3hMVWZBVTdOazFSNGhuVEVwTW9IVUJLbF9sb1BoeXpubWp3ZDEweUJka2lyMXM2TERJREtVYWhOX0tqT0NhdVh0dVZpbTdwYkV1cm5mZXhITlE?oc=5"
     },
     {
-      "title": "Trwają wybory w Krakowie. Komisja podsumowała pierwsze godziny - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMGNQQzJFa0lmZkFaTkVXd09tYlBaTEFuc1RrV0tGbFk0WUdWT25keHIzNUFzZ2JOVktlYVlrNzlQSTV1VmJBNURZTUMySmtOc1gxSnJURENNYTNDRFM3UV9xMFh0b3JES2tBbXg1YVYtQ2NuWmVIUzNnQVdad3ViN0VYR1NPMnRTZEVHV0Y4Q2ZxM1RXQWJnNGJvNDJ4SndrbGU5eHg0OA?oc=5"
+      "title": "Poseł Rozwoju Plus o spotkaniach z Nawrockim. \"To nieakceptowalne.\" - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUkltT3ZrWDVBNWotVXpHdm1lM2RFbHRFS2J1QVV5anhidURkbzU1bFlxUkE0T29jbnZSY19KVUp1eV9XbnpPQVJ2NmNoWVAwN3dtQkJCYUJvamJoYmVWSjFodEFlQ3dkVVJKc0tZTXdUX1M3LUhlaWNndUxFeWdReXdoYy1CUGpLdzZlSWhQZ2R2RDRmZWgzUjUxS01jZk1HTEZuSXBhT0I3Zw?oc=5"
     },
     {
-      "title": "USA i Chiny przedłużają rozejm handlowy. Jeden szczegół budzi sprzeciw - Business Insider Polska",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVE1KRVowMmx4aEZrZklDc1ZOdGI2d1dSclNTX1c1c2FkYmQwQ3A1ZjU5RzAxaFdwOUhDc0VuS2poRGRZZklUazdHdFl0QUlJTkN5bVA2V1lXcWpPSnVOUUUtYXVmdldqRTlzUUFLUnoybDZXVXEtczgwM2VDbzlLMjVzVi1RR1E1NVkxUllVUXZlZ2dUMHlrbzdJVkduNHdHbi0yOF91TVVwbnBKQnJJZDIyUVNDQVNf?oc=5"
+      "title": "Medal Misji Jana Karskiego dla ks. Adriana z Jarosławia. \"Światło i nadzieja polskiego Kościoła\" - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNXM0ZDl4cFhmY2lJSnBNWkd1ejhfMXBDMzVqNXhsVjdGUHpOR2I4Z2hRWVhVSjdIaUdGLXNsR0Y4bDUxakVXbnRpa1JRaGlEZy1NTWY3QzNQdG9YY3R4MlAxc0tjNXlfZGxvVXlDS1dGY0c4MlM4QkxyWmxrNG1NTEVxcXF3czk1RTR2ejFGX0hHc1hIZXIyVTg4VlBuMDhCdGJic2E2cmh5S01rd2tyRGtkV2JwQThRdXpoTHp5c3g2UnJFWVZfTWU1TG9BNElE?oc=5"
     },
     {
-      "title": "Śmierć 6-latka pod Włocławkiem. \"Intensywne czynności\" - o2",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUjgwLXRoMTBLa05aWm9RMC1pUGpOTENBZFQ1NWxvSTgwVW95V1d6bllIRFkzb1dZSlpvc2RoRXExZTJsQmpObWlCWWp4dkdkZGxFaV9qeDl3R0IxeW5RQllTeG5ubV9SODlnbnh3dkpfZ1lRcWI3TnJ6bGNQSXA1cW5MdE50T3ZzbnFwU21oNW5VMVFqVnZ1Zkk2bkxnMXM?oc=5"
+      "title": "Sygnał ostrzegawczy dla Donalda Tuska. Polacy ocenili rząd - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEI3OVBHS1VFdzFYRHRNVTRqTDdtNE5EbS02el9JaklmR1A3dHYtM3JDMmI2RzE5Y1VxMTJsU2VfemxzOVVlb052N1lBWHE1OUtGT3lIcXRlMUtPcFphelZkUnM3RVVzd2hBOWlOb2VaQmdJVVBvNnhUVnZ2SmlONERRVkVSNjQ3bC1Hc2V3TkZkcnlrd2JKNUI1bVZ0RHlaTjhPNjBlVkVnZFZHWW5kb2lsdllsdw?oc=5"
     },
     {
-      "title": "Poważny incydent przy bazie USA w UK. Aresztowania i ewakuacja mieszkańców - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObFpiTUpqOWYxLXdWaE1hRjdGYWdBTHFRYUxyeTBna0Z1d1JQLTM0eHpfa3J4ZC1IckFTZVhwc1U4dy1rSWRVa1M0N2QwREVQcEdhSUF5MGFCR001VndvWG02LXV6NlpCTTFJQUt6dy1pZC1nZzdtdk9Ubi1CdHpOWGQzaGlPY0dtaWpVcUhzU2lDM21veFh4LXFoem5rcURtMUhSWVp5aUMzYmJIVWFmQVNNVDd3UW8?oc=5"
+      "title": "Obiekt naruszył przestrzeń powietrzną przy granicy z Ukrainą. Alarm w kraju NATO",
+      "link": "https://defence24.pl/polityka-obronna/obiekt-naruszyl-przestrzen-powietrzna-przy-granicy-z-ukraina-alarm-w-kraju-nato"
     },
     {
-      "title": "Szwajcaria głosuje nad neutralnością. Stawką współpraca z NATO i sankcje wobec Rosji",
-      "link": "https://defence24.pl/geopolityka/szwajcaria-glosuje-nad-neutralnoscia-stawka-wspolpraca-z-nato-i-sankcje-wobec-rosji"
+      "title": "Zarobki w WOT. Ile zarabiają terytorialsi?",
+      "link": "https://defence24.pl/polityka-obronna/zarobki-w-wot-ile-zarabiaja-terytorialsi"
     },
     {
-      "title": "Szefowie dyplomacji Niemiec i Rosji spotkali się po raz pierwszy od inwazji",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/szefowie-dyplomacji-niemiec-i-rosji-spotkali-sie-po-raz-pierwszy-od-inwazji"
+      "title": "Belgijska armia ćwiczy z polskimi bezzałogowcami",
+      "link": "https://defence24.pl/przemysl/belgijska-armia-cwiczy-z-polskimi-bezzalogowcami"
     },
     {
-      "title": "Ukraina zmienia taktykę pod Łymanem. Najpierw odcina rosyjskie posiłki",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-zmienia-taktyke-pod-lymanem-najpierw-odcina-rosyjskie-posilki"
+      "title": "Tyle Polska ma zapłacić za każdego żołnierza USA. Koszt pokryją polscy podatnicy",
+      "link": "https://defence24.pl/polityka-obronna/tyle-polska-ma-zaplacic-za-kazdego-zolnierza-usa-koszt-pokryja-polscy-podatnicy"
     },
     {
-      "title": "Baza RAF Fairford pod specjalnym nadzorem. Incydent z materiałami wybuchowymi w pobliżu bazy lotniczej",
-      "link": "https://defence24.pl/polityka-obronna/baza-raf-fairford-pod-specjalnym-nadzorem-incydent-z-materialami-wybuchowymi-w-poblizu-bazy-lotniczej"
+      "title": "Samolot włoskich sił zbrojnych wleciał do Polski. Ranny żołnierz na pokładzie?",
+      "link": "https://defence24.pl/polityka-obronna/samolot-wloskich-sil-zbrojnych-wlecial-do-polski-ranny-zolnierz-na-pokladzie"
     },
     {
-      "title": "Wyścig o artykuł 5 NATO. Jak broni się Polska?",
-      "link": "https://defence24.pl/polityka-obronna/wyscig-o-artykul-5-nato-jak-broni-sie-polska"
+      "title": "Anthropic’s CEO is about to have dinner with President Trump",
+      "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/"
     },
     {
-      "title": "PNOE’s new face mask wants to make lab-grade breath testing a self-serve affair",
-      "link": "https://techcrunch.com/2026/09/26/pnoes-new-face-mask-wants-to-make-lab-grade-breath-testing-a-self-serve-affair/"
+      "title": "Can Muse overcome Meta’s trust issues?",
+      "link": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/"
     },
     {
-      "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
-      "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/"
+      "title": "Anthropic’s Dario Amodei gets the SNL treatment",
+      "link": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/"
     },
     {
-      "title": "Insurers claim AI is already increasing healthcare costs",
-      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
+      "title": "TechCrunch Mobility: AV companies pick their lanes",
+      "link": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/"
     },
     {
-      "title": "TikTok agrees to pay at least $100M in Alabama settlement",
-      "link": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/"
+      "title": "Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises",
+      "link": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/"
     },
     {
-      "title": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
-      "link": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/"
+      "title": "Out of the Park Baseball lets me enjoy baseball even when the Mets suck",
+      "link": "https://www.theverge.com/games/1001206/out-of-the-park-baseball-cozy-sim-video-game-review"
+    },
+    {
+      "title": "Engram is a sampler that turns broken AI hallucinations into music",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music"
+    },
+    {
+      "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website"
     },
     {
       "title": "Why OLPC’s $100 laptop never stood a chance",
@@ -126,18 +138,6 @@
     {
       "title": "Googlebooks might be the real deal",
       "link": "https://www.theverge.com/tech/1000424/googlebooks-meta-ray-ban-audio-control-resonant-microsoft-surface-mouse"
-    },
-    {
-      "title": "The smart home graveyard is getting crowded",
-      "link": "https://www.theverge.com/column/1000778/smart-home-june-oven-graveyard"
-    },
-    {
-      "title": "Apple hit with $5.7 billion in damages over haptic patents",
-      "link": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents"
-    },
-    {
-      "title": "Decap is the man behind the drums behind your favorite song",
-      "link": "https://www.theverge.com/report/1000994/decap-drums-that-knock-interview"
     },
     {
       "title": "How the Smithsonian became the latest front in Trump’s culture war",
