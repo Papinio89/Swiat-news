@@ -1,0 +1,14 @@
+{
+  "name": "swiat-w-minute",
+  "version": "1.0.0",
+  "description": "Najważniejsze wiadomości świata w 60 sekund",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
