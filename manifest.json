@@ -1,0 +1,19 @@
+{
+  "name": "Świat w Minutę",
+  "short_name": "Świat w Minutę",
+  "description": "Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "lang": "pl",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
