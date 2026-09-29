@@ -18,7 +18,6 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
-# Zbalansowany strumień: Polska, gospodarka, rynki i twarda polityka
 RSS_URLS = [
     # --- POLSKA: GOSPODARKA, BIZNES, PRZEMYSŁ I KRAJ ---
     "https://www.money.pl/rss/",
@@ -38,7 +37,7 @@ RSS_URLS = [
     "https://feeds.bbci.co.uk/news/world/rss.xml",
     "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
 
-    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO STRATEGICZNE) ---
+    # --- OBRONNOŚĆ ---
     "https://defence24.pl/rss"
 ]
 
@@ -50,6 +49,16 @@ POLISH_MONTHS = {
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
+
+# Dopuszczalne pojedyncze kategorie zapewniające różnorodność wizualną
+ALLOWED_CATEGORIES = {
+    "POLSKA",
+    "GOSPODARKA",
+    "BIZNES",
+    "GEOPOLITYKA",
+    "OBRONNOŚĆ",
+    "TECHNOLOGIE"
+}
 
 
 def clean_link(url: str) -> str:
@@ -85,6 +94,27 @@ def is_recent(entry) -> bool:
         return True
 
 
+def normalize_category(cat: str) -> str:
+    """Wymusza pojedynczą, unikalną kategorię zamiast hybryd (np. POLSKA / BIZNES)."""
+    c = str(cat or "").upper().strip()
+    
+    # Hierarchia przypisania dla zbitek:
+    if "POLSK" in c:
+        return "POLSKA"
+    if "OBRON" in c or "WOJSK" in c:
+        return "OBRONNOŚĆ"
+    if "TECH" in c or "AI" in c:
+        return "TECHNOLOGIE"
+    if "GEOPOLITYK" in c or "ŚWIAT" in c:
+        return "GEOPOLITYKA"
+    if "BIZNES" in c or "SPÓŁK" in c or "FIRM" in c:
+        return "BIZNES"
+    if "GOSPODARK" in c or "RYNK" in c or "FINANS" in c or "SUROWC" in c:
+        return "GOSPODARKA"
+        
+    return "GOSPODARKA"
+
+
 def validate_items(items: list) -> list:
     required = {"category", "title", "hook", "summary", "comment", "threads_post", "question", "image_query", "link"}
     valid = []
@@ -100,7 +130,7 @@ def validate_items(items: list) -> list:
         comment = str(item.get("comment", "")).strip()
         threads_post = str(item.get("threads_post", "")).strip()
         question = str(item.get("question", "")).strip()
-        category = str(item.get("category", "AKTUALNOŚCI")).strip().upper()
+        category = normalize_category(item.get("category", "GOSPODARKA"))
         image_query = str(item.get("image_query", "business news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
@@ -194,9 +224,16 @@ for url in RSS_URLS:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
+            summary = getattr(entry, "summary", "").strip()
+            # Czyścimy tagi HTML z summary z RSS jeśli występują
+            clean_summary = re.sub(r'<[^>]+>', '', summary)[:250]
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 15:
-                raw_articles.append({"title": title, "link": link})
+                raw_articles.append({
+                    "title": title,
+                    "snippet": clean_summary,
+                    "link": link
+                })
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
@@ -256,57 +293,46 @@ if len(filtered_raw_articles) < 10:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI: 14-15 POZYCJI Z TWARDYMI PROPORCJAMI ---
+# --- PROMPT AI Z ZASADĄ POJEDYNCZEJ KATEGORII I BEZWZGLĘDNĄ RZETELNOŚCIĄ ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje treści zdobywają wirale, bo nie owijasz w bawełnę, obnażasz cynizm polityków i korporacji oraz piszesz bezkompromisowym, ciętym językiem.
+prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego („Świat w Minucie” na Instagramie i Threads). 
+Twoje treści zdobywają wirale, bo łączysz 100% RZETELNOŚĆ DZIENNIKARSKĄ z ciętym, bezkompromisowym komentarzem.
 
-Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH, NAJBARDZIEJ CHWYTLIWYCH wiadomości w języku polskim w formacie JSON.
+Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
-ŚCISŁY PODZIAŁ TEMATYCZNY (BEZWZGLĘDNY PRIORYTET):
-1. GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, BUDŻET, WALUTY ORAZ POLSKA:
-   - MUSZĄ STANOWIĆ MINIMUM 75% CAŁOŚCI (min. 11 pozycji)! Wybieraj podatki, ceny, spółki, inflację, rynek pracy, decyzje rządu, nieruchomości i twarde zawirowania rynkowe.
-2. GEOPOLITYKA I BEZPIECZEŃSTWO GLOBALNE:
-   - 2 do 3 pozycji strategicznych o realnym wpływie na sytuację międzynarodową.
-3. TECHNOLOGIE / AI / CYBERNETYKA:
-   - MAKSYMALNIE 1 DO 2 POZYCJI w całym zestawieniu! Bierz tylko przełomy o gigantycznej skali rynkowej. Zakaz drobnych nowinek i apek.
+ZASADA 1: BEZWZGLĘDNA RZETELNOŚĆ FAKTOGRAFICZNA (ZAKAZ ZMYŚLANIA)
+- Pisz WYŁĄCZNIE o faktach podanych w tytule i zajawce (snippet). 
+- KATEGORYCZNY ZAKAZ zmyślania stawek podatkowych, liczb, kwot czy dat, jeśli nie wynikają one wprost ze źródła! (np. jeśli artykuł wspomina o zmianie w PIT, nie wymyślaj z głowy podwojenia podatku dla klasy średniej).
+- Jeśli brakuje szczegółów liczbowych, opisz realną istotę sporu bez fantazjowania.
 
-KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
-- "title": [Emotikona] [Mocny, bezkompromisowy nagłówek do 60 znaków].
-- "hook": 1 dynamiczne zdanie uderzające w sedno (kontrast, paradoks lub kluczowy fakt).
-- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd.
+ZASADA 2: TYLKO JEDNA KATEGORIA DLA KAŻDEGO NEWSA (ZAKAZ ŁĄCZENIA!)
+Pole "category" MUSI zawierać DOKŁADNIE JEDNO słowo z poniższej listy (żadnych ukośników, żadnych zbitek):
+- POLSKA (sprawy krajowe, rząd, społeczeństwo, polityka wewnętrzna) -> kolor czerwony
+- GOSPODARKA (makroekonomia, inflacja, stopy, podatki, surowce, waluty) -> kolor szmaragdowy
+- BIZNES (konkretne spółki giełdowe, fuzje, upadłości, rynki zagraniczne) -> kolor morski/zielony
+- GEOPOLITYKA (dyplomacja, relacje międzynarodowe, traktaty, wybory na świecie) -> kolor niebieski
+- OBRONNOŚĆ (armia, sojusze wojskowe, zakupy broni, NATO, front) -> kolor grafitowy
+- TECHNOLOGIE (przełomy AI, infrastruktura obliczeniowa, Big Tech) -> kolor fioletowy
 
-- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa):
-  * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
-  * Zasada konstrukcji: Zderz oficjalną narrację/pozory z brutalną rzeczywistością lub uderzeniem w kieszeń obywatela.
-  * ZAKAZ korpomowy („nawet big tech woli ulec presji”, „wpłynie to na stabilność”, „czas pokaże”).
-  * WZORZEC DO NAŚLADOWANIA:
-    - „Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.”
-    - „Gdy Twój majątek jest warty więcej w skupie złomu niż w banku, wiesz, że ekonomia oficjalnie zawiodła.”
-    - „Rząd głośno chwali się tarczami osłonowymi, kasując w tym samym czasie rekordowe podatki od drożyzny.”
+Zadbaj o zrównoważony miks kategorii, aby zestawienie nie było jednokolorowe! (min. 4 pozycje POLSKA, min. 4 pozycje GOSPODARKA, 2-3 BIZNES, 2 GEOPOLITYKA, max 2 OBRONNOŚĆ, max 1-2 TECHNOLOGIE).
 
-- "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
-  * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
-  * Układ:
-    1. Nagłówek z emotikoną
-    2. Mocny, podwójny hook z flagami i wykrzyknikiem
-    3. Rozszerzone tło wydarzenia z detalami, których NIE MA na slajdzie
-    4. Cięta pointa z dedykowanymi emotikonami
-    5. Prowokujące pytanie do dyskusji kończące się „👇💬”
-- "question": 1 zróżnicowane, konkretne pytanie do dyskusji pod dany temat.
-- "image_query": 2-3 konkretne słowa kluczowe po angielsku do bazy zdjęć Pexels.
+ZASADA 3: CIĘTY KOMENTARZ
+- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa). Zderz oficjalne deklaracje władzy lub korporacji z twardą rzeczywistością i kosztami ponoszonymi przez zwykłych ludzi. Zawsze krótsze niż summary.
+
+ZASADA 4: FORMAT THREADS
+- "threads_post": Dedykowany, osobny post na Threads (3-4 naturalne akapity z podwójnym hookiem, tłem, flagami i pytaniem). Zakaz przepisywania 1:1 słów ze slajdu.
 
 STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
 [
   {{
-    "category": "RYNKI I GOSPODARKA / POLSKA / BIZNES / GEOPOLITYKA / OBRONNOŚĆ / TECHNOLOGIE / AI",
+    "category": "POLSKA" lub "GOSPODARKA" lub "BIZNES" lub "GEOPOLITYKA" lub "OBRONNOŚĆ" lub "TECHNOLOGIE",
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
-    "summary": "2 zwięzłe zdania faktów na slajd.",
+    "summary": "Dokładnie 2 zwięzłe zdania czystych, sprawdzonych faktów na slajd.",
     "comment": "1 dosadne, cięte zdanie kontrastu (14-22 słowa, krótsze niż summary).",
-    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, unikalna względem summary).",
-    "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
+    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n).",
+    "question": "1 prowokujące do dyskusji pytanie pod dany temat kończące się '👇💬'.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
   }}
@@ -327,7 +353,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.55,
+            temperature=0.45,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -371,7 +397,7 @@ if len(items) < MIN_ITEMS:
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
                 "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
                 "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
-                "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
+                "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel? 👇💬",
                 "image_query": "financial market economy",
                 "link": art["link"]
             })
@@ -381,7 +407,7 @@ if len(items) < MIN_ITEMS:
 
 if items:
     cats = Counter([item["category"] for item in items])
-    print("Rozkład kategorii po aktualizacji:")
+    print("Rozkład pojedynczych kategorii:")
     for cat, count in cats.most_common():
         print(f"  {cat}: {count}")
 
@@ -431,4 +457,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych, unikalnych newsów.")
