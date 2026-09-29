@@ -18,30 +18,29 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
+# Zrównoważone źródła: przewaga gospodarki, rynków i spraw krajowych
 RSS_URLS = [
-    # --- GLOBALNE / GEOPOLITYKA ---
-    "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
-    "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
-    
-    # --- BIZNES / GOSPODARKA / RYNKI GLOBALNE ---
-    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
-    "https://feeds.bloomberg.com/markets/news.rss",
-    "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
-    
     # --- POLSKA: BIZNES, GOSPODARKA I OGÓLNE ---
     "https://www.money.pl/rss/",
     "https://businessinsider.com.pl/.rss",
     "https://www.bankier.pl/rss/wiadomosci.xml",
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
 
-    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO BRANŻOWE) ---
+    # --- BIZNES / GOSPODARKA / RYNKI GLOBALNE ---
+    "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    "https://feeds.bloomberg.com/markets/news.rss",
+    "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
+
+    # --- GLOBALNE / GEOPOLITYKA ---
+    "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
+
+    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO) ---
     "https://defence24.pl/rss",
     
-    # --- TECHNOLOGIA / AI ---
-    "https://techcrunch.com/feed/",
-    "https://www.theverge.com/rss/index.xml",
-    "https://arstechnica.com/feed/"
+    # --- TECHNOLOGIA / AI (JEDNO KONTROLOWANE ŹRÓDŁO) ---
+    "https://techcrunch.com/feed/"
 ]
 
 POLISH_MONTHS = {
@@ -150,7 +149,6 @@ def fetch_pexels_image_url(query: str, retries: int = 2) -> str:
 
 
 def fetch_article_image(url: str) -> str | None:
-    """Pobiera og:image / twitter:image ze strony artykułu (do Threads / IG Top 3)."""
     if not url or url == "#" or "news.google.com" in url:
         return None
     try:
@@ -193,7 +191,9 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:5]:
+        # Bierzemy po 5 wpisów, a dla techcrunch tylko 2
+        limit = 2 if "techcrunch" in url else 5
+        for entry in feed.entries[:limit]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
@@ -259,21 +259,22 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z DOSADNYM, KRÓTKIM KOMENTARZEM ---
+# --- PROMPT AI Z TWARDYMI PROPORCJAMI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
 Twoje treści zdobywają wirale, bo nie owijasz w bawełnę, obnażasz cynizm polityków i korporacji oraz piszesz bezkompromisowym, ciętym językiem.
 
-Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
+Zadanie: Na podstawie poniższych artykułów stwórz 10-12 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
-ŚCISŁY PODZIAŁ TEMATYCZNY (TWARDE REGUŁY):
-1. MINIMUM 60% CAŁOŚCI:
-   - GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, INWESTYCJE, BUDŻET, WALUTY ORAZ POLSKA.
+ŚCISŁY PODZIAŁ TEMATYCZNY (BEZWZGLĘDNIE EGZEKWOWANE REGUŁY):
+1. GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, BUDŻET, WALUTY ORAZ POLSKA:
+   - MUSZĄ STANOWIĆ MINIMUM 70% CAŁEGO ZESTAWIENIA!
 2. OBRONNOŚĆ / WOJSKO / MILITARIA:
-   - MAKSYMALNIE 3 POZYCJE w całym zestawieniu! Wybieraj tylko absolutne przełomy geopolityczne (żadnych drobnych zakupów czy sprzętu z lokalnych targów).
-3. TECHNOLOGIE / AI:
-   - DOKŁADNIE 2 POZYCJE (największe inwestycje, energetyka pod data centers, przełomy rynkowe).
+   - MAKSYMALNIE 2 POZYCJE w całym zestawieniu!
+3. TECHNOLOGIE, AI, CYBERBEZPIECZEŃSTWO, SMARTFONY, CHMURA, STARTUPY IT:
+   - MAKSYMALNIE 1 DO 2 POZYCJI W CAŁYM ZESTAWIENIU!
+   - Bezwzględny zakaz przemycania tematów technologicznych (np. cyberoszustw, telefonów, Big Techu, platform chmurowych) pod kategorią "BIZNES" czy "GOSPODARKA". Jeśli temat dotyczy aplikacji, IT, cybernetyki czy serwerów – wlicza się do limitu max 2!
 4. ZERO plotek, celebrytów i lifestyle'u.
 
 KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
@@ -285,11 +286,10 @@ KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
   * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
   * Zasada konstrukcji: Zderz oficjalną narrację/pozory z brutalną rzeczywistością lub uderzeniem w kieszeń obywatela.
   * ZAKAZ korpomowy i bezpiecznego tonu typu: „nawet big tech woli ulec presji”, „wpłynie to na stabilność”, „czas pokaże”.
-  * WZORCE DO NAŚLADOWANIA:
+  * WZORZEC DO NAŚLADOWANIA:
     - „Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.”
     - „Gdy Twój majątek jest warty więcej w skupie złomu niż w banku, wiesz, że ekonomia oficjalnie zawiodła.”
     - „Rząd głośno chwali się tarczami osłonowymi, kasując w tym samym czasie rekordowe podatki od drożyzny.”
-    - „Korporacje chętnie promują wolność słowa, dopóki na stole nie pojawią się wielomilionowe kary z urzędów.”
 
 - "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
   * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
@@ -332,7 +332,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.6,
+            temperature=0.55,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -436,4 +436,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów z dosadnym, zwięzłym komentarzem.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych newsów.")
