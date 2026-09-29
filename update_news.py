@@ -18,29 +18,28 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
-# Zrównoważone źródła: przewaga gospodarki, rynków i spraw krajowych
+# Zbalansowany strumień: Polska, gospodarka, rynki i twarda polityka
 RSS_URLS = [
-    # --- POLSKA: BIZNES, GOSPODARKA I OGÓLNE ---
+    # --- POLSKA: GOSPODARKA, BIZNES, PRZEMYSŁ I KRAJ ---
     "https://www.money.pl/rss/",
     "https://businessinsider.com.pl/.rss",
     "https://www.bankier.pl/rss/wiadomosci.xml",
+    "https://www.wnp.pl/rss/artykuly.xml",
+    "https://archiwum.rp.pl/rss/ekonomia",
     "https://news.google.com/rss?hl=pl&gl=PL&ceid=PL:pl",
 
-    # --- BIZNES / GOSPODARKA / RYNKI GLOBALNE ---
+    # --- ŚWIAT: RYNKI, FINANSE, SUROWCE ---
     "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
     "https://feeds.bloomberg.com/markets/news.rss",
     "https://search.cnbc.com/rs/search/view.html?partnerId=2000&keywords=markets&sort=date",
 
-    # --- GLOBALNE / GEOPOLITYKA ---
+    # --- GEOPOLITYKA I WYDARZENIA GLOBALNE ---
     "https://www.reutersagency.com/feed/?best-topics=political-general&post_type=best",
     "https://feeds.bbci.co.uk/news/world/rss.xml",
     "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
 
-    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO) ---
-    "https://defence24.pl/rss",
-    
-    # --- TECHNOLOGIA / AI (JEDNO KONTROLOWANE ŹRÓDŁO) ---
-    "https://techcrunch.com/feed/"
+    # --- OBRONNOŚĆ (POJEDYNCZE ŹRÓDŁO STRATEGICZNE) ---
+    "https://defence24.pl/rss"
 ]
 
 POLISH_MONTHS = {
@@ -50,7 +49,7 @@ POLISH_MONTHS = {
 }
 
 MAX_AGE_HOURS = 24
-MIN_ITEMS = 8
+MIN_ITEMS = 12
 
 
 def clean_link(url: str) -> str:
@@ -191,9 +190,7 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        # Bierzemy po 5 wpisów, a dla techcrunch tylko 2
-        limit = 2 if "techcrunch" in url else 5
-        for entry in feed.entries[:limit]:
+        for entry in feed.entries[:6]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
@@ -254,28 +251,26 @@ for art in raw_articles:
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
-if len(filtered_raw_articles) < 6:
+if len(filtered_raw_articles) < 10:
     filtered_raw_articles = raw_articles
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z TWARDYMI PROPORCJAMI ---
+# --- PROMPT AI: 14-15 POZYCJI Z TWARDYMI PROPORCJAMI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
 Twoje treści zdobywają wirale, bo nie owijasz w bawełnę, obnażasz cynizm polityków i korporacji oraz piszesz bezkompromisowym, ciętym językiem.
 
-Zadanie: Na podstawie poniższych artykułów stwórz 10-12 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
+Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH, NAJBARDZIEJ CHWYTLIWYCH wiadomości w języku polskim w formacie JSON.
 
-ŚCISŁY PODZIAŁ TEMATYCZNY (BEZWZGLĘDNIE EGZEKWOWANE REGUŁY):
+ŚCISŁY PODZIAŁ TEMATYCZNY (BEZWZGLĘDNY PRIORYTET):
 1. GOSPODARKA, RYNKI FINANSOWE, BIZNES, SUROWCE, BUDŻET, WALUTY ORAZ POLSKA:
-   - MUSZĄ STANOWIĆ MINIMUM 70% CAŁEGO ZESTAWIENIA!
-2. OBRONNOŚĆ / WOJSKO / MILITARIA:
-   - MAKSYMALNIE 2 POZYCJE w całym zestawieniu!
-3. TECHNOLOGIE, AI, CYBERBEZPIECZEŃSTWO, SMARTFONY, CHMURA, STARTUPY IT:
-   - MAKSYMALNIE 1 DO 2 POZYCJI W CAŁYM ZESTAWIENIU!
-   - Bezwzględny zakaz przemycania tematów technologicznych (np. cyberoszustw, telefonów, Big Techu, platform chmurowych) pod kategorią "BIZNES" czy "GOSPODARKA". Jeśli temat dotyczy aplikacji, IT, cybernetyki czy serwerów – wlicza się do limitu max 2!
-4. ZERO plotek, celebrytów i lifestyle'u.
+   - MUSZĄ STANOWIĆ MINIMUM 75% CAŁOŚCI (min. 11 pozycji)! Wybieraj podatki, ceny, spółki, inflację, rynek pracy, decyzje rządu, nieruchomości i twarde zawirowania rynkowe.
+2. GEOPOLITYKA I BEZPIECZEŃSTWO GLOBALNE:
+   - 2 do 3 pozycji strategicznych o realnym wpływie na sytuację międzynarodową.
+3. TECHNOLOGIE / AI / CYBERNETYKA:
+   - MAKSYMALNIE 1 DO 2 POZYCJI w całym zestawieniu! Bierz tylko przełomy o gigantycznej skali rynkowej. Zakaz drobnych nowinek i apek.
 
 KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
 - "title": [Emotikona] [Mocny, bezkompromisowy nagłówek do 60 znaków].
@@ -285,7 +280,7 @@ KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
 - "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa):
   * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
   * Zasada konstrukcji: Zderz oficjalną narrację/pozory z brutalną rzeczywistością lub uderzeniem w kieszeń obywatela.
-  * ZAKAZ korpomowy i bezpiecznego tonu typu: „nawet big tech woli ulec presji”, „wpłynie to na stabilność”, „czas pokaże”.
+  * ZAKAZ korpomowy („nawet big tech woli ulec presji”, „wpłynie to na stabilność”, „czas pokaże”).
   * WZORZEC DO NAŚLADOWANIA:
     - „Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.”
     - „Gdy Twój majątek jest warty więcej w skupie złomu niż w banku, wiesz, że ekonomia oficjalnie zawiodła.”
@@ -381,7 +376,7 @@ if len(items) < MIN_ITEMS:
                 "link": art["link"]
             })
             existing_links.add(art["link"])
-            if len(items) >= 12:
+            if len(items) >= 14:
                 break
 
 if items:
