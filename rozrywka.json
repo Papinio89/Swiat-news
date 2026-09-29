@@ -1,87 +1,87 @@
 {
-  "date": "28 września 2026",
-  "time": "13:16",
-  "timestamp": "2026-09-28_13:16",
+  "date": "29 września 2026",
+  "time": "13:12",
+  "timestamp": "2026-09-29_13:12",
   "items": [
     {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "👃 Najlepiej pachnące miasto świata",
-      "summary": "Opublikowano oficjalny ranking miast o najprzyjemniejszym zapachu na świecie, stworzony na podstawie czystości powietrza, liczby piekarni oraz kwiaciarni. Zwycięzcą zostało amerykańskie Richmond w Wirginii, gdzie zapach świeżego pieczywa dosłownie paraliżuje ruch na ulicach.",
-      "comment": "Nareszcie stworzono miejsce, w którym nagły podmuch wiatru nie grozi natychmiastową traumą.",
-      "image_query": "city bakery bread",
-      "link": "https://www.mentalfloss.com/geography/cities/best-smelling-cities-america-ranked",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d1e45pv3m34kzjj8.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3d1e45pv3m34kzjj8.jpg"
+      "category": "ZWIERZAKI",
+      "title": "🦘 Kangur-zbieg terroryzuje niemieckie miasteczko",
+      "summary": "W małym niemieckim miasteczku kangur uciekł z prywatnej hodowli i przez trzy dni przemykał między posesjami. Zwierzę bez problemu przeskoczyło nad maską policyjnego radiowozu i zniknęło w pobliskim polu kukurydzy.",
+      "comment": "Lokalni policjanci do dziś piszą raport i tłumaczą przełożonym, dlaczego przegrali pościg z kimś, kto porusza się wyłącznie w skokach.",
+      "image_query": "kangaroo running wild",
+      "link": "https://www.mentalfloss.com/holidays/halloween/best-halloween-trivia-questions",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mjde3yr25j8ys357.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mjde3yr25j8ys357.jpg"
     },
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "🛒 Sklepowe szaleństwo cenowe",
-      "summary": "Najnowsza mapa wydatków domowych ujawniła gigantyczne absurdy w cenach podstawowej żywności. Mieszkańcy Hawajów płacą za cotygodniowe zakupy spożywcze średnio aż 290 dolarów, czyli dwa razy więcej niż mieszkańcy Mississippi.",
-      "comment": "Kupując tam cztery pomidory i mleko, automatycznie wchodzisz w drugi próg podatkowy.",
-      "image_query": "expensive grocery market",
-      "link": "https://www.mentalfloss.com/geography/maps/most-least-expensive-states-groceries-map",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_635,w_7952,h_4473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3jg6014xgk32b4px4.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_635,w_7952,h_4473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3jg6014xgk32b4px4.jpg"
+      "title": "🦺 Mężczyzna udawał manekin w witrynie sklepowej",
+      "summary": "22-latek czekał na zamknięcie galerii handlowej, pozując bez ruchu w witrynie z torebką w ręku. Gdy zgasły światła, ruszył na rabunek lokali gastronomicznych i markowych ubrań.",
+      "comment": "Gość pobił rekord świata w grze w posągi, ale przegrał w starciu z pierwszą lepszą kamerą monitoringu.",
+      "image_query": "mannequin store window",
+      "link": "https://www.mentalfloss.com/entertainment/tv/most-relatable-gilmore-girls-quotes-fans-still-love",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/gilmore_girls___4k___season_1_opening_credits___2000_2007___the_wb_cw-2b10d14639fc7c123516bd258b286f80.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/gilmore_girls___4k___season_1_opening_credits___2000_2007___the_wb_cw-2b10d14639fc7c123516bd258b286f80.jpg"
     },
     {
       "category": "ZWIERZAKI",
-      "title": "🦫 Absurdalny rekord inżynierii gryzoni",
-      "summary": "W jednym z północnych rezerwatów zorganizowano monitoring bobrów, które skonsolidowały siły i zbudowały gigantyczną tamę o długości niemal 850 metrów. Konstrukcja jest tak ogromna, że bez problemu widać ją na kosmicznych zdjęciach satelitarnych.",
-      "comment": "To jedyni budowlańcy na świecie, którzy pracują bez przerw na kawę i nie biorą zaliczek.",
-      "image_query": "beaver dam river",
-      "link": "https://www.mentalfloss.com/quizzes/pass-4th-grade-science-today-take-quiz",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3aernq6gbanpnz2ja.jpg"
+      "title": "🐐 Koza weszła do urzędu i zjadła dokumenty",
+      "summary": "W jednym z urzędów rejonowych koza niepostrzeżenie weszła przez otwarte drzwi i zjadła ważną dokumentację przetargową. Urzędnicy musieli oficjalnie unieważnić całą procedurę z powodu działania siły wyższej.",
+      "comment": "Niektóre przepisy są tak ciężkie do strawienia, że poradzi sobie z nimi wyłącznie żołądek kozy.",
+      "image_query": "goat inside office",
+      "link": "https://www.mentalfloss.com/literature/books/every-state-favorite-children-book-ranked",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_451,w_5184,h_2916/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cfa1p3kg88zkkwyx.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_451,w_5184,h_2916/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cfa1p3kg88zkkwyx.jpg"
     },
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "🍕 Szalona podróż dla maratonu jedzenia",
-      "summary": "Pewien amerykański gastroturysta pokonał w tydzień ponad 3000 kilometrów tylko po to, by przetestować 50 najdziwniejszych potraw w kraju. Wśród dań znalazła się pizza z marynowanymi truskawkami oraz głęboko smażona kostka masła.",
-      "comment": "Warto było wydać oszczędności życia, żeby dowiedzieć się na własnej skórze, że gorące masło to nie jest warzywo.",
-      "image_query": "junk food pizza",
-      "link": "https://www.mentalfloss.com/nostalgia/80s/social-rules-family-landline-forced-everyone-learn",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4308,h_2423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2hr002kynx8619hat.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4308,h_2423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m2hr002kynx8619hat.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "🎬 Ulubiony film Matthew Perry’ego",
-      "summary": "Gwiazdor „Przyjaciół” przez całe życie najwyżej cenił tylko jedną ze swoich ról – występ w komedii „Jak ugryźć 10 milionów”. Aktor przyznawał, że praca na planie z Brucem Willisem była komediowym punktem zwrotnym jego kariery i zaowocowała zakładem o drogi zegarek.",
-      "comment": "Większość z nas do dziś pamięta z tego filmu głównie to, że Willis wyglądał tam całkiem znośnie w dresie.",
-      "image_query": "cinema movie tape",
-      "link": "https://www.mentalfloss.com/entertainment/movies/matthew-perry-favorite-matthew-perry-film-what-made-special",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_312,w_2408,h_1354/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3crqax5gy6gza5f3b.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_312,w_2408,h_1354/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3crqax5gy6gza5f3b.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "🏫 Mroczne zasady szkół wiktoriańskich",
-      "summary": "W XIX-wiecznych angielskich szkołach stosowano kuriozalne kary porządkowe za najmniejsze przewinienia uczniów. Za rozmawianie na lekcji trzeba było nosić czapkę z napisem „Głupek” i stać na jednej nodze, a za pisanie lewą ręką wiązano dłoń za plecami na całe tygodnie.",
-      "comment": "Współcześni uczniowie przy tym poziomie rygoru przenieśliby się na nauczanie domowe po pierwszej minucie.",
-      "image_query": "victorian classroom pupils",
-      "link": "https://www.mentalfloss.com/history/school-rules-victorian-children-had-follow",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_534,w_6336,h_3564/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m383qnyrj0m3f2ya75.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_534,w_6336,h_3564/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m383qnyrj0m3f2ya75.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "✏️ Ołówekowy rytuał Steinbecka",
-      "summary": "John Steinbeck miał obsesyjny nawyk pisarski, bez którego nie potrafił stworzyć ani jednego rozdziału powieści „Na wschód od Edenu”. Każdego ranka przygotowywał dokładnie 60 idealnie zaostrzonych ołówków, z których korzystał po kolei, gdy tylko grafit lekko się stępił.",
-      "comment": "Dziś po prostu kupiłby głośną klawiaturę mechaniczną, ale wtedy trzeba było napędzać nerwicę temperówką.",
-      "image_query": "sharpened wooden pencils",
-      "link": "https://www.mentalfloss.com/literature/books/writing-practice-helped-john-steinbeck-finish-east-of-eden",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3522,h_1981/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cxy0c2eat90xa2f0.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3522,h_1981/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cxy0c2eat90xa2f0.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "📚 Jesienne klasyki tworzone w gorączce",
-      "summary": "Niezwykły zestaw XIX-wiecznych powieści stał się synonimem jesiennego klimatu ze względu na swoje mroczne i mgliste tło wydarzeń. Książki takie jak „Wichrowe Wzgórza” powstawały często w trakcie bezsennych nocy autorów zmagających się z gruźlicą oraz osamotnieniem.",
-      "comment": "Najlepszy dowód na to, że największe arcydzieła literatury powstają przy skrajnym niedoborze witaminy D.",
-      "image_query": "gothic classic books",
+      "title": "🛞 Jechał 20 km na metalowej feldze autostradą",
+      "summary": "Pewien kierowca przejechał ponad 20 kilometrów na samej metalowej feldze, sypiąc iskrami na całą szerokość drogi. Po zatrzymaniu przez drogówkę tłumaczył, że głośny stuk po prostu zagłuszał mu radio.",
+      "comment": "Ocieplenie klimatu to nic w porównaniu z temperaturą, jaką wygenerował ten poziom determinacji.",
+      "image_query": "car rim sparks",
       "link": "https://www.mentalfloss.com/literature/books/classic-novels-perfect-autumn-read",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cx0f1nsxdkvrfhse.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3cx0f1nsxdkvrfhse.jpg"
+    },
+    {
+      "category": "SZALONA HISTORIA",
+      "title": "🧹 Szkoci palili czarownice, a Anglicy wieszali",
+      "summary": "Różnice w prawie w XV-XVII wieku sprawiały, że w Anglii czarownice traktowano jak zwykłe przestępczynie i skazywano na powieszenie. W Szkocji uważano je za zdrajczynie Boga, więc przed spaleniem na stosie najpierw je duszono.",
+      "comment": "Miło wiedzieć, że w XVI wieku styl egzekucji zależał od Twojego kodu pocztowego.",
+      "image_query": "medieval witchcraft trial",
+      "link": "https://www.mentalfloss.com/why-english-law-hanged-witches-scottish-law-burned",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_39,w_4859,h_2733/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ccjhmx07by8j84hm.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_39,w_4859,h_2733/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ccjhmx07by8j84hm.jpg"
+    },
+    {
+      "category": "BEKA Z NAUKI",
+      "title": "📝 Średniowieczni uczniowie pisali na kościach",
+      "summary": "Zanim nadeszły czas zeszytów, dzieci w średniowieczu uczyły się pisać na drewnianych tabliczkach powleczonych woskiem. Najbiedniejsi rysowali litery na spłaszczonych kościach zwierzęcych, z których potem wyskrobywano tekst.",
+      "comment": "Dzisiejsza młodzież narzeka na brak tabletów, a kiedyś jedynym nośnikiem danych był obiad z zeszłego wtorku.",
+      "image_query": "medieval wax tablet",
+      "link": "https://www.mentalfloss.com/history/school-supplies-children-used-medieval-times",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4576,h_2574/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cma51mqgsc3yzqnc.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4576,h_2574/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3cma51mqgsc3yzqnc.jpg"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "☕ Aktorzy Gilmore Girls pili colę zamiast kawy",
+      "summary": "Bohaterki serialu „Kochane kłopoty” wypijały litry kawy na ekranie, ale w rzeczywistości Alexis Bledel nienawidziła tego napoju i piła wyłącznie colę. Lauren Graham wybierała wersję bezkofeinową, by nie dostać zawału przy szybkich dialogach.",
+      "comment": "Cała ta kofeina na planie była tak samo prawdziwa jak życiowa stabilność emocjonalna bohaterów.",
+      "image_query": "coffee cup tv show",
+      "link": "https://www.mentalfloss.com/entertainment/tv/most-relatable-gilmore-girls-quotes-fans-still-love",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/gilmore_girls___4k___season_1_opening_credits___2000_2007___the_wb_cw-2b10d14639fc7c123516bd258b286f80.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/gilmore_girls___4k___season_1_opening_credits___2000_2007___the_wb_cw-2b10d14639fc7c123516bd258b286f80.jpg"
+    },
+    {
+      "category": "SZALONA HISTORIA",
+      "title": "🎃 Halloweenowe korzenie w celtyckim Samhain",
+      "summary": "Ponad 2000 lat temu Celtowie podczas święta Samhain ubierali się w skóry zwierząt i wystawiali jedzenie przed domy. Wierzyli, że w tę jedną noc granica między światem żywych i umarłych całkowicie zanika.",
+      "comment": "Koncept chodzenia w przebraniu i wyłudzania słodyczy ma dwa tysiące lat, a my wciąż udajemy, że wymyśliliśmy to dla zabawy.",
+      "image_query": "ancient celtic halloween",
+      "link": "https://www.mentalfloss.com/holidays/halloween/best-halloween-trivia-questions",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mjde3yr25j8ys357.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mjde3yr25j8ys357.jpg"
     }
   ]
 }
