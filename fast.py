@@ -1,3 +1,4 @@
+import html
 import json
 import os
 import re
@@ -69,6 +70,15 @@ def is_recent(entry) -> bool:
         return True
 
 
+def normalize_category(cat: str) -> str:
+    c = str(cat or "").upper().strip()
+    if "POLSK" in c:
+        return "POLSKA"
+    if "GEOPOLITYK" in c or "ŚWIAT" in c:
+        return "GEOPOLITYKA"
+    return "OBRONNOŚĆ"
+
+
 def fetch_article_image(url: str) -> str | None:
     if not url or url == "#" or "news.google.com" in url:
         return None
@@ -86,7 +96,7 @@ def fetch_article_image(url: str) -> str | None:
             }
         )
         with urllib.request.urlopen(req, timeout=6) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
+            html_raw = resp.read().decode("utf-8", errors="ignore")
             
         patterns = [
             r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
@@ -95,9 +105,10 @@ def fetch_article_image(url: str) -> str | None:
             r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']'
         ]
         for pat in patterns:
-            m = re.search(pat, html, re.I)
+            m = re.search(pat, html_raw, re.I)
             if m:
-                img = m.group(1).strip()
+                # Kluczowa zmiana: dekodowanie encji HTML (&amp; -> &) dla linków z tokenami CDN
+                img = html.unescape(m.group(1).strip()).replace("&amp;", "&")
                 if img.startswith("//"):
                     img = "https:" + img
                 if img.startswith("http") and not img.endswith(".svg"):
@@ -122,7 +133,9 @@ def fetch_pexels_image_url(query: str) -> str | None:
                 photos = data.get("photos", [])
                 if photos:
                     src = photos[0].get("src", {})
-                    return src.get("large") or src.get("medium")
+                    raw_src = src.get("large") or src.get("medium")
+                    if raw_src:
+                        return html.unescape(raw_src).replace("&amp;", "&")
     except Exception as ex:
         print(f"  [Pexels] Błąd dla '{query}': {ex}")
     return None
@@ -143,11 +156,11 @@ def validate_items(items: list) -> list:
         comment = str(item.get("comment", "")).strip()
         threads_post = str(item.get("threads_post", "")).strip()
         question = str(item.get("question", "")).strip()
-        category = str(item.get("category", "OBRONNOŚĆ")).strip().upper()
+        category = normalize_category(item.get("category", "OBRONNOŚĆ"))
         image_query = str(item.get("image_query", "military")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 20 or len(threads_post) < 80:
+        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 80:
             continue
 
         valid.append({
@@ -173,9 +186,15 @@ for url in RSS_URLS:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
+            summary = getattr(entry, "summary", "").strip()
+            clean_snippet = re.sub(r'<[^>]+>', '', summary)[:250]
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 6:
-                raw_articles.append({"title": title, "link": link})
+                raw_articles.append({
+                    "title": title,
+                    "snippet": clean_snippet,
+                    "link": link
+                })
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
@@ -185,9 +204,15 @@ if len(raw_articles) < TARGET_ITEMS:
             feed = feedparser.parse(url)
             for entry in feed.entries[:2]:
                 title = getattr(entry, "title", "").strip()
+                summary = getattr(entry, "summary", "").strip()
+                clean_snippet = re.sub(r'<[^>]+>', '', summary)[:250]
                 link = clean_link(getattr(entry, "link", "#"))
                 if title and len(title) > 6:
-                    raw_articles.append({"title": title, "link": link})
+                    raw_articles.append({
+                        "title": title,
+                        "snippet": clean_snippet,
+                        "link": link
+                    })
         except:
             pass
 
@@ -248,36 +273,42 @@ if len(filtered_raw_articles) < TARGET_ITEMS:
 
 articles_for_ai = filtered_raw_articles[:15]
 
-# --- PROMPT AI Z PODZIAŁEM NA SLAJD I PUBLICYSTYCZNY POST THREADS ---
+# --- PROMPT AI Z ZASADĄ POJEDYNCZEJ KATEGORII I KRÓTKIEGO KOMENTARZA ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Jesteś autorem czołowego konta analityczno-militarnego w mediach społecznościowych („Świat w Minucie”). 
-Twoje posty na Threads generują ogromne organiczne zasięgi (dziesiątki tysięcy wyświetleń i setki komentarzy), ponieważ piszesz w sposób żywy, publicystyczny, z trafnym tłem strategicznym i bezkompromisową pointą.
+Twoje posty zdobywają wirale, bo łączysz 100% rzetelność z bezkompromisowym, ciętym językiem.
 
 Zadanie: Wybierz DOKŁADNIE {TARGET_ITEMS} RÓŻNE, NAJCIEKAWSZE tematy z podanej listy i stwórz dla każdego unikalny wpis w formacie JSON.
 
-ZASADA ROZDZIELENIA TREŚCI SLAJD VS THREADS:
-- Na karuzelę Instagrama ("summary" i "comment"): pisz krótko, syntetycznie i merytorycznie. Summary to 2 zdania faktów o konkretnym sprzęcie/wydarzeniu, comment to 1 zdanie wniosku strategicznego.
-- Na Threads ("threads_post"): BEZWZGLĘDNY ZAKAZ przepisania 1:1 słów ze slajdu!
-  Napisz wciągający, bogaty post publicystyczny (dokładnie 3-4 naturalne akapity).
-  Wzoruj się na poniższym schemacie:
-  Akapit 1: Tytuł z trafną emotikoną (np. 🛡️, 🚀, ⚔️, ⚠️).
-  Akapit 2: Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "302 dni na oceanie: Historyczny i wyczerpujący dyżur USS Abraham Lincoln! 🚀🇺🇸").
-  Akapit 3: Pogłębione rozwinięcie sytuacji, którego NIE MA na grafice (szersze tło strategiczne, zmęczenie załóg, zużycie sprzętu, realna presja logistyczna).
-  Akapit 4: Cięta pointa z dedykowanymi emotikonami (np. 🌊⚓, 🛸🪖, ❄️🛡️).
-  Akapit 5: Konkretne pytanie prowokujące do dyskusji pod dany temat (np. "Czy US Navy nie nadwyręża zbytnio wytrzymałości swoich załóg? 🚢👇💬").
+ZASADA POJEDYNCZEJ KATEGORII (ZAKAZ ŁĄCZENIA UKOŚNIKIEM):
+Pole "category" MUSI mieć DOKŁADNIE JEDNO słowo:
+- "OBRONNOŚĆ" (zakupy broni, procedury wojskowe, fabryki amunicji, armia)
+- "POLSKA" (wydarzenia bezpośrednio w kraju lub na polskiej granicy)
+- "GEOPOLITYKA" (spory mocarstw, Bliski Wschód, traktaty międzynarodowe)
+
+ZASADY TREŚCI:
+- "title": [Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków].
+- "hook": 1 dynamiczne zdanie uderzające w sedno.
+- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd.
+- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa). 
+  * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
+  * Zderz deklaracje decydentów z brutalną rzeczywistością, brakiem sprzętu lub opóźnieniami. Zero banałów.
+- "threads_post": Dedykowany, osobny post na Threads (3-4 naturalne akapity z podwójnym hookiem, tłem, flagami i pytaniem). Zakaz przepisywania 1:1 słów ze slajdu.
+- "question": 1 angażujące, unikalne pytanie skierowane do czytelników kończące się „👇💬”.
+- "image_query": 2-3 precyzyjne angielskie słowa kluczowe do Pexels.
 
 STRUKTURA JSON (zwróć WYŁĄCZNIE czysty JSON):
 [
   {{
-    "category": "OBRONNOŚĆ / POLSKA / GEOPOLITYKA",
+    "category": "OBRONNOŚĆ" lub "POLSKA" lub "GEOPOLITYKA",
     "title": "[Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
     "summary": "2 zwięzłe zdania konkretów na slajd.",
-    "comment": "1 mocne, chłodne zdanie wniosku strategicznego.",
-    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, bogata w kontekst i unikalna względem summary).",
-    "question": "1 angażujące, unikalne pytanie skierowane do czytelników w tym konkretnym temacie.",
-    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels (np. 'aircraft carrier ocean', 'military drone flight')",
+    "comment": "1 cięte, dosadne zdanie z puentą (14-22 słowa, krótsze niż summary).",
+    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n).",
+    "question": "1 unikalne pytanie do dyskusji kończące się '👇💬'.",
+    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels",
     "link": "dokładnie URL artykułu"
   }}
 ]
@@ -295,7 +326,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.4,
+            temperature=0.45,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -340,10 +371,10 @@ while len(items) < TARGET_ITEMS:
                 "category": "OBRONNOŚĆ",
                 "title": f"🚨 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia dotyczące projektu: {clean_t[:40]}.",
-                "summary": f"Trwają dyskusje wokół wdrożenia i zabezpieczenia kontraktu w tym obszarze. Przedstawiciele branży analizują szczegóły techniczne.",
-                "comment": "Decyzje w tym sektorze bezpośrednio zdefiniują potencjał operacyjny na kolejne lata.",
-                "threads_post": f"🚨 {clean_t[:55]}\n\nKluczowy zwrot na wschodniej flance: zapadają strategiczne decyzje! 🛡️⚡\n\nPrzedstawiciele resortów obrony i sztabów analizują najnowsze dane operacyjne. Presja czasu i wyzwania logistyczne zmuszają do weryfikacji dotychczasowych planów zaopatrzeniowych.\n\nTo wyraźny sygnał, że deklaracje polityczne muszą natychmiast znaleźć odzwierciedlenie w realnych mocach produkcyjnych przemysłu. 🪖⏳\n\nKrajowy i sojuszniczy przemysł zbrojeniowy sprosta wyzwaniom nowej ery? 🏭👇💬",
-                "question": "Jak oceniacie ten ruch z perspektywy modernizacji armii?",
+                "summary": "Trwają dyskusje wokół wdrożenia i zabezpieczenia kontraktu w tym obszarze. Przedstawiciele branży analizują szczegóły techniczne.",
+                "comment": "Deklaracje o modernizacji armii brzmią dumnie, dopóki zbrojeniówka nie zderzy się z brakiem mocy przerobowych fabryk.",
+                "threads_post": f"🚨 {clean_t[:55]}\n\nKluczowy zwrot na wschodniej flance: zapadają strategiczne decyzje! 🛡️⚡\n\nPrzedstawiciele resortów obrony analizują najnowsze dane operacyjne. Presja czasu i wyzwania logistyczne zmuszają do weryfikacji dotychczasowych planów zaopatrzeniowych.\n\nTo wyraźny sygnał, że deklaracje polityczne muszą natychmiast znaleźć odzwierciedlenie w realnych mocach produkcyjnych przemysłu. 🪖⏳\n\nKrajowy i sojuszniczy przemysł zbrojeniowy sprosta wyzwaniom nowej ery? 🏭👇💬",
+                "question": "Jak oceniacie ten ruch z perspektywy modernizacji armii? 👇💬",
                 "image_query": "military defense technology",
                 "link": art.get("link", "#")
             })
@@ -356,7 +387,7 @@ while len(items) < TARGET_ITEMS:
 
 items = items[:TARGET_ITEMS]
 
-# --- KASKADOWE POBIERANIE ZDJĘĆ ---
+# --- KASKADOWE POBIERANIE ZDJĘĆ Z CZYSZCZENIEM LINKÓW ---
 print("Dobieranie zdjęć (Artykuł -> Pexels -> Fallback)...")
 source_ok = 0
 for item in items:
@@ -371,8 +402,10 @@ for item in items:
     if not selected_img:
         selected_img = FALLBACK_IMG
         
-    item["image_url"] = selected_img
-    item["source_image_url"] = selected_img
+    # Zabezpieczenie przed encjami w adresach końcowych
+    clean_img = html.unescape(selected_img).replace("&amp;", "&")
+    item["image_url"] = clean_img
+    item["source_image_url"] = clean_img
 
 print(f"Zdjęcia ze źródeł pobrane: {source_ok}/{len(items)}")
 
