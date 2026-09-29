@@ -1,23 +1,39 @@
 {
   "date": "29 września 2026",
-  "time": "06:00",
-  "count": 43,
+  "time": "06:23",
+  "count": 44,
   "items": [
     {
       "title": "OpenAI scraps rollout of new model over safety concerns",
       "link": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko"
     },
     {
+      "title": "Evicted Spanish pensioner can move back home, lawyer says",
+      "link": "https://www.bbc.co.uk/news/articles/cmkg8qgy9d9lo"
+    },
+    {
+      "title": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
+      "link": "https://www.bbc.co.uk/news/articles/cq5yj1835y1wo"
+    },
+    {
       "title": "New York Times executive fatally shot allegedly by elderly in-laws",
       "link": "https://www.bbc.co.uk/news/articles/cred737qdv2no"
     },
     {
-      "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
-      "link": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o"
+      "title": "US ban on Canadian alcohol and dairy comes into effect as trade war drags on",
+      "link": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o"
     },
     {
-      "title": "French PM warns against escalation of school protests after 164 arrested",
-      "link": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o"
+      "title": "Latest Oil Market News and Analysis for Sept. 29",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/latest-oil-market-news-and-analysis-for-sept-29"
+    },
+    {
+      "title": "Gold Edges Higher as Treasuries Stabilize After Sharp Selloff",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-29/gold-trades-near-seven-week-low-as-rate-hike-pressure-mounts"
+    },
+    {
+      "title": "Copper Edges Higher as Chile Mine Dispute Raises Supply Concerns",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-29/copper-edges-higher-as-chile-mine-dispute-raises-supply-concerns"
     },
     {
       "title": "Samsung Bets $1 Billion on AI Data Centers From Ex-AWS Chief",
@@ -26,18 +42,6 @@
     {
       "title": "Global Stocks Drop to One-Week Low, Oil Advances: Markets Wrap",
       "link": "https://www.bloomberg.com/news/articles/2026-09-28/stock-market-today-dow-s-p-live-updates"
-    },
-    {
-      "title": "Japan 40-Year Bond Sale Sees Strongest Demand Since 2020",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-29/japan-40-year-bond-sale-sees-strongest-demand-since-2020"
-    },
-    {
-      "title": "RoboTechnik Drops in Debut After Leading $1.8 Billion HK Lineup",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-28/robotechnik-leads-hong-kong-s-1-8-billion-listing-debut-lineup"
-    },
-    {
-      "title": "Samsung’s Insurance Arms Lead Korean Drive for Overseas M&A",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-28/korean-financial-firms-chase-bold-overseas-m-a-to-fuel-growth"
     },
     {
       "title": "Polacy bez dopłat do emerytur. Alarmuje ws. projektu",
@@ -60,44 +64,48 @@
       "link": "https://www.money.pl/pieniadze/ile-kosztuje-euro-kurs-euro-do-zlotego-pln-eur-28-09-2026-7334181949905152a.html"
     },
     {
-      "title": "WIG20 kończy pod kreską. Orlen i energetyka nie dały rady",
-      "link": "https://www.bankier.pl/wiadomosc/WIG20-konczy-pod-kreska-Orlen-i-energetyka-nie-daly-rady-9203892.html"
+      "title": "Co się dzieje z cenami mieszkań? Nowy indeks daje nadzieję kupującym, ale jedno miasto idzie pod prąd",
+      "link": "https://www.bankier.pl/wiadomosc/Ceny-mieszkan-w-III-kw-2026-r-Stabilizacja-stawek-wzrosty-w-Warszawie-RAPORT-9203633.html"
     },
     {
-      "title": "Spór o ceny paliw. Tusk apeluje do prezydenta o podpisanie ustawy",
-      "link": "https://www.bankier.pl/wiadomosc/Spor-o-ceny-paliw-Tusk-apeluje-do-prezydenta-o-podpisanie-ustawy-9204004.html"
+      "title": "Została zmanipulowana i potwierdziła przelew. Żąda od banku zwrotu 40 tys. zł",
+      "link": "https://www.bankier.pl/wiadomosc/Zostala-zmanipulowana-i-potwierdzila-przelew-Zada-od-banku-zwrotu-40-tys-zl-9203542.html"
     },
     {
-      "title": "Mocna przecena złota i srebra. Metale ugięły się pod ciężarem wysokich rentowności",
-      "link": "https://www.bankier.pl/wiadomosc/Mocna-przecena-zlota-i-srebra-Metale-ugiely-sie-pod-ciezarem-wysokich-rentownosci-9203664.html"
+      "title": "Jak chronić prawnie własne pomysły? Oto skuteczne metody. Na co zwrócić uwagę?",
+      "link": "https://www.bankier.pl/wiadomosc/Jak-chronic-prawnie-wlasne-pomysly-Oto-skuteczne-narzedzia-Na-co-warto-zwrocic-uwage-9203741.html"
     },
     {
-      "title": "Europa w odwrocie. Tych aut kupujemy w Polsce najwięcej",
-      "link": "https://www.bankier.pl/wiadomosc/Europa-w-odwrocie-Tych-aut-kupujemy-w-Polsce-najwiecej-9203600.html"
+      "title": "Kwartał w hipotekach bez dobrych wieści. Tylko jeden promyczek nadziei",
+      "link": "https://www.bankier.pl/wiadomosc/Oprocentowanie-kredytow-hipotecznych-zdolnosc-kredytowa-podsumowanie-III-kw-2026-r-9203850.html"
     },
     {
-      "title": "Metro, mieszkania. Najważniejsze postulaty kandydatów na prezydenta Krakowa - money.pl",
+      "title": "Powiadomienie z telefonu może być reklamą oszustów. CERT ostrzega przed nowym sposobem ataku",
+      "link": "https://www.bankier.pl/wiadomosc/Powiadomienie-z-telefonu-moze-byc-reklama-oszustow-CERT-ostrzega-przed-nowym-sposobem-ataku-9203618.html"
+    },
+    {
+      "title": "Metro, mieszkania. Najważniejsze postulaty kandydatów na prezydenta Krakowa - Money.pl",
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNTQxaldUd2hlZWpEN0hQU1hsOEVuY0VWTTF1cVJFQmhzeG5XenpCTlRDYjZwRzhzWjhJNWFrT01EVy1CbXZmMGxmVEZTQkwyZk1JOWR4ZXVWUUFkdmtyV01ZSGRrWEFYeVVzNGFJSUUxMTRwM09ZZjYwYWZZZjBiZmctYTE5M2g5dWp6aUR5b0pfVndXVHB2TlppVzVUbTRMenlWRFYzV3V1cFhZTkVVRmJJSWVsY2E5OEpsb09HSk9BS0I5?oc=5"
     },
     {
-      "title": "Rosyjski atak na Ukrainę. Polska poderwała myśliwce - PolsatNews.pl",
+      "title": "Rosyjski atak na Ukrainę. Polska poderwała myśliwce - polsatnews.pl",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTk2ZnAxQ2NyZ3drWS1hY2J1WGdubTNnaGZZMl9IZW9NOWtFbGs4ZGE0TnZPYXdUclBQVERWVV9lM0hXa3BzNTF0Nmk3ejRvc001MlE4OGh4OGZDcGpPb2I2Ni1uWWxSOE9JZkgzbnBlOVIySUFrZHNLLWN3b3lxcnNDLVNLUk1ORklCb0NrekVEZmpZMkNUZVZlam0ySm8?oc=5"
     },
     {
-      "title": "Jarosław żegna ks. Stanisława Zbojnowicza. Padły słowa, które wzruszają - Fakt",
+      "title": "Jarosław żegna ks. Stanisława Zbojnowicza. Padły słowa, które wzruszają - fakt.pl",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNalBIenl3MmsyOFZnVk9KRHBzSmpLN19uTXJONDdpWnhtNVRHVFlNQi1tcGNkWXdHNDVmME51Rm94RzR6d2hKLVhfSjhMXzRIQldtbms3MTMzMGxKRDBEMW9tV0V5X2JOOVlGMWtKeG1iQ04zTWV1MjF0ZnREY0ljN0taZXN5S2MzQlNhMUpXVDFSWkFlTy1ta2FpUkVSR3ZfNzAyLXI2bmVjYmt0aGJXS1JYN1FLYjRUeEZUX1dJbVlYN3I2ODlCY3czbDU?oc=5"
     },
     {
-      "title": "Rzecznik prezydenta atakuje Tuska ws. cen paliw. \"To obłuda\" - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOVlvTDZpcjVDT3dBaDNnaDBYZ1N0eDVYbndTR3F2TEd5SE1lM0liX0s4bWUzdXhWR0JfQ2ZFOHlfZVVnZGpaZ0VPWlVVRTJyaTNnbzlNOHdsYm1ZQmxlbWFhSkxqeDRkVFM0blp3am1abS1jMUlGLVF2MUVGeC15Ni13azBwSnpaSHJWYXRZSzY4eWpYVUpPb1BjM3k1V3d2?oc=5"
+      "title": "Trump zaskoczony decyzją Wielkiej Brytanii. Londyn wypuścił podejrzanych o terroryzm za kaucją - wydarzenia.interia.pl",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdFljc0xZdkdpbzJEeUFhQ2EzQlNNWnlhNlloWVFiTloyN2kwc1BHZUxDTDN3ZnU3aFd5Ymk2ZVRxdVE5aFpod0xLeGRvbW54QU8zOWltbjFaRV9qR0FQNHBIOWRfaFl3bEJkMnp4T0Fza2hwaEk2YU1QZnhsOWV3Z0NDcC1KQkl6ak9SYkctWjJWZzkwVGJGeGYtUmgwLXQtVGVVbVdfcDZ5cnpvSzNadEJFSHh0Tzh5M2c?oc=5"
     },
     {
       "title": "\"Konflikt osiągnął krytyczną fazę\". Coraz goręcej wokół Iranu - businessinsider.com.pl",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQmROSlB0LVBJcTNCN1dTdFp1bFJkR3NZcnhwM1ZiN1JBTEdRbGVXcFdtRG1VbkFSRUpzTnBhVklFRlVudEl0YXR0ZmFBZ2VGeWh4YUtlaUYxc1dzQXJzTGdyVE5ETFUzQWw3VlNneVMtY1JQVnV5Q2pxTlZ4TmJacWtkaFNyZ3ZUOEtmbk1QS3haa3RFM1p5LUlJTThGczNuOUQtQWx0X2ZCSzZUMlE?oc=5"
     },
     {
-      "title": "Leciał nad Polską i wylądował w Rosji. Wojskowy samolot algierskich sił w powietrzu",
-      "link": "https://defence24.pl/geopolityka/lecial-nad-polska-i-wyladowal-w-rosji-wojskowy-samolot-algierskich-sil-w-powietrzu"
+      "title": "Nowy gracz na rynku czołgów. Włosko-turecki projekt pomyślnie zakończył testy",
+      "link": "https://defence24.pl/przemysl/nowy-gracz-na-rynku-czolgow-wlosko-turecki-projekt-pomyslnie-zakonczyl-testy"
     },
     {
       "title": "Berlin chciał dialogu z Moskwą. Ławrow publicznie zadrwił z Niemiec",
@@ -110,10 +118,6 @@
     {
       "title": "Działo się w Ostrawie. NATO Days 2026",
       "link": "https://defence24.pl/geopolityka/dzialo-sie-w-ostrawie-nato-days-2026"
-    },
-    {
-      "title": "Strefa zagrożenia przy granicy z Polską. Rosyjskie lotnictwo i rakiety nadal groźne",
-      "link": "https://defence24.pl/polityka-obronna/strefa-zagrozenia-przy-granicy-z-polska-rosyjskie-lotnictwo-i-rakiety-nadal-grozne"
     },
     {
       "title": "Peak XV ups Surge seed investment ceiling to $5M, unveils 18-startup cohort",
@@ -136,10 +140,6 @@
       "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
     },
     {
-      "title": "Nothing’s new flagship Headphone 1 Pro put you in the studio",
-      "link": "https://www.theverge.com/tech/1001797/nothings-headphone-1-pro-review"
-    },
-    {
       "title": "AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
       "link": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal"
     },
@@ -154,6 +154,10 @@
     {
       "title": "Trump finalizes rule to make cars less fuel efficient",
       "link": "https://www.theverge.com/news/1001610/trump-weakens-fuel-efficiency-standards"
+    },
+    {
+      "title": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready"
     },
     {
       "title": "Boeing \"incredibly excited\" to serve as nation's only astronaut transportation",
