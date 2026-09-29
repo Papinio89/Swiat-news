@@ -259,11 +259,11 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
 
-# --- PROMPT AI Z BEZKOMPROMISOWYM, DOSADNYM KOMENTARZEM ---
+# --- PROMPT AI Z DOSADNYM, KRÓTKIM KOMENTARZEM ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje treści zdobywają wiralowe zasięgi, ponieważ jesteś dosadny, cyniczny, bezlitosny wobec hipokryzji polityków i korporacji oraz piszesz z potężnym pazurem.
+Twoje treści zdobywają wirale, bo nie owijasz w bawełnę, obnażasz cynizm polityków i korporacji oraz piszesz bezkompromisowym, ciętym językiem.
 
 Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
 
@@ -276,20 +276,20 @@ Zadanie: Na podstawie poniższych artykułów stwórz 10-14 NAJWAŻNIEJSZYCH wia
    - DOKŁADNIE 2 POZYCJE (największe inwestycje, energetyka pod data centers, przełomy rynkowe).
 4. ZERO plotek, celebrytów i lifestyle'u.
 
-KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL (CZYTAJ UWAŻNIE):
-- "title": [Emotikona] [Konkretny, chwytliwy, prowokujący nagłówek do 60 znaków].
+KLUCZOWE WYMAGANIA DOTYCZĄCE PÓL:
+- "title": [Emotikona] [Mocny, bezkompromisowy nagłówek do 60 znaków].
 - "hook": 1 dynamiczne zdanie uderzające w sedno (kontrast, paradoks lub kluczowy fakt).
-- "summary": 2 zwięzłe zdania czystych faktów, liczb i konkretów na slajd.
+- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd.
 
-- "comment": DOSADNY, CYNICZNY I ZASKAKUJĄCY KOMENTARZ (1-2 KRÓTKIE ZDANIA):
-  * KOMENTARZ MUSI BYĆ WIZUALNIE KRÓTSZY NIŻ SUMMARY!
-  * ZAKAZ SZTYWNEGO AKADEMICKIEGO GĘGANIA (typu: „Gdy w grę wchodzą zarzuty o cenzurę, big tech woli ulec presji”, „To kluczowy krok dla stabilności”, „Czas pokaże”).
-  * Pisz jak wkurzony, ale diabelnie inteligentny publicysta. Obnażaj hipokryzję, pieniądze pod stołem i to, jak cierpi na tym zwykły człowiek.
-  * WZORZEC IDEALNEGO KOMENTARZA:
+- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa):
+  * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
+  * Zasada konstrukcji: Zderz oficjalną narrację/pozory z brutalną rzeczywistością lub uderzeniem w kieszeń obywatela.
+  * ZAKAZ korpomowy i bezpiecznego tonu typu: „nawet big tech woli ulec presji”, „wpłynie to na stabilność”, „czas pokaże”.
+  * WZORCE DO NAŚLADOWANIA:
     - „Urzędnicy głośno narzekają na inflację, ale po cichu liczą zyski z prowizji pobieranej od każdego litra tankowanego przez Polaków.”
     - „Gdy Twój majątek jest warty więcej w skupie złomu niż w banku, wiesz, że ekonomia oficjalnie zawiodła.”
-    - „Rząd obiecuje ulgi podatkowe, zapominając dodać, że najpierw zabierze dwa razy tyle tylnymi drzwiami.”
-    - „Wszyscy udają walkę o wolność słowa, dopóki na stole nie pojawią się kary finansowe i odpływ reklamodawców.”
+    - „Rząd głośno chwali się tarczami osłonowymi, kasując w tym samym czasie rekordowe podatki od drożyzny.”
+    - „Korporacje chętnie promują wolność słowa, dopóki na stole nie pojawią się wielomilionowe kary z urzędów.”
 
 - "threads_post": DEDYKOWANY, OSOBNY POST NA THREADS (3-4 naturalne akapity):
   * Bezwzględny zakaz przepisywania 1:1 zdań ze slajdu!
@@ -309,7 +309,7 @@ STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
     "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
     "summary": "2 zwięzłe zdania faktów na slajd.",
-    "comment": "1-2 cięte, dosadne zdania bezlitośnie obnażające hipokryzję (krótsze niż summary).",
+    "comment": "1 dosadne, cięte zdanie kontrastu (14-22 słowa, krótsze niż summary).",
     "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n, unikalna względem summary).",
     "question": "1 prowokujące do dyskusji pytanie pod dany temat.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
@@ -332,7 +332,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.55,
+            temperature=0.6,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -374,7 +374,7 @@ if len(items) < MIN_ITEMS:
                 "title": f"📈 {clean_t[:55]}",
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Urzędnicy znowu zapewniają, że panują nad sytuacją, zapominając dodać, że rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
+                "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
                 "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel?",
                 "image_query": "financial market economy",
@@ -436,4 +436,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów z bezkompromisowym, dosadnym komentarzem.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} newsów z dosadnym, zwięzłym komentarzem.")
