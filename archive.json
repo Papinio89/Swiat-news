@@ -5420,5 +5420,142 @@
         "source_image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/microsoft-data-center-champion-1152x648.jpg"
       }
     ]
+  },
+  "2026-09-29_poranne": {
+    "date": "29 września 2026",
+    "time": "06:00",
+    "timestamp": "2026-09-29_06:00",
+    "items": [
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🤖 AMD płaci 8 mld $ za AI od Fei-Fei Li",
+        "hook": "AMD rzuca rękawicę Nvidii i przejmuje startup World Labs za gigantyczną kwotę.",
+        "summary": "Gigant chipowy AMD sfinalizował przejęcie spółki World Labs o wartości 8,2 miliarda dolarów. Zakup ma przyspieszyć rozwój modeli sztucznej inteligencji zdolnych do rozumienia przestrzennego.",
+        "comment": "Gdy brakuje ci własnych pomysłów na wygranie wyścigu AI, po prostu kupujesz czyjś genialny mózg za miliardy.",
+        "threads_post": "🤖 AMD kupuje World Labs za 8,2 miliarda dolarów!\n\n🚨 Bitwa o monopol w sztucznej inteligencji właśnie weszła na bezwzględny poziom! AMD wyciąga potężne czeki, by wyrywać rynek z rąk Nvidii.\n\nWorld Labs, założone przez legendarne badaczkę Fei-Fei Li, specjalizuje się w tak zwanej inteligencji przestrzennej, pozwalającej AI rozumieć świat 3D. Przejęcie ma dać AMD gotową technologię bez konieczności marnowania lat na własne badania od zera.\n\nW Dolinie Krzemowej innowacja dawno przestała oznaczać odkrycia naukowe – teraz oznacza po prostu budżet na wrogie przejęcia.\n\nCzy AMD ma jakiekolwiek szanse przełamać hegemonię Nvidii na rynku chipów? 👇💬",
+        "question": "Czy AMD zdoła dogonić Nvidię dzięki zakupom gotowych startupów?",
+        "image_query": "microchip artificial intelligence",
+        "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+        "image_url": "https://images.pexels.com/photos/28767589/pexels-photo-28767589.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://techcrunch.com/wp-content/uploads/2024/10/GettyImages-1833911955.jpg?resize=1200,800"
+      },
+      {
+        "category": "TECHNOLOGIE / AI",
+        "title": "🛑 OpenAI wstrzymuje premierę modelu AI",
+        "hook": "Twórcy ChatGPT nagle wycofują debiut nowego modelu z powodu obaw o bezpieczeństwo.",
+        "summary": "OpenAI oficjalnie zawiesiło planowane wdrożenie flagowego modelu ze względu na nieprzewidziane zagrożenia systemowe. Decyzja zapadła po wewnętrznych audytach bezpieczeństwa i naciskach ekspertów.",
+        "comment": "Wściekły pośpiech w wyścigu po miliardy zderzył się ze ścianą, gdy algorytmy zaczęły wymykać się spod kontroli.",
+        "threads_post": "🛑 OpenAI awaryjnie wstrzymuje premierę nowego modelu!\n\n💥 Wyścig szczurów w Dolinie Krzemowej został nagle zatrzymany! Twórcy ChatGPT musieli wrzucić hamulec bezpieczeństwa.\n\nFirma poinformowała o wycofaniu się z planowanego debiutu nowej wersji generatywnej AI. Wewnętrzne testy bezpieczeństwa wykazały niepokojące podatności i ryzyka, na które inżynierowie nie znaleźli jeszcze gotowej recepty.\n\nKiedy komercyjny pęd po dominację na rynku przeważa nad ostrożnością, jedynym ratunkiem przed katastrofą wizerunkową staje się nagłe wciśnięcie przycisku STOP.\n\nCzy obawy o bezpieczeństwo AI są uzasadnione, czy to tylko chwyt marketingowy? 👇💬",
+        "question": "Czy giganci AI powinni podlegać państwowej kontroli przed wypuszczeniem nowych modeli?",
+        "image_query": "robot warning technology",
+        "link": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko",
+        "image_url": "https://images.pexels.com/photos/8566470/pexels-photo-8566470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/d46e/live/100af420-bba4-11f1-b5d5-0be7b4d3c75d.jpg"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🚨 Polskie myśliwce w powietrzu po ataku",
+        "hook": "Kolejny zmasowany ostrzał Ukrainy zmusił polskie i sojusznicze lotnictwo do reakcji.",
+        "summary": "Dowództwo Operacyjne Sił Zbrojnych aktywowało polskie i alienowane samoloty w związku z rosyjskim atakiem rakietowym. Naziemne systemy obrony powietrznej osiągnęły najwyższy stan gotowości.",
+        "comment": "Nasze niebo ratują procedury, podczas gdy wojsko liczy koszty każdej godziny lotu patrolu.",
+        "threads_post": "🚨 Polskie i sojusznicze myśliwce poderwane nad Polską!\n\n⚠️ Kolejna gorąca noc przy naszej wschodniej granicy! Rosyjskie rakiety i drony ponownie atakowały cele tuż przy granicy z państwami NATO.\n\nDowództwo Operacyjne uruchomiło pełne procedury bezpieczeństwa, wysyłając w powietrze pary dyżurne. Choć wojsko zapewnia o pełnym opanowaniu sytuacji, rosnąca częstotliwość incydentów wystawia na próbę wyczerpywalne zasoby naszej obrony powietrznej.\n\nNieustanne poderwania maszyn kosztują miliony złotych, a realna ochrona przed przypadkowym wlotem rakiety wciąż opiera się na sekundowych decyzjach pilotów.\n\nCzy Polska powinna zestrzeliwać rakiety zmierzające w stronę naszej granicy jeszcze nad terytorium Ukrainy? 👇💬",
+        "question": "Czy NATO powinno zmienić zasady zaangażowania przy granicy z Ukrainą?",
+        "image_query": "fighter jet military",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTk2ZnAxQ2NyZ3drWS1hY2J1WGdubTNnaGZZMl9IZW9NOWtFbGs4ZGE0TnZPYXdUtrPPVERVVV9lM0hXa3BzNTF0Nmk3ejRvc001MlE4OGh4OGZDcGpPb2I2Ni1uWWxSOE9JZkgzbnBlOVIySUFrZHNLLWN3b3lxcnNDLVNLUk1ORklCb0NrekVEZmpZMkNUZVZlam0ySm8?oc=5",
+        "image_url": "https://images.pexels.com/photos/27080761/pexels-photo-27080761.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/27080761/pexels-photo-27080761.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "OBRONNOŚĆ",
+        "title": "🛩️ Wojskowy samolot leciał nad Polską do Rosji",
+        "hook": "Algierski transportowiec wojskowy pokonał przestrzeń NATO i wylądował w Rosji.",
+        "summary": "Algierski samolot wojskowy wykonał przelot m.in. nad terytorium Polski, kierując się bezpośrednio do Federacji Rosyjskiej. Zdarzenie wywołało pytania o realną szczelność ograniczeń lotniczych nałożonych na Moskwę.",
+        "comment": "Sankcje i zakazy lotów działają znakomicie, chyba że z zewnątrz przylatuje ktoś z odpowiednią pieczątką.",
+        "threads_post": "🛩️ Wojskowy samolot z Algierii przeleciał nad Polską do Rosji!\n\n❗ Przestrzeń powietrzna NATO okazuje się dziurawa jak sito dla sojuszników Moskwy!\n\nZagraniczna maszyna wojskowa z kraju utrzymującego bliskie relacje z Kremlem spokojnie przeleciała przez terytorium państw Sojuszu i wylądowała na rosyjskim lotnisku. Cała operacja odbyła się zgodnie z oficjalnymi zgłoszeniami dyplomatycznymi.\n\nProcedury biurokratyczne po raz kolejny okazały się ważniejsze niż twarda kontrola militarnej wymiany handlowej między partnerami Rosji a samą Moskwą.\n\nCzy państwa NATO powinny całkowicie zamknąć niebo dla maszyn latających do Rosji? 👇💬",
+        "question": "Czy przepisy dyplomatyczne nie osłabiają skuteczności sankcji nałożonych na Rosję?",
+        "image_query": "military airplane sky",
+        "link": "https://defence24.pl/geopolityka/lecial-nad-polska-i-wyladowal-w-rosji-wojskowy-samolot-algierskich-sil-w-powietrzu",
+        "image_url": "https://images.pexels.com/photos/126621/pexels-photo-126621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://cdn.defence24.pl/2026/09/28/1024x576px/v8iI8IGSzuNrmwxBQRO8ELIsTYlcFjWWY0tRU2n5.0wkt.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "👴 90% Polaków straci dopłaty do emerytur?",
+        "hook": "Projekt zmian w systemie emerytalnym wywołał panikę wśród ekspertów rynku.",
+        "summary": "Analizy projektu ustawy Konfederacji wskazują, że aż 90% przyszłych emerytów mogłoby zostać pozbawionych gwarantowanych dopłat państwowych. Eksperci ostrzegają przed drastycznym spadkiem dochodów najuboższych seniorów.",
+        "comment": "Reforma emerytalna w wykonaniu polityków zawsze sprowadza się do jednego: zapłać więcej dzisiaj, dostaniesz mniej jutro.",
+        "threads_post": "👴 Zmiany w emeryturach uderzą w 90% obywateli?!\n\n⚠️ System emerytalny w Polsce to tykająca bomba, a proponowane recepty mogą jedynie przyspieszyć jej wybuch!\n\nNajnowsze analizy propozycji reformy emerytalnej pokazują zatrważający obraz. Likwidacja państwowych gwarancji i dopłat do minimalnych świadczeń oznacza, że zdecydowana większość Polaków po zakończeniu pracy zderzy się ze ścianą ubóstwa.\n\nZamiast realnej naprawy finansów publicznych, politycy serwują rozwiązania, które przenoszą całe ryzyko demograficzne i inflacyjne wyłącznie na barki obywateli.\n\nCzy wierzysz jeszcze, że dostaniesz jakąkolwiek emeryturę z państwowego systemu za 20 lat? 👇💬",
+        "question": "Czy Polacy powinni całkowicie przestać liczyć na państwowe emerytury?",
+        "image_query": "pensioner money sad",
+        "link": "https://www.money.pl/finanse/ostrzega-przed-projektem-konfederacji-90-proc-polakow-bez-doplaty-do-emerytury-7334324861544704a.html",
+        "image_url": "https://images.pexels.com/photos/27828635/pexels-photo-27828635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://v.wpimg.pl/MDllYmIwYiUNDi9eZgxvME5WewQgVWFmGU5jT2ZGf3BYFG5eeFgrLQAJKwg5GGMjHhkpDD4HYzQAQzgdIFg7dUMIMB45Gyw9Qwk0DywTYnANDWFacRQuaQ9bOw9kQy5xCkFhXHEVYHVaVGlULBUvdF8OOE80"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 WIG20 pod kreską. Orlen ciągnie giełdę",
+        "hook": "Warszawski indeks spada pod ciężarem państwowych spółek energetycznych.",
+        "summary": "Indeks WIG20 zakończył sesję na minusie, a głównymi sprawcami spadków były walory Orlenu oraz spółek energetycznych. Inwestorzy wyprzedają akcje w cieniu niepewności regulacyjnej i sporu o podatki.",
+        "comment": "Państwowe spółki to idealne pożywki dla polityków – inwestorzy płacą za obietnice, a rząd zgarnia dywidendy.",
+        "threads_post": "📉 WIG20 nurkuje! Energetyka i Orlen pogrążają polską giełdę!\n\n🔴 Warszawa czerwona jak nigdy! Największe polskie spółki państwowe ponownie ciągną cały rynek finansowy na dno.\n\nInwestorzy instytucjonalni uciekają od spółek z udziałem Skarbu Państwa. Chaos wokół polityki cenowej, brak spójnej strategii transformacji energetycznej i ciągłe straszenie nowymi podatkami wywołują popłoch na parkiecie przy Książęcej.\n\nKiedy polityka wkracza na giełdę, logika rynkowa przestaje istnieć, a drobni akcjonariusze zostają z pustymi kieszeniami.\n\nCzy opłaca się jeszcze inwestować na polskiej giełdzie, gdy rządzi nią polityka? 👇💬",
+        "question": "Czy spółki z udziałem Skarbu Państwa są jeszcze atrakcyjne dla prywatnych inwestorów?",
+        "image_query": "stock market crash",
+        "link": "https://www.bankier.pl/wiadomosc/WIG20-konczy-pod-kreska-Orlen-i-energetyka-nie-daly-rady-9203892.html",
+        "image_url": "https://images.pexels.com/photos/5561922/pexels-photo-5561922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/a/1/7a2d33931a79c4-948-568-0-270-4000-2399.jpg"
+      },
+      {
+        "category": "POLSKA",
+        "title": "⛽ Wojna o paliwa. Tusk apeluje do Dudy",
+        "hook": "Rząd i Pałac Prezydencki obrzucają się oskarżeniami o drożyznę na stacjach.",
+        "summary": "Premier Donald Tusk zaapelował do Prezydenta o szybkie podpisanie ustawy mającej obniżyć ceny paliw. Rzecznik Prezydenta odpowiada zarzutami o obłudę i przenoszenie odpowiedzialności za błędy rządu.",
+        "comment": "Obie strony głośno walczą o portfele kierowców, pamiętając, by przypadkiem nie zmniejszyć dochodów z akcyzy.",
+        "threads_post": "⛽ Wojna na szczycie o ceny paliw w Polsce!\n\n🗣️ Donald Tusk apeluje do Prezydenta, Pałac odpowiada oskarżeniami o obłudę! Teatr polityczny na stacjach benzynowych trwa w najlepsze.\n\nRząd próbuje przepchnąć ustawę paliwową, zrzucając odpowiedzialność za jej opóźnienie na długopis Prezydenta. Z kolei Kancelaria Prezydenta przypomina, że to podatki narzucane przez rząd stanowią ponad połowę ceny każdego litra paliwa.\n\nKierowcy płacą rekordowe stawki na dystrybutorach, podczas gdy politycy po prostu licytują się na to, kto z nich bardziej martwi się o obywateli przed kamerami.\n\nCzy wierzysz, że którakolwiek ze stron naprawdę chce obniżyć ceny na stacjach? 👇💬",
+        "question": "Czy podatki zawarte w cenie paliwa powinny zostać obniżone na stałe?",
+        "image_query": "gas station pump",
+        "link": "https://www.bankier.pl/wiadomosc/Spor-o-ceny-paliw-Tusk-apeluje-do-prezydenta-o-podpisanie-ustawy-9204004.html",
+        "image_url": "https://images.pexels.com/photos/3971795/pexels-photo-3971795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://galeria.bankier.pl/p/0/7/0c4fa65978bd55-948-568-60-30-3940-2363.jpg"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "🇯🇵 Rekordowy popyt na obligacje Japonii",
+        "hook": "Inwestorzy rzucili się na 40-letnie obligacje skarbowe z niespotykaną siłą.",
+        "summary": "Aukcja 40-letnich papierów dłużnych rządu Japonii zanotowała najsilniejszy popyt od 2020 roku. Inwestorzy próbują zablokować wyższe rentowności w obliczu obaw o narastający dług i zmienność stóp procentowych.",
+        "comment": "Gdy kupujesz obligacje na czterdzieści lat, stawiasz zakład, że państwo przetrwa dłużej niż zdrowy rozsądek jego bankierów.",
+        "threads_post": "🇯🇵 Gigantyczny popyt na 40-letni dług Japonii!\n\n🏦 Inwestorzy rzucili się na długoterminowe papiery dłużne tokijskiego rządu z siłą niewidzianą od czterech lat!\n\nAukcja obligacji przeszła najśmielsze oczekiwania analityków. Przy niepewności co do polityki Banku Japonii oraz rosnącym długu publicznym, rynki wolą zamknąć kapitał na niemal pół wieku, byle tylko zagwarantować sobie stały procent.\n\nObraz, w którym rynki uciekają w czterdziestoletnie długi, pokazuje, jak małe jest zaufanie do krótkoterminowej stabilności światowej gospodarki.\n\nCzy podjąłbyś ryzyko kupna obligacji skarbowych z terminem wykupu za 40 lat? 👇💬",
+        "question": "Czy blokowanie kapitału w długoterminowym długu państwowym to mądry ruch w czasach inflacji?",
+        "image_query": "japan money finance",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-29/japan-40-year-bond-sale-sees-strongest-demand-since-2020",
+        "image_url": "https://images.pexels.com/photos/5026340/pexels-photo-5026340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/5026340/pexels-photo-5026340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "BIZNES",
+        "title": "🏢 Koreańskie firmy ruszają na zakupy M&A",
+        "hook": "Giganci ubezpieczeniowi z Seulu szukają wzrostu poza nasyconym rynkiem domowym.",
+        "summary": "Spółki ubezpieczeniowe z grupy Samsung przewodzą fali zagranicznych przejęć realizowanych przez azjatyckie instytucje. Agresywna ekspansja M&A ma skompensować spadek rentowności i starzenie się społeczeństwa w Korei.",
+        "comment": "Kiedy własny rynek zamiera demograficznie, nie zostaje nic innego jak skupować firmy tam, gdzie ludzie jeszcze pracują.",
+        "threads_post": "🏢 Koreańskie korporacje ubezpieczeniowe ruszyły na gigantyczne zakupy!\n\n🌏 Finansowe ramiona giganta Samsung pędzą po przejęcia firm na zagranicznych rynkach!\n\nStarzejące się społeczeństwo Korei Południowej i niskie stopy procentowe zmuszają tamtejsze instytucje do szukania zysków poza granicami kraju. Koreańskie firmy ubezpieczeniowe dysponują miliardowymi rezerwami, które wpompowują w fuzje i przejęcia.\n\nGiganci z Seulu nie mają wyboru: bez agresywnego M&A na świecie, ich tradycyjny model biznesowy w kraju po prostu spłonie.\n\nCzy azjatycki kapitał zdominuje rynek finansowy w Europie i USA? 👇💬",
+        "question": "Czy zagraniczne fundusze wykupujące lokalne firmy to szansa czy zagrożenie dla rynku?",
+        "image_query": "business merger handshake",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-28/korean-financial-firms-chase-bold-overseas-m-a-to-fuel-growth",
+        "image_url": "https://images.pexels.com/photos/8441809/pexels-photo-8441809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/8441809/pexels-photo-8441809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
+        "category": "RYNKI I GOSPODARKA",
+        "title": "📉 Debiut RoboTechnik rozczarował giełdę",
+        "hook": "Nowa fala debiutów w Hongkongu zalicza falstart mimo miliardowych wycen.",
+        "summary": "Akcje spółki RoboTechnik odnotowały spadek podczas debiutu w Hongkongu, mimo że przewodziła ona pakietowi wejść na giełdę o wartości 1,8 miliarda dolarów. Inwestorzy wykazują dużą ostrożność wobec wycen sektora technologicznego.",
+        "comment": "Wielkie obietnice przed debiutem na giełdzie gwałtownie zderzają się z rzeczywistością zaraz po otwarciu rynku.",
+        "threads_post": "📉 Debiut RoboTechnik rozczarował inwestorów na giełdzie!\n\n💥 Bańka entuzjazmu wokół nowych spółek technologicznych zaczyna pękać na azjatyckich parkietach!\n\nMimo że giełda w Hongkongu przyciągnęła nową falę debiutów opiewającą na 1,8 miliarda dolarów, Lider zestawienia zaliczył bolesny spadek już w pierwszych godzinach handlu. Kapitał coraz ostrożniej podchodzi do wycen opartych wyłącznie na obietnicach przyszłych zysków.\n\nEcha wygórowanych wycen w sektorze technologicznym zaczynają zbierać swoje żniwo. Inwestorzy żądają twardych wyników finansowych, a nie tylko chwytliwych haseł.\n\nCzy to początek większej korekty wycen spółek technologicznych na giełdach? 👇💬",
+        "question": "Czy wyceny spółek technologicznych we wchodzących na giełdę są obecnie przewartościowane?",
+        "image_query": "hong kong stock exchange",
+        "link": "https://www.bloomberg.com/news/articles/2026-09-28/robotechnik-leads-hong-kong-s-1-8-billion-listing-debut-lineup",
+        "image_url": "https://images.pexels.com/photos/11684304/pexels-photo-11684304.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "source_image_url": "https://images.pexels.com/photos/11684304/pexels-photo-11684304.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      }
+    ]
   }
 }

@@ -1,43 +1,47 @@
 {
-  "date": "28 września 2026",
-  "time": "15:47",
-  "count": 40,
+  "date": "29 września 2026",
+  "time": "06:00",
+  "count": 43,
   "items": [
     {
-      "title": "Inside Yemen's front-line city as Houthis battle for control",
-      "link": "https://www.bbc.co.uk/news/articles/cw98005ndz7no"
+      "title": "OpenAI scraps rollout of new model over safety concerns",
+      "link": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko"
     },
     {
-      "title": "Trump-Xi summit: What wasn't said might matter the most",
-      "link": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo"
+      "title": "New York Times executive fatally shot allegedly by elderly in-laws",
+      "link": "https://www.bbc.co.uk/news/articles/cred737qdv2no"
     },
     {
-      "title": "Mexico's Pacific coast braces for Hurricane Polo",
-      "link": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o"
+      "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
+      "link": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o"
     },
     {
-      "title": "Plan for controversial Sydney data centre scrapped after push-back",
-      "link": "https://www.bbc.co.uk/news/articles/c6n9wrqpj4yqo"
+      "title": "French PM warns against escalation of school protests after 164 arrested",
+      "link": "https://www.bbc.co.uk/news/articles/cmqxvnn49rg2o"
     },
     {
-      "title": "Two mass shootings in South Africa leave 28 dead",
-      "link": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o"
+      "title": "Samsung Bets $1 Billion on AI Data Centers From Ex-AWS Chief",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/samsung-to-invest-1-billion-in-kkr-s-ai-infrastructure-company"
     },
     {
-      "title": "European Gas Fluctuates as Traders Await Further Talks on Hormuz",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-28/european-gas-steadies-as-traders-eye-mixed-signals-on-iran"
+      "title": "Global Stocks Drop to One-Week Low, Oil Advances: Markets Wrap",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "Morgan Stanley Says Bond Selloff 'Nowhere Near Problematic'",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-28/morgan-stanley-says-bond-selloff-nowhere-near-problematic"
+      "title": "Japan 40-Year Bond Sale Sees Strongest Demand Since 2020",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-29/japan-40-year-bond-sale-sees-strongest-demand-since-2020"
     },
     {
-      "title": "S&P 500 Falls as Inflation Worry Lifts Bond Yields: Markets Wrap",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-27/stock-market-today-dow-s-p-live-updates"
+      "title": "RoboTechnik Drops in Debut After Leading $1.8 Billion HK Lineup",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/robotechnik-leads-hong-kong-s-1-8-billion-listing-debut-lineup"
     },
     {
-      "title": "JPMorgan Traders Flip to Bullish View on US Stocks (SPY) Ahead of Jobs Report",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-28/jpmorgan-traders-flip-to-bullish-view-on-us-stocks-spy-ahead-of-jobs-report"
+      "title": "Samsung’s Insurance Arms Lead Korean Drive for Overseas M&A",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-28/korean-financial-firms-chase-bold-overseas-m-a-to-fuel-growth"
+    },
+    {
+      "title": "Polacy bez dopłat do emerytur. Alarmuje ws. projektu",
+      "link": "https://www.money.pl/finanse/ostrzega-przed-projektem-konfederacji-90-proc-polakow-bez-doplaty-do-emerytury-7334324861544704a.html"
     },
     {
       "title": "Pokazał, co dzieje się z ropą z Bliskiego Wschodu. \"Iran dłużej nie wytrzyma\"",
@@ -56,8 +60,12 @@
       "link": "https://www.money.pl/pieniadze/ile-kosztuje-euro-kurs-euro-do-zlotego-pln-eur-28-09-2026-7334181949905152a.html"
     },
     {
-      "title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 28.09.2026",
-      "link": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-28-09-2026-7334181871982848a.html"
+      "title": "WIG20 kończy pod kreską. Orlen i energetyka nie dały rady",
+      "link": "https://www.bankier.pl/wiadomosc/WIG20-konczy-pod-kreska-Orlen-i-energetyka-nie-daly-rady-9203892.html"
+    },
+    {
+      "title": "Spór o ceny paliw. Tusk apeluje do prezydenta o podpisanie ustawy",
+      "link": "https://www.bankier.pl/wiadomosc/Spor-o-ceny-paliw-Tusk-apeluje-do-prezydenta-o-podpisanie-ustawy-9204004.html"
     },
     {
       "title": "Mocna przecena złota i srebra. Metale ugięły się pod ciężarem wysokich rentowności",
@@ -68,100 +76,104 @@
       "link": "https://www.bankier.pl/wiadomosc/Europa-w-odwrocie-Tych-aut-kupujemy-w-Polsce-najwiecej-9203600.html"
     },
     {
-      "title": "Koniec groszówek coraz bliżej? Padła konkretna propozycja",
-      "link": "https://www.bankier.pl/wiadomosc/Koniec-groszowek-coraz-blizej-Padla-konkretna-propozycja-9203680.html"
+      "title": "Metro, mieszkania. Najważniejsze postulaty kandydatów na prezydenta Krakowa - money.pl",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNTQxaldUd2hlZWpEN0hQU1hsOEVuY0VWTTF1cVJFQmhzeG5XenpCTlRDYjZwRzhzWjhJNWFrT01EVy1CbXZmMGxmVEZTQkwyZk1JOWR4ZXVWUUFkdmtyV01ZSGRrWEFYeVVzNGFJSUUxMTRwM09ZZjYwYWZZZjBiZmctYTE5M2g5dWp6aUR5b0pfVndXVHB2TlppVzVUbTRMenlWRFYzV3V1cFhZTkVVRmJJSWVsY2E5OEpsb09HSk9BS0I5?oc=5"
     },
     {
-      "title": "Nest Bank wprowadza kontrowersyjną opłatę. 17 zł za pomoc konsultanta",
-      "link": "https://www.bankier.pl/wiadomosc/Nest-Bank-wprowadza-kontrowersyjna-oplate-17-zl-za-pomoc-konsultanta-9203689.html"
+      "title": "Rosyjski atak na Ukrainę. Polska poderwała myśliwce - PolsatNews.pl",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWTk2ZnAxQ2NyZ3drWS1hY2J1WGdubTNnaGZZMl9IZW9NOWtFbGs4ZGE0TnZPYXdUclBQVERWVV9lM0hXa3BzNTF0Nmk3ejRvc001MlE4OGh4OGZDcGpPb2I2Ni1uWWxSOE9JZkgzbnBlOVIySUFrZHNLLWN3b3lxcnNDLVNLUk1ORklCb0NrekVEZmpZMkNUZVZlam0ySm8?oc=5"
     },
     {
-      "title": "Trudna zima przed Europą. Gazu brakuje, Ormuz zablokowany, a ceny idą w górę",
-      "link": "https://www.bankier.pl/wiadomosc/Trudna-zima-przed-Europa-Gazu-brakuje-Ormuz-zablokowany-a-ceny-ida-w-gore-9203579.html"
+      "title": "Jarosław żegna ks. Stanisława Zbojnowicza. Padły słowa, które wzruszają - Fakt",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNalBIenl3MmsyOFZnVk9KRHBzSmpLN19uTXJONDdpWnhtNVRHVFlNQi1tcGNkWXdHNDVmME51Rm94RzR6d2hKLVhfSjhMXzRIQldtbms3MTMzMGxKRDBEMW9tV0V5X2JOOVlGMWtKeG1iQ04zTWV1MjF0ZnREY0ljN0taZXN5S2MzQlNhMUpXVDFSWkFlTy1ta2FpUkVSR3ZfNzAyLXI2bmVjYmt0aGJXS1JYN1FLYjRUeEZUX1dJbVlYN3I2ODlCY3czbDU?oc=5"
     },
     {
-      "title": "Nowy prezydent Krakowa już przesądzony? \"Widać to wyraźnie\" - fakt.pl",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdEtSdENSTFRRbFZlREVfZ1lpMnpBQ29xd3Bkem9yVUFlY3NEc2lpQ0RuTW5URk8yTksyRW1GRU51SUlyUzF1bGctUU02cFJSQWdRVWZXalRLMzJ5R3Zhbk1vdUwzOEtYeEVqaGMyQTlSU2NXRHNfWUcwdFhqb2RYSEtDdDRGN2JhRHJlUldobXFhV25oSHdIU0F0aG9idw?oc=5"
+      "title": "Rzecznik prezydenta atakuje Tuska ws. cen paliw. \"To obłuda\" - WP Wiadomości",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOVlvTDZpcjVDT3dBaDNnaDBYZ1N0eDVYbndTR3F2TEd5SE1lM0liX0s4bWUzdXhWR0JfQ2ZFOHlfZVVnZGpaZ0VPWlVVRTJyaTNnbzlNOHdsYm1ZQmxlbWFhSkxqeDRkVFM0blp3am1abS1jMUlGLVF2MUVGeC15Ni13azBwSnpaSHJWYXRZSzY4eWpYVUpPb1BjM3k1V3d2?oc=5"
     },
     {
-      "title": "Nie będzie referendum w Warszawie. Znamy wyniki zbiórki podpisów - wiadomosci.onet.pl",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNME03cUk5NFFqb2RnLTRhdFk3eUVudmxfZmFPSzlkZzhZZTZHWUJ0M2w3dzJpX0NMdEVjNGRvYVI3WTlvYjNZb1RsRVE1ME5oekwyZEx5NTVXaENTUzJjaHBseEVaanhnb0FpNU1adE5LOEJ5S3JrQ2hMR2VGZ2k5N1BjQVQwZ3RHTTBUeDRxZ2RBak80OWlMSlV4Y3dHdG9HZFpSQw?oc=5"
+      "title": "\"Konflikt osiągnął krytyczną fazę\". Coraz goręcej wokół Iranu - businessinsider.com.pl",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQmROSlB0LVBJcTNCN1dTdFp1bFJkR3NZcnhwM1ZiN1JBTEdRbGVXcFdtRG1VbkFSRUpzTnBhVklFRlVudEl0YXR0ZmFBZ2VGeWh4YUtlaUYxc1dzQXJzTGdyVE5ETFUzQWw3VlNneVMtY1JQVnV5Q2pxTlZ4TmJacWtkaFNyZ3ZUOEtmbk1QS3haa3RFM1p5LUlJTThGczNuOUQtQWx0X2ZCSzZUMlE?oc=5"
     },
     {
-      "title": "Atak na Akademię Nauk w Kijowie. \"Ludzie chcieli skakać przez okna\" - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaHdSTUlzRWZHTDVCaDJLdlF5c2gzTzNjcFlUdWk5cmd1SDJkQTV2VlMta3JVVGlybC02T2pQNHJCbkt5b3BwR2xMR2YtZ0J1MEFxdk1LbVpKVmZFVDdTQTg5RGtUZDBTeXJkYUxwLUdxWG90Sjl5a19Hd3Z2MGgwcHNBRGF4b3ZhTDhrdzZHek5zQzZXMV9hNTRUYnYzakNwYlk3YWZ2TVJPN2M?oc=5"
+      "title": "Leciał nad Polską i wylądował w Rosji. Wojskowy samolot algierskich sił w powietrzu",
+      "link": "https://defence24.pl/geopolityka/lecial-nad-polska-i-wyladowal-w-rosji-wojskowy-samolot-algierskich-sil-w-powietrzu"
     },
     {
-      "title": "Wąbrzeźno. 13-latek planował atak w szkole. W wakacje zabijał koty - wiadomosci.onet.pl",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUXFxWXlaOUpPc09DWnZoYnNuZzNyYnlUaVI3VlF0Z21rZjBZZTByckVkeUF3Y1laZHBFU1RiNDhLWFUzeExwU3g1TE4zWlZqNVZ3WjkxZnhrNVN0Z3FtRG1LdW5RMnBaaFlnQjdLQm5LVFJTVE1wd3dVSFBYa0J5Ylh4dWd5SVFnaHZDbE5lR3FBTm56eGhwbk95RTQyZWU2YW5kWTVIQXNwUHpT?oc=5"
+      "title": "Berlin chciał dialogu z Moskwą. Ławrow publicznie zadrwił z Niemiec",
+      "link": "https://defence24.pl/geopolityka/berlin-chcial-dialogu-z-moskwa-lawrow-publicznie-zadrwil-z-niemiec"
     },
     {
-      "title": "Pożar naczepy ciężarówki pod Gliwicami. Utrudnienia dla kierowców - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanFleTNqQW9nMnU4enJ5c2dwTU1sMUdTY1V2OGhWQ25idzcyNVJpbGlWVUV0elFGTWVjSFZRNEZIWWJ6QWZQNDBjeHJWdTVoYXBQZndvRkRNbHFlRHpyVGJZRjV2dE5UR1ZXeDZEZWJBTFdyaGNqb2pYcjhLNTJnb1oyQkt5aDY3MTFJckg0NnJIQ2M1YXZDNmdqQ051eHgzUnpveW52aUdzWFU?oc=5"
+      "title": "MON zaprasza przedsiębiorców na konsultacje dotyczące „Zielonej Listy”",
+      "link": "https://defence24.pl/polityka-obronna/mon-zaprasza-przedsiebiorcow-na-konsultacje-dotyczace-zielonej-listy"
     },
     {
-      "title": "MSPO 2026: Amunicja i systemy uzbrojenia z Niewiadowa",
-      "link": "https://defence24.pl/przemysl/mspo-2026-amunicja-i-systemy-uzbrojenia-z-niewiadowa"
+      "title": "Działo się w Ostrawie. NATO Days 2026",
+      "link": "https://defence24.pl/geopolityka/dzialo-sie-w-ostrawie-nato-days-2026"
     },
     {
-      "title": "Konflikt Seul-Kijów. Krytyka Zełenskiego po wypowiedzi w ONZ",
-      "link": "https://defence24.pl/polityka-obronna/konflikt-seul-kijow-krytyka-zelenskiego-po-wypowiedzi-w-onz"
+      "title": "Strefa zagrożenia przy granicy z Polską. Rosyjskie lotnictwo i rakiety nadal groźne",
+      "link": "https://defence24.pl/polityka-obronna/strefa-zagrozenia-przy-granicy-z-polska-rosyjskie-lotnictwo-i-rakiety-nadal-grozne"
     },
     {
-      "title": "Zachód uległy wobec Rosji, brakuje twardej odpowiedzi. Gen. Gromadziński dla „NZZ”",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zachod-ulegly-wobec-rosji-brakuje-twardej-odpowiedzi-gen-gromadzinski-dla-nzz"
+      "title": "Peak XV ups Surge seed investment ceiling to $5M, unveils 18-startup cohort",
+      "link": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/"
     },
     {
-      "title": "Hanwha w Polsce. Od dostawcy do partnera",
-      "link": "https://defence24.pl/przemysl/hanwha-w-polsce-od-dostawcy-do-strategicznego-partnera"
+      "title": "OpenAI reportedly ditches model over safety concerns",
+      "link": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/"
     },
     {
-      "title": "Grupa WB wchodzi do Bułgarii. Podpisano ważne porozumienie",
-      "link": "https://defence24.pl/przemysl/grupa-wb-wchodzi-do-bulgarii-podpisano-wazne-porozumienie"
+      "title": "Aurora CFO says 30,000 driverless trucks by 2030 isn’t as far-fetched as it sounds",
+      "link": "https://techcrunch.com/2026/09/28/aurora-cfo-says-30000-driverless-trucks-by-2030-isnt-as-far-fetched-as-it-sounds/"
     },
     {
-      "title": "Viral AI agent Instinct raises $1B Series C at a $10B valuation",
-      "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/"
+      "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
+      "link": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/"
     },
     {
-      "title": "SpaceX’s Starship rocket reaches orbit for the first time",
-      "link": "https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/"
+      "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
+      "link": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/"
     },
     {
-      "title": "Ocean surveillance startup Quartermaster raises another $140M",
-      "link": "https://techcrunch.com/2026/09/28/ocean-surveillance-startup-quartermaster-raises-another-140m/"
+      "title": "Nothing’s new flagship Headphone 1 Pro put you in the studio",
+      "link": "https://www.theverge.com/tech/1001797/nothings-headphone-1-pro-review"
     },
     {
-      "title": "Truecaller takes its scam intelligence to the open web as it looks beyond caller ID",
-      "link": "https://techcrunch.com/2026/09/27/truecaller-takes-its-scam-intelligence-to-the-open-web-as-it-looks-beyond-caller-id/"
+      "title": "AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
+      "link": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal"
     },
     {
-      "title": "Anthropic’s CEO is about to have dinner with President Trump",
-      "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/"
+      "title": "Bose starts adding Auracast to its headphones",
+      "link": "https://www.theverge.com/tech/1001522/bose-headphones-get-auracast-support"
     },
     {
-      "title": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
-      "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents"
+      "title": "OpenAI’s AI agents need to catch up",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent"
     },
     {
-      "title": "Philips’ motion-tracking smart toothbrush uses AI to make you a better brusher",
-      "link": "https://www.theverge.com/tech/1000924/philips-sonicare-next-generation-diamondclean-9900-prestige-smart-toothbrush"
+      "title": "Trump finalizes rule to make cars less fuel efficient",
+      "link": "https://www.theverge.com/news/1001610/trump-weakens-fuel-efficiency-standards"
     },
     {
-      "title": "SpaceX preps next-gen Starlink as Amazon’s competitor stalls",
-      "link": "https://www.theverge.com/science/1001259/spacex-starlink-satellites-starship-amazon-leo"
+      "title": "Boeing \"incredibly excited\" to serve as nation's only astronaut transportation",
+      "link": "https://arstechnica.com/space/2026/09/boeing-incredibly-excited-to-serve-as-nations-only-astronaut-transportation/"
     },
     {
-      "title": "Honor’s Magic 9 Pro Max has a big camera and a bigger battery",
-      "link": "https://www.theverge.com/tech/1001219/honor-magic-9-pro-max-arri-cameras-snapdragon-battery-design-china"
+      "title": "Experts worry about Nvidia's AI chip sales in China and influence over Trump",
+      "link": "https://arstechnica.com/tech-policy/2026/09/nvidia-may-sell-more-chips-in-china-as-jensen-huangs-influence-over-trump-grows/"
     },
     {
-      "title": "Out of the Park Baseball lets me enjoy baseball even when the Mets suck",
-      "link": "https://www.theverge.com/games/1001206/out-of-the-park-baseball-cozy-sim-video-game-review"
+      "title": "SpaceX's Starship goes orbital, deploying first next-gen Starlinks",
+      "link": "https://arstechnica.com/space/2026/09/starships-first-orbital-launch-gives-lift-to-spacexs-next-gen-starlinks/"
     },
     {
-      "title": "Microsoft goes quiet after church groups ask for 1% of data center costs",
-      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/"
+      "title": "Florida invokes extinction fears in legal bid to halt OpenAI development",
+      "link": "https://arstechnica.com/ai/2026/09/florida-asks-court-to-put-the-brakes-on-openais-frontier-ai-development/"
+    },
+    {
+      "title": "New device captures carbon dioxide by pumping it across a battery",
+      "link": "https://arstechnica.com/science/2026/09/new-device-captures-carbon-dioxide-by-pumping-it-across-a-battery/"
     }
   ]
 }
