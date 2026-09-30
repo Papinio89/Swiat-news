@@ -1,155 +1,182 @@
 {
-  "date": "29 września 2026",
-  "time": "15:27",
-  "count": 37,
+  "date": "30 września 2026",
+  "time": "06:01",
+  "count": 35,
   "items": [
     {
+      "title": "Rząd przyjął zmiany w podatkach. Majętni informatycy zapłacą dodatkową daninę",
+      "snippet": " Od 2027 r. dochody objęte ulgą IP Box będą wliczane do daniny solidarnościowej – wynika z przyjętego przez rząd projektu ustawy, który wprowadzić ma zmiany w systemie podatkowym. Najlepiej zarabiający przedsiębiorcy zapłacą 4 proc. od nadwyżki ponad",
+      "link": "https://www.money.pl/podatki/rzad-przyjal-zmiany-w-podatkach-majetni-informatycy-zaplaca-dodatkowa-danine-7334731721689344a.html"
+    },
+    {
+      "title": "Budżet i podatki idą do Sejmu. Będą turbulencje?",
+      "snippet": " Dwie najważniejsze rządowe ustawy tej jesieni – podatkowa i budżetowa – za chwilę trafią do Sejmu. W przypadku tej pierwszej rząd liczy, że posłowie nie będą już w niej nic zmieniać. Ale w przypadku budżetu cały czas jest szansa na to, że jednak poj",
+      "link": "https://www.money.pl/podatki/budzet-i-podatki-ida-do-sejmu-beda-turbulencje-7334699828377856a.html"
+    },
+    {
+      "title": "Drugi próg w górę. Oto kto zyska, a kto straci na zmianach",
+      "snippet": " - Nowa skala PIT to realna ulga, ale tylko dla wąskiej grupy i w ograniczonej wysokości - tak zmiany podatkowe przyjęte we wtorek przez rząd komentuje Piotr Juszczyk, główny doradca podatkowy InFaktu. Rada Ministrów opowiedziała się za podniesieniem",
+      "link": "https://www.money.pl/podatki/drugi-prog-w-gore-oto-kto-zyska-a-kto-straci-na-zmianach-szykowanych-przez-rzad-7334660743002336a.html"
+    },
+    {
       "title": "GPW w jednym rachunku z rynkami zagranicznymi. Freedom24 rozszerza ofertę",
+      "snippet": " Inwestorzy korzystający z Freedom24 zyskali dostęp do wybranych instrumentów notowanych na Giełdzie Papierów Wartościowych w Warszawie. Polskie akcje i ETF-y można łączyć w ramach jednego rachunku z inwestycjami na rynkach USA, Europy i Azji.",
       "link": "https://www.money.pl/gielda/gpw-w-jednym-rachunku-z-rynkami-zagranicznymi-freedom24-rozszerza-oferte-7334573687793920a.html"
     },
     {
       "title": "Gates ostrzega ludzkość. Ekspert mówi, co musi zrobić Polska i Europa",
+      "snippet": " Dyskusja o zagrożeniach związanych z AI przez lata wpadała w dwie skrajności. Bill Gates ostrzegł właśnie, że sztuczna inteligencja może doprowadzić do ogromnej katastrofy. Jeżeli choć częściowo ma rację, własne możliwości technologiczne przestaną b",
       "link": "https://www.money.pl/gospodarka/ai-moze-zabic-miliard-ludzi-oto-co-tak-naprawde-mowi-bill-gates-opinia-7334537047365856a.html"
     },
     {
       "title": "\"Na to czekały miliony osób\". Premier potwierdza zmiany w podatkach",
+      "snippet": " We wtorek przed posiedzeniem Rady Ministrów premier Tusk ogłosił plany związane ze zmianami w PIT, które mają wejść w życie od 2027&nbsp;r. Pierwszy próg podatkowy ma wzrosnąć do 130 tys. zł, pojawi się też nowa stawka 24 proc. dla dochodów między 1",
       "link": "https://www.money.pl/podatki/na-to-czekaly-miliony-osob-premier-potwierdza-zmiany-w-podatkach-7334587737544960a.html"
     },
     {
-      "title": "To oni ostrzegają przed zagładą ludzkości. Ujawniono kluczowy dokument",
-      "link": "https://www.money.pl/biznes/to-oni-ostrzegaja-przed-zaglada-ludzkosci-ujawniono-kluczowy-dokument-7334568049895680a.html"
+      "title": "Mocny rajd PGE i rekordowy \"Wiedźmin\" to za mało. WIG20 oddaje pole sprzedającym",
+      "snippet": "Wtorkowy handel na warszawskim parkiecie przyniósł przewagę podaży, która przeważyła szalę w czołowych indeksach. Rynkowi ciążyła głęboka przecena Orlenu, Budimexu oraz większości sektora bankowego, czego nie zdołały w pełni zrównoważyć mocna zwyżka ",
+      "link": "https://www.bankier.pl/wiadomosc/Mocny-rajd-PGE-i-rekordowy-Wiedzmin-to-za-malo-WIG20-oddaje-pole-sprzedajacym-9204574.html"
     },
     {
-      "title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 29.09.2026",
-      "link": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-29-09-2026-7334535824398560a.html"
+      "title": "Cyberatak na systemy Fakturowni. Wyciekły hasła, numery rachunków i starsze faktury. Co z KSeF?",
+      "snippet": "Firma Fakturowania, dostarczająca systemy księgowe, padła ofiarą cyberataku - napisał we wtorek w serwisie X wicepremier i minister cyfryzacji Krzysztof Gawkowski. Firma poinformowała, że doszło do wycieku danych, ale nie objął on danych zintegrowany",
+      "link": "https://www.bankier.pl/wiadomosc/Cyberatak-na-systemy-Fakturowni-Wyciekly-hasla-numery-rachunkow-i-starsze-faktury-9204631.html"
     },
     {
-      "title": "Ile kosztuje funt? Kurs funta do złotego PLN/GBP 29.09.2026",
-      "link": "https://www.money.pl/pieniadze/ile-kosztuje-funt-kurs-funta-do-zlotego-pln-gbp-29-09-2026-7334535678290144a.html"
+      "title": "Sprawa OTS w sądzie. Premier mówi o \"skandalu na cały świat\", Obajtek umywa ręce",
+      "snippet": "W Sądzie Okręgowym w Warszawie zarejestrowana została sprawa trzech oskarżonych związanych ze spółką Orlen Trading Switzerland (OTS). Chodzi o wyrządzenie koncernowi Orlen 1,5 mld zł szkody. Sprawa trafiła do sędziego Dariusza Łubowskiego - dowiedzia",
+      "link": "https://www.bankier.pl/wiadomosc/Sprawa-OTS-w-sadzie-Premier-mowi-o-skandalu-na-caly-swiat-Obajtek-umywa-rece-9204734.html"
     },
     {
-      "title": "Ukradli 387 mln USD i skarżyli się na Discordzie. W odpowiedzi dostali zdjęcie Kim Dzong Una",
-      "link": "https://www.bankier.pl/wiadomosc/Atak-na-Bitget-pranie-387-mln-USD-THORChain-i-hakerzy-z-Korei-Polnocnej-9204240.html"
+      "title": "Rezerwy USA skurczyły się do poziomu z lat 80. Minister energii \"uwalnia\" ropę",
+      "snippet": "Amerykański minister energii Chris Wright ogłosił we wtorek, że USA wypuszczą na rynek 40 mln baryłek ropy naftowej ze strategicznej rezerwy tego surowca (SPR). Celem tego posunięcia jest obniżenie cen ropy.",
+      "link": "https://www.bankier.pl/wiadomosc/Rezerwy-USA-skurczyly-sie-do-poziomu-z-lat-80-Minister-energii-uwalnia-rope-9204723.html"
     },
     {
-      "title": "Rząd zmienia progi PIT. 24 proc. stawki dla dochodów do 150 tys. zł",
-      "link": "https://www.bankier.pl/wiadomosc/Rzad-zmienia-progi-PIT-24-proc-stawki-dla-dochodow-do-150-tys-zl-9204345.html"
+      "title": "Zmiana kursu w Wielkiej Brytanii. Premier wprost uderza w brexit i otwiera drzwi dla UE",
+      "snippet": "Brexit przyniósł więcej szkód niż korzyści - oświadczył brytyjski premier Andy Burnham podczas wtorkowego wystąpienia na konferencji swojej Partii Pracy w Liverpoolu. Zapowiedział, że chce zmienić relacje Wielkiej Brytanii z Unią Europejską i jeszcze",
+      "link": "https://www.bankier.pl/wiadomosc/Zmiana-kursu-w-Wielkiej-Brytanii-Premier-wprost-uderza-w-brexit-i-otwiera-drzwi-dla-UE-9204630.html"
     },
     {
-      "title": "Dramat szwedzkiej legendy. Wartość spadła o 70%, firma jest warta mniej niż w 1999 roku",
-      "link": "https://www.bankier.pl/wiadomosc/Dramat-szwedzkiej-legendy-Wartosc-spadla-o-70-firma-jest-warta-mniej-niz-w-1999-roku-9204264.html"
+      "title": "Hegseth odchudza amerykańską armię. Polecą głowy generałów i admirałów",
+      "snippet": "Szef Pentagonu Pete Hegseth ogłosi w środę redukcję stanowisk zarezerwowanych dla generałów i admirałów o 20 proc. - podały we wtorek Fox News i inne media. Oznacza to podwojenie cięć etatów zapowiadanych wcześniej przez Hegsetha.",
+      "link": "https://www.bankier.pl/wiadomosc/Hegseth-odchudza-amerykanska-armie-Poleca-glowy-generalow-i-admiralow-9204733.html"
     },
     {
-      "title": "Rekordowy deficyt zatwierdzony. Budżet na 2027 rok z 282 mld zł na minusie",
-      "link": "https://www.bankier.pl/wiadomosc/Rekordowy-deficyt-zatwierdzony-Budzet-na-2027-rok-z-282-mld-zl-na-minusie-9204312.html"
+      "title": "Nowe działania prezydenta. Wicepremier: Zachowuje się jak niesforny przedszkolak - PolsatNews.pl",
+      "snippet": "Nowe działania prezydenta. Wicepremier: Zachowuje się jak niesforny przedszkolak&nbsp;&nbsp;PolsatNews.plSiemoniak wściekły po decyzji Nawrockiego. \"Fatalny zapis PiS\"&nbsp;&nbsp;WP WiadomościSąd o działaniach RPD, kolejne \"nie\" Nawrockiego, Pentagon",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTmhfSWl4UGp0bm5neFZOZnc4ejQzVjVfZGIzZEd3RENMX05sWEt2MTVMdXdSVzBpUFJER2VrWTVITXVIS3BlWHcwUDBzRVdlSmtxcHp6OHVYWVR4V294S0dZaUs0NEwxeXpSbG8wVFFnbWZQNi16dHd6WmY1aUFhZ0dGWHdQV3M1TjR4UXNIekJBZEdTOWV6eGZnM1pVYWRDZkdVSWJLeHdKbGdvMHZfQWlZSzJJUGlWSGNEckE1eVhCTmY2?oc=5"
     },
     {
-      "title": "Ślub po trzydziestce, obowiązki po równo. Tak zmienia się polska rodzina",
-      "link": "https://www.bankier.pl/wiadomosc/Slub-po-trzydziestce-obowiazki-po-rowno-Tak-zmienia-sie-polska-rodzina-9204283.html"
+      "title": "Zaskakujący zwrot ws. podejrzeń o zamach na bazę RAF. Policja ujawnia nowe informacje - wydarzenia.interia.pl",
+      "snippet": "Zaskakujący zwrot ws. podejrzeń o zamach na bazę RAF. Policja ujawnia nowe informacje&nbsp;&nbsp;wydarzenia.interia.plNie znaleziono bomb przy bazie RAF. Policja ujawnia nowe fakty&nbsp;&nbsp;WP Wiadomości\"Ostrzeżenie dla Wielkiej Brytanii\". Londyn z",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZHJqODd5RzNtMDJoVXc4aEtDdXVueHBfZTZsVzdXeFI5dC11VHNmVDM0Q1QzQjFOZ040YmhhT3dMX0JDUWxZQ3ZjU0M4YWt0bkx4Q0R6OG4wR09udXNBV1pYc1phcGM5U1l1X0JpSnVoQ0xoN0k2MmdQUFc0XzNyMTIyNUNTa0gzNEsxa29veGpoTlA3cm9EQ0paMWY5UnlaQ1JnbWdfR3NOU0RwN3QyWk9nSk5fVk5E?oc=5"
     },
     {
-      "title": "Domański o wecie Nawrockiego: Beztroska, która nie przystoi",
-      "link": "https://www.bankier.pl/wiadomosc/Domanski-o-wecie-Narockiego-Beztroska-ktora-nie-przystoi-9204379.html"
+      "title": "Polska chce produkować pociski Patriot. Jest komentarz z Moskwy - Wiadomości Onet",
+      "snippet": "Polska chce produkować pociski Patriot. Jest komentarz z Moskwy&nbsp;&nbsp;Wiadomości OnetŁawrow reaguje na plany Polski. \"Mamy doktrynę wojenną w tej sprawie\"&nbsp;&nbsp;wydarzenia.interia.plSzef MSZ Rosji reaguje na plany Polski. Ławrow: Dysponujem",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS3JZTG9hOF9MRnhEVnMyckpZcERURm1QQ3JFVG5uVXBrYVlGTUFwb0pnQ0UtMEc2S2xCTU1OMDQzd0YzNFZ5bUNaS0c0ZzliX19nOWtTMmg5RkVSQTFlUVY4eGl6eEVkRnhTSkhXVlNZaWpNSGlRVno4RDhlWVc0YXRTZkhWUnFSRVNNVmlwTWN3X2tTeHNXN1VNWW9KV01JLU56VQ?oc=5"
     },
     {
-      "title": "TSUE odrzucił wniosek Polski ws. Mercosur. Tak reaguje rząd - Money.pl",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYUdZdFFDNmloakdUWGc0d0lnUzJkbkl0enFOcnFBRzVjSWlHZkZCekY2SWFiUHl2c0E5M056Vkd2a3pPeXhheElWcjdwVUl2MndsV3FqXzBWRWVXTlIzdWtqeUhYV2VXLTNObTByV1dtUXY4TjAyMk1UT0VpdTl0S1BpZ01tbzFSU3pWcDkwWV9wc2dScWFDdGJLTWd5TWRSb0hrR193elR3QQ?oc=5"
+      "title": "Karol Nawrocki nie podpisze uchwały. Zablokował decyzję parlamentu - Wiadomości Onet",
+      "snippet": "Karol Nawrocki nie podpisze uchwały. Zablokował decyzję parlamentu&nbsp;&nbsp;Wiadomości OnetNawrocki zablokował decyzję Sejmu i Senatu. \"Kategorycznie nie zgadzam się z argumentacją\"&nbsp;&nbsp;GazetaPrezydent nie potwierdza wygaśnięcia kadencji czł",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUi1CbG9scnduMHFOcG5TRnlmUzNhWGhEaTg4Z2hJUnF0bEFhUHdlZFlhYzlNbW5ENUYtTjhCX3doYUtQT1Jvb3diSkVfN05GOXBGT1o3TFZUUHpiN09lS2xDRFNYc0xpNHRZeHZ3ZUhzUU5aVk1EQVBsVl9ROHRyNFBRRFZ6M0N5RmI3Q1psR1JtU3gzWHlwTXhWTTI1X0JrYVdrVnFpSDA1Wlhad1VaZQ?oc=5"
     },
     {
-      "title": "Rząd przyjął nowy budżet. Padły konkretne kwoty i wyliczenia - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNDlsc2JLS0RrelZydVpSMFNPUFB1Y0djLXMxXzFaczEwTE1rZ2FYTzBiTXM0dmRVNHFuc0dhU1YzLUZYUHdFckYwTDN6ZGtsaFp4cE80NVR1YV9nVUNBYTMxYi05WXplcGdOekg3eXJ0a1VqbFJKWk9hYzNzYVBSZkpkVE00NW5TS0hKMjZDOElmY0lIQkd2bEE3Zlo1dExTR2pEVQ?oc=5"
+      "title": "Rząd przyjął zmiany w podatkach. Majętni informatycy zapłacą dodatkową daninę - Money.pl",
+      "snippet": "Rząd przyjął zmiany w podatkach. Majętni informatycy zapłacą dodatkową daninę&nbsp;&nbsp;Money.pl\"Na to czekały miliony osób\". Premier potwierdza zmiany w podatkach&nbsp;&nbsp;Money.plRząd chce ulżyć klasie średniej. Wyjaśniamy, ile można zyskać na z",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcWhxZ2ktMTBKMHZseW56MHZwVkVmbUI2WkRFMzNROGZ5MVd3TlNFeDJDZlBybGFrV0lIQTlTOWV1XzhHZFhqVUZUWHRVV1pyN0gycVJCb3Y2WkpiZGFBdlowT3JURlFkcExPRGlTX2pOVjl3cGpvQnNpS2pOUENMeV9qR3RETkFtQUVTNEFsYmdnVlZieHNYQlRhelZfWkdkUExyekhmbkdKWmQ1VTNnRURJTHZFLTljekhoWDFKM2xaQ1hNcm5N?oc=5"
     },
     {
-      "title": "Tak testuje nas Rosja. Parafianowicz o NATO. \"Jesteśmy tego świadkami\" - WP Wiadomości",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNaGUtdzZZU2dTMWdheEJjVUx5ZjVBR3ZpX0ltTFFuZ2xfY0E2WWdobk90VXV1YkZfdHRxT1NuY3dfUjVfTTlZN21Kd2c3N2R1WUE5QXdmOTA0VGZJOGtGMzNiZVZySmZFRk83WDJGS3I3R0pPNHZQV0owWFRqVkplVkpiTXZBblAzTDdYNE43VHVJYzlqTWtQQ2JCMWVXLXlLVjMtdGtvdko4SXcyUkE?oc=5"
+      "title": "Japan’s Two-Year Bond Sale Draws Stronger Demand on High Yields",
+      "snippet": "Japan’s two-year government bond auction Wednesday saw stronger demand than the 12-month average as elevated yields underpinned buying.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-30/japan-s-two-year-bond-sale-demand-stronger-than-12-month-average"
     },
     {
-      "title": "Tragiczny atak nożem w szkole na Słowacji. Sprawca to uczeń - PolsatNews.pl",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcC1qNThzZXRaR1ZZYmIwRnV6bWNuWFJhdk1MTkNwcjFCOHdKaF85ckpMWktDQ0RMeDlaQkVwbjlGQWEzQWU3UzFwWERwY0ZNcXZlRXROa3Nwd1RtNGZ5aW9FdWk4b0tQZWIxTmo0S1NWVnIxdC16Vml5Smg1VTA2Uzl5ZmFScXB1Xzd2T3ZoME5XNzZTRGg2bVZOM2luV1lFSmRmcmsybUlSU1U?oc=5"
+      "title": "Yen Strengthens Past 157 Per Dollar, Outperforming G-10 Peers",
+      "snippet": "The yen was the best performer among its Group-of-10 peers on Wednesday as a series of government warnings on the currency and quarter-end flows provided support.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-30/yen-strengthens-past-157-per-dollar-outperforming-g-10-peers"
     },
     {
-      "title": "Śmierć 5-latki w Lipnie. Ojciec nadal nie może być przesłuchany - o2",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRG45NjRrSlozTHFGYWo2WV9yUU9YS3dNbnlfU2IwR0FsdTNrLS1tTTN4eDVyelVZRFpNU2c0bGhtUTBEZ0h6Q0IwMy1vb1JWOVZhbkIxeFlLXzFGb3dYRzVON2c0OTRWZkJVdUdCMzhlQU55Q2JBQnNZWTFDeVZWTzdITnQzT3N1bjNUOFFBVUcyZ0lUS2IyWlZaTGdDWHdaajk1cnpLNU1Tc2NFUVE?oc=5"
+      "title": "Inox Clean Energy Files for $1 Billion India IPO",
+      "snippet": "Inox Clean Energy Ltd. has filed a draft prospectus for an initial public offering to raise up to 100 billion rupees ($1 billion).",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-30/inox-clean-energy-files-for-1-billion-india-ipo"
     },
     {
-      "title": "Tłumy na pogrzebie ks. Stanisława Zbojnowicza. Spocznie w rodzinnej Grzęsce - Fakt",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPblFEcGlPSW5kWEtJX3EtSlB0eEJUSmNFUzZhZUVOUzRCYjQ0TThWb01EcDcxU3pqbE9Rbml1eGdBODZvakM1dGlGTkpLaVplVGxSWUVVcF9TdjVaYVJxUFk2bEJ5X0lvMzRrTTZWUUMtMHVNX2NCbXVITUZVQUFHN09zTmRjdDNtOFowQVdGNVFBZk50NzhVTXBpb214TzVa?oc=5"
+      "title": "Why Middle East Oil Risks Now Exceed US-China Tensions",
+      "snippet": "IIF Deputy Chief Economist Ashok Bhundia argues that dwindling oil and diesel inventories around the Strait of Hormuz present a more urgent global risk than US-China strategic competition. He warns that elevated crack spreads are driving cost-push in",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-30/why-middle-east-oil-risks-now-exceed-us-china-tensions-video"
     },
     {
-      "title": "Latest Oil Market News and Analysis for Sept. 29",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-28/latest-oil-market-news-and-analysis-for-sept-29"
+      "title": "GIC Acquires 16 Marriott-Run Hotels in Japan Amid Tourism Boom",
+      "snippet": "Singapore’s sovereign wealth fund GIC Pte. has acquired 16 hotels in Japan operated by Marriott International Inc. for about ¥125 billion ($800 million), according to people familiar with the matter.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-30/gic-acquires-16-marriott-run-hotels-in-japan-amid-tourism-boom"
     },
     {
-      "title": "Threat of Berlin Property Grab Spooks Real Estate Stocks",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-29/threat-of-berlin-property-grab-is-spooking-real-estate-stocks"
+      "title": "Foreign Money Flees India Again as Oil Spike Undoes Policy Gains",
+      "snippet": "Overseas investors are turning sellers of Indian assets again as surging oil prices and rising global yields threaten to derail a recent revival in demand.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-30/foreign-money-flees-india-again-as-oil-spike-undoes-policy-gains"
     },
     {
-      "title": "Hungary’s Kurali Urges Sticking to Path Toward Euro Accession",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-29/hungary-s-kurali-urges-sticking-to-path-toward-euro-accession"
+      "title": "Chinese AI tool told researchers how to make bioweapons",
+      "snippet": "Mindgard said it discovered in July that Kimi models K2.6 and K3 Swarm could evade developer's safety limits.",
+      "link": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo"
     },
     {
-      "title": "FTSE 100 Live: Burnham Says UK Has Been on Wrong Path for a Long Time",
-      "link": "https://www.bloomberg.com/news/live-blog/2026-09-29/ftse-100-live-pound-bonds-burnham-speech-oil-prices-ai-stocks-gilts-what-s-moving-uk-markets-right-now-markets-today"
+      "title": "Three takeaways from Trump's 'Super Intelligence' summit",
+      "snippet": "The president also signed an executive order requiring his government to refer to AI as Super Intelligence.",
+      "link": "https://www.bbc.co.uk/news/articles/cme30dz5vkzko"
     },
     {
-      "title": "Smart Ring Maker Oura Becomes Latest Company to Delay US IPO",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty"
+      "title": "South Korea demands apology from Pyongyang for landmine blasts that injured three",
+      "snippet": "Blasts in the Demilitarised Zone (DMZ) injured three South Korean personnel earlier this month.",
+      "link": "https://www.bbc.co.uk/news/articles/cwj3dkvpm4e7o"
     },
     {
-      "title": "Russia’s Oil Export Windfall Eroded by Ban on Diesel Shipments",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-29/russia-s-oil-export-windfall-eroded-by-ban-on-diesel-shipments"
+      "title": "South Africa to clean up high-risk areas after 12 women killed",
+      "snippet": "The deaths sparked a national outcry about the scale of violence against women in the country.",
+      "link": "https://www.bbc.co.uk/news/articles/c51kx9ze1mdzo"
     },
     {
-      "title": "OpenAI scraps rollout of new model over safety concerns",
-      "link": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko"
-    },
-    {
-      "title": "Spain announces new housing measures after protests over 87-year-old woman's eviction",
+      "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+      "snippet": "The ban is part of a number of proposals that must be approved in parliament within 30 days.",
       "link": "https://www.bbc.co.uk/news/articles/cwm2qmjgy93do"
     },
     {
-      "title": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
-      "link": "https://www.bbc.co.uk/news/articles/cq5yj1835y1wo"
+      "title": "Six Flags shuts down X2 rollercoaster after more than 100 allege brain injuries",
+      "snippet": "Hundreds of riders were allegedly injured on X2, which has seats that spin 360 degrees.",
+      "link": "https://www.bbc.co.uk/news/articles/cw14d37446d8o"
     },
     {
-      "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
-      "link": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro"
+      "title": "Polskim Topaz we francuskiej haubicy? Jest list intencyjny",
+      "snippet": "Na targach MSPO 2026 europejski koncern KNDS podpisał ze spółkami Grupy WB list intencyjny dotyczący potencjalnych dostaw haubic LG1 zintegrowanych z systemem kierowania ogniem Topaz dla Sił Zbrojnych RP.",
+      "link": "https://defence24.pl/przemysl/polskim-topaz-we-francuskiej-haubicy-jest-list-intencyjny"
     },
     {
-      "title": "Hurricane Polo makes landfall on Mexico's Pacific coast",
-      "link": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o"
+      "title": "Ćwiczenia mobilizacyjne przy granicy z Polską. Jakie scenariusze będą sprawdzane?",
+      "snippet": "Vilmantas Vitkauskas, szef litewskiego Narodowego Centrum Zarządzania Kryzysowego poinformował, że od wtorku, 29 września, aż do 3 października, na granicy polsko-litewskiej będą trwały ćwiczenia mobilizacyjne.",
+      "link": "https://defence24.pl/polityka-obronna/cwiczenia-mobilizacyjne-przy-granicy-z-polska-jakie-scenariusze-beda-sprawdzane"
     },
     {
-      "title": "New York Times executive fatally shot by elderly in-laws, police say",
-      "link": "https://www.bbc.co.uk/news/articles/cred737qdv2no"
+      "title": "O zbrojeniach, śmigłowcach Apache i Nord Streamie. „To śmiertelnie groźne dla Polski”",
+      "snippet": "Mariusz Błaszczak, były minister obrony narodowej i wiceprezes PiS, w rozmowie z Michałem Stelą komentuje najważniejsze pytania o bezpieczeństwo Polski. Czy pochwali Władysława Kosiniaka-Kamysza za decyzje dotyczące armii? Co uważa za swój największy",
+      "link": "https://defence24.pl/polityka-obronna/o-zbrojeniach-smiglowcach-apache-i-nord-streamie-to-smiertelnie-grozne-dla-polski"
     },
     {
-      "title": "Geopolitical risk is reshaping global finance, one bank loan at a time - cepr.org",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS3Q1dm43STRUU01WZHNhSUlYMGRjMGV6TUJrbjNNUWxTYkJIZWt4S3BaNmN2TmZDeDNWUm1xSmpfaVdDbWtBbWdVQ3pRb1pvUjJzS0NHamlyZFBBbllIZVBRM1pnZ3BTYnBHemZib2V2b0NkUXVkRkVpdzRzb0RvZmtGRlRKMUoycnpNYWhEal9HZm1MQkM4?oc=5"
+      "title": "Był blisko Putina, teraz ostrzega kraje bałtyckie. Brytyjski generał: „Mogą zrobić coś głupiego”",
+      "snippet": "We wtorek, 29 września, litewski portal LRT opublikował rozmowę z brytyjskim generałem, Gwynem Jenkinsem. Wojskowy zdradził w wywiadzie, że co prawda nie spodziewa się rosyjskiej inwazji na Europę, jednak twierdzi, że Rosjanie mogą poważnie zagrozić ",
+      "link": "https://defence24.pl/geopolityka/byl-blisko-putina-teraz-ostrzega-kraje-baltyckie-brytyjski-general-moga-zrobic-cos-glupiego"
     },
     {
-      "title": "Spotkanie Kosiniaka-Kamysza z Hegsethem. Pada nowy termin",
-      "link": "https://defence24.pl/polityka-obronna/spotkanie-kosiniaka-kamysza-z-hegsethem-pada-nowy-termin"
+      "title": "Gigantyczna umowa na amerykańskie rakiety. Wśród odbiorców Polska?",
+      "snippet": "Raytheon otrzymał od amerykańskiego Departamentu Wojny wieloletnią umowę ramową na produkcję pocisków AIM-120 AMRAAM o maksymalnej wartości 20,7 mld dolarów. Umowa ma obowiązywać przez pięć lat, z możliwością przedłużenia o kolejne dwa lata. Co ważne",
+      "link": "https://defence24.pl/polityka-obronna/gigantyczna-umowa-na-amerykanskie-rakiety-wsrod-odbiorcow-polska"
     },
     {
-      "title": "Sabotaż w Tallinnie. Estonia wskazuje na rosyjskie służby",
-      "link": "https://defence24.pl/polityka-obronna/sabotaz-w-tallinnie-estonia-wskazuje-na-rosyjskie-sluzby"
-    },
-    {
-      "title": "Tusk ostrzega przed Rosją. „Ataki są coraz bliżej polskiej granicy”",
-      "link": "https://defence24.pl/polityka-obronna/tusk-ostrzega-przed-rosja-ataki-sa-coraz-blizej-polskiej-granicy"
-    },
-    {
-      "title": "Ukraina tnie wydatki. Brak pieniędzy z UE zmusza Kijów do zaciskania pasa",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-tnie-wydatki-brak-pieniedzy-z-ue-zmusza-kijow-do-zaciskania-pasa"
-    },
-    {
-      "title": "Tuż przy granicy z Rosją. Estonia buduje nową bazę wojskową",
-      "link": "https://defence24.pl/polityka-obronna/tuz-przy-granicy-z-rosja-estonia-buduje-nowa-baze-wojskowa"
-    },
-    {
-      "title": "Polskie Abramsy blisko finału [ANALIZA]",
-      "link": "https://defence24.pl/przemysl/polskie-abramsy-blisko-finalu-analiza"
+      "title": "Krwawa kontrofensywa przeciwko Huti. Siły rządowe podały liczbę zabitych i rannych",
+      "snippet": "We wtorek, 29 września, rząd Jemenu poinformował o przeprowadzanej przez siebie kontrofensywie przeciwko organizacji Huti. Z informacji podawanych przez panarabską gazetę Asharq Al-Awsat wynika, że w konsekwencji rzeczonej kontrofensywy, w ciągu 3 dn",
+      "link": "https://defence24.pl/geopolityka/krwawa-kontrofensywa-przeciwko-huti-sily-rzadowe-podaly-liczbe-zabitych-i-rannych"
     }
   ]
 }
