@@ -1,3 +1,4 @@
+import html as html_lib
 import json
 import os
 import re
@@ -5,7 +6,7 @@ import unicodedata
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
-from time import mktime
+from time import mktime, sleep
 from zoneinfo import ZoneInfo
 from urllib.parse import urlparse, parse_qs
 from collections import Counter
@@ -19,18 +20,17 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
-# --- ZWERYFIKOWANE I DZIAŁAJĄCE ŹRÓDŁA RSS ---
+# --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS (BEZ TOKSYCZNYCH ZWROTÓW BLOKUJĄCYCH SAFETY FILTERS) ---
 RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE ODDITIES / CIEKAWOSTKI (Google News PL)
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
     "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
     
-    # 2. GLOBALNE BIEŻĄCE ODD NEWS (bardzo świeże zdarzenia z ostatnich 24-48h)
+    # 2. GLOBALNE BIEŻĄCE ODD NEWS (bezpieczne)
     "https://www.upi.com/rss/Odd_News/",
     "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
-    "https://www.huffpost.com/section/weird-news/feed",
     
-    # 3. NAUKA / HISTORIA (stałe smaczki)
+    # 3. NAUKA / HISTORIA
     "https://www.mentalfloss.com/rss.xml",
     "https://www.sciencenews.org/topic/weird-science/feed"
 ]
@@ -119,7 +119,7 @@ def fetch_article_image(url: str) -> str | None:
         for pat in patterns:
             m = re.search(pat, html, re.I)
             if m:
-                img = m.group(1).strip()
+                img = html_lib.unescape(m.group(1).strip()).replace("&amp;", "&")
                 if img.startswith("//"):
                     img = "https:" + img
                 if img.startswith("http") and not img.endswith(".svg"):
@@ -145,7 +145,9 @@ def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
                     photos = data.get("photos", [])
                     if photos:
                         src = photos[0].get("src", {})
-                        return src.get("large") or src.get("medium") or FALLBACK_IMG
+                        raw = src.get("large") or src.get("medium")
+                        if raw:
+                            return html_lib.unescape(raw).replace("&amp;", "&")
         except Exception:
             pass
     return FALLBACK_IMG
@@ -190,6 +192,9 @@ for url in RSS_URLS:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
+            # Ignorujmy nagłówki zawierające NSFW lub wulgaryzmy blokujące filtry bezpieczeństwa
+            if re.search(r'\b(nsfw|porn|sex|naked|erotic)\b', title, re.I):
+                continue
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 12:
                 raw_articles.append({"title": title, "link": link})
@@ -251,18 +256,20 @@ print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów przekazanych d
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek po polsku.
+prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). 
+Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek.
+BEZWZGLĘDNY WYMÓG: CAŁA TREŚĆ (tytuł, opis, komentarz) MUSI BYĆ W JĘZYKU POLSKIM. Tłumacz angielskie fakty na żywy, błyskotliwy polski język!
 
-PODZIAŁ TEMATYCZNY (50/50):
-1. DOKŁADNIE 50% MUSI dotyczyć BIEŻĄCYCH ODDITIES Z OSTATNICH DNI (wpadki ludzi, zoo, ucieczki zwierzaków, dziwne rekordy, kurioza lokalne).
+PODZIAŁ TEMATYCZNY:
+1. 50% MUSI dotyczyć BIEŻĄCYCH ODDITIES (wpadki ludzi, ucieczki zwierzaków, dziwne rekordy, kurioza).
    - Kategoria: BIEŻĄCE ABSURDY lub ZWIERZAKI.
-2. POZOSTAŁE 50% to ponadczasowe smaczki: szalona historia, sekrety popkultury, dziwna nauka, literackie anomalie.
+2. 50% to szalona historia, sekrety popkultury, dziwna nauka.
    - Kategoria: SZALONA HISTORIA, BEKA Z NAUKI lub POPKULTURA.
 
 ZASADY PISANIA DLA PÓL:
-- "title": [Emotikona] + [Krótki, chwytliwy nagłówek do 60 znaków].
-- "summary": 2-3 zdania pełne mięsa, liczb i komicznego absurdu.
-- "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu (ZAKAZ powtarzania tego, co w summary!).
+- "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
+- "summary": 2-3 zdania pełne mięsa, liczb i komicznego absurdu po polsku.
+- "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
 - "image_query": 2-3 konkretne słowa kluczowe po angielsku pod Pexels.
 - "link": Dokładnie URL artykułu z wejścia.
 
@@ -276,57 +283,64 @@ Dane wejściowe:
 """
 
 items = []
-try:
-    response = client.models.generate_content(
-        model="gemini-3.6-flash",
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.45,
-            safety_settings=[
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
-            ]
+for attempt in range(2):
+    try:
+        response = client.models.generate_content(
+            model="gemini-3.6-flash",
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                temperature=0.5,
+                safety_settings=[
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
+                ]
+            )
         )
-    )
-    text_res = response.text.strip()
-    if text_res.startswith("```json"):
-        text_res = text_res[7:]
-    if text_res.startswith("```"):
-        text_res = text_res[3:]
-    if text_res.endswith("```"):
-        text_res = text_res[:-3]
-    text_res = text_res.strip()
+        text_res = response.text.strip()
+        if text_res.startswith("```json"):
+            text_res = text_res[7:]
+        if text_res.startswith("```"):
+            text_res = text_res[3:]
+        if text_res.endswith("```"):
+            text_res = text_res[:-3]
+        text_res = text_res.strip()
 
-    parsed = json.loads(text_res)
-    if isinstance(parsed, list):
-        raw_items = parsed
-    elif isinstance(parsed, dict) and "items" in parsed:
-        raw_items = parsed["items"]
-    elif isinstance(parsed, dict):
-        raw_items = list(parsed.values())[0] if parsed else []
-    else:
-        raw_items = []
+        parsed = json.loads(text_res)
+        if isinstance(parsed, list):
+            raw_items = parsed
+        elif isinstance(parsed, dict) and "items" in parsed:
+            raw_items = parsed["items"]
+        elif isinstance(parsed, dict):
+            raw_items = list(parsed.values())[0] if parsed else []
+        else:
+            raw_items = []
 
-    items = validate_items(raw_items)
-except Exception as e:
-    print(f"Błąd AI podczas parsowania: {e}")
-    items = []
+        items = validate_items(raw_items)
+        if len(items) >= MIN_ITEMS:
+            break
+    except Exception as e:
+        print(f"Próba {attempt + 1} - Błąd AI: {e}")
+        sleep(1)
 
-# GWARANCJA: Jeśli AI zawiedzie, generujemy bezpieczny fallback z pobranych newsów
+# Awaryjny fallback (TYLKO jeśli AI całkowicie zawiodło) - filtrujemy wyłącznie polskie artykuły lub bezpieczne opisy
 if len(items) < MIN_ITEMS:
     print(f"Aktywacja fallbacku – uzupełnianie do minimum {MIN_ITEMS} pozycji...")
     for art in filtered_raw_articles:
         if len(items) >= MIN_ITEMS:
             break
+        # Jeśli tytuł jest po angielsku, nie wklejamy go surowo jako angielszczyzny
+        clean_t = art['title'][:55]
+        if not re.search(r'[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]', clean_t):
+            clean_t = "Niezwykłe zdarzenie ze świata przyrody i nauki"
         items.append({
             "category": "BIEŻĄCE ABSURDY",
-            "title": f"🐾 {art['title'][:55]}",
+            "title": f"🐾 {clean_t}",
             "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
             "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-            "image_query": "weird funny news",
+            "image_query": "weird funny animal news",
             "link": art["link"]
         })
 
