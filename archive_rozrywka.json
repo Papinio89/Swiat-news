@@ -1508,68 +1508,88 @@
   },
   "2026-09-30_rozrywka": {
     "date": "30 września 2026",
-    "time": "15:00",
-    "timestamp": "2026-09-30_15:00",
+    "time": "15:23",
+    "timestamp": "2026-09-30_15:23",
     "items": [
       {
         "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 You've Never Seen Rain Like This In NSFW Weather Report",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.huffpost.com/entry/weather-report-excessive-rain-nsfw-graphic_n_6abbc7b0e4b00588e1d68815",
-        "source_image_url": "https://img.huffingtonpost.com/asset/6abbd2371c0000d70c95fad3.jpeg?cache=Yx3Ocw8D7x&amp;ops=500_281%2Cscalefit_1200_630",
-        "image_url": "https://img.huffingtonpost.com/asset/6abbd2371c0000d70c95fad3.jpeg?cache=Yx3Ocw8D7x&amp;ops=500_281%2Cscalefit_1200_630"
+        "title": "💸 Obiadowy szok cenowy w Szwajcarii",
+        "summary": "Analiza cen w restauracjach na całym świecie wykazała gigantyczne przepaście finansowe. W Szwajcarii za zwykły posiłek dla dwóch osób zapłacisz średnio ponad 120 dolarów, podczas gdy w Tunezji ten sam obiad kosztuje niespełna 10 dolarów. To oznacza, że za cenę jednej kolacji w Zurychu możesz jeść jak król w Afryce Północnej przez dwa tygodnie.",
+        "comment": "W Szwajcarii nawet kelner podający rachunek nakłada na ciebie własną hipotekę.",
+        "image_query": "expensive restaurant dining",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      },
+      {
+        "category": "ZWIERZAKI",
+        "title": "🦩 Flamingi opanowały miejski basen",
+        "summary": "W Hiszpanii stado 15 flamingów zgubiło drogę podczas gęstej mgły i wylądowało w prywatnym basenie na przedmieściach. Zamiast odlecieć, ptaki postanowiły spędzić tam cały weekend, traktując chlorowaną wodę jak luksusowe spa. Właściciel posesji musiał zamawiać dla nich specyficzne krewetki, żeby nie zniszczyły mu trawnika.",
+        "comment": "To pierwszy raz w historii, gdy goście z Airbnb nie chcieli wyjść po upływie doby hotelowej.",
+        "image_query": "flamingos swimming pool",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       },
       {
         "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 5 Words for Pirates (And Why They’re Not Actually All T",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.mentalfloss.com/language/words/words-pirates-why-not-all-same",
-        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_865,w_4225,h_2376/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3q7ny5jzfg6jfsr6x.jpg",
-        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_865,w_4225,h_2376/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3q7ny5jzfg6jfsr6x.jpg"
+        "title": "🚗 Zaparkował auto na dachu wiaty",
+        "summary": "Pijany kierowca we Francji pomylił zjazd z ulicy i wjechał na stromą skarpę, lądując dokładnie na dachu przystanku autobusowego. Pojazd wisiał idealnie poziomo, a policjanci przez pierwszą godzinę myśleli, że to nowa instalacja sztuki nowoczesnej. Test trzeźwości wykazał u kierowcy wynik wystarczający do uśpienia średniego konia.",
+        "comment": "Zintegrowany system przesiadkowy wzniósł się właśnie na zupełnie nowy, wyższy poziom.",
+        "image_query": "car on roof",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       },
       {
-        "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 The 10 States With the Worst Weather in America, Ranked",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.mentalfloss.com/science/weather/states-worst-weather-america-ranked",
-        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3ps245xehdcxhrnmy.jpg",
-        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3ps245xehdcxhrnmy.jpg"
+        "category": "ZWIERZAKI",
+        "title": "🦔 Jeż utknął w tubce po chipsach",
+        "summary": "W Wielkiej Brytanii strażacy zostali wezwani do nietypowej akcji ratunkowej małego jeża, który założył na głowę pustą puszkę po Pringlesach. Malec przemaszerował w takim hełmie blisko 200 metrów przez środek osiedla, taranując ogródki działkowe. Po uwolnieniu z przekąskowej pułapki zwierzę bezczelnie zażądało więcej dokładki.",
+        "comment": "Gdy chęć na czipsy wejdzie za mocno, żaden pancerz nie powstrzyma prawdziwego smakosza.",
+        "image_query": "hedgehog potato chips",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       },
       {
-        "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 The Top Song From Every Year in the 1970s",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.mentalfloss.com/entertainment/music/top-song-every-year-1970s",
-        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3pxnez48smyaetc8j.jpg",
-        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3pxnez48smyaetc8j.jpg"
+        "category": "SZALONA HISTORIA",
+        "title": "🎩 Wojna o cylindry na ulicach Londynu",
+        "summary": "Gdy w 1797 roku John Hetherington wyszedł na ulicę w pierwszym w historii cylindrze, wywołał powszechną panikę. Przechodnie mdleli na jego widok, kilka osób zostało zdeptanych przez tłum, a twórca kapelusza został natychmiast aresztowany za zakłócanie porządku. Sędzia uznał, że noszenie tak przerażającego nakrycia głowy godzi w morale obywateli.",
+        "comment": "Dzisiaj w modzie przejdzie wszystko, a wtedy wystarczyła wyższa czapka, by wywołać apokalipsę.",
+        "image_query": "vintage top hat",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       },
       {
-        "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 The Lunchtime Meeting That Inspired Four Beloved Pixar ",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.mentalfloss.com/entertainment/movies/lunchtime-meeting-four-pixar-movies",
-        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_127,w_2464,h_1386/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3prtgw5609csvftr9.jpg",
-        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_127,w_2464,h_1386/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3prtgw5609csvftr9.jpg"
+        "category": "BEKA Z NAUKI",
+        "title": "🐔 Kurczaki wolą ładnych ludzi",
+        "summary": "Szwedzcy naukowcy spędzili miesiące na badaniu preferencji estetycznych drobiu i odkryli zdumiewający fakt. Kurczaki trenowane do reagowania na twarze znacznie chętniej podchodziły do zdjęć ludzi uznawanych przez ludzi za atrakcyjnych. Reakcje ptaków były niemal identyczne z wyborami dokonywanymi przez studentów na aplikacjach randkowych.",
+        "comment": "Teraz już wiesz, dlaczego nawet kura domowa ocenia cię wzrokiem bez krzty litości.",
+        "image_query": "chicken human face",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       },
       {
-        "category": "BIEŻĄCE ABSURDY",
-        "title": "🐾 The Controversial Meaning of 'Timshel,' the Word at the",
-        "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
-        "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-        "image_query": "weird funny news",
-        "link": "https://www.mentalfloss.com/language/words/timshel-east-of-eden-meaning",
-        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_524,w_2792,h_1570/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mf9qcbxrw3bx6db3.jpg",
-        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_524,w_2792,h_1570/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mf9qcbxrw3bx6db3.jpg"
+        "category": "POPKULTURA",
+        "title": "🍫 Tajemnica ekranowej czekolady",
+        "summary": "Podczas kręcenia słynnej sceny pod prysznicem w filmie 'Psychoza' Alfred Hitchcock użył jako sztucznej krwi syropu czekoladowego Bosco. Ponieważ film był czarno-biały, gęsty syrop wyglądał na ekranie znacznie bardziej realistycznie i przerażająco niż czerwona farba. Aktorzy po zdjęciach pachnieli jak fabryka wyrobów cukierniczych.",
+        "comment": "Najbardziej przerażający morderca w historii kina słuchał rozkazów słodkiej polewy do lodów.",
+        "image_query": "chocolate syrup bottle",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      },
+      {
+        "category": "BEKA Z NAUKI",
+        "title": "🍌 Banany są naturalnie promieniotwórcze",
+        "summary": "Banany zawierają duże ilości potasu-40, co czyni je delikatnie promieniotwórczymi owocami. Fizycy stworzyli nawet oficjalną jednostkę miary zwaną 'dawką równoważną bananowi', używaną do obrazowania bardzo małych dawek promieniowania. Aby nabawić się choroby popromiennej, musiałbyś zjeść 10 milionów bananów na raz.",
+        "comment": "Przynajmniej zanim zginiesz od promieniowania, najpierw pękniesz z przejedzenia.",
+        "image_query": "yellow bananas potassium",
+        "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
+        "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
+        "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
       }
     ]
   }
