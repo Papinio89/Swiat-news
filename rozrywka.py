@@ -20,13 +20,13 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
-# --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS (BEZ TOKSYCZNYCH ZWROTÓW BLOKUJĄCYCH SAFETY FILTERS) ---
+# --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS ---
 RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE ODDITIES / CIEKAWOSTKI (Google News PL)
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
     "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
     
-    # 2. GLOBALNE BIEŻĄCE ODD NEWS (bezpieczne)
+    # 2. GLOBALNE BIEŻĄCE ODD NEWS
     "https://www.upi.com/rss/Odd_News/",
     "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
     
@@ -192,7 +192,6 @@ for url in RSS_URLS:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
-            # Ignorujmy nagłówki zawierające NSFW lub wulgaryzmy blokujące filtry bezpieczeństwa
             if re.search(r'\b(nsfw|porn|sex|naked|erotic)\b', title, re.I):
                 continue
             link = clean_link(getattr(entry, "link", "#"))
@@ -266,12 +265,16 @@ PODZIAŁ TEMATYCZNY:
 2. 50% to szalona historia, sekrety popkultury, dziwna nauka.
    - Kategoria: SZALONA HISTORIA, BEKA Z NAUKI lub POPKULTURA.
 
+ZASADA UNIKALNOŚCI ŹRÓDEŁ (BARDZO WAŻNE):
+- Każda wygenerowana ciekawostka MUSI mieć INNY link ("link") przypisany z listy "Dane wejściowe".
+- KATEGORYCZNY ZAKAZ przypisywania tego samego linku do kilku wiadomości! 1 news = 1 unikalny link.
+
 ZASADY PISANIA DLA PÓL:
 - "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
 - "summary": 2-3 zdania pełne mięsa, liczb i komicznego absurdu po polsku.
 - "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
-- "image_query": 2-3 konkretne słowa kluczowe po angielsku pod Pexels.
-- "link": Dokładnie URL artykułu z wejścia.
+- "image_query": 2-3 precyzyjne słowa kluczowe po angielsku pod Pexels oddające sedno tematu (np. 'flamingos pool', 'car on roof', 'top hat vintage').
+- "link": Dokładnie URL artykułu z wejścia (każdy news musi mieć inny!).
 
 UNIKAJ TYCH TEMATÓW Z ARCHIWUM:
 {json.dumps(previous_topics[:30], ensure_ascii=False)}
@@ -325,13 +328,12 @@ for attempt in range(2):
         print(f"Próba {attempt + 1} - Błąd AI: {e}")
         sleep(1)
 
-# Awaryjny fallback (TYLKO jeśli AI całkowicie zawiodło) - filtrujemy wyłącznie polskie artykuły lub bezpieczne opisy
+# Awaryjny fallback
 if len(items) < MIN_ITEMS:
     print(f"Aktywacja fallbacku – uzupełnianie do minimum {MIN_ITEMS} pozycji...")
     for art in filtered_raw_articles:
         if len(items) >= MIN_ITEMS:
             break
-        # Jeśli tytuł jest po angielsku, nie wklejamy go surowo jako angielszczyzny
         clean_t = art['title'][:55]
         if not re.search(r'[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]', clean_t):
             clean_t = "Niezwykłe zdarzenie ze świata przyrody i nauki"
@@ -352,24 +354,33 @@ if items:
 
 print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
 
-# --- DOBIERANIE ZDJĘĆ ---
-print("Dobieranie zdjęć...")
+# --- DOBIERANIE ZDJĘĆ Z BLOKADĄ DUPLIKATÓW ---
+print("Dobieranie zdjęć (blokada powtórzonych grafik)...")
 source_ok = 0
+seen_image_urls = set()
+
 for item in items:
     url = item.get("link", "")
     q = item.get("image_query", "funny weird fact")
     
     article_img = fetch_article_image(url)
-    if article_img:
+    
+    # Używamy zdjęcia ze źródła TYLKO jeśli jeszcze nie wystąpiło w tej sesji
+    if article_img and article_img not in seen_image_urls:
         item["source_image_url"] = article_img
         item["image_url"] = article_img
+        seen_image_urls.add(article_img)
         source_ok += 1
     else:
+        # Jeśli źródło powiela grafikę lub jej brak -> pobieramy unikalną z Pexels po dedykowanym image_query
         stock_img = fetch_pexels_image_url(q)
+        if stock_img in seen_image_urls:
+            stock_img = fetch_pexels_image_url(q + " background")
         item["source_image_url"] = stock_img
         item["image_url"] = stock_img
+        seen_image_urls.add(stock_img)
 
-print(f"Zdjęcia z oryginalnych artykułów: {source_ok}/{len(items)}")
+print(f"Zdjęcia z unikalnych artykułów: {source_ok}/{len(items)} (reszta = Pexels po query)")
 
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
