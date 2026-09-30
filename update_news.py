@@ -18,6 +18,7 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
+# Zrównoważone źródła: Polska, biznes, rynki + sekcja zdarzeń nietypowych/szokujących
 RSS_URLS = [
     # --- POLSKA: GOSPODARKA, BIZNES, PRZEMYSŁ I KRAJ ---
     "https://www.money.pl/rss/",
@@ -38,7 +39,11 @@ RSS_URLS = [
     "https://news.google.com/rss/search?q=world+news+geopolitics&hl=en-US&gl=US&ceid=US:en",
 
     # --- OBRONNOŚĆ ---
-    "https://defence24.pl/rss"
+    "https://defence24.pl/rss",
+
+    # --- CIEKAWOSTKI / ABSURDY / SZOKUJĄCE TEMATY DNIA ---
+    "https://news.google.com/rss/search?q=weird+bizarre+shocking+investigation+scandal&hl=en-US&gl=US&ceid=US:en",
+    "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
 ]
 
 POLISH_MONTHS = {
@@ -49,16 +54,6 @@ POLISH_MONTHS = {
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
-
-# Dopuszczalne pojedyncze kategorie zapewniające różnorodność wizualną
-ALLOWED_CATEGORIES = {
-    "POLSKA",
-    "GOSPODARKA",
-    "BIZNES",
-    "GEOPOLITYKA",
-    "OBRONNOŚĆ",
-    "TECHNOLOGIE"
-}
 
 
 def clean_link(url: str) -> str:
@@ -95,10 +90,7 @@ def is_recent(entry) -> bool:
 
 
 def normalize_category(cat: str) -> str:
-    """Wymusza pojedynczą, unikalną kategorię zamiast hybryd (np. POLSKA / BIZNES)."""
     c = str(cat or "").upper().strip()
-    
-    # Hierarchia przypisania dla zbitek:
     if "POLSK" in c:
         return "POLSKA"
     if "OBRON" in c or "WOJSK" in c:
@@ -111,7 +103,6 @@ def normalize_category(cat: str) -> str:
         return "BIZNES"
     if "GOSPODARK" in c or "RYNK" in c or "FINANS" in c or "SUROWC" in c:
         return "GOSPODARKA"
-        
     return "GOSPODARKA"
 
 
@@ -131,7 +122,7 @@ def validate_items(items: list) -> list:
         threads_post = str(item.get("threads_post", "")).strip()
         question = str(item.get("question", "")).strip()
         category = normalize_category(item.get("category", "GOSPODARKA"))
-        image_query = str(item.get("image_query", "business news")).strip()
+        image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
         if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 80:
@@ -205,7 +196,8 @@ def fetch_article_image(url: str) -> str | None:
         for pat in patterns:
             m = re.search(pat, html, re.I)
             if m:
-                img = m.group(1).strip()
+                import html as html_lib
+                img = html_lib.unescape(m.group(1).strip()).replace("&amp;", "&")
                 if img.startswith("//"):
                     img = "https:" + img
                 if img.startswith("http"):
@@ -225,7 +217,6 @@ for url in RSS_URLS:
                 continue
             title = getattr(entry, "title", "").strip()
             summary = getattr(entry, "summary", "").strip()
-            # Czyścimy tagi HTML z summary z RSS jeśli występują
             clean_summary = re.sub(r'<[^>]+>', '', summary)[:250]
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 15:
@@ -239,7 +230,7 @@ for url in RSS_URLS:
 
 print(f"Pobrano {len(raw_articles)} świeżych artykułów (max {MAX_AGE_HOURS}h)")
 
-# --- ARCHIWUM I DEDUPLIKACJA ---
+# --- ROZSZERZONE ARCHIWUM (14 SESJI WSTECZ) I WYKRYWANIE TEMATÓW KLUCZOWYCH ---
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
@@ -255,91 +246,95 @@ current_hour = now_pl.hour
 session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
-previous_topics = []
-sorted_sessions = sorted(archive_data.keys(), reverse=True)[:8]
+previous_titles = []
+banned_entities = set()
+
+# Przeglądamy aż 14 ostatnich sesji (ok. 7 dni)
+sorted_sessions = sorted(archive_data.keys(), reverse=True)[:14]
 for session_key in sorted_sessions:
     session_content = archive_data.get(session_key)
     if isinstance(session_content, dict) and "items" in session_content:
         for item in session_content.get("items", []):
-            if "title" in item:
-                clean_title = "".join(
-                    c for c in item["title"]
-                    if ord(c) > 127 or c.isalnum() or c.isspace()
-                ).strip().lower()
-                previous_topics.append(clean_title)
+            t = item.get("title", "")
+            if t:
+                previous_titles.append(t)
+                # Wyciągamy słowa kluczowe o długości > 4 znaki
+                words = re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', t.lower())
+                for w in words:
+                    if w not in {"polsce", "polski", "polaków", "nowy", "nowa", "nowe", "roku", "swiat", "przez", "tylko", "rzad", "rząd"}:
+                        banned_entities.add(w)
 
+# Ścisła deduplikacja wejściowa
 filtered_raw_articles = []
 for art in raw_articles:
-    art_clean = "".join(
-        c for c in art["title"]
-        if ord(c) > 127 or c.isalnum() or c.isspace()
-    ).strip().lower()
+    art_title = art["title"].lower()
+    art_clean_words = set(re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', art_title))
+    
     is_duplicate = False
-    art_words = set(art_clean.split())
-    if len(art_words) > 2:
-        for prev in previous_topics:
-            prev_words = set(prev.split())
-            if len(prev_words) > 2:
-                common = art_words.intersection(prev_words)
-                ratio = len(common) / min(len(art_words), len(prev_words))
-                if ratio > 0.40:
-                    is_duplicate = True
-                    break
+    for prev_t in previous_titles:
+        prev_clean_words = set(re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', prev_t.lower()))
+        common = art_clean_words.intersection(prev_clean_words)
+        
+        # Jeśli artykuł dzieli 2 kluczowe rzeczowniki z poprzednim tematem (np. miedź + chile, obligacje + japonia, pit + stawka) -> odrzucamy
+        if len(common) >= 2:
+            is_duplicate = True
+            break
+            
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
 if len(filtered_raw_articles) < 10:
     filtered_raw_articles = raw_articles
 
-print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów")
+print(f"Po ścisłej deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów")
 
-# --- PROMPT AI Z ZASADĄ POJEDYNCZEJ KATEGORII I BEZWZGLĘDNĄ RZETELNOŚCIĄ ---
+# --- PROMPT AI Z ZAKAZEM TEMATÓW POWTÓRZONYCH I WYMOGIEM TEMATÓW SZOKUJĄCYCH ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego („Świat w Minucie” na Instagramie i Threads). 
-Twoje treści zdobywają wirale, bo łączysz 100% RZETELNOŚĆ DZIENNIKARSKĄ z ciętym, bezkompromisowym komentarzem.
+recent_titles_sample = previous_titles[:35]
 
-Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH wiadomości w języku polskim w formacie JSON.
+prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
+Twoje treści zdobywają gigantyczne zasięgi, ponieważ łączysz twardą, rzetelną wiedzę z elektryzującymi, zaskakującymi faktami i bezlitosną puentą.
 
-ZASADA 1: BEZWZGLĘDNA RZETELNOŚĆ FAKTOGRAFICZNA (ZAKAZ ZMYŚLANIA)
-- Pisz WYŁĄCZNIE o faktach podanych w tytule i zajawce (snippet). 
-- KATEGORYCZNY ZAKAZ zmyślania stawek podatkowych, liczb, kwot czy dat, jeśli nie wynikają one wprost ze źródła! (np. jeśli artykuł wspomina o zmianie w PIT, nie wymyślaj z głowy podwojenia podatku dla klasy średniej).
-- Jeśli brakuje szczegółów liczbowych, opisz realną istotę sporu bez fantazjowania.
+Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJCIEKAWSZYCH wiadomości w języku polskim w formacie JSON.
 
-ZASADA 2: TYLKO JEDNA KATEGORIA DLA KAŻDEGO NEWSA (ZAKAZ ŁĄCZENIA!)
-Pole "category" MUSI zawierać DOKŁADNIE JEDNO słowo z poniższej listy (żadnych ukośników, żadnych zbitek):
-- POLSKA (sprawy krajowe, rząd, społeczeństwo, polityka wewnętrzna) -> kolor czerwony
-- GOSPODARKA (makroekonomia, inflacja, stopy, podatki, surowce, waluty) -> kolor szmaragdowy
-- BIZNES (konkretne spółki giełdowe, fuzje, upadłości, rynki zagraniczne) -> kolor morski/zielony
-- GEOPOLITYKA (dyplomacja, relacje międzynarodowe, traktaty, wybory na świecie) -> kolor niebieski
-- OBRONNOŚĆ (armia, sojusze wojskowe, zakupy broni, NATO, front) -> kolor grafitowy
-- TECHNOLOGIE (przełomy AI, infrastruktura obliczeniowa, Big Tech) -> kolor fioletowy
+ZASADA 1: BEZWZGLĘDNY ZAKAZ POWTÓREK Z POPRZEDNICH DNI (STOP DEDUPLIKATOM):
+- W ostatnich dniach omawialiśmy już m.in. poniższe tematy. ZAKAZ wybierania artykułów na ten sam temat (np. jeśli było o cenach miedzi, obligacjach Japonii, progach PIT w Polsce, czy ropie na Falklandach – WYBIERZ INNE NEWSY!):
+{json.dumps(recent_titles_sample, ensure_ascii=False)}
 
-Zadbaj o zrównoważony miks kategorii, aby zestawienie nie było jednokolorowe! (min. 4 pozycje POLSKA, min. 4 pozycje GOSPODARKA, 2-3 BIZNES, 2 GEOPOLITYKA, max 2 OBRONNOŚĆ, max 1-2 TECHNOLOGIE).
+ZASADA 2: GWARANTOWANE MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE:
+- Profil stał się zbyt nudny i encyklopedyczny. Co najmniej 2 z 14 pozycji MUSZĄ dotyczyć szokujących skandali, kuriozalnych decyzji urzędniczych, niezwykłych zjawisk, absurdów prawnych lub nieprawdopodobnych zwrotów akcji na świecie. Spraw, by czytelnik zbierał szczękę z podłogi!
 
-ZASADA 3: CIĘTY KOMENTARZ
-- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa). Zderz oficjalne deklaracje władzy lub korporacji z twardą rzeczywistością i kosztami ponoszonymi przez zwykłych ludzi. Zawsze krótsze niż summary.
+ZASADA 3: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII (ŻADNYCH UKOŚNIKÓW):
+Pole "category" to DOKŁADNIE JEDNO słowo:
+- "POLSKA" (min. 4 pozycje)
+- "GOSPODARKA" (min. 4 pozycje)
+- "BIZNES" (2-3 pozycje)
+- "GEOPOLITYKA" (2 pozycje)
+- "OBRONNOŚĆ" (max 2 pozycje)
+- "TECHNOLOGIE" (max 1-2 pozycje)
 
-ZASADA 4: FORMAT THREADS
-- "threads_post": Dedykowany, osobny post na Threads (3-4 naturalne akapity z podwójnym hookiem, tłem, flagami i pytaniem). Zakaz przepisywania 1:1 słów ze slajdu.
+ZASADA 4: FORMAT TREŚCI:
+- "title": [Emotikona] [Konkretny, prowokujący nagłówek do 60 znaków].
+- "hook": 1 dynamiczne zdanie z mocnym kontrastem.
+- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd. KATEGORYCZNY ZAKAZ ZMYŚLANIA!
+- "comment": DOKŁADNIE 1 CIĘTE, BŁYSKOTLIWE ZDANIE (14-22 słowa, krótsze niż summary). Obnaż hipokryzję lub drugie dno.
+- "threads_post": Dedykowany, osobny post na Threads (3-4 akapity z flagami, unikalny względem summary, kończący się pytaniem i '👇💬').
 
-STRUKTURA JSON (Zwróć WYŁĄCZNIE czystą tablicę JSON obiektów):
+STRUKTURA JSON:
 [
   {{
     "category": "POLSKA" lub "GOSPODARKA" lub "BIZNES" lub "GEOPOLITYKA" lub "OBRONNOŚĆ" lub "TECHNOLOGIE",
-    "title": "[Emotikona] [Konkretny, chwytliwy nagłówek do 60 znaków]",
+    "title": "[Emotikona] [Nagłówek]",
     "hook": "1 zdanie uderzające w sedno.",
-    "summary": "Dokładnie 2 zwięzłe zdania czystych, sprawdzonych faktów na slajd.",
-    "comment": "1 dosadne, cięte zdanie kontrastu (14-22 słowa, krótsze niż summary).",
-    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n).",
-    "question": "1 prowokujące do dyskusji pytanie pod dany temat kończące się '👇💬'.",
+    "summary": "2 zwięzłe zdania faktów.",
+    "comment": "1 dosadne zdanie z puentą (14-22 słowa).",
+    "threads_post": "Pełna treść wiralowego posta na Threads z enterami \\n\\n.",
+    "question": "1 pytanie do dyskusji kończące się '👇💬'.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
   }}
 ]
-
-Unikaj tematów z archiwum:
-{json.dumps(previous_topics[:25], ensure_ascii=False)}
 
 Dane wejściowe:
 {json.dumps(filtered_raw_articles, ensure_ascii=False)}
@@ -353,7 +348,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.45,
+            temperature=0.55,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -457,4 +452,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} zrównoważonych, unikalnych newsów.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów z powrotem szokujących tematów.")
