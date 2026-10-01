@@ -19,21 +19,20 @@ from google.genai import types
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
-FALLBACK_IMG = "[https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop](https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop)"
+FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
-# --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS ---
 RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE CIEKAWOSTKI
-    "[https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl)",
-    "[https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl)",
+    "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
     
     # 2. GLOBALNE BIEŻĄCE ODD NEWS
-    "[https://www.upi.com/rss/Odd_News/](https://www.upi.com/rss/Odd_News/)",
-    "[https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en)",
+    "https://www.upi.com/rss/Odd_News/",
+    "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
     
     # 3. NAUKA / HISTORIA
-    "[https://www.mentalfloss.com/rss.xml](https://www.mentalfloss.com/rss.xml)",
-    "[https://www.sciencenews.org/topic/weird-science/feed](https://www.sciencenews.org/topic/weird-science/feed)"
+    "https://www.mentalfloss.com/rss.xml",
+    "https://www.sciencenews.org/topic/weird-science/feed"
 ]
 
 POLISH_MONTHS = {
@@ -102,13 +101,13 @@ def fetch_article_image(url: str) -> str | None:
                 "User-Agent": (
                     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/120.0.0.0 Safari/537.36"
+                    "Chrome/124.0.0.0 Safari/537.36"
                 ),
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
                 "Accept-Language": "pl,en-US;q=0.9,en;q=0.8"
             }
         )
-        with urllib.request.urlopen(req, timeout=5) as resp:
+        with urllib.request.urlopen(req, timeout=6) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
 
         patterns = [
@@ -133,24 +132,33 @@ def fetch_article_image(url: str) -> str | None:
 def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
     if not PEXELS_API_KEY:
         return FALLBACK_IMG
-    for attempt in range(retries + 1):
-        try:
-            url = f"[https://api.pexels.com/v1/search?query=](https://api.pexels.com/v1/search?query=){urllib.parse.quote(query)}&per_page=1&orientation=landscape"
-            req = urllib.request.Request(url, headers={
-                "Authorization": PEXELS_API_KEY,
-                "User-Agent": "SwiatWMinute-Bot/1.0"
-            })
-            with urllib.request.urlopen(req, timeout=5) as resp:
-                if resp.status == 200:
-                    data = json.loads(resp.read().decode("utf-8"))
-                    photos = data.get("photos", [])
-                    if photos:
-                        src = photos[0].get("src", {})
-                        raw = src.get("large") or src.get("medium")
-                        if raw:
-                            return html_lib.unescape(raw).replace("&amp;", "&")
-        except Exception:
-            pass
+
+    # Próba 1: Pełna fraza, Próba 2: Uproszczona (pierwsze 2 słowa)
+    queries = [query]
+    words = query.split()
+    if len(words) > 2:
+        queries.append(" ".join(words[:2]))
+    queries.append("nature weird funny")
+
+    for q in queries:
+        for attempt in range(retries + 1):
+            try:
+                url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=3&orientation=landscape"
+                req = urllib.request.Request(url, headers={
+                    "Authorization": PEXELS_API_KEY,
+                    "User-Agent": "SwiatWMinute-Bot/1.0"
+                })
+                with urllib.request.urlopen(req, timeout=5) as resp:
+                    if resp.status == 200:
+                        data = json.loads(resp.read().decode("utf-8"))
+                        photos = data.get("photos", [])
+                        if photos:
+                            src = photos[0].get("src", {})
+                            raw = src.get("large") or src.get("medium")
+                            if raw:
+                                return html_lib.unescape(raw).replace("&amp;", "&")
+            except Exception:
+                pass
     return FALLBACK_IMG
 
 
@@ -279,7 +287,7 @@ ZASADY PISANIA DLA PÓL:
 - "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
 - "summary": 2-3 zdania pełne faktów, liczb i komicznego absurdu po polsku.
 - "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
-- "image_query": 2-3 precyzyjne słowa kluczowe po angielsku pod Pexels oddające sedno tematu.
+- "image_query": Dokładnie 1-2 proste słowa kluczowe po angielsku pod Pexels oddające sedno (np. 'flamingo', 'vintage car', 'top hat', 'hedgehog', 'banana'). Unikaj długich fraz!
 - "link": Dokładnie URL artykułu z wejścia (każdy news musi mieć inny!).
 
 UNIKAJ TYCH TEMATÓW Z ARCHIWUM:
@@ -315,7 +323,6 @@ for model_name in models_to_try:
         )
         
         raw_text = response.text or ""
-        # Dokładne czyszczenie z ewentualnych formatowań markdown
         text_clean = re.sub(r'^```(?:json)?\s*', '', raw_text.strip(), flags=re.IGNORECASE)
         text_clean = re.sub(r'\s*```$', '', text_clean)
         
@@ -340,7 +347,7 @@ for model_name in models_to_try:
         traceback.print_exc()
         sleep(1)
 
-# Awaryjne uzupełnienie (tylko w ostateczności)
+# Awaryjne uzupełnienie
 if len(items) < MIN_ITEMS:
     print("Aktywacja awaryjnego uzupełnienia pozycji...")
     existing_links = {i.get("link") for i in items}
@@ -370,7 +377,7 @@ if items:
 
 print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
 
-# --- DOBIERANIE ZDJĘĆ Z BLOKADĄ DUPLIKATÓW ---
+# --- DOBIERANIE ZDJĘĆ Z GWARANCJĄ PEXELS / FALLBACK ---
 print("Dobieranie zdjęć (blokada powtórzonych grafik)...")
 source_ok = 0
 seen_image_urls = set()
@@ -381,20 +388,26 @@ for item in items:
     
     article_img = fetch_article_image(url)
     
+    # 1. Sprawdzamy czy zdjęcie ze źródła jest dostępne i unikalne
     if article_img and article_img not in seen_image_urls:
         item["source_image_url"] = article_img
         item["image_url"] = article_img
         seen_image_urls.add(article_img)
         source_ok += 1
     else:
+        # 2. Pobieramy dopasowane zdjęcie z Pexels
         stock_img = fetch_pexels_image_url(q)
-        if stock_img in seen_image_urls:
-            stock_img = fetch_pexels_image_url(q + " background")
+        if not stock_img or stock_img in seen_image_urls:
+            stock_img = fetch_pexels_image_url(q.split()[0] if q else "funny")
+            
+        if not stock_img or stock_img in seen_image_urls:
+            stock_img = FALLBACK_IMG
+
         item["source_image_url"] = stock_img
         item["image_url"] = stock_img
         seen_image_urls.add(stock_img)
 
-print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels)")
+print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels/Fallback)")
 
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
