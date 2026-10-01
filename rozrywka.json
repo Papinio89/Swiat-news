@@ -1,87 +1,67 @@
 {
-  "date": "30 września 2026",
-  "time": "15:23",
-  "timestamp": "2026-09-30_15:23",
+  "date": "1 października 2026",
+  "time": "13:17",
+  "timestamp": "2026-10-01_13:17",
   "items": [
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "💸 Obiadowy szok cenowy w Szwajcarii",
-      "summary": "Analiza cen w restauracjach na całym świecie wykazała gigantyczne przepaście finansowe. W Szwajcarii za zwykły posiłek dla dwóch osób zapłacisz średnio ponad 120 dolarów, podczas gdy w Tunezji ten sam obiad kosztuje niespełna 10 dolarów. To oznacza, że za cenę jednej kolacji w Zurychu możesz jeść jak król w Afryce Północnej przez dwa tygodnie.",
-      "comment": "W Szwajcarii nawet kelner podający rachunek nakłada na ciebie własną hipotekę.",
-      "image_query": "expensive restaurant dining",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "🦩 Flamingi opanowały miejski basen",
-      "summary": "W Hiszpanii stado 15 flamingów zgubiło drogę podczas gęstej mgły i wylądowało w prywatnym basenie na przedmieściach. Zamiast odlecieć, ptaki postanowiły spędzić tam cały weekend, traktując chlorowaną wodę jak luksusowe spa. Właściciel posesji musiał zamawiać dla nich specyficzne krewetki, żeby nie zniszczyły mu trawnika.",
-      "comment": "To pierwszy raz w historii, gdy goście z Airbnb nie chcieli wyjść po upływie doby hotelowej.",
-      "image_query": "flamingos swimming pool",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT19Xek94T3hTQ0VWNFZ1LUd0RkU1TWw2RFZuSlZZdVNmYk51TElTX2RHQS10bERPWXQ4VmNnSzA0V0hzRDdUcWlyWWdxcDBMMXRiNnh3bWx4VjI0OFNVdlhMcjBITjV2VU5hbk5WZGxncWhoVl8yWU5aMVRGZ0tKeHRYVzRzYU5ENmxrS2tTMm05QjF5RDFUdEdoMDQ5RVdIb3BfUjBsQlFRWDFXWk5FdmhCV3NfSmhXbjRPeUVaR0pyQdIBVkFVX3lxTE5aUkJ6QmsxcDJRSklIdDFpb0ZyUzVKbnJCdFpndXpfaTlLN3ppd015eEQtZHpPWTlJS0dpRmdnTVlYbW1JVGtFbTctMmZzTGMxektNbC1n?oc=5",
+      "source_image_url": "https://images.pexels.com/photos/34848166/pexels-photo-34848166.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "image_url": "https://images.pexels.com/photos/34848166/pexels-photo-34848166.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     },
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "🚗 Zaparkował auto na dachu wiaty",
-      "summary": "Pijany kierowca we Francji pomylił zjazd z ulicy i wjechał na stromą skarpę, lądując dokładnie na dachu przystanku autobusowego. Pojazd wisiał idealnie poziomo, a policjanci przez pierwszą godzinę myśleli, że to nowa instalacja sztuki nowoczesnej. Test trzeźwości wykazał u kierowcy wynik wystarczający do uśpienia średniego konia.",
-      "comment": "Zintegrowany system przesiadkowy wzniósł się właśnie na zupełnie nowy, wyższy poziom.",
-      "image_query": "car on roof",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://www.mentalfloss.com/geography/cities/best-cities-vegans-vegetarians-ranked",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3qn5xjmrrwcvs6h5q.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3qn5xjmrrwcvs6h5q.jpg"
     },
     {
-      "category": "ZWIERZAKI",
-      "title": "🦔 Jeż utknął w tubce po chipsach",
-      "summary": "W Wielkiej Brytanii strażacy zostali wezwani do nietypowej akcji ratunkowej małego jeża, który założył na głowę pustą puszkę po Pringlesach. Malec przemaszerował w takim hełmie blisko 200 metrów przez środek osiedla, taranując ogródki działkowe. Po uwolnieniu z przekąskowej pułapki zwierzę bezczelnie zażądało więcej dokładki.",
-      "comment": "Gdy chęć na czipsy wejdzie za mocno, żaden pancerz nie powstrzyma prawdziwego smakosza.",
-      "image_query": "hedgehog potato chips",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://www.mentalfloss.com/entertainment/truth-or-dare-question-ideas",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3q2z6n9s4xz0rs4ca.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3q2z6n9s4xz0rs4ca.jpg"
     },
     {
-      "category": "SZALONA HISTORIA",
-      "title": "🎩 Wojna o cylindry na ulicach Londynu",
-      "summary": "Gdy w 1797 roku John Hetherington wyszedł na ulicę w pierwszym w historii cylindrze, wywołał powszechną panikę. Przechodnie mdleli na jego widok, kilka osób zostało zdeptanych przez tłum, a twórca kapelusza został natychmiast aresztowany za zakłócanie porządku. Sędzia uznał, że noszenie tak przerażającego nakrycia głowy godzi w morale obywateli.",
-      "comment": "Dzisiaj w modzie przejdzie wszystko, a wtedy wystarczyła wyższa czapka, by wywołać apokalipsę.",
-      "image_query": "vintage top hat",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://www.mentalfloss.com/entertainment/tv/why-blues-clues-repeated-same-episode-five-days",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_189,w_2048,h_1152/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1cg4pm699qvdcesjv.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_189,w_2048,h_1152/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1cg4pm699qvdcesjv.jpg"
     },
     {
-      "category": "BEKA Z NAUKI",
-      "title": "🐔 Kurczaki wolą ładnych ludzi",
-      "summary": "Szwedzcy naukowcy spędzili miesiące na badaniu preferencji estetycznych drobiu i odkryli zdumiewający fakt. Kurczaki trenowane do reagowania na twarze znacznie chętniej podchodziły do zdjęć ludzi uznawanych przez ludzi za atrakcyjnych. Reakcje ptaków były niemal identyczne z wyborami dokonywanymi przez studentów na aplikacjach randkowych.",
-      "comment": "Teraz już wiesz, dlaczego nawet kura domowa ocenia cię wzrokiem bez krzty litości.",
-      "image_query": "chicken human face",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://www.mentalfloss.com/history/presidents/jimmy-carter-favorite-president-reason-he-admired-him",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_278,w_4278,h_2406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ptfbtbcfve0ym1cc.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_278,w_4278,h_2406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ptfbtbcfve0ym1cc.jpg"
     },
     {
-      "category": "POPKULTURA",
-      "title": "🍫 Tajemnica ekranowej czekolady",
-      "summary": "Podczas kręcenia słynnej sceny pod prysznicem w filmie 'Psychoza' Alfred Hitchcock użył jako sztucznej krwi syropu czekoladowego Bosco. Ponieważ film był czarno-biały, gęsty syrop wyglądał na ekranie znacznie bardziej realistycznie i przerażająco niż czerwona farba. Aktorzy po zdjęciach pachnieli jak fabryka wyrobów cukierniczych.",
-      "comment": "Najbardziej przerażający morderca w historii kina słuchał rozkazów słodkiej polewy do lodów.",
-      "image_query": "chocolate syrup bottle",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
-    },
-    {
-      "category": "BEKA Z NAUKI",
-      "title": "🍌 Banany są naturalnie promieniotwórcze",
-      "summary": "Banany zawierają duże ilości potasu-40, co czyni je delikatnie promieniotwórczymi owocami. Fizycy stworzyli nawet oficjalną jednostkę miary zwaną 'dawką równoważną bananowi', używaną do obrazowania bardzo małych dawek promieniowania. Aby nabawić się choroby popromiennej, musiałbyś zjeść 10 milionów bananów na raz.",
-      "comment": "Przynajmniej zanim zginiesz od promieniowania, najpierw pękniesz z przejedzenia.",
-      "image_query": "yellow bananas potassium",
-      "link": "https://www.mentalfloss.com/geography/most-least-expensive-countries-eat-out",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_103,w_3499,h_1968/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mg2dbvxj40vhhsck.jpg"
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🐾 Niezwykłe zdarzenie ze świata przyrody i nauki",
+      "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+      "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
+      "image_query": "weird funny animal news",
+      "link": "https://www.mentalfloss.com/science/weather/when-state-see-first-snow-2026-map-shows-when-expect",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3msg2gyt5kebnrc22.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3msg2gyt5kebnrc22.jpg"
     }
   ]
 }
