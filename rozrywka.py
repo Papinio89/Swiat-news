@@ -2,6 +2,7 @@ import html as html_lib
 import json
 import os
 import re
+import traceback
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -22,7 +23,7 @@ FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=8
 
 # --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS ---
 RSS_URLS = [
-    # 1. POLSKIE BIEŻĄCE ODDITIES / CIEKAWOSTKI (Google News PL)
+    # 1. POLSKIE BIEŻĄCE CIEKAWOSTKI
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
     "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
     
@@ -253,11 +254,15 @@ if len(filtered_raw_articles) < 6:
 
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów przekazanych do AI")
 
-client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+api_key = os.environ.get("GEMINI_API_KEY")
+if not api_key:
+    print("OSTRZEŻENIE: Brak zmiennej środowiskowej GEMINI_API_KEY!")
+
+client = genai.Client(api_key=api_key)
 
 prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). 
 Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek.
-BEZWZGLĘDNY WYMÓG: CAŁA TREŚĆ (tytuł, opis, komentarz) MUSI BYĆ W JĘZYKU POLSKIM. Tłumacz angielskie fakty na żywy, błyskotliwy polski język!
+BEZWZGLĘDNY WYMÓG: CAŁA TREŚĆ (tytuł, opis, komentarz) MUSI BYĆ W JĘZYKU POLSKIM. Przetłumacz angielskie zdarzenia na błyskotliwy, żywy polski język!
 
 PODZIAŁ TEMATYCZNY:
 1. 50% MUSI dotyczyć BIEŻĄCYCH ODDITIES (wpadki ludzi, ucieczki zwierzaków, dziwne rekordy, kurioza).
@@ -265,15 +270,15 @@ PODZIAŁ TEMATYCZNY:
 2. 50% to szalona historia, sekrety popkultury, dziwna nauka.
    - Kategoria: SZALONA HISTORIA, BEKA Z NAUKI lub POPKULTURA.
 
-ZASADA UNIKALNOŚCI ŹRÓDEŁ (BARDZO WAŻNE):
+ZASADA UNIKALNOŚCI ŹRÓDEŁ:
 - Każda wygenerowana ciekawostka MUSI mieć INNY link ("link") przypisany z listy "Dane wejściowe".
 - KATEGORYCZNY ZAKAZ przypisywania tego samego linku do kilku wiadomości! 1 news = 1 unikalny link.
 
 ZASADY PISANIA DLA PÓL:
 - "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
-- "summary": 2-3 zdania pełne mięsa, liczb i komicznego absurdu po polsku.
+- "summary": 2-3 zdania pełne faktów, liczb i komicznego absurdu po polsku.
 - "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
-- "image_query": 2-3 precyzyjne słowa kluczowe po angielsku pod Pexels oddające sedno tematu (np. 'flamingos pool', 'car on roof', 'top hat vintage').
+- "image_query": 2-3 precyzyjne słowa kluczowe po angielsku pod Pexels oddające sedno tematu.
 - "link": Dokładnie URL artykułu z wejścia (każdy news musi mieć inny!).
 
 UNIKAJ TYCH TEMATÓW Z ARCHIWUM:
@@ -285,11 +290,17 @@ Dane wejściowe:
 {json.dumps(filtered_raw_articles[:30], ensure_ascii=False)}
 """
 
+# Próbujemy najpierw 2.5-flash, a w razie potrzeby fallback na 1.5-flash
+models_to_try = ["gemini-2.5-flash", "gemini-1.5-flash"]
 items = []
-for attempt in range(2):
+
+for model_name in models_to_try:
+    if len(items) >= MIN_ITEMS:
+        break
     try:
+        print(f"Wysyłanie zapytania do modelu: {model_name}...")
         response = client.models.generate_content(
-            model="gemini-3.6-flash",
+            model=model_name,
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
@@ -323,26 +334,27 @@ for attempt in range(2):
 
         items = validate_items(raw_items)
         if len(items) >= MIN_ITEMS:
+            print(f"Sukces! Wygenerowano {len(items)} pozycji przy użyciu {model_name}.")
             break
     except Exception as e:
-        print(f"Próba {attempt + 1} - Błąd AI: {e}")
+        print(f"Błąd dla modelu {model_name}: {e}")
+        traceback.print_exc()
         sleep(1)
 
-# Awaryjny fallback
+# Awaryjny fallback (jeśli wszystkie próby AI zawiodą)
 if len(items) < MIN_ITEMS:
-    print(f"Aktywacja fallbacku – uzupełnianie do minimum {MIN_ITEMS} pozycji...")
-    for art in filtered_raw_articles:
+    print(f"Aktywacja awaryjnego fallbacku...")
+    for idx, art in enumerate(filtered_raw_articles):
         if len(items) >= MIN_ITEMS:
             break
-        clean_t = art['title'][:55]
-        if not re.search(r'[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]', clean_t):
-            clean_t = "Niezwykłe zdarzenie ze świata przyrody i nauki"
+        raw_t = art['title']
+        clean_t = re.sub(r' - [^-]+$', '', raw_t)[:55]
         items.append({
-            "category": "BIEŻĄCE ABSURDY",
+            "category": "BIEŻĄCE ABSURDY" if idx % 2 == 0 else "SZALONA HISTORIA",
             "title": f"🐾 {clean_t}",
-            "summary": "Nietypowe i zaskakujące zdarzenie z ostatnich godzin, które przyciągnęło uwagę mediów na całym świecie.",
+            "summary": "Nietypowe i zaskakujące doniesienia z ostatnich godzin, które wzbudziły spore poruszenie i ciekawość w mediach.",
             "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-            "image_query": "weird funny animal news",
+            "image_query": "weird animal funny mystery",
             "link": art["link"]
         })
 
@@ -365,14 +377,13 @@ for item in items:
     
     article_img = fetch_article_image(url)
     
-    # Używamy zdjęcia ze źródła TYLKO jeśli jeszcze nie wystąpiło w tej sesji
+    # Używamy zdjęcia z artykułu tylko jeśli jest unikalne w tej sesji
     if article_img and article_img not in seen_image_urls:
         item["source_image_url"] = article_img
         item["image_url"] = article_img
         seen_image_urls.add(article_img)
         source_ok += 1
     else:
-        # Jeśli źródło powiela grafikę lub jej brak -> pobieramy unikalną z Pexels po dedykowanym image_query
         stock_img = fetch_pexels_image_url(q)
         if stock_img in seen_image_urls:
             stock_img = fetch_pexels_image_url(q + " background")
@@ -380,7 +391,7 @@ for item in items:
         item["image_url"] = stock_img
         seen_image_urls.add(stock_img)
 
-print(f"Zdjęcia z unikalnych artykułów: {source_ok}/{len(items)} (reszta = Pexels po query)")
+print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels)")
 
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
