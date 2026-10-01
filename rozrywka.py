@@ -19,21 +19,21 @@ from google.genai import types
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
-FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+FALLBACK_IMG = "[https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop](https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop)"
 
 # --- ZWERYFIKOWANE I BEZPIECZNE ŹRÓDŁA RSS ---
 RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE CIEKAWOSTKI
-    "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
-    "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
+    "[https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl)",
+    "[https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl](https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl)",
     
     # 2. GLOBALNE BIEŻĄCE ODD NEWS
-    "https://www.upi.com/rss/Odd_News/",
-    "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
+    "[https://www.upi.com/rss/Odd_News/](https://www.upi.com/rss/Odd_News/)",
+    "[https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en](https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en)",
     
     # 3. NAUKA / HISTORIA
-    "https://www.mentalfloss.com/rss.xml",
-    "https://www.sciencenews.org/topic/weird-science/feed"
+    "[https://www.mentalfloss.com/rss.xml](https://www.mentalfloss.com/rss.xml)",
+    "[https://www.sciencenews.org/topic/weird-science/feed](https://www.sciencenews.org/topic/weird-science/feed)"
 ]
 
 POLISH_MONTHS = {
@@ -135,7 +135,7 @@ def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
         return FALLBACK_IMG
     for attempt in range(retries + 1):
         try:
-            url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(query)}&per_page=1&orientation=landscape"
+            url = f"[https://api.pexels.com/v1/search?query=](https://api.pexels.com/v1/search?query=){urllib.parse.quote(query)}&per_page=1&orientation=landscape"
             req = urllib.request.Request(url, headers={
                 "Authorization": PEXELS_API_KEY,
                 "User-Agent": "SwiatWMinute-Bot/1.0"
@@ -261,7 +261,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). 
-Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek.
+Stwórz 8-10 absolutnie fascynujących, zabawnych i viralowych ciekawostek w formacie JSON.
 BEZWZGLĘDNY WYMÓG: CAŁA TREŚĆ (tytuł, opis, komentarz) MUSI BYĆ W JĘZYKU POLSKIM. Przetłumacz angielskie zdarzenia na błyskotliwy, żywy polski język!
 
 PODZIAŁ TEMATYCZNY:
@@ -275,6 +275,7 @@ ZASADA UNIKALNOŚCI ŹRÓDEŁ:
 - KATEGORYCZNY ZAKAZ przypisywania tego samego linku do kilku wiadomości! 1 news = 1 unikalny link.
 
 ZASADY PISANIA DLA PÓL:
+- "category": Dokładnie jedna z kategorii: "BIEŻĄCE ABSURDY", "ZWIERZAKI", "SZALONA HISTORIA", "BEKA Z NAUKI", "POPKULTURA".
 - "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
 - "summary": 2-3 zdania pełne faktów, liczb i komicznego absurdu po polsku.
 - "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
@@ -290,8 +291,7 @@ Dane wejściowe:
 {json.dumps(filtered_raw_articles[:30], ensure_ascii=False)}
 """
 
-# Próbujemy najpierw 2.5-flash, a w razie potrzeby fallback na 1.5-flash
-models_to_try = ["gemini-2.5-flash", "gemini-1.5-flash"]
+models_to_try = ["gemini-3.6-flash", "gemini-2.5-flash"]
 items = []
 
 for model_name in models_to_try:
@@ -304,7 +304,7 @@ for model_name in models_to_try:
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
-                temperature=0.5,
+                temperature=0.6,
                 safety_settings=[
                     types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                     types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -313,16 +313,13 @@ for model_name in models_to_try:
                 ]
             )
         )
-        text_res = response.text.strip()
-        if text_res.startswith("```json"):
-            text_res = text_res[7:]
-        if text_res.startswith("```"):
-            text_res = text_res[3:]
-        if text_res.endswith("```"):
-            text_res = text_res[:-3]
-        text_res = text_res.strip()
-
-        parsed = json.loads(text_res)
+        
+        raw_text = response.text or ""
+        # Dokładne czyszczenie z ewentualnych formatowań markdown
+        text_clean = re.sub(r'^```(?:json)?\s*', '', raw_text.strip(), flags=re.IGNORECASE)
+        text_clean = re.sub(r'\s*```$', '', text_clean)
+        
+        parsed = json.loads(text_clean)
         if isinstance(parsed, list):
             raw_items = parsed
         elif isinstance(parsed, dict) and "items" in parsed:
@@ -334,19 +331,25 @@ for model_name in models_to_try:
 
         items = validate_items(raw_items)
         if len(items) >= MIN_ITEMS:
-            print(f"Sukces! Wygenerowano {len(items)} pozycji przy użyciu {model_name}.")
+            print(f"Sukces! Wygenerowano {len(items)} unikalnych pozycji przy użyciu {model_name}.")
             break
+        else:
+            print(f"Model {model_name} zwrócił zbyt mało poprawnych elementów ({len(items)}/{MIN_ITEMS}).")
     except Exception as e:
         print(f"Błąd dla modelu {model_name}: {e}")
         traceback.print_exc()
         sleep(1)
 
-# Awaryjny fallback (jeśli wszystkie próby AI zawiodą)
+# Awaryjne uzupełnienie (tylko w ostateczności)
 if len(items) < MIN_ITEMS:
-    print(f"Aktywacja awaryjnego fallbacku...")
+    print("Aktywacja awaryjnego uzupełnienia pozycji...")
+    existing_links = {i.get("link") for i in items}
     for idx, art in enumerate(filtered_raw_articles):
         if len(items) >= MIN_ITEMS:
             break
+        if art["link"] in existing_links:
+            continue
+            
         raw_t = art['title']
         clean_t = re.sub(r' - [^-]+$', '', raw_t)[:55]
         items.append({
@@ -357,6 +360,7 @@ if len(items) < MIN_ITEMS:
             "image_query": "weird animal funny mystery",
             "link": art["link"]
         })
+        existing_links.add(art["link"])
 
 if items:
     cats = Counter([item["category"] for item in items])
@@ -377,7 +381,6 @@ for item in items:
     
     article_img = fetch_article_image(url)
     
-    # Używamy zdjęcia z artykułu tylko jeśli jest unikalne w tej sesji
     if article_img and article_img not in seen_image_urls:
         item["source_image_url"] = article_img
         item["image_url"] = article_img
