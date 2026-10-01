@@ -125,7 +125,8 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 80:
+        # Pilnujemy, aby post Threads nie był skrócony (min. 400 znaków dla 2 postów)
+        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 400:
             continue
 
         valid.append({
@@ -249,7 +250,6 @@ session_fixed_key = f"{today_date_key}_{session_name}"
 previous_titles = []
 banned_entities = set()
 
-# Przeglądamy aż 14 ostatnich sesji (ok. 7 dni)
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:14]
 for session_key in sorted_sessions:
     session_content = archive_data.get(session_key)
@@ -258,7 +258,6 @@ for session_key in sorted_sessions:
             t = item.get("title", "")
             if t:
                 previous_titles.append(t)
-                # Wyciągamy słowa kluczowe o długości > 4 znaki
                 words = re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', t.lower())
                 for w in words:
                     if w not in {"polsce", "polski", "polaków", "nowy", "nowa", "nowe", "roku", "swiat", "przez", "tylko", "rzad", "rząd"}:
@@ -274,8 +273,6 @@ for art in raw_articles:
     for prev_t in previous_titles:
         prev_clean_words = set(re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', prev_t.lower()))
         common = art_clean_words.intersection(prev_clean_words)
-        
-        # Jeśli artykuł dzieli 2 kluczowe rzeczowniki z poprzednim tematem (np. miedź + chile, obligacje + japonia, pit + stawka) -> odrzucamy
         if len(common) >= 2:
             is_duplicate = True
             break
@@ -288,24 +285,22 @@ if len(filtered_raw_articles) < 10:
 
 print(f"Po ścisłej deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów")
 
-# --- PROMPT AI Z ZAKAZEM TEMATÓW POWTÓRZONYCH I WYMOGIEM TEMATÓW SZOKUJĄCYCH ---
+# --- PROMPT AI Z ROZSZERZONYM FORMATEM THREADS (DWUPAK: POST + ODPOWIEDŹ) ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 recent_titles_sample = previous_titles[:35]
 
 prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje treści zdobywają gigantyczne zasięgi, ponieważ łączysz twardą, rzetelną wiedzę z elektryzującymi, zaskakującymi faktami i bezlitosną puentą.
+Twoje posty generują potężne zasięgi, ponieważ tworzysz rozbudowane wątki – post główny intryguje, a odpowiedź pod nim dopina historię i wywołuje dyskusję.
 
 Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJCIEKAWSZYCH wiadomości w języku polskim w formacie JSON.
 
-ZASADA 1: BEZWZGLĘDNY ZAKAZ POWTÓREK Z POPRZEDNICH DNI (STOP DEDUPLIKATOM):
-- W ostatnich dniach omawialiśmy już m.in. poniższe tematy. ZAKAZ wybierania artykułów na ten sam temat (np. jeśli było o cenach miedzi, obligacjach Japonii, progach PIT w Polsce, czy ropie na Falklandach – WYBIERZ INNE NEWSY!):
+ZASADA 1: BEZWZGLĘDNY ZAKAZ POWTÓREK Z POPRZEDNICH DNI:
 {json.dumps(recent_titles_sample, ensure_ascii=False)}
 
-ZASADA 2: GWARANTOWANE MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE:
-- Profil stał się zbyt nudny i encyklopedyczny. Co najmniej 2 z 14 pozycji MUSZĄ dotyczyć szokujących skandali, kuriozalnych decyzji urzędniczych, niezwykłych zjawisk, absurdów prawnych lub nieprawdopodobnych zwrotów akcji na świecie. Spraw, by czytelnik zbierał szczękę z podłogi!
+ZASADA 2: GWARANTOWANE MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE.
 
-ZASADA 3: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII (ŻADNYCH UKOŚNIKÓW):
+ZASADA 3: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII:
 Pole "category" to DOKŁADNIE JEDNO słowo:
 - "POLSKA" (min. 4 pozycje)
 - "GOSPODARKA" (min. 4 pozycje)
@@ -314,22 +309,30 @@ Pole "category" to DOKŁADNIE JEDNO słowo:
 - "OBRONNOŚĆ" (max 2 pozycje)
 - "TECHNOLOGIE" (max 1-2 pozycje)
 
-ZASADA 4: FORMAT TREŚCI:
-- "title": [Emotikona] [Konkretny, prowokujący nagłówek do 60 znaków].
-- "hook": 1 dynamiczne zdanie z mocnym kontrastem.
-- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd. KATEGORYCZNY ZAKAZ ZMYŚLANIA!
-- "comment": DOKŁADNIE 1 CIĘTE, BŁYSKOTLIWE ZDANIE (14-22 słowa, krótsze niż summary). Obnaż hipokryzję lub drugie dno.
-- "threads_post": Dedykowany, osobny post na Threads (3-4 akapity z flagami, unikalny względem summary, kończący się pytaniem i '👇💬').
+ZASADA 4: FORMAT THREADS (DWA POSTY: POST GŁÓWNY + ODPOWIEDŹ POD SPODEM):
+Pole "threads_post" MUSI mieć łącznie 600-800 ZNAKÓW i być sformatowane dokładnie w 2 częściach oddzielonych znacznikiem "---ODPOWIEDŹ---":
+
+CZĘŚĆ 1 (Post główny na Threads – ok. 300-380 znaków):
+[Nagłówek z trafną emotikoną]
+[Dynamiczny, podwójny hook z flagami i wykrzyknikiem]
+[1-2 zdania wprowadzające w sedno kryzysu/sporu, kończące się zachętą do przeczytania szczegółów: (Szczegóły i tło w odpowiedzi 👇🧵)]
+
+---ODPOWIEDŹ---
+
+CZĘŚĆ 2 (Pierwsza odpowiedź pod postem – ok. 350-450 znaków):
+[Pogłębione rozwinięcie z konkretnymi liczbami, kulisami i tłem, którego NIE MA na slajdzie graficznym]
+[Cięta, bezkompromisowa pointa obnażająca hipokryzję lub koszty]
+[Konkretne pytanie prowokujące czytelników do dyskusji kończące się '👇💬']
 
 STRUKTURA JSON:
 [
   {{
     "category": "POLSKA" lub "GOSPODARKA" lub "BIZNES" lub "GEOPOLITYKA" lub "OBRONNOŚĆ" lub "TECHNOLOGIE",
-    "title": "[Emotikona] [Nagłówek]",
+    "title": "[Emotikona] [Nagłówek do 60 znaków]",
     "hook": "1 zdanie uderzające w sedno.",
-    "summary": "2 zwięzłe zdania faktów.",
-    "comment": "1 dosadne zdanie z puentą (14-22 słowa).",
-    "threads_post": "Pełna treść wiralowego posta na Threads z enterami \\n\\n.",
+    "summary": "2 zwięzłe zdania faktów na slajd.",
+    "comment": "1 dosadne zdanie z puentą (14-22 słowa, krótsze niż summary).",
+    "threads_post": "Treść części 1\\n\\n---ODPOWIEDŹ---\\n\\nTreść części 2",
     "question": "1 pytanie do dyskusji kończące się '👇💬'.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
@@ -391,7 +394,7 @@ if len(items) < MIN_ITEMS:
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
                 "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
-                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci i inwestorzy w pośpiechu przeliczają potencjalne scenariusze, a stawka dotyczy stabilności całego sektora.\n\nTo kolejny dowód na to, że w obecnych realiach gospodarczych deklaracje polityczne natychmiast zderzają się z twardą kalkulacją kosztów. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
+                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają dotychczasowe reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci w pośpiechu przeliczają koszty scenariuszy.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\nKulisy tej decyzji pokazują rosnącą presję na płynność finansową całego sektora. Kiedy gasną flesze kamer, twarda kalkulacja wymusza rewizję wielomiliardowych kontraktów.\n\nTo kolejny dowód, że deklaracje polityczne natychmiast zderzają się z rzeczywistością budżetową. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel? 👇💬",
                 "image_query": "financial market economy",
                 "link": art["link"]
@@ -452,4 +455,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów z powrotem szokujących tematów.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów z dwupakiem na Threads.")
