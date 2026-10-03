@@ -1,87 +1,77 @@
 {
-  "date": "2 października 2026",
-  "time": "12:56",
-  "timestamp": "2026-10-02_12:56",
+  "date": "3 października 2026",
+  "time": "13:44",
+  "timestamp": "2026-10-03_13:44",
   "items": [
     {
-      "category": "ZWIERZAKI",
-      "title": "🦈 Rekin-celebryta zebrał 600 tysięcy fanów!",
-      "summary": "W południowokoreańskim kanale miejskim utknął rekin, a akcja ratunkowa zakończyła się absolutną klapą. Zamiast pomocy, ryba zyskała status lokalnej gwiazdy, przyciągając ponad 600 000 gapiów z całego kraju. Ludzie przyjeżdżali z popcornem oglądać zgubionego drapieżnika.",
-      "comment": "Nawet ten rekin ma lepszą frekwencję na swoich spotkaniach autorskich niż większość polskich pisarzy.",
-      "image_query": "shark",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT19Xek94T3hTQ0VWNFZ1LUd0RkU1TWw2RFZuSlZZdVNmYk51TElTX2RHQS10bERPWXQ4VmNnSzA0V0hzRDdUcWlyWWdxcDBMMXRiNnh3bWx4VjI0OFNVdlhMcjBITjV2VU5hbk5WZGxncWhoVl8yWU5aMVRGZ0tKeHRYVzRzYU5ENmxrS2tTMm05QjF5RDFUdEdoMDQ5RVdIb3BfUjBsQlFRWDFXWk5FdmhCV3NfSmhXbjRPeUVaR0pyQdIBVkFVX3lxTE5aUkJ6QmsxcDJRSklIdDFpb0ZyUzVKbnJCdFpndXpfaTlLN3ppd015eEQtZHpPWTlJS0dpRmdnTVlYbW1JVGtFbTctMmZzTGMxektNbC1n?oc=5",
-      "source_image_url": "https://images.pexels.com/photos/13476998/pexels-photo-13476998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      "image_url": "https://images.pexels.com/photos/13476998/pexels-photo-13476998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      "category": "SZALONA HISTORIA",
+      "title": "🍲 Przysmaki przetrwania w historii",
+      "summary": "Suchary wojskowe, pemikan czy suszony dorsz przetrwały najgorsze klęski żywiołowe i konflikty w historii świata. Niektóre z tych racji miały okres przydatności sięgający kilkudziesięciu lat, choć konsystencją przypominały kamień.",
+      "comment": "Idealne menu na wypadek apokalipsy zombie albo wizytę nieproszonych gości.",
+      "image_query": "stew pot",
+      "link": "https://www.mentalfloss.com/food/meals-that-survived-wars-familes-empires",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg"
     },
     {
       "category": "POPKULTURA",
-      "title": "🧙♂️ Iluzjonista z cyrku stworzył mistrza sci-fi",
-      "summary": "Legendarny pisarz Ray Bradbury zawdzięcza swoją karierę ulicznemu iluzjoniście o imieniu Mr. Electrico. W 1932 roku magik dotknął 12-letniego Bradbury'ego naelektryzowaną szpadą i rozkazał mu żyć wiecznie. Nastolatka tak to przeraziło i zafascynowało, że już następnego dnia zaczął pisać książki.",
-      "comment": "Mnie w dzieciństwie pan z wąsem dotknął tylko promocyjną ulotką i jedyne co zacząłem, to płakać.",
-      "image_query": "magician",
+      "title": "🖤 Najmroczniejsze wstępy Poe",
+      "summary": "Edgar Allan Poe potrafił wywołać gęsią skórkę już w pierwszym zdaniu swojego wiersza lub opowiadania. Jego utwory zaczynały się od gwałtownych opisów szaleństwa, mrocznych grobowców oraz nawiedzonych domów.",
+      "comment": "Chłopak pisałby genialne, choć niepokojące wiadomości na aplikacjach randkowych.",
+      "image_query": "raven skull",
+      "link": "https://www.mentalfloss.com/literature/poetry/edgar-allan-poe-most-unsettling-opening-lines-send-chills-down-our-spines",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "🎸 Muzyczny król Twojego roku",
+      "summary": "Od The Beatles w latach 60. po idolów muzyki pop lat 90. – każdy rok miał swój zespół numer jeden na świecie. Analizy historycznych list przebojów pokazują, jak drastycznie zmieniały się gusta słuchaczy co dekadę.",
+      "comment": "Sprawdź swój rok urodzenia i zobacz, do jakiego obciachu tańczyli Twoi rodzice.",
+      "image_query": "rock concert",
+      "link": "https://www.mentalfloss.com/entertainment/music/most-popular-band-year-you-were-born",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_62,w_3468,h_1950/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t88wpkh8j39fhgs8.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_62,w_3468,h_1950/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t88wpkh8j39fhgs8.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🍎 Amerykańskie imperium jabłkowe",
+      "summary": "Stan Waszyngton zbiera rocznie ponad 10 miliardów jabłek, co stanowi ponad połowę całej amerykańskiej produkcji tych owoców. Ułożone w linii prostej okrążyłyby kulę ziemską kilkanaście razy, a rynek zbiorów wciąż rośnie.",
+      "comment": "Lekarze w tym stanie muszą chyba nosić zbroje, żeby zbliżyć się do pacjentów.",
+      "image_query": "apple harvest",
+      "link": "https://www.mentalfloss.com/geography/states/states-produce-most-apples-ranked",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_45,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sxx7h7ymna2fqq5b.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_45,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sxx7h7ymna2fqq5b.jpg"
+    },
+    {
+      "category": "BEKA Z NAUKI",
+      "title": "🎶 Muzyczne eksperymenty w studiu",
+      "summary": "Podczas nagrywania kultowego albumu w 1965 roku brytyjscy muzycy pchnęli inżynierię dźwięku na zupełnie nowe tory. Zamiast tradycyjnych instrumentalizacji używali sitaru, odwróconych taśm magnetofonowych i niestandardowych mikrofonów.",
+      "comment": "Wystarczyło trochę poeksperymentować w studiu, by zamienić hałas w wielomilionowy hit.",
+      "image_query": "vinyl record",
+      "link": "https://www.mentalfloss.com/entertainment/music/facts-about-beatles-rubber-soul",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_66,y_997,w_2357,h_1325/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3st4cd3xattzfq6eg.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_66,y_997,w_2357,h_1325/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3st4cd3xattzfq6eg.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "⚡ Iskrowy impuls do pisania",
+      "summary": "W 1932 roku wędrowny iluzjonista dotknął mieczem podłączonym do prądu głowy 12-letniego chłopca i nakazał mu żyć wiecznie. Nastolatek tak mocno wziął to do serca, że od następnego dnia pisał tekst codziennie przez resztę życia.",
+      "comment": "Jedni po porażeniu prądem lądują na pogotowiu, a inni zostają gigantami literatury.",
+      "image_query": "electric spark",
       "link": "https://www.mentalfloss.com/literature/authors/carnival-magician-that-inspired-ray-bradbury",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_926,w_2302,h_1294/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3snqmxrwqqzwy1xvc.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_926,w_2302,h_1294/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3snqmxrwqqzwy1xvc.jpg"
     },
     {
-      "category": "POPKULTURA",
-      "title": "📺 Cenzura zrodziła najsłynniejszy serial w historii",
-      "summary": "Twórca „Strefy Mroku”, Rod Serling, miał dość telewizyjnych cenzorów wykreślających z jego dramatów obyczajowych każde słowo o rasizmie czy polityce. Aby obejść zakazy, przeniósł poważne problemy społeczne w świat kosmitów i potworów. Cenzorzy byli zbyt zajęci szukaniem prostych wulgaryzmów, by zauważyć głęboką satyrę.",
-      "comment": "Wystarczyło przebrać rasistę za zielonego ludzika i nagle stacja telewizyjna nie miała żadnych pytań.",
-      "image_query": "television",
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "📺 Kosmiczny podstęp na cenzurę",
+      "summary": "Słynny scenarzysta telewizyjny miał dosyć cenzurowania politycznych tematów w dramatach realistycznych, więc przeniósł akcję do kosmosu. Stacja chętnie puszczała odcinki o dyskryminacji, o ile wygłaszały je postacie z zieloną skórą.",
+      "comment": "Wychodzi na to, że najlepszym sposobem na uniknięcie cenzury jest przebranie krytyka za kosmitę.",
+      "image_query": "retro television",
       "link": "https://www.mentalfloss.com/entertainment/tv/real-life-censorship-battle-helped-create-twilight-zone",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_201,w_2500,h_1406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3szqn42vv5retfh9d.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_201,w_2500,h_1406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3szqn42vv5retfh9d.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "📖 Pisarz oddał serce i drewniane pudełko",
-      "summary": "John Steinbeck uważał „Na wschód od Edenu” za dzieło swojego życia i pisał je przez ponad dekadę. Żeby utrzymać skupienie, rzeźbił w drewnie specjalne pudełko dla swojego wydawcy, w którym zamknął rękopis. Zużył przy tym dokładnie 300 ołówków, pisząc aż do zdarcia skóry na palcach.",
-      "comment": "Ja po wypisaniu jednego długopisu muszę wziąć dwa tygodnie zwolnienia lekarskiego na regenerację.",
-      "image_query": "pencil",
-      "link": "https://www.mentalfloss.com/literature/books/john-steinbeck-favorite-novel-most-personal",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_261,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sqdpp86nw6x6pytq.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_261,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sqdpp86nw6x6pytq.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "☕ Maraton z jesienną tradycją serialową",
-      "summary": "Serial „Kochane kłopoty” do dziś generuje miliony wyświetleń każdej jesieni wyłącznie przez swój klimat. Fani wyliczyli, że w ciągu 7 sezonów bohaterki wypiły na ekranie ponad 500 filiżanek kawy i wypowiadały 250 słów na minutę. To tempo mówienia porównywalne jedynie z profesjonalnymi licytatorami.",
-      "comment": "Przy takim spuście kofeiny i tempie gadania dziwne, że ten serial nie trwał łącznie czterech minut.",
-      "image_query": "coffee",
-      "link": "https://www.mentalfloss.com/entertainment/tv/best-gilmore-girls-episodes-rewatch-cozy-night-in",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/what_s_with_the_hat____gilmore_girls-9775404902a2eb2919cb9a64c702e64b.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/shape/cover/sport/what_s_with_the_hat____gilmore_girls-9775404902a2eb2919cb9a64c702e64b.jpg"
-    },
-    {
-      "category": "BEKA Z NAUKI",
-      "title": "🍬 Słodka historia wielkich cukierkowych wojen",
-      "summary": "To, co amerykańskie dzieci dostawały do koszyka w Halloween, zależało od kryzysów gospodarczych i wojen cukrowych danego roku. W latach 70. rząd USA musiał wręcz regulować zapasy czekolady z powodu globalnego deficytu kakao. Dzieciom serwowano wtedy zamienniki z utwardzonego tłuszczu, które smakowały jak świeczka.",
-      "comment": "Najważniejsze to przekonać dziecko, że parafina o smaku truskawki to po prostu limitowana edycja premium.",
-      "image_query": "candy",
-      "link": "https://www.mentalfloss.com/food/candy/most-popular-halloween-candy-year-born",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_70,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mmmr1mw0dw5de5yt.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_70,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3mmmr1mw0dw5de5yt.jpg"
-    },
-    {
-      "category": "BEKA Z NAUKI",
-      "title": "🦋 Efekt motyla zaczął się od... mewy!",
-      "summary": "Słynna teoria chaosu, mówiąca o motylu machającym skrzydłami w Brazylii, pierwotnie dotyczyła zupełnie innego zwierzęcia. Meteorolog Edward Lorenz w swoich pierwszych pracach z 1963 roku pisał o machaniu skrzydeł przez zwykłą mewę. Dziennikarze uznali jednak, że motyl brzmi bardziej poetycko i romantycznie.",
-      "comment": "Mewa machająca skrzydłami kojarzy się raczej z kradzieżą frytki na plaży, a nie z wielką filozofią.",
-      "image_query": "seagull",
-      "link": "https://www.mentalfloss.com/language/why-we-call-it-butterfly-effect",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_2560,h_1440/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3smbmjk0j2wjysgwf.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_2560,h_1440/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3smbmjk0j2wjysgwf.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "📜 Jedno słowo zniszczyło tłumaczy na dekady",
-      "summary": "Hebrajskie słowo „Timshel” wywołało jedną z największych debat w historii literatury po wydaniu powieści Steinbecka. Oznacza ono „możesz”, dając człowiekowi wolną wolę, ale tłumacze na całym świecie spędzili lata spierając się o dokładny odcień gramatyczny. Przez ten jeden wyraz pisarz dostawał tysiące listów od oburzonych teologów.",
-      "comment": "Wyobraź sobie dostawać groźby karalne tylko dlatego, że pomyliłeś tryb przypuszczający z oznajmującym.",
-      "image_query": "scroll",
-      "link": "https://www.mentalfloss.com/language/words/timshel-east-of-eden-meaning",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_524,w_2792,h_1570/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mf9qcbxrw3bx6db3.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_524,w_2792,h_1570/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3mf9qcbxrw3bx6db3.jpg"
     }
   ]
 }
