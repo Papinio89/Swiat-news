@@ -1,112 +1,117 @@
 {
   "date": "4 października 2026",
-  "time": "06:20",
-  "count": 33,
+  "time": "16:10",
+  "count": 31,
   "items": [
     {
-      "title": "Problem z 800 plus. Pieniądze nie dla wszystkich cudzoziemców",
-      "snippet": " Część Koreańczyków z Południa nie otrzymuje 800 plus na dzieci pomimo legalnego zatrudnienia w Polsce oraz obowiązującej od lat umowy bilateralnej między krajami. Problem może dotyczyć innych obcokrajowców. – Pytanie, czy to niedopatrzenie – zastana",
-      "link": "https://www.money.pl/finanse/problem-z-800-plus-pieniadze-nie-dla-wszystkich-cudzoziemcow-7335668051962144a.html"
+      "title": "Kijów ma wielki problem ze zbożem. Sąsiedzi nie pomogą",
+      "snippet": " Polska i Rumunia nie zamierzają zwiększać tranzytu ukraińskiego zboża – informuje portal Politico. Kijów ostrzega, że przez problemy z eksportem przez Morze Czarne w kraju może utknąć nawet 35 mln ton produktów rolnych. Ukraina chce też 1,1 mld euro",
+      "link": "https://www.money.pl/gospodarka/kijow-ma-wielki-problem-ze-zbozem-sasiedzi-nie-pomoga-7336391309748512a.html"
     },
     {
-      "title": "Po północy tąpnęły. Tak zmieniły się ceny na stacjach benzynowych",
-      "snippet": " Ceny paliw na stacjach w całej Polsce spadły znacząco tuż po północy. To efekt przywrócenia pakietu \"Ceny Paliw Niżej\". Od soboty, 3 października, obowiązuje obniżona akcyza i podatek VAT z 23 do 8 proc. na benzynę i olej napędowy.",
-      "link": "https://www.money.pl/finanse/po-polnocy-tapnely-tak-zmienily-sie-ceny-na-stacjach-benzynowych-7335937925396768a.html"
+      "title": "Oddali mieszkanie za rentę do końca życia. Rynek pokazał mankamenty",
+      "snippet": " Konstrukcja renty dożywotniej obowiązuje w Polsce od 12 lat, jednak banki nie podjęły szeroko tzw. odwróconego kredytu hipotecznego. Seniorzy, którzy chcą spieniężyć prawo do nieruchomości, polegają wyłącznie na funduszach hipotecznych. – Ustawa obo",
+      "link": "https://www.money.pl/finanse/oddali-mieszkania-w-zamian-za-renty-rynek-pokazal-zasadniczy-problem-7336386333407520a.html"
     },
     {
-      "title": "Pełne butelkomaty i logistyczny ból głowy. Branża ocenia pierwszy rok działania systemu kaucyjnego",
-      "snippet": "Oceniając wprowadzony rok temu system kaucyjny, należy wziąć pod uwagę bilans korzyści środowiskowych i kosztów jego obsługi - ocenili specjaliści od rynku detalicznego oraz transportu i logistyki.",
-      "link": "https://www.bankier.pl/wiadomosc/Pelne-butelkomaty-i-logistyczny-bol-glowy-Branza-ocenia-pierwszy-rok-dzialania-systemu-kaucyjnego-9205661.html"
+      "title": "Putin składa ofertę Amerykanom. W grze przejęcie warte miliardy",
+      "snippet": " USA i Rosja od miesięcy rozmawiają o wielomiliardowej sprzedaży zagranicznych aktywów Łukoilu – podaje \"New York Times\". Temat miał poruszyć sam Władimir Putin podczas negocjacji z wysłannikami Donalda Trumpa. Wśród zainteresowanych są biznesmeni po",
+      "link": "https://www.money.pl/gospodarka/putin-sklada-oferte-amerykanom-w-grze-przejecie-warte-miliardy-7336351634737440a.html"
     },
     {
-      "title": "Wielki wyciek ze znanego serwisu turystycznego. Wakacje.pl zaleca klientom zastrzeżenie PESEL-u",
-      "snippet": "W serwisie turystycznym Wakacje.pl doszło do incydentu bezpieczeństwa, który polegał na nieuprawnionym dostępie do części służbowych skrzynek pocztowych oraz systemu obsługi klientów - poinformował serwis. Okoliczności zdarzenia analizować mają ekspe",
-      "link": "https://www.bankier.pl/wiadomosc/Wyciekly-dane-z-serwisu-turystycznego-Wakacje-pl-9207133.html"
+      "title": "Kurczący się gigant. Dlaczego niemiecki rynek pracy stoi przed historycznym punktem zwrotnym?",
+      "snippet": "Przez lata niemiecki rynek pracy uchodził za skałę odporną na wstrząsy. Mimo globalnych kryzysów, zawirowań geopolitycznych i słabej koniunktury zatrudnienie pozostawało wysokie, a firmy desperacko poszukiwały pracowników. Bliższe spojrzenie pokazuje",
+      "link": "https://www.bankier.pl/wiadomosc/Kurczacy-sie-gigant-Dlaczego-niemiecki-rynek-pracy-stoi-przed-historycznym-punktem-zwrotnym-9206573.html"
     },
     {
-      "title": "Prawie 150 zabitych w zaledwie miesiąc. Igranie ze śmiercią na drogach",
-      "snippet": "W pierwszym miesiącu po powrocie dzieci do szkół, na polskich drogach doszło do 1988 wypadków; zginęło 147 osób, 2227 osób zostało rannych — poinformował podinsp. Robert Opas z Biura Ruchu Drogowego KGP.",
-      "link": "https://www.bankier.pl/wiadomosc/Prawie-150-zabitych-w-zaledwie-miesiac-Igranie-ze-smiercia-na-drogach-9205793.html"
+      "title": "Wcześniejsza emerytura przez zarwane noce? Zegar biologiczny brutalnie weryfikuje przydatność do pracy",
+      "snippet": "Osoby z późnym chronotypem mają o 1,7 proc. wyższe ryzyko dot. potrzeby przejścia na wcześniejszą emeryturę, niż osoby z chronotypem porannym. Znaczenie mogą mieć zaburzenia biologicznego zegara oraz gorsze nawyki związane ze zdrowiem.",
+      "link": "https://www.bankier.pl/wiadomosc/Wczesniejsza-emerytura-przez-zarwane-noce-Zegar-biologiczny-brutalnie-weryfikuje-przydatnosc-do-pracy-9205692.html"
     },
     {
-      "title": "Zakończenie wojny za Łukoil? Tajna oferta Putina dla ludzi prezydenta USA",
-      "snippet": "W rozmowach z wysłannikami USA Jaredem Kushnerem i Steve'em Witkoffem o zakończeniu wojny w Ukrainie Władimir Putin zaproponował sprzedaż rafinerii i innych aktywów rosyjskiego koncernu Łukoil - podał „New York Times”. Jeśli sprzedaż dojdzie do skutk",
-      "link": "https://www.bankier.pl/wiadomosc/Zakonczenie-wojny-za-Lukoil-Tajna-oferta-Putina-dla-ludzi-prezydenta-USA-9207109.html"
+      "title": "Trump wściekły na Norwegię za brak Nobla. Eksperci oceniają jego szanse: Absolutnie nie",
+      "snippet": "Donald Trump nie ma w tym roku szans na Pokojową Nagrodę Nobla – ocenili dla PAP dyrektor Instytutu Badań nad Pokojem w Oslo PRIO Haakon Gjerloew oraz historycy Nagrody Nobla Asle Sveen i Oeivind Stenersen. Prezydent USA ma pozostawać jednak ważnym p",
+      "link": "https://www.bankier.pl/wiadomosc/Trump-wsciekly-na-Norwegie-za-brak-Nobla-Eksperci-oceniaja-jego-szanse-Absolutnie-nie-9207167.html"
     },
     {
-      "title": "Sąd zdecydował w sprawie rolnika, który zaorał asfalt. Jest zmiana",
-      "snippet": "Sąd Rejonowy w Gliwicach po zażaleniu obrony uchylił wolnościowe środki zapobiegawcze zastosowane wobec rolnika, który latem br. w Ostropie (Śląskie) zaorał świeżo położony asfalt. Nie zgodził się natomiast na zwrócenie mu zabezpieczonego ciągnika.",
-      "link": "https://www.bankier.pl/wiadomosc/Sad-zdecydowal-w-sprawie-rolnika-ktory-zaoral-asfalt-Jest-zmiana-9206114.html"
+      "title": "Zakopane pęka w szwach. Liczba miejsc noclegowych skoczyła o 60 procent",
+      "snippet": "Liczba miejsc noclegowych w Zakopanem wzrosła z ok. 29 tys. w 2016 r. do ponad 48,5 tys. w 2026 r., czyli o 60 proc. – wynika z danych Urzędu Miasta. Samorząd wskazuje, że wzrost to efekt zarówno nowych inwestycji, jak i wychodzenia z tzw. szarej str",
+      "link": "https://www.bankier.pl/wiadomosc/Zakopane-peka-w-szwach-Liczba-miejsc-noclegowych-skoczyla-o-60-procent-9207190.html"
     },
     {
-      "title": "PiS kusi przedsiębiorców i obiecuje powrót \"starej\" składki zdrowotnej. Tak partia Kaczyńskiego chce wrócić do władzy",
-      "snippet": "Powrót do składki zdrowotnej na zasadach sprzed 2022 r., wprowadzenie jednorazowej amortyzacji wydatków na inwestycje jako kosztów uzyskania przychodów czy dobrowolny KSeF dla małych i średnich przedsiębiorców - to niektóre propozycje przedstawione p",
-      "link": "https://www.bankier.pl/wiadomosc/PiS-kusi-przedsiebiorcow-i-obiecuje-powrot-starej-skladki-zdrowotnej-Tak-partia-Kaczynskiego-chce-wrocic-do-wladzy-9207124.html"
+      "title": "Unijna biurokracja dusi produkcję ukraińskich dronów? Ekspert alarmuje o groźnych limitach",
+      "snippet": "Ograniczenie udziału chińskich komponentów w ukraińskim uzbrojeniu do 35 proc. może utrudnić utrzymanie skali produkcji podczas wojny – ocenił w rozmowie z PAP ukraiński ekspert ds. lotnictwa Anatolij Chrapczynski. Jego zdaniem potrzebna jest wspólna",
+      "link": "https://www.bankier.pl/wiadomosc/Unijna-biurokracja-dusi-produkcje-ukrainskich-dronow-Ekspert-alarmuje-o-groznych-limitach-9207171.html"
     },
     {
-      "title": "Łotysze zdecydowali. Są wstępne wyniki wyborów parlamentarnych - PolsatNews.pl",
-      "snippet": "Łotysze zdecydowali. Są wstępne wyniki wyborów parlamentarnych&nbsp;&nbsp;PolsatNews.plWybory na tle obaw o rosyjskie wpływy w kraju NATO. Łotwa zagłosowała, są wstępne wyniki&nbsp;&nbsp;Interia WydarzeniaŁotwa wybiera. Oto jaki wpływ na politykę mog",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbWNta3RaS3dteEdMYkp4TWg1LTJjbzRibTkwVkZjU3lVYktBclc5VVBkdUM4d3J3TXZPMENjNnpDOE1xYUtyV3BpVGs5OWUxRzRhVWR3Y243d2xaVTFfSXY5MGhJTWtHRmdKb05PYkdqa3dRdWZrVjlZMUc3OTRHekNuWlhlbFdoUGRyTW5BOG45U01SNGg5b3JqUnZVVGR3Wmh3Zk9pdmU?oc=5"
+      "title": "Gęste mgły w 14 województwach. Wydano alerty - WP Wiadomości",
+      "snippet": "Gęste mgły w 14 województwach. Wydano alerty&nbsp;&nbsp;WP WiadomościUwaga na gęstą mgłę!&nbsp;&nbsp;Magiczny KrakówZacznie się po zmroku. IMGW wydał ostrzeżenia dla dziewięciu województw&nbsp;&nbsp;Interia WydarzeniaGęsta mgła w Gorzowie. IMGW wydał",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTTViYlpNcGFKQWpwSWxnMGVZNlFJUHVuT3g0NkNTT3p6amRzZUhrSk9qckxoa3V1Y3NMa080VGJSM00zYzBIbUVkZy1kaWEwckdTMDQ1d0lSM2ZwTnNiY3hoZDZ5V3cwZmdWdEhOZXAwaHo0U2lHeVJlTXhrRXFTS2Z3X3ZBLU1uU0RTaTBqdw?oc=5"
     },
     {
-      "title": "Przy autostradzie \"tanio\" jak w mieście. Sprawdzamy ceny paliw - Money.pl",
-      "snippet": "Przy autostradzie \"tanio\" jak w mieście. Sprawdzamy ceny paliw&nbsp;&nbsp;Money.plEfekt CPN na stacjach. Tak w nocy spadły ceny&nbsp;&nbsp;Business Insider PolskaZastosował gambit i stracił pionka. Gawryluk wprost o cenie prezydenckiego podpisu&nbsp;",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZlZ2SXRRVWVscFZla0k4bkdseGQ1bXNqbkNfdmlBdGNDTUUyT0U3QUI4ejk5Y0sxbmdvbWRwRHdMMm9jWmxrUFRBaFR4X2pCZ1lSSlBrNlhRMkUzOWVrcTFBVFhwVXBjQ3AyWGh0Z240X01EeS0zTXdlZ1AtSUVvYkFVMXVTY1ZNcW5YeVQ0S0pnUUkyRG53alVJX1hzLXpPeTRncHpUYmhLbkFvbmtEdw?oc=5"
+      "title": "Nie żyje siostra Anastazja. Autorka bestsellerowych książek kucharskich miała 76 lat - PolsatNews.pl",
+      "snippet": "Nie żyje siostra Anastazja. Autorka bestsellerowych książek kucharskich miała 76 lat&nbsp;&nbsp;PolsatNews.plNie żyje siostra Anastazja Pustelnik. Z jej przepisów gotowały pokolenia Polaków&nbsp;&nbsp;Interia WydarzeniaNie żyje siostra Anastazja. Jej",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSFFqeUF6SmFZdmFBLTNSM3ZtanYtWHlxa1pSNV9LTWtNb19xQjdaQ0VCNE0xUnpyWjZhc013MXZkVTl0eGZQaGZvLVR5Rk1vc0o0R1RHR1dKdVBoMVVhbWRacnpTa0Q0TVpfaEREVC00dnZLYVhhb2pRdEFZZGlDcHVvWjR6UldUakJRRUhkc2liMlduYVItMlFNUWQ3cjBrVjRzSkpmcjQxR3pyN09YcDNoWEcwcENCT1dfNzFxVGsyeE0?oc=5"
     },
     {
-      "title": "Groźna awaria w sklepie. Poszkodowanych kilka osób - WP Wiadomości",
-      "snippet": "Groźna awaria w sklepie. Poszkodowanych kilka osób&nbsp;&nbsp;WP WiadomościNiebezpieczna sytuacja w Biedronce. Doszło do ewakuacji. Jedna osoba w szpitalu&nbsp;&nbsp;Wiadomości OnetOlsztyn koło Częstochowy. Karetki przed marketem, kilka osób potrzebo",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNT2NmaWNwVG5VLTRVWXhDUExka0tLMHo3NVBkRmI3aFNBaEFTOVF0Y2Y2YjJlRTQtSTNSNEpKZk9ZMGtrTFVzNGxvTWIwMDIzU2dwU0U5dklHQllzNlVjNUJWblBfaW1FOHlDWS1HUDBWUHdyMzEwUWZMUHBob25VcW9ueW56Rk9VUTZzSHEtbFk2NFhyb1A0?oc=5"
+      "title": "Wyniki wyborów w Łotwie. Policzyli większość głosów - TVN24",
+      "snippet": "Wyniki wyborów w Łotwie. Policzyli większość głosów&nbsp;&nbsp;TVN24Wybory na Łotwie. Partia premiera z pewnym zwycięstwem&nbsp;&nbsp;WP WiadomościHistoryczny wynik wyborów na Łotwie&nbsp;&nbsp;OKO.pressŁotwa wybiera. Oto jaki wpływ na politykę mogą ",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEpNREg5dkxjM1lmb1BoanB6ZmJwZGdmSWRjSHZkRVU1T2dMQUd2TVNLZHVtZ3dOQ0gxcTd2Qm1tXzV1cGtiR2ItdF9FOUV1eEZ2MUJHZlVrVndiTmJPZlQ3TjQzbnE4SGZWTE9uR2xGcm83Mnk5S1B2cG1LNVFnaklleHV1dFNzRTQ4?oc=5"
     },
     {
-      "title": "Wymowne ostrzeżenie Rosji. Zwróciła się do dwóch grup w Ukrainie - Fakt",
-      "snippet": "Wymowne ostrzeżenie Rosji. Zwróciła się do dwóch grup w Ukrainie&nbsp;&nbsp;FaktRosja apeluje do dyplomatów i obcokrajowców. \"Świadomie narażają się na śmiertelne niebezpieczeństwo\"&nbsp;&nbsp;Interia Wydarzenia„Śmiertelne niebezpieczeństwo”. Poważny",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWURPNzdLLVhPSWJkMTBURG9zTUxHbWwyT1B1Y0xmR1p1NkFkQ1o0TXN5VHVSME90ejAtQURVTF90NGVsSFdFOGFjMlVDNXVicW9pb0k4ajhqbnZfWVFVLUF0S2pjTnN5WnNfSVhBWWNqNXZMRVNjbTJvOGswa0hETXA1WEJSTDNOaFdPRlgyQkNyLURFcXc?oc=5"
+      "title": "Taką ofertę Putin złożył USA. \"Jest absolutnie przyparty do muru\" - Wiadomości Onet",
+      "snippet": "Taką ofertę Putin złożył USA. \"Jest absolutnie przyparty do muru\"&nbsp;&nbsp;Wiadomości OnetPutin miał zaproponować sprzedaż aktywów Łukoilu. Podczas rozmów z wysłannikami USA&nbsp;&nbsp;Farmer.plUSA i Rosja rozmawiają o Łukoilu. W tle negocjacje dot",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOUVRcG5QOVc2TktYMnU4QUpyZFZyRUZrakE0Y1ZqTG96V2xQVHA1QTFnWHp3OWNyVHo0WHNBV3UxZG1PeHJIek9UYjEtendHdk82UkVNWFBGc3dZRDNUZ2QxMXpuVlYzOU01aUhQR2h2T1kyQVNwTm1tREdoRS1ySEpOWjZhUXg4S1YyOUE0Vnhsb1NsMER4ME5iUVJPOWZhYkNCeGJPX1JnYlNTSm5SVWFhLUZJQQ?oc=5"
     },
     {
-      "title": "W kokpicie trwała walka. Drugi pilot chwycił za siekierę - Rzeczpospolita",
-      "snippet": "W kokpicie trwała walka. Drugi pilot chwycił za siekierę&nbsp;&nbsp;RzeczpospolitaPróbował doprowadzić do katastrofy. Pilot flydubai miał zakaz latania&nbsp;&nbsp;Podróże OnetDziało się w nocy. Izraelskie służby mogły zawinić ws. Flydubai&nbsp;&nbsp;",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRjZfdmV4a3BIWXN2LXEwOTFvLXktX0FIalpvQzM3c0ozMkhRME5kRGg1YmRCVS1OaG1ZMUZlXzZfc19qaGl3eElKaE14eV9YRXVlT2ptSXNGbjgzWWxfNEd5SklIZGF3cDlpcW9yQ2FWLW1KcFQ1T0NuWHlXZFp4cl82RW1rTGgxajRCdTZJLWs1SHlNQ0FnWjVQMHBOSEpPWW9pTQ?oc=5"
+      "title": "Wiemy, ile lat miał kierowca. Wstrząsający wypadek w Nowym Sączu - o2",
+      "snippet": "Wiemy, ile lat miał kierowca. Wstrząsający wypadek w Nowym Sączu&nbsp;&nbsp;o2Wjechał w pieszego na pasach, siła uderzenia była ogromna. Tragedia w Nowym Sączu&nbsp;&nbsp;TVN2421-latek zatrzymany po tragedii w Nowym Sączu. Pieszy zginął na miejscu&nb",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ2wwSks3OHdPUjlwaUdEcVh4aGZpcVRMcVJoOV8yRHdkX1dxZG45TU9zZDZzaUh6bEM1aVlwLWhCd29PelRSUFoyU1d3UGRZVFA2U3IyajVCTmZ2ZUpfLTRMRm92czRZUkdLYnZUYnRXRUI0R21sVENaUlIwVUhJY1NTYUhyQi1KbUstMFl3OUxfaHlMQ18wd0xsYmRhNXNUQWZpQ1ZtR3locWduNWc?oc=5"
     },
     {
-      "title": "Lekarz o zastrzyku śmierci: raczej utonięcie we własnej krwi niż zasypianie - Onet",
-      "snippet": "Lekarz o zastrzyku śmierci: raczej utonięcie we własnej krwi niż zasypianie&nbsp;&nbsp;OnetSzef więziennictwa w Tennessee zrezygnował po nieudanej egzekucji Christy Pike&nbsp;&nbsp;TVN24Koszmar w pokoju straceń. Skazana pod respiratorem, igła się zgi",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSlVlY3IxenBsUjhwWW5zY09jSkZRYmE0VWVUemctdlNBTXZYV09iQUMyUjhrMVFzbGNkUkVkNzhpQzU0bXRwUFRJay1kNUdTbjh0eDAxaHJJdGFSMW9EaV8xaldyZUJsNjd0U0V2UERZNUlaUy1mUFVKZVBmU2JqVnNuV2tCVlRXODZvaERma2RtS3RnQ3NvbzFyR1FSMDNkb1NFbmZvanRIUDFSaWxIMDB2TWxzSDVyMEdhNw?oc=5"
+      "title": "Inside the Enrollment Cliff Hitting US Colleges",
+      "snippet": "America’s college-age population is shrinking, putting pressure on universities with high fixed costs and fewer students to fill their campuses. Schools like Bowling Green State are responding by adding career-focused programs and trying to stand out",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-04/inside-the-enrollment-cliff-hitting-us-colleges-video"
     },
     {
-      "title": "AI Deal Frenzy Powers Hong Kong Fundraising to Record Summer",
-      "snippet": "Bankers in Hong Kong skipped the summer break as an artificial intelligence-fueled rush for capital sent share sales to a record, defying a bruising selloff in the city’s stocks.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-04/ai-deal-frenzy-powers-hong-kong-fundraising-to-record-summer"
+      "title": "Jobs Slow but Inflation Keeps Fed on Alert",
+      "snippet": "Bloomberg Intelligence Chief US Interest Rate Strategist Ira Jersey tells Bloomberg This Weekend that softer September jobs data give the Federal Reserve room to hold rates steady in October, but persistent inflation could still lead policymakers to ",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-04/jobs-slow-but-inflation-keeps-fed-on-alert-video"
     },
     {
-      "title": "Lula, Bolsonaro in Tight Race as Brazil Prepares to Vote",
-      "snippet": "President Luiz Inácio Lula da Silva and right-wing challenger Flávio Bolsonaro remain locked in a tight race as Brazil prepares to vote in Sunday’s election, according to three new polls.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-03/lula-bolsonaro-in-dead-heat-as-brazil-prepares-to-vote"
+      "title": "White House Moves to Assess Growing AI Risks",
+      "snippet": "Bloomberg Opinion Columnist Gautam Mukunda tells Bloomberg This Weekend that voluntary safeguards may not be enough to manage AI risks because competitive and financial pressures can push companies to prioritize growth over safety. Speaking with host",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-04/white-house-moves-to-assess-growing-ai-risks-video"
     },
     {
-      "title": "Mexico Says Its Troops Sent to Border in Conjunction With US",
-      "snippet": "The US and Mexico have jointly deployed military personnel in a border area in Texas as part of “mirror operations,” the Mexican government said Saturday.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-03/mexico-says-its-troops-sent-to-border-in-conjunction-with-us"
+      "title": "Markets Brace for Sharp Swings No Matter Result of Brazil Vote",
+      "snippet": "Investors are expecting sharp swings in Brazilian markets in the aftermath of Sunday’s elections no matter the outcome, with assets to adjust quickly as the neck-and-neck presidential race prevented traders from taking too strong a view in the lead u",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-04/markets-brace-for-sharp-swings-no-matter-result-of-brazil-vote"
     },
     {
-      "title": "Paramount Debt Drop Spells Trouble for Borrowers: Credit Weekly",
-      "snippet": "Borrowing is getting harder for companies.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-03/paramount-debt-drop-spells-trouble-for-borrowers-credit-weekly"
+      "title": "EM Investors Shrug Off Quarter’s Pullback, Double Down on Carry Trades",
+      "snippet": "Investors are sticking with emerging-market carry trades, even after a rare quarterly loss, betting the strategy will be able to weather Treasury yields at multi-decade highs",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-04/em-investors-shrug-off-quarter-s-pullback-double-down-on-carry-trades"
     },
     {
-      "title": "Bloomberg This Weekend 10/3/2026",
-      "snippet": "The news doesn’t stop when markets close. Hosts David Gura, Christina Ruffini and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York. Joined by The Atlantic Staff Writer Vivian Salama, “The Pro",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-03/bloomberg-this-weekend-10-3-2026-video"
+      "title": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+      "snippet": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball.",
+      "link": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo"
     },
     {
-      "title": "UAE Probe Labels FlyDubai Cockpit Ax Attack a Terrorist Act",
-      "snippet": "A United Arab Emirates investigation of the near-catastrophic FlyDubai flight said the co-pilot attempted “to carry out a terrorist act” as more details emerged about what happened in the cockpit.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-03/uae-says-flydubai-co-pilot-planned-terrorist-operation"
+      "title": "Ethiopian rebel forces withdraw from Tigray regional capital",
+      "snippet": "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city.",
+      "link": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo"
     },
     {
-      "title": "Tennessee prison chief to resign after Christa Pike's failed execution",
-      "snippet": "Pike's lawyers said the failure \"goes far beyond any one person\". Pike is in critical condition after surviving two lethal injections.",
-      "link": "https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo"
+      "title": "Australia investigating Flydubai co-pilot's links to country",
+      "snippet": "State police and the country's security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel.",
+      "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o"
+    },
+    {
+      "title": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
+      "snippet": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
+      "link": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo"
     },
     {
       "title": "Cornell president says university 'must do better' after frat house rape allegations",
@@ -114,44 +119,34 @@
       "link": "https://www.bbc.co.uk/news/articles/ckly0leelnz4o"
     },
     {
-      "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
-      "snippet": "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets.",
-      "link": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o"
-    },
-    {
-      "title": "Russia hits second major bridge in Ukraine's capital Kyiv",
-      "snippet": "The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine's capital.",
-      "link": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko"
-    },
-    {
       "title": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
       "snippet": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.",
       "link": "https://www.bbc.co.uk/news/articles/cm2kej47095no"
     },
     {
-      "title": "„Śmiertelne niebezpieczeństwo”. Poważny komunikat i ostrzeżenie rosyjskiego MSZ",
-      "snippet": "W sobotę, 3 października, rosyjskie MSZ wydało alarmujący komunikat. Ostrzega w nim, że zamierza w dalszym ciągu przeprowadzać zmasowane ataki na Ukrainę. Podkreśla przy tym, że jeżeli cudzoziemcy i zagraniczni dyplomaci nie opuszczą Kijowa, to sami ",
-      "link": "https://defence24.pl/geopolityka/smiertelne-niebezpieczenstwo-powazny-komunikat-i-ostrzezenie-rosyjskiego-msz"
+      "title": "Merz w Kijowie: Ponad miliard euro na pomoc wojskową",
+      "snippet": "Kanclerz Niemiec ogłosił w Kijowie nowy pakiet pomocy wojskowej dla Ukrainy o wartości ponad 1 mld euro. Obejmuje on finansowanie wspólnej produkcji dronów przechwytujących, dostawy broni dalekiego zasięgu, dronów bojowych oraz sprzętu satelitarnego.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/merz-w-kijowie-ponad-miliard-euro-na-pomoc-wojskowa"
     },
     {
-      "title": "Wniosek o dodatkowe fundusze dla Ukrainy odrzucony. UE stawia warunki",
-      "snippet": "Ukraina niezmordowanie domaga się od Unii Europejskiej wcześniejszej wypłaty pożyczki w wysokości 90 miliardów euro, która została jej obiecana. Unia odrzuciła jednak ukraiński wniosek. Powodem jest niezastosowanie się przez stronę ukraińską do bruks",
-      "link": "https://defence24.pl/geopolityka/wniosek-o-dodatkowe-fundusze-dla-ukrainy-odrzucony-ue-stawia-warunki"
+      "title": "Rosja ćwiczy wejście do sąsiada. 47 tys. żołnierzy i „strefa bezpieczeństwa”",
+      "snippet": "Ponad 47 tysięcy żołnierzy wzięło udział w rosyjskich ćwiczeniach dowódczo-sztabowych Centr-2026, prowadzonych od 28 września do 3 października na 11 poligonach i na Morzu Kaspijskim. Oficjalnie celem było doskonalenie dowodzenia w odpieraniu agresji",
+      "link": "https://defence24.pl/sily-zbrojne/rosja-cwiczy-wejscie-do-sasiada-47-tys-zolnierzy-i-strefa-bezpieczenstwa"
     },
     {
-      "title": "Korea Płn. wystrzeliła kolejny pocisk balistyczny",
-      "snippet": "Korea Północna dokonała kolejnego testu z pociskiem balistycznym, który został wystrzelony w sobotę nad ranem czasu lokalnego z rejonu Wonsan, na wschodnim wybrzeżu tego kraju i przeleciał ok. 700 km zanim spadł do morza – ujawniły źródła południowok",
-      "link": "https://defence24.pl/polityka-obronna/korea-pln-wystrzelila-kolejny-pocisk-balistyczny"
+      "title": "Kanada chce do Joint Expeditionary Force. Ministrowie JEF zaczęli prace nad rekomendacją",
+      "snippet": "Kanada formalnie ubiega się o członkostwo w brytyjskiej Joint Expeditionary Force, a ministrowie obrony państw grupy rozpoczęli prace nad wspólną rekomendacją dla przywódców. Sprawę omówiono 2 października w bazie Keflavík na Islandii. W rozmowach uc",
+      "link": "https://defence24.pl/polityka-obronna/kanada-chce-do-joint-expeditionary-force-ministrowie-jef-zaczeli-prace-nad-rekomendacja"
     },
     {
-      "title": "Rosja zatrzymała statek na Bałtyku",
-      "snippet": "W czwartek, 1 października, rosyjska straż graniczna zatrzymała niemiecki statek towarowy, płynący przez Zatokę Fińską. Jednostka znalazła się na rosyjskich wodach terytorialnych, jednak zgodnie z wciąż obowiązującymi umowami, miała prawo się tam zna",
-      "link": "https://defence24.pl/polityka-obronna/rosja-zatrzymala-statek-na-baltyku"
+      "title": "Kto pociąga za sznurki w Kałasznikowie? Tajne powiązania",
+      "snippet": "Formalna zmiana właściciela koncernu Kałasznikow nie oznaczała wygaśnięcia dawnych wpływów. Choć pakiet większościowy posiada Alan Łusznikow, a państwowy Rostec zachowuje kontrolę strategiczną, ustalenia śledcze wskazują na trwałe powiązania Andrieja",
+      "link": "https://defence24.pl/przemysl/kto-pociaga-za-sznurki-w-kalasznikowie-tajne-powiazania"
     },
     {
-      "title": "Biały Dom podjął decyzję. „Pan Prezydent wywalczył tę bazę”",
-      "snippet": "W piątek, 2 października, Marcin Przydacz z Kancelarii Prezydenta RP poinformował, że Biały Dom podtrzymuje wydaną wcześniej zgodę na budowę amerykańskiej bazy wojskowej w Polsce, pragnąc jej rychłego powstania. Za dyplomatycznym sukcesem ma stać Pre",
-      "link": "https://defence24.pl/geopolityka/bialy-dom-podjal-decyzje-pan-prezydent-wywalczyl-te-baze"
+      "title": "Zełenski: Ukraina nasili uderzenia w rosyjskie rafinerie",
+      "snippet": "Ukraina zamierza zintensyfikować ataki na rosyjskie rafinerie – zapowiedział prezydent Wołodymyr Zełenski w wywiadzie dla agencji Reuters. Odpowiedź ma być reakcją na to, co Kijów nazywa nową doktryną uderzeń Moskwy, obliczoną na wypchnięcie mieszkań",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-ukraina-nasili-uderzenia-w-rosyjskie-rafinerie"
     },
     {
       "title": "Tennessee prison chief to resign after Christa Pike's failed execution",
@@ -162,11 +157,6 @@
       "title": "Debris found from plane that went missing off US coast",
       "snippet": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data.",
       "link": "https://www.bbc.co.uk/news/articles/cme3x85013llo"
-    },
-    {
-      "title": "Why has Brazil accused the US of election interference?",
-      "snippet": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington.",
-      "link": "https://www.bbc.co.uk/news/videos/c3eweld0nddeo"
     }
   ]
 }
