@@ -4,12 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta id="theme-color-meta" name="theme-color" content="#f8fafc">
+<meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)">
+
 <title>Świat w Minutę — Wiadomości</title>
 <meta name="description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność — krótko i na temat.">
 <meta name="robots" content="index, follow">
+
+<!-- PWA / Apple -->
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Świat w Minutę">
+<meta name="mobile-web-app-capable" content="yes">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -29,7 +35,7 @@
 <meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="manifest" href="/manifest.json">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -817,7 +823,6 @@ async function init() {
   const archiveFun = normalizeArchive(af.data);
   if (archiveFun.length) archiveGroups = [...archiveGroups, ...archiveFun];
 
-  // Data aktualizacji: z JSON jeśli jest, inaczej godzina otwarcia
   const fromData = extractEditionTime(n.data) || extractEditionTime(raw.data);
   const displayDate = fromData || new Date();
   $('last-update').textContent = (fromData ? 'Wydanie: ' : '') + displayDate.toLocaleString('pl-PL', {
@@ -879,6 +884,20 @@ window.addEventListener('keydown', e => {
 
 init();
 </script>
+
+<!-- ===== PWA – rejestracja Service Workera ===== -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('Service Worker zarejestrowany:', registration.scope);
+        })
+        .catch((error) => {
+          console.warn('Błąd rejestracji Service Workera:', error);
+        });
+    });
+  }
+</script>
 </body>
 </html>
-
