@@ -1,77 +1,87 @@
 {
-  "date": "3 października 2026",
-  "time": "13:44",
-  "timestamp": "2026-10-03_13:44",
+  "date": "4 października 2026",
+  "time": "12:30",
+  "timestamp": "2026-10-04_12:30",
   "items": [
     {
       "category": "SZALONA HISTORIA",
-      "title": "🍲 Przysmaki przetrwania w historii",
-      "summary": "Suchary wojskowe, pemikan czy suszony dorsz przetrwały najgorsze klęski żywiołowe i konflikty w historii świata. Niektóre z tych racji miały okres przydatności sięgający kilkudziesięciu lat, choć konsystencją przypominały kamień.",
-      "comment": "Idealne menu na wypadek apokalipsy zombie albo wizytę nieproszonych gości.",
-      "image_query": "stew pot",
+      "title": "⚡ Skradzione grzmoty z XVII wieku",
+      "summary": "W 1709 roku dramaturg John Dennis wymyślił nowatorską machinę z metalowych mis do robienia dźwięku pioruna w teatrze. Jego sztuka okazała się klapą, ale kilka dni później zobaczył, że konkurencja w bezczelny sposób używa jego opatentowanego efektu dźwiękowego w innym spektaklu.",
+      "comment": "Czyli prawa autorskie wymyślono głównie po to, żeby nikt nie ukradł ci hałasu.",
+      "image_query": "thunderstorm",
+      "link": "https://www.mentalfloss.com/language/why-do-we-say-steal-someones-thunder",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4988,h_2805/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1dp2nassnebmn8eps.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4988,h_2805/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1dp2nassnebmn8eps.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🎃 Rzucanie kapustą w drzwi sąsiada",
+      "summary": "Sto lat temu Halloween nie polegało na zbieraniu słodyczy, lecz na masowej dewastacji mienia pod przykrywką tradycji. Nastolatki zrzucały wózki do rzek, smarowały okna mydłem, a najpopularniejszym wybrykiem było obrzucanie drzwi sąsiadów zgniłymi głowami kapusty.",
+      "comment": "Dzisiejsze dzieciaki chcą batonika, a kiedyś po prostu demolowano ci ganek warzywem.",
+      "image_query": "cabbage",
+      "link": "https://www.mentalfloss.com/holidays/halloween/what-halloween-like-100-years-ago",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3wjby4bdm7qz1hrwk.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3wjby4bdm7qz1hrwk.jpg"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "📺 Serial BBC usunięty za przerażanie",
+      "summary": "W latach 60. stacja BBC wyemitowała antologię horrorów Late Night Horror, która wywołała gigantyczną panikę wśród widzów. Jeden z odcinków o ożywionej lalce doprowadził do masowych protestów przerażonych Brytyjczyków, przez co większość taśm po prostu zniszczono.",
+      "comment": "Dzisiaj oglądamy krwawe jatki do obiadku, a kiedyś wystarczyła gipsowa lalka na ekranie.",
+      "image_query": "scary doll",
+      "link": "https://www.mentalfloss.com/entertainment/tv/lost-bbc-anthology-late-night-horror",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_121,w_1444,h_812/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w029j336m51qanx0.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_121,w_1444,h_812/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w029j336m51qanx0.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🍂 Wyścigi w pływaniu na dyniach",
+      "summary": "W amerykańskich miastach jesień oznacza organizowanie wyścigów w wydrążonych, gigantycznych dyniach. Mieszkańcy spędzają długie miesiące na hodowaniu warzyw ważących po 400 kg tylko po to, by usiąść w nich z wiosłem i próbować nie zatonąć w rzece.",
+      "comment": "Sporty ekstremalne nabierają całkowicie nowego, rolniczego znaczenia.",
+      "image_query": "giant pumpkin",
+      "link": "https://www.mentalfloss.com/geography/cities/best-cities-america-family-fall-activities-ranked",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_860,y_0,w_8485,h_4772/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z7ma8qqzyzc1rrgz.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_860,y_0,w_8485,h_4772/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z7ma8qqzyzc1rrgz.jpg"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "📖 Bestseller, którego nienawidzili",
+      "summary": "Powieść Na wschód od Edenu Johna Steinbecka z 1952 roku stała się natychmiastowym hitem sprzedażowym, znikając z półek w tysiącach sztuk. Krytycy literaccy byli jednak oburzeni i nazywali ją tanim melodramatem, podczas gdy czytelnicy stali w kilometrowych kolejkach.",
+      "comment": "Recenzenci od dawna żyją w całkowicie innym wszechświecie niż zwykli ludzie.",
+      "image_query": "old book",
+      "link": "https://www.mentalfloss.com/literature/books/east-of-eden-instant-bestseller-1952-critics-divided-these-reasons",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg"
+    },
+    {
+      "category": "BEKA Z NAUKI",
+      "title": "🥫 Starożytna zupa gotowana 100 lat",
+      "summary": "W czasach największych kryzysów ludzkość wykazywała się szaloną kreatywnością, dodając sproszkowane drewno do chleba czy glinę do gulaszu. Niektóre z tych survivalowych przepisów przetrwały wieki, a nieprzerwanie gotowane zupy wielopokoleniowe stały się dziś daniami ekskluzywnymi.",
+      "comment": "Szefowie kuchni potrafią sprzedać absolutną biedę za grube tysiące złotych.",
+      "image_query": "soup pot",
       "link": "https://www.mentalfloss.com/food/meals-that-survived-wars-familes-empires",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg"
     },
     {
-      "category": "POPKULTURA",
-      "title": "🖤 Najmroczniejsze wstępy Poe",
-      "summary": "Edgar Allan Poe potrafił wywołać gęsią skórkę już w pierwszym zdaniu swojego wiersza lub opowiadania. Jego utwory zaczynały się od gwałtownych opisów szaleństwa, mrocznych grobowców oraz nawiedzonych domów.",
-      "comment": "Chłopak pisałby genialne, choć niepokojące wiadomości na aplikacjach randkowych.",
-      "image_query": "raven skull",
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "☕ Miasteczko oblężone przez fanów",
+      "summary": "Niewielkie Washington w stanie Connecticut stało się pierwowzorem fikcyjnego miasteczka z kultowego serialu Gilmore Girls. Dziś malutka osada zmaga się z nalotami tysięcy turystów, którzy paraliżują lokalne kawiarnie w poszukiwaniu serialowego klimatu.",
+      "comment": "Turystyka serialowa to genialny sposób na bezpowrotne zniszczenie lokalnego spokoju.",
+      "image_query": "autumn town",
+      "link": "https://www.mentalfloss.com/geography/wanderlust/connecticut-trip-inspired-gilmore-girls",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3135,h_1763/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3akghzekbp43srznh.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3135,h_1763/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3akghzekbp43srznh.jpg"
+    },
+    {
+      "category": "ZWIERZAKI",
+      "title": "🐦 Czarny kruk i sąsiedzki terror",
+      "summary": "Edgar Allan Poe tak głośno opisywał mroczną inteligencję ptaków, że motyw kruka stał się jego znakiem rozpoznawczym. W rzeczywistości pisarz zainspirował się prawdziwym ptakiem, którego głośne wrzaski za oknem po prostu doprowadzały całą okolicę do szaleństwa.",
+      "comment": "Gdy widzisz na gałęzi czarnego ptaka, pomyśl, że może po prostu planuje popsuć ci dzień.",
+      "image_query": "black raven",
       "link": "https://www.mentalfloss.com/literature/poetry/edgar-allan-poe-most-unsettling-opening-lines-send-chills-down-our-spines",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "🎸 Muzyczny król Twojego roku",
-      "summary": "Od The Beatles w latach 60. po idolów muzyki pop lat 90. – każdy rok miał swój zespół numer jeden na świecie. Analizy historycznych list przebojów pokazują, jak drastycznie zmieniały się gusta słuchaczy co dekadę.",
-      "comment": "Sprawdź swój rok urodzenia i zobacz, do jakiego obciachu tańczyli Twoi rodzice.",
-      "image_query": "rock concert",
-      "link": "https://www.mentalfloss.com/entertainment/music/most-popular-band-year-you-were-born",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_62,w_3468,h_1950/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t88wpkh8j39fhgs8.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_62,w_3468,h_1950/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t88wpkh8j39fhgs8.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🍎 Amerykańskie imperium jabłkowe",
-      "summary": "Stan Waszyngton zbiera rocznie ponad 10 miliardów jabłek, co stanowi ponad połowę całej amerykańskiej produkcji tych owoców. Ułożone w linii prostej okrążyłyby kulę ziemską kilkanaście razy, a rynek zbiorów wciąż rośnie.",
-      "comment": "Lekarze w tym stanie muszą chyba nosić zbroje, żeby zbliżyć się do pacjentów.",
-      "image_query": "apple harvest",
-      "link": "https://www.mentalfloss.com/geography/states/states-produce-most-apples-ranked",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_45,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sxx7h7ymna2fqq5b.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_45,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3sxx7h7ymna2fqq5b.jpg"
-    },
-    {
-      "category": "BEKA Z NAUKI",
-      "title": "🎶 Muzyczne eksperymenty w studiu",
-      "summary": "Podczas nagrywania kultowego albumu w 1965 roku brytyjscy muzycy pchnęli inżynierię dźwięku na zupełnie nowe tory. Zamiast tradycyjnych instrumentalizacji używali sitaru, odwróconych taśm magnetofonowych i niestandardowych mikrofonów.",
-      "comment": "Wystarczyło trochę poeksperymentować w studiu, by zamienić hałas w wielomilionowy hit.",
-      "image_query": "vinyl record",
-      "link": "https://www.mentalfloss.com/entertainment/music/facts-about-beatles-rubber-soul",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_66,y_997,w_2357,h_1325/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3st4cd3xattzfq6eg.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_66,y_997,w_2357,h_1325/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3st4cd3xattzfq6eg.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "⚡ Iskrowy impuls do pisania",
-      "summary": "W 1932 roku wędrowny iluzjonista dotknął mieczem podłączonym do prądu głowy 12-letniego chłopca i nakazał mu żyć wiecznie. Nastolatek tak mocno wziął to do serca, że od następnego dnia pisał tekst codziennie przez resztę życia.",
-      "comment": "Jedni po porażeniu prądem lądują na pogotowiu, a inni zostają gigantami literatury.",
-      "image_query": "electric spark",
-      "link": "https://www.mentalfloss.com/literature/authors/carnival-magician-that-inspired-ray-bradbury",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_926,w_2302,h_1294/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3snqmxrwqqzwy1xvc.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_926,w_2302,h_1294/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3snqmxrwqqzwy1xvc.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "📺 Kosmiczny podstęp na cenzurę",
-      "summary": "Słynny scenarzysta telewizyjny miał dosyć cenzurowania politycznych tematów w dramatach realistycznych, więc przeniósł akcję do kosmosu. Stacja chętnie puszczała odcinki o dyskryminacji, o ile wygłaszały je postacie z zieloną skórą.",
-      "comment": "Wychodzi na to, że najlepszym sposobem na uniknięcie cenzury jest przebranie krytyka za kosmitę.",
-      "image_query": "retro television",
-      "link": "https://www.mentalfloss.com/entertainment/tv/real-life-censorship-battle-helped-create-twilight-zone",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_201,w_2500,h_1406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3szqn42vv5retfh9d.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_201,w_2500,h_1406/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3szqn42vv5retfh9d.jpg"
     }
   ]
 }
