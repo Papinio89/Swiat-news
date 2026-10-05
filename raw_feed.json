@@ -1,17 +1,12 @@
 {
-  "date": "4 października 2026",
-  "time": "16:10",
-  "count": 31,
+  "date": "5 października 2026",
+  "time": "06:06",
+  "count": 34,
   "items": [
     {
-      "title": "Kijów ma wielki problem ze zbożem. Sąsiedzi nie pomogą",
-      "snippet": " Polska i Rumunia nie zamierzają zwiększać tranzytu ukraińskiego zboża – informuje portal Politico. Kijów ostrzega, że przez problemy z eksportem przez Morze Czarne w kraju może utknąć nawet 35 mln ton produktów rolnych. Ukraina chce też 1,1 mld euro",
-      "link": "https://www.money.pl/gospodarka/kijow-ma-wielki-problem-ze-zbozem-sasiedzi-nie-pomoga-7336391309748512a.html"
-    },
-    {
-      "title": "Oddali mieszkanie za rentę do końca życia. Rynek pokazał mankamenty",
-      "snippet": " Konstrukcja renty dożywotniej obowiązuje w Polsce od 12 lat, jednak banki nie podjęły szeroko tzw. odwróconego kredytu hipotecznego. Seniorzy, którzy chcą spieniężyć prawo do nieruchomości, polegają wyłącznie na funduszach hipotecznych. – Ustawa obo",
-      "link": "https://www.money.pl/finanse/oddali-mieszkania-w-zamian-za-renty-rynek-pokazal-zasadniczy-problem-7336386333407520a.html"
+      "title": "40 mld euro na stole. Kanadyjczycy czują oddech Polaków na plecach",
+      "snippet": " Cyber_Folks chce zbudować europejską alternatywę dla kanadyjskiego giganta Shopify. Klienci polskiej spółki już dziś obracają 40 mld euro, a cel na pięć lat to miliard euro przychodu z prowizji. Jakub Dwernicki, współtwórca firmy, mówi o przejęciu f",
+      "link": "https://www.money.pl/pieniadze/polacy-chca-pokonac-giganta-maja-600-mln-zl-gotowki-na-koncie-7335717273859137v.html"
     },
     {
       "title": "Putin składa ofertę Amerykanom. W grze przejęcie warte miliardy",
@@ -19,79 +14,89 @@
       "link": "https://www.money.pl/gospodarka/putin-sklada-oferte-amerykanom-w-grze-przejecie-warte-miliardy-7336351634737440a.html"
     },
     {
-      "title": "Kurczący się gigant. Dlaczego niemiecki rynek pracy stoi przed historycznym punktem zwrotnym?",
-      "snippet": "Przez lata niemiecki rynek pracy uchodził za skałę odporną na wstrząsy. Mimo globalnych kryzysów, zawirowań geopolitycznych i słabej koniunktury zatrudnienie pozostawało wysokie, a firmy desperacko poszukiwały pracowników. Bliższe spojrzenie pokazuje",
-      "link": "https://www.bankier.pl/wiadomosc/Kurczacy-sie-gigant-Dlaczego-niemiecki-rynek-pracy-stoi-przed-historycznym-punktem-zwrotnym-9206573.html"
+      "title": "Bitcoin, złoto, AI i obligacje. Oto typy na złotą jesień",
+      "snippet": "Bitcoin, Caracas, kosmos, sztuczna inteligencja, złoto, srebro, polskie spółki, amerykańska technologia, sektor obronny, a z drugiej strony – bezpieczne obligacje. Październikowe typy Gwiazd Bankiera pokazują, że tym razem nie ma jednego dominującego",
+      "link": "https://www.bankier.pl/wiadomosc/Bitcoin-zloto-AI-i-obligacje-Oto-typy-na-zlota-jesien-9206529.html"
     },
     {
-      "title": "Wcześniejsza emerytura przez zarwane noce? Zegar biologiczny brutalnie weryfikuje przydatność do pracy",
-      "snippet": "Osoby z późnym chronotypem mają o 1,7 proc. wyższe ryzyko dot. potrzeby przejścia na wcześniejszą emeryturę, niż osoby z chronotypem porannym. Znaczenie mogą mieć zaburzenia biologicznego zegara oraz gorsze nawyki związane ze zdrowiem.",
-      "link": "https://www.bankier.pl/wiadomosc/Wczesniejsza-emerytura-przez-zarwane-noce-Zegar-biologiczny-brutalnie-weryfikuje-przydatnosc-do-pracy-9205692.html"
+      "title": "Najgorsza giełda III kwartału wciąż jest wiceliderem roku. W Seulu jest tanio, czy dopiero będzie?",
+      "snippet": "Jeden z najmocniejszych światowych indeksów tego roku był jednocześnie najsłabszym giełdowym benchmarkiem trzeciego kwartału. Południowokoreański KOSPI stracił w trzy miesiące prawie 19%, ale od 1 stycznia zyskuje wciąż ponad 60%. Wyprzedaż akcji Sam",
+      "link": "https://www.bankier.pl/wiadomosc/KOSPI-stracil-19-ale-wciaz-jest-wiceliderem-roku-W-Seulu-jest-tanio-czy-dopiero-bedzie-9205949.html"
     },
     {
-      "title": "Trump wściekły na Norwegię za brak Nobla. Eksperci oceniają jego szanse: Absolutnie nie",
-      "snippet": "Donald Trump nie ma w tym roku szans na Pokojową Nagrodę Nobla – ocenili dla PAP dyrektor Instytutu Badań nad Pokojem w Oslo PRIO Haakon Gjerloew oraz historycy Nagrody Nobla Asle Sveen i Oeivind Stenersen. Prezydent USA ma pozostawać jednak ważnym p",
-      "link": "https://www.bankier.pl/wiadomosc/Trump-wsciekly-na-Norwegie-za-brak-Nobla-Eksperci-oceniaja-jego-szanse-Absolutnie-nie-9207167.html"
+      "title": "Minister energii Miłosz Motyka: Gdyby nie OZE, byłoby jeszcze drożej. Rusza nowy wideocast Bankier.pl",
+      "snippet": "Każdy dodatkowy gigawat mocy z wiatraków na lądzie oznacza rachunki niższe o 10 złotych na megawatogodzinie. Gdyby nie rozwój odnawialnych źródeł energii, systemowo płacilibyśmy dziś za prąd jeszcze więcej – mówi w studiu Bankier.pl minister energii ",
+      "link": "https://www.bankier.pl/wiadomosc/Minister-energii-Milosz-Motyka-Gdyby-nie-OZE-byloby-jeszcze-drozej-Rusza-nowy-wideocast-Bankier-pl-9206609.html"
     },
     {
-      "title": "Zakopane pęka w szwach. Liczba miejsc noclegowych skoczyła o 60 procent",
-      "snippet": "Liczba miejsc noclegowych w Zakopanem wzrosła z ok. 29 tys. w 2016 r. do ponad 48,5 tys. w 2026 r., czyli o 60 proc. – wynika z danych Urzędu Miasta. Samorząd wskazuje, że wzrost to efekt zarówno nowych inwestycji, jak i wychodzenia z tzw. szarej str",
-      "link": "https://www.bankier.pl/wiadomosc/Zakopane-peka-w-szwach-Liczba-miejsc-noclegowych-skoczyla-o-60-procent-9207190.html"
+      "title": "Spore podwyżki w hipotecznych promocjach. Nowy wskaźnik to nowe marże",
+      "snippet": "W cennikach kredytów hipotecznych dawno nie było takiego ruchu. Z jednej strony odpowiada za to zmiana oczekiwań wobec stóp procentowych. Z drugiej – przesiadka na wskaźnik POLSTR, który pojawia się w kolejnych bankach.",
+      "link": "https://www.bankier.pl/wiadomosc/Promocje-kredytow-hipotecznych-pazdziernik-2026-r-9206656.html"
     },
     {
-      "title": "Unijna biurokracja dusi produkcję ukraińskich dronów? Ekspert alarmuje o groźnych limitach",
-      "snippet": "Ograniczenie udziału chińskich komponentów w ukraińskim uzbrojeniu do 35 proc. może utrudnić utrzymanie skali produkcji podczas wojny – ocenił w rozmowie z PAP ukraiński ekspert ds. lotnictwa Anatolij Chrapczynski. Jego zdaniem potrzebna jest wspólna",
-      "link": "https://www.bankier.pl/wiadomosc/Unijna-biurokracja-dusi-produkcje-ukrainskich-dronow-Ekspert-alarmuje-o-groznych-limitach-9207171.html"
+      "title": "Konie Nawrockiego na państwowym garnuszku. Zapłaciliśmy za stajnię 54 tys. zł od lipca",
+      "snippet": "Edzio, Ramzes i Aramis to trzy konie, na których jeździ Karol Nawrocki, jego żona i córka. Zwierzęta mieszkają w jednej z prezydenckich rezydencji w Promniku, 100 km od Warszawy- informuje \"Gazeta Wyborcza\". Potwierdził to Rafał Leśkiewicz. - Pod opi",
+      "link": "https://www.bankier.pl/wiadomosc/Konie-Nawrockiego-na-panstwowym-garnuszku-Zaplacilismy-za-stajnie-54-tys-zl-od-lipca-9207221.html"
     },
     {
-      "title": "Gęste mgły w 14 województwach. Wydano alerty - WP Wiadomości",
-      "snippet": "Gęste mgły w 14 województwach. Wydano alerty&nbsp;&nbsp;WP WiadomościUwaga na gęstą mgłę!&nbsp;&nbsp;Magiczny KrakówZacznie się po zmroku. IMGW wydał ostrzeżenia dla dziewięciu województw&nbsp;&nbsp;Interia WydarzeniaGęsta mgła w Gorzowie. IMGW wydał",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTTViYlpNcGFKQWpwSWxnMGVZNlFJUHVuT3g0NkNTT3p6amRzZUhrSk9qckxoa3V1Y3NMa080VGJSM00zYzBIbUVkZy1kaWEwckdTMDQ1d0lSM2ZwTnNiY3hoZDZ5V3cwZmdWdEhOZXAwaHo0U2lHeVJlTXhrRXFTS2Z3X3ZBLU1uU0RTaTBqdw?oc=5"
+      "title": "Miliardy w miskach, sklepy pod presją. Na karmie dla zwierząt coraz trudniej zarobić",
+      "snippet": "Karma do koszyka, a kolejna zabawka może poczekać. Z relacji sprzedawców wynika, że opiekunowie zwierząt ostrożniej wydają pieniądze, porównują oferty i szukają promocji. Dla branży zoologicznej atutem jest regularny popyt, choć według przedstawiciel",
+      "link": "https://www.bankier.pl/wiadomosc/Miliardy-w-miskach-Branza-zoologiczna-walczy-o-portfele-wlascicieli-zwierzat-9206967.html"
     },
     {
-      "title": "Nie żyje siostra Anastazja. Autorka bestsellerowych książek kucharskich miała 76 lat - PolsatNews.pl",
-      "snippet": "Nie żyje siostra Anastazja. Autorka bestsellerowych książek kucharskich miała 76 lat&nbsp;&nbsp;PolsatNews.plNie żyje siostra Anastazja Pustelnik. Z jej przepisów gotowały pokolenia Polaków&nbsp;&nbsp;Interia WydarzeniaNie żyje siostra Anastazja. Jej",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSFFqeUF6SmFZdmFBLTNSM3ZtanYtWHlxa1pSNV9LTWtNb19xQjdaQ0VCNE0xUnpyWjZhc013MXZkVTl0eGZQaGZvLVR5Rk1vc0o0R1RHR1dKdVBoMVVhbWRacnpTa0Q0TVpfaEREVC00dnZLYVhhb2pRdEFZZGlDcHVvWjR6UldUakJRRUhkc2liMlduYVItMlFNUWQ3cjBrVjRzSkpmcjQxR3pyN09YcDNoWEcwcENCT1dfNzFxVGsyeE0?oc=5"
+      "title": "Nagroda Literacka Nike. Szczepan Twardoch podwójnym zwycięzcą - WP Kultura",
+      "snippet": "Nagroda Literacka Nike. Szczepan Twardoch podwójnym zwycięzcą&nbsp;&nbsp;WP KulturaUciec przed wojną do Toskanii? Twardoch: wstydziłbym się&nbsp;&nbsp;NewsweekNagroda Literacka 'Nike' 2026. Znamy wyniki konkursu 'Wyborczej' na recenzję książki - fina",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTU1jbXJxallXMkRGRlhWN3RkUWZhT25LLWJXLWdJUjJUaXdJTGJRTEMwbEpja1lnUU92YW5NcTQ3NEgyb3ZqSFdfX2lMODdKOGdMbEtXY2tXYWp0dW1WVWlOTU1NOXR4cThvUlFfVS1xVDdXOUlySDhNemgwRmNzYzdtTHZoUWtMWnh1aWY1QVpVdXpPVnVTMllQV1Jncm1oMUE?oc=5"
     },
     {
-      "title": "Wyniki wyborów w Łotwie. Policzyli większość głosów - TVN24",
-      "snippet": "Wyniki wyborów w Łotwie. Policzyli większość głosów&nbsp;&nbsp;TVN24Wybory na Łotwie. Partia premiera z pewnym zwycięstwem&nbsp;&nbsp;WP WiadomościHistoryczny wynik wyborów na Łotwie&nbsp;&nbsp;OKO.pressŁotwa wybiera. Oto jaki wpływ na politykę mogą ",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEpNREg5dkxjM1lmb1BoanB6ZmJwZGdmSWRjSHZkRVU1T2dMQUd2TVNLZHVtZ3dOQ0gxcTd2Qm1tXzV1cGtiR2ItdF9FOUV1eEZ2MUJHZlVrVndiTmJPZlQ3TjQzbnE4SGZWTE9uR2xGcm83Mnk5S1B2cG1LNVFnaklleHV1dFNzRTQ4?oc=5"
+      "title": "\"Zostajemy\". Polski dyplomata zareagował na rosyjskie groźby - PolsatNews.pl",
+      "snippet": "\"Zostajemy\". Polski dyplomata zareagował na rosyjskie groźby&nbsp;&nbsp;PolsatNews.plRosja \"ostrzega\" dyplomatów. Zachód reaguje na groźby Kremla. \"Nasza odpowiedź: zostajemy\"&nbsp;&nbsp;Interia WydarzeniaPolska reaguje na rosyjskie groźby wobec dypl",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMUJMbVY1T0hoVnBrQ0ZqX05maG1PMlFibFdwQmlWOVVKVWppUVNDdFlvR3l6aHd1RWFWaUVJQ2NoUVNiRHdEYlppUG9NS1hUcEc0Y0N5YUhsN3I5eE45eHFaQ1J2eVhzRExweHBqNWlRaFVHYWxhUHpsMWJKMTVid2g2QWJsMzlXLUl1T1djZWNjWUNmNHp4YXI3UVNHbnFmMzE2Zy15bXpJVU5kT1JtcmlHT2lYUkhwYnkyZzE3NUFlV1E?oc=5"
     },
     {
-      "title": "Taką ofertę Putin złożył USA. \"Jest absolutnie przyparty do muru\" - Wiadomości Onet",
-      "snippet": "Taką ofertę Putin złożył USA. \"Jest absolutnie przyparty do muru\"&nbsp;&nbsp;Wiadomości OnetPutin miał zaproponować sprzedaż aktywów Łukoilu. Podczas rozmów z wysłannikami USA&nbsp;&nbsp;Farmer.plUSA i Rosja rozmawiają o Łukoilu. W tle negocjacje dot",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOUVRcG5QOVc2TktYMnU4QUpyZFZyRUZrakE0Y1ZqTG96V2xQVHA1QTFnWHp3OWNyVHo0WHNBV3UxZG1PeHJIek9UYjEtendHdk82UkVNWFBGc3dZRDNUZ2QxMXpuVlYzOU01aUhQR2h2T1kyQVNwTm1tREdoRS1ySEpOWjZhUXg4S1YyOUE0Vnhsb1NsMER4ME5iUVJPOWZhYkNCeGJPX1JnYlNTSm5SVWFhLUZJQQ?oc=5"
+      "title": "Konie w rezydencji Karola Nawrockiego. Rzecznik prezydenta tłumaczy - Wiadomości Onet",
+      "snippet": "Konie w rezydencji Karola Nawrockiego. Rzecznik prezydenta tłumaczy&nbsp;&nbsp;Wiadomości OnetRusinek: Jakie to wszystko małostkowe, te pytania o konie prezydenta&nbsp;&nbsp;Wyborcza.plRzecznik Nawrockiego o sprawie koni. \"Dwa zakupione w ostatnim cz",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYkUtaklsZXh1UmhQU0c5ZlRNejA4NTd4RGRNaHJ2amN2YVM2cS1NQ3U0Y2s1ZGdCaERJa0Y1MFh1S0w5X1BMbW9hRmp0M2JTd2w0SEVPMG1uWVp5SXBZZkhDUkktTWIyUm5FTm1md09YdDZBN09kLWNUUmp0NklVR0w3WFA2OEVCdHFQNkhpeDZtaEQtUEdtSUtmd2tyLV9XU0NBQUtFeUYtdw?oc=5"
     },
     {
-      "title": "Wiemy, ile lat miał kierowca. Wstrząsający wypadek w Nowym Sączu - o2",
-      "snippet": "Wiemy, ile lat miał kierowca. Wstrząsający wypadek w Nowym Sączu&nbsp;&nbsp;o2Wjechał w pieszego na pasach, siła uderzenia była ogromna. Tragedia w Nowym Sączu&nbsp;&nbsp;TVN2421-latek zatrzymany po tragedii w Nowym Sączu. Pieszy zginął na miejscu&nb",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ2wwSks3OHdPUjlwaUdEcVh4aGZpcVRMcVJoOV8yRHdkX1dxZG45TU9zZDZzaUh6bEM1aVlwLWhCd29PelRSUFoyU1d3UGRZVFA2U3IyajVCTmZ2ZUpfLTRMRm92czRZUkdLYnZUYnRXRUI0R21sVENaUlIwVUhJY1NTYUhyQi1KbUstMFl3OUxfaHlMQ18wd0xsYmRhNXNUQWZpQ1ZtR3locWduNWc?oc=5"
+      "title": "Zaskakujące kulisy lotu flydubai. \"Kazali nam go rozwiązać\" - Money.pl",
+      "snippet": "Zaskakujące kulisy lotu flydubai. \"Kazali nam go rozwiązać\"&nbsp;&nbsp;Money.plPasażerowie ujawniają: załoga flydubai chciała uwolnić napastnika&nbsp;&nbsp;OnetPróba zamachu w samolocie. Netanjahu reaguje&nbsp;&nbsp;wiadomosci.wp.plTo porwanie zmieni",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcWx5UTY1bW9JcmxVbHpfVXlMTk4tSTBQVllGVVBOWXppcGFMZmZlb1RXemY5TlBKdWVXRnJPenRpOHJwQl9mb1otN1M1cHRETkVjQ3VZbFlkQnpjb09FVmF2ZjdDSjh0QThvSFRpUENfYUdacTMyLTRvXzkyZE41YTRFZVBVbG5WY2RuNlJFMHgybXA5MmVqRXZxU2VPRzhMb3ZORjRqc3hMcHlxYkE?oc=5"
     },
     {
-      "title": "Inside the Enrollment Cliff Hitting US Colleges",
-      "snippet": "America’s college-age population is shrinking, putting pressure on universities with high fixed costs and fewer students to fill their campuses. Schools like Bowling Green State are responding by adding career-focused programs and trying to stand out",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-04/inside-the-enrollment-cliff-hitting-us-colleges-video"
+      "title": "\"Uwaga! Alert RCB\". Polskie wojsko poderwało myśliwce - Fakt",
+      "snippet": "\"Uwaga! Alert RCB\". Polskie wojsko poderwało myśliwce&nbsp;&nbsp;FaktNiespokojnie na wschodzie Polski. Alert RCB dla mieszkańców&nbsp;&nbsp;wiadomosci.wp.plAtak Rosji na Ukrainę. Alert RCB dla części Polski&nbsp;&nbsp;Wiadomości OnetXXVIII Festyn Kul",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNEtyeml0N1dreGx2U2ViekotQUVRR0RCakNyYlJaczdQblVCa2dpNGFLYURWc0d5RjZRUmN4ZmlmYnFiLTM4a2dWajBWR0N6RnVXei1MTzV0M2cxMmcyWk5RT2FDeW5HRzBSRllwNzRNVUh6ajVYcHc2X29YNmRaV1NlRS1VenBXM1lpTnVFZkFaTGVTR3N2S0NVNVFzQU44Y3E4?oc=5"
     },
     {
-      "title": "Jobs Slow but Inflation Keeps Fed on Alert",
-      "snippet": "Bloomberg Intelligence Chief US Interest Rate Strategist Ira Jersey tells Bloomberg This Weekend that softer September jobs data give the Federal Reserve room to hold rates steady in October, but persistent inflation could still lead policymakers to ",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-04/jobs-slow-but-inflation-keeps-fed-on-alert-video"
+      "title": "Firmus Said to Plan Allocating Half of IPO to Early Backers",
+      "snippet": "Firmus Grid Ltd. plans to allocate about half of the shares in its initial public offering to existing shareholders, putting Nvidia Corp and Blackstone Group in a position to increase their stakes, according to people familiar with the matter.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-05/firmus-said-to-plan-allocating-half-of-ipo-to-existing-investors"
     },
     {
-      "title": "White House Moves to Assess Growing AI Risks",
-      "snippet": "Bloomberg Opinion Columnist Gautam Mukunda tells Bloomberg This Weekend that voluntary safeguards may not be enough to manage AI risks because competitive and financial pressures can push companies to prioritize growth over safety. Speaking with host",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-04/white-house-moves-to-assess-growing-ai-risks-video"
+      "title": "Latest Oil Market News and Analysis for Oct. 5",
+      "snippet": "Oil dropped after Saudi Arabia cut prices of its benchmark grade to Asia as flows expand, offsetting a lift from intensified fighting in Yemen.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-04/latest-oil-market-news-and-analysis-for-oct-5"
     },
     {
-      "title": "Markets Brace for Sharp Swings No Matter Result of Brazil Vote",
-      "snippet": "Investors are expecting sharp swings in Brazilian markets in the aftermath of Sunday’s elections no matter the outcome, with assets to adjust quickly as the neck-and-neck presidential race prevented traders from taking too strong a view in the lead u",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-04/markets-brace-for-sharp-swings-no-matter-result-of-brazil-vote"
+      "title": "Stock Rally Extends as Fed Bets Ease, Euro Drops: Markets Wrap",
+      "snippet": "A global stock rally extended into Asia and Treasuries rose after softer US jobs data eased pressure on the Federal Reserve to keep raising interest rates. The euro fell.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-04/asian-stocks-to-rise-as-hike-bets-ease-oil-climbs-markets-wrap"
     },
     {
-      "title": "EM Investors Shrug Off Quarter’s Pullback, Double Down on Carry Trades",
-      "snippet": "Investors are sticking with emerging-market carry trades, even after a rare quarterly loss, betting the strategy will be able to weather Treasury yields at multi-decade highs",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-04/em-investors-shrug-off-quarter-s-pullback-double-down-on-carry-trades"
+      "title": "Euro Falls to 17-Month Low on Region’s Fiscal, Political Risks",
+      "snippet": "The euro fell to its weakest level since May 2025 as reports that Spanish government officials are preparing for an early election added to investor concerns over political and fiscal risks across the region.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-05/euro-falls-to-17-month-low-on-region-s-fiscal-political-risks"
+    },
+    {
+      "title": "India Rate Hike Looms as RBI Grapples With Excess Liquidity",
+      "snippet": "The RBI has been withdrawing surplus cash from the banking system as inflation pressures mount.",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-10-05/india-rate-hike-looms-as-rbi-grapples-with-excess-liquidity"
+    },
+    {
+      "title": "Saudis Slash Oil Prices to Asia in Battle for Market Share",
+      "snippet": "Saudi Aramco has cut prices for its benchmark oil grade to Asia to a six-year low as Persian Gulf producers race for market share with flows through the Strait of Hormuz increasing.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-05/saudis-cut-flagship-oil-price-to-asia-to-lowest-in-six-years"
     },
     {
       "title": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
@@ -99,62 +104,72 @@
       "link": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo"
     },
     {
+      "title": "Watch: What we know about Russian strikes on Kyiv bridges",
+      "snippet": "BBC Ukraine correspondent Dan Johnson is near Kyiv's Northern Bridge, which has been hit for the second day in a row.",
+      "link": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo"
+    },
+    {
+      "title": "Yemen's government announces all-out war to reclaim land from Houthis",
+      "snippet": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+      "link": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o"
+    },
+    {
+      "title": "Brazil election goes to run-off as right-wing Flávio Bolsonaro wins first round",
+      "snippet": "With neither candidate getting more than 50% of the vote, the election will go to a run-off on 25 October.",
+      "link": "https://www.bbc.co.uk/news/articles/ck1l34ed592no"
+    },
+    {
       "title": "Ethiopian rebel forces withdraw from Tigray regional capital",
       "snippet": "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city.",
       "link": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo"
     },
     {
-      "title": "Australia investigating Flydubai co-pilot's links to country",
-      "snippet": "State police and the country's security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel.",
-      "link": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o"
+      "title": "Christa Pike's prognosis still unclear after failed execution, lawyer says",
+      "snippet": "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body.",
+      "link": "https://www.bbc.co.uk/news/articles/ckgelynyg7d3o"
     },
     {
-      "title": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
-      "snippet": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival.",
-      "link": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo"
+      "title": "Tony materiału wybuchowego pod wodą. Saperzy zneutralizują niemieckie miny w Świnoujściu",
+      "snippet": "Na wodach Zatoki Pomorskiej w rejonie Świnoujścia rozpocznie się jedna z większych operacji neutralizacji niewybuchów pozostałych po II wojnie światowej. Nurkowie-minerzy z 8. Flotylli Obrony Wybrzeża zajmą się pięcioma brytyjskimi lotniczymi minami ",
+      "link": "https://defence24.pl/polityka-obronna/tony-materialu-wybuchowego-pod-woda-saperzy-zneutralizuja-niemieckie-miny-w-swinoujsciu"
     },
     {
-      "title": "Cornell president says university 'must do better' after frat house rape allegations",
-      "snippet": "Michael Kotlikoff described the allegations of a woman who says she was drugged and gang raped as \"deeply disturbing\".",
-      "link": "https://www.bbc.co.uk/news/articles/ckly0leelnz4o"
+      "title": "Przełom w wojnie jeszcze w październiku? Zełenski zapowiedział ważne wydarzenie",
+      "snippet": "W niedzielę, 4 października, Wołodymyr Zełenski zapowiedział, że jeszcze do końca miesiąca prawdopodobnie dojdzie do spotkania delegatów Rosji, Ukrainy i USA na szczeblu technicznym. Rozmowy mają poprzedzać finalną turę negocjacji pokojowych, lecz ag",
+      "link": "https://defence24.pl/geopolityka/przelom-w-wojnie-jeszcze-w-pazdzierniku-zelenski-zapowiedzial-wazne-wydarzenie"
     },
     {
-      "title": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
-      "snippet": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament.",
-      "link": "https://www.bbc.co.uk/news/articles/cm2kej47095no"
+      "title": "Walki o strategiczne lotnisko. Róg Afryki na krawędzi szerszej wojny?",
+      "snippet": "Etiopskie siły federalne odzyskały kontrolę nad lotniskiem Alula Aba Nega w Mekelle, stolicy Tigraju – podały w sobotę Reuters i Associated Press, powołując się na źródła w mieście i pochodzące z organizacji humanitarnych. Według rozmówcy zbliżonego ",
+      "link": "https://defence24.pl/geopolityka/walki-o-strategiczne-lotnisko-rog-afryki-na-krawedzi-szerszej-wojny"
     },
     {
-      "title": "Merz w Kijowie: Ponad miliard euro na pomoc wojskową",
-      "snippet": "Kanclerz Niemiec ogłosił w Kijowie nowy pakiet pomocy wojskowej dla Ukrainy o wartości ponad 1 mld euro. Obejmuje on finansowanie wspólnej produkcji dronów przechwytujących, dostawy broni dalekiego zasięgu, dronów bojowych oraz sprzętu satelitarnego.",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/merz-w-kijowie-ponad-miliard-euro-na-pomoc-wojskowa"
+      "title": "Nowy król Norwegii mówi o wojnie i wskazuje na Polskę",
+      "snippet": "W piątek, 2 października, mowę tronową wygłosił nowy król Norwegii, Haakon VIII. Wskazał na Rosję, jako największe zagrożenie dla pokoju w Europie, a także zapowiedział rozbudowę norweskich sił zbrojnych. Polskę wymienił wśród najważniejszych sojuszn",
+      "link": "https://defence24.pl/geopolityka/nowy-krol-norwegii-mowi-o-wojnie-i-wskazuje-na-polske"
     },
     {
-      "title": "Rosja ćwiczy wejście do sąsiada. 47 tys. żołnierzy i „strefa bezpieczeństwa”",
-      "snippet": "Ponad 47 tysięcy żołnierzy wzięło udział w rosyjskich ćwiczeniach dowódczo-sztabowych Centr-2026, prowadzonych od 28 września do 3 października na 11 poligonach i na Morzu Kaspijskim. Oficjalnie celem było doskonalenie dowodzenia w odpieraniu agresji",
-      "link": "https://defence24.pl/sily-zbrojne/rosja-cwiczy-wejscie-do-sasiada-47-tys-zolnierzy-i-strefa-bezpieczenstwa"
+      "title": "US removes all bombers from UK air base",
+      "snippet": "A statement says all bombers deployed to RAF Fairford have been \"re-deployed to their home stations\" in the US.",
+      "link": "https://www.bbc.co.uk/news/articles/cmwyve191dlko"
     },
     {
-      "title": "Kanada chce do Joint Expeditionary Force. Ministrowie JEF zaczęli prace nad rekomendacją",
-      "snippet": "Kanada formalnie ubiega się o członkostwo w brytyjskiej Joint Expeditionary Force, a ministrowie obrony państw grupy rozpoczęli prace nad wspólną rekomendacją dla przywódców. Sprawę omówiono 2 października w bazie Keflavík na Islandii. W rozmowach uc",
-      "link": "https://defence24.pl/polityka-obronna/kanada-chce-do-joint-expeditionary-force-ministrowie-jef-zaczeli-prace-nad-rekomendacja"
+      "title": "Christa Pike's prognosis still unclear after failed execution, lawyer says",
+      "snippet": "Pike's lawyer says doctors are still trying to clear two lethal doses of pentobarbital from her body.",
+      "link": "https://www.bbc.co.uk/news/articles/ckgelynyg7d3o"
     },
     {
-      "title": "Kto pociąga za sznurki w Kałasznikowie? Tajne powiązania",
-      "snippet": "Formalna zmiana właściciela koncernu Kałasznikow nie oznaczała wygaśnięcia dawnych wpływów. Choć pakiet większościowy posiada Alan Łusznikow, a państwowy Rostec zachowuje kontrolę strategiczną, ustalenia śledcze wskazują na trwałe powiązania Andrieja",
-      "link": "https://defence24.pl/przemysl/kto-pociaga-za-sznurki-w-kalasznikowie-tajne-powiazania"
+      "title": "US Marine arrested over murder of woman in Japan's Okinawa",
+      "snippet": "Japan's government lodged a formal protest with the US, demanding that military officials take action.",
+      "link": "https://www.bbc.co.uk/news/articles/cme3xw4yy28do"
     },
     {
-      "title": "Zełenski: Ukraina nasili uderzenia w rosyjskie rafinerie",
-      "snippet": "Ukraina zamierza zintensyfikować ataki na rosyjskie rafinerie – zapowiedział prezydent Wołodymyr Zełenski w wywiadzie dla agencji Reuters. Odpowiedź ma być reakcją na to, co Kijów nazywa nową doktryną uderzeń Moskwy, obliczoną na wypchnięcie mieszkań",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-ukraina-nasili-uderzenia-w-rosyjskie-rafinerie"
+      "title": "Girl, 12, fatally shot in US during 'dispute over parking space'",
+      "snippet": "Police in Baltimore have said the young girl was not a target of the shooting but was caught in the crossfire.",
+      "link": "https://www.bbc.co.uk/news/articles/cwr5y48p89vvo"
     },
     {
-      "title": "Tennessee prison chief to resign after Christa Pike's failed execution",
-      "snippet": "Pike's lawyers said the failure \"goes far beyond any one person\". Pike is in critical condition after surviving two lethal injections.",
-      "link": "https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo"
-    },
-    {
-      "title": "Debris found from plane that went missing off US coast",
+      "title": "Rescuers suspend search for survivors after plane went missing off US coast",
       "snippet": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data.",
       "link": "https://www.bbc.co.uk/news/articles/cme3x85013llo"
     }
