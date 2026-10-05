@@ -2,7 +2,7 @@
 <html lang="pl" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta id="theme-color-meta" name="theme-color" content="#f8fafc">
 <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)">
@@ -74,6 +74,7 @@
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--bg);
     color: var(--text);
+    overscroll-behavior-y: contain;
   }
   .card-img { aspect-ratio: 16/9; object-fit: cover; }
   .tab.active { background: #0f172a; color: #fff; }
@@ -102,7 +103,6 @@
   #help-panel { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
   #help-panel.open { max-height: 280px; }
 
-  /* Install button */
   #install-btn {
     display: none; align-items: center; gap: 6px; border-radius: 12px;
     padding: 8px 14px; font-size: 12px; font-weight: 700;
@@ -111,7 +111,6 @@
   }
   #install-btn.show { display: inline-flex; }
 
-  /* Newsletter popup */
   #newsletter-overlay {
     position: fixed; inset: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
     z-index: 100; display: flex; align-items: center; justify-content: center;
@@ -129,7 +128,7 @@
   }
   #newsletter-email {
     width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border);
-    background: var(--bg-muted); color: var(--text); font-size: 14px; outline: none;
+    background: var(--bg-muted); color: var(--text); font-size: 14px; outline: none; margin-bottom: 10px;
   }
   #newsletter-submit {
     padding: 12px; border-radius: 12px; background: #0f172a; color: #fff;
@@ -139,7 +138,6 @@
   #newsletter-success { display: none; text-align: center; }
   #newsletter-success.show { display: block; }
 
-  /* Bottom nav */
   #bottom-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
     border-top: 1px solid var(--border); background: var(--header-bg);
@@ -156,12 +154,24 @@
     #bottom-nav { display: none; }
   }
 
-  /* React buttons */
   .react-btn { transition: .15s; }
-  .react-btn.active { color: #f59e0b; border-color: #f59e0b !important; }
+  .react-btn.active { color: #f59e0b !important; border-color: #f59e0b !important; }
+
+  /* Pull to refresh */
+  #ptr {
+    position: absolute; top: -50px; left: 0; right: 0; height: 50px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 600; color: var(--text-muted);
+    transition: transform .2s;
+    pointer-events: none;
+  }
+  #ptr.visible { transform: translateY(50px); }
+  #ptr.refreshing { transform: translateY(50px); }
 </style>
 </head>
-<body class="min-h-screen">
+<body class="min-h-screen relative">
+
+<div id="ptr">↓ Pociągnij, aby odświeżyć</div>
 
 <header class="sticky top-0 z-40 border-b backdrop-blur" style="background: var(--header-bg); border-color: var(--border);">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
@@ -192,7 +202,7 @@
         <li><span class="font-semibold text-main">□</span> — zaznacz jako przeczytane</li>
         <li><span class="font-semibold text-main">↗</span> — udostępnij</li>
         <li><span class="font-semibold text-main">☾</span> — tryb jasny / ciemny</li>
-        <li class="pt-1 text-mute">Na telefonie: „Dodaj do ekranu głównego”</li>
+        <li class="pt-1 text-mute">Pociągnij w dół, aby odświeżyć</li>
       </ul>
     </div>
   </div>
@@ -251,7 +261,6 @@
     <button onclick="location.reload()" class="mt-3 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white">Odśwież</button>
   </div>
 
-  <!-- TODAY -->
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
@@ -275,7 +284,6 @@
     </div>
   </section>
 
-  <!-- ALL -->
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
@@ -285,7 +293,6 @@
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- FAST -->
   <section id="fast-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
@@ -294,7 +301,6 @@
     <div id="breaking" class="space-y-4"></div>
   </section>
 
-  <!-- FUN -->
   <section id="fun-view" class="hidden">
     <div class="mb-3 flex items-center justify-between gap-3">
       <div>
@@ -309,17 +315,15 @@
     <button id="fun-more" onclick="loadMoreFun()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
-  <!-- WEEK -->
   <section id="week-view" class="hidden">
     <div class="mb-4">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div>
       <h2 class="text-lg font-black text-main">📅 Tydzień w skrócie</h2>
-      <p class="text-sm text-sec mt-1">Automatycznie wygenerowany przegląd na podstawie ostatnich dni</p>
+      <p class="text-sm text-sec mt-1">Automatyczny przegląd na podstawie Twoich danych</p>
     </div>
     <div id="week-content"></div>
   </section>
 
-  <!-- ARCHIVE -->
   <section id="archive-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-sec">Historia</div>
@@ -349,7 +353,6 @@
   </div>
 </footer>
 
-<!-- Bottom navigation -->
 <nav id="bottom-nav">
   <div class="flex justify-around items-center h-14 px-1">
     <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
@@ -373,7 +376,6 @@
 <button id="back-top" onclick="goTop()" class="fixed bottom-20 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl sm:bottom-5 dark:bg-white dark:text-slate-950">↑</button>
 <div id="toast" class="fixed bottom-20 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl sm:bottom-5"></div>
 
-<!-- Newsletter popup -->
 <div id="newsletter-overlay">
   <div id="newsletter-popup">
     <button id="newsletter-close" onclick="closeNewsletter()">×</button>
@@ -382,7 +384,7 @@
       <h3 class="text-center text-lg font-black mb-1">Chcesz więcej niż minutę?</h3>
       <p class="text-center text-sm text-sec mb-4">Zostaw maila i dostaniesz darmowe PDF-y z przeglądem miesiąca + bonusy. Zero spamu.</p>
       <form id="newsletter-form" onsubmit="submitNewsletter(event)">
-        <input type="email" id="newsletter-email" placeholder="Twój e-mail" required class="mb-3">
+        <input type="email" id="newsletter-email" placeholder="Twój e-mail" required>
         <button type="submit" id="newsletter-submit">Chcę dostać PDF-y →</button>
       </form>
       <p class="text-center text-[11px] text-mute mt-3">Możesz zrezygnować w każdej chwili.</p>
@@ -501,7 +503,7 @@ function sourceName(x) { return x.source_name || x.sourceName || x.source || '';
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
 function imageOf(x) { return x.image || x.image_url || x.imageUrl || x.img || x.photo || ''; }
-function getPubDate(x) { return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || ''; }
+function getPubDate(x) { return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || x._archiveDate || ''; }
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
@@ -570,14 +572,36 @@ function updateThemeColor() {
 }
 
 function react(btn, type) {
-  const countEl = btn.querySelector('.count');
-  let count = parseInt(countEl.textContent || '0', 10) + 1;
-  countEl.textContent = count;
-  btn.classList.add('active');
-  try {
-    const key = 'swm-react-' + type + '-' + (btn.closest('article')?.querySelector('h3')?.textContent || Math.random());
-    localStorage.setItem(key, count);
-  } catch(e){}
+  const article = btn.closest('article') || btn.closest('.headline-item');
+  if (!article) return;
+  const titleEl = article.querySelector('h3, .title');
+  const postKey = 'swm-react-' + (titleEl ? titleEl.textContent.trim().slice(0, 80) : Math.random());
+  const current = localStorage.getItem(postKey);
+  const buttons = article.querySelectorAll('.react-btn');
+
+  if (current === type) {
+    localStorage.removeItem(postKey);
+    buttons.forEach(b => {
+      b.classList.remove('active');
+      const c = b.querySelector('.count');
+      if (c) c.textContent = '0';
+    });
+    return;
+  }
+
+  localStorage.setItem(postKey, type);
+  buttons.forEach(b => {
+    const match = b.getAttribute('onclick')?.match(/'(\\w+)'/);
+    const bType = match ? match[1] : null;
+    const c = b.querySelector('.count');
+    if (bType === type) {
+      b.classList.add('active');
+      if (c) c.textContent = '1';
+    } else {
+      b.classList.remove('active');
+      if (c) c.textContent = '0';
+    }
+  });
 }
 
 function reportError(item) {
@@ -705,12 +729,14 @@ function renderFast() {
 }
 
 function prepareFunItems() {
-  const today = funItems.map(x => ({...x, _isToday: true}));
-  allFunItems = uniqueByKey([...today, ...archiveFunItems]);
+  const today = (funItems || []).map(x => ({...x, _isToday: true}));
+  allFunItems = uniqueByKey([...today, ...(archiveFunItems || [])]);
   allFunItems.sort((a, b) => {
     if (a._isToday && !b._isToday) return -1;
     if (!a._isToday && b._isToday) return 1;
-    return new Date(getPubDate(b) || 0) - new Date(getPubDate(a) || 0);
+    const da = new Date(getPubDate(a) || 0);
+    const db = new Date(getPubDate(b) || 0);
+    return db - da;
   });
 }
 
@@ -743,59 +769,55 @@ function randomFunFact() {
 }
 
 function renderWeek() {
-  // Automatyczny przegląd tygodnia na podstawie dostępnych danych
-  const all = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...archiveGroups.flatMap(g => g.items || [])]);
-  const now = new Date();
-  const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-
-  const recent = all.filter(item => {
-    const d = new Date(getPubDate(item) || 0);
-    return !isNaN(d.getTime()) ? d >= weekAgo : true;
-  }).slice(0, 12);
-
-  const top = recent.slice(0, 6);
+  const all = uniqueByKey([
+    ...newsItems, 
+    ...rawFeedItems, 
+    ...fastItems, 
+    ...archiveGroups.flatMap(g => g.items || [])
+  ]);
+  const recent = all.slice(0, 24);
+  const top = recent.slice(0, 8);
   const cats = {};
   recent.forEach(i => {
     const c = category(i) || 'Inne';
     cats[c] = (cats[c] || 0) + 1;
   });
-  const topCats = Object.entries(cats).sort((a,b) => b[1]-a[1]).slice(0,4);
+  const topCats = Object.entries(cats).sort((a,b) => b[1] - a[1]).slice(0, 5);
 
   let html = `
     <div class="rounded-2xl border p-5 mb-5 surface" style="border-color:var(--border); background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);">
-      <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Automatyczny przegląd</div>
-      <h3 class="text-lg font-black text-main mb-2">Ostatnie 7 dni w skrócie</h3>
-      <p class="text-sm text-sec">Na podstawie ${recent.length} zebranych materiałów. To nie jest pełna analiza redakcyjna – traktuj jako szybki przegląd.</p>
+      <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Przegląd tygodnia</div>
+      <h3 class="text-lg font-black text-main mb-2">Co działo się ostatnio</h3>
+      <p class="text-sm text-sec">Na podstawie ${recent.length} materiałów. Automatyczny przegląd.</p>
     </div>`;
 
   if (topCats.length) {
-    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Najczęstsze tematy</div><div class="flex flex-wrap gap-2">`;
+    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Dominujące tematy</div><div class="flex flex-wrap gap-2">`;
     topCats.forEach(([cat, cnt]) => {
       html += `<span class="rounded-full px-3 py-1 text-xs font-bold ${categoryClass(cat)}">${escapeHtml(cat)} · ${cnt}</span>`;
     });
     html += `</div></div>`;
   }
 
-  html += `<div class="mb-3 text-xs font-bold text-sec">Top wydarzenia</div><div class="grid gap-4 md:grid-cols-2">`;
+  html += `<div class="mb-3 text-xs font-bold text-sec">Najważniejsze wydarzenia</div><div class="grid gap-4 md:grid-cols-2">`;
   if (top.length) {
     top.forEach((item, idx) => {
       const t = getTitle(item.title);
       html += `
         <div class="rounded-2xl border p-4 surface flex gap-3" style="border-color:var(--border)">
-          <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx+1}</div>
+          <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx + 1}</div>
           <div class="min-w-0">
             <div class="text-[10px] font-bold uppercase text-mute mb-0.5">${escapeHtml(category(item))}</div>
             <h4 class="text-sm font-black leading-snug text-main mb-1">${t.emoji || ''} ${escapeHtml(t.title)}</h4>
             ${getSummary(item) ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(getSummary(item))}</p>` : ''}
-            <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item))} ${getPubDate(item) ? '· ' + formatDate(getPubDate(item)) : ''}</div>
+            <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item))}</div>
           </div>
         </div>`;
     });
   } else {
-    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Za mało danych do wygenerowania przeglądu. Wróć za kilka dni.</div>`;
+    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Brak danych do wyświetlenia.</div>`;
   }
   html += `</div>`;
-
   $('week-content').innerHTML = html;
 }
 
@@ -951,14 +973,32 @@ async function init() {
   funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
   archiveGroups = normalizeArchive(a.data);
 
-  // archive fun
+  // archive fun - obsługa formatu z kluczami dat
   archiveFunItems = [];
   if (af.ok) {
     const d = af.data;
-    if (Array.isArray(d)) archiveFunItems = d;
-    else if (d.items) archiveFunItems = d.items;
-    else if (d.groups) archiveFunItems = d.groups.flatMap(g => g.items || []);
+    if (Array.isArray(d)) {
+      archiveFunItems = d;
+    } else if (d.items) {
+      archiveFunItems = d.items;
+    } else if (d.groups) {
+      archiveFunItems = d.groups.flatMap(g => g.items || []);
+    } else {
+      Object.keys(d).forEach(key => {
+        const group = d[key];
+        if (group && Array.isArray(group.items)) {
+          group.items.forEach(item => {
+            archiveFunItems.push({
+              ...item,
+              published_at: group.timestamp || group.date || key,
+              _archiveDate: group.date || key
+            });
+          });
+        }
+      });
+    }
   }
+  console.log('Ciekawostki z archiwum:', archiveFunItems.length);
 
   const fromData = extractEditionTime(n.data) || extractEditionTime(raw.data);
   const displayDate = fromData || new Date();
@@ -995,6 +1035,42 @@ function weatherEmoji(c) {
   if (c <= 82) return '🌦️';
   return '⛈️';
 }
+
+/* ===== Pull to Refresh ===== */
+let ptrStartY = 0;
+let ptrPulling = false;
+const ptrEl = $('ptr');
+
+document.addEventListener('touchstart', e => {
+  if (window.scrollY <= 0) {
+    ptrStartY = e.touches[0].clientY;
+    ptrPulling = true;
+  }
+}, { passive: true });
+
+document.addEventListener('touchmove', e => {
+  if (!ptrPulling) return;
+  const diff = e.touches[0].clientY - ptrStartY;
+  if (diff > 60 && window.scrollY <= 0) {
+    ptrEl.classList.add('visible');
+    ptrEl.textContent = '↑ Puść, aby odświeżyć';
+  } else {
+    ptrEl.classList.remove('visible');
+    ptrEl.textContent = '↓ Pociągnij, aby odświeżyć';
+  }
+}, { passive: true });
+
+document.addEventListener('touchend', e => {
+  if (!ptrPulling) return;
+  ptrPulling = false;
+  if (ptrEl.classList.contains('visible')) {
+    ptrEl.classList.add('refreshing');
+    ptrEl.textContent = 'Odświeżanie…';
+    setTimeout(() => location.reload(), 400);
+  } else {
+    ptrEl.classList.remove('visible');
+  }
+});
 
 window.addEventListener('scroll', () => {
   const btn = $('back-top');
@@ -1057,7 +1133,7 @@ function submitNewsletter(e) {
   setTimeout(closeNewsletter, 2500);
   console.log('Zapisano e-mail (lokalnie):', email);
 }
-setTimeout(showNewsletter, 12000);
+setTimeout(showNewsletter, 10000);
 $('newsletter-overlay')?.addEventListener('click', e => {
   if (e.target.id === 'newsletter-overlay') closeNewsletter();
 });
