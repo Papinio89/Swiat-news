@@ -18,7 +18,7 @@ from google.genai import types
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
 RSS_URLS = [
@@ -133,17 +133,16 @@ def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
     if not PEXELS_API_KEY:
         return FALLBACK_IMG
 
-    # Próba 1: Pełna fraza, Próba 2: Uproszczona (pierwsze 2 słowa)
     queries = [query]
     words = query.split()
     if len(words) > 2:
         queries.append(" ".join(words[:2]))
-    queries.append("nature weird funny")
+    queries.extend(["funny animal", "curiosity science", "vintage history"])
 
     for q in queries:
         for attempt in range(retries + 1):
             try:
-                url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=3&orientation=landscape"
+                url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
                 req = urllib.request.Request(url, headers={
                     "Authorization": PEXELS_API_KEY,
                     "User-Agent": "SwiatWMinute-Bot/1.0"
@@ -211,6 +210,7 @@ for url in RSS_URLS:
 
 print(f"Pobrano {len(raw_articles)} surowych artykułów rozrywkowych.")
 
+# --- ODCZYT ARCHIWUM SESYJNEGO ---
 archive_file = "archive_rozrywka.json"
 archive_data = {}
 if os.path.exists(archive_file):
@@ -221,21 +221,17 @@ if os.path.exists(archive_file):
         archive_data = {}
 
 now_pl = datetime.now(pl_tz)
-today_date_key = now_pl.strftime("%Y-%m-%d")
-session_fixed_key = f"{today_date_key}_rozrywka"
+session_fixed_key = now_pl.strftime("%Y-%m-%d_%H:%M_rozrywka")
 
 previous_topics = []
-sorted_sessions = sorted(archive_data.keys(), reverse=True)[:10]
-for session_key in sorted_sessions:
-    session_content = archive_data.get(session_key)
-    if isinstance(session_content, dict) and "items" in session_content:
-        for item in session_content.get("items", []):
-            if "title" in item:
-                clean_title = "".join(
-                    c for c in item["title"]
-                    if ord(c) > 127 or c.isalnum() or c.isspace()
-                ).strip().lower()
-                previous_topics.append(clean_title)
+sorted_sessions = sorted(archive_data.keys(), reverse=True)[:15]
+for s_key in sorted_sessions:
+    s_content = archive_data.get(s_key, {})
+    if isinstance(s_content, dict) and "items" in s_content:
+        for it in s_content.get("items", []):
+            if isinstance(it, dict) and "title" in it:
+                clean = "".join(c for c in it["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+                previous_topics.append(clean)
 
 filtered_raw_articles = []
 for art in raw_articles:
@@ -263,9 +259,6 @@ if len(filtered_raw_articles) < 6:
 print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów przekazanych do AI")
 
 api_key = os.environ.get("GEMINI_API_KEY")
-if not api_key:
-    print("OSTRZEŻENIE: Brak zmiennej środowiskowej GEMINI_API_KEY!")
-
 client = genai.Client(api_key=api_key)
 
 prompt = f"""Jesteś redaktorem rozrywkowym formatu „Świat w Minucie” (Instagram/Threads). 
@@ -287,7 +280,7 @@ ZASADY PISANIA DLA PÓL:
 - "title": [Emotikona] + [Krótki, chwytliwy nagłówek po polsku do 60 znaków].
 - "summary": 2-3 zdania pełne faktów, liczb i komicznego absurdu po polsku.
 - "comment": 1 ostre, przezabawne zdanie puenty w stylu ciętego stand-upu po polsku.
-- "image_query": Dokładnie 1-2 proste słowa kluczowe po angielsku pod Pexels oddające sedno (np. 'flamingo', 'vintage car', 'top hat', 'hedgehog', 'banana'). Unikaj długich fraz!
+- "image_query": Dokładnie 1-2 proste słowa kluczowe po angielsku pod Pexels oddające sedno (np. 'flamingo', 'vintage car', 'top hat', 'hedgehog', 'banana').
 - "link": Dokładnie URL artykułu z wejścia (każdy news musi mieć inny!).
 
 UNIKAJ TYCH TEMATÓW Z ARCHIWUM:
@@ -377,8 +370,8 @@ if items:
 
 print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
 
-# --- DOBIERANIE ZDJĘĆ Z GWARANCJĄ PEXELS / FALLBACK ---
-print("Dobieranie zdjęć (blokada powtórzonych grafik)...")
+# --- DOBIERANIE ZDJĘĆ Z GWARANCJĄ UNIKALNOŚCI I FALLBACKU ---
+print("Dobieranie zdjęć (blokada powtórzonych grafik i gwarancja URL)...")
 source_ok = 0
 seen_image_urls = set()
 
@@ -388,14 +381,11 @@ for item in items:
     
     article_img = fetch_article_image(url)
     
-    # 1. Sprawdzamy czy zdjęcie ze źródła jest dostępne i unikalne
     if article_img and article_img not in seen_image_urls:
-        item["source_image_url"] = article_img
-        item["image_url"] = article_img
+        chosen_img = article_img
         seen_image_urls.add(article_img)
         source_ok += 1
     else:
-        # 2. Pobieramy dopasowane zdjęcie z Pexels
         stock_img = fetch_pexels_image_url(q)
         if not stock_img or stock_img in seen_image_urls:
             stock_img = fetch_pexels_image_url(q.split()[0] if q else "funny")
@@ -403,12 +393,17 @@ for item in items:
         if not stock_img or stock_img in seen_image_urls:
             stock_img = FALLBACK_IMG
 
-        item["source_image_url"] = stock_img
-        item["image_url"] = stock_img
-        seen_image_urls.add(stock_img)
+        chosen_img = stock_img
+        seen_image_urls.add(chosen_img)
+
+    # Przypisanie wszystkich kluczy kompatybilności
+    item["image_url"] = chosen_img
+    item["source_image_url"] = chosen_img
+    item["image"] = chosen_img
 
 print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels/Fallback)")
 
+# --- ZAPIS DO BIEŻĄCEGO WYDANIA I ARCHIWUM (PO PEŁNYM PRZYPISANIU ZDJĘĆ) ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
@@ -420,12 +415,14 @@ output_data = {
     "items": items
 }
 
+# 1. Bieżące wydanie (dla frontendu)
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-if items:
-    archive_data[session_fixed_key] = output_data
-    with open(archive_file, "w", encoding="utf-8") as f:
-        json.dump(archive_data, f, ensure_ascii=False, indent=2)
+# 2. Archiwum sesyjne (trwałe gromadzenie sesji ze zdjęciami)
+archive_data[session_fixed_key] = output_data
+with open(archive_file, "w", encoding="utf-8") as f:
+    json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
 print(f"Zapisano {len(items)} ciekawostek do rozrywka.json.")
+print(f"Zaktualizowano {archive_file} (łącznie sesji: {len(archive_data)}).")
