@@ -35,7 +35,7 @@
 <meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icon/icon-192.png">
 <link rel="manifest" href="/manifest.json">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -138,6 +138,127 @@
   #help-panel.open {
     max-height: 280px;
   }
+
+  /* ===== Przycisk instalacji PWA ===== */
+  #install-btn {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    border-radius: 12px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #111;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+    transition: transform .15s, box-shadow .15s;
+  }
+  #install-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.45);
+  }
+  #install-btn.show {
+    display: inline-flex;
+  }
+
+  /* ===== Popup newsletter ===== */
+  #newsletter-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+  }
+  #newsletter-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #newsletter-popup {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    max-width: 380px;
+    width: 100%;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transform: translateY(20px);
+    transition: transform .3s;
+    position: relative;
+  }
+  #newsletter-overlay.show #newsletter-popup {
+    transform: translateY(0);
+  }
+  #newsletter-popup h3 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  #newsletter-popup p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  #newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #newsletter-email {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg-muted);
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+  }
+  #newsletter-email:focus {
+    border-color: #f59e0b;
+  }
+  #newsletter-submit {
+    padding: 12px;
+    border-radius: 12px;
+    background: #0f172a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  .dark #newsletter-submit {
+    background: #f8fafc;
+    color: #0f172a;
+  }
+  #newsletter-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+  #newsletter-success {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #newsletter-success.show {
+    display: block;
+  }
 </style>
 </head>
 <body class="min-h-screen">
@@ -152,6 +273,9 @@
       </div>
     </a>
     <div class="flex items-center gap-2">
+      <button id="install-btn" onclick="installPWA()">
+        📲 Zainstaluj
+      </button>
       <button onclick="toggleHelp()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Pomoc" title="Skróty (klawisz ?)">?</button>
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
       <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Tryb ciemny">☾</button>
@@ -161,7 +285,7 @@
 
 <main class="mx-auto max-w-6xl px-4 pb-28 pt-4">
 
-  <!-- Panel pomocy (klawisz ?) -->
+  <!-- Panel pomocy -->
   <div id="help-panel" class="mb-3 rounded-2xl border surface" style="border-color: var(--border);">
     <div class="p-4 text-sm">
       <div class="mb-2 text-xs font-black uppercase tracking-wider text-amber-500">Skróty i wskazówki</div>
@@ -334,6 +458,45 @@
 <button id="back-top" onclick="goTop()" aria-label="Wróć na górę" 
   class="fixed bottom-5 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">↑</button>
 <div id="toast" class="fixed bottom-5 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl"></div>
+
+<!-- ===== Popup Newsletter ===== -->
+<div id="newsletter-overlay">
+  <div id="newsletter-popup">
+    <button id="newsletter-close" onclick="closeNewsletter()" aria-label="Zamknij">×</button>
+    
+    <div id="newsletter-form-wrap">
+      <div class="text-center mb-1" style="font-size: 28px;">📬</div>
+      <h3 class="text-center">Chcesz więcej niż minutę?</h3>
+      <p class="text-center">
+        Zostaw maila i dostaniesz darmowe PDF-y z przeglądem miesiąca + bonusowe materiały.<br>
+        Zero spamu.
+      </p>
+      
+      <form id="newsletter-form" onsubmit="submitNewsletter(event)">
+        <input 
+          type="email" 
+          id="newsletter-email" 
+          placeholder="Twój e-mail" 
+          required
+          autocomplete="email"
+        >
+        <button type="submit" id="newsletter-submit">
+          Chcę dostać PDF-y →
+        </button>
+      </form>
+      
+      <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 12px;">
+        Możesz zrezygnować w każdej chwili.
+      </p>
+    </div>
+
+    <div id="newsletter-success">
+      <div style="font-size: 36px; margin-bottom: 8px;">🎉</div>
+      <h3 class="text-center">Dzięki!</h3>
+      <p class="text-center">Sprawdź skrzynkę – wkrótce wyślę Ci pierwsze materiały.</p>
+    </div>
+  </div>
+</div>
 
 <script>
 'use strict';
@@ -882,10 +1045,94 @@ window.addEventListener('keydown', e => {
   }
 });
 
+/* ===== PWA Install Button ===== */
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = document.getElementById('install-btn');
+  if (btn) btn.classList.add('show');
+});
+
+window.addEventListener('appinstalled', () => {
+  deferredPrompt = null;
+  const btn = document.getElementById('install-btn');
+  if (btn) btn.classList.remove('show');
+});
+
+async function installPWA() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  if (outcome === 'accepted') {
+    showToast('Aplikacja zainstalowana!');
+  }
+  deferredPrompt = null;
+  const btn = document.getElementById('install-btn');
+  if (btn) btn.classList.remove('show');
+}
+
+/* ===== Newsletter Popup ===== */
+function shouldShowNewsletter() {
+  try {
+    if (localStorage.getItem('swm-newsletter-subscribed') === '1') return false;
+    if (localStorage.getItem('swm-newsletter-dismissed')) {
+      const dismissed = parseInt(localStorage.getItem('swm-newsletter-dismissed'), 10);
+      if (Date.now() - dismissed < 7 * 24 * 60 * 60 * 1000) return false;
+    }
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function showNewsletter() {
+  if (!shouldShowNewsletter()) return;
+  const overlay = document.getElementById('newsletter-overlay');
+  if (overlay) overlay.classList.add('show');
+}
+
+function closeNewsletter() {
+  const overlay = document.getElementById('newsletter-overlay');
+  if (overlay) overlay.classList.remove('show');
+  try {
+    localStorage.setItem('swm-newsletter-dismissed', Date.now().toString());
+  } catch (e) {}
+}
+
+function submitNewsletter(e) {
+  e.preventDefault();
+  const email = document.getElementById('newsletter-email').value.trim();
+  if (!email) return;
+
+  try {
+    localStorage.setItem('swm-newsletter-subscribed', '1');
+    localStorage.setItem('swm-newsletter-email', email);
+  } catch (e) {}
+
+  document.getElementById('newsletter-form-wrap').style.display = 'none';
+  document.getElementById('newsletter-success').classList.add('show');
+
+  setTimeout(() => {
+    closeNewsletter();
+  }, 2500);
+
+  console.log('Zapisano e-mail (lokalnie):', email);
+}
+
+setTimeout(() => {
+  showNewsletter();
+}, 12000);
+
+document.getElementById('newsletter-overlay')?.addEventListener('click', (e) => {
+  if (e.target.id === 'newsletter-overlay') closeNewsletter();
+});
+
 init();
 </script>
 
-<!-- ===== PWA – rejestracja Service Workera ===== -->
+<!-- ===== PWA Service Worker ===== -->
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
