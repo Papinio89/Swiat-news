@@ -154,8 +154,20 @@
     #bottom-nav { display: none; }
   }
 
-  .react-btn { transition: .15s; }
-  .react-btn.active { color: #f59e0b !important; border-color: #f59e0b !important; }
+  .react-btn { transition: .15s; cursor: pointer; }
+  .react-btn.active { color: #f59e0b !important; border-color: #f59e0b !important; background: rgba(245,158,11,0.1); }
+
+  /* Pasek postępu przewijania */
+  #scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.05s linear;
+  }
 
   /* Pull to refresh */
   #ptr {
@@ -166,11 +178,11 @@
     pointer-events: none;
   }
   #ptr.visible { transform: translateY(50px); }
-  #ptr.refreshing { transform: translateY(50px); }
 </style>
 </head>
 <body class="min-h-screen relative">
 
+<div id="scroll-progress"></div>
 <div id="ptr">↓ Pociągnij, aby odświeżyć</div>
 
 <header class="sticky top-0 z-40 border-b backdrop-blur" style="background: var(--header-bg); border-color: var(--border);">
@@ -502,15 +514,22 @@ function getComment(x) { return x.comment || x.why || x.whyImportant || x.import
 function sourceName(x) { return x.source_name || x.sourceName || x.source || ''; }
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
-function imageOf(x) { return x.image || x.image_url || x.imageUrl || x.img || x.photo || ''; }
-function getPubDate(x) { return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || x._archiveDate || ''; }
+function imageOf(x) { 
+  return x.image || x.image_url || x.imageUrl || x.img || x.photo || x.thumbnail || x.thumb || ''; 
+}
+function getPubDate(x) { 
+  return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || x._archiveDate || ''; 
+}
 
 function formatDate(dateStr) {
   if (!dateStr) return '';
   try {
     const d = new Date(dateStr);
     if (isNaN(d.getTime())) return String(dateStr);
-    return d.toLocaleString('pl-PL', { day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' });
+    return d.toLocaleString('pl-PL', { 
+      day:'2-digit', month:'2-digit', year:'numeric', 
+      hour:'2-digit', minute:'2-digit' 
+    });
   } catch(e) { return String(dateStr); }
 }
 
@@ -571,14 +590,17 @@ function updateThemeColor() {
   meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
 }
 
+/* ===== REAKCJE – działa poprawnie ===== */
 function react(btn, type) {
-  const article = btn.closest('article') || btn.closest('.headline-item');
+  const article = btn.closest('article');
   if (!article) return;
-  const titleEl = article.querySelector('h3, .title');
-  const postKey = 'swm-react-' + (titleEl ? titleEl.textContent.trim().slice(0, 80) : Math.random());
+
+  const titleEl = article.querySelector('h3');
+  const postKey = 'swm-react-' + (titleEl ? titleEl.textContent.trim().slice(0, 60) : Math.random());
   const current = localStorage.getItem(postKey);
   const buttons = article.querySelectorAll('.react-btn');
 
+  // odkliknięcie tej samej reakcji
   if (current === type) {
     localStorage.removeItem(postKey);
     buttons.forEach(b => {
@@ -589,10 +611,10 @@ function react(btn, type) {
     return;
   }
 
+  // ustawienie nowej
   localStorage.setItem(postKey, type);
   buttons.forEach(b => {
-    const match = b.getAttribute('onclick')?.match(/'(\\w+)'/);
-    const bType = match ? match[1] : null;
+    const bType = b.dataset.type;
     const c = b.querySelector('.count');
     if (bType === type) {
       b.classList.add('active');
@@ -667,16 +689,16 @@ function card(item) {
         ${comment ? `<div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);"><div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div><div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div></div>` : ''}
         
         <div class="flex gap-1.5 mt-3 flex-wrap">
-          <button onclick="react(this,'fire')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">🔥 <span class="count">0</span></button>
-          <button onclick="react(this,'wow')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">😮 <span class="count">0</span></button>
-          <button onclick="react(this,'like')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">👍 <span class="count">0</span></button>
-          <button onclick="react(this,'idea')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">💡 <span class="count">0</span></button>
+          <button data-type="fire" onclick="react(this,'fire')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">🔥 <span class="count">0</span></button>
+          <button data-type="wow" onclick="react(this,'wow')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">😮 <span class="count">0</span></button>
+          <button data-type="like" onclick="react(this,'like')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">👍 <span class="count">0</span></button>
+          <button data-type="idea" onclick="react(this,'idea')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">💡 <span class="count">0</span></button>
         </div>
 
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
           <div class="min-w-0">
-            <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item))}</div>
-            ${pubDate ? `<div class="text-[9px] text-mute opacity-70">${escapeHtml(formatDate(pubDate))}</div>` : ''}
+            <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item) || 'Źródło')}</div>
+            ${pubDate ? `<div class="text-[9px] text-mute opacity-80">${escapeHtml(formatDate(pubDate))}</div>` : ''}
           </div>
           <div class="flex items-center gap-2 shrink-0">
             <button onclick="reportError(JSON.parse(decodeURIComponent('${itemJson}')))" class="text-[11px] text-mute hover:text-red-500" title="Zgłoś błąd">⚠</button>
@@ -973,7 +995,7 @@ async function init() {
   funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
   archiveGroups = normalizeArchive(a.data);
 
-  // archive fun - obsługa formatu z kluczami dat
+  // archive fun
   archiveFunItems = [];
   if (af.ok) {
     const d = af.data;
@@ -1060,11 +1082,10 @@ document.addEventListener('touchmove', e => {
   }
 }, { passive: true });
 
-document.addEventListener('touchend', e => {
+document.addEventListener('touchend', () => {
   if (!ptrPulling) return;
   ptrPulling = false;
   if (ptrEl.classList.contains('visible')) {
-    ptrEl.classList.add('refreshing');
     ptrEl.textContent = 'Odświeżanie…';
     setTimeout(() => location.reload(), 400);
   } else {
@@ -1072,9 +1093,15 @@ document.addEventListener('touchend', e => {
   }
 });
 
+/* Pasek postępu */
 window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  $('scroll-progress').style.width = progress + '%';
+
   const btn = $('back-top');
-  if (window.scrollY > 400) { btn.classList.remove('hidden'); btn.classList.add('flex'); }
+  if (scrollTop > 400) { btn.classList.remove('hidden'); btn.classList.add('flex'); }
   else { btn.classList.add('hidden'); btn.classList.remove('flex'); }
 }, { passive: true });
 
@@ -1131,7 +1158,6 @@ function submitNewsletter(e) {
   $('newsletter-form-wrap').style.display = 'none';
   $('newsletter-success').classList.add('show');
   setTimeout(closeNewsletter, 2500);
-  console.log('Zapisano e-mail (lokalnie):', email);
 }
 setTimeout(showNewsletter, 10000);
 $('newsletter-overlay')?.addEventListener('click', e => {
