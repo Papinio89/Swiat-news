@@ -11,31 +11,26 @@
 <meta name="description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność — krótko i na temat.">
 <meta name="robots" content="index, follow">
 
-<!-- PWA / Apple -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Świat w Minutę">
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://swiat-w-minute.vercel.app/">
 <meta property="og:title" content="Świat w Minutę — Przegląd dnia">
-<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund. Fakty, geopolityka, rynki i obronność.">
+<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund.">
 <meta property="og:image" content="https://swiat-w-minute.vercel.app/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Świat w Minutę">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
 <meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund.">
 <meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icon/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="manifest" href="/manifest.json">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -75,190 +70,95 @@
     --text-muted: #64748b;
     --header-bg: rgba(2,6,23,0.95);
   }
-
   html, body {
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--bg);
     color: var(--text);
   }
-
   .card-img { aspect-ratio: 16/9; object-fit: cover; }
-
-  .tab.active {
-    background: #0f172a;
-    color: #fff;
-  }
-  .dark .tab.active {
-    background: #f8fafc;
-    color: #0f172a;
-  }
-
+  .tab.active { background: #0f172a; color: #fff; }
+  .dark .tab.active { background: #f8fafc; color: #0f172a; }
   #toast {
-    transform: translateY(120px);
-    opacity: 0;
-    pointer-events: none;
-    transition: .25s;
+    transform: translateY(120px); opacity: 0; pointer-events: none; transition: .25s;
   }
-  #toast.show {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
+  #toast.show { transform: translateY(0); opacity: 1; }
   .headline-item { transition: background .15s; }
   .headline-item:hover { background: rgba(245,158,11,.08); }
   .headline-item.read { opacity: .55; }
-  .headline-item.read .title {
-    text-decoration: line-through;
-    text-decoration-color: #94a3b8;
-  }
+  .headline-item.read .title { text-decoration: line-through; text-decoration-color: #94a3b8; }
   .card.read { opacity: .72; }
-
   .check-btn {
-    width: 18px; height: 18px; border-radius: 5px;
-    border: 1.5px solid #cbd5e1;
+    width: 18px; height: 18px; border-radius: 5px; border: 1.5px solid #cbd5e1;
     display: inline-flex; align-items: center; justify-content: center;
     flex-shrink: 0; cursor: pointer; transition: .15s; font-size: 11px;
     background: transparent; color: transparent;
   }
-  .check-btn.checked {
-    background: #f59e0b; border-color: #f59e0b; color: #111;
-  }
+  .check-btn.checked { background: #f59e0b; border-color: #f59e0b; color: #111; }
   .dark .check-btn { border-color: #64748b; }
-
   .surface { background: var(--bg-card); border-color: var(--border); }
   .text-main { color: var(--text); }
   .text-sec { color: var(--text-secondary); }
   .text-mute { color: var(--text-muted); }
+  #help-panel { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  #help-panel.open { max-height: 280px; }
 
-  #help-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease;
-  }
-  #help-panel.open {
-    max-height: 280px;
-  }
-
-  /* ===== Przycisk instalacji PWA ===== */
+  /* Install button */
   #install-btn {
-    display: none;
-    align-items: center;
-    gap: 6px;
-    border-radius: 12px;
-    padding: 8px 14px;
-    font-size: 12px;
-    font-weight: 700;
-    background: linear-gradient(135deg, #f59e0b, #d97706);
-    color: #111;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
-    transition: transform .15s, box-shadow .15s;
+    display: none; align-items: center; gap: 6px; border-radius: 12px;
+    padding: 8px 14px; font-size: 12px; font-weight: 700;
+    background: linear-gradient(135deg, #f59e0b, #d97706); color: #111;
+    border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(245,158,11,.35);
   }
-  #install-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.45);
-  }
-  #install-btn.show {
-    display: inline-flex;
-  }
+  #install-btn.show { display: inline-flex; }
 
-  /* ===== Popup newsletter ===== */
+  /* Newsletter popup */
   #newsletter-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(4px);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .3s;
+    position: fixed; inset: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
+    z-index: 100; display: flex; align-items: center; justify-content: center;
+    padding: 16px; opacity: 0; pointer-events: none; transition: opacity .3s;
   }
-  #newsletter-overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
+  #newsletter-overlay.show { opacity: 1; pointer-events: auto; }
   #newsletter-popup {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    max-width: 380px;
-    width: 100%;
-    padding: 24px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    transform: translateY(20px);
-    transition: transform .3s;
-    position: relative;
-  }
-  #newsletter-overlay.show #newsletter-popup {
-    transform: translateY(0);
-  }
-  #newsletter-popup h3 {
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 6px;
-    color: var(--text);
-  }
-  #newsletter-popup p {
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.5;
-    margin-bottom: 16px;
-  }
-  #newsletter-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  #newsletter-email {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    background: var(--bg-muted);
-    color: var(--text);
-    font-size: 14px;
-    outline: none;
-  }
-  #newsletter-email:focus {
-    border-color: #f59e0b;
-  }
-  #newsletter-submit {
-    padding: 12px;
-    border-radius: 12px;
-    background: #0f172a;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-  }
-  .dark #newsletter-submit {
-    background: #f8fafc;
-    color: #0f172a;
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
+    max-width: 380px; width: 100%; padding: 24px; position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,.25);
   }
   #newsletter-close {
-    position: absolute;
-    top: 12px;
-    right: 14px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: var(--text-muted);
-    cursor: pointer;
+    position: absolute; top: 12px; right: 14px; background: none; border: none;
+    font-size: 20px; color: var(--text-muted); cursor: pointer;
   }
-  #newsletter-success {
-    display: none;
-    text-align: center;
-    padding: 10px 0;
+  #newsletter-email {
+    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--bg-muted); color: var(--text); font-size: 14px; outline: none;
   }
-  #newsletter-success.show {
-    display: block;
+  #newsletter-submit {
+    padding: 12px; border-radius: 12px; background: #0f172a; color: #fff;
+    font-weight: 700; font-size: 14px; border: none; cursor: pointer; width: 100%;
   }
+  .dark #newsletter-submit { background: #f8fafc; color: #0f172a; }
+  #newsletter-success { display: none; text-align: center; }
+  #newsletter-success.show { display: block; }
+
+  /* Bottom nav */
+  #bottom-nav {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+    border-top: 1px solid var(--border); background: var(--header-bg);
+    backdrop-filter: blur(12px);
+  }
+  #bottom-nav .bottom-tab {
+    color: var(--text-muted); padding: 6px 4px; border-radius: 10px;
+    font-size: 10px; font-weight: 700; transition: .15s;
+  }
+  #bottom-nav .bottom-tab.active { color: #f59e0b; }
+  body { padding-bottom: 64px; }
+  @media (min-width: 640px) {
+    body { padding-bottom: 0; }
+    #bottom-nav { display: none; }
+  }
+
+  /* React buttons */
+  .react-btn { transition: .15s; }
+  .react-btn.active { color: #f59e0b; border-color: #f59e0b !important; }
 </style>
 </head>
 <body class="min-h-screen">
@@ -273,10 +173,8 @@
       </div>
     </a>
     <div class="flex items-center gap-2">
-      <button id="install-btn" onclick="installPWA()">
-        📲 Zainstaluj
-      </button>
-      <button onclick="toggleHelp()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Pomoc" title="Skróty (klawisz ?)">?</button>
+      <button id="install-btn" onclick="installPWA()">📲 Zainstaluj</button>
+      <button onclick="toggleHelp()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Pomoc">?</button>
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="hidden rounded-xl bg-gradient-to-r from-fuchsia-600 to-orange-500 px-3 py-2 text-xs font-bold text-white sm:block">Instagram</a>
       <button onclick="toggleDark()" class="h-9 w-9 rounded-xl border text-sm surface text-main" style="border-color: var(--border);" aria-label="Tryb ciemny">☾</button>
     </div>
@@ -285,17 +183,16 @@
 
 <main class="mx-auto max-w-6xl px-4 pb-28 pt-4">
 
-  <!-- Panel pomocy -->
   <div id="help-panel" class="mb-3 rounded-2xl border surface" style="border-color: var(--border);">
     <div class="p-4 text-sm">
       <div class="mb-2 text-xs font-black uppercase tracking-wider text-amber-500">Skróty i wskazówki</div>
       <ul class="space-y-1.5 text-sec text-[13px]">
         <li><kbd class="rounded bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 text-[11px] font-bold text-main">?</kbd> — pokaż / ukryj tę pomoc</li>
         <li><kbd class="rounded bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 text-[11px] font-bold text-main">Esc</kbd> — wyczyść wyszukiwanie</li>
-        <li><span class="font-semibold text-main">□</span> — zaznacz wiadomość jako przeczytaną</li>
-        <li><span class="font-semibold text-main">↗</span> — udostępnij (lub skopiuj link)</li>
-        <li><span class="font-semibold text-main">☾</span> — przełącz tryb jasny / ciemny</li>
-        <li class="pt-1 text-mute">Na telefonie: menu przeglądarki → „Dodaj do ekranu głównego”</li>
+        <li><span class="font-semibold text-main">□</span> — zaznacz jako przeczytane</li>
+        <li><span class="font-semibold text-main">↗</span> — udostępnij</li>
+        <li><span class="font-semibold text-main">☾</span> — tryb jasny / ciemny</li>
+        <li class="pt-1 text-mute">Na telefonie: „Dodaj do ekranu głównego”</li>
       </ul>
     </div>
   </div>
@@ -308,7 +205,6 @@
       </div>
       <div id="last-update" class="text-right text-[10px] text-sec">Ładowanie…</div>
     </div>
-
     <div id="info-widgets" class="grid grid-cols-3 gap-1.5">
       <div class="rounded-xl border px-2.5 py-1.5 surface" style="border-color: var(--border);">
         <div class="text-[9px] font-bold uppercase text-sec">WAW</div>
@@ -342,18 +238,20 @@
 
   <nav class="mb-4 flex gap-1.5 overflow-x-auto pb-1" aria-label="Nawigacja">
     <button id="tab-today" class="tab active whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold" style="border-color: var(--border);" onclick="switchTab('today')">60 sekund</button>
-    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('all')">Dzisiejsze news</button>
+    <button id="tab-all" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('all')">Dzisiejsze</button>
     <button id="tab-fast" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('fast')">🚨 Pilne</button>
     <button id="tab-fun" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('fun')">✨ Ciekawostki</button>
+    <button id="tab-week" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('week')">📅 Tydzień</button>
     <button id="tab-archive" class="tab whitespace-nowrap rounded-xl border px-3.5 py-2 text-xs font-bold text-sec" style="border-color: var(--border);" onclick="switchTab('archive')">Archiwum</button>
   </nav>
 
   <div id="load-error" class="mb-4 hidden rounded-2xl border border-red-300 bg-red-50 p-4 text-sm text-red-800 dark:border-red-900 dark:bg-red-950/40 dark:text-red-200">
     <div class="font-bold">Nie udało się pobrać wydania</div>
-    <p class="mt-1 text-[13px] opacity-90">Sprawdź połączenie i odśwież stronę. Jeśli problem się powtarza, dane mogą być chwilowo niedostępne.</p>
-    <button onclick="location.reload()" class="mt-3 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white">Odśwież stronę</button>
+    <p class="mt-1 text-[13px] opacity-90">Sprawdź połączenie i odśwież stronę.</p>
+    <button onclick="location.reload()" class="mt-3 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white">Odśwież</button>
   </div>
 
+  <!-- TODAY -->
   <section id="today-view">
     <div class="mb-3 flex items-end justify-between gap-3">
       <div>
@@ -365,7 +263,6 @@
     <div id="headline-list" class="rounded-2xl border overflow-hidden surface" style="border-color: var(--border);">
       <div class="p-6 text-center text-sm text-sec">Ładowanie…</div>
     </div>
-    
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
         <div>
@@ -378,6 +275,7 @@
     </div>
   </section>
 
+  <!-- ALL -->
   <section id="all-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-blue-500">Pełny feed</div>
@@ -387,6 +285,7 @@
     <button id="all-more" onclick="loadMoreAll()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
+  <!-- FAST -->
   <section id="fast-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-red-500">Najważniejsze alerty</div>
@@ -395,14 +294,32 @@
     <div id="breaking" class="space-y-4"></div>
   </section>
 
+  <!-- FUN -->
   <section id="fun-view" class="hidden">
-    <div class="mb-3">
-      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
-      <h2 class="text-lg font-black text-main">✨ Ciekawostki</h2>
+    <div class="mb-3 flex items-center justify-between gap-3">
+      <div>
+        <div class="text-[10px] font-bold uppercase tracking-[.18em] text-fuchsia-500">Rozrywka</div>
+        <h2 class="text-lg font-black text-main">✨ Ciekawostki</h2>
+      </div>
+      <button onclick="randomFunFact()" class="rounded-xl border px-3 py-2 text-xs font-bold surface" style="border-color: var(--border);">
+        🎲 Losuj ciekawostkę
+      </button>
     </div>
     <div id="fun-grid" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+    <button id="fun-more" onclick="loadMoreFun()" class="mx-auto mt-5 hidden rounded-xl bg-slate-950 px-5 py-2.5 text-xs font-bold text-white dark:bg-white dark:text-slate-950">Pokaż więcej</button>
   </section>
 
+  <!-- WEEK -->
+  <section id="week-view" class="hidden">
+    <div class="mb-4">
+      <div class="text-[10px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div>
+      <h2 class="text-lg font-black text-main">📅 Tydzień w skrócie</h2>
+      <p class="text-sm text-sec mt-1">Automatycznie wygenerowany przegląd na podstawie ostatnich dni</p>
+    </div>
+    <div id="week-content"></div>
+  </section>
+
+  <!-- ARCHIVE -->
   <section id="archive-view" class="hidden">
     <div class="mb-3">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-sec">Historia</div>
@@ -416,84 +333,64 @@
 
 <footer class="border-t" style="background: var(--bg-card); border-color: var(--border);">
   <div class="mx-auto max-w-6xl px-4 py-8">
-    <button onclick="toggleDisclaimer()" 
-            class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec transition hover:border-amber-300"
-            style="background: var(--bg-muted); border-color: var(--border);">
+    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec" style="background: var(--bg-muted); border-color: var(--border);">
       ℹ️ Ważne informacje o stronie
     </button>
-    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 sm:p-6" style="background: var(--bg-muted); border-color: var(--border);">
-      <div class="flex items-start gap-3">
-        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-lg dark:bg-amber-950/50">ℹ️</div>
-        <div class="min-w-0">
-          <h3 class="text-sm font-black text-main">Informacja o stronie</h3>
-          <p class="mt-1.5 text-xs leading-relaxed text-sec">
-            Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem sztucznej inteligencji. 
-            Treści mogą zawierać uproszczenia lub nieścisłości. Zawsze weryfikuj informacje w oryginalnym źródle.
-          </p>
-          <div class="mt-4 grid gap-2 sm:grid-cols-2 text-[11px] text-mute">
-            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Generowane automatycznie przez AI</div>
-            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Kursy i pogoda mają charakter orientacyjny</div>
-            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Nie ponosimy odpowiedzialności za treści zewnętrzne</div>
-            <div class="flex items-center gap-2"><span class="text-amber-500">•</span> Linki prowadzą do oryginalnych źródeł</div>
-          </div>
-        </div>
-      </div>
+    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5" style="background: var(--bg-muted); border-color: var(--border);">
+      <h3 class="text-sm font-black text-main">Informacja o stronie</h3>
+      <p class="mt-1.5 text-xs leading-relaxed text-sec">
+        Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem AI. 
+        Treści mogą zawierać uproszczenia. Zawsze weryfikuj w oryginalnym źródle.
+      </p>
     </div>
-
     <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
-      <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border" style="background: var(--bg-muted); border-color: var(--border);">
-        <span class="text-amber-500">👁</span>
-        <span class="font-medium">Odwiedzin:</span>
-        <img src="https://api.visitorbadge.io/api/combined?path=swiat-w-minute.vercel.app&labelColor=%2300000000&countColor=%23f59e0b&style=flat&label=." 
-             alt="Licznik odwiedzin" class="inline-block h-4" loading="lazy" referrerpolicy="no-referrer">
-      </div>
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 w-full max-w-md text-center sm:text-left">
-        <p>Świat w Minutę © <span id="year"></span></p>
-        <p class="font-medium">Najważniejsze wiadomości bez zbędnego szumu</p>
-      </div>
+      <p>Świat w Minutę © <span id="year"></span></p>
     </div>
   </div>
 </footer>
 
-<button id="back-top" onclick="goTop()" aria-label="Wróć na górę" 
-  class="fixed bottom-5 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl transition hover:bg-amber-500 hover:text-slate-950 dark:bg-white dark:text-slate-950">↑</button>
-<div id="toast" class="fixed bottom-5 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl"></div>
+<!-- Bottom navigation -->
+<nav id="bottom-nav">
+  <div class="flex justify-around items-center h-14 px-1">
+    <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
+      <span class="text-lg">⏱</span><span>60 sek</span>
+    </button>
+    <button onclick="switchTab('fast')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="fast">
+      <span class="text-lg">🚨</span><span>Pilne</span>
+    </button>
+    <button onclick="switchTab('fun')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="fun">
+      <span class="text-lg">✨</span><span>Ciekawostki</span>
+    </button>
+    <button onclick="switchTab('week')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="week">
+      <span class="text-lg">📅</span><span>Tydzień</span>
+    </button>
+    <button onclick="switchTab('archive')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="archive">
+      <span class="text-lg">🗂</span><span>Archiwum</span>
+    </button>
+  </div>
+</nav>
 
-<!-- ===== Popup Newsletter ===== -->
+<button id="back-top" onclick="goTop()" class="fixed bottom-20 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl sm:bottom-5 dark:bg-white dark:text-slate-950">↑</button>
+<div id="toast" class="fixed bottom-20 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl sm:bottom-5"></div>
+
+<!-- Newsletter popup -->
 <div id="newsletter-overlay">
   <div id="newsletter-popup">
-    <button id="newsletter-close" onclick="closeNewsletter()" aria-label="Zamknij">×</button>
-    
+    <button id="newsletter-close" onclick="closeNewsletter()">×</button>
     <div id="newsletter-form-wrap">
-      <div class="text-center mb-1" style="font-size: 28px;">📬</div>
-      <h3 class="text-center">Chcesz więcej niż minutę?</h3>
-      <p class="text-center">
-        Zostaw maila i dostaniesz darmowe PDF-y z przeglądem miesiąca + bonusowe materiały.<br>
-        Zero spamu.
-      </p>
-      
+      <div class="text-center text-3xl mb-2">📬</div>
+      <h3 class="text-center text-lg font-black mb-1">Chcesz więcej niż minutę?</h3>
+      <p class="text-center text-sm text-sec mb-4">Zostaw maila i dostaniesz darmowe PDF-y z przeglądem miesiąca + bonusy. Zero spamu.</p>
       <form id="newsletter-form" onsubmit="submitNewsletter(event)">
-        <input 
-          type="email" 
-          id="newsletter-email" 
-          placeholder="Twój e-mail" 
-          required
-          autocomplete="email"
-        >
-        <button type="submit" id="newsletter-submit">
-          Chcę dostać PDF-y →
-        </button>
+        <input type="email" id="newsletter-email" placeholder="Twój e-mail" required class="mb-3">
+        <button type="submit" id="newsletter-submit">Chcę dostać PDF-y →</button>
       </form>
-      
-      <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 12px;">
-        Możesz zrezygnować w każdej chwili.
-      </p>
+      <p class="text-center text-[11px] text-mute mt-3">Możesz zrezygnować w każdej chwili.</p>
     </div>
-
     <div id="newsletter-success">
-      <div style="font-size: 36px; margin-bottom: 8px;">🎉</div>
-      <h3 class="text-center">Dzięki!</h3>
-      <p class="text-center">Sprawdź skrzynkę – wkrótce wyślę Ci pierwsze materiały.</p>
+      <div class="text-4xl mb-2">🎉</div>
+      <h3 class="font-black">Dzięki!</h3>
+      <p class="text-sm text-sec">Sprawdź skrzynkę – wkrótce wyślę materiały.</p>
     </div>
   </div>
 </div>
@@ -502,7 +399,10 @@
 'use strict';
 const $ = id => document.getElementById(id);
 let newsItems = [], rawFeedItems = [], fastItems = [], funItems = [], archiveGroups = [];
-let currentTab = 'today', allShown = 6, archiveShown = 2, readKeys = new Set();
+let archiveFunItems = [];
+let allFunItems = [];
+let currentTab = 'today', allShown = 6, archiveShown = 2, funShown = 9;
+let readKeys = new Set();
 let dataLoadFailed = false;
 const titleCache = JSON.parse(localStorage.getItem('swm-title-cache') || '{}');
 
@@ -519,8 +419,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 function escapeHtml(v) {
   return String(v == null ? '' : v)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 
 function getTitle(v) {
@@ -540,7 +440,7 @@ async function translateToPolish(text) {
   const key = text.trim().toLowerCase();
   if (titleCache[key]) return titleCache[key];
   try {
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0, 500))}&langpair=en|pl`;
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0,500))}&langpair=en|pl`;
     const res = await fetch(url);
     const data = await res.json();
     let translated = data?.responseData?.translatedText?.trim();
@@ -550,7 +450,7 @@ async function translateToPolish(text) {
       try { localStorage.setItem('swm-title-cache', JSON.stringify(titleCache)); } catch(e){}
       return translated;
     }
-  } catch (e) {}
+  } catch(e){}
   return text;
 }
 
@@ -577,13 +477,11 @@ function pickEmoji(title, cat) {
 }
 
 function normalize(s) {
-  return String(s || '').toLowerCase().normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
 }
 
 function keyOf(x) {
-  return String(x.link || x.url || '').trim().toLowerCase().replace(/\/$/, '') ||
-         normalize(getTitle(x.title).title);
+  return String(x.link || x.url || '').trim().toLowerCase().replace(/\/$/,'') || normalize(getTitle(x.title).title);
 }
 
 function uniqueByKey(items) {
@@ -603,6 +501,16 @@ function sourceName(x) { return x.source_name || x.sourceName || x.source || '';
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
 function imageOf(x) { return x.image || x.image_url || x.imageUrl || x.img || x.photo || ''; }
+function getPubDate(x) { return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || ''; }
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  try {
+    const d = new Date(dateStr);
+    if (isNaN(d.getTime())) return String(dateStr);
+    return d.toLocaleString('pl-PL', { day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' });
+  } catch(e) { return String(dateStr); }
+}
 
 function categoryClass(cat) {
   const c = normalize(cat);
@@ -616,38 +524,32 @@ function categoryClass(cat) {
 }
 
 function isRead(x) { return readKeys.has(keyOf(x)); }
-
 function toggleRead(x, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
   const k = keyOf(x);
   if (!k) return;
-  if (readKeys.has(k)) readKeys.delete(k);
-  else readKeys.add(k);
+  if (readKeys.has(k)) readKeys.delete(k); else readKeys.add(k);
   saveRead();
   renderCurrent();
 }
-
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
-
-function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e) { return '#'; } }
+function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e){ return '#'; } }
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
   const t = getTitle(item.title);
   const url = sourceLink(item);
-  const title = t.title;
-  const text = getSummary(item) || title;
   if (navigator.share) {
     try {
-      await navigator.share({ title, text, url: url !== '#' ? url : location.href });
+      await navigator.share({ title: t.title, text: getSummary(item) || t.title, url: url !== '#' ? url : location.href });
       showToast('Udostępniono');
-    } catch(e) {}
+    } catch(e){}
   } else {
     try {
       await navigator.clipboard.writeText(url !== '#' ? url : location.href);
       showToast('Link skopiowany');
-    } catch(e) { showToast('Nie udało się skopiować'); }
+    } catch(e){ showToast('Nie udało się skopiować'); }
   }
 }
 
@@ -659,19 +561,30 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-function toggleDisclaimer() {
-  $('disclaimer').classList.toggle('hidden');
-}
-
-function toggleHelp() {
-  $('help-panel').classList.toggle('open');
-}
-
+function toggleDisclaimer() { $('disclaimer').classList.toggle('hidden'); }
+function toggleHelp() { $('help-panel').classList.toggle('open'); }
 function updateThemeColor() {
   const meta = $('theme-color-meta');
   if (!meta) return;
-  const isDark = document.documentElement.classList.contains('dark');
-  meta.setAttribute('content', isDark ? '#020617' : '#f8fafc');
+  meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
+}
+
+function react(btn, type) {
+  const countEl = btn.querySelector('.count');
+  let count = parseInt(countEl.textContent || '0', 10) + 1;
+  countEl.textContent = count;
+  btn.classList.add('active');
+  try {
+    const key = 'swm-react-' + type + '-' + (btn.closest('article')?.querySelector('h3')?.textContent || Math.random());
+    localStorage.setItem(key, count);
+  } catch(e){}
+}
+
+function reportError(item) {
+  const title = getTitle(item.title).title;
+  const url = sourceLink(item);
+  const body = `Zgłoszenie błędu / nieścisłości:\n\nTytuł: ${title}\nLink: ${url}\n\nOpisz problem:\n`;
+  window.location.href = `mailto:twoj@email.pl?subject=${encodeURIComponent('Błąd – Świat w Minutę')}&body=${encodeURIComponent(body)}`;
 }
 
 function headlineRow(item, displayTitle, emoji) {
@@ -680,21 +593,22 @@ function headlineRow(item, displayTitle, emoji) {
   const itemJson = encodeURIComponent(JSON.stringify(item));
   const em = emoji || '📰';
   const title = displayTitle || getTitle(item.title).title;
+  const pubDate = getPubDate(item);
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
-      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="${read ? 'Nieprzeczytane' : 'Przeczytane'}">
+      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)">
         ${read ? '✓' : ''}
       </button>
-      <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" 
-         ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
+      <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2 no-underline">
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
-        <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
+        <div class="min-w-0">
+          <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
+          ${pubDate ? `<div class="text-[10px] text-mute mt-0.5">${escapeHtml(formatDate(pubDate))}</div>` : ''}
+        </div>
       </a>
-      <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-              class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500 transition" 
-              title="Udostępnij">↗</button>
+      <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
     </div>`;
 }
 
@@ -707,6 +621,7 @@ function card(item) {
   const cat = category(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
+  const pubDate = getPubDate(item);
 
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -718,25 +633,31 @@ function card(item) {
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
-          <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);" title="Przeczytane">
-            ${read ? '✓' : ''}
-          </button>
-          <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" 
-                  class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec" style="background: var(--bg-card);" title="Udostępnij">↗</button>
+          <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
+          <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec" style="background: var(--bg-card);">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="text-[15px] font-black leading-snug text-main">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
+        <h3 class="text-[15px] font-black leading-snug text-main">${t.emoji ? escapeHtml(t.emoji)+' ' : ''}${escapeHtml(t.title)}</h3>
         ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-sec">${escapeHtml(summary)}</p>` : ''}
-        ${comment ? `
-          <div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);">
-            <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div>
-            <div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div>
-          </div>` : ''}
+        ${comment ? `<div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);"><div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div><div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div></div>` : ''}
+        
+        <div class="flex gap-1.5 mt-3 flex-wrap">
+          <button onclick="react(this,'fire')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">🔥 <span class="count">0</span></button>
+          <button onclick="react(this,'wow')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">😮 <span class="count">0</span></button>
+          <button onclick="react(this,'like')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">👍 <span class="count">0</span></button>
+          <button onclick="react(this,'idea')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">💡 <span class="count">0</span></button>
+        </div>
+
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
-          <span class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item))}</span>
-          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="shrink-0 text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
+          <div class="min-w-0">
+            <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item))}</div>
+            ${pubDate ? `<div class="text-[9px] text-mute opacity-70">${escapeHtml(formatDate(pubDate))}</div>` : ''}
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="reportError(JSON.parse(decodeURIComponent('${itemJson}')))" class="text-[11px] text-mute hover:text-red-500" title="Zgłoś błąd">⚠</button>
+            ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
+          </div>
         </div>
       </div>
     </article>`;
@@ -744,30 +665,19 @@ function card(item) {
 
 function funMini(item) {
   const t = getTitle(item.title);
-  return `
-    <article class="rounded-xl border p-2.5 surface" style="border-color: var(--border);">
-      <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
-      <h3 class="text-sm font-extrabold leading-snug text-main">${t.emoji ? escapeHtml(t.emoji) + ' ' : ''}${escapeHtml(t.title)}</h3>
-    </article>`;
+  return `<article class="rounded-xl border p-2.5 surface" style="border-color: var(--border);">
+    <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-fuchsia-500">${escapeHtml(category(item) || 'CIEKAWOSTKA')}</div>
+    <h3 class="text-sm font-extrabold leading-snug text-main">${t.emoji ? escapeHtml(t.emoji)+' ' : ''}${escapeHtml(t.title)}</h3>
+  </article>`;
 }
 
 async function renderToday() {
   const items = uniqueByKey([...newsItems, ...rawFeedItems]);
   $('edition-time').textContent = items.length ? `${items.length} tematów` : '';
-
   if (!items.length && dataLoadFailed) {
-    $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak danych do wyświetlenia.</div>';
+    $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak danych.</div>';
     return;
   }
-
-  $('headline-list').innerHTML = items.length
-    ? items.map(item => {
-        const t = getTitle(item.title);
-        const emoji = t.emoji || pickEmoji(t.title, category(item));
-        return headlineRow(item, t.title, emoji);
-      }).join('')
-    : '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
-
   const translated = await Promise.all(items.map(async (item) => {
     const t = getTitle(item.title);
     let title = t.title;
@@ -776,11 +686,7 @@ async function renderToday() {
     if (!emoji || emoji === '•') emoji = pickEmoji(title, category(item));
     return { item, title, emoji };
   }));
-
-  $('headline-list').innerHTML = translated.map(({ item, title, emoji }) =>
-    headlineRow(item, title, emoji)
-  ).join('');
-
+  $('headline-list').innerHTML = translated.map(({item, title, emoji}) => headlineRow(item, title, emoji)).join('') || '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);
   $('fun-preview-grid').innerHTML = fp.map(funMini).join('');
@@ -788,38 +694,117 @@ async function renderToday() {
 
 function renderAll() {
   const items = newsItems.slice(0, allShown);
-  $('all-grid').innerHTML = items.length
-    ? items.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak wiadomości.</div>';
+  $('all-grid').innerHTML = items.length ? items.map(card).join('') : '<div class="col-span-full p-8 text-center text-sm text-sec">Brak wiadomości.</div>';
   $('all-more').classList.toggle('hidden', allShown >= newsItems.length);
 }
-
-function loadMoreAll() {
-  allShown += 6;
-  renderAll();
-}
+function loadMoreAll() { allShown += 6; renderAll(); }
 
 function renderFast() {
-  const topNews = newsItems.slice(0, 5);
-  const items = uniqueByKey([...fastItems, ...topNews]);
-  $('breaking').innerHTML = items.length
-    ? items.map(card).join('')
-    : '<div class="p-6 text-center text-sm text-sec">Brak pilnych wiadomości.</div>';
+  const items = uniqueByKey([...fastItems, ...newsItems.slice(0,5)]);
+  $('breaking').innerHTML = items.length ? items.map(card).join('') : '<div class="p-6 text-center text-sm text-sec">Brak pilnych.</div>';
+}
+
+function prepareFunItems() {
+  const today = funItems.map(x => ({...x, _isToday: true}));
+  allFunItems = uniqueByKey([...today, ...archiveFunItems]);
+  allFunItems.sort((a, b) => {
+    if (a._isToday && !b._isToday) return -1;
+    if (!a._isToday && b._isToday) return 1;
+    return new Date(getPubDate(b) || 0) - new Date(getPubDate(a) || 0);
+  });
 }
 
 function renderFun() {
-  $('fun-grid').innerHTML = funItems.length
-    ? funItems.map(card).join('')
-    : '<div class="col-span-full rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak ciekawostek.</div>';
+  prepareFunItems();
+  const items = allFunItems.slice(0, funShown);
+  $('fun-grid').innerHTML = items.length ? items.map(card).join('') : '<div class="col-span-full p-8 text-center text-sm text-sec">Brak ciekawostek.</div>';
+  const more = $('fun-more');
+  more.classList.toggle('hidden', funShown >= allFunItems.length);
+  more.textContent = `Pokaż więcej (${Math.max(0, allFunItems.length - funShown)})`;
+}
+function loadMoreFun() { funShown += 9; renderFun(); }
+
+function randomFunFact() {
+  prepareFunItems();
+  if (!allFunItems.length) { showToast('Brak ciekawostek'); return; }
+  const item = allFunItems[Math.floor(Math.random() * allFunItems.length)];
+  const t = getTitle(item.title);
+  const html = `
+    <div style="position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:90;display:flex;align-items:center;justify-content:center;padding:16px" onclick="this.remove()">
+      <div class="surface rounded-2xl p-6 max-w-sm w-full border" style="border-color:var(--border)" onclick="event.stopPropagation()">
+        <div class="text-center text-3xl mb-3">🎲</div>
+        <div class="text-[10px] font-bold uppercase tracking-wider text-fuchsia-500 mb-1 text-center">Ciekawostka dnia</div>
+        <h3 class="text-base font-black leading-snug mb-3 text-center">${t.emoji || ''} ${escapeHtml(t.title)}</h3>
+        ${getSummary(item) ? `<p class="text-sm text-sec mb-4 text-center">${escapeHtml(getSummary(item))}</p>` : ''}
+        <button onclick="this.closest('div[style*=fixed]').remove()" class="w-full py-2.5 rounded-xl bg-slate-950 text-white text-sm font-bold dark:bg-white dark:text-slate-950">Zamknij</button>
+      </div>
+    </div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+function renderWeek() {
+  // Automatyczny przegląd tygodnia na podstawie dostępnych danych
+  const all = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...archiveGroups.flatMap(g => g.items || [])]);
+  const now = new Date();
+  const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+  const recent = all.filter(item => {
+    const d = new Date(getPubDate(item) || 0);
+    return !isNaN(d.getTime()) ? d >= weekAgo : true;
+  }).slice(0, 12);
+
+  const top = recent.slice(0, 6);
+  const cats = {};
+  recent.forEach(i => {
+    const c = category(i) || 'Inne';
+    cats[c] = (cats[c] || 0) + 1;
+  });
+  const topCats = Object.entries(cats).sort((a,b) => b[1]-a[1]).slice(0,4);
+
+  let html = `
+    <div class="rounded-2xl border p-5 mb-5 surface" style="border-color:var(--border); background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);">
+      <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Automatyczny przegląd</div>
+      <h3 class="text-lg font-black text-main mb-2">Ostatnie 7 dni w skrócie</h3>
+      <p class="text-sm text-sec">Na podstawie ${recent.length} zebranych materiałów. To nie jest pełna analiza redakcyjna – traktuj jako szybki przegląd.</p>
+    </div>`;
+
+  if (topCats.length) {
+    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Najczęstsze tematy</div><div class="flex flex-wrap gap-2">`;
+    topCats.forEach(([cat, cnt]) => {
+      html += `<span class="rounded-full px-3 py-1 text-xs font-bold ${categoryClass(cat)}">${escapeHtml(cat)} · ${cnt}</span>`;
+    });
+    html += `</div></div>`;
+  }
+
+  html += `<div class="mb-3 text-xs font-bold text-sec">Top wydarzenia</div><div class="grid gap-4 md:grid-cols-2">`;
+  if (top.length) {
+    top.forEach((item, idx) => {
+      const t = getTitle(item.title);
+      html += `
+        <div class="rounded-2xl border p-4 surface flex gap-3" style="border-color:var(--border)">
+          <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx+1}</div>
+          <div class="min-w-0">
+            <div class="text-[10px] font-bold uppercase text-mute mb-0.5">${escapeHtml(category(item))}</div>
+            <h4 class="text-sm font-black leading-snug text-main mb-1">${t.emoji || ''} ${escapeHtml(t.title)}</h4>
+            ${getSummary(item) ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(getSummary(item))}</p>` : ''}
+            <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item))} ${getPubDate(item) ? '· ' + formatDate(getPubDate(item)) : ''}</div>
+          </div>
+        </div>`;
+    });
+  } else {
+    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Za mało danych do wygenerowania przeglądu. Wróć za kilka dni.</div>`;
+  }
+  html += `</div>`;
+
+  $('week-content').innerHTML = html;
 }
 
 function renderArchive() {
   if (!archiveGroups.length) {
-    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color: var(--border);">Brak archiwum.</div>';
+    $('archive-content').innerHTML = '<div class="rounded-2xl border border-dashed p-8 text-center text-sm text-sec" style="border-color:var(--border)">Brak archiwum.</div>';
     $('archive-more').classList.add('hidden');
     return;
   }
-
   const groups = archiveGroups.slice(0, archiveShown);
   $('archive-content').innerHTML = groups.map(g => `
     <section class="mb-7">
@@ -827,44 +812,41 @@ function renderArchive() {
         <h3 class="text-base font-black text-main">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
         <span class="text-[10px] text-sec">${(g.items || []).length} wiadomości</span>
       </div>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        ${(g.items || []).map(card).join('')}
-      </div>
-    </section>
-  `).join('');
-
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">${(g.items || []).map(card).join('')}</div>
+    </section>`).join('');
   $('archive-more').classList.toggle('hidden', archiveShown >= archiveGroups.length);
-  if (archiveShown < archiveGroups.length) {
-    $('archive-more').textContent = `Pokaż starsze wydania (${archiveGroups.length - archiveShown})`;
-  }
+  if (archiveShown < archiveGroups.length) $('archive-more').textContent = `Pokaż starsze (${archiveGroups.length - archiveShown})`;
 }
-
-function loadMoreArchive() {
-  archiveShown += 2;
-  renderArchive();
-}
+function loadMoreArchive() { archiveShown += 2; renderArchive(); }
 
 function renderCurrent() {
   if (currentTab === 'today') renderToday();
   else if (currentTab === 'all') renderAll();
   else if (currentTab === 'fast') renderFast();
   else if (currentTab === 'fun') renderFun();
+  else if (currentTab === 'week') renderWeek();
   else renderArchive();
+  updateBottomNav();
+}
+
+function updateBottomNav() {
+  document.querySelectorAll('#bottom-nav .bottom-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === currentTab);
+  });
 }
 
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
-  $('tab-' + tab).classList.add('active');
-  
-  ['today-view', 'all-view', 'fast-view', 'fun-view', 'archive-view'].forEach(id => $(id).classList.add('hidden'));
-  $('search-results').classList.add('hidden');
-  
-  const map = { today: 'today-view', all: 'all-view', fast: 'fast-view', fun: 'fun-view', archive: 'archive-view' };
-  $(map[tab]).classList.remove('hidden');
-  
+  const tabBtn = $('tab-' + tab);
+  if (tabBtn) tabBtn.classList.add('active');
+  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));
+  $('search-results')?.classList.add('hidden');
+  const map = { today:'today-view', all:'all-view', fast:'fast-view', fun:'fun-view', week:'week-view', archive:'archive-view' };
+  $(map[tab])?.classList.remove('hidden');
   if (tab === 'all') allShown = 6;
   if (tab === 'archive') archiveShown = 2;
+  if (tab === 'fun') funShown = 9;
   renderCurrent();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -873,8 +855,7 @@ function search() {
   const q = ($('search-input').value || '').toLowerCase().trim();
   $('search-clear').classList.toggle('hidden', !q);
   if (!q) { $('search-results').classList.add('hidden'); return; }
-  
-  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveGroups.flatMap(g => g.items || [])]);
+  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveFunItems, ...archiveGroups.flatMap(g => g.items || [])]);
   const words = normalize(q).split(' ').filter(Boolean);
   const hits = pool.filter(x => {
     const hay = normalize([x.title, getSummary(x), getComment(x), category(x), sourceName(x)].join(' '));
@@ -883,29 +864,24 @@ function search() {
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div>
-    <div class="rounded-xl border overflow-hidden surface" style="border-color: var(--border);">
-      ${hits.slice(0, 30).map(item => {
+    <div class="rounded-xl border overflow-hidden surface" style="border-color:var(--border)">
+      ${hits.slice(0,30).map(item => {
         const t = getTitle(item.title);
-        const emoji = t.emoji || pickEmoji(t.title, category(item));
-        return headlineRow(item, t.title, emoji);
+        return headlineRow(item, t.title, t.emoji || pickEmoji(t.title, category(item)));
       }).join('') || '<div class="p-4 text-sm text-sec">Nie znaleziono.</div>'}
     </div>`;
 }
-
 function clearSearch() {
   $('search-input').value = '';
   $('search-results').classList.add('hidden');
   $('search-clear').classList.add('hidden');
 }
-
-function goTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
-
+function goTop() { window.scrollTo({ top:0, behavior:'smooth' }); }
 function toggleDark() {
   document.documentElement.classList.toggle('dark');
   localStorage.setItem('swm-dark', document.documentElement.classList.contains('dark') ? '1' : '0');
   updateThemeColor();
 }
-
 function loadTheme() {
   if (localStorage.getItem('swm-dark') === '1') document.documentElement.classList.add('dark');
   updateThemeColor();
@@ -916,7 +892,7 @@ async function loadJson(url, fallback) {
     const r = await fetch(url, { cache: 'no-store' });
     if (!r.ok) throw new Error(r.status);
     return { ok: true, data: await r.json() };
-  } catch (e) {
+  } catch(e) {
     console.warn('Nie udało się pobrać', url, e);
     return { ok: false, data: fallback };
   }
@@ -932,28 +908,22 @@ function normalizeArchive(data) {
   if (Array.isArray(data)) return [{ label: 'Archiwum', items: data }];
   if (Array.isArray(data.items)) return [{ label: data.date || 'Archiwum', items: data.items }];
   if (Array.isArray(data.groups)) return data.groups;
-
   const out = [];
   const today = todayKey();
   const keys = Object.keys(data).sort().reverse();
-
   for (const key of keys) {
     if (key.startsWith(today)) continue;
     const v = data[key];
     if (!v) continue;
     if (Array.isArray(v)) out.push({ label: key, items: v });
-    else if (Array.isArray(v.items)) out.push({ label: v.date || key.replace(/_/g, ' • '), items: v.items });
+    else if (Array.isArray(v.items)) out.push({ label: v.date || key.replace(/_/g,' • '), items: v.items });
   }
   return out;
 }
 
 function extractEditionTime(payload) {
   if (!payload || typeof payload !== 'object') return null;
-  const candidates = [
-    payload.updated_at, payload.updatedAt, payload.date, payload.generated_at,
-    payload.generatedAt, payload.timestamp, payload.time, payload.edition
-  ];
-  for (const c of candidates) {
+  for (const c of [payload.updated_at, payload.updatedAt, payload.date, payload.generated_at, payload.generatedAt, payload.timestamp, payload.time, payload.edition]) {
     if (!c) continue;
     const d = new Date(c);
     if (!isNaN(d.getTime())) return d;
@@ -974,27 +944,27 @@ async function init() {
     loadJson(DATA_FILES.archiveFun, {})
   ]);
 
-  const newsOk = n.ok;
-  dataLoadFailed = !newsOk && !raw.ok;
-
+  dataLoadFailed = !n.ok && !raw.ok;
   newsItems = Array.isArray(n.data) ? n.data : (n.data.items || []);
   rawFeedItems = Array.isArray(raw.data) ? raw.data : (raw.data.items || []);
   fastItems = Array.isArray(f.data) ? f.data : (f.data.items || []);
   funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
-  
   archiveGroups = normalizeArchive(a.data);
-  const archiveFun = normalizeArchive(af.data);
-  if (archiveFun.length) archiveGroups = [...archiveGroups, ...archiveFun];
+
+  // archive fun
+  archiveFunItems = [];
+  if (af.ok) {
+    const d = af.data;
+    if (Array.isArray(d)) archiveFunItems = d;
+    else if (d.items) archiveFunItems = d.items;
+    else if (d.groups) archiveFunItems = d.groups.flatMap(g => g.items || []);
+  }
 
   const fromData = extractEditionTime(n.data) || extractEditionTime(raw.data);
   const displayDate = fromData || new Date();
-  $('last-update').textContent = (fromData ? 'Wydanie: ' : '') + displayDate.toLocaleString('pl-PL', {
-    day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit'
-  });
+  $('last-update').textContent = (fromData ? 'Wydanie: ' : '') + displayDate.toLocaleString('pl-PL', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
 
-  if (dataLoadFailed && !newsItems.length && !rawFeedItems.length) {
-    $('load-error').classList.remove('hidden');
-  }
+  if (dataLoadFailed && !newsItems.length && !rawFeedItems.length) $('load-error').classList.remove('hidden');
 
   await renderToday();
   loadWidgets();
@@ -1002,18 +972,18 @@ async function init() {
 
 async function loadWidgets() {
   try {
-    const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw', { cache: 'no-store' });
+    const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw', { cache:'no-store' });
     const d = await w.json();
     $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
     $('weather-icon').textContent = weatherEmoji(d.current.weather_code);
-  } catch (e) {}
+  } catch(e){}
   try {
-    const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache: 'no-store' });
+    const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache:'no-store' });
     const d = await r.json();
     const rates = d[0].rates;
     $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid || 0).toFixed(2);
     $('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
-  } catch (e) {}
+  } catch(e){}
 }
 
 function weatherEmoji(c) {
@@ -1028,121 +998,79 @@ function weatherEmoji(c) {
 
 window.addEventListener('scroll', () => {
   const btn = $('back-top');
-  if (window.scrollY > 400) {
-    btn.classList.remove('hidden');
-    btn.classList.add('flex');
-  } else {
-    btn.classList.add('hidden');
-    btn.classList.remove('flex');
-  }
+  if (window.scrollY > 400) { btn.classList.remove('hidden'); btn.classList.add('flex'); }
+  else { btn.classList.add('hidden'); btn.classList.remove('flex'); }
 }, { passive: true });
 
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') clearSearch();
-  if (e.key === '?' || (e.shiftKey && e.key === '/')) {
-    e.preventDefault();
-    toggleHelp();
-  }
+  if (e.key === '?' || (e.shiftKey && e.key === '/')) { e.preventDefault(); toggleHelp(); }
 });
 
-/* ===== PWA Install Button ===== */
+/* PWA Install */
 let deferredPrompt = null;
-
-window.addEventListener('beforeinstallprompt', (e) => {
+window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault();
   deferredPrompt = e;
-  const btn = document.getElementById('install-btn');
-  if (btn) btn.classList.add('show');
+  $('install-btn')?.classList.add('show');
 });
-
 window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
-  const btn = document.getElementById('install-btn');
-  if (btn) btn.classList.remove('show');
+  $('install-btn')?.classList.remove('show');
 });
-
 async function installPWA() {
   if (!deferredPrompt) return;
   deferredPrompt.prompt();
   const { outcome } = await deferredPrompt.userChoice;
-  if (outcome === 'accepted') {
-    showToast('Aplikacja zainstalowana!');
-  }
+  if (outcome === 'accepted') showToast('Aplikacja zainstalowana!');
   deferredPrompt = null;
-  const btn = document.getElementById('install-btn');
-  if (btn) btn.classList.remove('show');
+  $('install-btn')?.classList.remove('show');
 }
 
-/* ===== Newsletter Popup ===== */
+/* Newsletter */
 function shouldShowNewsletter() {
   try {
     if (localStorage.getItem('swm-newsletter-subscribed') === '1') return false;
-    if (localStorage.getItem('swm-newsletter-dismissed')) {
-      const dismissed = parseInt(localStorage.getItem('swm-newsletter-dismissed'), 10);
-      if (Date.now() - dismissed < 7 * 24 * 60 * 60 * 1000) return false;
-    }
+    const dismissed = localStorage.getItem('swm-newsletter-dismissed');
+    if (dismissed && Date.now() - parseInt(dismissed,10) < 7*24*60*60*1000) return false;
     return true;
-  } catch (e) {
-    return false;
-  }
+  } catch(e){ return false; }
 }
-
 function showNewsletter() {
   if (!shouldShowNewsletter()) return;
-  const overlay = document.getElementById('newsletter-overlay');
-  if (overlay) overlay.classList.add('show');
+  $('newsletter-overlay')?.classList.add('show');
 }
-
 function closeNewsletter() {
-  const overlay = document.getElementById('newsletter-overlay');
-  if (overlay) overlay.classList.remove('show');
-  try {
-    localStorage.setItem('swm-newsletter-dismissed', Date.now().toString());
-  } catch (e) {}
+  $('newsletter-overlay')?.classList.remove('show');
+  try { localStorage.setItem('swm-newsletter-dismissed', Date.now().toString()); } catch(e){}
 }
-
 function submitNewsletter(e) {
   e.preventDefault();
-  const email = document.getElementById('newsletter-email').value.trim();
+  const email = $('newsletter-email').value.trim();
   if (!email) return;
-
   try {
     localStorage.setItem('swm-newsletter-subscribed', '1');
     localStorage.setItem('swm-newsletter-email', email);
-  } catch (e) {}
-
-  document.getElementById('newsletter-form-wrap').style.display = 'none';
-  document.getElementById('newsletter-success').classList.add('show');
-
-  setTimeout(() => {
-    closeNewsletter();
-  }, 2500);
-
+  } catch(e){}
+  $('newsletter-form-wrap').style.display = 'none';
+  $('newsletter-success').classList.add('show');
+  setTimeout(closeNewsletter, 2500);
   console.log('Zapisano e-mail (lokalnie):', email);
 }
-
-setTimeout(() => {
-  showNewsletter();
-}, 12000);
-
-document.getElementById('newsletter-overlay')?.addEventListener('click', (e) => {
+setTimeout(showNewsletter, 12000);
+$('newsletter-overlay')?.addEventListener('click', e => {
   if (e.target.id === 'newsletter-overlay') closeNewsletter();
 });
 
 init();
 </script>
 
-<!-- ===== PWA Service Worker ===== -->
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('Service Worker zarejestrowany:', registration.scope);
-        })
-        .catch((error) => {
-          console.warn('Błąd rejestracji Service Workera:', error);
-        });
+        .then(reg => console.log('SW zarejestrowany:', reg.scope))
+        .catch(err => console.warn('SW błąd:', err));
     });
   }
 </script>
