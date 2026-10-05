@@ -157,25 +157,17 @@
   .react-btn { transition: .15s; cursor: pointer; }
   .react-btn.active { color: #f59e0b !important; border-color: #f59e0b !important; background: rgba(245,158,11,0.1); }
 
-  /* Pasek postępu przewijania */
   #scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 3px;
+    position: fixed; top: 0; left: 0; height: 3px;
     background: linear-gradient(90deg, #f59e0b, #d97706);
-    width: 0%;
-    z-index: 100;
-    transition: width 0.05s linear;
+    width: 0%; z-index: 100; transition: width 0.05s linear;
   }
 
-  /* Pull to refresh */
   #ptr {
     position: absolute; top: -50px; left: 0; right: 0; height: 50px;
     display: flex; align-items: center; justify-content: center;
     font-size: 13px; font-weight: 600; color: var(--text-muted);
-    transition: transform .2s;
-    pointer-events: none;
+    transition: transform .2s; pointer-events: none;
   }
   #ptr.visible { transform: translateY(50px); }
 </style>
@@ -365,10 +357,14 @@
   </div>
 </footer>
 
+<!-- Dolny baner z „Dzisiejsze” -->
 <nav id="bottom-nav">
   <div class="flex justify-around items-center h-14 px-1">
     <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
       <span class="text-lg">⏱</span><span>60 sek</span>
+    </button>
+    <button onclick="switchTab('all')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="all">
+      <span class="text-lg">📰</span><span>Dzisiejsze</span>
     </button>
     <button onclick="switchTab('fast')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="fast">
       <span class="text-lg">🚨</span><span>Pilne</span>
@@ -378,9 +374,6 @@
     </button>
     <button onclick="switchTab('week')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="week">
       <span class="text-lg">📅</span><span>Tydzień</span>
-    </button>
-    <button onclick="switchTab('archive')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="archive">
-      <span class="text-lg">🗂</span><span>Archiwum</span>
     </button>
   </div>
 </nav>
@@ -515,22 +508,7 @@ function sourceName(x) { return x.source_name || x.sourceName || x.source || '';
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
 function imageOf(x) { 
-  return x.image || x.image_url || x.imageUrl || x.img || x.photo || x.thumbnail || x.thumb || ''; 
-}
-function getPubDate(x) { 
-  return x.published_at || x.date || x.pubDate || x.created_at || x.timestamp || x._archiveDate || ''; 
-}
-
-function formatDate(dateStr) {
-  if (!dateStr) return '';
-  try {
-    const d = new Date(dateStr);
-    if (isNaN(d.getTime())) return String(dateStr);
-    return d.toLocaleString('pl-PL', { 
-      day:'2-digit', month:'2-digit', year:'numeric', 
-      hour:'2-digit', minute:'2-digit' 
-    });
-  } catch(e) { return String(dateStr); }
+  return x.image || x.image_url || x.imageUrl || x.img || x.photo || x.thumbnail || x.thumb || x.source_image_url || ''; 
 }
 
 function categoryClass(cat) {
@@ -590,17 +568,14 @@ function updateThemeColor() {
   meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
 }
 
-/* ===== REAKCJE – działa poprawnie ===== */
 function react(btn, type) {
   const article = btn.closest('article');
   if (!article) return;
-
   const titleEl = article.querySelector('h3');
   const postKey = 'swm-react-' + (titleEl ? titleEl.textContent.trim().slice(0, 60) : Math.random());
   const current = localStorage.getItem(postKey);
   const buttons = article.querySelectorAll('.react-btn');
 
-  // odkliknięcie tej samej reakcji
   if (current === type) {
     localStorage.removeItem(postKey);
     buttons.forEach(b => {
@@ -611,7 +586,6 @@ function react(btn, type) {
     return;
   }
 
-  // ustawienie nowej
   localStorage.setItem(postKey, type);
   buttons.forEach(b => {
     const bType = b.dataset.type;
@@ -626,20 +600,12 @@ function react(btn, type) {
   });
 }
 
-function reportError(item) {
-  const title = getTitle(item.title).title;
-  const url = sourceLink(item);
-  const body = `Zgłoszenie błędu / nieścisłości:\n\nTytuł: ${title}\nLink: ${url}\n\nOpisz problem:\n`;
-  window.location.href = `mailto:twoj@email.pl?subject=${encodeURIComponent('Błąd – Świat w Minutę')}&body=${encodeURIComponent(body)}`;
-}
-
 function headlineRow(item, displayTitle, emoji) {
   const link = sourceLink(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
   const em = emoji || '📰';
   const title = displayTitle || getTitle(item.title).title;
-  const pubDate = getPubDate(item);
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -649,10 +615,7 @@ function headlineRow(item, displayTitle, emoji) {
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2 no-underline">
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
-        <div class="min-w-0">
-          <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
-          ${pubDate ? `<div class="text-[10px] text-mute mt-0.5">${escapeHtml(formatDate(pubDate))}</div>` : ''}
-        </div>
+        <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
     </div>`;
@@ -667,7 +630,6 @@ function card(item) {
   const cat = category(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
-  const pubDate = getPubDate(item);
 
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -696,14 +658,8 @@ function card(item) {
         </div>
 
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
-          <div class="min-w-0">
-            <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item) || 'Źródło')}</div>
-            ${pubDate ? `<div class="text-[9px] text-mute opacity-80">${escapeHtml(formatDate(pubDate))}</div>` : ''}
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <button onclick="reportError(JSON.parse(decodeURIComponent('${itemJson}')))" class="text-[11px] text-mute hover:text-red-500" title="Zgłoś błąd">⚠</button>
-            ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
-          </div>
+          <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item) || 'Źródło')}</div>
+          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline shrink-0">Źródło →</a>` : ''}
         </div>
       </div>
     </article>`;
@@ -756,9 +712,7 @@ function prepareFunItems() {
   allFunItems.sort((a, b) => {
     if (a._isToday && !b._isToday) return -1;
     if (!a._isToday && b._isToday) return 1;
-    const da = new Date(getPubDate(a) || 0);
-    const db = new Date(getPubDate(b) || 0);
-    return db - da;
+    return 0;
   });
 }
 
@@ -995,7 +949,6 @@ async function init() {
   funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
   archiveGroups = normalizeArchive(a.data);
 
-  // archive fun
   archiveFunItems = [];
   if (af.ok) {
     const d = af.data;
@@ -1010,17 +963,12 @@ async function init() {
         const group = d[key];
         if (group && Array.isArray(group.items)) {
           group.items.forEach(item => {
-            archiveFunItems.push({
-              ...item,
-              published_at: group.timestamp || group.date || key,
-              _archiveDate: group.date || key
-            });
+            archiveFunItems.push({ ...item });
           });
         }
       });
     }
   }
-  console.log('Ciekawostki z archiwum:', archiveFunItems.length);
 
   const fromData = extractEditionTime(n.data) || extractEditionTime(raw.data);
   const displayDate = fromData || new Date();
@@ -1058,7 +1006,7 @@ function weatherEmoji(c) {
   return '⛈️';
 }
 
-/* ===== Pull to Refresh ===== */
+/* Pull to Refresh */
 let ptrStartY = 0;
 let ptrPulling = false;
 const ptrEl = $('ptr');
