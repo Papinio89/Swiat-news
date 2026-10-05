@@ -1,87 +1,77 @@
 {
-  "date": "4 października 2026",
-  "time": "12:30",
-  "timestamp": "2026-10-04_12:30",
+  "date": "5 października 2026",
+  "time": "15:05",
+  "timestamp": "2026-10-05_15:05",
   "items": [
     {
-      "category": "SZALONA HISTORIA",
-      "title": "⚡ Skradzione grzmoty z XVII wieku",
-      "summary": "W 1709 roku dramaturg John Dennis wymyślił nowatorską machinę z metalowych mis do robienia dźwięku pioruna w teatrze. Jego sztuka okazała się klapą, ale kilka dni później zobaczył, że konkurencja w bezczelny sposób używa jego opatentowanego efektu dźwiękowego w innym spektaklu.",
-      "comment": "Czyli prawa autorskie wymyślono głównie po to, żeby nikt nie ukradł ci hałasu.",
-      "image_query": "thunderstorm",
-      "link": "https://www.mentalfloss.com/language/why-do-we-say-steal-someones-thunder",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4988,h_2805/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1dp2nassnebmn8eps.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4988,h_2805/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m1dp2nassnebmn8eps.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🎃 Rzucanie kapustą w drzwi sąsiada",
-      "summary": "Sto lat temu Halloween nie polegało na zbieraniu słodyczy, lecz na masowej dewastacji mienia pod przykrywką tradycji. Nastolatki zrzucały wózki do rzek, smarowały okna mydłem, a najpopularniejszym wybrykiem było obrzucanie drzwi sąsiadów zgniłymi głowami kapusty.",
-      "comment": "Dzisiejsze dzieciaki chcą batonika, a kiedyś po prostu demolowano ci ganek warzywem.",
-      "image_query": "cabbage",
-      "link": "https://www.mentalfloss.com/holidays/halloween/what-halloween-like-100-years-ago",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3wjby4bdm7qz1hrwk.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3600,h_2025/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3wjby4bdm7qz1hrwk.jpg"
-    },
-    {
       "category": "POPKULTURA",
-      "title": "📺 Serial BBC usunięty za przerażanie",
-      "summary": "W latach 60. stacja BBC wyemitowała antologię horrorów Late Night Horror, która wywołała gigantyczną panikę wśród widzów. Jeden z odcinków o ożywionej lalce doprowadził do masowych protestów przerażonych Brytyjczyków, przez co większość taśm po prostu zniszczono.",
-      "comment": "Dzisiaj oglądamy krwawe jatki do obiadku, a kiedyś wystarczyła gipsowa lalka na ekranie.",
-      "image_query": "scary doll",
-      "link": "https://www.mentalfloss.com/entertainment/tv/lost-bbc-anthology-late-night-horror",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_121,w_1444,h_812/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w029j336m51qanx0.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_121,w_1444,h_812/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w029j336m51qanx0.jpg"
+      "title": "👻 Realne hotele rodem z najgorszych koszmarów!",
+      "summary": "Miejsca opisane w kultowych horrorach istnieją naprawdę i przyjmują gości. Słynny hotel Stanley z powieści „Lśnienie” oferuje pokoje dla odważnych turystów szukających wrażeń. Możesz tam przenieść się wprost na plan przerażającej książki bez efektów specjalnych.",
+      "comment": "Idealne miejsce na spędzenie urlopu, jeśli twoim jedynym celem jest paniczny strach przed zamknięciem drzwi.",
+      "image_query": "scary hotel",
+      "link": "https://www.mentalfloss.com/literature/books/scary-locations-horror-books-you-can-visit",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3z68bdkdjjxj5mjsn.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3z68bdkdjjxj5mjsn.jpg"
     },
     {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🍂 Wyścigi w pływaniu na dyniach",
-      "summary": "W amerykańskich miastach jesień oznacza organizowanie wyścigów w wydrążonych, gigantycznych dyniach. Mieszkańcy spędzają długie miesiące na hodowaniu warzyw ważących po 400 kg tylko po to, by usiąść w nich z wiosłem i próbować nie zatonąć w rzece.",
-      "comment": "Sporty ekstremalne nabierają całkowicie nowego, rolniczego znaczenia.",
-      "image_query": "giant pumpkin",
-      "link": "https://www.mentalfloss.com/geography/cities/best-cities-america-family-fall-activities-ranked",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_860,y_0,w_8485,h_4772/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z7ma8qqzyzc1rrgz.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_860,y_0,w_8485,h_4772/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z7ma8qqzyzc1rrgz.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "📖 Bestseller, którego nienawidzili",
-      "summary": "Powieść Na wschód od Edenu Johna Steinbecka z 1952 roku stała się natychmiastowym hitem sprzedażowym, znikając z półek w tysiącach sztuk. Krytycy literaccy byli jednak oburzeni i nazywali ją tanim melodramatem, podczas gdy czytelnicy stali w kilometrowych kolejkach.",
-      "comment": "Recenzenci od dawna żyją w całkowicie innym wszechświecie niż zwykli ludzie.",
+      "category": "BEKA Z NAUKI",
+      "title": "🍃 Sekret frazy o otwieraniu nowej kartki!",
+      "summary": "Słynne powiedzenie o czystej karcie wcale nie odnosi się do zielonych liści na drzewach. W XVI wieku słowo „leaf” oznaczało po prostu pojedynczą stronę w księdze lub pamiętniku. Ludzie zapisywali nowe postanowienia, fizycznie przewracając kartkę na czystą stronę.",
+      "comment": "Niestety moja nowa kartka życiowa bardzo szybko pokrywa się plamami z sosu pomidorowego.",
       "image_query": "old book",
+      "link": "https://www.mentalfloss.com/language/why-we-say-turn-over-a-new-leaf",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_59,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3yv6s2wp05s1h5g8m.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_59,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3yv6s2wp05s1h5g8m.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🤡 Internetowe suchary skrócone do granic!",
+      "summary": "Ostatnie analizy trendów pokazują, że najpopularniejsze żarty w sieci mają mniej niż dziesięć słów. Długie anegdoty przegrywają z błyskawicznymi puentami, bo czas skupienia internautów drastycznie spadł. Kawały muszą być teraz szybsze niż przewijanie ekranu palcem.",
+      "comment": "Mój czas skupienia jest już tak krótki, że zapomniałem początek tego zdania.",
+      "image_query": "laughing person",
+      "link": "https://www.mentalfloss.com/entertainment/short-jokes-leave-you-in-stitches",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3we3q1kxg8qsz4pta.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3we3q1kxg8qsz4pta.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🎃 Horrorowe maratony filmowe opanowały sieć!",
+      "summary": "Eksperci od kina stworzyli zestawienie najstraszniejszych filmów, które bezapelacyjnie trzeba obejrzeć w tym sezonie. W zestawieniu znalazły się nie tylko klasyki grozy, ale i niszowe produkcje paraliżujące strachem. To idealny przewodnik dla każdego, kto kocha nocne seanse z dreszczykiem.",
+      "comment": "Oglądam te filmy głównie po to, by mieć usprawiedliwienie na zapalone światło w całym domu.",
+      "image_query": "popcorn cinema",
+      "link": "https://www.mentalfloss.com/entertainment/movies/best-movies-watch-spooky-season-according-to-mental-floss-editors",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w2xqpqckpmd25pbt.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w2xqpqckpmd25pbt.jpg"
+    },
+    {
+      "category": "SZALONA HISTORIA",
+      "title": "📜 Kontrowersyjne dzieło z 1952 roku wzburzyło tłumy!",
+      "summary": "Słynna powieść Steinbecka wywołała ogromne dyskusje ze względu na bezkompromisowe ukazanie ludzkiej natury. Choć czytelnicy ustawiali się w długich kolejkach po egzemplarz, krytycy ostro spierali się o moralny przekaz książki. Autor spędził lata w ukryciu, dopracowując każdy wątek tej mrocznej opowieści.",
+      "comment": "Trzeba mieć prawdziwy talent, by wywołać awanturę w świecie literackim bez użycia wulgaryzmów.",
+      "image_query": "typewriter paper",
       "link": "https://www.mentalfloss.com/literature/books/east-of-eden-instant-bestseller-1952-critics-divided-these-reasons",
       "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg"
     },
     {
       "category": "BEKA Z NAUKI",
-      "title": "🥫 Starożytna zupa gotowana 100 lat",
-      "summary": "W czasach największych kryzysów ludzkość wykazywała się szaloną kreatywnością, dodając sproszkowane drewno do chleba czy glinę do gulaszu. Niektóre z tych survivalowych przepisów przetrwały wieki, a nieprzerwanie gotowane zupy wielopokoleniowe stały się dziś daniami ekskluzywnymi.",
-      "comment": "Szefowie kuchni potrafią sprzedać absolutną biedę za grube tysiące złotych.",
-      "image_query": "soup pot",
-      "link": "https://www.mentalfloss.com/food/meals-that-survived-wars-familes-empires",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_6283,h_3534/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3qdqgfkvazwe1fkxj.jpg"
+      "title": "🧟 Duch czy gul? Zaskakujące różnice potworów!",
+      "summary": "Choć w popkulturze te pojęcia bywają mylone, różnica biologiczno-folklorystyczna jest ogromna. Duch to niematerialna dusza zmarłego człowieka, podczas gdy gul wywodzi się z arabskich legend i jest cmentarnym stworem pożerającym ciała. Wiedza o potworach wymaga dokładnej analizy źródeł.",
+      "comment": "Przynajmniej wiesz teraz dokładnie, jaki stwór zepsuje ci nocny spacer po cmentarzu.",
+      "image_query": "creepy monster",
+      "link": "https://www.mentalfloss.com/ghost-vs-ghoul-what-s-the-difference-01m3w3am5zz6",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_61,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w3pxxqnrw1fqvxxf.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_61,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w3pxxqnrw1fqvxxf.jpg"
     },
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "☕ Miasteczko oblężone przez fanów",
-      "summary": "Niewielkie Washington w stanie Connecticut stało się pierwowzorem fikcyjnego miasteczka z kultowego serialu Gilmore Girls. Dziś malutka osada zmaga się z nalotami tysięcy turystów, którzy paraliżują lokalne kawiarnie w poszukiwaniu serialowego klimatu.",
-      "comment": "Turystyka serialowa to genialny sposób na bezpowrotne zniszczenie lokalnego spokoju.",
-      "image_query": "autumn town",
-      "link": "https://www.mentalfloss.com/geography/wanderlust/connecticut-trip-inspired-gilmore-girls",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3135,h_1763/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3akghzekbp43srznh.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3135,h_1763/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3akghzekbp43srznh.jpg"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "🐦 Czarny kruk i sąsiedzki terror",
-      "summary": "Edgar Allan Poe tak głośno opisywał mroczną inteligencję ptaków, że motyw kruka stał się jego znakiem rozpoznawczym. W rzeczywistości pisarz zainspirował się prawdziwym ptakiem, którego głośne wrzaski za oknem po prostu doprowadzały całą okolicę do szaleństwa.",
-      "comment": "Gdy widzisz na gałęzi czarnego ptaka, pomyśl, że może po prostu planuje popsuć ci dzień.",
-      "image_query": "black raven",
-      "link": "https://www.mentalfloss.com/literature/poetry/edgar-allan-poe-most-unsettling-opening-lines-send-chills-down-our-spines",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_398,w_2620,h_1473/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t3phw6gxkz5mehx9.jpg"
+      "title": "🍎 Absurdalne różnice w pracy belfrów!",
+      "summary": "Najnowsze raporty edukacyjne ujawniają drastyczne różnice w realiach pracy nauczycieli w zależności od stanu. W niektórych regionach warunki finansowe są tak trudne, że nauczyciele sami kupują kredki i pędzle dla całej klasy. System edukacyjny stawia belfrów przed kuriozalnymi wyzwaniami finansowymi.",
+      "comment": "Praca w szkole to jedyny zawód, gdzie płacisz pracodawcy za możliwość denerwowania się.",
+      "image_query": "teacher desk",
+      "link": "https://www.mentalfloss.com/geography/states/best-worst-states-for-teachers-2026",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_737,w_8640,h_4860/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t4yhss95hbq525dq.jpg",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_737,w_8640,h_4860/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t4yhss95hbq525dq.jpg"
     }
   ]
 }
