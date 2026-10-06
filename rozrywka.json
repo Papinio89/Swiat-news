@@ -1,77 +1,95 @@
 {
-  "date": "5 października 2026",
-  "time": "15:05",
-  "timestamp": "2026-10-05_15:05",
+  "date": "6 października 2026",
+  "time": "14:19",
+  "timestamp": "2026-10-06_14:19",
   "items": [
     {
-      "category": "POPKULTURA",
-      "title": "👻 Realne hotele rodem z najgorszych koszmarów!",
-      "summary": "Miejsca opisane w kultowych horrorach istnieją naprawdę i przyjmują gości. Słynny hotel Stanley z powieści „Lśnienie” oferuje pokoje dla odważnych turystów szukających wrażeń. Możesz tam przenieść się wprost na plan przerażającej książki bez efektów specjalnych.",
-      "comment": "Idealne miejsce na spędzenie urlopu, jeśli twoim jedynym celem jest paniczny strach przed zamknięciem drzwi.",
-      "image_query": "scary hotel",
-      "link": "https://www.mentalfloss.com/literature/books/scary-locations-horror-books-you-can-visit",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3z68bdkdjjxj5mjsn.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3z68bdkdjjxj5mjsn.jpg"
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🎙️ Wpadka mikrofonowa legendarnego gracza!",
+      "summary": "Tom Brady zaliczył zabawną wpadkę na żywo w stacji Fox Sports. Problemy z mikrofonem obnażyły kulisy transmisji, gdy jego własne notatki wywołały kompletnie nieoczekiwany chaos na antenie.",
+      "comment": "Nawet siedmiokrotny mistrz Super Bowl potrafi przegrać starcie z własną kartką papieru.",
+      "image_query": "microphone broadcast",
+      "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNLUQxenFxU0NWc0hGd0ZMbGZDWjQxRDBfLVo3VVdXY0Y5NGY1OEVhTk9ValNVck9VaUZFckpRU09aSklKeXNPZHBYaFpoblBScmVFZUloRnRadjZzNDNwcGg5ZDNjajhiZS1sSkVZMmNWU2RsWDFBb0Z2eUJTcTVYMF9qN2hjS2Z1TFMtTHRseG04QWJvbzNVR0szNi1wN0ltYVhFQVc5aDBiZEVBVDJSN2xhLXRfeWNReEVsc0NRSnVodFJUWkgzZjN1bHhLZWJjcjFnUWxIOVpNczB6S1RYemNXY0c4N2lKRG94WkdOcVAtRTVmZnhCNDBXNHdjdG14eTdmOXdnU1JQM3ItYUotSXVodTViSE9XUGhFcNIBogJBVV95cUxNeTkxVU1RcjFva1p6OVI3Tk0tNHVYVDZHZGpmWGxXWS1YbXVBNVhXSHJXaTY4cVUzT1I3XzdRSy1XY0lvLU4wUDRYbndaNmpYRmdRVjdJRkE5SkFONlRFWXFPZVoyZjcyQzhWaTYzZG0wQTgwUmRJWVlrdWM1YkFnX213THRpUkljODlXZU82Wk9WZnlkX1AydzhMdWxzVkhvWFBieTUwVmdNT0N3czRWai1SOXVUVEt3Z0lPOXBfcjZYVnAtdEdONlBwWDJBdW9sd09iMUJ5T0oxZW9vWVFKVDc2bTY5TklVOTRJVFJ0amRXZlo3Vzd4TUhOTkhQUzE4Z29lVjhhXzNnUDViRU9kbTNvb3ZBUUgxOFdqQnhjNjFEQQ?oc=5",
+      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🌧️ Długi weekend zakończony klapą!",
+      "summary": "Mieszkańcy Australii liczyli na idealne wylegiwanie się na plaży podczas długiego weekendu. Niestety nagłe, gigantyczne ulewy zmieniły beztroski piknik w masową ucieczkę i kompletny chaos.",
+      "comment": "Prognoza pogody po raz kolejny udowodniła, że ma znacznie większe poczucie humoru niż my.",
+      "image_query": "rain umbrella",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOVVGNGJ1REZfNzhfQ0FRMHZuX2JGdXdrczJjR3VOTXVVZVBRZXI4STBBVFRxYy1QRlQ2b2dvd1FyY2c5ZGhWdlBIS3BFWkNPMUdrZlU3eUhzQTNZaXlhVnU3M2U4TlVmSVVwcDBOX1hHeEowMG9qLUU4T1o2WnlVNk5LOXJlUVBGWmpiWDA3NnZPSDFDdFNrUHFEdk5yLXB3RmQyaw?oc=5",
+      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🎃 Najdziwniejsze przebrania w historii!",
+      "summary": "Co roku rynek zalewają absurdalne stroje na Halloween, ale spoglądając wstecz, modowe wybory z lat minionych potrafią zszokować. Od skafandrów z folii po przebrania za pralkę – pomysłowość nie znała granic.",
+      "comment": "Patrząc na stare zdjęcia, największym horrorem Halloween były po prostu gusty naszych rodziców.",
+      "image_query": "costume party",
+      "link": "https://www.mentalfloss.com/holidays/halloween/most-popular-halloween-costume-year-you-were-born",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_704,w_3582,h_2014/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ywvbd4bkpw4pax0d.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_704,w_3582,h_2014/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ywvbd4bkpw4pax0d.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_704,w_3582,h_2014/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3ywvbd4bkpw4pax0d.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "👻 Miejsca z horrorów, które odwiedzisz!",
+      "summary": "Myślisz, że przerażające lokacje z książek to tylko fikcja? Na świecie istnieją jak najbardziej realne miasteczka i budynki, które zainspirowały najstraszniejsze powieści w historii.",
+      "comment": "Idealne miejsce na spędzenie urlopu, jeśli Twoim największym marzeniem jest zostać postacią epizodyczną w horrorze.",
+      "image_query": "haunted house",
+      "link": "https://www.mentalfloss.com/literature/books/scary-locations-horror-books-you-visit",
+      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
     },
     {
       "category": "BEKA Z NAUKI",
-      "title": "🍃 Sekret frazy o otwieraniu nowej kartki!",
-      "summary": "Słynne powiedzenie o czystej karcie wcale nie odnosi się do zielonych liści na drzewach. W XVI wieku słowo „leaf” oznaczało po prostu pojedynczą stronę w księdze lub pamiętniku. Ludzie zapisywali nowe postanowienia, fizycznie przewracając kartkę na czystą stronę.",
-      "comment": "Niestety moja nowa kartka życiowa bardzo szybko pokrywa się plamami z sosu pomidorowego.",
-      "image_query": "old book",
-      "link": "https://www.mentalfloss.com/language/why-we-say-turn-over-a-new-leaf",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_59,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3yv6s2wp05s1h5g8m.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_59,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3yv6s2wp05s1h5g8m.jpg"
+      "title": "⚡ Dlaczego zimą wszystko cię kopie?",
+      "summary": "Zimą iskry strzelają z klamek, ubrań, a nawet przy uścisku dłoni. Wokół jest tak sucho, że ładunki elektrostatyczne nie mają jak uciekać, zamieniając swetry w miniaturowe paralizatory.",
+      "comment": "Nauka oficjalnie potwierdza: w zimowe dni Twój własny ulubiony sweter próbuje Cię po cichu zamordować.",
+      "image_query": "sweater static",
+      "link": "https://www.mentalfloss.com/science/why-static-worse-cold",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_388,w_4115,h_2314/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3am66w0drgh76bpdg.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_388,w_4115,h_2314/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3am66w0drgh76bpdg.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_388,w_4115,h_2314/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3am66w0drgh76bpdg.jpg"
     },
     {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🤡 Internetowe suchary skrócone do granic!",
-      "summary": "Ostatnie analizy trendów pokazują, że najpopularniejsze żarty w sieci mają mniej niż dziesięć słów. Długie anegdoty przegrywają z błyskawicznymi puentami, bo czas skupienia internautów drastycznie spadł. Kawały muszą być teraz szybsze niż przewijanie ekranu palcem.",
-      "comment": "Mój czas skupienia jest już tak krótki, że zapomniałem początek tego zdania.",
-      "image_query": "laughing person",
-      "link": "https://www.mentalfloss.com/entertainment/short-jokes-leave-you-in-stitches",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3we3q1kxg8qsz4pta.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3we3q1kxg8qsz4pta.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🎃 Horrorowe maratony filmowe opanowały sieć!",
-      "summary": "Eksperci od kina stworzyli zestawienie najstraszniejszych filmów, które bezapelacyjnie trzeba obejrzeć w tym sezonie. W zestawieniu znalazły się nie tylko klasyki grozy, ale i niszowe produkcje paraliżujące strachem. To idealny przewodnik dla każdego, kto kocha nocne seanse z dreszczykiem.",
-      "comment": "Oglądam te filmy głównie po to, by mieć usprawiedliwienie na zapalone światło w całym domu.",
-      "image_query": "popcorn cinema",
-      "link": "https://www.mentalfloss.com/entertainment/movies/best-movies-watch-spooky-season-according-to-mental-floss-editors",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w2xqpqckpmd25pbt.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w2xqpqckpmd25pbt.jpg"
+      "category": "POPKULTURA",
+      "title": "🧹 Mroczne sekrety kultowej komedii!",
+      "summary": "Słynny film „Hokus Pokus” zapamiętaliśmy jako wesołą komedię dla dzieci, ale ukryto w nim zadziwiająco mroczne wątki. Od odwołań do egzekucji po wisielczy humor – produkcja przekraczała granice kina dziecięcego.",
+      "comment": "Filmy dla dzieci z lat 90. przygotowywały nas na życiowe traumy szybciej niż dorosłość.",
+      "image_query": "witch hat",
+      "link": "https://www.mentalfloss.com/entertainment/movies/reasons-why-hocus-pocus-darker-than-remember",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_2000,h_1125/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46sc0b9yb4y172pgk.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_2000,h_1125/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46sc0b9yb4y172pgk.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_2000,h_1125/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46sc0b9yb4y172pgk.jpg"
     },
     {
       "category": "SZALONA HISTORIA",
-      "title": "📜 Kontrowersyjne dzieło z 1952 roku wzburzyło tłumy!",
-      "summary": "Słynna powieść Steinbecka wywołała ogromne dyskusje ze względu na bezkompromisowe ukazanie ludzkiej natury. Choć czytelnicy ustawiali się w długich kolejkach po egzemplarz, krytycy ostro spierali się o moralny przekaz książki. Autor spędził lata w ukryciu, dopracowując każdy wątek tej mrocznej opowieści.",
-      "comment": "Trzeba mieć prawdziwy talent, by wywołać awanturę w świecie literackim bez użycia wulgaryzmów.",
-      "image_query": "typewriter paper",
-      "link": "https://www.mentalfloss.com/literature/books/east-of-eden-instant-bestseller-1952-critics-divided-these-reasons",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_576,w_2886,h_1623/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3z8z6e14qvh8wr6x8.jpg"
+      "title": "🕵️ Prawdziwy ojciec Sherlocka Holmesa!",
+      "summary": "Arthur Conan Doyle wcale nie wymyślił genialnego detektywa od zera. Oparł postać Sherlocka na C. Auguste Dupinie – bohaterze Mrocznych opowiadań stworzonych przez Edgara Allana Poego.",
+      "comment": "Nawet największy detektyw wszech czasów musiał bezczelnie ściągać na klasówce od innego pisarza.",
+      "image_query": "magnifying glass",
+      "link": "https://www.mentalfloss.com/literature/authors/edgar-allan-poe-character-inspired-sherlock-holmes",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46c6jkk2ngja2zesr.png",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46c6jkk2ngja2zesr.png",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m46c6jkk2ngja2zesr.png"
     },
     {
-      "category": "BEKA Z NAUKI",
-      "title": "🧟 Duch czy gul? Zaskakujące różnice potworów!",
-      "summary": "Choć w popkulturze te pojęcia bywają mylone, różnica biologiczno-folklorystyczna jest ogromna. Duch to niematerialna dusza zmarłego człowieka, podczas gdy gul wywodzi się z arabskich legend i jest cmentarnym stworem pożerającym ciała. Wiedza o potworach wymaga dokładnej analizy źródeł.",
-      "comment": "Przynajmniej wiesz teraz dokładnie, jaki stwór zepsuje ci nocny spacer po cmentarzu.",
-      "image_query": "creepy monster",
-      "link": "https://www.mentalfloss.com/ghost-vs-ghoul-what-s-the-difference-01m3w3am5zz6",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_61,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w3pxxqnrw1fqvxxf.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_61,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3w3pxxqnrw1fqvxxf.jpg"
-    },
-    {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🍎 Absurdalne różnice w pracy belfrów!",
-      "summary": "Najnowsze raporty edukacyjne ujawniają drastyczne różnice w realiach pracy nauczycieli w zależności od stanu. W niektórych regionach warunki finansowe są tak trudne, że nauczyciele sami kupują kredki i pędzle dla całej klasy. System edukacyjny stawia belfrów przed kuriozalnymi wyzwaniami finansowymi.",
-      "comment": "Praca w szkole to jedyny zawód, gdzie płacisz pracodawcy za możliwość denerwowania się.",
-      "image_query": "teacher desk",
-      "link": "https://www.mentalfloss.com/geography/states/best-worst-states-for-teachers-2026",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_737,w_8640,h_4860/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t4yhss95hbq525dq.jpg",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_737,w_8640,h_4860/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3t4yhss95hbq525dq.jpg"
+      "category": "SZALONA HISTORIA",
+      "title": "🍂 Dziwne zapachy jesieni lat 80.!",
+      "summary": "Jesień w latach 80. miała zupełnie inny aromat niż dzisiaj. Królował dym ze palonych liści na podwórkach, zapach świeżo drukowanych katalogów oraz spaliny z benzyny ołowianej.",
+      "comment": "Kiedyś jesień pachniała spalinami i spaloną trawą, dzisiaj pachnie syropem klonowym za 30 złotych.",
+      "image_query": "retro cassette",
+      "link": "https://www.mentalfloss.com/nostalgia/80s/smells-defined-fall-1980s",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_539,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3swe66kztyf2jwfvf.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_539,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3swe66kztyf2jwfvf.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_539,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m3swe66kztyf2jwfvf.jpg"
     }
   ]
 }
