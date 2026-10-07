@@ -1,46 +1,46 @@
 {
-  "date": "6 października 2026",
-  "time": "13:31",
-  "timestamp": "2026-10-06_13:31",
+  "date": "7 października 2026",
+  "time": "06:15",
+  "timestamp": "2026-10-07_06:15",
   "items": [
     {
+      "category": "OBRONNOŚĆ",
+      "title": "🛡️ Niemcy wdrażają IRIS-T SLM do własnej armii",
+      "hook": "Niemcy w końcu dostarczają własnej armii zestaw przeciwlotniczy, który od miesięcy ratuje ukraińskie miasta.",
+      "summary": "Pierwsza zmodyfikowana jednostka ogniowa IRIS-T SLM dla Luftwaffe osiąga wstępną gotowość operacyjną. Systemy tego typu wykazały się niemal stuprocentową skutecznością w zwalczaniu rosyjskich rakiet i dronów na Ukrainie.",
+      "comment": "Wunderwaffe wreszcie trafia do niemieckich koszar, choć opóźnienia i puste magazyny obnażają wieloletnie zaniedbania Bundeswehry.",
+      "threads_post": "Niemcy wreszcie budzą się z obronnego letargu? Luftwaffe właśnie melduje gotowość operacyjną pierwszej baterii IRIS-T SLM! 🇩🇪\n\nTo ten sam sprzęt, który na Ukrainie wyrósł na absolutnego pogromcę rosyjskich manewrujących i dronów, osiągając niesamowitą skuteczność. Problem w tym, że Berlin wysyłał te nowoczesne zestawy Kijowowi, samemu nie posiadając ani jednej kompletnej jednostki w służbie.\n\nWdrażanie własnych zestawów trwa latami, podczas gdy europejskie niebo wciąż pozostaje dziurawe jak ser szwajcarski. Czy wyciąganie wniosków z wojny musi w NATO trwać tak koszmarnie długo?\n\nJak oceniacie tempo modernizacji niemieckiej armii? 👇💬",
+      "question": "Czy NATO zdąży odbudować swoją obronę powietrzną przed kolejnym kryzysem? 👇💬",
+      "image_query": "air defense system",
+      "link": "https://defence24.pl/sily-zbrojne/niemiecki-system-przeciwlotniczy-blizej-gotowosci-operacyjnej-ceniony-na-ukrainie",
+      "image_url": "https://cdn.defence24.pl/2026/03/25/1920x1080px/1EFktCCHGVeeeqRMAi9FRhmxQULgBLxNpyQCVazc.bidt.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/03/25/1920x1080px/1EFktCCHGVeeeqRMAi9FRhmxQULgBLxNpyQCVazc.bidt.jpg"
+    },
+    {
       "category": "POLSKA",
-      "title": "✈️ Algierskie maszyny nad Polską. Lądują w Moskwie",
-      "hook": "Nad polską przestrzenią powietrzną odbywa się regularny most powietrzny między Algierią a Rosją.",
-      "summary": "Algierskie samoloty wojskowe po raz kolejny przeleciały nad terytorium Polski, kierując się na moskiewskie lotnisko Wnukowo. Intensywność tych przelotów wojskowych drastycznie wzrosła w ostatnich dniach, co budzi pytania o transportowany ładunek.",
-      "comment": "Gdy NATO debatuje o szczelności nieba, wojskowe maszyny wspierające Moskwę spokojnie i legalnie latają nad naszymi głowami.",
-      "threads_post": "Kolejny algierski wojskowy transportowiec przeleciał właśnie nad Polską i wylądował w Moskwie. To nie był jednorazowy przypadek, ale element coraz bardziej intensywnego mostu powietrznego. 🇩🇿🇷🇺\n\nPodczas gdy Sojusz Północnoatlantycki głowi się nad uszczelnieniem wschodniej flanki, wojskowe samoloty państw sprzyjających Kremlowi korzystają z międzynarodowych procedur i jak gdyby nigdy nic przecinają nasze niebo. Formalnie wszystko odbywa się zgodnie z prawem, ale geopolityczny niesmak pozostaje ogromny.\n\nCzy europejskie procedury lotnicze powinny zostać natychmiast zaostrzone dla krajów współpracujących militarnie z Rosją?",
-      "question": "Czy Polska powinna zablokować przestrzeń dla wojskowych samolotów z państw neutralnych latających do Rosji? 👇💬",
-      "image_query": "military cargo aircraft",
-      "link": "https://defence24.pl/polityka-obronna/rosja-transportuje-bron-nad-polska-samolot-wyladowal-w-moskwie",
-      "image_url": "https://cdn.defence24.pl/2026/09/06/1024x576px/4Wsd5vNDOAILX4l62Yr36pMO13MAhUU1hBcVR2US.bdrq.jpg",
-      "source_image_url": "https://cdn.defence24.pl/2026/09/06/1024x576px/4Wsd5vNDOAILX4l62Yr36pMO13MAhUU1hBcVR2US.bdrq.jpg"
+      "title": "✈️ Turecki gigant A400M przemierza polskie niebo",
+      "hook": "Potężny wojskowy transportowiec z Turcji przemierzył całą Polskę w drodze na strategiczny przyczółek NATO.",
+      "summary": "Turecki Airbus A400M-180 Atlas wleciał w polską przestrzeń powietrzną od południa, kierując się do bazy w Estonii. Przelot odbył się w ramach stałej współpracy logistycznej i wsparcia wschodniej flanki Sojuszu Północnoatlantyckiego.",
+      "comment": "Sojusznicze samoloty krążą nad nami codziennie, ale polityczne deklaracje Ankary wciąż bywają mocno rozbieżne z celami NATO.",
+      "threads_post": "Co turecki wojskowy kolos robił nad polskim niebem? A400M Atlas przeleciał właśnie przez nasz kraj! 🇹🇷🇵🇱\n\nGigantyczna maszyna transportowa Tureckich Sił Powietrznych weszła w naszą przestrzeń od południowej granicy i skierowała się prosto do bazy wojskowej w Estonii. To rutynowa, ale wysoce symboliczna misja wsparcia logistycznego wschodniej flanki NATO.\n\nChoć Ankara często prowadzi własną, skomplikowaną grę dyplomatyczną, twarda infrastruktura wojskowa i transporty powietrzne działają bez zastrzeżeń.\n\nCzy Turcja pozostanie pewnym ogniwem Sojuszu w obliczu rosnących napięć? 👇💬",
+      "question": "Jak oceniasz rolę Turcji w zapewnianiu bezpieczeństwa wschodniej flanki NATO? 👇💬",
+      "image_query": "military cargo plane",
+      "link": "https://defence24.pl/sily-zbrojne/samolot-tureckich-sil-powietrznych-wlecial-do-polski",
+      "image_url": "https://cdn.defence24.pl/2026/10/06/1024x576px/kOod88Xw4wva2rJmJiWuFp0rI85Zq1Gfnq52gX7U.wnjw.jpg",
+      "source_image_url": "https://cdn.defence24.pl/2026/10/06/1024x576px/kOod88Xw4wva2rJmJiWuFp0rI85Zq1Gfnq52gX7U.wnjw.jpg"
     },
     {
       "category": "GEOPOLITYKA",
-      "title": "🇱🇹 Litwa wyłoży miliardy. Chce stałej bazy wojsk USA",
-      "hook": "Wilno wyraziło gotowość do sfinansowania 100% kosztów utworzenia stałej bazy wojsk amerykańskich na swoim terytorium.",
-      "summary": "Litewski rząd oficjalnie zadeklarował pokrycie wszelkich wydatków związanych z budową oraz utrzymaniem infrastruktury dla amerykańskich żołnierzy. Propozycja ma na celu uzyskanie twardych gwarancji bezpieczeństwa Waszyngtonu wobec stałego zagrożenia ze strony Rosji.",
-      "comment": "Małe państwo bałtyckie doskonale rozumie, że realne bezpieczeństwo kupuje się twardą gotówką, a nie pustymi obietnicami sojuszników.",
-      "threads_post": "Litwa stawia wszystko na jedną kartę i oferuje Amerykanom układ bez precedensu. Premier deklaruje: pokryjemy pełne koszty budowy i utrzymania stałej bazy wojskowej USA. 🇱🇹🇺🇸\n\nNa Bałtyku nikt nie ma złudzeń co do intencji Moskwy, a rotacyjna obecność sił NATO przestała wystarczać. Wilno woli wydać ogromne pieniądze z własnego budżetu już teraz, niż później płacić najwyższą cenę za odbudowę kraju ze zgliszcz.\n\nCzy Polska i pozostałe kraje wschodniej flanki powinny pójść w ślady Litwy i radykalnie zwiększyć oferty dla Pentagonu?",
-      "question": "Czy propozycja Litwy zmusi Waszyngton do podjęcia twardej decyzji o stałej obecności? 👇💬",
-      "image_query": "us military base",
-      "link": "https://www.defensenews.com/global/europe/2026/10/06/lithuania-says-it-would-pay-the-cost-if-us-establishes-military-base/",
-      "image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/XWABP2Y3RJFFFJM54PVYNJ6I7M.jpg?width=1200&auth=a82f3cdbf5314186451f60427b5fcf2f5e54ea07e10d2f237bda9dca102ea766",
-      "source_image_url": "https://archetype-military-times-prod.web.arc-cdn.net/resizer/v2/XWABP2Y3RJFFFJM54PVYNJ6I7M.jpg?width=1200&auth=a82f3cdbf5314186451f60427b5fcf2f5e54ea07e10d2f237bda9dca102ea766"
-    },
-    {
-      "category": "OBRONNOŚĆ",
-      "title": "⚖️ Pierwsza taka egzekucja od lat. Wyrok w armii USA",
-      "hook": "Pentagon wyznaczył termin egzekucji sprawcy najkrwawszego zamachu w amerykańskiej bazie wojskowej.",
-      "summary": "Nidal Hasan, który w 2009 roku zastrzelił 13 nieuzbrojonych żołnierzy w Fort Hood, zostanie stracony przez rozstrzelanie. Będzie to pierwsza egzekucja wykonana przez amerykańskie siły zbrojne od ponad 60 lat.",
-      "comment": "Amerykańskie sądy wojskowe potrzebowały aż piętnastu lat procedur, by wreszcie wykonać absolutnie jednoznaczny wyrok za masowy zamach.",
-      "threads_post": "Po ponad 60 latach przerwy amerykańska armia sięga po ostateczny wymiar kary. Sprawca masakry z Fort Hood zostanie stracony przez rozstrzelanie. 🇺🇸⚔️\n\nW 2009 roku Nidal Hasan zamordował 13 żołnierzy i ranił 32 osoby w teksańskiej bazie. Przez półtorej dekady sprawa utknęła w wojskowym labiryncie odwołań, podczas gdy rodziny ofiar bezradnie czekały na sprawiedliwość.\n\nCzy kara śmierci w procedurach wojskowych powinna być wykonywana znacznie szybciej w przypadkach ewidentnego terroryzmu?",
-      "question": "Czy wojskowy wymiar sprawiedliwości powinien działać sprawniej w sprawach o terroryzm? 👇💬",
-      "image_query": "military court justice",
-      "link": "https://defence24.pl/sily-zbrojne/pierwsza-taka-egzekucja-od-dekad-zabojca-13-osob-w-teksanskiej-bazie-zostanie-rozstrzelany",
-      "image_url": "https://cdn.defence24.pl//2024/07/09/originals/E3MR7CAGxm7oRTvwzXcAiGKCMGGcTrUNQm4H7rlE.jpg",
-      "source_image_url": "https://cdn.defence24.pl//2024/07/09/originals/E3MR7CAGxm7oRTvwzXcAiGKCMGGcTrUNQm4H7rlE.jpg"
+      "title": "⚓ USA zostawiają jeden lotniskowiec przeciw Iranowi",
+      "hook": "Amerykańska marynarka wojenna drastycznie ogranicza swoją obecność lotniskowcową na Bliskim Wschodzie.",
+      "summary": "USS George H.W. Bush wpłynął do Tajlandii po 188 dniach spędzonych na morzu, kończąc długą misję bojową. Oznacza to, że USS George Washington pozostaje jedynym amerykańskim lotniskowcem zabezpieczającym operacje wymierzone w Iran.",
+      "comment": "Waszyngton pręży muskuły w deklaracjach, lecz rozciągnięta do granic flotylla zmusza Pentagon do niebezpiecznego odpuszczania kluczowych rejonów.",
+      "threads_post": "Kryzys na Bliskim Wschodzie narasta, a US Navy ma tam już tylko... jeden lotniskowiec! 🇺🇸🇮🇷\n\nUSS George H.W. Bush opuścił rejon działań po wycieńczającej, 188-dniowej misji i zawinął na odpoczynek do Tajlandii. Na straży interesów USA i odstraszania Iranu pozostał samotnie USS George Washington.\n\nTo dosadny dowód na to, jak potężne problemy z rozciągnięciem sił i konserwacją okrętów ma obecnie amerykańska marynarka. Deklaracje o dominacji na oceanach zderzają się z brutalnym brakiem dostępnych kadłubów.\n\nCzy Pentagon jest w stanie utrzymać kontrolę na dwóch frontach jednocześnie? 👇💬",
+      "question": "Czy zmniejszona obecność USA na Bliskim Wschodzie zachęci Iran do śmielszych ruchów? 👇💬",
+      "image_query": "aircraft carrier ocean",
+      "link": "https://www.twz.com/sea/where-are-the-aircraft-carriers-october-6-2026",
+      "image_url": "https://www.twz.com/wp-content/uploads/2026/10/TWZ-Carrier-Fleet-Tracker-As-Of-October-6-2026-Top.png?w=1200",
+      "source_image_url": "https://www.twz.com/wp-content/uploads/2026/10/TWZ-Carrier-Fleet-Tracker-As-Of-October-6-2026-Top.png?w=1200"
     }
   ]
 }
