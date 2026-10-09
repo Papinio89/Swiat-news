@@ -19,7 +19,8 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1579912437766-7896dfc2d008?q=80&w=1200&auto=format&fit=crop"
 
-RSS_URLS = [
+# Źródła standardowe (Militaria, Geopolityka, Obronność)
+RSS_URLS_STANDARD = [
     "https://defence24.pl/rss",
     "https://news.google.com/rss/search?q=wojsko+bezpiecze%C5%84stwo+granica+obronno%C5%9B%C4%87&hl=pl&gl=PL&ceid=PL:pl",
     "https://www.twz.com/feed",
@@ -31,6 +32,13 @@ RSS_URLS = [
     "https://news.google.com/rss/search?q=nato+russia+china+taiwan+defense&hl=en-US&gl=US&ceid=US:en"
 ]
 
+# Źródła zdarzeń krytycznych (Breaking: ataki nożowników, strzelaniny, incydenty kryzysowe)
+RSS_URLS_BREAKING = [
+    "https://news.google.com/rss/search?q=strzelanina+atak+no%C5%BCownik+zamach+ranni+policja+ob%C5%82awa&hl=pl&gl=PL&ceid=PL:pl",
+    "https://news.google.com/rss/search?q=stabbing+shooting+attack+police+suspect+dead+injured&hl=en-US&gl=US&ceid=US:en",
+    "https://feeds.bbci.co.uk/news/world/rss.xml"
+]
+
 POLISH_MONTHS = {
     1: "stycznia", 2: "lutego", 3: "marca", 4: "kwietnia",
     5: "maja", 6: "czerwca", 7: "lipca", 8: "sierpnia",
@@ -38,7 +46,7 @@ POLISH_MONTHS = {
 }
 
 MAX_AGE_HOURS = 12
-TARGET_ITEMS = 3
+TARGET_ITEMS = 5
 
 
 def clean_link(url: str) -> str:
@@ -72,6 +80,8 @@ def is_recent(entry) -> bool:
 
 def normalize_category(cat: str) -> str:
     c = str(cat or "").upper().strip()
+    if "PILNE" in c or "ATAK" in c or "KRYZYS" in c or "STRZEL" in c:
+        return "PILNE"
     if "POLSK" in c:
         return "POLSKA"
     if "GEOPOLITYK" in c or "ŚWIAT" in c:
@@ -89,7 +99,7 @@ def fetch_article_image(url: str) -> str | None:
                 "User-Agent": (
                     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/120.0.0.0 Safari/537.36"
+                    "Chrome/124.0.0.0 Safari/537.36"
                 ),
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
                 "Accept-Language": "pl,en-US;q=0.9,en;q=0.8"
@@ -107,7 +117,6 @@ def fetch_article_image(url: str) -> str | None:
         for pat in patterns:
             m = re.search(pat, html_raw, re.I)
             if m:
-                # Kluczowa zmiana: dekodowanie encji HTML (&amp; -> &) dla linków z tokenami CDN
                 img = html.unescape(m.group(1).strip()).replace("&amp;", "&")
                 if img.startswith("//"):
                     img = "https:" + img
@@ -157,10 +166,11 @@ def validate_items(items: list) -> list:
         threads_post = str(item.get("threads_post", "")).strip()
         question = str(item.get("question", "")).strip()
         category = normalize_category(item.get("category", "OBRONNOŚĆ"))
-        image_query = str(item.get("image_query", "military")).strip()
+        image_query = str(item.get("image_query", "police emergency")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 80:
+        # Wymóg rozbudowanego porannego wątku Threads (minimum 350 znaków)
+        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 350:
             continue
 
         valid.append({
@@ -177,146 +187,145 @@ def validate_items(items: list) -> list:
     return valid
 
 
-# --- ZBIERANIE RSS ---
-raw_articles = []
-for url in RSS_URLS:
-    try:
-        feed = feedparser.parse(url)
-        for entry in feed.entries[:4]:
-            if not is_recent(entry):
-                continue
-            title = getattr(entry, "title", "").strip()
-            summary = getattr(entry, "summary", "").strip()
-            clean_snippet = re.sub(r'<[^>]+>', '', summary)[:250]
-            link = clean_link(getattr(entry, "link", "#"))
-            if title and len(title) > 6:
-                raw_articles.append({
-                    "title": title,
-                    "snippet": clean_snippet,
-                    "link": link
-                })
-    except Exception as e:
-        print(f"Błąd RSS z {url}: {e}")
-
-if len(raw_articles) < TARGET_ITEMS:
-    for url in RSS_URLS:
+def parse_feed_list(urls, max_entries=4):
+    articles = []
+    for u in urls:
         try:
-            feed = feedparser.parse(url)
-            for entry in feed.entries[:2]:
+            feed = feedparser.parse(u)
+            for entry in feed.entries[:max_entries]:
+                if not is_recent(entry):
+                    continue
                 title = getattr(entry, "title", "").strip()
                 summary = getattr(entry, "summary", "").strip()
                 clean_snippet = re.sub(r'<[^>]+>', '', summary)[:250]
                 link = clean_link(getattr(entry, "link", "#"))
-                if title and len(title) > 6:
-                    raw_articles.append({
+                if title and len(title) > 8:
+                    articles.append({
                         "title": title,
                         "snippet": clean_snippet,
                         "link": link
                     })
-        except:
-            pass
+        except Exception as e:
+            print(f"Błąd RSS z {u}: {e}")
+    return articles
 
-print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
+
+# --- ZBIERANIE RSS (Z PODZIAŁEM NA STANDARD I BREAKING) ---
+raw_standard = parse_feed_list(RSS_URLS_STANDARD, max_entries=4)
+raw_breaking = parse_feed_list(RSS_URLS_BREAKING, max_entries=5)
+
+print(f"Pobrano: {len(raw_standard)} standardowych oraz {len(raw_breaking)} pilnych artykułów.")
 
 # --- WYKLUCZENIA Z ARCHIWUM ---
 excluded_topics = []
-archive_file = "archive.json"
-if os.path.exists(archive_file):
-    try:
-        with open(archive_file, "r", encoding="utf-8") as f:
-            archive_data = json.load(f)
-            for session_key in sorted(archive_data.keys(), reverse=True)[:5]:
-                session_content = archive_data.get(session_key)
-                if isinstance(session_content, dict) and "items" in session_content:
-                    for item in session_content.get("items", []):
-                        if "title" in item:
+for fname in ["archive.json", "news.json", "fast.json"]:
+    if os.path.exists(fname):
+        try:
+            with open(fname, "r", encoding="utf-8") as f:
+                d = json.load(f)
+                if isinstance(d, dict):
+                    # Obsługa formatu archiwalnego z kluczami sesji
+                    items_pool = []
+                    if "items" in d:
+                        items_pool = d["items"]
+                    else:
+                        for sk in sorted(d.keys(), reverse=True)[:5]:
+                            sub = d.get(sk)
+                            if isinstance(sub, dict) and "items" in sub:
+                                items_pool.extend(sub["items"])
+                    for item in items_pool:
+                        if isinstance(item, dict) and "title" in item:
                             clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
                             excluded_topics.append(clean)
-    except:
-        pass
+        except:
+            pass
 
-news_file = "news.json"
-if os.path.exists(news_file):
-    try:
-        with open(news_file, "r", encoding="utf-8") as f:
-            news_data = json.load(f)
-            if isinstance(news_data, dict) and "items" in news_data:
-                for item in news_data.get("items", []):
-                    if "title" in item:
-                        clean = "".join(c for c in item["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
-                        excluded_topics.append(clean)
-    except:
-        pass
+def deduplicate(article_list):
+    filtered = []
+    seen = set()
+    for art in article_list:
+        t = "".join(c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+        words = set(t.split())
+        is_dup = False
+        if len(words) > 2:
+            for prev in excluded_topics:
+                p_words = set(prev.split())
+                if len(p_words) > 2:
+                    common = words.intersection(p_words)
+                    if len(common) / min(len(words), len(p_words)) > 0.40:
+                        is_dup = True
+                        break
+        if not is_dup and t not in seen:
+            filtered.append(art)
+            seen.add(t)
+    return filtered if filtered else article_list
 
-# --- DEDUPLIKACJA ---
-filtered_raw_articles = []
-seen_titles = set()
-for art in raw_articles:
-    t = "".join(c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
-    is_duplicate = False
-    art_words = set(t.split())
-    if len(art_words) > 2:
-        for prev in excluded_topics:
-            prev_words = set(prev.split())
-            if len(prev_words) > 2:
-                common = art_words.intersection(prev_words)
-                if len(common) / min(len(art_words), len(prev_words)) > 0.35:
-                    is_duplicate = True
-                    break
+clean_standard = deduplicate(raw_standard)[:12]
+clean_breaking = deduplicate(raw_breaking)[:8]
 
-    if not is_duplicate and t not in seen_titles:
-        filtered_raw_articles.append(art)
-        seen_titles.add(t)
-
-if len(filtered_raw_articles) < TARGET_ITEMS:
-    filtered_raw_articles = raw_articles
-
-articles_for_ai = filtered_raw_articles[:15]
-
-# --- PROMPT AI Z ZASADĄ POJEDYNCZEJ KATEGORII I KRÓTKIEGO KOMENTARZA ---
+# --- PROMPT AI Z GWARANCJĄ PORANNEJ JAKOŚCI I 2 PILNYCH NEWSÓW ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem czołowego konta analityczno-militarnego w mediach społecznościowych („Świat w Minucie”). 
-Twoje posty zdobywają wirale, bo łączysz 100% rzetelność z bezkompromisowym, ciętym językiem.
+prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie”). 
+Twoje treści zdobywają gigantyczne zasięgi, ponieważ łączysz 100% rzetelność agencyjną z bezkompromisowym, ciętym językiem i formą dopracowanych dwuczęściowych wątków.
 
-Zadanie: Wybierz DOKŁADNIE {TARGET_ITEMS} RÓŻNE, NAJCIEKAWSZE tematy z podanej listy i stwórz dla każdego unikalny wpis w formacie JSON.
+ZADANIE:
+Przygotuj DOKŁADNIE 5 NAJWAŻNIEJSZYCH I NAJBARDZIEJ ELEKTRYZUJĄCYCH WIADOMOŚCI w formacie JSON:
+1. DOKŁADNIE 2 POZYCJE PILNE (Kategoria: "PILNE"):
+   - Wybierz je z puli [ARTYKUŁY PILNE / KRYTYCZNE].
+   - Muszą to być nagłe zdarzenia kryzysowe: atak nożownika, strzelanina, obława, ewakuacja, incydent bezpieczeństwa publicznego lub zamach.
+2. DOKŁADNIE 3 POZYCJE STRATEGICZNE (Kategoria: "OBRONNOŚĆ", "POLSKA" lub "GEOPOLITYKA"):
+   - Wybierz je z puli [ARTYKUŁY STRATEGICZNE].
+   - Sprawy wschodniej flanki, zakupy zbrojeniowe, traktaty, sojusze, napięcia mocarstw.
 
-ZASADA POJEDYNCZEJ KATEGORII (ZAKAZ ŁĄCZENIA UKOŚNIKIEM):
-Pole "category" MUSI mieć DOKŁADNIE JEDNO słowo:
-- "OBRONNOŚĆ" (zakupy broni, procedury wojskowe, fabryki amunicji, armia)
-- "POLSKA" (wydarzenia bezpośrednio w kraju lub na polskiej granicy)
-- "GEOPOLITYKA" (spory mocarstw, Bliski Wschód, traktaty międzynarodowe)
+ZASADA POJEDYNCZEJ KATEGORII:
+Pole "category" to DOKŁADNIE JEDNO słowo: "PILNE", "OBRONNOŚĆ", "POLSKA" lub "GEOPOLITYKA".
 
-ZASADY TREŚCI:
+ZASADA PORANNEGO FORMATOWANIA THREADS (DWA POSTY W JEDNYM WĄTKU):
+Pole "threads_post" MUSI mieć łącznie 600-800 ZNAKÓW i być rozdzielone znacznikiem "---ODPOWIEDŹ---":
+CZĘŚĆ 1 (Post główny – ok. 300-380 znaków):
+- [Mocny tytuł z emotikoną 🚨, ⚠️, ⚔️ lub 🛡️]
+- [Dramatyczny, podwójny hook z flagami i wykrzyknikiem]
+- [1-2 zdania wprowadzające w sedno kryzysu, zakończone wezwaniem: (Szczegóły i tło w odpowiedzi 👇🧵)]
+
+---ODPOWIEDŹ---
+
+CZĘŚĆ 2 (Pierwsza odpowiedź pod postem – ok. 350-450 znaków):
+- [Pogłębione rozwinięcie z konkretnymi faktami, liczbami i kulisami, których NIE MA na slajdzie]
+- [Cięta pointa bez taryfy ulgowej obnażająca realia]
+- [Pytanie prowokujące dyskusję kończące się '👇💬']
+
+ZASADY DLA SLAJDU:
 - "title": [Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków].
 - "hook": 1 dynamiczne zdanie uderzające w sedno.
-- "summary": Dokładnie 2 zwięzłe zdania czystych faktów i liczb na slajd.
-- "comment": DOKŁADNIE 1 BŁYSKOTLIWE, DOSADNE ZDANIE Z POINTĄ (14-22 słowa). 
-  * MUSI BYĆ WIDOCZNIE KRÓTSZE NIŻ SUMMARY!
-  * Zderz deklaracje decydentów z brutalną rzeczywistością, brakiem sprzętu lub opóźnieniami. Zero banałów.
-- "threads_post": Dedykowany, osobny post na Threads (3-4 naturalne akapity z podwójnym hookiem, tłem, flagami i pytaniem). Zakaz przepisywania 1:1 słów ze slajdu.
-- "question": 1 angażujące, unikalne pytanie skierowane do czytelników kończące się „👇💬”.
-- "image_query": 2-3 precyzyjne angielskie słowa kluczowe do Pexels.
+- "summary": Dokładnie 2 zwięzłe zdania czystych faktów na slajd. Zakaz zmyślania!
+- "comment": DOKŁADNIE 1 CIĘTE, BŁYSKOTLIWE ZDANIE (14-22 słowa, krótsze niż summary).
+- "question": 1 pytanie do dyskusji kończące się '👇💬'.
+- "image_query": 2-3 precyzyjne słowa kluczowe po angielsku do Pexels (np. 'police emergency sirens', 'fighter jet missile', 'military border patrol').
 
-STRUKTURA JSON (zwróć WYŁĄCZNIE czysty JSON):
+STRUKTURA JSON (Zwróć CZYSTĄ tablicę 5 obiektów):
 [
   {{
-    "category": "OBRONNOŚĆ" lub "POLSKA" lub "GEOPOLITYKA",
-    "title": "[Emotikona] [Konkretny, intrygujący nagłówek do 60 znaków]",
-    "hook": "1 zdanie uderzające w sedno.",
-    "summary": "2 zwięzłe zdania konkretów na slajd.",
-    "comment": "1 cięte, dosadne zdanie z puentą (14-22 słowa, krótsze niż summary).",
-    "threads_post": "Pełna treść wiralowego posta na Threads (rozdzielona podwójnymi enterami \\n\\n).",
-    "question": "1 unikalne pytanie do dyskusji kończące się '👇💬'.",
-    "image_query": "2-3 precyzyjne angielskie słowa kluczowe do Pexels",
-    "link": "dokładnie URL artykułu"
+    "category": "PILNE" lub "OBRONNOŚĆ" lub "POLSKA" lub "GEOPOLITYKA",
+    "title": "[Emotikona] [Nagłówek]",
+    "hook": "1 zdanie w sedno.",
+    "summary": "2 zwięzłe zdania faktów.",
+    "comment": "1 cięte zdanie z puentą (14-22 słowa).",
+    "threads_post": "Część 1\\n\\n---ODPOWIEDŹ---\\n\\nCzęść 2",
+    "question": "Pytanie do dyskusji 👇💬",
+    "image_query": "słowa kluczowe Pexels",
+    "link": "URL artykułu źródłowego"
   }}
 ]
 
-Unikaj tematów z archiwum: {json.dumps(excluded_topics[:8], ensure_ascii=False)}
+Unikaj tematów: {json.dumps(excluded_topics[:15], ensure_ascii=False)}
 
-Dane wejściowe:
-{json.dumps(articles_for_ai, ensure_ascii=False)}
+DANE WEJŚCIOWE:
+[ARTYKUŁY PILNE / KRYTYCZNE]:
+{json.dumps(clean_breaking, ensure_ascii=False)}
+
+[ARTYKUŁY STRATEGICZNE]:
+{json.dumps(clean_standard, ensure_ascii=False)}
 """
 
 items = []
@@ -326,7 +335,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.45,
+            temperature=0.5,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -361,21 +370,26 @@ except Exception as e:
     items = []
 
 # Awaryjne uzupełnienie
+pool = clean_breaking + clean_standard
 while len(items) < TARGET_ITEMS:
     existing_links = {i.get('link') for i in items if isinstance(i, dict)}
     added = False
-    for art in articles_for_ai:
+    for art in pool:
         if art['link'] not in existing_links and art['link'] != "#":
-            clean_t = art.get('title', 'Nowe doniesienia')
+            clean_t = art.get('title', 'Pilne wydarzenie')
+            is_breaking_item = len(items) < 2
+            cat = "PILNE" if is_breaking_item else "OBRONNOŚĆ"
+            icon = "🚨" if is_breaking_item else "🛡️"
+            
             items.append({
-                "category": "OBRONNOŚĆ",
-                "title": f"🚨 {clean_t[:55]}",
-                "hook": f"Kluczowe doniesienia dotyczące projektu: {clean_t[:40]}.",
-                "summary": "Trwają dyskusje wokół wdrożenia i zabezpieczenia kontraktu w tym obszarze. Przedstawiciele branży analizują szczegóły techniczne.",
-                "comment": "Deklaracje o modernizacji armii brzmią dumnie, dopóki zbrojeniówka nie zderzy się z brakiem mocy przerobowych fabryk.",
-                "threads_post": f"🚨 {clean_t[:55]}\n\nKluczowy zwrot na wschodniej flance: zapadają strategiczne decyzje! 🛡️⚡\n\nPrzedstawiciele resortów obrony analizują najnowsze dane operacyjne. Presja czasu i wyzwania logistyczne zmuszają do weryfikacji dotychczasowych planów zaopatrzeniowych.\n\nTo wyraźny sygnał, że deklaracje polityczne muszą natychmiast znaleźć odzwierciedlenie w realnych mocach produkcyjnych przemysłu. 🪖⏳\n\nKrajowy i sojuszniczy przemysł zbrojeniowy sprosta wyzwaniom nowej ery? 🏭👇💬",
-                "question": "Jak oceniacie ten ruch z perspektywy modernizacji armii? 👇💬",
-                "image_query": "military defense technology",
+                "category": cat,
+                "title": f"{icon} {clean_t[:55]}",
+                "hook": f"Kluczowe doniesienia agencyjne: {clean_t[:40]}.",
+                "summary": "Służby i przedstawiciele władz analizują najnowszy rozwój sytuacji na miejscu zdarzenia. Trwa weryfikacja bezpośrednich następstw incydentu.",
+                "comment": "Deklaracje o bezpieczeństwie natychmiast zderzają się z realną zdolnością reagowania w warunkach kryzysowych.",
+                "threads_post": f"{icon} {clean_t[:55]}\n\nKluczowy zwrot akcji: sytuacja rozwija się błyskawicznie! 🚨⚡\n\nNajnowsze raporty wskazują na dynamiczny rozwój wydarzeń. Służby postawiono w stan najwyższej gotowości.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\nKulisy tego incydentu obnażają słabe punkty dotychczasowych procedur reagowania. Kiedy opadną emocje, konieczna będzie natychmiastowa rewizja założeń operacyjnych.\n\nTo kolejny dowód, że spokój bywa pozorny, a realna próba następuje bez ostrzeżenia. ⏳🛡️\n\nJak oceniacie reakcję służb w tym kryzysowym momencie? 👇💬",
+                "question": "Jak oceniacie przygotowanie systemów bezpieczeństwa na takie sytuacje? 👇💬",
+                "image_query": "police siren emergency" if is_breaking_item else "military army patrol",
                 "link": art.get("link", "#")
             })
             existing_links.add(art['link'])
@@ -387,25 +401,30 @@ while len(items) < TARGET_ITEMS:
 
 items = items[:TARGET_ITEMS]
 
-# --- KASKADOWE POBIERANIE ZDJĘĆ Z CZYSZCZENIEM LINKÓW ---
+# --- KASKADOWE POBIERANIE ZDJĘĆ Z POTRÓJNYM KLUCZEM DLA FRONTENDU ---
 print("Dobieranie zdjęć (Artykuł -> Pexels -> Fallback)...")
 source_ok = 0
+seen_image_urls = set()
+
 for item in items:
     url = item.get("link", "")
-    q = item.get("image_query", "military")
+    q = item.get("image_query", "police emergency")
     
     selected_img = fetch_article_image(url)
-    if selected_img:
+    if selected_img and selected_img not in seen_image_urls:
         source_ok += 1
     else:
         selected_img = fetch_pexels_image_url(q)
-    if not selected_img:
-        selected_img = FALLBACK_IMG
+        if not selected_img or selected_img in seen_image_urls:
+            selected_img = FALLBACK_IMG
         
-    # Zabezpieczenie przed encjami w adresach końcowych
     clean_img = html.unescape(selected_img).replace("&amp;", "&")
+    seen_image_urls.add(clean_img)
+    
+    # Potrójny klucz (pełna kompatybilność z każdym widokiem)
     item["image_url"] = clean_img
     item["source_image_url"] = clean_img
+    item["image"] = clean_img
 
 print(f"Zdjęcia ze źródeł pobrane: {source_ok}/{len(items)}")
 
@@ -421,4 +440,4 @@ output_data = {
 with open("fast.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono. Pomyślnie zapisano {len(items)} unikalnych pozycji w fast.json.")
+print(f"Zakończono. Pomyślnie zapisano {len(items)} pozycji (2 pilne + 3 strategiczne) w fast.json.")
