@@ -106,6 +106,20 @@ def normalize_category(cat: str) -> str:
     return "GOSPODARKA"
 
 
+def format_uppercase_title(title_str: str) -> str:
+    """Format: [EMOTIKON] [TEKST WIELKIMI LITERAMI]"""
+    s = title_str.strip()
+    if not s:
+        return ""
+    # Wyciągamy pierwszą emotikonę / prefix, a resztę zamieniamy na wielkie litery
+    match = re.match(r'^([\U00010000-\U0010ffff\u2600-\u27bf\s]+)(.*)$', s)
+    if match:
+        emoji_prefix = match.group(1).strip()
+        rest = match.group(2).strip()
+        return f"{emoji_prefix} {rest.upper()}".strip()
+    return s.upper()
+
+
 def validate_items(items: list) -> list:
     required = {"category", "title", "hook", "summary", "comment", "threads_post", "question", "image_query", "link"}
     valid = []
@@ -115,7 +129,7 @@ def validate_items(items: list) -> list:
         if not required.issubset(item.keys()):
             continue
 
-        title = str(item.get("title", "")).strip()
+        title = format_uppercase_title(str(item.get("title", "")))
         hook = str(item.get("hook", "")).strip()
         summary = str(item.get("summary", "")).strip()
         comment = str(item.get("comment", "")).strip()
@@ -179,7 +193,7 @@ def fetch_article_image(url: str) -> str | None:
                 "User-Agent": (
                     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/120.0.0.0 Safari/537.36"
+                    "Chrome/124.0.0.0 Safari/537.36"
                 ),
                 "Accept": "text/html,application/xhtml+xml",
                 "Accept-Language": "en-US,en;q=0.9,pl;q=0.8",
@@ -285,22 +299,42 @@ if len(filtered_raw_articles) < 10:
 
 print(f"Po ścisłej deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów")
 
-# --- PROMPT AI Z ROZSZERZONYM FORMATEM THREADS (DWUPAK: POST + ODPOWIEDŹ) ---
+# --- PROMPT AI Z ZUNIFIKOWANĄ FORMĄ (TYTUŁY DUŻYMI LITERAMI + ENERGICZNA FORMA PORANNA) ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
 recent_titles_sample = previous_titles[:35]
 
-prompt = f"""Jesteś autorem i redaktorem naczelnym czołowego formatu informacyjno-analitycznego w social mediach („Świat w Minucie” na Instagramie i Threads). 
-Twoje posty generują potężne zasięgi, ponieważ tworzysz rozbudowane wątki – post główny intryguje, a odpowiedź pod nim dopina historię i wywołuje dyskusję.
+prompt = f"""Jesteś redaktorem naczelnym formatu „Świat w Minucie” (Instagram/Threads). 
+Twoje treści zdobywają wiralowe zasięgi dzięki bezkompromisowej energii, wyrazistym nagłówkom pisanym DUŻYMI LITERAMI i chłodnej, bezlitosnej puencie.
 
-Zadanie: Na podstawie poniższych artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJCIEKAWSZYCH wiadomości w języku polskim w formacie JSON.
+Zadanie: Na podstawie artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJBARDZIEJ WCIĄGAJĄCYCH wiadomości w języku polskim w formacie JSON.
+Utrzymuj MAKSYMALNIE WYSOKI STANDARD (taki sam jak w wydaniu porannym – zero nudnych, mdłych streszczeń!).
 
-ZASADA 1: BEZWZGLĘDNY ZAKAZ POWTÓREK Z POPRZEDNICH DNI:
-{json.dumps(recent_titles_sample, ensure_ascii=False)}
+ZASADA 1: TYTUŁY WYŁĄCZNIE DUŻYMI LITERAMI (UPPERCASE):
+Pole "title" MUSI składać się z: [Trafna emotikona] + [MOCNY, CHWYTLIWY NAGŁÓWEK DRUKOWANYMI LITERAMI do 60 znaków].
+Przykłady:
+- "🚨 REKORDOWY SKOK PODATKU: KLASA ŚREDNIA DOSTANIE PO KIESZENI"
+- "🔥 PANIKA W DOWÓDZTWIE: RADAR NATO WYKRYŁ NIEZNANE CELE"
+- "📉 GIEŁDOWE TĄPNIĘCIE: INWESTORZY W POPIECHU UCIEKAJĄ W ZŁOTO"
 
-ZASADA 2: GWARANTOWANE MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE.
+ZASADA 2: FORMAT THREADS (DWA POSTY W JEDNYM WĄTKU – 600-800 ZNAKÓW):
+Pole "threads_post" MUSI składać się z 2 części oddzielonych znacznikiem "---ODPOWIEDŹ---":
+CZĘŚĆ 1 (Post główny – 300-380 znaków):
+- Tytuł DUŻYMI LITERAMI z emotikoną
+- Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "Historyczny przełom na rynkach! 🚀🇵🇱")
+- 1-2 zdania wprowadzające w sedno kryzysu/sporu, kończące się: (Szczegóły i tło w odpowiedzi 👇🧵)
 
-ZASADA 3: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII:
+---ODPOWIEDŹ---
+
+CZĘŚĆ 2 (Pierwsza odpowiedź pod postem – 350-450 znaków):
+- Twarde fakty, liczby, koszty i kulisy, których NIE MA na slajdzie graficznym
+- Cięta, bezlitosna puenta obnażająca hipokryzję decydentów lub korporacji
+- Konkretne pytanie prowokujące do dyskusji kończące się '👇💬'
+
+ZASADA 3: CIĘTY KOMENTARZ NA KARUZELI ("comment"):
+- Dokładnie 1 bezkompromisowe, dosadne zdanie z puentą (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zderz oficjalne obietnice z twardym rachunkiem zysków i strat.
+
+ZASADA 4: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII:
 Pole "category" to DOKŁADNIE JEDNO słowo:
 - "POLSKA" (min. 4 pozycje)
 - "GOSPODARKA" (min. 4 pozycje)
@@ -309,35 +343,25 @@ Pole "category" to DOKŁADNIE JEDNO słowo:
 - "OBRONNOŚĆ" (max 2 pozycje)
 - "TECHNOLOGIE" (max 1-2 pozycje)
 
-ZASADA 4: FORMAT THREADS (DWA POSTY: POST GŁÓWNY + ODPOWIEDŹ POD SPODEM):
-Pole "threads_post" MUSI mieć łącznie 600-800 ZNAKÓW i być sformatowane dokładnie w 2 częściach oddzielonych znacznikiem "---ODPOWIEDŹ---":
-
-CZĘŚĆ 1 (Post główny na Threads – ok. 300-380 znaków):
-[Nagłówek z trafną emotikoną]
-[Dynamiczny, podwójny hook z flagami i wykrzyknikiem]
-[1-2 zdania wprowadzające w sedno kryzysu/sporu, kończące się zachętą do przeczytania szczegółów: (Szczegóły i tło w odpowiedzi 👇🧵)]
-
----ODPOWIEDŹ---
-
-CZĘŚĆ 2 (Pierwsza odpowiedź pod postem – ok. 350-450 znaków):
-[Pogłębione rozwinięcie z konkretnymi liczbami, kulisami i tłem, którego NIE MA na slajdzie graficznym]
-[Cięta, bezkompromisowa pointa obnażająca hipokryzję lub koszty]
-[Konkretne pytanie prowokujące czytelników do dyskusji kończące się '👇💬']
+ZASADA 5: MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE W ZESTAWIENIU.
 
 STRUKTURA JSON:
 [
   {{
     "category": "POLSKA" lub "GOSPODARKA" lub "BIZNES" lub "GEOPOLITYKA" lub "OBRONNOŚĆ" lub "TECHNOLOGIE",
-    "title": "[Emotikona] [Nagłówek do 60 znaków]",
+    "title": "[Emotikona] [NAGŁÓWEK DUŻYMI LITERAMI]",
     "hook": "1 zdanie uderzające w sedno.",
-    "summary": "2 zwięzłe zdania faktów na slajd.",
-    "comment": "1 dosadne zdanie z puentą (14-22 słowa, krótsze niż summary).",
-    "threads_post": "Treść części 1\\n\\n---ODPOWIEDŹ---\\n\\nTreść części 2",
+    "summary": "2 zwięzłe zdania czystych faktów i liczb na slajd.",
+    "comment": "1 cięte zdanie kontrastu (14-22 słowa, krótsze niż summary).",
+    "threads_post": "Część 1\\n\\n---ODPOWIEDŹ---\\n\\nCzęść 2",
     "question": "1 pytanie do dyskusji kończące się '👇💬'.",
     "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
     "link": "dokładnie URL artykułu"
   }}
 ]
+
+Unikaj tematów z archiwum:
+{json.dumps(recent_titles_sample, ensure_ascii=False)}
 
 Dane wejściowe:
 {json.dumps(filtered_raw_articles, ensure_ascii=False)}
@@ -388,13 +412,14 @@ if len(items) < MIN_ITEMS:
     for art in filtered_raw_articles:
         if art["link"] not in existing_links and art["link"] != "#":
             clean_t = art.get("title", "Wydarzenie na arenie międzynarodowej")
+            upper_t = format_uppercase_title(f"📈 {clean_t[:55]}")
             items.append({
                 "category": "GOSPODARKA",
-                "title": f"📈 {clean_t[:55]}",
+                "title": upper_t,
                 "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
                 "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
                 "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
-                "threads_post": f"📈 {clean_t[:55]}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają dotychczasowe reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci w pośpiechu przeliczają koszty scenariuszy.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\nKulisy tej decyzji pokazują rosnącą presję na płynność finansową całego sektora. Kiedy gasną flesze kamer, twarda kalkulacja wymusza rewizję wielomiliardowych kontraktów.\n\nTo kolejny dowód, że deklaracje polityczne natychmiast zderzają się z rzeczywistością budżetową. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
+                "threads_post": f"{upper_t}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają dotychczasowe reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci w pośpiechu przeliczają koszty scenariuszy.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\nKulisy tej decyzji pokazują rosnącą presję na płynność finansową całego sektora. Kiedy gasną flesze kamer, twarda kalkulacja wymusza rewizję wielomiliardowych kontraktów.\n\nTo kolejny dowód, że deklaracje polityczne natychmiast zderzają się z rzeczywistością budżetową. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
                 "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel? 👇💬",
                 "image_query": "financial market economy",
                 "link": art["link"]
@@ -455,4 +480,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów z dwupakiem na Threads.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów w jednolitej, dynamicznej formie.")
