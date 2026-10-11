@@ -25,36 +25,39 @@ RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE CIEKAWOSTKI
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
     "https://news.google.com/rss/search?q=kuriozum+absurd+wpadka&hl=pl&gl=PL&ceid=PL:pl",
-    
+
     # 2. GLOBALNE BIEŻĄCE ODD NEWS
     "https://www.upi.com/rss/Odd_News/",
     "https://news.google.com/rss/search?q=when:2d+topic:weird+news&hl=en-US&gl=US&ceid=US:en",
-    
+
     # 3. NAUKA / HISTORIA
     "https://www.mentalfloss.com/rss.xml",
-    "https://www.sciencenews.org/topic/weird-science/feed"
+    "https://www.sciencenews.org/topic/weird-science/feed",
 ]
 
 POLISH_MONTHS = {
     1: "stycznia", 2: "lutego", 3: "marca", 4: "kwietnia",
     5: "maja", 6: "czerwca", 7: "lipca", 8: "sierpnia",
-    9: "września", 10: "października", 11: "listopada", 12: "grudnia"
+    9: "września", 10: "października", 11: "listopada", 12: "grudnia",
 }
 
 MAX_AGE_HOURS = 72
 MIN_ITEMS = 6
 
+# Pola obrazka wymagane przez frontend (ciekawostki / karty)
+IMAGE_FIELDS = ("image_url", "image", "source_image_url")
+
 
 def sanitize_text(text: str) -> str:
     if not text:
         return ""
-    text = re.sub(r'[\U000E0020-\U000E007F]', '', text)
+    text = re.sub(r"[\U000E0020-\U000E007F]", "", text)
     text = "".join(
         ch for ch in text
         if unicodedata.category(ch) not in ("Cf", "Cc", "Cn") or ch in "\n\t"
     )
-    text = re.sub(r'U\+[0-9A-Fa-f]{4,6}', '', text)
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"U\+[0-9A-Fa-f]{4,6}", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
@@ -64,7 +67,7 @@ def clean_link(url: str) -> str:
     try:
         tracking_params = {
             "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-            "at_medium", "at_campaign", "fbclid", "gclid", "mc_cid", "mc_eid"
+            "at_medium", "at_campaign", "fbclid", "gclid", "mc_cid", "mc_eid",
         }
         parsed = urlparse(url)
         if parsed.query:
@@ -104,8 +107,8 @@ def fetch_article_image(url: str) -> str | None:
                     "Chrome/124.0.0.0 Safari/537.36"
                 ),
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                "Accept-Language": "pl,en-US;q=0.9,en;q=0.8"
-            }
+                "Accept-Language": "pl,en-US;q=0.9,en;q=0.8",
+            },
         )
         with urllib.request.urlopen(req, timeout=6) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
@@ -114,7 +117,7 @@ def fetch_article_image(url: str) -> str | None:
             r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']',
             r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']',
             r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\']',
-            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']'
+            r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\']',
         ]
         for pat in patterns:
             m = re.search(pat, html, re.I)
@@ -140,13 +143,19 @@ def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
     queries.extend(["funny animal", "curiosity science", "vintage history"])
 
     for q in queries:
-        for attempt in range(retries + 1):
+        for _attempt in range(retries + 1):
             try:
-                url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
-                req = urllib.request.Request(url, headers={
-                    "Authorization": PEXELS_API_KEY,
-                    "User-Agent": "SwiatWMinute-Bot/1.0"
-                })
+                url = (
+                    f"https://api.pexels.com/v1/search?"
+                    f"query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
+                )
+                req = urllib.request.Request(
+                    url,
+                    headers={
+                        "Authorization": PEXELS_API_KEY,
+                        "User-Agent": "SwiatWMinute-Bot/1.0",
+                    },
+                )
                 with urllib.request.urlopen(req, timeout=5) as resp:
                     if resp.status == 200:
                         data = json.loads(resp.read().decode("utf-8"))
@@ -159,6 +168,72 @@ def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
             except Exception:
                 pass
     return FALLBACK_IMG
+
+
+def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
+    """Wybiera unikalny URL grafiki: artykuł → Pexels → fallback."""
+    url = item.get("link", "")
+    q = item.get("image_query") or item.get("title") or "funny weird fact"
+    # image_query z tytułu: proste słowa ASCII
+    if not item.get("image_query"):
+        words = re.findall(r"[A-Za-z]{3,}", str(q))
+        q = " ".join(words[:3]) if words else "funny animal"
+
+    article_img = fetch_article_image(url)
+    if article_img and article_img not in seen_image_urls:
+        seen_image_urls.add(article_img)
+        return article_img
+
+    stock_img = fetch_pexels_image_url(q)
+    if not stock_img or stock_img in seen_image_urls:
+        stock_img = fetch_pexels_image_url(q.split()[0] if q else "funny")
+    if not stock_img or stock_img in seen_image_urls:
+        stock_img = FALLBACK_IMG
+
+    seen_image_urls.add(stock_img)
+    return stock_img
+
+
+def apply_image_fields(item: dict, img_url: str) -> dict:
+    """Ustawia wszystkie aliasy obrazka używane przez frontend."""
+    item["image_url"] = img_url
+    item["source_image_url"] = img_url
+    item["image"] = img_url
+    return item
+
+
+def normalize_archive_item(item: dict) -> dict:
+    """
+    Kanoniczna struktura wpisu w archive_rozrywka.json.
+    Frontend (imageOf) czyta: image, image_url, source_image_url, img, photo, thumbnail…
+    """
+    if not isinstance(item, dict):
+        return item
+
+    img = (
+        item.get("image_url")
+        or item.get("image")
+        or item.get("source_image_url")
+        or item.get("img")
+        or item.get("photo")
+        or item.get("thumbnail")
+        or ""
+    )
+    img = str(img).strip() if img else ""
+
+    out = {
+        "category": sanitize_text(str(item.get("category", "ABSURDY ŚWIATA"))).upper(),
+        "title": sanitize_text(str(item.get("title", ""))),
+        "summary": sanitize_text(str(item.get("summary", ""))),
+        "comment": sanitize_text(str(item.get("comment", ""))),
+        "link": clean_link(str(item.get("link", "#"))),
+        "image_query": sanitize_text(str(item.get("image_query", ""))),
+        # zawsze te same 3 klucze – także w archiwum
+        "image_url": img or FALLBACK_IMG,
+        "image": img or FALLBACK_IMG,
+        "source_image_url": img or FALLBACK_IMG,
+    }
+    return out
 
 
 def validate_items(items: list) -> list:
@@ -186,9 +261,58 @@ def validate_items(items: list) -> list:
             "summary": summary,
             "comment": comment,
             "image_query": image_query,
-            "link": link
+            "link": link,
         })
     return valid
+
+
+def migrate_archive_images(archive_data: dict, max_backfill: int = 40) -> dict:
+    """
+    Uzupełnia brakujące grafiki w STARYCH sesjach archiwum.
+    Bez tego stare wpisy (tylko title/summary/link) nie mają zdjęć na froncie.
+    """
+    seen = set()
+    filled = 0
+    # zbierz już używane URL-e
+    for session in archive_data.values():
+        if not isinstance(session, dict):
+            continue
+        for it in session.get("items") or []:
+            if isinstance(it, dict):
+                for f in IMAGE_FIELDS:
+                    u = it.get(f)
+                    if u:
+                        seen.add(u)
+
+    for key, session in list(archive_data.items()):
+        if not isinstance(session, dict):
+            continue
+        items = session.get("items")
+        if not isinstance(items, list):
+            continue
+
+        new_items = []
+        for it in items:
+            if not isinstance(it, dict):
+                continue
+            has_img = any(it.get(f) for f in IMAGE_FIELDS)
+            if not has_img and filled < max_backfill:
+                try:
+                    img = pick_image_for_item(it, seen)
+                    it = apply_image_fields(dict(it), img)
+                    filled += 1
+                    print(f"  backfill: {it.get('title', '')[:50]}…")
+                except Exception as e:
+                    print(f"  backfill fail: {e}")
+                    it = apply_image_fields(dict(it), FALLBACK_IMG)
+            new_items.append(normalize_archive_item(it))
+
+        session["items"] = new_items
+        archive_data[key] = session
+
+    if filled:
+        print(f"Uzupełniono grafiki w archiwum: {filled} wpisów")
+    return archive_data
 
 
 # --- POBIERANIE RSS ---
@@ -200,7 +324,7 @@ for url in RSS_URLS:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
-            if re.search(r'\b(nsfw|porn|sex|naked|erotic)\b', title, re.I):
+            if re.search(r"\b(nsfw|porn|sex|naked|erotic)\b", title, re.I):
                 continue
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 12:
@@ -221,7 +345,8 @@ if os.path.exists(archive_file):
         archive_data = {}
 
 now_pl = datetime.now(pl_tz)
-session_fixed_key = now_pl.strftime("%Y-%m-%d_%H:%M_rozrywka")
+# stabilniejszy klucz dnia + godzina (bez minut – mniej fragmentacji)
+session_fixed_key = now_pl.strftime("%Y-%m-%d_%H_rozrywka")
 
 previous_topics = []
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:15]
@@ -230,14 +355,15 @@ for s_key in sorted_sessions:
     if isinstance(s_content, dict) and "items" in s_content:
         for it in s_content.get("items", []):
             if isinstance(it, dict) and "title" in it:
-                clean = "".join(c for c in it["title"] if ord(c) > 127 or c.isalnum() or c.isspace()).strip().lower()
+                clean = "".join(
+                    c for c in it["title"] if ord(c) > 127 or c.isalnum() or c.isspace()
+                ).strip().lower()
                 previous_topics.append(clean)
 
 filtered_raw_articles = []
 for art in raw_articles:
     art_clean = "".join(
-        c for c in art["title"]
-        if ord(c) > 127 or c.isalnum() or c.isspace()
+        c for c in art["title"] if ord(c) > 127 or c.isalnum() or c.isspace()
     ).strip().lower()
     is_duplicate = False
     art_words = set(art_clean.split())
@@ -307,18 +433,30 @@ for model_name in models_to_try:
                 response_mime_type="application/json",
                 temperature=0.6,
                 safety_settings=[
-                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
-                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE)
-                ]
-            )
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                    ),
+                    types.SafetySetting(
+                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
+                    ),
+                ],
+            ),
         )
-        
+
         raw_text = response.text or ""
-        text_clean = re.sub(r'^```(?:json)?\s*', '', raw_text.strip(), flags=re.IGNORECASE)
-        text_clean = re.sub(r'\s*```$', '', text_clean)
-        
+        text_clean = re.sub(r"^```(?:json)?\s*", "", raw_text.strip(), flags=re.IGNORECASE)
+        text_clean = re.sub(r"\s*```$", "", text_clean)
+
         parsed = json.loads(text_clean)
         if isinstance(parsed, list):
             raw_items = parsed
@@ -349,16 +487,19 @@ if len(items) < MIN_ITEMS:
             break
         if art["link"] in existing_links:
             continue
-            
-        raw_t = art['title']
-        clean_t = re.sub(r' - [^-]+$', '', raw_t)[:55]
+
+        raw_t = art["title"]
+        clean_t = re.sub(r" - [^-]+$", "", raw_t)[:55]
         items.append({
             "category": "BIEŻĄCE ABSURDY" if idx % 2 == 0 else "SZALONA HISTORIA",
             "title": f"🐾 {clean_t}",
-            "summary": "Nietypowe i zaskakujące doniesienia z ostatnich godzin, które wzbudziły spore poruszenie i ciekawość w mediach.",
+            "summary": (
+                "Nietypowe i zaskakujące doniesienia z ostatnich godzin, "
+                "które wzbudziły spore poruszenie i ciekawość w mediach."
+            ),
             "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
             "image_query": "weird animal funny mystery",
-            "link": art["link"]
+            "link": art["link"],
         })
         existing_links.add(art["link"])
 
@@ -370,40 +511,27 @@ if items:
 
 print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
 
-# --- DOBIERANIE ZDJĘĆ Z GWARANCJĄ UNIKALNOŚCI I FALLBACKU ---
+# --- DOBIERANIE ZDJĘĆ (przed zapisem do rozrywka.json I archiwum) ---
 print("Dobieranie zdjęć (blokada powtórzonych grafik i gwarancja URL)...")
 source_ok = 0
 seen_image_urls = set()
 
 for item in items:
-    url = item.get("link", "")
-    q = item.get("image_query", "funny weird fact")
-    
-    article_img = fetch_article_image(url)
-    
-    if article_img and article_img not in seen_image_urls:
-        chosen_img = article_img
-        seen_image_urls.add(article_img)
+    before = len(seen_image_urls)
+    img = pick_image_for_item(item, seen_image_urls)
+    apply_image_fields(item, img)
+    # jeśli weszło z artykułu (nie fallback / nie tylko pexels-heuristic) – zgrubnie
+    if item.get("link") and img != FALLBACK_IMG and "pexels.com" not in img and "unsplash.com" not in img:
         source_ok += 1
-    else:
-        stock_img = fetch_pexels_image_url(q)
-        if not stock_img or stock_img in seen_image_urls:
-            stock_img = fetch_pexels_image_url(q.split()[0] if q else "funny")
-            
-        if not stock_img or stock_img in seen_image_urls:
-            stock_img = FALLBACK_IMG
-
-        chosen_img = stock_img
-        seen_image_urls.add(chosen_img)
-
-    # Przypisanie wszystkich kluczy kompatybilności
-    item["image_url"] = chosen_img
-    item["source_image_url"] = chosen_img
-    item["image"] = chosen_img
+    elif "pexels.com" not in img and img != FALLBACK_IMG and before < len(seen_image_urls):
+        source_ok += 1
 
 print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels/Fallback)")
 
-# --- ZAPIS DO BIEŻĄCEGO WYDANIA I ARCHIWUM (PO PEŁNYM PRZYPISANIU ZDJĘĆ) ---
+# Kanoniczna forma każdego itemu (te same pola co w archiwum)
+items = [normalize_archive_item(it) for it in items]
+
+# --- ZAPIS ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
@@ -412,17 +540,41 @@ output_data = {
     "date": date_pretty,
     "time": time_pretty,
     "timestamp": timestamp_key,
-    "items": items
+    "items": items,
 }
 
-# 1. Bieżące wydanie (dla frontendu)
+# 1. Bieżące wydanie
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# 2. Archiwum sesyjne (trwałe gromadzenie sesji ze zdjęciami)
-archive_data[session_fixed_key] = output_data
+# 2. Archiwum – pełne itemy ZE ZDJĘCIAMI (normalize gwarantuje pola)
+archive_data[session_fixed_key] = {
+    "date": date_pretty,
+    "time": time_pretty,
+    "timestamp": timestamp_key,
+    "items": [normalize_archive_item(it) for it in items],
+}
+
+# 3. Migracja starych sesji bez image_url (max 40, żeby nie walić w API)
+print("Migracja starych wpisów archiwum bez grafik…")
+archive_data = migrate_archive_images(archive_data, max_backfill=40)
+
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
+# szybki self-check
+missing = 0
+for sess in archive_data.values():
+    if not isinstance(sess, dict):
+        continue
+    for it in sess.get("items") or []:
+        if not any(it.get(f) for f in IMAGE_FIELDS):
+            missing += 1
+print(f"Kontrola archiwum: wpisów bez grafiki = {missing}")
+
 print(f"Zapisano {len(items)} ciekawostek do rozrywka.json.")
 print(f"Zaktualizowano {archive_file} (łącznie sesji: {len(archive_data)}).")
+print("Przykładowy item (pola obrazka):")
+if items:
+    sample = {k: items[0].get(k) for k in ("title", "image_url", "image", "source_image_url")}
+    print(json.dumps(sample, ensure_ascii=False, indent=2))
