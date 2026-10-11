@@ -634,18 +634,61 @@ function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e){ r
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const t = getTitle(item.title);
-  const url = sourceLink(item);
+  const t = getTitle(item.title || item.text);
+  const summary = getSummary(item);
+  const comment = getComment(item);
+  const siteUrl = (location.origin || 'https://swiat-w-minute.vercel.app') + (location.pathname || '/');
+  const headline = ((t.emoji ? t.emoji + ' ' : '') + (t.title || '')).trim();
+  const parts = [headline];
+  if (summary) parts.push(summary);
+  if (comment) parts.push('💬 ' + comment);
+  parts.push('— via Świat w Minutę');
+  const text = parts.join('\n\n');
+  const payload = text + '\n' + siteUrl;
+
   if (navigator.share) {
     try {
-      await navigator.share({ title: t.title, text: getSummary(item) || t.title, url: url !== '#' ? url : location.href });
-      showToast('Udostępniono');
-    } catch(e){}
-  } else {
+      await navigator.share({ title: headline, text: text, url: siteUrl });
+      showToast('Udostępniono news');
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(payload);
+    showToast('Skopiowano news do schowka');
+  } catch (e) {
+    showToast('Nie udało się udostępnić');
+  }
+}
+
+/** Udostępnij / skopiuj link do oryginalnego źródła */
+async function shareSource(item, ev) {
+  if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+  const url = sourceLink(item);
+  if (!url || url === '#') {
+    showToast('Brak linku do źródła');
+    return;
+  }
+  const t = getTitle(item.title || item.text);
+  const headline = ((t.emoji ? t.emoji + ' ' : '') + (t.title || '')).trim();
+  const text = headline ? (headline + '\n' + url) : url;
+
+  if (navigator.share) {
     try {
-      await navigator.clipboard.writeText(url !== '#' ? url : location.href);
-      showToast('Link skopiowany');
-    } catch(e){ showToast('Nie udało się skopiować'); }
+      await navigator.share({ title: headline || 'Źródło', text: headline, url: url });
+      showToast('Udostępniono źródło');
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(text);
+    showToast('Link źródła skopiowany');
+  } catch (e) {
+    showToast('Nie udało się skopiować');
   }
 }
 
@@ -739,7 +782,7 @@ function card(item) {
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
           <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
-          <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec" style="background: var(--bg-card);">↗</button>
+          <button type="button" title="Udostępnij ten news" onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
@@ -756,9 +799,14 @@ function card(item) {
 
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
           <div class="truncate text-[10px] font-semibold text-mute">
-            ${formatItemDate(item) ? `<span class="text-amber-600 dark:text-amber-400">${escapeHtml(formatItemDate(item))}</span> · ` : ''}${escapeHtml(sourceName(item) || 'Źródło')}
+            ${formatItemDate(item) ? `<span class="text-amber-600 dark:text-amber-400">${escapeHtml(formatItemDate(item))}</span>` : ''}
           </div>
-          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline shrink-0">Źródło →</a>` : ''}
+          ${link && link !== '#' ? `
+          <div class="flex items-center gap-1.5 shrink-0">
+            <a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>
+            <button type="button" onclick="shareSource(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="Udostępnij źródło"
+              class="h-7 px-2 rounded-lg border text-[10px] font-bold text-sec hover:text-amber-600 hover:border-amber-400" style="border-color:var(--border);background:var(--bg-card)">↗ Źródło</button>
+          </div>` : ''}
         </div>
       </div>
     </article>`;
