@@ -1053,7 +1053,7 @@ function pickWeekHighlights(pool, limit) {
 
 function renderWeek() {
   const pool = collectWeekPool();
-  const top = pickWeekHighlights(pool, 10);
+  const top = pickWeekHighlights(pool, 15);
   const cats = {};
   pool.forEach(i => {
     const c = category(i) || 'Inne';
