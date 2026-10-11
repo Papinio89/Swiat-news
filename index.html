@@ -323,7 +323,6 @@
     <div class="mb-4">
       <div class="text-[10px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div>
       <h2 class="text-lg font-black text-main">📅 Tydzień w skrócie</h2>
-      <p class="text-sm text-sec mt-1">Automatyczny przegląd na podstawie Twoich danych</p>
     </div>
     <div id="week-content"></div>
   </section>
@@ -344,12 +343,16 @@
     <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec" style="background: var(--bg-muted); border-color: var(--border);">
       ℹ️ Ważne informacje o stronie
     </button>
-    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5" style="background: var(--bg-muted); border-color: var(--border);">
-      <h3 class="text-sm font-black text-main">Informacja o stronie</h3>
-      <p class="mt-1.5 text-xs leading-relaxed text-sec">
-        Świat w Minutę automatycznie zbiera i streści wiadomości z użyciem AI. 
-        Treści mogą zawierać uproszczenia. Zawsze weryfikuj w oryginalnym źródle.
-      </p>
+    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 text-left" style="background: var(--bg-muted); border-color: var(--border);">
+      <h3 class="text-sm font-black text-main mb-3">Ważne informacje</h3>
+      <ul class="space-y-2.5 text-xs leading-relaxed text-sec">
+        <li><span class="font-bold text-main">Czym jest ta strona?</span> Świat w Minutę to krótki przegląd dnia: geopolityka, gospodarka, obronność i technologia. Cel to szybki, czytelny skrót — nie pełna relacja dziennikarska.</li>
+        <li><span class="font-bold text-main">Skąd biorą się treści?</span> Materiały są wybierane z publicznych źródeł (m.in. serwisy informacyjne i kanały RSS), a następnie skracane i redagowane z pomocą AI.</li>
+        <li><span class="font-bold text-main">AI może się mylić.</span> Podsumowania bywają uproszczone, niekompletne albo nieprecyzyjne. Emocjonalny ton nagłówków i komentarzy to świadoma forma formatu, nie wyrok ani rekomendacja.</li>
+        <li><span class="font-bold text-main">Sprawdzaj źródła.</span> Przy każdym materiale jest link do oryginału. Zanim wyciągniesz wnioski albo udostępnisz treść dalej — zajrzyj do źródła.</li>
+        <li><span class="font-bold text-main">Niezależność.</span> Strona nie jest powiązana z partiami, redakcjami ani instytucjami, których dotyczyć mogą publikowane tematy.</li>
+        <li><span class="font-bold text-main">Kontakt / social.</span> Instagram: <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="font-bold text-amber-600 hover:underline">@swiatwminute</a></li>
+      </ul>
     </div>
     <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
       <p>Świat w Minutę © <span id="year"></span></p>
@@ -381,26 +384,8 @@
 <button id="back-top" onclick="goTop()" class="fixed bottom-20 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl sm:bottom-5 dark:bg-white dark:text-slate-950">↑</button>
 <div id="toast" class="fixed bottom-20 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl sm:bottom-5"></div>
 
-<div id="newsletter-overlay">
-  <div id="newsletter-popup">
-    <button id="newsletter-close" onclick="closeNewsletter()">×</button>
-    <div id="newsletter-form-wrap">
-      <div class="text-center text-3xl mb-2">📬</div>
-      <h3 class="text-center text-lg font-black mb-1">Chcesz więcej niż minutę?</h3>
-      <p class="text-center text-sm text-sec mb-4">Zostaw maila i dostaniesz darmowe PDF-y z przeglądem miesiąca + bonusy. Zero spamu.</p>
-      <form id="newsletter-form" onsubmit="submitNewsletter(event)">
-        <input type="email" id="newsletter-email" placeholder="Twój e-mail" required>
-        <button type="submit" id="newsletter-submit">Chcę dostać PDF-y →</button>
-      </form>
-      <p class="text-center text-[11px] text-mute mt-3">Możesz zrezygnować w każdej chwili.</p>
-    </div>
-    <div id="newsletter-success">
-      <div class="text-4xl mb-2">🎉</div>
-      <h3 class="font-black">Dzięki!</h3>
-      <p class="text-sm text-sec">Sprawdź skrzynkę – wkrótce wyślę materiały.</p>
-    </div>
-  </div>
-</div>
+<!-- newsletter wyłączony do czasu podpięcia systemu mailingowego -->
+
 
 <script>
 'use strict';
@@ -1074,7 +1059,7 @@ function renderWeek() {
     <div class="rounded-2xl border p-5 mb-5 surface" style="border-color:var(--border); background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);">
       <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Przegląd tygodnia</div>
       <h3 class="text-lg font-black text-main mb-2">Najlepsze z tygodnia</h3>
-      <p class="text-sm text-sec">${escapeHtml(rangeLabel)} · ${pool.length} materiałów z ${dayKeys.length} dni · mix z archiwum</p>
+      <p class="text-sm text-sec">${escapeHtml(rangeLabel)} · ${pool.length} materiałów z ${dayKeys.length} dni</p>
       ${dayKeys.length ? `<p class="text-[11px] text-mute mt-1">Dni: ${dayKeys.map(fmt).map(x => escapeHtml(x)).join(' · ')}</p>` : ''}
     </div>`;
 
@@ -1469,38 +1454,11 @@ async function installPWA() {
 }
 
 /* Newsletter */
-function shouldShowNewsletter() {
-  try {
-    if (localStorage.getItem('swm-newsletter-subscribed') === '1') return false;
-    const dismissed = localStorage.getItem('swm-newsletter-dismissed');
-    if (dismissed && Date.now() - parseInt(dismissed,10) < 7*24*60*60*1000) return false;
-    return true;
-  } catch(e){ return false; }
-}
-function showNewsletter() {
-  if (!shouldShowNewsletter()) return;
-  $('newsletter-overlay')?.classList.add('show');
-}
-function closeNewsletter() {
-  $('newsletter-overlay')?.classList.remove('show');
-  try { localStorage.setItem('swm-newsletter-dismissed', Date.now().toString()); } catch(e){}
-}
-function submitNewsletter(e) {
-  e.preventDefault();
-  const email = $('newsletter-email').value.trim();
-  if (!email) return;
-  try {
-    localStorage.setItem('swm-newsletter-subscribed', '1');
-    localStorage.setItem('swm-newsletter-email', email);
-  } catch(e){}
-  $('newsletter-form-wrap').style.display = 'none';
-  $('newsletter-success').classList.add('show');
-  setTimeout(closeNewsletter, 2500);
-}
-setTimeout(showNewsletter, 10000);
-$('newsletter-overlay')?.addEventListener('click', e => {
-  if (e.target.id === 'newsletter-overlay') closeNewsletter();
-});
+/* Newsletter – wyłączony (brak systemu mailingowego) */
+function shouldShowNewsletter() { return false; }
+function showNewsletter() { /* disabled */ }
+function closeNewsletter() { /* disabled */ }
+function submitNewsletter(e) { if (e) e.preventDefault(); }
 
 init();
 </script>
