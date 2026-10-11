@@ -507,8 +507,60 @@ function getComment(x) { return x.comment || x.why || x.whyImportant || x.import
 function sourceName(x) { return x.source_name || x.sourceName || x.source || ''; }
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
-function imageOf(x) { 
-  return x.image || x.image_url || x.imageUrl || x.img || x.photo || x.thumbnail || x.thumb || x.source_image_url || ''; 
+function imageOf(x) {
+  if (!x || typeof x !== 'object') return '';
+  const candidates = [
+    x.image, x.image_url, x.imageUrl, x.img, x.photo, x.thumbnail, x.thumb,
+    x.source_image_url, x.sourceImageUrl, x.cover, x.cover_url, x.coverUrl,
+    x.picture, x.pic, x.media_url, x.mediaUrl
+  ];
+  for (const c of candidates) {
+    if (typeof c === 'string' && c.trim()) return c.trim();
+  }
+  if (typeof x.media === 'string' && x.media.trim()) return x.media.trim();
+  if (x.media && typeof x.media === 'object') {
+    const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
+    if (typeof m === 'string' && m.trim()) return m.trim();
+  }
+  if (Array.isArray(x.images) && x.images.length) {
+    const first = x.images[0];
+    if (typeof first === 'string') return first;
+    if (first && (first.url || first.src)) return first.url || first.src;
+  }
+  return '';
+}
+
+function itemDateRaw(x) {
+  if (!x) return null;
+  const candidates = [
+    x.date, x.published_at, x.publishedAt, x.created_at, x.createdAt,
+    x.datetime, x.time, x.timestamp, x._date, x._archiveDate, x.edition_date
+  ];
+  for (const c of candidates) {
+    if (!c) continue;
+    if (typeof c === 'number') {
+      const d = new Date(c > 1e12 ? c : c * 1000);
+      if (!isNaN(d.getTime())) return d;
+    }
+    const d = new Date(c);
+    if (!isNaN(d.getTime())) return d;
+    // "2026-10-10" or "10.10.2026" as label
+    if (typeof c === 'string' && c.trim().length >= 6) return c.trim();
+  }
+  return null;
+}
+
+function formatItemDate(x) {
+  const raw = itemDateRaw(x);
+  if (!raw) return '';
+  if (raw instanceof Date) {
+    return raw.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  }
+  // string label (np. klucz archiwum)
+  const s = String(raw);
+  const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
+  if (m) return `${m[3].padStart(2,'0')}.${m[2].padStart(2,'0')}.${m[1]}`;
+  return s.replace(/_/g, ' ').slice(0, 24);
 }
 
 function categoryClass(cat) {
@@ -658,7 +710,9 @@ function card(item) {
         </div>
 
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
-          <div class="truncate text-[10px] font-semibold text-mute">${escapeHtml(sourceName(item) || 'Źródło')}</div>
+          <div class="truncate text-[10px] font-semibold text-mute">
+            ${formatItemDate(item) ? `<span class="text-amber-600 dark:text-amber-400">${escapeHtml(formatItemDate(item))}</span> · ` : ''}${escapeHtml(sourceName(item) || 'Źródło')}
+          </div>
           ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline shrink-0">Źródło →</a>` : ''}
         </div>
       </div>
@@ -673,22 +727,51 @@ function funMini(item) {
   </article>`;
 }
 
+async function translateHeadline(item) {
+  const t = getTitle(item.title);
+  let title = t.title;
+  let emoji = t.emoji;
+  if (isEnglishTitle(title)) title = await translateToPolish(title);
+  if (!emoji || emoji === '•') emoji = pickEmoji(title, category(item));
+  return { item, title, emoji };
+}
+
 async function renderToday() {
-  const items = uniqueByKey([...newsItems, ...rawFeedItems]);
-  $('edition-time').textContent = items.length ? `${items.length} tematów` : '';
-  if (!items.length && dataLoadFailed) {
+  const primary = uniqueByKey(newsItems || []);
+  const primaryKeys = new Set(primary.map(keyOf));
+  const rest = uniqueByKey((rawFeedItems || []).filter(x => !primaryKeys.has(keyOf(x))));
+  const total = primary.length + rest.length;
+
+  $('edition-time').textContent = total ? `${total} tematów` : '';
+  if (!total && dataLoadFailed) {
     $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak danych.</div>';
     return;
   }
-  const translated = await Promise.all(items.map(async (item) => {
-    const t = getTitle(item.title);
-    let title = t.title;
-    let emoji = t.emoji;
-    if (isEnglishTitle(title)) title = await translateToPolish(title);
-    if (!emoji || emoji === '•') emoji = pickEmoji(title, category(item));
-    return { item, title, emoji };
-  }));
-  $('headline-list').innerHTML = translated.map(({item, title, emoji}) => headlineRow(item, title, emoji)).join('') || '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
+  if (!total) {
+    $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
+    return;
+  }
+
+  const [primT, restT] = await Promise.all([
+    Promise.all(primary.map(translateHeadline)),
+    Promise.all(rest.map(translateHeadline))
+  ]);
+
+  let html = '';
+  if (primT.length) {
+    html += primT.map(({ item, title, emoji }) => headlineRow(item, title, emoji)).join('');
+  }
+  if (restT.length) {
+    html += `
+      <div class="px-3.5 py-2.5 border-y flex items-center gap-2" style="border-color: var(--border); background: var(--bg-muted);">
+        <span class="text-[10px] font-black uppercase tracking-[.14em] text-amber-600 dark:text-amber-400">Pozostałe newsy na dziś</span>
+        <span class="text-[10px] text-mute">· ${restT.length}</span>
+      </div>`;
+    html += restT.map(({ item, title, emoji }) => headlineRow(item, title, emoji)).join('');
+  }
+
+  $('headline-list').innerHTML = html || '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
+
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);
   $('fun-preview-grid').innerHTML = fp.map(funMini).join('');
@@ -745,11 +828,17 @@ function randomFunFact() {
 }
 
 function renderWeek() {
+  const fromArchive = (archiveGroups || []).flatMap(g =>
+    (g.items || []).map(item => ({
+      ...item,
+      _archiveDate: item._archiveDate || item.date || g.label || g.date || ''
+    }))
+  );
   const all = uniqueByKey([
-    ...newsItems, 
-    ...rawFeedItems, 
-    ...fastItems, 
-    ...archiveGroups.flatMap(g => g.items || [])
+    ...(newsItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
+    ...(rawFeedItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
+    ...(fastItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
+    ...fromArchive
   ]);
   const recent = all.slice(0, 24);
   const top = recent.slice(0, 8);
@@ -779,11 +868,15 @@ function renderWeek() {
   if (top.length) {
     top.forEach((item, idx) => {
       const t = getTitle(item.title);
+      const when = formatItemDate(item);
       html += `
         <div class="rounded-2xl border p-4 surface flex gap-3" style="border-color:var(--border)">
           <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx + 1}</div>
           <div class="min-w-0">
-            <div class="text-[10px] font-bold uppercase text-mute mb-0.5">${escapeHtml(category(item))}</div>
+            <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] font-bold uppercase text-mute mb-0.5">
+              <span>${escapeHtml(category(item))}</span>
+              ${when ? `<span class="text-amber-600 dark:text-amber-400 normal-case tracking-normal">· ${escapeHtml(when)}</span>` : ''}
+            </div>
             <h4 class="text-sm font-black leading-snug text-main mb-1">${t.emoji || ''} ${escapeHtml(t.title)}</h4>
             ${getSummary(item) ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(getSummary(item))}</p>` : ''}
             <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item))}</div>
@@ -950,21 +1043,38 @@ async function init() {
   archiveGroups = normalizeArchive(a.data);
 
   archiveFunItems = [];
-  if (af.ok) {
+  if (af.ok && af.data) {
     const d = af.data;
+    const pushFun = (item, dateLabel) => {
+      if (!item || typeof item !== 'object') return;
+      archiveFunItems.push({
+        ...item,
+        _archiveDate: item.date || item.published_at || dateLabel || item._archiveDate || '',
+        // zachowaj obraz z możliwych pól archiwum
+        image: item.image || item.image_url || item.imageUrl || item.img || item.photo || item.thumbnail || item.source_image_url,
+        image_url: item.image_url || item.imageUrl || item.image || item.img || item.photo
+      });
+    };
+
     if (Array.isArray(d)) {
-      archiveFunItems = d;
-    } else if (d.items) {
-      archiveFunItems = d.items;
-    } else if (d.groups) {
-      archiveFunItems = d.groups.flatMap(g => g.items || []);
-    } else {
+      d.forEach(item => pushFun(item, ''));
+    } else if (Array.isArray(d.items)) {
+      d.items.forEach(item => pushFun(item, d.date || ''));
+    } else if (Array.isArray(d.groups)) {
+      d.groups.forEach(g => {
+        (g.items || []).forEach(item => pushFun(item, g.label || g.date || ''));
+      });
+    } else if (typeof d === 'object') {
       Object.keys(d).forEach(key => {
         const group = d[key];
-        if (group && Array.isArray(group.items)) {
-          group.items.forEach(item => {
-            archiveFunItems.push({ ...item });
-          });
+        if (!group) return;
+        if (Array.isArray(group)) {
+          group.forEach(item => pushFun(item, key));
+        } else if (Array.isArray(group.items)) {
+          group.items.forEach(item => pushFun(item, group.date || key));
+        } else if (typeof group === 'object' && (group.title || group.summary)) {
+          // pojedynczy wpis pod kluczem
+          pushFun(group, key);
         }
       });
     }
