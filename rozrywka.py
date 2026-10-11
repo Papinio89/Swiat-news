@@ -4,6 +4,7 @@ import os
 import re
 import traceback
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -19,7 +20,78 @@ from google.genai import types
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
-FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+
+# Różne fallbacki – nie ten sam statek/kosmos dla wszystkich starych wpisów
+FALLBACK_POOL = [
+    "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518173946687-a0cabc1caa1d?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=1000&auto=format&fit=crop",
+]
+FALLBACK_IMG = FALLBACK_POOL[0]
+
+
+def stable_hash(text: str) -> int:
+    h = 0
+    for ch in str(text or ""):
+        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+    return h
+
+
+def fallback_for(seed: str) -> str:
+    return FALLBACK_POOL[stable_hash(seed) % len(FALLBACK_POOL)]
+
+
+# Tytuł PL → query EN pod stock
+KEYWORD_MAP = [
+    (r"szop|raccoon", "raccoon"),
+    (r"kot|cat|kotek", "cat"),
+    (r"pies|dog|szczen", "dog"),
+    (r"ptak|bird|papug", "parrot bird"),
+    (r"jaszczur|lizard|gecko", "lizard"),
+    (r"wąż|snake", "snake"),
+    (r"ryba|fish|rekin", "fish ocean"),
+    (r"niedźwied|bear", "bear"),
+    (r"słoń|elephant", "elephant"),
+    (r"panda", "panda"),
+    (r"pingwin|penguin", "penguin"),
+    (r"flaming", "flamingo"),
+    (r"jeż|hedgehog", "hedgehog"),
+    (r"słońce|kosmos|gwiazd|galaktyk|space", "galaxy stars night"),
+    (r"morze|ocean|żagl|statek|boat", "sailboat ocean"),
+    (r"las|drzew|natura", "forest nature"),
+    (r"gór|mountain", "mountain landscape"),
+    (r"miasto|city|wieżow", "city skyline"),
+    (r"samoch|car|auto", "vintage car"),
+    (r"rower|bike", "bicycle"),
+    (r"książ|book|biblio", "old books"),
+    (r"muzeum|historia|vintage|starożyt", "museum history"),
+    (r"nauka|science|laborat", "science laboratory"),
+    (r"robot|ai|komput", "robot technology"),
+    (r"jedzen|pizza|banan|kuchn", "food colorful"),
+    (r"muzyk|gitara|koncert", "music concert"),
+    (r"film|kino|aktor", "cinema film"),
+    (r"sport|piłk|mecz", "stadium sport"),
+    (r"deszcz|storm|burz", "storm clouds"),
+    (r"śnieg|zim[aą]|winter", "winter snow"),
+    (r"kwiat|flower|róż", "flowers"),
+]
 
 RSS_URLS = [
     # 1. POLSKIE BIEŻĄCE CIEKAWOSTKI
@@ -132,66 +204,131 @@ def fetch_article_image(url: str) -> str | None:
     return None
 
 
-def fetch_pexels_image_url(query: str, retries: int = 1) -> str:
+def query_from_title(title: str, image_query: str = "") -> str:
+    """Buduje zróżnicowane query EN z image_query lub tytułu PL."""
+    if image_query and re.search(r"[A-Za-z]{3,}", image_query):
+        return image_query.strip()
+
+    t = str(title or "").lower()
+    for pat, eng in KEYWORD_MAP:
+        if re.search(pat, t, re.I):
+            return eng
+
+    words = re.findall(r"[A-Za-z]{4,}", title or "")
+    if words:
+        return " ".join(words[:2])
+    # ostatnia deska: hash → kilka ogólnych, ale różnych zapytań
+    generic = [
+        "curious animal", "vintage object", "science experiment",
+        "funny moment", "historic place", "colorful nature",
+        "street photography", "night sky", "ocean wave", "forest path",
+    ]
+    return generic[stable_hash(title) % len(generic)]
+
+
+def fetch_pexels_image_url(query: str, seed: str = "", seen: set | None = None) -> str | None:
+    """
+    Pexels z wyborem RÓŻNEGO zdjęcia (nie zawsze photos[0]).
+    page + index zależą od hasha tytułu → mniej duplikatów.
+    Przy 429 / błędzie zwraca None (caller użyje fallback_for).
+    """
     if not PEXELS_API_KEY:
-        return FALLBACK_IMG
+        return None
+
+    seen = seen or set()
+    h = stable_hash(seed or query)
+    page = (h % 3) + 1  # strony 1–3
+    prefer_idx = h % 12
 
     queries = [query]
-    words = query.split()
-    if len(words) > 2:
-        queries.append(" ".join(words[:2]))
-    queries.extend(["funny animal", "curiosity science", "vintage history"])
+    parts = query.split()
+    if len(parts) > 1:
+        queries.append(parts[0])
 
     for q in queries:
-        for _attempt in range(retries + 1):
-            try:
-                url = (
-                    f"https://api.pexels.com/v1/search?"
-                    f"query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
-                )
-                req = urllib.request.Request(
-                    url,
-                    headers={
-                        "Authorization": PEXELS_API_KEY,
-                        "User-Agent": "SwiatWMinute-Bot/1.0",
-                    },
-                )
-                with urllib.request.urlopen(req, timeout=5) as resp:
-                    if resp.status == 200:
-                        data = json.loads(resp.read().decode("utf-8"))
-                        photos = data.get("photos", [])
-                        if photos:
-                            src = photos[0].get("src", {})
-                            raw = src.get("large") or src.get("medium")
-                            if raw:
-                                return html_lib.unescape(raw).replace("&amp;", "&")
-            except Exception:
-                pass
-    return FALLBACK_IMG
+        try:
+            url = (
+                f"https://api.pexels.com/v1/search?"
+                f"query={urllib.parse.quote(q)}"
+                f"&per_page=15&orientation=landscape&page={page}"
+            )
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "Authorization": PEXELS_API_KEY,
+                    "User-Agent": "SwiatWMinute-Bot/1.0",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                if resp.status == 429:
+                    print("  Pexels rate limit (429) – przechodzę na fallbacki")
+                    return None
+                if resp.status != 200:
+                    continue
+                data = json.loads(resp.read().decode("utf-8"))
+                photos = data.get("photos") or []
+                if not photos:
+                    continue
+                # spróbuj preferowany index, potem kolejne, pomijając already seen
+                order = list(range(len(photos)))
+                order = order[prefer_idx:] + order[:prefer_idx]
+                for i in order:
+                    src = photos[i].get("src") or {}
+                    raw = src.get("large") or src.get("medium") or src.get("original")
+                    if not raw:
+                        continue
+                    raw = html_lib.unescape(raw).replace("&amp;", "&")
+                    if raw not in seen:
+                        return raw
+                # wszystkie widziane – i tak weź pierwszy z tej strony
+                src = photos[0].get("src") or {}
+                raw = src.get("large") or src.get("medium")
+                if raw:
+                    return html_lib.unescape(raw).replace("&amp;", "&")
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                print("  Pexels HTTP 429 – limit, fallbacki")
+                return None
+            continue
+        except Exception:
+            continue
+        sleep(0.35)  # delikatny throttle między query
+    return None
 
 
 def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
-    """Wybiera unikalny URL grafiki: artykuł → Pexels → fallback."""
+    """Unikalna grafika: OG artykułu → Pexels (różne zdjęcia) → unikalny fallback."""
+    title = str(item.get("title") or "")
     url = item.get("link", "")
-    q = item.get("image_query") or item.get("title") or "funny weird fact"
-    # image_query z tytułu: proste słowa ASCII
-    if not item.get("image_query"):
-        words = re.findall(r"[A-Za-z]{3,}", str(q))
-        q = " ".join(words[:3]) if words else "funny animal"
+    q = query_from_title(title, str(item.get("image_query") or ""))
 
     article_img = fetch_article_image(url)
     if article_img and article_img not in seen_image_urls:
         seen_image_urls.add(article_img)
         return article_img
 
-    stock_img = fetch_pexels_image_url(q)
-    if not stock_img or stock_img in seen_image_urls:
-        stock_img = fetch_pexels_image_url(q.split()[0] if q else "funny")
-    if not stock_img or stock_img in seen_image_urls:
-        stock_img = FALLBACK_IMG
+    stock = fetch_pexels_image_url(q, seed=title, seen=seen_image_urls)
+    if stock and stock not in seen_image_urls:
+        seen_image_urls.add(stock)
+        return stock
 
-    seen_image_urls.add(stock_img)
-    return stock_img
+    # drugi strzał z innym query
+    alt_q = q.split()[0] if q else "nature"
+    stock2 = fetch_pexels_image_url(alt_q, seed=title + "|alt", seen=seen_image_urls)
+    if stock2 and stock2 not in seen_image_urls:
+        seen_image_urls.add(stock2)
+        return stock2
+
+    fb = fallback_for(title)
+    # jeśli ten fallback już był – przewiń pool
+    if fb in seen_image_urls:
+        for i in range(len(FALLBACK_POOL)):
+            cand = FALLBACK_POOL[(stable_hash(title) + i) % len(FALLBACK_POOL)]
+            if cand not in seen_image_urls:
+                fb = cand
+                break
+    seen_image_urls.add(fb)
+    return fb
 
 
 def apply_image_fields(item: dict, img_url: str) -> dict:
@@ -266,23 +403,34 @@ def validate_items(items: list) -> list:
     return valid
 
 
-def migrate_archive_images(archive_data: dict, max_backfill: int = 40) -> dict:
+def migrate_archive_images(archive_data: dict, max_backfill: int = 60) -> dict:
     """
-    Uzupełnia brakujące grafiki w STARYCH sesjach archiwum.
-    Bez tego stare wpisy (tylko title/summary/link) nie mają zdjęć na froncie.
+    1) Uzupełnia wpisy BEZ grafiki.
+    2) Podmienia masowe duplikaty (ten sam URL > 2 razy) na dedykowane zdjęcia.
+    Throttle Pexels, żeby nie wpaść w 429.
     """
-    seen = set()
+    seen: set[str] = set()
+    url_counts: dict[str, int] = {}
     filled = 0
-    # zbierz już używane URL-e
+    replaced_dupes = 0
+
+    def note_url(u: str):
+        if not u:
+            return
+        url_counts[u] = url_counts.get(u, 0) + 1
+
+    # zlicz użycia
     for session in archive_data.values():
         if not isinstance(session, dict):
             continue
         for it in session.get("items") or []:
             if isinstance(it, dict):
-                for f in IMAGE_FIELDS:
-                    u = it.get(f)
-                    if u:
-                        seen.add(u)
+                u = it.get("image_url") or it.get("image") or it.get("source_image_url") or ""
+                note_url(u)
+
+    # URL-e użyte > 2 razy uznajemy za „złe” (limit Pexels / jeden fallback)
+    overused = {u for u, c in url_counts.items() if c > 2 and u}
+    print(f"  nadużywane grafiki (>{2}×): {len(overused)}")
 
     for key, session in list(archive_data.items()):
         if not isinstance(session, dict):
@@ -295,23 +443,38 @@ def migrate_archive_images(archive_data: dict, max_backfill: int = 40) -> dict:
         for it in items:
             if not isinstance(it, dict):
                 continue
-            has_img = any(it.get(f) for f in IMAGE_FIELDS)
-            if not has_img and filled < max_backfill:
+
+            current = (
+                it.get("image_url")
+                or it.get("image")
+                or it.get("source_image_url")
+                or ""
+            )
+            needs = (not current) or (current in overused)
+
+            if needs and filled < max_backfill:
                 try:
+                    # nie dodawaj current do seen zanim nie znajdziemy lepszego
                     img = pick_image_for_item(it, seen)
-                    it = apply_image_fields(dict(it), img)
-                    filled += 1
-                    print(f"  backfill: {it.get('title', '')[:50]}…")
+                    if img and img != current:
+                        if current in overused:
+                            replaced_dupes += 1
+                        it = apply_image_fields(dict(it), img)
+                        filled += 1
+                        print(f"  fix [{filled}]: {str(it.get('title', ''))[:48]}…")
+                        sleep(0.4)  # throttle Pexels
                 except Exception as e:
                     print(f"  backfill fail: {e}")
-                    it = apply_image_fields(dict(it), FALLBACK_IMG)
+                    it = apply_image_fields(dict(it), fallback_for(it.get("title", key)))
+            elif current:
+                seen.add(current)
+
             new_items.append(normalize_archive_item(it))
 
         session["items"] = new_items
         archive_data[key] = session
 
-    if filled:
-        print(f"Uzupełniono grafiki w archiwum: {filled} wpisów")
+    print(f"Uzupełniono/podmieniono grafik: {filled} (w tym duplikaty: {replaced_dupes})")
     return archive_data
 
 
