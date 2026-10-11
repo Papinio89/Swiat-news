@@ -1,95 +1,95 @@
 {
-  "date": "10 października 2026",
-  "time": "13:54",
-  "timestamp": "2026-10-10_13:54",
+  "date": "11 października 2026",
+  "time": "09:02",
+  "timestamp": "2026-10-11_09:02",
   "items": [
     {
-      "category": "BIEŻĄCE ABSURDY",
-      "title": "🌀 Gubernator kontra imię huraganu",
-      "summary": "Gubernator Florydy, Ron DeSantis, publicznie wyraził oburzenie z powodu imienia nadanego nadciągającemu huraganowi Isaias. Polityk narzekał na konferencji, że nazwa jest zbyt skomplikowana i trudno ją wymówić mieszkańcom zagrożonych rejonów.",
-      "comment": "Kiedy żywioł niesie ze sobą niszczycielską siłę, a twoim największym zmartwieniem jest dykcja obywateli.",
-      "image_query": "hurricane storm",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc1hrbGpGelJ4UDRYYWx6c3lvZ2pFMF9BV2RWdWQ4a0RqTFExMWRodlh4RWp3WEpfTTVqc1UtRWFWSGVxaUpaVTFJUEU5Y2kzNFJqOW5UWnhuN2RfSVRxOXlPYXNoS0dxdzlnVFhyRWpVdFNsX1RCRk13WUVZVE5QZVh3SzRuazc1MEhwUDA2MA?oc=5",
-      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+      "category": "POPKULTURA",
+      "title": "🥁 Zespół The Beatles i trzech perkusistów",
+      "summary": "Nagranie debiutanckiego singla 'Love Me Do' wymagało aż trzech podejść z różnymi perkusistami. Ringo Starr musiał na zmianę grać na perkusji i stukać w tamburyn, bo producent nie ufał jego umiejętnościom. Ostatecznie każda wersja z innym muzykiem trafiła na inne wydanie płyty.",
+      "comment": "I tak Ringo zyskał światową sławę głównie za robienie dobrej miny do złej gry.",
+      "link": "https://www.mentalfloss.com/entertainment/music/beatles-recorded-first-single-three-different-drummers",
+      "image_query": "drums beatles",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_394,w_5323,h_2994/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4c4vngzp18fzwwytw.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_394,w_5323,h_2994/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4c4vngzp18fzwwytw.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_394,w_5323,h_2994/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4c4vngzp18fzwwytw.jpg"
     },
     {
       "category": "BIEŻĄCE ABSURDY",
-      "title": "🌲 Ucieczka w głuche knieje",
-      "summary": "Popularne parki narodowe pękają w szwach, ale w USA istnieją wciąż dzikie zakątki, gdzie szansa na spotkanie żywego człowieka graniczy z cudem. Na niektórych szlakach w Utah czy na Alasce jedynym towarzyszem wędrówki pozostaje absolutna cisza.",
-      "comment": "Idealna propozycja wakacyjna dla każdego, komu sam widok drugiego człowieka psuje humor.",
-      "image_query": "forest wilderness",
+      "title": "❄️ Jak Amerykanie przetrwali zimę 100 lat temu",
+      "summary": "Przed erą nowoczesnego ogrzewania Amerykanie smarowali stopy smalcem i wyściełali ubrania gazetami, by nie zamarznąć. Całe rodziny spały w jednym pokoju z piecem, a woda w szklance przy łóżku zamieniała się rano w lód. Przetrwali tylko ci, którzy opanowali sztukę chodzenia w pięciu swetrach naraz.",
+      "comment": "Dzisiaj narzekamy na okrutny mróz, gdy kaloryfer ma tylko 21 stopni.",
+      "link": "https://www.mentalfloss.com/history/how-americans-prepare-winter-100-years-ago",
+      "image_query": "winter vintage",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_605,w_3508,h_1973/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3vcfsf2crf51zz897.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_605,w_3508,h_1973/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3vcfsf2crf51zz897.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_605,w_3508,h_1973/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m3vcfsf2crf51zz897.jpg"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "⚔️ Ulubiony odcinek twórcy Gry o Tron",
+      "summary": "George R.R. Martin ujawnił, że z napisanych przez siebie odcinków 'Gry o Tron' najbardziej ceni 'Blackwater' z drugiego sezonu. Pisarz uwielbiał możliwość skupienia się na jednej wielkiej bitwie i emocjach bohaterów zamkniętych w oblężonym mieście. Choć budżet ledwo starczył na wybuch zielonego ognia, efekt przeszedł do historii telewizji.",
+      "comment": "Szkoda, że tak samo skupiony nie jest na dokończeniu ostatniej książki saga.",
+      "link": "https://www.mentalfloss.com/entertainment/game-of-thrones/george-r-r-martin-favorite-episode-he-wrote",
+      "image_query": "throne fire",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_129,w_4751,h_2672/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2wwbb9qbzbxa6d1.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_129,w_4751,h_2672/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2wwbb9qbzbxa6d1.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_129,w_4751,h_2672/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2wwbb9qbzbxa6d1.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🏹 Nieznane absurdy z historii Ameryki",
+      "summary": "Rdzenne ludy Ameryki uprawiały kukurydzę, fasolę i dynię razem, bo rośliny te nawzajem się chroniły i nawoziły. Wytwarzali też gumę i leki przeciwbólowe z kory wierzby długo przed przybyciem Europejczyków. Kolumb tymczasem myślał, że dopłynął do Indii i do końca życia uparcie się tego trzymał.",
+      "comment": "Męski uporczywy brak orientacji w terenie ma jak widać bardzo długą tradycję.",
+      "link": "https://www.mentalfloss.com/holidays/indigenous-peoples-day-trivia-questions",
+      "image_query": "feather canoe",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e2zm31jfr2r4z6e4.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e2zm31jfr2r4z6e4.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1249,h_702/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e2zm31jfr2r4z6e4.jpg"
+    },
+    {
+      "category": "BIEŻĄCE ABSURDY",
+      "title": "🍬 Miliony dolarów na cukierki na Halloween",
+      "summary": "Amerykańskie stany wydają kosmiczne kwoty na słodycze – rekordziści przeznaczają na ten cel dziesiątki milionów dolarów rocznie. Najpopularniejszym wyborem wcale nie są wyrafinowane czekoladki, ale masło orzechowe zatopione w czekoladowych babeczkach. Dentysci już zacierają rączki na samą myśl o nadchodzącym święcie.",
+      "comment": "To jedyny dzień w roku, kiedy płacenie za cukrzycę jest całkowicie legalne.",
+      "link": "https://www.mentalfloss.com/geography/states/states-spend-most-halloween-candy-ranked",
+      "image_query": "candy halloween",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_69,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq7g65zhssnp2mhh.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_69,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq7g65zhssnp2mhh.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_69,w_1200,h_675/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq7g65zhssnp2mhh.jpg"
+    },
+    {
+      "category": "BEKA Z NAUKI",
+      "title": "🌧️ Pogodowa prognoza na Halloween 2026",
+      "summary": "Meteorolodzy już teraz przewidują, które stany w 2026 roku będą miały najbardziej deszczowe i mroźne Halloween. Modele klimatyczne wskazują na ulewy i przymrozki akurat w nocy zbierania cukierków. Przebrania z cienkiego materiału trzeba będzie zamienić na puchowe kurtki z doklejonymi uszami.",
+      "comment": "Nauka potrafi skutecznie zepsuć dzieciom zabawę z czteroletnim wyprzedzeniem.",
+      "link": "https://www.mentalfloss.com/science/weather/states-rainiest-coldest-halloween-2026",
+      "image_query": "rain coat",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e263fedj2mmn6e9b.png",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e263fedj2mmn6e9b.png",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1999,h_1124/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e263fedj2mmn6e9b.png"
+    },
+    {
+      "category": "POPKULTURA",
+      "title": "🧙♂️ Gwiazda Hollywood w kultowej komedii",
+      "summary": "Leonardo DiCaprio zdradził, że zaoferowano mu ogromne pieniądze za rolę Maxa w filmie 'Hokus Pokus'. Aktor odrzucił jednak gażę w hitowej komedii Disneya, by zagrać w niszowym dramacie 'Co gryzie Gilberta Grape’a'. Decyzja przyniosła mu pierwszą w życiu nominację do Oscara.",
+      "comment": "Zamienił bieganie przed czarownicami na statuetkę – całkiem niezły interes.",
+      "link": "https://www.mentalfloss.com/entertainment/movies/academy-award-winner-almost-starred-hocus-pocus",
+      "image_query": "cinema projector",
+      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1349,h_758/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq03zyjxn10zy95r.jpg",
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1349,h_758/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq03zyjxn10zy95r.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1349,h_758/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bq03zyjxn10zy95r.jpg"
+    },
+    {
+      "category": "ZWIERZAKI",
+      "title": "🐻 Miejsca w USA gdzie spotkasz tylko niedźwiedzia",
+      "summary": "W USA wciąż istnieją parki narodowe, gdzie gęstość zaludnienia jest niższa niż na Antarktydzie, a jedynymi sąsiadami są grizzly. Turystów przypadają tam zaledwie jednostki na rok, więc jeśli szukasz absolutnej ciszy, musisz uważać na puszystych gospodarzy. To idealne punkty dla każdego, kto szczerze nienawidzi ludzkich tłumów.",
+      "comment": "Wreszcie miejsce, gdzie największym zagrożeniem dla twojego spokoju jest niedźwiedź, a nie głośny sąsiad.",
       "link": "https://www.mentalfloss.com/geography/wanderlust/best-u-s-outdoor-places-beat-crowds",
+      "image_query": "bear forest",
       "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_1198,y_0,w_7864,h_4423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2r8nd6c4vb5xp37.jpg",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_1198,y_0,w_7864,h_4423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2r8nd6c4vb5xp37.jpg",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_1198,y_0,w_7864,h_4423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2r8nd6c4vb5xp37.jpg"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "🏒 Zamieszanie na lodowisku NHL",
-      "summary": "W ligowych rozgrywkach hokeja doszło do serii kuriozalnych zdarzeń, w tym niespodziewanych wizyt dzikich gości na tafli. Gry spowolnione przez intruzów doprowadziły do łez zarówno zawodników, jak i rozbawionych kibiców na trybunach.",
-      "comment": "Kiedy nawet zwierzaki uznają, że zasady spalonego w hokeju są dla nich zbyt skomplikowane.",
-      "image_query": "ice hockey",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9XeUZwNThPTVloSjFaaERjRFNCYnJ4cDJMa1NJRHpfcXJDQkU4VHJTMWFjaE5IWndoZUNkNTlrVDI0OGFmdXFBZllvT285M0JMWC1DRFRUdWtaWFM2cGtfelgybjVPbFVXNURHY003STBqMzBNVk0yV2otQnlkUQ?oc=5",
-      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
-      "category": "ZWIERZAKI",
-      "title": "🐒 Małpy na etacie asystenta",
-      "summary": "Niezwykły program w USA próbował przez lata przekształcić kapucynki w domowych asystentów dla osób z niepełnosprawnościami. Małpki miały podawać napoje i otwierać drzwi, ale najczęściej urządzały dzikie awantury i wykradały przekąski.",
-      "comment": "Zapewniasz pracownikowi darmowy dach nad głową, a ten i tak okrada cię z bananów.",
-      "image_query": "monkey capuchin",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPeHF6b2RBRy1zVC1JMEtnbmJKbW8wZWZ2X1FWbERsUGI3ZFF6N3VuNExOeTctWlE0VFltXzY0d1NWalBKUDlNUk1GUmVsc3lGbUdGaHhXTkw0ZDZ1d2lTdjE3eHRFRkVpc3htVUI1RzQ0UXJoR2szMHZLV0c4MjRVMGFOd2EtRlFjX1RScEFwRjVYR3l6R1BTN3pEUQ?oc=5",
-      "image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "source_image_url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-      "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "🐺 Procesy wilkołaków przed Salem",
-      "summary": "Aż dwa wieki przed polowaniami na czarownice w Salem, europejskie sądy masowo skazywały ludzi oskarżonych o litołactwo i zmianę w wilki. W XV i XVI wieku wystarczyło mieć gęste brwi lub zjeść surowe mięso, by wylądować na stosie.",
-      "comment": "To spore szczęście, że wtedy nie było mody na niegolenie brody, bo połowa Europy poszłaby z dymem.",
-      "image_query": "wolf medieval",
-      "link": "https://www.mentalfloss.com/history/werewolf-trials-europe",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_1830,w_3719,h_2091/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m49cvxvrpgx3psc0kk.jpg",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_1830,w_3719,h_2091/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m49cvxvrpgx3psc0kk.jpg",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_1830,w_3719,h_2091/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m49cvxvrpgx3psc0kk.jpg"
-    },
-    {
-      "category": "SZALONA HISTORIA",
-      "title": "👻 Mroczne zakątki stanu Maine",
-      "summary": "Amerykański stan Maine jest uznawany za najbardziej nawiedzony rejon w całych Stanach Zjednoczonych. Znajduje się tam aż 5 słynnych miejsc, od nawiedzonych latarni po nawiedzone hotele, które bezpośrednio natchnęły Stephena Kinga.",
-      "comment": "W tamtych stronach nawigacja GPS zamiast do sklepu od razu prowadzi cię na opuszczony cmentarz.",
-      "image_query": "haunted house",
-      "link": "https://www.mentalfloss.com/culture/folklore-mythology/maine-haunted-places",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bmwf5ks14g40c5j6.jpg",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bmwf5ks14g40c5j6.jpg",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1000,h_562/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4bmwf5ks14g40c5j6.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "🍿 Gdzie są dzisiaj gwiazdy lat 80.?",
-      "summary": "Aktorzy i muzycy, którzy 40 lat temu nie schodzili z pierwszych stron gazet, dzisiaj wiodą zupełnie zaskakujące życie. Część z nich porzuciła blichtr Hollywood na rzecz hodowli alpak, prowadzenia piekarni lub kariery profesjonalnego pokerzysty.",
-      "comment": "Plakaty z nimi wisiały nad każdym łóżkiem, a dziś nie poznałby ich nawet własny sąsiad.",
-      "image_query": "vintage celebrity",
-      "link": "https://www.mentalfloss.com/entertainment/biggest-80s-stars-today",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4642,h_2611/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4byh8hn9evvbmay89.jpg",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4642,h_2611/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4byh8hn9evvbmay89.jpg",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4642,h_2611/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4byh8hn9evvbmay89.jpg"
-    },
-    {
-      "category": "POPKULTURA",
-      "title": "😱 Quiz z horrorów w 15 sekund",
-      "summary": "Internetowy test z rozpozawania kadrow z kultowych horrorów w zaledwie 15 sekund przerasta aż 90% uczestników. Pod presją goniącego zegara fani kina grozy gubią się na najprostszych, klasycznych ujęciach z lat 80.",
-      "comment": "Stres potrafi sprawić, że kadr z Shreka wyda ci się nową częścią kultowej Piły.",
-      "image_query": "popcorn cinema",
-      "link": "https://www.mentalfloss.com/quizzes/movies-tv/name-10-easy-horror-movies-15-seconds-most-people-miss-one",
-      "image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e1qa0w5e5r0qg7p2.jpg",
-      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e1qa0w5e5r0qg7p2.jpg",
-      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m4e1qa0w5e5r0qg7p2.jpg"
+      "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_1198,y_0,w_7864,h_4423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2r8nd6c4vb5xp37.jpg",
+      "source_image_url": "https://images2.minutemediacdn.com/image/upload/c_crop,x_1198,y_0,w_7864,h_4423/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01m4h2r8nd6c4vb5xp37.jpg"
     }
   ]
 }
