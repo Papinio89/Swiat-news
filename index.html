@@ -887,42 +887,218 @@ function randomFunFact() {
   document.body.insertAdjacentHTML('beforeend', html);
 }
 
+/** Start tygodnia roboczego (poniedziałek 00:00 lokalnie) */
+function dayKeyFromDate(d) {
+  if (!(d instanceof Date) || isNaN(d.getTime())) return '';
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function extractDayKey(val) {
+  if (!val) return '';
+  if (val instanceof Date && !isNaN(val.getTime())) return dayKeyFromDate(val);
+  const s = String(val);
+  const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
+  if (m) return m[1] + '-' + m[2].padStart(2,'0') + '-' + m[3].padStart(2,'0');
+  const d = parseFlexibleDate(s);
+  return d ? dayKeyFromDate(d) : '';
+}
+
+function weekStartDayKey(ref) {
+  const d = new Date(ref || Date.now());
+  d.setHours(12, 0, 0, 0);
+  const day = d.getDay();
+  const diff = day === 0 ? 6 : day - 1;
+  d.setDate(d.getDate() - diff);
+  return dayKeyFromDate(d);
+}
+
+function itemDayKey(item) {
+  if (!item) return '';
+  if (item._dayKey) return item._dayKey;
+  return (
+    extractDayKey(item._archiveDate) ||
+    extractDayKey(item.timestamp) ||
+    extractDayKey(item.date) ||
+    extractDayKey(item.published_at) ||
+    ''
+  );
+}
+
+function scoreWeekItem(item) {
+  let s = 0;
+  if (getSummary(item)) s += 3;
+  if (getComment(item)) s += 2;
+  if (imageOf(item)) s += 2;
+  if (item.title && String(item.title).length > 20) s += 1;
+  if (item.category || item.cat) s += 1;
+  if (!item.text || item.title) s += 1;
+  return s;
+}
+
+function collectWeekPool() {
+  const weekStart = weekStartDayKey(new Date());
+  const today = dayKeyFromDate(new Date());
+  const pool = [];
+
+  (archiveGroups || []).forEach(g => {
+    const groupDay =
+      g._dayKey ||
+      extractDayKey(g.sessionKey) ||
+      extractDayKey(g.timestamp) ||
+      extractDayKey(g.date) ||
+      extractDayKey(g.label);
+
+    (g.items || []).forEach(item => {
+      const dk = item._dayKey || extractDayKey(item._archiveDate) || groupDay;
+      if (!dk) return;
+      if (dk < weekStart || dk > today) return;
+      pool.push({
+        ...item,
+        title: item.title || item.text || '',
+        _dayKey: dk,
+        _archiveDate: item._archiveDate || dk
+      });
+    });
+  });
+
+  const addToday = (list) => {
+    (list || []).forEach(i => {
+      pool.push({
+        ...i,
+        _dayKey: i._dayKey || today,
+        _archiveDate: i._archiveDate || i.timestamp || i.date || today
+      });
+    });
+  };
+  addToday(newsItems);
+  addToday(fastItems);
+
+  const uniq = uniqueByKey(pool);
+  try {
+    console.info('[week] pool', uniq.length, 'dni', [...new Set(uniq.map(itemDayKey))].sort(), weekStart, '->', today);
+  } catch (e) {}
+  return uniq;
+}
+
+function pickWeekHighlights(pool, limit) {
+  limit = limit || 10;
+  if (!pool.length) return [];
+
+  const byDay = {};
+  pool.forEach(item => {
+    const dk = itemDayKey(item) || 'unknown';
+    if (!byDay[dk]) byDay[dk] = [];
+    byDay[dk].push(item);
+  });
+  Object.keys(byDay).forEach(dk => {
+    byDay[dk].sort((a, b) => scoreWeekItem(b) - scoreWeekItem(a));
+  });
+
+  const days = Object.keys(byDay).filter(d => d !== 'unknown').sort();
+  const picked = [];
+  const usedKeys = new Set();
+  const usedCats = {};
+
+  // 1 z każdego dnia
+  days.forEach(dk => {
+    for (const item of byDay[dk]) {
+      const k = keyOf(item);
+      if (k && usedKeys.has(k)) continue;
+      picked.push(item);
+      if (k) usedKeys.add(k);
+      const cat = category(item) || 'Inne';
+      usedCats[cat] = (usedCats[cat] || 0) + 1;
+      break;
+    }
+  });
+
+  // 2. z każdego dnia
+  if (picked.length < limit) {
+    days.forEach(dk => {
+      if (picked.length >= limit) return;
+      let n = 0;
+      for (const item of byDay[dk]) {
+        const k = keyOf(item);
+        if (k && usedKeys.has(k)) continue;
+        n++;
+        if (n < 2) continue;
+        const cat = category(item) || 'Inne';
+        if ((usedCats[cat] || 0) >= 4) continue;
+        picked.push(item);
+        if (k) usedKeys.add(k);
+        usedCats[cat] = (usedCats[cat] || 0) + 1;
+        break;
+      }
+    });
+  }
+
+  if (picked.length < limit) {
+    const rest = pool.slice().sort((a, b) => scoreWeekItem(b) - scoreWeekItem(a));
+    for (const item of rest) {
+      if (picked.length >= limit) break;
+      const k = keyOf(item);
+      if (k && usedKeys.has(k)) continue;
+      picked.push(item);
+      if (k) usedKeys.add(k);
+    }
+  }
+
+  picked.sort((a, b) => {
+    const da = itemDayKey(a), db = itemDayKey(b);
+    if (da !== db) return da < db ? -1 : 1;
+    return scoreWeekItem(b) - scoreWeekItem(a);
+  });
+  return picked;
+}
+
 function renderWeek() {
-  const all = uniqueByKey([
-    ...(newsItems || []),
-    ...(rawFeedItems || []),
-    ...(fastItems || []),
-    ...(archiveGroups || []).flatMap(g => g.items || [])
-  ]);
-  const recent = all.slice(0, 24);
-  const top = recent.slice(0, 8);
+  const pool = collectWeekPool();
+  const top = pickWeekHighlights(pool, 10);
   const cats = {};
-  recent.forEach(i => {
+  pool.forEach(i => {
     const c = category(i) || 'Inne';
     cats[c] = (cats[c] || 0) + 1;
   });
-  const topCats = Object.entries(cats).sort((a,b) => b[1] - a[1]).slice(0, 5);
+  const topCats = Object.entries(cats).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const dayKeys = [...new Set(pool.map(itemDayKey).filter(Boolean))].sort();
+  const weekStart = weekStartDayKey(new Date());
+  const today = dayKeyFromDate(new Date());
+  const fmt = (dk) => {
+    if (!dk || dk.length < 10) return dk || '';
+    const p = dk.split('-');
+    return p[2] + '.' + p[1] + '.' + p[0];
+  };
+  const rangeLabel = fmt(weekStart) + ' – ' + fmt(today);
 
   let html = `
     <div class="rounded-2xl border p-5 mb-5 surface" style="border-color:var(--border); background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);">
       <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Przegląd tygodnia</div>
-      <h3 class="text-lg font-black text-main mb-2">Co działo się ostatnio</h3>
-      <p class="text-sm text-sec">Na podstawie ${recent.length} materiałów. Automatyczny przegląd.</p>
+      <h3 class="text-lg font-black text-main mb-2">Najlepsze z tygodnia</h3>
+      <p class="text-sm text-sec">${escapeHtml(rangeLabel)} · ${pool.length} materiałów z ${dayKeys.length} dni · mix z archiwum</p>
+      ${dayKeys.length ? `<p class="text-[11px] text-mute mt-1">Dni: ${dayKeys.map(fmt).map(x => escapeHtml(x)).join(' · ')}</p>` : ''}
     </div>`;
 
   if (topCats.length) {
-    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Dominujące tematy</div><div class="flex flex-wrap gap-2">`;
+    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Dominujące tematy tygodnia</div><div class="flex flex-wrap gap-2">`;
     topCats.forEach(([cat, cnt]) => {
       html += `<span class="rounded-full px-3 py-1 text-xs font-bold ${categoryClass(cat)}">${escapeHtml(cat)} · ${cnt}</span>`;
     });
     html += `</div></div>`;
   }
 
-  html += `<div class="mb-3 text-xs font-bold text-sec">Najważniejsze wydarzenia</div><div class="grid gap-4 md:grid-cols-2">`;
+  html += `<div class="mb-3 text-xs font-bold text-sec">Wyróżnione wydarzenia (mix z tygodnia)</div><div class="grid gap-4 md:grid-cols-2">`;
   if (top.length) {
     top.forEach((item, idx) => {
-      const t = getTitle(item.title);
-      const when = formatItemDate(item);
+      const t = getTitle(item.title || item.text);
+      let when = formatItemDate(item);
+      if (!when) {
+        const dk = itemDayKey(item);
+        if (dk) {
+          const p = dk.split('-');
+          if (p.length === 3) when = p[2] + '.' + p[1] + '.' + p[0];
+        }
+      }
+      const sum = getSummary(item) || (item.text && !item.title ? String(item.text).slice(0, 140) : '');
       html += `
         <div class="rounded-2xl border p-4 surface flex gap-3" style="border-color:var(--border)">
           <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx + 1}</div>
@@ -932,13 +1108,13 @@ function renderWeek() {
               ${when ? `<span class="text-amber-600 dark:text-amber-400 normal-case tracking-normal">· ${escapeHtml(when)}</span>` : ''}
             </div>
             <h4 class="text-sm font-black leading-snug text-main mb-1">${t.emoji || ''} ${escapeHtml(t.title)}</h4>
-            ${getSummary(item) ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(getSummary(item))}</p>` : ''}
-            <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item))}</div>
+            ${sum ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(sum)}</p>` : ''}
+            <div class="mt-2 text-[10px] text-mute">${escapeHtml(sourceName(item) || '')}</div>
           </div>
         </div>`;
     });
   } else {
-    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Brak danych do wyświetlenia.</div>`;
+    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Brak danych z tego tygodnia (${escapeHtml(rangeLabel)}).</div>`;
   }
   html += `</div>`;
   $('week-content').innerHTML = html;
@@ -1051,47 +1227,65 @@ function todayKey() {
 function normalizeArchive(data) {
   if (!data) return [];
 
-  const stampGroup = (items, dateLabel) =>
+  // YYYY-MM-DD z klucza sesji "2026-10-06_poranne" / timestamp
+  const dayKeyFromAny = (val) => {
+    if (!val) return '';
+    const m = String(val).match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
+    if (m) return m[1] + '-' + m[2].padStart(2,'0') + '-' + m[3].padStart(2,'0');
+    return '';
+  };
+
+  const stampGroup = (items, dateLabel, dayKey) =>
     (items || []).map(i => {
       if (!i || typeof i !== 'object') return i;
-      // archiwum news bywa tylko { text, link } – zmapuj na title
       const title = i.title || i.text || '';
+      const dk = dayKey || dayKeyFromAny(dateLabel) || dayKeyFromAny(i.timestamp) || dayKeyFromAny(i.date) || '';
       return {
         ...i,
         title: title,
-        _archiveDate: i.date || i.published_at || i.timestamp || dateLabel || i._archiveDate || ''
+        _dayKey: dk,
+        _archiveDate: i.date || i.published_at || i.timestamp || dateLabel || dk || i._archiveDate || ''
       };
     });
 
   if (Array.isArray(data)) {
-    return [{ label: 'Archiwum', items: stampGroup(data, '') }];
+    return [{ label: 'Archiwum', items: stampGroup(data, '', '') }];
   }
   if (Array.isArray(data.items)) {
     const lbl = data.timestamp || data.date || 'Archiwum';
-    return [{ label: lbl, items: stampGroup(data.items, lbl) }];
+    const dk = dayKeyFromAny(data.timestamp) || dayKeyFromAny(data.date) || '';
+    return [{ label: lbl, _dayKey: dk, sessionKey: '', items: stampGroup(data.items, lbl, dk) }];
   }
   if (Array.isArray(data.groups)) {
-    return data.groups.map(g => ({
-      ...g,
-      items: stampGroup(g.items, g.timestamp || g.date || g.label || '')
-    }));
+    return data.groups.map(g => {
+      const dk = dayKeyFromAny(g.timestamp) || dayKeyFromAny(g.date) || dayKeyFromAny(g.label) || '';
+      return {
+        ...g,
+        _dayKey: dk,
+        items: stampGroup(g.items, g.timestamp || g.date || g.label || '', dk)
+      };
+    });
   }
   const out = [];
   const today = todayKey();
   const keys = Object.keys(data).sort().reverse();
   for (const key of keys) {
+    // dziś i tak bierzemy z news.json – pomijamy tylko dzisiejsze klucze archiwum
     if (key.startsWith(today)) continue;
     const v = data[key];
     if (!v) continue;
+    const dk = dayKeyFromAny(key) || (typeof v === 'object' ? (dayKeyFromAny(v.timestamp) || dayKeyFromAny(v.date)) : '');
     if (Array.isArray(v)) {
-      out.push({ label: key, items: stampGroup(v, key) });
+      out.push({ label: key, sessionKey: key, _dayKey: dk, items: stampGroup(v, key, dk) });
     } else if (Array.isArray(v.items)) {
       const lbl = v.timestamp || v.date || key;
       out.push({
         label: (v.date || key.replace(/_/g, ' • ')),
+        sessionKey: key,
         date: v.date,
         timestamp: v.timestamp,
-        items: stampGroup(v.items, lbl)
+        _dayKey: dk,
+        items: stampGroup(v.items, lbl, dk)
       });
     }
   }
