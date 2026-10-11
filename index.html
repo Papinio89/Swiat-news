@@ -550,17 +550,77 @@ function itemDateRaw(x) {
   return null;
 }
 
+function parseFlexibleDate(val) {
+  if (!val) return null;
+  if (val instanceof Date && !isNaN(val.getTime())) return val;
+  if (typeof val === 'number') {
+    const d = new Date(val > 1e12 ? val : val * 1000);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  const s = String(val).trim();
+  // 2026-10-11_07:01 / 2026-10-11
+  let m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
+  if (m) {
+    const d = new Date(+m[1], +m[2] - 1, +m[3]);
+    if (!isNaN(d.getTime())) return d;
+  }
+  // 11 października 2026 / 07 September 2026
+  const monthsPl = {
+    stycznia:0, lutego:1, marca:2, kwietnia:3, maja:4, czerwca:5,
+    lipca:6, sierpnia:7, września:8, pazdziernika:9, października:9,
+    listopada:10, grudnia:11
+  };
+  const monthsEn = {
+    january:0, february:1, march:2, april:3, may:4, june:5,
+    july:6, august:7, september:8, october:9, november:10, december:11
+  };
+  m = s.match(/(\d{1,2})\s+([A-Za-ząćęłńóśźż]+)\s+(\d{4})/i);
+  if (m) {
+    const mon = m[2].toLowerCase()
+      .normalize('NFD').replace(/\p{M}/gu, ''); // strip diacritics fallback
+    let mi = monthsPl[m[2].toLowerCase()];
+    if (mi === undefined) mi = monthsEn[mon];
+    if (mi === undefined) {
+      // try without diacritics on pl keys
+      for (const [k, v] of Object.entries(monthsPl)) {
+        if (k.normalize('NFD').replace(/\p{M}/gu, '') === mon) { mi = v; break; }
+      }
+    }
+    if (mi !== undefined) {
+      const d = new Date(+m[3], mi, +m[1]);
+      if (!isNaN(d.getTime())) return d;
+    }
+  }
+  const d = new Date(s);
+  return isNaN(d.getTime()) ? null : d;
+}
+
 function formatItemDate(x) {
   const raw = itemDateRaw(x);
   if (!raw) return '';
-  if (raw instanceof Date) {
-    return raw.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const d = parseFlexibleDate(raw);
+  if (d) {
+    return d.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
   }
-  // string label (np. klucz archiwum)
   const s = String(raw);
   const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
   if (m) return `${m[3].padStart(2,'0')}.${m[2].padStart(2,'0')}.${m[1]}`;
-  return s.replace(/_/g, ' ').slice(0, 24);
+  if (s.toLowerCase() === 'dziś' || s.toLowerCase() === 'dzis') {
+    return new Date().toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  }
+  return s.replace(/_/g, ' ').slice(0, 28);
+}
+
+/** Dokleja datę wydania do każdego itemu (w JSON data nie ma dat per-item) */
+function stampEdition(items, payload) {
+  const list = Array.isArray(items) ? items : [];
+  const meta = (payload && typeof payload === 'object' && !Array.isArray(payload)) ? payload : {};
+  const label = meta.timestamp || meta.date || meta.generated_at || meta.updated_at || '';
+  return list.map(i => {
+    if (!i || typeof i !== 'object') return i;
+    if (i._archiveDate || i.date || i.published_at) return i;
+    return { ...i, _archiveDate: label };
+  });
 }
 
 function categoryClass(cat) {
@@ -828,17 +888,11 @@ function randomFunFact() {
 }
 
 function renderWeek() {
-  const fromArchive = (archiveGroups || []).flatMap(g =>
-    (g.items || []).map(item => ({
-      ...item,
-      _archiveDate: item._archiveDate || item.date || g.label || g.date || ''
-    }))
-  );
   const all = uniqueByKey([
-    ...(newsItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
-    ...(rawFeedItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
-    ...(fastItems || []).map(i => ({ ...i, _archiveDate: i.date || i.published_at || 'dziś' })),
-    ...fromArchive
+    ...(newsItems || []),
+    ...(rawFeedItems || []),
+    ...(fastItems || []),
+    ...(archiveGroups || []).flatMap(g => g.items || [])
   ]);
   const recent = all.slice(0, 24);
   const top = recent.slice(0, 8);
@@ -996,9 +1050,32 @@ function todayKey() {
 
 function normalizeArchive(data) {
   if (!data) return [];
-  if (Array.isArray(data)) return [{ label: 'Archiwum', items: data }];
-  if (Array.isArray(data.items)) return [{ label: data.date || 'Archiwum', items: data.items }];
-  if (Array.isArray(data.groups)) return data.groups;
+
+  const stampGroup = (items, dateLabel) =>
+    (items || []).map(i => {
+      if (!i || typeof i !== 'object') return i;
+      // archiwum news bywa tylko { text, link } – zmapuj na title
+      const title = i.title || i.text || '';
+      return {
+        ...i,
+        title: title,
+        _archiveDate: i.date || i.published_at || i.timestamp || dateLabel || i._archiveDate || ''
+      };
+    });
+
+  if (Array.isArray(data)) {
+    return [{ label: 'Archiwum', items: stampGroup(data, '') }];
+  }
+  if (Array.isArray(data.items)) {
+    const lbl = data.timestamp || data.date || 'Archiwum';
+    return [{ label: lbl, items: stampGroup(data.items, lbl) }];
+  }
+  if (Array.isArray(data.groups)) {
+    return data.groups.map(g => ({
+      ...g,
+      items: stampGroup(g.items, g.timestamp || g.date || g.label || '')
+    }));
+  }
   const out = [];
   const today = todayKey();
   const keys = Object.keys(data).sort().reverse();
@@ -1006,8 +1083,17 @@ function normalizeArchive(data) {
     if (key.startsWith(today)) continue;
     const v = data[key];
     if (!v) continue;
-    if (Array.isArray(v)) out.push({ label: key, items: v });
-    else if (Array.isArray(v.items)) out.push({ label: v.date || key.replace(/_/g,' • '), items: v.items });
+    if (Array.isArray(v)) {
+      out.push({ label: key, items: stampGroup(v, key) });
+    } else if (Array.isArray(v.items)) {
+      const lbl = v.timestamp || v.date || key;
+      out.push({
+        label: (v.date || key.replace(/_/g, ' • ')),
+        date: v.date,
+        timestamp: v.timestamp,
+        items: stampGroup(v.items, lbl)
+      });
+    }
   }
   return out;
 }
@@ -1036,10 +1122,10 @@ async function init() {
   ]);
 
   dataLoadFailed = !n.ok && !raw.ok;
-  newsItems = Array.isArray(n.data) ? n.data : (n.data.items || []);
-  rawFeedItems = Array.isArray(raw.data) ? raw.data : (raw.data.items || []);
-  fastItems = Array.isArray(f.data) ? f.data : (f.data.items || []);
-  funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
+  newsItems = stampEdition(Array.isArray(n.data) ? n.data : (n.data.items || []), n.data);
+  rawFeedItems = stampEdition(Array.isArray(raw.data) ? raw.data : (raw.data.items || []), raw.data);
+  fastItems = stampEdition(Array.isArray(f.data) ? f.data : (f.data.items || []), f.data);
+  funItems = stampEdition(Array.isArray(r.data) ? r.data : (r.data.items || []), r.data);
   archiveGroups = normalizeArchive(a.data);
 
   archiveFunItems = [];
@@ -1071,9 +1157,9 @@ async function init() {
         if (Array.isArray(group)) {
           group.forEach(item => pushFun(item, key));
         } else if (Array.isArray(group.items)) {
-          group.items.forEach(item => pushFun(item, group.date || key));
+          const lbl = group.timestamp || group.date || key;
+          group.items.forEach(item => pushFun(item, lbl));
         } else if (typeof group === 'object' && (group.title || group.summary)) {
-          // pojedynczy wpis pod kluczem
           pushFun(group, key);
         }
       });
