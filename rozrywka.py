@@ -30,8 +30,6 @@ FALLBACK_POOL = [
     "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop",
     "https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop",
 ]
 FALLBACK_IMG = FALLBACK_POOL[0]
 
@@ -61,24 +59,16 @@ KEYWORD_MAP = [
     (r"pingwin|penguin", "penguin"),
     (r"flaming", "flamingo"),
     (r"jeż|hedgehog", "hedgehog"),
-    (r"słońce|kosmos|gwiazd|galaktyk|space", "galaxy stars night"),
-    (r"morze|ocean|żagl|statek|boat", "sailboat ocean"),
+    (r"słońce|kosmos|gwiazd|space", "galaxy stars night"),
+    (r"morze|ocean|statek|boat", "sailboat ocean"),
     (r"las|drzew|natura", "forest nature"),
     (r"gór|mountain", "mountain landscape"),
-    (r"miasto|city|wieżow", "city skyline"),
     (r"samoch|car|auto", "vintage car"),
-    (r"rower|bike", "bicycle"),
     (r"książ|book|biblio", "old books"),
-    (r"muzeum|historia|vintage|starożyt", "museum history"),
     (r"nauka|science|laborat", "science laboratory"),
-    (r"robot|ai|komput", "robot technology"),
-    (r"jedzen|pizza|banan|kuchn", "food colorful"),
+    (r"jedzen|pizza|kuchn", "food gourmet"),
     (r"muzyk|gitara|koncert", "music concert"),
     (r"film|kino|aktor", "cinema film"),
-    (r"sport|piłk|mecz", "stadium sport"),
-    (r"deszcz|storm|burz", "storm clouds"),
-    (r"śnieg|zim[aą]|winter", "winter snow"),
-    (r"kwiat|flower|róż", "flowers"),
 ]
 
 RSS_URLS = [
@@ -98,7 +88,6 @@ POLISH_MONTHS = {
 
 MAX_AGE_HOURS = 72
 MIN_ITEMS = 6
-IMAGE_FIELDS = ("image_url", "image", "source_image_url")
 
 
 def sanitize_text(text: str) -> str:
@@ -115,17 +104,13 @@ def sanitize_text(text: str) -> str:
 
 
 def is_polish_text(text: str) -> bool:
-    """Sprawdza, czy tekst nie jest surowym angielskim zdaniem."""
     if not text or len(text.strip()) < 5:
         return False
-    # Obecność polskich znaków
     if re.search(r"[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]", text):
         return True
-    # Typowe polskie słowa funkcyjne
     common_pl = r"\b(i|w|na|z|do|o|nie|się|jak|to|co|że|jest|ten|ta|to|dla|po|od|przez|ze|oraz|ale|za)\b"
     if re.search(common_pl, text.lower()):
         return True
-    # Wykrywanie ewidentnych angielskich słów początkowych
     common_en = r"\b(the|why|how|what|when|where|who|this|that|these|with|from|and|for|are|was|were)\b"
     if re.search(common_en, text.lower()):
         return False
@@ -181,7 +166,7 @@ def fetch_article_image(url: str) -> str | None:
                 "Accept-Language": "pl,en-US;q=0.9,en;q=0.8",
             },
         )
-        with urllib.request.urlopen(req, timeout=6) as resp:
+        with urllib.request.urlopen(req, timeout=5) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
 
         patterns = [
@@ -215,22 +200,14 @@ def query_from_title(title: str, image_query: str = "") -> str:
     words = re.findall(r"[A-Za-z]{4,}", title or "")
     if words:
         return " ".join(words[:2])
-    generic = [
-        "curious animal", "vintage object", "science experiment",
-        "funny moment", "historic place", "colorful nature",
-    ]
-    return generic[stable_hash(title) % len(generic)]
+    return "nature curiosity"
 
 
-def fetch_pexels_image_url(query: str, seed: str = "", seen: set | None = None) -> str | None:
+def fetch_pexels_image_url(query: str, seen: set | None = None) -> str | None:
     if not PEXELS_API_KEY:
         return None
 
     seen = seen or set()
-    h = stable_hash(seed or query)
-    page = (h % 3) + 1
-    prefer_idx = h % 12
-
     queries = [query]
     parts = query.split()
     if len(parts) > 1:
@@ -238,11 +215,7 @@ def fetch_pexels_image_url(query: str, seed: str = "", seen: set | None = None) 
 
     for q in queries:
         try:
-            url = (
-                f"https://api.pexels.com/v1/search?"
-                f"query={urllib.parse.quote(q)}"
-                f"&per_page=15&orientation=landscape&page={page}"
-            )
+            url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
             req = urllib.request.Request(
                 url,
                 headers={
@@ -250,30 +223,19 @@ def fetch_pexels_image_url(query: str, seed: str = "", seen: set | None = None) 
                     "User-Agent": "SwiatWMinute-Bot/1.0",
                 },
             )
-            with urllib.request.urlopen(req, timeout=8) as resp:
-                if resp.status != 200:
-                    continue
-                data = json.loads(resp.read().decode("utf-8"))
-                photos = data.get("photos") or []
-                if not photos:
-                    continue
-                order = list(range(len(photos)))
-                order = order[prefer_idx:] + order[:prefer_idx]
-                for i in order:
-                    src = photos[i].get("src") or {}
-                    raw = src.get("large") or src.get("medium") or src.get("original")
-                    if not raw:
-                        continue
-                    raw = html_lib.unescape(raw).replace("&amp;", "&")
-                    if raw not in seen:
-                        return raw
-                src = photos[0].get("src") or {}
-                raw = src.get("large") or src.get("medium")
-                if raw:
-                    return html_lib.unescape(raw).replace("&amp;", "&")
+            with urllib.request.urlopen(req, timeout=6) as resp:
+                if resp.status == 200:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    photos = data.get("photos") or []
+                    for photo in photos:
+                        src = photo.get("src") or {}
+                        raw = src.get("large") or src.get("medium")
+                        if raw:
+                            raw = html_lib.unescape(raw).replace("&amp;", "&")
+                            if raw not in seen:
+                                return raw
         except Exception:
             continue
-        sleep(0.35)
     return None
 
 
@@ -282,16 +244,19 @@ def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
     url = item.get("link", "")
     q = query_from_title(title, str(item.get("image_query") or ""))
 
+    # 1. Próba: og:image ze źródła
     article_img = fetch_article_image(url)
     if article_img and article_img not in seen_image_urls:
         seen_image_urls.add(article_img)
         return article_img
 
-    stock = fetch_pexels_image_url(q, seed=title, seen=seen_image_urls)
+    # 2. Próba: Pexels API
+    stock = fetch_pexels_image_url(q, seen=seen_image_urls)
     if stock and stock not in seen_image_urls:
         seen_image_urls.add(stock)
         return stock
 
+    # 3. Zróżnicowany Fallback
     fb = fallback_for(title)
     if fb in seen_image_urls:
         for i in range(len(FALLBACK_POOL)):
@@ -301,38 +266,6 @@ def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
                 break
     seen_image_urls.add(fb)
     return fb
-
-
-def apply_image_fields(item: dict, img_url: str) -> dict:
-    item["image_url"] = img_url
-    item["source_image_url"] = img_url
-    item["image"] = img_url
-    return item
-
-
-def normalize_archive_item(item: dict) -> dict:
-    if not isinstance(item, dict):
-        return item
-
-    img = (
-        item.get("image_url")
-        or item.get("image")
-        or item.get("source_image_url")
-        or ""
-    )
-    img = str(img).strip() if img else ""
-
-    return {
-        "category": sanitize_text(str(item.get("category", "ABSURDY ŚWIATA"))).upper(),
-        "title": sanitize_text(str(item.get("title", ""))),
-        "summary": sanitize_text(str(item.get("summary", ""))),
-        "comment": sanitize_text(str(item.get("comment", ""))),
-        "link": clean_link(str(item.get("link", "#"))),
-        "image_query": sanitize_text(str(item.get("image_query", ""))),
-        "image_url": img or FALLBACK_IMG,
-        "image": img or FALLBACK_IMG,
-        "source_image_url": img or FALLBACK_IMG,
-    }
 
 
 def validate_items(items: list) -> list:
@@ -354,9 +287,8 @@ def validate_items(items: list) -> list:
         if len(title) < 10 or len(summary) < 25:
             continue
 
-        # Twarde odrzucanie tytułów, które nie zostały przetłumaczone na język polski!
+        # Blokada angielskich zwrotów w polskim wydaniu
         if not is_polish_text(title) or not is_polish_text(summary):
-            print(f"  [Odrzucono - język obcy]: {title}")
             continue
 
         valid.append({
@@ -387,7 +319,7 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-print(f"Pobrano {len(raw_articles)} surowych artykułów rozrywkowych.")
+print(f"Pobrano {len(raw_articles)} surowych artykułów.")
 
 archive_file = "archive_rozrywka.json"
 archive_data = {}
@@ -399,7 +331,7 @@ if os.path.exists(archive_file):
         archive_data = {}
 
 now_pl = datetime.now(pl_tz)
-session_fixed_key = now_pl.strftime("%Y-%m-%d_%H_rozrywka")
+session_fixed_key = f"{now_pl.strftime('%Y-%m-%d')}_rozrywka"
 
 previous_topics = []
 sorted_sessions = sorted(archive_data.keys(), reverse=True)[:15]
@@ -435,19 +367,17 @@ for art in raw_articles:
 if len(filtered_raw_articles) < 6:
     filtered_raw_articles = raw_articles
 
-print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów przekazanych do AI")
+print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów.")
 
 api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
 prompt = f"""Jesteś polskim redaktorem formatu rozrywkowego „Świat w Minucie” (Instagram/Threads). 
-Twoim zadaniem jest stworzenie 8-10 absolutnie fascynujących, wiralowych ciekawostek po polsku.
+Stwórz 8-10 absolutnie fascynujących, wiralowych ciekawostek po polsku.
 
 KATEGORYCZNY NAKAZ JĘZYKOWY (100% POLSKI):
 - Nawet jeśli artykuł w „Danych wejściowych” ma tytuł po angielsku (np. z Mental Floss lub UPI), MASZ BEZWZGLĘDNY OBOWIĄZEK PRZETŁUMACZYĆ I NAPISAĆ TYTUŁ, PODSUMOWANIE ORAZ KOMENTARZ W JĘZYKU POLSKIM!
-- ZAKAZ pozostawiania angielskich słów i fraz w polach "title", "summary" oraz "comment".
-- Zły przykład: "🐾 10 Words For Pirates And Why They Are Not Same"
-- Dobry przykład: "🏴‍☠️ Słownik piratów: Dlaczego mylisz korsarza z bukanierem!"
+- ZAKAZ pozostawiania angielskich słów w polach "title", "summary" oraz "comment".
 
 PODZIAŁ TEMATYCZNY:
 1. 50% MUSI dotyczyć BIEŻĄCYCH ODDITIES (wpadki ludzi, ucieczki zwierzaków, dziwne rekordy, kurioza).
@@ -484,7 +414,7 @@ for model_name in models_to_try:
     if len(items) >= MIN_ITEMS:
         break
     try:
-        print(f"Wysyłanie zapytania do modelu: {model_name}...")
+        print(f"Generowanie za pomocą modelu: {model_name}...")
         response = client.models.generate_content(
             model=model_name,
             contents=prompt,
@@ -528,14 +458,13 @@ for model_name in models_to_try:
 
         items = validate_items(raw_items)
         if len(items) >= MIN_ITEMS:
-            print(f"Sukces! Wygenerowano {len(items)} unikalnych pozycji w języku polskim.")
+            print(f"Sukces! Otrzymano {len(items)} poprawnych pozycji PL.")
             break
     except Exception as e:
-        print(f"Błąd dla modelu {model_name}: {e}")
-        traceback.print_exc()
+        print(f"Błąd modelu {model_name}: {e}")
         sleep(1)
 
-# Awaryjne uzupełnienie w 100% po polsku (nigdy surowy angielski tytuł z RSS!)
+# Awaryjny fallback w 100% po polsku
 POLISH_FALLBACK_TITLES = [
     "🐾 Niezwykłe odkrycie przyrodników zaskoczyło naukowców",
     "🎩 Zapomniany sekret historii, o którym nie uczą w szkołach",
@@ -546,7 +475,7 @@ POLISH_FALLBACK_TITLES = [
 ]
 
 if len(items) < MIN_ITEMS:
-    print("Aktywacja awaryjnego uzupełnienia pozycji po polsku...")
+    print("Uruchamianie uzupełnienia awaryjnego po polsku...")
     existing_links = {i.get("link") for i in items}
     for idx, art in enumerate(filtered_raw_articles):
         if len(items) >= MIN_ITEMS:
@@ -568,25 +497,23 @@ if len(items) < MIN_ITEMS:
         })
         existing_links.add(art["link"])
 
-print(f"Łącznie gotowych pozycji rozrywkowych: {len(items)}")
-
-# --- DOBIERANIE ZDJĘĆ ---
-print("Dobieranie zdjęć...")
+# --- DOBIERANIE ZDJĘĆ Z POTRÓJNYM KLUCZEM DLA KAŻDEGO WPISU ---
+print("Dobieranie unikalnych zdjęć...")
 source_ok = 0
 seen_image_urls = set()
 
 for item in items:
-    before = len(seen_image_urls)
     img = pick_image_for_item(item, seen_image_urls)
-    apply_image_fields(item, img)
-    if item.get("link") and img != FALLBACK_IMG and "pexels.com" not in img and "unsplash.com" not in img:
-        source_ok += 1
-    elif "pexels.com" not in img and img != FALLBACK_IMG and before < len(seen_image_urls):
+    
+    # Przypisanie 3 kluczy gwarantujące 100% zgodność z frontendem
+    item["image_url"] = img
+    item["source_image_url"] = img
+    item["image"] = img
+
+    if "pexels.com" not in img and "unsplash.com" not in img:
         source_ok += 1
 
-print(f"Zdjęcia ze źródeł: {source_ok}/{len(items)} (reszta = Pexels/Fallback)")
-
-items = [normalize_archive_item(it) for it in items]
+print(f"Zdjęcia z artykułów: {source_ok}/{len(items)} (reszta = Pexels / unikalny Fallback)")
 
 # --- ZAPIS ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
@@ -600,19 +527,14 @@ output_data = {
     "items": items,
 }
 
-# 1. Bieżące wydanie
+# 1. Bieżące wydanie (do wyświetlania od razu)
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# 2. Archiwum
-archive_data[session_fixed_key] = {
-    "date": date_pretty,
-    "time": time_pretty,
-    "timestamp": timestamp_key,
-    "items": [normalize_archive_item(it) for it in items],
-}
+# 2. Archiwum: dopisujemy dzisiejsze wydanie z pełnymi zdjęciami bez ingerencji w historię
+archive_data[session_fixed_key] = output_data
 
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zapisano {len(items)} ciekawostek (wyłącznie po polsku) do rozrywka.json i archiwum.")
+print(f"Gotowe! Zapisano {len(items)} pozycji do rozrywka.json i nowej sesji w {archive_file}.")
