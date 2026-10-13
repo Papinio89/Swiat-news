@@ -18,7 +18,6 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ")
 FALLBACK_IMG = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop"
 
-# Zrównoważone źródła: Polska, biznes, rynki + sekcja zdarzeń nietypowych/szokujących
 RSS_URLS = [
     # --- POLSKA: GOSPODARKA, BIZNES, PRZEMYSŁ I KRAJ ---
     "https://www.money.pl/rss/",
@@ -51,6 +50,10 @@ POLISH_MONTHS = {
     5: "maja", 6: "czerwca", 7: "lipca", 8: "sierpnia",
     9: "września", 10: "października", 11: "listopada", 12: "grudnia"
 }
+
+now_pl = datetime.now(pl_tz)
+current_hour = now_pl.hour
+session_name = "poranne" if current_hour < 12 else "wieczorne"
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
@@ -107,11 +110,9 @@ def normalize_category(cat: str) -> str:
 
 
 def format_uppercase_title(title_str: str) -> str:
-    """Format: [EMOTIKON] [TEKST WIELKIMI LITERAMI]"""
     s = title_str.strip()
     if not s:
         return ""
-    # Wyciągamy pierwszą emotikonę / prefix, a resztę zamieniamy na wielkie litery
     match = re.match(r'^([\U00010000-\U0010ffff\u2600-\u27bf\s]+)(.*)$', s)
     if match:
         emoji_prefix = match.group(1).strip()
@@ -139,8 +140,10 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        # Pilnujemy, aby post Threads nie był skrócony (min. 400 znaków dla 2 postów)
-        if len(title) < 10 or len(summary) < 20 or len(comment) < 10 or len(threads_post) < 400:
+        # Walidacja objętościowa i strukturalna
+        if len(title) < 10 or len(summary) < 25 or len(comment) < 10 or len(threads_post) < 420:
+            continue
+        if "---ODPOWIEDŹ---" not in threads_post:
             continue
 
         valid.append({
@@ -227,12 +230,12 @@ raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:6]:
+        for entry in feed.entries[:8]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
             summary = getattr(entry, "summary", "").strip()
-            clean_summary = re.sub(r'<[^>]+>', '', summary)[:250]
+            clean_summary = re.sub(r'<[^>]+>', '', summary)[:280]
             link = clean_link(getattr(entry, "link", "#"))
             if title and len(title) > 15:
                 raw_articles.append({
@@ -243,9 +246,9 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-print(f"Pobrano {len(raw_articles)} świeżych artykułów (max {MAX_AGE_HOURS}h)")
+print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
 
-# --- ROZSZERZONE ARCHIWUM (14 SESJI WSTECZ) I WYKRYWANIE TEMATÓW KLUCZOWYCH ---
+# --- ARCHIWUM I DEDUPLIKACJA ---
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
@@ -255,29 +258,21 @@ if os.path.exists(archive_file):
     except Exception:
         archive_data = {}
 
-now_pl = datetime.now(pl_tz)
 today_date_key = now_pl.strftime("%Y-%m-%d")
-current_hour = now_pl.hour
-session_name = "poranne" if current_hour < 12 else "wieczorne"
 session_fixed_key = f"{today_date_key}_{session_name}"
 
 previous_titles = []
-banned_entities = set()
-
-sorted_sessions = sorted(archive_data.keys(), reverse=True)[:14]
-for session_key in sorted_sessions:
-    session_content = archive_data.get(session_key)
-    if isinstance(session_content, dict) and "items" in session_content:
-        for item in session_content.get("items", []):
+sorted_sessions = sorted(archive_data.keys(), reverse=True)
+for sk in sorted_sessions[:8]:
+    if session_name == "wieczorne" and sk == f"{today_date_key}_poranne":
+        continue
+    sc = archive_data.get(sk)
+    if isinstance(sc, dict) and "items" in sc:
+        for item in sc.get("items", []):
             t = item.get("title", "")
             if t:
                 previous_titles.append(t)
-                words = re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', t.lower())
-                for w in words:
-                    if w not in {"polsce", "polski", "polaków", "nowy", "nowa", "nowe", "roku", "swiat", "przez", "tylko", "rzad", "rząd"}:
-                        banned_entities.add(w)
 
-# Ścisła deduplikacja wejściowa
 filtered_raw_articles = []
 for art in raw_articles:
     art_title = art["title"].lower()
@@ -294,80 +289,79 @@ for art in raw_articles:
     if not is_duplicate:
         filtered_raw_articles.append(art)
 
-if len(filtered_raw_articles) < 10:
+if len(filtered_raw_articles) < 14:
     filtered_raw_articles = raw_articles
 
-print(f"Po ścisłej deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów")
+print(f"Po deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów.")
 
-# --- PROMPT AI Z ZUNIFIKOWANĄ FORMĄ (TYTUŁY DUŻYMI LITERAMI + ENERGICZNA FORMA PORANNA) ---
+# --- PROMPT AI: DOKŁADNIE TEN SAM OSTRY RYTM NIEZALEŻNIE OD PORY DNIA ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-recent_titles_sample = previous_titles[:35]
+prompt = f"""Jesteś autorem i głównym analitykiem formatu „Świat w Minucie” (Instagram/Threads). 
+Twoje treści zdobywają gigantyczne zasięgi, ponieważ piszesz jak bezwzględny, genialny redaktor śledczy: zwięźle, agresywnie, z pełnym szacunkiem do liczb i faktów. 
 
-prompt = f"""Jesteś redaktorem naczelnym formatu „Świat w Minucie” (Instagram/Threads). 
-Twoje treści zdobywają wiralowe zasięgi dzięki bezkompromisowej energii, wyrazistym nagłówkom pisanym DUŻYMI LITERAMI i chłodnej, bezlitosnej puencie.
+ZAKAZ WODOLANIA I BEŁKOTU:
+- ZAKAZ zwrotów: „czas pokaże”, „niepewna przyszłość”, „warto obserwować”, „jak wynika z bilansu”, „podsumowując wydarzenia”, „eksperci ostrzegają”.
+- PISZ MIĘSEM: Kto, ile stracił, jaka ustawa wchodzi, co dokładnie podrożeje, jaki sprzęt wysłano, gdzie wybuchł spór. Każde zdanie to twardy fakt i kontrast.
 
-Zadanie: Na podstawie artykułów stwórz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJBARDZIEJ WCIĄGAJĄCYCH wiadomości w języku polskim w formacie JSON.
-Utrzymuj MAKSYMALNIE WYSOKI STANDARD (taki sam jak w wydaniu porannym – zero nudnych, mdłych streszczeń!).
+Zadanie: Wybierz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH tematów i stwórz bezbłędny JSON.
 
-ZASADA 1: TYTUŁY WYŁĄCZNIE DUŻYMI LITERAMI (UPPERCASE):
-Pole "title" MUSI składać się z: [Trafna emotikona] + [MOCNY, CHWYTLIWY NAGŁÓWEK DRUKOWANYMI LITERAMI do 60 znaków].
+ZASADA 1: NAGŁÓWEK ("title") - DOKŁADNIE TYM WZOREM:
+[Trafna emotikona] [CHWYTLIWY, AGRESYWNY NAGŁÓWEK DUŻYMI LITERAMI DO 60 ZNAKÓW]
 Przykłady:
-- "🚨 REKORDOWY SKOK PODATKU: KLASA ŚREDNIA DOSTANIE PO KIESZENI"
-- "🔥 PANIKA W DOWÓDZTWIE: RADAR NATO WYKRYŁ NIEZNANE CELE"
-- "📉 GIEŁDOWE TĄPNIĘCIE: INWESTORZY W POPIECHU UCIEKAJĄ W ZŁOTO"
+- 🚨 SKOK AKCYZY NA PALIWO: KIEROWCY ZAPŁACĄ 60 GROSZY WIĘCEJ
+- 📉 WALL STREET W PANICE: GIGANT TECHU TRACI 140 MILIARDÓW W GODZINĘ
+- ⚔️ ZWROT NA FLANCE: POLSKA ZAMAWIA 500 PRECYZYJNYCH POCISKÓW
 
-ZASADA 2: FORMAT THREADS (DWA POSTY W JEDNYM WĄTKU – 600-800 ZNAKÓW):
-Pole "threads_post" MUSI składać się z 2 części oddzielonych znacznikiem "---ODPOWIEDŹ---":
-CZĘŚĆ 1 (Post główny – 300-380 znaków):
-- Tytuł DUŻYMI LITERAMI z emotikoną
-- Krzykliwy podwójny hook z flagami i wykrzyknikiem (np. "Historyczny przełom na rynkach! 🚀🇵🇱")
-- 1-2 zdania wprowadzające w sedno kryzysu/sporu, kończące się: (Szczegóły i tło w odpowiedzi 👇🧵)
+ZASADA 2: FORMAT THREADS ("threads_post") - DWA POSTY W JEDNYM WĄTKU (650-800 ZNAKÓW):
+Format MUSI być podzielony znacznikiem "---ODPOWIEDŹ---":
+
+CZĘŚĆ 1 (Post główny – 320-380 znaków):
+[NAGŁÓWEK DUŻYMI LITERAMI Z EMOTIKONĄ]
+[Krzykliwy podwójny hook z flagami i wykrzyknikiem]
+[1-2 zdania uderzające w sedno problemu, kończące się zachętą:]
+(Szczegóły i tło w odpowiedzi 👇🧵)
 
 ---ODPOWIEDŹ---
 
-CZĘŚĆ 2 (Pierwsza odpowiedź pod postem – 350-450 znaków):
-- Twarde fakty, liczby, koszty i kulisy, których NIE MA na slajdzie graficznym
-- Cięta, bezlitosna puenta obnażająca hipokryzję decydentów lub korporacji
-- Konkretne pytanie prowokujące do dyskusji kończące się '👇💬'
+CZĘŚĆ 2 (Odpowiedź pod postem – 380-450 znaków):
+[Konkretne liczby, kulisy i mechanizm, którego NIE MA na slajdzie graficznym]
+[1 bezlitosne, cięte zdanie podsumowujące obłudę lub realne koszty]
+[Konkretne pytanie prowokujące do dyskusji kończące się '👇💬']
 
-ZASADA 3: CIĘTY KOMENTARZ NA KARUZELI ("comment"):
-- Dokładnie 1 bezkompromisowe, dosadne zdanie z puentą (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zderz oficjalne obietnice z twardym rachunkiem zysków i strat.
+ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment"):
+- DOKŁADNIE 1 ZDANIE (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zero banałów. Zderz słowa polityków z rachunkiem wystawionym obywatelom.
 
-ZASADA 4: ŚCISŁA DYSTRYBUCJA POJEDYNCZYCH KATEGORII:
+ZASADA 4: POJEDYNCZE KATEGORIE:
 Pole "category" to DOKŁADNIE JEDNO słowo:
-- "POLSKA" (min. 4 pozycje)
-- "GOSPODARKA" (min. 4 pozycje)
-- "BIZNES" (2-3 pozycje)
-- "GEOPOLITYKA" (2 pozycje)
-- "OBRONNOŚĆ" (max 2 pozycje)
-- "TECHNOLOGIE" (max 1-2 pozycje)
+- "POLSKA" (min. 4)
+- "GOSPODARKA" (min. 4)
+- "BIZNES" (2-3)
+- "GEOPOLITYKA" (2)
+- "OBRONNOŚĆ" (max 2)
+- "TECHNOLOGIE" (max 1-2)
 
-ZASADA 5: MINIMUM 2 POZYCJE SZOKUJĄCE / ABSURDALNE / NIECODZIENNE W ZESTAWIENIU.
-
-STRUKTURA JSON:
-[
-  {{
-    "category": "POLSKA" lub "GOSPODARKA" lub "BIZNES" lub "GEOPOLITYKA" lub "OBRONNOŚĆ" lub "TECHNOLOGIE",
-    "title": "[Emotikona] [NAGŁÓWEK DUŻYMI LITERAMI]",
-    "hook": "1 zdanie uderzające w sedno.",
-    "summary": "2 zwięzłe zdania czystych faktów i liczb na slajd.",
-    "comment": "1 cięte zdanie kontrastu (14-22 słowa, krótsze niż summary).",
-    "threads_post": "Część 1\\n\\n---ODPOWIEDŹ---\\n\\nCzęść 2",
-    "question": "1 pytanie do dyskusji kończące się '👇💬'.",
-    "image_query": "2-3 konkretne słowa kluczowe po angielsku do Pexels",
-    "link": "dokładnie URL artykułu"
-  }}
-]
+WZORCOWY OBIEKT (FEW-SHOT):
+{{
+  "category": "GOSPODARKA",
+  "title": "🚨 RZĄD PRZEPYCHA NOWY PODATEK: ZAPŁACĄ WSZYSCY KIEROWCY",
+  "hook": "Nowa opłata paliwowa wchodzi tylnymi drzwiami bez konsultacji społecznych.",
+  "summary": "Stawka wzrośnie o 14% od pierwszego dnia przyszłego miesiąca, co przełoży się na wzrost cen litra benzyny o 35 groszy. Ministerstwo tłumaczy decyzję koniecznością łatania dziury w Funduszu Drogowym.",
+  "comment": "Rządzący znowu opowiadają bajki o ochronie portfeli, podczas gdy przy dystrybutorze ściągają z nas kolejny ukryty haracz.",
+  "threads_post": "🚨 RZĄD PRZEPYCHA NOWY PODATEK: ZAPŁACĄ WSZYSCY KIEROWCY\\n\\nKolejny cichy haracz uderzy prosto w portfele milionów Polaków! ⛽🇵🇱\\n\\nBez zapowiedzi i bez debaty parlamentarnej rząd przeforsował korektę opłaty paliwowej. Od przyszłego miesiąca każda wizyta na stacji będzie zauważalnie droższa, a branża transportowa już liczy straty.\\n\\n(Szczegóły i tło w odpowiedzi 👇🧵)\\n\\n---ODPOWIEDŹ---\\n\\nNowe przepisy mają przynieść budżetowi ponad 4,2 miliarda złotych rocznie. Problem w tym, że wyższe koszty paliwa natychmiast przełożą się na ceny żywności i usług w sklepach.\\n\\nTo klasyczny mechanizm: politycy obiecują stabilizację, a dziury w finansach państwa łatają z pieniędzy kierowców. 📉⏳\\n\\nOdczujecie tę podwyżkę w codziennych wydatkach? 📊👇💬",
+  "question": "Jak ta zmiana wpłynie bezpośrednio na Twój domowy budżet? 👇💬",
+  "image_query": "gas station fuel price",
+  "link": "https://example.com"
+}}
 
 Unikaj tematów z archiwum:
-{json.dumps(recent_titles_sample, ensure_ascii=False)}
+{json.dumps(previous_titles[:25], ensure_ascii=False)}
 
 Dane wejściowe:
 {json.dumps(filtered_raw_articles, ensure_ascii=False)}
 """
 
-# --- GENEROWANIE ---
+# --- GENEROWANIE ZE ZMNIEJSZONĄ TEMPERATURĄ (DYSCYPLINA STYLU) ---
 items = []
 try:
     response = client.models.generate_content(
@@ -375,7 +369,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.55,
+            temperature=0.35,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -411,7 +405,7 @@ if len(items) < MIN_ITEMS:
     existing_links = {i.get("link") for i in items}
     for art in filtered_raw_articles:
         if art["link"] not in existing_links and art["link"] != "#":
-            clean_t = art.get("title", "Wydarzenie na arenie międzynarodowej")
+            clean_t = art.get("title", "Wydarzenie dnia")
             upper_t = format_uppercase_title(f"📈 {clean_t[:55]}")
             items.append({
                 "category": "GOSPODARKA",
@@ -430,13 +424,13 @@ if len(items) < MIN_ITEMS:
 
 if items:
     cats = Counter([item["category"] for item in items])
-    print("Rozkład pojedynczych kategorii:")
+    print(f"Rozkład kategorii ({session_name.upper()}):")
     for cat, count in cats.most_common():
         print(f"  {cat}: {count}")
 
 print(f"Wygenerowano {len(items)} pozycji – OK")
 
-# --- ZDJĘCIA: Pexels (karuzela) + og:image (Threads / IG Top 3) ---
+# --- ZDJĘCIA: Pexels + og:image + fallback ---
 print("Pobieranie zdjęć: Pexels + źródła artykułów...")
 source_ok = 0
 for item in items:
@@ -449,6 +443,8 @@ for item in items:
         source_ok += 1
     else:
         item["source_image_url"] = item["image_url"]
+
+    item["image"] = item["source_image_url"]
 
 print(f"Zdjęcia ze źródeł artykułów: {source_ok}/{len(items)} (reszta = Pexels fallback)")
 
@@ -480,4 +476,4 @@ raw_feed_output = {
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} unikalnych newsów w jednolitej, dynamicznej formie.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} pozycji w jednolitym, ostrym formacie.")
