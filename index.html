@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
 <head>
@@ -495,25 +494,37 @@ function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
 function imageOf(x) {
   if (!x || typeof x !== 'object') return '';
-  const candidates = [
-    x.image, x.image_url, x.imageUrl, x.img, x.photo, x.thumbnail, x.thumb,
-    x.source_image_url, x.sourceImageUrl, x.cover, x.cover_url, x.coverUrl,
+  // Prefer dedicated fields; source_image_url often = article OG (najlepsze)
+  const primary = [
+    x.source_image_url, x.sourceImageUrl,
+    x.image_url, x.imageUrl, x.image,
+    x.img, x.photo, x.thumbnail, x.thumb,
+    x.cover, x.cover_url, x.coverUrl,
     x.picture, x.pic, x.media_url, x.mediaUrl
   ];
-  for (const c of candidates) {
-    if (typeof c === 'string' && c.trim()) return c.trim();
+  const isFallback = (u) => {
+    const s = String(u || '');
+    return /photo-1534447677768|photo-1451187580459|photo-1469474968028|unsplash\.com\/photo-/.test(s)
+      && /auto=format/.test(s);
+  };
+  const urls = [];
+  for (const c of primary) {
+    if (typeof c === 'string' && c.trim().startsWith('http')) urls.push(c.trim());
   }
-  if (typeof x.media === 'string' && x.media.trim()) return x.media.trim();
+  if (typeof x.media === 'string' && x.media.trim().startsWith('http')) urls.push(x.media.trim());
   if (x.media && typeof x.media === 'object') {
     const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
-    if (typeof m === 'string' && m.trim()) return m.trim();
+    if (typeof m === 'string' && m.trim().startsWith('http')) urls.push(m.trim());
   }
-  if (Array.isArray(x.images) && x.images.length) {
-    const first = x.images[0];
-    if (typeof first === 'string') return first;
-    if (first && (first.url || first.src)) return first.url || first.src;
+  if (Array.isArray(x.images)) {
+    for (const first of x.images) {
+      if (typeof first === 'string' && first.startsWith('http')) urls.push(first);
+      else if (first && (first.url || first.src)) urls.push(first.url || first.src);
+    }
   }
-  return '';
+  // najpierw nie-fallback, potem cokolwiek
+  const real = urls.find(u => u && !isFallback(u));
+  return real || urls[0] || '';
 }
 
 function itemDateRaw(x) {
@@ -632,6 +643,45 @@ function toggleRead(x, ev) {
 function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
 function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
 function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e){ return '#'; } }
+
+/** Proxy przy hotlink-block (minutemediacdn, niektóre OG) – oryginał najpierw */
+function proxiedImg(url) {
+  if (!url || url === '#') return '';
+  try {
+    const abs = new URL(url, location.href).href;
+    // weserv: bez referrera, omija część blokad
+    return 'https://images.weserv.nl/?url=' + encodeURIComponent(abs.replace(/^https?:\/\//, '')) + '&w=800&fit=cover&output=webp';
+  } catch (e) {
+    return url;
+  }
+}
+
+function imgTag(src, extraClass) {
+  const u = safeUrl(src);
+  if (!u || u === '#') {
+    return `<div class="flex aspect-video items-center justify-center text-3xl ${extraClass || ''}">📰</div>`;
+  }
+  const proxy = proxiedImg(u);
+  // 1. próba oryginału (referrerpolicy no-referrer), 2. proxy, 3. placeholder
+  return `<img src="${escapeHtml(u)}" data-proxy="${escapeHtml(proxy)}" data-tried="0" class="card-img w-full ${extraClass || ''}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="window.__imgFallback && window.__imgFallback(this)">`;
+}
+
+window.__imgFallback = function (el) {
+  try {
+    const tried = parseInt(el.getAttribute('data-tried') || '0', 10);
+    if (tried === 0) {
+      const p = el.getAttribute('data-proxy');
+      if (p) {
+        el.setAttribute('data-tried', '1');
+        el.src = p;
+        return;
+      }
+    }
+  } catch (e) {}
+  const parent = el.parentElement;
+  if (parent) parent.innerHTML = '<div class="flex aspect-video items-center justify-center text-3xl">📰</div>';
+};
+
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
@@ -775,9 +825,7 @@ function card(item) {
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
       <div class="relative overflow-hidden" style="background: var(--bg-muted);">
-        ${img 
-          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-3xl\\'>📰</div>'">`
-          : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
+        ${imgTag(img)}
         <div class="absolute left-2.5 top-2.5">
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
         </div>
@@ -885,7 +933,21 @@ function renderFast() {
 
 function prepareFunItems() {
   const today = (funItems || []).map(x => ({...x, _isToday: true}));
-  allFunItems = uniqueByKey([...today, ...(archiveFunItems || [])]);
+  const merged = [...today, ...(archiveFunItems || [])];
+  // dedupe po kluczu, ale ZACHOWAJ wersję ze zdjęciem (nie pierwszą pustą)
+  const map = new Map();
+  for (const x of merged) {
+    const k = keyOf(x);
+    if (!k) continue;
+    const prev = map.get(k);
+    if (!prev) { map.set(k, x); continue; }
+    const prevImg = imageOf(prev);
+    const nextImg = imageOf(x);
+    // preferuj dziś, potem to ze zdjęciem
+    if (x._isToday && !prev._isToday) map.set(k, x);
+    else if (!prevImg && nextImg) map.set(k, x);
+  }
+  allFunItems = [...map.values()];
   allFunItems.sort((a, b) => {
     if (a._isToday && !b._isToday) return -1;
     if (!a._isToday && b._isToday) return 1;
@@ -1375,12 +1437,18 @@ async function init() {
     const d = af.data;
     const pushFun = (item, dateLabel) => {
       if (!item || typeof item !== 'object') return;
+      const img =
+        item.source_image_url || item.sourceImageUrl ||
+        item.image_url || item.imageUrl || item.image ||
+        item.img || item.photo || item.thumbnail || item.thumb || '';
       archiveFunItems.push({
         ...item,
-        _archiveDate: item.date || item.published_at || dateLabel || item._archiveDate || '',
-        // zachowaj obraz z możliwych pól archiwum
-        image: item.image || item.image_url || item.imageUrl || item.img || item.photo || item.thumbnail || item.source_image_url,
-        image_url: item.image_url || item.imageUrl || item.image || item.img || item.photo
+        title: item.title || item.text || '',
+        _archiveDate: item.date || item.published_at || item.timestamp || dateLabel || item._archiveDate || '',
+        // jawne aliasy – frontend imageOf zawsze znajdzie URL z archiwum
+        image: item.image || img,
+        image_url: item.image_url || item.imageUrl || img,
+        source_image_url: item.source_image_url || item.sourceImageUrl || img
       });
     };
 
