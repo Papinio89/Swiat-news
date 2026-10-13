@@ -16,21 +16,7 @@
 <meta name="apple-mobile-web-app-title" content="Świat w Minutę">
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://swiat-w-minute.vercel.app/">
-<meta property="og:title" content="Świat w Minutę — Przegląd dnia">
-<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund.">
-<meta property="og:image" content="https://swiat-w-minute.vercel.app/og-image.png">
-<meta property="og:locale" content="pl_PL">
-<meta property="og:site_name" content="Świat w Minutę">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
-<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund.">
-<meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
-
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="manifest" href="/manifest.json">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -111,33 +97,6 @@
   }
   #install-btn.show { display: inline-flex; }
 
-  #newsletter-overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
-    z-index: 100; display: flex; align-items: center; justify-content: center;
-    padding: 16px; opacity: 0; pointer-events: none; transition: opacity .3s;
-  }
-  #newsletter-overlay.show { opacity: 1; pointer-events: auto; }
-  #newsletter-popup {
-    background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
-    max-width: 380px; width: 100%; padding: 24px; position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,.25);
-  }
-  #newsletter-close {
-    position: absolute; top: 12px; right: 14px; background: none; border: none;
-    font-size: 20px; color: var(--text-muted); cursor: pointer;
-  }
-  #newsletter-email {
-    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border);
-    background: var(--bg-muted); color: var(--text); font-size: 14px; outline: none; margin-bottom: 10px;
-  }
-  #newsletter-submit {
-    padding: 12px; border-radius: 12px; background: #0f172a; color: #fff;
-    font-weight: 700; font-size: 14px; border: none; cursor: pointer; width: 100%;
-  }
-  .dark #newsletter-submit { background: #f8fafc; color: #0f172a; }
-  #newsletter-success { display: none; text-align: center; }
-  #newsletter-success.show { display: block; }
-
   #bottom-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
     border-top: 1px solid var(--border); background: var(--header-bg);
@@ -162,20 +121,11 @@
     background: linear-gradient(90deg, #f59e0b, #d97706);
     width: 0%; z-index: 100; transition: width 0.05s linear;
   }
-
-  #ptr {
-    position: absolute; top: -50px; left: 0; right: 0; height: 50px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px; font-weight: 600; color: var(--text-muted);
-    transition: transform .2s; pointer-events: none;
-  }
-  #ptr.visible { transform: translateY(50px); }
 </style>
 </head>
 <body class="min-h-screen relative">
 
 <div id="scroll-progress"></div>
-<div id="ptr">↓ Pociągnij, aby odświeżyć</div>
 
 <header class="sticky top-0 z-40 border-b backdrop-blur" style="background: var(--header-bg); border-color: var(--border);">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
@@ -206,7 +156,6 @@
         <li><span class="font-semibold text-main">□</span> — zaznacz jako przeczytane</li>
         <li><span class="font-semibold text-main">↗</span> — udostępnij</li>
         <li><span class="font-semibold text-main">☾</span> — tryb jasny / ciemny</li>
-        <li class="pt-1 text-mute">Pociągnij w dół, aby odświeżyć</li>
       </ul>
     </div>
   </div>
@@ -241,7 +190,7 @@
   <section id="search-box" class="mb-3 rounded-2xl border p-2.5 shadow-sm surface" style="border-color: var(--border);">
     <div class="relative">
       <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-mute text-sm">⌕</span>
-      <input id="search-input" oninput="search()" onkeydown="if(event.key==='Enter')search()" 
+      <input id="search-input" oninput="search()" 
              class="w-full rounded-xl border py-2 pl-9 pr-9 text-sm outline-none focus:border-amber-400 text-main"
              style="background: var(--bg-muted); border-color: var(--border); color: var(--text);"
              placeholder="Szukaj wiadomości…">
@@ -274,7 +223,7 @@
       <div id="edition-time" class="text-right text-[10px] font-semibold text-sec"></div>
     </div>
     <div id="headline-list" class="rounded-2xl border overflow-hidden surface" style="border-color: var(--border);">
-      <div class="p-6 text-center text-sm text-sec">Ładowanie…</div>
+      <div class="p-6 text-center text-sm text-sec">Ładowanie wiadomości…</div>
     </div>
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
@@ -338,28 +287,6 @@
 
 </main>
 
-<footer class="border-t" style="background: var(--bg-card); border-color: var(--border);">
-  <div class="mx-auto max-w-6xl px-4 py-8">
-    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec" style="background: var(--bg-muted); border-color: var(--border);">
-      ℹ️ Ważne informacje o stronie
-    </button>
-    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 text-left" style="background: var(--bg-muted); border-color: var(--border);">
-      <h3 class="text-sm font-black text-main mb-3">Ważne informacje</h3>
-      <ul class="space-y-2.5 text-xs leading-relaxed text-sec">
-        <li><span class="font-bold text-main">Czym jest ta strona?</span> Świat w Minutę to krótki przegląd dnia: geopolityka, gospodarka, obronność i technologia. Cel to szybki, czytelny skrót — nie pełna relacja dziennikarska.</li>
-        <li><span class="font-bold text-main">Skąd biorą się treści?</span> Materiały są wybierane z publicznych źródeł (m.in. serwisy informacyjne i kanały RSS), a następnie skracane i redagowane z pomocą AI.</li>
-        <li><span class="font-bold text-main">AI może się mylić.</span> Podsumowania bywają uproszczone, niekompletne albo nieprecyzyjne. Emocjonalny ton nagłówków i komentarzy to świadoma forma formatu, nie wyrok ani rekomendacja.</li>
-        <li><span class="font-bold text-main">Sprawdzaj źródła.</span> Przy każdym materiale jest link do oryginału. Zanim wyciągniesz wnioski albo udostępnisz treść dalej — zajrzyj do źródła.</li>
-        <li><span class="font-bold text-main">Niezależność.</span> Strona nie jest powiązana z partiami, redakcjami ani instytucjami, których dotyczyć mogą publikowane tematy.</li>
-        <li><span class="font-bold text-main">Kontakt / social.</span> Instagram: <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="font-bold text-amber-600 hover:underline">@swiatwminute</a></li>
-      </ul>
-    </div>
-    <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
-      <p>Świat w Minutę © <span id="year"></span></p>
-    </div>
-  </div>
-</footer>
-
 <nav id="bottom-nav">
   <div class="flex justify-around items-center h-14 px-1">
     <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
@@ -392,7 +319,6 @@ let allFunItems = [];
 let currentTab = 'today', allShown = 6, archiveShown = 2, funShown = 9;
 let readKeys = new Set();
 let dataLoadFailed = false;
-const titleCache = JSON.parse(localStorage.getItem('swm-title-cache') || '{}');
 
 const DATA_FILES = {
   news: 'news.json',
@@ -403,8 +329,6 @@ const DATA_FILES = {
   archiveFun: 'archive_rozrywka.json'
 };
 
-document.getElementById('year').textContent = new Date().getFullYear();
-
 function escapeHtml(v) {
   return String(v == null ? '' : v)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
@@ -413,54 +337,21 @@ function escapeHtml(v) {
 
 function getTitle(v) {
   const s = String(v || '').trim();
-  const m = s.match(/^(\p{Extended_Pictographic})\s*/u);
+  const m = s.match(/^(\p{Extended_Pictographic}|\p{Emoji_Presentation})\s*/u);
   return m ? { emoji: m[1], title: s.slice(m[0].length).trim() } : { emoji: '', title: s };
-}
-
-function isEnglishTitle(text) {
-  const t = String(text || '');
-  if (/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/.test(t)) return false;
-  return /\b(the|and|for|with|from|that|this|will|have|been|says|said|after|china|russia|trump|ukraine|israel|market|oil|price|attack|plan|billion|million|president|government|officials|announced|report|according)\b/i.test(t)
-    || (t.split(/\s+/).length >= 5 && !/[ąćęłńóśźż]/i.test(t));
-}
-
-async function translateToPolish(text) {
-  const key = text.trim().toLowerCase();
-  if (titleCache[key]) return titleCache[key];
-  try {
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0,500))}&langpair=en|pl`;
-    const res = await fetch(url);
-    const data = await res.json();
-    let translated = data?.responseData?.translatedText?.trim();
-    if (translated && translated.toLowerCase() !== text.toLowerCase() && !translated.includes('MYMEMORY')) {
-      translated = translated.charAt(0).toUpperCase() + translated.slice(1);
-      titleCache[key] = translated;
-      try { localStorage.setItem('swm-title-cache', JSON.stringify(titleCache)); } catch(e){}
-      return translated;
-    }
-  } catch(e){}
-  return text;
 }
 
 function pickEmoji(title, cat) {
   const t = (title + ' ' + (cat || '')).toLowerCase();
-  if (/trump|biden|white house|prezydent|wybor|usa|ameryk/.test(t)) return '🇺🇸';
-  if (/china|chiny|xi|pekin|beijing/.test(t)) return '🇨🇳';
-  if (/russia|rosja|putin|moskwa|moscow|kreml/.test(t)) return '🇷🇺';
-  if (/ukraine|ukraina|kijów|kyiv|zelenski|zełeński/.test(t)) return '🇺🇦';
-  if (/israel|gaza|hamas|palestyn/.test(t)) return '🇮🇱';
-  if (/nato|wojna|atak|missile|rakiet|obron|wojsk|army|military|żołnier/.test(t)) return '🛡️';
-  if (/oil|ropa|paliw|diesel|gaz|energy|energetyk|benzyn/.test(t)) return '⛽️';
-  if (/ai|sztuczn|chatgpt|openai|gemini|claude|sztuczna inteligencja/.test(t)) return '🤖';
-  if (/bank|inflacj|gospodark|rynek|market|stock|dollar|euro|walut|finanse|podatek|pit/.test(t)) return '💰';
-  if (/tech|apple|google|microsoft|meta|tesla|elon|musk|komputer|software/.test(t)) return '💻';
-  if (/climate|klimat|pogod|flood|powódź|hurricane|katastrof/.test(t)) return '🌍';
-  if (/health|zdrow|covid|szczep|hospital|szpital|wirus/.test(t)) return '🏥';
-  if (/sport|piłk|olympi|mecz|liga/.test(t)) return '⚽';
-  if (/kosmos|nasa|space|rakiet|satelit/.test(t)) return '🚀';
-  if (/polska|warszawa|polski|rp\b/.test(t)) return '🇵🇱';
-  if (/ue\b|unia europejska|bruksela|europe/.test(t)) return '🇪🇺';
-  if (/wyciek|dane|hack|cyber|bezpieczeństw/.test(t)) return '🕵️';
+  if (/trump|biden|usa|ameryk/.test(t)) return '🇺🇸';
+  if (/china|chiny|pekin/.test(t)) return '🇨🇳';
+  if (/russia|rosja|putin|moskwa/.test(t)) return '🇷🇺';
+  if (/ukraine|ukraina|kijów/.test(t)) return '🇺🇦';
+  if (/nato|wojna|atak|missile|rakiet|obron|wojsk|armia/.test(t)) return '🛡️';
+  if (/oil|ropa|paliw|gaz|energetyk/.test(t)) return '⛽️';
+  if (/ai|sztuczn|chatgpt|openai|gemini/.test(t)) return '🤖';
+  if (/bank|inflacj|gospodark|rynek|finanse|podatek/.test(t)) return '💰';
+  if (/polska|warszawa|polski/.test(t)) return '🇵🇱';
   return '📰';
 }
 
@@ -484,7 +375,7 @@ function uniqueByKey(items) {
 }
 
 function getSummary(x) { return x.summary || x.description || x.excerpt || ''; }
-function getComment(x) { return x.comment || x.why || x.whyImportant || x.important || ''; }
+function getComment(x) { return x.comment || x.why || ''; }
 function sourceName(x) { return x.source_name || x.sourceName || x.source || ''; }
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
@@ -493,201 +384,62 @@ function imageOf(x) {
   if (!x || typeof x !== 'object') return '';
   const candidates = [
     x.source_image_url, x.image_url, x.image, x.imageUrl, x.img, x.photo, 
-    x.thumbnail, x.thumb, x.sourceImageUrl, x.cover, x.cover_url, x.coverUrl,
-    x.picture, x.pic, x.media_url, x.mediaUrl
+    x.thumbnail, x.thumb, x.sourceImageUrl, x.cover, x.cover_url
   ];
   for (const c of candidates) {
-    if (typeof c === 'string' && c.trim() && c.trim().startsWith('http')) {
+    if (typeof c === 'string' && c.trim().startsWith('http')) {
       return c.trim().replace(/&amp;/g, '&');
-    }
-  }
-  if (typeof x.media === 'string' && x.media.trim() && x.media.trim().startsWith('http')) {
-    return x.media.trim().replace(/&amp;/g, '&');
-  }
-  if (x.media && typeof x.media === 'object') {
-    const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
-    if (typeof m === 'string' && m.trim() && m.trim().startsWith('http')) {
-      return m.trim().replace(/&amp;/g, '&');
-    }
-  }
-  if (Array.isArray(x.images) && x.images.length) {
-    const first = x.images[0];
-    if (typeof first === 'string' && first.trim().startsWith('http')) return first.trim().replace(/&amp;/g, '&');
-    if (first && (first.url || first.src)) {
-      const u = first.url || first.src;
-      if (typeof u === 'string' && u.trim().startsWith('http')) return u.trim().replace(/&amp;/g, '&');
     }
   }
   return '';
 }
 
-function itemDateRaw(x) {
-  if (!x) return null;
-  const candidates = [
-    x.date, x.published_at, x.publishedAt, x.created_at, x.createdAt,
-    x.datetime, x.time, x.timestamp, x._date, x._archiveDate, x.edition_date
-  ];
-  for (const c of candidates) {
-    if (!c) continue;
-    if (typeof c === 'number') {
-      const d = new Date(c > 1e12 ? c : c * 1000);
-      if (!isNaN(d.getTime())) return d;
-    }
-    const d = new Date(c);
-    if (!isNaN(d.getTime())) return d;
-    if (typeof c === 'string' && c.trim().length >= 6) return c.trim();
-  }
-  return null;
-}
-
-function parseFlexibleDate(val) {
-  if (!val) return null;
-  if (val instanceof Date && !isNaN(val.getTime())) return val;
-  if (typeof val === 'number') {
-    const d = new Date(val > 1e12 ? val : val * 1000);
-    return isNaN(d.getTime()) ? null : d;
-  }
-  const s = String(val).trim();
-  let m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
-  if (m) {
-    const d = new Date(+m[1], +m[2] - 1, +m[3]);
-    if (!isNaN(d.getTime())) return d;
-  }
-  const monthsPl = {
-    stycznia:0, lutego:1, marca:2, kwietnia:3, maja:4, czerwca:5,
-    lipca:6, sierpnia:7, września:8, pazdziernika:9, października:9,
-    listopada:10, grudnia:11
-  };
-  const monthsEn = {
-    january:0, february:1, march:2, april:3, may:4, june:5,
-    july:6, august:7, september:8, october:9, november:10, december:11
-  };
-  m = s.match(/(\d{1,2})\s+([A-Za-ząćęłńóśźż]+)\s+(\d{4})/i);
-  if (m) {
-    const mon = m[2].toLowerCase()
-      .normalize('NFD').replace(/\p{M}/gu, '');
-    let mi = monthsPl[m[2].toLowerCase()];
-    if (mi === undefined) mi = monthsEn[mon];
-    if (mi === undefined) {
-      for (const [k, v] of Object.entries(monthsPl)) {
-        if (k.normalize('NFD').replace(/\p{M}/gu, '') === mon) { mi = v; break; }
-      }
-    }
-    if (mi !== undefined) {
-      const d = new Date(+m[3], mi, +m[1]);
-      if (!isNaN(d.getTime())) return d;
-    }
-  }
-  const d = new Date(s);
-  return isNaN(d.getTime()) ? null : d;
-}
-
 function formatItemDate(x) {
-  const raw = itemDateRaw(x);
+  const raw = x.date || x.published_at || x.timestamp || x._archiveDate;
   if (!raw) return '';
-  const d = parseFlexibleDate(raw);
-  if (d) {
-    return d.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
-  }
-  const s = String(raw);
+  const s = String(raw).trim();
   const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
   if (m) return `${m[3].padStart(2,'0')}.${m[2].padStart(2,'0')}.${m[1]}`;
-  if (s.toLowerCase() === 'dziś' || s.toLowerCase() === 'dzis') {
-    return new Date().toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
-  }
-  return s.replace(/_/g, ' ').slice(0, 28);
-}
-
-function stampEdition(items, payload) {
-  const list = Array.isArray(items) ? items : [];
-  const meta = (payload && typeof payload === 'object' && !Array.isArray(payload)) ? payload : {};
-  const label = meta.timestamp || meta.date || meta.generated_at || meta.updated_at || '';
-  return list.map(i => {
-    if (!i || typeof i !== 'object') return i;
-    if (i._archiveDate || i.date || i.published_at) return i;
-    return { ...i, _archiveDate: label };
-  });
+  return s.slice(0, 24);
 }
 
 function categoryClass(cat) {
   const c = normalize(cat);
   if (c.includes('ai') || c.includes('technolog')) return 'bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300';
-  if (c.includes('gospod') || c.includes('finans') || c.includes('rynk')) return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300';
-  if (c.includes('nauk')) return 'bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-300';
+  if (c.includes('gospod') || c.includes('finans')) return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300';
   if (c.includes('obronn') || c.includes('wojsk')) return 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-200';
-  if (c.includes('geopolityk') || c.includes('świat') || c.includes('polityk')) return 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300';
   if (c.includes('polska')) return 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300';
-  return 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300';
+  return 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300';
 }
 
 function isRead(x) { return readKeys.has(keyOf(x)); }
-function toggleRead(x, ev) {
+function toggleRead(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const k = keyOf(x);
+  const k = keyOf(item);
   if (!k) return;
   if (readKeys.has(k)) readKeys.delete(k); else readKeys.add(k);
-  saveRead();
+  try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){}
   renderCurrent();
 }
-function saveRead() { try { localStorage.setItem('swm-read', JSON.stringify([...readKeys])); } catch(e){} }
-function loadRead() { try { readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]')); } catch(e){ readKeys = new Set(); } }
+
 function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e){ return '#'; } }
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const t = getTitle(item.title || item.text);
-  const summary = getSummary(item);
-  const comment = getComment(item);
-  const siteUrl = (location.origin || 'https://swiat-w-minute.vercel.app') + (location.pathname || '/');
-  const headline = ((t.emoji ? t.emoji + ' ' : '') + (t.title || '')).trim();
-  const parts = [headline];
-  if (summary) parts.push(summary);
-  if (comment) parts.push('💬 ' + comment);
-  parts.push('— via Świat w Minutę');
-  const text = parts.join('\n\n');
-  const payload = text + '\n' + siteUrl;
+  const t = getTitle(item.title);
+  const headline = ((t.emoji ? t.emoji + ' ' : '') + t.title).trim();
+  const payload = headline + '\n' + (item.link || location.href);
 
   if (navigator.share) {
     try {
-      await navigator.share({ title: headline, text: text, url: siteUrl });
-      showToast('Udostępniono news');
+      await navigator.share({ title: headline, text: payload, url: item.link || location.href });
       return;
-    } catch (e) {
-      if (e && e.name === 'AbortError') return;
-    }
+    } catch(e) {}
   }
   try {
     await navigator.clipboard.writeText(payload);
-    showToast('Skopiowano news do schowka');
-  } catch (e) {
-    showToast('Nie udało się udostępnić');
-  }
-}
-
-async function shareSource(item, ev) {
-  if (ev) { ev.preventDefault(); ev.stopPropagation(); }
-  const url = sourceLink(item);
-  if (!url || url === '#') {
-    showToast('Brak linku do źródła');
-    return;
-  }
-  const t = getTitle(item.title || item.text);
-  const headline = ((t.emoji ? t.emoji + ' ' : '') + (t.title || '')).trim();
-  const text = headline ? (headline + '\n' + url) : url;
-
-  if (navigator.share) {
-    try {
-      await navigator.share({ title: headline || 'Źródło', text: headline, url: url });
-      showToast('Udostępniono źródło');
-      return;
-    } catch (e) {
-      if (e && e.name === 'AbortError') return;
-    }
-  }
-  try {
-    await navigator.clipboard.writeText(text);
-    showToast('Link źródła skopiowany');
-  } catch (e) {
+    showToast('Skopiowano do schowka');
+  } catch(e) {
     showToast('Nie udało się skopiować');
   }
 }
@@ -700,64 +452,30 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-function toggleDisclaimer() { $('disclaimer').classList.toggle('hidden'); }
 function toggleHelp() { $('help-panel').classList.toggle('open'); }
 function updateThemeColor() {
   const meta = $('theme-color-meta');
-  if (!meta) return;
-  meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
+  if (meta) meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
 }
 
-function react(btn, type) {
-  const article = btn.closest('article');
-  if (!article) return;
-  const titleEl = article.querySelector('h3');
-  const postKey = 'swm-react-' + (titleEl ? titleEl.textContent.trim().slice(0, 60) : Math.random());
-  const current = localStorage.getItem(postKey);
-  const buttons = article.querySelectorAll('.react-btn');
-
-  if (current === type) {
-    localStorage.removeItem(postKey);
-    buttons.forEach(b => {
-      b.classList.remove('active');
-      const c = b.querySelector('.count');
-      if (c) c.textContent = '0';
-    });
-    return;
-  }
-
-  localStorage.setItem(postKey, type);
-  buttons.forEach(b => {
-    const bType = b.dataset.type;
-    const c = b.querySelector('.count');
-    if (bType === type) {
-      b.classList.add('active');
-      if (c) c.textContent = '1';
-    } else {
-      b.classList.remove('active');
-      if (c) c.textContent = '0';
-    }
-  });
-}
-
-function headlineRow(item, displayTitle, emoji) {
+function headlineRow(item) {
   const link = sourceLink(item);
   const read = isRead(item);
-  const itemJson = encodeURIComponent(JSON.stringify(item));
-  const em = emoji || '📰';
-  const title = displayTitle || getTitle(item.title).title;
+  const t = getTitle(item.title);
+  const emoji = t.emoji || pickEmoji(t.title, category(item));
+  const title = t.title;
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
-      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)">
+      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick='toggleRead(${JSON.stringify(item)}, event)'>
         ${read ? '✓' : ''}
       </button>
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2 no-underline">
-        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
+        <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(emoji)}</span>
         <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
       </a>
-      <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
+      <button onclick='shareItem(${JSON.stringify(item)}, event)' class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
     </div>`;
 }
 
@@ -769,7 +487,6 @@ function card(item) {
   const comment = getComment(item);
   const cat = category(item);
   const read = isRead(item);
-  const itemJson = encodeURIComponent(JSON.stringify(item));
 
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -781,8 +498,8 @@ function card(item) {
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
-          <button onclick="toggleRead(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
-          <button type="button" title="Udostępnij ten news" onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
+          <button onclick='toggleRead(${JSON.stringify(item)}, event)' class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
+          <button type="button" onclick='shareItem(${JSON.stringify(item)}, event)' class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
@@ -790,23 +507,11 @@ function card(item) {
         ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-sec">${escapeHtml(summary)}</p>` : ''}
         ${comment ? `<div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);"><div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div><div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div></div>` : ''}
         
-        <div class="flex gap-1.5 mt-3 flex-wrap">
-          <button data-type="fire" onclick="react(this,'fire')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">🔥 <span class="count">0</span></button>
-          <button data-type="wow" onclick="react(this,'wow')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">😮 <span class="count">0</span></button>
-          <button data-type="like" onclick="react(this,'like')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">👍 <span class="count">0</span></button>
-          <button data-type="idea" onclick="react(this,'idea')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">💡 <span class="count">0</span></button>
-        </div>
-
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
           <div class="truncate text-[10px] font-semibold text-mute">
             ${formatItemDate(item) ? `<span class="text-amber-600 dark:text-amber-400">${escapeHtml(formatItemDate(item))}</span>` : ''}
           </div>
-          ${link && link !== '#' ? `
-          <div class="flex items-center gap-1.5 shrink-0">
-            <a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>
-            <button type="button" onclick="shareSource(JSON.parse(decodeURIComponent('${itemJson}')), event)" title="Udostępnij źródło"
-              class="h-7 px-2 rounded-lg border text-[10px] font-bold text-sec hover:text-amber-600 hover:border-amber-400" style="border-color:var(--border);background:var(--bg-card)">↗ Źródło</button>
-          </div>` : ''}
+          ${link && link !== '#' ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>` : ''}
         </div>
       </div>
     </article>`;
@@ -820,50 +525,29 @@ function funMini(item) {
   </article>`;
 }
 
-async function translateHeadline(item) {
-  const t = getTitle(item.title);
-  let title = t.title;
-  let emoji = t.emoji;
-  if (isEnglishTitle(title)) title = await translateToPolish(title);
-  if (!emoji || emoji === '•') emoji = pickEmoji(title, category(item));
-  return { item, title, emoji };
-}
-
-async function renderToday() {
+function renderToday() {
   const primary = uniqueByKey(newsItems || []);
   const primaryKeys = new Set(primary.map(keyOf));
   const rest = uniqueByKey((rawFeedItems || []).filter(x => !primaryKeys.has(keyOf(x))));
   const total = primary.length + rest.length;
 
   $('edition-time').textContent = total ? `${total} tematów` : '';
-  if (!total && dataLoadFailed) {
-    $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak danych.</div>';
-    return;
-  }
   if (!total) {
     $('headline-list').innerHTML = '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
     return;
   }
 
-  const [primT, restT] = await Promise.all([
-    Promise.all(primary.map(translateHeadline)),
-    Promise.all(rest.map(translateHeadline))
-  ]);
-
-  let html = '';
-  if (primT.length) {
-    html += primT.map(({ item, title, emoji }) => headlineRow(item, title, emoji)).join('');
-  }
-  if (restT.length) {
+  let html = primary.map(headlineRow).join('');
+  if (rest.length) {
     html += `
       <div class="px-3.5 py-2.5 border-y flex items-center gap-2" style="border-color: var(--border); background: var(--bg-muted);">
-        <span class="text-[10px] font-black uppercase tracking-[.14em] text-amber-600 dark:text-amber-400">Pozostałe newsy na dziś</span>
-        <span class="text-[10px] text-mute">· ${restT.length}</span>
+        <span class="text-[10px] font-black uppercase tracking-[.14em] text-amber-600 dark:text-amber-400">Pozostałe newsy</span>
+        <span class="text-[10px] text-mute">· ${rest.length}</span>
       </div>`;
-    html += restT.map(({ item, title, emoji }) => headlineRow(item, title, emoji)).join('');
+    html += rest.map(headlineRow).join('');
   }
 
-  $('headline-list').innerHTML = html || '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
+  $('headline-list').innerHTML = html;
 
   const fp = funItems.slice(0, 4);
   $('fun-preview').classList.toggle('hidden', !fp.length);$('fun-preview-grid').innerHTML = fp.map(funMini).join('');
@@ -884,11 +568,6 @@ function renderFast() {
 function prepareFunItems() {
   const today = (funItems || []).map(x => ({...x, _isToday: true}));
   allFunItems = uniqueByKey([...today, ...(archiveFunItems || [])]);
-  allFunItems.sort((a, b) => {
-    if (a._isToday && !b._isToday) return -1;
-    if (!a._isToday && b._isToday) return 1;
-    return 0;
-  });
 }
 
 function renderFun() {
@@ -897,7 +576,6 @@ function renderFun() {
   $('fun-grid').innerHTML = items.length ? items.map(card).join('') : '<div class="col-span-full p-8 text-center text-sm text-sec">Brak ciekawostek.</div>';
   const more = $('fun-more');
   more.classList.toggle('hidden', funShown >= allFunItems.length);
-  more.textContent = `Pokaż więcej (${Math.max(0, allFunItems.length - funShown)})`;
 }
 function loadMoreFun() { funShown += 9; renderFun(); }
 
@@ -919,244 +597,11 @@ function randomFunFact() {
   document.body.insertAdjacentHTML('beforeend', html);
 }
 
-function dayKeyFromDate(d) {
-  if (!(d instanceof Date) || isNaN(d.getTime())) return '';
-  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
-}
-
-function extractDayKey(val) {
-  if (!val) return '';
-  if (val instanceof Date && !isNaN(val.getTime())) return dayKeyFromDate(val);
-  const s = String(val);
-  const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
-  if (m) return m[1] + '-' + m[2].padStart(2,'0') + '-' + m[3].padStart(2,'0');
-  const d = parseFlexibleDate(s);
-  return d ? dayKeyFromDate(d) : '';
-}
-
-function weekStartDayKey(ref) {
-  const d = new Date(ref || Date.now());
-  d.setHours(12, 0, 0, 0);
-  const day = d.getDay();
-  const diff = day === 0 ? 6 : day - 1;
-  d.setDate(d.getDate() - diff);
-  return dayKeyFromDate(d);
-}
-
-function itemDayKey(item) {
-  if (!item) return '';
-  if (item._dayKey) return item._dayKey;
-  return (
-    extractDayKey(item._archiveDate) ||
-    extractDayKey(item.timestamp) ||
-    extractDayKey(item.date) ||
-    extractDayKey(item.published_at) ||
-    ''
-  );
-}
-
-function scoreWeekItem(item) {
-  let s = 0;
-  if (getSummary(item)) s += 3;
-  if (getComment(item)) s += 2;
-  if (imageOf(item)) s += 2;
-  if (item.title && String(item.title).length > 20) s += 1;
-  if (item.category || item.cat) s += 1;
-  if (!item.text || item.title) s += 1;
-  return s;
-}
-
-function collectWeekPool() {
-  const weekStart = weekStartDayKey(new Date());
-  const today = dayKeyFromDate(new Date());
-  const pool = [];
-
-  (archiveGroups || []).forEach(g => {
-    const groupDay =
-      g._dayKey ||
-      extractDayKey(g.sessionKey) ||
-      extractDayKey(g.timestamp) ||
-      extractDayKey(g.date) ||
-      extractDayKey(g.label);
-
-    (g.items || []).forEach(item => {
-      const dk = item._dayKey || extractDayKey(item._archiveDate) || groupDay;
-      if (!dk) return;
-      if (dk < weekStart || dk > today) return;
-      pool.push({
-        ...item,
-        title: item.title || item.text || '',
-        _dayKey: dk,
-        _archiveDate: item._archiveDate || dk
-      });
-    });
-  });
-
-  const addToday = (list) => {
-    (list || []).forEach(i => {
-      pool.push({
-        ...i,
-        _dayKey: i._dayKey || today,
-        _archiveDate: i._archiveDate || i.timestamp || i.date || today
-      });
-    });
-  };
-  addToday(newsItems);
-  addToday(fastItems);
-
-  return uniqueByKey(pool);
-}
-
-function pickWeekHighlights(pool, limit) {
-  limit = limit || 10;
-  if (!pool.length) return [];
-
-  const byDay = {};
-  pool.forEach(item => {
-    const dk = itemDayKey(item) || 'unknown';
-    if (!byDay[dk]) byDay[dk] = [];
-    byDay[dk].push(item);
-  });
-  Object.keys(byDay).forEach(dk => {
-    byDay[dk].sort((a, b) => scoreWeekItem(b) - scoreWeekItem(a));
-  });
-
-  const days = Object.keys(byDay).filter(d => d !== 'unknown').sort();
-  const picked = [];
-  const usedKeys = new Set();
-  const usedCats = {};
-
-  days.forEach(dk => {
-    for (const item of byDay[dk]) {
-      const k = keyOf(item);
-      if (k && usedKeys.has(k)) continue;
-      picked.push(item);
-      if (k) usedKeys.add(k);
-      const cat = category(item) || 'Inne';
-      usedCats[cat] = (usedCats[cat] || 0) + 1;
-      break;
-    }
-  });
-
-  if (picked.length < limit) {
-    days.forEach(dk => {
-      if (picked.length >= limit) return;
-      let n = 0;
-      for (const item of byDay[dk]) {
-        const k = keyOf(item);
-        if (k && usedKeys.has(k)) continue;
-        n++;
-        if (n < 2) continue;
-        const cat = category(item) || 'Inne';
-        if ((usedCats[cat] || 0) >= 4) continue;
-        picked.push(item);
-        if (k) usedKeys.add(k);
-        usedCats[cat] = (usedCats[cat] || 0) + 1;
-        break;
-      }
-    });
-  }
-
-  if (picked.length < limit) {
-    const rest = pool.slice().sort((a, b) => scoreWeekItem(b) - scoreWeekItem(a));
-    for (const item of rest) {
-      if (picked.length >= limit) break;
-      const k = keyOf(item);
-      if (k && usedKeys.has(k)) continue;
-      picked.push(item);
-      if (k) usedKeys.add(k);
-    }
-  }
-
-  picked.sort((a, b) => {
-    const da = itemDayKey(a), db = itemDayKey(b);
-    if (da !== db) return da < db ? -1 : 1;
-    return scoreWeekItem(b) - scoreWeekItem(a);
-  });
-  return picked;
-}
-
 function renderWeek() {
-  const pool = collectWeekPool();
-  const top = pickWeekHighlights(pool, 15);
-  const cats = {};
-  pool.forEach(i => {
-    const c = category(i) || 'Inne';
-    cats[c] = (cats[c] || 0) + 1;
-  });
-  const topCats = Object.entries(cats).sort((a, b) => b[1] - a[1]).slice(0, 6);
-  const dayKeys = [...new Set(pool.map(itemDayKey).filter(Boolean))].sort();
-  const weekStart = weekStartDayKey(new Date());
-  const today = dayKeyFromDate(new Date());
-  const fmt = (dk) => {
-    if (!dk || dk.length < 10) return dk || '';
-    const p = dk.split('-');
-    return p[2] + '.' + p[1] + '.' + p[0];
-  };
-  const rangeLabel = fmt(weekStart) + ' – ' + fmt(today);
-
-  let html = `
-    <div class="rounded-2xl border p-5 mb-5 surface" style="border-color:var(--border); background: linear-gradient(135deg, rgba(16,185,129,0.08), transparent);">
-      <div class="text-[10px] font-bold uppercase tracking-wider text-emerald-500 mb-1">Przegląd tygodnia</div>
-      <h3 class="text-lg font-black text-main mb-2">Najlepsze z tygodnia</h3>
-      <p class="text-sm text-sec">${escapeHtml(rangeLabel)} · ${pool.length} materiałów z ${dayKeys.length} dni</p>
-      ${dayKeys.length ? `<p class="text-[11px] text-mute mt-1">Dni: ${dayKeys.map(fmt).map(x => escapeHtml(x)).join(' · ')}</p>` : ''}
-    </div>`;
-
-  if (topCats.length) {
-    html += `<div class="mb-5"><div class="text-xs font-bold text-sec mb-2">Dominujące tematy tygodnia</div><div class="flex flex-wrap gap-2">`;
-    topCats.forEach(([cat, cnt]) => {
-      html += `<span class="rounded-full px-3 py-1 text-xs font-bold ${categoryClass(cat)}">${escapeHtml(cat)} · ${cnt}</span>`;
-    });
-    html += `</div></div>`;
-  }
-
-  html += `<div class="mb-3 text-xs font-bold text-sec">Wyróżnione wydarzenia (mix z tygodnia)</div><div class="grid gap-4 md:grid-cols-2">`;
-  if (top.length) {
-    top.forEach((item, idx) => {
-      const t = getTitle(item.title || item.text);
-      let when = formatItemDate(item);
-      if (!when) {
-        const dk = itemDayKey(item);
-        if (dk) {
-          const p = dk.split('-');
-          if (p.length === 3) when = p[2] + '.' + p[1] + '.' + p[0];
-        }
-      }
-      const sum = getSummary(item) || (item.text && !item.title ? String(item.text).slice(0, 140) : '');
-      const link = sourceLink(item);
-      const hasLink = link && link !== '#';
-      const itemJson = encodeURIComponent(JSON.stringify(item));
-      const titleHtml = hasLink
-        ? `<a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-main hover:text-amber-600 no-underline">${t.emoji || ''} ${escapeHtml(t.title)}</a>`
-        : `${t.emoji || ''} ${escapeHtml(t.title)}`;
-      html += `
-        <div class="rounded-2xl border p-4 surface flex gap-3" style="border-color:var(--border)">
-          <div class="text-2xl font-black text-amber-500 w-8 shrink-0">${idx + 1}</div>
-          <div class="min-w-0 flex-1">
-            <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] font-bold uppercase text-mute mb-0.5">
-              <span>${escapeHtml(category(item))}</span>
-              ${when ? `<span class="text-amber-600 dark:text-amber-400 normal-case tracking-normal">· ${escapeHtml(when)}</span>` : ''}
-            </div>
-            <h4 class="text-sm font-black leading-snug mb-1">${titleHtml}</h4>
-            ${sum ? `<p class="text-xs text-sec line-clamp-2">${escapeHtml(sum)}</p>` : ''}
-            <div class="mt-2.5 flex flex-wrap items-center gap-2">
-              <button type="button" title="Udostępnij ten news" onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)"
-                class="text-[10px] font-bold px-2.5 py-1 rounded-lg border text-sec hover:text-amber-600" style="border-color:var(--border);background:var(--bg-card)">↗ Udostępnij</button>
-              ${hasLink ? `
-              <a href="${escapeHtml(safeUrl(link))}" target="_blank" rel="noopener" class="text-[10px] font-bold text-amber-600 hover:underline">Źródło →</a>
-              <button type="button" title="Udostępnij źródło" onclick="shareSource(JSON.parse(decodeURIComponent('${itemJson}')), event)"
-                class="text-[10px] font-bold px-2.5 py-1 rounded-lg border text-sec hover:text-amber-600" style="border-color:var(--border);background:var(--bg-card)">↗ Źródło</button>
-              ` : ''}
-            </div>
-          </div>
-        </div>`;
-    });
-  } else {
-    html += `<div class="col-span-full p-6 text-center text-sm text-sec">Brak danych z tego tygodnia (${escapeHtml(rangeLabel)}).</div>`;
-  }
-  html += `</div>`;
-  $('week-content').innerHTML = html;
+  const pool = uniqueByKey([...newsItems, ...fastItems]);
+  let html = `<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">`;
+  html += pool.map(card).join('') + `</div>`;
+  $('week-content').innerHTML = pool.length ? html : '<div class="p-6 text-center text-sm text-sec">Brak danych.</div>';
 }
 
 function renderArchive() {
@@ -1169,13 +614,12 @@ function renderArchive() {
   $('archive-content').innerHTML = groups.map(g => `
     <section class="mb-7">
       <div class="mb-2.5 flex items-end justify-between">
-        <h3 class="text-base font-black text-main">${escapeHtml(g.label || g.date || 'Archiwum')}</h3>
+        <h3 class="text-base font-black text-main">${escapeHtml(g.label || 'Archiwum')}</h3>
         <span class="text-[10px] text-sec">${(g.items || []).length} wiadomości</span>
       </div>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">${(g.items || []).map(card).join('')}</div>
     </section>`).join('');
   $('archive-more').classList.toggle('hidden', archiveShown >= archiveGroups.length);
-  if (archiveShown < archiveGroups.length) $('archive-more').textContent = `Pokaż starsze (${archiveGroups.length - archiveShown})`;
 }
 function loadMoreArchive() { archiveShown += 2; renderArchive(); }
 
@@ -1200,9 +644,14 @@ function switchTab(tab) {
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   const tabBtn = $('tab-' + tab);
   if (tabBtn) tabBtn.classList.add('active');
-  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));$('search-results')?.classList.add('hidden');
+  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => {
+    const el = $(id);
+    if (el) el.classList.add('hidden');
+  });
   const map = { today:'today-view', all:'all-view', fast:'fast-view', fun:'fun-view', week:'week-view', archive:'archive-view' };
-  $(map[tab])?.classList.remove('hidden');
+  const target = $(map[tab]);
+  if (target) target.classList.remove('hidden');
+  
   if (tab === 'all') allShown = 6;
   if (tab === 'archive') archiveShown = 2;
   if (tab === 'fun') funShown = 9;
@@ -1213,131 +662,55 @@ function switchTab(tab) {
 function search() {
   const q = ($('search-input').value \vert{}\vert{} '').toLowerCase().trim();$('search-clear').classList.toggle('hidden', !q);
   if (!q) { $('search-results').classList.add('hidden'); return; }
-  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveFunItems, ...archiveGroups.flatMap(g => g.items || [])]);
-  const words = normalize(q).split(' ').filter(Boolean);
-  const hits = pool.filter(x => {
-    const hay = normalize([x.title, getSummary(x), getComment(x), category(x), sourceName(x)].join(' '));
-    return words.every(w => hay.includes(w));
-  });
+  const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems]);
+  const hits = pool.filter(x => normalize(x.title + ' ' + getSummary(x)).includes(normalize(q)));
   $('search-results').classList.remove('hidden');$('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border overflow-hidden surface" style="border-color:var(--border)">
-      ${hits.slice(0,30).map(item => {
-        const t = getTitle(item.title);
-        return headlineRow(item, t.title, t.emoji || pickEmoji(t.title, category(item)));
-      }).join('') || '<div class="p-4 text-sm text-sec">Nie znaleziono.</div>'}
+      ${hits.slice(0,20).map(headlineRow).join('') || '<div class="p-4 text-sm text-sec">Nie znaleziono.</div>'}
     </div>`;
 }
+
 function clearSearch() {
   $('search-input').value = '';
   $('search-results').classList.add('hidden');$('search-clear').classList.add('hidden');
 }
+
 function goTop() { window.scrollTo({ top:0, behavior:'smooth' }); }
 function toggleDark() {
   document.documentElement.classList.toggle('dark');
-  localStorage.setItem('swm-dark', document.documentElement.classList.contains('dark') ? '1' : '0');
-  updateThemeColor();
-}
-function loadTheme() {
-  if (localStorage.getItem('swm-dark') === '1') document.documentElement.classList.add('dark');
+  try { localStorage.setItem('swm-dark', document.documentElement.classList.contains('dark') ? '1' : '0'); } catch(e){}
   updateThemeColor();
 }
 
 async function loadJson(url, fallback) {
   try {
     const r = await fetch(url, { cache: 'no-store' });
-    if (!r.ok) throw new Error(r.status);
+    if (!r.ok) return { ok: false, data: fallback };
     return { ok: true, data: await r.json() };
   } catch(e) {
-    console.warn('Nie udało się pobrać', url, e);
     return { ok: false, data: fallback };
   }
 }
 
-function todayKey() {
-  const n = new Date();
-  return `${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')}`;
-}
-
 function normalizeArchive(data) {
-  if (!data) return [];
-
-  const dayKeyFromAny = (val) => {
-    if (!val) return '';
-    const m = String(val).match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
-    if (m) return m[1] + '-' + m[2].padStart(2,'0') + '-' + m[3].padStart(2,'0');
-    return '';
-  };
-
-  const stampGroup = (items, dateLabel, dayKey) =>
-    (items || []).map(i => {
-      if (!i || typeof i !== 'object') return i;
-      const title = i.title || i.text || '';
-      const dk = dayKey || dayKeyFromAny(dateLabel) || dayKeyFromAny(i.timestamp) || dayKeyFromAny(i.date) || '';
-      return {
-        ...i,
-        title: title,
-        _dayKey: dk,
-        _archiveDate: i.date || i.published_at || i.timestamp || dateLabel || dk || i._archiveDate || ''
-      };
-    });
-
-  if (Array.isArray(data)) {
-    return [{ label: 'Archiwum', items: stampGroup(data, '', '') }];
-  }
-  if (Array.isArray(data.items)) {
-    const lbl = data.timestamp || data.date || 'Archiwum';
-    const dk = dayKeyFromAny(data.timestamp) || dayKeyFromAny(data.date) || '';
-    return [{ label: lbl, _dayKey: dk, sessionKey: '', items: stampGroup(data.items, lbl, dk) }];
-  }
-  if (Array.isArray(data.groups)) {
-    return data.groups.map(g => {
-      const dk = dayKeyFromAny(g.timestamp) || dayKeyFromAny(g.date) || dayKeyFromAny(g.label) || '';
-      return {
-        ...g,
-        _dayKey: dk,
-        items: stampGroup(g.items, g.timestamp || g.date || g.label || '', dk)
-      };
-    });
-  }
+  if (!data || typeof data !== 'object') return [];
   const out = [];
-  const today = todayKey();
-  const keys = Object.keys(data).sort().reverse();
-  for (const key of keys) {
-    if (key.startsWith(today)) continue;
+  for (const key of Object.keys(data).sort().reverse()) {
     const v = data[key];
-    if (!v) continue;
-    const dk = dayKeyFromAny(key) || (typeof v === 'object' ? (dayKeyFromAny(v.timestamp) || dayKeyFromAny(v.date)) : '');
-    if (Array.isArray(v)) {
-      out.push({ label: key, sessionKey: key, _dayKey: dk, items: stampGroup(v, key, dk) });
-    } else if (Array.isArray(v.items)) {
-      const lbl = v.timestamp || v.date || key;
-      out.push({
-        label: (v.date || key.replace(/_/g, ' • ')),
-        sessionKey: key,
-        date: v.date,
-        timestamp: v.timestamp,
-        _dayKey: dk,
-        items: stampGroup(v.items, lbl, dk)
-      });
+    if (v && Array.isArray(v.items)) {
+      out.push({ label: v.date || key.replace(/_/g, ' '), items: v.items });
     }
   }
   return out;
 }
 
-function extractEditionTime(payload) {
-  if (!payload || typeof payload !== 'object') return null;
-  for (const c of [payload.updated_at, payload.updatedAt, payload.date, payload.generated_at, payload.generatedAt, payload.timestamp, payload.time, payload.edition]) {
-    if (!c) continue;
-    const d = new Date(c);
-    if (!isNaN(d.getTime())) return d;
-  }
-  return null;
-}
-
 async function init() {
-  loadTheme();
-  loadRead();
+  try {
+    if (localStorage.getItem('swm-dark') === '1') document.documentElement.classList.add('dark');
+    updateThemeColor();
+    readKeys = new Set(JSON.parse(localStorage.getItem('swm-read') || '[]'));
+  } catch(e) {}
 
   const [n, raw, f, r, a, af] = await Promise.all([
     loadJson(DATA_FILES.news, { items: [] }),
@@ -1348,174 +721,50 @@ async function init() {
     loadJson(DATA_FILES.archiveFun, {})
   ]);
 
-  dataLoadFailed = !n.ok && !raw.ok;
-  newsItems = stampEdition(Array.isArray(n.data) ? n.data : (n.data.items || []), n.data);
-  rawFeedItems = stampEdition(Array.isArray(raw.data) ? raw.data : (raw.data.items || []), raw.data);
-  fastItems = stampEdition(Array.isArray(f.data) ? f.data : (f.data.items || []), f.data);
-  funItems = stampEdition(Array.isArray(r.data) ? r.data : (r.data.items || []), r.data);
+  newsItems = Array.isArray(n.data) ? n.data : (n.data.items || []);
+  rawFeedItems = Array.isArray(raw.data) ? raw.data : (raw.data.items || []);
+  fastItems = Array.isArray(f.data) ? f.data : (f.data.items || []);
+  funItems = Array.isArray(r.data) ? r.data : (r.data.items || []);
   archiveGroups = normalizeArchive(a.data);
 
   archiveFunItems = [];
-  if (af.ok && af.data) {
-    const d = af.data;
-    const pushFun = (item, dateLabel) => {
-      if (!item || typeof item !== 'object') return;
-      const validImg = imageOf(item);
-      archiveFunItems.push({
-        ...item,
-        _archiveDate: item.date || item.published_at || dateLabel || item._archiveDate || '',
-        source_image_url: validImg,
-        image_url: validImg,
-        image: validImg
-      });
-    };
-
-    if (Array.isArray(d)) {
-      d.forEach(item => pushFun(item, ''));
-    } else if (Array.isArray(d.items)) {
-      d.items.forEach(item => pushFun(item, d.date || ''));
-    } else if (Array.isArray(d.groups)) {
-      d.groups.forEach(g => {
-        (g.items || []).forEach(item => pushFun(item, g.label || g.date || ''));
-      });
-    } else if (typeof d === 'object') {
-      Object.keys(d).forEach(key => {
-        const group = d[key];
-        if (!group) return;
-        if (Array.isArray(group)) {
-          group.forEach(item => pushFun(item, key));
-        } else if (Array.isArray(group.items)) {
-          const lbl = group.timestamp || group.date || key;
-          group.items.forEach(item => pushFun(item, lbl));
-        } else if (typeof group === 'object' && (group.title || group.summary)) {
-          pushFun(group, key);
-        }
-      });
+  if (af.data && typeof af.data === 'object') {
+    for (const key of Object.keys(af.data)) {
+      const g = af.data[key];
+      if (g && Array.isArray(g.items)) archiveFunItems.push(...g.items);
     }
   }
 
-  const fromData = extractEditionTime(n.data) || extractEditionTime(raw.data);
-  const displayDate = fromData || new Date();
-  $('last-update').textContent = (fromData ? 'Wydanie: ' : '') + displayDate.toLocaleString('pl-PL', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
-
-  if (dataLoadFailed && !newsItems.length && !rawFeedItems.length) $('load-error').classList.remove('hidden');
-
-  await renderToday();
+  $('last-update').textContent = 'Wydanie: ' + (n.data.date || new Date().toLocaleDateString('pl-PL'));
+  renderToday();
   loadWidgets();
 }
 
 async function loadWidgets() {
   try {
-    const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw', { cache:'no-store' });
+    const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw');
     const d = await w.json();
-    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
+    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
   } catch(e){}
   try {
-    const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache:'no-store' });
+    const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
     const d = await r.json();
     const rates = d[0].rates;
     $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid \vert{}\vert{} 0).toFixed(2);$('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
   } catch(e){}
 }
 
-function weatherEmoji(c) {
-  if (c === 0) return '☀️';
-  if (c <= 3) return '🌤️';
-  if (c <= 48) return '🌫️';
-  if (c <= 67) return '🌧️';
-  if (c <= 77) return '🌨️';
-  if (c <= 82) return '🌦️';
-  return '⛈️';
-}
-
-/* Pull to Refresh */
-let ptrStartY = 0;
-let ptrPulling = false;
-const ptrEl = $('ptr');
-
-document.addEventListener('touchstart', e => {
-  if (window.scrollY <= 0) {
-    ptrStartY = e.touches[0].clientY;
-    ptrPulling = true;
-  }
-}, { passive: true });
-
-document.addEventListener('touchmove', e => {
-  if (!ptrPulling) return;
-  const diff = e.touches[0].clientY - ptrStartY;
-  if (diff > 60 && window.scrollY <= 0) {
-    ptrEl.classList.add('visible');
-    ptrEl.textContent = '↑ Puść, aby odświeżyć';
-  } else {
-    ptrEl.classList.remove('visible');
-    ptrEl.textContent = '↓ Pociągnij, aby odświeżyć';
-  }
-}, { passive: true });
-
-document.addEventListener('touchend', () => {
-  if (!ptrPulling) return;
-  ptrPulling = false;
-  if (ptrEl.classList.contains('visible')) {
-    ptrEl.textContent = 'Odświeżanie…';
-    setTimeout(() => location.reload(), 400);
-  } else {
-    ptrEl.classList.remove('visible');
-  }
-});
-
-/* Pasek postępu */
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
   $('scroll-progress').style.width = progress + '%';
-
   const btn = $('back-top');
-  if (scrollTop > 400) { btn.classList.remove('hidden'); btn.classList.add('flex'); }
-  else { btn.classList.add('hidden'); btn.classList.remove('flex'); }
-}, { passive: true });
-
-window.addEventListener('keydown', e => {
-  if (e.key === 'Escape') clearSearch();
-  if (e.key === '?' || (e.shiftKey && e.key === '/')) { e.preventDefault(); toggleHelp(); }
+  if (scrollTop > 400) btn.classList.remove('hidden');
+  else btn.classList.add('hidden');
 });
-
-/* PWA Install */
-let deferredPrompt = null;
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredPrompt = e;
-  $('install-btn')?.classList.add('show');
-});
-window.addEventListener('appinstalled', () => {
-  deferredPrompt = null;
-  $('install-btn')?.classList.remove('show');
-});
-async function installPWA() {
-  if (!deferredPrompt) return;
-  deferredPrompt.prompt();
-  const { outcome } = await deferredPrompt.userChoice;
-  if (outcome === 'accepted') showToast('Aplikacja zainstalowana!');
-  deferredPrompt = null;
-  $('install-btn')?.classList.remove('show');
-}
-
-function shouldShowNewsletter() { return false; }
-function showNewsletter() { /* disabled */ }
-function closeNewsletter() { /* disabled */ }
-function submitNewsletter(e) { if (e) e.preventDefault(); }
 
 init();
-</script>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('SW zarejestrowany:', reg.scope))
-        .catch(err => console.warn('SW błąd:', err));
-    });
-  }
 </script>
 </body>
 </html>
