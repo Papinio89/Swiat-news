@@ -360,7 +360,6 @@
   </div>
 </footer>
 
-<!-- Dolny baner z „Dzisiejsze” -->
 <nav id="bottom-nav">
   <div class="flex justify-around items-center h-14 px-1">
     <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
@@ -383,9 +382,6 @@
 
 <button id="back-top" onclick="goTop()" class="fixed bottom-20 right-5 z-[60] hidden h-11 w-11 items-center justify-center rounded-full bg-slate-950 text-base font-black text-white shadow-xl sm:bottom-5 dark:bg-white dark:text-slate-950">↑</button>
 <div id="toast" class="fixed bottom-20 left-1/2 z-[70] -translate-x-1/2 rounded-xl bg-slate-950 px-4 py-2.5 text-xs font-bold text-white shadow-xl sm:bottom-5"></div>
-
-<!-- newsletter wyłączony do czasu podpięcia systemu mailingowego -->
-
 
 <script>
 'use strict';
@@ -492,25 +488,35 @@ function getComment(x) { return x.comment || x.why || x.whyImportant || x.import
 function sourceName(x) { return x.source_name || x.sourceName || x.source || ''; }
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
+
 function imageOf(x) {
   if (!x || typeof x !== 'object') return '';
   const candidates = [
-    x.image, x.image_url, x.imageUrl, x.img, x.photo, x.thumbnail, x.thumb,
-    x.source_image_url, x.sourceImageUrl, x.cover, x.cover_url, x.coverUrl,
+    x.source_image_url, x.image_url, x.image, x.imageUrl, x.img, x.photo, 
+    x.thumbnail, x.thumb, x.sourceImageUrl, x.cover, x.cover_url, x.coverUrl,
     x.picture, x.pic, x.media_url, x.mediaUrl
   ];
   for (const c of candidates) {
-    if (typeof c === 'string' && c.trim()) return c.trim();
+    if (typeof c === 'string' && c.trim() && c.trim().startsWith('http')) {
+      return c.trim().replace(/&amp;/g, '&');
+    }
   }
-  if (typeof x.media === 'string' && x.media.trim()) return x.media.trim();
+  if (typeof x.media === 'string' && x.media.trim() && x.media.trim().startsWith('http')) {
+    return x.media.trim().replace(/&amp;/g, '&');
+  }
   if (x.media && typeof x.media === 'object') {
     const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
-    if (typeof m === 'string' && m.trim()) return m.trim();
+    if (typeof m === 'string' && m.trim() && m.trim().startsWith('http')) {
+      return m.trim().replace(/&amp;/g, '&');
+    }
   }
   if (Array.isArray(x.images) && x.images.length) {
     const first = x.images[0];
-    if (typeof first === 'string') return first;
-    if (first && (first.url || first.src)) return first.url || first.src;
+    if (typeof first === 'string' && first.trim().startsWith('http')) return first.trim().replace(/&amp;/g, '&');
+    if (first && (first.url || first.src)) {
+      const u = first.url || first.src;
+      if (typeof u === 'string' && u.trim().startsWith('http')) return u.trim().replace(/&amp;/g, '&');
+    }
   }
   return '';
 }
@@ -529,7 +535,6 @@ function itemDateRaw(x) {
     }
     const d = new Date(c);
     if (!isNaN(d.getTime())) return d;
-    // "2026-10-10" or "10.10.2026" as label
     if (typeof c === 'string' && c.trim().length >= 6) return c.trim();
   }
   return null;
@@ -543,13 +548,11 @@ function parseFlexibleDate(val) {
     return isNaN(d.getTime()) ? null : d;
   }
   const s = String(val).trim();
-  // 2026-10-11_07:01 / 2026-10-11
   let m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
   if (m) {
     const d = new Date(+m[1], +m[2] - 1, +m[3]);
     if (!isNaN(d.getTime())) return d;
   }
-  // 11 października 2026 / 07 September 2026
   const monthsPl = {
     stycznia:0, lutego:1, marca:2, kwietnia:3, maja:4, czerwca:5,
     lipca:6, sierpnia:7, września:8, pazdziernika:9, października:9,
@@ -562,11 +565,10 @@ function parseFlexibleDate(val) {
   m = s.match(/(\d{1,2})\s+([A-Za-ząćęłńóśźż]+)\s+(\d{4})/i);
   if (m) {
     const mon = m[2].toLowerCase()
-      .normalize('NFD').replace(/\p{M}/gu, ''); // strip diacritics fallback
+      .normalize('NFD').replace(/\p{M}/gu, '');
     let mi = monthsPl[m[2].toLowerCase()];
     if (mi === undefined) mi = monthsEn[mon];
     if (mi === undefined) {
-      // try without diacritics on pl keys
       for (const [k, v] of Object.entries(monthsPl)) {
         if (k.normalize('NFD').replace(/\p{M}/gu, '') === mon) { mi = v; break; }
       }
@@ -596,7 +598,6 @@ function formatItemDate(x) {
   return s.replace(/_/g, ' ').slice(0, 28);
 }
 
-/** Dokleja datę wydania do każdego itemu (w JSON data nie ma dat per-item) */
 function stampEdition(items, payload) {
   const list = Array.isArray(items) ? items : [];
   const meta = (payload && typeof payload === 'object' && !Array.isArray(payload)) ? payload : {};
@@ -663,7 +664,6 @@ async function shareItem(item, ev) {
   }
 }
 
-/** Udostępnij / skopiuj link do oryginalnego źródła */
 async function shareSource(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
   const url = sourceLink(item);
@@ -775,7 +775,7 @@ function card(item) {
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
       <div class="relative overflow-hidden" style="background: var(--bg-muted);">
         ${img 
-          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'flex aspect-video items-center justify-center text-3xl\\'>📰</div>'">`
+          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop'">`
           : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
         <div class="absolute left-2.5 top-2.5">
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
@@ -866,8 +866,7 @@ async function renderToday() {
   $('headline-list').innerHTML = html || '<div class="p-6 text-center text-sm text-sec">Brak wiadomości.</div>';
 
   const fp = funItems.slice(0, 4);
-  $('fun-preview').classList.toggle('hidden', !fp.length);
-  $('fun-preview-grid').innerHTML = fp.map(funMini).join('');
+  $('fun-preview').classList.toggle('hidden', !fp.length);$('fun-preview-grid').innerHTML = fp.map(funMini).join('');
 }
 
 function renderAll() {
@@ -920,7 +919,6 @@ function randomFunFact() {
   document.body.insertAdjacentHTML('beforeend', html);
 }
 
-/** Start tygodnia roboczego (poniedziałek 00:00 lokalnie) */
 function dayKeyFromDate(d) {
   if (!(d instanceof Date) || isNaN(d.getTime())) return '';
   return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
@@ -1006,11 +1004,7 @@ function collectWeekPool() {
   addToday(newsItems);
   addToday(fastItems);
 
-  const uniq = uniqueByKey(pool);
-  try {
-    console.info('[week] pool', uniq.length, 'dni', [...new Set(uniq.map(itemDayKey))].sort(), weekStart, '->', today);
-  } catch (e) {}
-  return uniq;
+  return uniqueByKey(pool);
 }
 
 function pickWeekHighlights(pool, limit) {
@@ -1032,7 +1026,6 @@ function pickWeekHighlights(pool, limit) {
   const usedKeys = new Set();
   const usedCats = {};
 
-  // 1 z każdego dnia
   days.forEach(dk => {
     for (const item of byDay[dk]) {
       const k = keyOf(item);
@@ -1045,7 +1038,6 @@ function pickWeekHighlights(pool, limit) {
     }
   });
 
-  // 2. z każdego dnia
   if (picked.length < limit) {
     days.forEach(dk => {
       if (picked.length >= limit) return;
@@ -1208,8 +1200,7 @@ function switchTab(tab) {
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   const tabBtn = $('tab-' + tab);
   if (tabBtn) tabBtn.classList.add('active');
-  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));
-  $('search-results')?.classList.add('hidden');
+  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));$('search-results')?.classList.add('hidden');
   const map = { today:'today-view', all:'all-view', fast:'fast-view', fun:'fun-view', week:'week-view', archive:'archive-view' };
   $(map[tab])?.classList.remove('hidden');
   if (tab === 'all') allShown = 6;
@@ -1220,8 +1211,7 @@ function switchTab(tab) {
 }
 
 function search() {
-  const q = ($('search-input').value || '').toLowerCase().trim();
-  $('search-clear').classList.toggle('hidden', !q);
+  const q = ($('search-input').value \vert{}\vert{} '').toLowerCase().trim();$('search-clear').classList.toggle('hidden', !q);
   if (!q) { $('search-results').classList.add('hidden'); return; }
   const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveFunItems, ...archiveGroups.flatMap(g => g.items || [])]);
   const words = normalize(q).split(' ').filter(Boolean);
@@ -1229,8 +1219,7 @@ function search() {
     const hay = normalize([x.title, getSummary(x), getComment(x), category(x), sourceName(x)].join(' '));
     return words.every(w => hay.includes(w));
   });
-  $('search-results').classList.remove('hidden');
-  $('search-results').innerHTML = `
+  $('search-results').classList.remove('hidden');$('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border overflow-hidden surface" style="border-color:var(--border)">
       ${hits.slice(0,30).map(item => {
@@ -1241,8 +1230,7 @@ function search() {
 }
 function clearSearch() {
   $('search-input').value = '';
-  $('search-results').classList.add('hidden');
-  $('search-clear').classList.add('hidden');
+  $('search-results').classList.add('hidden');$('search-clear').classList.add('hidden');
 }
 function goTop() { window.scrollTo({ top:0, behavior:'smooth' }); }
 function toggleDark() {
@@ -1274,7 +1262,6 @@ function todayKey() {
 function normalizeArchive(data) {
   if (!data) return [];
 
-  // YYYY-MM-DD z klucza sesji "2026-10-06_poranne" / timestamp
   const dayKeyFromAny = (val) => {
     if (!val) return '';
     const m = String(val).match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
@@ -1317,7 +1304,6 @@ function normalizeArchive(data) {
   const today = todayKey();
   const keys = Object.keys(data).sort().reverse();
   for (const key of keys) {
-    // dziś i tak bierzemy z news.json – pomijamy tylko dzisiejsze klucze archiwum
     if (key.startsWith(today)) continue;
     const v = data[key];
     if (!v) continue;
@@ -1374,12 +1360,13 @@ async function init() {
     const d = af.data;
     const pushFun = (item, dateLabel) => {
       if (!item || typeof item !== 'object') return;
+      const validImg = imageOf(item);
       archiveFunItems.push({
         ...item,
         _archiveDate: item.date || item.published_at || dateLabel || item._archiveDate || '',
-        // zachowaj obraz z możliwych pól archiwum
-        image: item.image || item.image_url || item.imageUrl || item.img || item.photo || item.thumbnail || item.source_image_url,
-        image_url: item.image_url || item.imageUrl || item.image || item.img || item.photo
+        source_image_url: validImg,
+        image_url: validImg,
+        image: validImg
       });
     };
 
@@ -1421,15 +1408,13 @@ async function loadWidgets() {
   try {
     const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw', { cache:'no-store' });
     const d = await w.json();
-    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
-    $('weather-icon').textContent = weatherEmoji(d.current.weather_code);
+    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
   } catch(e){}
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache:'no-store' });
     const d = await r.json();
     const rates = d[0].rates;
-    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid || 0).toFixed(2);
-    $('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
+    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid \vert{}\vert{} 0).toFixed(2);$('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
   } catch(e){}
 }
 
@@ -1515,8 +1500,6 @@ async function installPWA() {
   $('install-btn')?.classList.remove('show');
 }
 
-/* Newsletter */
-/* Newsletter – wyłączony (brak systemu mailingowego) */
 function shouldShowNewsletter() { return false; }
 function showNewsletter() { /* disabled */ }
 function closeNewsletter() { /* disabled */ }
