@@ -16,7 +16,21 @@
 <meta name="apple-mobile-web-app-title" content="Świat w Minutę">
 <meta name="mobile-web-app-capable" content="yes">
 
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://swiat-w-minute.vercel.app/">
+<meta property="og:title" content="Świat w Minutę — Przegląd dnia">
+<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund.">
+<meta property="og:image" content="https://swiat-w-minute.vercel.app/og-image.png">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Świat w Minutę">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
+<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund.">
+<meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="manifest" href="/manifest.json">
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -121,11 +135,20 @@
     background: linear-gradient(90deg, #f59e0b, #d97706);
     width: 0%; z-index: 100; transition: width 0.05s linear;
   }
+
+  #ptr {
+    position: absolute; top: -50px; left: 0; right: 0; height: 50px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 600; color: var(--text-muted);
+    transition: transform .2s; pointer-events: none;
+  }
+  #ptr.visible { transform: translateY(50px); }
 </style>
 </head>
 <body class="min-h-screen relative">
 
 <div id="scroll-progress"></div>
+<div id="ptr">↓ Pociągnij, aby odświeżyć</div>
 
 <header class="sticky top-0 z-40 border-b backdrop-blur" style="background: var(--header-bg); border-color: var(--border);">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
@@ -156,6 +179,7 @@
         <li><span class="font-semibold text-main">□</span> — zaznacz jako przeczytane</li>
         <li><span class="font-semibold text-main">↗</span> — udostępnij</li>
         <li><span class="font-semibold text-main">☾</span> — tryb jasny / ciemny</li>
+        <li class="pt-1 text-mute">Pociągnij w dół, aby odświeżyć</li>
       </ul>
     </div>
   </div>
@@ -223,7 +247,7 @@
       <div id="edition-time" class="text-right text-[10px] font-semibold text-sec"></div>
     </div>
     <div id="headline-list" class="rounded-2xl border overflow-hidden surface" style="border-color: var(--border);">
-      <div class="p-6 text-center text-sm text-sec">Ładowanie wiadomości…</div>
+      <div class="p-6 text-center text-sm text-sec">Ładowanie…</div>
     </div>
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
@@ -287,6 +311,26 @@
 
 </main>
 
+<footer class="border-t" style="background: var(--bg-card); border-color: var(--border);">
+  <div class="mx-auto max-w-6xl px-4 py-8">
+    <button onclick="toggleDisclaimer()" class="mx-auto flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold text-sec" style="background: var(--bg-muted); border-color: var(--border);">
+      ℹ️ Ważne informacje o stronie
+    </button>
+    <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 text-left" style="background: var(--bg-muted); border-color: var(--border);">
+      <h3 class="text-sm font-black text-main mb-3">Ważne informacje</h3>
+      <ul class="space-y-2.5 text-xs leading-relaxed text-sec">
+        <li><span class="font-bold text-main">Czym jest ta strona?</span> Świat w Minutę to krótki przegląd dnia: geopolityka, gospodarka, obronność i technologia. Cel to szybki, czytelny skrót — nie pełna relacja dziennikarska.</li>
+        <li><span class="font-bold text-main">Skąd biorą się treści?</span> Materiały są wybierane z publicznych źródeł (m.in. serwisy informacyjne i kanały RSS), a następnie skracane i redagowane z pomocą AI.</li>
+        <li><span class="font-bold text-main">AI może się mylić.</span> Podsumowania bywają uproszczone, niekompletne albo nieprecyzyjne.</li>
+        <li><span class="font-bold text-main">Sprawdzaj źródła.</span> Przy każdym materiale jest link do oryginału.</li>
+      </ul>
+    </div>
+    <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
+      <p>Świat w Minutę © <span id="year"></span></p>
+    </div>
+  </div>
+</footer>
+
 <nav id="bottom-nav">
   <div class="flex justify-around items-center h-14 px-1">
     <button onclick="switchTab('today')" class="bottom-tab flex flex-col items-center gap-0.5" data-tab="today">
@@ -313,6 +357,14 @@
 <script>
 'use strict';
 const $ = id => document.getElementById(id);
+
+let itemsRegistry = [];
+function regItem(item) {
+  const id = itemsRegistry.length;
+  itemsRegistry.push(item);
+  return id;
+}
+
 let newsItems = [], rawFeedItems = [], fastItems = [], funItems = [], archiveGroups = [];
 let archiveFunItems = [];
 let allFunItems = [];
@@ -328,6 +380,8 @@ const DATA_FILES = {
   archive: 'archive.json',
   archiveFun: 'archive_rozrywka.json'
 };
+
+document.getElementById('year').textContent = new Date().getFullYear();
 
 function escapeHtml(v) {
   return String(v == null ? '' : v)
@@ -391,7 +445,7 @@ function imageOf(x) {
       return c.trim().replace(/&amp;/g, '&');
     }
   }
-  return '';
+  return 'https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop';
 }
 
 function formatItemDate(x) {
@@ -413,8 +467,11 @@ function categoryClass(cat) {
 }
 
 function isRead(x) { return readKeys.has(keyOf(x)); }
-function toggleRead(item, ev) {
+
+function toggleReadById(id, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+  const item = itemsRegistry[id];
+  if (!item) return;
   const k = keyOf(item);
   if (!k) return;
   if (readKeys.has(k)) readKeys.delete(k); else readKeys.add(k);
@@ -424,8 +481,10 @@ function toggleRead(item, ev) {
 
 function safeUrl(u) { try { return new URL(u, location.href).href; } catch(e){ return '#'; } }
 
-async function shareItem(item, ev) {
+async function shareItemById(id, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
+  const item = itemsRegistry[id];
+  if (!item) return;
   const t = getTitle(item.title);
   const headline = ((t.emoji ? t.emoji + ' ' : '') + t.title).trim();
   const payload = headline + '\n' + (item.link || location.href);
@@ -453,12 +512,14 @@ function showToast(msg) {
 }
 
 function toggleHelp() { $('help-panel').classList.toggle('open'); }
+function toggleDisclaimer() { $('disclaimer').classList.toggle('hidden'); }
 function updateThemeColor() {
   const meta = $('theme-color-meta');
   if (meta) meta.setAttribute('content', document.documentElement.classList.contains('dark') ? '#020617' : '#f8fafc');
 }
 
 function headlineRow(item) {
+  const id = regItem(item);
   const link = sourceLink(item);
   const read = isRead(item);
   const t = getTitle(item.title);
@@ -467,7 +528,7 @@ function headlineRow(item) {
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
-      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick='toggleRead(${JSON.stringify(item)}, event)'>
+      <button class="check-btn ${read ? 'checked' : ''} mt-0.5" onclick="toggleReadById(${id}, event)">
         ${read ? '✓' : ''}
       </button>
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
@@ -475,11 +536,12 @@ function headlineRow(item) {
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(emoji)}</span>
         <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
       </a>
-      <button onclick='shareItem(${JSON.stringify(item)}, event)' class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
+      <button onclick="shareItemById(${id}, event)" class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
     </div>`;
 }
 
 function card(item) {
+  const id = regItem(item);
   const t = getTitle(item.title);
   const img = imageOf(item);
   const link = sourceLink(item);
@@ -491,15 +553,13 @@ function card(item) {
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
       <div class="relative overflow-hidden" style="background: var(--bg-muted);">
-        ${img 
-          ? `<img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop'">`
-          : `<div class="flex aspect-video items-center justify-center text-3xl">📰</div>`}
+        <img src="${escapeHtml(safeUrl(img))}" class="card-img w-full" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop'">
         <div class="absolute left-2.5 top-2.5">
           <span class="rounded-full px-2 py-0.5 text-[9px] font-extrabold uppercase shadow ${categoryClass(cat)}">${escapeHtml(cat)}</span>
         </div>
         <div class="absolute right-2.5 top-2.5 flex gap-1.5">
-          <button onclick='toggleRead(${JSON.stringify(item)}, event)' class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
-          <button type="button" onclick='shareItem(${JSON.stringify(item)}, event)' class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
+          <button onclick="toggleReadById(${id}, event)" class="check-btn ${read ? 'checked' : ''} shadow" style="background: var(--bg-card);">${read ? '✓' : ''}</button>
+          <button type="button" onclick="shareItemById(${id}, event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
         </div>
       </div>
       <div class="p-3.5 flex flex-col flex-1">
@@ -624,6 +684,7 @@ function renderArchive() {
 function loadMoreArchive() { archiveShown += 2; renderArchive(); }
 
 function renderCurrent() {
+  itemsRegistry = [];
   if (currentTab === 'today') renderToday();
   else if (currentTab === 'all') renderAll();
   else if (currentTab === 'fast') renderFast();
@@ -744,7 +805,7 @@ async function loadWidgets() {
   try {
     const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw');
     const d = await w.json();
-    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
+    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
   } catch(e){}
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
@@ -754,17 +815,99 @@ async function loadWidgets() {
   } catch(e){}
 }
 
+function weatherEmoji(c) {
+  if (c === 0) return '☀️';
+  if (c <= 3) return '🌤️';
+  if (c <= 48) return '🌫️';
+  if (c <= 67) return '🌧️';
+  if (c <= 77) return '🌨️';
+  if (c <= 82) return '🌦️';
+  return '⛈️';
+}
+
+/* Pull to Refresh */
+let ptrStartY = 0;
+let ptrPulling = false;
+const ptrEl = $('ptr');
+
+document.addEventListener('touchstart', e => {
+  if (window.scrollY <= 0) {
+    ptrStartY = e.touches[0].clientY;
+    ptrPulling = true;
+  }
+}, { passive: true });
+
+document.addEventListener('touchmove', e => {
+  if (!ptrPulling) return;
+  const diff = e.touches[0].clientY - ptrStartY;
+  if (diff > 60 && window.scrollY <= 0) {
+    ptrEl.classList.add('visible');
+    ptrEl.textContent = '↑ Puść, aby odświeżyć';
+  } else {
+    ptrEl.classList.remove('visible');
+    ptrEl.textContent = '↓ Pociągnij, aby odświeżyć';
+  }
+}, { passive: true });
+
+document.addEventListener('touchend', () => {
+  if (!ptrPulling) return;
+  ptrPulling = false;
+  if (ptrEl.classList.contains('visible')) {
+    ptrEl.textContent = 'Odświeżanie…';
+    setTimeout(() => location.reload(), 400);
+  } else {
+    ptrEl.classList.remove('visible');
+  }
+});
+
+/* Pasek postępu */
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
   $('scroll-progress').style.width = progress + '%';
+
   const btn = $('back-top');
-  if (scrollTop > 400) btn.classList.remove('hidden');
-  else btn.classList.add('hidden');
+  if (scrollTop > 400) { btn.classList.remove('hidden'); btn.classList.add('flex'); }
+  else { btn.classList.add('hidden'); btn.classList.remove('flex'); }
+}, { passive: true });
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') clearSearch();
+  if (e.key === '?' || (e.shiftKey && e.key === '/')) { e.preventDefault(); toggleHelp(); }
 });
 
+/* PWA */
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  $('install-btn')?.classList.add('show');
+});
+window.addEventListener('appinstalled', () => {
+  deferredPrompt = null;
+  $('install-btn')?.classList.remove('show');
+});
+async function installPWA() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  if (outcome === 'accepted') showToast('Aplikacja zainstalowana!');
+  deferredPrompt = null;
+  $('install-btn')?.classList.remove('show');
+}
+
 init();
+</script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('SW zarejestrowany:', reg.scope))
+        .catch(err => console.warn('SW błąd:', err));
+    });
+  }
 </script>
 </body>
 </html>
