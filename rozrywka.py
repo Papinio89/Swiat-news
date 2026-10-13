@@ -20,56 +20,7 @@ from google.genai import types
 pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
-
-FALLBACK_POOL = [
-    "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=1000&auto=format&fit=crop",
-]
-FALLBACK_IMG = FALLBACK_POOL[0]
-
-
-def stable_hash(text: str) -> int:
-    h = 0
-    for ch in str(text or ""):
-        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
-    return h
-
-
-def fallback_for(seed: str) -> str:
-    return FALLBACK_POOL[stable_hash(seed) % len(FALLBACK_POOL)]
-
-
-KEYWORD_MAP = [
-    (r"szop|raccoon", "raccoon"),
-    (r"kot|cat|kotek", "cat"),
-    (r"pies|dog|szczen", "dog"),
-    (r"ptak|bird|papug", "parrot bird"),
-    (r"jaszczur|lizard|gecko", "lizard"),
-    (r"wąż|snake", "snake"),
-    (r"ryba|fish|rekin", "fish ocean"),
-    (r"niedźwied|bear", "bear"),
-    (r"słoń|elephant", "elephant"),
-    (r"panda", "panda"),
-    (r"pingwin|penguin", "penguin"),
-    (r"flaming", "flamingo"),
-    (r"jeż|hedgehog", "hedgehog"),
-    (r"słońce|kosmos|gwiazd|space", "galaxy stars night"),
-    (r"morze|ocean|statek|boat", "sailboat ocean"),
-    (r"las|drzew|natura", "forest nature"),
-    (r"gór|mountain", "mountain landscape"),
-    (r"samoch|car|auto", "vintage car"),
-    (r"książ|book|biblio", "old books"),
-    (r"nauka|science|laborat", "science laboratory"),
-    (r"jedzen|pizza|kuchn", "food gourmet"),
-    (r"muzyk|gitara|koncert", "music concert"),
-    (r"film|kino|aktor", "cinema film"),
-]
+FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
 
 RSS_URLS = [
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
@@ -166,7 +117,7 @@ def fetch_article_image(url: str) -> str | None:
                 "Accept-Language": "pl,en-US;q=0.9,en;q=0.8",
             },
         )
-        with urllib.request.urlopen(req, timeout=5) as resp:
+        with urllib.request.urlopen(req, timeout=6) as resp:
             html = resp.read().decode("utf-8", errors="ignore")
 
         patterns = [
@@ -186,21 +137,6 @@ def fetch_article_image(url: str) -> str | None:
     except Exception:
         pass
     return None
-
-
-def query_from_title(title: str, image_query: str = "") -> str:
-    if image_query and re.search(r"[A-Za-z]{3,}", image_query):
-        return image_query.strip()
-
-    t = str(title or "").lower()
-    for pat, eng in KEYWORD_MAP:
-        if re.search(pat, t, re.I):
-            return eng
-
-    words = re.findall(r"[A-Za-z]{4,}", title or "")
-    if words:
-        return " ".join(words[:2])
-    return "nature curiosity"
 
 
 def fetch_pexels_image_url(query: str, seen: set | None = None) -> str | None:
@@ -240,32 +176,33 @@ def fetch_pexels_image_url(query: str, seen: set | None = None) -> str | None:
 
 
 def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
-    title = str(item.get("title") or "")
     url = item.get("link", "")
-    q = query_from_title(title, str(item.get("image_query") or ""))
+    q = str(item.get("image_query") or "curiosity nature").strip()
 
-    # 1. Próba: og:image ze źródła
+    # 1. Sprawdzenie czy zdjęcie z artykułu jest dostępne
     article_img = fetch_article_image(url)
     if article_img and article_img not in seen_image_urls:
         seen_image_urls.add(article_img)
         return article_img
 
-    # 2. Próba: Pexels API
+    # 2. Pexels po query z AI
     stock = fetch_pexels_image_url(q, seen=seen_image_urls)
     if stock and stock not in seen_image_urls:
         seen_image_urls.add(stock)
         return stock
 
-    # 3. Zróżnicowany Fallback
-    fb = fallback_for(title)
-    if fb in seen_image_urls:
-        for i in range(len(FALLBACK_POOL)):
-            cand = FALLBACK_POOL[(stable_hash(title) + i) % len(FALLBACK_POOL)]
-            if cand not in seen_image_urls:
-                fb = cand
-                break
-    seen_image_urls.add(fb)
-    return fb
+    seen_image_urls.add(FALLBACK_IMG)
+    return FALLBACK_IMG
+
+
+def embed_all_image_keys(item: dict, img_url: str) -> dict:
+    """Wstrzykuje wszystkie klucze, jakich frontend mógłby szukać."""
+    item["image_url"] = img_url
+    item["source_image_url"] = img_url
+    item["image"] = img_url
+    item["img"] = img_url
+    item["photo"] = img_url
+    return item
 
 
 def validate_items(items: list) -> list:
@@ -287,7 +224,6 @@ def validate_items(items: list) -> list:
         if len(title) < 10 or len(summary) < 25:
             continue
 
-        # Blokada angielskich zwrotów w polskim wydaniu
         if not is_polish_text(title) or not is_polish_text(summary):
             continue
 
@@ -367,8 +303,6 @@ for art in raw_articles:
 if len(filtered_raw_articles) < 6:
     filtered_raw_articles = raw_articles
 
-print(f"Po deduplikacji: {len(filtered_raw_articles)} artykułów.")
-
 api_key = os.environ.get("GEMINI_API_KEY")
 client = genai.Client(api_key=api_key)
 
@@ -384,9 +318,6 @@ PODZIAŁ TEMATYCZNY:
    - Kategoria: BIEŻĄCE ABSURDY lub ZWIERZAKI.
 2. 50% to szalona historia, sekrety popkultury, dziwna nauka.
    - Kategoria: SZALONA HISTORIA, BEKA Z NAUKI lub POPKULTURA.
-
-ZASADA UNIKALNOŚCI:
-- Każdy news MUSI mieć inny link ("link") z listy wejściowej.
 
 STRUKTURA JSON:
 [
@@ -414,7 +345,6 @@ for model_name in models_to_try:
     if len(items) >= MIN_ITEMS:
         break
     try:
-        print(f"Generowanie za pomocą modelu: {model_name}...")
         response = client.models.generate_content(
             model=model_name,
             contents=prompt,
@@ -422,22 +352,10 @@ for model_name in models_to_try:
                 response_mime_type="application/json",
                 temperature=0.45,
                 safety_settings=[
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-                    ),
-                    types.SafetySetting(
-                        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-                        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-                    ),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold=types.HarmBlockThreshold.BLOCK_NONE),
+                    types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 ],
             ),
         )
@@ -458,13 +376,12 @@ for model_name in models_to_try:
 
         items = validate_items(raw_items)
         if len(items) >= MIN_ITEMS:
-            print(f"Sukces! Otrzymano {len(items)} poprawnych pozycji PL.")
             break
     except Exception as e:
         print(f"Błąd modelu {model_name}: {e}")
         sleep(1)
 
-# Awaryjny fallback w 100% po polsku
+# Awaryjny fallback
 POLISH_FALLBACK_TITLES = [
     "🐾 Niezwykłe odkrycie przyrodników zaskoczyło naukowców",
     "🎩 Zapomniany sekret historii, o którym nie uczą w szkołach",
@@ -475,7 +392,6 @@ POLISH_FALLBACK_TITLES = [
 ]
 
 if len(items) < MIN_ITEMS:
-    print("Uruchamianie uzupełnienia awaryjnego po polsku...")
     existing_links = {i.get("link") for i in items}
     for idx, art in enumerate(filtered_raw_articles):
         if len(items) >= MIN_ITEMS:
@@ -487,33 +403,25 @@ if len(items) < MIN_ITEMS:
         items.append({
             "category": "BIEŻĄCE ABSURDY" if idx % 2 == 0 else "SZALONA HISTORIA",
             "title": pl_title,
-            "summary": (
-                "Nietypowe i zaskakujące doniesienia z ostatnich godzin, "
-                "które wzbudziły ogromne poruszenie i ciekawość w mediach na całym świecie."
-            ),
+            "summary": "Nietypowe i zaskakujące doniesienia z ostatnich godzin, które wzbudziły ogromne poruszenie.",
             "comment": "Rzeczywistość po raz kolejny udowadnia, że najdziwniejsze scenariusze pisze samo życie.",
-            "image_query": "weird animal funny mystery",
+            "image_query": "weird animal mystery",
             "link": art["link"],
         })
         existing_links.add(art["link"])
 
-# --- DOBIERANIE ZDJĘĆ Z POTRÓJNYM KLUCZEM DLA KAŻDEGO WPISU ---
+# --- DOBIERANIE ZDJĘĆ Z ZAPISYWANIEM WSZYSTKICH ALIASÓW KLUCZY ---
 print("Dobieranie unikalnych zdjęć...")
 source_ok = 0
 seen_image_urls = set()
 
 for item in items:
     img = pick_image_for_item(item, seen_image_urls)
-    
-    # Przypisanie 3 kluczy gwarantujące 100% zgodność z frontendem
-    item["image_url"] = img
-    item["source_image_url"] = img
-    item["image"] = img
-
+    embed_all_image_keys(item, img)
     if "pexels.com" not in img and "unsplash.com" not in img:
         source_ok += 1
 
-print(f"Zdjęcia z artykułów: {source_ok}/{len(items)} (reszta = Pexels / unikalny Fallback)")
+print(f"Zdjęcia z artykułów: {source_ok}/{len(items)}")
 
 # --- ZAPIS ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
@@ -527,14 +435,14 @@ output_data = {
     "items": items,
 }
 
-# 1. Bieżące wydanie (do wyświetlania od razu)
+# 1. Bieżące wydanie
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# 2. Archiwum: dopisujemy dzisiejsze wydanie z pełnymi zdjęciami bez ingerencji w historię
+# 2. Archiwum: dopisujemy dzisiejsze wydanie z pełnymi kluczami
 archive_data[session_fixed_key] = output_data
 
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print(f"Gotowe! Zapisano {len(items)} pozycji do rozrywka.json i nowej sesji w {archive_file}.")
+print(f"Zapisano {len(items)} pozycji do rozrywka.json oraz sesji {session_fixed_key} w {archive_file}.")
