@@ -1,207 +1,267 @@
 {
-  "date": "13 października 2026",
-  "time": "15:46",
-  "count": 40,
+  "date": "14 października 2026",
+  "time": "06:06",
+  "count": 52,
   "items": [
+    {
+      "title": "Potężna kara dla giganta z USA. W tle Rosja i Iran",
+      "snippet": " Departament Skarbu USA ogłosił we wtorek nałożenie na Bank of America kary w wysokości ponad 1,2 mld dolarów za naruszenie przepisów dotyczących przeciwdziałania praniu pieniędzy oraz przestrzegania sankcji.",
+      "link": "https://www.money.pl/gospodarka/potezna-kara-dla-giganta-z-usa-w-tle-rosja-i-iran-7339827812628960a.html"
+    },
+    {
+      "title": "Banki mogą mieć problem. Ten wyrok TSUE zmieni wszystko?",
+      "snippet": " Przez lata banki odmawiały ofiarom oszustów zwrotu pieniędzy, zarzucając im rażące niedbalstwo. Praktykę tę kwestionują instytucje chroniące konsumentów. Teraz głos zabierze TSUE. Czwartkowy wyrok może zmienić sytuację tysięcy Polaków, którzy padli ofiarą manipulacji i kradzieży",
+      "link": "https://www.money.pl/banki/banki-moga-miec-problem-ten-wyrok-tsue-zmieni-wszystko-7339597130348992a.html"
+    },
+    {
+      "title": "Byli dyrektorzy Aliora staną przed sądem. Zarzuty dotyczą szkody 1308 klientów",
+      "snippet": " Prokuratura oskarżyła byłych menedżerów biura maklerskiego Alior Banku o oszustwo na szkodę 1308 klientów. Mowa o potężnych pieniądzach. Według śledczych kosztowało poszkodowanych to łącznie 387,6 mln zł – informuje \"Puls Biznesu\".",
+      "link": "https://www.money.pl/gospodarka/byli-dyrektorzy-aliora-stana-przed-sadem-zarzuty-dotycza-szkody-1308-klientow-7339682124106176a.html"
+    },
     {
       "title": "Sprzedaż aut tąpnęła. Problem Chińczyków",
       "snippet": " Sprzedaż samochodów osobowych w Chinach spadła we wrześniu o 28 proc. rok do roku, co stanowi największy spadek w tym roku – podał japoński portal \"Nikkei Asia\". Media zaznaczają, że wrzesień najczęściej jest szczytem sezonu zakupowego.",
       "link": "https://www.money.pl/mobility/sprzedaz-aut-tapnela-problem-chinczykow-7339579963521504a.html"
     },
     {
-      "title": "Sześć reaktorów jądrowych w Polsce. Jest przełomowa umowa",
-      "snippet": " W Pątnowie może powstać sześć małych reaktorów jądrowych o łącznej mocy 1800 MW. Spółka ZE PAK, kierowana przez Piotra Żaka, podpisała umowę z firmą SGE, kontrolowaną przez Michała Sołowowa, jednego z najbogatszych Polaków. W grę wchodzą setki milio",
-      "link": "https://www.money.pl/gospodarka/szesc-reaktorow-jadrowych-w-polsce-jest-przelomowa-umowa-7339569163155936a.html"
+      "title": "Zwrot w polskich komisach. Średnia przebija 50 tys. zł, ale rynkowe hity tanieją",
+      "snippet": "Choć średnia cena, za jaką sprzedawane są auta w polskich komisach rośnie, to najpopularniejsze modele tanieją od trzech miesięcy – wynika z danych AAA Auto. Pomimo że średnia coraz mocniej przebija 50 tys. zł, to wciąż co piąte auto kosztuje mniej niż 10 tys. zł, a częściej niż ",
+      "link": "https://www.bankier.pl/wiadomosc/Ceny-aut-uzywanych-wrzesien-2026-9211802.html"
     },
     {
-      "title": "W Niemczech wrze. Merz chce reform. \"Złagodzenie ochrony przed zwolnieniami\"",
-      "snippet": " Friedrich Merz zaapelował do przedsiębiorców, żeby wsparli reformę rynku pracy i emerytur. Kanclerz Niemiec zapowiedział m.in. złagodzenie ochrony przed zwolnieniem oraz tymczasowe wprowadzenie wyższych składek emerytalnych – podaje \"Die Welt\".",
-      "link": "https://www.money.pl/gospodarka/w-niemczech-wrze-merz-chce-reform-zlagodzenie-ochrony-przed-zwolnieniami-7339559994190272a.html"
+      "title": "Topnieją szeregi chętnych na CBDC. Kolejne kraje odpadają",
+      "snippet": "Jeszcze kilka lat temu zdecydowana większość banków centralnych deklarowała, że pracuje w pocie czoła nad cyfrowym pieniądzem. Czas bezlitośnie weryfikuje wcześniejsze przechwałki. W kolejnych krajach władze monetarne wciskają przycisk „stop”.",
+      "link": "https://www.bankier.pl/wiadomosc/Topnieja-szeregi-chetnych-na-CBDC-Kolejne-kraje-odpadaja-9212039.html"
     },
     {
-      "title": "Takiej sytuacji nie było od 4 lat. Oto co się dzieje z cenami gazu",
-      "snippet": " Gaz w Europie jest najdroższy od niemal czterech lat. Ceny na giełdzie w Amsterdamie zbliżają się do 86 euro za MWh, a zapasy w unijnych magazynach są znacznie niższe od średniej z ostatnich pięciu lat. Sytuację pogarsza konflikt na Bliskim Wschodzi",
-      "link": "https://www.money.pl/gospodarka/takiej-sytuacji-nie-bylo-od-4-lat-oto-co-sie-dzieje-z-cenami-gazu-7339546990320096a.html"
+      "title": "Rewolucja w medycynie pracy: koniec papierowych orzeczeń. Zmiany wchodzą za kilka dni",
+      "snippet": "18 października zaczną obowiązywać nowe zasady medycyny pracy. Od tego dnia lekarze tej specjalności będą mogli wystawiać orzeczenia tylko w formie elektronicznej. Dokumenty trafią do Internetowego Konta Pacjenta. To oznacza koniec papierowych kwitów przekazywanych pracownikom po",
+      "link": "https://www.bankier.pl/wiadomosc/Rewolucja-w-medycynie-pracy-koniec-papierowych-orzeczen-od-lekarza-Zmiany-wchodza-juz-18-pazdziernika-9212000.html"
     },
     {
-      "title": "Sprzedaż nowych mieszkań odbija po chudych latach. JLL: W największych miastach dobije do 50 tys.",
-      "snippet": "W III kw. 2026 r. deweloperzy na siedmiu największych rynkach pierwotnych w Polsce sprzedali 12,5 tys. mieszkań – wynika z danych JLL. Jak szacuje firma doradcza, na koniec roku licznik może przekroczyć 50 tys. lokali. Jeśli wynik zostanie dowieziony",
-      "link": "https://www.bankier.pl/wiadomosc/Sprzedaz-nowych-mieszkan-odbija-po-chudych-latach-JLL-W-najwiekszych-miastach-dobije-do-50-tys-9211823.html"
+      "title": "Piwo za 50 złotych i fala bankructw. Codziennie z mapy kraju znika jeden pub",
+      "snippet": "Jeden dziennie - średnio tyle pubów znika z brytyjskiego pejzażu na zawsze. Jest to - zdaniem ich właścicieli - konsekwencja dużych obciążeń podatkowych nałożonych przez Partię Pracy. Eksperci oceniają, że do końca roku wraz z tymi legendarnymi miejscami wyparuje także 5 tys. mie",
+      "link": "https://www.bankier.pl/wiadomosc/Piwo-za-50-zlotych-i-fala-bankructw-Codziennie-z-mapy-Wielkiej-Brytanii-znika-jeden-pub-9211288.html"
     },
     {
-      "title": "Topowy nabywca złota ogłasza, że zaczyna sprzedawać. Symboliczna chwila na rynku metalu?",
-      "snippet": "Narodowy Bank Kazachstanu, jeden z największych kupujących na globalnym rynku złota, ogłosił, że planuje obniżyć udział kruszcu w rezerwach walutowych. Za zaskakującą decyzją stoi wzrost atrakcyjności amerykańskich obligacji skarbowych. Nieprzynosząc",
-      "link": "https://www.bankier.pl/wiadomosc/Kazachstan-topowy-nabywca-zlota-oglasza-ze-zaczyna-sprzedawac-Symboliczna-chwila-na-rynku-metalu-9211769.html"
+      "title": "Podatek wymierzony prosto w Orlen? Czechy chcą miliona euro z polskich rafinerii",
+      "snippet": "Izba Poselska poparła we wtorek wieczorem w pierwszym czytaniu projekt ustawy o wprowadzeniu nadzwyczajnego podatku od rafinerii. Ma przynieść budżetowi w br. równowartość około 226 mln euro i najprawdopodobniej dotknie wyłącznie rafinerie w Litvinovie i Kralupach nad Wełtawą nal",
+      "link": "https://www.bankier.pl/wiadomosc/Podatek-wymierzony-prosto-w-Orlen-Czechy-chca-miliona-euro-z-polskich-rafinerii-9212187.html"
     },
     {
-      "title": "Cykle bitcoina, krypto-klincz w USA i polska \"biała plama\". Eksperci \"Janusza Krypto\" na Forum Finansów",
-      "snippet": "Czy tradycyjny, czteroletni cykl bitcoina bezpowrotnie przeszedł do historii? Czy zbliżające się wybory połówkowe w USA i klincz legislacyjny w Waszyngtonie odwrócą korzystny dla branży polityczny trend? I wreszcie - czy Polska przestanie być regulac",
-      "link": "https://www.bankier.pl/wiadomosc/Cykle-bitcoina-krypto-klincz-w-USA-i-polska-biala-plama-Eksperci-Janusza-Krypto-na-Forum-Finansow-9211751.html"
+      "title": "Diesel tylko pretekstem? Trump i Putin mogą szykować wielkie interesy",
+      "snippet": "Prezydent Donald Trump zawarł z Władimirem Putinem umowę dotyczącą dostaw rosyjskiego oleju napędowego. Choć nie wiadomo, czy porozumienie zostanie zrealizowane, wpisuje się ono w wieloletnią zależność Trumpa od Rosji.",
+      "link": "https://www.bankier.pl/wiadomosc/Diesel-tylko-pretekstem-Trump-i-Putin-moga-szykowac-wielkie-interesy-9211837.html"
     },
     {
-      "title": "Inflacja w Niemczech najwyższa od prawie trzech lat. To efekt rekordowych cen paliw",
-      "snippet": "Inflacja w Niemczech wzrosła we wrześniu do 3,3 proc. rok do roku i była najwyższa od prawie trzech lat, głównie za sprawą rekordowych cen paliw - podał we wtorek Federalny Urząd Statystyczny.",
-      "link": "https://www.bankier.pl/wiadomosc/Inflacja-w-Niemczech-najwyzsza-od-prawie-trzech-lat-To-efekt-rekordowych-cen-paliw-9211944.html"
+      "title": "Baza wojskowa USA w Polsce za polskie pieniądze? Trump studzi entuzjazm",
+      "snippet": "Prezydent USA Donald Trump powiedział we wtorek, że polskie władze chcą zbudować amerykańską bazę w kraju, dodając, że powstanie ona za polskie fundusze. Nie przesądził jednak jednoznacznie, czy podjął ostateczną decyzję.",
+      "link": "https://www.bankier.pl/wiadomosc/Baza-wojskowa-USA-w-Polsce-za-polskie-pieniadze-Trump-studzi-entuzjazm-9212117.html"
     },
     {
-      "title": "Netflix kupił prawa do Mundialu w 2030 r. w Hiszpanii. Bezpłatny jeden mecz kolejki",
-      "snippet": "Amerykański gigant streamingu zabezpieczył wyłączne prawa do transmisji wszystkich spotkań Mistrzostw Świata w Piłce Nożnej w 2030 r. na terytorium Hiszpanii i Andory. Porozumienie z FIFA ma być motorem napędowym rozwijanego segmentu reklamowego spół",
-      "link": "https://www.bankier.pl/wiadomosc/FIFA-sprzedala-Netfliksowi-prawa-do-Mundialu-w-2030-r-w-Hiszpanii-Bezplatny-jeden-mecz-kolejki-9211917.html"
+      "title": "Widmo eskalacji w Zatoce Perskiej. Zdjęcia z kosmosu ujawniają, co dzieje się w Iranie",
+      "snippet": "Zdjęcia satelitarne wskazują, że Iran wzmacnia wrażliwe cele, w tym obiekty jądrowe i obszary przygraniczne na wypadek ataków. Wokół obiektów nuklearnych w Natanz i w rejonie Pickaxe Mountian (Góry Kilofów) zbudowano wały ziemne - przekazał we wtorek „Wall Street Journal”.",
+      "link": "https://www.bankier.pl/wiadomosc/Widmo-eskalacji-w-Zatoce-Perskiej-Zdjecia-z-kosmosu-ujawniaja-co-dzieje-sie-w-Iranie-9212086.html"
     },
     {
-      "title": "Nawet 150 księgarni do zamknięcia. Znana sieć walczy o przetrwanie",
-      "snippet": "TG Jones, sieć księgarni działająca przy brytyjskich ulicach handlowych, zamyka kolejne sklepy. Restrukturyzacja może oznaczać likwidację około 150 placówek. Oznacza to także niepewność dla setek pracowników firmy, która zatrudnia obecnie blisko 5 ty",
-      "link": "https://www.bankier.pl/wiadomosc/Nawet-150-sklepow-do-zamkniecia-Do-zwolnienia-kilkaset-osob-9211883.html"
+      "title": "Trzy wnioski Komisji Weneckiej. Każdy z nich to jak oblany przez Nawrockiego egzamin z umiejętności bycia prezydentem - Wyborcza.pl",
+      "snippet": "Trzy wnioski Komisji Weneckiej. Każdy z nich to jak oblany przez Nawrockiego egzamin z umiejętności bycia prezydentem&nbsp;&nbsp;Wyborcza.plPrezes PiS przemawiał wieczorem pod TK. Krytykuje opinię Komisji Weneckiej&nbsp;&nbsp;Wiadomości OnetOpinia Komisji Weneckiej, incydent na p",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZlE4VWNYdEMzVkcxNzRmWmctN0dSRUVhMjY2Y0RWbGY2WEJ5NUlibmc0TmNXMUtMTG1QM1pCMGw3UG5PenJzN2ROTDkyUWF6MHJKODBBdU5HcmlhOGp0Z3FTSTloUFdkTkxaaDhNVmJkRG9FTUY3YmxKMkw3SDhmTTgyaFlUQm0yalZUOHo1TjBwSmcxakVfbzloTTdIZFFZREROZEZYMEI?oc=5"
     },
     {
-      "title": "Jest opinia Komisji Weneckiej. \"Porażka prezydenta Nawrockiego\" - Fakt",
-      "snippet": "Jest opinia Komisji Weneckiej. \"Porażka prezydenta Nawrockiego\"&nbsp;&nbsp;FaktKomisja Wenecka o zaprzysiężeniu sędziów TK przez Nawrockiego. Pałac reaguje na opinię&nbsp;&nbsp;Interia WydarzeniaMaciej Berek gotowy do ślubowania? Komisja Wenecka toru",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY3pvTXR1TlZnb2xKSUFRblpxcUUxZDItTUZhOGZzcnBrTVhIVlRLSlVyTzl6RlRkQjVZM0d2VXBGSlVTc3hmZXBBSWVYVGRRUk4tR0FoVkVuWndpcTJWSGw5ZXBmUk5CaWZNXzN4RkxveWF5RnhvSjhpNm9SSmoxZEs4NUh6ZHpaOUVveE5MQkFwMUtWZkFFMDZhLWx6OU0wWXRqMFJ4WDdLYkdV?oc=5"
+      "title": "Operacja Papieża Leona XIV. Najnowszy komunikat Watykanu - PolsatNews.pl",
+      "snippet": "Operacja Papieża Leona XIV. Najnowszy komunikat Watykanu&nbsp;&nbsp;PolsatNews.plPapież Leon XIV przeszedł operację usunięcia guzka. Jest komunikat Watykanu&nbsp;&nbsp;TVN24Papież Leon XIV przeszedł operację. Watykan podał nowe informacje&nbsp;&nbsp;Dziennik.plPapież przeszedł op",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdVhYQk1XZnY3Z1J1RG9VWFRTNjBkVXBJYVRET0o2eVEtX1NhYndab3BfQ1RTa1hhdXJIbmx5TUZyT3ViMWdDWExXamprVVByREVWRDJacy1JMGxzRjdzWFA1VnZTZ2IxMjE5Uk53aWt4TUhyQV9nb1N1ZlhXMGpHVTJOczFralZTeTRYbmFQaXZMaXNmanZuX1VSNHNBU2ZsOHZTZ3lR?oc=5"
+    },
+    {
+      "title": "Akcja służb w Karwii. Znaleziono obiekt przypominający drona - WP Wiadomości",
+      "snippet": "Akcja służb w Karwii. Znaleziono obiekt przypominający drona&nbsp;&nbsp;WP WiadomościAkcja służb w Karwii. Ukraina bez ostrzeżeń o rosyjskim ataku. Podsumowanie&nbsp;&nbsp;Wiadomości OnetKarwia. Akcja służb na plaży. \"Obiekt przypominający drona\"&nbsp;&nbsp;Interia WydarzeniaNa p",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTGwxRmhQQmVRNHBxMGtGQ21VYlBJTTRLVDNvTWpOaVpwUzV2UDFYR2NreUN0alJvcGtQNC03Y2V1ZENRb3dBNEQ2aDdkY1FERHNaeDg1blQtN29oMTJfMW5tUG9XeEkyM0l6SHJqVjBublk3ZjFtSnR2d1FHVTRRd3RiSGFxNFhFM0pjdTJhUG9DNGpETUxsRTN5VlVpSlFkSkFUdQ?oc=5"
+    },
+    {
+      "title": "Podejrzany o planowanie zamachu na Tuska z zarzutami. W mieszkaniu miał materiały wybuchowe - Wyborcza.pl",
+      "snippet": "Podejrzany o planowanie zamachu na Tuska z zarzutami. W mieszkaniu miał materiały wybuchowe&nbsp;&nbsp;Wyborcza.plPlanował zamach na premiera. Mężczyzna usłyszał poważne zarzuty&nbsp;&nbsp;Wiadomości Onet\"Harnaś\" i jego \"ruch oporu\". Miał bomby, wzywał do rozprawy ze zdrajcami oj",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeVc4MWQzM1NMRXY0OGhackZUaUpRMklqVGF5dTdMcS1tVlNHRXJkY3Fnc09WaHZsc09PWjlDZVV4UHVtbUU4Zjl3M0JxZlJ1QjVLNVRGM2djRzdXbUtRRGhLUFFnNGYwWDVDanlyaldPUmh4MmRHOE9yMkdkSUZaOHhUdWtRQ1dSSW1jSG55RmU0YnRoaTVpcE13eEhhNXk5T24tOEZhOU1CbFk?oc=5"
+    },
+    {
+      "title": "W Gnieźnie i Koninie ani śladu pracowników Kołodziejczaka. Drzwi zamknięte - Fakt",
+      "snippet": "W Gnieźnie i Koninie ani śladu pracowników Kołodziejczaka. Drzwi zamknięte&nbsp;&nbsp;Fakt\"Chłop wyskakuje z tym Rutkowskim\". Kulisy sprawy Kołodziejczaka&nbsp;&nbsp;Wiadomości Onet\"Obraz zerojedynkowy\" i \"groteska\". W KO nie chcą bronić Kołodziejczaka. Grozi mu wyrzucenie z klub",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNazV2a05UeGpYUjU0UE9qQjhjajM4WHM5UURyQ056OENIc29lRXdURWlQNU9XTHU4NFNHSmFqTm9vTmVlaS1ENXhvV1laUXNZQlF5OWtfa0pyeThoWFladGhRWjBmYTdLbFBvRG5VVjR5MTI3MURMblFlUTVoMVFKcXoyLUo2ZlFvVng5S05BTnM3V2VZUGNpTVIyVmlDbFVrWTBtYmhmQzVFeHFDbFE?oc=5"
     },
     {
       "title": "Atak Rosji w Kijowie. Zełenski: Partnerzy nas nie uprzedzili - PolsatNews.pl",
-      "snippet": "Atak Rosji w Kijowie. Zełenski: Partnerzy nas nie uprzedzili&nbsp;&nbsp;PolsatNews.pl\"Partnerzy nas nie uprzedzili\". Zełenski rozgoryczony po ataku&nbsp;&nbsp;WP WiadomościRosyjskie rakiety spadły na Kijów. Zełenski: Nie było ostrzeżenia ze strony pa",
+      "snippet": "Atak Rosji w Kijowie. Zełenski: Partnerzy nas nie uprzedzili&nbsp;&nbsp;PolsatNews.plRosja uderzyła w Kijów, celem elektrociepłownia. Zełenski grzmi: Absolutnie niesprawiedliwe&nbsp;&nbsp;Interia WydarzeniaKijów pod ostrzałem. Dwie ofiary, kilkudziesięciu rannych, w tym dziecko&n",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdmlGSmlSZ3haSF9WcEhfYTlPVDhCQWlncjUzLWd0M19zQUhUVkNvdm9RQzBXQmpLc1c3V3ZwLXB4OWZWUXVSNVRzWE5YQlhHQnNXcVVpaHc4TFItVTJxSzB1SUdaYVF3WEt4eW9ibVlUMFNOSGhiMmtkVDFyY2Ewd213SFE5Qm45YnBraHhjSXVyb3J0WXQ1NWpJbnFWZi1nWmhZam9pS1lJUQ?oc=5"
     },
     {
-      "title": "Applebaum: Czemu Trump nie zmienia zdania o Rosji? Przecież ewoluował w wielu kwestiach, od aborcji po kryptowaluty - Wyborcza.pl",
-      "snippet": "Applebaum: Czemu Trump nie zmienia zdania o Rosji? Przecież ewoluował w wielu kwestiach, od aborcji po kryptowaluty&nbsp;&nbsp;Wyborcza.plTrump oskarżony o złamanie prawa w sprawie umowy z Rosją&nbsp;&nbsp;Business Insider PolskaTrump i \"pakt z diabł",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaWhldUdMRXpNbWlCTHUxMFNiTWFTSFE5cXIzczhhckl6SHh3YlJxTGtuUmh3YWdaMzBhT205azNQd0hWdVc5SUh2ZjM3VGNPQXFtRGs4ODlINzdvc1UxZjA0VnhRRFVXZTM1Q2prVHR3NFZ4eWVqWVl6eTVGQWVwdlEzd2pFOGZuSDdMWGx1VVZZRVV1dmdmN1Z0T191eGhEblJPRkVrS3pDOThrOHR3ag?oc=5"
+      "title": "Ujawniamy: Nawrocki szykuje pakt. Jego ludzie negocjują z Braunem - Wiadomości Onet",
+      "snippet": "Ujawniamy: Nawrocki szykuje pakt. Jego ludzie negocjują z Braunem&nbsp;&nbsp;Wiadomości Onet",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTjVoRVc4dFljUTg2M09wUjBLLWlfLTgxbHVVQnV1bWtyN2k4RE95aV9wU3Y4elEzblBPVFlUeVpvQnVtY1dod2piUTBjdk5jV1BqWm1xdEtnbkZiWWVNN01tYXhGekUwQlhsZVUteDBTeWV6V1JvdFd3YVNfa2JQWlZpaXotQUtJaGVOMzVCZXAyTTluOFBYYldpeG1aME9sWmVBdlg0emhSS1IwSGc?oc=5"
     },
     {
-      "title": "To nie koniec doniesień o Kołodziejczaku. Zgłosiły się kolejne kobiety - Wiadomości Onet",
-      "snippet": "To nie koniec doniesień o Kołodziejczaku. Zgłosiły się kolejne kobiety&nbsp;&nbsp;Wiadomości OnetZobacz więcej nagłówków i punktów widzenia w aplikacji Google News",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDJXU1FsUmNhLTc3NDdnR0ZkRVktR3FvcXJ4RUY1Q1VfdXpwS0k0dlBhOTVqUlBKMTVFUl91YzlMdEJEXzNwYXZDbWxfdjZkYThHbEdKQmtKbTNWWkU1QkxzSk5NNEN0ZHNWVzJwcDRWM0tMZWFuT1FPSFpWWHdsOU9lZnNkTnVGa3hZUWxHY09GdlludG9udjcxWFg4ZExMZ01fRkw3ODhIUTRNOEVBSzdlMExEdw?oc=5"
+      "title": "\"Skandaliczna sytuacja\". Pełnomocnik alarmuje ws. Marcina Romanowskiego - Do Rzeczy",
+      "snippet": "\"Skandaliczna sytuacja\". Pełnomocnik alarmuje ws. Marcina Romanowskiego&nbsp;&nbsp;Do RzeczyObrońca Romanowskiego złożył zażalenie ws. listu żelaznego. Wiemy dlaczego&nbsp;&nbsp;FaktSprawa Marcina Romanowskiego. Czy będzie anomalią w praktyce działania wymiaru sprawiedliwości?&nb",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWmJXTEdtTm1kTFdOWl9ieDd2bW1lSXZ1YzlZbGpISnIzUVVReDBpZWRVT3oxU3hNeWJGMGhMX05BTUhWU1QwQjZfNmstZkpKWjZKNDNZRWZBSGVRUGNna3hQdzdmeWs0YlAyX21SY0VfTS1IMEFZQVpzNC1HVTBiUFFwc2EyREhLbnYxLWxqQVFINHlvZHMtNzRROEZMMXc0SUdqUjJVMNIBpgFBVV95cUxOQzgxSERiczh4SGRScE5hTFlKSlZOZWNOMGY3U0ZzVnJIUjBvV2NobHNkU0JxdXZjVFVtTGFIbDdnSWdQcXd6Zi1LRGpnUmxvRnBQZkdwcVNKX05CRE5ONV9PcE9BRXNMaWo0R3NpS1pjNHNiRkFCUlpyZHJsOGs5S3BBTm1icGxDRzZkeHAzYWNsUGFGLXlJNUUxZmx1ZUs3WU1HWEl3?oc=5"
     },
     {
-      "title": "Jakie jest ryzyko „tradycyjnej wojny” z Rosją? Liczba prowokacji będzie rosła - Rzeczpospolita",
-      "snippet": "Jakie jest ryzyko „tradycyjnej wojny” z Rosją? Liczba prowokacji będzie rosła&nbsp;&nbsp;RzeczpospolitaZobacz więcej nagłówków i punktów widzenia w aplikacji Google News",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRHBYczMtQnp6b2ItanJYTkppdzdVVmc0cE1SQ280dWkyNGpsVjFlQ1gyWV9QeGdVYWxpVi1TQ19rQnRLc2lWdEVVVnRhdUJTVkRHOGNRSWVJdDRiS20wNm5Fa1RWS3EzVHR4eE9ILS1Ta2xoNTZrcW9MQ20xUXB6c1VCRFJBZktyWmVfa2x3VTItLTY0clJERHlyS3pVUF9kd1h6X25zQzBvOXc?oc=5"
+      "title": "US Stocks Won the Last Decade. What About the Next One?",
+      "snippet": "Passive investing has become the default. It’s not as neutral a choice as it seems.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-14/us-stocks-won-the-last-decade-what-about-the-next-one"
     },
     {
-      "title": "Makabryczne odkrycie w Kielcach. Cztery ciała znalezione w jednym z mieszkań - Interia Wydarzenia",
-      "snippet": "Makabryczne odkrycie w Kielcach. Cztery ciała znalezione w jednym z mieszkań&nbsp;&nbsp;Interia WydarzeniaTo była cała rodzina. W kieleckim bloku zginęli nastoletni chłopcy i matka&nbsp;&nbsp;Fakt\"Taki spokojny\". Sąsiedzi nie mogą uwierzyć w tragedię",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWWROX3BrSGd3bU9qMU95OHQ3RWtFT1pvbzhVX0htQnJGQlU1dGdVVndseVF0bFlndzVmSmZWRzUwZFBlVHQ3NjNhcmlFZm14OXZHbW44Q0NmUXM4cVE0TTJTcVFsNThGeG9pNVR1aGtpNm9uOS03Z3l5eW5WUmo4aWx4Wlk4VDI1SW55N2ZMZnhPTGRkU1Y2ME9LOVBDeTZEeU1Ba3RybF9nODRwVzc3WWJHSVc2V3BPNTNB?oc=5"
+      "title": "Stocks Rise, Dollar Slips in Runup to US Inflation: Markets Wrap",
+      "snippet": "Stocks gained and the dollar weakened before a key US inflation report that may reveal whether the Federal Reserve can take a less aggressive approach to raising interest rates next year. Oil advanced.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-13/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "DGB Offers Ethan Allen CEO a Non-Board Advisory Role",
-      "snippet": "DGB Investments has offered an olive branch of sorts to the head of Ethan Allen Interiors Inc. as the activist seeks to replace the furniture company’s board and chief executive officer.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-13/dgb-is-said-to-offer-ethan-allen-ceo-a-non-board-advisory-role"
+      "title": "Gold Steady as Fed Official’s Remarks Temper Rate-Hike Bets",
+      "snippet": "Gold held a two-day decline after a Federal Reserve official signaled one more interest-rate hike may be needed this year, but further tightening won’t be necessary in 2027, improving sentiment toward the precious metal.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-14/gold-steady-as-fed-official-s-remarks-temper-rate-hike-bets"
     },
     {
-      "title": "Chip Selloff Rolls On as Big Bank Earnings Begin: Markets Wrap",
-      "snippet": "A selloff in chipmakers deepened on concerns about the sustainability of the artificial-intelligence trade, putting pressure on equity markets as Wall Street banks kicked off the earnings season.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-12/stock-market-today-dow-s-p-live-updates"
+      "title": "Saudi Aramco’s New China Refinery Venture Gets First Crude Cargo",
+      "snippet": "Saudi Aramco and its local partners have received the first crude cargo for their new refining complex in China, bringing the billion-dollar mega plant a step closer to production.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-14/saudi-aramco-s-new-china-refinery-venture-gets-first-crude-cargo"
     },
     {
-      "title": "J&J Medtech Sales Disappoint, Considers Orthopedic Spinoff",
-      "snippet": "Johnson & Johnson reported a 2.5% rise in medical technology sales, missing estimates, and is leaning toward a spinoff of its orthopedics business. Madison Muller has more on \"Bloomberg Open Interest.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-13/j-j-medtech-sales-disappoint-quarterly-drug-sales-jump-video"
+      "title": "What Dimon, Solomon Said in Bank Earnings Calls",
+      "snippet": "Goldman CEO David Solomon said IPO and capital-markets activity remained healthy, while JPMorgan's Jamie Dimon said the bank is tightening some credit terms, as top Wall Street banks reported earnings that failed to impress investors. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-14/what-dimon-solomon-said-in-bank-earnings-calls-video"
     },
     {
-      "title": "Apple Needs Phones and Smart Homes to Revive Pricey Stock",
-      "snippet": "Apple Inc. is rolling out a slew of new products and improved older ones this week, but investors are unsure if it will be enough to boost one of the most expensive stocks in the market that’s largely gone nowhere in months.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-13/apple-needs-phones-and-smart-homes-to-revive-pricey-stock"
+      "title": "US, China in 'Stability Mode': Kevin Rudd",
+      "snippet": "Former Australian Prime Minister and Asia Society Global President & CEO says the US and China are in a \"stability mode\" where they have different national interests but no incentive to immediately ramp up political and trade tensions. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-14/us-china-in-stability-mode-kevin-rudd-video"
     },
     {
-      "title": "Seema Shah Sees Opportunity in Bank Stocks",
-      "snippet": "Seema Shah of Principal Asset Management sees opportunity in bank stocks despite recent weakness. She says earnings, consumer health and the yield curve will be key, with a steeper curve potentially creating a more attractive entry point. She spoke o",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-13/seema-shah-sees-opportunity-in-bank-stocks-video"
+      "title": "Rupee’s Relentless Slide Draws Importers Into RBI Currency Fight",
+      "snippet": "India’s importers are now in the crosshairs of the central bank, as its latest efforts to shore up the rupee expand from financial markets to the economy.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-14/rupee-s-relentless-slide-draws-importers-into-rbi-currency-fight"
     },
     {
-      "title": "LSEG in Talks to Buy Permira-Owned Credit Firm Octus",
-      "snippet": "London Stock Exchange Group Plc is in talks over a potential acquisition of global credit platform Octus from private equity firm Permira.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-13/lseg-in-talks-to-buy-permira-owned-credit-firm-octus"
+      "title": "Speculation Over STT Cut Lifts Sentiment for Indian Stocks",
+      "snippet": "Nifty jumps as traders seize on a rather noncommittal remark by Sitharaman about the securities transaction tax.",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-10-14/speculation-over-stt-cut-lifts-sentiment-for-indian-stocks"
     },
     {
-      "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC",
-      "snippet": "In his first interview since being forced from his post, Gen Syrskyi speaks about Ukraine's future in the war.",
-      "link": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo"
+      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+      "snippet": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said.",
+      "link": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o"
     },
     {
-      "title": "Breaking Bad actor RJ Mitte dies aged 34",
-      "snippet": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series.",
-      "link": "https://www.bbc.co.uk/news/articles/cmn045en7d88o"
+      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "snippet": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
+      "link": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo"
     },
     {
-      "title": "One dead and several hurt after rollercoaster incident at Six Flags",
-      "snippet": "Aerial footage at the park after the incident shows a stuck rollercoaster with riders being helped off.",
-      "link": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o"
+      "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
+      "snippet": "Four years after the attacks, Serhii K will appear in court accused of a plot to destroy Russia's gas pipelines to Germany.",
+      "link": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo"
     },
     {
-      "title": "Watch: Emergency calls from botched Christa Pike execution released",
-      "snippet": "A series of calls, obtained by the Associated Press, reveal emergency services were delayed in reaching Pike.",
-      "link": "https://www.bbc.co.uk/news/videos/cqpvgrkp0xpyo"
+      "title": "MI5 chief warns of threats to UK from Russia, Iran and AI",
+      "snippet": "Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an \"equal scale\".",
+      "link": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o"
     },
     {
-      "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
-      "snippet": "Eleven crew members are missing after a merchant ship was sunk overnight, local officials say.",
-      "link": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o"
+      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "snippet": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa.",
+      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o"
     },
     {
-      "title": "Hungarian MPs scrap Orbán's anti-LGBTQ measures",
-      "snippet": "LGBTQ and human rights activists warmly welcomed the move, but call for changes to other Orbán-era laws.",
-      "link": "https://www.bbc.co.uk/news/articles/c6vg9nj4l322o"
+      "title": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
+      "snippet": "Davis was found guilty last month over his role in the late rap superstar's death in a drive-by shooting in 1996.",
+      "link": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo"
     },
     {
-      "title": "ALA.COM w centrum Carpathian Drone Summit. Pokaz systemów bezzałogowych w Turbi",
-      "snippet": "We wtorek 29 września na lotnisku Stalowa Wola-Turbia odbył się zamknięty Dual-Use Drone Showcase, który otworzył pierwszą edycję Carpathian Drone Summit 2026. W pokazie uczestniczyło ponad 250 zaproszonych gości reprezentujących wojsko, służby, admi",
-      "link": "https://defence24.pl/przemysl/alacom-w-centrum-carpathian-drone-summit-pokaz-systemow-bezzalogowych-w-turbi"
+      "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
+      "snippet": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\".",
+      "link": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo"
     },
     {
-      "title": "Orka coraz bliżej. Podpisano umowę na szkolenie załóg i najem okrętu dla Polski",
-      "snippet": "12 października 2026 roku szwedzka marynarka wojenna poinformowała o podpisaniu kontraktu między Försvarets materielverk (szwedzkim odpowiednikiem polskiej Agencji Uzbrojenia) a Försvarsmakten. Umowa dotyczy szkolenia polskiej załogi okrętów podwodny",
-      "link": "https://defence24.pl/polityka-obronna/orka-coraz-blizej-podpisano-umowe-na-szkolenie-zalog-i-najem-okretu-dla-polski"
+      "title": "Zimbabwean author denies using AI to write award-winning story",
+      "snippet": "Simbarashe Kundizeza was responding to an accusation that has caused an uproar on social media.",
+      "link": "https://www.bbc.co.uk/news/articles/cm4g1rekpgnjo"
     },
     {
-      "title": "Drony przeciw dronom. MON szuka lekkich przechwytujących bezzałogowców",
-      "snippet": "Ministerstwo Obrony Narodowej prowadzi nabór rozwiązań do testów lekkich dronów przechwytujących. Poszukiwana platforma ma autonomicznie naprowadzać się na cel, rozwijać prędkość co najmniej 150 km/h i ważyć nie więcej niż 4 kg. Producenci i dostawcy",
-      "link": "https://defence24.pl/przemysl/drony-przeciw-dronom-mon-szuka-lekkich-przechwytujacych-bezzalogowcow"
+      "title": "IMF: Global growth holding up well against geopolitical, energy headwinds - upi",
+      "snippet": "IMF: Global growth holding up well against geopolitical, energy headwinds&nbsp;&nbsp;upi",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYmFVZUtyZlQwaVZYcWU5RWphbkFVTmI1eG9HUUlsY2VKelc5RWtmV3RLV2RHeWVWQ1d0and1NmtRS2dQWk16N2FYdzJMejVxbmRRRi14YXY5UC1Qa05CUDREVkdiQUw2VVdLRmtJZWN4QUlhcHphbE4wRjcxaG1kQlNVZDViUkxNQ3Y4eFk1YWczcWpIZnFSQmNfUW9VU19yM2fSAacBQVVfeXFMUF9OMzd6ZDFCS0JJdU51dGpMdm1JN2cxdHZhN01rZURhYjE3LWFlaG51cEdfSWdIclE0YTB5QUlyNDIxd1h4bXZSSFhyZ1NscnozRUVvNFN2OHhKSEFIMzJsTDVXdW5aTlpZZXJETHZqNkVabFVVSEFwdWhfQjVqMmVxZG52SjlxcHFKaXY0LTZ5ek9UaHNJX3FCY2dRbExrVDloMTB1cm8?oc=5"
     },
     {
-      "title": "Atomowe „południe” NATO w cieniu wojny. Z polskimi F-16 [KOMENTARZ]",
-      "snippet": "Dziś rozpoczynają się ćwiczenia NATO z zakresu odstraszania nuklearnego pod kryptonimem Steadfast Noon. Choć odbywają się one we Włoszech i były od dawna planowane, to nie sposób nie zauważyć że Sojusz zmienia swoje podejście do odstraszania nuklearn",
-      "link": "https://defence24.pl/polityka-obronna/atomowe-poludnie-nato-w-cieniu-wojny-z-polskimi-f-16-komentarz"
+      "title": "Cel: centrum handlowe. Żołnierze WOT szkolili się w galerii",
+      "snippet": "Żołnierze 3. Batalionu 18. Stołecznej Brygady [Obrony Terytorialnej](https://defence24.pl/polityka-obronna/drony-haubice-i-pojazdy-dla-wot-gen-stanczyk-sporo-do-poprawy-w-systemie-szkolenia) na nocnym szkoleniu w warszawskim centrum handlowym.",
+      "link": "https://defence24.pl/sily-zbrojne/cel-centrum-handlowe-zolnierze-wot-szkolili-sie-w-galerii"
     },
     {
-      "title": "FA-50PL w przyszłym roku. Znamy szczegóły",
-      "snippet": "W 2027 roku sprzęt dla lotnictwa bojowego będzie napływał szerokim strumieniem. Obok kolejnych dostaw F-35A rozpocznie się przekazywanie lekkich samolotów FA-50 wersji PL. O harmonogramie i przewidywanej liczebności dostaw mówił w rozmowie z Defence2",
-      "link": "https://defence24.pl/sily-zbrojne/fa-50pl-w-przyszlym-roku-znamy-szczegoly"
+      "title": "Więcej transportów rosyjskiej broni nad Polską. Samolot wleciał do kraju znad Białorusi",
+      "snippet": "We wtorek, 13 października, mogliśmy zaobserwować kolejny przelot samolotu algierskich sił powietrznych nad Polską. To Ił-76MD, ciężki wojskowy samolot transportowy, zdolny do przewożenia szerokiej gamy ładunków – broni, amunicji czy pojazdów. Maszyna wleciała nad Polskę znad ter",
+      "link": "https://defence24.pl/polityka-obronna/wiecej-transportow-rosyjskiej-broni-nad-polska-samolot-wlecial-do-kraju-znad-bialorusi"
     },
     {
-      "title": "NATO może odciąć Rosję od Bałtyku. Mowa o kilku godzinach",
-      "snippet": "Estoński minister spraw zagranicznych Margus Tsahkna stwierdził, że w przypadku rosyjskiego ataku na państwo NATO Sojusz mógłby w ciągu kilku godzin zamknąć Rosji wyjście na Bałtyk przez Zatokę Fińską. To nie jest tylko polityczna deklaracja, ale kol",
-      "link": "https://defence24.pl/geopolityka/nato-odetnie-rosje-od-baltyku-mowa-o-kilku-godzinach"
+      "title": "„Zmieniło się jedno”. Nawrocki o Tusku i wykorzystywaniu wojny dla korzyści",
+      "snippet": "We wtorek, 13 października, „Rzeczpospolita” opublikowała wywiad, w którym Prezydent Karol Nawrocki krytycznie odniósł się do retoryki stosowanej przez Donalda Tuska. Prezydent ocenia, że aktualnie urzędujący premier jest politykiem proniemieckim, uporczywie wykorzystującym zagro",
+      "link": "https://defence24.pl/polityka-obronna/zmienilo-sie-jedno-nawrocki-o-tusku-i-wykorzystywaniu-wojny-dla-korzysci"
     },
     {
-      "title": "US emergency call records reveal confusion after failed execution of Christa Pike",
-      "snippet": "The killer of Colleen Slemmer was ultimately taken to hospital after two doses of lethal injection did not kill her.",
-      "link": "https://www.bbc.co.uk/news/articles/ck1exg6qjdz3o"
+      "title": "Instalacje naftowe Huti zaatakowane. Będzie odwet na saudyjskie rafinerie?",
+      "snippet": "Siły koalicji wspierającej uznawany przez społeczność rząd Jemenu zaatakowały instalacje naftowe znajdujące się w stolicy kraju, Sanie — przekazała stacja telewizyjna rebeliantów Huti, Al-Masirah. Huti okupują Sanę od ponad dekady.",
+      "link": "https://defence24.pl/polityka-obronna/instalacje-naftowe-huti-zaatakowane-bedzie-odwet-na-saudyjskie-rafinerie"
     },
     {
-      "title": "Where the US midterm elections will be won and lost",
-      "snippet": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president.",
-      "link": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o"
+      "title": "Podał, ile UE zapłaciła Rosji za energię. Trump odpowiada Europie",
+      "snippet": "Nie milkną echa porozumienia, jakie 9 października zawarł Donald Trump z Władimirem Putinem. Na mocy tej umowy Rosja sprzeda Stanom Zjednoczonym 300 tys. ton oleju napędowego, a nawet 4,8 mln ton rosyjskiego diesla trafi na światowe rynki. Europejscy politycy nie kryją oburzenia,",
+      "link": "https://defence24.pl/geopolityka/podal-ile-ue-zaplacila-rosji-za-energie-trump-odpowiada-europie"
     },
     {
-      "title": "Analysis: Trump's global headaches worsen weeks before crucial elections",
-      "snippet": "As election day looms, the president turns his eyes overseas for help with a pressing domestic problem.",
-      "link": "https://www.bbc.co.uk/news/articles/cqgm087rkze2o"
+      "title": "Ukraina robi kolejny krok w stronę Unii Europejskiej?",
+      "snippet": "We wtorek, 13 października, Ukraina wzięła udział w negocjacjach w Luksemburgu, przybliżających ją do członkostwa w Unii Europejskiej. Dotyczyły one konkurencyjności rynku oraz regulacji dot. rynku wewnętrznego. W rozmowach wzięła udział także Mołdawia, a zgodę na rzeczone rozmow",
+      "link": "https://defence24.pl/geopolityka/ukraina-robi-kolejny-krok-w-strone-unii-europejskiej"
     },
     {
-      "title": "One dead and several hurt after rollercoaster incident at Six Flags",
-      "snippet": "Aerial footage at the park after the incident shows a stuck rollercoaster with riders being helped off.",
-      "link": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o"
+      "title": "„Nie zasłużył na wytchnienie”. Ławrow o Zełeńskim i wojnie z Ukrainą",
+      "snippet": "W poniedziałek, 12 października, Siergiej Ławrow – szef rosyjskiego MSZ – krytycznie odniósł się do „rozejmu energetycznego” między Rosją a Ukrainą, który dzień wcześniej ogłosił Donald Trump. Na słowa Ławrowa odpowiedział Andrij Sybiha.",
+      "link": "https://defence24.pl/geopolityka/nie-zasluzyl-na-wytchnienie-lawrow-o-zelenskim-i-wojnie-z-ukraina"
     },
     {
-      "title": "Breaking Bad actor RJ Mitte dies aged 34",
-      "snippet": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series.",
-      "link": "https://www.bbc.co.uk/news/articles/cmn045en7d88o"
+      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+      "snippet": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said.",
+      "link": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o"
     },
     {
-      "title": "Dating app Bumble in $1bn takeover talks, say reports",
-      "snippet": "The dating app which recently ditched its \"women-first\" chat rule could be bought by an investment firm.",
-      "link": "https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo"
+      "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
+      "snippet": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\".",
+      "link": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo"
+    },
+    {
+      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "snippet": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
+      "link": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo"
+    },
+    {
+      "title": "Cornell bans all fraternity parties over gang sex assault allegations",
+      "snippet": "The school has faced an uproar over how it handled assault allegations brought by a woman known as Jane Doe.",
+      "link": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o"
+    },
+    {
+      "title": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
+      "snippet": "Davis was found guilty last month over his role in the late rap superstar's death in a drive-by shooting in 1996.",
+      "link": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo"
+    },
+    {
+      "title": "Actress Selma Blair faces charges for kicking nurse and officer after plane incident",
+      "snippet": "The Legally Blonde actress faces two counts of assault for allegedly kicking a police officer and a nurse after allegedly attacking attendants on a flight.",
+      "link": "https://www.bbc.co.uk/news/articles/ck86zje2z4pwo"
+    },
+    {
+      "title": "Horse carriages in New York City expected to be outlawed",
+      "snippet": "Both the speaker of the city council and the mayor have expressed support for ending the practice.",
+      "link": "https://www.bbc.co.uk/news/articles/ckz7x9g1v4dvo"
+    },
+    {
+      "title": "How did Katie Zacharia do at her first - very brief - White House briefing?",
+      "snippet": "The BBC's Sarah Smith was in the room and describes Zacharia's performance and the moment she broke news about Kimberly Guilfoyle being asked to resign.",
+      "link": "https://www.bbc.co.uk/news/videos/cxm235y4l54lo"
     }
   ]
 }
