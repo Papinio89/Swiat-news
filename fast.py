@@ -45,7 +45,7 @@ POLISH_MONTHS = {
     9: "września", 10: "października", 11: "listopada", 12: "grudnia"
 }
 
-MAX_AGE_HOURS = 12
+MAX_AGE_HOURS = 6
 TARGET_ITEMS = 5
 
 
