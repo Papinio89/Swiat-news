@@ -19,8 +19,35 @@ from google.genai import types
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
-FALLBACK_IMG = "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
+
+# Wiele różnych fallbacków – NIGDY ten sam statek dla wszystkich itemów
+FALLBACK_POOL = [
+    "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518173946687-a0cabc1caa1d?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1540206395-68808572332f?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1444212477490-ca407925329e?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1564349685610-ec38b46d4d64?q=80&w=1000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1000&auto=format&fit=crop",
+]
 
 RSS_URLS = [
     "https://news.google.com/rss/search?q=ciekawostki+zwierz%C4%99ta+rekord+zoo&hl=pl&gl=PL&ceid=PL:pl",
@@ -39,6 +66,24 @@ POLISH_MONTHS = {
 
 MAX_AGE_HOURS = 72
 MIN_ITEMS = 6
+
+
+def stable_hash(text: str) -> int:
+    h = 0
+    for ch in str(text or ""):
+        h = (h * 31 + ord(ch)) & 0xFFFFFFFF
+    return h
+
+
+def fallback_for(seed: str, seen: set) -> str:
+    """Unikalny fallback z puli – nigdy ten sam URL jeśli da się uniknąć."""
+    base = stable_hash(seed)
+    for i in range(len(FALLBACK_POOL)):
+        cand = FALLBACK_POOL[(base + i) % len(FALLBACK_POOL)]
+        if cand not in seen:
+            return cand
+    seed_n = base % 10000
+    return f"https://picsum.photos/seed/{seed_n}/1000/560"
 
 
 def sanitize_text(text: str) -> str:
@@ -139,19 +184,29 @@ def fetch_article_image(url: str) -> str | None:
     return None
 
 
-def fetch_pexels_image_url(query: str, seen: set | None = None) -> str | None:
+def fetch_pexels_image_url(query: str, seed: str = "", seen: set | None = None) -> str | None:
     if not PEXELS_API_KEY:
         return None
 
     seen = seen or set()
+    h = stable_hash(seed or query)
+    page = (h % 3) + 1
+    prefer_idx = h % 12
+
     queries = [query]
-    parts = query.split()
+    parts = str(query).split()
     if len(parts) > 1:
         queries.append(parts[0])
+    if len(parts) == 1:
+        queries.append(f"{parts[0]} nature")
 
     for q in queries:
         try:
-            url = f"https://api.pexels.com/v1/search?query={urllib.parse.quote(q)}&per_page=5&orientation=landscape"
+            url = (
+                f"https://api.pexels.com/v1/search?"
+                f"query={urllib.parse.quote(q)}"
+                f"&per_page=15&orientation=landscape&page={page}"
+            )
             req = urllib.request.Request(
                 url,
                 headers={
@@ -159,44 +214,70 @@ def fetch_pexels_image_url(query: str, seen: set | None = None) -> str | None:
                     "User-Agent": "SwiatWMinute-Bot/1.0",
                 },
             )
-            with urllib.request.urlopen(req, timeout=6) as resp:
-                if resp.status == 200:
-                    data = json.loads(resp.read().decode("utf-8"))
-                    photos = data.get("photos") or []
-                    for photo in photos:
-                        src = photo.get("src") or {}
-                        raw = src.get("large") or src.get("medium")
-                        if raw:
-                            raw = html_lib.unescape(raw).replace("&amp;", "&")
-                            if raw not in seen:
-                                return raw
-        except Exception:
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                if resp.status == 429:
+                    print("  Pexels 429 (limit) – fallbacki")
+                    return None
+                if resp.status != 200:
+                    continue
+                data = json.loads(resp.read().decode("utf-8"))
+                photos = data.get("photos") or []
+                if not photos:
+                    continue
+                order = list(range(len(photos)))
+                order = order[prefer_idx % len(order):] + order[: prefer_idx % len(order)]
+                for i in order:
+                    src = photos[i].get("src") or {}
+                    raw = src.get("large") or src.get("medium") or src.get("original")
+                    if not raw:
+                        continue
+                    raw = html_lib.unescape(str(raw)).replace("&amp;", "&")
+                    if raw not in seen:
+                        return raw
+                src = photos[0].get("src") or {}
+                raw = src.get("large") or src.get("medium")
+                if raw:
+                    return html_lib.unescape(str(raw)).replace("&amp;", "&")
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                print("  Pexels HTTP 429")
+                return None
+            print(f"  Pexels HTTP {e.code} dla '{q}'")
             continue
+        except Exception as ex:
+            print(f"  Pexels err '{q}': {ex}")
+            continue
+        sleep(0.25)
     return None
 
 
 def pick_image_for_item(item: dict, seen_image_urls: set) -> str:
+    title = str(item.get("title") or "")
     url = item.get("link", "")
-    q = str(item.get("image_query") or "curiosity nature").strip()
+    q = str(item.get("image_query") or "curiosity nature").strip() or "curiosity nature"
 
-    # 1. Sprawdzenie czy zdjęcie z artykułu jest dostępne
     article_img = fetch_article_image(url)
     if article_img and article_img not in seen_image_urls:
         seen_image_urls.add(article_img)
         return article_img
 
-    # 2. Pexels po query z AI
-    stock = fetch_pexels_image_url(q, seen=seen_image_urls)
+    stock = fetch_pexels_image_url(q, seed=title, seen=seen_image_urls)
     if stock and stock not in seen_image_urls:
         seen_image_urls.add(stock)
         return stock
 
-    seen_image_urls.add(FALLBACK_IMG)
-    return FALLBACK_IMG
+    alt = q.split()[0] if q else "nature"
+    stock2 = fetch_pexels_image_url(alt, seed=title + "|alt", seen=seen_image_urls)
+    if stock2 and stock2 not in seen_image_urls:
+        seen_image_urls.add(stock2)
+        return stock2
+
+    fb = fallback_for(title or q, seen_image_urls)
+    seen_image_urls.add(fb)
+    return fb
 
 
 def embed_all_image_keys(item: dict, img_url: str) -> dict:
-    """Wstrzykuje wszystkie klucze, jakich frontend mógłby szukać."""
     item["image_url"] = img_url
     item["source_image_url"] = img_url
     item["image"] = img_url
@@ -238,7 +319,6 @@ def validate_items(items: list) -> list:
     return valid
 
 
-# --- POBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
     try:
@@ -379,9 +459,9 @@ for model_name in models_to_try:
             break
     except Exception as e:
         print(f"Błąd modelu {model_name}: {e}")
+        traceback.print_exc()
         sleep(1)
 
-# Awaryjny fallback
 POLISH_FALLBACK_TITLES = [
     "🐾 Niezwykłe odkrycie przyrodników zaskoczyło naukowców",
     "🎩 Zapomniany sekret historii, o którym nie uczą w szkołach",
@@ -410,20 +490,30 @@ if len(items) < MIN_ITEMS:
         })
         existing_links.add(art["link"])
 
-# --- DOBIERANIE ZDJĘĆ Z ZAPISYWANIEM WSZYSTKICH ALIASÓW KLUCZY ---
+if not PEXELS_API_KEY:
+    print("BRAK PEXELS_API_KEY w env – użyję unikalnych fallbacków (nie jednego obrazka).")
+else:
+    print(f"Pexels key: tak (...{PEXELS_API_KEY[-4:]})")
+
 print("Dobieranie unikalnych zdjęć...")
 source_ok = 0
-seen_image_urls = set()
+pexels_ok = 0
+fallback_ok = 0
+seen_image_urls: set = set()
 
 for item in items:
     img = pick_image_for_item(item, seen_image_urls)
     embed_all_image_keys(item, img)
-    if "pexels.com" not in img and "unsplash.com" not in img:
+    if "pexels.com" in img:
+        pexels_ok += 1
+    elif "unsplash.com" in img or "picsum.photos" in img:
+        fallback_ok += 1
+    else:
         source_ok += 1
+    sleep(0.2)
 
-print(f"Zdjęcia z artykułów: {source_ok}/{len(items)}")
+print(f"Źródła OG: {source_ok} | Pexels: {pexels_ok} | Fallback: {fallback_ok} | Unikalne URL: {len(seen_image_urls)}")
 
-# --- ZAPIS ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
@@ -435,14 +525,16 @@ output_data = {
     "items": items,
 }
 
-# 1. Bieżące wydanie
 with open("rozrywka.json", "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-# 2. Archiwum: dopisujemy dzisiejsze wydanie z pełnymi kluczami
 archive_data[session_fixed_key] = output_data
-
 with open(archive_file, "w", encoding="utf-8") as f:
     json.dump(archive_data, f, ensure_ascii=False, indent=2)
 
-print(f"Zapisano {len(items)} pozycji do rozrywka.json oraz sesji {session_fixed_key} w {archive_file}.")
+urls = [i.get("image_url") for i in items]
+print(f"Unikalne image_url w wydaniu: {len(set(urls))}/{len(urls)}")
+if len(set(urls)) < len(urls):
+    print("Nadal są duplikaty – sprawdź limit Pexels / log powyżej.")
+
+print(f"Zapisano {len(items)} pozycji do rozrywka.json oraz sesji {session_fixed_key}.")
