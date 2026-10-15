@@ -1,10 +1,30 @@
 {
-  "date": "14 października 2026",
-  "time": "15:42",
-  "count": 53,
+  "date": "15 października 2026",
+  "time": "06:03",
+  "count": 52,
   "items": [
     {
-      "title": "Zwolnią dziesiątki pracowników. Wielkie problemy odlewni",
+      "title": "Sukces Polaków. Zgarnęli kosmiczne zlecenie",
+      "snippet": " Polska firma Mirores zbada, w jakim stopniu pozyskiwanie wody, tlenu i innych surowców na Księżycu może być opłacalne dla biznesu. Polacy sprawdzą to na zlecenie Europejskiej Agencji Kosmicznej (ESA). Firma pokieruje pracami nad studium w zakresie gospodarki księżycowej.",
+      "link": "https://www.money.pl/gospodarka/wydobycie-na-ksiezycu-polska-firma-sprawdzi-czy-to-sie-oplaca-7340011395566048a.html"
+    },
+    {
+      "title": "Polska marka rośnie w Hiszpanii i Portugalii. \"Nie akceptujemy pozycji numer dwa\"",
+      "snippet": " Od 2021 roku InPost zwiększył liczbę lokalizacji w Hiszpanii i Portugalii ponad czterokrotnie, z ok. 3,5 tys. do blisko 14,2 tys. Spółka stawia na model out-of-home (OOH) i automaty paczkowe (APM). Chce zostać liderem w regionie w horyzoncie krótszym niż dekada.",
+      "link": "https://www.money.pl/pieniadze/polska-marka-rosnie-w-hiszpanii-i-portugalii-nie-akceptujemy-pozycji-numer-dwa-7339957567891904a.html"
+    },
+    {
+      "title": "Kredyty będą droższe? Kto zyska na końcu WIBOR-u? Odpowiadamy na pytania czytelników",
+      "snippet": " Czy zastąpienie WIBOR-u nowym wskaźnikiem PolSTR oznacza droższe kredyty? Kto naprawdę zyska na reformie i dlaczego banki, choć mają zastrzeżenia, nie chcą się jej sprzeciwiać? Po ostatniej publikacji money.pl czytelnicy zasypali nas pytaniami. Wybraliśmy najciekawsze i odpowiad",
+      "link": "https://www.money.pl/finanse/kredyty-beda-drozsze-kto-zyska-na-koncu-wibor-u-odpowiadamy-na-pytania-czytelnikow-7339977044802016v.html"
+    },
+    {
+      "title": "Kultowy zakład walczy o przetrwanie. Pisze do klientów",
+      "snippet": " Radomszczański Fameg, producent drewnianych giętych krzeseł, złożył wniosek o upadłość. Jednocześnie kultowy zakład zapewnia, że \"działa, pracuje i pozostaje w kontakcie z klientami i partnerami\". \"Historia jeszcze się nie skończyła\" – podała firma w komunikacie.",
+      "link": "https://www.money.pl/gospodarka/spokojnie-krzesla-mamy-zlozyli-wniosek-o-upadlosc-walcza-o-przetrwanie-7339977759193568a.html"
+    },
+    {
+      "title": "Dobijają ich ceny energii. Ogłosili zwolnienia grupowe",
       "snippet": " Odlewnia Elzamech w Elblągu zgłosiła zamiar zwolnienia 58 z 64 pracowników. Redukcja zatrudnienia ma zakończyć się do 28 lutego 2027 r. Latem firma złożyła wniosek o upadłość.",
       "link": "https://www.money.pl/gospodarka/zwolnia-dziesiatki-pracownikow-wielkie-problemy-odlewni-7339964105378272a.html"
     },
@@ -14,259 +34,234 @@
       "link": "https://www.money.pl/finanse/co-z-cenami-w-polsce-jest-niepokojaca-prognoza-7339952485198272a.html"
     },
     {
-      "title": "Bruksela wysyła miliardy do Kijowa. Wiadomo, na co je wyda",
-      "snippet": " Bruksela uruchamia kolejne miliardy euro dla Ukrainy. Komisja Europejska poinformowała o wypłacie 2,86 mld euro na zakup dronów, rakiet i systemów obrony przeciwlotniczej. To już druga transza w ciągu tygodnia. Na Kijów czekają kolejne ogromne pieniądze.",
-      "link": "https://www.money.pl/gospodarka/bruksela-wysyla-miliardy-do-kijowa-wiadomo-na-co-je-wyda-7339924933671360a.html"
+      "title": "Europa tworzy startupy. Ameryka robi z nich gigantów",
+      "snippet": "Regulacje są częścią problemu Europy, ale nie wyjaśniają wszystkiego. Największa różnica między Europą a Stanami Zjednoczonymi dotyczy produktywności, skali rynku kapitałowego oraz dostępu firm do kapitału na rozwój – mówi w rozmowie z Bankier.pl dr hab. Przemysław Ostojski, prof",
+      "link": "https://www.bankier.pl/wiadomosc/Europa-tworzy-startupy-Ameryka-robi-z-nich-gigantow-9212387.html"
     },
     {
-      "title": "Jest obwieszczenie ministra. W czwartek diesel przebije ważną granicę",
-      "snippet": " W czwartek litr benzyny 95 ma kosztować nie więcej niż 7,01 zł, benzyny 98 - 7,83 zł, a oleju napędowego - 8,05 zł - wynika ze środowego obwieszczenia Ministra Energii. Oznacza to, że ceny maksymalne benzyny będą niższe niż w środę, a diesla - wyższe.",
-      "link": "https://www.money.pl/gospodarka/jest-obwieszczenie-ministra-w-czwartek-diesel-przebije-wazna-granice-7339934215690688a.html"
+      "title": "Czy mój Ledger jest bezpieczny? Pluskwa w portfelu i skradzione miliony",
+      "snippet": "W internecie od kilku dni wrze. Ludzie z przerażeniem patrzą na swoje portfele sprzętowe od Ledgera, z kont wyparowało już rzekomo ponad 90 mln USD, a wszystko przez aferę, która brzmi jak scenariusz filmu. Okazało się, że w fabrycznie zafoliowanych Ledgerach u azjatyckiego dystr",
+      "link": "https://www.bankier.pl/wiadomosc/Czy-moj-Ledger-jest-bezpieczny-Pluskwa-w-portfelu-i-skradzione-miliony-9212502.html"
     },
     {
-      "title": "Maciej Berek już po ślubowaniu. Oto ile może zarabiać w TK",
-      "snippet": " Maciej Berek złożył w środę podczas uroczystości w Sejmie ślubowanie sędziego Trybunału Konstytucyjnego z formułą, że robi to \"wobec prezydenta\". Nowe stanowisko oznacza również nowe zarobki. Jego wynagrodzenie zasadnicze może wynosić ponad 43 tys. zł brutto miesięcznie – inform",
-      "link": "https://www.money.pl/finanse/maciej-berek-juz-po-slubowaniu-oto-ile-moze-zarabiac-w-tk-7339907488111072a.html"
+      "title": "Upadłości konsumenckie mocno w górę. Drugi wynik w historii",
+      "snippet": "Ponad 6 tys. bankructw konsumentów – takim wynikiem zamyka się III kwartał 2026 r. W całej historii tej instytucji w Polsce tylko raz notowano wyższy odczyt. I także miało to miejsce w tym roku. Roczny rekord jest już właściwie przesądzony.",
+      "link": "https://www.bankier.pl/wiadomosc/Upadlosci-konsumenckie-mocno-w-gore-Drugi-wynik-w-historii-9212704.html"
     },
     {
-      "title": "Gorąco wokół NBP. \"Szykuje nam się paraliż\"",
-      "snippet": " – Narodowy Bank Polski nie będzie władny podejmować jakichkolwiek decyzji wiążących, dlatego że nie będzie ustawowego składu. Szykuje nam się paraliż Narodowego Banku Polskiego – powiedział wicemarszałek Sejmu Piotr Zgorzelski w \"Rozmowie Piaseckiego\" w TVN24.",
-      "link": "https://www.money.pl/gospodarka/goraco-wokol-nbp-szykuje-nam-sie-paraliz-7339899177851328a.html"
+      "title": "Rusza bon senioralny. 2500 zł na osobę. Co trzeba zrobić, aby dostać takie wsparcie?",
+      "snippet": "Rząd uruchamia nowe świadczenie – bon senioralny. Skorzystają z niego osoby po 65. roku życia potrzebujące pomocy w codziennym funkcjonowaniu. Na usługi opiekuńcze w miejscu zamieszkania seniorzy będą mogli dostać od państwa wsparcie w wysokości 2500 zł. Jednak nie każdy ma szans",
+      "link": "https://www.bankier.pl/wiadomosc/Rusza-bon-senioralny-2500-zl-wsparcia-na-osobe-Co-trzeba-zrobic-aby-dostac-nowe-swiadczenie-9212670.html"
     },
     {
-      "title": "Czesi szykują cios w Orlen. W grze setki milionów euro",
-      "snippet": " Czesi chcą dodatkowych milionów od rafinerii, a rachunek może trafić do polskiego Orlenu. Projekt nadzwyczajnego podatku przeszedł pierwsze czytanie w parlamencie. Praga liczy na 226 mln euro wpływów jeszcze w tym roku. Opozycja alarmuje, że ustawa może uderzyć w jedną firmę.",
-      "link": "https://www.money.pl/firma/czesi-szykuja-cios-w-orlen-w-grze-setki-milionow-euro-7339850227927488a.html"
+      "title": "Masz pieniądze, a nie możesz zapłacić kartą? To może być przyczyna",
+      "snippet": "Żeby płatność kartą przeszła, muszą się zgadzać dwie rzeczy. Na koncie musi być dość pieniędzy, a kwota musi się zmieścić w limicie ustawionym dla karty. O pierwszym warunku pamięta każdy. O drugim przypomina dopiero odmowa na terminalu.",
+      "link": "https://www.bankier.pl/wiadomosc/Limity-na-karcie-platniczej-Dlaczego-karta-nie-dziala-choc-masz-pieniadze-9212295.html"
     },
     {
-      "title": "Inflacja w Ameryce ani myśli zwalniać. Przydałyby się kolejne podwyżki stóp?",
-      "snippet": "Wrzesień przyniósł dalszy wzrost inflacji konsumenckiej w\nStanach Zjednoczonych. Od przeszło 5 lat inflacja w USA wyraźnie przekracza\n2-procentowy cel Rezerwy Federalnej.",
-      "link": "https://www.bankier.pl/wiadomosc/Inflacja-w-USA-we-wrzesniu-2026-ani-mysli-zwalniac-Przydalyby-sie-kolejne-podwyzki-stop-9212457.html"
+      "title": "\"Energetyczny Sky Tower\". Pod Wrocławiem powstaje wyjątkowy wieżowiec",
+      "snippet": "W Gaju Oławskim na Dolnym Śląsku ruszyła budowa grawitacyjnego magazynu energii, który będzie częścią kompleksu produkującego zielony wodór. Inwestycja o wartości blisko 447 mln zł ma wykorzystywać energię z wiatru i słońca, a jej najbardziej charakterystycznym elementem może być",
+      "link": "https://www.bankier.pl/wiadomosc/Energetyczny-Sky-Tower-Pod-Wroclawiem-powstaje-wyjatkowy-wiezowiec-9212476.html"
     },
     {
-      "title": "Zobacz oszustwo od środka. Zapraszamy na bezpłatną konferencję Scamming Out! Summit 2026",
-      "snippet": "Jak cyberprzestępcy zdobywają zaufanie, przejmują kontrolę nad telefonem i wyprowadzają środki z konta? Już 4 listopada w Warszawie Bankier.pl i „Puls Biznesu” organizują bezpłatną konferencję Scamming Out! Summit 2026. Eksperci z sektora finansowego rozłożą na czynniki pierwsze ",
-      "link": "https://www.bankier.pl/wiadomosc/Zobacz-oszustwo-od-srodka-Zapraszamy-na-bezplatna-konferencje-Scamming-Out-Summit-2026-9212475.html"
+      "title": "Firmy rodzinne w obliczu wyzwań. Jak budować biznes w trudnych czasach?",
+      "snippet": "Trzy ostatnie dekady to dla polskich firm rodzinnych okres dynamicznego wzrostu, dziś jednak coraz bardziej odczuwają one rynkową niepewność. Jak w obecnych trudnych warunkach rozwijać biznes i zapewnić mu długofalowy rozwój? Które rynkowe rozwiązania warto zastosować? I fundamen",
+      "link": "https://www.bankier.pl/wiadomosc/Firmy-rodzinne-w-obliczu-wyzwan-Jak-budowac-biznes-w-trudnych-czasach-9212557.html"
     },
     {
-      "title": "Rząd ogrywa Nawrockiego w Berka. Przed siedzibą TK starcia z policją",
-      "snippet": "Maciej Berek złożył w środę podczas uroczystości w Sejmie ślubowanie sędziego Trybunału Konstytucyjnego z formułą, że robi to „wobec prezydenta”. Zapewnił, że wraz z pozostałymi sędziami TK zrobi wszystko, aby wartości, o których mówi rota ślubowania, ziszczały się każdego dnia w",
-      "link": "https://www.bankier.pl/wiadomosc/Slubowanie-wobec-prezydenta-bez-Nawrockiego-Maciej-Berek-oficjalnie-sedzia-Trybunalu-Konstytucyjnego-9212322.html"
+      "title": "Trzęsienie ziemi w Netfliksie. Gigant zwolni tysiąc pracowników",
+      "snippet": "Netflix powiadomił w środę pracowników, że zamierza zwolnić 1 tys. osób, ok. 6 proc. personelu - przekazała agencja AP.",
+      "link": "https://www.bankier.pl/wiadomosc/Trzesienie-ziemi-w-Netfliksie-Gigant-streamingu-zwolni-tysiac-pracownikow-9212829.html"
     },
     {
-      "title": "Już nie 5, a 7 proc. PKB na bezpieczeństwo. Premier: Ten stan potrwa jeszcze dwa lata",
-      "snippet": "Polska wydaje obecnie na bezpieczeństwo ok. 7 proc. PKB, a sytuacja związana z ponadmiarowymi wydatkami na obronę potrwa jeszcze ok. 2 lata - wynika z wypowiedzi premiera Donalda Tuska.",
-      "link": "https://www.bankier.pl/wiadomosc/Juz-nie-5-a-7-proc-PKB-na-bezpieczenstwo-Premier-Ten-stan-potrwa-jeszcze-dwa-lata-9212533.html"
+      "title": "Karol Nawrocki zareagował na ślubowanie Macieja Berka. 'Nie jest sędzią Trybunału Konstytucyjnego' - Wyborcza.pl",
+      "snippet": "Karol Nawrocki zareagował na ślubowanie Macieja Berka. 'Nie jest sędzią Trybunału Konstytucyjnego'&nbsp;&nbsp;Wyborcza.plNowe informacje sprzed Trybunału Konstytucyjnego. Są zatrzymania&nbsp;&nbsp;Interia WydarzeniaStrata ciąży. Jak można wesprzeć i jaka pomoc przysługuje rodzino",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV2xoa2lKVnZ3TWZyZEVBYkZUNTlXT3VVbG1hM2tnTU5WeW1vN2dTTXduMl9CZGVQenppM2JkRlUyZkVsamY4aFY5TEFLUkJQTTB5eDhYay1FQVoxdEk5OEd6S0RldjNZX1cwVnh6c2NxY2JGbzdIWFlkTzRUbHMxTjRmdXFJelRFOEVneERyOEk0elcweERvYlhNbnFHamMxVUItM0hB?oc=5"
     },
     {
-      "title": "Ten przycisk na terminalu podnosi rachunek. mBank ostrzega przed pułapką",
-      "snippet": "Klienci mBanku wydali w tym roku za granicą średnio blisko 2,5 tys. zł na wyjazd. Część tej kwoty mogli oddać zupełnie niepotrzebnie, jeśli przy terminalu albo bankomacie zgodzili się na rozliczenie w złotych.",
-      "link": "https://www.bankier.pl/wiadomosc/Ten-przycisk-na-terminalu-podnosi-rachunek-mBank-ostrzega-przed-pulapka-9212415.html"
+      "title": "USA ograniczyły bojowego Starlinka w Ukrainie? Jest zwrot w sprawie - Wiadomości Onet",
+      "snippet": "USA ograniczyły bojowego Starlinka w Ukrainie? Jest zwrot w sprawie&nbsp;&nbsp;Wiadomości OnetAlarm w Kongresie USA. Politycy obu partii stawiają sprawę jasno&nbsp;&nbsp;Interia WydarzeniaDziało się w nocy. Narady u Nawrockiego. Musk ujawnia, kto decyduje ws. StarShield&nbsp;&nbs",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQmlnMGM2UnRwZ1ZndE9JZ05HU1ZVZzVfM0tQdG9YTDNaUmVpakJUSDJqMm1hbUgzTHFxVkFlYlR1bGhweThZNkg1MXhwVjdFNTFlNC1FS25JYlFoZDEtRW5Ba3gwbkhnMGR2WUR6RVE1b3ZtbUREZU90OWtCM21XdjNYcTd5NTI2WkxyMncwZVJqTlYtN3UyWXZYaU1tZTQ?oc=5"
     },
     {
-      "title": "Oto 100 liderów wzrostu na Dolnym Śląsku",
-      "snippet": "Bankier.pl wspólnie z InfoCredit stworzył ranking najlepiej rozwijających się firm Dolnego Śląska. Projekt powstał specjalnie na potrzeby Forum Finansów Bankier.pl. Oto lista 100 liderów tego regionu.",
-      "link": "https://www.bankier.pl/wiadomosc/Oto-100-liderow-wzrostu-na-Dolnym-Slasku-9212578.html"
+      "title": "Wołodymyr Zełenski czuje się zdradzony. \"Trump wybrał złą stronę\" - PolsatNews.pl",
+      "snippet": "Wołodymyr Zełenski czuje się zdradzony. \"Trump wybrał złą stronę\"&nbsp;&nbsp;PolsatNews.plRzecznik Kremla drwi z USA. Tymczasem Zełenski uderza w Trumpa. \"To bolesne\"&nbsp;&nbsp;Interia WydarzeniaZełenski zdradzony? CBS: USA mogły zataić ostrzeżenia przed zmasowanym atakiem na Uk",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdWRmMmYybHY4MWJuTzRwVzlBTzJOY01mZjQ1Q3RNcmU0SXYycWJhOFhpYTlFcUsyWU1HNVRoRUlZVGI3dDBkLXp0bEE1azdKQTVGUFdlcS1tV1lBZWxOTi1QVk1DWng5NExiQUNIdF9mUkNNLTVzNWNHbllqUTVqaTh3ZDVlYUo2SnpMNGIwdWoxODFaaC1haE94MVN1OElIUFB4MFhaOGMtT181OXpZ?oc=5"
     },
     {
-      "title": "Podwyżka stóp jeszcze w 2026? Masłowska, RPP: Nie wykluczam ruchu już w grudniu",
-      "snippet": "Jeśli inflacja nadal będzie powyżej celu mimo obniżek cen paliw lub pojawią się zapowiedzi podwyżek cen energii dla gosp. domowych, to jeszcze w 2026 r., bardziej w grudniu, nie można wykluczyć podwyżki stóp proc.; RPP jest na to gotowa w każdej chwili w razie potrzeby – ocenia c",
-      "link": "https://www.bankier.pl/wiadomosc/Podwyzka-stop-jeszcze-w-2026-Maslowska-RPP-Nie-wykluczam-ruchu-juz-w-grudniu-9212611.html"
+      "title": "Planowany zamach na premiera. Decyzja sądu ws. 66-latka - PolsatNews.pl",
+      "snippet": "Planowany zamach na premiera. Decyzja sądu ws. 66-latka&nbsp;&nbsp;PolsatNews.plTo on planował zamach na premiera. Obrażał Tuska, Dudę i Nawrockiego&nbsp;&nbsp;Wiadomości OnetSprawa podejrzanego o przygotowanie zamachu na Tuska. Nowa decyzja&nbsp;&nbsp;Interia WydarzeniaChciał si",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPazlUd2tURDcycVo3SC1SZDRkSXRWVEhybWNkRnhuNUlnUG1YMm94TmZXbjRaU3ctMGtlQ3pLRTlHcEsxSGQyclJXekV2cFl5Y2FBOUtUSHlBLTVwUHdDNXQyNThqYjUyUS02UXZ1UC01MDhNVDAtQUw3QUNiX29tS3hPdE00d1Jwa1MzbHh4aDdxRkdMcjNOMGh4aDdnMzlBd0UwaWd6UEpjTW96NFpuTzZSdmpxRWV4enc?oc=5"
     },
     {
-      "title": "\"Bardzo trudna sytuacja\". Żurek reaguje po ślubowaniu Macieja Berka - Wiadomości Onet",
-      "snippet": "\"Bardzo trudna sytuacja\". Żurek reaguje po ślubowaniu Macieja Berka&nbsp;&nbsp;Wiadomości OnetOto plan na Trybunał Konstytucyjny. \"Kaczyński panicznie się tego boi\"&nbsp;&nbsp;Wiadomości OnetPrawdziwym skandalem w sprawie Trybunału jest co innego [OPINIA]&nbsp;&nbsp;Interia Wydar",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOU92X3g2TVhueEFvbXFuazFhVU9JT25CeUdXVVM4WHV1MUdETHc3a3VIaGdVUWhBLUlXUTI2eTFiVUxuYW5OZzE0eXczVl9YcHI2VEtYNDhnc3pfT2ZJdHVfb0tBUXZwS2lIOE50R0NBRGtoclYyMkpaa2VKVXZTbUtvTkE1NVp6dm03ZnktT0lPUHQ0YXFabzNYSzM5WnJsWEVReXpqNA?oc=5"
+      "title": "Wpadka nowej rzeczniczki Trumpa. Twierdzi, że jest prawniczką. Jest jeden problem - WP Wiadomości",
+      "snippet": "Wpadka nowej rzeczniczki Trumpa. Twierdzi, że jest prawniczką. Jest jeden problem&nbsp;&nbsp;WP Wiadomości\"Niezręczna wpadka\" w pierwszym dniu pracy nowej rzeczniczki Trumpa&nbsp;&nbsp;TVN24Nowa twarz w ekipie Trumpa ma problem. Wypłynęły internetowe ślady sprzed lat&nbsp;&nbsp;O",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa2FTTVVQV21aZXhCNXRSbmtfTkpEaUVyWURrOHIyelZodXN5RGJ1S1VkNlBDWWdPZFUtcEx0ZHo4Wm1YTTVZdzREcTEtYmFnNXR5VXk3T2hTTkxURURsUmJLbk0wN3FpMWprTEJMUkFmYWZjZy1HeVdKRzBtNnZKX2pOZzloc2VEYW1xV3RabjBlMGhOSlRwTFFUa19YajZ3Y2RhMHdDTGNZMm9uQjR4NEtaZmpsblFWWjNEZGR3?oc=5"
     },
     {
-      "title": "Kołodziejczak w ogniu oskarżeń. Ministerstwo Rolnictwa bada doniesienia - PolsatNews.pl",
-      "snippet": "Kołodziejczak w ogniu oskarżeń. Ministerstwo Rolnictwa bada doniesienia&nbsp;&nbsp;PolsatNews.plRodzinna wieś murem za Kołodziejczakiem. \"Mówiłem, żeby nie szedł do Tuska, a teraz go zjedzą\"&nbsp;&nbsp;WP WiadomościAfera Michała Kołodziejczaka. Rutkowski: pełna ochrona&nbsp;&nbsp",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbEpoa1V5c1RmQmpiaFpGWThNQ2Ffd2hzMG1hd3ZQcDcxUVVXckdZbEc1elJXZ1djNDNfT0UwMHh4LWl3TnIyRVh6QjgybVZ0dVdQX3VTODdOYnAwcEZhMUx3RThaZm1FdENSUFgzc2RYdk9hS3dZYnJaczVTaTNUUVFVa2paSnpXS3ZZQ1BRalozTkM1a25ZempMNEY1aVhtdlBsdUJmS252YjJwZTl0UFNMVk1VOFVaVnNTdDdIdw?oc=5"
+      "title": "40 do 60. Tak prof. Antoni Dudek ocenia szanse Tuska na utrzymanie władzy. „Ryzykowna strategia” - Rzeczpospolita",
+      "snippet": "40 do 60. Tak prof. Antoni Dudek ocenia szanse Tuska na utrzymanie władzy. „Ryzykowna strategia”&nbsp;&nbsp;RzeczpospolitaProf. Majchrowski o sensacyjnym scenariuszu w Krakowie. \"Sądzę, że on się z nimi dogada\"&nbsp;&nbsp;Wiadomości OnetWybory w Krakowie zainspirowały Kaczyńskieg",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc2Rxb2d3a25OcUl3YUxPZlFEczVQUHJGZVltSFRIVGNRa1JnZURXU3ZBb0tIRVFkYWJWU24zUkI2RUZZWHo4dW5PUWt2Y19adkx1OEJGQzFjZXlWbFgyZ1l1a3lrQ1ZXUElzbjRmY0hXbi1LRHhMS3JrT3ZSMVltM3hPSUo5cDljdmo1QVN6dUxXQQ?oc=5"
     },
     {
-      "title": "Nie tylko ropa. O tym rozmawiają ludzie Trumpa i Putina - Business Insider Polska",
-      "snippet": "Nie tylko ropa. O tym rozmawiają ludzie Trumpa i Putina&nbsp;&nbsp;Business Insider PolskaWłochy reagują na umowę Trumpa z Rosją. \"Ryzykowne, zagrożenia są jasne\"&nbsp;&nbsp;Interia WydarzeniaApplebaum: Czemu Trump nie zmienia zdania o Rosji? Przecież ewoluował w wielu kwestiach,",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWFBuX2NiaE5mZGJfSThDaUt0MDVCME9UVXU3TU5ob2k3Z1RINjcxV0Y1ZW52ZUxfS1l0cWVYS2ZvT2R3NjFSTjNyR0FsZkYya0tTWUd0dkMzSm1ZTjZHMkFHZUFJLWNjQTlubUw0VlotY2I0VG1MUE9OTFAyTkk1N1JqQlZnN1VocEkzSXhURm05Vkd0dGtnamE5bTVPM1F3NkREeUFtVkR2akJ0cnhkSA?oc=5"
+      "title": "Skandal w parafii w Grojcu. Kuria reaguje na oświadczenie odwołanego proboszcza. 'Niepełne' - Gazeta",
+      "snippet": "Skandal w parafii w Grojcu. Kuria reaguje na oświadczenie odwołanego proboszcza. 'Niepełne'&nbsp;&nbsp;GazetaOdwołany proboszcz nie powiedział wszystkiego? Kuria odpowiada na jego oświadczenie&nbsp;&nbsp;Interia WydarzeniaKuria ujawniła zarzuty wobec proboszcza. Parafianie z Groj",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNTVKZy1Fd2NUai1ya1c4b0xKMDJ2NXZmQ1VIRlppUjBYQm1PX2xGcDEteGNEY1dEa2hvcjR3d1FMRUpscVFJWV9fRU84SF90dFRhZXRwMHc5aVI0SWo1d2owSXNMSVZTWG44NGYzdEZlUEQ5SFBsWG9WeUxsSFc0QzhBOHNMd0d0YW1CbUQySTBEaGRXc3dzSkl6TUZHd3RCdlBmdllhYmNmMzJfb2JmcTAydkx1czFGRFRfOG01bUt2UllI?oc=5"
     },
     {
-      "title": "Tajemniczy obiekt w Karwi. Żandarmeria o prowadzonych działaniach - WP Wiadomości",
-      "snippet": "Tajemniczy obiekt w Karwi. Żandarmeria o prowadzonych działaniach&nbsp;&nbsp;WP WiadomościUkraina bez ostrzeżeń o ataku. Znalezisko na plaży w Karwi. Podsumowanie nocy&nbsp;&nbsp;Wiadomości OnetSzczątki drona znalezione na plaży w Karwi. Mieszkańcy zabierają głos&nbsp;&nbsp;WP Wi",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVGxSbWlRQU1iU01jUkxaMXJqSUN1RWdySVVKSEJJLTBtZkNKTy1TWWFTZjNwdURaeWpEQ2dzZHZFdmdsR1hKSXlfdjV6MkI2blRkY0VUSEtub0Nvd0dPbGhqa2FNMWlwU1FMSEg4WEpDaDA5YktGVjh1Y3pUZ0lLNEY3dENQME96RFphZTk1V0VIUmxLbFJtcEtycE1qU0tVMlA4S0xUZE94SEE?oc=5"
+      "title": "Stock Losses Deepen on Chip Rout, Treasuries Rally: Markets Wrap",
+      "snippet": "A global equity selloff deepened as chip stocks plunged on Wall Street and in Asia, further unwinding this year’s blistering rally in the artificial intelligence trade. Treasuries gained on haven demand, while the dollar weakened.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-14/stock-market-today-dow-s-p-live-updates"
     },
     {
-      "title": "Wieszała pranie. Zobaczyła jedno z ciał. Szczegóły tragedii w Kielcach - o2",
-      "snippet": "Wieszała pranie. Zobaczyła jedno z ciał. Szczegóły tragedii w Kielcach&nbsp;&nbsp;o2Luna została sama po rodzinnej tragedii w Kielcach. Suczka jest w schronisku&nbsp;&nbsp;RMF24Makabryczne odkrycie w Kielcach. Cztery ciała znalezione w jednym z mieszkań&nbsp;&nbsp;Interia Wydarze",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcEx6X04xRWhWcExudU5NU0lPN2RUWktVM245Z2NkYURfUG80WWJBbVd2Zmg3cHN4YkY0MC1KQ3htOXBiT3FUd3Y5NG5WdlBYR2ZXWE8yYUNvZ3ZaZ19VZDFITW9FSkdSNl93N2lrR214eE9SRGViVmZBdEpodE9tZFZUZlpCLWZRcU1abF91N2Q5WjZhbC0wdmx6Y29hNDJzWXFVMnQwMUVLT29meDRqaFotc0lnQQ?oc=5"
+      "title": "Treasury Haven Trade Bounces Back as Stocks Sink, Yields Entice",
+      "snippet": "US Treasuries led a global bond rally as a selloff in equities deepened risk aversion and spurred demand for haven assets.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/treasuries-extend-gains-as-equities-selloff-dents-risk-sentiment"
     },
     {
-      "title": "Zarzuty dla czterech osób w sprawie Zoo Łączna. Prokuratura: Znęcali się nad co najmniej 561 zwierzętami - walbrzych.wyborcza.pl",
-      "snippet": "Zarzuty dla czterech osób w sprawie Zoo Łączna. Prokuratura: Znęcali się nad co najmniej 561 zwierzętami&nbsp;&nbsp;walbrzych.wyborcza.plMęczarnie w polskim zoo. Są zarzuty za głodzenie i śmierć zwierząt&nbsp;&nbsp;WP WiadomościPolicja w prywatnym zoo w Mieroszowie. Pięć osób z z",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3R6MnFsQUJlMnRVM0RiZ1Y0ZVBpbXVfY3Y2UE5TbnVTenV0d3RnY0VwUEFhRkQ2ZVZIV0FTV2tQclBGUGctcTR2dGpnNEZqVHNMM3I3Mjc2Z0lUazY1dTZEcWIwLUE1ZWVVWUppTHdINUkxUGlHWXpxMV9naEU4eklNWUVHTlRlQkloMXJhZUNxQWxoazVwOC1GVDZnRDFNME1lRy0yc1oxbjduanZYUmxDOG1LTlRzRmtIcFhn?oc=5"
+      "title": "Introducing: Disclosure Season 2",
+      "snippet": "Disclosure, the podcast dedicated to revealing the government’s inner workings, is back for Season 2 in audio and video.\n\nBy law, nearly every move federal agencies make—every email, every memo, every receipt—belongs to the public. The key to gaining access is the Freedom of Info",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-15/introducing-disclosure-season-2-video"
     },
     {
-      "title": "Poseł KO zatrzymany przez policję. Odmówił badania alkomatem, pokazał legitymację poselską - WP Wiadomości",
-      "snippet": "Poseł KO zatrzymany przez policję. Odmówił badania alkomatem, pokazał legitymację poselską&nbsp;&nbsp;WP WiadomościPoseł KO jechał rowerem bez świateł, powołał się na immunitet&nbsp;&nbsp;Do RzeczyPoseł wpadł podczas jazdy na rowerze i zasłonił się immunitetem. \"Wyczuwalna woń al",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWk1bzRiVnE5NkpCTlpfeWhGMUVDRlhUdmF4cU5RcC1kTnlVSjNUMVVsZUd4RlN4cGRiQmFKSWxicTkzdXJPcDhqSUJFbGwxcHR4bEhVYms4RkZ5RkllOFU2S3Rkbl9HNW1hVFZYQkNGVVZMaFo2TnE4eVlheTAybjZOVDVZeVBYSEdybEhfSlNJbnNuSlgtRHc4Ul81eGxGTVE3OGJXN1Y5SFhkaTRDWlZBNVY5UnlybDM2QzhSU1NsWGt1cGdvbjZBbw?oc=5"
+      "title": "Kospi Drops 8% as Samsung, SK Hynix Shares Plunge on AI and Rate Fears",
+      "snippet": "A global selloff in semiconductor stocks dragged South Korea’s equity benchmark down 8% on Thursday, underscoring the scale of an investor exodus from the frothiest corners of the AI trade.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/chip-stocks-deepen-losses-as-concerns-mount-over-rates-ai-debt"
     },
     {
-      "title": "Allan Gray Sees Nigeria Rally Broader Than Korea’s AI Boom",
-      "snippet": "Allan Gray Ltd., which oversees $29 billion in assets, sees Nigeria’s stock rally as more broad-based than South Korea’s, offering investors a diversification play from the artificial-intelligence frenzy that has swept markets from Wall Street to Asia.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-14/south-africa-fund-manager-tips-nigerian-stocks-over-south-korea"
+      "title": "Taiwan Dollar, Won Slump as Chip Stock Selloff Hurts Sentiment",
+      "snippet": "The Taiwan dollar and South Korean won led losses among Asian currencies in early trading as an overnight slump in Wall Street semiconductor shares spilled into regional markets, dampening demand for artificial intelligence supply-chain plays.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/taiwan-dollar-won-slump-as-chip-stock-selloff-hurts-sentiment"
     },
     {
-      "title": "Anthropic Investor Day Focuses on Growth",
-      "snippet": "Anthropic is holding an investor day as it advances plans for a potential IPO at an approximately $2 trillion valuation, amid growing concerns about AI safety and threats. Momei Qiu of PSP Growth says market sentiment around AI is shifting quickly as new information emerges. Qiu ",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-14/anthropic-investor-day-focuses-on-growth-video"
+      "title": "Iron Ore Trades Below $90 a Ton for First Time Since 2024",
+      "snippet": "Iron ore futures in Singapore slipped to a two-year low under $90 a ton, extending a retreat fueled by soft demand in China and too much global supply.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/iron-ore-trades-below-90-a-ton-for-first-time-since-2024"
     },
     {
-      "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets: Markets Wrap",
-      "snippet": "Stocks joined bonds lower as the fastest increase in inflation since April bolstered bets the Federal Reserve will keep lifting interest rates amid elevated energy costs.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-13/stock-market-today-dow-s-p-live-updates"
+      "title": "Anthropic Results May Aid IPO but Not AI Trade, Analysts Say",
+      "snippet": "Anthropic PBC’s third-quarter results may strengthen the case for its expected initial public offering, though they are unlikely to dispel doubts over the global AI trade, according to some investors and analysts.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/anthropic-results-may-aid-ipo-but-not-ai-trade-analysts-say"
     },
     {
-      "title": "Treasuries Slump as Hot Inflation Lifts Fed Rate-Hike Bets",
-      "snippet": "US Treasuries slumped after hotter-than-expected inflation prompted traders to add to wagers that Federal Reserve officials will raise interest rates later this month and next year.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-14/us-treasuries-slump-as-hot-inflation-lifts-fed-rate-hike-bets"
+      "title": "Indonesia Swaps Out Electricity Chief After Huge Batam Blackout",
+      "snippet": "Indonesia removed the CEO of state-owned electricity giant Perusahaan Listrik Negara after a 16-hour blackout in the data center and tourism hub of Batam.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-15/indonesia-swaps-out-electricity-chief-after-huge-batam-blackout"
     },
     {
-      "title": "US Mortgage Rates Reach 7.5%; Home-Buying Slump Hits Sixth Week",
-      "snippet": "US mortgage rates continue to rise, pushing down home purchasing activity for a sixth straight week.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-14/us-mortgage-rates-hit-7-5-extending-slump-in-purchase-activity"
+      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+      "snippet": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\".",
+      "link": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo"
     },
     {
-      "title": "CPI ‘Opens the Door More’ to October Fed Hike, Says PGIM’s Sockin",
-      "snippet": "Robert Sockin, chief US economist at PGIM, says the US economy needs two more rate hikes at a minimum and that “the broader direction is up” for interest rates even if the Federal Reserve does not move at this month’s meeting. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-14/cpi-opens-the-door-more-to-october-fed-hike-pgim-video"
+      "title": "Student protesters attack government buildings in Albania",
+      "snippet": "Buildings were set alight on the second day of demonstrations from thousands of students who want better university conditions and job prospects.",
+      "link": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o"
     },
     {
-      "title": "Fed Weighs More Hikes on Inflation Concerns",
-      "snippet": "Barclays senior US economist Pooja Sriram said higher interest rates are a blunt tool that tighten financial conditions and hit rate-sensitive sectors such as housing and autos first. While rising Treasury yields and the bond selloff have added restraint, she said it is unclear w",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-14/fed-weighs-more-hikes-on-inflation-concerns-video"
+      "title": "Retired US generals call on Pentagon to cancel 'barbaric' execution livestream",
+      "snippet": "Livestreaming the execution of Nidal Hasan \"will taint the honor of the military that employs it, and a nation that allows it,\" 72 former officers said in a letter.",
+      "link": "https://www.bbc.co.uk/news/articles/cmp3gnngv3e9o"
     },
     {
-      "title": "Gold Slumps as Faster US Inflation Stokes Fed Rate Hike Wagers",
-      "snippet": "Gold slumped after US consumer prices jumped the most in five months, reigniting worries that the Federal Reserve will need to raise interest rates further to combat inflation.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-14/gold-steady-as-fed-official-s-remarks-temper-rate-hike-bets"
+      "title": "White House defends new press secretary amid questions about her legal credentials",
+      "snippet": "Katie Zacharia does not appear to be registered to the legal bar in any state where she has lived.",
+      "link": "https://www.bbc.co.uk/news/articles/ckqxne2evqreo"
     },
     {
-      "title": "Starlink restrictions affecting Ukraine's front line operations, Kyiv says",
-      "snippet": "Elon Musk's system allows Kyiv to protect Ukrainian skies and effectively guide drones to Russian targets.",
-      "link": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do"
+      "title": "Watch: Orange haze blankets Indonesia's Kalimantan region",
+      "snippet": "Thick orange smog descended on the Indonesian city of Palangka Raya as wildfires continue raging nearby.",
+      "link": "https://www.bbc.co.uk/news/videos/c63dj4p4k5dlo"
     },
     {
-      "title": "US inflation rises more than expected ahead of midterm elections",
+      "title": "Brooklyn novelty shop reeling from 'surreal' row with Kelly Clarkson over mechanical bird",
+      "snippet": "Art of Play says its staff have been threatened after the singer complained online about how she was treated.",
+      "link": "https://www.bbc.co.uk/news/articles/cxvgdneplgzeo"
+    },
+    {
+      "title": "Sally Rooney books withdrawn in UK over Palestine Action support",
+      "snippet": "The Irish writer is best known for novels such as Normal People, Intermezzo and Conversations With Friends.",
+      "link": "https://www.bbc.co.uk/news/articles/cmx23q4g307vo"
+    },
+    {
+      "title": "Anthropic flags revenue surge to investors ahead of stock market debut",
+      "snippet": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure.",
+      "link": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo"
+    },
+    {
+      "title": "Rosja nie jest w stanie zbudować superbombowca. Zamiast tego jest nowy pocisk",
+      "snippet": "Brytyjski instytut RUSI opublikował raport na temat rosyjskiej strategicznej broni nuklearnej. Wynika z niego, że nowe typy pocisków mają stać się protezą wobec braku nowego typu bombowca.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/rosja-nie-jest-w-stanie-zbudowac-superbombowca-zamiast-tego-jest-nowy-pocisk"
+    },
+    {
+      "title": "Duża operacja Izraela i USA stanie się faktem? Netanjahu i Trump omówili plan",
+      "snippet": "W środę, 14 października, agencje Axios i Interfax poinformowały o tym, że USA i Izrael przygotowują się do kolejnej, szeroko zakrojonej operacji militarnej przeciwko Iranowi. Powodem ku temu mają być doniesienia izraelskiego wywiadu, który twierdzi, że Iran wznawia swój program ",
+      "link": "https://defence24.pl/geopolityka/duza-operacja-izraela-i-usa-stanie-sie-faktem-netanjahu-i-trump-omowili-plan"
+    },
+    {
+      "title": "Putin apeluje o współpracę. Padły słowa o bezpieczeństwie",
+      "snippet": "W środę, 14 października, Władimir Putin zaapelował o zwiększenie współpracy międzynarodowej i zacieśnianie dialogu w sektorze paliwowo-energetycznym. Słowa prezydenta Rosji, zawarte w przesłaniu do uczestników IX Międzynarodowego Forum „Rosyjski Tydzień Energetyczny”, przytoczył",
+      "link": "https://defence24.pl/geopolityka/putin-apeluje-o-wspolprace-padly-slowa-o-bezpieczenstwie"
+    },
+    {
+      "title": "Cywile z dronami wesprą polską armię. MON zapowiada Dron Legion",
+      "snippet": "Cywilni operatorzy dronów mają wspierać Wojsko Polskie w ramach Dron Legionu. Wicepremier i minister obrony narodowej Władysław Kosiniak-Kamysz zapowiedział jego utworzenie podczas ćwiczenia „Blue Eye-26” w Nowym Glinniku. Inicjatywa ma wykorzystać umiejętności osób posiadających",
+      "link": "https://defence24.pl/polityka-obronna/cywile-z-dronami-wespra-polska-armie-mon-zapowiada-dron-legion"
+    },
+    {
+      "title": "Poufne kontakty Polski z reżimem Łukaszenki. Naciski ze strony USA",
+      "snippet": "Wedle ustaleń „Wirtualnej Polski”, opublikowanych w środę, 14 października, Polska i Białoruś mają prowadzić tajne rozmowy na temat resetu w stosunkach pomiędzy oboma krajami. Na taki stan rzeczy mają naciskać Stany Zjednoczone, co dotyczyć ma również Litwy i Łotwy.",
+      "link": "https://defence24.pl/geopolityka/poufne-kontakty-polski-z-rezimem-lukaszenki-naciski-ze-strony-usa"
+    },
+    {
+      "title": "Otworzył ogień do własnych żołnierzy. Rosjanin poszedł na front i zabił sześć osób",
+      "snippet": "We wtorek, 13 października, „The Insider” – niezależny, rosyjski portal śledczy z siedzibą na Łotwie – potwierdził informacje podawane wcześniej przez ukraiński projekt „Chcę żyć”. Jak wynika z podawanego przekazu, jeden z rosyjskich żołnierzy, Aleksiej Korolow, zabił sześciu żoł",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/otworzyl-ogien-do-wlasnych-zolnierzy-rosjanin-poszedl-na-front-i-zabil-szesc-osob"
+    },
+    {
+      "title": "Pancerna premiera roku. Co kryje CBWP Niedźwiedź? Czołgiem!",
+      "snippet": "Czy CBWP Niedźwiedź będzie sukcesem polskiej zbrojeniówki, czy zostanie misiem na miarę naszych możliwości? W nowym odcinku programu „Czołgiem!” rozmawiamy o najważniejszej pancernej premierze MSPO 2026.",
+      "link": "https://defence24.pl/przemysl/pancerna-premiera-roku-co-kryje-cbwp-niedzwiedz-czolgiem"
+    },
+    {
+      "title": "How backlash against data centres could shape the US midterm elections",
+      "snippet": "Democrats and Republicans alike are coming out against data centre development, amid growing backlash across the US.",
+      "link": "https://www.bbc.co.uk/news/articles/c0rezqpnekro"
+    },
+    {
+      "title": "Retired US generals call on Pentagon to cancel 'barbaric' execution livestream",
+      "snippet": "Livestreaming the execution of Nidal Hasan \"will taint the honor of the military that employs it, and a nation that allows it,\" 72 former officers said in a letter.",
+      "link": "https://www.bbc.co.uk/news/articles/cmp3gnngv3e9o"
+    },
+    {
+      "title": "White House defends new press secretary amid questions about her legal credentials",
+      "snippet": "Katie Zacharia does not appear to be registered to the legal bar in any state where she has lived.",
+      "link": "https://www.bbc.co.uk/news/articles/ckqxne2evqreo"
+    },
+    {
+      "title": "Brooklyn novelty shop reeling from 'surreal' row with Kelly Clarkson over mechanical bird",
+      "snippet": "Art of Play says its staff have been threatened after the singer complained online about how she was treated.",
+      "link": "https://www.bbc.co.uk/news/articles/cxvgdneplgzeo"
+    },
+    {
+      "title": "US inflation rises more than expected - here's what is happening with prices",
       "snippet": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
       "link": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o"
     },
     {
-      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
-      "snippet": "Pope Leo had a \"peaceful night\" in the hospital after the surgery to remove a lower lobe of his right lung, the Vatican says.",
-      "link": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o"
+      "title": "Anthropic flags revenue surge to investors ahead of stock market debut",
+      "snippet": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure.",
+      "link": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo"
     },
     {
-      "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
-      "snippet": "Four years after the attacks, Serhii Kuznetsov appears in court accused of a plot to destroy Russia's gas pipelines to Germany.",
-      "link": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo"
+      "title": "'It's rough out here': Americans struggle with rising inflation",
+      "snippet": "US inflation continues to rise, and this month the jump was above forecasts. Here's how some are surviving.",
+      "link": "https://www.bbc.co.uk/news/articles/c305649p2d6o"
     },
     {
-      "title": "Saudi employee charged with planting recording device in OpenAI office",
-      "snippet": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
-      "link": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo"
-    },
-    {
-      "title": "Turkish police raid opposition TV station, halting live broadcasts",
-      "snippet": "It is the latest in a series of crackdowns on media critical of the Turkish president and his government.",
-      "link": "https://www.bbc.co.uk/news/articles/crx23y3d970vo"
-    },
-    {
-      "title": "World's oldest shipwreck found off coast of Turkey",
-      "snippet": "Archaeologists say the wreck is up to 4,700 years old, dating to the Early Bronze Age.",
-      "link": "https://www.bbc.co.uk/news/articles/c6gr80rk1yyko"
-    },
-    {
-      "title": "Mauritius reels from worst riots in decades after woman shot by police",
-      "snippet": "Prime Minister Navin Ramgoolam imposed a curfew after days of unrest that first began over water shortages.",
-      "link": "https://www.bbc.co.uk/news/articles/cm4g1rnj5qweo"
-    },
-    {
-      "title": "Ukraiński dron przechytujący zaatakował rosyjski śmigłowiec Mi-28NM",
-      "snippet": "Operatorzy 115. Samodzielnej Brygady Zmechanizowanej Sił Zbrojnych Ukrainy zaatakowali rosyjski śmigłowiec uderzeniowy Mi-28NM przy użyciu przechwytującego drona FPV. Według ukraińskiej jednostki maszyna została zniszczona, a jej załoga zginęła. Dostępne nagranie pokazuje jednak ",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukrainski-dron-przechytujacy-zaatakowal-rosyjski-smiglowiec-mi-28nm"
-    },
-    {
-      "title": "Czarne Pantery zdobędą Amerykę? [KOMENTARZ]",
-      "snippet": "W przeszłości pojawiały się informacje o tym, że Peru planuje zakup czołgów K2 Black Panther jako następców wysłużonych i przestarzałych T-55. Okazuje się, że cała sytuacja nie jest tak prosta, jak to się wydawało wcześniej.",
-      "link": "https://defence24.pl/przemysl/czarne-pantery-zdobeda-ameryke-komentarz"
-    },
-    {
-      "title": "Skyfox dla Estonii? Historia zatoczyłaby koło",
-      "snippet": "Najskuteczniejszą metodą zwalczania odrzutowych dronów są pociski powietrze-powietrze odpalane z samolotów – stwierdził estoński minister obrony narodowej Martin Herem w wywiadzie dla Baltic Sentinel. Branżowe media widzą w tym zapowiedź kupna czeskiego samolotu Skyfox.",
-      "link": "https://defence24.pl/sily-zbrojne/skyfox-dla-estonii-historia-zatoczylaby-kolo"
-    },
-    {
-      "title": "Tajemnicza misja ukraińskiego samolotu na Bliskim Wschodzie",
-      "snippet": "Ukraiński wojskowy Ił-76MD został zarejestrowany 12 października na trasie z Szarury w Arabii Saudyjskiej do Stambułu. Sama trasa dla transportu wojskowego jest ważna, choć kontekst jest ważniejszy: Ukraina od miesięcy rozwija współpracę obronną z Rijadem i państwami Półwyspu Ara",
-      "link": "https://defence24.pl/geopolityka/tajemnicza-misja-ukrainskiego-samolotu-na-bliskim-wschodzie"
-    },
-    {
-      "title": "Ukraina czarną dziurą dla Rosjan. Rekord rosyjskich strat we wrześniu",
-      "snippet": "NATO szacuje, że Rosja utraciła we wrześniu ponad 50 tysięcy żołnierzy, z czego ponad połowa zginęła. To rekordowa liczba w 2026 roku.",
-      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-czarna-dziura-dla-rosjan-rekord-rosyjskich-strat-we-wrzesniu"
-    },
-    {
-      "title": "Nowa generacja bezzałogowców wkrótce w Polsce",
-      "snippet": "Produkcja oraz proces dostaw bezzałogowców rozpoznawczo-uderzeniowych MQ-9B SkyGuardian przebiegają bez zakłóceń – powiedział w rozmowie z Defence24 generał dywizji pilot Ireneusz Nowak, Dowódca Operacyjny Rodzajów Sił Zbrojnych. Zdaniem generała to jednak chyba jedyny duży progr",
-      "link": "https://defence24.pl/sily-zbrojne/nowa-generacja-bezzalogowcow-wkrotce-w-polsce"
-    },
-    {
-      "title": "Minister wprost: Polska Grupa Zbrojeniowa nie jest na sprzedaż",
-      "snippet": "Minister aktywów państwowych Wojciech Balczun zapewnił, że Polska Grupa Zbrojeniowa nie zostanie sprzedana. Jednocześnie potwierdził, że rząd analizuje zmiany w strukturze akcjonariatu koncernu, które mogłyby ułatwić mu pozyskiwanie finansowania na rozwój produkcji. Wcześniej wśr",
-      "link": "https://defence24.pl/polityka-obronna/minister-wprost-polska-grupa-zbrojeniowa-nie-jest-na-sprzedaz"
-    },
-    {
-      "title": "Nowa broń przeciwko pociskom hipersonicznym ujawniona",
-      "snippet": "Izraelski koncern Rafael, a dokładnie jego amerykańska spółka, zaprezentował po raz pierwszy na targach AUSA 2026 pocisk SkySonic, przeznaczony do zwalczania broni hipersonicznej.",
-      "link": "https://defence24.pl/sily-zbrojne/nowa-bron-przeciwko-pociskom-hipersonicznym-ujawniona"
-    },
-    {
-      "title": "US inflation rises more than expected ahead of midterm elections",
-      "snippet": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
-      "link": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o"
-    },
-    {
-      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
-      "snippet": "Pope Leo had a \"peaceful night\" in the hospital after the surgery to remove a lower lobe of his right lung, the Vatican says.",
-      "link": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o"
-    },
-    {
-      "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
-      "snippet": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\".",
-      "link": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo"
-    },
-    {
-      "title": "Saudi employee charged with planting recording device in OpenAI office",
-      "snippet": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room.",
-      "link": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo"
-    },
-    {
-      "title": "Bank of America hit with $1.2bn fine for money laundering failings",
-      "snippet": "The bank inadequately flagged transactions linked to potential Chinese money laundering networks, the Treasury said.",
-      "link": "https://www.bbc.co.uk/news/articles/cm3wvxy6n3z8o"
-    },
-    {
-      "title": "Cornell bans all fraternity parties over gang sex assault allegations",
-      "snippet": "The school has faced an uproar over how it handled assault allegations brought by a woman known as Jane Doe.",
-      "link": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o"
-    },
-    {
-      "title": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
-      "snippet": "Davis was found guilty last month over his role in the late rap superstar's death in a drive-by shooting in 1996.",
-      "link": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo"
-    },
-    {
-      "title": "Actress Selma Blair faces charges for kicking nurse and officer after plane incident",
-      "snippet": "The Legally Blonde actress faces two counts of assault for allegedly kicking a police officer and a nurse after allegedly attacking attendants on a flight.",
-      "link": "https://www.bbc.co.uk/news/articles/ck86zje2z4pwo"
+      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+      "snippet": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\".",
+      "link": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo"
     }
   ]
 }
