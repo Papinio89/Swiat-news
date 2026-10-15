@@ -2,6 +2,10 @@ name: Fast Update News
 
 on:
   workflow_dispatch:
+  schedule:
+    # 04:00, 07:00, 13:00, 16:00 czasu polskiego (letniego CEST, UTC+2)
+    # W czasie zimowym (CET, UTC+1) będzie to 03:00, 06:00, 12:00, 15:00
+    - cron: '0 2,5,11,14 * * *'
 
 jobs:
   update-fast:
@@ -9,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -23,12 +29,14 @@ jobs:
       - name: Run fast news script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python fast.py
 
       - name: Commit and push fast.json
         run: |
           git config --global user.name 'Bot Wiadomości'
           git config --global user.email 'bot@users.noreply.github.com'
+          git pull origin main --rebase || true
           git add fast.json
           git commit -m "Aktualizacja fast.json [skip ci]" || exit 0
           git push
