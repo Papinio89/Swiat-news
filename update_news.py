@@ -58,6 +58,12 @@ session_name = "poranne" if current_hour < 12 else "wieczorne"
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
 
+STOP_WORDS = {
+    "polsce", "polski", "polaków", "nowy", "nowa", "nowe", "roku", "swiat", "przez",
+    "tylko", "rzad", "rząd", "beda", "będą", "moze", "może", "oraz", "jest", "jego",
+    "bardzo", "nawet", "teraz", "after", "with", "from", "that", "this", "more"
+}
+
 
 def clean_link(url: str) -> str:
     if not url or url == "#":
@@ -121,16 +127,38 @@ def format_uppercase_title(title_str: str) -> str:
     return s.upper()
 
 
+def extract_keywords(text: str) -> set[str]:
+    words = re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', text.lower())
+    return {w for w in words if w not in STOP_WORDS}
+
+
+def are_topics_duplicate(title1: str, title2: str, threshold: float = 0.40) -> bool:
+    w1 = extract_keywords(title1)
+    w2 = extract_keywords(title2)
+    if not w1 or not w2:
+        return False
+    common = w1.intersection(w2)
+    if len(common) >= 3:
+        return True
+    if len(common) >= 2 and (len(common) / min(len(w1), len(w2)) >= threshold):
+        return True
+    return False
+
+
 def validate_items(items: list) -> list:
     required = {"category", "title", "hook", "summary", "comment", "threads_post", "question", "image_query", "link"}
     valid = []
+    seen_titles = []
+    seen_links = set()
+
     for item in items:
         if not isinstance(item, dict):
             continue
         if not required.issubset(item.keys()):
             continue
 
-        title = format_uppercase_title(str(item.get("title", "")))
+        raw_title = str(item.get("title", "")).strip()
+        title = format_uppercase_title(raw_title)
         hook = str(item.get("hook", "")).strip()
         summary = str(item.get("summary", "")).strip()
         comment = str(item.get("comment", "")).strip()
@@ -140,11 +168,26 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
 
-        # Walidacja objętościowa i strukturalna
         if len(title) < 10 or len(summary) < 25 or len(comment) < 10 or len(threads_post) < 420:
             continue
         if "---ODPOWIEDŹ---" not in threads_post:
             continue
+
+        if link != "#" and link in seen_links:
+            continue
+
+        # Blokada powtórzonego tematu w tej samej paczce wyników
+        is_dup = False
+        for prev in seen_titles:
+            if are_topics_duplicate(title, prev, threshold=0.35):
+                is_dup = True
+                break
+        if is_dup:
+            continue
+
+        seen_titles.append(title)
+        if link != "#":
+            seen_links.add(link)
 
         valid.append({
             "category": category,
@@ -225,12 +268,12 @@ def fetch_article_image(url: str) -> str | None:
     return None
 
 
-# --- ZBIERANIE RSS ---
+# --- 1. POBIERANIE RSS ---
 raw_articles = []
 for url in RSS_URLS:
     try:
         feed = feedparser.parse(url)
-        for entry in feed.entries[:8]:
+        for entry in feed.entries[:10]:
             if not is_recent(entry):
                 continue
             title = getattr(entry, "title", "").strip()
@@ -246,9 +289,9 @@ for url in RSS_URLS:
     except Exception as e:
         print(f"Błąd RSS z {url}: {e}")
 
-print(f"Pobrano {len(raw_articles)} artykułów wejściowych.")
+print(f"Pobrano łącznie {len(raw_articles)} surowych artykułów.")
 
-# --- ARCHIWUM I DEDUPLIKACJA ---
+# --- 2. HISTORIA Z ARCHIWUM DO WYKLUCZENIA ---
 archive_file = "archive.json"
 archive_data = {}
 if os.path.exists(archive_file):
@@ -273,53 +316,56 @@ for sk in sorted_sessions[:8]:
             if t:
                 previous_titles.append(t)
 
-filtered_raw_articles = []
+# --- 3. DEDUPLIKACJA WEWNĘTRZNA FEEDU (KLASTERYZACJA) ---
+# Usuwa sytuację, gdy 4 różne portale opisują tę samą sprawę tego samego dnia
+clustered_articles = []
+seen_feed_links = set()
+
 for art in raw_articles:
-    art_title = art["title"].lower()
-    art_clean_words = set(re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', art_title))
-    
-    is_duplicate = False
-    for prev_t in previous_titles:
-        prev_clean_words = set(re.findall(r'[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ]{4,}', prev_t.lower()))
-        common = art_clean_words.intersection(prev_clean_words)
-        if len(common) >= 2:
-            is_duplicate = True
+    if art["link"] in seen_feed_links:
+        continue
+
+    # Sprawdzenie z archiwum
+    if any(are_topics_duplicate(art["title"], prev, threshold=0.40) for prev in previous_titles):
+        continue
+
+    # Sprawdzenie z już zakwalifikowanymi artykułami w tej sesji
+    is_internal_dup = False
+    for existing in clustered_articles:
+        if are_topics_duplicate(art["title"], existing["title"], threshold=0.40):
+            is_internal_dup = True
             break
-            
-    if not is_duplicate:
-        filtered_raw_articles.append(art)
 
-if len(filtered_raw_articles) < 14:
-    filtered_raw_articles = raw_articles
+    if not is_internal_dup:
+        clustered_articles.append(art)
+        seen_feed_links.add(art["link"])
 
-print(f"Po deduplikacji: {len(filtered_raw_articles)} unikalnych artykułów.")
+if len(clustered_articles) < 14:
+    clustered_articles = raw_articles
 
-# --- PROMPT AI: DOKŁADNIE TEN SAM OSTRY RYTM NIEZALEŻNIE OD PORY DNIA ---
+print(f"Po kategorycznej deduplikacji wewnętrznej: {len(clustered_articles)} całkowicie UNIKALNYCH tematów dla AI.")
+
+# --- 4. PROMPT DLA AI ---
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-prompt = f"""Jesteś autorem i głównym analitykiem formatu „Świat w Minucie” (Instagram/Threads). 
-Twoje treści zdobywają gigantyczne zasięgi, ponieważ piszesz jak bezwzględny, genialny redaktor śledczy: zwięźle, agresywnie, z pełnym szacunkiem do liczb i faktów. 
+prompt = f"""Jesteś redaktorem naczelnym formatu informacyjno-analitycznego „Świat w Minucie” (Instagram/Threads). 
+Twoje posty zdobywają wirale, ponieważ wybierasz RÓŻNORODNE, MOCNE I NAJCIEKAWSZE wydarzenia dnia.
 
-ZAKAZ WODOLANIA I BEŁKOTU:
-- ZAKAZ zwrotów: „czas pokaże”, „niepewna przyszłość”, „warto obserwować”, „jak wynika z bilansu”, „podsumowując wydarzenia”, „eksperci ostrzegają”.
-- PISZ MIĘSEM: Kto, ile stracił, jaka ustawa wchodzi, co dokładnie podrożeje, jaki sprzęt wysłano, gdzie wybuchł spór. Każde zdanie to twardy fakt i kontrast.
+KATEGORYCZNY ZAKAZ DUBLOWANIA TEMATÓW (1 TEMAT = DOKŁADNIE 1 WPIS):
+- Każda wygenerowana wiadomość MUSI dotyczyć ZUPEŁNIE INNEJ sprawy, innej spółki, innego kraju lub problemu.
+- Kategoryczny zakaz generowania dwóch wpisów o tej samej ustawie, tym samym polityku, tej samej spółce czy tym samym raporcie giełdowym!
+- Jeśli w danych wejściowych jest kilka ciekawych tematów z Polski, technologii, surowców i obronności, MASZ WYBRAĆ PRZEKRÓJ NAJLEPSZYCH, a nie skupiać się na jednym wątku.
 
-Zadanie: Wybierz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH tematów i stwórz bezbłędny JSON.
+Zadanie: Z poniższych unikalnych artykułów wybierz DOKŁADNIE 14-15 NAJWAŻNIEJSZYCH I NAJBARDZIEJ WCIĄGAJĄCYCH tematów w formacie JSON.
 
-ZASADA 1: NAGŁÓWEK ("title") - DOKŁADNIE TYM WZOREM:
-[Trafna emotikona] [CHWYTLIWY, AGRESYWNY NAGŁÓWEK DUŻYMI LITERAMI DO 60 ZNAKÓW]
-Przykłady:
-- 🚨 SKOK AKCYZY NA PALIWO: KIEROWCY ZAPŁACĄ 60 GROSZY WIĘCEJ
-- 📉 WALL STREET W PANICE: GIGANT TECHU TRACI 140 MILIARDÓW W GODZINĘ
-- ⚔️ ZWROT NA FLANCE: POLSKA ZAMAWIA 500 PRECYZYJNYCH POCISKÓW
+ZASADA 1: NAGŁÓWEK ("title"):
+[Trafna emotikona] [AGRESYWNY, MOCNY NAGŁÓWEK DUŻYMI LITERAMI DO 60 ZNAKÓW]
 
-ZASADA 2: FORMAT THREADS ("threads_post") - DWA POSTY W JEDNYM WĄTKU (650-800 ZNAKÓW):
-Format MUSI być podzielony znacznikiem "---ODPOWIEDŹ---":
-
+ZASADA 2: FORMAT THREADS ("threads_post") - DWA POSTY (650-800 ZNAKÓW):
 CZĘŚĆ 1 (Post główny – 320-380 znaków):
 [NAGŁÓWEK DUŻYMI LITERAMI Z EMOTIKONĄ]
 [Krzykliwy podwójny hook z flagami i wykrzyknikiem]
-[1-2 zdania uderzające w sedno problemu, kończące się zachętą:]
+[1-2 zdania uderzające w sedno problemu, zakończone:]
 (Szczegóły i tło w odpowiedzi 👇🧵)
 
 ---ODPOWIEDŹ---
@@ -330,7 +376,7 @@ CZĘŚĆ 2 (Odpowiedź pod postem – 380-450 znaków):
 [Konkretne pytanie prowokujące do dyskusji kończące się '👇💬']
 
 ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment"):
-- DOKŁADNIE 1 ZDANIE (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zero banałów. Zderz słowa polityków z rachunkiem wystawionym obywatelom.
+- DOKŁADNIE 1 ZDANIE (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zero banałów.
 
 ZASADA 4: POJEDYNCZE KATEGORIE:
 Pole "category" to DOKŁADNIE JEDNO słowo:
@@ -341,7 +387,7 @@ Pole "category" to DOKŁADNIE JEDNO słowo:
 - "OBRONNOŚĆ" (max 2)
 - "TECHNOLOGIE" (max 1-2)
 
-WZORCOWY OBIEKT (FEW-SHOT):
+WZORCOWY OBIEKT:
 {{
   "category": "GOSPODARKA",
   "title": "🚨 RZĄD PRZEPYCHA NOWY PODATEK: ZAPŁACĄ WSZYSCY KIEROWCY",
@@ -357,11 +403,10 @@ WZORCOWY OBIEKT (FEW-SHOT):
 Unikaj tematów z archiwum:
 {json.dumps(previous_titles[:25], ensure_ascii=False)}
 
-Dane wejściowe:
-{json.dumps(filtered_raw_articles, ensure_ascii=False)}
+Dane wejściowe (wybierz z nich 14-15 najciekawszych, CAŁKOWICIE RÓŻNYCH tematów):
+{json.dumps(clustered_articles[:35], ensure_ascii=False)}
 """
 
-# --- GENEROWANIE ZE ZMNIEJSZONĄ TEMPERATURĄ (DYSCYPLINA STYLU) ---
 items = []
 try:
     response = client.models.generate_content(
@@ -369,7 +414,7 @@ try:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            temperature=0.35,
+            temperature=0.30,
             safety_settings=[
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
                 types.SafetySetting(category=types.HarmCategory.HARM_CATEGORY_HARASSMENT, threshold=types.HarmBlockThreshold.BLOCK_NONE),
@@ -400,27 +445,36 @@ except Exception as e:
     print(f"Błąd AI: {e}")
     items = []
 
-# Fallback awaryjny
+# Fallback awaryjny (dobiera wyłącznie tematy niebędące duplikatami)
 if len(items) < MIN_ITEMS:
     existing_links = {i.get("link") for i in items}
-    for art in filtered_raw_articles:
-        if art["link"] not in existing_links and art["link"] != "#":
-            clean_t = art.get("title", "Wydarzenie dnia")
-            upper_t = format_uppercase_title(f"📈 {clean_t[:55]}")
-            items.append({
-                "category": "GOSPODARKA",
-                "title": upper_t,
-                "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
-                "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
-                "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
-                "threads_post": f"{upper_t}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają dotychczasowe reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci w pośpiechu przeliczają koszty scenariuszy.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\nKulisy tej decyzji pokazują rosnącą presję na płynność finansową całego sektora. Kiedy gasną flesze kamer, twarda kalkulacja wymusza rewizję wielomiliardowych kontraktów.\n\nTo kolejny dowód, że deklaracje polityczne natychmiast zderzają się z rzeczywistością budżetową. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
-                "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel? 👇💬",
-                "image_query": "financial market economy",
-                "link": art["link"]
-            })
-            existing_links.add(art["link"])
-            if len(items) >= 14:
-                break
+    existing_titles = [i.get("title", "") for i in items]
+    
+    for art in clustered_articles:
+        if art["link"] in existing_links or art["link"] == "#":
+            continue
+        
+        clean_t = art.get("title", "Wydarzenie dnia")
+        upper_t = format_uppercase_title(f"📈 {clean_t[:55]}")
+        
+        if any(are_topics_duplicate(upper_t, t, threshold=0.35) for t in existing_titles):
+            continue
+
+        items.append({
+            "category": "GOSPODARKA",
+            "title": upper_t,
+            "hook": f"Kluczowe doniesienia agencyjne w sprawie: {clean_t[:40]}.",
+            "summary": "Najnowsze ustalenia wskazują na istotną zmianę sytuacji rynkowej. Przedstawiciele branży i rządy analizują potencjalne konsekwencje.",
+            "comment": "Urzędnicy znowu zapewniają o pełnej kontroli, choć rachunek za ich błędy jak zwykle zapłacą obywatele przy kasach.",
+            "threads_post": f"{upper_t}\n\nKluczowy zwrot na rynkach: nowe ustalenia zmieniają dotychczasowe reguły gry! 📊🚨\n\nNajnowsze raporty agencji prasowych wskazują na dynamiczny rozwój wydarzeń. Decydenci w pośpiechu przeliczają koszty scenariuszy.\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\\n\nKulisy tej decyzji pokazują rosnącą presję na płynność finansową całego sektora. Kiedy gasną flesze kamer, twarda kalkulacja wymusza rewizję wielomiliardowych kontraktów.\n\nTo kolejny dowód, że deklaracje polityczne natychmiast zderzają się z rzeczywistością budżetową. 💼⏳\n\nJak oceniacie ten ruch z perspektywy kolejnych miesięcy? 📈👇💬",
+            "question": "Jak ta decyzja wpłynie bezpośrednio na Twoje finanse lub portfel? 👇💬",
+            "image_query": "financial market economy",
+            "link": art["link"]
+        })
+        existing_links.add(art["link"])
+        existing_titles.append(upper_t)
+        if len(items) >= 14:
+            break
 
 if items:
     cats = Counter([item["category"] for item in items])
@@ -428,9 +482,9 @@ if items:
     for cat, count in cats.most_common():
         print(f"  {cat}: {count}")
 
-print(f"Wygenerowano {len(items)} pozycji – OK")
+print(f"Wygenerowano {len(items)} w 100% unikalnych pozycji.")
 
-# --- ZDJĘCIA: Pexels + og:image + fallback ---
+# --- 5. POBIERANIE ZDJĘĆ ---
 print("Pobieranie zdjęć: Pexels + źródła artykułów...")
 source_ok = 0
 for item in items:
@@ -448,7 +502,7 @@ for item in items:
 
 print(f"Zdjęcia ze źródeł artykułów: {source_ok}/{len(items)} (reszta = Pexels fallback)")
 
-# --- ZAPIS ---
+# --- 6. ZAPIS ---
 date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
 time_pretty = now_pl.strftime("%H:%M")
 timestamp_key = now_pl.strftime("%Y-%m-%d_%H:%M")
@@ -470,10 +524,10 @@ with open(archive_file, "w", encoding="utf-8") as f:
 raw_feed_output = {
     "date": date_pretty,
     "time": time_pretty,
-    "count": len(filtered_raw_articles),
-    "items": filtered_raw_articles
+    "count": len(clustered_articles),
+    "items": clustered_articles
 }
 with open("raw_feed.json", "w", encoding="utf-8") as f:
     json.dump(raw_feed_output, f, ensure_ascii=False, indent=2)
 
-print(f"Zakończono pomyślnie. Zapisano {len(items)} pozycji w jednolitym, ostrym formacie.")
+print(f"Zakończono pomyślnie. Zapisano {len(items)} całkowicie unikalnych pozycji.")
