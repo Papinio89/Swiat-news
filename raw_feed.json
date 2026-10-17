@@ -1,8 +1,13 @@
 {
   "date": "17 października 2026",
-  "time": "08:20",
-  "count": 64,
+  "time": "15:30",
+  "count": 57,
   "items": [
+    {
+      "title": "Morawiecki uderza w Orlen: Kupuje w USA za 100 zł, sprzedaje za 300",
+      "snippet": " Mateusz Morawiecki podczas sobotniej konwencji Rozwoju Plus przedstawił kilka gospodarczych założeń stowarzyszenia. – Nie może być tak, żeby faktyczny monopolista, jakim jest Orlen, sprzedawał gaz dzisiaj po 300-350 zł za megawatogodzinę, a sam płaci za ten gaz z USA 100 zł za m",
+      "link": "https://www.money.pl/gospodarka/morawiecki-uderza-w-banki-czwarty-rok-z-rzedu-siedza-na-workach-zlota-7341010122004512a.html"
+    },
     {
       "title": "Trump zmienił zdanie. Nie będzie części sankcji na Rosję",
       "snippet": " Donald Trump ogłosił, że uchyla stosowanie niektórych sankcji i ceł wobec Rosji wynikających z tzw. ustawy Lindseya Grahama. Prezydent USA podpisał dokument we wrześniu, ale teraz zmienił zdanie. Według republikanina tego wymaga interes narodowy USA.",
@@ -19,29 +24,14 @@
       "link": "https://www.money.pl/finanse/niemcy-zaczna-oszczedzac-na-emerytury-juz-6-latkom-oto-szczegoly-7340734204549120a.html"
     },
     {
-      "title": "NBP może mieć poważny problem. Prezydent podjął decyzję ws. powołań do zarządu",
-      "snippet": " Prezydent Karol Nawrocki ponowi wniosek o powołanie czterech osób do zarządu NBP. Nominacje ponownie trafią do premiera, który wcześniej nie udzielił kontrasygnaty. Sprawa jest pilna, bo już w listopadzie skład zarządu banku centralnego może spaść poniżej ustawowego minimum.",
-      "link": "https://www.money.pl/gospodarka/nbp-moze-miec-powazny-problem-prezydent-wykonal-ruch-7340647441700896a.html"
+      "title": "Zełenski: Jeśli przegramy, 20 mln Ukraińców może wjechać do Unii",
+      "snippet": "Ponad 20 mln Ukraińców może zostać „wypędzonych” ze swojego kraju i wyjechać do Unii Europejskiej w razie przegranej Ukrainy w wojnie z Rosją – powiedział prezydent Ukrainy Wołodymyr Zełenski.",
+      "link": "https://www.bankier.pl/wiadomosc/Zelenski-Jesli-przegramy-20-mln-Ukraincow-moze-wjechac-do-Unii-9214241.html"
     },
     {
-      "title": "Analiza sprawozdań finansowych jako tarcza inwestora obligacyjnego",
-      "snippet": " Zakup obligacji korporacyjnych może dawać atrakcyjne oprocentowanie, ale związany jest z ryzykiem, że emitent nie wywiąże się ze swoich zobowiązań. Dlatego w przypadku obligacji najważniejsze pytanie brzmi nie \"ile mogę zarobić?\", lecz \"czy emitent będzie w stanie oddać mi pieni",
-      "link": "https://www.money.pl/fundusze/analiza-sprawozdan-finansowych-jako-tarcza-inwestora-obligacyjnego-7314426179278848a.html"
-    },
-    {
-      "title": "Putin sięga po majątek kolejnych firm. Na liście znane koncerny",
-      "snippet": " Rosyjskie władze rozszerzają listę zagranicznych przedsiębiorstw, których aktywa trafiają pod tymczasowy zarząd państwa.  Władimir Putin podpisał kolejny dekret w tej sprawie. To następna taka decyzja po wrześniowym objęciu państwową kontrolą aktywów trzech dużych zagranicznych ",
-      "link": "https://www.money.pl/gospodarka/putin-siega-po-majatek-kolejnych-firm-na-liscie-znane-koncerny-7340606769240064a.html"
-    },
-    {
-      "title": "Zaskakujące informacje z NBP. Ponad 35 mld zł straty, a teraz zwrot?",
-      "snippet": " – Jest szansa, że NBP osiągnie zysk w 2026&nbsp;r. – poinformował w Programie I Polskiego Radia członek Rady Polityki Pieniężnej Ludwik Kotecki. Strata NBP w 2025 r. wyniosła 35,740 mld zł wobec 13,347 mld zł w 2024 r.",
-      "link": "https://www.money.pl/gospodarka/zaskakujace-informacje-z-nbp-ponad-35-mld-zl-straty-a-teraz-zwrot-7340580700551200a.html"
-    },
-    {
-      "title": "Zwrot ws. kluczowej reformy UE. Minister: mamy mniejszość blokującą",
-      "snippet": " Polska ma coraz większe poparcie w walce o odroczenie ETS2. Minister energii Miłosz Motyka twierdzi, że udało się zbudować mniejszość blokującą. Ostrzega przed wzrostem cen i politycznymi konsekwencjami reformy. W rozmowie z TVN24 wskazał też, na jaką zmianę liczy Warszawa.",
-      "link": "https://www.money.pl/gospodarka/zwrot-ws-kluczowej-reformy-ue-minister-mamy-mniejszosc-blokujaca-7340570276530656a.html"
+      "title": "Miliony euro w kosmos. Wojna zmieniła reguły gry",
+      "snippet": "Rosnące wydatki na bezpieczeństwo otworzyły nowy rozdział dla polskiego przemysłu kosmicznego. Podczas panelu „Przemysł kosmiczny – nowy silnik gospodarki”, odbywającego się w trakcie Europejskiego Forum Nowych Idei w Sopocie, przedstawiciele branży wskazywali, że potrzebny jest ",
+      "link": "https://www.bankier.pl/wiadomosc/Wielkie-pieniadze-plyna-w-kosmos-Polskie-firmy-maja-apetyt-na-wiecej-9214243.html"
     },
     {
       "title": "Inflacja przyspiesza, Polacy szukają bezpieczeństwa w obligacjach",
@@ -49,149 +39,134 @@
       "link": "https://www.bankier.pl/wiadomosc/Inflacja-przyspiesza-Polacy-szukaja-bezpieczenstwa-w-obligacjach-9212967.html"
     },
     {
+      "title": "Trump robi wyjątek dla Rosji. Cła i sankcje częściowo zawieszone",
+      "snippet": "Prezydent USA Donald Trump poinformował o uchyleniu stosowania niektórych sankcji i ceł wobec Rosji wynikających z tzw. ustawy Lindseya Grahama, którą podpisał we wrześniu. Amerykański przywódca powołał się przy tym na interes narodowy USA.",
+      "link": "https://www.bankier.pl/wiadomosc/Trump-robi-wyjatek-dla-Rosji-Cla-i-sankcje-czesciowo-zawieszone-9214179.html"
+    },
+    {
+      "title": "Koniec ryczałtu dla części przedsiębiorców? MF chce obniżyć limit",
+      "snippet": "Zmniejszenie z 2 mln euro do 250 tys. euro limitu, powyżej którego podatnik nie może się rozliczać ryczałtem, ogranicza dysproporcje między różnymi rodzajami opodatkowania działalności gospodarczej - powiedział PAP wiceminister finansów Jarosław Neneman.",
+      "link": "https://www.bankier.pl/wiadomosc/Koniec-ryczaltu-dla-czesci-przedsiebiorcow-MF-chce-obnizyc-limit-9214216.html"
+    },
+    {
       "title": "Najwięksi na Wall Street ostrzegają. Lista zagrożeń jest długa",
       "snippet": "Sezon publikacji wyników finansowych przez banki dał inwestorom doskonałą okazję, by usłyszeć, co o amerykańskiej gospodarce, inflacji i sytuacji na giełdzie myślą najwięksi gracze sektora finansowego. Wiele do myślenia inwestorom instytucjonalnym dało również ostatnie spotkanie ",
       "link": "https://www.bankier.pl/wiadomosc/Najwieksi-na-Wall-Street-ostrzegaja-Lista-zagrozen-jest-dluga-9213999.html"
     },
     {
-      "title": "Rafinerie znów zarabiają krocie. Inwestorzy dostrzegli okazję",
-      "snippet": "W tym roku nieustannie mówi się o sztucznej inteligencji i o tym, ile - a nawet jak ogromne - zyski może ona przynieść inwestorom w przyszłości. Tymczasem już teraz na pieniądzach pływają przedstawiciele znacznie bardziej tradycyjnych i stosunkowo nudnych branż. Niepewność dotycz",
-      "link": "https://www.bankier.pl/wiadomosc/Rafinerie-znow-zarabiaja-krocie-Inwestorzy-dostrzegli-okazje-9214046.html"
+      "title": "„Rosja bardzo się niepokoi”. Zełenski o sojuszu Polski i Ukrainy",
+      "snippet": "Prezydent Ukrainy Wołodymyr Zełenski podziękował w sobotę Polsce i Polakom za wsparcie, podkreślając, że relacje między krajami poprawiły się, a Ukraina i Polska potrzebują wzmacniać sojusz przeciwko wspólnemu wrogowi – Rosji.",
+      "link": "https://www.bankier.pl/wiadomosc/Rosja-bardzo-sie-niepokoi-Zelenski-o-sojuszu-Polski-i-Ukrainy-9214254.html"
     },
     {
-      "title": "Premier: Jeszcze przed Wigilią można spodziewać się eskalacji ze strony Rosji",
-      "snippet": "Premier Donald Tusk powiedział w piątek, że „można spodziewać się jakiejś eskalacji” ze strony Rosji „jeszcze przed Wigilią”. Dodał, że „zima będzie bardzo trudna, przede wszystkim, jeśli chodzi o granice, tory kolejowe”. Rosja będzie testowała naszą reakcję - dodał.",
-      "link": "https://www.bankier.pl/wiadomosc/Premier-Jeszcze-przed-Wigilia-mozna-spodziewac-sie-eskalacji-ze-strony-Rosji-9214131.html"
+      "title": "Wielka budowa w Małopolsce. Maszyna wydrąży niemal 4 km tunelu",
+      "snippet": "Tarcza TBM Kinga rozpoczęła w sobotę drążenie około 3,9-kilometrowego tunelu ewakuacyjnego na budowie linii kolejowej Podłęże-Piekiełko. Wcześniej maszyna pracowała przy drążeniu tunelu pod Pisarzową, a teraz rozpoczęła kolejny etap prac - na odcinku Szczyrzyc-Tymbark.",
+      "link": "https://www.bankier.pl/wiadomosc/Wielka-budowa-w-Malopolsce-Maszyna-wydrazy-niemal-4-km-tunelu-9214248.html"
     },
     {
-      "title": "Francja i Niemcy dogadały się ws. motoryzacji. Chcą poluzowania limitów CO2",
-      "snippet": "Rządy Francji i Niemiec poinformowały w piątek, że osiągnęły porozumienie ws. wspólnego stanowiska dotyczącego przemysłu motoryzacyjnego. Dwa kraje chcą złagodzenia unijnych  limitów dotyczących emisji CO2 z nowych aut do 2035 roku, a także ustaliły kryteria dotyczące produkcji „",
-      "link": "https://www.bankier.pl/wiadomosc/Francja-i-Niemcy-dogadaly-sie-ws-motoryzacji-Chca-poluzowania-limitow-CO2-9214064.html"
+      "title": "„Tu jest Polska”. Kaczyński i politycy PiS na proteście przed TK",
+      "snippet": "W sobotę po południu w związku z sytuacją wokół Trybunału Konstytucyjnego przed siedzibą TK w Al. Szucha w Warszawie zgromadzili się manifestujący. Są wśród nich m.in. politycy PiS, w tym prezes partii Jarosław Kaczyński.",
+      "link": "https://www.bankier.pl/wiadomosc/Tu-jest-Polska-Kaczynski-i-politycy-PiS-na-protescie-przed-TK-9214258.html"
     },
     {
-      "title": "Dzieci w Niemczech dostaną specjalne konta emerytalne. Bundestag zdecydował",
-      "snippet": "Niemiecki Bundestag przyjął program kont emerytalnych dla dzieci. Zgodnie z nim państwo będzie wpłacać dzieciom i młodzieży w wieku od sześciu do 18 lat składkę w wysokości 10 euro miesięcznie na specjalne konto emerytalne.",
-      "link": "https://www.bankier.pl/wiadomosc/Dzieci-w-Niemczech-dostana-specjalne-konta-emerytalne-Bundestag-zdecydowal-9214061.html"
+      "title": "Tyle śpi przeciętny Polak przed dniem pracy",
+      "snippet": "Przeciętna długość snu wynosi 7 godzin i 4 minuty w dni pracy oraz 7 godzin i 39 minut w dni wolne od pracy. W porównaniu do poprzedniego badania na ten temat z 1996 roku sen w dni powszednie skrócił się o 12 minut, a w dni wolne od pracy – o 7 minut - poinformował we wtorek CBOS",
+      "link": "https://www.bankier.pl/wiadomosc/Tyle-spi-przecietny-Polak-przed-dniem-pracy-9211901.html"
     },
     {
-      "title": "90 lat i wciąż uczy. MEN ujawniło wiek najstarszego nauczyciela w Polsce",
-      "snippet": "W polskim systemie oświaty pracuje 701,1 tys. nauczycieli. Zdecydowana większość z nich - 84,2 proc. wszystkich polskich nauczycieli — to kobiety. Średnia wieku polskiej nauczycielki to 46,5 lat — wynika z danych udostępnionych PAP przez Ministerstwo Edukacji Narodowej.",
-      "link": "https://www.bankier.pl/wiadomosc/90-lat-i-wciaz-uczy-MEN-ujawnilo-wiek-najstarszego-nauczyciela-w-Polsce-9212227.html"
+      "title": "Manifestacja przed Trybunałem Konstytucyjnym. Prezes PiS zabrał głos. \"Władza ta wciąż trwa, bo kłamie\" - Wiadomości Onet",
+      "snippet": "Manifestacja przed Trybunałem Konstytucyjnym. Prezes PiS zabrał głos. \"Władza ta wciąż trwa, bo kłamie\"&nbsp;&nbsp;Wiadomości OnetManifestacja przed TK. Kaczyński grzmi: \"Władza odrzuciła prawo\"&nbsp;&nbsp;WP WiadomościProtest pod TK. Kaczyński: To przejdzie do czarnej historii d",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUFNDRFNMZ3BpZjhyNExQYmxDd1lwWTc2SlZaejdETW5TSDMxQzZUQmNpdGI4ak9nMXY4Um5TZXotN1djVS0xS3FKZXlCcEpzRmh0TUl5eG1mYWtQd3BOelZZRGZGM2pYMnA4b2hxMERpSGpYYlZxcENmb1MwN05OYnlqVWg1Ylc5cFhHWmxpWm1yMUFIQkhfdmZwdTJQNEVhTTYyMlBKT013UVMzTnpPd0VyaEJKYnhuZnRHN0ljY0MzaV9fX0E?oc=5"
     },
     {
-      "title": "Trump pozbył się rzeczniczki po pięciu dniach. Jej konferencja wywołała burzę",
-      "snippet": "Rzeczniczka Białego Domu Katie Zacharia została zwolniona po zaledwie pięciu dniach pracy - podał w piątek „New York Times”. Prezydent Trump powiedział dziennikarzom, że ta rola może „nie jest dla niej”.",
-      "link": "https://www.bankier.pl/wiadomosc/Trump-pozbyl-sie-rzeczniczki-po-pieciu-dniach-Jej-konferencja-wywolala-burze-9214135.html"
+      "title": "Kreml reaguje na decyzję Trumpa. Doradca Putina: To historyczny moment - PolsatNews.pl",
+      "snippet": "Kreml reaguje na decyzję Trumpa. Doradca Putina: To historyczny moment&nbsp;&nbsp;PolsatNews.pl\"Koszmar\", \"katastrofa\". Burza w sieci po decyzji Trumpa&nbsp;&nbsp;WP WiadomościTrump zdecydował w sprawie ceł i sankcji na Rosję. \"Leży w interesie narodowym USA\"&nbsp;&nbsp;Interia W",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVm5UY0FpbEpTRUJ0dGNjQVR1RjNJRHRFeTJzLXc2MExLQ0RxV1h4Y08yck5Ld3BxNi1ZcVFPU1A4QUxYVmU4TDlvcUFJZVdFZkl0RmpyMmJXYS1ZbXpJa1NkQlZFcXYzOXpoSXZaOUYwZUZvNVBhODdwWERRNnVYeEVEZmRkdXhGNnFxOWhLWXRBWC1yNnNtSkdSUzJLQzhDRU5fYkViOW9lalRCa1FlcQ?oc=5"
     },
     {
-      "title": "Miasto traci mieszkańców, ale dają im pracę. Czy powstaną „Wielkie Kielce”?",
-      "snippet": "Radni Kielc mają w czwartek dyskutować o możliwości poszerzenia granic miasta. Według danych GUS w Kielcach i siedmiu sąsiednich gminach mieszka 278,5 tys. osób, a blisko 100 tys. poza granicami miasta. Stolica regionu pozostaje głównym miejscem pracy dla całego obszaru, ale od p",
-      "link": "https://www.bankier.pl/wiadomosc/Miasto-traci-mieszkancow-ale-daja-im-prace-Czy-powstana-Wielkie-Kielce-9212923.html"
+      "title": "Pożar zabrał dwóch strażaków. Wiceminister wskazuje prawdopodobną przyczynę - WP Wiadomości",
+      "snippet": "Pożar zabrał dwóch strażaków. Wiceminister wskazuje prawdopodobną przyczynę&nbsp;&nbsp;WP WiadomościTragiczna śmierć strażaków w Nisku. Jeden z nich miał wkrótce zostać ojcem&nbsp;&nbsp;Interia WydarzeniaTragiczny pożar w Nisku. Nowe informacje od strażaków po nocnej akcji&nbsp;&",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGRFXzJHa0lWbHF2OHRSWkRtdnJFX1I2MS1vVlRKT3dKOXVEb3pORlpMcnNnZllUSWJkT0ZReFpScGt1T0ZZYWpzakRkY1kwNTFaeDQ4eXd0Qzh4LVNGMVFRSnZWXzRPY01zVlJzTndxX3Jkd1IxNHMzMWRyaGxXRnJsM2dsZGdOT050dDFJOWpzMG1POEZudmJ5MVpVbWNQc0hnRE5kTEpNSXZCSFdSQWlicVpMNU5n?oc=5"
     },
     {
-      "title": "Koniec hossy na AI? Inwestorzy zaczynają obawiać się o zyski",
-      "snippet": "Czy jesteśmy świadkami pękania boomy na generatywną sztuczną\ninteligencję? Odpowiedzi w najnowszym odcinku „Bankier\nWeekly” pooszukiwawszy wraz z Emilem Łobodzińskim, doradcą inwestycyjnym Biura Maklerskiego\nPKO BP.",
-      "link": "https://www.bankier.pl/wiadomosc/Koniec-hossy-na-AI-Inwestorzy-zaczynaja-obawiac-sie-o-zyski-9213945.html"
+      "title": "Awantura w \"Debacie Gozdyry\". Poseł PiS zarzucił kłamstwo policji - PolsatNews.pl",
+      "snippet": "Awantura w \"Debacie Gozdyry\". Poseł PiS zarzucił kłamstwo policji&nbsp;&nbsp;PolsatNews.plAwantura w Polsacie. Poseł PiS oskarżył policję o kłamstwo&nbsp;&nbsp;WP WiadomościPolicja opublikowała film z interwencji w pobliżu TK. \"Nagranie z kamery nasobnej\"&nbsp;&nbsp;Wiadomości On",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdXZOd25SeFFlelUyVTFLOVRUTW9ubDRwREZsdjl2M3VsVlVOOThpcWhrWGJJaE5OOVdVOXQ3WDBzY1A1Xy1YVHZ5ZVNUcXZSS3lvT1ZaVnBoT3JuQzZTcVljV0lJeDFzZnJIalo3YU1aNkM5V2hRN2tvLUdYVjhaLXQ0ZU1LVFpiRWZiSnI1N0pTemV4dzk0NzlkbWZjSFB1MlVQbkgycUZlbFgtVEN1ZmpLN0Y5QmhTMFpXOFZnYw?oc=5"
     },
     {
-      "title": "\"W interesie narodowym USA\". Nagły zwrot Trumpa, jest decyzja - PolsatNews.pl",
-      "snippet": "\"W interesie narodowym USA\". Nagły zwrot Trumpa, jest decyzja&nbsp;&nbsp;PolsatNews.plTrump zdecydował w sprawie ceł i sankcji na Rosję. \"Leży w interesie narodowym USA\"&nbsp;&nbsp;Interia WydarzeniaDonald Trump zniósł część sankcji wobec Rosji. Powołał się na interes narodowy US",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYV9IUGItSlVoVVBtbW9MT1dtOTZZdGtOTTJYV3l6T0hTWjVGVkV4UlFZQURwM3k0eXdtMmpNRFExTkZlNXZnNk5RejIzZ3JWZGFoTGFheTFianR5Wm03M2tMTDZ4MElBaXVDLWZ0YWJyZ2MwU1RoaUR1TmFXWFpDMVRVVVdXUjRIWTBBOXNjVjR5RGRBOTRhd3J1a2o4WWMzc2kxeVE3OXowRXByTUdr?oc=5"
+      "title": "Media: NATO wyśle 1500 żołnierzy do Polski. Wskazano powód - PolsatNews.pl",
+      "snippet": "Media: NATO wyśle 1500 żołnierzy do Polski. Wskazano powód&nbsp;&nbsp;PolsatNews.plŻołnierze NATO przyjadą do Polski. Chodzi o możliwą misję w Ukrainie&nbsp;&nbsp;Interia WydarzeniaMedia: ponad tysiąc żołnierzy państw NATO przyjedzie do Polski na ćwiczenia. Szkolenie ma dotyczyć ",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONHY0VHBqNW14OHFUOG83MVM5R3o2ak9tcmc3TjRYYXdJWlFCQnJZcnRqT0RDVmlWdVVqb3YzTXF0R3BSVlhVeEdSa0thc3EtV2k4Unh2Zi1oTGdMRHE3VXo5aV9xbzk4aF9oN19BUlRuQXVOTjlleEs5aFJ6Snp6dnczUFd5MnJLZGF1UlBfV1ZPcXo0aFBjWU9ZRjRfbDF2NzgtTGpncWp3aU50eWZyQw?oc=5"
     },
     {
-      "title": "Tusk ostro ws. sporu o TK. Chce \"wysadzić z siodła\" Święczkowskiego - WP Wiadomości",
-      "snippet": "Tusk ostro ws. sporu o TK. Chce \"wysadzić z siodła\" Święczkowskiego&nbsp;&nbsp;WP WiadomościAdam Bodnar skomentował decyzję Tuska. \"Mam mieszane uczucia\"&nbsp;&nbsp;PolsatNews.plDonald Tusk o Trybunale Konstytucyjnym i \"otwartej wojnie\". \"Myśmy byli bardzo cierpliwi\"&nbsp;&nbsp;T",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZGNSOTJoZW1pR0RMaUdWcnFabi1rZVhXX1FibGx3OWkwejdBay1nTjJhWWVNbGMtaDZQS0lMY1BzNUhOYTB2R1Rjb25ETi0yQnYwdWZPNTRIOHA4Nk9UZlpQRFpVRHcwQzdxUUhQOTJVbUphYlhySll4amxfbmJKY0Z1c2JGNjczMHNDSmF5NjlhVmhVakxWWV8tV25wUUlVSmxWLU0zVGxOdw?oc=5"
+      "title": "Złota polska jesień. Idzie zwrot w pogodzie - WP Wiadomości",
+      "snippet": "Złota polska jesień. Idzie zwrot w pogodzie&nbsp;&nbsp;WP WiadomościPotężne antycyklony nadciągają do Polski. Pogoda wkrótce stanie się wyjątkowa&nbsp;&nbsp;OnetCiepła sobota, a potem zmiana. Prognoza na weekend nie wszędzie ucieszy&nbsp;&nbsp;GazetaW tej prognozie widać 20 stopn",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNODVmMjc5Vk9TOW9taFV3WE1VSG5ka0JsTmJERm5yRUkyeHJXTzc1NGlDTWNsdG9fOTdELU9wcUxwbmdNQlFXVzhwWTdfYzRUYjhGX2dJZGxpMlFhTnRFeDdnU3dVZmJwdEpoclFReDFfRVJ2SnVVVjRhZEs3N0pWS2RDSXdkRnpUQ1pQbG9n?oc=5"
     },
     {
-      "title": "Kierwiński zawiadamia prokuraturę w sprawie TV Republika. \"Rosnąca agresja\" - Wiadomości Onet",
-      "snippet": "Kierwiński zawiadamia prokuraturę w sprawie TV Republika. \"Rosnąca agresja\"&nbsp;&nbsp;Wiadomości OnetObelgi i atak na policjantkę - szef MSWiA zawiadamia prokuraturę ws. TV Republiki [NA POCZĄTEK DNIA]&nbsp;&nbsp;GazetaMentzen o aferze z nożem i TK: „Nie rozumiem...\"&nbsp;&nbsp;",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQVNCZXJHQjlKOVRaUDF0MFdfaVNlYmlLSktzWjZRU0s5YzlqdjZCVlQySWV1ZGVTUndZT2pXRXo3SjRQRm9OajJtZDZjNXJvamZ6WEpGRl9vcEhKd3k3eVBCUldZdWxxSGZYeExDcndjRTJ1b0ltc2hTWThsT3JwR2s2M1htM0FxNzlyVzFNV0ZGdENyYmRkVkl4ajFUdlhtb0pLY0dBajZ6cVE4TW9nblBNRF8?oc=5"
+      "title": "Tydzień temu zaginęła 13-letnia Roksana. \"Jakby rozpłynęła się w powietrzu\" - TVN24",
+      "snippet": "Tydzień temu zaginęła 13-letnia Roksana. \"Jakby rozpłynęła się w powietrzu\"&nbsp;&nbsp;TVN24Od tygodnia szukają Roksany z Warszawy. \"Jakby rozpłynęła się w powietrzu\"&nbsp;&nbsp;Wiadomości OnetTajemnicze zaginięcie 13-letniej Roksany. „Rodzice są skrajnie wycieńczeni\"&nbsp;&nbsp;",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdXhtbmEwd0lkSVZ5aUdXM3NXNnhiMHlRQTdhcmdTcWlGZUYyX3JsdU1MNUptOWVHZWQwaExHQkFCaWpHWGtxTDVPVFR2QVZUam5yZjFyb3VaVUNwQ0FMSE1zTEFqVlJObEpVX29XN0hTR09qZmRCdDRFWW43MXlZdzFiYm02MG9mMlZNWk85MHdubWZoQ0VIYTVKUHBKbEVTTUNUT3J2dGk4N0w2RjVWeGIzSnBxaDg?oc=5"
     },
     {
-      "title": "Sędziowie TK żądają przeprosin od Błaszczaka. Chodzi o słowa o Hitlerze - Fakt",
-      "snippet": "Sędziowie TK żądają przeprosin od Błaszczaka. Chodzi o słowa o Hitlerze&nbsp;&nbsp;FaktSędziowie żądają przeprosin od Mariusza Błaszczaka. Chodzi o porównanie do \"wyboru Adolfa Hitlera\"&nbsp;&nbsp;TVN24Sędziowie TK żądają przeprosin. Chodzi o słowa Błaszczaka&nbsp;&nbsp;WP Wiadom",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcy1oZjNiTExiQk85ZkNqYUZSXzlCa2NMZFpPbFlOUFkxd1l6X055OERQQ2M5Um9nM09iUEJGWU52U25DYlJINWFEdE92QXFtYmNIUGxLZGgwaE53eTlhRk9QY0NoTVZaU3FRN2lWM0xyWUtpMF93Ml9COHMtemJNZkpiUmUtQXZmOHl3RzNTV0Z1aUhqLXdfUEhza2dfWnFaUWtGUE95QjZYMW1kWUF2UFFQSENhdw?oc=5"
+      "title": "Brutalny atak w Warszawie. Kierowca Porsche pobił kobietę i uciekł - Wiadomości Onet",
+      "snippet": "Brutalny atak w Warszawie. Kierowca Porsche pobił kobietę i uciekł&nbsp;&nbsp;Wiadomości OnetKrewki kierowca Porsche i kolejne nagranie. \"Ja z Warszawy jestem\"&nbsp;&nbsp;o2Jechał po Warszawie zygzakiem, kobieta zwróciła mu uwagę. Doszło do brutalnego ataku&nbsp;&nbsp;Interia Wyd",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMlZPSFY1UG5NU1czVW90cjFuQ0tyeFBoalFlM29BbGk4S1JtbWVodXBjbWpYVWhRUkNMQW5Hcmg0MktfbjduRHk4bU8tc1BIWGU3ZU1YRkhVVFVWS0Y4N2Q2cU41VGxSZ200emxHWTNQbUEtUmlJMDVXWWxidXY3cGNNOHJELW1QZWZpMjA1emZTVC1UZGs1Z29iRW5kVk53V0xIVGl2TGVKd3lZeTQ0?oc=5"
     },
     {
-      "title": "Taka pogoda czeka nas do końca października. Nagła zmiana w prognozach [MAPY] - Wiadomości Onet",
-      "snippet": "Taka pogoda czeka nas do końca października. Nagła zmiana w prognozach [MAPY]&nbsp;&nbsp;Wiadomości OnetZłota polska jesień. Idzie zwrot w pogodzie&nbsp;&nbsp;WP WiadomościW tej prognozie widać 20 stopni Celsjusza. Potężny niż wymusi zmianę aury&nbsp;&nbsp;TVN24Znów zrobi się gor",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMjhMVVRudTF0NDk3c2RXYm9VWEFqZmVDWjZGbElrZzRyT2JjOGZWTy1mcHg2aWRYTkRTaHQ1cnlvdE9hREdRSzBxZXhQZnVPUVBDdHNZRldjWktxejV2UFFXaDhyWjhyX0hHWW56MFlzbkhweFJFbXl0VVpQOTNkQmF6dDZfdjdCcVc0MmIxUkdCNTJmVEgyM3J5TTFqeDRiY0pvWlpDVzVMcGE2UEVkeFk2MXE?oc=5"
+      "title": "Tylu Polaków cieszyłoby się z Grzegorza Brauna w rządzie. Wynik sondażu zaskakuje - Rzeczpospolita",
+      "snippet": "Tylu Polaków cieszyłoby się z Grzegorza Brauna w rządzie. Wynik sondażu zaskakuje&nbsp;&nbsp;RzeczpospolitaZobacz więcej nagłówków i punktów widzenia w aplikacji Google News",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYkk4NmMtZndpNE44SHd4OVIzWXdzOV93cGxIdzVpQlNkOGJ3TWRZOU9ndnh4WUhNclN4WnlLRjRRMEQwaWxOdkNxOGFwcWhtSV85ZFNyN3VaMXpiSGpINHFGaG9wZzlBelhNN3Z3NjVONW55cXJoTXZtWWxfREtKSUNSLWh5OFNPMC1Rek9FVEpaR1ZJU0dWaGFPb3VNRnlVcjEtZWZaLWpVRjZFX3c?oc=5"
     },
     {
-      "title": "Czy to już w ten weekend z 17 na 18 października zmieniamy na czas na zimowy? - Forsal.pl",
-      "snippet": "Czy to już w ten weekend z 17 na 18 października zmieniamy na czas na zimowy?&nbsp;&nbsp;Forsal.plZmiana czasu na zimowy 2026. Wielu Polaków czeka właśnie na tę noc&nbsp;&nbsp;Wiadomości OnetZmiana czasu na zimowy. Kierowcy ciężarówek muszą pamiętać o tachografie&nbsp;&nbsp;Inter",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSmJkTzNpcll5dld2YjZPaHV5V0ltX05FeHRVQmZxREVWV2h0V01LVURHZXh1ZVJtSjdxMmlCMU8yVGl5UDRsZDRtV2hQOXBkQk1TZjNCYjBnUXZPOWVMUTg2MzZybkpXRGdNa0RzaGo2TWVWcVYxWWZNWld2SDRkeHFuUUplNmFncXVoc1k3TWYwTURZME9LcTBaWWM1UlpSWktHNDhoaXJkWi04OUNIdGo0RV9WUUtESVY2MnRORWNjWmZHSjRjcGE5UHpRRmM?oc=5"
+      "title": "Sports Fashion Finds a Growing Female Audience",
+      "snippet": "Terez founder and CEO Zara Terez Tisch tells Bloomberg This Weekend how the growing number of women sports fans is creating new demand for fashionable team apparel and expanding opportunities for her company across professional sports.  (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-17/sports-fashion-finds-a-growing-female-audience-video"
     },
     {
-      "title": "Spór o Trybunał Konstytucyjny. Kaczyński o sytuacji wokół TK. Zaapelował do zwolenników - PolsatNews.pl",
-      "snippet": "Spór o Trybunał Konstytucyjny. Kaczyński o sytuacji wokół TK. Zaapelował do zwolenników&nbsp;&nbsp;PolsatNews.pl\"Musi być demonstracja, musi być sprzeciw\". Jarosław Kaczyński wzywa do \"ataku\"&nbsp;&nbsp;Gazeta\"Tylko PiS może rozliczyć Tuska\". Kaczyński chce wykorzystać konflikt w",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYWQ1Q0MtNldtUXBfaFRiWG9jbUVyTEJLSnJrWEtTZE5xTnpLS0djbTRxT2lXbk4xZ1Y2dG1HbFJacDU0eDRhSERmd1FIN2U4THJfNmVqQkxpZlJXOVdfQnVINVM0TVR5NUNhNEg5Q3VEZzQ1NFdZZEllRjdPNWg4RktVYzdTMHIxdUdYb0FhM04xeGFid0ZLbFJaV0did1pSVHZNMVln?oc=5"
-    },
-    {
-      "title": "Podpalenie stacji Starlink w Polsce. Rosja mogła pracować z niebezpiecznym gangiem - Interia Wydarzenia",
-      "snippet": "Podpalenie stacji Starlink w Polsce. Rosja mogła pracować z niebezpiecznym gangiem&nbsp;&nbsp;Interia WydarzeniaTurecki gang może stać za pożarem stacji Starlinków w Polsce. Ustalenia dziennikarzy&nbsp;&nbsp;TVN24Podpalenie stacji Starlink. ABW zatrzymała trzecią osobę&nbsp;&nbsp",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRlZJSng5VWV2NzVtZWdnYWZ4SXRuTy1QMEVJdWEyOFJrN21XLWZjRFc2NUNhdl9mYm9jNVNyX0I2WGNhOVBMWE5oV1dvNzBuU1BhTUkwN0FHZ2NyY0xQWXMyZzN4djdnWFRXZ0hMbl9ETzQ4Mi1HTmRVS1drWHBzQ0gyR2Q2SVpYWG9vUjV2UHdXZm5QZ0RIcWhJUFlWNW5vTTBIaFpyRTVLN3c2RGNySVltMDdickVa?oc=5"
-    },
-    {
-      "title": "Lagarde Says Sustainable Finances Key for Economic Stability",
-      "snippet": "European Central Bank President Christine Lagarde stressed the importance of sound public finances when she addressed ministers in charge of budgets from around the world in Thailand.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/lagarde-says-fiscal-sustainability-key-for-economic-stability"
-    },
-    {
-      "title": "Japan’s Takaichi to Attend APEC in China if Parliament Allows",
-      "snippet": "Japanese Prime Minister Sanae Takaichi said she plans to attend the APEC leaders summit hosted by China if parliament permits, confirming her willingness to visit amid a deep freeze of ties between the two Asian economies.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/japan-s-takaichi-to-attend-apec-in-china-if-parliament-allows"
-    },
-    {
-      "title": "Fairfax’s Watsa Bets On IDBI Payoff As India Booms, Report Says",
-      "snippet": "Canadian billionaire Prem Watsa is betting that his Fairfax Financial Holdings Ltd.’s acquisition of IDBI Bank Ltd. will pay off given India’s growth prospects, the Economic Times reported.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/fairfax-s-watsa-bets-on-idbi-payoff-as-india-booms-report-says"
-    },
-    {
-      "title": "India Halts Sugar Diversion to Ethanol After El Nino Hurts Crops",
-      "snippet": "India has ordered state-owned fuel retailers to stop procuring ethanol made from sugar and key sugarcane-based feedstocks in move that may help keep a lid on prices of the sweetener.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/india-halts-sugar-diversion-to-ethanol-after-el-nino-hurts-crops"
-    },
-    {
-      "title": "China Encourages Cinemas to Add Sports Events and Lottery Sales",
-      "snippet": "China is encouraging cinemas to screen major sporting events, host sports activities and sell sports lottery tickets as part of a drive to link moviegoing with sports consumption, according to a notice from the National Film Administration and General Administration of Sport.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/china-encourages-cinemas-to-add-sports-events-and-lottery-sales"
-    },
-    {
-      "title": "Indonesia Unveils $117 Million in Fines After MSCI Warning",
-      "snippet": "Indonesia announced about $117 million in fines tied to manipulative market practices involving three companies, hours after global index provider MSCI Inc. said it was weighing a downgrade of the country’s stock market over investability concerns.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-unveils-117-million-in-fines-after-msci-warning"
-    },
-    {
-      "title": "Vietnam Prime Minister Targets 2027 GDP Growth of at Least 10%",
-      "snippet": "Vietnam’s Prime Minister Le Minh Hung projected gross domestic product will expand at least 10% next year as he outlined the nation’s economic targets in a speech to parliament.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/vietnam-prime-minister-targets-2027-gdp-growth-of-at-least-10"
-    },
-    {
-      "title": "India’s ‘Cockroach’ Protest Leader Faces Court in Voter-List Row",
-      "snippet": "The founder of India’s “Cockroach” protest movement is due to appear in court Saturday after being taken into police custody as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
+      "title": "India Frees ‘Cockroach’ Leader As Voter-List Row Simmers",
+      "snippet": "The founder of India’s “Cockroach” protest movement was released on Saturday after being taken into police custody, his group’s legal affairs head said, as a widening fight over the country’s voter rolls keeps New Delhi on edge.",
       "link": "https://www.bloomberg.com/news/articles/2026-10-17/india-s-cockroach-protest-leader-faces-court-in-voter-list-row"
     },
     {
-      "title": "Jio’s $3.2 Billion IPO Tests Ambani Appeal With Young Indians",
-      "snippet": "For generations of Indians, Reliance Industries Ltd. was their introduction to the stock market. Founder Dhirubhai Ambani drew middle-income savers into shares, building a following that endured for decades.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/jio-s-3-2-billion-ipo-tests-ambani-appeal-with-young-indians"
+      "title": "By The Way: Headlines You May Have Missed",
+      "snippet": "Tesla's Roadster, Zuckerberg vs pint of Guinness, retirees not spending for pleasure, and AI born false memories: Join Lisa Mateo, David Gura and Christina Ruffini for a roundup of headlines you may have missed, but gotta see. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-17/by-the-way-headlines-you-may-have-missed-video"
     },
     {
-      "title": "US Gives Green Light for New Routes from Mexico City Airports",
-      "snippet": "The US will allow Mexican airlines to offer new flights into the country from Mexico City’s two biggest airports, lifting restrictions that had blocked additional routes.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-16/mexico-says-airlines-can-add-us-routes-from-mexico-city-airports"
+      "title": "Global Aid Cuts Deepen Humanitarian Strain",
+      "snippet": "International Rescue Committee President and CEO David Miliband tells Bloomberg This Weekend that cuts in US and European aid are weakening the humanitarian response as conflicts and other crises intensify around the world. Speaking with hosts David Gura and Christina Ruffini, Mi",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-17/global-aid-cuts-deepen-humanitarian-strain-video"
     },
     {
-      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-      "snippet": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
-      "link": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o"
+      "title": "Rockstar Rebuilt Itself to Make GTA VI",
+      "snippet": "Bloomberg News video game reporter Jason Schreier tells Bloomberg This Weekend how Rockstar Games nearly doubled its workforce and overhauled its production culture while building the highly anticipated Grand Theft Auto VI. Speaking with hosts Christina Ruffini and Lisa Mateo, Sc",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-17/rockstar-rebuilt-itself-to-make-gta-vi-video"
     },
     {
-      "title": "Trump waives several Russia sanctions as new US law takes effect",
-      "snippet": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
-      "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o"
+      "title": "Trump Puts New Russia Sanctions on Hold",
+      "snippet": "Bloomberg News Russia economy and government editor Anthony Halpin and White House correspondent Jeff Mason tell Bloomberg This Weekend that President Donald Trump’s waiver of new Russia sanctions could offer Moscow economic and diplomatic opportunities while adding pressure on U",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-17/trump-puts-new-russia-sanctions-on-hold-video"
+    },
+    {
+      "title": "Stellantis Plans to Hire Hundreds More Engineers in Europe, US",
+      "snippet": "Stellantis NV Chief Engineering and Technology Officer Ned Curic plans to continue hiring more engineers as the automaker rolls out dozens of new models as part of its turnaround plan.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-17/stellantis-plans-to-hire-hundreds-more-engineers-in-europe-us"
+    },
+    {
+      "title": "Oil Trader Yaoyao Liu Who Made Billions for Vitol Is Leaving",
+      "snippet": "Yaoyao Liu, whose trading in oil derivatives made billions of dollars for Vitol Group over a career marked by dramatic highs and lows, is leaving the commodities trading giant.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-17/oil-trader-yaoyao-liu-who-made-billions-for-vitol-is-leaving"
+    },
+    {
+      "title": "David Byrne Explains How Forgotten Ideas Come Back to Life",
+      "snippet": "History is littered with ideas that have been tossed aside, only for them to gain relevance at some later date. Think of Moby-Dick: forgotten in Melville’s time, but now regarded as the great American novel. Or the work of economist Hyman Minsky, which became influential a decade",
+      "link": "https://www.bloomberg.com/news/audio/2026-10-17/david-byrne-explains-how-forgotten-ideas-come-back-to-life"
+    },
+    {
+      "title": "China Warns Corrupt Officials Can’t Expect a Safe Landing",
+      "snippet": "China’s top anti-graft authorities warned that officials who engage in corruption cannot expect a “safe landing,” regardless of their rank, past contributions or whether they’ve retired, according to a commentary from the CPC Central Commission for Discipline Inspection and Natio",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-17/china-warns-corrupt-officials-can-t-expect-a-safe-landing"
     },
     {
       "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
@@ -204,14 +179,24 @@
       "link": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo"
     },
     {
-      "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
-      "snippet": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
-      "link": "https://www.bbc.co.uk/news/articles/cvx284w16z1po"
+      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "snippet": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
+      "link": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o"
     },
     {
-      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
-      "snippet": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
-      "link": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo"
+      "title": "Rare pink diamond goes on display in France 100 years after amateur heist",
+      "snippet": "The French royal jewel will be on public display for the first time since it was found hidden in an apple after a 1926 theft.",
+      "link": "https://www.bbc.co.uk/news/articles/c61m4zkx47vlo"
+    },
+    {
+      "title": "Nursery owner in China jailed for life after hundreds of children poisoned",
+      "snippet": "She and five staff members were found to have used the inedible paint in meals to make them look more appealing.",
+      "link": "https://www.bbc.co.uk/news/articles/cqe9lx54g7x9o"
+    },
+    {
+      "title": "Pope to be discharged days after lung cancer surgery",
+      "snippet": "The pontiff will give the traditional Angelus prayer and blessing in St Peter's Square on Sunday.",
+      "link": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko"
     },
     {
       "title": "Katie Zacharia leaving White House role less than five days into job",
@@ -219,84 +204,69 @@
       "link": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o"
     },
     {
+      "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
+      "snippet": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses.",
+      "link": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro"
+    },
+    {
       "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
       "snippet": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it.",
       "link": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do"
     },
     {
-      "title": "Trial of German steakhouse heiress that sparked a huge spy scandal",
-      "snippet": "For 15 months, a high-security courtroom in Hamburg has been hearing the case of Christina Block, accused of ordering the abduction of her children.",
-      "link": "https://www.bbc.co.uk/news/articles/cwvgdn3d656vo"
+      "title": "Is the world drifting into a ‘heteropolar’ era of billionaire-controlled geopolitics? - https://www.rammadhav.in/",
+      "snippet": "Is the world drifting into a ‘heteropolar’ era of billionaire-controlled geopolitics?&nbsp;&nbsp;https://www.rammadhav.in/",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxON2V2djJ3UlBKcjI1TF9pUU96NWRzemhxZW5iN05yVHdNT3NCc0J6YTFTSm1TdERjYnF6cmstOEFhUC1aOF9OS015eVV4cUNGejVWMUw1eldZVHdObnluYXliN1B2WUg3dW0xUGJiVmxRN01vMGNhc0FoNG5mSVFmN2RtVmhWM0x3RmpoUkJwdm9ZQ2tJMzl5YzVoMkN6N0FONzR3dm9ZSThrbVRDUTFnNEwyZnozUGNp?oc=5"
     },
     {
-      "title": "Pope pictured for first time since surgery and cancer diagnosis",
-      "snippet": "The pontiff was diagnosed with lung cancer after having surgery at Rome's Gemelli Hospital on Tuesday.",
-      "link": "https://www.bbc.co.uk/news/articles/cw146ej00yn7o"
+      "title": "Tajwan z amerykańskim wsparciem w technologiach dronowych",
+      "snippet": "Pomimo niechęci władz w Pekinie, Amerykanie na poważnie badają możliwości współpracy z Tajwańczykami w dziedzinie systemów bezzałogowych. Efektem tego mogą być inteligentne tajwańskie „Shahedy” oraz drony nawodne z amerykańską amunicją krążącą.",
+      "link": "https://defence24.pl/technologie/tajwan-z-amerykanskim-wsparciem-w-technologiach-dronowych"
     },
     {
-      "title": "Ram Madhav writes: Is the world drifting into a ‘heteropolar’ era of billionaire-controlled geopolitics? - The Indian Express",
-      "snippet": "Ram Madhav writes: Is the world drifting into a ‘heteropolar’ era of billionaire-controlled geopolitics?&nbsp;&nbsp;The Indian Express",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTWgzckgteFpoYTN6em1DVFlnc3ZIblZYZ3NyRFp0c2JGbjdtS1RUM2lzM2NBQXRld0k0NFYwUm53alJtc2Mwb2xyQ1l3Wi1Sc2xFNjd4YmEyU3FyanBLUm95SFFfNzZmZDhxblVGWVBoMzFxRkpxaWZFcU9BcnBBZzNsZUVrVzdwWXFMdERPTVNjR28yTEdEU1F6S1NEU2tGaGdCME4wYkU4akJjd2o4UC11NkdFb0pGaEpWRDhnYWJRQdIByAFBVV95cUxPTW5PM09oVU5CemVPVEhSazM3cnd6WkV4Yk5sQmxzUU1PWVFfOUd1NHljcDdqUElsYWRFczFoam5vWUJwZEtVbTM4dHRIMFZtSzRTYnRTMGw1d2xmQ1c0TW1UYUlTaUMydXZFS3NoNEdrWnBOZ1FaRXpFMWVaMnlUT240eV9jRzNDNkxlYzZuNzlsTjc5b3UyazhrZDNNSXdUUXJScll1SThIbjd1MGxiUTFHY21UeFpBZGRLWDBMQXEzcEtMZ3dxeQ?oc=5"
+      "title": "Jacek Siewiera wyjaśnia słowa o wojnie: To nie data inwazji",
+      "snippet": "W piątek w polskich mediach szerokim echem odbiła się wypowiedź byłego szefa BBN Jacka Siewiery, który na antenie Radia Zet stwierdził, że Polska znajduje się na progu konfrontacji z Rosją. Dzień później odniósł się do swoich słów w mediach społecznościowych.",
+      "link": "https://defence24.pl/polityka-obronna/jacek-siewiera-wyjasnia-slowa-o-wojnie-to-nie-data-inwazji"
     },
     {
-      "title": "Uratowali tureckiego żołnierza. Wyróżnienia dla członków PKW Turcja",
-      "snippet": "Żołnierze i pracownik resortu obrony narodowej z Polskiego Kontyngentu Wojskowego Turcja zostali wyróżnieni za działania, dzięki którym uratowano życie żołnierzowi tureckich sił zbrojnych. Ich postawę docenił Dowódca Operacyjny Rodzajów Sił Zbrojnych.",
-      "link": "https://defence24.pl/sily-zbrojne/uratowali-tureckiego-zolnierza-wyroznienia-dla-czlonkow-pkw-turcja"
+      "title": "Rosja zamienia T-72 w pancerne roboty. Tak powstaje Szturm [ANALIZA]",
+      "snippet": "W trakcie ćwiczeń Centrum-2026 wojska lądowe Federacji Rosyjskiej zaprezentowały oficjalnie wiele nowych rozwiązań w zakresie opancerzonych wozów bojowych. Jednym z nich jest TSzRK Szturm.",
+      "link": "https://defence24.pl/przemysl/rosja-zamienia-t-72-w-pancerne-roboty-tak-powstaje-szturm-analiza"
     },
     {
-      "title": "Rewizja ustawy Grahama. Trump uchyla sankcje wobec Rosji",
-      "snippet": "Prezydent USA Donald Trump poinformował o uchyleniu stosowania niektórych sankcji i ceł wobec Rosji wynikających z tzw. ustawy Lindseya Grahama, którą podpisał we wrześniu. Amerykański przywódca powołał się przy tym na interes narodowy USA.",
-      "link": "https://defence24.pl/geopolityka/rewizja-ustawy-grahama-trump-uchyla-sankcje-wobec-rosji"
+      "title": "Wojska Koalicji Chętnych pojawią się wkrótce w Polsce",
+      "snippet": "Co najmniej 1500 żołnierzy z Wielkiej Brytanii, Niemiec oraz Francji pojawi się w najbliższych tygodniach w Polsce. Wojskowi mają uczestniczyć w listopadzie w ćwiczeniach wojskowych.",
+      "link": "https://defence24.pl/polityka-obronna/wojska-koalicji-chetnych-pojawia-sie-wkrotce-w-polsce"
     },
     {
-      "title": "Sześć osób, europaleta i napęd 4×4. Wojsko szuka samochodów",
-      "snippet": "Przewóz sześciu osób wraz z ładunkiem, napęd na cztery koła i minimum 700 km zasięgu przy pełnym obciążeniu — takich samochodów dostawczych poszukuje 3. Regionalna Baza Logistyczna. Wojsko ponawia przetarg po unieważnieniu poprzedniego postępowania z powodu braku środków. Dostawy",
-      "link": "https://defence24.pl/przemysl/szesc-osob-europaleta-i-naped-44-wojsko-szuka-samochodow"
+      "title": "Nowy model modernizacji USA: Od biurokracji do autonomii [ANALIZA]",
+      "snippet": "Podczas targów AUSA 2026 w Waszyngtonie wyraźnie widać rosnące zainteresowanie technologiami bezzałogowymi i autonomizacją współczesnego pola walki. Producenci prezentują rozwiązania, które mają zwiększyć możliwości rozpoznania, rażenia i wsparcia logistycznego, a jednocześnie og",
+      "link": "https://defence24.pl/przemysl/nowy-model-modernizacji-usa-od-biurokracji-do-autonomii-analiza"
     },
     {
-      "title": "Samolot norweskich sił powietrznych nad Polską",
-      "snippet": "W piątek, 16 października, nad Polską pojawił się norweski samolot Lockheed Martin C-130J Super Hercules. Wystartował z bazy lotniczej na lotnisku Oslo Gardermoen i skierował się na lotnisko Rzeszów-Jasionka.",
-      "link": "https://defence24.pl/sily-zbrojne/samolot-norweskich-sil-powietrznych-nad-polska"
+      "title": "USA znosi sankcje. Rosja chwali Trumpa",
+      "snippet": "„Uchylenie przez prezydenta USA Donalda Trumpa stosowania niektórych sankcji przeciwko Rosji jest »historycznym momentem«” – napisał w sobotę na platformie X Kiriłł Dmitrijew, doradca rosyjskiego przywódcy Władimira Putina.",
+      "link": "https://defence24.pl/geopolityka/usa-znosi-sankcje-rosja-chwali-trumpa"
     },
     {
-      "title": "Możliwy atak Rosji na NATO? Czeski generał nie ma wątpliwości",
-      "snippet": "W czwartek, 15 października, czeski generał Miroslav Hlaváč, w rozmowie opublikowanej na portalu „České noviny”, wyraził obawę, że Rosja może planować ograniczony atak na część terytorium jednego z państw członkowskich NATO, żeby przetestować jedność Sojuszu. Podobne obawy wyraża",
-      "link": "https://defence24.pl/geopolityka/mozliwy-atak-rosji-na-nato-czeski-general-nie-ma-watpliwosci"
+      "title": "Czechy anulowały pancerny przetarg. 8 lat i „nadzwyczajne okoliczności”",
+      "snippet": "Czeskie Ministerstwo Obrony oficjalnie unieważniło przetarg na zakup 185 kołowych pojazdów opancerzonych ze zdolnościami ochrony przeciwminowej. Komentatorzy zwracają uwagę na fakt, że pojazdu poszukiwano przez osiem lat.",
+      "link": "https://defence24.pl/przemysl/czechy-anulowaly-pancerny-przetarg-8-lat-i-nadzwyczajne-okolicznosci"
     },
     {
-      "title": "„Każdy kraj może stać się ofiarą”. Ławrow o wojnie na Ukrainie i NATO",
-      "snippet": "W piątek, 16 października, podczas wystąpienia na sesji plenarnej konferencji poświęconej bezpieczeństwu w Azji Centralnej i Afganistanie, Siergiej Ławrow stwierdził, że „każdy kraj może stać się ofiarą kolorowych rewolucji organizowanych przez Zachód”. Władze Ukrainy natomiast o",
-      "link": "https://defence24.pl/geopolityka/kazdy-kraj-moze-stac-sie-ofiara-lawrow-o-wojnie-na-ukrainie-i-nato"
+      "title": "Co z rosyjskim lotnictwem po wojnie? Te samoloty mogą pójść na żyletki",
+      "snippet": "Niezależnie od tego kiedy i jak skończy się trwająca wojna, Rosja będzie musiała po niej wycofać z użytku kilka typów samolotów bojowych. Choć wiele z nich już teraz okazało się nieprzydatnych, to będzie to oznaczało duże redukcje potencjału bojowego. Przynajmniej tego, który jes",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/co-z-rosyjskim-lotnictwem-po-wojnie-te-samoloty-moga-pojsc-na-zyletki"
     },
     {
-      "title": "„Prewencyjne ataki na Białoruś\". Jest reakcja na plan NATO w przypadku wojny",
-      "snippet": "W środę, 14 października, rzecznik białoruskiego MSZ wystosował oświadczenie, w którym potępił plany NATO dotyczące odpowiedzi Sojuszu na ewentualny atak ze strony Białorusi i Rosji. Stwierdził, że doktryna wojskowa Białorusi ma charakter pokojowy, a plany NATO są nieuzasadnione.",
-      "link": "https://defence24.pl/polityka-obronna/prewencyjne-ataki-na-bialorus-jest-reakcja-na-plan-nato-w-przypadku-wojny"
-    },
-    {
-      "title": "Powiedział ile czasu zostało Polsce. Były szef BBN mówi o wojnie i wskazuje termin",
-      "snippet": "W piątek, 16 października, były szef BBN, Jacek Siewiera, był gościem na antenie Radia ZET. W rozmowie z Marcinem Zaborskim wskazał, że Polsce zostało niewiele czasu na przygotowania do konfrontacji z Rosją, która może mieć swój „zasadniczy akord” już tej zimy. Wspomniał także o ",
-      "link": "https://defence24.pl/polityka-obronna/powiedzial-ile-czasu-zostalo-polsce-byly-szef-bbn-mowi-o-wojnie-i-wskazuje-termin"
-    },
-    {
-      "title": "Samoloty tankowania powietrznego wkrótce? Umowa „na dniach”",
-      "snippet": "Jest szansa, że do końca tego roku Polska zamówi pełną planowaną flotę samolotów tankowania powietrznego. Negocjacje trwają a wojsko… trzyma kciuki.",
-      "link": "https://defence24.pl/sily-zbrojne/samoloty-tankowania-powietrznego-wkrotce-umowa-na-dniach"
-    },
-    {
-      "title": "Szczegóły planu zwycięstwa NATO nad Rosją | Defence24Week #172",
-      "snippet": "W najnowszym przeglądzie tygodnia Defence24 zajmujemy się dwiema kwestiami. Omawiamy przemówienie generała Grynkiewicha, dowódcy sił Sojuszu Połnocnoatlantyckiego w Europie i zastanawiamy się nad ostatnimi zmianami w stosunkach pomiędzy Stanami Zjednoczonymi a Ukrainą.",
-      "link": "https://defence24.pl/polityka-obronna/szczegoly-planu-zwyciestwa-nato-nad-rosja-defence24week-172"
+      "title": "Szwedzi szykują się do obrony Rzeszowa. Ostre strzelanie z Niemcami",
+      "snippet": "Szwedzkie siły zbrojne przeprowadziły ćwiczebne strzelanie pociskiem MIM-104 Patriot. Jest to o tyle istotne, że był to krok w kierunku przygotowania do rozmieszczenia ich w rejonie Rzeszowa, w ramach zintegrowanego systemu obrony powietrznej NATO.",
+      "link": "https://defence24.pl/sily-zbrojne/szwedzi-szykuja-sie-do-obrony-rzeszowa-ostre-strzelanie-z-niemcami"
     },
     {
       "title": "11 Conspiracy Theories That (Gasp!) Turned Out to Be True - HowStuffWorks",
       "snippet": "11 Conspiracy Theories That (Gasp!) Turned Out to Be True&nbsp;&nbsp;HowStuffWorks",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkVCTThjQ29sTFlOdWs1c2phTTdiMlFpYlRGZ0VCZGctMmJDX0E1TXIzVzZKYzI2S0QzUndwMHA3aGx2R3B4eURXM3lzcnpTZUhpOFBtWDJtaWZYd3NsYjRGTUUzWVU4U0l6U2FpS2FHQTBhbFhuM012eWNwckZTSTQxeWh4UW5JeV9idTI1RnZ5Qk82RC1QVHRJMjdPLW94d1FsaTZ5Tk5ENVZ1T2VTRkRrYw?oc=5"
-    },
-    {
-      "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
-      "snippet": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses.",
-      "link": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro"
     },
     {
       "title": "What we learned from heated US midterm Senate debates",
@@ -317,11 +287,6 @@
       "title": "Canada PM warns 'stakes are high' as Alberta separation vote nears",
       "snippet": "The Canadian prime minister is in Alberta for two days to make a final push for unity ahead of Monday’s separation referendum.",
       "link": "https://www.bbc.co.uk/news/articles/c9rky2vrr5vzo"
-    },
-    {
-      "title": "Why is Alberta voting to separate from Canada, and how likely is it to happen?",
-      "snippet": "The oil-rich province will decide on Monday whether to stay part of Canada or trigger a binding independence referendum.",
-      "link": "https://www.bbc.co.uk/news/articles/c809jg1gj9yo"
     }
   ]
 }
