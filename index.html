@@ -128,9 +128,6 @@
     #bottom-nav { display: none; }
   }
 
-  .react-btn { transition: .15s; cursor: pointer; }
-  .react-btn.active { color: #f59e0b !important; border-color: #f59e0b !important; background: rgba(245,158,11,0.1); }
-
   #scroll-progress {
     position: fixed; top: 0; left: 0; height: 3px;
     background: linear-gradient(90deg, #f59e0b, #d97706);
@@ -175,12 +172,12 @@
     <div class="p-4 text-sm">
       <div class="mb-2 text-xs font-black uppercase tracking-wider text-amber-500">Skróty i wskazówki</div>
       <ul class="space-y-1.5 text-sec text-[13px]">
-        <li><kbd class="rounded bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 text-[11px] font-bold text-main">?</kbd> — pokaż / ukryj tę pomoc</li>
+        <li><kbd class="rounded bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 text-[11px] font-bold text-main">?</kbd> — pokaż / ukryj pomoc</li>
         <li><kbd class="rounded bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 text-[11px] font-bold text-main">Esc</kbd> — wyczyść wyszukiwanie</li>
         <li><span class="font-semibold text-main">□</span> — zaznacz jako przeczytane</li>
         <li><span class="font-semibold text-main">↗</span> — udostępnij</li>
         <li><span class="font-semibold text-main">☾</span> — tryb jasny / ciemny</li>
-        <li class="pt-1 text-mute">Pociągnij w dół, aby odświeżyć</li>
+        <li class="pt-1 text-mute">Pociągnij w dół na telefonie, aby odświeżyć</li>
       </ul>
     </div>
   </div>
@@ -234,7 +231,7 @@
   </nav>
 
   <div id="load-error" class="mb-4 hidden rounded-2xl border border-red-300 bg-red-50 p-4 text-sm text-red-800 dark:border-red-900 dark:bg-red-950/40 dark:text-red-200">
-    <div class="font-bold">Nie udało się pobrać wydania</div>
+    <div class="font-bold">Nie udało się pobrać wydań</div>
     <p class="mt-1 text-[13px] opacity-90">Sprawdź połączenie i odśwież stronę.</p>
     <button onclick="location.reload()" class="mt-3 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white">Odśwież</button>
   </div>
@@ -248,7 +245,7 @@
       <div id="edition-time" class="text-right text-[10px] font-semibold text-sec"></div>
     </div>
     <div id="headline-list" class="rounded-2xl border overflow-hidden surface" style="border-color: var(--border);">
-      <div class="p-6 text-center text-sm text-sec">Ładowanie…</div>
+      <div class="p-6 text-center text-sm text-sec">Ładowanie wiadomości…</div>
     </div>
     <div id="fun-preview" class="mt-6 hidden">
       <div class="mb-2.5 flex items-center justify-between">
@@ -320,12 +317,9 @@
     <div id="disclaimer" class="mt-4 hidden rounded-2xl border p-5 text-left" style="background: var(--bg-muted); border-color: var(--border);">
       <h3 class="text-sm font-black text-main mb-3">Ważne informacje</h3>
       <ul class="space-y-2.5 text-xs leading-relaxed text-sec">
-        <li><span class="font-bold text-main">Czym jest ta strona?</span> Świat w Minutę to krótki przegląd dnia: geopolityka, gospodarka, obronność i technologia. Cel to szybki, czytelny skrót — nie pełna relacja dziennikarska.</li>
-        <li><span class="font-bold text-main">Skąd biorą się treści?</span> Materiały są wybierane z publicznych źródeł (m.in. serwisy informacyjne i kanały RSS), a następnie skracane i redagowane z pomocą AI.</li>
-        <li><span class="font-bold text-main">AI może się mylić.</span> Podsumowania bywają uproszczone, niekompletne albo nieprecyzyjne. Emocjonalny ton nagłówków i komentarzy to świadoma forma formatu, nie wyrok ani rekomendacja.</li>
-        <li><span class="font-bold text-main">Sprawdzaj źródła.</span> Przy każdym materiale jest link do oryginału. Zanim wyciągniesz wnioski albo udostępnisz treść dalej — zajrzyj do źródła.</li>
-        <li><span class="font-bold text-main">Niezależność.</span> Strona nie jest powiązana z partiami, redakcjami ani instytucjami, których dotyczyć mogą publikowane tematy.</li>
-        <li><span class="font-bold text-main">Kontakt / social.</span> Instagram: <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="font-bold text-amber-600 hover:underline">@swiatwminute</a></li>
+        <li><span class="font-bold text-main">Czym jest ta strona?</span> Świat w Minutę to skrót dnia: geopolityka, gospodarka, obronność i technologia.</li>
+        <li><span class="font-bold text-main">Skąd biorą się treści?</span> Materiały są agregowane z publicznych źródeł RSS i redagowane z pomocą modeli AI.</li>
+        <li><span class="font-bold text-main">Sprawdzaj źródła.</span> Przy każdym materiale znajduje się bezpośredni odnośnik do oryginalnego artykułu prasowego.</li>
       </ul>
     </div>
     <div class="mt-5 flex flex-col items-center gap-3 text-[11px] text-mute">
@@ -400,23 +394,15 @@ function getTitle(v) {
 
 function pickEmoji(title, cat) {
   const t = (title + ' ' + (cat || '')).toLowerCase();
-  if (/trump|biden|white house|prezydent|wybor|usa|ameryk/.test(t)) return '🇺🇸';
-  if (/china|chiny|xi|pekin|beijing/.test(t)) return '🇨🇳';
-  if (/russia|rosja|putin|moskwa|moscow|kreml/.test(t)) return '🇷🇺';
-  if (/ukraine|ukraina|kijów|kyiv|zelenski|zełeński/.test(t)) return '🇺🇦';
-  if (/israel|gaza|hamas|palestyn/.test(t)) return '🇮🇱';
-  if (/nato|wojna|atak|missile|rakiet|obron|wojsk|army|military|żołnier/.test(t)) return '🛡️';
-  if (/oil|ropa|paliw|diesel|gaz|energy|energetyk|benzyn/.test(t)) return '⛽️';
-  if (/ai|sztuczn|chatgpt|openai|gemini|claude|sztuczna inteligencja/.test(t)) return '🤖';
-  if (/bank|inflacj|gospodark|rynek|market|stock|dollar|euro|walut|finanse|podatek|pit/.test(t)) return '💰';
-  if (/tech|apple|google|microsoft|meta|tesla|elon|musk|komputer|software/.test(t)) return '💻';
-  if (/climate|klimat|pogod|flood|powódź|hurricane|katastrof/.test(t)) return '🌍';
-  if (/health|zdrow|covid|szczep|hospital|szpital|wirus/.test(t)) return '🏥';
-  if (/sport|piłk|olympi|mecz|liga/.test(t)) return '⚽';
-  if (/kosmos|nasa|space|rakiet|satelit/.test(t)) return '🚀';
-  if (/polska|warszawa|polski|rp\b/.test(t)) return '🇵🇱';
-  if (/ue\b|unia europejska|bruksela|europe/.test(t)) return '🇪🇺';
-  if (/wyciek|dane|hack|cyber|bezpieczeństw/.test(t)) return '🕵️';
+  if (/trump|biden|usa|ameryk/.test(t)) return '🇺🇸';
+  if (/china|chiny|pekin/.test(t)) return '🇨🇳';
+  if (/russia|rosja|putin|moskwa/.test(t)) return '🇷🇺';
+  if (/ukraine|ukraina|kijów/.test(t)) return '🇺🇦';
+  if (/nato|wojna|atak|missile|rakiet|obron|wojsk|armia/.test(t)) return '🛡️';
+  if (/oil|ropa|paliw|gaz|energetyk/.test(t)) return '⛽️';
+  if (/ai|sztuczn|chatgpt|openai|gemini/.test(t)) return '🤖';
+  if (/bank|inflacj|gospodark|rynek|finanse|podatek/.test(t)) return '💰';
+  if (/polska|warszawa|polski/.test(t)) return '🇵🇱';
   return '📰';
 }
 
@@ -510,28 +496,12 @@ function imageOf(x) {
     x.cover, x.cover_url, x.coverUrl,
     x.picture, x.pic, x.media_url, x.mediaUrl
   ];
-  const isFallback = (u) => {
-    const s = String(u || '');
-    return /photo-1534447677768|photo-1451187580459|photo-1469474968028|unsplash\.com\/photo-/.test(s)
-      && /auto=format/.test(s);
-  };
-  const urls = [];
   for (const c of primary) {
-    if (typeof c === 'string' && c.trim().startsWith('http')) urls.push(c.trim().replace(/&amp;/g, '&'));
-  }
-  if (typeof x.media === 'string' && x.media.trim().startsWith('http')) urls.push(x.media.trim().replace(/&amp;/g, '&'));
-  if (x.media && typeof x.media === 'object') {
-    const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
-    if (typeof m === 'string' && m.trim().startsWith('http')) urls.push(m.trim().replace(/&amp;/g, '&'));
-  }
-  if (Array.isArray(x.images)) {
-    for (const first of x.images) {
-      if (typeof first === 'string' && first.startsWith('http')) urls.push(first.replace(/&amp;/g, '&'));
-      else if (first && (first.url || first.src)) urls.push(first.url || first.src);
+    if (typeof c === 'string' && c.trim().startsWith('http')) {
+      return c.trim().replace(/&amp;/g, '&');
     }
   }
-  const real = urls.find(u => u && !isFallback(u));
-  return real || urls[0] || '';
+  return '';
 }
 
 function itemDateRaw(x) {
@@ -571,15 +541,10 @@ function parseFlexibleDate(val) {
     lipca:6, sierpnia:7, września:8, pazdziernika:9, października:9,
     listopada:10, grudnia:11
   };
-  const monthsEn = {
-    january:0, february:1, march:2, april:3, may:4, june:5,
-    july:6, august:7, september:8, october:9, november:10, december:11
-  };
   m = s.match(/(\d{1,2})\s+([A-Za-ząćęłńóśźż]+)\s+(\d{4})/i);
   if (m) {
     const mon = m[2].toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
     let mi = monthsPl[m[2].toLowerCase()];
-    if (mi === undefined) mi = monthsEn[mon];
     if (mi === undefined) {
       for (const [k, v] of Object.entries(monthsPl)) {
         if (k.normalize('NFD').replace(/\p{M}/gu, '') === mon) { mi = v; break; }
@@ -601,13 +566,10 @@ function formatItemDate(x) {
   if (d) {
     return d.toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
   }
-  const s = String(raw);
+  const s = String(raw).trim();
   const m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
   if (m) return `${m[3].padStart(2,'0')}.${m[2].padStart(2,'0')}.${m[1]}`;
-  if (s.toLowerCase() === 'dziś' || s.toLowerCase() === 'dzis') {
-    return new Date().toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
-  }
-  return s.replace(/_/g, ' ').slice(0, 24);
+  return s.slice(0, 10);
 }
 
 function stampEdition(items, payload) {
@@ -774,7 +736,7 @@ function card(item) {
         </div>
       </div>
       
-      <!-- Informacja skąd pochodzi zdjęcie -->
+      <!-- Podpis zdjęcia -->
       ${imgCredit ? `
       <div class="px-3.5 pt-2 pb-0.5 text-[10px] text-mute flex items-center gap-1 border-b" style="border-color: var(--border);">
         <span>${escapeHtml(imgCredit)}</span>
@@ -789,7 +751,7 @@ function card(item) {
           <div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div>
         </div>` : ''}
         
-        <!-- Dolny pasek: strona skąd pochodzi news + data + akcje -->
+        <!-- Dolny pasek karty -->
         <div class="mt-auto pt-3 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
           <div class="flex items-center gap-1.5 text-xs text-sec truncate">
             <span class="font-bold text-main">${escapeHtml(publisher)}</span>
@@ -957,6 +919,7 @@ function scoreWeekItem(item) {
   if (imageOf(item)) s += 2;
   if (item.title && String(item.title).length > 20) s += 1;
   if (item.category || item.cat) s += 1;
+  if (!item.text || item.title) s += 1;
   return s;
 }
 
@@ -1298,13 +1261,20 @@ async function loadWidgets() {
   try {
     const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw');
     const d = await w.json();
-    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
+    if (d && d.current) {
+      $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
+    }
   } catch(e){}
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json');
     const d = await r.json();
-    const rates = d[0].rates;
-    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid \vert{}\vert{} 0).toFixed(2);$('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
+    if (Array.isArray(d) && d[0] && Array.isArray(d[0].rates)) {
+      const rates = d[0].rates;
+      const eur = rates.find(x => x.code === 'EUR');
+      const usd = rates.find(x => x.code === 'USD');
+      if (eur) $('eur-rate').textContent = Number(eur.mid).toFixed(2);
+      if (usd) $('usd-rate').textContent = Number(usd.mid).toFixed(2);
+    }
   } catch(e){}
 }
 
