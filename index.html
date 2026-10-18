@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
 <head>
@@ -60,14 +61,6 @@
     --text-secondary: #64748b;
     --text-muted: #94a3b8;
     --header-bg: rgba(255,255,255,0.95);
-
-    /* Palety kategorii dla ramek komentarzy i źródeł */
-    --c-econ-bg: #ecfdf5; --c-econ-txt: #047857; --c-econ-brd: #a7f3d0;
-    --c-pol-bg: #fef2f2;  --c-pol-txt: #b91c1c;  --c-pol-brd: #fecaca;
-    --c-geo-bg: #eff6ff;  --c-geo-txt: #1d4ed8;  --c-geo-brd: #bfdbfe;
-    --c-def-bg: #f1f5f9;  --c-def-txt: #334155;  --c-def-brd: #cbd5e1;
-    --c-tech-bg: #f5f3ff; --c-tech-txt: #6d28d9; --c-tech-brd: #ddd6fe;
-    --c-fun-bg: #fdf4ff;  --c-fun-txt: #a21caf;  --c-fun-brd: #f5d0fe;
   }
   .dark {
     --bg: #020617;
@@ -78,13 +71,6 @@
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
     --header-bg: rgba(2,6,23,0.95);
-
-    --c-econ-bg: rgba(6, 78, 59, 0.4);   --c-econ-txt: #6ee7b7; --c-econ-brd: rgba(16, 185, 129, 0.3);
-    --c-pol-bg: rgba(127, 29, 29, 0.4);  --c-pol-txt: #fca5a5;  --c-pol-brd: rgba(239, 68, 68, 0.3);
-    --c-geo-bg: rgba(30, 58, 138, 0.4);  --c-geo-txt: #93c5fd;  --c-geo-brd: rgba(59, 130, 246, 0.3);
-    --c-def-bg: rgba(30, 41, 59, 0.7);   --c-def-txt: #cbd5e1;  --c-def-brd: rgba(148, 163, 184, 0.3);
-    --c-tech-bg: rgba(76, 29, 149, 0.4); --c-tech-txt: #c4b5fd; --c-tech-brd: rgba(139, 92, 246, 0.3);
-    --c-fun-bg: rgba(112, 26, 117, 0.4); --c-fun-txt: #f0abfc;  --c-fun-brd: rgba(217, 70, 239, 0.3);
   }
   html, body {
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -119,12 +105,6 @@
   #help-panel { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
   #help-panel.open { max-height: 280px; }
 
-  .photo-credit {
-    padding: 8px 14px; font-size: 11px; color: var(--text-sec);
-    border-bottom: 1px solid var(--border); background: var(--bg-card);
-  }
-  .photo-credit a { text-decoration: underline; font-weight: 600; }
-
   #install-btn {
     display: none; align-items: center; gap: 6px; border-radius: 12px;
     padding: 8px 14px; font-size: 12px; font-weight: 700;
@@ -132,6 +112,33 @@
     border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(245,158,11,.35);
   }
   #install-btn.show { display: inline-flex; }
+
+  #newsletter-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px);
+    z-index: 100; display: flex; align-items: center; justify-content: center;
+    padding: 16px; opacity: 0; pointer-events: none; transition: opacity .3s;
+  }
+  #newsletter-overlay.show { opacity: 1; pointer-events: auto; }
+  #newsletter-popup {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
+    max-width: 380px; width: 100%; padding: 24px; position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  }
+  #newsletter-close {
+    position: absolute; top: 12px; right: 14px; background: none; border: none;
+    font-size: 20px; color: var(--text-muted); cursor: pointer;
+  }
+  #newsletter-email {
+    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--bg-muted); color: var(--text); font-size: 14px; outline: none; margin-bottom: 10px;
+  }
+  #newsletter-submit {
+    padding: 12px; border-radius: 12px; background: #0f172a; color: #fff;
+    font-weight: 700; font-size: 14px; border: none; cursor: pointer; width: 100%;
+  }
+  .dark #newsletter-submit { background: #f8fafc; color: #0f172a; }
+  #newsletter-success { display: none; text-align: center; }
+  #newsletter-success.show { display: block; }
 
   #bottom-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
@@ -487,65 +494,9 @@ function getComment(x) { return x.comment || x.why || x.whyImportant || x.import
 function sourceName(x) { return x.source_name || x.sourceName || x.source || ''; }
 function sourceLink(x) { return x.link || x.url || '#'; }
 function category(x) { return x.category || x.cat || 'Wiadomości'; }
-
-/* Wyciąganie ładnej nazwy wydawcy ze źródła newsa */
-function formatSourcePublisher(item) {
-  const explicit = sourceName(item);
-  if (explicit && explicit.trim()) return explicit.trim();
-  const url = sourceLink(item);
-  if (!url || url === '#' || url.startsWith('/')) return 'Świat w Minutę';
-  try {
-    const host = new URL(url).hostname.replace(/^www\./, '');
-    const map = {
-      'money.pl': 'Money.pl',
-      'businessinsider.com.pl': 'Business Insider',
-      'bankier.pl': 'Bankier.pl',
-      'wnp.pl': 'WNP.pl',
-      'defence24.pl': 'Defence24',
-      'rp.pl': 'Rzeczpospolita',
-      'reuters.com': 'Reuters',
-      'bloomberg.com': 'Bloomberg',
-      'bbc.com': 'BBC News',
-      'bbc.co.uk': 'BBC News',
-      'upi.com': 'UPI News',
-      'mentalfloss.com': 'Mental Floss',
-      'sciencenews.org': 'Science News',
-      'tvn24.pl': 'TVN24',
-      'onet.pl': 'Onet',
-      'wp.pl': 'Wirtualna Polska',
-      'interia.pl': 'Interia',
-      'pap.pl': 'PAP'
-    };
-    if (map[host]) return map[host];
-    return host.charAt(0).toUpperCase() + host.slice(1);
-  } catch(e) {
-    return 'Źródło';
-  }
-}
-
-/* Podpis skąd pochodzi zdjęcie */
-function formatImageCredit(imgUrl) {
-  if (!imgUrl || !imgUrl.startsWith('http')) return '';
-  const low = imgUrl.toLowerCase();
-  if (low.includes('pexels.com')) {
-    return 'Zdjęcie ilustracyjne. Foto: Pexels';
-  }
-  if (low.includes('unsplash.com')) {
-    return 'Zdjęcie ilustracyjne. Foto: Unsplash';
-  }
-  if (low.includes('minutemediacdn.com')) {
-    return 'Foto: Mental Floss / Getty Images';
-  }
-  try {
-    const h = new URL(imgUrl).hostname.replace(/^www\./, '');
-    return `Foto: ${h}`;
-  } catch(e) {
-    return 'Foto: materiały prasowe';
-  }
-}
-
 function imageOf(x) {
   if (!x || typeof x !== 'object') return '';
+  // Prefer dedicated fields; source_image_url often = article OG (najlepsze)
   const primary = [
     x.source_image_url, x.sourceImageUrl,
     x.image_url, x.imageUrl, x.image,
@@ -560,21 +511,20 @@ function imageOf(x) {
   };
   const urls = [];
   for (const c of primary) {
-    if (typeof c === 'string' && c.trim().startsWith('http')) {
-      urls.push(c.trim().replace(/&amp;/g, '&'));
-    }
+    if (typeof c === 'string' && c.trim().startsWith('http')) urls.push(c.trim());
   }
-  if (typeof x.media === 'string' && x.media.trim().startsWith('http')) urls.push(x.media.trim().replace(/&amp;/g, '&'));
+  if (typeof x.media === 'string' && x.media.trim().startsWith('http')) urls.push(x.media.trim());
   if (x.media && typeof x.media === 'object') {
     const m = x.media.url || x.media.src || x.media.image || x.media.image_url;
-    if (typeof m === 'string' && m.trim().startsWith('http')) urls.push(m.trim().replace(/&amp;/g, '&'));
+    if (typeof m === 'string' && m.trim().startsWith('http')) urls.push(m.trim());
   }
   if (Array.isArray(x.images)) {
     for (const first of x.images) {
-      if (typeof first === 'string' && first.startsWith('http')) urls.push(first.replace(/&amp;/g, '&'));
+      if (typeof first === 'string' && first.startsWith('http')) urls.push(first);
       else if (first && (first.url || first.src)) urls.push(first.url || first.src);
     }
   }
+  // najpierw nie-fallback, potem cokolwiek
   const real = urls.find(u => u && !isFallback(u));
   return real || urls[0] || '';
 }
@@ -593,6 +543,7 @@ function itemDateRaw(x) {
     }
     const d = new Date(c);
     if (!isNaN(d.getTime())) return d;
+    // "2026-10-10" or "10.10.2026" as label
     if (typeof c === 'string' && c.trim().length >= 6) return c.trim();
   }
   return null;
@@ -606,11 +557,13 @@ function parseFlexibleDate(val) {
     return isNaN(d.getTime()) ? null : d;
   }
   const s = String(val).trim();
+  // 2026-10-11_07:01 / 2026-10-11
   let m = s.match(/(\d{4})[_-](\d{1,2})[_-](\d{1,2})/);
   if (m) {
     const d = new Date(+m[1], +m[2] - 1, +m[3]);
     if (!isNaN(d.getTime())) return d;
   }
+  // 11 października 2026 / 07 September 2026
   const monthsPl = {
     stycznia:0, lutego:1, marca:2, kwietnia:3, maja:4, czerwca:5,
     lipca:6, sierpnia:7, września:8, pazdziernika:9, października:9,
@@ -622,10 +575,12 @@ function parseFlexibleDate(val) {
   };
   m = s.match(/(\d{1,2})\s+([A-Za-ząćęłńóśźż]+)\s+(\d{4})/i);
   if (m) {
-    const mon = m[2].toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
+    const mon = m[2].toLowerCase()
+      .normalize('NFD').replace(/\p{M}/gu, ''); // strip diacritics fallback
     let mi = monthsPl[m[2].toLowerCase()];
     if (mi === undefined) mi = monthsEn[mon];
     if (mi === undefined) {
+      // try without diacritics on pl keys
       for (const [k, v] of Object.entries(monthsPl)) {
         if (k.normalize('NFD').replace(/\p{M}/gu, '') === mon) { mi = v; break; }
       }
@@ -655,6 +610,7 @@ function formatItemDate(x) {
   return s.replace(/_/g, ' ').slice(0, 28);
 }
 
+/** Dokleja datę wydania do każdego itemu (w JSON data nie ma dat per-item) */
 function stampEdition(items, payload) {
   const list = Array.isArray(items) ? items : [];
   const meta = (payload && typeof payload === 'object' && !Array.isArray(payload)) ? payload : {};
@@ -695,6 +651,7 @@ function proxiedImg(url) {
   if (!url || url === '#') return '';
   try {
     const abs = new URL(url, location.href).href;
+    // weserv: bez referrera, omija część blokad
     return 'https://images.weserv.nl/?url=' + encodeURIComponent(abs.replace(/^https?:\/\//, '')) + '&w=800&fit=cover&output=webp';
   } catch (e) {
     return url;
@@ -707,6 +664,7 @@ function imgTag(src, extraClass) {
     return `<div class="flex aspect-video items-center justify-center text-3xl ${extraClass || ''}">📰</div>`;
   }
   const proxy = proxiedImg(u);
+  // 1. próba oryginału (referrerpolicy no-referrer), 2. proxy, 3. placeholder
   return `<img src="${escapeHtml(u)}" data-proxy="${escapeHtml(proxy)}" data-tried="0" class="card-img w-full ${extraClass || ''}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="window.__imgFallback && window.__imgFallback(this)">`;
 }
 
@@ -725,6 +683,7 @@ window.__imgFallback = function (el) {
   const parent = el.parentElement;
   if (parent) parent.innerHTML = '<div class="flex aspect-video items-center justify-center text-3xl">📰</div>';
 };
+
 
 async function shareItem(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
@@ -757,6 +716,7 @@ async function shareItem(item, ev) {
   }
 }
 
+/** Udostępnij / skopiuj link do oryginalnego źródła */
 async function shareSource(item, ev) {
   if (ev) { ev.preventDefault(); ev.stopPropagation(); }
   const url = sourceLink(item);
@@ -833,35 +793,12 @@ function react(btn, type) {
   });
 }
 
-/* === DODANO: Kolorystyka komentarza AI oparta o kategorię oraz nazwa wydawcy w liście 60 sekund === */
-function getCategoryColorStyle(cat) {
-  const c = normalize(cat);
-  if (c.includes('gospod') || c.includes('finans') || c.includes('rynk') || c.includes('biznes')) {
-    return { bg: 'rgba(16, 185, 129, 0.12)', border: 'rgba(16, 185, 129, 0.3)', text: '#047857', darkText: '#34d399' };
-  }
-  if (c.includes('polsk') || c.includes('pilne')) {
-    return { bg: 'rgba(239, 68, 68, 0.12)', border: 'rgba(239, 68, 68, 0.3)', text: '#b91c1c', darkText: '#f87171' };
-  }
-  if (c.includes('geopolityk') || c.includes('swiat') || c.includes('polityk')) {
-    return { bg: 'rgba(59, 130, 246, 0.12)', border: 'rgba(59, 130, 246, 0.3)', text: '#1d4ed8', darkText: '#60a5fa' };
-  }
-  if (c.includes('obronn') || c.includes('wojsk')) {
-    return { bg: 'rgba(100, 116, 139, 0.12)', border: 'rgba(100, 116, 139, 0.3)', text: '#334155', darkText: '#94a3b8' };
-  }
-  if (c.includes('tech') || c.includes('ai') || c.includes('nauk')) {
-    return { bg: 'rgba(139, 92, 246, 0.12)', border: 'rgba(139, 92, 246, 0.3)', text: '#6d28d9', darkText: '#a78bfa' };
-  }
-  return { bg: 'rgba(245, 158, 11, 0.12)', border: 'rgba(245, 158, 11, 0.3)', text: '#d97706', darkText: '#fbbf24' };
-}
-
 function headlineRow(item, displayTitle, emoji) {
   const link = sourceLink(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
   const em = emoji || '📰';
   const title = displayTitle || getTitle(item.title).title;
-  const publisher = formatSourcePublisher(item);
-  const cat = category(item);
 
   return `
     <div class="headline-item flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -871,10 +808,7 @@ function headlineRow(item, displayTitle, emoji) {
       <a href="${link && link !== '#' ? escapeHtml(safeUrl(link)) : '#'}" ${link && link !== '#' ? 'target="_blank" rel="noopener"' : ''}
          class="min-w-0 flex-1 flex items-start gap-2 no-underline">
         <span class="mt-0.5 text-base leading-none shrink-0">${escapeHtml(em)}</span>
-        <div class="min-w-0 flex-1">
-          <span class="title text-[14px] font-semibold leading-snug text-main block">${escapeHtml(title)}</span>
-          <span class="text-[11px] font-bold text-amber-600 dark:text-amber-400 block mt-0.5">${escapeHtml(publisher)}</span>
-        </div>
+        <span class="title text-[14px] font-semibold leading-snug text-main">${escapeHtml(title)}</span>
       </a>
       <button onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="shrink-0 mt-0.5 h-7 w-7 rounded-lg flex items-center justify-center text-mute hover:text-amber-500">↗</button>
     </div>`;
@@ -889,10 +823,6 @@ function card(item) {
   const cat = category(item);
   const read = isRead(item);
   const itemJson = encodeURIComponent(JSON.stringify(item));
-  const publisher = formatSourcePublisher(item);
-  const dateStr = formatItemDate(item);
-  const photoCredit = formatImageCredit(img);
-  const col = getCategoryColorStyle(cat);
 
   return `
     <article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color: var(--border);">
@@ -906,20 +836,10 @@ function card(item) {
           <button type="button" title="Udostępnij ten news" onclick="shareItem(JSON.parse(decodeURIComponent('${itemJson}')), event)" class="h-[18px] w-[18px] rounded-[5px] shadow flex items-center justify-center text-[10px] text-sec hover:text-amber-600" style="background: var(--bg-card);">↗</button>
         </div>
       </div>
-
-      <!-- Podpis zdjęcia -->
-      ${photoCredit ? `<div class="px-3.5 pt-2 pb-0.5 text-[10px] text-mute border-b" style="border-color: var(--border);">${photoCredit}</div>` : ''}
-
       <div class="p-3.5 flex flex-col flex-1">
         <h3 class="text-[15px] font-black leading-snug text-main">${t.emoji ? escapeHtml(t.emoji)+' ' : ''}${escapeHtml(t.title)}</h3>
         ${summary ? `<p class="mt-2 text-[13px] leading-relaxed text-sec">${escapeHtml(summary)}</p>` : ''}
-        
-        <!-- Komentarz AI w kolorze kategorii -->
-        ${comment ? `
-        <div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: ${col.bg}; border: 1px solid ${col.border};">
-          <div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider" style="color: ${col.text};">Komentarz AI</div>
-          <div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div>
-        </div>` : ''}
+        ${comment ? `<div class="mt-2.5 rounded-xl p-2.5 text-xs" style="background: rgba(245,158,11,0.12);"><div class="mb-0.5 text-[9px] font-extrabold uppercase tracking-wider text-amber-600 dark:text-amber-400">Komentarz</div><div class="leading-relaxed text-main italic">"${escapeHtml(comment)}"</div></div>` : ''}
         
         <div class="flex gap-1.5 mt-3 flex-wrap">
           <button data-type="fire" onclick="react(this,'fire')" class="react-btn text-xs px-2.5 py-1 rounded-lg border surface" style="border-color:var(--border)">🔥 <span class="count">0</span></button>
@@ -929,9 +849,8 @@ function card(item) {
         </div>
 
         <div class="mt-auto pt-2.5 flex items-center justify-between gap-2 border-t" style="border-color: var(--border);">
-          <div class="truncate text-xs text-sec">
-            <span class="font-bold text-main">${escapeHtml(publisher)}</span>
-            ${dateStr ? `<span class="mx-1 text-mute">·</span><span>${escapeHtml(dateStr)}</span>` : ''}
+          <div class="truncate text-[10px] font-semibold text-mute">
+            ${formatItemDate(item) ? `<span class="text-amber-600 dark:text-amber-400">${escapeHtml(formatItemDate(item))}</span>` : ''}
           </div>
           ${link && link !== '#' ? `
           <div class="flex items-center gap-1.5 shrink-0">
@@ -1016,7 +935,21 @@ function renderFast() {
 
 function prepareFunItems() {
   const today = (funItems || []).map(x => ({...x, _isToday: true}));
-  allFunItems = uniqueByKey([...today, ...(archiveFunItems || [])]);
+  const merged = [...today, ...(archiveFunItems || [])];
+  // dedupe po kluczu, ale ZACHOWAJ wersję ze zdjęciem (nie pierwszą pustą)
+  const map = new Map();
+  for (const x of merged) {
+    const k = keyOf(x);
+    if (!k) continue;
+    const prev = map.get(k);
+    if (!prev) { map.set(k, x); continue; }
+    const prevImg = imageOf(prev);
+    const nextImg = imageOf(x);
+    // preferuj dziś, potem to ze zdjęciem
+    if (x._isToday && !prev._isToday) map.set(k, x);
+    else if (!prevImg && nextImg) map.set(k, x);
+  }
+  allFunItems = [...map.values()];
   allFunItems.sort((a, b) => {
     if (a._isToday && !b._isToday) return -1;
     if (!a._isToday && b._isToday) return 1;
@@ -1164,6 +1097,7 @@ function pickWeekHighlights(pool, limit) {
   const usedKeys = new Set();
   const usedCats = {};
 
+  // 1 z każdego dnia
   days.forEach(dk => {
     for (const item of byDay[dk]) {
       const k = keyOf(item);
@@ -1176,6 +1110,7 @@ function pickWeekHighlights(pool, limit) {
     }
   });
 
+  // 2. z każdego dnia
   if (picked.length < limit) {
     days.forEach(dk => {
       if (picked.length >= limit) return;
@@ -1338,7 +1273,8 @@ function switchTab(tab) {
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   const tabBtn = $('tab-' + tab);
   if (tabBtn) tabBtn.classList.add('active');
-  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));$('search-results')?.classList.add('hidden');
+  ['today-view','all-view','fast-view','fun-view','week-view','archive-view'].forEach(id => $(id)?.classList.add('hidden'));
+  $('search-results')?.classList.add('hidden');
   const map = { today:'today-view', all:'all-view', fast:'fast-view', fun:'fun-view', week:'week-view', archive:'archive-view' };
   $(map[tab])?.classList.remove('hidden');
   if (tab === 'all') allShown = 6;
@@ -1349,7 +1285,8 @@ function switchTab(tab) {
 }
 
 function search() {
-  const q = ($('search-input').value \vert{}\vert{} '').toLowerCase().trim();$('search-clear').classList.toggle('hidden', !q);
+  const q = ($('search-input').value || '').toLowerCase().trim();
+  $('search-clear').classList.toggle('hidden', !q);
   if (!q) { $('search-results').classList.add('hidden'); return; }
   const pool = uniqueByKey([...newsItems, ...rawFeedItems, ...fastItems, ...funItems, ...archiveFunItems, ...archiveGroups.flatMap(g => g.items || [])]);
   const words = normalize(q).split(' ').filter(Boolean);
@@ -1357,7 +1294,8 @@ function search() {
     const hay = normalize([x.title, getSummary(x), getComment(x), category(x), sourceName(x)].join(' '));
     return words.every(w => hay.includes(w));
   });
-  $('search-results').classList.remove('hidden');$('search-results').innerHTML = `
+  $('search-results').classList.remove('hidden');
+  $('search-results').innerHTML = `
     <div class="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div>
     <div class="rounded-xl border overflow-hidden surface" style="border-color:var(--border)">
       ${hits.slice(0,30).map(item => {
@@ -1368,7 +1306,8 @@ function search() {
 }
 function clearSearch() {
   $('search-input').value = '';
-  $('search-results').classList.add('hidden');$('search-clear').classList.add('hidden');
+  $('search-results').classList.add('hidden');
+  $('search-clear').classList.add('hidden');
 }
 function goTop() { window.scrollTo({ top:0, behavior:'smooth' }); }
 function toggleDark() {
@@ -1553,13 +1492,15 @@ async function loadWidgets() {
   try {
     const w = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw', { cache:'no-store' });
     const d = await w.json();
-    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';$('weather-icon').textContent = weatherEmoji(d.current.weather_code);
+    $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°';
+    $('weather-icon').textContent = weatherEmoji(d.current.weather_code);
   } catch(e){}
   try {
     const r = await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json', { cache:'no-store' });
     const d = await r.json();
     const rates = d[0].rates;
-    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid \vert{}\vert{} 0).toFixed(2);$('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
+    $('eur-rate').textContent = (rates.find(x => x.code === 'EUR')?.mid || 0).toFixed(2);
+    $('usd-rate').textContent = (rates.find(x => x.code === 'USD')?.mid || 0).toFixed(2);
   } catch(e){}
 }
 
@@ -1666,3 +1607,8 @@ init();
 </script>
 </body>
 </html>
+
+
+Dodatkowo w liście 60 sekund te dodaj stronę na podstawie zdjęcia.
+
+Kolory ramek z komentarzami zastosuj w kolorze kategorii
