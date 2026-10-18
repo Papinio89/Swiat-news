@@ -1,12 +1,42 @@
 {
   "date": "18 października 2026",
-  "time": "07:02",
-  "count": 48,
+  "time": "15:51",
+  "count": 54,
   "items": [
+    {
+      "title": "Lagarde do rosyjskiego ministra: gospodarka wymaga pokoju",
+      "snippet": " Prezes Europejskiego Banku Centralnego wykorzystała zamknięte spotkanie w Bangkoku do konfrontacji z przedstawicielem Rosji. Christine Lagarde przekazała jasny komunikat dla Władimira Putina dotyczący wpływu wojny na globalną gospodarkę i dobrobyt.",
+      "link": "https://www.money.pl/gospodarka/lagarde-do-rosyjskiego-ministra-gospodarka-wymaga-pokoju-7341372014630912a.html"
+    },
+    {
+      "title": "Chora ochrona zdrowia. Tak doszliśmy do ściany w zarobkach lekarzy [OPINIA]",
+      "snippet": " Ostatnie tygodnie przynoszą kolejne doniesienia o nadużyciach, skrajnie wysokich zarobkach części personelu i nieefektywności w polskim systemie ochrony zdrowia. Wszystko to dzieje się w warunkach, gdy publiczne nakłady na zdrowie osiągają rekordowe poziomy, a jednocześnie szpit",
+      "link": "https://www.money.pl/finanse/chora-ochrona-zdrowia-tak-doszlismy-do-sciany-w-zarobkach-lekarzy-opinia-7341342708295680a.html"
+    },
+    {
+      "title": "\"Siły państwa połączone z mafijnymi\". Były prezes o upadku Optimusa",
+      "snippet": " To jest najciekawsza i taka najsmutniejsza historia w moim życiu. Uważam w ogóle dla Polski to za bardzo smutne. Mogliśmy mieć swoją markę komputerową – mówi Dariusz Dąbski, dziś właściciel TV Puls. Zobacz fragment \"Biznes Klasy\".",
+      "link": "https://www.money.pl/gospodarka/sily-panstwa-polaczone-z-mafijnymi-byly-prezes-o-upadku-optimusa-7339930620854849v.html"
+    },
+    {
+      "title": "Mieszkania po seniorach na rynku. Wielki problem młodych [OPINIA]",
+      "snippet": " Na rynek nieruchomości będzie trafiać coraz więcej lokali odziedziczonych po seniorach. Może to wywołać znaczące spadki cen. \"Problemem będzie jednak to, że spora część nieruchomości znajduje się w miejscach, w których niewiele osób chce mieszkać\" – pisze w opinii dla money.pl K",
+      "link": "https://www.money.pl/biznes/demografia-uderza-w-rynek-mieszkaniowy-pustoszenie-polski-i-problem-sloikow-opinia-7341280572471328a.html"
+    },
+    {
+      "title": "W tej prowincji jest ropa naftowa. Mogą odłączyć się od Kanady",
+      "snippet": " Mieszkańcy Alberty zadecydują o pozostaniu w Kanadzie. W poniedziałkowym głosowaniu zadecydują, czy jej władze rozpoczną procedurę prowadzącą do wiążącego referendum niepodległościowego. Głosowanie nie oznacza natychmiastowego odłączenia regionu od kraju – podaje \"Rzeczpospolita",
+      "link": "https://www.money.pl/polityka/w-tej-prowincji-jest-ropa-naftowa-moga-odlaczyc-sie-od-kanady-7341258106279968a.html"
+    },
     {
       "title": "Bajki dla naiwnych. Uszczelnienie podatków nie załata dziury w budżecie [ANALIZA]",
       "snippet": " Prezydent Karol Nawrocki twierdzi, że polski budżet jest nieszczelny. Dlatego sprzeciwia się podwyżkom podatków. Chciałby, aby rząd zajął się lepszym egzekwowaniem już istniejących obciążeń. Ekonomiści wątpią jednak, aby mogło to istotnie poprawić kondycję finansów publicznych. ",
       "link": "https://www.money.pl/podatki/bajki-dla-naiwnych-uszczelnienie-podatkow-nie-zalata-dziury-w-budzecie-analiza-7340752827226144a.html"
+    },
+    {
+      "title": "Około 15 mln Polaków poniżej minimum socjalnego. Nowy raport o ubóstwie",
+      "snippet": "Polska gospodarka rośnie, jednak w 2025 r. ubóstwo skrajne utrzymało się na poziomie zbliżonym do poprzedniego roku i dotyczyło około 2 mln osób. Poniżej minimum socjalnego wciąż żyło ich około 15 mln – czytamy w raporcie EAPN Polska (Poverty Watch 2026).",
+      "link": "https://www.bankier.pl/wiadomosc/Okolo-15-mln-Polakow-ponizej-minimum-socjalnego-Nowy-raport-o-ubostwie-9214208.html"
     },
     {
       "title": "Zarabia pół miliona rocznie na Airbnb. Najsłynniejszy domek wystawiony na sprzedaż",
@@ -14,29 +44,14 @@
       "link": "https://www.bankier.pl/wiadomosc/Zarabia-pol-miliona-rocznie-na-Airbnb-Najslynniejszy-domek-wystawiony-na-sprzedaz-9213132.html"
     },
     {
+      "title": "Kraków pełen nowych mieszkań. Deweloperzy ruszyli do dzielnic, które omijali",
+      "snippet": "Po trzech kwartałach 2026 r. oferta nowych mieszkań w Krakowie przekracza 12,1 tys. lokali, a średnia cena metra kwadratowego wzrosła w ciągu roku o 4 proc. Za tym pozornie spokojnym obrazem rynku kryją się jednak istotne zmiany. Deweloperzy coraz śmielej inwestują w dzielnicach,",
+      "link": "https://www.bankier.pl/wiadomosc/Krakow-pelen-nowych-mieszkan-Deweloperzy-ruszyli-do-dzielnic-ktore-omijali-9214123.html"
+    },
+    {
       "title": "Cały sezon reality show zniknął tuż przed premierą. Podejrzenia padły na AI",
       "snippet": "Szwedzki program „The Challenge Sverige” nie pojawi się na antenie w planowanym terminie. Na pięć tygodni przed premierą doszło do awarii, w wyniku której utracono gotowy montaż całego sezonu. Według medialnych doniesień za skasowanie plików miał odpowiadać agent sztucznej inteli",
       "link": "https://www.bankier.pl/wiadomosc/Caly-sezon-reality-show-zniknal-tuz-przed-premiera-Podejrzenia-padly-na-AI-9214326.html"
-    },
-    {
-      "title": "Amerykańska polityka utonęła w miliardach. Wybory połówkowe droższe niż walka o Biały Dom",
-      "snippet": "Oficjalne wydatki na reklamy przed wyborami połówkowymi (midterms) w USA przekroczyły w środę 10 mld dolarów. Według prognoz firmy AdImpact, monitorującej rynek mediów, mogą one przewyższyć nawet koszty kampanii prezydenckiej podczas wyborów w 2024 roku.",
-      "link": "https://www.bankier.pl/wiadomosc/Amerykanska-polityka-utonela-w-miliardach-Wybory-polowkowe-drozsze-niz-walka-o-Bialy-Dom-9212906.html"
-    },
-    {
-      "title": "Czekali na to aż 12 lat. Chiny i Korea Północna otwierają strategiczny most za miliony",
-      "snippet": "Nowy Most na rzece Jalu, łączący chińskie miasto Dandong z północnokoreańskim Sinuiju, został oddany do użytku — przekazały państwowe media. Uruchomienie nowej drogowej przeprawy nastąpiło 12 lat po zakończeniu budowy i wpisuje się w widoczne ocieplenie relacji Pekinu z Pjongjang",
-      "link": "https://www.bankier.pl/wiadomosc/Czekali-na-to-az-12-lat-Chiny-i-Korea-Polnocna-otwieraja-strategiczny-most-za-miliony-9212909.html"
-    },
-    {
-      "title": "Gospodarczy punkt ciężkości przenosi się nad Bałtyk. Miliardowe inwestycje na Pomorzu",
-      "snippet": "Pomorze staje się jednym z najważniejszych obszarów rozwojowych Polski, a strategiczne inwestycje realizowane nad Bałtykiem będą przez kolejne dekady wzmacniać bezpieczeństwo energetyczne, konkurencyjność gospodarczą i potencjał przemysłowy kraju.",
-      "link": "https://www.bankier.pl/wiadomosc/Gospodarczy-punkt-ciezkosci-przenosi-sie-nad-Baltyk-Miliardowe-inwestycje-na-Pomorzu-9212958.html"
-    },
-    {
-      "title": "Rozstrzelać sygnalistów, połknąć Kanadę i stworzyć superpoligon. Szokujące wiece Trumpa",
-      "snippet": "Prezydent USA Donald Trump zapowiedział w środę podczas wiecu w Montanie, że w tym stanie na północnym zachodzie kraju powstanie poligon do testowania najnowocześniejszego uzbrojenia i technologii. Trump angażuje się w kampanię przed listopadowymi wyborami do Kongresu.",
-      "link": "https://www.bankier.pl/wiadomosc/Rozstrzelac-sygnalistow-polknac-Kanade-i-stworzyc-superpoligon-Szokujace-wiece-Trumpa-9212899.html"
     },
     {
       "title": "„Największa bańka naszego życia”. Miliarderzy ostrzegają przed krachem",
@@ -44,49 +59,109 @@
       "link": "https://www.bankier.pl/wiadomosc/Najwieksza-banka-naszego-zycia-Miliarderzy-ostrzegaja-przed-krachem-9214052.html"
     },
     {
-      "title": "Nowy podatek od sztucznej inteligencji? Pomysł z Niemiec",
-      "snippet": "Minister cyfryzacji Niemiec Karsten Wildberger opowiedział się za opodatkowaniem przychodów uzyskiwanych dzięki sztucznej inteligencji. Jego zdaniem uzyskane w ten sposób pieniądze należy przeznaczyć na sfinansowanie transformacji rynku pracy.",
-      "link": "https://www.bankier.pl/wiadomosc/Nowy-podatek-od-sztucznej-inteligencji-Pomysl-z-Niemiec-9211792.html"
+      "title": "To miasto zakazuje wynajmu hulajnóg elektrycznych. W tle tysiące poszkodowanych",
+      "snippet": "Burmistrz Lizbony Carlos Moedas ogłosił zakończenie programu wynajmu hulajnóg elektrycznych w stolicy Portugalii. Głównym powodem tej decyzji była duża liczba ofiar wypadków z udziałem tych pojazdów.",
+      "link": "https://www.bankier.pl/wiadomosc/To-miasto-zakazuje-wynajmu-hulajnog-elektrycznych-W-tle-tysiace-poszkodowanych-9213834.html"
     },
     {
-      "title": "Koniec z dzieleniem tabletek? Drukarki 3D przygotują idealną dawkę leku",
-      "snippet": "Technika druku 3D może pozwolić aptekom szpitalnym przygotowywać leki o dawkach dopasowanych do konkretnego pacjenta. Naukowcy pokazali, że taka metoda może działać dokładnie i powtarzalnie także poza laboratorium, w warunkach apteki szpitalnej.",
-      "link": "https://www.bankier.pl/wiadomosc/Koniec-z-dzieleniem-tabletek-Drukarki-3D-przygotuja-idealna-dawke-leku-9212218.html"
+      "title": "Niemiecki gigant przejmuje portugalskie linie. Lufthansa pokonała Air France w grze o TAP",
+      "snippet": "Firma Lufthansa nabyła w środę 44,9 proc. udziałów portugalskiego przewoźnika lotniczego TAP - przekazał premier Portugalii Luis Montenegro, dodając, że niemieckie linie zaproponowały najlepszą ofertę.",
+      "link": "https://www.bankier.pl/wiadomosc/Niemiecki-gigant-przejmuje-portugalskie-linie-Lufthansa-pokonala-Air-France-w-grze-o-TAP-9212878.html"
     },
     {
-      "title": "\"Być może trzeba będzie bronić NBP\". Jarosław Kaczyński przemówił na demonstracji - Business Insider Polska",
-      "snippet": "\"Być może trzeba będzie bronić NBP\". Jarosław Kaczyński przemówił na demonstracji&nbsp;&nbsp;Business Insider PolskaProtest pod TK. Konwój z polskimi dyplomatami zaatakowany na Zachodnim Brzegu [NA POCZĄTEK DNIA]&nbsp;&nbsp;GazetaGorąco pod Trybunałem. Człowiek prezydenta z mocny",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc1FRV0hyQUo4OTBOd05NWWZ4N24wb0xsd2E0OUFxMnd2SlZNZWVOQ3FSc2VMbXlSRmNzWENOR1lTeHNWajRuOEN0YVZpUjNNUXZrZ3AzZW5rVm1mbl9yNERacy1Ra2ZYR1BUT05MOHFEUFZEMk9Tdk9uMkI3Q2JHQmFmcl9mNDQzQ2xiYks3bzlMMUVjOVVXTjJfS0hrOEwxb1VqSUUxVHJadUg2YjJvOVBkRHA?oc=5"
+      "title": "Gospodarczy punkt ciężkości przenosi się nad Bałtyk. Miliardowe inwestycje na Pomorzu",
+      "snippet": "Pomorze staje się jednym z najważniejszych obszarów rozwojowych Polski, a strategiczne inwestycje realizowane nad Bałtykiem będą przez kolejne dekady wzmacniać bezpieczeństwo energetyczne, konkurencyjność gospodarczą i potencjał przemysłowy kraju.",
+      "link": "https://www.bankier.pl/wiadomosc/Gospodarczy-punkt-ciezkosci-przenosi-sie-nad-Baltyk-Miliardowe-inwestycje-na-Pomorzu-9212958.html"
     },
     {
-      "title": "Szef MSZ odpowiada na decyzję Trumpa. Zamieścił wymowny wpis - Wiadomości Onet",
-      "snippet": "Szef MSZ odpowiada na decyzję Trumpa. Zamieścił wymowny wpis&nbsp;&nbsp;Wiadomości OnetAfera w USA po ruchach prezydenta. Grzmią o zdradzie, \"powstrzymać Trumpa\"&nbsp;&nbsp;Interia WydarzeniaDziało się w nocy. Trump tłumaczy wstrzymanie sankcji na Rosję, wstrząsające obrazki z Fr",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOWZKVTl4R0E3TjIxN2Y2eXYwLXNuRFNPRWU5Z1pzeVpMYWU3UXJNYUttclBVUklZV3FOakFDYlk2Q1JfZlJpM0EwMHpCYWtEUVJwQzdaTWl2aW5pM2c4T2pNOWotUHp3YmlOMVZ5V2Q5OGVJZVJ6YU11VEpFTkJVUmhxVmsyeVptc3E2WVJabG55QVpQbVBEWlVhUDd6N01mRVA2dzlzMA?oc=5"
+      "title": "Maja Chwalińska - Sonay Kartal. Finał NA ŻYWO z Wuhan. Relacja LIVE - Przegląd Sportowy",
+      "snippet": "Maja Chwalińska - Sonay Kartal. Finał NA ŻYWO z Wuhan. Relacja LIVE&nbsp;&nbsp;Przegląd SportowyChwalińska mistrzynią w Wuhan! Spektakularny powrót Polki&nbsp;&nbsp;SportoweFaktyOgromny awans Chwalińskiej w rankingu WTA. Wyprzedziła gwiazdy. Oto miejsce Polki&nbsp;&nbsp;Interia S",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeVQxR1VlNFl4YVB5eDIyZTV0NERxbXNEXzJMbFhJS1RJSWxHWWN2SWxKcnRBbkdzUHhRdTE0dlpjdzhIc09vcmRTcmpkM1ZTeDA4aWZ5TV9MRmxsLVRnOTY1VEQ5SXlmNk9DUEpuU0trb25Id21maTdTRUNnMFRGUXZQTmRhV1BWRGFMeEd0VG9lcVpxRV9LYnFUeHVLaEh2NnUwdjN2N1R1dlNoOGM0?oc=5"
+    },
+    {
+      "title": "Niezidentyfikowany obiekt nad Lubelszczyzną? Media publikują nagrania - WP Wiadomości",
+      "snippet": "Niezidentyfikowany obiekt nad Lubelszczyzną? Media publikują nagrania&nbsp;&nbsp;WP WiadomościSłużby przeszukują teren w okolicy Zalewu Zemborzyckiego&nbsp;&nbsp;Kurier LubelskiCo przeleciało w okolicy Lublina? Pojawiło się nagranie z monitoringu&nbsp;&nbsp;OnetAkcja służb pod Lu",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSkxEcDZ5ZkRNTmg1SzJaOWEwek9FOXVsbmNTeEZmX0ZZYTJvaDY2d2F2X1dUbEk0UVl1by16NENjV2JsWXlTdGNhM0J5dzh3TWY3b0xTZ3NiQkR0Tm4zNldaVnU1X3N3ckpFX3QycGZkZUEzcDJhS014bWV0bl95VkIxaURmaDVFcEMtVVRMODVCNUtPd2RDeGdtdzFEcVpyVU9aQlkyR3RpazdfOHR3Tg?oc=5"
+    },
+    {
+      "title": "\"Dzika horda\" wywołała zamieszki we Francji. Spłonął zabytkowy ratusz - PolsatNews.pl",
+      "snippet": "\"Dzika horda\" wywołała zamieszki we Francji. Spłonął zabytkowy ratusz&nbsp;&nbsp;PolsatNews.plParyż zbiera się po zamieszkach, policja ujawniła dane. \"Rekordowa liczba zatrzymań\"&nbsp;&nbsp;Interia WydarzeniaTrump wzywa władze Francji. \"Zamknijcie granice\"&nbsp;&nbsp;WP Wiadomośc",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR005TmRNbW1ZLXptMng1M2x5YWJYc3NNVTMyQjF6NjZTXzdpYzMtYzQwMloxM1JJanYzdjY0eExHRVlqTlJJaWVmbDJqX1VueHlwNndyQmk3RlpNMnhwbDBfM1FINllFdS1xN090OHpFZ3NrSXUxX1ZuUFgwMEFCcmVzcmlRT1pCOTFRbWd4U1NUemU0MTRMcFZzb2xhZUN6M1lhbUdsRnkydWFXalV5dmRYS2VBNEZCYzBDZ2daeTNGQQ?oc=5"
+    },
+    {
+      "title": "\"Usunąć go ze stanowiska\". Szejna chce uchylenia immunitetu prezesowi TK - PolsatNews.pl",
+      "snippet": "\"Usunąć go ze stanowiska\". Szejna chce uchylenia immunitetu prezesowi TK&nbsp;&nbsp;PolsatNews.pl\"Usunąć go z Trybunału\". Szejna wskazuje na Święczkowskiego&nbsp;&nbsp;WP Wiadomości\"Stanął na schodach, powiedział: Berek wchodzi, reszta zostaje\". Nowy sędzia TK w pierwszej rozmowi",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQT3FNeUVYM1hWMFlnOWU2QWRRakVpN0tRVmJTVGs4dnI2ejl1TXBDbW9hRzNrS3NzMU1KbjFiMzBIdGZvQ0VtZy1hYUJmX09mS01yUmdYd1JueDlhRE9ZTjF2WF9OZk9pdFFOSHNFVWI2SHlsX3FfU2pQNTRsR3hac2N2UTRScGtudUxZYzAwVElPdHdpa2JjZkN1eU9wWEVqMTdQcWUya1BTalAzZlB0cjlSeDU5NW5X?oc=5"
+    },
+    {
+      "title": "Zmasowany atak na Petersburg. Pożar terminalu, doniesienia o trafieniu w most - PolsatNews.pl",
+      "snippet": "Zmasowany atak na Petersburg. Pożar terminalu, doniesienia o trafieniu w most&nbsp;&nbsp;PolsatNews.plDrony zaatakowały Petersburg. Miasto spowite czarnym dymem&nbsp;&nbsp;WP WiadomościDrony nad Petersburgiem. Terminal naftowy w ogniu. Ukraińcy zaatakowali centrum danych&nbsp;&nb",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNM09MUDN6OWJIZnRVd2JJTHczLXREaHV2UnZXVjkyQl9qcmNMOFVnZnpzSmtIVF9fNGRhNGNSSnI5bFFaYW9KNjdrc2drYzRYeFdPUlQ3R3N2cG9CQllfQjJxSXBsTF9EV0ItR3lOMmI4Z0Y3U0J4VWozdWtCS241TzQ4MHBla3d2SDhrU0N5d2Zyc21pTGRBeV9iMXA1Y2NKdkZ6clJqQ1ZGSnVydDhYbWJCZ3hEcUxJVm12R2d2d1Y?oc=5"
+    },
+    {
+      "title": "Mieszkańcy wysłani do schronów. Czerwony alarm na Litwie, żółty w Łotwie - Fakt",
+      "snippet": "Mieszkańcy wysłani do schronów. Czerwony alarm na Litwie, żółty w Łotwie&nbsp;&nbsp;FaktObiekt na Litwie. MON nie potwierdza przekroczenia granicy z Polski&nbsp;&nbsp;WP WiadomościAlarm na Litwie po wtargnięciu drona. Premier o możliwości sabotażu&nbsp;&nbsp;GazetaAlert na Litwie",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTTZKRnFzeWFtSnpjcXNKUzdBOWdlenU4eV9SckpZT0luMDEzbXk2Q05wc0N5eVZZQUtYLU5Dckw0UXdfMGRxOHVnNWs0YXFsU3IxM0RTUWhZYzBaNTN1S2RoUUk3blUzOGR5QW1SRjhycG1wU1k4QUgzSmdVSHpXaEpNMGlmaE04b0llREZxSHo3NHptdEZ6bjNVYldLQnZmWkZlNzhSWjZxWWRrTEpaam92dDl5aTUtelE?oc=5"
     },
     {
       "title": "Prokuratura: Piotr W. ma zostać przewieziony na czynności. Policja chce aresztu wobec zatrzymanego - Polska Agencja Prasowa SA",
-      "snippet": "Prokuratura: Piotr W. ma zostać przewieziony na czynności. Policja chce aresztu wobec zatrzymanego&nbsp;&nbsp;Polska Agencja Prasowa SAJest komunikat prokuratury po aresztowaniu przed TK&nbsp;&nbsp;WP WiadomościZatrzymanie mężczyzny w pobliżu Trybunału Konstytucyjnego. Jest nagra",
+      "snippet": "Prokuratura: Piotr W. ma zostać przewieziony na czynności. Policja chce aresztu wobec zatrzymanego&nbsp;&nbsp;Polska Agencja Prasowa SAJest komunikat prokuratury po aresztowaniu przed TK&nbsp;&nbsp;WP WiadomościSąd zdecydował w sprawie Piotra W. Echa incydentu w pobliżu Trybunału",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRnZ5X3UxdU82a3l6SUtaVmR3dUVhRDR6LW5EdU10RWFtWnViYmU5RWRpNEVacU5SeWlVdVNubGhGMXJRSW1pRnhDaDVTREtnWW5BQzJOd19FWVJSbWRNTkpZaTJCaUptYkxCUmEtR1Y3X0N4a0gxcWZYMDBTNjRyUVJVYmxUY1NDc0k0LW9BWjFpcGo5WUZQeVVRYUlFbnZXUW9wZnZqLXpTNVczNzZqREZEcw?oc=5"
     },
     {
-      "title": "Zamieszki we Francji. Premier: Nie damy się zastraszyć - Money.pl",
-      "snippet": "Zamieszki we Francji. Premier: Nie damy się zastraszyć&nbsp;&nbsp;Money.plFrancja w ogniu. Wstrząsające nagrania&nbsp;&nbsp;WP WiadomościZamieszki na protestach we Francji. Burmistrz Paryża: Całe ulice zostały zdewastowane&nbsp;&nbsp;GazetaGwałtowne protesty w całym kraju. Podpal",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUDQ4Vm9YVzhfY2ZXM1UxVGpDY0RsM3hWZVBka21wMDNRc3ExRVFUeXl4RHlVUGZudTllcGVsWXlKUjhyN3htOG9rQ2FVRmwwUWdsSzZSckM1NDlHek1JalFWMVNBcmx4NDh2SjF4WkljTjM2aUNvdzhGdUlfcE1iUzVGWGJqdEVUaDBtZFlSalJtM2RBSngzbnI5d21kX0d1TWZudTRTYTg?oc=5"
+      "title": "Warszawa. Uszkodzenie sieci trakcyjnej. Utrudnienia w kursowaniu tramwajów - Gazeta",
+      "snippet": "Warszawa. Uszkodzenie sieci trakcyjnej. Utrudnienia w kursowaniu tramwajów&nbsp;&nbsp;GazetaUszkodzona sieć trakcyjna, duże utrudnienia. Siedem linii tramwajowych na objazdach&nbsp;&nbsp;TVN24Warszawa: Dwie awarie tramwajowe w centrum. Kilkanaście linii na alternatywnych trasach&",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMXRaOG9uUEdRSjh5dlpQbjV3c3lILUM1NDJKMTI2alB1S3VJNjRKQndHWXlkSUdMNEhIbTNWQ05uX0hzeXF6ZHV5d2JlN3RKdjhfeEpRTndIMHJWZVZIaGlwYzVyTnVieUl5RFlRM251MFA5emhwX1lmVHFuSmhOUVFyeXkzRTNSaWZMOGItbmpYWlJDc2lHbk1IVW54UlFaYTZLbmJtRXhfQ0dlclptSlpBVFFleVE0SzBrLXRR?oc=5"
     },
     {
-      "title": "Czy Polska powinna przywrócić zasadniczą służbę wojskową? Mamy sondaż - WP Wiadomości",
-      "snippet": "Czy Polska powinna przywrócić zasadniczą służbę wojskową? Mamy sondaż&nbsp;&nbsp;WP WiadomościTylu Polaków popiera przywrócenia służby wojskowej&nbsp;&nbsp;Business Insider PolskaPobór do wojska dzieli Polaków. Jasna deklaracja prawie połowy badanych&nbsp;&nbsp;Wiadomości OnetEst",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcTFHZC15by0zNnFScTZhSEtmNVd0MS1rdXY2Y0xDV3Vhd05yZmNaUk1NMDYwcG9JaTdUNzFGLWQ3bFcxMXNBY2RaZGpiRk0wRkl4SnBZYUdZMzBCOGRFS1VUU1dXUFFIQXRsXzRRcVJiUGVaRlJaRjZBWUxmT1BKUy1HQmdMMWUtaWJrVTJQbmNYT3phd0N5OUNDcFF5d2FpOWVRM0JaZzdYR1NmczdyYg?oc=5"
+      "title": "Jak koalicja chce rozwiązać sprawę TK? \"Celowe działanie Donalda Tuska\" - Wiadomości Onet",
+      "snippet": "Jak koalicja chce rozwiązać sprawę TK? \"Celowe działanie Donalda Tuska\"&nbsp;&nbsp;Wiadomości Onet\"Stan Wyjątkowy\". Tusk rusza na Święczkowskiego. Nawrocki przytula Brauna. Kaczyński chce jednoczyć prawicę&nbsp;&nbsp;Wiadomości OnetArtur Bartkiewicz: PiS, eskalując spór o TK, moż",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObnA0UHpXQ0FMeE1iVVN4bENSNThvNnhPWkpYVDVvaUE0UlM5VkgweEF0TG1pQkJqa25GOVlXN01GZUxCcDVIOWNCem9tMXZucUVpSEZPR0ZwMHVvRzFVVnVHQm5ZUHFxNmRZcWdYc3NDT2ZITkt1aEEybm5ZcVNqemYxdmpsU0swZEY4empITHhSV2l4VHFTeEUtUUJyQW1sdVZ0QlhnOGRJZw?oc=5"
     },
     {
-      "title": "\"ETPCz i TSUE stawały po stronie obywateli\". RPO zawiedziona wetem prezydenta - Wiadomości Onet",
-      "snippet": "\"ETPCz i TSUE stawały po stronie obywateli\". RPO zawiedziona wetem prezydenta&nbsp;&nbsp;Wiadomości OnetStrasburg nie jest nieomylny. Weto Nawrockiego to dobra decyzja [OPINIA]&nbsp;&nbsp;WP WiadomościKarol Nawrocki zawetował zmiany w kodeksie wyborczym. Były szef PKW reaguje&nbs",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPM21IX1ZYWWNrNHVUR2M2dFRyQ2pyeHZvLWxqRTBqZHZaOEZjYzFKclJiNXpjbkx4aDBJWkNla3Q2cEh5bUpSc1lOTlQ0dTVCOWcwYWpoVEI0akxsZGJjbjhTNjRDcjFnOXdfU3NmdDNMWVd5bjBkZjNYeGxVZ0xvZTQyYnh1LXBnSVphNkM1VGRrY0QwdnNNRGRvV3ZINXNraTdfTm9qbm9VcmtTWkNENktIZkw?oc=5"
+      "title": "Za tydzień zmiana czasu. Przynosi negatywne skutki, ale nadal nie możemy jej porzucić - Business Insider Polska",
+      "snippet": "Za tydzień zmiana czasu. Przynosi negatywne skutki, ale nadal nie możemy jej porzucić&nbsp;&nbsp;Business Insider PolskaZmiana czasu. Podano nowy harmonogram&nbsp;&nbsp;TVN24Koniec ze zmianą czasu? Znamy plany na kolejne lata&nbsp;&nbsp;RMF24Zmiana czasu na zimowy. Kierowcy cięża",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNElRU0wzNUV2QTNLMzdsX1ZJZ3dIOU1tY2VOZW92SF9SYUg1QUdrdTkzZW85OWEtdXhpSVhEOV8wM0dCVUZ5OTJhcy1TeUJ1VHZBaDlaZ19naEIxeldnZjY2M1c2bEl3MWhEbTdfd3R2aFptQy1wdE91STlnM1E3SHFxZFZyTVdCb0xmemJ4UDU4d3dzbWZUaEplY0ttYmhSMFFBYU5yUlIxM1U3R2RBbjY0ZXF0VEVSdXN2LU9n?oc=5"
     },
     {
-      "title": "Niespodziewany gość u Morawieckiego. Wygłosiła przemówienie - WP Wiadomości",
-      "snippet": "Niespodziewany gość u Morawieckiego. Wygłosiła przemówienie&nbsp;&nbsp;WP WiadomościByliśmy na konwencji Morawieckiego. \"On jest silny, wyzwolony, mądry, dba o nasz naród\"&nbsp;&nbsp;Wyborcza.plMorawiecki na konwencji Rozwój Plus. Padły propozycje gospodarcze&nbsp;&nbsp;Money.pl\"",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ1BCSFRiNmxrR2lOSUNvRTdiYzhIb1hXNkVCbkJVM2E3cDZ5eTBqb3plTVo0dkVQNDRXbHRrZXVrb0pRVU9xcEg3VndpZ2VjaDFVeUYzSXhlNWl2Zk9zckNfVUVTaExsd0w5ekt5cUl6TmpjRHVYMEpUdjc0Tmh2eDA4czFjMXlvVS1uakJ1eXN0SWxRYnhHSGJjaGZWLXB5Rzhj?oc=5"
+      "title": "America’s Downtowns Need More Than Offices",
+      "snippet": "America’s office real estate bust is forcing cities to rethink their downtowns. Bloomberg Opinion columnist Justin Fox explains why converting offices into homes and creating more mixed-use neighborhoods could offer a path to revival. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-18/opinion-how-the-office-bust-could-revive-downtowns-video"
+    },
+    {
+      "title": "By The Way: Headlines You May Have Missed",
+      "snippet": "The sneaker bubble bursting, hardware store cats, learning to write cursive, and live book readings: Join Lisa Mateo, David Gura and Christina Ruffini for a roundup of headlines you may have missed, but gotta see. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-18/by-the-way-headlines-you-may-have-missed-video"
+    },
+    {
+      "title": "Election Rallies That Swept Latin America Face Reality Check",
+      "snippet": "The searing financial-market rallies unleashed by elections across Latin America are beginning to show signs of cracks — sowing doubts among money managers over whether to keep pushing stocks and currencies even higher or lock in profits as campaign promises start colliding with ",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-18/election-rallies-that-swept-latin-america-face-reality-check"
+    },
+    {
+      "title": "Pope Leo Looks Ahead After Cancer Surgery",
+      "snippet": "NPR All Things Considered co-host and American Pope coauthor Scott Detrow tells Bloomberg This Weekend that Pope Leo XIV’s cancer was detected early and that his recovery appears to be progressing as he prepares to resume his duties and travel to South America. Speaking with host",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-18/pope-leo-looks-ahead-after-cancer-surgery-video"
+    },
+    {
+      "title": "Why Globalization Is Getting Harder to Navigate",
+      "snippet": "At Bloomberg’s New Economy Forum in New Delhi, Indian Prime Minister Narendra Modi cautioned against weaponizing supply chains, energy and technology. Business leaders say they are adapting to a world where supply chains are being rebuilt, geopolitical risk is permanent and count",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-18/why-globalization-is-getting-harder-to-navigate-video"
+    },
+    {
+      "title": "India Religious Festivities Turn Deadly, Killing At Least 33",
+      "snippet": "A stampede and a truck plowing into a crowd killed at least 33 people and injured dozens in two separate accidents during religious festivities in India.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-18/kolkata-stampede-leaves-at-least-19-dead-dozens-injured"
+    },
+    {
+      "title": "Poland Investigates Suspected Violation of Its Airspace",
+      "snippet": "Poland is investigating a possible violation of its airspace overnight, the Operational Command of the Armed Forces said.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-18/poland-investigates-suspected-violation-of-its-airspace"
+    },
+    {
+      "title": "China Condemns Japan’s ‘Negative Moves’ Over Yasukuni Shrine",
+      "snippet": "China strongly condemned what it called Japan’s “negative moves” concerning the Yasukuni Shrine, saying the actions were a provocation against the postwar international order, according to a Saturday statement from the Chinese Embassy in Japan.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-18/china-condemns-japan-s-negative-moves-over-yasukuni-shrine"
     },
     {
       "title": "China’s Anti-Graft Body Investigates Ex-Guangxi Official Huang",
@@ -99,44 +174,19 @@
       "link": "https://www.bloomberg.com/news/articles/2026-10-18/china-rail-logs-record-3-71-billion-trips-in-first-nine-months"
     },
     {
-      "title": "Guyana to Block Vape Product Imports Amid Youth Health Concerns",
-      "snippet": "Guyana will ban imports of vaping products, tightening restrictions on electronic cigarettes as concern rises about their growing use and health risks, President Irfaan Ali said Saturday.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-18/guyana-to-block-vape-product-imports-amid-youth-health-concerns"
+      "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+      "snippet": "Around 1,800 people were arrested after nationwide protests saw outbreaks of violence and vandalism.",
+      "link": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no"
     },
     {
-      "title": "Two India ‘Cockroach’ Leaders Set to Be Freed as Protests Spread",
-      "snippet": "Two jailed leaders of India’s Cockroach Janta Party are expected to be released Sunday, according to its legal head, as police barricades and a heavy security presence underscore continuing tensions in New Delhi over a contentious voter-roll revision.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-18/two-india-cockroach-leaders-set-to-be-freed-as-protests-spread"
+      "title": "Oil facilities hit in deadly overnight attack on St Petersburg",
+      "snippet": "At least one person was killed in the strikes, which also hit a data centre used by Russia's equivalent of Facebook.",
+      "link": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o"
     },
     {
-      "title": "Venezuela Sees Nearly $76 Billion Oil Investment Over Five Years",
-      "snippet": "Venezuela expects almost $76 billion of investment in its oil and gas sector over the next five years, Acting President Delcy Rodríguez said Saturday, as the country seeks to draw private capital into a push to boost energy production.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-18/venezuela-sees-nearly-76-billion-oil-investment-over-five-years"
-    },
-    {
-      "title": "Australian Home Auctions Decline as Rate Hikes Dampen Activity",
-      "snippet": "The number of homes auctioned in Australia dropped over the past week as interest rates at a 15-year high weigh on activity in the housing market.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/australian-home-auctions-decline-as-rate-hikes-dampen-activity"
-    },
-    {
-      "title": "Avalanche in Chile Kills Three Climbers Amid Rare Snowy Spring",
-      "snippet": "An avalanche killed three climbers and injured four others Saturday afternoon near the Portillo ski resort in the Chilean Andes, northeast of the capital Santiago.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/avalanche-in-chile-kills-three-climbers-amid-rare-snowy-spring"
-    },
-    {
-      "title": "Niger Halts Diesel, Petrol Exports to Protect Domestic Supply",
-      "snippet": "Niger banned exports of diesel and premium petrol in a bid to address fuel supply challenges that the country has been facing in recent days, the ministry of trade and industry said in a statement on its Facebook page.",
-      "link": "https://www.bloomberg.com/news/articles/2026-10-17/niger-halts-diesel-petrol-exports-to-protect-domestic-supply"
-    },
-    {
-      "title": "Russia Sanctions Waived, AI Debt Concerns, Making 'GTA VI'",
-      "snippet": "The news doesn’t stop when markets close. Hosts David Gura, Christina Ruffini and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York. Joined by International Rescue Committee CEO and Fmr. UK Foreign Secretary David Miliband",
-      "link": "https://www.bloomberg.com/news/videos/2026-10-17/bloomberg-this-weekend-10-17-2026-video"
-    },
-    {
-      "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
-      "snippet": "Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests.",
-      "link": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo"
+      "title": "A wave of homemade, synthetic drugs sweeps US and deepens crisis",
+      "snippet": "BBC News hears from users, dealers, prison and recovery workers as the country battles with a deadly new drug epidemic.",
+      "link": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o"
     },
     {
       "title": "European diplomats attacked by Israeli settlers in West Bank",
@@ -144,8 +194,8 @@
       "link": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo"
     },
     {
-      "title": "Deaths confirmed in major fire at Canada military base",
-      "snippet": "Number of casualties unknown in \"very, very active and delicate\" situation in Alberta, says defence minister.",
+      "title": "Several dead or injured in major fire at Canada military base",
+      "snippet": "Officials have not given a cause or death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright.",
       "link": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo"
     },
     {
@@ -164,69 +214,54 @@
       "link": "https://www.bbc.co.uk/news/articles/c820vwq7qg2ko"
     },
     {
-      "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
-      "snippet": "Satellite images give clues about how Kim spends his holidays - something far out of reach for most North Koreans.",
-      "link": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo"
+      "title": "Nowe informacje ws. poszukiwań drona. Pilny komunikat Dowództwa Operacyjnego",
+      "snippet": "Wojskowy śmigłowiec wspiera poszukiwania związane z podejrzeniem naruszenia polskiej przestrzeni powietrznej w nocy z soboty na niedzielę. Dowództwo Operacyjne Rodzajów Sił Zbrojnych poinformowało w nowym komunikacie, że służby analizują kilka scenariuszy, w tym działania przemyt",
+      "link": "https://defence24.pl/polityka-obronna/nowe-informacje-ws-poszukiwan-drona-pilny-komunikat-dowodztwa-operacyjnego"
     },
     {
-      "title": "Teacher fought US school attacker before armed dad shot suspect 'multiple times'",
-      "snippet": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say.",
-      "link": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o"
+      "title": "Niewidzialny czynnik zwycięstwa w wojnie. Czy można zmierzyć wolę walki?",
+      "snippet": "Ocena potencjału wojskowego wymaga czegoś więcej niż bilansu liczebności i uzbrojenia. Jawne ramy analityczne DIA porządkują ocenę czynników, które wpływają na gotowość przywódców i żołnierzy do kontynuowania walki, nawiązując do szerszych badań [RAND](https://defence24.pl/sily-z",
+      "link": "https://defence24.pl/polityka-obronna/niewidzialny-czynnik-zwyciestwa-w-wojnie-czy-mozna-zmierzyc-wole-walki"
     },
     {
-      "title": "Nursery owner in China jailed for life after hundreds of children poisoned",
-      "snippet": "She and five staff members were found to have used the inedible paint in meals to make them look more appealing.",
-      "link": "https://www.bbc.co.uk/news/articles/cqe9lx54g7x9o"
+      "title": "Tragiczny incydent w kanadyjskiej bazie wojskowej. Są ofiary śmiertelne",
+      "snippet": "W bazie kanadyjskich sił zbrojnych Wainwright w prowincji Alberta doszło do poważnego incydentu, w wyniku którego wybuchł rozległy pożar. Władze potwierdziły ofiary śmiertelne i rannych, ale nie podały ich liczby ani przyczyny zdarzenia. Sprawę badają kanadyjskie siły zbrojne ora",
+      "link": "https://defence24.pl/sily-zbrojne/tragiczny-incydent-w-kanadyjskiej-bazie-wojskowej-sa-ofiary-smiertelne"
     },
     {
-      "title": "Kontrakt na 130 mln euro. Bez tego Leopard 2 nie pojedzie",
-      "snippet": "RENK, będący producentem przekładni dla opancerzonych wozów bojowych, zawarł aneks do umowy z KNDS Deutschland, producentem między innymi czołgów podstawowych Leopard 2.",
-      "link": "https://defence24.pl/przemysl/kontrakt-na-130-mln-euro-bez-tego-leopard-2-nie-pojedzie"
+      "title": "Dlaczego nowoczesny i drogi saudyjski system obrony powietrznej jest dziurawy",
+      "snippet": "Drogi i jeden z najnowocześniejszych systemów przeciwlotniczych na świecie, który działa w Arabii Saudyjskiej, okazał się nie w pełni skuteczny w zwalczaniu prymitywnych rakiet wystrzelonych przez bojowników Huti. Teraz wyjaśniamy, dlaczego.",
+      "link": "https://defence24.pl/sily-zbrojne/dlaczego-nowoczesny-i-drogi-saudyjski-system-obrony-powietrznej-jest-dziurawy"
     },
     {
-      "title": "Przeleciały nad Polską i wylądowały w Rosji. Większa aktywność afrykańskich samolotów",
-      "snippet": "W piątek, 16 października, nad Polską ponownie pojawiły się samoloty sił powietrznych Algierii. To Ił-76MD i Lockheed Martin C-130H-30 Hercules. Wracały z Rosji, najprawdopodobniej z lotniska w Moskwie, do nieznanej bazy w Algierii (prawdopodobnie Boufarik).",
-      "link": "https://defence24.pl/polityka-obronna/przelecialy-nad-polska-i-wyladowaly-w-rosji-wieksza-aktywnosc-afrykanskich-samolotow"
+      "title": "Podejrzenie wtargnięcia drona nad Lubelszczyzną. Wojsko sprawdza sygnały",
+      "snippet": "Polskie służby sprawdzają możliwość naruszenia przestrzeni powietrznej przez niezidentyfikowany obiekt, do którego mogło dojść minionej nocy. Dowództwo Operacyjne Rodzajów Sił Zbrojnych poinformowało w niedzielę rano o rozpoczęciu działań poszukiwawczych na południe od Lublina. W",
+      "link": "https://defence24.pl/sily-zbrojne/podejrzenie-wtargniecia-drona-nad-lubelszczyzna-wojsko-sprawdza-sygnaly"
     },
     {
-      "title": "F-16 zestrzeliły dwa rosyjskie drony",
-      "snippet": "W sobotę, 17 października, rumuńskie myśliwce F-16 zestrzeliły dwa rosyjskie drony uderzeniowe z rodziny Gierań, które naruszyły przestrzeń powietrzną kraju. Bezzałogowce z napędem odrzutowym zostały zniszczone nad rumuńskimi wodami terytorialnymi na Morzu Czarnym.",
-      "link": "https://defence24.pl/polityka-obronna/f-16-zestrzelily-dwa-rosyjskie-drony"
+      "title": "Śladami wojen światowych: pancerne zwarcie w Dolinie Śmierci [FOTO]",
+      "snippet": "Podczas obu wojen światowych przez terytorium współczesnej Słowacji kilkukrotnie przetoczyły się wielkie operacje wojskowe. O niemych świadkach historii XX w., których można spotkać za południową granicą Polski, pisze Jerzy Reszczyński.",
+      "link": "https://defence24.pl/sily-zbrojne/sladami-wojen-swiatowych-pancerne-zwarcie-w-dolinie-smierci-foto"
     },
     {
-      "title": "Będą wymagać obrony kraju od każdego obywatela. Szef brytyjskiej armii o przygotowaniach do wojny",
-      "snippet": "W piątek, 16 października, na brytyjskim portalu informacyjnym „Sky News” opublikowany został materiał, w którym generał Roly Walker stwierdza, że nadejdzie czas, w którym każdy obywatel zostanie poproszony o poniesienie wyrzeczeń na rzecz obrony swojego kraju.",
-      "link": "https://defence24.pl/polityka-obronna/beda-wymagac-obrony-kraju-od-kazdego-obywatela-szef-brytyjskiej-armii-o-przygotowaniach-do-wojny"
+      "title": "Zełenski: Rosja atakuje energetykę. 76 naruszeń rozejmu",
+      "snippet": "Od ogłoszenia przez USA rozejmu energetycznego Rosja 76 razy zaatakowała ukraiński sektor energetyczny i naftowo-gazowy – poinformował w niedzielę prezydent Ukrainy Wołodymyr Zełenski.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/zelenski-rosja-atakuje-energetyke-76-naruszen-rozejmu"
     },
     {
-      "title": "Polska ma być odpowiedzialna za inne kraje. Szef MON o wysłaniu żołnierzy za granicę",
-      "snippet": "W piątek, 16 października, w trakcie Europejskiego Forum Nowych Idei, głos zabrał szef MON, Władysław Kosiniak-Kamysz. Mówił o rosnącej roli Polski w Środkowej Europie oraz o jej coraz większej odpowiedzialności za wschodnią flankę NATO. Mówił także o celach i efektach, jakie ma ",
-      "link": "https://defence24.pl/polityka-obronna/polska-ma-byc-odpowiedzialna-za-inne-kraje-szef-mon-o-wyslaniu-zolnierzy-za-granice"
+      "title": "Moskwa chce współpracy stoczniowej z Pekinem. Arktyka w centrum rosyjskich planów",
+      "snippet": "Rosja dąży do zacieśnienia współpracy stoczniowej z Chinami, zabiegając o technologie, wyposażenie zakładów oraz wspólne prace projektowe i badawcze. Rozmowy Nikołaja Patruszewa w Pekinie i Szanghaju objęły również rozwój infrastruktury portowej. Istotnym elementem rosyjskiej ofe",
+      "link": "https://defence24.pl/geopolityka/moskwa-chce-wspolpracy-stoczniowej-z-pekinem-arktyka-w-centrum-rosyjskich-planow"
     },
     {
-      "title": "Rosyjskie samoloty nad Bałtykiem. Myśliwce i bombowce w powietrzu",
-      "snippet": "W piątek, 16 października, nad neutralnymi wodami Morza Bałtyckiego pojawiły się rosyjskie bombowce naddźwiękowe Tu-22M3, zdolne do przenoszenia broni jądrowej. Były eskortowane przez rosyjskie myśliwce, pozostając w powietrzu przez ponad cztery godziny.",
-      "link": "https://defence24.pl/polityka-obronna/rosyjskie-samoloty-nad-baltykiem-mysliwce-i-bombowce-w-powietrzu"
+      "title": "Alarmy na Litwie i Łotwie. Eksplozja drona na Litwie (AKTUALIZACJA)",
+      "snippet": "Władze Litwy poinformowały w niedzielę o wydaniu czerwonego alertu dla dwóch północnych regionów kraju z powodu niezidentyfikowanego obiektu w przestrzeni powietrznej. Na Łotwie wydano żółty alert dla dwóch regionów. Alarmy zostały już odwołane. Na Litwie znaleziono prawdopodobni",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/alarmy-na-litwie-i-lotwie-znaleziono-szczatki-drona"
     },
     {
-      "title": "Wtedy spodziewa się eskalacji w Polsce. Tusk mówi o wojnie i wskazuje termin",
-      "snippet": "W piątek, 16 października, premier Donald Tusk, wracający ze szczytu Rady Europejskiej w Brukseli, poinformował dziennikarzy o swoich obawach związanych z eskalacją rosyjskich działań hybrydowych na terenie Polski. Według niego, „jeszcze przed Wigilią” dojdzie do eskalacji.",
-      "link": "https://defence24.pl/polityka-obronna/wtedy-spodziewa-sie-eskalacji-w-polsce-tusk-mowi-o-wojnie-i-wskazuje-termin"
-    },
-    {
-      "title": "Trump uchyla sankcje. Kongres mówi o zdradzie",
-      "snippet": "Decyzja Donalda Trumpa ws. uchylenia części sankcji wobec Rosji spotkała się ze sprzeciwem części amerykańskiego Kongresu.",
-      "link": "https://defence24.pl/geopolityka/trump-uchyla-sankcje-kongres-mowi-o-zdradzie"
-    },
-    {
-      "title": "Tajwan z amerykańskim wsparciem w technologiach dronowych",
-      "snippet": "Pomimo niechęci władz w Pekinie, Amerykanie na poważnie badają możliwości współpracy z Tajwańczykami w dziedzinie systemów bezzałogowych. Efektem tego mogą być inteligentne tajwańskie „Shahedy” oraz drony nawodne z amerykańską amunicją krążącą.",
-      "link": "https://defence24.pl/technologie/tajwan-z-amerykanskim-wsparciem-w-technologiach-dronowych"
-    },
-    {
-      "title": "Jacek Siewiera wyjaśnia słowa o wojnie: To nie data inwazji",
-      "snippet": "W piątek w polskich mediach szerokim echem odbiła się wypowiedź byłego szefa BBN Jacka Siewiery, który na antenie Radia Zet stwierdził, że Polska znajduje się na progu konfrontacji z Rosją. Dzień później odniósł się do swoich słów w mediach społecznościowych.",
-      "link": "https://defence24.pl/polityka-obronna/jacek-siewiera-wyjasnia-slowa-o-wojnie-to-nie-data-inwazji"
+      "title": "Atak dronów na Petersburg. Płonie terminal naftowy",
+      "snippet": "Terminal naftowy w Petersburgu stanął w ogniu po ataku kilkudziesięciu dronów – poinformowały w niedzielę lokalne władze. Płonie też „infrastruktura cywilna” w mieście. Zaatakowano również centrum danych największego rosyjskiego serwisu społecznościowego VK w obwodzie leningradzk",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/atak-dronow-na-petersburg-plonie-terminal-naftowy"
     },
     {
       "title": "Three takeaways from Elon Musk's latest political donations",
@@ -237,11 +272,6 @@
       "title": "Fast-moving California wildfire burns homes as people are ordered to leave",
       "snippet": "Fanned by the fierce Santa Ana winds, the Norte Fire is one of 13 burning across the state.",
       "link": "https://www.bbc.co.uk/news/articles/c6vgjnk8nw2wo"
-    },
-    {
-      "title": "Katie Zacharia leaving White House role less than five days into job",
-      "snippet": "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness.",
-      "link": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o"
     }
   ]
 }
