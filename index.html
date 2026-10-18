@@ -17,19 +17,6 @@
 <meta name="apple-mobile-web-app-title" content="Świat w Minutę">
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://swiat-w-minute.vercel.app/">
-<meta property="og:title" content="Świat w Minutę — Przegląd dnia">
-<meta property="og:description" content="Najważniejsze wiadomości świata w 60 sekund.">
-<meta property="og:image" content="https://swiat-w-minute.vercel.app/og-image.png">
-<meta property="og:locale" content="pl_PL">
-<meta property="og:site_name" content="Świat w Minutę">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Świat w Minutę — Przegląd dnia">
-<meta name="twitter:description" content="Najważniejsze wiadomości świata w 60 sekund.">
-<meta name="twitter:image" content="https://swiat-w-minute.vercel.app/og-image.png">
-
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/icons/icon-192.png">
 <link rel="manifest" href="/manifest.json">
@@ -39,14 +26,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script>
+  // 1. Natychmiastowe odblokowanie zawieszonego Service Workera, który blokuje ładowanie JSON-ów
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    }).catch(function() {});
+  }
+
+  // 2. Motyw ciemny/jasny przed pierwszym renderem
   (function() {
     try {
       var saved = localStorage.getItem('swm-dark');
       var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       if (saved === '1' || (saved === null && prefersDark)) {
         document.documentElement.classList.add('dark');
-        var meta = document.getElementById('theme-color-meta');
-        if (meta) meta.setAttribute('content', '#020617');
       }
     } catch (e) {}
   })();
@@ -66,7 +61,6 @@
     --amber-bg: rgba(217, 119, 6, 0.1);
     --focus-ring: #f59e0b;
 
-    /* Category palettes (Light) */
     --c-econ-bg: #ecfdf5; --c-econ-txt: #047857; --c-econ-brd: #a7f3d0;
     --c-pol-bg: #fef2f2;  --c-pol-txt: #b91c1c;  --c-pol-brd: #fecaca;
     --c-geo-bg: #eff6ff;  --c-geo-txt: #1d4ed8;  --c-geo-brd: #bfdbfe;
@@ -87,7 +81,6 @@
     --amber: #f59e0b;
     --amber-bg: rgba(245, 158, 11, 0.14);
 
-    /* Category palettes (Dark) */
     --c-econ-bg: rgba(6, 78, 59, 0.4);   --c-econ-txt: #6ee7b7; --c-econ-brd: rgba(16, 185, 129, 0.3);
     --c-pol-bg: rgba(127, 29, 29, 0.4);  --c-pol-txt: #fca5a5;  --c-pol-brd: rgba(239, 68, 68, 0.3);
     --c-geo-bg: rgba(30, 58, 138, 0.4);  --c-geo-txt: #93c5fd;  --c-geo-brd: rgba(59, 130, 246, 0.3);
@@ -106,11 +99,6 @@
     -webkit-text-size-adjust: 100%;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after { transition: none !important; animation: none !important; }
-  }
-
   body {
     min-height: 100vh;
     background: var(--bg);
@@ -126,11 +114,6 @@
   a { color: inherit; text-decoration: none; }
   button { font-family: inherit; cursor: pointer; background: none; border: none; color: inherit; }
 
-  :focus-visible {
-    outline: 2px solid var(--focus-ring);
-    outline-offset: 2px;
-  }
-
   .container {
     max-width: 1152px;
     margin: 0 auto;
@@ -140,14 +123,12 @@
 
   .hidden { display: none !important; }
 
-  /* Progress bar */
   #scroll-progress {
     position: fixed; top: 0; left: 0; height: 3px;
     background: linear-gradient(90deg, #f59e0b, #d97706);
     width: 0%; z-index: 100;
   }
 
-  /* Header */
   .site-header {
     position: sticky; top: 0; z-index: 40;
     background: var(--header-bg);
@@ -176,9 +157,8 @@
     min-width: 44px; min-height: 44px; border-radius: 12px;
     border: 1px solid var(--border); background: var(--bg-card);
     display: inline-flex; align-items: center; justify-content: center;
-    font-size: 16px; font-weight: 700; transition: border-color 0.15s, color 0.15s;
+    font-size: 16px; font-weight: 700;
   }
-  .icon-btn:hover { border-color: var(--amber); color: var(--amber); }
 
   .ig-btn {
     display: none; align-items: center; justify-content: center;
@@ -188,14 +168,6 @@
   }
   @media (min-width: 640px) { .ig-btn { display: inline-flex; } }
 
-  #install-btn {
-    display: none; align-items: center; gap: 6px; border-radius: 12px;
-    min-height: 44px; padding: 0 14px; font-size: 12px; font-weight: 800;
-    background: linear-gradient(135deg, #f59e0b, #d97706); color: #111;
-  }
-  #install-btn.show { display: inline-flex; }
-
-  /* Main layout */
   main.container { padding-top: 16px; padding-bottom: 48px; }
 
   .hero-bar {
@@ -220,7 +192,6 @@
   .widget-label { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text-sec); }
   .widget-val { font-size: 15px; font-weight: 900; margin-top: 2px; display: flex; align-items: center; gap: 6px; }
 
-  /* Search */
   .search-box {
     background: var(--bg-card); border: 1px solid var(--border);
     border-radius: 16px; padding: 10px; margin-bottom: 14px;
@@ -239,7 +210,6 @@
     display: flex; align-items: center; justify-content: center;
   }
 
-  /* Navigation Tabs */
   .tabs-nav {
     display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px;
     margin-bottom: 18px; scrollbar-width: none;
@@ -249,7 +219,7 @@
     min-height: 44px; padding: 0 16px; border-radius: 12px;
     border: 1px solid var(--border); background: var(--bg-card);
     color: var(--text-sec); font-size: 13px; font-weight: 700;
-    white-space: nowrap; transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
   }
   .tab-btn[aria-current="page"] {
     background: #0f172a; color: #fff; border-color: #0f172a;
@@ -258,7 +228,6 @@
     background: #f8fafc; color: #0f172a; border-color: #f8fafc;
   }
 
-  /* Section Headers */
   .sec-head {
     display: flex; align-items: flex-end; justify-content: space-between;
     gap: 12px; margin-bottom: 12px;
@@ -266,7 +235,6 @@
   .sec-title { font-size: 20px; font-weight: 900; letter-spacing: -0.02em; }
   .sec-count { font-size: 13px; font-weight: 600; color: var(--text-sec); }
 
-  /* 60 seconds list */
   .headline-box {
     background: var(--bg-card); border: 1px solid var(--border);
     border-radius: 18px; overflow: hidden;
@@ -274,7 +242,6 @@
   .headline-item {
     display: flex; align-items: center; gap: 10px;
     padding: 12px 14px; border-bottom: 1px solid var(--border);
-    transition: background 0.15s;
   }
   .headline-item:last-child { border-bottom: none; }
   .headline-item:hover { background: var(--amber-bg); }
@@ -301,25 +268,23 @@
     display: flex; align-items: center; gap: 8px;
   }
 
-  /* Interactive 44px Buttons */
   .act-btn {
     width: 44px; height: 44px; border-radius: 10px; flex-shrink: 0;
     display: inline-flex; align-items: center; justify-content: center;
-    color: var(--text-sec); transition: background 0.15s, color 0.15s;
+    color: var(--text-sec);
   }
   .act-btn:hover { background: var(--bg-muted); color: var(--amber); }
 
   .check-box {
     width: 22px; height: 22px; border-radius: 6px;
     border: 2px solid #cbd5e1; display: flex; align-items: center; justify-content: center;
-    font-size: 13px; font-weight: 900; color: transparent; transition: 0.15s;
+    font-size: 13px; font-weight: 900; color: transparent;
   }
   .dark .check-box { border-color: #475569; }
   .act-btn[aria-pressed="true"] .check-box {
     background: #f59e0b; border-color: #f59e0b; color: #111;
   }
 
-  /* Cards Grid */
   .cards-grid {
     display: grid; gap: 18px; grid-template-columns: 1fr;
   }
@@ -361,7 +326,6 @@
     border-bottom: 1px solid var(--border); background: var(--bg-card);
   }
   .photo-credit a { text-decoration: underline; font-weight: 600; }
-  .photo-credit a:hover { color: var(--amber); }
 
   .card-body { padding: 16px; display: flex; flex-direction: column; flex: 1; }
   .card-title {
@@ -389,7 +353,6 @@
   .card-publisher { font-weight: 800; color: var(--c-txt, var(--text)); }
   .card-actions { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
 
-  /* Category Theme Classes */
   .cat-econ { --c-bg: var(--c-econ-bg); --c-txt: var(--c-econ-txt); --c-brd: var(--c-econ-brd); }
   .cat-pol  { --c-bg: var(--c-pol-bg);  --c-txt: var(--c-pol-txt);  --c-brd: var(--c-pol-brd); }
   .cat-geo  { --c-bg: var(--c-geo-bg);  --c-txt: var(--c-geo-txt);  --c-brd: var(--c-geo-brd); }
@@ -411,7 +374,6 @@
   }
   .dark .more-btn { background: #f8fafc; color: #0f172a; }
 
-  /* Preview Fun Grid */
   .fun-preview-grid {
     display: grid; gap: 10px; grid-template-columns: 1fr; margin-top: 10px;
   }
@@ -420,11 +382,8 @@
   .fun-mini-card {
     background: var(--bg-card); border: 1px solid var(--border);
     border-radius: 14px; padding: 12px; cursor: pointer; text-align: left;
-    transition: border-color 0.15s;
   }
-  .fun-mini-card:hover { border-color: var(--amber); }
 
-  /* Modal (Deep-link & Random Fun Fact) */
   .modal-backdrop {
     position: fixed; inset: 0; background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(4px); z-index: 90;
@@ -441,13 +400,11 @@
     padding: 10px 16px; border-bottom: 1px solid var(--border);
   }
 
-  /* Footer */
   .site-footer {
     border-top: 1px solid var(--border); background: var(--bg-card);
     padding: 32px 0; margin-top: 40px;
   }
 
-  /* Bottom Mobile Nav */
   #bottom-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
     background: var(--header-bg); border-top: 1px solid var(--border);
@@ -465,7 +422,6 @@
   .bottom-tab[aria-current="page"] { color: var(--amber); }
   @media (min-width: 640px) { #bottom-nav { display: none; } }
 
-  /* Floating Back to Top & Toast */
   #back-top {
     position: fixed; right: 18px; bottom: calc(76px + env(safe-area-inset-bottom, 0px));
     z-index: 60; width: 44px; height: 44px; border-radius: 999px;
@@ -501,7 +457,6 @@
       </div>
     </a>
     <div class="header-actions">
-      <button id="install-btn" data-act="install-pwa" aria-label="Zainstaluj aplikację">📲 Zainstaluj</button>
       <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="ig-btn">Instagram</a>
       <button data-act="toggle-dark" class="icon-btn" aria-label="Przełącz tryb ciemny">☾</button>
     </div>
@@ -557,7 +512,7 @@
 
   <div id="load-error" class="hidden" style="padding: 16px; border-radius: 16px; border: 1px solid var(--c-pol-brd); background: var(--c-pol-bg); color: var(--c-pol-txt); margin-bottom: 16px;">
     <div style="font-weight: 800;">Nie udało się pobrać wydania</div>
-    <p style="font-size: 13px; margin-top: 4px;">Sprawdź połączenie z internetem i odśwież stronę.</p>
+    <p id="load-error-msg" style="font-size: 13px; margin-top: 4px;">Sprawdź połączenie z internetem i odśwież stronę.</p>
   </div>
 
   <!-- 60 SEKUND -->
@@ -687,7 +642,6 @@
 'use strict';
 const $ = id => document.getElementById(id);
 
-/* Rejestr elementów w pamięci dla delegacji zdarzeń (brak inline JSON) */
 const itemById = new Map();
 let seq = 0;
 
@@ -695,7 +649,11 @@ function registerItem(item) {
   if (!item || typeof item !== 'object') return '';
   if (item._uid && itemById.has(item._uid)) return item._uid;
   const uid = 'i' + (++seq);
-  Object.defineProperty(item, '_uid', { value: uid, enumerable: false, configurable: true });
+  try {
+    Object.defineProperty(item, '_uid', { value: uid, enumerable: false, configurable: true });
+  } catch (e) {
+    item._uid = uid;
+  }
   itemById.set(uid, item);
   return uid;
 }
@@ -714,6 +672,9 @@ const DATA_FILES = {
   archiveFun: 'archive_rozrywka.json'
 };
 
+// Zapasowe źródło z głównego repozytorium GitHub (gdy plik jest uruchamiany w drugim repozytorium lub lokalnie)
+const REMOTE_RAW_BASE = 'https://raw.githubusercontent.com/Papinio89/Swiat-news/main/';
+
 $('year').textContent = new Date().getFullYear();
 
 function escapeHtml(v) {
@@ -722,7 +683,6 @@ function escapeHtml(v) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-/* Bezpieczny URL: przepuszcza wyłącznie http: i https: */
 function safeUrl(u) {
   if (!u || typeof u !== 'string') return '#';
   const trimmed = u.trim().replace(/&amp;/g, '&');
@@ -736,14 +696,14 @@ function safeUrl(u) {
   return '#';
 }
 
+/* Kompatybilny ze wszystkimi przeglądarkami ekstraktor emoji i tytułu */
 function getTitle(x) {
   const raw = (typeof x === 'object' && x !== null) ? (x.title_pl || x.title || x.text || '') : String(x || '');
   const s = String(raw).trim().replace(/\s+-\s+[^-]+$/, '');
-  const m = s.match(/^(\p{Extended_Pictographic}|\p{Emoji_Presentation})\s*/u);
+  const m = s.match(/^([\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]+(?:\uFE0F|\u200D[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]+)*)\s*/u);
   return m ? { emoji: m[1], title: s.slice(m[0].length).trim() } : { emoji: '', title: s };
 }
 
-/* Dopasowanie emotikon po początkach słów */
 function pickEmoji(title, cat) {
   const t = (String(title || '') + ' ' + String(cat || '')).toLowerCase();
   if (/(^|\s)(trump|biden|usa|ameryk|waszyngton)/i.test(t)) return '🇺🇸';
@@ -927,7 +887,6 @@ function showToast(msg) {
   showToast._t = setTimeout(() => t.classList.remove('show'), 2200);
 }
 
-/* Render pojedynczego wiersza w 60 sekund */
 function headlineRow(item) {
   const uid = registerItem(item);
   const link = safeUrl(sourceLink(item));
@@ -954,7 +913,6 @@ function headlineRow(item) {
     </div>`;
 }
 
-/* Render karty newsa / ciekawostki */
 function card(item) {
   const uid = registerItem(item);
   const t = getTitle(item);
@@ -1023,7 +981,7 @@ function renderToday() {
 
   $('edition-time').textContent = total ? `${total} tematów` : '';
   if (!total) {
-    $('headline-list').innerHTML = `<div style="padding: 24px; text-align: center; font-size: 14px; color: var(--text-sec);">${dataLoadFailed ? 'Brak danych.' : 'Brak wiadomości.'}</div>`;
+    $('headline-list').innerHTML = `<div style="padding: 24px; text-align: center; font-size: 14px; color: var(--text-sec);">${dataLoadFailed ? 'Nie udało się załadować plików JSON.' : 'Brak wiadomości.'}</div>`;
     return;
   }
 
@@ -1070,7 +1028,6 @@ function renderFun() {
   more.textContent = `Pokaż więcej (${Math.max(0, allFunItems.length - funShown)})`;
 }
 
-/* Ostatnie 7 dni (1-2 materiały dziennie) */
 function renderWeek() {
   const now = new Date();
   const cutoff = new Date(now.getTime() - 7 * 86400000);
@@ -1165,7 +1122,6 @@ function switchTab(tab) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-/* Otwieranie pojedynczej karty w oknie modalnym (dla losowania i linków /#n=id) */
 function openItemModal(item, headingLabel) {
   if (!item) return;
   const root = $('modal-root');
@@ -1219,7 +1175,6 @@ async function shareItem(item) {
   }
 }
 
-/* Jedna centralna delegacja kliknięć bez przeładowywania całej listy przy odhaczeniu */
 document.addEventListener('click', e => {
   const el = e.target.closest('[data-act]');
   if (!el) return;
@@ -1283,12 +1238,9 @@ document.addEventListener('click', e => {
   } else if (act === 'top') {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  } else if (act === 'install-pwa') {
-    installPWA();
   }
 });
 
-/* Obsługa błędów ładowania obrazka (podmiana na czystą kartę kategorii) */
 document.addEventListener('error', e => {
   const img = e.target;
   if (img && img.tagName === 'IMG' && img.dataset.act === 'img-err') {
@@ -1303,7 +1255,6 @@ document.addEventListener('error', e => {
   }
 }, true);
 
-/* Wyszukiwarka */
 $('search-input').addEventListener('input', () => {
   const q = ($('search-input').value \vert{}\vert{} '').trim();$('search-clear').classList.toggle('hidden', !q);
   if (!q) { $('search-results').classList.add('hidden'); return; }
@@ -1322,34 +1273,45 @@ $('search-input').addEventListener('input', () => {
     <div class="headline-box">${hits.slice(0, 25).map(headlineRow).join('') || '<div style="padding: 16px; font-size: 13px; color: var(--text-sec);">Nic nie znaleziono.</div>'}</div>`;
 });
 
-async function loadJson(url, fallback) {
+/* Pancerny loader JSON: próbuje pobrać lokalnie, a w razie braku pliku w repo pobiera z głównego GitHuba */
+async function loadJson(filename, fallback) {
   try {
-    const r = await fetch(url, { cache: 'no-store' });
-    if (!r.ok) throw new Error(r.status);
-    return { ok: true, data: await r.json() };
-  } catch (e) {
-    return { ok: false, data: fallback };
-  }
+    const r = await fetch(filename + '?t=' + Date.now(), { cache: 'no-store' });
+    if (r.ok) return { ok: true, data: await r.json() };
+  } catch (e) {}
+
+  try {
+    const r2 = await fetch(REMOTE_RAW_BASE + filename + '?t=' + Date.now(), { cache: 'no-store' });
+    if (r2.ok) return { ok: true, data: await r2.json() };
+  } catch (e) {}
+
+  return { ok: false, data: fallback };
 }
 
-/* Archiwum bez bieżącego wydania */
+function extractItemsList(payload) {
+  if (!payload) return [];
+  if (Array.isArray(payload)) return payload;
+  if (Array.isArray(payload.items)) return payload.items;
+  return [];
+}
+
 function parseArchiveGroups(data, currentTimestamp) {
   if (!data || typeof data !== 'object') return [];
-  const todayPrefix = new Date().toISOString().slice(0, 10);
   const keys = Object.keys(data).sort().reverse();
   const out = [];
 
   for (const key of keys) {
     const v = data[key];
-    if (!v || !Array.isArray(v.items)) continue;
+    if (!v) continue;
+    const list = Array.isArray(v) ? v : (Array.isArray(v.items) ? v.items : []);
+    if (!list.length) continue;
     if (currentTimestamp && v.timestamp === currentTimestamp) continue;
-    if (key.startsWith(todayPrefix) && out.length === 0 && newsItems.length > 0) continue;
 
     const dk = extractDayKey(v.timestamp || key);
     out.push({
       label: v.date ? `${v.date}${v.time ? ' • ' + v.time : ''}` : key.replace(/_/g, ' • '),
       dayKey: dk,
-      items: stampEdition(v.items, v)
+      items: stampEdition(list, v)
     });
   }
   return out;
@@ -1365,44 +1327,49 @@ function checkHashDeepLink() {
 }
 
 async function init() {
-  loadRead();
+  try {
+    loadRead();
 
-  const [n, raw, f, r, a, af] = await Promise.all([
-    loadJson(DATA_FILES.news, { items: [] }),
-    loadJson(DATA_FILES.raw, { items: [] }),
-    loadJson(DATA_FILES.fast, { items: [] }),
-    loadJson(DATA_FILES.fun, { items: [] }),
-    loadJson(DATA_FILES.archive, {}),
-    loadJson(DATA_FILES.archiveFun, {})
-  ]);
+    const [n, raw, f, r, a, af] = await Promise.all([
+      loadJson(DATA_FILES.news, { items: [] }),
+      loadJson(DATA_FILES.raw, { items: [] }),
+      loadJson(DATA_FILES.fast, { items: [] }),
+      loadJson(DATA_FILES.fun, { items: [] }),
+      loadJson(DATA_FILES.archive, {}),
+      loadJson(DATA_FILES.archiveFun, {})
+    ]);
 
-  dataLoadFailed = !n.ok && !raw.ok;
-  newsItems = stampEdition(n.data.items || [], n.data);
-  rawFeedItems = stampEdition(raw.data.items || [], raw.data);
-  fastItems = stampEdition(f.data.items || [], f.data);
-  funItems = stampEdition(r.data.items || [], r.data);
-  archiveGroups = parseArchiveGroups(a.data, n.data.timestamp);
+    dataLoadFailed = !n.ok && !raw.ok;
+    newsItems = stampEdition(extractItemsList(n.data), n.data);
+    rawFeedItems = stampEdition(extractItemsList(raw.data), raw.data);
+    fastItems = stampEdition(extractItemsList(f.data), f.data);
+    funItems = stampEdition(extractItemsList(r.data), r.data);
+    archiveGroups = parseArchiveGroups(a.data, n.data && n.data.timestamp);
 
-  archiveFunItems = [];
-  if (af.ok && af.data && typeof af.data === 'object') {
-    for (const k of Object.keys(af.data).sort().reverse()) {
-      const grp = af.data[k];
-      if (grp && Array.isArray(grp.items)) {
-        archiveFunItems.push(...stampEdition(grp.items, grp));
+    archiveFunItems = [];
+    if (af.ok && af.data && typeof af.data === 'object') {
+      for (const k of Object.keys(af.data).sort().reverse()) {
+        const grp = af.data[k];
+        const list = extractItemsList(grp);
+        if (list.length) archiveFunItems.push(...stampEdition(list, grp));
       }
     }
+
+    const dObj = n.data || {};
+    const dateText = dObj.date ? `${dObj.date}${dObj.time ? ', ' + dObj.time : ''}` : new Date().toLocaleDateString('pl-PL');
+    $('last-update').textContent = `Wydanie: ${dateText}`;
+
+    if (dataLoadFailed && !newsItems.length && !rawFeedItems.length) {
+      $('load-error').classList.remove('hidden');
+    }
+
+    renderToday();
+    checkHashDeepLink();
+    loadWidgets();
+  } catch (err) {
+    console.error('Init error:', err);
+    $('load-error').classList.remove('hidden');$('load-error-msg').textContent = 'Błąd inicjalizacji: ' + (err && err.message ? err.message : String(err));
   }
-
-  const dateText = n.data.date ? `${n.data.date}${n.data.time ? ', ' + n.data.time : ''}` : new Date().toLocaleDateString('pl-PL');
-  $('last-update').textContent = `Wydanie: ${dateText}`;
-
-  if (dataLoadFailed && !newsItems.length && !rawFeedItems.length) {
-    $('load-error').classList.remove('hidden');
-  }
-
-  renderToday();
-  checkHashDeepLink();
-  loadWidgets();
 }
 
 async function loadWidgets() {
@@ -1444,32 +1411,7 @@ window.addEventListener('keydown', e => {
 
 window.addEventListener('hashchange', checkHashDeepLink);
 
-let deferredPrompt = null;
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredPrompt = e;
-  $('install-btn')?.classList.add('show');
-});
-window.addEventListener('appinstalled', () => {
-  deferredPrompt = null;
-  $('install-btn')?.classList.remove('show');
-});
-async function installPWA() {
-  if (!deferredPrompt) return;
-  deferredPrompt.prompt();
-  const { outcome } = await deferredPrompt.userChoice;
-  if (outcome === 'accepted') showToast('Aplikacja zainstalowana!');
-  deferredPrompt = null;
-  $('install-btn')?.classList.remove('show');
-}
-
 init();
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
-  });
-}
 </script>
 </body>
 </html>
