@@ -183,7 +183,10 @@ body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
   </section>
 
   <section id="week-view" class="hidden">
-    <div class="mb-4"><div class="text-[11px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div><h2 class="text-lg font-black text-main">📅 Tydzień w skrócie</h2></div>
+    <div class="mb-4">
+      <div class="text-[11px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div>
+      <h2 class="text-lg font-black text-main">📅 Tydzień w skrócie — TOP 15</h2>
+    </div>
     <div id="week-content"></div>
   </section>
 
@@ -368,23 +371,50 @@ async function translateToPolish(text) {
   return text;
 }
 
-/* ---------- zdjęcia i podpisy ---------- */
-function proxiedImg(url) { try { return 'https://images.weserv.nl/?url=' + encodeURIComponent(new URL(url).href.replace(/^https?:\/\//, '')) + '&w=800&fit=cover&output=webp'; } catch (e) { return ''; } }
+/* ---------- zdjęcia i podpisy (zabezpieczenie hotlink/CORS) ---------- */
+function proxiedImg(url) {
+  try {
+    return 'https://images.weserv.nl/?url=' + encodeURIComponent(new URL(url).href.replace(/^https?:\/\//, '')) + '&w=800&fit=cover&output=webp';
+  } catch (e) {
+    return '';
+  }
+}
+
+function resolveImageSrc(url) {
+  if (!url || typeof url !== 'string' || url === '#') return '';
+  const trimmed = url.trim().replace(/&amp;/g, '&');
+  if (trimmed.includes('images.pexels.com') || trimmed.includes('images.unsplash.com')) {
+    return trimmed;
+  }
+  return proxiedImg(trimmed) || trimmed;
+}
+
 const ph = (cat, small, em) => `<div class="ph${small ? ' ph-s' : ''}" data-c="${esc(catSlug(cat))}" aria-hidden="true">${esc(em || CAT_EMOJI[catSlug(cat)] || '📰')}</div>`;
+
 function imgTag(src, cat, small, em) {
   const u = safeUrl(src);
   if (!u || u === '#') return ph(cat, small, em);
-  return `<img src="${esc(u)}" data-proxy="${esc(proxiedImg(u))}" data-tried="0" data-cat="${esc(cat)}" data-small="${small ? 1 : 0}" data-em="${esc(em || '')}" class="h-full w-full object-cover" loading="lazy" referrerpolicy="no-referrer" decoding="async" alt="" onerror="window.__imgFallback(this)">`;
+  const primarySrc = resolveImageSrc(u);
+  const fallbackProxy = proxiedImg(u);
+  return `<img src="${esc(primarySrc)}" data-proxy="${esc(fallbackProxy)}" data-tried="0" data-cat="${esc(cat)}" data-small="${small ? 1 : 0}" data-em="${esc(em || '')}" class="h-full w-full object-cover" loading="lazy" referrerpolicy="no-referrer" decoding="async" alt="" onerror="window.__imgFallback(this)">`;
 }
+
 window.__imgFallback = function (el) {
-  if (el.dataset.tried === '0' && el.dataset.proxy) { el.dataset.tried = '1'; el.src = el.dataset.proxy; return; }
-  const p = el.parentElement; if (p) p.innerHTML = ph(el.dataset.cat, el.dataset.small === '1', el.dataset.em);
+  if (el.dataset.tried === '0' && el.dataset.proxy && el.src !== el.dataset.proxy) {
+    el.dataset.tried = '1';
+    el.src = el.dataset.proxy;
+    return;
+  }
+  const p = el.parentElement;
+  if (p) p.innerHTML = ph(el.dataset.cat, el.dataset.small === '1', el.dataset.em);
 };
 
+/* Podpis źródła zdjęcia */
 function creditHtml(x, img) {
   if (!img) return '';
   const low = img.toLowerCase();
   const pub = formatPublisher(x);
+
   if (low.includes('pexels.com')) {
     const a = x.photographer || x.image_author;
     if (a) return `<div class="px-3.5 pt-1.5 text-[11px] text-mute">Zdjęcie ilustracyjne. Foto: <a class="underline" href="${esc(safeUrl(x.photographer_url || 'https://www.pexels.com'))}" target="_blank" rel="noopener">${esc(a)}</a> / Pexels</div>`;
@@ -490,25 +520,46 @@ async function renderToday() {
 const cards = (l, empty) => l.length ? l.map(card).join('') : `<div class="col-span-full p-8 text-center text-sm text-sec">${empty}</div>`;
 function renderAll() { const l = uniq(newsItems); $('all-grid').innerHTML = cards(l.slice(0, allShown), 'Brak wiadomości.'); $('all-more').classList.toggle('hidden', allShown >= l.length); }
 function renderFast() { $('breaking').innerHTML = cards(uniq([...fastItems, ...newsItems.slice(0, 5)]), 'Brak pilnych.'); }
+
 const score = x => (getSummary(x) ? 3 : 0) + (getComment(x) ? 2 : 0) + (imageOf(x) ? 1 : 0) + (x.grounded === false ? -2 : 0);
-const DAYS_PL = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
+
+/* PODSUMOWANIE TYGODNIA — DOKŁADNIE 15 NAJWAŻNIEJSZYCH NEWSÓW */
 function renderWeek() {
-  const today = todayKey(), f = new Date(); f.setDate(f.getDate() - 6);
+  const today = todayKey(), f = new Date();
+  f.setDate(f.getDate() - 6);
   const start = `${f.getFullYear()}-${String(f.getMonth() + 1).padStart(2, '0')}-${String(f.getDate()).padStart(2, '0')}`;
-  const pool = []; archiveGroups.forEach(g => g.items.forEach(x => { if (x._day >= start && x._day <= today) pool.push(x); })); newsItems.concat(fastItems).forEach(x => pool.push(x));
-  const all = uniq(pool), byDay = {}; all.forEach(x => (byDay[x._day] = byDay[x._day] || []).push(x));
-  const days = Object.keys(byDay).sort().reverse();
+  
+  const pool = [];
+  archiveGroups.forEach(g => g.items.forEach(x => {
+    if (x._day >= start && x._day <= today) pool.push(x);
+  }));
+  newsItems.concat(fastItems).forEach(x => pool.push(x));
+
+  const all = uniq(pool);
+  all.sort((a, b) => score(b) - score(a));
+  const top15 = all.slice(0, 15);
+
   const row = x => {
     const k = keyOf(x); reg.set(k, x);
     const t = getTitle(x.title_pl || x.title || x.text), link = safeUrl(sourceLink(x)), pub = formatPublisher(x), c = esc(catSlug(category(x)));
-    const inner = `<span class="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full" style="background:var(--cc)"></span><span class="min-w-0 flex-1"><span class="block text-[14px] font-semibold leading-snug text-main">${t.emoji ? esc(t.emoji) + ' ' : ''}${esc(t.title)}</span><span class="block text-[11px] font-semibold" style="color:var(--cc)">${esc(pub)}</span></span>${link !== '#' ? '<span class="mt-0.5 text-mute" aria-hidden="true">↗</span>' : ''}`;
-    const cls = 'flex items-start gap-2.5 px-3.5 py-2.5 border-b last:border-0 no-underline headline-item';
+    const inner = `<span class="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full" style="background:var(--cc)"></span>
+      <span class="min-w-0 flex-1">
+        <span class="block text-[14px] font-semibold leading-snug text-main">${t.emoji ? esc(t.emoji) + ' ' : ''}${esc(t.title)}</span>
+        <span class="block text-[11px] font-semibold" style="color:var(--cc)">${esc(pub)}${x._day ? ' · ' + fmtDay(x._day) : ''}</span>
+      </span>
+      ${link !== '#' ? '<span class="mt-0.5 text-mute" aria-hidden="true">↗</span>' : ''}`;
+    const cls = 'flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 no-underline headline-item';
     return link !== '#' ? `<a href="${link}" target="_blank" rel="noopener" data-c="${c}" class="${cls}" style="border-color:var(--border)">${inner}</a>` : `<div data-c="${c}" class="${cls}" style="border-color:var(--border)">${inner}</div>`;
   };
-  $('week-content').innerHTML = `<p class="mb-3 text-sm text-sec">${fmtDay(start)} – ${fmtDay(today)} · ${all.length} tematów z ${days.length} dni</p>` +
-    (days.length ? days.map(d => { const l = byDay[d].sort((a, b) => score(b) - score(a)).slice(0, 6), dt = new Date(d + 'T12:00:00');
-      return `<section class="mb-5"><h3 class="mb-1.5 text-[13px] font-black uppercase tracking-wide amber">${DAYS_PL[dt.getDay()]} · ${fmtDay(d).slice(0, 5)}</h3><div class="rounded-2xl border overflow-hidden surface" style="border-color:var(--border)">${l.map(row).join('')}</div></section>`; }).join('')
-      : '<div class="p-6 text-center text-sm text-sec">Brak danych z ostatnich 7 dni.</div>');
+
+  $('week-content').innerHTML = `
+    <div class="mb-3 flex items-center justify-between text-xs text-sec">
+      <span>${fmtDay(start)} – ${fmtDay(today)}</span>
+      <span class="font-bold text-main">${top15.length} najważniejszych tematów</span>
+    </div>
+    ${top15.length ? `<div class="rounded-2xl border overflow-hidden surface shadow-sm" style="border-color:var(--border)">${top15.map(row).join('')}</div>`
+      : '<div class="p-6 text-center text-sm text-sec">Brak danych z ostatnich 7 dni.</div>'}
+  `;
 }
 
 function normalizeArchive(data) {
@@ -516,11 +567,11 @@ function normalizeArchive(data) {
   return Object.keys(data).sort().reverse().map(key => {
     const v = data[key]; if (!v || !Array.isArray(v.items)) return null;
     const day = dayOf(key) || dayOf(v.timestamp), kind = /poranne/.test(key) ? 'poranne' : /wieczorne/.test(key) ? 'wieczorne' : '';
-    return { key, day, label: `${v.date || fmtDay(day)}${kind ? ' · ' + kind : ''}`, items: stamp(v.items, { timestamp: day }) };
+    return { day, label: `${v.date || fmtDay(day)}${kind ? ' · ' + kind : ''}`, items: stamp(v.items, { timestamp: day }) };
   }).filter(Boolean);
 }
 
-/* Render archiwum w stylu listy 60 sekund z nagłówkiem sesji */
+/* Render archiwum w stylu listy 60 sekund */
 function renderArchive() {
   const container = $('archive-content');
   if (!archiveGroups.length) {
@@ -553,7 +604,6 @@ function renderArchive() {
   $('archive-more').classList.toggle('hidden', archiveShown >= archiveGroups.length);
 }
 
-/* Obsługa przełączania miesięcy w archiwum */
 async function onArchiveMonthChange(fileKey) {
   archiveShown = 3;
   $('archive-content').innerHTML = '<div class="p-8 text-center text-sm text-sec">Wczytywanie wydania...</div>';
@@ -583,7 +633,6 @@ async function onArchiveMonthChange(fileKey) {
   renderArchive();
 }
 
-/* Wczytanie listy dostępnych miesięcy do rozwijanej listy */
 async function loadArchiveIndex() {
   const sel = $('archive-month-select');
   if (!sel) return;
