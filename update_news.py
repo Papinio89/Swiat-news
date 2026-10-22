@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Świat w Minutę — generator newsów (Gemini + Pexels).
 
-- Bezstratna archiwizacja z podziałem na miesiące (np. archive_2026_10.json + archive_index.json)
-- Gwarancja braku pustych zdjęć (redukcja fraz Pexels + pula zapasowa)
+- Bezstratna archiwizacja z podziałem na miesiące (archive_YYYY_MM.json + archive_index.json)
+- Niezawodne dobieranie grafik: eliminacja zablokowanych domen prasowych w Canvasie,
+  kaskadowe dopasowanie do Pexels po kategorii, brak pustych pól zdjęć
 - Ochrona przed dominacją pojedynczych serwisów RSS (interleave)
-- Pełne prawa autorskie do zdjęć
+- Gwarancja pełnych pól do eksportu karuzeli i podpisów autorskich
 Zapisuje: news.json, raw_feed.json, archive.json oraz archiwa comiesięczne
 """
 import hashlib
@@ -30,7 +31,7 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
-USE_SOURCE_IMAGES = os.environ.get("USE_SOURCE_IMAGES", "1") == "1"   # Domyślnie bierzemy autentyczne og:image z artykułu
+USE_SOURCE_IMAGES = os.environ.get("USE_SOURCE_IMAGES", "0") == "1"
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
@@ -38,6 +39,27 @@ MAX_PER_SOURCE = 3
 MAX_CANDIDATES = 42
 SNIPPET_LEN = 500
 MAIN_ARCHIVE_SESSIONS = 60
+
+# Domyślne zapytania awaryjne dla Pexels przypisane do kategorii
+CATEGORY_PEXELS_DEFAULTS = {
+    "POLSKA": "poland warsaw government",
+    "GOSPODARKA": "economy finance stock market",
+    "BIZNES": "business corporate office",
+    "GEOPOLITYKA": "diplomacy world map flag",
+    "OBRONNOŚĆ": "military army soldiers",
+    "TECHNOLOGIE": "artificial intelligence technology computer",
+}
+
+# Domeny prasowe blokujące osadzanie i odczyt pikseli przez Canvas (CORS 403 / brak nagłówków)
+BLOCKED_CANVAS_HOSTS = [
+    "tvn24.pl",
+    "i.iplsc.com",
+    "galeria.bankier.pl",
+    "notesfrompoland.com",
+    "cdn.wiadomosci.onet.pl",
+    "ocdn.eu",
+    "v.wpimg.pl",
+]
 
 FALLBACK_IMAGES = [
     {"url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop", "credit": "Unsplash", "credit_url": "https://unsplash.com"},
@@ -291,11 +313,11 @@ def pick_photo(photos: list, query: str, used: set):
     return best
 
 
-def fetch_pexels(query: str, used: set, retries: int = 2):
+def fetch_pexels(query: str, used: set, fallback_cat: str = "GOSPODARKA", retries: int = 2):
+    """Pobiera zdjęcie z Pexels, kaskadowo upraszczając zapytanie aż do domyślnej frazy kategorii."""
     if not PEXELS_API_KEY:
         return None
 
-    # Bezpieczna kaskada zapytań: pełna fraza -> 2 słowa -> 1 słowo -> biznes ogólny
     q_clean = re.sub(r"[^a-zA-Z\s]", " ", query).strip()
     words = q_clean.split()
     queries_to_try = [query]
@@ -303,7 +325,10 @@ def fetch_pexels(query: str, used: set, retries: int = 2):
         queries_to_try.append(f"{words[0]} {words[1]}")
     if len(words) > 1:
         queries_to_try.append(words[0])
-    queries_to_try.append("business news")
+    
+    # Dodanie dopasowanego zapytania awaryjnego z kategorii (zamiast generycznego 'business news')
+    cat_default = CATEGORY_PEXELS_DEFAULTS.get(fallback_cat, "world news")
+    queries_to_try.append(cat_default)
 
     for q in queries_to_try:
         for attempt in range(retries + 1):
@@ -323,12 +348,21 @@ def fetch_pexels(query: str, used: set, retries: int = 2):
                         "credit": p.get("photographer", ""),
                         "credit_url": p.get("url", "")
                     }
-                break  # Brak trafień dla tego słowa -> przejdź do prostszego zapytania
+                break  # Brak trafień dla tej frazy -> przejdź do prostszego zapytania
             except Exception:
                 if attempt == retries:
                     break
                 time.sleep(1)
     return None
+
+
+def is_canvas_safe_host(url: str) -> bool:
+    """Sprawdza, czy domena nie jest znana z blokowania pobierania przez Canvas/CORS."""
+    try:
+        host = urlparse(url).netloc.lower()
+        return not any(blocked in host for blocked in BLOCKED_CANVAS_HOSTS)
+    except Exception:
+        return True
 
 
 def fetch_article_image(url: str):
@@ -677,23 +711,16 @@ def main():
     print("4. Dobieranie zdjęć (Pexels + OG + Fallback)...")
     used_imgs = set()
     for idx, item in enumerate(items):
+        cat = item.get("category", "GOSPODARKA")
         q = item.get("image_query") or "business economy"
         og = fetch_article_image(item["link"])
         item["source_image_url"] = og or ""
-        ph = fetch_pexels(q, used_imgs)
 
-        # 1. Priorytet: Pexels z prawami autorskimi (jeśli znaleziono)
-        if ph:
-            item.update(
-                image_url=ph["url"],
-                image_portrait=ph["portrait"],
-                image_credit=ph["credit"],
-                image_credit_url=ph["credit_url"],
-                image_illustrative=True,
-                image_source="pexels"
-            )
-        # 2. Priorytet: Oryginalne zdjęcie z artykułu prasowego
-        elif og:
+        # Weryfikacja: czy domena og:image nadaje się do odczytania przez przeglądarkę i Canvas
+        og_is_safe = og and is_canvas_safe_host(og)
+
+        # 1. Priorytet: Jeśli włączono USE_SOURCE_IMAGES i domena jest bezpieczna
+        if USE_SOURCE_IMAGES and og_is_safe:
             item.update(
                 image_url=og,
                 image_portrait=og,
@@ -702,17 +729,39 @@ def main():
                 image_illustrative=False,
                 image_source="article"
             )
-        # 3. Zapasowy fallback Unsplash (GWARANCJA: pole nigdy nie będzie puste)
         else:
-            fb = FALLBACK_IMAGES[idx % len(FALLBACK_IMAGES)]
-            item.update(
-                image_url=fb["url"],
-                image_portrait=fb["url"],
-                image_credit=fb["credit"],
-                image_credit_url=fb["credit_url"],
-                image_illustrative=True,
-                image_source="fallback"
-            )
+            # 2. Główna ścieżka: Pexels z kaskadowym upraszczaniem fraz do poziomu kategorii
+            ph = fetch_pexels(q, used_imgs, fallback_cat=cat)
+            if ph:
+                item.update(
+                    image_url=ph["url"],
+                    image_portrait=ph["portrait"],
+                    image_credit=ph["credit"],
+                    image_credit_url=ph["credit_url"],
+                    image_illustrative=True,
+                    image_source="pexels"
+                )
+            elif og_is_safe:
+                # 3. Zapas: Bezpieczne zdjęcie z artykułu prasowego
+                item.update(
+                    image_url=og,
+                    image_portrait=og,
+                    image_credit="",
+                    image_credit_url="",
+                    image_illustrative=False,
+                    image_source="article"
+                )
+            else:
+                # 4. Gwarantowany fallback Unsplash (dla domen blokowanych przez CORS/hotlink)
+                fb = FALLBACK_IMAGES[idx % len(FALLBACK_IMAGES)]
+                item.update(
+                    image_url=fb["url"],
+                    image_portrait=fb["url"],
+                    image_credit=fb["credit"],
+                    image_credit_url=fb["credit_url"],
+                    image_illustrative=True,
+                    image_source="fallback"
+                )
 
         item["image"] = item["image_url"]
 
