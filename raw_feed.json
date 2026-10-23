@@ -1,9 +1,17 @@
 {
   "date": "23 października 2026",
-  "time": "06:04",
-  "timestamp": "2026-10-23_06:04",
-  "count": 73,
+  "time": "06:09",
+  "timestamp": "2026-10-23_06:09",
+  "count": 71,
   "items": [
+    {
+      "title": "Polska poderwała myśliwce. Alert RCB dla dwóch województw",
+      "snippet": "Rządowe Centrum Bezpieczeństwa poinformowało w piątek nad ranem mieszkańców niektórych powiatów Podkarpacia i Lubelszczyzny o rosyjskim ataku powietrznym na terenie Ukrainy. Wojsko przekazało, że działania mają charakter prewencyjny, a sytuacja jest monitorowania.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-23/polska-poderwala-mysliwce-alert-rcb-dla-dwoch-wojewodztw-1/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Polska poderwała myśliwce. Alert RCB dla dwóch województw"
+    },
     {
       "title": "Poseł PiS pozytywnie o odchodzącej minister. \"Jesteśmy otwarci\"",
       "snippet": "- Pani minister odeszła ze względu na to, że była niewygodna. Mówiła prawdę prosto w oczy, hamowała szkodliwe pomysły, broniła interesów Polaków - mówił o Katarzynie Pełczyńskiej-Nałęcz poseł PiS Marcin Warchoł w Debacie Gozdyry. Polityk nie wykluczył członkostwa byłej minister w jego klubie.",
@@ -221,6 +229,22 @@
       "title_pl": "Spór o dwukadencyjność. \"Wymieszanie racjonalizmu i populizmu\""
     },
     {
+      "title": "Trump grozi Iranowi. \"Możemy pójść jeszcze o krok dalej\"",
+      "snippet": "- Możemy pójść o krok dalej - zagroził Donald Trump, odnosząc się do ataków USA na Iran. Stwierdził przy tym, że choć nie wszyscy są zadowoleni, był on świadomy kosztów wojny. Wypowiedź padła po ujawnieniu przez \"The New York Times\" rzekomych planów Stanów Zjednoczonych i Izraela.",
+      "link": "https://wydarzenia.interia.pl/bliski-wschod/news-trump-grozi-iranowi-mozemy-pojsc-jeszcze-o-krok-dalej,nId,23562657",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Trump grozi Iranowi. \"Możemy pójść jeszcze o krok dalej\""
+    },
+    {
+      "title": "Rosyjskie ataki na Ukrainę, rozesłano alerty. Polskie myśliwce w powietrzu",
+      "snippet": "\"UWAGA! Rosyjski atak powietrzny na terenie Ukrainy. Sytuacja jest monitorowana\" - przekazano w alercie RCB dla mieszkańców woj. lubelskiego i podkarpackiego. W polskiej przestrzeni powietrznej operuje wojskowe lotnictwo.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-rosyjskie-ataki-na-ukraine-rozeslano-alerty-polskie-mysliwce,nId,23562656",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Rosyjskie ataki na Ukrainę, rozesłano alerty. Polskie myśliwce w powietrzu"
+    },
+    {
       "title": "Dwukadencyjność w samorządach zostaje. Kosiniak-Kamysz zabrał głos",
       "snippet": "- Będziemy próbować inaczej - mówił wicepremier Władysław Kosiniak-Kamysz, odnosząc się do wyniku głosowania w sprawie dwukadencyjności organów wykonawczych gmin. Projekt zakładający zniesienie tego limitu złożyli posłowie PSL. W czwartek Sejm odrzucił tę nowelizację.",
       "link": "https://wydarzenia.interia.pl/kraj/news-dwukadencyjnosc-w-samorzadach-zostaje-kosiniak-kamysz-zabral,nId,23562649",
@@ -277,12 +301,12 @@
       "title_pl": "Nietypowy prezent dla Kosiniaka-Kamysza. \"Nagroda się należy za zapał\""
     },
     {
-      "title": "Koniec z mową nienawiści w internecie? Sejm zdecydował w sprawie przepisów",
-      "snippet": "Sejm przyjął w czwartek poprawki Senatu do ustawy wdrażającej w Polsce tzw. Akt o usługach cyfrowych. Dramatyczne wydarzenia z polskich szkół przyspieszyły proces.",
-      "link": "https://biznes.interia.pl/gospodarka/news-przeciw-mowie-nienawisci-w-internecie-sejm-przyjal-poprawki,nId,23562618",
+      "title": "Sejm ogranicza uprawnienia fiskusa. Chodzi o dostęp do rachunków bankowych",
+      "snippet": "Sejm w czwartek uchwalił ustawę, która ogranicza dostęp Krajowej Administracji Skarbowej do danych o rachunkach bankowych. Banki będą udzielać skarbówce danych o kontach jedynie w przypadku osób podejrzanych albo jeśli zgody na dostęp udzieli sąd.",
+      "link": "https://biznes.interia.pl/gospodarka/news-koniec-latwego-wgladu-kas-w-dane-bankowe-sejm-przeglosowal-z,nId,23562612",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Koniec z mową nienawiści w internecie? Sejm zdecydował w sprawie przepisów"
+      "title_pl": "Sejm ogranicza uprawnienia fiskusa. Chodzi o dostęp do rachunków bankowych"
     },
     {
       "title": "Cena ropy powyżej ważnego poziomu. Eskalacja konfliktu na Bliskim Wschodzie",
@@ -357,12 +381,12 @@
       "title_pl": "Dostawy uzbrojenia do czołgów dla Polski. Podpisano kontrakt z wykonawcą"
     },
     {
-      "title": "Kolejka po medale dla małżeństw wciąż długa. 160 tys. par czeka na odznaczenie",
-      "snippet": "Nawet ponad pół roku czekają seniorzy na Medal za Długoletnie Pożycie Małżeńskie. Na początku roku zaległości obejmowały 160 tys. par, a choć Kancelaria Prezydenta zmniejszyła kolejkę o 40 tys. wniosków, wciąż napływają nowe. \"Uszanujcie tych ludzi\" - apelował poseł KO Jarosław Urbaniak.",
-      "link": "https://biznes.interia.pl/finanse/news-seniorzy-czekaja-na-medale-od-prezydenta-padla-wazna-deklara,nId,23562199",
-      "source_name": "Interia Biznes",
+      "title": "Alert RCB przy granicy. Putin zabrał głos po rozmowie z Witkoffem. Podsumowanie nocy",
+      "snippet": "Rosja jest gotowa na trójstronne rozmowy z udziałem USA i Ukrainy — stwierdził Putin po spotkaniu z wysłannikiem Trumpa. Nad ranem Rządowe Centrum Bezpieczeństwa wysłało alert do mieszkańców powiatów sąsiadujących z Ukrainą. Trump oznajmił, że Elon Musk przywrócił pełne funkcjonowanie sieci Starlink i Starshield w Ukrainie. Nie chciał jednak powiedzieć, czy stało się to po telefonie od niego. Co jeszcze wydarzyło się w nocy? Zapraszamy do podsumowania najważniejszych informacji.",
+      "link": "https://wiadomosci.onet.pl/swiat/alert-rcb-przy-granicy-putin-zabral-glos-po-rozmowie-z-witkoffem-podsumowanie-nocy/lpxzjmf",
+      "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Kolejka po medale dla małżeństw wciąż długa. 160 tys. par czeka na odznaczenie"
+      "title_pl": "Alert RCB przy granicy. Putin zabrał głos po rozmowie z Witkoffem. Podsumowanie nocy"
     },
     {
       "title": "Zbrodnia, która wstrząsnęła Polską. Nowe fakty o Andrzeju K.",
@@ -397,22 +421,6 @@
       "title_pl": "Szczecin - jakiej pogody możemy się spodziewać 23.10.2026?"
     },
     {
-      "title": "Działo się w nocy. Trump o działaniu Muska ws. Starlinka. Polska poderwała myśliwce",
-      "snippet": "Polska poderwała myśliwce w związku z rosyjskim atakiem na terenie Ukrainy. Prezydent USA Donald Trump przyznał, że to Elon Musk stoi za przywróceniem pełnego działania sieci Starlink i Starshield w Ukrainie.",
-      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-trump-o-dzialaniu-muska-ws-starlinka-polska-poderwala-mysliwce-7343005284919328a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Działo się w nocy. Trump o działaniu Muska ws. Starlinka. Polska poderwała myśliwce"
-    },
-    {
-      "title": "Dantejskie sceny w albańskim parlamencie. Szokujące nagranie",
-      "snippet": "Burzliwy przebieg miało posiedzenie parlamentu Albanii. Opozycyjny deputowany Flamur Noka starł się z przewodniczącym klubu rządzącej Partii Socjalistycznej Taulantem Ballą. Polityk podszedł do niego, wyrwał mu mikrofon i zaczął rzucać w jego kierunku dokumentami.",
-      "link": "https://wiadomosci.wp.pl/dantejskie-sceny-w-albanskim-parlamencie-szokujace-nagranie-7342982653491296a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Dantejskie sceny w albańskim parlamencie. Szokujące nagranie"
-    },
-    {
       "title": "Clinton o współpracy Trumpa z Putinem: Musi mieć na niego jakieś haki",
       "snippet": "Była sekretarz stanu USA Hillary Clinton stwierdziła, że \"Władimir Putin posiada jakieś kompromitujące materiały na Donalda Trumpa\". Jak dodała, mogą być to nagrania wideo lub zdjęcia.",
       "link": "https://wiadomosci.wp.pl/clinton-o-wspolpracy-trumpa-z-putinem-musi-miec-na-niego-jakies-haki-7342967797495840a",
@@ -443,14 +451,6 @@
       "source_name": "WP Wiadomości",
       "lang": "pl",
       "title_pl": "Kobieta wspomniała o bombie. Musiała opuścić lotnisko"
-    },
-    {
-      "title": "Donald Trump o wojnie z Iranem. \"Możemy pójść o krok dalej\"",
-      "snippet": "Prezydent USA Donald Trump zasugerował, że jego kraj może ponownie uderzyć w Iran. Podczas rozmowy z dziennikarzami przyznał też, że część jego wyborców nie popiera zaangażowania Stanów Zjednoczonych w konflikt.",
-      "link": "https://wiadomosci.wp.pl/donald-trump-o-wojnie-z-iranem-mozemy-pojsc-o-krok-dalej-7342930323605536a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Donald Trump o wojnie z Iranem. \"Możemy pójść o krok dalej\""
     },
     {
       "title": "Armenia rzuca wyzwanie Rosji. Domaga się zniesienia ograniczeń",
@@ -571,22 +571,6 @@
       "source_name": "Bankier.pl",
       "lang": "pl",
       "title_pl": "Bank lub znane medium w reklamie. Jak rozpoznać bezprawne wykorzystanie marki i wizerunku?"
-    },
-    {
-      "title": "Rewolucja w progach podatkowych. Sejm przyjął ustawę",
-      "snippet": "Sejm uchwalił w czwartek ustawę, która podnosi próg podatkowy w PIT ze 120 tys. do 130 tys., wprowadza drugi próg w wysokości 150 tys. zł oraz nową, 24-proc. stawkę dla dochodów między 130 a 150 tys. zł. Ustawa trafi teraz do Senatu.",
-      "link": "https://www.bankier.pl/wiadomosc/Rewolucja-w-progach-podatkowych-Sejm-przyjal-ustawe-9216968.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Rewolucja w progach podatkowych. Sejm przyjął ustawę"
-    },
-    {
-      "title": "Akcyza na alkohol mocno w górę. Sejm zdecydował o nowych stawkach",
-      "snippet": "Sejm w czwartek uchwalił ustawę, która zwiększy skalę podwyżek akcyzy na napoje alkoholowe w 2027 r. Zwiększone wpływy z tego tytułu mają trafić do Narodowego Funduszu Zdrowia.",
-      "link": "https://www.bankier.pl/wiadomosc/Akcyza-na-alkohol-mocno-w-gore-Sejm-zdecydowal-o-nowych-stawkach-9216986.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Akcyza na alkohol mocno w górę. Sejm zdecydował o nowych stawkach"
     }
   ]
 }
