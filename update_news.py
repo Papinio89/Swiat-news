@@ -2,9 +2,9 @@
 """Świat w Minutę — generator newsów (Gemini + Pexels).
 
 - Bezstratna archiwizacja z podziałem na miesiące (archive_YYYY_MM.json + archive_index.json)
-- Priorytet dla autentycznych kadrów z artykułów z automatycznym proxy CORS (Interia, Onet, TVN24, Bankier)
-- Skuteczny fallback do Pexels z prostymi angielskimi słowami kluczowymi
-- Brak losowych grafik Unsplash jako domyślnego tła
+- Gwarantowane pobieranie zdjęć z Pexels (klucz wpisany na sztywno jako fallback)
+- Bezpośrednie linki do autentycznych zdjęć prasowych (bez wadliwego proxy)
+- Spójne źródła i ochrona przed zdominowaniem feedu przez jeden serwis
 Zapisuje: news.json, raw_feed.json, archive.json oraz archiwa comiesięczne
 """
 import hashlib
@@ -28,9 +28,10 @@ from google.genai import types
 
 pl_tz = ZoneInfo("Europe/Warsaw")
 
-PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
+# Klucz zdefiniowany w env lub wpisany bezpośrednio jako fallback
+DEFAULT_PEXELS_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ"
+PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip() or DEFAULT_PEXELS_KEY
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
-USE_SOURCE_IMAGES = os.environ.get("USE_SOURCE_IMAGES", "1") == "1"
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
@@ -39,28 +40,15 @@ MAX_CANDIDATES = 42
 SNIPPET_LEN = 500
 MAIN_ARCHIVE_SESSIONS = 60
 
-# Sprawdzone, 1-2 słowne zapytania angielskie dla Pexels per kategoria
+# Sprawdzone, proste frazy angielskie dla Pexels per kategoria
 CATEGORY_PEXELS_DEFAULTS = {
-    "POLSKA": ["warsaw", "poland government", "city hall poland", "police poland"],
-    "GOSPODARKA": ["stock market", "finance currency", "inflation money", "economy"],
-    "BIZNES": ["corporate office", "business meeting", "technology enterprise", "logistics"],
-    "GEOPOLITYKA": ["diplomacy summit", "world flags", "united nations", "geopolitics"],
-    "OBRONNOŚĆ": ["military army", "soldiers patrol", "armored vehicle", "air force"],
+    "POLSKA": ["poland warsaw", "court law", "police car", "school students", "parliament"],
+    "GOSPODARKA": ["stock market", "money currency", "finance economy", "bank gold"],
+    "BIZNES": ["corporate office", "business meeting", "startup technology", "logistics trade"],
+    "GEOPOLITYKA": ["diplomacy summit", "world flags", "united nations", "protest crowd"],
+    "OBRONNOŚĆ": ["military army", "soldiers patrol", "armored tank", "radar system"],
     "TECHNOLOGIE": ["artificial intelligence", "cyber security", "data center server", "microchip"],
 }
-
-# Domeny, które w przeglądarce blokują CORS/Referrer – automatycznie kierujemy je przez proxy
-DOMAINS_REQUIRING_PROXY = [
-    "i.iplsc.com",
-    "tvn24.pl",
-    "galeria.bankier.pl",
-    "notesfrompoland.com",
-    "cdn.wiadomosci.onet.pl",
-    "ocdn.eu",
-    "v.wpimg.pl",
-    "theguardian.com",
-    "guim.co.uk"
-]
 
 FALLBACK_IMAGES = [
     {"url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop", "credit": "Unsplash", "credit_url": "https://unsplash.com"},
@@ -298,21 +286,7 @@ def interleave(items: list, per_source: int, limit: int) -> list:
     return out
 
 
-# ───────────────────────── ZDJĘCIA (CORS PROXY + PEXELS) ─────────────────────────
-def wrap_cors_proxy(url: str) -> str:
-    """Opakowuje adres w proxy weserv.nl, aby odblokować CORS w Canvasie i na WWW."""
-    if not url:
-        return ""
-    try:
-        host = urlparse(url).netloc.lower()
-        if any(dom in host for dom in DOMAINS_REQUIRING_PROXY):
-            clean = url.replace("https://", "").replace("http://", "")
-            return f"https://images.weserv.nl/?url={urllib.parse.quote(clean)}&w=1200&output=jpg&q=85"
-    except Exception:
-        pass
-    return url
-
-
+# ───────────────────────── ZDJĘCIA (PEXELS + ARTYKUŁY) ─────────────────────────
 def pick_photo(photos: list, query: str, used: set):
     words = set(re.findall(r"[a-z]{4,}", query.lower())) - GENERIC_WORDS
     best, best_score = None, -1
@@ -341,7 +315,7 @@ def fetch_pexels(query: str, used: set, fallback_cat: str = "GOSPODARKA", retrie
     if len(words) >= 1:
         queries_to_try.append(words[0])
 
-    # Dodanie sprawdzonych fraz zapasowych przypisanych do danej kategorii
+    # Dodanie dopasowanych fraz angielskich dla danej kategorii
     queries_to_try.extend(CATEGORY_PEXELS_DEFAULTS.get(fallback_cat, ["news finance"]))
 
     for q in queries_to_try:
@@ -363,7 +337,7 @@ def fetch_pexels(query: str, used: set, fallback_cat: str = "GOSPODARKA", retrie
                         "credit_url": p.get("url", "")
                     }
                 break
-            except Exception:
+            except Exception as ex:
                 if attempt == retries:
                     break
                 time.sleep(1)
@@ -713,7 +687,7 @@ def main():
     if not items:
         sys.exit("Brak wygenerowanych pozycji — przerywam")
 
-    print("4. Dobieranie zdjęć (Autentyczne artykuły + Pexels)...")
+    print("4. Dobieranie zdjęć (Pexels + Autentyczne OG)...")
     used_imgs = set()
     source_count = 0
     pexels_count = 0
@@ -725,12 +699,24 @@ def main():
         og = fetch_article_image(item["link"])
         item["source_image_url"] = og or ""
 
-        # 1. Priorytet: Autentyczne zdjęcie z artykułu prasowego
-        if og:
-            safe_og = wrap_cors_proxy(og)
+        # Najpierw pytamy Pexels o dedykowaną, czystą grafikę
+        ph = fetch_pexels(q, used_imgs, fallback_cat=cat)
+
+        if ph:
             item.update(
-                image_url=safe_og,
-                image_portrait=safe_og,
+                image_url=ph["url"],
+                image_portrait=ph["portrait"],
+                image_credit=ph["credit"],
+                image_credit_url=ph["credit_url"],
+                image_illustrative=True,
+                image_source="pexels"
+            )
+            pexels_count += 1
+        elif og:
+            # Jeśli Pexels zawiódł, używamy bezpośredniego zdjęcia prasowego
+            item.update(
+                image_url=og,
+                image_portrait=og,
                 image_credit="",
                 image_credit_url="",
                 image_illustrative=False,
@@ -738,34 +724,21 @@ def main():
             )
             source_count += 1
         else:
-            # 2. Priorytet: Zdjęcie z Pexels (dla paywalli np. Bloomberg)
-            ph = fetch_pexels(q, used_imgs, fallback_cat=cat)
-            if ph:
-                item.update(
-                    image_url=ph["url"],
-                    image_portrait=ph["portrait"],
-                    image_credit=ph["credit"],
-                    image_credit_url=ph["credit_url"],
-                    image_illustrative=True,
-                    image_source="pexels"
-                )
-                pexels_count += 1
-            else:
-                # 3. Wyłącznie ostateczność: Unsplash
-                fb = FALLBACK_IMAGES[idx % len(FALLBACK_IMAGES)]
-                item.update(
-                    image_url=fb["url"],
-                    image_portrait=fb["url"],
-                    image_credit=fb["credit"],
-                    image_credit_url=fb["credit_url"],
-                    image_illustrative=True,
-                    image_source="fallback"
-                )
-                fallback_count += 1
+            # Ostateczność: sprawdzona pula awaryjna
+            fb = FALLBACK_IMAGES[idx % len(FALLBACK_IMAGES)]
+            item.update(
+                image_url=fb["url"],
+                image_portrait=fb["url"],
+                image_credit=fb["credit"],
+                image_credit_url=fb["credit_url"],
+                image_illustrative=True,
+                image_source="fallback"
+            )
+            fallback_count += 1
 
         item["image"] = item["image_url"]
 
-    print(f"   Zdjęcia: Artykuły (OG) = {source_count}, Pexels = {pexels_count}, Fallback Unsplash = {fallback_count}")
+    print(f"   Zdjęcia przydzielone: Pexels = {pexels_count}, Artykuły = {source_count}, Unsplash = {fallback_count}")
 
     print("5. Zapisywanie wydania...")
     date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
