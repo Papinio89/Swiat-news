@@ -2,10 +2,9 @@
 """Świat w Minutę — generator newsów (Gemini + Pexels).
 
 - Bezstratna archiwizacja z podziałem na miesiące (archive_YYYY_MM.json + archive_index.json)
-- Niezawodne dobieranie grafik: eliminacja zablokowanych domen prasowych w Canvasie,
-  kaskadowe dopasowanie do Pexels po kategorii, brak pustych pól zdjęć
-- Ochrona przed dominacją pojedynczych serwisów RSS (interleave)
-- Gwarancja pełnych pól do eksportu karuzeli i podpisów autorskich
+- Priorytet dla autentycznych kadrów z artykułów z automatycznym proxy CORS (Interia, Onet, TVN24, Bankier)
+- Skuteczny fallback do Pexels z prostymi angielskimi słowami kluczowymi
+- Brak losowych grafik Unsplash jako domyślnego tła
 Zapisuje: news.json, raw_feed.json, archive.json oraz archiwa comiesięczne
 """
 import hashlib
@@ -31,7 +30,7 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip()
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
-USE_SOURCE_IMAGES = os.environ.get("USE_SOURCE_IMAGES", "0") == "1"
+USE_SOURCE_IMAGES = os.environ.get("USE_SOURCE_IMAGES", "1") == "1"
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
@@ -40,25 +39,27 @@ MAX_CANDIDATES = 42
 SNIPPET_LEN = 500
 MAIN_ARCHIVE_SESSIONS = 60
 
-# Domyślne zapytania awaryjne dla Pexels przypisane do kategorii
+# Sprawdzone, 1-2 słowne zapytania angielskie dla Pexels per kategoria
 CATEGORY_PEXELS_DEFAULTS = {
-    "POLSKA": "poland warsaw government",
-    "GOSPODARKA": "economy finance stock market",
-    "BIZNES": "business corporate office",
-    "GEOPOLITYKA": "diplomacy world map flag",
-    "OBRONNOŚĆ": "military army soldiers",
-    "TECHNOLOGIE": "artificial intelligence technology computer",
+    "POLSKA": ["warsaw", "poland government", "city hall poland", "police poland"],
+    "GOSPODARKA": ["stock market", "finance currency", "inflation money", "economy"],
+    "BIZNES": ["corporate office", "business meeting", "technology enterprise", "logistics"],
+    "GEOPOLITYKA": ["diplomacy summit", "world flags", "united nations", "geopolitics"],
+    "OBRONNOŚĆ": ["military army", "soldiers patrol", "armored vehicle", "air force"],
+    "TECHNOLOGIE": ["artificial intelligence", "cyber security", "data center server", "microchip"],
 }
 
-# Domeny prasowe blokujące osadzanie i odczyt pikseli przez Canvas (CORS 403 / brak nagłówków)
-BLOCKED_CANVAS_HOSTS = [
-    "tvn24.pl",
+# Domeny, które w przeglądarce blokują CORS/Referrer – automatycznie kierujemy je przez proxy
+DOMAINS_REQUIRING_PROXY = [
     "i.iplsc.com",
+    "tvn24.pl",
     "galeria.bankier.pl",
     "notesfrompoland.com",
     "cdn.wiadomosci.onet.pl",
     "ocdn.eu",
     "v.wpimg.pl",
+    "theguardian.com",
+    "guim.co.uk"
 ]
 
 FALLBACK_IMAGES = [
@@ -297,7 +298,21 @@ def interleave(items: list, per_source: int, limit: int) -> list:
     return out
 
 
-# ───────────────────────── ZDJĘCIA ─────────────────────────
+# ───────────────────────── ZDJĘCIA (CORS PROXY + PEXELS) ─────────────────────────
+def wrap_cors_proxy(url: str) -> str:
+    """Opakowuje adres w proxy weserv.nl, aby odblokować CORS w Canvasie i na WWW."""
+    if not url:
+        return ""
+    try:
+        host = urlparse(url).netloc.lower()
+        if any(dom in host for dom in DOMAINS_REQUIRING_PROXY):
+            clean = url.replace("https://", "").replace("http://", "")
+            return f"https://images.weserv.nl/?url={urllib.parse.quote(clean)}&w=1200&output=jpg&q=85"
+    except Exception:
+        pass
+    return url
+
+
 def pick_photo(photos: list, query: str, used: set):
     words = set(re.findall(r"[a-z]{4,}", query.lower())) - GENERIC_WORDS
     best, best_score = None, -1
@@ -314,21 +329,20 @@ def pick_photo(photos: list, query: str, used: set):
 
 
 def fetch_pexels(query: str, used: set, fallback_cat: str = "GOSPODARKA", retries: int = 2):
-    """Pobiera zdjęcie z Pexels, kaskadowo upraszczając zapytanie aż do domyślnej frazy kategorii."""
     if not PEXELS_API_KEY:
         return None
 
     q_clean = re.sub(r"[^a-zA-Z\s]", " ", query).strip()
-    words = q_clean.split()
-    queries_to_try = [query]
-    if len(words) > 2:
+    words = [w for w in q_clean.split() if len(w) > 2]
+
+    queries_to_try = []
+    if len(words) >= 2:
         queries_to_try.append(f"{words[0]} {words[1]}")
-    if len(words) > 1:
+    if len(words) >= 1:
         queries_to_try.append(words[0])
-    
-    # Dodanie dopasowanego zapytania awaryjnego z kategorii (zamiast generycznego 'business news')
-    cat_default = CATEGORY_PEXELS_DEFAULTS.get(fallback_cat, "world news")
-    queries_to_try.append(cat_default)
+
+    # Dodanie sprawdzonych fraz zapasowych przypisanych do danej kategorii
+    queries_to_try.extend(CATEGORY_PEXELS_DEFAULTS.get(fallback_cat, ["news finance"]))
 
     for q in queries_to_try:
         for attempt in range(retries + 1):
@@ -348,21 +362,12 @@ def fetch_pexels(query: str, used: set, fallback_cat: str = "GOSPODARKA", retrie
                         "credit": p.get("photographer", ""),
                         "credit_url": p.get("url", "")
                     }
-                break  # Brak trafień dla tej frazy -> przejdź do prostszego zapytania
+                break
             except Exception:
                 if attempt == retries:
                     break
                 time.sleep(1)
     return None
-
-
-def is_canvas_safe_host(url: str) -> bool:
-    """Sprawdza, czy domena nie jest znana z blokowania pobierania przez Canvas/CORS."""
-    try:
-        host = urlparse(url).netloc.lower()
-        return not any(blocked in host for blocked in BLOCKED_CANVAS_HOSTS)
-    except Exception:
-        return True
 
 
 def fetch_article_image(url: str):
@@ -522,7 +527,7 @@ ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment"):
 - DOKŁADNIE 1 ZDANIE (14-22 słowa, KRÓTSZE NIŻ SUMMARY). Zero banałów.
 
 ZASADA 4: ZAPYTANIE DO ZDJĘCIA ("image_query"):
-- Dokładnie 1-2 proste słowa po angielsku (np. "oil refinery", "dollar bank", "fighter jet", "tank army", "solar farm").
+- Dokładnie 1-2 proste słowa po angielsku (np. "police", "courtroom", "military tank", "currency cash", "parliament", "hospital").
 
 ZASADA 5: POJEDYNCZE KATEGORIE:
 Pole "category" to DOKŁADNIE JEDNO słowo:
@@ -565,7 +570,7 @@ SAFETY = [
 def save_monthly_archive(session_key: str, session_data: dict, now_dt: datetime):
     year_month_key = now_dt.strftime("%Y_%m")
     month_file = f"archive_{year_month_key}.json"
-    
+
     month_data = {}
     if os.path.exists(month_file):
         try:
@@ -708,29 +713,32 @@ def main():
     if not items:
         sys.exit("Brak wygenerowanych pozycji — przerywam")
 
-    print("4. Dobieranie zdjęć (Pexels + OG + Fallback)...")
+    print("4. Dobieranie zdjęć (Autentyczne artykuły + Pexels)...")
     used_imgs = set()
+    source_count = 0
+    pexels_count = 0
+    fallback_count = 0
+
     for idx, item in enumerate(items):
         cat = item.get("category", "GOSPODARKA")
-        q = item.get("image_query") or "business economy"
+        q = item.get("image_query") or "news"
         og = fetch_article_image(item["link"])
         item["source_image_url"] = og or ""
 
-        # Weryfikacja: czy domena og:image nadaje się do odczytania przez przeglądarkę i Canvas
-        og_is_safe = og and is_canvas_safe_host(og)
-
-        # 1. Priorytet: Jeśli włączono USE_SOURCE_IMAGES i domena jest bezpieczna
-        if USE_SOURCE_IMAGES and og_is_safe:
+        # 1. Priorytet: Autentyczne zdjęcie z artykułu prasowego
+        if og:
+            safe_og = wrap_cors_proxy(og)
             item.update(
-                image_url=og,
-                image_portrait=og,
+                image_url=safe_og,
+                image_portrait=safe_og,
                 image_credit="",
                 image_credit_url="",
                 image_illustrative=False,
                 image_source="article"
             )
+            source_count += 1
         else:
-            # 2. Główna ścieżka: Pexels z kaskadowym upraszczaniem fraz do poziomu kategorii
+            # 2. Priorytet: Zdjęcie z Pexels (dla paywalli np. Bloomberg)
             ph = fetch_pexels(q, used_imgs, fallback_cat=cat)
             if ph:
                 item.update(
@@ -741,18 +749,9 @@ def main():
                     image_illustrative=True,
                     image_source="pexels"
                 )
-            elif og_is_safe:
-                # 3. Zapas: Bezpieczne zdjęcie z artykułu prasowego
-                item.update(
-                    image_url=og,
-                    image_portrait=og,
-                    image_credit="",
-                    image_credit_url="",
-                    image_illustrative=False,
-                    image_source="article"
-                )
+                pexels_count += 1
             else:
-                # 4. Gwarantowany fallback Unsplash (dla domen blokowanych przez CORS/hotlink)
+                # 3. Wyłącznie ostateczność: Unsplash
                 fb = FALLBACK_IMAGES[idx % len(FALLBACK_IMAGES)]
                 item.update(
                     image_url=fb["url"],
@@ -762,8 +761,11 @@ def main():
                     image_illustrative=True,
                     image_source="fallback"
                 )
+                fallback_count += 1
 
         item["image"] = item["image_url"]
+
+    print(f"   Zdjęcia: Artykuły (OG) = {source_count}, Pexels = {pexels_count}, Fallback Unsplash = {fallback_count}")
 
     print("5. Zapisywanie wydania...")
     date_pretty = f"{now_pl.day} {POLISH_MONTHS[now_pl.month]} {now_pl.year}"
