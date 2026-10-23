@@ -1,17 +1,9 @@
 {
   "date": "23 października 2026",
-  "time": "06:09",
-  "timestamp": "2026-10-23_06:09",
-  "count": 71,
+  "time": "06:17",
+  "timestamp": "2026-10-23_06:17",
+  "count": 69,
   "items": [
-    {
-      "title": "Polska poderwała myśliwce. Alert RCB dla dwóch województw",
-      "snippet": "Rządowe Centrum Bezpieczeństwa poinformowało w piątek nad ranem mieszkańców niektórych powiatów Podkarpacia i Lubelszczyzny o rosyjskim ataku powietrznym na terenie Ukrainy. Wojsko przekazało, że działania mają charakter prewencyjny, a sytuacja jest monitorowania.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-23/polska-poderwala-mysliwce-alert-rcb-dla-dwoch-wojewodztw-1/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Polska poderwała myśliwce. Alert RCB dla dwóch województw"
-    },
     {
       "title": "Poseł PiS pozytywnie o odchodzącej minister. \"Jesteśmy otwarci\"",
       "snippet": "- Pani minister odeszła ze względu na to, że była niewygodna. Mówiła prawdę prosto w oczy, hamowała szkodliwe pomysły, broniła interesów Polaków - mówił o Katarzynie Pełczyńskiej-Nałęcz poseł PiS Marcin Warchoł w Debacie Gozdyry. Polityk nie wykluczył członkostwa byłej minister w jego klubie.",
@@ -229,16 +221,8 @@
       "title_pl": "Spór o dwukadencyjność. \"Wymieszanie racjonalizmu i populizmu\""
     },
     {
-      "title": "Trump grozi Iranowi. \"Możemy pójść jeszcze o krok dalej\"",
-      "snippet": "- Możemy pójść o krok dalej - zagroził Donald Trump, odnosząc się do ataków USA na Iran. Stwierdził przy tym, że choć nie wszyscy są zadowoleni, był on świadomy kosztów wojny. Wypowiedź padła po ujawnieniu przez \"The New York Times\" rzekomych planów Stanów Zjednoczonych i Izraela.",
-      "link": "https://wydarzenia.interia.pl/bliski-wschod/news-trump-grozi-iranowi-mozemy-pojsc-jeszcze-o-krok-dalej,nId,23562657",
-      "source_name": "Interia",
-      "lang": "pl",
-      "title_pl": "Trump grozi Iranowi. \"Możemy pójść jeszcze o krok dalej\""
-    },
-    {
       "title": "Rosyjskie ataki na Ukrainę, rozesłano alerty. Polskie myśliwce w powietrzu",
-      "snippet": "\"UWAGA! Rosyjski atak powietrzny na terenie Ukrainy. Sytuacja jest monitorowana\" - przekazano w alercie RCB dla mieszkańców woj. lubelskiego i podkarpackiego. W polskiej przestrzeni powietrznej operuje wojskowe lotnictwo.",
+      "snippet": "\"UWAGA! Rosyjski atak powietrzny na terenie Ukrainy. Sytuacja jest monitorowana\" - przekazano w alercie RCB dla mieszkańców woj. lubelskiego i podkarpackiego. W polskiej przestrzeni powietrznej operuje wojskowe lotnictwo. Możliwe są utrudnienia w działaniu lotniska w Rzeszowie.",
       "link": "https://wydarzenia.interia.pl/kraj/news-rosyjskie-ataki-na-ukraine-rozeslano-alerty-polskie-mysliwce,nId,23562656",
       "source_name": "Interia",
       "lang": "pl",
@@ -299,6 +283,22 @@
       "source_name": "Interia",
       "lang": "pl",
       "title_pl": "Nietypowy prezent dla Kosiniaka-Kamysza. \"Nagroda się należy za zapał\""
+    },
+    {
+      "title": "Ma 5 lat stażu pracy mniej. Dostaje 6000 zł emerytury więcej",
+      "snippet": "Wyższa emerytura za krótszą pracę jest możliwa. Przekonało się o tym dwóch emerytów z Opolszczyzny - jeden pracował 5 lat mniej, a ma teraz 6000 zł więcej emerytury. Odpowiedź tkwi w składkach.",
+      "link": "https://biznes.interia.pl/emerytury/news-emerytow-rozni-5-lat-stazu-pracy-on-ma-mniej-ale-dostaje-600,nId,23562103",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Ma 5 lat stażu pracy mniej. Dostaje 6000 zł emerytury więcej"
+    },
+    {
+      "title": "Koniec z mową nienawiści w internecie? Sejm zdecydował w sprawie przepisów",
+      "snippet": "Sejm przyjął w czwartek poprawki Senatu do ustawy wdrażającej w Polsce tzw. Akt o usługach cyfrowych. Dramatyczne wydarzenia z polskich szkół przyspieszyły proces.",
+      "link": "https://biznes.interia.pl/gospodarka/news-przeciw-mowie-nienawisci-w-internecie-sejm-przyjal-poprawki,nId,23562618",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Koniec z mową nienawiści w internecie? Sejm zdecydował w sprawie przepisów"
     },
     {
       "title": "Sejm ogranicza uprawnienia fiskusa. Chodzi o dostęp do rachunków bankowych",
@@ -373,14 +373,6 @@
       "title_pl": "Polsko-kanadyjski sojusz w Wielkiej Brytanii. Zbudują SMR-y"
     },
     {
-      "title": "Dostawy uzbrojenia do czołgów dla Polski. Podpisano kontrakt z wykonawcą",
-      "snippet": "Zawarto kontrakt dotyczący dostaw uzbrojenia do budowanych dla Polski czołgów K2. Systemy Protector RS4 dostarczy norweski Kongsberg, który od lat realizuje zamówienia dla polskiej armii.",
-      "link": "https://biznes.interia.pl/gospodarka/news-dostawy-uzbrojenia-do-polskich-czolgow-podpisano-umowe-z-nor,nId,23562481",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Dostawy uzbrojenia do czołgów dla Polski. Podpisano kontrakt z wykonawcą"
-    },
-    {
       "title": "Alert RCB przy granicy. Putin zabrał głos po rozmowie z Witkoffem. Podsumowanie nocy",
       "snippet": "Rosja jest gotowa na trójstronne rozmowy z udziałem USA i Ukrainy — stwierdził Putin po spotkaniu z wysłannikiem Trumpa. Nad ranem Rządowe Centrum Bezpieczeństwa wysłało alert do mieszkańców powiatów sąsiadujących z Ukrainą. Trump oznajmił, że Elon Musk przywrócił pełne funkcjonowanie sieci Starlink i Starshield w Ukrainie. Nie chciał jednak powiedzieć, czy stało się to po telefonie od niego. Co jeszcze wydarzyło się w nocy? Zapraszamy do podsumowania najważniejszych informacji.",
       "link": "https://wiadomosci.onet.pl/swiat/alert-rcb-przy-granicy-putin-zabral-glos-po-rozmowie-z-witkoffem-podsumowanie-nocy/lpxzjmf",
@@ -419,6 +411,14 @@
       "source_name": "Onet",
       "lang": "pl",
       "title_pl": "Szczecin - jakiej pogody możemy się spodziewać 23.10.2026?"
+    },
+    {
+      "title": "Dantejskie sceny w albańskim parlamencie. Szokujące nagranie",
+      "snippet": "Burzliwy przebieg miało posiedzenie parlamentu Albanii. Opozycyjny deputowany Flamur Noka starł się z przewodniczącym klubu rządzącej Partii Socjalistycznej Taulantem Ballą. Polityk podszedł do niego, wyrwał mu mikrofon i zaczął rzucać w jego kierunku dokumentami.",
+      "link": "https://wiadomosci.wp.pl/dantejskie-sceny-w-albanskim-parlamencie-szokujace-nagranie-7342982653491296a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Dantejskie sceny w albańskim parlamencie. Szokujące nagranie"
     },
     {
       "title": "Clinton o współpracy Trumpa z Putinem: Musi mieć na niego jakieś haki",
@@ -477,20 +477,12 @@
       "title_pl": "Rząd w Londynie apeluje do obywateli: Róbcie zapasy na trzy dni\""
     },
     {
-      "title": "Putin o rozmowach pokojowych. Tego mają dotyczyć negocjacje",
-      "snippet": "Rosja deklaruje gotowość do wznowienia trójstronnych negocjacji z udziałem Stanów Zjednoczonych i Ukrainy. Władimir Putin ocenił, że rozmowy powinny dotyczyć nie tylko bezpieczeństwa Rosji i Ukrainy, lecz także szerszych kwestii europejskich.",
-      "link": "https://wiadomosci.wp.pl/putin-o-rozmowach-pokojowych-tego-maja-dotyczyc-negocjacje-7342906187655264a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Putin o rozmowach pokojowych. Tego mają dotyczyć negocjacje"
-    },
-    {
       "title": "How will recent scandals affect Polish politics?",
       "snippet": "Aleks Szczerbiak Political scandals now rarely have the dramatic impact they once did.",
       "link": "https://notesfrompoland.com/2026/10/22/how-will-recent-scandals-affect-polish-politics/",
       "source_name": "Notes from Poland",
       "lang": "en",
-      "title_pl": "Jak niedawne skandale wpłyną na polską politykę?"
+      "title_pl": "Jak ostatnie skandale wpłyną na polską politykę?"
     },
     {
       "title": "Pracodawca Andrzeja Dudy podniósł ceny. Klienci oburzeni",
@@ -539,14 +531,6 @@
       "source_name": "Money.pl",
       "lang": "pl",
       "title_pl": "Benzyna i diesel w dół. Wiadomo, co z cenami paliw 23 października"
-    },
-    {
-      "title": "Polska dogania Irlandię. Zielona Wyspa ma dziś inne problemy",
-      "snippet": "Polska goni europejską czołówkę, a Zielona Wyspa zmaga się z problemami. Choć Polacy wciąż są najliczniejszą mniejszością w Irlandii, ich liczba daleka jest od rekordów, a dystans płacowy i gospodarczy między Warszawą a Dublinem uległ zmniejszeniu. Ale irlandzkie władze mają dziś większy problem - trudne negocjacje budżetu UE na najbliższe 7 lat.",
-      "link": "https://www.bankier.pl/wiadomosc/Polska-dogania-Irlandie-Zielona-Wyspa-ma-dzis-inne-problemy-9216574.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Polska dogania Irlandię. Zielona Wyspa ma dziś inne problemy"
     },
     {
       "title": "Przed cmentarzem można dorobić bez firmy i ZUS-u. W tym roku nowe zasady",
