@@ -182,15 +182,16 @@ body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
     <div id="breaking" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
 
+  <!-- PODSUMOWANIE TYGODNIA — TOP 15 -->
   <section id="week-view" class="hidden">
     <div class="mb-4">
-      <div class="text-[11px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd</div>
-      <h2 class="text-lg font-black text-main">📅 Tydzień w skrócie — TOP 15</h2>
+      <div class="text-[11px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd tygodnia</div>
+      <h2 class="text-lg font-black text-main">📅 TOP 15 Wydarzeń</h2>
     </div>
     <div id="week-content"></div>
   </section>
 
-  <!-- ARCHIWUM W STYLU 60 SEKUND Z WYBOREM MIESIĄCA -->
+  <!-- ARCHIWUM -->
   <section id="archive-view" class="hidden">
     <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
       <div>
@@ -220,7 +221,7 @@ body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
         <li><b class="text-main">Czym jest ta strona?</b> Świat w Minutę to krótki przegląd dnia: geopolityka, gospodarka, obronność i technologia. To szybki skrót, nie pełna relacja dziennikarska.</li>
         <li><b class="text-main">Skąd biorą się treści?</b> Z publicznych źródeł (serwisy informacyjne i kanały RSS), skracane i redagowane z pomocą AI. Przy każdym materiale jest nazwa źródła i link do oryginału.</li>
         <li><b class="text-main">AI może się mylić.</b> Podsumowania bywają uproszczone lub niepełne. Komentarz jest oceną, nie rekomendacją. Zanim udostępnisz treść dalej — zajrzyj do źródła.</li>
-        <li><b class="text-main">Zdjęcia</b> są ilustracyjne (Pexels) i nie przedstawiają opisywanych wydarzeń, chyba że podpis mówi inaczej.</li>
+        <li><b class="text-main">Zdjęcia</b> są ilustracyjne (Pexels) lub pochodzą bezpośrednio z serwisów źródłowych.</li>
         <li><b class="text-main">Niezależność.</b> Strona nie jest powiązana z partiami, redakcjami ani instytucjami, o których pisze.</li>
         <li><b class="text-main">Kontakt:</b> Instagram <a href="https://www.instagram.com/swiatwminute/" target="_blank" rel="noopener" class="font-bold amber hover:underline">@swiatwminute</a></li>
       </ul>
@@ -316,13 +317,44 @@ const catSlug = c => normalize(c).split(' ')[0];
 const CAT_EMOJI = { polska: '🇵🇱', gospodarka: '📊', biznes: '💼', geopolityka: '🌍', swiat: '🌍', obronnosc: '🛡️', technologie: '💻' };
 function uniq(list) { const seen = new Set(), out = []; for (const x of list || []) { const k = keyOf(x); if (!k || seen.has(k)) continue; seen.add(k); out.push(x); } return out; }
 const listOf = d => Array.isArray(d) ? d : (d && Array.isArray(d.items) ? d.items : []);
+
+/* ZAWSZE PIERWSZEŃSTWO MA ORYGINALNY KADR Z ARTYKUŁU */
 function imageOf(x) {
-  for (const c of [x.image_url, x.image, x.source_image_url, x.imageUrl, x.img, x.photo, x.thumbnail, x.thumb, x.cover, x.picture]) {
+  if (!x || typeof x !== 'object') return '';
+  const candidates = [
+    x.source_image_url,
+    x.sourceImageUrl,
+    x.image_url,
+    x.imageUrl,
+    x.image,
+    x.img,
+    x.photo,
+    x.thumbnail,
+    x.thumb,
+    x.cover,
+    x.picture
+  ];
+  for (const c of candidates) {
     if (typeof c === 'string' && /^https?:\/\//.test(c.trim())) return c.trim();
   }
-  if (Array.isArray(x.images)) for (const i of x.images) { const u = typeof i === 'string' ? i : (i && (i.url || i.src)); if (u && /^https?:\/\//.test(u)) return u; }
+  if (Array.isArray(x.images)) {
+    for (const i of x.images) {
+      const u = typeof i === 'string' ? i : (i && (i.url || i.src));
+      if (u && /^https?:\/\//.test(u)) return u;
+    }
+  }
   return '';
 }
+
+/* Zapasowy URL ze zdjęcia Pexels (gdyby oryginał z artykułu nie zadziałał) */
+function pexelsFallbackOf(x) {
+  if (!x || typeof x !== 'object') return '';
+  for (const c of [x.image_url, x.image, x.image_portrait]) {
+    if (typeof c === 'string' && c.includes('pexels.com')) return c.trim();
+  }
+  return '';
+}
+
 const dayOf = v => { const m = String(v || '').match(/(\d{4})-(\d{2})-(\d{2})/); return m ? m[0] : ''; };
 const fmtDay = d => { const m = String(d || '').match(/(\d{4})-(\d{2})-(\d{2})/); return m ? `${m[3]}.${m[2]}.${m[1]}` : ''; };
 const todayKey = () => { const n = new Date(); return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`; };
@@ -371,40 +403,38 @@ async function translateToPolish(text) {
   return text;
 }
 
-/* ---------- zdjęcia i podpisy (zabezpieczenie hotlink/CORS) ---------- */
-function proxiedImg(url) {
-  try {
-    return 'https://images.weserv.nl/?url=' + encodeURIComponent(new URL(url).href.replace(/^https?:\/\//, '')) + '&w=800&fit=cover&output=webp';
-  } catch (e) {
-    return '';
-  }
-}
-
-function resolveImageSrc(url) {
-  if (!url || typeof url !== 'string' || url === '#') return '';
-  const trimmed = url.trim().replace(/&amp;/g, '&');
-  if (trimmed.includes('images.pexels.com') || trimmed.includes('images.unsplash.com')) {
-    return trimmed;
-  }
-  return proxiedImg(trimmed) || trimmed;
-}
-
+/* ---------- inteligentne ładowanie zdjęć i podpisy ---------- */
 const ph = (cat, small, em) => `<div class="ph${small ? ' ph-s' : ''}" data-c="${esc(catSlug(cat))}" aria-hidden="true">${esc(em || CAT_EMOJI[catSlug(cat)] || '📰')}</div>`;
 
-function imgTag(src, cat, small, em) {
-  const u = safeUrl(src);
-  if (!u || u === '#') return ph(cat, small, em);
-  const primarySrc = resolveImageSrc(u);
-  const fallbackProxy = proxiedImg(u);
-  return `<img src="${esc(primarySrc)}" data-proxy="${esc(fallbackProxy)}" data-tried="0" data-cat="${esc(cat)}" data-small="${small ? 1 : 0}" data-em="${esc(em || '')}" class="h-full w-full object-cover" loading="lazy" referrerpolicy="no-referrer" decoding="async" alt="" onerror="window.__imgFallback(this)">`;
+function imgTag(item, cat, small, em) {
+  const src = imageOf(item);
+  const pexelsBackup = pexelsFallbackOf(item);
+  if (!src) return ph(cat, small, em);
+
+  return `<img src="${esc(src)}" 
+               data-backup="${esc(pexelsBackup)}" 
+               data-tried="0" 
+               data-cat="${esc(cat)}" 
+               data-small="${small ? 1 : 0}" 
+               data-em="${esc(em || '')}" 
+               class="h-full w-full object-cover" 
+               loading="lazy" 
+               referrerpolicy="no-referrer" 
+               decoding="async" 
+               alt="" 
+               onerror="window.__imgFallback(this)">`;
 }
 
 window.__imgFallback = function (el) {
-  if (el.dataset.tried === '0' && el.dataset.proxy && el.src !== el.dataset.proxy) {
+  const tried = parseInt(el.dataset.tried || '0', 10);
+  const backup = el.dataset.backup;
+  // 1. Jeśli oryginał z artykułu rzucił 403, najpierw podstaw dedykowane zdjęcie z Pexels
+  if (tried === 0 && backup && el.src !== backup) {
     el.dataset.tried = '1';
-    el.src = el.dataset.proxy;
+    el.src = backup;
     return;
   }
+  // 2. Jeśli serwer Pexels również zawiódł, wstaw kolorową ikonę kategorii
   const p = el.parentElement;
   if (p) p.innerHTML = ph(el.dataset.cat, el.dataset.small === '1', el.dataset.em);
 };
@@ -416,8 +446,8 @@ function creditHtml(x, img) {
   const pub = formatPublisher(x);
 
   if (low.includes('pexels.com')) {
-    const a = x.photographer || x.image_author;
-    if (a) return `<div class="px-3.5 pt-1.5 text-[11px] text-mute">Zdjęcie ilustracyjne. Foto: <a class="underline" href="${esc(safeUrl(x.photographer_url || 'https://www.pexels.com'))}" target="_blank" rel="noopener">${esc(a)}</a> / Pexels</div>`;
+    const a = x.image_credit || x.photographer || x.image_author;
+    if (a) return `<div class="px-3.5 pt-1.5 text-[11px] text-mute">Zdjęcie ilustracyjne. Foto: <a class="underline" href="${esc(safeUrl(x.image_credit_url || 'https://www.pexels.com'))}" target="_blank" rel="noopener">${esc(a)}</a> / Pexels</div>`;
     return `<div class="px-3.5 pt-1.5 text-[11px] text-mute">Zdjęcie ilustracyjne · Pexels</div>`;
   }
   if (low.includes('unsplash.com')) {
@@ -469,7 +499,7 @@ function headlineRow(item, title, emoji) {
   return `<div class="headline-item flex items-center gap-2 px-2.5 py-2.5 border-b last:border-0 ${read ? 'read' : ''}" style="border-color:var(--border)" data-c="${esc(catSlug(cat))}">
     <button class="hit" onclick="act('read','${e}',event)" aria-pressed="${read}" aria-label="Oznacz jako przeczytane"><span class="check-btn ${read ? 'checked' : ''}">${read ? '✓' : ''}</span></button>
     <a href="${link}" ${link !== '#' ? 'target="_blank" rel="noopener"' : ''} class="min-w-0 flex-1 flex items-center gap-3 no-underline">
-      <div class="thumb">${imgTag(imageOf(item), cat, true, emoji)}</div>
+      <div class="thumb">${imgTag(item, cat, true, emoji)}</div>
       <span class="min-w-0">
         <span class="title block text-[14px] font-semibold leading-snug text-main">${esc(title)}</span>
         <span class="mt-0.5 block text-[11px] font-bold" style="color:var(--cc)">
@@ -486,7 +516,7 @@ function card(item) {
   const sum = getSummary(item), com = getComment(item), pub = formatPublisher(item), date = fmtDay(item._day || dayOf(item.date)), read = readKeys.has(k), e = ek(k);
   const credit = creditHtml(item, img);
   return `<article class="card overflow-hidden rounded-2xl border shadow-sm flex flex-col surface ${read ? 'read' : ''}" style="border-color:var(--border)" data-c="${esc(catSlug(cat))}">
-    <div class="relative aspect-video overflow-hidden" style="background:var(--bg-muted)">${imgTag(img, cat, false, '')}
+    <div class="relative aspect-video overflow-hidden" style="background:var(--bg-muted)">${imgTag(item, cat, false, '')}
       <span class="cchip absolute left-2.5 top-2.5 rounded-full px-2.5 py-0.5 text-[11px] font-extrabold uppercase shadow">${esc(cat)}</span></div>${credit}
     <div class="p-3.5 flex flex-col flex-1">
       <h3 class="text-[15px] font-black leading-snug text-main">${t.emoji ? esc(t.emoji) + ' ' : ''}${esc(t.title)}</h3>
@@ -523,14 +553,14 @@ function renderFast() { $('breaking').innerHTML = cards(uniq([...fastItems, ...n
 
 const score = x => (getSummary(x) ? 3 : 0) + (getComment(x) ? 2 : 0) + (imageOf(x) ? 1 : 0) + (x.grounded === false ? -2 : 0);
 
-/* PODSUMOWANIE TYGODNIA — DOKŁADNIE 15 NAJWAŻNIEJSZYCH NEWSÓW */
+/* PODSUMOWANIE TYGODNIA — TOP 15 */
 function renderWeek() {
   const today = todayKey(), f = new Date();
   f.setDate(f.getDate() - 6);
   const start = `${f.getFullYear()}-${String(f.getMonth() + 1).padStart(2, '0')}-${String(f.getDate()).padStart(2, '0')}`;
   
   const pool = [];
-  archiveGroups.forEach(g => g.items.forEach(x => {
+  archiveGroups.forEach(g => (g.items || []).forEach(x => {
     if (x._day >= start && x._day <= today) pool.push(x);
   }));
   newsItems.concat(fastItems).forEach(x => pool.push(x));
@@ -542,14 +572,19 @@ function renderWeek() {
   const row = x => {
     const k = keyOf(x); reg.set(k, x);
     const t = getTitle(x.title_pl || x.title || x.text), link = safeUrl(sourceLink(x)), pub = formatPublisher(x), c = esc(catSlug(category(x)));
-    const inner = `<span class="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full" style="background:var(--cc)"></span>
-      <span class="min-w-0 flex-1">
-        <span class="block text-[14px] font-semibold leading-snug text-main">${t.emoji ? esc(t.emoji) + ' ' : ''}${esc(t.title)}</span>
-        <span class="block text-[11px] font-semibold" style="color:var(--cc)">${esc(pub)}${x._day ? ' · ' + fmtDay(x._day) : ''}</span>
-      </span>
-      ${link !== '#' ? '<span class="mt-0.5 text-mute" aria-hidden="true">↗</span>' : ''}`;
-    const cls = 'flex items-start gap-2.5 px-3.5 py-3 border-b last:border-0 no-underline headline-item';
-    return link !== '#' ? `<a href="${link}" target="_blank" rel="noopener" data-c="${c}" class="${cls}" style="border-color:var(--border)">${inner}</a>` : `<div data-c="${c}" class="${cls}" style="border-color:var(--border)">${inner}</div>`;
+    const em = t.emoji || pickEmoji(t.title, category(x));
+    
+    return `
+      <div class="headline-item flex items-center gap-2 px-3 py-2.5 border-b last:border-0" style="border-color:var(--border)" data-c="${c}">
+        <div class="thumb">${imgTag(x, category(x), true, em)}</div>
+        <a href="${link}" ${link !== '#' ? 'target="_blank" rel="noopener"' : ''} class="min-w-0 flex-1 flex flex-col no-underline">
+          <span class="block text-[14px] font-semibold leading-snug text-main">${esc(t.title)}</span>
+          <span class="mt-0.5 block text-[11px] font-bold" style="color:var(--cc)">
+            ${esc(pub)}${x._day ? ' · ' + fmtDay(x._day) : ''}
+          </span>
+        </a>
+        ${link !== '#' ? `<a href="${link}" target="_blank" rel="noopener" class="hit text-mute hover:text-amber-500" aria-label="Otwórz źródło">↗</a>` : ''}
+      </div>`;
   };
 
   $('week-content').innerHTML = `
@@ -571,7 +606,6 @@ function normalizeArchive(data) {
   }).filter(Boolean);
 }
 
-/* Render archiwum w stylu listy 60 sekund */
 function renderArchive() {
   const container = $('archive-content');
   if (!archiveGroups.length) {
