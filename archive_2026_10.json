@@ -2337,8 +2337,8 @@
   },
   "2026-10-25_poranne": {
     "date": "25 października 2026",
-    "time": "06:40",
-    "timestamp": "2026-10-25_06:40",
+    "time": "06:47",
+    "timestamp": "2026-10-25_06:47",
     "items": [
       {
         "id": "2c920b114b",
@@ -2362,6 +2362,27 @@
         "image": "https://images.pexels.com/photos/7873570/pexels-photo-7873570.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
+        "id": "a6a77cdda6",
+        "category": "POLSKA",
+        "title": "📰 PAJĄKI POTRAFIĄ \"LATAĆ\" NA KILKASET KILOMETRÓW",
+        "hook": "Kluczowe doniesienia: Pająki potrafią \"latać\" na kilkaset kilo.",
+        "summary": "Babie lato to coś więcej niż tylko symbol słonecznej jesieni. Dla wielu gatunków pająków jest ono naturalnym środkiem transportu. Stawonogi wykorzystują prawa fizyki, by przemieszczać się na odległość nawet kilkuset kilometrów.",
+        "comment": "Wydarzenie o kluczowym znaczeniu rynkowym, którego koszty decydenci próbują zrzucić na obywateli.",
+        "link": "https://tvn24.pl/tvnmeteo/ciekawostki/pajaki-potrafia-latac-na-kilkaset-kilometrow-st9303621?source=rss",
+        "source_name": "TVN24",
+        "source_title": "Pająki potrafią \"latać\" na kilkaset kilometrów",
+        "lang": "pl",
+        "auto": true,
+        "source_image_url": "https://tvn24.pl/_e/i/najnowsze/cdn-zdjecie-7rt1ge-pajak-joro-trichonephila-clavata-zdj-pogladowe-ph7792099/alternates/WEBP_LANDSCAPE_1620",
+        "image_url": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "https://kaboompics.com/",
+        "image_credit_url": "https://www.pexels.com/photo/bald-man-sitting-at-office-and-reading-newspaper-about-economy-7877218/",
+        "image_illustrative": true,
+        "image_source": "pexels",
+        "image": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      },
+      {
         "id": "9912e253b3",
         "category": "POLSKA",
         "title": "📰 STARCIA Z POLICJĄ W CENTRUM BARCELONY. \"NIE ZOSTAWIMY T",
@@ -2374,13 +2395,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://i.iplsc.com/-/000NGBXEIW2G8PVA-C461.jpg",
-        "image_url": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "https://kaboompics.com/",
-        "image_credit_url": "https://www.pexels.com/photo/bald-man-sitting-at-office-and-reading-newspaper-about-economy-7877218/",
+        "image_url": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "Suzy Hazelwood",
+        "image_credit_url": "https://www.pexels.com/photo/stack-of-newspapers-3866816/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/7877218/pexels-photo-7877218.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "ced31bc443",
@@ -2395,13 +2416,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://i.iplsc.com/-/000NG01J7LCYVGMU-C461.jpg",
-        "image_url": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "Suzy Hazelwood",
-        "image_credit_url": "https://www.pexels.com/photo/stack-of-newspapers-3866816/",
+        "image_url": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "nappy",
+        "image_credit_url": "https://www.pexels.com/photo/person-holding-white-and-blue-business-paper-936137/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "80b6713aa2",
@@ -2416,13 +2437,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://cdn.wiadomosci.onet.pl/1/ciUk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy9jZDk3NmFjMTZjYjE1NmJjYTNmOTkxMDRjYmQyMTMxZS5qcGeTlQMAeM0O4M0IXpMFzQlgzQTslQfZjGh0dHBzOi8vY2RuLndpYWRvbW9zY2kub25ldC5wbC8xL3VicGs5azdhSFIwY0hNNkx5OWpaRzR1ZDJsaFpHOXRiM05qYVM1dmJtVjBMbkJzTDJsdFp5OXNiMmR2WDI5dVpYUmZkMmxoWkc5dGIzTmphUzV3Ym1lUmxRSUFaTVBEM2dBQ29UQUhvVEVFCMIA3gACoTAHoTEE",
-        "image_url": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "nappy",
-        "image_credit_url": "https://www.pexels.com/photo/person-holding-white-and-blue-business-paper-936137/",
+        "image_url": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "Markus Spiske",
+        "image_credit_url": "https://www.pexels.com/photo/countries-statistics-in-newspaper-4651145/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "3032721e90",
@@ -2437,13 +2458,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://v.wpimg.pl/NGQ1ZmFkYSYwUyxeaRBsM3MLeAQvSWJlJBNgT2lad3VhSXULLwcrNTRBNUMhGTs3MEYqQzYHYSYhWHUbd0QqLiJBNgw_RCsqM1Q-QnBTdiEyBjlVaw9_djQcbg52DWN-YAg-QCRafXM1BDwMIl0vfnNM",
-        "image_url": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "Markus Spiske",
-        "image_credit_url": "https://www.pexels.com/photo/countries-statistics-in-newspaper-4651145/",
+        "image_url": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "Déji Fadahunsi",
+        "image_credit_url": "https://www.pexels.com/photo/smartphone-and-monitor-behind-18285243/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/4651145/pexels-photo-4651145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "5f95bc9eaa",
@@ -2458,13 +2479,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://v.wpimg.pl/ODE5ZjRlYCUkVyxZfRdtMGcPeAM7TmNmMBdgSH1ddnZ1TXUMOwAqNiBFNUQ1Hjo0JEIqRCIAYCU1XHUcY0MrLTZFNgsrQyopJ1A-RTcNeHJ0VGMMfw98dSQYbl0wVGJ9dlc5R2dcfHx0DDxeNw18cWdI",
-        "image_url": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "Déji Fadahunsi",
-        "image_credit_url": "https://www.pexels.com/photo/smartphone-and-monitor-behind-18285243/",
+        "image_url": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "https://kaboompics.com/",
+        "image_credit_url": "https://www.pexels.com/photo/a-woman-reading-newspaper-7876510/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/18285243/pexels-photo-18285243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "fb72900afb",
@@ -2479,13 +2500,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://galeria.bankier.pl/p/b/c/ad649d3331c0f6-948-568-0-74-3000-1799.jpg",
-        "image_url": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "https://kaboompics.com/",
-        "image_credit_url": "https://www.pexels.com/photo/a-woman-reading-newspaper-7876510/",
+        "image_url": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_credit": "Leeloo The First",
+        "image_credit_url": "https://www.pexels.com/photo/white-mobile-phone-on-white-printer-paper-7873554/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/7876510/pexels-photo-7876510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "095a52ff54",
@@ -2500,13 +2521,13 @@
         "lang": "pl",
         "auto": true,
         "source_image_url": "https://cdn.defence24.pl/2026/10/24/1024x576px/Yin5mJsu11ZSSert8EvFtiIit3wfsBwW4AZX2MHr.wfwt.jpg",
-        "image_url": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "image_url": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+        "image_portrait": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
         "image_credit": "Leeloo The First",
-        "image_credit_url": "https://www.pexels.com/photo/white-mobile-phone-on-white-printer-paper-7873554/",
+        "image_credit_url": "https://www.pexels.com/photo/smartphone-calendar-and-printout-on-a-black-surface-7887845/",
         "image_illustrative": true,
         "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/7873554/pexels-photo-7873554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        "image": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
       },
       {
         "id": "53910e9661",
@@ -2518,27 +2539,6 @@
         "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVU9SczZWYTV3Tm01RGlyTVZKZ0lPaHlMLUVHM0V4aEdkWUhGRl9kODRPeXhWclo0UFBrVUpvRTRiM1l4Z0stbWpyalJCV0JmYWM0bkRoSS1lSDREQWpzS2dHMVl4VDMyd2w1eEFvZTBOVkYwQmEzSk1zeEZXUHVQYWxWX3l5QW5RZDN2N1VwdmpEdnRDZ2hURkdEcktxanBZdEdDNW1SR0pqQ0xUOUVzVQ?oc=5",
         "source_name": "PolsatNews.pl",
         "source_title": "Pilny alert RCB. Mieszkańcy sześciu obszarów ostrzeżeni przed potężnym wiatrem",
-        "lang": "pl",
-        "auto": true,
-        "source_image_url": "",
-        "image_url": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        "image_portrait": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
-        "image_credit": "Leeloo The First",
-        "image_credit_url": "https://www.pexels.com/photo/smartphone-calendar-and-printout-on-a-black-surface-7887845/",
-        "image_illustrative": true,
-        "image_source": "pexels",
-        "image": "https://images.pexels.com/photos/7887845/pexels-photo-7887845.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-      },
-      {
-        "id": "3c52e3dc75",
-        "category": "POLSKA",
-        "title": "📰 INTERWENCJA W PRYWATNYM ZOO W ŁĄCZNEJ. ZARZUT DLA POLIC",
-        "hook": "Kluczowe doniesienia: Interwencja w prywatnym zoo w Łącznej. Z.",
-        "summary": "Interwencja w prywatnym zoo w Łącznej. Zarzut dla policjantki, koordynatorka się wycofuje  TVN24\"Z partyzanta dzwonię\". Policjantka miała ostrzec podejrzanego w sprawie zoo w Łącznej  OnetKryzys w zoo w Łącznej. Ekspertka rezygnuje, zarzut dla policjantki  WP WiadomościPolicjantka z zarzutem poplecznictwa w sprawie ZOO Łączna  Polskie Radio 24Wywiezione za granicę zwierzęta z ZOO Łączna mają wrócić. Ale jest problem  walbrzych.wyborcza.pl",
-        "comment": "Wydarzenie o kluczowym znaczeniu rynkowym, którego koszty decydenci próbują zrzucić na obywateli.",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOEhHb3pQQ1pkRUtuTlBMb1lzeUotczdYN2RULXB5NkVaMGJNbGZENURnNTM4dHlLVnJ3WXMxQV9UQWtaS0pSd3M0WS05elhOWjUxTTI4NVFLdHI1VDFJaDRfWF9jMG5Zb21yS2dEVXAyclAtOTFhWDF2dnh6bXJRT3dMYnRnUWVsLVhYd1RyTkFUaTVXbGlRV3hYQ3VTRXZ3S3IzQkZIWEVWOW5jQXVqenBvbnVLdy1qcXRodDZ2dHVyVWlEaEdZQTI0TmRxUQ?oc=5",
-        "source_name": "TVN24",
-        "source_title": "Interwencja w prywatnym zoo w Łącznej. Zarzut dla policjantki, koordynatorka się wycofuje",
         "lang": "pl",
         "auto": true,
         "source_image_url": "",

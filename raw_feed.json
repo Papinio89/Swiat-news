@@ -1,7 +1,7 @@
 {
   "date": "25 października 2026",
-  "time": "06:40",
-  "timestamp": "2026-10-25_06:40",
+  "time": "06:47",
+  "timestamp": "2026-10-25_06:47",
   "count": 72,
   "items": [
     {
@@ -163,6 +163,62 @@
       "source_name": "Polsat News",
       "lang": "pl",
       "title_pl": "\"Może powinniśmy byli to zrobić od razu\". Trump o Rosji i Ukrainie"
+    },
+    {
+      "title": "Tragedia na drodze krajowej nr 92 pod Poznaniem",
+      "snippet": "Samochód osobowy potrącił pieszego w miejscowości Sady pod Poznaniem, na drodze krajowej numer 92. Droga w kierunku Poznania jest zablokowana.",
+      "link": "https://tvn24.pl/poznan/sady-pieszy-potracony-na-drodze-krajowej-nr-92-pod-poznaniem-nie-przezyl-st9304277?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Tragedia na drodze krajowej nr 92 pod Poznaniem"
+    },
+    {
+      "title": "Nagrody dla dziennikarzy TVN24 na festiwalu w Krakowie. Laureatami Katarzyna Lazzeri i Hubert Kijek",
+      "snippet": "Dziennikarka TVN24 Katarzyna Lazzeri otrzymała nagrodę za swój reportaż \"Samotność 2.0\" na Science & Technology Film Festival 2026 w Krakowie. Jury uznało, że przedstawia \"poruszającą opowieść o samotności, potrzebie bliskości i cenie cyfrowej intymności\". Nagrodę otrzymał również reporter TVN24 Hubert Kijek.",
+      "link": "https://tvn24.pl/kultura-i-styl/reportaz-samotnosc-2-0-katarzyny-lazzeri-nagrodzony-na-festiwalu-w-krakowie-st9304273?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Nagrody dla dziennikarzy TVN24 na festiwalu w Krakowie. Laureatami Katarzyna Lazzeri i Hubert Kijek"
+    },
+    {
+      "title": "Ostrzeżenia IMGW dla siedmiu województw",
+      "snippet": "IMGW wydał ostrzeżenia meteorologiczne. W niedzielę w części kraju spodziewane są silne podmuchy wiatru. Alarmy obowiązują w siedmiu województwach.",
+      "link": "https://tvn24.pl/tvnmeteo/polska/ostrzezenia-imgw-przed-silnym-wiatrem-dla-siedmiu-wojewodztw-st9304259?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Ostrzeżenia IMGW dla siedmiu województw"
+    },
+    {
+      "title": "Bartosz Arłukowicz: zarzuty wobec Katarzyny Pełczyńskiej-Nałęcz są poważne",
+      "snippet": "Europoseł KO Bartosz Arłukowicz w \"Faktach po Faktach\" TVN24 zaapelował do Polski 2050, aby powiedzieli, na czym polega szkodzenie Katarzyny Pełczyńskiej-Nałęcz ich partii. Poseł Rozwoju Plus Łukasz Schreiber mówił z kolei, że nie jest ona bohaterką. - Ona wyskakuje z \"Titanica\", kiedy góra lodowa się zbliża - ocenił.",
+      "link": "https://tvn24.pl/polska/bartosz-arlukowicz-chcialbym-dokladnie-wiedziec-czemu-katarzyna-pelczynska-nalecz-zostala-wyrzucona-z-polski-2050-st9304258?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Bartosz Arłukowicz: zarzuty wobec Katarzyny Pełczyńskiej-Nałęcz są poważne"
+    },
+    {
+      "title": "Zmiana czasu na zimowy 2026. Tej nocy pośpimy godzinę dłużej",
+      "snippet": "Zmiana czasu z letniego na zimowy 2026 przed nami. Tej nocy przestawimy wskazówki zegarków o godzinę do tyłu. Nawet dodatkowa godzina snu może jednak mieć wpływ na nasze samopoczucie.",
+      "link": "https://tvn24.pl/tvnmeteo/ciekawostki/zmiana-czasu-na-zimowy-2026-kiedy-przestawiamy-zegarki-st9301548?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Zmiana czasu na zimowy 2026. Tej nocy pośpimy godzinę dłużej"
+    },
+    {
+      "title": "\"Z tego się nie wyrasta\". Same chorują na otyłość i chcą uchronić przed nią dzieci",
+      "snippet": "Polskie dzieci tyją najszybciej w Europie. Nie można liczyć, że problem sam się rozwiąże - dziecko z nadmierną masą ciała najczęściej staje się dorosłym z chorobą otyłościową. Leczenie otyłości u dzieci wymaga zaangażowania całej rodziny. Co to oznacza w praktyce, mówią TVN24+ mamy młodych pacjentek.",
+      "link": "https://tvn24.pl/zdrowie/czy-dziecku-mozna-dawac-slodycze-otylosc-u-dzieci-przyczyny-leczenie-analogi-glp-1-st9299780?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "\"Z tego się nie wyrasta\". Same chorują na otyłość i chcą uchronić przed nią dzieci"
+    },
+    {
+      "title": "Alert RCB. \"Zabezpiecz rzeczy, które może porwać wiatr\"",
+      "snippet": "Rządowe Centrum Bezpieczeństwa ostrzega przed bardzo silnym wiatrem. Eksperci zaapelowali o ostrożność podczas aktywności na świeżym powietrzu.",
+      "link": "https://tvn24.pl/tvnmeteo/polska/alert-rcb-na-niedziele-zabezpiecz-rzeczy-ktore-moze-porwac-wiatr-st9304244?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Alert RCB. \"Zabezpiecz rzeczy, które może porwać wiatr\""
     },
     {
       "title": "Tragedia na rajskiej wyspie. Matka rzuciła się, by ratować synów",
@@ -390,19 +446,19 @@
     },
     {
       "title": "100 tys. osób na ulicach Tel Awiwu. Protest przeciw rządowi Netanjahu",
-      "snippet": "Do 100 tys. osób uczestniczyło w sobotę w Tel Awiwie w antyrządowej demonstracji - poinformował dziennik \"Jerusalem Post\". Domagano się powołania niezależnej komisji, która ustali okoliczności ataku Hamasu na Izrael 7 października 2023 r., i rozliczenia zaniedbań rządu Benjamina Netanjahu.",
+      "snippet": "Do 100 tys. osób uczestniczyło w sobotę w Tel Awiwie w antyrządowej demonstracji – poinformował dziennik \"Jerusalem Post\". Ludzie domagali się powołania niezależnej komisji, która ustali okoliczności ataku Hamasu na Izrael 7 października 2023 r., i rozliczenia zaniedbań rządu Binjamina Netanjahu.",
       "link": "https://wiadomosci.wp.pl/100-tys-osob-na-ulicach-tel-awiwu-protest-przeciw-rzadowi-netanjahu-7343708363606112a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
       "title_pl": "100 tys. osób na ulicach Tel Awiwu. Protest przeciw rządowi Netanjahu"
     },
     {
-      "title": "Brazylia: Flavio Bolsonaro prowadzi w sondażach",
-      "snippet": "Brazylijczycy zdecydują w niedzielę, kto zostanie ich prezydentem. Z najnowszych sondaży wynika, że faworytem jest konserwatywny senator Flavio Bolsonaro.",
+      "title": "Brazylia: Flávio Bolsonaro prowadzi w sondażach",
+      "snippet": "Brazylijczycy zdecydują w niedzielę, kto zostanie ich prezydentem. Z najnowszych sondaży wynika, że faworytem jest konserwatywny senator Flávio Bolsonaro.",
       "link": "https://wiadomosci.wp.pl/brazylia-flavio-bolsonaro-prowadzi-w-sondazach-7343702859565088a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Brazylia: Flavio Bolsonaro prowadzi w sondażach"
+      "title_pl": "Brazylia: Flávio Bolsonaro prowadzi w sondażach"
     },
     {
       "title": "Lotnisko w Rijadzie wznawia pracę. Huti: nadal jesteście celem",
@@ -523,62 +579,6 @@
       "source_name": "Bankier.pl",
       "lang": "pl",
       "title_pl": "Negocjacje z USA zakończyły się fiaskiem. Iran da kolejną szansę?"
-    },
-    {
-      "title": "Pomoc energetyczna dla Ukrainy kluczowa przed zimą. Sikorski apeluje do Europy",
-      "snippet": "Sytuację na froncie w Ukrainie należy obecnie ocenić jako remis, jednak w przyszłym roku zasoby Rosji zaczną się wyczerpywać, jeśli Ukraina przetrwa nadchodzącą zimę – powiedział w sobotę w Wejherowie (woj. pomorskie) wicepremier i minister spraw zagranicznych Radosław Sikorski.",
-      "link": "https://www.bankier.pl/wiadomosc/Pomoc-energetyczna-dla-Ukrainy-kluczowa-przed-zima-Sikorski-apeluje-do-Europy-9217874.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Pomoc energetyczna dla Ukrainy kluczowa przed zimą. Sikorski apeluje do Europy"
-    },
-    {
-      "title": "Merz ostrzega: Rosja dąży do codziennej destabilizacji Niemiec",
-      "snippet": "Kanclerz Friedrich Merz ostrzegł w sobotę w Monachium, że Niemcy znajdują się pod presją ugrupowań ekstremistycznych oraz zagranicznych przeciwników, z Rosją na czele. Według niego Moskwa stanowi „ogromne zagrożenie” i dąży do codziennej destabilizacji kraju.",
-      "link": "https://defence24.pl/polityka-obronna/merz-ostrzega-rosja-dazy-do-codziennej-destabilizacji-niemiec",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Merz ostrzega: Rosja dąży do codziennej destabilizacji Niemiec"
-    },
-    {
-      "title": "„Pokochał władzę”. Ukraińskie społeczeństwo zmęczone Zełenskim?",
-      "snippet": "W piątek, 23 października, w artykule opublikowanym przez „Wirtualną Polskę” zauważono, że Wołodymyr Zełenski próbuje pilnie ocieplić swój wizerunek, znacząco zwiększając swoją aktywność medialną. Ma to być odpowiedź na nastroje w ukraińskim społeczeństwie, zmęczonym swoim prezydentem.",
-      "link": "https://defence24.pl/geopolityka/pokochal-wladze-ukrainskie-spoleczenstwo-zmeczone-zelenskim",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "„Pokochał władzę”. Ukraińskie społeczeństwo zmęczone Zełenskim?"
-    },
-    {
-      "title": ",,To jedynie wymówka”. Ambasador USA mówi o wojnie i wskazuje na Polskę",
-      "snippet": "W piątek, 23 października, ambasador USA w Polsce, Tom Rose, w serwisie X zrugał europejskich polityków za prowadzenie nieodpowiedzialnej (jego zdaniem) polityki względem Ukrainy, a także za „oczernianie Donalda Trumpa”. Obiekcji w tej mierze nie miał wyłącznie do Polski.",
-      "link": "https://defence24.pl/geopolityka/to-jedynie-wymowka-ambasador-usa-mowi-o-wojnie-i-wskazuje-na-polske",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": ",,To jedynie wymówka”. Ambasador USA mówi o wojnie i wskazuje na Polskę"
-    },
-    {
-      "title": "Rosja zaatakuje na Bałtyku? Minister obrony Szwecji: Dzieje się obecnie wiele",
-      "snippet": "W piątek, 23 października, niemiecki dziennik „Die Welt” opublikował wywiad z ministrem obrony Szwecji, Pålem Jonsonem. W rozmowie polityk stwierdził, że sytuacja na Bałtyku jest dość poważna, a Rosja podejmuje szereg działań, które nie mogą umknąć uwadze państw NATO.",
-      "link": "https://defence24.pl/polityka-obronna/rosja-zaatakuje-na-baltyku-minister-obrony-szwecji-dzieje-sie-obecnie-wiele",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Rosja zaatakuje na Bałtyku? Minister obrony Szwecji: Dzieje się obecnie wiele"
-    },
-    {
-      "title": "Na to powinna przygotować się Polska. Były prezydent RP o działaniach Rosji",
-      "snippet": "W piątek, 23 października, w trakcie XIII Igrzysk Wolności w Łodzi, o przyszłości Ukrainy i działaniach podejmowanych dziś przez Rosję, mówił były prezydent RP, Aleksander Kwaśniewski. Powiedział, jak jego zdaniem będzie się prezentować powojenna Ukraina.",
-      "link": "https://defence24.pl/geopolityka/na-to-powinna-przygotowac-sie-polska-byly-prezydent-rp-o-dzialaniach-rosji",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Na to powinna przygotować się Polska. Były prezydent RP o działaniach Rosji"
-    },
-    {
-      "title": "Prigożyn nie żyje, interes kwitnie. Trop prowadzi na Białoruś",
-      "snippet": "Paweł Prigożyn utrzymał afrykańskie interesy Grupy Wagnera. Według ustaleń „The Wall Street Journal” złoto z Republiki Środkowoafrykańskiej ma trafiać na Białoruś.",
-      "link": "https://defence24.pl/geopolityka/prigozyn-nie-zyje-interes-kwitnie-trop-prowadzi-na-bialorus",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Prigożyn nie żyje, interes kwitnie. Trop prowadzi na Białoruś"
     }
   ]
 }
