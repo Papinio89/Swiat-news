@@ -182,11 +182,11 @@ body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
     <div id="breaking" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
   </section>
 
-  <!-- PODSUMOWANIE TYGODNIA — TOP 15 -->
+  <!-- PODSUMOWANIE TYGODNIA — RÓWNOMIERNE TOP 15 -->
   <section id="week-view" class="hidden">
     <div class="mb-4">
       <div class="text-[11px] font-bold uppercase tracking-[.18em] text-emerald-500">Przegląd tygodnia</div>
-      <h2 class="text-lg font-black text-main">📅 TOP 15 Wydarzeń</h2>
+      <h2 class="text-lg font-black text-main">📅 TOP 15 Wydarzeń (Przekrój całego tygodnia)</h2>
     </div>
     <div id="week-content"></div>
   </section>
@@ -318,7 +318,6 @@ const CAT_EMOJI = { polska: '🇵🇱', gospodarka: '📊', biznes: '💼', geop
 function uniq(list) { const seen = new Set(), out = []; for (const x of list || []) { const k = keyOf(x); if (!k || seen.has(k)) continue; seen.add(k); out.push(x); } return out; }
 const listOf = d => Array.isArray(d) ? d : (d && Array.isArray(d.items) ? d.items : []);
 
-/* ZAWSZE PIERWSZEŃSTWO MA ORYGINALNY KADR Z ARTYKUŁU */
 function imageOf(x) {
   if (!x || typeof x !== 'object') return '';
   const candidates = [
@@ -346,7 +345,6 @@ function imageOf(x) {
   return '';
 }
 
-/* Zapasowy URL ze zdjęcia Pexels (gdyby oryginał z artykułu nie zadziałał) */
 function pexelsFallbackOf(x) {
   if (!x || typeof x !== 'object') return '';
   for (const c of [x.image_url, x.image, x.image_portrait]) {
@@ -428,18 +426,15 @@ function imgTag(item, cat, small, em) {
 window.__imgFallback = function (el) {
   const tried = parseInt(el.dataset.tried || '0', 10);
   const backup = el.dataset.backup;
-  // 1. Jeśli oryginał z artykułu rzucił 403, najpierw podstaw dedykowane zdjęcie z Pexels
   if (tried === 0 && backup && el.src !== backup) {
     el.dataset.tried = '1';
     el.src = backup;
     return;
   }
-  // 2. Jeśli serwer Pexels również zawiódł, wstaw kolorową ikonę kategorii
   const p = el.parentElement;
   if (p) p.innerHTML = ph(el.dataset.cat, el.dataset.small === '1', el.dataset.em);
 };
 
-/* Podpis źródła zdjęcia */
 function creditHtml(x, img) {
   if (!img) return '';
   const low = img.toLowerCase();
@@ -538,6 +533,7 @@ async function translateHeadline(item) {
   if (!item.title_pl && isEnglishTitle(title)) title = await translateToPolish(title);
   return { item, title, emoji: (t.emoji && t.emoji !== '•') ? t.emoji : pickEmoji(title, category(item)) };
 }
+
 async function renderToday() {
   const primary = uniq(newsItems), keys = new Set(primary.map(keyOf));
   const rest = uniq(rawFeedItems.filter(x => !keys.has(keyOf(x)))), total = primary.length + rest.length;
@@ -547,13 +543,14 @@ async function renderToday() {
   const row = ({ item, title, emoji }) => headlineRow(item, title, emoji);
   $('headline-list').innerHTML = a.map(row).join('') + (b.length ? `<div class="px-3.5 py-2.5 border-y flex items-center gap-2" style="border-color:var(--border);background:var(--bg-muted)"><span class="text-[11px] font-black uppercase tracking-[.14em] amber">Pozostałe newsy na dziś</span><span class="text-[11px] text-mute">· ${b.length}</span></div>` + b.map(row).join('') : '');
 }
+
 const cards = (l, empty) => l.length ? l.map(card).join('') : `<div class="col-span-full p-8 text-center text-sm text-sec">${empty}</div>`;
 function renderAll() { const l = uniq(newsItems); $('all-grid').innerHTML = cards(l.slice(0, allShown), 'Brak wiadomości.'); $('all-more').classList.toggle('hidden', allShown >= l.length); }
 function renderFast() { $('breaking').innerHTML = cards(uniq([...fastItems, ...newsItems.slice(0, 5)]), 'Brak pilnych.'); }
 
 const score = x => (getSummary(x) ? 3 : 0) + (getComment(x) ? 2 : 0) + (imageOf(x) ? 1 : 0) + (x.grounded === false ? -2 : 0);
 
-/* PODSUMOWANIE TYGODNIA — TOP 15 */
+/* PODSUMOWANIE TYGODNIA — MIN. 2 Z KAŻDEGO DNIA + DOPEŁNIENIE DO 15 */
 function renderWeek() {
   const today = todayKey(), f = new Date();
   f.setDate(f.getDate() - 6);
@@ -566,8 +563,51 @@ function renderWeek() {
   newsItems.concat(fastItems).forEach(x => pool.push(x));
 
   const all = uniq(pool);
-  all.sort((a, b) => score(b) - score(a));
-  const top15 = all.slice(0, 15);
+  
+  // 1. Grupowanie newsów po poszczególnych dniach
+  const byDay = {};
+  all.forEach(x => {
+    const d = x._day || today;
+    if (!byDay[d]) byDay[d] = [];
+    byDay[d].push(x);
+  });
+
+  // Sortowanie każdego dnia wg wagi merytorycznej (score)
+  Object.keys(byDay).forEach(d => {
+    byDay[d].sort((a, b) => score(b) - score(a));
+  });
+
+  const daysSorted = Object.keys(byDay).sort().reverse();
+  const selectedKeys = new Set();
+  const top15 = [];
+
+  // Krok 1: Pobierz co najmniej 2 najważniejsze newsy z każdego dnia tygodnia
+  daysSorted.forEach(d => {
+    const dayItems = byDay[d];
+    let addedForDay = 0;
+    for (let i = 0; i < dayItems.length && addedForDay < 2; i++) {
+      const item = dayItems[i];
+      const k = keyOf(item);
+      if (!selectedKeys.has(k) && top15.length < 15) {
+        selectedKeys.add(k);
+        top15.push(item);
+        addedForDay++;
+      }
+    }
+  });
+
+  // Krok 2: Uzupełnij pozostałe wolne miejsca (do równo 15) najlepszymi newsami z całego tygodnia
+  const remaining = all.filter(x => !selectedKeys.has(keyOf(x)));
+  remaining.sort((a, b) => score(b) - score(a));
+
+  for (let i = 0; i < remaining.length && top15.length < 15; i++) {
+    const item = remaining[i];
+    selectedKeys.add(keyOf(item));
+    top15.push(item);
+  }
+
+  // Posortuj ostateczne 15 newsów chronologicznie (od najnowszych)
+  top15.sort((a, b) => (b._day || today).localeCompare(a._day || today) || score(b) - score(a));
 
   const row = x => {
     const k = keyOf(x); reg.set(k, x);
@@ -590,7 +630,7 @@ function renderWeek() {
   $('week-content').innerHTML = `
     <div class="mb-3 flex items-center justify-between text-xs text-sec">
       <span>${fmtDay(start)} – ${fmtDay(today)}</span>
-      <span class="font-bold text-main">${top15.length} najważniejszych tematów</span>
+      <span class="font-bold text-main">${top15.length} najważniejszych tematów (${daysSorted.length} dni)</span>
     </div>
     ${top15.length ? `<div class="rounded-2xl border overflow-hidden surface shadow-sm" style="border-color:var(--border)">${top15.map(row).join('')}</div>`
       : '<div class="p-6 text-center text-sm text-sec">Brak danych z ostatnich 7 dni.</div>'}
@@ -684,6 +724,7 @@ function renderCurrent() {
   ({ today: renderToday, all: renderAll, fast: renderFast, week: renderWeek, archive: renderArchive })[currentTab]();
   document.querySelectorAll('#bottom-nav .bottom-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === currentTab));
 }
+
 function switchTab(tab) {
   currentTab = tab; document.querySelectorAll('.tab').forEach(b => b.classList.remove('active')); $('tab-' + tab).classList.add('active');
   ['today', 'all', 'fast', 'week', 'archive'].forEach(v => $(v + '-view').classList.toggle('hidden', v !== tab));
@@ -691,6 +732,7 @@ function switchTab(tab) {
   if (tab === 'all') allShown = 6; if (tab === 'archive') archiveShown = 2;
   renderCurrent(); scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 function search() {
   const q = $('search-input').value.trim(); $('search-clear').classList.toggle('hidden', !q);
   if (!q) return $('search-results').classList.add('hidden');
@@ -699,18 +741,21 @@ function search() {
   $('search-results').classList.remove('hidden');
   $('search-results').innerHTML = `<div class="mb-1.5 text-[11px] font-bold uppercase tracking-wider text-sec">Wyniki: ${hits.length}</div><div class="rounded-xl border overflow-hidden surface" style="border-color:var(--border)">${hits.slice(0, 30).map(x => { const t = getTitle(x.title_pl || x.title); return headlineRow(x, t.title, t.emoji || pickEmoji(t.title, category(x))); }).join('') || '<div class="p-4 text-sm text-sec">Nie znaleziono.</div>'}</div>`;
 }
+
 function clearSearch() { $('search-input').value = ''; $('search-results').classList.add('hidden'); $('search-clear').classList.add('hidden'); }
 
-/* ---------- dane ---------- */
+/* ---------- pobieranie danych ---------- */
 async function loadJson(url, fallback) {
   try { const r = await fetch(url, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return { ok: true, data: await r.json() }; }
   catch (e) { console.warn('Nie udało się pobrać', url, e); return { ok: false, data: fallback }; }
 }
+
 async function loadWidgets() {
   try { const d = await (await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.2297&longitude=21.0122&current=temperature_2m,weather_code&timezone=Europe%2FWarsaw')).json(); const c = d.current.weather_code;
     $('weather-temp').textContent = Math.round(d.current.temperature_2m) + '°'; $('weather-icon').textContent = c === 0 ? '☀️' : c <= 3 ? '🌤️' : c <= 48 ? '🌫️' : c <= 67 ? '🌧️' : c <= 77 ? '🌨️' : c <= 82 ? '🌦️' : '⛈️'; } catch (e) {}
   try { const rates = (await (await fetch('https://api.nbp.pl/api/exchangerates/tables/A?format=json')).json())[0].rates; const g = c => { const r = rates.find(x => x.code === c); return r ? r.mid.toFixed(2) : '—'; }; $('eur-rate').textContent = g('EUR'); $('usd-rate').textContent = g('USD'); } catch (e) {}
 }
+
 async function init() {
   updateThemeColor(); try { readKeys = new Set(JSON.parse(store.get('swm-read', '[]'))); } catch (e) {}
   const [n, raw, f, a] = await Promise.all(Object.values(DATA_FILES).map(u => loadJson(u, {})));
