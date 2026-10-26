@@ -1,336 +1,136 @@
 {
-  "date": "25 października 2026",
-  "time": "16:34",
-  "timestamp": "2026-10-25_16:34",
-  "count": 72,
+  "date": "26 października 2026",
+  "time": "06:03",
+  "timestamp": "2026-10-26_06:03",
+  "count": 67,
   "items": [
     {
-      "title": "Hołownia odpowiada \"gorącym głowom\" ws. Pełczyńskiej-Nałęcz. Sięgnął po Biblię",
-      "snippet": "Nie wypada ogłaszać zwrócenia powierzonego sobie mandatu w mediach społecznościowych, zanim nie zakomunikuje się ich drużynie. To nie fair, to łamie naszą umowę i zasady gry - napisał Szymon Hołownia, odnosząc się do decyzji Katarzyny Pełczyńskiej-Nałęcz o dymisji z funkcji ministra. Dalej wyjaśnił, dlaczego polityk została usunięta z partii.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/holownia-odpowiada-goracym-glowom-ws-peczynskiej-nalecz-siegna-po-biblie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Hołownia odpowiada \"gorącym głowom\" ws. Pełczyńskiej-Nałęcz. Sięgnął po Biblię"
-    },
-    {
-      "title": "Auto roztrzaskało się na kawałki. Użyli specjalnego sprzętu, by uwolnić kierowcę",
-      "snippet": "27-letni mężczyzna stracił panowanie nad kierownicą i uderzył w ogrodzenie pobliskiego sadu. Uderzenie było tak silne, że pojazd roztrzaskał się na kawałki. Strażacy musieli użyć specjalistycznego sprzętu, by uwolnić zakleszczonego we wraku kierowcę.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/auto-roztrzaskalo-sie-na-kawalki-uzyli-specjalnego-sprzetu-by-uwolnic-kierowce/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Auto roztrzaskało się na kawałki. Użyli specjalnego sprzętu, by uwolnić kierowcę"
-    },
-    {
-      "title": "Niebezpieczna pogoda w Polsce. \"Zachowaj ostrożność i zabezpiecz rzeczy\"",
-      "snippet": "IMGW wydał ostrzeżenia I i II stopnia przed silnym wiatrem dla północnej i południowej części Polski. Dla Wybrzeża obowiązuje alert przed silnym sztormem. Do mieszkańców części powiatów woj. śląskiego swoje ostrzeżenie przed silnym wiatrem wysłało także RCB.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/niebezpieczna-pogoda-w-polsce-zachowaj-ostroznosc-i-zabezpiecz-rzeczy/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Niebezpieczna pogoda w Polsce. \"Zachowaj ostrożność i zabezpiecz rzeczy\""
-    },
-    {
-      "title": "\"Mam może nieuprzejme, ale na serio pytanie\". Pełczyńska-Nałęcz zwróciła się do Giertycha",
-      "snippet": "Nie milkną echa decyzji Katarzyny Pełczyńskiej-Nałęcz o opuszczeniu rządu. Tym razem do wymiany uprzejmych i nieuprzejmych pytań doszło między nią a posłem Koalicji Obywatelskiej Romanem Giertychem.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/mam-moze-nieuprzejme-ale-na-serio-pytanie-peczynska-nalecz-zwrocila-sie-do-giertycha/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Mam może nieuprzejme, ale na serio pytanie\". Pełczyńska-Nałęcz zwróciła się do Giertycha"
-    },
-    {
-      "title": "Ważą się losy kolejnego prezydenta. Mieszkańcy Częstochowy ruszyli do urn",
-      "snippet": "O godz. 7.00 w Częstochowie rozpoczęło się głosowanie w referendum w sprawie odwołania prezydenta i rady miasta. Organizatorzy akcji uważają, że Krzysztof Matyjaszczyk nie powinien rządzić, ponieważ ciążą na nim zarzuty prokuratorskie dotyczące korupcji. Mieszkańcy będą mogli oddawać głosy do godziny 21.00.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/waza-sie-losy-kolejnego-prezydenta-mieszkancy-czestochowy-ruszyli-do-urn/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Ważą się losy kolejnego prezydenta. Mieszkańcy Częstochowy ruszyli do urn"
-    },
-    {
-      "title": "\"Śniadanie Rymanowskiego w Polsat News i Interii\" [OGLĄDAJ]",
-      "snippet": "Bogdan Rymanowski oraz zaproszeni przez niego goście rozmawiają o bieżącej sytuacji w Polsce i na świecie. Transmisja programu Śniadanie Rymanowskiego od godz. 9.55 w Polsat News, Interii i na polsatnews.pl.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/sniadanie-rymanowskiego-w-polsat-news-i-interii-ogladaj-od-955-25/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Śniadanie Rymanowskiego w Polsat News i Interii\" [OGLĄDAJ]"
-    },
-    {
-      "title": "Marcin Horała w \"Politycznym WF-ie z gościem\" [OGLĄDAJ]",
-      "snippet": "Czy wprowadzenie podatku od big techów spotka się z reakcją USA? Jakie błędy popełnił PiS i jak Rozwój Plus postrzega zarządzanie w partii Jarosława Kaczyńskiego? O tym - i nie tylko - w Politycznym WF-ie z gościem z Marcinem Horałą, wicemarszałkiem Sejmu z Rozwoju Plus, porozmawiają Marcin Fijołek oraz Marek Tejchman. Transmisja w polsatnews.pl i w Polsat News od godz. 11:00.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/marcin-horala-w-politycznym-wf-ie-z-gosciem-ogladaj-od-1100/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Marcin Horała w \"Politycznym WF-ie z gościem\" [OGLĄDAJ]"
-    },
-    {
-      "title": "Wyniki Lotto na 24 października. Sprawdź szczęśliwe liczby",
-      "snippet": "W sobotę, 24 października 2026 roku, odbyły się losowania gier liczbowych prowadzonych przez Totalizator Sportowy. Które liczby okazały się szczęśliwe? Podajemy wyniki losowania: Ekstra Pensja, Ekstra Premia, Kaskada, Lotto, Lotto Plus, Mini Lotto, Multi Multi.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-24/wyniki-lotto-na-24-pazdziernika-sprawdz-szczesliwe-liczby/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wyniki Lotto na 24 października. Sprawdź szczęśliwe liczby"
-    },
-    {
-      "title": "Śmierć pacjenta zakażonego wirusem Shamonda. GIS wydał komunikat",
-      "snippet": "Główny Inspektorat Sanitarny wydał komunikat w związku z pierwszym w historii przypadkiem zakażenia człowieka wirusem Shamonda we Francji. Pacjent zmarł, prawdopodobnie wskutek powikłań związanych z infekcją. GIS uspokaja jednak, że zagrożenie epidemią jest niskie, a dotychczas nie stwierdzono przenoszenia się wirusa między ludźmi.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-24/smierc-pacjenta-zakazonego-wirusem-shamoda-gis-wydal-komunikaty/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Śmierć pacjenta zakażonego wirusem Shamonda. GIS wydał komunikat"
-    },
-    {
-      "title": "Rosja zorganizuje mistrzostwa świata. Pierwsza taka decyzja od początku wojny",
-      "snippet": "Rosja zorganizuje mistrzostwa świata w podnoszeniu ciężarów w 2030 roku - zdecydowała Międzynarodowa Federacja Podnoszenia Ciężarów (IWF). Turniej odbędzie się w Moskwie. To pierwszy przypadek od rozpoczęcia pełnoskalowej inwazji na Ukrainę, gdy międzynarodowa federacja dyscypliny olimpijskiej przyznała Rosji prawo organizacji seniorskich mistrzostw świata.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/rosja-zorganizuje-mistrzostwa-swiata-pierwsza-taka-decyzja-od-poczatku-wojny/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Rosja zorganizuje mistrzostwa świata. Pierwsza taka decyzja od początku wojny"
-    },
-    {
-      "title": "Najniebezpieczniejszy szlak morski świata. Wcale nie chodzi o cieśninę Ormuz",
-      "snippet": "Morze Czarne stało się najbardziej śmiercionośnym szlakiem żeglugowym na świecie - informuje Financial Times. Od początku roku zaatakowano tam ponad 570 statków, a zginęło co najmniej 40 marynarzy. Liczba ofiar przewyższa bilans w rejonie cieśniny Ormuz. Eksperci alarmują, że wojna między Rosją a Ukrainą coraz bardziej zagraża międzynarodowemu transportowi morskiemu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/najniebezpieczniejszy-szlak-morski-swiata-wcale-nie-chodzi-o-ciesnine-ormuz/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Najniebezpieczniejszy szlak morski świata. Wcale nie chodzi o cieśninę Ormuz"
-    },
-    {
-      "title": "Europa szuka przedstawiciela, Zacharowa stawia warunek. \"Drzwi są otwarte\"",
-      "snippet": "Kreml jest gotów dopuścić przedstawicieli Europy do rozmów pokojowych dotyczących wojny w Ukrainie - oświadczyła rzeczniczka rosyjskiego ministerstwa spraw zagranicznych Marija Zacharowa. Jednocześnie stwierdziła, że chodzi wyłącznie o tych polityków, którzy dążą do utrzymania kontaktów z Moskwą. W wypowiedzi rosyjskiej przedstawicielki nie brakło kąśliwych uwag pod adresem europejskich liderów.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/europa-szuka-przedstawiciela-zacharowa-stawia-warunek-drzwi-sa-otwarte/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Europa szuka przedstawiciela, Zacharowa stawia warunek. \"Drzwi są otwarte\""
-    },
-    {
-      "title": "\"Tak jak nigdy wcześniej\". Papież apeluje do wiernych",
-      "snippet": "- Pan oczekuje od nas osobistej relacji: jedyny prawdziwy Bóg pragnie stać się naszym Bogiem - mówił papież podczas tradycyjnej modlitwy Anioł Pański na placu św. Piotra. Leon XIV modlił się również za pokój na świecie, zauważając, że dzisiaj, tak jak nigdy wcześniej, ewidentne jest to, że wojny, siejąc śmierć i zniszczenie, zubażają i dewastują świat",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/tak-jak-nigdy-wczesniej-papiez-apeluje-do-wiernych/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Tak jak nigdy wcześniej\". Papież apeluje do wiernych"
-    },
-    {
-      "title": "Gigantyczna ugoda Kościoła. Opiewa na setki milionów dolarów",
-      "snippet": "Archidiecezja Nowego Jorku oraz pełnomocnicy około 1,3 tys. wiernych, którzy twierdzą, że padli ofiarą wykorzystywania ze strony duchownych, zawarli ugodę na kwotę 800 milionów dolarów. Jest to druga co do wielkości ugoda tego typu katolickiej archidiecezji w Stanach Zjednoczonych.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/gigantyczna-ugoda-kosciola-opiewa-na-setki-milionow-dolarow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Gigantyczna ugoda Kościoła. Opiewa na setki milionów dolarów"
-    },
-    {
-      "title": "Przedterminowe wybory u stronnika Rosji. Wyniki mogą okazać się przełomem",
-      "snippet": "Serbowie wybierają nowy rząd w przedterminowych wyborach parlamentarnych, będących następstwem niemal dwuletnich masowych protestów antyrządowych. To największe wyzwanie dla obozu Aleksandra Vucicia w trakcie jego 14-letnich rządów - wskazuje Ośrodek Studiów Wschodnich. Głosowanie w uchodzącej za prorosyjską Serbii potrwa do godz. 20.00.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/przedterminowe-wybory-u-stronnika-rosji-wyniki-moga-okazac-sie-przelomem/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Przedterminowe wybory u stronnika Rosji. Wyniki mogą okazać się przełomem"
-    },
-    {
-      "title": "Rosja przyznaje się do strat. Atak 1500 kilometrów od granicy z Ukrainą",
-      "snippet": "Atak dronów na zakład przemysłowy w Kraju Permskim. Według lokalnych władz rannych zostało pięć osób. Rosyjski region oddalony jest od granicy z Ukrainą o około 1,5 tys. kilometrów. To kolejne wymierzone tak daleko uderzenie. W sobotę bezzałogowce zaatakowały Omsk na Syberii, niemal trzy tysiące kilometrów od granicy.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/rosja-przyznaje-sie-do-strat-atak-1500-kilometrow-od-granicy-z-ukraina/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Rosja przyznaje się do strat. Atak 1500 kilometrów od granicy z Ukrainą"
-    },
-    {
-      "title": "Trump o problemach w Ukrainie, głos zabrał też Musk. \"Podżegacze wojenni\"",
-      "snippet": "Donald Trump potwierdził, że rozmawiał z Elonem Muskiem na temat przywrócenia funkcjonalności sieci Starlink i Starshield w Ukrainie. Tymczasem szef SpaceX po raz pierwszy przyznał, że wprowadził ograniczenia ze względu na rzekome łamanie regulaminu przez ukraińskie wojsko. Jednocześnie krytykował podżegaczy wojennych, którzy jego zdaniem dążą do przedłużania konfliktu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-25/trump-o-problemach-w-ukrainie-glos-zabral-tez-musk-podzegacze-wojenni/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Trump o problemach w Ukrainie, głos zabrał też Musk. \"Podżegacze wojenni\""
-    },
-    {
-      "title": "Włochy w ogniu, zamieszki przybrały na sile. Petardy i race poleciały w policję",
-      "snippet": "Protestujący we Włoszech starli się z policją, rzucając w funkcjonariuszy petardami, racami i butelkami - informuje agencja ANSA. W Mediolanie, Turynie, Rzymie i innych miastach demonstracje przerodziły się w zamieszki. Służby próbują je stłumić, korzystając z armatek wodnych i gazu łzawiącego. Na niektórych uczestnikach protestów użyto pałek, doszło też do zatrzymań.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-24/wlochy-w-ogniu-zamieszki-przybraly-na-sile-petardy-i-race-polecialy-w-policje/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Włochy w ogniu, zamieszki przybrały na sile. Petardy i race poleciały w policję"
-    },
-    {
-      "title": "USA ostrzegają przed podróżami. Najwyższy stopień zagrożenia w dwóch krajach",
-      "snippet": "Stany Zjednoczone zaktualizowały ostrzeżenia dla obywateli podróżujących na Bliski Wschód. Najwyższy, czwarty poziom zagrożenia obowiązuje w Libanie i Iraku, a w kilku innych krajach Amerykanom zalecono ponowne rozważenie wyjazdu. Tymczasem jemeńscy rebelianci Huti przeprowadzili kolejne ataki rakietowe na Arabię Saudyjską.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-24/usa-ostrzegaja-przed-podrozami-najwyzszy-stopien-zagrozenia-w-dwoch-krajach/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "USA ostrzegają przed podróżami. Najwyższy stopień zagrożenia w dwóch krajach"
-    },
-    {
-      "title": "Francja w chaosie, brutalne sceny na ulicach. Protestujący stracił dwa palce",
-      "snippet": "Jeden z uczestników protestów we Francji stracił dwa palce w wyniku eksplozji ładunku - przekazuje Le Parisien. Rannych w sobotnich starciach jest jednak więcej. Sytuacja w kraju jest coraz bardziej napięta. Na ulicach rozgrywają się dramatyczne sceny. Atakowani funkcjonariusze, w odpowiedzi używają armatek wodnych i gazu łzawiącego. Szef MSW Francji przekazał, że zatrzymano prawie 1000 osób.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-24/francja-w-chaosie-brutalne-sceny-na-ulicach-protestujacy-stracil-dwa-palce/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Francja w chaosie, brutalne sceny na ulicach. Protestujący stracił dwa palce"
-    },
-    {
-      "title": "Zderzenie w Alei Niepodległości, jedno auto dachowało",
-      "snippet": "W niedzielę w godzinach popołudniowych w Alei Niepodległości, w okolicy stacji metra Racławicka, zderzyły się dwa pojazdy osobowe. Są utrudnienia w ruchu. Autobusy zostały skierowane na objazdy.",
-      "link": "https://tvn24.pl/tvnwarszawa/mokotow/warszawa-zderzenie-w-alei-niepodleglosci-jedno-auto-dachowalo-st9305055?source=rss",
+      "title": "Trump chce robić interesy z Rosją i Ukrainą, protesty w Europie, Sikorski ostrzega przed Putinem",
+      "snippet": "Donald Trump powiedział, że chciałby robić interesy z Rosją i Ukrainą. Radosław Sikorski ostrzega w CNN przed Putinem i mówi o wywieraniu jeszcze większej presji na Rosję. Była posłanka Polski 2050 Joanna Mucha krytykuje Szymona Hołownię i Katarzynę Pełczyńską-Nałęcz. Zobacz, co jeszcze warto wiedzieć w poniedziałek, 26 października.",
+      "link": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-wiedziec-w-poniedzialek-najwazniejsze-informacje-26-pazdziernika-2026-roku-st9305207?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Zderzenie w Alei Niepodległości, jedno auto dachowało"
+      "title_pl": "Trump chce robić interesy z Rosją i Ukrainą, protesty w Europie, Sikorski ostrzega przed Putinem"
     },
     {
-      "title": "Chmury mieniły się barwami tęczy. Zdjęcia",
-      "snippet": "W niedzielę na chmurach w Małopolsce pojawiły się tęczowe barwy. Można to zobaczyć na zdjęciach. Sprawdź, jak nazywa się to zjawisko i jak powstało.",
-      "link": "https://tvn24.pl/tvnmeteo/polska/chmury-mienily-sie-barwami-teczy-zdjecia-iryzacja-jak-powstaje-to-zjawisko-st9304955?source=rss",
+      "title": "Wybory parlamentarne w Serbii. \"Przegraliśmy\"",
+      "snippet": "Najwięcej mandatów w wyborach parlamentarnych w Serbii zdobyła opozycyjna partia \"Lista Studencka\". - Na podstawie próby warstwowej jest jasne, że przegraliśmy te wybory - powiedział lider listy \"Zjednoczona Serbia\" i były prezydent Aleksandar Vuczić.",
+      "link": "https://tvn24.pl/swiat/wybory-w-serbii-wygrywa-opozycyjna-lista-studencka-st9305195?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Chmury mieniły się barwami tęczy. Zdjęcia"
+      "title_pl": "Wybory parlamentarne w Serbii. \"Przegraliśmy\""
     },
     {
-      "title": "\"Z Kasią zawsze mieliśmy inne ustawienia fabryczne\". Szymon Hołownia z refleksją na niedzielę",
-      "snippet": "Szef klubu Polski 2050 Szymon Hołownia przekonuje, że wyrzucenie Katarzyny Pełczyńskiej-Nałęcz z partii jest \"naturalną konsekwencją\" jej własnych decyzji. Zarzucił jej, że chciała wyprowadzić Polskę 2050 z koalicji rządzącej \"jednoosobowo\". Napisał też, że \"wojna\" z Tuskiem, Nawrockim, PSL i Lewicą to \"idiotyzm\".",
-      "link": "https://tvn24.pl/polska/szymon-holownia-z-refleksja-o-wyrzuceniu-katarzyny-pelczynskiej-nalecz-z-polski-2050-inne-ustawienia-fabryczne-st9305004?source=rss",
+      "title": "Wołodymyr Zełenski: otrzymujemy dane wywiadowcze o atakach pociskami balistycznymi",
+      "snippet": "Prezydent Ukrainy Wołodymyr Zełenski poinformował, że Starlink działa w Ukrainie nawet przy prędkości 420 kilometrów na godzinę. Dodał, że USA wznowiły również przekazywanie danych wywiadowczych o atakach pociskami balistycznymi.",
+      "link": "https://tvn24.pl/swiat/wolodymyr-zelenski-otrzymujemy-dane-wywiadowcze-o-atakach-pociskami-balistycznymi-st9305184?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "\"Z Kasią zawsze mieliśmy inne ustawienia fabryczne\". Szymon Hołownia z refleksją na niedzielę"
+      "title_pl": "Wołodymyr Zełenski: otrzymujemy dane wywiadowcze o atakach pociskami balistycznymi"
     },
     {
-      "title": "Spór o Starlinka. Musk: ukraińskie wojsko złamało warunki",
-      "snippet": "Ukraina poinformowała, że system satelitarny Starlink oraz jego wojskowa wersja Starshield są już w pełni sprawne po ponad tygodniu ograniczeń - przekazał Reuters. Kilka godzin później szef SpaceX Elon Musk zarzucił ukraińskim siłom zbrojnym naruszenie regulaminu usługi.",
-      "link": "https://tvn24.pl/biznes/ze-swiata/spor-o-starlinka-elon-musk-ukrainskie-wojsko-zlamalo-warunki-st9305003?source=rss",
+      "title": "\"Galeria Bezdomna\". Każdy mógł przynieść swoje fotografie i wystawić je na wernisażu",
+      "snippet": "\"Galeria Bezdomna\" została zorganizowana przez Szczecińskie Towarzystwo Fotograficzne. W sobotę swoją pracę mógł tam wystawić każdy, bez względu na wiek i wykonywany zawód. Ich zdjęcia można było podziwiać tylko przez jeden dzień.",
+      "link": "https://tvn24.pl/szczecin/galeria-bezdomna-w-szczecinie-kazdy-mogl-przyniesc-swoje-fotografie-i-wystawic-je-na-wernisazu-st9305183?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Spór o Starlinka. Musk: ukraińskie wojsko złamało warunki"
+      "title_pl": "\"Galeria Bezdomna\". Każdy mógł przynieść swoje fotografie i wystawić je na wernisażu"
     },
     {
-      "title": "Połamane drzewa, konary na samochodach. Wietrzna niedziela w Polsce",
-      "snippet": "Niedziela w Polsce przynosi wietrzną, deszczową pogodę. W wielu regionach obowiązują ostrzeżenia meteorologiczne przed silnymi podmuchami. Strażacy interweniowali zarówno na północy, jak i na południu kraju.",
-      "link": "https://tvn24.pl/tvnmeteo/polska/wietrzna-pogoda-od-baltyku-po-gory-odwolane-kursy-promow-z-polski-i-szwecji-st9304434?source=rss",
+      "title": "Wybory prezydenckie w Bułgarii. Wiemy, kto zmierzy się w II turze",
+      "snippet": "Z sondaży exit poll wynika, że o najwyższy urząd w państwie zmierzą się urzędująca prezydentka Iliana Jotowa oraz były premier Andrej Giurow.",
+      "link": "https://tvn24.pl/swiat/wybory-prezydenckie-w-bulgarii-wiemy-kto-zmierzy-sie-w-ii-turze-st9305170?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Połamane drzewa, konary na samochodach. Wietrzna niedziela w Polsce"
+      "title_pl": "Wybory prezydenckie w Bułgarii. Wiemy, kto zmierzy się w II turze"
     },
     {
-      "title": "Ewakuacja Lotniska Chopina z powodu bagażu",
-      "snippet": "W niedzielę w godzinach popołudniowych ewakuowano część pasażerów przebywających na Lotnisku Chopina. Powodem był pozostawiony bez opieki bagaż. Akcja już się zakończyła.",
-      "link": "https://tvn24.pl/tvnwarszawa/wlochy/warszawa-ewakuacja-lotniska-chopina-utrudnienia-na-pobliskich-ulicach-st9304982?source=rss",
+      "title": "Te ryby wytrzymują ocieplanie się oceanu. Naukowcy wiedzą, dlaczego",
+      "snippet": "Niektóre ryby potrafią przystosować się do życia w coraz cieplejszych wodach oceanicznych - wynika z nowego badania. Naukowcy z Australii przyjrzeli się trzem popularnym wśród rybaków gatunkom. Jak się okazało, ich zdolności przystosowawcze wynikały z miejsca, jakie na co dzień zamieszkują.",
+      "link": "https://tvn24.pl/tvnmeteo/nauka/te-ryby-wytrzymuja-ocieplanie-sie-oceanu-naukowcy-wiedza-dlaczego-st9304959?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Ewakuacja Lotniska Chopina z powodu bagażu"
+      "title_pl": "Te ryby wytrzymują ocieplanie się oceanu. Naukowcy wiedzą, dlaczego"
     },
     {
-      "title": "Pożar objął poddasze restauracji w Bytowie",
-      "snippet": "Strażacy walczą z pożarem restauracji przy ulicy Wolności w Bytowie. Ogień objął poddasze budynku. Jeszcze przed przyjazdem strażaków ewakuowały się dwie osoby.",
-      "link": "https://tvn24.pl/trojmiasto/bytow-pozar-restauracji-przy-ulicy-wolnosci-st9304983?source=rss",
+      "title": "Joanna Mucha: Katarzyna Pełczyńska-Nałęcz jest odpowiedzialna za zniszczenie Polski 2050",
+      "snippet": "Joanna Mucha - była posłanka Polski 2050, obecnie niezrzeszona - oceniła w \"Faktach po Faktach\" TVN24, że Katarzyna Pełczyńska-Nałęcz i Szymon Hołownia doprowadzili do tego, że poparcie dla tej partii jest \"liczone w promilach\". - Jestem wściekła, bo to było dobre środowisko - powiedziała.",
+      "link": "https://tvn24.pl/polska/joanna-mucha-katarzyna-pelczynska-nalecz-jest-odpowiedzialna-za-zniszczenie-polski-2050-st9305161?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Pożar objął poddasze restauracji w Bytowie"
+      "title_pl": "Joanna Mucha: Katarzyna Pełczyńska-Nałęcz jest odpowiedzialna za zniszczenie Polski 2050"
     },
     {
-      "title": "Podwyżki na autostradzie A2. Resort mówi o \"nieakceptowalnej\" polityce cenowej",
-      "snippet": "Ministerstwo Infrastruktury wystąpiło do Generalnej Dyrekcji Dróg Krajowych i Autostrad o analizę możliwości wypowiedzenia umowy koncesyjnej dotyczącej odcinka autostrady A2 Nowy Tomyśl-Konin. Za powód wskazano częste podwyżki opłat za przejazd, stosowane przez spółkę Autostrada Wielkopolska.",
-      "link": "https://tvn24.pl/biznes/pieniadze/podwyzki-na-autostradzie-a2-resort-mowi-o-nieakceptowalnej-polityce-cenowej-st9304964?source=rss",
+      "title": "Radosław Sikorski ostrzega w CNN. \"Wiemy, że planują eskalację\"",
+      "snippet": "Szef polskiej dyplomacji Radosław Sikorski uważa, że aby zakończyć wojnę, trzeba wywierać większą presję na agresora, czyli Władimira Putina, a nie na ofiarę agresji. W wywiadzie dla CNN mówił też, że odpowiedzią Europy na ataki hybrydowe Rosji jest dalsze wspieranie Ukrainy.",
+      "link": "https://tvn24.pl/polska/radoslaw-sikorski-ostrzega-w-cnn-wiemy-ze-planuja-eskalacje-st9305136?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Podwyżki na autostradzie A2. Resort mówi o \"nieakceptowalnej\" polityce cenowej"
+      "title_pl": "Radosław Sikorski ostrzega w CNN. \"Wiemy, że planują eskalację\""
     },
     {
-      "title": "\"Chciała obronić swojego pupila, sama została pogryziona\"",
-      "snippet": "W niedzielę przed południem na jednej z ulic Płocka pies, prowadzony na smyczy przez 41-letniego właściciela, pogryzł kobietę. Stało się to, gdy próbowała obronić swojego czworonoga.",
-      "link": "https://tvn24.pl/tvnwarszawa/okolice/plock-chciala-obronic-swojego-pupila-sama-zostala-pogryziona-st9304945?source=rss",
+      "title": "Boelo dotarło do Norwegii. Paraliż ruchu promów, komunikacji drogowej i przerwy w dostawach prądu",
+      "snippet": "Po Niemczech, Wielkiej Brytanii, Irlandii oraz Szwecji burza Boleo pojawiła się nad południową Norwegią. Ulewy i wiatr do 135 kilometrów na godzinę spowodowały odwołanie rejsów promowych, liczne wypadki drogowe i przerwy w dostawach prądu. Służby ratunkowe interweniowały również w górach.",
+      "link": "https://tvn24.pl/tvnmeteo/swiat/boelo-sparalizowalo-norwegie-stanely-promy-komunikacja-drogowa-i-kolejowa-sa-tez-przerwy-w-dostawach-pradu-st9305139?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "\"Chciała obronić swojego pupila, sama została pogryziona\""
+      "title_pl": "Boelo dotarło do Norwegii. Paraliż ruchu promów, komunikacji drogowej i przerwy w dostawach prądu"
     },
     {
-      "title": "Przyjął nazwisko żony i liczył, że policjanci go nie znajdą",
-      "snippet": "Policjanci z Kolna (Podlaskie) zatrzymali 39-lastka, który był poszukiwany dwoma listami gończymi. Mężczyzna najbliższe prawie cztery lata spędzi w więzieniu. Chciał zmylić policjantów poprzez przyjęcie nazwiska żony.",
-      "link": "https://tvn24.pl/bialystok/powiat-kolnenski-szukali-go-dwoma-listami-gonczymi-sadzil-ze-ich-przechytrzy-bo-przyjal-nazwisko-zony-st9304969?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Przyjął nazwisko żony i liczył, że policjanci go nie znajdą"
-    },
-    {
-      "title": "\"Jesteśmy przerażeni\". W Serbii mówią o agentach w tłumie",
-      "snippet": "- Jesteśmy przerażeni - słyszę od zwolenników Studenckiej Listy, kiedy rozmawiamy o możliwych fałszerstwach wyborczych w Serbii. Twierdzą też, że przed lokale wyborcze władza wysłała agentów, którzy mają kontrolować sytuację.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-jestesmy-przerazeni-w-serbii-mowia-o-agentach-w-tlumie,nId,23563643",
+      "title": "Nowe informacje z Ukrainy, wróciło kluczowe wsparcie. \"W pełni\"",
+      "snippet": "Ukraina informuje, że Amerykanie wznowili przesył danych, w których ostrzegają Kijów o nadchodzących atakach rakietowych Rosji - potwierdza prezydent Wołodymyr Zełenski. Wcześniej ogłoszono też, że w pełni zaczął działać system Starlink/Starshield. Ukraiński przywódca zabrał też głos ws. pokojowych negocjacji, wytyczając nową \"czerwoną linię\".",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-nowe-informacje-z-ukrainy-wrocilo-kluczowe-wsparcie-w-pelni,nId,23563737",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Jesteśmy przerażeni\". W Serbii mówią o agentach w tłumie"
+      "title_pl": "Nowe informacje z Ukrainy, wróciło kluczowe wsparcie. \"W pełni\""
     },
     {
-      "title": "Francuskie miasta w ogniu, liczą straty po \"bitwach\". Zatrzymano setki osób",
-      "snippet": "Francuskie służby liczą straty po kolejnej fali protestów w całym kraju. W starciach z agresywnymi demonstrantami rannych zostało 53 funkcjonariuszy. W sumie zatrzymano w całym kraju 1314 osób. W kilku miastach odnotowano przypadki poważnych obrażeń wśród protestujących.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-francuskie-miasta-w-ogniu-licza-straty-po-bitwach-zatrzymano,nId,23563650",
+      "title": "Doradca Kremla udzielił wywiadu, Sikorski odpowiada. \"Rosja zrozumiała\"",
+      "snippet": "Nie wystarczy rozmawiać wyłącznie z Kijowem; musimy rozmawiać z całą Europą - stwierdził doradca Kremla Jurij Uszakow. W ten sposób wskazał, dlaczego do tej pory nie ma postępów w rozmowach pokojowych. Na słowa Uszakowa zareagował Radosław Sikorski. \"Rosja zrozumiała, że Europa również ma swoje karty do rozegrania\" - podkreślił szef MSZ Polski.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-doradca-kremla-udzielil-wywiadu-sikorski-odpowiada-rosja-zro,nId,23563728",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Francuskie miasta w ogniu, liczą straty po \"bitwach\". Zatrzymano setki osób"
+      "title_pl": "Doradca Kremla udzielił wywiadu, Sikorski odpowiada. \"Rosja zrozumiała\""
     },
     {
-      "title": "Auto wypadło na łuku z drogi. Kierowca uwięziony w zmiażdżonym wnętrzu",
-      "snippet": "Groźna kolizja w Sochaczewie w środku nocy. 27-latek na łuku drogi zjechał z jezdni i uderzył ogrodzenie. Samochód był na tyle zdeformowany, że kierowca nie mógł opuścić go o własnych siłach - został uwięziony w zmiażdżonym wnętrzu. Trzeba było użyć specjalistycznego sprzętu.",
-      "link": "https://wydarzenia.interia.pl/mazowieckie/news-w-srodku-nocy-wypadl-na-luku-z-drogi-kierowca-uwieziony-w-zm,nId,23563648",
+      "title": "Serbia wybrała. Przełomowe informacje po historycznym głosowaniu",
+      "snippet": "Były prezydent Serbii Alaksandar Vuczić przyznał się do porażki w przedterminowych wyborach parlamentarnych. - Przegraliśmy wybory, wygrała Lista Studencka - powiedział. Na ulicach Belgradu panuje wielka feta zwolenników Listy Studenckiej. Do godz. 18 frekwencja wyniosła 64,89 proc. - najwięcej od rozpadu Jugosławii.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-serbia-wybrala-przelomowe-informacje-po-historycznym-glosowa,nId,23563708",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Auto wypadło na łuku z drogi. Kierowca uwięziony w zmiażdżonym wnętrzu"
+      "title_pl": "Serbia wybrała. Przełomowe informacje po historycznym głosowaniu"
     },
     {
-      "title": "\"Będziemy bronić naszej sprawy\". Wielka mobilizacja w Serbii",
-      "snippet": "- Będziemy bronić naszej sprawy - słyszę podczas rozmów z wyborcami w Serbii. Od rana tłumnie głosują zwolennicy opozycyjnej Studenckiej Listy. Kolejki przed lokalami pokazują dużą mobilizację, ale moi rozmówcy przyznają, że wieczorem może dojść do \"wielkiego bałaganu\".",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-bedziemy-bronic-naszej-sprawy-wielka-mobilizacja-w-serbii,nId,23563620",
+      "title": "Afrykański kraj wściekły na Trumpa. Żądają przeprosin",
+      "snippet": "Libia żąda publicznych przeprosin od Donalda Trumpa i administracji USA. To reakcja na jego obraźliwe słowa wymierzone w ten kraj na wiecu wyborczym w stanie Georgia. Prócz tego libijskie MSZ wezwało amerykańskiego charge d'affaires.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-afrykanski-kraj-wsciekly-na-trumpa-zadaja-przeprosin,nId,23563731",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Będziemy bronić naszej sprawy\". Wielka mobilizacja w Serbii"
+      "title_pl": "Afrykański kraj wściekły na Trumpa. Żądają przeprosin"
     },
     {
-      "title": "Największe państwo Ameryki Łacińskiej głosuje. Stawką polityczny zwrot",
-      "snippet": "W Brazylii rozpoczęła się druga tura wyborów prezydenckich. O najwyższy urząd w państwie walczą urzędujący prezydent Luiz Inacio Lula da Silva i prawicowy senator Flavio Bolsonaro, syn byłego przywódcy kraju. Wynik głosowania może wpłynąć na układ sił w Ameryce Łacińskiej i relacje regionu z USA.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-najwieksze-panstwo-ameryki-lacinskiej-glosuje-stawka-polityc,nId,23563633",
+      "title": "\"30 km od granicy z Polską\". Rosja stawia wielką konstrukcję",
+      "snippet": "W obwodzie królewieckim, zaledwie 30 km od granicy z Polską, powstaje ogromny rosyjski system radarowy zdolny do kontrolowania znacznych obszarów Europy, w tym Polski i Niemiec - pisze \"Tagesspiegel\".",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-30-km-od-granicy-z-polska-rosja-stawia-wielka-konstrukcje,nId,23563720",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Największe państwo Ameryki Łacińskiej głosuje. Stawką polityczny zwrot"
+      "title_pl": "\"30 km od granicy z Polską\". Rosja stawia wielką konstrukcję"
     },
     {
-      "title": "Hołownia zareagował na decyzję Polski 2050. \"Naturalna konsekwencja\"",
-      "snippet": "Wczorajsza decyzja zarządu Polski 2050 jest naturalną konsekwencją decyzji Katarzyny Pełczyńskiej-Nałęcz podjętych w czwartek - napisał Szymon Hołownia. Wicemarszałek sejmu odniósł się tym samym do usunięcia byłej ministry z partii. \"Nie wypada ogłaszać zwrócenia powierzonego sobie mandatu w mediach społecznościowych\" - napisał. Zareagował też na hejt, który \"wylewa się\" na Pełczyńską-Nałęcz.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-holownia-zareagowal-na-decyzje-polski-2050-naturalna-konsekw,nId,23563629",
+      "title": "\"Nie wystawiajcie nas na próbę\". Netanjahu grzmi po ustaleniach wywiadu",
+      "snippet": "- Mamy dane wywiadowcze wskazujące, że nasi wrogowie (...) mogą rzucić nam wyzwanie, przeprowadzając ataki w celu zakłócenia wyborów - oświadczył Binjamin Netanjahu. Premier Izraela w tym kontekście wskazał na Iran i jego sojuszników. Jednocześnie przestrzegł nieprzyjaciół: - Nie wystawiajcie nas na próbę.",
+      "link": "https://wydarzenia.interia.pl/bliski-wschod/news-nie-wystawiajcie-nas-na-probe-netanjahu-grzmi-po-ustaleniach,nId,23563707",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Hołownia zareagował na decyzję Polski 2050. \"Naturalna konsekwencja\""
+      "title_pl": "\"Nie wystawiajcie nas na próbę\". Netanjahu grzmi po ustaleniach wywiadu"
     },
     {
-      "title": "ISW: Rosyjska armia utknęła w martwym punkcie. Ukraińcy kontratakują",
-      "snippet": "Rosyjskie wojska ponoszą ogromne straty, nie osiągając znaczących zdobyczy terytorialnych - wynika z analiz amerykańskiego Instytutu Badań nad Wojną (ISW). Ukraińscy obrońcy skutecznie odpierają ataki, a na kilku odcinkach frontu przeprowadzili kontrataki. Szczególne znaczenie mają działania w rejonie Kupiańska, gdzie wykorzystanie dronów i przejęcie kontroli nad podziemnym rurociągiem utrudniają Rosjanom przedostanie się do północnej części miasta.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-isw-rosyjska-armia-utknela-w-martwym-punkcie-ukraincy-kontra,nId,23563617",
+      "title": "Napięcie w centrum Belgradu. Zablokowane ulice, uzbrojeni policjanci",
+      "snippet": "Coraz więcej uzbrojonych sił policyjnych gromadzi się w centrum Belgradu. Koncentrują się zwłaszcza w okolicy parlamentu i sąsiadującej z nią siedziby prezydenta Serbii. O godz. 20 zakończyło się głosowanie w przyspieszonych wyborach parlamentarnych, w wyniku których upaść może władza Aleksandara Vučicia. Niewykluczone, że w stolicy kraju - po ogłoszeniu sondażowych wyników - dojdzie do masowych manifestacji.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-napiecie-w-centrum-belgradu-zablokowane-ulice-uzbrojeni-poli,nId,23563718",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "ISW: Rosyjska armia utknęła w martwym punkcie. Ukraińcy kontratakują"
-    },
-    {
-      "title": "Przywódca z billboardu. Zalał europejską stolicę swoją twarzą",
-      "snippet": "Tej twarzy nie przegapisz. Aleksandar Vučić obdarował Belgrad falą reklam ze swoim wizerunkiem. Zwolennicy lidera Serbii sięgnęli natomiast po spraye, aby niszczyć wyborcze materiały głównych konkurentów. Opozycja nie zostaje bierna i przyjęła inną taktykę. W Interii opisuję, jak toczy się - miejscami bardzo brudna - kampania w dniu kluczowego głosowania.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-przywodca-z-billboardu-zalal-europejska-stolice-swoja-twarza,nId,23563600",
-      "source_name": "Interia",
-      "lang": "pl",
-      "title_pl": "Przywódca z billboardu. Zalał europejską stolicę swoją twarzą"
-    },
-    {
-      "title": "Tusk kontra Kaczyński. Polacy wybrali lepszego lidera, wyniki sondażu",
-      "snippet": "Polacy uważają, że to Donald Tusk jest lepszym liderem politycznym niż Jarosław Kaczyński - wynika z sondażu United Surveys by IBRiS. Obecnego premiera wskazało bowiem 42 proc. respondentów. Wyniki podzielono ze względu na preferencje wyborcze. Dzięki temu wiemy, jak obaj politycy poradzili sobie wśród poszczególnych środowisk.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-tusk-kontra-kaczynski-polacy-wybrali-lepszego-lidera-wyniki,nId,23563603",
-      "source_name": "Interia",
-      "lang": "pl",
-      "title_pl": "Tusk kontra Kaczyński. Polacy wybrali lepszego lidera, wyniki sondażu"
-    },
-    {
-      "title": "Spięcie Giertycha z Pełczyńską-Nałęcz. Poseł KO: Pani pucz się nie udał",
-      "snippet": "\"Mam wrażenie, że pani sama się zniszczyła\" - napisał Roman Giertych, odnosząc się do wpisu Katarzyny Pełczyńskiej-Nałęcz. Między politykami doszło do ostrej wymiany zdań. Była minister zarzuciła posłowi KO bycie \"hersztem szajki x-owych nienawistników\" i \"czołowym naganiaczem obozowej polaryzacji\".",
-      "link": "https://wydarzenia.interia.pl/kraj/news-spiecie-giertycha-z-pelczynska-nalecz-posel-ko-pani-pucz-sie,nId,23563604",
-      "source_name": "Interia",
-      "lang": "pl",
-      "title_pl": "Spięcie Giertycha z Pełczyńską-Nałęcz. Poseł KO: Pani pucz się nie udał"
-    },
-    {
-      "title": "Silny wiatr nadciąga nad Polskę. RCB ostrzega mieszkańców",
-      "snippet": "\"Zachowaj ostrożność podczas aktywności na zewnątrz. Zabezpiecz rzeczy, które może porwać wiatr\" - ostrzega Rządowe Centrum Bezpieczeństwa, które wysłało alert do mieszkańców Bielska-Białej oraz powiatów bielskiego, cieszyńskiego i żywieckiego. W niedzielę silny wiatr prognozowany jest w kilku regionach Polski. IMGW wydał ostrzeżenia I i II stopnia, a na Wybrzeżu obowiązuje również alert przed silnym sztormem.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-silny-wiatr-nadciaga-nad-polske-rcb-ostrzega-mieszkancow,nId,23563599",
-      "source_name": "Interia",
-      "lang": "pl",
-      "title_pl": "Silny wiatr nadciąga nad Polskę. RCB ostrzega mieszkańców"
+      "title_pl": "Napięcie w centrum Belgradu. Zablokowane ulice, uzbrojeni policjanci"
     },
     {
       "title": "Polexit mógłby kosztować fortunę. W raporcie pojawiła się kwota 90 mld euro",
@@ -339,14 +139,6 @@
       "source_name": "Interia Biznes",
       "lang": "pl",
       "title_pl": "Polexit mógłby kosztować fortunę. W raporcie pojawiła się kwota 90 mld euro"
-    },
-    {
-      "title": "Dzieci mogą dostać leki za darmo. Rodzice muszą znać te zasady",
-      "snippet": "Nie każdy lek na receptę trzeba opłacać w całości. Dzieci i młodzież do 18. roku życia oraz osoby po 65. roku życia mogą otrzymać część preparatów bezpłatnie, ale tylko wtedy, gdy lek znajduje się w odpowiednim wykazie i jest przepisany zgodnie z zasadami refundacji.",
-      "link": "https://biznes.interia.pl/finanse/news-darmowe-leki-dla-dzieci-i-seniorow-nie-kazda-recepta-daje-ta,nId,23562688",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Dzieci mogą dostać leki za darmo. Rodzice muszą znać te zasady"
     },
     {
       "title": "Rosną ceny pelletu. Rzecznik Praw Obywatelskich interweniuje",
@@ -389,180 +181,92 @@
       "title_pl": "Testament ustny jest ryzykowny. Już po kilku miesiącach traci ważność"
     },
     {
-      "title": "Ile będzie kosztować tankowanie w poniedziałek? Rząd podał ceny",
-      "snippet": "W poniedziałek, 26 października kierowcy zatankują benzynę 95 za maksymalnie 6,51 zł za litr, a benzynę 98 za 7,21 zł. Limit ceny oleju napędowego pozostanie bez zmian i wyniesie 7,99 zł za litr.",
-      "link": "https://biznes.interia.pl/gospodarka/news-ceny-paliw-na-poniedzialek-26-pazdziernika-tyle-zaplacimy-za,nId,23563613",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Ile będzie kosztować tankowanie w poniedziałek? Rząd podał ceny"
-    },
-    {
-      "title": "Ekspert od bezpieczeństwa: USA i Izrael wkrótce uderzą na Iran. Nie mam wątpliwości, że czeka nas kolejna runda [WYWIAD]",
-      "snippet": "Przed wyborami w Izraelu 27 listopada rośnie niepokój związany z możliwą eskalacją wojny na Bliskim Wschodzie. Zdaniem eksperta ds. bezpieczeństwa Itaja Mediny irański reżim musi obawiać się przede wszystkim jednej daty — wskazuje nawet konkretne cele ataku.",
-      "link": "https://wiadomosci.onet.pl/swiat/ekspert-usa-i-izrael-wkrotce-uderza-na-iran-wskazuje-dwa-rozne-cele/8y4q2vc",
+      "title": "Ważne wybory w kilku krajach, referendum w sprawie prezydenta w Częstochowie. Podsumowanie nocy",
+      "snippet": "Miniona powyborcza noc była decydująca dla mieszkańców kilku krajów, w tym Brazylii, Serbii i Bułgarii. Poznaliśmy także wyniki referendum dotyczące odwołania prezydenta Częstochowy. Czytaj podsumowanie najważniejszych wydarzeń ostatnich godzin.",
+      "link": "https://wiadomosci.onet.pl/swiat/za-nami-wazne-glosowania-w-serbii-brazylii-czestochowie-podsumowanie-nocy/20czdp9",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Ekspert od bezpieczeństwa: USA i Izrael wkrótce uderzą na Iran. Nie mam wątpliwości, że czeka nas kolejna runda [WYWIAD]"
+      "title_pl": "Ważne wybory w kilku krajach, referendum w sprawie prezydenta w Częstochowie. Podsumowanie nocy"
     },
     {
-      "title": "Kierowca przelewał alkohol do butelki z napojem. Tak zareagowały 17-latki",
-      "snippet": "Dwie 17-letnie uczennice z Biłgoraja na Lubelszczyźnie zauważyły kierowcę autobusu, który podczas postoju przelewał alkohol do butelki z gazowanym napojem. Niezwłocznie poinformowały o tym policję.",
-      "link": "https://wiadomosci.onet.pl/lublin/kierowca-przelewal-alkohol-do-butelki-z-napojem-tak-zareagowaly-17-latki/ke4vp9w",
+      "title": "Zielona Góra: Jaka pogoda na dziś? Prognoza w dniu 26.10.2026",
+      "snippet": "Zielona Góra. Sprawdź, jaka pogoda będzie dziś w twoim mieście. Zobacz, czy aura w dniu 26.10.2026 sprzyjać będzie przebywaniu na świeżym powietrzu? Prognoza pogody - województwo lubuskie. Sprawdź, jaka pogoda czeka nas dziś. Prezentujemy najnowsze informacje meteorologiczne.",
+      "link": "https://wiadomosci.onet.pl/lubuskie/zielona-gora-prognoza-pogody-w-dniu-26102026/lpgf80s",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Kierowca przelewał alkohol do butelki z napojem. Tak zareagowały 17-latki"
+      "title_pl": "Zielona Góra: Jaka pogoda na dziś? Prognoza w dniu 26.10.2026"
     },
     {
-      "title": "Pijany kierowca i zwłoki w samochodzie. Są wyniki sekcji",
-      "snippet": "Pijany kierowca i zwłoki w samochodzie — takiego odkrycia dokonali w piątek policjanci z Radomia. Prokuratura przekazała w niedzielę, że odbyła się sekcja, w wyniku której ustalono, że śmierć mężczyzny nie miała związku z działaniem mężczyzn, którzy zostali zatrzymani. Nie była też jednak skutkiem kolizji, śledczy zlecili jeszcze dodatkowe badania, a śledztwo będzie konstytuowane.",
-      "link": "https://wiadomosci.onet.pl/warszawa/pijany-kierowca-i-zwloki-w-samochodzie-sa-wyniki-sekcji/tc3ne2m",
+      "title": "Warszawa - sprawdź prognozę pogody w dniu 26.10.2026",
+      "snippet": "Warszawa - czy dzisiejsza pogoda będzie sprzyjać mieszkańcom? Czy w dniu 26.10.2026 przydadzą się nam parasole? Pokazujemy najnowsze przewidywania meteorologów. Województwo mazowieckie - prognoza pogody.",
+      "link": "https://wiadomosci.onet.pl/warszawa/warszawa-prognoza-pogody-w-dniu-26102026/p65khts",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Pijany kierowca i zwłoki w samochodzie. Są wyniki sekcji"
+      "title_pl": "Warszawa - sprawdź prognozę pogody w dniu 26.10.2026"
     },
     {
-      "title": "Ostre spięcie ustępującej minister z Romanem Giertychem. \"Pani sama się zniszczyła\"",
-      "snippet": "Roman Giertych zaatakował za pośrednictwem platformy X Katarzynę Pełczyńską-Nałęcz. Dostał od niej szybką odpowiedź. Ustępująca minister zarzuciła mu, że jest \"hersztem szajki X-owych nienawistników niszczących innych ludzi\". W odpowiedzi Roman Giertych stwierdził, że stała się \"wyrzutkiem\" własnej partii Polska 2050.",
-      "link": "https://wiadomosci.onet.pl/kraj/ostre-spiecie-katarzyny-pelczynskiej-nalecz-z-giertychem-mocne-oskarzenia/f5ndpkl",
+      "title": "Toruń - 26.10.2026. Prognoza pogody w mieście",
+      "snippet": "Toruń. Sprawdź, jaka pogoda będzie dziś w twoim mieście. Zobacz, czy aura w dniu 26.10.2026 sprzyjać będzie przebywaniu na świeżym powietrzu? Prognoza pogody - województwo kujawsko-pomorskie. Sprawdź, jaka pogoda czeka nas dziś. Prezentujemy najnowsze informacje meteorologiczne.",
+      "link": "https://wiadomosci.onet.pl/kujawsko-pomorskie/torun-prognoza-pogody-w-dniu-26102026/n2wke6b",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Ostre spięcie ustępującej minister z Romanem Giertychem. \"Pani sama się zniszczyła\""
+      "title_pl": "Toruń - 26.10.2026. Prognoza pogody w mieście"
     },
     {
-      "title": "Brytyjski rząd o potencjalnej wojnie: Zmieniły się możliwości naszych wrogów. Mamy 1000 dni, by się przygotować",
-      "snippet": "Według Wesa Streetinga Wielka Brytania musi być przygotowana do zbrojnego konfliktu w ciągu niespełna trzech lat, ponieważ Rosja nasila swoją wojnę hybrydową przeciwko NATO. Brytyjski sekretarz obrony ostrzega, że wrogowie Wielkiej Brytanii mogą być w stanie dopuścić się ataku do 2030 r., więc Brytyjczycy muszą \"być gotowi wraz z sojusznikami do walki i zwycięstwa\".",
-      "link": "https://wiadomosci.onet.pl/swiat/brytyjski-rzad-za-1000-dni-wielka-brytania-musi-byc-gotowa-do-wojny/7f4nk1p",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Brytyjski rząd o potencjalnej wojnie: Zmieniły się możliwości naszych wrogów. Mamy 1000 dni, by się przygotować"
-    },
-    {
-      "title": "Pomoc humanitarna dotarła do ukraińskiego miasta odciętego od świata",
-      "snippet": "Ukraińskie wojsko dostarczyło za pomocą dronów żywność i zabawki dla dzieci w okupowanych przez Rosję Ołeszkach w obwodzie chersońskim na południu Ukrainy. Mieszkańcy miasta, którzy, według relacji, głodują, przygotowują się do ewakuacji.",
-      "link": "https://wiadomosci.onet.pl/swiat/pomoc-humanitarna-dotarla-do-ukrainskiego-miasta-odcietego-od-swiata/eq8zplq",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Pomoc humanitarna dotarła do ukraińskiego miasta odciętego od świata"
-    },
-    {
-      "title": "Co dalej po rezygnacji Katarzyny Pełczyńskiej-Nałęcz? Politolożka: to oczyści atmosferę",
-      "snippet": "Z rządu odeszła sama, z hukiem, z partii wyrzucił ją Szymon Hołownia. Na co Katarzyna Pełczyńska-Nałęcz zareagowała w wielkim stylu. \"Zostałam skazana na wygnanie za myślozbrodnię\". — Panią minister cechuje głównie egocentryzm i skupienie na sobie, ale nikt się na jej pozę skrzywdzonej nie nabierze — mówi Onetowi prof. Anna Siewierska, politolożka.",
-      "link": "https://wiadomosci.onet.pl/kraj/co-dalej-po-rezygnacji-katarzyny-pelczynskiej-nalecz-to-oczysci-atmosfere/wbby11c",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Co dalej po rezygnacji Katarzyny Pełczyńskiej-Nałęcz? Politolożka: to oczyści atmosferę"
-    },
-    {
-      "title": "Wicepremier Rosji: dostarczymy USA dowolną ilość oleju napędowego",
-      "snippet": "Rosja jest gotowa dostarczyć USA dowolną ilość oleju napędowego. Tyle, ile partnerzy będą chcieli — oświadczył wicepremier Rosji ds. przemysłu obronnego i kosmicznego Aleksandr Nowak.",
-      "link": "https://wiadomosci.onet.pl/swiat/rosja-gotowa-dostarczyc-usa-dowolna-ilosc-oleju-napedowego/b21dt6b",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Wicepremier Rosji: dostarczymy USA dowolną ilość oleju napędowego"
-    },
-    {
-      "title": "\"Najpopularniejszy polityk na świecie\" walczy z \"diabłem\" o władzę w Brazylii. \"Nikt nie będzie wiedział, na kogo głosować\"",
-      "snippet": "Przez 20 lat Luiz Inacio Lula da Silva pokazywał postępowcom na świecie, jak sprytnie wygrywać i rządzić, neutralizując przeciwników, łącząc skrajności i unikając przy tym posądzenia o zdradę. Jego możliwa porażka w niedzielnych wyborach w Brazylii — najbardziej wyrównanych w historii tego kraju — w których ściera się z synem odsiadującego 27-letni wyrok więzienia Jaira Bolsonaro, będzie więc trudną lekcją. Dla wszystkich.",
-      "link": "https://wiadomosci.onet.pl/politico/wybory-w-brazylii-diabel-kontra-najpopularniejszy-polityk-na-swiecie/brtzkr5",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "\"Najpopularniejszy polityk na świecie\" walczy z \"diabłem\" o władzę w Brazylii. \"Nikt nie będzie wiedział, na kogo głosować\""
-    },
-    {
-      "title": "Salutowali Hitlerowi, pobili Niemca. Dramat na koncercie w Szwajcarii",
-      "snippet": "Tragedia w szwajcarskim klubie muzycznym wstrząsnęła opinią publiczną. 27-letni obywatel Niemiec zmarł po brutalnym ataku, do którego doszło podczas imprezy w Tuggen. Mężczyzna skonał na rękach własnej matki. W sprawie zatrzymano 42-letniego Szwajcara – jak ujawniły media, to wieloletni członek neonazistowskiej organizacji \"Krew i Honor\".",
-      "link": "https://wiadomosci.wp.pl/salutowali-hitlerowi-pobili-niemca-dramat-na-koncercie-w-szwajcarii-7343886525556768a",
+      "title": "Działo się w nocy. Euforia w Serbii, Trump obraża sojusznika z NATO",
+      "snippet": "Bezpartyjna \"Lista Studencka\" pokonała rządzące Serbią od lat ugrupowanie byłego prezydenta Aleksandara Vuczica. W Brazylii wybory prezydenckie wygrał Lula da Silva, mimo że sondaże wskazywały na zwycięstwo Flavio Bolsonaro. Prezydent Częstochowy i rada miasta zostali odwołani w referendum. Trump na wiecu obraził sojusznika z NATO. Zobacz, co jeszcze wydarzyło się w nocy z niedzieli na poniedziałek.",
+      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-euforia-w-serbii-trump-obraza-sojusznika-z-nato-7344055863769184a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Salutowali Hitlerowi, pobili Niemca. Dramat na koncercie w Szwajcarii"
+      "title_pl": "Działo się w nocy. Euforia w Serbii, Trump obraża sojusznika z NATO"
     },
     {
-      "title": "Płock: kobieta pogryziona. Broniła szpica przed psem w typie amstaffa",
-      "snippet": "39-letnia mieszkanka Płocka trafiła do szpitala po tym, jak próbowała ochronić swojego małego szpica przed większym psem. Zwierzę ugryzło ją w rękę. Właściciel atakującego psa był nietrzeźwy. Policja prowadzi postępowanie.",
-      "link": "https://wiadomosci.wp.pl/plock-kobieta-pogryziona-bronila-szpica-przed-psem-w-typie-amstaffa-7343881454999584a",
+      "title": "Orban szefem ONZ? Ma być wspólnym kandydatem USA, Rosji i Chin",
+      "snippet": "Administracja prezydenta Donalda Trumpa promuje kandydaturę byłego premiera Węgier Viktora Orbana na sekretarza generalnego ONZ - podał w niedzielę \"Wall Street Journal\". Według tej wizji Orban miałby być wspólnym kandydatem USA, Rosji i Chin.",
+      "link": "https://wiadomosci.wp.pl/orban-szefem-onz-ma-byc-wspolnym-kandydatem-usa-rosji-i-chin-7344071396636704a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Płock: kobieta pogryziona. Broniła szpica przed psem w typie amstaffa"
+      "title_pl": "Orban szefem ONZ? Ma być wspólnym kandydatem USA, Rosji i Chin"
     },
     {
-      "title": "Ciało w aucie i pijany kierowca. Nowe ustalenia ws. zdarzenia w Radomiu",
-      "snippet": "Policjanci zatrzymali kierowcę i pasażera samochodu, który uderzył w pojazd stojący na światłach. Kierujący miał ok. 2,5 promila alkoholu w organizmie. W środku funkcjonariusze znaleźli także ciało trzeciego mężczyzny. W niedzielę pojawiły się nowe informacje w tej sprawie.",
-      "link": "https://wiadomosci.wp.pl/cialo-w-aucie-i-pijany-kierowca-nowe-ustalenia-ws-zdarzenia-w-radomiu-7343878957996128a",
+      "title": "Lula: Brazylia nie będzie niczyim podwórkiem",
+      "snippet": "Luiz Inacio Lula da Silva, zwycięzca wyborów prezydenckich w Brazylii, podziękował wyborcom za poparcie. W pierwszym przemówieniu po ogłoszeniu wyników powtórzył, że jego kraj nie będzie \"niczyim podwórkiem\". Komentatorzy odczytują te słowa jako aluzję do rosnących wpływów USA w regionie.",
+      "link": "https://wiadomosci.wp.pl/lula-brazylia-nie-bedzie-niczyim-podworkiem-7344050366961760a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Ciało w aucie i pijany kierowca. Nowe ustalenia ws. zdarzenia w Radomiu"
+      "title_pl": "Lula: Brazylia nie będzie niczyim podwórkiem"
     },
     {
-      "title": "W Europie szykuje się ciężka zima. UE apeluje do państw o oszczędzanie energii",
-      "snippet": "Z powodu nieustającego kryzysu energetycznego najbliższa zima może być w Europie naprawdę ciężka. I kosztowna. Bruksela przestrzegła państwa członkowskie przed potencjalnym kryzysem i zaapelowała o oszczędzanie energii.",
-      "link": "https://wiadomosci.wp.pl/w-europie-szykuje-sie-ciezka-zima-ue-apeluje-do-panstw-o-oszczedzanie-energii-7342782741063712a",
+      "title": "Wielka Brytania wróci do UE? \"Zacieśnia współpracę\"",
+      "snippet": "Brytyjski premier Andy Burnham zasygnalizował gotowość do rozważenia przywrócenia zasad swobodnego przepływu osób w ramach przyszłych relacji Wielkiej Brytanii z Unią Europejską - wynika z artykułu opublikowanego w niedzielę na łamach \"Sunday Times\".",
+      "link": "https://wiadomosci.wp.pl/wielka-brytania-wroci-do-ue-zaciesnia-wspolprace-7344015410165792a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "W Europie szykuje się ciężka zima. UE apeluje do państw o oszczędzanie energii"
+      "title_pl": "Wielka Brytania wróci do UE? \"Zacieśnia współpracę\""
     },
     {
-      "title": "Koniec pewnej epoki w CNN. Dziennikarka odchodzi po 43 latach",
-      "snippet": "Christiane Amanpour, jedna z najbardziej rozpoznawalnych i cenionych twarzy amerykańskiej telewizji CNN, ogłosiła rozstanie ze stacją po 43 latach pracy. Choć oficjalnie mówi o osobistej decyzji, nikt nie ma wątpliwości: jej odejście to bezpośredni sprzeciw wobec przejęcia Warner Bros. Discovery przez Skydance i obawy o ideologiczną transformację medium.",
-      "link": "https://wiadomosci.wp.pl/koniec-pewnej-epoki-w-cnn-dziennikarka-odchodzi-po-43-latach-7343874737805408a",
+      "title": "Netanjahu walczy o władzę: Wydałem rozkaz obalenia irańskiego reżimu",
+      "snippet": "Premier Izraela Benjamin Netanjahu oświadczył w niedzielę, że polecił wywiadowi (Mosadowi) i armii doprowadzić do obalenia władz Iranu. Na dwa dni przed wyborami parlamentarnymi przekonywał, że tylko jego rząd może ostatecznie wyeliminować irańskie zagrożenie nuklearne.",
+      "link": "https://wiadomosci.wp.pl/netanjahu-walczy-o-wladze-wydalem-rozkaz-obalenia-iranskiego-rezimu-7344005849135200a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Koniec pewnej epoki w CNN. Dziennikarka odchodzi po 43 latach"
+      "title_pl": "Netanjahu walczy o władzę: Wydałem rozkaz obalenia irańskiego reżimu"
     },
     {
-      "title": "Godła w kontenerze przed biurem RPO. Policja sprawdzi zdjęcia",
-      "snippet": "Przed warszawskim biurem Rzecznika Praw Obywatelskich miały trafić do kontenera trzy oprawione godła Polski. Czytelnik portalu Miejski Reporter udostępnił zdjęcia. Policja interweniowała po tym zgłoszeniu, ale funkcjonariusze na miejscu nie potwierdzili dotąd przedstawionej wersji i sprawdzą autentyczność zdjęć.",
-      "link": "https://wiadomosci.wp.pl/godla-w-kontenerze-przed-biurem-rpo-policja-sprawdzi-zdjecia-7343868584409120a",
+      "title": "Trump się nie hamuje. Absurdalne słowa o kolejnym kraju",
+      "snippet": "Prezydent Donald Trump zaatakował Norwegię podczas niedzielnego wiecu wyborczego w Michigan, powtarzając swoje skargi na nieotrzymanie Pokojowej Nagrody Nobla. Stwierdził, że ten skandynawski kraj \"jest do bani\".",
+      "link": "https://wiadomosci.wp.pl/trump-sie-nie-hamuje-absurdalne-slowa-o-kolejnym-kraju-7343998287923232a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Godła w kontenerze przed biurem RPO. Policja sprawdzi zdjęcia"
+      "title_pl": "Trump się nie hamuje. Absurdalne słowa o kolejnym kraju"
     },
     {
-      "title": "Tragedia na Mazowszu. Ciało mężczyzny w rzece",
-      "snippet": "W sobotę w rzece Nasielna w Nasielsku (woj. mazowieckie) znaleziono ciało mężczyzny. Zwłoki zauważyła osoba spacerująca w pobliżu targowiska przy ulicy Tylnej. Na miejscu pracowali policjanci, strażacy i prokurator.",
-      "link": "https://wiadomosci.wp.pl/tragedia-na-mazowszu-cialo-mezczyzny-w-rzece-7343872564901984a",
+      "title": "Brazylijczycy zagłosowali. Trwa liczenie głosów",
+      "snippet": "W Brazylii zakończyła się druga tura wyborów prezydenckich. Lokale wyborcze pracowały o dwie godziny dłużej po decyzji sędziego Sądu Najwyższego. O urząd walczą obecny prezydent Lula da Silva oraz prawicowy senator Flavio Bolsonaro. Ostatnie sondaże wskazywały na minimalną wygraną Bolsonaro.",
+      "link": "https://wiadomosci.wp.pl/brazylijczycy-zaglosowali-trwa-liczenie-glosow-7343992147851296a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Tragedia na Mazowszu. Ciało mężczyzny w rzece"
-    },
-    {
-      "title": "Dźwig runął na estakadę, uderzył w niego pociąg. Groza w São Paulo",
-      "snippet": "Do sieci trafiło mrożące krew w żyłach nagranie z São Paulo, na którym widać moment uderzenia automatycznego pociągu w powalony na tory potężny dźwig. Choć odłamki konstrukcji runęły prosto na ruchliwą ulicę pod estakadą, nikt z pasażerów nie zginął. W groźnym wypadku poszkodowany został jedynie operator maszyny budowlanej.",
-      "link": "https://wiadomosci.wp.pl/dzwig-runal-na-estakade-uderzyl-w-niego-pociag-groza-w-sao-paulo-7343868461402208a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Dźwig runął na estakadę, uderzył w niego pociąg. Groza w São Paulo"
-    },
-    {
-      "title": "Pełczyńska-Nałęcz zakłada nowe stowarzyszenie? Tyle wiadomo",
-      "snippet": "Katarzyna Pełczyńska-Nałęcz chce założyć nowe stowarzyszenie – przekazał Maciej Żywno z Polski 2050. Minister funduszy zrezygnowała w tym tygodniu z pracy w rządzie.",
-      "link": "https://wiadomosci.wp.pl/pelczynska-nalecz-zaklada-nowe-stowarzyszenie-tyle-wiadomo-7343863017764960a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Pełczyńska-Nałęcz zakłada nowe stowarzyszenie? Tyle wiadomo"
-    },
-    {
-      "title": "Orbán przyłapany w Paryżu. Do sieci trafiło nagranie",
-      "snippet": "Do sieci trafiło nagranie, na którym uwieczniono Viktora Orbána z rodziną w Paryżu w dniu narodowego święta Węgrów 23 października. Choć były premier wzywał zwolenników do marszu w Budapeszcie, sam wybrał zagraniczną podróż. Wideo uderza w polityka w trudnym momencie – jego rodzina wyprzedaje majątek, a aż 56 proc. Węgrów nie chce jego powrotu do władzy.",
-      "link": "https://wiadomosci.wp.pl/orban-przylapany-w-paryzu-do-sieci-trafilo-nagranie-7343859965503584a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Orbán przyłapany w Paryżu. Do sieci trafiło nagranie"
-    },
-    {
-      "title": "To będzie ściana deszczu. Cyklon Manja sunie przez Polskę",
-      "snippet": "Cyklon Manja wpływa w niedzielę na pogodę w Polsce. Strefa deszczu przesuwa się z zachodu na wschód i obejmuje kolejne województwa. Według TVN24 opady wieczorem dotrą m.in. do Warszawy, Łodzi i Katowic, a w nocy przesuną się dalej na wschód.",
-      "link": "https://wiadomosci.wp.pl/to-bedzie-sciana-deszczu-cyklon-manja-sunie-przez-polske-7343849798375520a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "To będzie ściana deszczu. Cyklon Manja sunie przez Polskę"
-    },
-    {
-      "title": "Time is running out for Germany to pay Polish WWII victims the compensation they deserve [Opinion]",
-      "snippet": "Philipp Fritz There are 30,000-50,000 such survivors, but their number dwindles every week.",
-      "link": "https://notesfrompoland.com/2026/10/25/time-is-running-out-for-germany-to-pay-polish-wwii-victims-the-compensation-they-deserve-opinion/",
-      "source_name": "Notes from Poland",
-      "lang": "en",
-      "title_pl": "Niemcom kończy się czas na wypłacenie polskim ofiarom II wojny światowej odszkodowania, na które zasługują [Opinia]"
+      "title_pl": "Brazylijczycy zagłosowali. Trwa liczenie głosów"
     },
     {
       "title": "Zwrot w Sejmie ws. podatków. Nie tego chce rząd. Media: będzie walczył",
@@ -573,12 +277,268 @@
       "title_pl": "Zwrot w Sejmie ws. podatków. Nie tego chce rząd. Media: będzie walczył"
     },
     {
-      "title": "Widmo kryzysu w Europie i poszukiwanie okazji w USA. Co mówi Wall Street?",
-      "snippet": "W kończącym się tygodniu do obaw na rynkach finansowych związanych ze spółkami sztucznej inteligencji dołączyły zawirowania polityczne w Europie. Mimo to stratedzy inwestycyjni już rozglądają się za okazjami do zakupów na największym rynku akcji na świecie.",
-      "link": "https://www.bankier.pl/wiadomosc/Widmo-kryzysu-w-Europie-i-poszukiwanie-okazji-w-USA-Co-mowi-Wall-Street-9217985.html",
+      "title": "Polacy aktywniejsi niż reszta UE. PIE wskazuje na ważny czynnik",
+      "snippet": "W ubiegłym roku Polacy częściej niż przeciętny Europejczyk podejmowali aktywność fizyczną - wskazuje analiza Polskiego Instytutu Ekonomicznego. PIE zwrócił równocześnie uwagę, że na podejmowanie przez Polaków aktywności fizycznej widoczny wpływ miały osiągane przez nich dochody.",
+      "link": "https://www.bankier.pl/wiadomosc/Polacy-aktywniejsi-niz-reszta-UE-PIE-wskazuje-na-wazny-czynnik-9217978.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Widmo kryzysu w Europie i poszukiwanie okazji w USA. Co mówi Wall Street?"
+      "title_pl": "Polacy aktywniejsi niż reszta UE. PIE wskazuje na ważny czynnik"
+    },
+    {
+      "title": "Nawet połowa dziennikarzy może stracić pracę. Media czeka trudna dekada",
+      "snippet": "Liczba zawodowych dziennikarzy w Niemczech może do 2035 roku zmniejszyć się o 12 do 50 proc., a przychody firm medialnych mogą spaść nawet o 43 proc. - wynika z ekspertyzy, przygotowanej przez medioznawców na zlecenie niemieckich nadawców publicznych.",
+      "link": "https://www.bankier.pl/wiadomosc/Nawet-polowa-dziennikarzy-moze-stracic-prace-Media-czeka-trudna-dekada-9216725.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Nawet połowa dziennikarzy może stracić pracę. Media czeka trudna dekada"
+    },
+    {
+      "title": "Trump wykluczył atak na Iran w niedzielę. Co z kolejnymi dniami?",
+      "snippet": "Prezydent USA Donald Trump zadeklarował w niedzielę, że tego dnia nie zaatakuje Iranu. Wcześniej taką możliwość sugerował ambasador USA w Turcji Thomas Barrack.",
+      "link": "https://www.bankier.pl/wiadomosc/Trump-wykluczyl-atak-na-Iran-w-niedziele-Co-z-kolejnymi-dniami-9218018.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Trump wykluczył atak na Iran w niedzielę. Co z kolejnymi dniami?"
+    },
+    {
+      "title": "Sanchez: Wygrana prawicy w wyborach oznaczałaby regres kraju o 40-50 lat",
+      "snippet": "Wygrana konserwatywnej Partii Ludowej (PP) i skrajnie prawicowej Vox w wyborach parlamentarnych oznaczałaby cofnięcie się Hiszpanii w rozwoju o 40-50 lat – powiedział dziennikowi „El Pais” lider rządzącej Partii Socjalistycznej (PSOE) premier Pedro Sanchez.",
+      "link": "https://www.bankier.pl/wiadomosc/Sanchez-Wygrana-prawicy-w-wyborach-oznaczalaby-regres-kraju-o-40-50-lat-9218008.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Sanchez: Wygrana prawicy w wyborach oznaczałaby regres kraju o 40-50 lat"
+    },
+    {
+      "title": "Autostrada A2 coraz droższa. Ministerstwo rozważa zerwanie umowy",
+      "snippet": "Ministerstwo Infrastruktury wystąpiło do GDDKiA o analizę możliwości wypowiedzenia umowy koncesyjnej dotyczącej odcinka autostrady A2 Nowy Tomyśl-Konin. Powodem są częste podwyżki opłat stosowane przez spółkę Autostrada Wielkopolska - wynika z odpowiedzi na interpelację poselską.",
+      "link": "https://www.bankier.pl/wiadomosc/Autostrada-A2-coraz-drozsza-Ministerstwo-rozwaza-zerwanie-umowy-9217960.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Autostrada A2 coraz droższa. Ministerstwo rozważa zerwanie umowy"
+    },
+    {
+      "title": "Polska w unijnej czołówce deportacji. Wiceszef MSWiA podał dane",
+      "snippet": "Polska jest wśród pięciu państw UE, które mają najwyższe wskaźniki realnych deportacji, czy tzw. dobrowolnych powrotów - powiedział w Sejmie wiceszef MSWiA Maciej Duszczyk. Dodał, że wskaźnik ten wynosi ok. 75 proc. i jest nieosiągalny w takich państwach jak Niemcy, Francja i wielu innych.",
+      "link": "https://www.bankier.pl/wiadomosc/Polska-w-unijnej-czolowce-deportacji-Wiceszef-MSWiA-podal-dane-9217292.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Polska w unijnej czołówce deportacji. Wiceszef MSWiA podał dane"
+    },
+    {
+      "title": "Minister apeluje do Polaków. Tego oczekuje w stosunku do Ukraińców podczas zimy",
+      "snippet": "W sobotę, 24 października, Radosław Sikorski gościł w Kaszubsko-Pomorskiej Szkole Wyższej w Wejherowie na spotkaniu otwartym. Zgromadzonym przedstawił swoją ocenę aktualnego stanu wojny na Ukrainie, a także zaapelował do Polaków i społeczeństw europejskich o zwiększenie pomocy dla Ukraińców.",
+      "link": "https://defence24.pl/polityka-obronna/minister-apeluje-do-polakow-tego-oczekuje-w-stosunku-do-ukraincow-podczas-zimy",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Minister apeluje do Polaków. Tego oczekuje w stosunku do Ukraińców podczas zimy"
+    },
+    {
+      "title": "Ukraińcy piszą o Polsce i opóźnionych dostawach. „Polska stopniowo się uzbraja”",
+      "snippet": "Kolejne dostawy amunicji do WWR Homar-K dotarły do Polski na początku tygodnia, bo w poniedziałek, 19 października. Informację tę odnotował także ukraiński portal Defense Express, pozytywnie oceniając uzbrajającą się Polskę i zwracając uwagę na opóźnione dostawy amerykańskich pocisków ATACMS.",
+      "link": "https://defence24.pl/przemysl/ukraincy-pisza-o-polsce-i-opoznionych-dostawach-polska-stopniowo-sie-uzbraja",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Ukraińcy piszą o Polsce i opóźnionych dostawach. „Polska stopniowo się uzbraja”"
+    },
+    {
+      "title": "Gen. Toveri: „Rosja rozumie tylko siłę”. W tle wątek Polski i Bałtyku",
+      "snippet": "W niedzielę, 25 października, były fiński generał, a dziś europoseł z ramienia Koalicji Narodowej, Pekka Toveri, udzielił wywiadu niemieckiemu portalowi Deutsche Welle. W rozmowie przedstawił swoje koncepcje reagowania na rosyjskie działania w ramach wojny hybrydowej.",
+      "link": "https://defence24.pl/polityka-obronna/gen-toveri-rosja-rozumie-tylko-sile-w-tle-watek-polski-i-baltyku",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Gen. Toveri: „Rosja rozumie tylko siłę”. W tle wątek Polski i Bałtyku"
+    },
+    {
+      "title": "Polska głównym celem Rosji. Ujawniono wyniki śledztwa",
+      "snippet": "Jak wynika ze śledztwa dziennikarskiego przeprowadzonego przez szwedzką telewizję publiczną SVT i Europejską Unię Nadawców (EBU), z udziałem 17 europejskich nadawców, Polska jest głównym celem rosyjskich działań hybrydowych. Tylko od 1 kwietnia do 15 października odnotowano aż 54 incydenty w Europie.",
+      "link": "https://defence24.pl/polityka-obronna/polska-glownym-celem-rosji-ujawniono-wyniki-sledztwa",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Polska głównym celem Rosji. Ujawniono wyniki śledztwa"
+    },
+    {
+      "title": "Polska sprzeda swoje uzbrojenie za granicę? Nowe doniesienia ws. kontraktów",
+      "snippet": "Trwają negocjacje w sprawie sprzedaży polskiego uzbrojenia wietnamskiej armii. Negocjacje w tej sprawie prowadzi Donald Tusk, przebywający w Wietnamie od soboty (24.10) do poniedziałku (26.10). Wspiera go wiceminister Konrad Gołota. Na miejscu obecni są przedstawiciele PGZ i Grupy WB.",
+      "link": "https://defence24.pl/przemysl/polska-sprzeda-swoje-uzbrojenie-za-granice-nowe-doniesienia-ws-kontraktow",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Polska sprzeda swoje uzbrojenie za granicę? Nowe doniesienia ws. kontraktów"
+    },
+    {
+      "title": "Rosja rozmieszcza czołgi przy granicy NATO. Działania sprzed ataku na Ukrainę?",
+      "snippet": "Rosja odbudowuje swoje zdolności militarne, jednocześnie kontynuując wojnę przeciwko Ukrainie. Nowe zdjęcia satelitarne pokazują, że rosyjskie bazy przechowywania sprzętu wojskowego są ponownie zapełniane czołgami T-90M, pojazdami opancerzonymi i systemami artyleryjskimi, w tym uzbrojeniem, które nie trafia bezpośrednio na front ukraiński. Nie oznacza to jednak, że działania te muszą świadczyć o przygotowaniach do rychłej konfrontacji z NATO. Moskwa może zamiast tego odbudowywać swój potencjał m",
+      "link": "https://defence24.pl/polityka-obronna/rosja-rozmieszcza-czolgi-przy-granicy-nato-dzialania-sprzed-ataku-na-ukraine",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Rosja rozmieszcza czołgi przy granicy NATO. Działania sprzed ataku na Ukrainę?"
+    },
+    {
+      "title": "Ukraińskie wojsko dostarczyło dronami żywność i zabawki dla dzieci w okupowanych Ołeszkach",
+      "snippet": "Ukraińskie wojsko dostarczyło za pomocą dronów żywność i zabawki dla dzieci w okupowanych przez Rosję Ołeszkach w obwodzie chersońskim na południu Ukrainy. Mieszkańcy miasta, którzy, według relacji, głodują, przygotowują się do ewakuacji.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukrainskie-wojsko-dostarczylo-dronami-zywnosc-i-zabawki-dla-dzieci-w-okupowanych-oleszkach",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Ukraińskie wojsko dostarczyło dronami żywność i zabawki dla dzieci w okupowanych Ołeszkach"
+    },
+    {
+      "title": "Patriot coraz bliżej strzelania „przez ramię”",
+      "snippet": "Lockheed Martin poinformował o kolejnych etapach rozwoju RIG-360, urządzenia zapewniającego dookólną łączność z pociskami rodziny PAC-3 używanymi w zestawach Patriot podczas lotu. W niespełna dwa miesiące przeprowadzono krytyczny przegląd projektu, serię prób w locie oraz test wystrzelenia pocisku.",
+      "link": "https://defence24.pl/przemysl/patriot-coraz-blizej-strzelania-przez-ramie",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Patriot coraz bliżej strzelania „przez ramię”"
+    },
+    {
+      "title": "Iran twierdzi, że zestrzelił amerykańskiego drona LUCAS",
+      "snippet": "Iran twierdzi, że zestrzelił amerykańskiego drona LUCAS",
+      "link": "https://defence24.pl/polityka-obronna/iran-twierdzi-ze-zestrzelil-amerykanskiego-drona-lucas",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Iran twierdzi, że zestrzelił amerykańskiego drona LUCAS"
+    },
+    {
+      "title": "Trump zaciera ręce. Jedna decyzja Brazylijczyków może zmienić układ sił na świecie",
+      "snippet": "Trump zaciera ręce. Jedna decyzja Brazylijczyków może zmienić układ sił na świecie  Business Insider PolskaWybory prezydenckie w Brazylii rozstrzygnięte  TVN24Od pucybuta do czwartej kadencji. Lula znów prezydentem Brazylii  Money.plFlavio Bolsonaro żąda unieważnienia wyborów w Brazylii  WP WiadomościWyborcza noc za nami. Brazylia wybrała prezydenta, Częstochowa swojego odwołała  Rzeczpospolita",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPajMxcVZILW5wTi0zWjJnaFhRenZVV19pSVYyY0hmaXBKbVprRjZJcmladGRBQUgtay1HU3lTTkp3Ukk1NkJscG9PV3A3SjRkSVRWNkRHNVhka3NNY3ZfS1lzcUx6cjUyZ1VRM1FDdnhDWW9mYk1IVEotY0owTXJEbU1WTmJtdFQzeFZRdG91MG9CLVBwbl9lZGV2N1lzektYelg5eGhpNms0ejRCaXFVUWd4RkRDN2VUX29oMzZJQ29zUQ?oc=5",
+      "source_name": "Business Insider Polska",
+      "lang": "pl",
+      "title_pl": "Trump zaciera ręce. Jedna decyzja Brazylijczyków może zmienić układ sił na świecie"
+    },
+    {
+      "title": "Hołownia odpowiada \"gorącym głowom\" ws. Pełczyńskiej-Nałęcz. Sięgnął po Biblię",
+      "snippet": "Hołownia odpowiada \"gorącym głowom\" ws. Pełczyńskiej-Nałęcz. Sięgnął po Biblię  PolsatNews.plTak Hołownia miał chcieć się \"pozbyć\" Pełczyńskiej-Nałęcz z rządu. Wypłynęło nagranie  WP WiadomościBędzie awantura w koalicji rządzącej? Prof. Dudek o \"sensacyjnym scenariuszu\"  FaktCo dalej po rezygnacji Katarzyny Pełczyńskiej-Nałęcz? Politolożka: to oczyści atmosferę  OnetOstra wymiana zdań między Giertychem a byłą minister. \"To komiczny narcyzm\"  Interia Wydarzenia",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdjlyYjM1Y0VVLVVQX1NkQ0Z0cThPV3AxY1hlN3Jza3J0VVB2WU1yN0F1dWp1aVltZWxtc0dud0VZSnNpMDdRQTcwc3N5WjQ4RWRvd19td1dPZDQ3RW5mRkpxQ1U1VjhFN3RYZnFCd3NzRlFmVzZ6QVNhWFhsUDIwOEZxWTZqWk5iOWg3U1drZnA0Q0pjV1hvbTBieGo5dnE5WnE1LVdVb2Ytb2ZENkpqNnV6LWloVFBjNTlUVA?oc=5",
+      "source_name": "PolsatNews.pl",
+      "lang": "pl",
+      "title_pl": "Hołownia odpowiada \"gorącym głowom\" ws. Pełczyńskiej-Nałęcz. Sięgnął po Biblię"
+    },
+    {
+      "title": "Rewolucja w podatkach. Kto zyska na nowych progach w PIT? Mamy wyliczenia",
+      "snippet": "Rewolucja w podatkach. Kto zyska na nowych progach w PIT? Mamy wyliczenia  Money.plSejm blokuje podwyżkę CIT dla największych firm. Budżet straci miliardy  Business Insider PolskaRząd odzyska swoją ustawę? Senator zapowiada przywrócenie pierwotnych przepisów  Interia BiznesNie sejmowa arytmetyka, lecz rachunek polityczny. Kto naprawdę zdecyduje o podatkach na 2027?  Gazeta PrawnaNiezbędnik przedsiębiorcy: PIT i ryczałt zmienione * kary za niestosowanie KSeF * odliczanie VAT od auta elektrycznego",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUXlZTWpuQzZfRjNrRmMtaHhCalJaMkI1ZzFOYXM0X0tCS3J6c3ZzYWZ6NmVnVm1TOFZWN1FNbjdqVXJyVC1ad00xNHctMkotWWNfOUhIVUhnaHlnRjFtOXIzczEyQ3J4blcwSUstM3V1SXdlZlZhTlFKN2ZEOWdIRTI4cDN2b1Y5ZlZZYllBUFR2dUQ5YzRwd2thZFNOUnBZbFdsYmJGVF9TS3R4XzZwU2tQcllXNkhPQk9aYm1oWDU?oc=5",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Rewolucja w podatkach. Kto zyska na nowych progach w PIT? Mamy wyliczenia"
+    },
+    {
+      "title": "Bułgaria wybiera prezydenta. Są wyniki exit poll I tury",
+      "snippet": "Bułgaria wybiera prezydenta. Są wyniki exit poll I tury  Wiadomości OnetZobacz więcej nagłówków i punktów widzenia w aplikacji Google News",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQLTNmeW1SQ19kU05GY0liT0gyTFNENl9RdEU1dnFMSV9yZElvLXRBcF9uUkt3TElMSjg5SnlfREhMRDJlQXBQZVVKeVFsLS1RQTN1WVJ6Sm9Fb0VSRE80SzgxS0tqdEdrYlZKMWxuNk1lWU9yLVdSenlUZUlJN1R6QTdwNlM3QWF0b2RWbXBJWmY2bmd6cWVTRV8xaw?oc=5",
+      "source_name": "Wiadomości Onet",
+      "lang": "pl",
+      "title_pl": "Bułgaria wybiera prezydenta. Są wyniki exit poll I tury"
+    },
+    {
+      "title": "Ciało w aucie i pijany kierowca. Nowe ustalenia ws. zdarzenia w Radomiu",
+      "snippet": "Ciało w aucie i pijany kierowca. Nowe ustalenia ws. zdarzenia w Radomiu  WP WiadomościRadom. Miał 2,5 promila, z tyłu auta wiózł zwłoki. Upadła jedna hipoteza  FaktMakabryczne odkrycie podczas rutynowej interwencji  RMF24Zwłoki w samochodzie po kolizji. Nowe nieoficjalne ustalenia  GazetaPolicjanci odkryli w aucie ciało 43-latka. Są wyniki sekcji zwłok  o2",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQU0ZkSjJheGd6LWZxbnFkRHFVWkxhQURhNE5MNmRCdGVXQ1F1dDVGMXpTdUExRV9lTm1qRUdvMU1pNlMtV1k0QmMyWUg2TEMtZnROUzFVX3BsR1BseGt5YTBhOFpZU3c2QmVhcE9ieGUzWUd6VjJmMjlmU0RQOGJCSEdrU1RJd2w2R3JkSUwtdzhoV1J1Ukd4ZTFEZFJEN0tCTEN6bjI1OGhRQUNScE5BcjBn?oc=5",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Ciało w aucie i pijany kierowca. Nowe ustalenia ws. zdarzenia w Radomiu"
+    },
+    {
+      "title": "Dorota Łoboda o zmianach w prawie aborcyjnym. \"To krok do przodu\"",
+      "snippet": "Dorota Łoboda o zmianach w prawie aborcyjnym. \"To krok do przodu\"  PolsatNews.plKEP reaguje na ustawę. \"Polityka, która nie buduje, a niszczy\"  WP WiadomościKłótnia polityków koalicji w studiu. \"Nie zna pani kuluarów\"  Onet\"Nie buduje, a niszczy\". Episkopat grzmi, apelują do Sejmu po głosowaniu  Interia WydarzeniaNawrocki postąpi wbrew woli większości Polaków? Sondaż nie pozostawia złudzeń  Rzeczpospolita",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdXFWaGVxNFc3eTgyUDBESkRqN3AtUHFlMWpBNmRBNHNPbURIdXlZWXYtbDUzc0xGc25iNnk3TFBkTW1JUjNZcW9OTUpvbkpYVkJKcXZ1aHVwTWJiVmN2VHFVOEhTNGFUSkJTaXljNURHaEMwdW5weGx4aXZfa19rUHVKTl9NaUF0LVFWV09FMzNnY3h3bjA4X2hQNFB4MTdySWhNNVhOWk1NUVo4d0ZN?oc=5",
+      "source_name": "PolsatNews.pl",
+      "lang": "pl",
+      "title_pl": "Dorota Łoboda o zmianach w prawie aborcyjnym. \"To krok do przodu\""
+    },
+    {
+      "title": "Netanjahu uderza w Iran. Mówi o poleceniu dla Mosadu",
+      "snippet": "Netanjahu uderza w Iran. Mówi o poleceniu dla Mosadu  OnetEkspert od bezpieczeństwa: zbliża się moment ataku militarnego Izraela i USA na Iran  Wiadomości OnetNetanjahu walczy o władzę: Wydałem rozkaz obalenia irańskiego reżimu  WP WiadomościTrump: Dziś USA nie zaatakują Iranu  GazetaIran śledzi kalendarz wydarzeń Trumpa. I wcale nie podoba mu się to, co widzi  Newsweek",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTJQeDhTVVBYanpfLV9HYWRtUU1KdTgwbXRlbE9OQnBXZ1BocUlPNWg5Y21zZ2l5alRoLXdGZ3BEeG04NUMyaHpxVzY2YWc4NGNPaGRSNFRPOTZVaEdxWHdvcUY2RjlYZkdFRVVxVVczT3pXTEVCZnIteW9HazJqSmpISlZOcE80Tm1PQkt2cGN0YzMwMGsycC02blBvRnlVRmRuTUZWb1FCcEFCb2N3TjhnNE1GY0V5YlYtYWRaSHo5QVB5RVJaVWF6WS1TeFV4LXc?oc=5",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Netanjahu uderza w Iran. Mówi o poleceniu dla Mosadu"
+    },
+    {
+      "title": "Latest Oil Market News and Analysis for Oct. 26",
+      "snippet": "Oil retreated as the US and Iran stuck to familiar rhetoric in their conflict, and a technical gauge pointed to overbought conditions.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-25/latest-oil-market-news-and-analysis-for-oct-26",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Najnowsze wiadomości i analizy z rynku ropy z 26 października"
+    },
+    {
+      "title": "Trump Says Decision Nearing on Iran: Deal or ‘Finish It Off’",
+      "snippet": "President Donald Trump said it's \"getting to be decision time\" on whether he will make a deal with Tehran or resume attacks as Iranian and Houthi threats against Americans continue to grow. Bloomberg's Jill Disis has the latest. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-26/trump-says-decision-nearing-on-iran-video",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Trump mówi, że zbliża się decyzja w sprawie Iranu: porozumienie albo „dokończenie sprawy”"
+    },
+    {
+      "title": "Australian Regulator Warns Higher Market Risks May Hit Liquidity",
+      "snippet": "Australia’s regulator warned that ructions in the global bond market and elevated concerns linked to artificial intelligence are threatening to weaken financial market liquidity.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-26/australian-regulator-warns-higher-market-risks-may-hit-liquidity",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Australijski regulator ostrzega, że wyższe ryzyko rynkowe może uderzyć w płynność"
+    },
+    {
+      "title": "China National Team ETFs Draw Most Inflows Since Trade War Rout",
+      "snippet": "China’s state-led funds stepped into the market with the heaviest buying since the April 2025 rout, as authorities ramped up efforts to stem a market freefall.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-26/china-national-team-etfs-draw-most-inflows-since-trade-war-rout",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Fundusze ETF chińskiej „reprezentacji narodowej” przyciągają największe napływy od czasu pogromu w wojnie handlowej"
+    },
+    {
+      "title": "Morgan Stanley Sees Further China Stock Downside Before Bottom",
+      "snippet": "Chinese stocks are poised for further losses before their valuations bottom, according to Morgan Stanley, as weakening growth and consumption momentum weigh on sentiment.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-26/morgan-stanley-sees-further-china-stock-downside-before-bottom",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Morgan Stanley widzi dalsze spadki chińskich akcji przed osiągnięciem dna"
+    },
+    {
+      "title": "AI Trade Falters in Runup to Earnings, Oil Drops: Markets Wrap",
+      "snippet": "The artificial intelligence trade took another hit as investors braced for more earnings from megacap tech companies that will offer clues on whether the recent pullback in technology shares has further to run. Oil declined and Treasuries rose.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-25/us-equity-futures-climb-as-crude-oil-price-dips-markets-wrap",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Handel spółkami AI słabnie przed wynikami, ropa tanieje: Podsumowanie rynków"
+    },
+    {
+      "title": "EM Stocks Fall Before Key Earnings, Brazil in Focus as Lula Wins",
+      "snippet": "Emerging-market stocks started the week lower as investors awaited earnings from some of the world’s biggest technology companies for clues on whether the artificial intelligence trade can recover from a bruising selloff.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-26/em-stocks-fall-before-key-earnings-brazil-in-focus-as-lula-wins",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Akcje na rynkach wschodzących spadają przed kluczowymi wynikami, Brazylia w centrum uwagi po wygranej Luli"
+    },
+    {
+      "title": "Copper Extends Drop as AI Stocks Weigh Ahead of Fed Meeting",
+      "snippet": "Copper extended last week’s drop as artificial intelligence stocks came under further pressure, sapping risk appetite ahead of the Federal Reserve’s policy meeting.",
+      "link": "https://www.bloomberg.com/news/articles/2026-10-26/copper-extends-drop-as-ai-stocks-weigh-ahead-of-fed-meeting",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Miedź pogłębia spadki, podczas gdy akcje spółek AI ciążą rynkowi przed posiedzeniem Fed"
+    },
+    {
+      "title": "France Avoids Rerun of Looting With Tough Security",
+      "snippet": "France avoided a repeat of large-scale violence and looting that marred nationwide protests a week ago, suggesting the government’s decision to boost police numbers and contain marches paid off. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-10-26/france-avoids-rerun-of-looting-with-tough-security-video",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Francja unika powtórki grabieży dzięki zaostrzonym środkom bezpieczeństwa"
+    },
+    {
+      "title": "Investors Flee India Small-Caps as Margin Calls Come Knocking",
+      "snippet": "Smaller stocks account for a large share of positions funded through margin loans.",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/investors-flee-india-small-caps-as-margin-calls-come-knocking",
+      "source_name": "Bloomberg",
+      "lang": "en",
+      "title_pl": "Inwestorzy uciekają od indyjskich małych spółek, gdy nadchodzą wezwania do uzupełnienia depozytu"
+    },
+    {
+      "title": "Elation across Serbia after veteran ruler Vučić concedes to student-led protest movement",
+      "snippet": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
+      "link": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo",
+      "source_name": "BBC News",
+      "lang": "en",
+      "title_pl": "Radość w całej Serbii po tym, jak wieloletni przywódca Vučić ustępuje przed studenckim ruchem protestacyjnym"
     }
   ]
 }
