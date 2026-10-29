@@ -1,160 +1,344 @@
 {
-  "date": "28 października 2026",
-  "time": "17:06",
-  "timestamp": "2026-10-28_17:06",
-  "count": 69,
+  "date": "29 października 2026",
+  "time": "06:01",
+  "timestamp": "2026-10-29_06:01",
+  "count": 71,
   "items": [
     {
-      "title": "Zabójstwo w Tychach. Zatrzymano jedną osobę",
-      "snippet": "Nie żyje starszy mężczyzna ugodzony ostrym narzędziem. W sprawie zatrzymano 37-latka w kryzysie bezdomności. Jak podają lokalne media, znał się z ofiarą, razem mieli spożywać alkohol.",
-      "link": "https://tvn24.pl/katowice/zabojstwo-w-tychach-zatrzymano-jedna-osobe-st9310804?source=rss",
+      "title": "Kto ma rację w sporze o Trybunał Konstytucyjny? Polacy zabrali głos",
+      "snippet": "Największa grupa Polaków uważa, że żadna ze stron nie ma racji w sporze wokół Trybunału Konstytucyjnego. 32,7 proc. badanych uważa, że w kłótni o TK zarówno prezydent Karol Nawrocki, jak i premier Donald Tusk, nie mają racji - wynika z sondażu IBRiS przeprowadzonego dla Rzeczpospolitej.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/kto-ma-racje-w-sporze-o-trybunal-konstytucyjny-polacy-zabrali-glos/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kto ma rację w sporze o Trybunał Konstytucyjny? Polacy zabrali głos"
+    },
+    {
+      "title": "Kaczyński wygrał w sądzie ze znanym aktywistą. W tle katastrofa smoleńska",
+      "snippet": "Sąd Okręgowy w Warszawie zakazał Zbigniewowi Komosie publicznego sugerowania odpowiedzialności Lecha Kaczyńskiego za katastrofę smoleńską. Nakazał też zapłacić aktywiście 30 tys. zł na cele charytatywne oraz zobowiązał go do publicznych przeprosin Jarosława Kaczyńskiego. Komosa zapowiedział już apelację.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/zbigniew-komasa-przegral-z-jaroslawem-kaczynskim-musi-go-przeprosic/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kaczyński wygrał w sądzie ze znanym aktywistą. W tle katastrofa smoleńska"
+    },
+    {
+      "title": "Przemysław Czarnek w programie \"Gość Wydarzeń\"",
+      "snippet": "Kandydat PiS na premiera Przemysław Czarnek będzie rozmówcą Magdy Sakowskiej w środowym wydaniu programu Gość Wydarzeń. Transmisja od godziny 19:15 w Polsacie, Polsat News, Wydarzeniach 24, Interii oraz na polsatnews.pl.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/przemyslaw-czarnek-w-gosciu-wydarzen-ogladaj-od-1915/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Przemysław Czarnek w programie \"Gość Wydarzeń\""
+    },
+    {
+      "title": "Zbigniew Ziobro triumfuje w sądzie. Może żądać odszkodowania",
+      "snippet": "Sąd Apelacyjny w Warszawie uchylił postanowienie o przymusowym doprowadzeniu b. szefa MS Zbigniewa Ziobry na przesłuchanie przed sejmową komisją śledczą ds. Pegasusa we wrześniu 2025 r. - poinformowała rzeczniczka tego sądu. Podczas tamtego przesłuchania Ziobro przyznał, że był inicjatorem zakupu systemu Pegasus. Adwokat polityka nie wyklucza, że będzie się on domagał rekompensaty finansowej.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/zbigniew-ziobro-triumfuje-w-sadzie-moze-zadac-odszkodowania/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Zbigniew Ziobro triumfuje w sądzie. Może żądać odszkodowania"
+    },
+    {
+      "title": "17-latka miała planować zabójstwo pracownika szkoły. W plecaku trzymała nóż",
+      "snippet": "17-latka z powiatu żnińskiego usłyszała zarzut przygotowania do zabójstwa pracownika jednej ze szkół. Według śledczych nastolatka gromadziła niebezpieczne narzędzia, w tym noże, które trzymała w domu i plecaku. Dziewczyna została zatrzymana przez policję, a sąd zdecydował o jej tymczasowym aresztowaniu na trzy miesiące. Grozi jej do 15 lat więzienia.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/17-latka-miala-planowac-zabojstwo-pracownika-szkoly-w-plecaku-trzymala-noz/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "17-latka miała planować zabójstwo pracownika szkoły. W plecaku trzymała nóż"
+    },
+    {
+      "title": "63-latek groził wysadzeniem przychodni. Na komendę przyjechał pijany",
+      "snippet": "Do przychodni w Skierniewicach zadzwonił 63-latek, który chciał umówić się na wizytę lekarską. Po usłyszeniu informacji, że termin zapisów przypada na następny dzień odpowiedział, że pod budynek należy podłożyć bombę. Gdy przyjechał na komendę złożyć wyjaśnienia, okazało się, że był pod wpływem alkoholu. Teraz odpowie nie tylko za groźby, ale też prowadzenie auta w stanie nietrzeźwości.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/63-latek-grozil-wysadzeniem-przychodni-na-komende-przyjechal-pijany/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "63-latek groził wysadzeniem przychodni. Na komendę przyjechał pijany"
+    },
+    {
+      "title": "Białorusin próbował przemycić do Polski żywy towar. Był wart majątek",
+      "snippet": "41 żywych i w dużej części znajdujących się pod ochroną jaszczurek próbował przemycić do Polski 41-letni Białorusin. Gady warte 100 tysięcy złotych zostały zakupione w Rosji i miały trafić do obywatela Polski. Ten miał je nabyć po nieproporcjonalnie niższej cenie.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/bialorusin-probowal-przemycic-do-polski-zywy-towar-byl-wart-majatek/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Białorusin próbował przemycić do Polski żywy towar. Był wart majątek"
+    },
+    {
+      "title": "Rosja obawia się ukraińskich ataków. Ustalono listę celów",
+      "snippet": "Rosja ustaliła listę strategicznych obiektów do ochrony przed Siłami Zbrojnymi Ukrainy - powiedział rosyjski wicepremier Dienis Manturow, cytowany przez agencję RIA Nowosti. Tłumaczył, że podejmowane są działania, które mają zmniejszyć zagrożenie dla stabilności infrastruktury krytycznej i systemów zapewniających funkcjonowanie społeczeństwa.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/rosja-obawia-sie-ukrainskich-atakow-ustalono-liste-celow/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Rosja obawia się ukraińskich ataków. Ustalono listę celów"
+    },
+    {
+      "title": "Rosjanie budują przy granicy nową bazę. Ukraiński wywiad ostrzega",
+      "snippet": "Rosjanie rozbudowują infrastrukturę, która pozwoli im posyłać nad Ukrainę jeszcze więcej dronów szturmowych. Według ukraińskiego wywiadu nowa baza powstaje w obwodzie rostowskim. W raporcie podkreślono, że działania mogą wskazywać na zwiększenie intensywności nalotów, zwłaszcza w okresie zimowym.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/rosjanie-buduja-przy-granicy-nowa-baze-ukrainski-wywiad-ostrzga/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Rosjanie budują przy granicy nową bazę. Ukraiński wywiad ostrzega"
+    },
+    {
+      "title": "Zełenski zaskoczył deklaracją. Chodzi o gwarancje bezpieczeństwa dla Rosji",
+      "snippet": "Jak przekazał w środę Financial Times, Wołodymyr Zełenski po raz pierwszy dopuścił możliwość rozmów o gwarancjach bezpieczeństwa dla Rosji w przyszłym porozumieniu pokojowym. Dziennik podkreślił, że to zmiana dotychczasowego stanowiska Kijowa. Najbliższe negocjacje będą miały miejsce w czasie listopadowego trójstronnego spotkania delegacji Ukrainy, Rosji i USA w Abu Zabi.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/zelenski-zaskoczyl-deklaracja-chodzi-o-gwarancje-bezpieczenstwa-dla-rosji/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Zełenski zaskoczył deklaracją. Chodzi o gwarancje bezpieczeństwa dla Rosji"
+    },
+    {
+      "title": "Wilki rzuciły się na dziewczynkę. Dramat w parku dla zwierząt",
+      "snippet": "Wilki zaatakowały dziewczynkę i ciężko ją zraniły - poinformowały władze powiatu Teltow-Fläming. Ośmiolatka uczestniczyła w zajęciach z opieki nad zwierzętami w parku Johannismühle w Brandenburgii. Ranne dziecko zabrał śmigłowiec, a policja bada możliwe zaniedbania.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/wilki-rzucily-sie-na-dziewczynke-dramat-w-parku-dla-zwierzat/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Wilki rzuciły się na dziewczynkę. Dramat w parku dla zwierząt"
+    },
+    {
+      "title": "Katastrofa pociągów w Hiszpanii. Jest pierwsza hipoteza w sprawie wypadku",
+      "snippet": "Awaria komunikacji między komputerami i późniejsza zgoda na jazdę mimo czerwonego światła mogły doprowadzić do katastrofy kolejowej w Hiszpanii. Pierwsze ustalenia przedstawił minister transportu Oscar Puente. W środowym zderzeniu dwóch pociągów w pobliżu miejscowości Urda w prowincji Toledo zginęły co najmniej 68 osób.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/katastrofa-pociagow-w-hiszpanii-jest-pierwsza-hipoteza-w-sprawie-wypadku/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Katastrofa pociągów w Hiszpanii. Jest pierwsza hipoteza w sprawie wypadku"
+    },
+    {
+      "title": "Od Londynu po Tokio. Kolejne rządy wzywają do robienia zapasów",
+      "snippet": "Obywatele kolejnych państw na świecie wzywani są do robienia zapasów w razie wystąpienia zagrożeń związanych z napiętą sytuacją międzynarodową, ewentualnym brakiem prądu, cyberatakami czy katastrofami naturalnymi. Apel w tej sprawie skierowały władze Japonii, po tym jak zrobił to kilka dni temu rząd w Wielkiej Brytanii. W ślad za Londynem poszło nie tylko Tokio, ale też kilka innych państw.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/od-londynu-po-tokio-kolejne-rzady-wzywaja-do-robienia-zapasow/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Od Londynu po Tokio. Kolejne rządy wzywają do robienia zapasów"
+    },
+    {
+      "title": "Sceny jak z filmu sensacyjnego w Niemczech. W roli głównej Polka",
+      "snippet": "33-letnia Polka uciekała mercedesem przed policją w niemieckim Schwäbisch Gmünd - przekazały lokalne media. W czasie pościgu stwarzała zagrożenie na drodze, a ostatecznie uderzyła w budynek. Podczas interwencji kobieta znieważała funkcjonariuszy i opluła ratownika medycznego. Służby podejrzewają, że była pod wpływem alkoholu lub narkotyków.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/sceny-jak-z-filmu-sensacyjnego-w-niemczech-w-roli-glownej-polka/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Sceny jak z filmu sensacyjnego w Niemczech. W roli głównej Polka"
+    },
+    {
+      "title": "Media: USA planują atak po wyborach. Biały Dom ostrzegł sojuszników",
+      "snippet": "USA poleciły krajom Zatoki Perskiej przygotowania do krótkiej, intensywnej kampanii wojskowej przeciwko Iranowi po przyszłotygodniowych wyborach - podał The Wall Street Journal. Operacja ma osłabić Teheran i zmusić go do negocjacji. Dziennik zaznaczył jednak, że prezydent Donald Trump nie podał jeszcze ostatecznej decyzji.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/media-usa-zwrocily-sie-do-panstw-arabskich-krotka-intensywna-kampanie-wojskowa/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Media: USA planują atak po wyborach. Biały Dom ostrzegł sojuszników"
+    },
+    {
+      "title": "Problemy ze Starlinkiem w Ukrainie. Kijów szuka zamiennika",
+      "snippet": "Ukraina i UE dążą do stworzenia niezależnej od Amerykanów sieci komunikacji satelitarnej - przekazał Axios. Według ekspertów cytowanych przez portal niedawne incydenty z ograniczeniami działania Starlinka spowodowały w Kijowie utratę zaufania do systemu.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/problemy-ze-starlinkiem-w-ukrainie-kijow-szuka-zamiennika/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Problemy ze Starlinkiem w Ukrainie. Kijów szuka zamiennika"
+    },
+    {
+      "title": "Kondolencje polityków po katastrofie w Hiszpanii. \"Polska łączy się w żałobie\"",
+      "snippet": "Po katastrofie kolejowej w Hiszpanii polscy i światowi politycy opublikowali kondolencje ze słowami wsparcia dla rodzin ofiar. Polska łączy się w żałobie z narodem hiszpańskim - napisał prezydent Karol Nawrocki. Wyrazy solidarności przekazali też m.in. premier Donald Tusk i minister Radosław Sikorski. Polskie MSZ przekazało, że według wstępnych ustaleń wśród ofiar nie ma Polaków.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-28/kondolencje-politykow-po-katastrofie-w-hiszpanii-polska-laczy-sie-w-zalobie/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kondolencje polityków po katastrofie w Hiszpanii. \"Polska łączy się w żałobie\""
+    },
+    {
+      "title": "Tommy Robinson uznany za winnego. Miał nękać dziennikarzy",
+      "snippet": "Brytyjski działacz antyislamski Stephen Yaxley-Lennon, lepiej znany jako Tommy Robinson, został w środę skazany za nękanie dwójki dziennikarzy podczas ogólnokrajowych zamieszek, do których doszło dwa lata temu.",
+      "link": "https://tvn24.pl/swiat/wielka-brytania-dzialacz-skrajnej-prawicy-tommy-robinson-uznany-za-winnego-za-nekanie-dziennikarzy-st9311208?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Zabójstwo w Tychach. Zatrzymano jedną osobę"
+      "title_pl": "Tommy Robinson uznany za winnego. Miał nękać dziennikarzy"
     },
     {
-      "title": "Przyczyny katastrofy kolejowej w Hiszpanii. Jest komunikat ministra transportu",
-      "snippet": "Jeden z pociągów otrzymał zgodę na kontynuowanie jazdy mimo czerwonego światła z powodu obecności drugiego składu na torach - poinformował hiszpański minister transportu Oscar Puente. Potwierdzono już 68 ofiar śmiertelnych katastrofy kolejowej w Hiszpanii.",
-      "link": "https://tvn24.pl/swiat/oficjalne-przyczyny-katastrofy-kolejowej-w-hiszpanii-tak-doszlo-do-zderzenia-pociagow-st9310677?source=rss",
+      "title": "Zderzenie pociągów w Hiszpanii. Co wiemy o katastrofie kolejowej",
+      "snippet": "Co najmniej 68 osób zginęło w środę, gdy hiszpański pociąg ekspresowy dużej prędkości uderzył w stojący skład. Jest to już druga w tym roku katastrofa kolejowa w Hiszpanii, a zarazem najbardziej tragiczny wypadek tego typu w Europie od 2013 roku. Oto, co wiemy o wypadku, do którego doszło pod Toledo.",
+      "link": "https://tvn24.pl/swiat/hiszpania-katastrofa-kolejowa-pod-toledo-co-wiemy-o-zderzeniu-pociagow-najwazniejsze-informacje-st9311188?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Przyczyny katastrofy kolejowej w Hiszpanii. Jest komunikat ministra transportu"
+      "title_pl": "Zderzenie pociągów w Hiszpanii. Co wiemy o katastrofie kolejowej"
     },
     {
-      "title": "Pogoda na Wszystkich Świętych 2026. Jaka jest prognoza na 1 listopada?",
-      "snippet": "Nadchodzące dni w pogodzie upłyną pod znakiem pochmurnej i mglistej aury. Bliżej dnia Wszystkich Świętych zwiększy się ryzyko słabych opadów. Gdzie można się ich spodziewać i ile stopni pokażą termometry 1 listopada? Sprawdź najnowszą prognozę.",
-      "link": "https://tvn24.pl/tvnmeteo/prognoza/pogoda-na-wszystkich-swietych-2026-kto-powinien-zabrac-na-cmentarz-parasol-st9306005?source=rss",
+      "title": "Katastrofa kolejowa, nowe ceny paliw, Izrael po wyborach",
+      "snippet": "W Hiszpanii doszło do katastrofy kolejowej, zginęło kilkadziesiąt osób. W Izraelu żaden z koalicyjnych bloków nie osiągnął samodzielnej większości w wyborach parlamentarnych. Orlen zawiadomił prokuraturę w sprawie Daniela Obajtka. Zobacz, co jeszcze warto wiedzieć w czwartek 29 października.",
+      "link": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-dzis-wiedziec-najwazniejsze-informacje-29-pazdziernika-2026-roku-st9311220?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Pogoda na Wszystkich Świętych 2026. Jaka jest prognoza na 1 listopada?"
+      "title_pl": "Katastrofa kolejowa, nowe ceny paliw, Izrael po wyborach"
     },
     {
-      "title": "Mercedes zmienia strategię. \"Nie ma scenariusza, w którym można odłożyć Chiny na bok\"",
-      "snippet": "Mercedes-Benz przygotowuje aktualizację strategii na 2030 rok i kolejne lata. Chiny nadal mają odgrywać w niej ważną rolę, choć niemiecki koncern chce ograniczyć zależność od zysków osiąganych na tym rynku. Szczegóły planu mają zostać przedstawione w przyszłym roku.",
-      "link": "https://tvn24.pl/biznes/moto/mercedes-szykuje-strategie-na-2030-rok-nie-ma-scenariusza-w-ktorym-mozna-odlozyc-chiny-na-bok-st9310581?source=rss",
+      "title": "\"Niewyobrażalna\" tragedia. Tak Hiszpanie zareagowali na apel",
+      "snippet": "Hiszpanie odpowiedzieli bardzo mocno na apel o oddawanie krwi - relacjonował z Madrytu reporter TVN24 Michał Gołębiowski. To w związku z katastrofą kolejową w prowincji Toledo. Jak mówił dziennikarz, partie polityczne mimo \"apogeum kampanii wyborczej\" zawiesiły agitacje na czas żałoby narodowej.",
+      "link": "https://tvn24.pl/swiat/niewyobrazalna-tragedia-tak-hiszpanie-zareagowali-na-apel-st9311135?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Mercedes zmienia strategię. \"Nie ma scenariusza, w którym można odłożyć Chiny na bok\""
+      "title_pl": "\"Niewyobrażalna\" tragedia. Tak Hiszpanie zareagowali na apel"
     },
     {
-      "title": "Atak w pociągu. Konduktor stracił dwa zęby, napastnik zatrzymany",
-      "snippet": "Policjanci z Wrocławia zatrzymali agresywnego pasażera, który uderzył kilka razy pięścią w twarz kierownika pociągu. Poszkodowany trafił do szpitala, a napastnik do policyjnego aresztu. 49-latkowi za atak na funkcjonariusza publicznego grozi nawet pięć lat więzienia.",
-      "link": "https://tvn24.pl/wroclaw/wroclaw-atak-w-pociagu-konduktor-stracil-dwa-zeby-st9310579?source=rss",
+      "title": "Henryk Pogorzelski z Nagrodą POLIN 2026. \"Od ponad dwóch dekad przywraca pamięć o żydowskich mieszkańcach\"",
+      "snippet": "Laureatem tegorocznej Nagrody POLIN został Henryk Pogorzelski, społecznik i regionalista, który od ponad dwóch dekad przywraca pamięć o żydowskich mieszkańcach Sokół w województwie podlaskim. Podczas uroczystości wręczono także wyróżnienia, które otrzymały Krystyna Szter, animatorka kultury, opiekunka dawnej synagogi w Barczewie w województwie warmińsko-mazurskim oraz Magdalena Czajka, edukatorka, aktywistka w Sieci Forum Dialogu i opiekunka cmentarza żydowskiego w Żelechowie w województwie mazo",
+      "link": "https://tvn24.pl/tvnwarszawa/srodmiescie/warszawa-60-zgloszen-do-nagrody-polin-pieciu-finalistow-kto-jest-w-finale-st9311055?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Atak w pociągu. Konduktor stracił dwa zęby, napastnik zatrzymany"
+      "title_pl": "Henryk Pogorzelski z Nagrodą POLIN 2026. \"Od ponad dwóch dekad przywraca pamięć o żydowskich mieszkańcach\""
     },
     {
-      "title": "Izrael bez większości po wyborach. Prezydent apeluje",
-      "snippet": "Wstępne wyniki wyborów w Izraelu wskazują na przewagę bloku premiera Benjamina Netanjahu nad opozycją, ale nie dają mu większości w Knesecie. To może oznaczać początek negocjacji koalicyjnych lub prób utworzenia rządu mniejszościowego. - Musimy zrobić wszystko, zwłaszcza po wczorajszym dniu, by uniknąć kolejnych wyborów - zaapelował prezydent Izraela Icchak Hercog.",
-      "link": "https://tvn24.pl/swiat/izrael-liczenie-glosow-po-wyborach-parlamentarnych-prezydent-apeluje-o-unikniecie-kolejnych-wyborow-st9310619?source=rss",
+      "title": "Media: Orlen składa zawiadomienie do prokuratury na Obajtka",
+      "snippet": "Orlen złożył zawiadomienie do prokuratury w sprawie Daniela Obajtka - podał dziennikarz śledczy Radia ZET Mariusz Gierszewski. Chodzi o wpis byłego prezesa państwowej spółki na platformie X, w którym załączone zostały zdjęcia firmowych dokumentów. Były prezes Orlenu skomentował te doniesienia.",
+      "link": "https://tvn24.pl/biznes/z-kraju/media-orlen-zlozyl-zawiadomienie-do-prokuratury-w-sprawie-ujawnienie-tajemnic-spolki-i-wynikow-audytu-przez-daniela-obajtka-st9311123?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Izrael bez większości po wyborach. Prezydent apeluje"
+      "title_pl": "Media: Orlen składa zawiadomienie do prokuratury na Obajtka"
     },
     {
-      "title": "Atak hakerski na komisję wyborczą w USA. Ważny system wyłączony",
-      "snippet": "Amerykańska Federalna Komisja Wyborcza (FEC) poinformowała, że na kilka dni przed wyborami do Kongresu jej systemy stały się celem hakerów - przekazał portal CNBC. Przez usterkę wyborcy stracili dostęp do informacji o finansowaniu kampanii.",
-      "link": "https://tvn24.pl/biznes/ze-swiata/usa-atak-hakerski-na-komisje-wyborcza-wazny-system-wylaczony-st9310548?source=rss",
+      "title": "Wiceminister obrony zaprosiła Sławomira Mentzena na ćwiczenia. Teraz komentuje: jest tchórzem",
+      "snippet": "Jeżeli ktoś nazywa naukę pierwszej pomocy cyrkiem, to znalazł się w jakiejś innej galaktyce - tak wiceminister obrony Magdalena Sobkowiak-Czarnecka odniosła się w \"Faktach po Faktach\" w TVN24 do komentarza Sławomira Mentzena.",
+      "link": "https://tvn24.pl/polska/magdalena-sobkowiak-czarnecka-o-slawomirze-mentzenie-jest-tchorzem-st9311107?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Atak hakerski na komisję wyborczą w USA. Ważny system wyłączony"
+      "title_pl": "Wiceminister obrony zaprosiła Sławomira Mentzena na ćwiczenia. Teraz komentuje: jest tchórzem"
     },
     {
-      "title": "Chciała sprzedać wózek, straciła ponad 24 tysiące złotych",
-      "snippet": "Chciała sprzedać wózek dziecięcy za ponad tysiąc złotych. Po zamieszczeniu ogłoszenia otrzymała wiadomość od \"firmy kurierskiej\", a do jej męża zadzwonił \"pracownik banku\". Straciła ponad 24 tysiące złotych.",
-      "link": "https://tvn24.pl/tvnwarszawa/okolice/siedlce-chciala-sprzedac-wozek-stracila-ponad-24-tysiace-st9310423?source=rss",
+      "title": "Uderzyła w okno, nie mogła dalej lecieć",
+      "snippet": "Strażnicy miejscy z Ekopatrolu zajęli się samicą krogulca, która uderzyła w okno balkonowe i nie mogła lecieć dalej. Trafiła do Ptasiego Azylu.",
+      "link": "https://tvn24.pl/tvnwarszawa/praga-poludnie/warszawa-samica-krogulca-uderzyla-w-okno-i-nie-mogla-dalej-leciec-pomogli-jej-straznicy-miejscy-st9311102?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Chciała sprzedać wózek, straciła ponad 24 tysiące złotych"
+      "title_pl": "Uderzyła w okno, nie mogła dalej lecieć"
     },
     {
-      "title": "Katastrofa kolejowa w Hiszpanii. Polscy politycy składają kondolencje",
-      "snippet": "Polscy politycy złożyli kondolencje bliskim ofiar katastrofy kolejowej w Hiszpanii. Zginęło w niej 68 osób. \"W tych bolesnych chwilach Polska pogrąża się w żałobie z narodem hiszpańskim\" - napisał prezydent Karol Nawrocki. Premier Donald Tusk oświadczył, że \"wszyscy Polacy jednoczą się z narodem hiszpańskim\".",
-      "link": "https://tvn24.pl/swiat/zderzenie-pociagow-w-hiszpanii-karol-nawrocki-donald-tusk-i-polscy-politycy-skladaja-kondolencje-st9310369?source=rss",
+      "title": "Uwaga na gęste mgły. Ostrzeżenia IMGW w 12 województwach",
+      "snippet": "IMGW wydał kolejne ostrzeżenia meteorologiczne przed gęstymi mgłami. W 12 województwach noc oraz czwartkowy poranek mają przynieść trudne warunki na drogach. Według synoptyków widzialność może być znacznie ograniczona.",
+      "link": "https://tvn24.pl/tvnmeteo/prognoza/uwaga-na-geste-mgly-ostrzezenia-imgw-w-12-wojewodztwach-st9308596?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Katastrofa kolejowa w Hiszpanii. Polscy politycy składają kondolencje"
+      "title_pl": "Uwaga na gęste mgły. Ostrzeżenia IMGW w 12 województwach"
     },
     {
-      "title": "Dylemat Berlina w sprawie nowych myśliwców. Na stole dwie opcje",
-      "snippet": "Niemcy stoją na rozdrożu w kwestii rozwoju swojego lotnictwa wojskowego. Pomysł skonstruowania samolotu myśliwskiego wspólnie z Francją skończył się porażką i Berlin musi wybrać pomiędzy dołączeniem do inicjatywy Wielkiej Brytanii, Włoch i Japonii a partycypacją w nowym przedsięwzięciu ze Szwecją i Hiszpanią. Decyzja wpłynie na dyplomację, sojusze i układ sił w Europie - analizuje serwis Politico.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-dylemat-berlina-w-sprawie-nowych-mysliwcow-na-stole-dwie-opc,nId,23565395",
-      "source_name": "Interia",
+      "title": "Fed zdecydował w sprawie stóp procentowych w USA",
+      "snippet": "Rezerwa Federalna zdecydowała o utrzymaniu stóp procentowych w USA na poziomie 3,75-4 procent. Decyzję podjęto stosunkiem głosów 10 do 2. Eksperci spodziewają się kolejnych podwyżek dopiero po zbliżających się wyborach połówkowych w USA. - Działania Fedu zaczynają przynosić efekty, ale jeszcze nie osiągnięto stabilności cen - przekazał prezes Fedu, Kevin Warsh, podczas środowej konferencji po posiedzeniu Rezerwy.",
+      "link": "https://tvn24.pl/biznes/ze-swiata/usa-fed-zdecydowal-w-sprawie-stop-procentowych-st9310728?source=rss",
+      "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Dylemat Berlina w sprawie nowych myśliwców. Na stole dwie opcje"
+      "title_pl": "Fed zdecydował w sprawie stóp procentowych w USA"
     },
     {
-      "title": "Miało dojść do sprzeczki, wskazał Polskę. Człowiek Zełenskiego zabrał głos",
-      "snippet": "- Nic takiego nie miało miejsca - tak szef kancelarii prezydenta Ukrainy Kyryło Budanow komentuje doniesienia o sprzeczce z wysłannikiem USA Stevem Witkoffem. Francuski dziennik \"Le Monde\" podawał, że propozycja Amerykanina tak zdenerwowała Budanowa, że \"z trudem powstrzymywał gniew\". - Naszym wzorem nie jest Białoruś, lecz Polska - miał powiedzieć.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-mialo-dojsc-do-sprzeczki-wskazal-polske-czlowiek-zelenskiego,nId,23565564",
-      "source_name": "Interia",
+      "title": "Nagrał stado żubrów wśród drzew",
+      "snippet": "Pan Antoni sfilmował stado żubrów w Puszczy Knyszyńskiej. Na nagraniu, które otrzymaliśmy na Kontakt24, można zobaczyć majestatyczne zwierzęta przechadzające się wśród drzew.",
+      "link": "https://tvn24.pl/tvnmeteo/polska/nagral-zubry-przechodzace-przez-puszcze-knyszynska-st9311032?source=rss",
+      "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Miało dojść do sprzeczki, wskazał Polskę. Człowiek Zełenskiego zabrał głos"
+      "title_pl": "Nagrał stado żubrów wśród drzew"
     },
     {
-      "title": "Krowy na wyspie otoczonej przez rekiny i krokodyle. \"Byliśmy w szoku\"",
-      "snippet": "Nie wiadomo, jakim udało im się przetrwać w wodzie pełnej krokodyli i rekinów, ale wygląda na to, że ta sztuka im się udała. Na niewielkiej australijskiej wyspie turyści natknęli się na krowy, które najpewniej kilka miesięcy wcześniej przyniosła tam powódź. Teraz lokalne władze szukają właścicieli zwierząt. Przetransportowanie ich z powrotem na stały ląd może się okazać bardzo trudne.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-duze-zwierzeta-na-tropikalnej-wyspie-mogla-je-przyniesc-fala,nId,23565534",
+      "title": "Vance napisał do szefa irańskich służb. Media: Na polecenie Trumpa",
+      "snippet": "Wiceprezydent USA J.D. Vance wysłał list do sekretarza irańskiej Najwyższej Rady Bezpieczeństwa Narodowego Mohsena Rezaeia - dowiedział się \"Wall Street Journal\". Według ustaleń dziennika ma to być próba wznowienia negocjacji pokojowych z Teheranem. Vance miał napisać do szefa irańskich służb na polecenie prezydenta Stanów Zjednoczonych Donalda Trumpa.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-vance-napisal-do-szefa-iranskich-sluzb-media-na-polecenie-tr,nId,23565659",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Krowy na wyspie otoczonej przez rekiny i krokodyle. \"Byliśmy w szoku\""
+      "title_pl": "Vance napisał do szefa irańskich służb. Media: Na polecenie Trumpa"
     },
     {
-      "title": "Makabryczne sceny w Poznaniu, nie żyje 52-latek. Ukrainiec usłyszał zarzut",
-      "snippet": "48-letni Ukrainiec usłyszał zarzut w związku ze śmiercią 52-latka w Poznaniu - informuje tamtejsza prokuratura. Do tragedii doszło na początku tygodnia. Wówczas na przejściu dla pieszych znaleziono mężczyznę z wyraźnymi obrażeniami.",
-      "link": "https://wydarzenia.interia.pl/wielkopolskie/news-makabryczne-sceny-w-poznaniu-nie-zyje-52-latek-ukrainiec-usl,nId,23565563",
+      "title": "Kulisy zwołania RBN. \"Prezydent będzie dociskał rząd\"",
+      "snippet": "Podczas posiedzenia Rady Bezpieczeństwa Narodowego prezydent będzie dociskał rząd, żeby powstały w Polsce amerykańskie bazy - mówi portalowi WP źródło w Pałacu Prezydenckim. RBN niczego konstruktywnego do dyskusji nie wniesie - kontruje osoba związana z rządem.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-kulisy-zwolania-rbn-prezydent-bedzie-dociskal-rzad,nId,23565661",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Makabryczne sceny w Poznaniu, nie żyje 52-latek. Ukrainiec usłyszał zarzut"
+      "title_pl": "Kulisy zwołania RBN. \"Prezydent będzie dociskał rząd\""
     },
     {
-      "title": "Podejrzane wiadomości do dyplomatów, Ukraina ostrzega. \"Powiadomcie\"",
-      "snippet": "Na krótko przed trójstronnymi rozmowami pokojowymi w Abu Zabi dyplomaci z krajów partnerskich Ukrainy otrzymują podejrzane wiadomości. Jak przekazał szef Służby Wywiadu Zagranicznego Rustem Umierow, są one wysyłane m.in. w jego imieniu. Wiadomości te mają na celu \"uzyskanie informacji na temat współpracy Ukrainy z jej partnerami\". Umierow zaapelował w związku z tym do sojuszników.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-podejrzane-wiadomosci-do-dyplomatow-ukraina-ostrzega-powiado,nId,23565521",
+      "title": "Czarzasty uderza w Nawrockiego. \"Dorośli mężczyźni to wiedzą\"",
+      "snippet": "Przed przeszłością się nie ucieknie, lepiej się z nią zmierzyć - stwierdził marszałek Sejmu Włodzimierz Czarzasty. W ten sposób odniósł się do sprawy procesu, jaki Karol Nawrocki wytoczył redakcji Onetu. Chodzi o tekst dotyczący przeszłości prezydenta i jego pracy w Grand Hotelu.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-czarzasty-uderza-w-nawrockiego-dorosli-mezczyzni-to-wiedza,nId,23565654",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Podejrzane wiadomości do dyplomatów, Ukraina ostrzega. \"Powiadomcie\""
+      "title_pl": "Czarzasty uderza w Nawrockiego. \"Dorośli mężczyźni to wiedzą\""
     },
     {
-      "title": "\"Nikt ich nie zaprosi do stołu negocjacyjnego\". Kreml drwi z Europejczyków",
-      "snippet": "Kreml twierdzi, że Europejczycy nie wezmą udziału w trójstronnych rozmowach na temat Ukrainy. - Mogą tam dotrzeć, jeśli kupią bilety, ale nikt ich nie zaprosi do stołu negocjacyjnego - powiedział doradca Władimira Putina, Jurij Uszakow. Wiceszef rosyjskiego MSZ Siergiej Riabkow uważa natomiast, że \"jest za wcześnie, by mówić o negocjacjach w Abu Zabi\".",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-jesli-kupia-bilety-kreml-wyklucza-liderow-europy-z-przelomow,nId,23565529",
+      "title": "Przełom po interwencji Melanii Trump, ujawnia kulisy. \"Putin bardzo chciał\"",
+      "snippet": "Władimir Putin \"bardzo chciał\", by Melania Trump pośredniczyła w negocjacjach w sprawie zawieszenia broni w okupowanych Oleszkach - twierdzi doradca pierwszej damy USA Marc Beckman. Według jego słów prezydent Rosji napisał list, w którym przekonywał, że żona Donalda Trumpa zostanie uznana za wyłączną pośredniczkę w rozmowach z Rosją. - Doskonale wiedzą, co robią - komentuje te działania były brytyjski dyplomata.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-przelom-po-interwencji-melanii-trump-ujawnia-kulisy-putin-ba,nId,23565632",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Nikt ich nie zaprosi do stołu negocjacyjnego\". Kreml drwi z Europejczyków"
+      "title_pl": "Przełom po interwencji Melanii Trump, ujawnia kulisy. \"Putin bardzo chciał\""
     },
     {
-      "title": "Przegrał wybory, zbiegł do USA. Ślady prowadzą do Białego Domu",
-      "snippet": "Flavio Bolsonaro wylądował w Miami w Stanach Zjednoczonych - poinformowały zagraniczne media. Senator opuścił Brazylię po przegranej w niedawnych wyborach prezydenckich. Media wskazywały, że w ucieczce pomóc mu mogła amerykańska administracja, w tym sekretarz stanu USA Marco Rubio. Wobec polityka toczy się śledztwo.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-przegral-wybory-zbiegl-do-usa-slady-prowadza-do-bialego-domu,nId,23565512",
+      "title": "Paraliż państwa, akcja hakerów. Skradziono dane jednej trzeciej populacji",
+      "snippet": "Hakerzy wykradli dane około 750 tys. obywateli Mołdawii - poinformowały tamtejsze władze. W wyniku ataku doszło do wstrzymania działania 82 serwisów państwowych i około 30 systemów informatycznych. Mołdawskie władze przyznały, że atak był możliwy z powodu licznych luk w zabezpieczeniach. Na ten moment nie wiadomo kto stoi za serią uderzeń. Pojawiły się jednak pewne przypuszczenia.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-paraliz-panstwa-akcja-hakerow-skradziono-dane-jednej-trzecie,nId,23565644",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Przegrał wybory, zbiegł do USA. Ślady prowadzą do Białego Domu"
+      "title_pl": "Paraliż państwa, akcja hakerów. Skradziono dane jednej trzeciej populacji"
     },
     {
-      "title": "\"Polski Rambo\". Wiceszef MON reaguje na zaskakujące słowa ambasadora USA",
-      "snippet": "Wiceminister MON Cezary Tomczyk został zapytany, jak czuje się jako \"polski Rambo\". To nawiązanie do słów ambasadora USA w Polsce Toma Rose'a, który mianem tego kultowego bohatera filmowego określił wiceministra obrony. Tomczyk stwierdził, że John Rambo to jedna z jego ulubionych postaci filmowych. - On zawsze walczył o dobre rzeczy - dodał.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-polski-rambo-wiceszef-mon-reaguje-na-zaskakujace-slowa-ambas,nId,23565495",
+      "title": "Flavio Bolsonaro po raz pierwszy zabrał głos. \"Polowanie na czarownice\"",
+      "snippet": "Flavio Bolsonaro potwierdził, że po przegranych wyborach prezydenckich udał się do USA. W mediach społecznościowych zamieścił list skierowany do \"brazylijskiego narodu\", w którym określił się mianem \"prezydenta-elekta\" Brazylii. Później pismo z sieci usunął i zastąpił je nowym, w którym nie nazywa już siebie \"prezydentem-elektem\", a \"przywódcą Brazylii\". - Mamy do czynienia z motywowanym politycznie polowaniem na czarownice - napisał Bolsonaro.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-flavio-bolsonaro-po-raz-pierwszy-zabral-glos-polowanie-na-cz,nId,23565649",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Polski Rambo\". Wiceszef MON reaguje na zaskakujące słowa ambasadora USA"
+      "title_pl": "Flavio Bolsonaro po raz pierwszy zabrał głos. \"Polowanie na czarownice\""
     },
     {
-      "title": "Ordynacja wyborcza musi ulec zmianie. PKW śle pismo do Czarzastego",
-      "snippet": "Przewodniczący Państwowej Komisji Wyborczej Sylwester Marciniak skierował do marszałka Sejmu pismo, w którym zawnioskował o modyfikację okręgów wyborczych i liczby wybieranych w nich posłów. \"Komisja zwraca uwagę, że aktualny podział na okręgi wyborcze określone w załącznikach do ustawy narusza przepisy Kodeksu wyborczego\" - napisał Marciniak. Projekt zmian ordynacji wyborczej zawetował prezydent.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-ordynacja-wyborcza-musi-ulec-zmianie-pkw-wyznaczyla-sejmowi,nId,23565501",
+      "title": "Niepokojące odkrycie ukraińskiego wywiadu. Wiadomo, co robią Rosjanie",
+      "snippet": "Rosja buduje w obwodzie rostowskim, w pobliżu okupowanego ukraińskiego obwodu ługańskiego, nowy poligon dla dronów - poinformował ukraiński wywiad. Gdy budowa zostanie zakończona, Rosjanie będą mogli wystrzeliwać z bazy nawet 100 dronów szturmowych dziennie.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-niepokojace-odkrycie-ukrainskiego-wywiadu-wiadomo-co-robia-r,nId,23565636",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Ordynacja wyborcza musi ulec zmianie. PKW śle pismo do Czarzastego"
+      "title_pl": "Niepokojące odkrycie ukraińskiego wywiadu. Wiadomo, co robią Rosjanie"
     },
     {
-      "title": "Zapytano Niemców o oszczędności. Wyniki badań wskazują na spory problem",
-      "snippet": "Co trzeci Niemiec nie byłby w stanie nagle wydać trzech tysięcy euro bez popadnięcia w kłopoty finansowe - wynika z badania instytutu Civey dotyczącego stanu oszczędności mieszkańców tego kraju. Problem z niewielkimi oszczędnościami lub ich brakiem dotyczy szczególnie młodych ludzi oraz rodzin z dziećmi.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-zapytano-niemcow-o-oszczednosci-wyniki-badan-wskazuja-na-spo,nId,23565532",
+      "title": "Polska przestaje chronić nieba sąsiada. Wcześniej niż zakładano",
+      "snippet": "Dzisiejszy dzień stanowi ważny kamień milowy dla Słowacji: od teraz chronimy nasze niebo samodzielnie, wykorzystując własne krajowe zdolności - ogłosił prezydent Peter Pellegrini. To dwa miesiące wcześniej niż zakładano. Słowakom do tej pory pomagali sojusznicy z Polski, Czech i Węgier.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-polska-przestaje-chronic-nieba-sasiada-wczesniej-niz-zaklada,nId,23565631",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Zapytano Niemców o oszczędności. Wyniki badań wskazują na spory problem"
+      "title_pl": "Polska przestaje chronić nieba sąsiada. Wcześniej niż zakładano"
+    },
+    {
+      "title": "Putin ma nowego sojusznika? \"To prawdziwy geniusz\"",
+      "snippet": "Elon Musk to geniusz - stwierdził prezydent Rosji Władimir Putin. Rosyjski przywódca pochwalił amerykańskiego miliardera chwilę po tym, gdy ten publicznie skrytykował prezydenta Ukrainy Wołodymyra Zełenskiego, a ukraińska armia tymczasowo straciła dostęp do systemu łączności Starshield.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-putin-ma-nowego-sojusznika-to-prawdziwy-geniusz,nId,23565613",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Putin ma nowego sojusznika? \"To prawdziwy geniusz\""
+    },
+    {
+      "title": "Zawieszenie broni w Oleszkach. Nowe informacje z Ukrainy. \"Ważny etap\"",
+      "snippet": "Ukraina i Rosja przestrzegają zawieszenia broni w Oleszkach - poinformował rzecznik praw człowieka Ukrainy Dmytro Łubinec. Jak przekazał, obecnie trwa rozminowywanie dróg prowadzących do miasta, by dostarczyć mieszkańcom pomoc i umożliwić im późniejszy wyjazd. Łubinec zaznaczył, że współpracuje ze swoją rosyjską odpowiedniczką, zwrócił też uwagę na udział Melanii Trump.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-zawieszenie-broni-w-oleszkach-nowe-informacje-z-ukrainy-wazn,nId,23565617",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Zawieszenie broni w Oleszkach. Nowe informacje z Ukrainy. \"Ważny etap\""
+    },
+    {
+      "title": "Erdogan zadzwonił do Trumpa ws. Ormuz i Ukrainy. \"Turcja jest gotowa\"",
+      "snippet": "Biuro prezydenta Turcji Recepa Tayyipa Erdogana poinformowało, że zadzwonił on do prezydenta Donalda Trumpa. Rozmowa przywódców dotyczyła cieśniny Ormuz, wojny w Ukrainie i konfliktu w Jemenie - podał Reuters.",
+      "link": "https://biznes.interia.pl/polityka/news-erdogan-rozmawial-z-trumpem-o-ukrainie-i-ormuz-turcja-jest-g,nId,23565641",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Erdogan zadzwonił do Trumpa ws. Ormuz i Ukrainy. \"Turcja jest gotowa\""
+    },
+    {
+      "title": "Stopy procentowe w USA. Fed podjął decyzję w kluczowej sprawie",
+      "snippet": "Rezerwa Federalna wydała dziś decyzję w kluczowej sprawie dla budżetów milionów mieszkańców USA. Chodzi o stopy procentowe. We wrześniu Fed podniósł je po raz pierwszy od 2023 roku.",
+      "link": "https://biznes.interia.pl/gospodarka/news-stopy-procentowe-w-usa-fed-podjal-decyzje-w-kluczowej-sprawi,nId,23565578",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Stopy procentowe w USA. Fed podjął decyzję w kluczowej sprawie"
+    },
+    {
+      "title": "Do Ukrainy popłyną miliardy. \"Wysyłamy Moskwie jasny sygnał\"",
+      "snippet": "Brytyjski minister finansów John Healey, ogłaszając w Izbie Gmin założenia budżetu, poinformował, że Wielka Brytania zapewni Ukrainie dodatkowe wsparcie finansowe w wysokości 10 mld funtów - przekazał Reuters. Przy czym większość środków zostanie przekazana w formie pożyczek i gwarancji eksportu.",
+      "link": "https://biznes.interia.pl/polityka/news-ogromna-kwota-poplynie-do-ukrainy-wysylamy-moskwie-jasny-syg,nId,23565604",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Do Ukrainy popłyną miliardy. \"Wysyłamy Moskwie jasny sygnał\""
+    },
+    {
+      "title": "Ułatwienia w rozliczaniu VAT. Jest podpis prezydenta Nawrockiego",
+      "snippet": "Kancelaria Prezydenta RP poinformowała, iż Karol Nawrocki podpisał nowelizację ustawy o VAT oraz niektórych innych ustaw. Jej celem jest uproszczenie obowiązków przedsiębiorców i ułatwienie im rozliczania podatku w handlu międzynarodowym.",
+      "link": "https://biznes.interia.pl/gospodarka/news-ulatwienia-w-rozliczaniu-vat-prezydent-nawrocki-podpisal-now,nId,23565591",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Ułatwienia w rozliczaniu VAT. Jest podpis prezydenta Nawrockiego"
     },
     {
       "title": "Iran pod presją militarną. Trump rozważa zmasowaną operację w listopadzie",
@@ -205,212 +389,124 @@
       "title_pl": "Blisko 1,3 mld zł na inwestycje zbrojeniowe. Na Śląsku ruszy nowa produkcja"
     },
     {
-      "title": "UOKiK stawia zarzuty za ceny wakacji. Na rezerwacji się nie kończyło",
-      "snippet": "Cena domku na wakacje miała być znana z góry, ale w Holiday Park & Resort do rachunku dochodziły kolejne obowiązkowe opłaty, a pełny koszt pobytu mógł wzrosnąć o ponad 1000 zł. UOKiK kwestionuje też zasady zmiany regulaminów przez spółkę.",
-      "link": "https://biznes.interia.pl/firma/news-ukryte-koszty-wakacji-pod-lupa-holiday-park-and-resort-z-zar,nId,23565367",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "UOKiK stawia zarzuty za ceny wakacji. Na rezerwacji się nie kończyło"
-    },
-    {
-      "title": "Nowe ceny paliw na czwartek. Tyle zapłacą kierowcy na stacjach",
-      "snippet": "W czwartek (29 października) na stacjach benzynowych obowiązywać będą nowe stawki. Ile będą kosztować benzyna 95, benzyna 98 i olej napędowy? Minister energii ogłosił maksymalne ceny paliw.",
-      "link": "https://biznes.interia.pl/gospodarka/news-ceny-paliw-w-czwartek-29-pazdziernika-znamy-stawki-na-stacja,nId,23565270",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Nowe ceny paliw na czwartek. Tyle zapłacą kierowcy na stacjach"
-    },
-    {
-      "title": "Natychmiastowa reakcja złotówki. Zmieniły się kursy walut zagranicznych",
-      "snippet": "Ile kosztuje euro, a ile dolar, funt i hrywna? Podajemy aktualne kursy walut zagranicznych należące do najczęściej wymienianych w Polsce. Poniżej podajemy wyrażone w złotówkach ceny walut zagranicznych oraz cenę za uncję złota.",
-      "link": "https://biznes.interia.pl/gospodarka/news-kursy-walut-tyle-dzis-kosztuje-dolar-a-tyle-placimy-za-euro,nId,23565343",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Natychmiastowa reakcja złotówki. Zmieniły się kursy walut zagranicznych"
-    },
-    {
-      "title": "Sejm ogranicza dostęp fiskusa do prywatnych rachunków bankowych Polaków",
-      "snippet": "Sejm zmienia podejście do kontroli bankowych. Urzędnicy stracą łatwy dostęp do historii naszych przelewów, chyba, że przedstawią formalne zarzuty. Nowe regulacje nie zabezpieczą jednak wszystkich Polaków.",
-      "link": "https://biznes.interia.pl/finanse/news-koniec-swobodnego-przeswietlania-kont-nowe-przepisy-ogranicz,nId,23565185",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Sejm ogranicza dostęp fiskusa do prywatnych rachunków bankowych Polaków"
-    },
-    {
-      "title": "Wielka Brytania obiecuje zwiększenie wydatków na obronę do 2030 r., ale unika trudnych pytań",
-      "snippet": "John Healey zobowiązał się przeznaczyć 3 proc. PKB na obronę kraju do 2030 r., ale odmówił podania, skąd pozyska na to środki.",
-      "link": "https://wiadomosci.onet.pl/politico/brytyjski-minister-obiecuje-3-proc-pkb-na-obrone-nie-podal-zrodel/t7zhs21",
+      "title": "Niespokojnie na ulicach Madrytu, Donald Trump mówi o wyborach w Brazylii. Podsumowanie nocy",
+      "snippet": "W środę wieczorem na ulicach Madrytu wybuchły zamieszki pomiędzy uczestnikami demonstracji odbywającej się po katastrofie kolejowej w Toledo a policją. Tymczasem Flavio Bolsonaro po ucieczce do USA ogłosił się brazylijskim przywódcą. Donald Trump określił wybory w Brazylii mianem \"dziwnych\". Oto podsumowanie najważniejszych wydarzeń nocy.",
+      "link": "https://wiadomosci.onet.pl/swiat/zamieszki-w-madrycie-trump-komentuje-wybory-w-brazylii-podsumowanie-nocy/d86rwqp",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Wielka Brytania obiecuje zwiększenie wydatków na obronę do 2030 r., ale unika trudnych pytań"
+      "title_pl": "Niespokojnie na ulicach Madrytu, Donald Trump mówi o wyborach w Brazylii. Podsumowanie nocy"
     },
     {
-      "title": "UE zamierza wycofać propozycję przyznania Kanadzie statusu \"członka stowarzyszonego\"",
-      "snippet": "Grupa państw, w tym Niemcy, Włochy, Grecja i Francja, sprzeciwiła się uwzględnieniu kwestii członkostwa stowarzyszonego we wspólnym oświadczeniu UE i Kanady.",
-      "link": "https://wiadomosci.onet.pl/politico/ue-wycofala-oferte-dla-kanady-niemcy-i-francja-zablokowaly-ten-zapis/4k2xft7",
+      "title": "Zielona Góra: jaka pogoda czeka nas 29.10.2026?",
+      "snippet": "Zielona Góra. Jaka pogoda będzie dziś w twoim mieście? Sprawdź prognozę w dniu 29.10.2026. Prezentujemy najnowsze przewidywania meteorologów. Województwo lubuskie - aktualna prognoza pogody.",
+      "link": "https://wiadomosci.onet.pl/lubuskie/zielona-gora-prognoza-pogody-w-dniu-29102026/skhmnjd",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "UE zamierza wycofać propozycję przyznania Kanadzie statusu \"członka stowarzyszonego\""
+      "title_pl": "Zielona Góra: jaka pogoda czeka nas 29.10.2026?"
     },
     {
-      "title": "USA, Ukraina i Rosja będą rozmawiać o pokoju. Bez udziału Europy",
-      "snippet": "Jurij Uszakow, doradca Władimira Putina ds. polityki zagranicznej, zapowiedział, że w kolejnej rundzie trójstronnych rozmów w sprawie Ukrainy nie wezmą udziału przedstawiciele Europy.",
-      "link": "https://wiadomosci.onet.pl/swiat/usa-ukraina-i-rosja-beda-rozmawiac-o-pokoju-bez-udzialu-europy/1dw7fs2",
+      "title": "Toruń. Sprawdź prognozę pogody w dniu 29.10.2026",
+      "snippet": "Prognoza pogody dla miasta Toruń. Co przyniesie aura w dniu 29.10.2026? Prezentujemy najnowsze przewidywania meteorologów. Prognoza pogody - województwo kujawsko-pomorskie. Czy warunki dziś pozwolą na spokojny spacer? Sprawdzamy.",
+      "link": "https://wiadomosci.onet.pl/kujawsko-pomorskie/torun-prognoza-pogody-w-dniu-29102026/vq6q27g",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "USA, Ukraina i Rosja będą rozmawiać o pokoju. Bez udziału Europy"
+      "title_pl": "Toruń. Sprawdź prognozę pogody w dniu 29.10.2026"
     },
     {
-      "title": "\"Stała na dziedzińcu cała w płomieniach\". Marysia marzyła o sztuce, zmarła po wybuchu na uczelni",
-      "snippet": "Marysia przyszła w niedzielę dokończyć swoją pracę. Była na pierwszym roku grafiki artystycznej, kochała sztukę. Kilkadziesiąt minut później stała na dziedzińcu Akademii Sztuki w Szczecinie, cała w płomieniach. Wykładowczyni próbowała ją ratować. Dziś odpowiada przed sądem, podobnie jak rektor uczelni. W tle są niesprawna wentylacja, prowizoryczny palnik i publiczna wypowiedź rektor sprzed tragedii: budynek nie spełnia norm BHP.",
-      "link": "https://wiadomosci.onet.pl/szczecin/wybuch-na-akademii-sztuki-w-szczecinie-wykladowczyni-zobaczylam-ze-marysia-plonie/554ktbv",
+      "title": "Olsztyn - jakiej pogody możemy się spodziewać 29.10.2026?",
+      "snippet": "Lekki wiatr, wysoka temperatura odczuwalna i nieznaczne zachmurzenie? Olsztyn 29.10.2026 - czy możemy liczyć na świetną pogodę? Czy powinniśmy oczekiwać opadów deszczu? Oto pogoda na dziś - sprawdź, czy warto wziąć parasol. Oto pogoda w mieście Olsztyn!",
+      "link": "https://wiadomosci.onet.pl/olsztyn/olsztyn-prognoza-pogody-w-dniu-29102026/7g591w6",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "\"Stała na dziedzińcu cała w płomieniach\". Marysia marzyła o sztuce, zmarła po wybuchu na uczelni"
+      "title_pl": "Olsztyn - jakiej pogody możemy się spodziewać 29.10.2026?"
     },
     {
-      "title": "Putin stwierdził, że świat zazdrości Rosji jej technologii. Złożył propozycję dla Afryki",
-      "snippet": "— Rosja osiągnęła imponujące wyniki w rozwoju zaawansowanych technologii, a inne kraje dążą do dogonienia i skopiowania rosyjskich osiągnięć — powiedział Władimir Putin na forum gospodarczym \"Rosja–Afryka\".",
-      "link": "https://wiadomosci.onet.pl/swiat/putin-stwierdzil-ze-swiat-zazdrosci-rosji-jej-technologii-zlozyl-propozycje-dla/sfyebt9",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Putin stwierdził, że świat zazdrości Rosji jej technologii. Złożył propozycję dla Afryki"
-    },
-    {
-      "title": "Emilia planowała zabójstwo dwóch nauczycielek. 17-latka trafiła do aresztu",
-      "snippet": "Z nożem ukrytym w plecaku przyszła do szkoły w powiecie żnińskim (woj. kujawsko-pomorskie). Jak ustaliła prokuratura, 17-letnia Emilia G. planowała zabicie dwóch nauczycielek. Została zatrzymana przez policję i decyzją sądu trafiła na trzy miesiące do aresztu.",
-      "link": "https://wiadomosci.onet.pl/kujawsko-pomorskie/emilia-planowala-zabic-nauczycielki-miala-przygotowane-dwa-noze/3je7w38",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Emilia planowała zabójstwo dwóch nauczycielek. 17-latka trafiła do aresztu"
-    },
-    {
-      "title": "Absurdalne zachowania premiera Czech poza kamerami. Znamy kulisy",
-      "snippet": "Andrej Babisz przemawia do podwładnych wulgarnym językiem, ostro atakuje europejskich polityków, a jego sposób myślenia coraz bardziej przesuwa się w stronę teorii spiskowych.",
-      "link": "https://wiadomosci.onet.pl/swiat/wulgaryzmy-wiara-w-spisek-i-ataki-na-ue-co-sie-dzieje-z-premierem-czech/dytrd8b",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Absurdalne zachowania premiera Czech poza kamerami. Znamy kulisy"
-    },
-    {
-      "title": "Zaskakujące słowa Władimira Putina o Elonie Musku. \"Doprawdy geniusz\"",
-      "snippet": "Władimir Putin odniósł się do działalności Elona Muska podczas prezentacji rosyjskich technologii kosmicznych. — Elon Musk to geniusz, doprawdy geniusz — powiedział rosyjski przywódca.",
-      "link": "https://wiadomosci.onet.pl/swiat/zaskakujace-slowa-wladimira-putina-o-elonie-musku-doprawdy-geniusz/261gemt",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Zaskakujące słowa Władimira Putina o Elonie Musku. \"Doprawdy geniusz\""
-    },
-    {
-      "title": "Zbigniew Komosa ma przeprosić Jarosława Kaczyńskiego. Jest decyzja sądu",
-      "snippet": "Sąd zdecydował, że Zbigniew Komosa nie może publicznie prezentować treści sugerujących współodpowiedzialność Lecha Kaczyńskiego za katastrofę smoleńską oraz nakazał przeprosiny wobec Jarosława Kaczyńskiego. Aktywista już zapowiedział apelację.",
-      "link": "https://wiadomosci.onet.pl/kraj/zbigniew-komosa-ma-przeprosic-jaroslawa-kaczynskiego-bedzie-apelacja/3q5dj5j",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Zbigniew Komosa ma przeprosić Jarosława Kaczyńskiego. Jest decyzja sądu"
-    },
-    {
-      "title": "Bogucki broni Nawrockiego i punktuje zeznania. \"Brak jasnych konkretów\"",
-      "snippet": "Szef Kancelarii Prezydenta RP Zbigniew Bogucki ocenił w środę, że zeznania kobiety, która pracowała z Karolem Nawrockim w ochronie sopockiego hotelu dwadzieścia lat temu, są \"bardzo mało wiarygodne\". Nie ma konkretów, jest próba przerzucenia winy – powiedział.",
-      "link": "https://wiadomosci.wp.pl/bogucki-broni-nawrockiego-i-punktuje-zeznania-brak-jasnych-konkretow-7344955085838816a",
+      "title": "Działo się w nocy. W Hiszpanii zamieszki, na Alasce skandal przed wyborami",
+      "snippet": "W Madrycie doszło do zamieszek. Policja użyła gazu łzawiącego, aby rozpędzić demonstrację po tragicznej katastrofie kolejowej. W Stanach Zjednoczonych kolejny emocjonujący dzień kampanii wyborczej. Wybuchł skandal ws. głosowania na Alasce, gdzie zgłoszono dwóch kandydatów o takim samym nazwisku. Sprawdź, co jeszcze działo się w nocy ze środy na czwartek.",
+      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-w-hiszpanii-zamieszki-na-alasce-skandal-przed-wyborami-7345146248362432a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Bogucki broni Nawrockiego i punktuje zeznania. \"Brak jasnych konkretów\""
+      "title_pl": "Działo się w nocy. W Hiszpanii zamieszki, na Alasce skandal przed wyborami"
     },
     {
-      "title": "Jasny komunikat Kremla. Europa wykluczona z trójstronnych rozmów",
-      "snippet": "Przedstawiciele państw europejskich nie dołączą do kolejnej rundy rozmów Rosji, Stanów Zjednoczonych i Ukrainy dotyczących zakończenia wojny. Jak podała agencja Interfax, takie stanowisko przekazał Jurij Uszakow, doradca Władimira Putina ds. polityki zagranicznej.",
-      "link": "https://wiadomosci.wp.pl/jasny-komunikat-kremla-europa-wykluczona-z-trojstronnych-rozmow-7344951841618368a",
+      "title": "Ławrow leci do USA. Kongresmen republikanów: \"nie powinien mieć prawa wjazdu\"",
+      "snippet": "Szef rosyjskiego MSZ Siergiej Ławrow nie powinien mieć prawa wjazdu do Stanów Zjednoczonych – ocenił republikański kongresmen Don Bacon. Rosyjski minister ma wziąć udział w piątkowym i sobotnim spotkaniu ministrów spraw zagranicznych G20 w Atlancie.",
+      "link": "https://wiadomosci.wp.pl/lawrow-leci-do-usa-kongresmen-republikanow-nie-powinien-miec-prawa-wjazdu-7345143236225472a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Jasny komunikat Kremla. Europa wykluczona z trójstronnych rozmów"
+      "title_pl": "Ławrow leci do USA. Kongresmen republikanów: \"nie powinien mieć prawa wjazdu\""
     },
     {
-      "title": "Kaczyński triumfuje. Znany aktywista ma przeprosić",
-      "snippet": "Jarosław Kaczyński wygrał przed sądem ze Zbigniewem Komosą. Sprawa dotyczyła wieńców składanych przez aktywistę podczas miesięcznic smoleńskich oraz sugestii odnoszących się do roli Lecha Kaczyńskiego w katastrofie z 10 kwietnia 2010 roku.",
-      "link": "https://wiadomosci.wp.pl/kaczynski-triumfuje-znany-aktywista-ma-przeprosic-7344947013794272a",
+      "title": "\"WSJ\": Porozumienie Trumpa z Putinem nie obniżyło cen diesla w USA",
+      "snippet": "Ceny oleju napędowego w Stanach Zjednoczonych idą w górę, mimo niedawnego ogłoszenia porozumienia między prezydentem Donaldem Trumpem a Rosją w sprawie dostaw paliwa. Jak wynika z danych Amerykańskiego Stowarzyszenia Motoryzacyjnego, średnia cena galona diesla osiągnęła w środę 6,35 dolara, co oznacza wzrost o 7 centów w porównaniu do dnia ogłoszenia umowy – relacjonuje \"The Wall Street Journal\".",
+      "link": "https://wiadomosci.wp.pl/wsj-porozumienie-trumpa-z-putinem-nie-obnizylo-cen-diesla-w-usa-7345124428163520a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Kaczyński triumfuje. Znany aktywista ma przeprosić"
+      "title_pl": "\"WSJ\": Porozumienie Trumpa z Putinem nie obniżyło cen diesla w USA"
     },
     {
-      "title": "Artem S. w areszcie. Jest podejrzany o dywersję w Rumunii",
-      "snippet": "Obywatel Ukrainy Artem S. podejrzany o udział w przygotowaniu aktów dywersji, których celem było podpalenie zakładu zbrojeniowego w Rumunii na siedem dni trafił do aresztu - poinformowała w środę Prokuratura Okręgowa w Warszawie.",
-      "link": "https://wiadomosci.wp.pl/artem-s-w-areszcie-jest-podejrzany-o-dywersje-w-rumunii-7344949020150240a",
+      "title": "Norwegowie prostują temat rozmowy z Putinem. \"To nieprawda\"",
+      "snippet": "Premier Norwegii Jonas Gahr Støre zakwestionował opis rozmowy z Władimirem Putinem, według którego rosyjski przywódca miał niemal cały czas mówić o średniowiecznej historii Słowian. Oslo poprosiło \"Financial Times\" o korektę artykułu na ten temat.",
+      "link": "https://wiadomosci.wp.pl/norwegowie-prostuja-temat-rozmowy-z-putinem-to-nieprawda-7345121064618464a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Artem S. w areszcie. Jest podejrzany o dywersję w Rumunii"
+      "title_pl": "Norwegowie prostują temat rozmowy z Putinem. \"To nieprawda\""
     },
     {
-      "title": "Wyborczy pat w Izraelu. Kilka scenariuszy, w co najmniej dwóch jest wojna",
-      "snippet": "Według wstępnych wyników i sondaży exit poll żaden z głównych bloków nie uzyskał jednoznacznej większości parlamentarnej. Przeliczono ok. 84 proc. głosów. Nikt nie ma większości, co sprawia, że sytuacja w Izraelu (a tym samym w regionie) mocno się komplikuje. Analitycy wskazują na kolejne wybory oraz na możliwość eskalacji konfliktu z Iranem.",
-      "link": "https://wiadomosci.wp.pl/wyborczy-pat-w-izraelu-kilka-scenariuszy-w-co-najmniej-dwoch-jest-wojna-7344884196079648a",
+      "title": "Apel Wałęsy do Amerykanów. \"Nie wiemy, po której stronie stoicie\"",
+      "snippet": "– Pomóżcie mi zrozumieć, co się dzieje w waszym kraju. Zawsze przewodziliście światu, a dziś nie wiemy, po której stronie stoją Stany Zjednoczone – mówił Lech Wałęsa w wystąpieniu podczas spotkania na George Washington University.",
+      "link": "https://wiadomosci.wp.pl/apel-walesy-do-amerykanow-nie-wiemy-po-ktorej-stronie-stoicie-7345107796814272a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Wyborczy pat w Izraelu. Kilka scenariuszy, w co najmniej dwóch jest wojna"
+      "title_pl": "Apel Wałęsy do Amerykanów. \"Nie wiemy, po której stronie stoicie\""
     },
     {
-      "title": "Antykryzysowa aplikacja opóźniona. MSWiA zmienia termin uruchomienia",
-      "snippet": "Co z aplikacją mobilną, która ma ostrzegać obywateli o sytuacjach nadzwyczajnych i kryzysowych w czasie rzeczywistym? Miała być dostępna jeszcze w październiku – zapowiadał rząd. Tak się jednak nie stanie.",
-      "link": "https://wiadomosci.wp.pl/antykryzysowa-aplikacja-opozniona-mswia-zmienia-termin-uruchomienia-7344925731281376a",
+      "title": "Arlinda zabita siekierą przez szwagra. Masowy protest w Kosowie",
+      "snippet": "Tysiące osób wyszły w środę na ulice Prisztiny po zabójstwie 49-letniej Arlindy Zekaj. Kobieta wcześniej alarmowała władze, że grozi jej śmierć, a trzy dni przed tragedią pisała do prokuratury o braku skutecznej pomocy. Premier Kosowa Albin Kurti mówił o systemowych zaniedbaniach instytucji.",
+      "link": "https://wiadomosci.wp.pl/arlinda-zabita-siekiera-przez-szwagra-masowy-protest-w-kosowie-7345088435210688a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Antykryzysowa aplikacja opóźniona. MSWiA zmienia termin uruchomienia"
+      "title_pl": "Arlinda zabita siekierą przez szwagra. Masowy protest w Kosowie"
     },
     {
-      "title": "Są wstępne ustalenia. Władze Hiszpanii ujawniają przyczynę katastrofy",
-      "snippet": "Hiszpański minister transportu Oscar Puente poinformował, że przyczyną zderzenia pociągów, w wyniku którego zginęły w środę w Hiszpanii co najmniej 68 osób, mogła być awaria komunikacji komputerowej.",
-      "link": "https://wiadomosci.wp.pl/sa-wstepne-ustalenia-wladze-hiszpanii-ujawniaja-przyczyne-katastrofy-7344946043689408a",
+      "title": "\"Buzuje w nim chęć zemsty\". Miller kreśli plan Kaczyńskiego i zapowiada wielki powrót Ziobry",
+      "snippet": "Co wydarzy się w Polsce, jeśli PiS odzyska władzę? Były premier Leszek Miller w rozmowie z Mateuszem Ratajczakiem w programie \"Teraz WP\" kreśli bezwzględny scenariusz politycznego rewanżu. Zdaniem polityka Jarosław Kaczyński jest napędzany żądzą odwetu, a kluczową rolę w nowym układzie odegra Zbigniew Ziobro, który z dnia na dzień miałby powrócić do resortu sprawiedliwości, by wsadzać oponentów za kraty. Miller ujawnia też kulisy brutalnej walki o większość w Sejmie, w której Donald Tusk byłby g",
+      "link": "https://wiadomosci.wp.pl/teraz-wp/buzuje-w-nim-chec-zemsty-miller-kresli-plan-kaczynskiego-i-zapowiada-wielki-powrot-ziobry-7344977961900480v",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Są wstępne ustalenia. Władze Hiszpanii ujawniają przyczynę katastrofy"
+      "title_pl": "\"Buzuje w nim chęć zemsty\". Miller kreśli plan Kaczyńskiego i zapowiada wielki powrót Ziobry"
     },
     {
-      "title": "Prezydent Izraela chce zatrzymać wyborczą karuzelę. \"Musimy zrobić wszystko\"",
-      "snippet": "Prezydent Izraela Icchak Herzog wezwał partie polityczne do podjęcia działań, które pozwolą uniknąć kolejnych wyborów. Po nierozstrzygniętym głosowaniu parlamentarnym to on wskaże polityka z największymi szansami na utworzenie rządu. Izraelskie media odczytują apel jako sygnał dążenia do koalicji jedności narodowej.",
-      "link": "https://wiadomosci.wp.pl/prezydent-izraela-chce-zatrzymac-wyborcza-karuzele-musimy-zrobic-wszystko-7344939767634400a",
+      "title": "Znany brytyjski działacz prawicowy winny nękania dziennikarzy",
+      "snippet": "Tommy Robinson, brytyjski działacz skrajnej prawicy, został uznany za winnego nękania dwóch dziennikarzy tabloidu \"Daily Mail\". Ława przysięgłych stwierdziła, że aktywista próbował ich zastraszyć i wynajął w tym celu prywatnych detektywów. Wyrok zapadnie 16 grudnia.",
+      "link": "https://wiadomosci.wp.pl/znany-brytyjski-dzialacz-prawicowy-winny-nekania-dziennikarzy-7345079921973696a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Prezydent Izraela chce zatrzymać wyborczą karuzelę. \"Musimy zrobić wszystko\""
+      "title_pl": "Znany brytyjski działacz prawicowy winny nękania dziennikarzy"
     },
     {
-      "title": "To miasto ma dość. Chcą skończyć z tą cywilizacyjną plagą",
-      "snippet": "Władze Amsterdamu analizują możliwość całkowitego zakazania jednorazowych kubków, pojemników na dania na wynos i innych opakowań. Miejskie szacunki wskazują, że tego typu odpady odpowiadają za ok. 30 proc. wszystkich śmieci w stolicy Holandii.",
-      "link": "https://wiadomosci.wp.pl/to-miasto-ma-dosc-chca-skonczyc-z-ta-cywilizacyjna-plaga-7344942594447840a",
+      "title": "Alkohol w Sejmie? Miller: Zawsze w polityce się piło",
+      "snippet": "Czy w polskiej polityce istnieje problem alkoholowy? Były premier Leszek Miller w programie \"Teraz WP\" prowadzonym przez Mateusza Ratajczaka odsłonił kulisy sejmowego życia towarzyskiego. Polityk bez ogródek opowiedział o dawnym biesiadowaniu ponad podziałami partyjnymi, wskazał, kto przy kieliszku był absolutnym mistrzem, a kogo trunki szybko pokonywały. Wspomniał też wspólny lot z Lechem Kaczyńskim.",
+      "link": "https://wiadomosci.wp.pl/alkohol-w-sejmie-miller-zawsze-w-polityce-sie-pilo-7345040179454529v",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "To miasto ma dość. Chcą skończyć z tą cywilizacyjną plagą"
+      "title_pl": "Alkohol w Sejmie? Miller: Zawsze w polityce się piło"
     },
     {
-      "title": "Burza po ustaleniach WP. Politycy zabrali głos",
-      "snippet": "Prokuratura zabezpieczyła telefon dyrektora szpitala, który kontaktował się z dziennikarzami Wirtualnej Polski. Działania śledczych w sprawie ujawnienia informacji o zabiegu syna senatora Tomasza Lenza wywołały kontrowersje wśród internautów, dziennikarzy oraz polityków. - Bardzo mi przykro, panie redaktorze, ale na własnej skórze przekonuje się teraz, czym jest ta władza - przyznała Anita Czerwińska z Prawa i Sprawiedliwości.",
-      "link": "https://wiadomosci.wp.pl/burza-po-ustaleniach-wp-politycy-zabrali-glos-7344935650067009v",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Burza po ustaleniach WP. Politycy zabrali głos"
-    },
-    {
-      "title": "Zmiana pogody w listopadzie. Nocne przymrozki codziennością",
-      "snippet": "Wraz z początkiem listopada nad Polskę wkroczy zimniejsze powietrze, a w godzinach nocnych termometry w wielu zakątkach kraju pokażą wartości ujemne. Spadki do zera dotkną niziny, natomiast w rejonach podgórskich słupki rtęci spadną nawet do -3 st. C. Zobacz, w których województwach nocny mróz da się we znaki najmocniej.",
-      "link": "https://wiadomosci.wp.pl/zmiana-pogody-w-listopadzie-nocne-przymrozki-codziennoscia-7344854332920897v",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Zmiana pogody w listopadzie. Nocne przymrozki codziennością"
-    },
-    {
-      "title": "Spór o ambasadorów. Przydacz uderza w Sikorskiego. Jest reakcja MSZ",
-      "snippet": "Prezydencki minister Marcin Przydacz napisał w środę na platformie X, że to Donald Tusk zablokował porozumienie między prezydentem a szefem MSZ ws. ambasadorów. Jego zdaniem Sikorski został \"upokorzony\" przez swojego szefa, więc teraz odreagowuje \"chamstwem\". Na wpis ten zareagował rzecznik MSZ.",
-      "link": "https://wiadomosci.wp.pl/spor-o-ambasadorow-przydacz-uderza-w-sikorskiego-jest-reakcja-msz-7344933585000928a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Spór o ambasadorów. Przydacz uderza w Sikorskiego. Jest reakcja MSZ"
-    },
-    {
-      "title": "US chooses Poland to host service facility for Patriot missiles",
-      "snippet": "Poland says it beat rival bids from Germany, the Netherlands and Norway.",
-      "link": "https://notesfrompoland.com/2026/10/27/us-chooses-poland-to-host-service-facility-for-patriot-missiles/",
+      "title": "Turkish engineer creates live 3D pixel map of adopted hometown Warsaw",
+      "snippet": "The map features almost 200,000 buildings, moving trams that match their real-life schedules and live weather conditions.",
+      "link": "https://notesfrompoland.com/2026/10/28/turkish-engineer-creates-live-3d-pixel-map-of-adopted-hometown-warsaw/",
       "source_name": "Notes from Poland",
       "lang": "en",
-      "title_pl": "USA wybrały Polskę na gospodarza centrum serwisowego pocisków Patriot"
+      "title_pl": "Turecki inżynier tworzy mapę pikselową 3D na żywo swojego przybranego miasta rodzinnego, Warszawy"
+    },
+    {
+      "title": "\"Groszowa\" rewolucja podatkowa? Niewielu skorzysta z reformy PIT",
+      "snippet": "Reforma PIT ma przynieść podatnikom nawet 3,6 tys. zł rocznie. By jednak tyle zyskać, trzeba zarabiać naprawdę sporo. Osoba z niską lub przeciętną pensją nie zyska na zmianie nic. Jak tłumaczy Piotr Juszczyk z InFaktu, koszt zmian poniosą m.in. małe firmy wypychane z ryczałtu, które mogą zapłacić blisko 80 tys. zł więcej.",
+      "link": "https://www.money.pl/podatki/groszowa-rewolucja-podatkowa-niewielu-skorzysta-z-reformy-pit-7344875272280160a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "\"Groszowa\" rewolucja podatkowa? Niewielu skorzysta z reformy PIT"
     },
     {
       "title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 28.10.2026",
@@ -421,20 +517,20 @@
       "title_pl": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 28.10.2026"
     },
     {
-      "title": "Senat zdecydował ws. zmian w podatkach. Odrzucił rewolucyjne poprawki Kowalskiego i Petru",
-      "snippet": "Senat we wtorek zagłosował za przywróceniem podwyżki CIT dla największych firm do 22 proc. oraz likwidacją corocznej waloryzacji progów podatkowych. Teraz nowelizacja wróci do Sejmu, a ostatecznie o jej losie zdecyduje prezydent Karol Nawrocki.",
-      "link": "https://www.money.pl/podatki/senat-zdecydowal-ws-kluczowych-zmian-w-podatkach-7344647488636960a.html",
-      "source_name": "Money.pl",
+      "title": "Świetna passa banków przeciwwagą dla spadków m.in. Orlenu, Dino, CD Projektu",
+      "snippet": "Warszawski parkiet zakończył środowe notowania na nieznacznych plusach zdradzając wyczekiwanie inwestorów na wieczorny komunikat amerykańskiej Rezerwy Federalnej. Rajd sektora bankowego zderzył się z potężną wyprzedażą Orlenu, energetyki czy Dino. Indeks średnich spółek w ciągu dnia wyznaczył nowy historyczny szczyt, ale zaraz z niego zawrócił i ostatecznie sesję skończył pod kreską.",
+      "link": "https://www.bankier.pl/wiadomosc/Swietna-passa-bankow-przeciwwaga-dla-spadkow-m-in-Orlenu-Dino-CD-Projektu-9219851.html",
+      "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Senat zdecydował ws. zmian w podatkach. Odrzucił rewolucyjne poprawki Kowalskiego i Petru"
+      "title_pl": "Świetna passa banków przeciwwagą dla spadków m.in. Orlenu, Dino, CD Projektu"
     },
     {
-      "title": "Mniej obowiązków przy wchodzeniu na giełdę. Rząd przyjął projekt",
-      "snippet": "Rada Ministrów przyjęła we wtorek projekt, który zakłada ograniczenie formalności związanych z pozyskiwaniem kapitału przez firmy wchodzące na giełdę, a także uproszczenie pewnych obowiązków związanych z wprowadzaniem papierów wartościowych do obrotu.",
-      "link": "https://www.money.pl/gielda/mniej-obowiazkow-przy-wchodzeniu-na-gielde-rzad-przyjal-projekt-7344631526430752a.html",
-      "source_name": "Money.pl",
+      "title": "Zysk XTB wystrzelił o 301 proc. Broker pokazał wstępne wyniki",
+      "snippet": "XTB szacuje, że w III kw. 2026 r. miało 213,7 mln zł zysku netto, a konsensus PAP Biznes zakładał zysk netto na poziomie 185,4 mln zł. Skonsolidowane przychody osiągnęły poziom 623,3 mln zł, wobec konsensusu 631,1 mln zł.",
+      "link": "https://www.bankier.pl/wiadomosc/XTB-szacuje-ze-w-III-kw-2026-r-mialo-213-7-mln-zl-zysku-netto-powyzej-konsensusu-9219869.html",
+      "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Mniej obowiązków przy wchodzeniu na giełdę. Rząd przyjął projekt"
+      "title_pl": "Zysk XTB wystrzelił o 301 proc. Broker pokazał wstępne wyniki"
     },
     {
       "title": "Chcesz być miłym szefem? Znany inwestor: To prosty przepis na zawał i straty w firmie",
@@ -445,14 +541,6 @@
       "title_pl": "Chcesz być miłym szefem? Znany inwestor: To prosty przepis na zawał i straty w firmie"
     },
     {
-      "title": "Bałtyk szykuje się na kolejną farmę wiatrową. Pierwsze fundamenty już w Polsce",
-      "snippet": "Pierwsze monopale, czyli fundamenty morskiej farmy wiatrowej BC-Wind dotarły do portu w Świnoujściu – poinformowała spółka Ocean Winds, która realizuje inwestycję. To początek przygotowań logistycznych do instalacji fundamentów na Bałtyku.",
-      "link": "https://www.bankier.pl/wiadomosc/Baltyk-szykuje-sie-na-kolejna-farme-wiatrowa-Pierwsze-fundamenty-juz-w-Polsce-9219761.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Bałtyk szykuje się na kolejną farmę wiatrową. Pierwsze fundamenty już w Polsce"
-    },
-    {
       "title": "Rosja, USA i Ukraina przy stole. Europejczycy nie zostali zaproszeni",
       "snippet": "Przedstawiciele państw europejskich nie wezmą udziału w następnej rundzie rozmów z udziałem Rosji, Stanów Zjednoczonych i Ukrainy w sprawie zakończenia wojny – poinformowała w środę agencja Interfax, powołując się na doradcę Władimira Putina ds. polityki zagranicznej Jurija Uszakowa.",
       "link": "https://www.bankier.pl/wiadomosc/Rosja-USA-i-Ukraina-przy-stole-Europejczycy-nie-zostali-zaproszeni-9219798.html",
@@ -461,100 +549,28 @@
       "title_pl": "Rosja, USA i Ukraina przy stole. Europejczycy nie zostali zaproszeni"
     },
     {
-      "title": "Tragedia w Hiszpanii: zderzyły się dla pociągi, wagony runęły ze skarpy",
-      "snippet": "Co najmniej 64 osoby zginęły, a około 80 zostało rannych w środę w wyniku zderzenia się dwóch pociągów pasażerskich w prowincji Toledo w środkowej Hiszpanii – przekazał szef władz wspólnoty autonomicznej Kastylia-La Mancha Emiliano Garcia-Page, cytowany przez EFE. Bilans ofiar może wzrosnąć - dodał.",
-      "link": "https://www.bankier.pl/wiadomosc/Tragedia-w-Hiszpanii-zderzyly-sie-dla-pociagi-wagony-runely-ze-skarpy-9219557.html",
+      "title": "Skrócony czas pracy. Firmy z pilotażu ujawniły pierwsze wnioski",
+      "snippet": "Firmy biorące udział w pilotażu skróconego czasu pracy nie odnotowały dotychczas negatywnych zmian w funkcjonowaniu, zachowują stabilną sytuację finansową i terminowość, zwracają jednak uwagę na wyzwania związane z organizacją czasu pracy w nowej formule - podał w komunikacie resort pracy.",
+      "link": "https://www.bankier.pl/wiadomosc/Skrocony-czas-pracy-Firmy-z-pilotazu-ujawnily-pierwsze-wnioski-9219815.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Tragedia w Hiszpanii: zderzyły się dla pociągi, wagony runęły ze skarpy"
+      "title_pl": "Skrócony czas pracy. Firmy z pilotażu ujawniły pierwsze wnioski"
     },
     {
-      "title": "Dawne zakłady Rafako zmienią się w fabrykę dla wojska. Inwestycje za 1,3 mld zł",
-      "snippet": "Decyzje o wsparciu inwestycji spółek Polskiej Grupy Zbrojeniowej: Jelcza, Rosomaka i Bumaru-Łabędy o łącznej wartości blisko 1,3 mld zł ogłoszono w środę w Nowej Fabryce Jelcz/Rosomak w Raciborzu. Jak przekazał minister finansów i gospodarki Andrzej Domański, łączne wsparcie tych inwestycji wyliczono na 386 mln zł",
-      "link": "https://www.bankier.pl/wiadomosc/Dawne-zaklady-Rafako-zmienia-sie-w-fabryke-dla-wojska-Inwestycje-za-1-3-mld-zl-9219637.html",
+      "title": "Vučić miał szykować zamach stanu. Kto go odwiódł od tego pomysłu?",
+      "snippet": "Były prezydent Serbii Aleksandar Vuczić, który przegrał w niedzielę wybory parlamentarne ze wspieraną przez studentów listą wyborczą, był gotowy użyć siły, by utrzymać się u władzy. Od pomysłu odwiedli go europejscy przywódcy, służby i były premier Węgier Viktor Orban - podał dziennik „Times”.",
+      "link": "https://www.bankier.pl/wiadomosc/Vucic-mial-szykowac-zamach-stanu-Kto-go-odwiodl-od-tego-pomyslu-9219881.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Dawne zakłady Rafako zmienią się w fabrykę dla wojska. Inwestycje za 1,3 mld zł"
+      "title_pl": "Vučić miał szykować zamach stanu. Kto go odwiódł od tego pomysłu?"
     },
     {
-      "title": "Plus łączy siły z globalnym gigantem. Umowa strategiczna z Vodafone",
-      "snippet": "Grupa Polsat Plus i Grupa Vodafone podpisały umowę o partnerstwie strategicznym, która zapewni Polkomtelowi, operatorowi sieci Plus, dostęp do międzynarodowej wiedzy specjalistycznej, know-how i doświadczenia operacyjnego firmy Vodafone - podał Polsat w komunikacie. Umowa nie przewiduje żadnego zaangażowania kapitałowego.",
-      "link": "https://www.bankier.pl/wiadomosc/Grupa-Polsat-Plus-zawarla-trzyletnia-umowe-strategiczna-z-Vodafone-9219674.html",
+      "title": "Forte zaskakuje słabymi wynikami. Zysk EBITDA niemal zniknął",
+      "snippet": "Grupa Fabryk Mebli Forte szacuje, że miała w II kw. roku obrotowego 2026/27 0,3 mln zł skonsolidowanej EBITDA, w porównaniu do 41 mln zł zysku rok wcześniej - podała spółka w komunikacie. Według szacunków jej skonsolidowane przychody wyniosły 301 mln zł, o 8 proc. więcej rdr.",
+      "link": "https://www.bankier.pl/wiadomosc/Forte-szacuje-ze-mialo-w-II-kw-2026-27-roku-0-3-mln-zl-skonsolidowanej-EBITDA-ponizej-oczekiwan-9219915.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Plus łączy siły z globalnym gigantem. Umowa strategiczna z Vodafone"
-    },
-    {
-      "title": "Nawet 800 zł za konto w Millennium. Sprawdzamy warunki promocji",
-      "snippet": "Kompleksowa analiza promocji Banku Millennium. Dowiedz się, jak krok po kroku spełnić warunki dochodowe oraz transakcyjne, aby uzyskać do 800 zł premii i 5,5% na koncie oszczędnościowym.",
-      "link": "https://www.bankier.pl/wiadomosc/Analiza-promocji-Konta-Millennium-360-Do-800-zl-premii-i-zasady-oferty-9219540.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Nawet 800 zł za konto w Millennium. Sprawdzamy warunki promocji"
-    },
-    {
-      "title": "Leonardo składa ofertę Polsce. Śmigłowce, transportery i myśliwce na stole",
-      "snippet": "W poniedziałek w Warszawie odbyło się polsko-włoskie forum przemysłu obronnego i technologii dual-use. Przedstawiciele kluczowego uczestnika, włoskiego koncernu Leonardo, wskazywali m.in. na gotowość do produkcji w świdnickich zakładach kolejnych śmigłowców dla Wojska Polskiego.",
-      "link": "https://www.bankier.pl/wiadomosc/Leonardo-sklada-oferte-Polsce-Smiglowce-transportery-i-mysliwce-na-stole-9219638.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Leonardo składa ofertę Polsce. Śmigłowce, transportery i myśliwce na stole"
-    },
-    {
-      "title": "Jeździli nimi ministrowie i Makłowicz. Włoska legenda może wrócić do polskich salonów",
-      "snippet": "Włoska legenda wraca z zaświatów. Lancie, którymi w latach 90. Jeździli m.in. polscy ministrowie, znów mogą trafić do polskich salonów. Należąca do Stellantisa marka chce przystąpić do ekspansji poza rodzime Włochy a przyczółkiem mają być salony Fiata. Nowe otwarcie zapewni flagowy crossover Gamma.",
-      "link": "https://www.bankier.pl/wiadomosc/Jezdzili-nimi-ministrowie-i-Maklowicz-Wloska-legenda-moze-wrocic-do-polskich-salonow-9219555.html",
-      "source_name": "Bankier.pl",
-      "lang": "pl",
-      "title_pl": "Jeździli nimi ministrowie i Makłowicz. Włoska legenda może wrócić do polskich salonów"
-    },
-    {
-      "title": "PGZ będzie zaangażowana w proces budowy centrum serwisowego pocisków Patriot",
-      "snippet": "Minister finansów i gospodarki Andrzej Domański zapewnił w środę, że Polska Grupa Zbrojeniowa „z pewnością będzie zaangażowana” w proces budowy centrum serwisowego pocisków do Patriotów w Polsce. Przedstawiciele PGZ deklarują, że Grupa jest gotowa do wykorzystania posiadanych kompetencji.",
-      "link": "https://defence24.pl/przemysl/pgz-bedzie-zaangazowana-w-proces-budowy-centrum-serwisowego-pociskow-patriot",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "PGZ będzie zaangażowana w proces budowy centrum serwisowego pocisków Patriot"
-    },
-    {
-      "title": "Stała baza USA w Polsce głównym tematem obrad RBN",
-      "snippet": "Utworzenie stałej bazy wojsk amerykańskich w Polsce ma być głównym tematem posiedzenia Rady Bezpieczeństwa Narodowego zaplanowanego na 3 listopada. Szef MON Władysław Kosiniak-Kamysz podkreślił, że omówienia wymaga również sytuacja bezpieczeństwa w związku z nasilającymi się — w jego ocenie — działaniami Rosji. Obrady odbędą się przed kolejną rundą konsultacji z Waszyngtonem w sprawie bazy, a decyzji dotyczącej przedsięwzięcia minister oczekuje w grudniu.",
-      "link": "https://defence24.pl/polityka-obronna/stala-baza-usa-w-polsce-glownym-tematem-obrad-rbn",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Stała baza USA w Polsce głównym tematem obrad RBN"
-    },
-    {
-      "title": "Polskie głowice do dronów z dofinansowaniem UE",
-      "snippet": "Projekt E-WARP, realizowany przez międzynarodowe konsorcjum z udziałem Zakładów Sprzętu Precyzyjnego Niewiadów (ZSP Niewiadów), spółki zależnej Niewiadów Polska Grupa Militarna (NPGM), został wybrany przez Komisję Europejską do dofinansowania w ramach programu European Defence Industry Programme (EDIP). Przedsięwzięcie, którego celem jest rozwój europejskich zdolności produkcyjnych w zakresie głowic bojowych i materiałów wybuchowych do amunicji krążącej, uzyskało kwalifikację do wsparcia w wysok",
-      "link": "https://defence24.pl/przemysl/polskie-glowice-do-dronow-z-dofinansowaniem-ue",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Polskie głowice do dronów z dofinansowaniem UE"
-    },
-    {
-      "title": "Krótka, intensywna wojna z Iranem? Stany Zjednoczone miały ostrzec państwa arabskie",
-      "snippet": "Stany Zjednoczone miały uprzedzić kilka arabskich państw Zatoki Perskiej o możliwości wznowienia intensywnych działań przeciwko Iranowi po wyborach do Kongresu. Przygotowania wojskowe mają zapewnić Donaldowi Trumpowi możliwość przeprowadzenia kolejnych uderzeń. Ostateczna decyzja nie zapadła, a alternatywą pozostaje porozumienie z Teheranem.",
-      "link": "https://defence24.pl/geopolityka/krotka-intensywna-wojna-z-iranem-stany-zjednoczone-mialy-ostrzec-panstwa-arabskie",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Krótka, intensywna wojna z Iranem? Stany Zjednoczone miały ostrzec państwa arabskie"
-    },
-    {
-      "title": "Putin przejmuje Afrykę. Rosja oferuje rakiety, drony i ochronę wojskową",
-      "snippet": "Rosja przygotowuje kolejną ofensywę dyplomatyczną i wojskową w Afryce. W dniach 28–29 października Moskwa jest gospodarzem trzeciego szczytu Rosja–Afryka, w którym wraz z towarzyszącym mu forum ma uczestniczyć ponad 2000 osób. Tym razem Kreml przygotowuje konkretne propozycje dotyczące obrony przeciwlotniczej, systemów antydronowych, współpracy wojskowej, energetyki jądrowej i cyberbezpieczeństwa. Pomimo wojny przeciwko Ukrainie, Rosja konsekwentnie rozwija swoje wpływy na kontynencie afrykański",
-      "link": "https://defence24.pl/geopolityka/putin-przejmuje-afryke-rosja-oferuje-rakiety-drony-i-ochrone-wojskowa",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "Putin przejmuje Afrykę. Rosja oferuje rakiety, drony i ochronę wojskową"
-    },
-    {
-      "title": "1,3 mld zł inwestycji i setki miejsc pracy. 386 mln zł wsparcia od rządu dla spółek PGZ",
-      "snippet": "Jelcz, Rosomak i Bumar-Łabędy mają otrzymać łącznie 386 mln zł wsparcia dla inwestycji wartych blisko 1,3 mld zł. W Raciborzu, gdzie ogłoszono przedsięwzięcie, przemysł obronny wykorzystuje infrastrukturę po Rafako. Minister finansów i gospodarki Andrzej Domański przekonuje, że wydatki na zbrojeniówkę powinny napędzać krajową gospodarkę i tworzyć miejsca pracy.",
-      "link": "https://defence24.pl/przemysl/13-mld-zl-inwestycji-i-setki-miejsc-pracy-386-mln-zl-wsparcia-od-rzadu-dla-spolek-pgz",
-      "source_name": "Defence24",
-      "lang": "pl",
-      "title_pl": "1,3 mld zł inwestycji i setki miejsc pracy. 386 mln zł wsparcia od rządu dla spółek PGZ"
+      "title_pl": "Forte zaskakuje słabymi wynikami. Zysk EBITDA niemal zniknął"
     }
   ]
 }
