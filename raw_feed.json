@@ -1,9 +1,25 @@
 {
   "date": "30 października 2026",
-  "time": "06:29",
-  "timestamp": "2026-10-30_06:29",
-  "count": 74,
+  "time": "07:06",
+  "timestamp": "2026-10-30_07:06",
+  "count": 76,
   "items": [
+    {
+      "title": "Polacy zapytani o zagrożenie ze strony Rosji. Jedna grupa nie widzi wzrostu",
+      "snippet": "Ponad 75 proc. Polaków uważa, że nie maleje zagrożenie dla Polski ze strony Rosji - wynika z sondażu opublikowanego przez Rzeczpospolitą. Biorący udział w badaniu najczęściej (44,8 proc.) wskazywali, że utrzymuje się ono na stałym poziomie. Żaden z wyborców Grzegorza Brauna nie zauważa w tej kwestii wzrostu ani stabilizacji.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-30/polacy-zapytani-o-zagrozenie-ze-strony-rosji-wyborcy-brauna-nie-widza-wzrostu/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Polacy zapytani o zagrożenie ze strony Rosji. Jedna grupa nie widzi wzrostu"
+    },
+    {
+      "title": "Ludzie Brauna na posiedzeniu RBN? \"Demokratyczny wybór Polaków\"",
+      "snippet": "- Czy w Polsce jest system demokratyczny? Czy szanujemy wybór Polaków, którzy go dokonali? - tak szef Kancelarii Prezydenta RP skomentował zaproszenie dla partii Grzegorza Brauna na posiedzenie RBN. Zbigniew Bogucki odniósł się też w Debacie Gozdyry do głośnych słów Jarosława Kaczyńskiego na temat Unii Europejskiej.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-29/zbigniew-bogucki-o-zaproszeniu-brauna-na-rbn-odniosl-sie-tez-do-slow-kaczynskiego/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Ludzie Brauna na posiedzeniu RBN? \"Demokratyczny wybór Polaków\""
+    },
     {
       "title": "Zmarł biskup Paweł Socha. Miał 91 lat",
       "snippet": "Zmarł biskup senior diecezji zielonogórsko-gorzowskiej Paweł Socha. Miał 91 lat - poinformowała diecezja. Duchowny należał do Zgromadzenia Księży Misjonarzy św. Wincentego a Paulo.",
@@ -91,14 +107,6 @@
       "source_name": "Polsat News",
       "lang": "pl",
       "title_pl": "Ostre słowa Sikorskiego o Nawrockim. \"Czuje miętę do tych antysemitów prorosyjskich\""
-    },
-    {
-      "title": "Burza po słowach Kaczyńskiego o UE. \"Realizuje agendę Brauna\", \"marzyciele z Kremla\"",
-      "snippet": "- Z PiS-em jest tak, że oni mentalnie do Unii nigdy nie weszli, więc w ogóle mnie to nie dziwi - ocenił Radosław Sikorski, dołączając do dyskusji, która rozgorzała po słowach Jarosława Kaczyńskiego o członkostwie w Unii Europejskiej. Stanowczą krytykę w sprawie tego wystąpienia wyraził premier, z kolei sam prezes PiS oznajmił, że Tusk jak zwykle kłamie.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-10-29/polexit-komentarze-politykow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Burza po słowach Kaczyńskiego o UE. \"Realizuje agendę Brauna\", \"marzyciele z Kremla\""
     },
     {
       "title": "\"Broń przeciw światowej żegludze\". Bahrajn oskarża Iran i Huti",
@@ -214,7 +222,7 @@
     },
     {
       "title": "Gęsta mgła. Ostrzeżenia IMGW dla sześciu województw. Gdzie widzialność jest najsłabsza",
-      "snippet": "IMGW wydał ostrzeżenia meteorologiczne. Na terenie sześciu województw w piątkowy poranek mgły mogą ograniczać widzialność. Aktualnie najgorsza widzialność panuje w Polsce centralnej.",
+      "snippet": "IMGW wydał ostrzeżenia meteorologiczne. Na terenie sześciu województw w piątkowy poranek mgły mogą ograniczać widzialność. Aktualnie najgorsza panuje w Polsce centralnej.",
       "link": "https://tvn24.pl/tvnmeteo/prognoza/ostrzezenia-imgw-przed-gesta-mgla-alarmy-dla-szesciu-wojewodztw-st9313023?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
@@ -269,20 +277,28 @@
       "title_pl": "Jego samochód przewrócił się na bok, zostawił pasażerkę i uciekł"
     },
     {
-      "title": "\"Baśniowy komin\" zawalił się na turystów. Trzy osoby zginęły",
-      "snippet": "Trzy osoby zginęły na skutek zawalenia się formacji skalnej w Kapadocji. Do zdarzenia doszło na terenie popularnego wśród turystów Parku Narodowego Goreme. Do uszkodzenia skał mogło dojść wskutek intensywnych opadów deszczu.",
-      "link": "https://tvn24.pl/tvnmeteo/swiat/turcja-basniowy-komin-zawalil-sie-na-turystow-trzy-osoby-zginely-st9312968?source=rss",
-      "source_name": "TVN24",
+      "title": "Trump kontra dziennikarz. Prezydent USA z ciętą ripostą",
+      "snippet": "- Weź się w garść, wyglądasz okropnie - tak zwrócił się w kierunku dziennikarza Donald Trump. To reakcja na serię pytań reportera dotyczących planowanej nieobecności przywódcy podczas sobotniego wiecu wyborczego w Kansas. Dziennikarz chciał wiedzieć, czy ma to związek ze stanem zdrowia Trumpa. - Czuję się świetnie - zapewnił republikanin.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-trump-kontra-dziennikarz-prezydent-usa-z-cieta-riposta,nId,23566242",
+      "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Baśniowy komin\" zawalił się na turystów. Trzy osoby zginęły"
+      "title_pl": "Trump kontra dziennikarz. Prezydent USA z ciętą ripostą"
     },
     {
-      "title": "Cezary Tomczyk: prezesowi PiS Jarosławowi Kaczyńskiemu należą się podziękowania",
-      "snippet": "Jarosław Kaczyński wywalił kawę na ławę - ocenił w \"Kropce nad i\" w TVN24 wiceminister obrony narodowej Cezary Tomczyk, komentując środową wypowiedź prezesa PiS. - Wybory, które są przed nami w roku 2027, będą swoistym referendum za wyjściem z Unii Europejskiej - dodał Tomczyk.",
-      "link": "https://tvn24.pl/polska/jaroslaw-kaczynski-o-unii-europejskiej-cezary-tomczyk-naleza-mu-sie-podziekowania-st9312952?source=rss",
-      "source_name": "TVN24",
+      "title": "Nie milkną echa rozmowy z Putinem. \"Nie jako przedstawiciele Europy\"",
+      "snippet": "Rozmowa liderów Finlandii i Norwegii z Władimirem Putinem rozgrzewa fińską prasę. Według dziennikarzy błędem był brak zaangażowania innych krajów Europy. Komentatorzy przestrzegają, by nie łudzić się, że telefoniczny kontakt z przywódcą Rosji wystarczy, aby opanować wojnę w Ukrainie.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-nie-milkna-echa-rozmowy-z-putinem-nie-jako-przedstawiciele-e,nId,23566249",
+      "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Cezary Tomczyk: prezesowi PiS Jarosławowi Kaczyńskiemu należą się podziękowania"
+      "title_pl": "Nie milkną echa rozmowy z Putinem. \"Nie jako przedstawiciele Europy\""
+    },
+    {
+      "title": "Chcieli wyjaśnić sprawę Starlinka w Ukrainie. Pentagon odrzucił wniosek",
+      "snippet": "Główny inspektor Pentagonu odrzucił prośbę o zbadanie niedawnych ograniczeń w działaniu sieci Starshield w Ukrainie - poinformowała agencja Associated Press. Wniosek w tej sprawie złożyła grupa czterech republikanów i pięciu demokratów. Senator Jeanne Shaheen wskazała, że konieczne jest przeprowadzenie dochodzenia w celu \"ustalenia odpowiedzialności i zapobieżenia powtórzeniu się takiej sytuacji\".",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-chcieli-wyjasnic-sprawe-starlinka-w-ukrainie-pentagon-odrzuc,nId,23566236",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Chcieli wyjaśnić sprawę Starlinka w Ukrainie. Pentagon odrzucił wniosek"
     },
     {
       "title": "\"Oczekujemy odpowiednich decyzji\". Zełenski zwrócił się do sojuszników",
@@ -341,20 +357,20 @@
       "title_pl": "\"Neptun\" w akcji. Ukraina zaatakowała w Rosji, zniszczono dwa myśliwce"
     },
     {
-      "title": "Wieczorne zmiany w pogodzie. Przed kierowcami stresujące godziny",
-      "snippet": "Ostrzeżenia pogodowe pojawiają się dzień po dniu i dotyczą tego samego zagrożenia. Chodzi o gęste mgły, które wracają wieczorami. We wtorek żółte alerty IMGW wydano dla 10 województw, tym razem dla trzech. Kierowcom doradza się zachowanie ostrożności.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-wieczorne-zmiany-w-pogodzie-przed-kierowcami-stresujace-godz,nId,23566109",
-      "source_name": "Interia",
+      "title": "Brytyjka często lata do Polski. Mówi o obsesji na punkcie pewnych sklepów",
+      "snippet": "Pochodząca z Wielkiej Brytanii nauczycielka Claire regularnie odwiedza Polskę, a na swoich kanałach w mediach społecznościowych dzieli się poradami dotyczącymi tego, jak najmniej wydać podczas podróży. W jednym z ostatnich postów przyznała, że podczas pobytów w polskich miastach nie tylko zwiedza, ale robi też zakupy.",
+      "link": "https://biznes.interia.pl/finanse/news-brytyjka-zachwycona-pewnym-rodzajem-sklepow-w-polsce-mam-obs,nId,23565889",
+      "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Wieczorne zmiany w pogodzie. Przed kierowcami stresujące godziny"
+      "title_pl": "Brytyjka często lata do Polski. Mówi o obsesji na punkcie pewnych sklepów"
     },
     {
-      "title": "Magyar szydzi z Orbana. Mógłby stanąć na czele ONZ tylko w jednym przypadku",
-      "snippet": "Premier Węgier Peter Magyar stwierdził, że wybór Viktora Orbana na sekretarza generalnego ONZ byłby dobrym pomysłem tylko, jeśli celem byłaby likwidacja organizacji. Polityk odniósł się w ten sposób do doniesień, według których Orban może ubiegać się o fotel sekretarza generalnego ONZ. Magyar stwierdził także, że Orban to \"mafioso\", a instytucja, mimo swych wad, nie jest organizacją przestępczą.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-magyar-szydzi-z-orbana-moglby-stanac-na-czele-onz-tylko-w-je,nId,23566181",
-      "source_name": "Interia",
+      "title": "Pieniądze z Unii obudziły gospodarkę. \"Jest bardzo dużo nowego biznesu\"",
+      "snippet": "Po zaskakującym wzroście inwestycji w II kwartale tego roku wspieranym przebudzeniem się popytu na kredyt ze strony przedsiębiorstw wszyscy zaczęli zadawać sobie jedno pytanie. Czy to tylko jednorazowy wyskok w trwającej od lat stagnacji inwestycyjnej, czy może trwałe przebudzenie sektora firm, które zauważyły, że świat im ucieka. Trend się utrzymuje, przynajmniej na razie - twierdzą przedstawiciele mBanku.",
+      "link": "https://biznes.interia.pl/gospodarka/news-firmy-biora-kredyty-i-inwestuja-jest-bardzo-duzo-nowego-bizn,nId,23565762",
+      "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Magyar szydzi z Orbana. Mógłby stanąć na czele ONZ tylko w jednym przypadku"
+      "title_pl": "Pieniądze z Unii obudziły gospodarkę. \"Jest bardzo dużo nowego biznesu\""
     },
     {
       "title": "Wywóz liści z ogrodu. Czy trzeba się liczyć z dodatkową opłatą?",
@@ -445,28 +461,36 @@
       "title_pl": "Te paliwa w ciągu roku zdrożały najbardziej. Różnice są znaczące"
     },
     {
-      "title": "USA: Kampanie coraz bardziej w rękach bogatych. Kandydaci jak pasażerowie",
-      "snippet": "Wybory do Kongresu biją finansowe rekordy. Coraz większa część pieniędzy napędzających kampanie pochodzi od miliarderów, co rodzi pytania o niezależność kandydatów i ich polityczne zobowiązania.",
-      "link": "https://biznes.interia.pl/polityka/news-usa-kampanie-coraz-bardziej-w-rekach-bogatych-kandydaci-jak,nId,23565738",
-      "source_name": "Interia Biznes",
+      "title": "Czy Bogdan Święczkowski powinien ustąpić z TK? Wyniki sondażu mogą zaskakiwać",
+      "snippet": "Blisko 40 proc. Polek i Polaków opowiada się za rezygnacją Bogdana Święczkowskiego z funkcji prezesa Trybunału Konstytucyjnego. Niemal tyle samo respondentów nie potrafi jednak jednoznacznie ocenić, czy powinien on ustąpić — wynika z sondażu SW Research dla \"Wprost\".",
+      "link": "https://wiadomosci.onet.pl/kraj/czy-bogdan-swieczkowski-powinien-ustapic-wyniki-sondazu-moga-zaskakiwac/hshxd8e",
+      "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "USA: Kampanie coraz bardziej w rękach bogatych. Kandydaci jak pasażerowie"
+      "title_pl": "Czy Bogdan Święczkowski powinien ustąpić z TK? Wyniki sondażu mogą zaskakiwać"
     },
     {
-      "title": "\"Igra z przyszłością naszych dzieci\". Domański ostrzega przed polexitem",
-      "snippet": "Członkostwo w Unii Europejskiej zwiększyło PKB na mieszkańca Polski o 42 proc., a z jednolitym rynkiem wiąże się co najmniej 5 mln miejsc pracy - podkreśla minister Andrzej Domański, ostrzegając przed gospodarczymi skutkami wyjścia ze Wspólnoty.",
-      "link": "https://biznes.interia.pl/gospodarka/news-domanski-ostrzega-rachunek-zaplaciliby-polscy-przedsiebiorcy,nId,23566146",
-      "source_name": "Interia Biznes",
+      "title": "Zawiadomienie na Viktora Orbana. Mówił o rozdawaniu \"narzędzi\" do stawiania oporu",
+      "snippet": "Chodzi o wypowiedź, która padła na wiecu. Były premier Węgier mówił o rozdawaniu \"odpowiednich narzędzi\" do stawiania oporu. Węgierskie Krajowe Biuro Śledcze otrzymało zawiadomienia o możliwości popełnienia przestępstwa.",
+      "link": "https://wiadomosci.onet.pl/swiat/kontrowersyjne-slowa-viktora-orbana-sluzby-dostaly-zawiadomienie/5b1lw5e",
+      "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "\"Igra z przyszłością naszych dzieci\". Domański ostrzega przed polexitem"
+      "title_pl": "Zawiadomienie na Viktora Orbana. Mówił o rozdawaniu \"narzędzi\" do stawiania oporu"
     },
     {
-      "title": "Centrum logistyczne przy niemieckiej granicy. Zapewni 300 miejsc pracy",
-      "snippet": "ID Logistics Polska zapewni ok. 300 miejsc pracy w nowym centrum dystrybucyjnym. Na lokalizację firma wybrała województwo lubuskie. Spółka ma obecnie ponad 50 centrów logistycznych na terenie kraju, a zespół liczy 10 tys. osób.",
-      "link": "https://biznes.interia.pl/praca/news-300-miejsc-pracy-przy-niemieckiej-granicy-nowa-inwestycja-w,nId,23566086",
-      "source_name": "Interia Biznes",
+      "title": "Baza USA w Polsce pochłonie miliardy. Generał wskazał możliwe lokalizacje",
+      "snippet": "Budowa bazy US Army w Polsce ma kosztować 3 mld zł, a przygotowanie niezbędnej infrastruktury — kolejnych kilkanaście miliardów. Chodzi o mieszkania, szkoły i szpital dla 5 tys. amerykańskich żołnierzy oraz członków ich rodzin. Potencjalne lokalizacje inwestycji to Wrocław, Poznań, Bydgoszcz i Szczecin — poinformował gen. Dariusz Łukowski, były szef BBN i dyrektor w MON, w rozmowie z \"Rzeczpospolitą\".",
+      "link": "https://wiadomosci.onet.pl/kraj/baza-usa-w-polsce-pochlonie-miliardy-general-wskazal-mozliwe-lokalizacje/7hc91bn",
+      "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Centrum logistyczne przy niemieckiej granicy. Zapewni 300 miejsc pracy"
+      "title_pl": "Baza USA w Polsce pochłonie miliardy. Generał wskazał możliwe lokalizacje"
+    },
+    {
+      "title": "\"Ciało mamy już pojechało\". Zwłoki pacjenta warte są jeden grosz",
+      "snippet": "\"Ciała mamy już tu nie ma\" — usłyszał w szpitalu syn zmarłej pacjentki. Trop ten zaprowadził nas do systemu, w którym zwłoki trafiają ze szpitali do prywatnych chłodni, a przetargi rozstrzygane są przy stawkach liczonych nie w złotych, lecz w groszach. Przedstawiciele branży alarmują, że prawdziwą wartością takich kontraktów może być nie transport ciał, lecz dostęp do rodzin organizujących pogrzeb.",
+      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/cialo-mamy-juz-pojechalo-czemu-szpitale-oddaja-zwloki-prywatnym-firmom/v954w8k",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "\"Ciało mamy już pojechało\". Zwłoki pacjenta warte są jeden grosz"
     },
     {
       "title": "Problemy Karola Nawrockiego i sygnał ostrzegawczy dla ministra obrony. Nowy sondaż zaufania",
@@ -475,14 +499,6 @@
       "source_name": "Onet",
       "lang": "pl",
       "title_pl": "Problemy Karola Nawrockiego i sygnał ostrzegawczy dla ministra obrony. Nowy sondaż zaufania"
-    },
-    {
-      "title": "Polacy ocenili zagrożenie ze strony Rosji. Sondaż ujawnił zaskakujący podział",
-      "snippet": "Polacy poważnie traktują zagrożenie ze strony Rosji — wynika z sondażu IBRiS przeprowadzonego na zlecenie \"Rzeczpospolitej\". Niemal 76 proc. badanych uważa je za realne, jednak większość nie dostrzega, by niebezpieczeństwo narastało. Najczęściej postrzegają je jako stały element obecnej sytuacji geopolitycznej.",
-      "link": "https://wiadomosci.onet.pl/kraj/polacy-ocenili-zagrozenie-ze-strony-rosji-sondaz-ujawnil-zaskakujacy-podzial/y6nvfmf",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Polacy ocenili zagrożenie ze strony Rosji. Sondaż ujawnił zaskakujący podział"
     },
     {
       "title": "Zielona Góra: Jaka pogoda na dziś? Prognoza w dniu 30.10.2026",
@@ -509,6 +525,38 @@
       "title_pl": "Warszawa - jakiej pogody możemy się spodziewać 30.10.2026?"
     },
     {
+      "title": "Szykują się protesty w Niemczech. MSZ apeluje do Polaków",
+      "snippet": "Ministerstwo Spraw Zagranicznych zaleca unikanie miejsc demonstracji organizowanych w Niemczech przez inicjatywę \"Gen Z regelt\". Protesty zaplanowano na sobotę 31 października w wielu miastach. Służby ostrzegają przed możliwymi incydentami i infiltracją zgromadzeń przez środowiska ekstremistyczne.",
+      "link": "https://wiadomosci.wp.pl/szykuja-sie-protesty-w-niemczech-msz-apeluje-do-polakow-7345516946315712a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Szykują się protesty w Niemczech. MSZ apeluje do Polaków"
+    },
+    {
+      "title": "Mieli pilnować 51-latka. Dwóch policjantów z zarzutami",
+      "snippet": "Dwóch policjantów z Małkini usłyszało zarzuty niedopełnienia obowiązków w związku ze śmiercią 51-letniego Jacka K. Mężczyzna uciekł im ze szpitala, gdzie trafił na badania po zatrzymaniu w związku z poszukiwaniami listem gończym – poinformowała Prokuratura Okręgowa w Ostrołęce.",
+      "link": "https://wiadomosci.wp.pl/mieli-pilnowac-51-latka-dwoch-policjantow-z-zarzutami-7345513695889888a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Mieli pilnować 51-latka. Dwóch policjantów z zarzutami"
+    },
+    {
+      "title": "Trump uzna wyniki wyborów? Oskarża Demokratów o oszustwo",
+      "snippet": "Prezydent USA Donald Trump zapowiedział, że może nie uznać wyborów do Kongresu za uczciwe, jeśli nie zostanie wyjaśniona sytuacja z dwoma kandydatami o nazwisku Sullivan. Gubernator Alaski Mike Dunleavy wszczął w tej sprawie śledztwo.",
+      "link": "https://wiadomosci.wp.pl/trump-uzna-wyniki-wyborow-oskarza-demokratow-o-oszustwo-7345512736655840a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Trump uzna wyniki wyborów? Oskarża Demokratów o oszustwo"
+    },
+    {
+      "title": "Przypisali głosy Trzaskowskiemu zamiast Nawrockiemu. Jest wniosek prokuratury",
+      "snippet": "Prokuratura Okręgowa w Białymstoku skierowała do sądu wniosek o warunkowe umorzenie postępowania wobec siedmiorga członków komisji wyborczej w Nowej Pawłówce. Podczas drugiej tury wyborów prezydenckich w 2025 r. komisja błędnie przypisała 30 głosów Karola Nawrockiego Rafałowi Trzaskowskiemu.",
+      "link": "https://wiadomosci.wp.pl/przypisali-glosy-trzaskowskiemu-zamiast-nawrockiemu-jest-wniosek-prokuratury-7345512036714976a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Przypisali głosy Trzaskowskiemu zamiast Nawrockiemu. Jest wniosek prokuratury"
+    },
+    {
       "title": "Tragedia w Kapadocji. Słynna skała runęła na turystów",
       "snippet": "W tureckiej Kapadocji doszło do zawalenia formacji skalnej w pobliżu wejścia do Muzeum Plenerowego w Goreme. Według informacji tureckich mediów zginęły dwie osoby, a pięć zostało rannych.",
       "link": "https://wiadomosci.wp.pl/tragedia-w-kapadocji-slynna-skala-runela-na-turystow-7345508448147936a",
@@ -533,20 +581,20 @@
       "title_pl": "Kaczyński zrobił to nieświadomie? Ekspertka tłumaczy słowa o UE"
     },
     {
-      "title": "Spór o ludzi Brauna na RBN. Sikorski odpowiedział Nawrockiemu",
-      "snippet": "Trwa spór wokół udziału przedstawicieli Konfederacji Grzegorza Brauna w Radzie Bezpieczeństwa Narodowego. \"Prezydent Nawrocki ma prawo zaprosić na RBN kogo chce, także faszyzujących prorosyjskich antysemitów\" - napisał na platformie X. Radosław Sikorski, odpowiadając na wpis rzecznika prezydenta Rafała Leśkiewicza.",
+      "title": "Spór o ludzi Brauna na RBN. Sikorski odpowiedział człowiekowi Nawrockiego",
+      "snippet": "Trwa spór wokół udziału przedstawicieli Konfederacji Grzegorza Brauna w Radzie Bezpieczeństwa Narodowego. \"Prezydent Nawrocki ma prawo zaprosić na RBN, kogo chce, także faszyzujących prorosyjskich antysemitów\" – napisał na platformie X Radosław Sikorski, odpowiadając na wpis rzecznika prezydenta Rafała Leśkiewicza.",
       "link": "https://wiadomosci.wp.pl/spor-o-ludzi-brauna-na-rbn-sikorski-odpowiedzial-nawrockiemu-7345480293001696a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Spór o ludzi Brauna na RBN. Sikorski odpowiedział Nawrockiemu"
+      "title_pl": "Spór o ludzi Brauna na RBN. Sikorski odpowiedział człowiekowi Nawrockiego"
     },
     {
-      "title": "Papież Leon XIV odwiedzi Polskę? Media wskazują datę",
-      "snippet": "Papież Leon XIV może odwiedzić Polskę w 2028 roku. Według telewizji wPolsce24, data wizyty ma związek z kalendarzem politycznym i watykańskimi zasadami dyplomatycznymi. Pominięcie 2027 roku ma wynikać z planowanych w Polsce wyborów parlamentarnych.",
+      "title": "Papież Leon XIV odwiedzi Polskę? Media wskazują możliwą datę",
+      "snippet": "Papież Leon XIV może odwiedzić Polskę w 2028 r. Według telewizji wPolsce24, data wizyty ma związek z kalendarzem politycznym i watykańskimi zasadami dyplomatycznymi. Pominięcie 2027 r. ma wynikać z planowanych w Polsce wyborów parlamentarnych.",
       "link": "https://wiadomosci.wp.pl/papiez-leon-xiv-odwiedzi-polske-media-wskazuja-date-7345473559001568a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Papież Leon XIV odwiedzi Polskę? Media wskazują datę"
+      "title_pl": "Papież Leon XIV odwiedzi Polskę? Media wskazują możliwą datę"
     },
     {
       "title": "Trump obraził dziennikarza. \"Jesteś obrzydliwy\"",
@@ -563,38 +611,6 @@
       "source_name": "WP Wiadomości",
       "lang": "pl",
       "title_pl": "Ukraińscy radni grożą Polakom? Służby ostrzegają przed fake newsem"
-    },
-    {
-      "title": "Alarmujące dane u sąsiada Polski. Nie realizują 70 proc. celów NATO",
-      "snippet": "Czeska armia nie realizuje 70 proc. celów uzgodnionych z NATO, a jej zapasy sprzętu wojskowego wystarczyłyby zaledwie na kilka tygodni walk. Ministerstwo obrony w nowej koncepcji rozwoju armii ostrzega przed brakiem przygotowania na nagły konflikt, wskazując Rosję jako główne zagrożenie.",
-      "link": "https://wiadomosci.wp.pl/alarmujace-dane-u-sasiada-polski-nie-realizuja-70-proc-celow-nato-7345433766771168a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Alarmujące dane u sąsiada Polski. Nie realizują 70 proc. celów NATO"
-    },
-    {
-      "title": "Rozmawiali z Putinem. Dyktator zabrał głos po telefonie z Europy",
-      "snippet": "Władimir Putin zadeklarował chęć poprawy relacji z państwami europejskimi po wtorkowej rozmowie z przywódcami Finlandii i Norwegii. Rosyjski przywódca ostrzegł jednocześnie, że Moskwa jest gotowa na ewentualny konflikt zbrojny z Europą i zdecydowanie zareaguje na \"prowokacje\" na Morzu Bałtyckim. Słowa te padły w czasie, gdy Rosja dopuszcza się aktów sabotażu w niemal całej Europie.",
-      "link": "https://wiadomosci.wp.pl/rozmawiali-z-putinem-dyktator-zabral-glos-po-telefonie-z-europy-7345425997081056a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Rozmawiali z Putinem. Dyktator zabrał głos po telefonie z Europy"
-    },
-    {
-      "title": "Nagrywała, jak córka znęca się nad kotem. Jest prawomocny wyrok",
-      "snippet": "Sąd Okręgowy w Kaliszu wydał prawomocny wyrok w sprawie kobiety, która nagrywała, jak jej córka znęca się nad kotem. Po apelacji obrońcy sąd utrzymał karę więzienia w zawieszeniu oraz zakaz posiadania zwierząt. Zmniejszono jedynie kwotę nawiązki.",
-      "link": "https://wiadomosci.wp.pl/nagrywala-jak-corka-zneca-sie-nad-kotem-jest-prawomocny-wyrok-7345405106276832a",
-      "source_name": "WP Wiadomości",
-      "lang": "pl",
-      "title_pl": "Nagrywała, jak córka znęca się nad kotem. Jest prawomocny wyrok"
-    },
-    {
-      "title": "Polish opposition leader sparks controversy with speech on potential EU exit talks",
-      "snippet": "Prime Minister Donald Tusk accused Jarosław Kaczyński of trying to push Poland out of the EU.",
-      "link": "https://notesfrompoland.com/2026/10/29/polish-opposition-leader-sparks-controversy-with-speech-on-potential-eu-exit-talks/",
-      "source_name": "Notes from Poland",
-      "lang": "en",
-      "title_pl": "Lider polskiej opozycji wzbudza kontrowersje wystąpieniem na temat potencjalnych rozmów o wyjściu z UE"
     }
   ]
 }
