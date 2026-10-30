@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Świat w Minutę — generator newsów (Gemini + Pexels).
 
+- Model: gemini-3.8-flash
+- Pełna objętość slajdów: 2-3 konkretne, nasycone faktami zdania w summary (3 pełne linie)
+- Rozbudowany, cięty komentarz w dolnej ramce (120-160 znaków)
+- Eliminacja podwójnych hooków i powtórzeń w Threads
 - Bezstratna archiwizacja z podziałem na miesiące (archive_YYYY_MM.json + archive_index.json)
-- Eliminacja podwójnych hooków i powtórzeń w postach Threads
 - Eliminacja śmieciowych tematów (Lotto, horoskopy, pająki, relacje live)
 - Gwarantowane pobieranie zdjęć z Pexels (klucz wpisany na sztywno jako fallback)
 - Ochrona przed zdominowaniem feedu przez jeden serwis
@@ -409,8 +412,8 @@ def validate_items(items: list) -> list:
         image_query = str(item.get("image_query", "world news")).strip()
         link = clean_link(str(item.get("link", "#")))
         
-        # Elastyczniejszy limit, by nie odrzucać poprawnych odpowiedzi AI
-        if len(title) < 10 or len(summary) < 20 or len(comment) < 8 or len(threads_post) < 250:
+        # Wymuszenie pełnej objętości tekstu (3 pełne linijki w summary i solidny komentarz)
+        if len(title) < 10 or len(summary) < 130 or len(comment) < 45 or len(threads_post) < 250:
             continue
         if "---ODPOWIEDŹ---" not in threads_post:
             continue
@@ -496,11 +499,11 @@ def translate_titles(client, titles: list) -> list:
     return titles
 
 
-# ───────────────────────── PROMPT AI (FORMAT THREADS BEZ POWTÓRZEŃ) ─────────────────────────
+# ───────────────────────── PROMPT AI (PEŁNA OBJĘTOŚĆ + THREADS BEZ POWTÓRZEŃ) ─────────────────────────
 def build_prompt(previous_titles: list, candidates: list) -> str:
     ai_input = [{"title": a["title"], "snippet": a["snippet"], "link": a["link"], "source": a["source_name"]} for a in candidates]
     return f"""Jesteś redaktorem naczelnym formatu informacyjno-analitycznego „Świat w Minutę” (Instagram/Threads). 
-Twoje posty zdobywają wirale, ponieważ są zwięzłe, merytoryczne i wolne od pustosłowia.
+Twoje posty zdobywają wirale, ponieważ są zwięzłe, merytoryczne i wypełniają slajdy faktami.
 Kategoryczny zakaz pisania o plotkach, lotto, horoskopach i ciekawostkach przyrodniczych.
 
 KATEGORYCZNY ZAKAZ DUBLOWANIA TEMATÓW (1 TEMAT = DOKŁADNIE 1 WPIS):
@@ -511,7 +514,16 @@ Zadanie: Z poniższych artykułów wybierz DOKŁADNIE 15-16 NAJWAŻNIEJSZYCH tem
 ZASADA 1: NAGŁÓWEK ("title"):
 [Trafna emotikona] [MOCNY, AGRESYWNY NAGŁÓWEK DUŻYMI LITERAMI DO 60 ZNAKÓW]
 
-ZASADA 2: FORMAT THREADS ("threads_post") - DWA POSTY BEZ POWTÓRZEŃ I BEZ PODWÓJNYCH HOOKÓW:
+ZASADA 2: STRESZCZENIE NA SLAJD ("summary") - GŁÓWNA TREŚĆ SLAJDU:
+- DOKŁADNIE 2-3 PEŁNE, MERYTORYCZNE ZDANIA (180-240 ZNAKÓW).
+- Kategoryczny zakaz pisania 1 krótkiego zdania! Slajd musi mieć dokładnie 3 linie tekstu.
+- Podaj konkretnie: kto, co zrobił, jakie są liczby, kulisy i tło decyzji.
+
+ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment") - DOLNA RAMKA:
+- DOKŁADNIE 1 ROZBUDOWANE, CIĘTE ZDANIE (120-160 ZNAKÓW / 18-26 SŁÓW).
+- Wyrazista, bezlitosna puenta obnażająca hipokryzję władzy, koszty lub realne motywy. Zero banałów.
+
+ZASADA 4: FORMAT THREADS ("threads_post") - DWA POSTY BEZ POWTÓRZEŃ I BEZ PODWÓJNYCH HOOKÓW:
 CZĘŚĆ 1 (Post główny – 200-280 znaków):
 [NAGŁÓWEK DUŻYMI LITERAMI Z EMOTIKONĄ]
 
@@ -528,25 +540,22 @@ CZĘŚĆ 2 (Odpowiedź pod postem – 320-400 znaków):
 
 [Jedno konkretne pytanie prowokujące do merytorycznej dyskusji kończące się '👇💬']
 
-ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment"):
-- DOKŁADNIE 1 ZDANIE (14-22 słowa). Wyrazisty wniosek, zero banałów.
-
-ZASADA 4: ZAPYTANIE DO ZDJĘCIA ("image_query"):
+ZASADA 5: ZAPYTANIE DO ZDJĘCIA ("image_query"):
 - Dokładnie 1-2 proste słowa po angielsku (np. "courtroom", "military", "parliament", "currency", "police").
 
-ZASADA 5: KATEGORIE:
+ZASADA 6: KATEGORIE:
 Pole "category" to DOKŁADNIE JEDNO słowo: POLSKA, GOSPODARKA, BIZNES, GEOPOLITYKA, OBRONNOŚĆ, TECHNOLOGIE.
 
 WZORCOWY OBIEKT:
 {{
-  "category": "GOSPODARKA",
-  "title": "🚨 RZĄD PRZEPYCHA NOWY PODATEK: ZAPŁACĄ WSZYSCY KIEROWCY",
-  "hook": "Nowa opłata paliwowa wchodzi tylnymi drzwiami bez konsultacji społecznych.",
-  "summary": "Stawka wzrośnie o 14% od pierwszego dnia przyszłego miesiąca, co przełoży się na wzrost cen litra benzyny o 35 groszy.",
-  "comment": "Rządzący znowu opowiadają bajki o ochronie portfeli, podczas gdy przy dystrybutorze ściągają z nas kolejny ukryty haracz.",
-  "threads_post": "🚨 RZĄD PRZEPYCHA NOWY PODATEK: ZAPŁACĄ WSZYSCY KIEROWCY\\n\\nMinisterstwo przeforsowało korektę opłaty paliwowej, która od przyszłego miesiąca uderzy w portfele milionów Polaków! ⛽🇵🇱\\n\\nKażda wizyta na stacji będzie droższa o kilkanaście złotych, a branża transportowa już zapowiada podwyżki cen towarów.\\n\\n(Szczegóły i tło w odpowiedzi 👇🧵)\\n\\n---ODPOWIEDŹ---\\n\\nNowe przepisy mają przynieść budżetowi ponad 4,2 miliarda złotych rocznie na łatanie dziury w Funduszu Drogowym. Problem w tym, że wyższe koszty paliwa natychmiast przełożą się na ceny żywności i usług w sklepach.\\n\\nPolitycy obiecują stabilizację, a dziury w finansach państwa po cichu łatają z pieniędzy kierowców. 📉⏳\\n\\nOdczujecie tę podwyżkę w codziennych wydatkach? 📊👇💬",
-  "question": "Jak ta zmiana wpłynie bezpośrednio na Twój domowy budżet? 👇💬",
-  "image_query": "gas station",
+  "category": "POLSKA",
+  "title": "⚖️ ROZŁAM W PIS: MORAWIECKI ATAKUJE KACZYŃSKIEGO",
+  "hook": "Mateusz Morawiecki otwarcie sprzeciwił się słowom prezesa o ewentualnym Polexicie.",
+  "summary": "Były premier publicznie odciął się od wypowiedzi Jarosława Kaczyńskiego, podkreślając że obecność w Unii Europejskiej jest polską racją stanu. W partii zawrzało, a politycy dawnego obozu władzy otwarcie mówią o najgłębszym sporze frakcyjnym od dekady.",
+  "comment": "Liderzy opozycji zaczynają wyniszczającą wojnę domową o sukcesję, ryzykując ostateczną utratę zaufania milionów proeuropejskich wyborców.",
+  "threads_post": "⚖️ ROZŁAM W PIS: MORAWIECKI ATAKUJE KACZYŃSKIEGO\\n\\nOtwarte starcie na szczycie opozycji wstrząsnęło partią! 🇵🇱⚡\\n\\nMateusz Morawiecki bez ogródek sprzeciwił się Jarosławowi Kaczyńskiemu w sprawie ewentualnych negocjacji wokół Polexitu, wywołując panikę w partyjnych szeregach.\\n\\n(Szczegóły i tło w odpowiedzi 👇🧵)\\n\\n---ODPOWIEDŹ---\\n\\nWypowiedź byłego premiera to pierwszy tak otwarty bunt przeciwko linii Nowogrodzkiej od lat. W kuluarach mówi się o budowie własnej, umiarkowanej frakcji przed kolejnymi wyborami parlamentarnymi.\\n\\nPartyjne frakcje walczą o kontrolę nad resztkami wpływów, podczas gdy dawny twardy elektorat zdezorientowany patrzy na rozpad jedności. 🏛️📉\\n\\nCzy Morawiecki ma szansę przejąć przywództwo na prawicy? 📊👇💬",
+  "question": "Czy bunt Morawieckiego doprowadzi do trwałego rozłamu w opozycji? 👇💬",
+  "image_query": "parliament podium",
   "link": "https://example.com"
 }}
 
@@ -658,7 +667,7 @@ def main():
     candidates = interleave(clustered, MAX_PER_SOURCE, MAX_CANDIDATES)
     print(f"   kandydaci dla AI: {len(candidates)} z {len({c['source_name'] for c in candidates})} źródeł")
 
-    print("3. Analiza i generowanie przez Gemini...")
+    print(f"3. Analiza i generowanie przez Gemini ({GEMINI_MODEL})...")
     client = genai.Client(api_key=gemini_key)
     prompt = build_prompt(previous_titles, candidates)
     items = []
@@ -682,7 +691,7 @@ def main():
         print(f"❌ Gemini zwróciło za mało pozycji ({len(items)}). Prawdopodobnie brak kredytów lub błąd API.")
         sys.exit("Przerywam działanie — zachowuję poprzednie poprawne wydanie w news.json.")
 
-    # Uzupełnienie brakujących 2-3 pozycji (bez ucinania słów w połowie)
+    # Uzupełnienie brakujących 2-3 pozycji z pełnymi, nasyconymi opisami
     if len(items) < MIN_ITEMS:
         existing = {i["link"] for i in items}
         titles = [i["title"] for i in items]
@@ -697,14 +706,15 @@ def main():
             if any(are_topics_duplicate(upper_t, t, threshold=0.35) for t in titles + previous_titles):
                 continue
             cat = normalize_category(art["feed_category"])
+            full_summary = f"{art['snippet'].strip()} Sprawa wywołuje spore poruszenie i staje się jednym z kluczowych tematów w obszarze {cat.lower()}."
             items.append({
                 "id": short_id(art["link"]),
                 "category": cat,
                 "title": upper_t,
                 "hook": f"Kluczowe doniesienia: {clean_title}.",
-                "summary": art["snippet"],
-                "comment": f"Decyzja w obszarze {cat.lower()} rodzi istotne konsekwencje, które wkrótce odczują obywatele.",
-                "threads_post": f"{upper_t}\n\nKluczowe doniesienia agencyjne. (Szczegóły w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\n{art['snippet'][:300]}\n\nJak to oceniacie? 👇💬",
+                "summary": truncate_smart(full_summary, 220),
+                "comment": f"Decyzja w obszarze {cat.lower()} rodzi dalekosiężne skutki, obnażając realne koszty i intencje decydentów.",
+                "threads_post": f"{upper_t}\n\nKluczowe doniesienia agencyjne w sprawie: {clean_title}. 🇵🇱⚡\n\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\n{art['snippet'][:300]}\n\nJak to oceniacie? 👇💬",
                 "question": "Jak ta sprawa wpłynie na sytuację w kraju? 👇💬",
                 "image_query": CATEGORY_PEXELS_DEFAULTS.get(cat, ["news"])[0],
                 "link": art["link"],
