@@ -2,7 +2,8 @@
 """Świat w Minutę — generator newsów (Gemini + Pexels).
 
 - Model: gemini-3.8-flash
-- Pełna objętość slajdów: 2-3 konkretne, nasycone faktami zdania w summary (3 pełne linie)
+- Wymuszony zbalansowany podział: 4-5 tematów z Polski (30-40% wydania)
+- Pełna objętość slajdów: 2-3 konkretne zdania w summary (dokładnie 3 pełne linie)
 - Rozbudowany, cięty komentarz w dolnej ramce (120-160 znaków)
 - Eliminacja podwójnych hooków i powtórzeń w Threads
 - Bezstratna archiwizacja z podziałem na miesiące (archive_YYYY_MM.json + archive_index.json)
@@ -499,17 +500,24 @@ def translate_titles(client, titles: list) -> list:
     return titles
 
 
-# ───────────────────────── PROMPT AI (PEŁNA OBJĘTOŚĆ + THREADS BEZ POWTÓRZEŃ) ─────────────────────────
+# ───────────────────────── PROMPT AI (ZBALANSOWANY DOBÓR + PEŁNE TEKSTY) ─────────────────────────
 def build_prompt(previous_titles: list, candidates: list) -> str:
     ai_input = [{"title": a["title"], "snippet": a["snippet"], "link": a["link"], "source": a["source_name"]} for a in candidates]
     return f"""Jesteś redaktorem naczelnym formatu informacyjno-analitycznego „Świat w Minutę” (Instagram/Threads). 
 Twoje posty zdobywają wirale, ponieważ są zwięzłe, merytoryczne i wypełniają slajdy faktami.
-Kategoryczny zakaz pisania o plotkach, lotto, horoskopach i ciekawostkach przyrodniczych.
+Kategoryczny zakaz pisania o plotkach, lotto, horoskopach, drobnych wypadkach i ciekawostkach przyrodniczych.
+Nie wybieraj niszowych tematów lokalnych z obcych krajów (np. szczegółowych sporów prawnych o programy socjalne w USA czy odległych nominacji w ONZ), chyba że mają one bezpośredni, potężny wpływ na globalną gospodarkę lub bezpieczeństwo.
+
+KROK 1: OBOWIĄZKOWE PROPORCJE TEMATYCZNE (DOKŁADNIE 15-16 WPISÓW):
+Odbiorcą jest polski czytelnik, dlatego wydanie MUSI zachować następujące proporcje:
+- "POLSKA": DOKŁADNIE 4-5 TEMATÓW (ok. 30-35% wydania) — wybierz kluczowe sprawy państwowe, decyzje rządu, spory polityczne, podatki, prawo lub duże inwestycje!
+- "GOSPODARKA": 3-4 TEMATY — inflacja, rynki surowcowe, stopy procentowe, finanse publiczne.
+- "GEOPOLITYKA": 2-3 TEMATY — kluczowe ruchy mocarstw (USA, Chiny, Rosja, UE), konflikty o znaczeniu globalnym.
+- "OBRONNOŚĆ": 2 TEMATY — wojna w Ukrainie, modernizacja polskiej armii, NATO, technologie wojskowe.
+- "BIZNES" lub "TECHNOLOGIE": 1-2 TEMATY — giganci Big Tech, przełomowe innowacje, przemysł.
 
 KATEGORYCZNY ZAKAZ DUBLOWANIA TEMATÓW (1 TEMAT = DOKŁADNIE 1 WPIS):
 - Każda wygenerowana wiadomość MUSI dotyczyć ZUPEŁNIE INNEJ sprawy!
-
-Zadanie: Z poniższych artykułów wybierz DOKŁADNIE 15-16 NAJWAŻNIEJSZYCH tematów w formacie JSON.
 
 ZASADA 1: NAGŁÓWEK ("title"):
 [Trafna emotikona] [MOCNY, AGRESYWNY NAGŁÓWEK DUŻYMI LITERAMI DO 60 ZNAKÓW]
@@ -521,7 +529,7 @@ ZASADA 2: STRESZCZENIE NA SLAJD ("summary") - GŁÓWNA TREŚĆ SLAJDU:
 
 ZASADA 3: CIĘTY KOMENTARZ NA SLAJD ("comment") - DOLNA RAMKA:
 - DOKŁADNIE 1 ROZBUDOWANE, CIĘTE ZDANIE (120-160 ZNAKÓW / 18-26 SŁÓW).
-- Wyrazista, bezlitosna puenta obnażająca hipokryzję władzy, koszty lub realne motywy. Zero banałów.
+- Wyrazista, bezlitosna puenta obnażająca hipokryzję władzy, koszty dla obywateli lub realne intencje. Zero banałów.
 
 ZASADA 4: FORMAT THREADS ("threads_post") - DWA POSTY BEZ POWTÓRZEŃ I BEZ PODWÓJNYCH HOOKÓW:
 CZĘŚĆ 1 (Post główny – 200-280 znaków):
@@ -536,15 +544,12 @@ CZĘŚĆ 1 (Post główny – 200-280 znaków):
 
 CZĘŚĆ 2 (Odpowiedź pod postem – 320-400 znaków):
 [Zupełnie nowe fakty, kulisy i mechanizm, KTÓRYCH NIE BYŁO w poście 1!]
-[1 ostre, cięte zdanie obnażające hipokryzję, koszty dla obywateli lub realne intencje polityków.]
+[1 ostre, cięte zdanie obnażające hipokryzję lub realne koszty.]
 
 [Jedno konkretne pytanie prowokujące do merytorycznej dyskusji kończące się '👇💬']
 
 ZASADA 5: ZAPYTANIE DO ZDJĘCIA ("image_query"):
 - Dokładnie 1-2 proste słowa po angielsku (np. "courtroom", "military", "parliament", "currency", "police").
-
-ZASADA 6: KATEGORIE:
-Pole "category" to DOKŁADNIE JEDNO słowo: POLSKA, GOSPODARKA, BIZNES, GEOPOLITYKA, OBRONNOŚĆ, TECHNOLOGIE.
 
 WZORCOWY OBIEKT:
 {{
@@ -714,7 +719,7 @@ def main():
                 "hook": f"Kluczowe doniesienia: {clean_title}.",
                 "summary": truncate_smart(full_summary, 220),
                 "comment": f"Decyzja w obszarze {cat.lower()} rodzi dalekosiężne skutki, obnażając realne koszty i intencje decydentów.",
-                "threads_post": f"{upper_t}\n\nKluczowe doniesienia agencyjne w sprawie: {clean_title}. 🇵🇱⚡\n\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\n\n{art['snippet'][:300]}\n\nJak to oceniacie? 👇💬",
+                "threads_post": f"{upper_t}\n\nKluczowe doniesienia agencyjne w sprawie: {clean_title}. 🇵🇱⚡\n\n(Szczegóły i tło w odpowiedzi 👇🧵)\n\n---ODPOWIEDŹ---\\n\\n{art['snippet'][:300]}\n\nJak to oceniacie? 👇💬",
                 "question": "Jak ta sprawa wpłynie na sytuację w kraju? 👇💬",
                 "image_query": CATEGORY_PEXELS_DEFAULTS.get(cat, ["news"])[0],
                 "link": art["link"],
