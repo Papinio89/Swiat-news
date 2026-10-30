@@ -32,7 +32,7 @@ pl_tz = ZoneInfo("Europe/Warsaw")
 # Klucz zdefiniowany w env lub wpisany bezpośrednio jako fallback
 DEFAULT_PEXELS_KEY = "N9lZEHVVxzeo70Ool0sBLSnzpZAvgUxeRk7niJKr5pQdMRkQyIouz2QQ"
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "").strip() or DEFAULT_PEXELS_KEY
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 
 MAX_AGE_HOURS = 24
 MIN_ITEMS = 12
