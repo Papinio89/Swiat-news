@@ -1,5 +1,12 @@
 [
   {
+    "key": "2026_11",
+    "label": "Listopad 2026",
+    "file": "archive_2026_11.json",
+    "year": 2026,
+    "month": 11
+  },
+  {
     "key": "2026_10",
     "label": "Październik 2026",
     "file": "archive_2026_10.json",
