@@ -1,12 +1,68 @@
 {
-  "date": "5 listopada 2026",
-  "time": "16:11",
-  "timestamp": "2026-11-05_16:11",
-  "count": 75,
+  "date": "6 listopada 2026",
+  "time": "05:54",
+  "timestamp": "2026-11-06_05:54",
+  "count": 73,
   "items": [
     {
+      "title": "Zmiany w systemie podatkowym. Sejm podjął decyzję",
+      "snippet": "Sejm w czwartek wieczorem przegłosował projekt ustawy wprowadzającej nową stawkę i próg podatkowy w PIT. Za przyjęciem projektu głosowało 236 posłów, przeciw było 207. Izba niższa parlamentu głosowała nad projektem po raz drugi.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/zmiany-w-systemie-podatkowym-sejm-podjal-decyzje/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Zmiany w systemie podatkowym. Sejm podjął decyzję"
+    },
+    {
+      "title": "Mentzen zaskoczył spotkaniem z Kosiniakiem-Kamyszem. Padł przytyk w stronę Tuska",
+      "snippet": "Lider Konfederacji Sławomir Mentzen zamieścił w serwisie X zdjęcie z szefem PSL Władysławem Kosiniakiem-Kamyszem. Fotografię opatrzył podpisem: Idzie ku dobremu, co jest nawiązaniem do wcześniejszej publikacji Donalda Tuska. Do spotkania Mentzena z liderem ludowców doszło po zaproponowaniu przez PSL resetu konstytucyjnego ws. Trybunału Konstytucyjnego.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/idzie-ku-dobremu-mentzen-zamieszcza-zdjecie-z-szefem-psl-i-wbija-szpilke-tuskowi/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Mentzen zaskoczył spotkaniem z Kosiniakiem-Kamyszem. Padł przytyk w stronę Tuska"
+    },
+    {
+      "title": "Kierowca staranował radiowóz i uciekł. Padły strzały, trwa obława",
+      "snippet": "Trwa obława na kierowcę BMW, który staranował radiowóz i uciekł przed funkcjonariuszami w reakcji na próbę przeprowadzenia kontroli drogowej. Policjanci byli zmuszeni oddać dwa strzały, w tym jeden ostrzegawczy. W rozmowie z polsatnews.pl asp. Ewelina Karpińska z KWP w Opolu przekazała, że służbom udało się ustalić tożsamość kierowcy.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/kierowca-staranowal-radiowoz-i-uciekl-padly-strzaly-trwa-oblawa/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kierowca staranował radiowóz i uciekł. Padły strzały, trwa obława"
+    },
+    {
+      "title": "Cezary Tomczyk w \"Gościu Wydarzeń\" [OGLĄDAJ]",
+      "snippet": "W czwartkowym wydaniu Gościa Wydarzeń Marek Tejchman porozmawia z Cezarym Tomczykiem (KO), wiceministrem obrony narodowej. Transmisja programu w polsatnews.pl, Interii, Polsacie, Polsat News i Wydarzeniach 24 od godz. 19:15.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/cezary-tomczyk-w-gosciu-wydarzen-ogladaj-od-19-15/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Cezary Tomczyk w \"Gościu Wydarzeń\" [OGLĄDAJ]"
+    },
+    {
+      "title": "Awantura w \"Studiu Parlament\". Posłanka KO wyszła w trakcie programu",
+      "snippet": "Posłanka Koalicji Obywatelskiej Alicja Łepkowska-Gołaś wyszła w trakcie trwania programu Studio Parlament w Polsat News Polityka. Wcześniej między polityczką a posłem PiS Michałem Kowalskim doszło do ostrej wymiany zdań. - Prostactwo - mówiła posłanka odchodząc.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/awantura-na-antenie-polsat-news-poslanka-ko-wyszla-w-trakcie-programu/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Awantura w \"Studiu Parlament\". Posłanka KO wyszła w trakcie programu"
+    },
+    {
+      "title": "Ceny znowu pójdą ostro w górę? Prezes NBP o \"decydującym miesiącu\" dla inflacji",
+      "snippet": "Spadek inflacji w październiku to dobra wiadomość, jednak nie oznacza, że okres podwyższonej inflacji mamy za sobą - stwierdził prezes NBP Adam Glapiński. Podkreślił przy tym, że wciąż zmagamy się z wysokimi cenami surowców, które zależne są od toczącego się na Bliskim Wschodzie konfliktu. Jak ocenił, nad decyzją dotyczącą stycznia w kontekście stóp procentowych pojawił się duży znak zapytania.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/ceny-znowu-pojda-ostro-w-gore-prezes-nbp-o-decydujacym-miesiacu-dla-inflacji/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Ceny znowu pójdą ostro w górę? Prezes NBP o \"decydującym miesiącu\" dla inflacji"
+    },
+    {
+      "title": "Prezydent po spotkaniu Grupy Wyszehradzkiej. \"Nie możemy akceptować\"",
+      "snippet": "- Polska chce silnej, bezpiecznej i konkurencyjnej Unii Europejskiej - powiedział prezydent Karol Nawrocki na konferencji po spotkaniu Grupy Wyszehradzkiej. Zaznaczył, że nie można akceptować rozwiązań, które podnoszą koszty życia. - Europejska polityka klimatyczna i energetyczna musi uwzględniać konkurencyjność (...) nie może prowadzić do utraty miejsc pracy - dodał prezydent.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/prezydent-po-spotkaniu-grupy-wyszehradzkiej-nie-mozemy-akceptowac/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Prezydent po spotkaniu Grupy Wyszehradzkiej. \"Nie możemy akceptować\""
+    },
+    {
       "title": "Konstytucjonaliści ocenili propozycję PSL. \"Czasami ładnie, czasami dziwnie\"",
-      "snippet": "- To czasami brzmiało ładnie, czasami dziwnie - powiedział o propozycji PSL w sprawie rozwiązania konfliktu wokół Trybunału Konstytucyjnego dr Wojciech Włoch konstytucjonalista z UMK. Z kolei zdaniem profesor Anny Łabno z UŚ zmiana dokonuje się na zasadzie przyparcia przeciwnika do muru. - PSL wziął sobie duży ciężar na barki, żeby przekonać naprawdę wszystkich - zauważył doktor Włoch.",
+      "snippet": "- To czasami brzmiało ładnie, czasami dziwnie - powiedział o propozycji PSL ws. rozwiązania konfliktu wokół Trybunału Konstytucyjnego dr Wojciech Włoch z Uniwersytetu Mikołaja Kopernika. Z kolei zdaniem profesor Anny Łabno z Uniwersytetu Śląskiego zmiana dokonuje się na zasadzie przyparcia przeciwnika do muru. - PSL wziął duży ciężar na barki, żeby przekonać wszystkich - zauważył doktor Włoch.",
       "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/konstytucjonalisci-ocenili-propozycje-resetu-psl-czasami-ladnie-czasami-dziwnie/",
       "source_name": "Polsat News",
       "lang": "pl",
@@ -29,84 +85,52 @@
       "title_pl": "Doniesienia o broni maszynowej i ostra reakcja policji. Jest zawiadomienie"
     },
     {
-      "title": "Mentzen o \"jarmarku\" przed TK. Wójcik tłumaczy: Zadzwoniło dużo ludzi",
-      "snippet": "Nagranie z udziałem posła PiS Michała Wójcika, który w środę wieczorem przed siedzibą TK śpiewał piosenkę Jak minął dzień poniosło się szerokim echem w sieci. Jak stwierdził parlamentarzysta w rozmowie z Polsat News, zrobił to na prośbę protestujących. Sławomir Mentzen uznał to za cyrk i jarmark pod TK. Fragment słynnego utworu zacytował też w mediach społecznościowych Donald Tusk.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/polityczna-burza-po-spiewach-wojcika-robienie-kabaretu-z-oporu/",
+      "title": "Trump spotkał się z wysłannikiem Kremla. \"Porozumienie obejmie nie tylko Ukrainę\"",
+      "snippet": "- Obejmie nie tylko Ukrainę, a nawet mógłbym powiedzieć, że może dotyczyć całej Europy - powiedział Donald Trump, odnosząc się do porozumienia w sprawie zakończenia wojny w Ukrainie, które jego zdaniem jest blisko. Słowa prezydenta USA padły po spotkaniu ze specjalnym wysłannikiem Władimira Putina Kiriłłem Dmitrijewem.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/trump-spotkal-sie-z-wyslannikiem-kremla-porozumienie-obejmie-nie-tylko-ukraine/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Mentzen o \"jarmarku\" przed TK. Wójcik tłumaczy: Zadzwoniło dużo ludzi"
+      "title_pl": "Trump spotkał się z wysłannikiem Kremla. \"Porozumienie obejmie nie tylko Ukrainę\""
     },
     {
-      "title": "Specjalnie powodowali kolizje. Wśród zatrzymanych \"kaskaderzy\" i \"slupy\"",
-      "snippet": "11 członków grupy wyłudzającej odszkodowania zostało zatrzymanych - informuje policja. Przestępcy przez wiele lat organizowali fikcyjne kolizje drogowe, do których dochodziło na terenie woj. wielkopolskiego i świętokrzyskiego. Działali według ścisłego podziału ról: od organizatorów, przez właścicieli aut i słupy, aż po kaskaderów celowo doprowadzających do zdarzeń - piszą mundurowi.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/specjalnie-powodowali-kolizje-wsrod-zatrzymanych-kaskaderzy-i-slupy/",
+      "title": "Melania Trump z prezentem od wysłannika Putina. \"Napisałam osobiste listy\"",
+      "snippet": "Kiriłł Dmitrijew wręczył Melanii Trump rysunek 11-letniej dziewczynki, która po ewakuacji z Ołeszek rzekomo wybrała życie z jej rodziną w Tuapse w Rosji. Spotkanie pierwszej damy USA z wysłannikiem Władimira Putina oraz ukraińską delegacją odbyło się w Białym Domu. Żona Donalda Trumpa oświadczyła, że w tej historycznej chwili napisała dwa listy - jeden z nich trafi do Władimira Putina.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/melania-trump-z-prezentem-od-wyslannika-putina-napisalam-osobiste-listy/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Specjalnie powodowali kolizje. Wśród zatrzymanych \"kaskaderzy\" i \"slupy\""
+      "title_pl": "Melania Trump z prezentem od wysłannika Putina. \"Napisałam osobiste listy\""
     },
     {
-      "title": "PSL chce zmiany konstytucji i resetu TK. \"Nadzwyczajne odnowienie składu\"",
-      "snippet": "Przygotowaliśmy projekt zmiany Konstytucji RP - powiedział podczas Kongresu Polskiego Samorządu wicepremier, szef MON Władysław Kosiniak-Kamysz. Jak zaznaczył, chodzi o nadzwyczajne odnowienie składu Trybunału Konstytucyjnego. - Na mocy tej ustawy wyłonimy nowy, jednorazowy skład Trybunału Konstytucyjnego - wyjaśnił wicepremier.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/psl-chce-nadzwyczajnego-odnowienia-skladu-tk-kosiniak-kamysz-oglasza/",
+      "title": "Kolejny dzień zamieszek we Francji. Słynna atrakcja zamknięta dla turystów",
+      "snippet": "We Francji trwają w czwartek demonstracje i strajki, które objęły część szkół średnich i wyższych oraz częściowo zakłóciły kursowanie pociągów. Służby odnotowały próby podpaleń, w Tournefeuille koło Tuluzy w związku z zagrożeniem pożarem ewakuowano uczniów liceum. Administracja wieży Eiffla poinformowała, że zabytek został w czwartek zamknięty dla turystów.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/kolejny-dzien-zamieszek-we-francji-wieza-eiffla-zamknieta/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "PSL chce zmiany konstytucji i resetu TK. \"Nadzwyczajne odnowienie składu\""
+      "title_pl": "Kolejny dzień zamieszek we Francji. Słynna atrakcja zamknięta dla turystów"
     },
     {
-      "title": "Awantura w Sejmie. Czarnek zwrócił się do Czarzastego. \"Człowiek radziecki\"",
-      "snippet": "Chcą zdjąć z urzędu prezydenta, żeby ten człowiek radziecki był pełniącym obowiązki prezydenta - grzmiał z mównicy sejmowej Przemysław Czarnek. Wiceprezes PiS wskazując na Włodzimierza Czarzastego odnosił się do sytuacji wokół Trybunału Konstytucyjnego. - Dziękuję serdecznie, panie premierze - odpowiedział marszałek Sejmu, nawiązując do faktu, że Czarnek został kandydatem PiS na szefa rządu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/awantura-w-sejmie-czarnek-zwrocil-sie-do-czarzastego-czlowiek-radziecki/",
+      "title": "Von der Leyen nie pojawiła się na wspólnej konferencji z Nawrockim. Media: Chodzi o TK",
+      "snippet": "Szefowa Komisji Europejskiej Ursula von der Leyen zrezygnowała z udziału we wspólnej konferencji prasowej z liderami Grupy Wyszehradzkiej, na której miała wystąpić obok Karola Nawrockiego - przekazał Bloomberg. Według źródeł serwisu szefowa Komisji Europejskiej chciała w ten sposób wyrazić wsparcie dla Donalda Tuska w sporze wokół Trybunału Konstytucyjnego.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/von-der-leyen-nie-pojawila-sie-na-wspolnej-konferencji-z-nawrockim-media-chodzi-o-tk/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Awantura w Sejmie. Czarnek zwrócił się do Czarzastego. \"Człowiek radziecki\""
+      "title_pl": "Von der Leyen nie pojawiła się na wspólnej konferencji z Nawrockim. Media: Chodzi o TK"
     },
     {
-      "title": "Koalicja bez większości, góruje sojusz partii prawicowych. Pierwszy sondaż po bitwie o TK",
-      "snippet": "Choć najwięcej osób poparłoby dziś Koalicję Obywatelską, to nie ona objęłaby władzę - wynika z sondażu United Surveys by IBRiS dla Wirtualnej Polski. Na najwięcej miejsc w Sejmie mogłaby liczyć natomiast koalicja partii prawicowych. Badanie zostało przeprowadzone na tle wydarzeń toczących się wokół Trybunału Konstytucyjnego.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/koalicja-bez-wiekszosci-goruje-sojusz-partii-prawicowych-pierwszy-sondaz-po-bitwie-o-tk/",
+      "title": "Koniec rozejmu w Ołeszkach. Tragiczna śmierć dyrektora szkoły",
+      "snippet": "Były dyrektor szkoły w okupowanych przez Rosję Ołeszkach na południu Ukrainy zginął trafiony dronem po zakończeniu rozejmu w tej miejscowości - poinformowała w czwartek szefowa ukraińskiej Tetiana Hasanenko. Po wygaśnięciu porozumienia, w którym mediowała Melania Trumpa, w mieście na nowo rozgorzały walki.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/koniec-rozejmu-w-oleszkach-tragiczna-smierc-dyrektora-szkoly/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Koalicja bez większości, góruje sojusz partii prawicowych. Pierwszy sondaż po bitwie o TK"
+      "title_pl": "Koniec rozejmu w Ołeszkach. Tragiczna śmierć dyrektora szkoły"
     },
     {
-      "title": "Decyzja premiera po referendum w Częstochowie. Wyznaczył komisarza",
-      "snippet": "Łukasz Pabiś, dotychczasowy wiceprezydent Częstochowy, został powołany przez premiera Donalda Tuska na komisarza miasta. W październikowym referendum mieszkańcy odwołali prezydenta Częstochowy Krzysztofa Matyjaszczyka. Samorządowcowi z Lewicy postawiono prokuratorskie zarzuty.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/decyzja-premiera-po-referendum-w-czestochowie-wyznaczyl-komisarza/",
+      "title": "USA przenoszą część żołnierzy z Polski. Trafią do naszego sąsiada",
+      "snippet": "Część amerykańskich żołnierzy, stacjonujących obecnie w Polsce, trafi do naszego sąsiada. Chodzi o Litwę, do której przeniesionych zostanie około 50 wojskowych. Tamtejszy premier Mindaugas Sinkeviczius potwierdził, że dotrą oni do miejscowości Podbrodzie.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/usa-przenosza-czesc-zolnierzy-z-polski-trafia-do-naszego-sasiada/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Decyzja premiera po referendum w Częstochowie. Wyznaczył komisarza"
-    },
-    {
-      "title": "Święczkowski znów zjawił się przed TK. \"Po raz ostatni wzywam\"",
-      "snippet": "Po raz ostatni wzywam państwa do opuszczenia terenu Trybunału Konstytucyjnego, bo przebywacie państwo tutaj nielegalnie - mówił do policjantów stojących przed gmachem TK Bogdan Święczkowski. To kolejny raz, kiedy zjawił się przed budynkiem. - Wstyd mi za tych funkcjonariuszy policji, którzy dowodzą tą akcją (...) Mam nadzieję, że kiedyś poniosą wieloletnie kary - mówił prezes TK.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/swieczkowski-znow-zjawil-sie-przed-tk-po-raz-ostatni-wzywam/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Święczkowski znów zjawił się przed TK. \"Po raz ostatni wzywam\""
-    },
-    {
-      "title": "Nowa uchwała TK trafiła do Sejmu. Ruch Czarzastego",
-      "snippet": "Do Sejmu wpłynęła uchwała Trybunału Konstytucyjnego w sprawie budżetu na przyszły rok - poinformował marszałek Sejmu Włodzimierz Czarzasty. Przekazał, że została ona skierowana do sejmowej Komisji Finansów Publicznych. Uchwałę podjęło Zgromadzenie Ogólne Sędziów TK, zwołane we wtorek przez sędzię Annę Korwin-Piotrowską.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/nowa-uchwala-tk-trafila-do-sejmu-ruch-czarzastego/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Nowa uchwała TK trafiła do Sejmu. Ruch Czarzastego"
-    },
-    {
-      "title": "Najbliższe otoczenie Trumpa się buntuje. \"Polityczna era dobiegła końca\"",
-      "snippet": "Klęska republikanów w wyborach połówkowych ujawniła głębokie podziały w administracji Donalda Trumpa. Nie milkną echa po wpisie amerykańskiego wiceprezydenta. J.D. Vance zdystansował się od wojny z Iranem i od prezydenta Donalda Trumpa - napisał Wall Street Journal. Ten sam dziennik w innym materiale ocenił, że konsekwencje wojny z Iranem oznaczają koniec politycznej ery prezydenta USA.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/najblizsze-otoczenie-trumpa-sie-buntuje-polityczna-era-dobiegla-konca/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Najbliższe otoczenie Trumpa się buntuje. \"Polityczna era dobiegła końca\""
-    },
-    {
-      "title": "\"Zastosował metodę z kibolskich ustawek\". Żurek uderzył w Nawrockiego, chodzi o TK",
-      "snippet": "Sędziowie chcieli rozmawiać z prezydentem, ale prezydent zastosował metodę z kibolskich ustawek - mówił o sytuacji w Trybunale Konstytucyjnym minister sprawiedliwości Waldemar Żurek. Jak podkreślił, urząd Prezydenta RP to nie jest kibicowska ustawka, a TK to nie jest stadion. Zapowiedział też, że przekaże kancelarii Karola Nawrockiego egzemplarz Konstytucji z zaznaczonymi czterema przepisami.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/zastosowal-metode-z-kibolskich-ustawek-zurek-uderzyl-w-nawrockiego-chodzi-o-tk/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Zastosował metodę z kibolskich ustawek\". Żurek uderzył w Nawrockiego, chodzi o TK"
+      "title_pl": "USA przenoszą część żołnierzy z Polski. Trafią do naszego sąsiada"
     },
     {
       "title": "Czerwone niebo nad Rosją. Ukraina zadała potężny cios",
@@ -157,252 +181,132 @@
       "title_pl": "Zagadkowa śmierć wicepremiera Bawarii. Ciało znaleziono w hotelu"
     },
     {
-      "title": "Zełenski ocenił triumf demokratów w USA. \"Mówią o odnowieniu więzi\"",
-      "snippet": "Wołodymyr Zełenski wyraził nadzieję, że triumf demokratów w amerykańskich wyborach do Kongresu doprowadzi do zwiększenia wsparcia USA dla Ukrainy. - Mówią o odnowieniu więzi między Stanami Zjednoczonymi a Europą - wskazał ukraiński przywódca.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-05/zelenski-ocenil-triumf-demokratow-w-usa-mowia-o-odnowieniu-wiezi/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Zełenski ocenił triumf demokratów w USA. \"Mówią o odnowieniu więzi\""
-    },
-    {
-      "title": "Donald Trump zmienia zdanie po porażce. Deklaruje współpracę z demokratami",
-      "snippet": "- Mogę współpracować z demokratami w wielu sprawach - powiedział Donald Trump po przegranych przez Partię Republikańską wyborach do Kongresu. Dodał, że jednym z takich obszarów są pomysły dotyczące finansów. To duża zmiana w retoryce Trumpa. W poniedziałek - dzień przed wyborami - prezydent zadeklarował, że w przypadku utraty większości w Kongresie zostanie panem weto.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-04/donald-trump-zmienia-zdanie-po-porazce-deklaruje-wspolprace-z-demokratami/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Donald Trump zmienia zdanie po porażce. Deklaruje współpracę z demokratami"
-    },
-    {
-      "title": "Tragedia podczas meczu w Hiszpanii. Bramkarz wydał oświadczenie",
-      "snippet": "To najtrudniejsze dni w moim życiu - przyznał Jesus Owono po śmierci Jesusa de Miguela, z którym zderzył się podczas meczu drugiej ligi hiszpańskiej. Bramkarz FC Andorra przekazał wyrazy wsparcia rodzinie 30-letniego napastnika i podkreślił, że trudno mu pogodzić się z tragedią. Jej okoliczności bada hiszpańska policja.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-04/tragedia-podczas-meczu-w-hiszpanii-bramkarz-wydal-oswiadczenie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Tragedia podczas meczu w Hiszpanii. Bramkarz wydał oświadczenie"
-    },
-    {
-      "title": "Nietypowy gość u papieża. Strój piosenkarza przykuł uwagę",
-      "snippet": "Bob Dylan spotkał się w środę z papieżem Leonem XIV podczas prywatnej audiencji w Watykanie. 85-letni muzyk i laureat literackiego Nobla pojawił się w Pałacu Apostolskim w czarnej bluzie i z kapturem na głowie, a zdjęcie ich uścisku dłoni opublikował portal Vatican News.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-04/nietypowy-gosc-u-papieza-stroj-piosenkarza-przykul-uwage/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Nietypowy gość u papieża. Strój piosenkarza przykuł uwagę"
-    },
-    {
-      "title": "Wiceprezydent J.D. Vance o wyniku wyborów. Mówił o przyczynach porażki",
-      "snippet": "Przegraliśmy z powodu wojny - tak wiceprezydent USA J.D. Vance skomentował wyniki wyborów w USA. Polityk przyznał, że skala porażki republikanów go zaszokowała. Wykorzystajmy tę energię i wróćmy do pracy nad ratowaniem naszego kraju - zaapelował Vance. We wtorkowych wyborach połówkowych Partia Republikańska straciła cały Kongres - demokraci odbili Senat i Izbę Reprezentantów.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-04/wiceprezydent-j-d-vance-o-wyniku-wyborow-mowil-o-przyczynach-porazki/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wiceprezydent J.D. Vance o wyniku wyborów. Mówił o przyczynach porażki"
-    },
-    {
-      "title": "Porażka Donalda Trumpa w wyborach. Prezydent USA prezentuje nowy gadżet",
-      "snippet": "Prezydent USA zareagował na porażkę republikanów w wyborach połówkowych. Donald Trump zaprezentował nową czapkę, na której widnieje napis weto.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-04/porazka-donalda-trumpa-w-wyborach-prezydent-usa-prezentuje-nowy-gadzet/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Porażka Donalda Trumpa w wyborach. Prezydent USA prezentuje nowy gadżet"
-    },
-    {
-      "title": "Setki tysięcy chorych w Polsce. System opieki wciąż ma luki",
-      "snippet": "Osoby z chorobami neurodegeneracyjnymi i ich bliscy wciąż nie mają kompleksowego wsparcia. Najwyższa Izba Kontroli wskazuje na niewdrożone rozwiązania, brak standardów i opóźnienia w organizacji pomocy. Podczas czwartkowego posiedzenia sejmowych komisji Ministerstwo Zdrowia przedstawiło swoją odpowiedź na zastrzeżenia kontrolerów.",
-      "link": "https://tvn24.pl/zdrowie/opieka-nad-osobami-z-chorobami-otepiennymi-nik-wskazuje-co-trzeba-zmienic-st9324710?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Setki tysięcy chorych w Polsce. System opieki wciąż ma luki"
-    },
-    {
-      "title": "Uderzył ratownika, groził mu. Pijany pacjent zatrzymany",
-      "snippet": "Policjanci zatrzymali pijanego i agresywnego 54-latka. Jak ustalili, mężczyzna groził personelowi izby przyjęć i uderzył ratownika. Usłyszał zarzuty, w więzieniu może spędzić trzy lata.",
-      "link": "https://tvn24.pl/tvnwarszawa/okolice/lipsko-uderzyl-ratownika-grozil-mu-pijany-pacjent-zatrzymany-na-izbie-przyjec-st9324526?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Uderzył ratownika, groził mu. Pijany pacjent zatrzymany"
-    },
-    {
-      "title": "Michał Wójcik tłumaczył śpiewanie przed Trybunałem. Wtedy zaczepił go poseł KO",
-      "snippet": "Poseł PiS Michał Wójcik odpowiedział w Sejmie na krytyczne komentarze po swoim występie przed Trybunałem Konstytucyjnym. - Mogłem \"Mury\" zaśpiewać, mogłem zaśpiewać \"Żeby Polska była Polską\", ale to ludzie sami prosili o tę piosenkę - powiedział. W trakcie rozmowy z reporterem TVN24 Radomirem Witem zaczepił go poseł KO Patryk Jaskulski.",
-      "link": "https://tvn24.pl/polska/michal-wojcik-spiewal-krzysztofa-krawczyka-pod-trybunalem-konstytucyjnym-teraz-odpowiada-na-krytyke-st9324177?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Michał Wójcik tłumaczył śpiewanie przed Trybunałem. Wtedy zaczepił go poseł KO"
-    },
-    {
-      "title": "Nowa definicja mobbingu wchodzi w życie. \"Pracownik będzie mógł liczyć na sprawiedliwość\"",
-      "snippet": "Od 5 listopada mobbing definiowany jest jako \"uporczywe nękanie\", a osoba poszkodowana nie musi już wykazywać skutków psychicznych tego typu doświadczeń. - Zachowania, które jeszcze 20 lat temu, nawet jeżeli krzywdzące, były akceptowalne, dziś akceptowalne nie są. Najwyższy czas, żeby prawo nadążało za tymi zmianami - powiedziała ministra rodziny, pracy i polityki społecznej Agnieszka Dziemianowicz-Bąk.",
-      "link": "https://tvn24.pl/biznes/dla-pracownika/nowa-definicja-mobbingu-przepisy-weszly-w-zycie-st9323642?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Nowa definicja mobbingu wchodzi w życie. \"Pracownik będzie mógł liczyć na sprawiedliwość\""
-    },
-    {
-      "title": "Niedobory podzespołów. \"AI powoduje pewne osłabienie\"",
-      "snippet": "Rozwój sztucznej inteligencji zwiększa popyt na układy wykorzystywane w centrach danych. Producenci kierują tam coraz większą część dostaw, co może ograniczać dostępność chipów dla innych branż, w tym producentów smartfonów i komputerów - ocenia szef Siltronic.",
-      "link": "https://tvn24.pl/biznes/tech/niedobory-podzespolow-ai-powoduje-pewne-oslabienie-st9323623?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Niedobory podzespołów. \"AI powoduje pewne osłabienie\""
-    },
-    {
-      "title": "Gdy ślad urywa się na moście, pozostaje niepewność. Apel o wymianę kamer",
-      "snippet": "W sieci pojawiła się petycja z apelem o zmiany w systemie monitoringu na warszawskich mostach. Chodzi o zastąpienie kamer obrotowych urządzeniami w stałej pozycji. Przypadki zaginięć z ostatnich lat pokazały, że obecnie stosowana technologia okazuje się niewystarczająca.",
-      "link": "https://tvn24.pl/tvnwarszawa/srodmiescie/warszawa-gdy-slad-urywa-sie-na-moscie-pozostaje-niepewnosc-apel-o-poprawe-monitoringu-st9323630?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Gdy ślad urywa się na moście, pozostaje niepewność. Apel o wymianę kamer"
-    },
-    {
-      "title": "Jest areszt dla posła Wojciecha Króla",
-      "snippet": "Poseł Wojciech Król został w czwartek zatrzymany na sali sądowej po tym, jak sąd zdecydował o jego tymczasowym aresztowaniu. Polityk jest podejrzany o korupcję. Wcześniej został wyrzucony z klubu Koalicji Obywatelskiej i zawieszony w partii.",
-      "link": "https://tvn24.pl/katowice/jest-areszt-dla-posla-wojciecha-krola-st9324664?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Jest areszt dla posła Wojciecha Króla"
-    },
-    {
-      "title": "Prezes NBP o rezerwach złota: historyczne osiągnięcie",
-      "snippet": "Narodowy Bank Polski zgromadził 700 ton złota, to jest historyczne osiągnięcie - powiedział w czwartek prezes banku centralnego Adam Glapiński, podczas konferencji prasowej po decyzji Rady Polityki Pieniężnej o pozostawieniu stóp procentowych na niezmienionym poziomie. - Jeśli ryzyka dla inflacji nie znikną, Rada nie będzie zwlekać - zaznaczył.",
-      "link": "https://tvn24.pl/biznes/pieniadze/stopy-procentowe-prezes-nbp-adam-glapinski-o-listopadowej-decyzji-rpp-st9324436?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Prezes NBP o rezerwach złota: historyczne osiągnięcie"
-    },
-    {
-      "title": "Dziesiątki grindwali na brzegu. \"Są u kresu sił\"",
-      "snippet": "Grindwale zostały wyrzucone na brzeg w Nowej Zelandii. Na plaży Wyspy Północnej w czwartek znaleziono dużą grupę zwierząt, z których większość nie przeżyła. Jak informował krajowy Departament Ochrony Przyrody, ratownicy próbowali zepchnąć do wody ocalałe osobniki.",
-      "link": "https://tvn24.pl/tvnmeteo/swiat/nowa-zelandia-dziesiatki-grindwali-na-brzegu-sa-u-kresu-sil-st9324399?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Dziesiątki grindwali na brzegu. \"Są u kresu sił\""
-    },
-    {
-      "title": "Nowe zajęcie człowieka Andrzeja Dudy. \"Doradza i wspiera\" prezydenta Krakowa",
-      "snippet": "Marcin Kędryna, były współpracownik prezydenta Andrzeja Dudy, został wolontariuszem w krakowskim magistracie, gdzie \"w zakresie strategii doradza i wspiera prezydenta\" Łukasza Gibałę.",
-      "link": "https://tvn24.pl/krakow/krakow-marcin-kedryna-wolontariuszem-w-urzedzie-miasta-zaprosil-go-lukasz-gibala-st9324034?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Nowe zajęcie człowieka Andrzeja Dudy. \"Doradza i wspiera\" prezydenta Krakowa"
-    },
-    {
-      "title": "Ołeszki po rozejmie. Szefowa miejskiej administracji: nie wszyscy byli w stanie się ewakuować",
-      "snippet": "W wyniku ataku drona w Ołeszkach zginął były dyrektor szkoły Kostiantyn Melnyk - przekazała szefowa miejskiej administracji Tatiana Hasanenko, pytana w wywiadzie dla ukraińskiej agencji o sytuację mieszkańców po zawieszeniu broni. Mówiła też o szczegółach ewakuacji w okupowanej przez Rosjan miejscowości.",
-      "link": "https://tvn24.pl/swiat/oleszki-po-rozejmie-szefowa-miejskiej-administracji-w-ataku-dronowym-zginal-byly-dyrektor-szkoly-st9324437?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Ołeszki po rozejmie. Szefowa miejskiej administracji: nie wszyscy byli w stanie się ewakuować"
-    },
-    {
-      "title": "Rewolucja w kredytach już się rozpoczęła. Bank podał dane",
-      "snippet": "PKO Bank Polski w niespełna miesiąc sprzedał kredyty hipoteczne o wartości ponad 400 milionów złotych, których oprocentowanie oparto na nowym wskaźniku POLSTR - przekazał wiceprezes banku Tomasz Pol. Jak ocenił, wprowadzenie nowego wskaźnika było dla klientów neutralne.",
-      "link": "https://tvn24.pl/biznes/pieniadze/polstr-zamiast-wibor-u-rewolucja-w-kredytach-juz-sie-rozpoczela-pko-bp-podal-dane-st9324223?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Rewolucja w kredytach już się rozpoczęła. Bank podał dane"
-    },
-    {
-      "title": "Wynieśli poparzonego mężczyznę i ewakuowali siedem osób, w tym małe dziecko",
-      "snippet": "W budynku wielorodzinnym w Radomsku (Łódzkie) wybuchł pożar. Strażacy wynieśli z z mieszkania nieprzytomnego mężczyznę z rozległymi poparzeniami. Ewakuowali też siedem osób, w tym pięcioletnie dziecko.",
-      "link": "https://tvn24.pl/lodz/radomsko-wyniesli-poparzonego-mezczyzne-i-ewakuowali-siedem-osob-w-tym-male-dziecko-st9324554?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Wynieśli poparzonego mężczyznę i ewakuowali siedem osób, w tym małe dziecko"
-    },
-    {
-      "title": "Karol Nawrocki na szczycie Grupy Wyszehradzkiej. Prezydent zabrał głos",
-      "snippet": "- Europejskie inicjatywy obronne powinny uzupełniać i wzmacniać zdolności NATO, ale nie powinny prowadzić do dublowania jego struktur i mechanizmów - powiedział Karol Nawrocki po spotkaniu prezydentów państw Grupy Wyszehradzkiej. Wcześniej głowa państwa miała okazję spotkać się na zamku także z szefową KE Ursulą von der Leyen, której otoczenie prezydenta zarzucało milczenie ws. ostatnich wydarzeń w TK.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-nawrocki-na-szczycie-grupy-wyszehradzkiej-prezydent-mowil-o,nId,23569405",
+      "title": "Karol Nawrocki przyjął szefową PE. Pałac ujawnił tematy rozmów",
+      "snippet": "Polityka klimatyczna, migracja i nowy budżet Unii Europejskiej były tematami spotkania Karola Nawrockiego z Robertą Metsolą w Pałacu Prezydenckim. Przewodnicząca Parlamentu Europejskiego przebywa w Polsce z dwudniową wizytą, podczas której rozmawiała także z Donaldem Tuskiem.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-karol-nawrocki-przyjal-szefowa-pe-palac-ujawnil-tematy-rozmo,nId,23569727",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Karol Nawrocki na szczycie Grupy Wyszehradzkiej. Prezydent zabrał głos"
+      "title_pl": "Karol Nawrocki przyjął szefową PE. Pałac ujawnił tematy rozmów"
     },
     {
-      "title": "Rośnie liczba ofiar rosyjskiego ataku na szkołę. Zełenski podał nowy bilans",
-      "snippet": "Do 43 wzrosła liczba ofiar śmiertelnych rosyjskiego ataku na szkołę w Komyszuwasze w obwodzie zaporoskim - poinformował Wołodymyr Zełenski. Pod gruzami mogą znajdować się kolejne dziesiątki osób. Akcja poszukiwawczo-ratunkowa trwa już czwarty dzień. Ukraiński prezydent przekazał również, że odnaleziono jedną z zaginionych osób żywą.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-rosnie-liczba-ofiar-rosyjskiego-ataku-na-szkole-zelenski-pod,nId,23569511",
+      "title": "Zaraził się Ebolą podczas misji. Lekarza ewakuowano do Londynu",
+      "snippet": "Brytyjski lekarz zakażony Ebolą podczas pracy w Demokratycznej Republice Konga został ewakuowany do Londynu. Medyk otrzymuje specjalistyczną pomoc w izolacji w Royal Free Hospital. Brytyjskie służby zapewniają, że ryzyko dla społeczeństwa pozostaje niskie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-walczyl-z-epidemia-eboli-sam-sie-zarazil-zakazony-lekarz-ewa,nId,23569715",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Rośnie liczba ofiar rosyjskiego ataku na szkołę. Zełenski podał nowy bilans"
+      "title_pl": "Zaraził się Ebolą podczas misji. Lekarza ewakuowano do Londynu"
     },
     {
-      "title": "Nie będzie konferencji von der Leyen i Nawrockiego. Szefowa KE się wycofała",
-      "snippet": "Szefowa Komisji Europejskiej Ursula von der Leyen nie pojawiła się na konferencji z Karolem Nawrockim - informuje Bloomberg. Powodem ma być kwestia sporu prezydenta Polski z Donaldem Tuskiem w sprawie Trybunału Konstytucyjnego.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-nie-bedzie-konferencji-von-der-leyen-i-nawrockiego-szefowa-k,nId,23569588",
+      "title": "Kosiniak-Kamysz na zdjęciu z Mentzenem. Tusk reaguje, wspomniał o zaufaniu",
+      "snippet": "- Jest nie tylko wicepremierem, ale człowiekiem godnym zaufania, moim przyjacielem - powiedział Donald Tusk. Premier zareagował w ten sposób na spotkanie Władysława Kosiniaka-Kamysza ze Sławomirem Mentzenem. Politycy rozmawiali na temat kryzysu wokół Trybunału Konstytucyjnego. Tusk podkreślił, podobnych sytuacji \"nie ma co przesadnie interpretować\".",
+      "link": "https://wydarzenia.interia.pl/kraj/news-kosiniak-kamysz-na-zdjeciu-z-mentzenem-tusk-reaguje-wspomnia,nId,23569714",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Nie będzie konferencji von der Leyen i Nawrockiego. Szefowa KE się wycofała"
+      "title_pl": "Kosiniak-Kamysz na zdjęciu z Mentzenem. Tusk reaguje, wspomniał o zaufaniu"
     },
     {
-      "title": "Tusk kpił ze śpiewającego Wójcika. Doczekał się muzycznej odpowiedzi",
-      "snippet": "\"Jak minął dzień, już kartkę z kalendarza na nową zmień…\" - napisał w mediach społecznościowych Donald Tusk, wyraźnie nawiązując do zamieszania wywołanego występem artystycznym Michała Wójcika w czasie protestu przed Trybunałem Konstytucyjnym. Poseł PiS postanowił w odpowiedzi przypomnieć premierowi, że i on sam próbował kiedyś swoich sił w śpiewaniu.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-tusk-kpil-ze-spiewajacego-wojcika-doczekal-sie-muzycznej-odp,nId,23569496",
+      "title": "Kreml oskarża Polskę o próbę niszczenia Rosji \"od środka\". Zacharowa grozi",
+      "snippet": "Sekretarz Rady Bezpieczeństwa Rosji Siergiej Szojgu stwierdził, że w Polsce szkolone są osoby, które mają na celu niszczenie Rosji od \"od środka\". Rzeczniczka tamtejszego MSZ Marija Zacharowa zagroziła, że Moskwa ma prawo do przeprowadzania w takiej sytuacji symetrycznych działań odwetowych.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-kreml-oskarza-polske-o-probe-niszczenia-rosji-od-srodka-zach,nId,23569691",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Tusk kpił ze śpiewającego Wójcika. Doczekał się muzycznej odpowiedzi"
+      "title_pl": "Kreml oskarża Polskę o próbę niszczenia Rosji \"od środka\". Zacharowa grozi"
     },
     {
-      "title": "Putin bez zaproszenia na szczyt G20? Jasna deklaracja Burnhama",
-      "snippet": "Władimir Putin nie zostanie zaproszony na przyszłoroczny szczyt G20, który odbędzie się w Wielkiej Brytanii - zapowiedział premier kraju Andy Burnham cytowany przez dziennikarza \"The Economist\". Jak wyjaśnił, rosyjski przywódca, \"z technicznego punktu widzenia nie przyjedzie z powodu obowiązujących sankcji\".",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-putin-bez-zaproszenia-na-szczyt-g20-jasna-deklaracja-burnham,nId,23569458",
+      "title": "Jechał od wsi do wsi i zabijał. Wiele ofiar masakry w Turcji",
+      "snippet": "Osiem osób zginęło, a jedna została ciężko ranna w serii strzelanin w prowincji Afyonkarahisar w Turcji. Ofiary znaleziono w trzech wsiach. Po szeroko zakrojonej obławie podejrzanego zatrzymano w sąsiedniej prowincji Eskişehir - poinformowała agencja DHA.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-jechal-od-wsi-do-wsi-i-zabijal-wiele-ofiar-masakry-w-turcji,nId,23569697",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Putin bez zaproszenia na szczyt G20? Jasna deklaracja Burnhama"
+      "title_pl": "Jechał od wsi do wsi i zabijał. Wiele ofiar masakry w Turcji"
     },
     {
-      "title": "Marsz Niepodległości w Warszawie. Trasa i plan na 11 listopada",
-      "snippet": "11 listopada ulicami Warszawy przejdzie kolejna edycja Marszu Niepodległości. Tegoroczne obchody odbędą się pod hasłem \"Polak w Polsce gospodarzem\". Sprawdź szczegółowy harmonogram wydarzenia oraz informacje o trasie.",
-      "link": "https://wydarzenia.interia.pl/mazowieckie/news-marsz-niepodleglosci-w-warszawie-trasa-i-plan-na-11-listopad,nId,23568724",
+      "title": "Przeanalizowali działalność Polaków w OUN. Sięgnęli do sowieckich akt",
+      "snippet": "W Kijowie zaprezentowano publikację poświęconą Polakom działającym w Organizacji Ukraińskich Nacjonalistów (OUN). Książka nosi tytuł \"Polacy w OUN. Biogramy i dokumenty\" i stanowi \"zupełnie nieznany i niezbadany dotychczas temat\". Podczas prezentacji podkreślono, że publikacja jest oparta na dokumentach z akt sowieckich organów represji.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-przeanalizowali-dzialalnosc-polakow-w-oun-siegneli-do-sowiec,nId,23569700",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Marsz Niepodległości w Warszawie. Trasa i plan na 11 listopada"
+      "title_pl": "Przeanalizowali działalność Polaków w OUN. Sięgnęli do sowieckich akt"
     },
     {
-      "title": "Rządzi od 20 lat. \"Obrotowy\" prezydent \"nie do pokonania\"",
-      "snippet": "Od 20 lat nie było zmiany prezydenta, a to wcale nie musi być koniec rządów Piotra Krzystka w Szczecinie. Stolica Pomorza Zachodniego to największe miasto w Polsce, w którym od tak dawna nie było zmiany władzy. - To obrotowy. Wygrałby każde wybory - ocenia jego dawna rywalka Małgorzata Jacyna-Witt w rozmowie z Interią. - Udało się stworzyć wrażenie, że jest trzecią opcją - dodaje politolog profesor Bartłomiej Toszek.",
-      "link": "https://wydarzenia.interia.pl/zachodniopomorskie/news-rzadzi-od-20-lat-obrotowy-prezydent-nie-do-pokonania,nId,23566620",
+      "title": "Marco Rubio odejdzie z administracji Trumpa? Jest reakcja Białego Domu",
+      "snippet": "Marco Rubio może odejść z administracji Donalda Trumpa, by przygotować się na start w wyborach prezydenckich w 2028 roku - informuje \"The Independent\", powołując się na anonimowych rozmówców w USA i Wielkiej Brytanii. Biały Dom i Departament Stanu zdecydowanie zaprzeczają tym doniesieniom.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-marco-rubio-odejdzie-z-administracji-trumpa-jest-reakcja-bia,nId,23569682",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Rządzi od 20 lat. \"Obrotowy\" prezydent \"nie do pokonania\""
+      "title_pl": "Marco Rubio odejdzie z administracji Trumpa? Jest reakcja Białego Domu"
     },
     {
-      "title": "Śmiertelny atak niedźwiedzia grizzly. Odnaleziono zwłoki matki i córki",
-      "snippet": "Kanadyjskie służby odnalazły ciała dwóch kobiet, które zaginęły w prowincji Kolumbia Brytyjska na początku listopada. Z poniesionych obrażeń wynika, że obie padły ofiarą niedźwiedzia grizzly. Funkcjonariusze ochrony przyrody prowadzą poszukiwania zwierzęcia, które mogło dokonać ataku.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-smiertelny-atak-niedzwiedzia-grizzly-odnaleziono-zwloki-matk,nId,23569461",
+      "title": "Meloni oskarża Unię Europejską, poszło o Ukrainę. \"Całkowicie nieudolne\"",
+      "snippet": "\"Prezentując obraz Europy, która nie ma jasnego kierunku działania, służymy jedynie interesom tych, którzy chcą, by ta wojna trwała\" - stwierdziła Giorgia Meloni. Premier Włoch skrytykowała w ten sposób zaangażowanie UE w rozmowy pokojowe na temat Ukrainy. Polityk określiła dotychczasowe działania mianem \"całkowicie nieudolnych\". Stwierdziła też, że podważają one naszą wiarygodność.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-meloni-oskarza-unie-europejska-poszlo-o-ukraine-calkowicie-n,nId,23569664",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Śmiertelny atak niedźwiedzia grizzly. Odnaleziono zwłoki matki i córki"
+      "title_pl": "Meloni oskarża Unię Europejską, poszło o Ukrainę. \"Całkowicie nieudolne\""
     },
     {
-      "title": "Potężna fala protestów we Francji. Zamknięto wieżę Eiffla",
-      "snippet": "We Francji trwa fala potężnych demonstracji, które zakłóciły działanie uniwersytetów i szkół średnich, a także wpłynęły na kursowanie pociągów. W niektórych rejonach kraju doszło do starć z policją i podpaleń. W związku z akcją protestacyjną zdecydowano o zamknięciu wieży Eiffla dla zwiedzających.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-potezna-fala-protestow-we-francji-zamknieto-wieze-eiffla,nId,23569473",
+      "title": "Setki tysięcy Francuzów na ulicach. Manifestanci starli się z policją",
+      "snippet": "Prawie 600 tysięcy manifestantów wyszło na ulice w 70 miastach Francji, by wyrazić swoje niezadowolenie z warunków pracy i kondycji systemu edukacji w kraju. W niektórych miejscach doszło do starć z policją.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-setki-tysiecy-francuzow-na-ulicach-manifestanci-starli-sie-z,nId,23569677",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Potężna fala protestów we Francji. Zamknięto wieżę Eiffla"
+      "title_pl": "Setki tysięcy Francuzów na ulicach. Manifestanci starli się z policją"
     },
     {
-      "title": "Porażka Trumpa ostrzeżeniem dla Europy. Politico wskazuje, kto może zyskać",
-      "snippet": "Porażka Partii Republikańskiej w wyborach do Kongresu USA może mieć konsekwencje daleko poza granicami Stanów Zjednoczonych. To, co zaszkodziło Donaldowi Trumpowi, może okazać się polityczną szansą dla Marine Le Pen. Wszystko za sprawą zjawiska, które coraz mocniej wpływa na nastroje wyborców po obu stronach Atlantyku.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-porazka-trumpa-ostrzezeniem-dla-europy-politico-wskazuje-kto,nId,23569412",
+      "title": "Mentzen opublikował zdjęcie z wicepremierem. Nawiązał do słów premiera",
+      "snippet": "Lider Konfederacji Sławomir Mentzen spotkał się z ministrem obrony narodowej Władysławem Kosiniakiem-Kamyszem. O spotkaniu poinformował za pośrednictwem mediów społecznościowych, na których opublikował zdjęcie z liderem PSL. \"Idzie ku dobremu\" - napisał, nawiązując do słów premiera Donalda Tuska.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-mentzen-opublikowal-zdjecie-z-wicepremierem-nawiazal-do-slow,nId,23569684",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Porażka Trumpa ostrzeżeniem dla Europy. Politico wskazuje, kto może zyskać"
+      "title_pl": "Mentzen opublikował zdjęcie z wicepremierem. Nawiązał do słów premiera"
     },
     {
-      "title": "Drony w przestrzeni powietrznej Łotwy. Wiadomo, skąd pochodziły",
-      "snippet": "Dwa obiekty, które naruszyły łotweską przestrzeń powietrzną to najprawdopodoniej drony rosyjski i ukraiński - przekazało w środę łotewskie radio. Pierwszy z nich, po przekroczeniu łotewskiej granicy w niedzielę zawrócił w stronę Rosji. Drugi rozbił się we wtorek na wschodzie kraju.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-drony-w-przestrzeni-powietrznej-lotwy-wiadomo-skad-pochodzil,nId,23569372",
+      "title": "Rosja odznaczyła niemieckiego biznesmena. Medal odebrał z rąk Putina",
+      "snippet": "Alexander von Bismarck, niemiecki przedsiębiorca i daleki krewny pierwszego kanclerza Rzeszy, odebrał w Moskwie order Puszkina. Odznaczenie wręczył mu sam prezydent Rosji Władimir Putin. Podczas przemówienia von Bismarck stwierdził, że zabiega o dobre relacje między Berlinem a Moskwą.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-rosja-odznaczyla-niemieckiego-biznesmena-medal-odebral-z-rak,nId,23569649",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Drony w przestrzeni powietrznej Łotwy. Wiadomo, skąd pochodziły"
+      "title_pl": "Rosja odznaczyła niemieckiego biznesmena. Medal odebrał z rąk Putina"
     },
     {
-      "title": "Zmiany na szczytach władz USA? Media: To on może zastąpić Marco Rubio",
-      "snippet": "Republikanie próbują otrząsnąć się z porażki po wyborach połówkowych. Amerykańskie media donoszą, że w administracji Donalda Trumpa może dojść do rekonstrukcji. Nowym sekretarzem stanu może zostać Sergio Gor - urodzony w Uzbekistanie ambasador USA w Indiach. Tym samym Marco Rubio miałby odejść z gabinetu, aby przygotować się na kampanię prezydencką.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-zmiany-na-szczytach-wladz-usa-media-to-on-moze-zastapic-marc,nId,23569446",
-      "source_name": "Interia",
+      "title": "Rafał Brzoska ciska gromy w Metę. Wylicza nowe oszustwa",
+      "snippet": "Rafał Brzoska prowadzi spór z koncernem Meta. Prezes InPostu wytacza ciężkie działa przeciw zarządzającym polskim Facebookiem. \"Scamu jest coraz więcej\" - pisze na X, a następnie mnoży przykłady. Zarzuca też politykom brak reakcji.",
+      "link": "https://biznes.interia.pl/finanse/news-rafal-brzoska-nie-odpuszcza-mecie-wylicza-nowe-oszustwa,nId,23569607",
+      "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Zmiany na szczytach władz USA? Media: To on może zastąpić Marco Rubio"
+      "title_pl": "Rafał Brzoska ciska gromy w Metę. Wylicza nowe oszustwa"
+    },
+    {
+      "title": "Gigantyczny skok zysku Orlenu. Grupa pokazała wyniki finansowe",
+      "snippet": "Grupa Orlen pokazała wyniki finansowe. Po trzech kwartałach 2026 r. zysk netto wyniósł ponad 21,4 mld zł, co stanowi wzrost o 13,6 mld zł rok do roku. W samym trzecim kwartale br. grupa miała 5,6 mld zł zysku netto.",
+      "link": "https://biznes.interia.pl/gieldy/news-orlen-pokazal-wyniki-finansowe-gigantyczny-skok-zyskow,nId,23569658",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Gigantyczny skok zysku Orlenu. Grupa pokazała wyniki finansowe"
+    },
+    {
+      "title": "Rosja sięga po rezerwy złota. Tak dużej wyprzedaży nie było od dekad",
+      "snippet": "Rosja sprzedaje złoto, by ratować finanse publiczne. W ciągu kilku miesięcy z jej rezerw ubyło około 62 ton kruszcu. Tak dużej, nieprzerwanej redukcji nie notowano od kryzysu finansowego z 1998 roku.",
+      "link": "https://biznes.interia.pl/gospodarka/news-rosyjski-skarbiec-topnieje-kreml-siega-po-zloto-na-niespotyk,nId,23569334",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Rosja sięga po rezerwy złota. Tak dużej wyprzedaży nie było od dekad"
+    },
+    {
+      "title": "Kraj UE przywraca kontrole na granicach. Wskazuje na \"poważne zagrożenie\"",
+      "snippet": "Od 12 listopada na wewnętrznych granicach Szwecji przywrócone zostaną kontrole graniczne. Decyzja ta jest wynikiem najnowszej oceny bezpieczeństwa. Rząd uważa, że istnieje poważne zagrożenie dla porządku publicznego i bezpieczeństwa wewnętrznego Szwecji.",
+      "link": "https://biznes.interia.pl/polityka/news-kontrole-na-granicach-w-kraju-ue-konsekwencja-powaznego-zagr,nId,23569597",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Kraj UE przywraca kontrole na granicach. Wskazuje na \"poważne zagrożenie\""
+    },
+    {
+      "title": "PKP chciało wyburzyć dworzec. Budynek nagle trafił do rejestru zabytków",
+      "snippet": "PKP nie zamierza rezygnować z planów wyburzenia dworca w Mikołowie, mimo że budynek zyskał niedawno status zabytku. Kolejowa spółka złożyła odwołanie od decyzji konserwatora, a ostateczny los unikatowego obiektu spoczywa teraz w rękach Ministerstwa Kultury.",
+      "link": "https://biznes.interia.pl/nieruchomosci/news-pkp-chcialo-wyburzyc-dworzec-budynek-nagle-trafil-do-rejestr,nId,23569540",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "PKP chciało wyburzyć dworzec. Budynek nagle trafił do rejestru zabytków"
     },
     {
       "title": "Banki zainwestują w polski biznes. Na stole 500 mln zł na innowacje",
@@ -453,156 +357,236 @@
       "title_pl": "Z północy i zachodu z zazdrością patrzą na Polskę. Eurostat podał dane"
     },
     {
-      "title": "Pracodawca zapłaci za mobbing. Minimum 28 tys. zł zadośćuczynienia",
-      "snippet": "W czwartek 5 listopada w życie weszła nowelizacja Kodeksu pracy, która ma zwiększyć ochronę pracowników przed mobbingiem. Zmieniła się nie tylko definicja, ale wprowadzono też minimalne zadośćuczynienia dla ofiar, które wyniosą w tym roku ponad 28 tys. zł.",
-      "link": "https://biznes.interia.pl/praca/news-nowe-przepisy-o-mobbingu-weszly-w-zycie-niemal-30-tys-zl-zad,nId,23569326",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Pracodawca zapłaci za mobbing. Minimum 28 tys. zł zadośćuczynienia"
-    },
-    {
-      "title": "Chinom nie podoba się opłata od paczek w UE. Apelują o \"rozwagę\"",
-      "snippet": "Chińskie ministerstwo handlu zaapelowało do Unii Europejskiej o \"rozważną\" ocenę wpływu regulacji wprowadzających opłatę od przesyłek niskiej wartości. Pekin oświadczył, że liczy na \"korzystne warunki dla współpracy\".",
-      "link": "https://biznes.interia.pl/gospodarka/news-chiny-niezadowolone-z-oplat-do-przesylek-w-ue-zaapelowaly-o,nId,23569402",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Chinom nie podoba się opłata od paczek w UE. Apelują o \"rozwagę\""
-    },
-    {
-      "title": "Zamrażarki rozgrzano do 50°C w dziewięciu krajach. Śledczy badają sprawę",
-      "snippet": "Prorosyjskie grupy hakerskie przyznały się do ataków na supermarkety w Europie, po których część sklepów musiała wyrzucić żywność. Służby wciąż weryfikują ich udział w incydentach.",
-      "link": "https://biznes.interia.pl/polityka/news-prorosyjscy-hakerzy-przyznali-sie-ataki-na-chlodnie-w-dziewi,nId,23569399",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Zamrażarki rozgrzano do 50°C w dziewięciu krajach. Śledczy badają sprawę"
-    },
-    {
-      "title": "Cła na stal zaczynają działać. Europejski gigant liczy zyski",
-      "snippet": "Unijne ograniczenia importu stali przynoszą efekty. ArcelorMittal poprawił wyniki finansowe, a dostawy spoza UE wyraźnie spadły. Europejscy producenci zyskują większą siłę w ustalaniu cen, choć koszty energii i surowców nadal rosną.",
-      "link": "https://biznes.interia.pl/gospodarka/news-europa-zamknela-drzwi-przed-stala-z-azji-europejski-gigant-l,nId,23569457",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Cła na stal zaczynają działać. Europejski gigant liczy zyski"
-    },
-    {
-      "title": "Są maksymalne ceny paliw na piątek. Tyle zapłacą kierowcy",
-      "snippet": "Kierowcy muszą przygotować się na kolejną zmianę maksymalnych cen paliw. Minister energii Miłosz Motyka ogłosił nowe stawki, które będą obowiązywać na stacjach w piątek, 6 listopada. Ile zapłacimy za litr benzyny 95, benzyny 98 i oleju napędowego?",
-      "link": "https://biznes.interia.pl/finanse/news-ile-zaplacimy-za-paliwa-6-listopada-sa-nowe-maksymalne-ceny,nId,23569337",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Są maksymalne ceny paliw na piątek. Tyle zapłacą kierowcy"
-    },
-    {
-      "title": "Skydance szuka oszczędności. Z firmą żegna się ośmioro menedżerów",
-      "snippet": "Paramount Skydance, nowy właściciel Warner Bros. Discovery, do którego należy m.in. TVN, kontynuuje zmiany kadrowe po przejęciu medialnego giganta. Z firmą pożegna się kolejnych ośmioro menedżerów, a jednocześnie wyznaczono nowych szefów działu dystrybucji. Jak informuje Reuters, spółka planuje oszczędności sięgające co najmniej 6 mld dolarów.",
-      "link": "https://biznes.interia.pl/finanse/news-wlasciciel-tvn-znow-zwalnia-osiem-osob-odchodzi-z-firmy,nId,23569298",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Skydance szuka oszczędności. Z firmą żegna się ośmioro menedżerów"
-    },
-    {
-      "title": "Miliardy euro dla Kijowa. \"Dziś wypłacamy pakiet\"",
-      "snippet": "\"Dziś wypłacamy Ukrainie pakiet o wartości 4,36 mld euro\" - ogłosiła w czwartek (05.11) Ursula von der Leyen. Tymczasem MAE ostrzega, że mimo 400 MW nowych mocy z gazu Ukraina może zimą zmagać się z niedoborami prądu, a rosyjskie drony coraz trudniej przechwycić.",
-      "link": "https://biznes.interia.pl/energetyka/news-ue-uruchamia-4-36-mld-euro-ukraina-szykuje-sie-na-zime-bez-g,nId,23569387",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Miliardy euro dla Kijowa. \"Dziś wypłacamy pakiet\""
-    },
-    {
-      "title": "Porażka Trumpa. Świat czeka na jego kolejny ruch. Stawka jest ogromna [WYJAŚNIAMY]",
-      "snippet": "Donald Trump obiecywał, że zakończy wojny. Zamiast tego wciągnął Stany Zjednoczone w wojnę z Iranem, naciskał na Ukrainę i zaostrzył konflikt z Chinami. Teraz przegrał wybory środka kadencji, a Demokraci przejęli obie izby Kongresu. To może zmienić nie tylko jego prezydenturę, ale także przebieg najważniejszych konfliktów na świecie. Co wydarzy się z Ukrainą, Iranem, Rosją, Chinami, Europą i Izraelem? Wyjaśniamy.",
-      "link": "https://wiadomosci.onet.pl/swiat/porazka-trumpa-swiat-czeka-na-jego-kolejny-ruch-stawka-jest-ogromna-wyjasniamy/0x3681b",
+      "title": "Donald Trump o wojnie z Iranem. \"Wkrótce się przekonacie\"",
+      "snippet": "Donald Trump stwierdził, że być może \"będzie musiał zniszczyć pozostałą część Iranu\". Zaznaczył jednak, że wolałby tego nie robić.",
+      "link": "https://wiadomosci.onet.pl/swiat/donald-trump-mowi-o-zniszczeniu-iranu-moze-bede-musial/13ne72y",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Porażka Trumpa. Świat czeka na jego kolejny ruch. Stawka jest ogromna [WYJAŚNIAMY]"
+      "title_pl": "Donald Trump o wojnie z Iranem. \"Wkrótce się przekonacie\""
     },
     {
-      "title": "Seria zawiadomień po wydarzeniach w Trybunale Konstytucyjnym. Śledczy przekazują sprawę wyżej",
-      "snippet": "Do warszawskiej prokuratury wpłynęło już 13 zawiadomień o podejrzeniu przestępstwa w związku z wydarzeniami w Trybunale Konstytucyjnym. Ze względu na złożoność sytuacji śledztwo najpewniej trafi do Prokuratury Krajowej.",
-      "link": "https://wiadomosci.onet.pl/kraj/przepychanki-w-trybunale-konstytucyjnym-posypaly-sie-zawiadomienia-do-prokuratury/21zpzs8",
+      "title": "Polacy ocenili działania rządu w sprawie TK. Dominuje jedna odpowiedź [SONDAŻ]",
+      "snippet": "Blisko połowa Polaków uważa, że rząd nie ma podstaw prawnych do zmian w Trybunale Konstytucyjnym — wynika z najnowszego sondażu SW Research na zlecenie Onetu. O legalności działań władz przekonanych jest znacznie mniej osób.",
+      "link": "https://wiadomosci.onet.pl/kraj/polacy-o-dzialaniach-rzadu-w-sprawie-tk-sa-wyniki-nowego-sondazu/9x44ccn",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Seria zawiadomień po wydarzeniach w Trybunale Konstytucyjnym. Śledczy przekazują sprawę wyżej"
+      "title_pl": "Polacy ocenili działania rządu w sprawie TK. Dominuje jedna odpowiedź [SONDAŻ]"
     },
     {
-      "title": "Karol Nawrocki chce zmiany roli Polski w UE. Wytknął błędy Zachodu",
-      "snippet": "— Nasze państwa powinny mieć większy wkład w kształtowanie wspólnoty europejskiej — podkreślił Karol Nawrocki po spotkaniu z prezydentami krajów Grupy Wyszehradzkiej.",
-      "link": "https://wiadomosci.onet.pl/kraj/karol-nawrocki-na-szczycie-grupy-wyszehradzkiej-nie-mozemy-byc-tylko-odbiorcami/j8sce2c",
+      "title": "Wrocław - 06.11.2026. Prognoza pogody w mieście",
+      "snippet": "Wrocław - czy dzisiejsza pogoda będzie sprzyjać mieszkańcom? Czy w dniu 06.11.2026 przydadzą się nam parasole? Pokazujemy najnowsze przewidywania meteorologów. Województwo dolnośląskie - prognoza pogody.",
+      "link": "https://wiadomosci.onet.pl/wroclaw/wroclaw-prognoza-pogody-w-dniu-06112026/r4l47gm",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Karol Nawrocki chce zmiany roli Polski w UE. Wytknął błędy Zachodu"
+      "title_pl": "Wrocław - 06.11.2026. Prognoza pogody w mieście"
     },
     {
-      "title": "J.D. Vance obiera własną drogę. Zwrot na amerykańskiej prawicy. Zaczyna się walka o miejsce po Trumpie",
-      "snippet": "\"J.D. wyszedł z tego zwycięsko i jest teraz liderem amerykańskiej prawicy\" — informują \"The Telegraph\" źródła z amerykańskich kręgów politycznych. Vance jest gotowy przejąć pałeczkę po upokarzającej porażce Republikanów w wyborach śródokresowych.",
-      "link": "https://wiadomosci.onet.pl/swiat/jd-vance-obiera-wlasna-droge-zwrot-na-amerykanskiej-prawicy-zaczyna-sie-walka-o/d0828fs",
+      "title": "Zielona Góra: Jaka pogoda na dziś? Prognoza w dniu 06.11.2026",
+      "snippet": "Zielona Góra. Jaka pogoda będzie dziś w twoim mieście? Sprawdź prognozę w dniu 06.11.2026. Prezentujemy najnowsze przewidywania meteorologów. Województwo lubuskie - aktualna prognoza pogody.",
+      "link": "https://wiadomosci.onet.pl/lubuskie/zielona-gora-prognoza-pogody-w-dniu-06112026/qf74ywc",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "J.D. Vance obiera własną drogę. Zwrot na amerykańskiej prawicy. Zaczyna się walka o miejsce po Trumpie"
+      "title_pl": "Zielona Góra: Jaka pogoda na dziś? Prognoza w dniu 06.11.2026"
     },
     {
-      "title": "Niezwykły wyczyn pilota w Ukrainie. Podczas jednej misji zestrzelił dziewięć dronów",
-      "snippet": "W sieci pojawiło się także nagranie, na którym możemy zobaczyć niesamowitą efektywność ukraińskich pilotów w walce z rosyjskimi dronami.",
-      "link": "https://wiadomosci.onet.pl/swiat/imponujacy-strzal-ukrainskiego-pilota-w-sieci-pojawilo-sie-nagranie/10dthzn",
+      "title": "Warszawa - jakiej pogody możemy się spodziewać 06.11.2026?",
+      "snippet": "Warszawa. Sprawdź, jaka pogoda będzie dziś w twoim mieście. Zobacz, czy aura w dniu 06.11.2026 sprzyjać będzie przebywaniu na świeżym powietrzu? Prognoza pogody - województwo mazowieckie. Sprawdź, jaka pogoda czeka nas dziś. Prezentujemy najnowsze informacje meteorologiczne.",
+      "link": "https://wiadomosci.onet.pl/warszawa/warszawa-prognoza-pogody-w-dniu-06112026/ne5f8pq",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Niezwykły wyczyn pilota w Ukrainie. Podczas jednej misji zestrzelił dziewięć dronów"
+      "title_pl": "Warszawa - jakiej pogody możemy się spodziewać 06.11.2026?"
     },
     {
-      "title": "Niemiecki polityk znaleziony martwy w hotelu. Prokuratura wszczęła śledztwo",
-      "snippet": "Śmierć popularnego bawarskiego polityka wstrząsnęła niemiecką sceną polityczną. Hubert Aiwanger, przewodniczący regionalnej partii Wolni Wyborcy oraz bawarski minister gospodarki, został znaleziony martwy w berlińskim hotelu w środę wieczorem. Miał zaledwie 55 lat.",
-      "link": "https://wiadomosci.onet.pl/swiat/niemiecki-polityk-znaleziony-martwy-w-hotelu-prokuratura-wszczela-sledztwo/fv3k0hd",
+      "title": "Toruń - sprawdź prognozę pogody w dniu 06.11.2026",
+      "snippet": "Toruń. Jaka będzie pogoda w mieście? Czy w dniu 06.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo kujawsko-pomorskie - jaka jest aktualna prognoza pogody?",
+      "link": "https://wiadomosci.onet.pl/kujawsko-pomorskie/torun-prognoza-pogody-w-dniu-06112026/2pgssh2",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Niemiecki polityk znaleziony martwy w hotelu. Prokuratura wszczęła śledztwo"
+      "title_pl": "Toruń - sprawdź prognozę pogody w dniu 06.11.2026"
     },
     {
-      "title": "Utrudnienia w metrze w Warszawie. Cztery stacje zamknięte",
-      "snippet": "Na stacji metra Politechnika doszło do wypadku z udziałem pasażera. Zamknięte są cztery stacje pierwszej linii metra: Politechnika, Pole Mokotowskie, Racławicka i Wierzbno.",
-      "link": "https://wiadomosci.onet.pl/warszawa/utrudnienia-w-metrze-w-warszawie-cztery-stacje-zamkniete/cxd0dgr",
-      "source_name": "Onet",
+      "title": "Działo się w nocy. Trump zapowiada przełom w sprawie Ukrainy i Iranu",
+      "snippet": "Donald Trump spotkał się z wysłannikiem Kremla i przekonywał, że porozumienie dotyczące wojny w Ukrainie jest blisko. Jared Kushner zapowiedział kolejne rozmowy pokojowe z udziałem USA, Ukrainy i Rosji. Sprawdź, co jeszcze działo się w nocy z czwartku na piątek.",
+      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-trump-zapowiada-przelom-w-sprawie-ukrainy-i-iranu-7347965910002144a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Utrudnienia w metrze w Warszawie. Cztery stacje zamknięte"
+      "title_pl": "Działo się w nocy. Trump zapowiada przełom w sprawie Ukrainy i Iranu"
     },
     {
-      "title": "Putin ma plan na weteranów. Tak chce stworzyć \"nową elitę\" Rosji",
-      "snippet": "Uczestnicy wojny przeciwko Ukrainie, którzy nie posiadają wyższego wykształcenia, dostaną możliwość kształcenia się na urzędników w ramach programu \"Czas bohaterów\". Inicjatywa została uruchomiona z polecenia Władimira Putina.",
-      "link": "https://wiadomosci.onet.pl/swiat/nowa-sciezka-zawodowa-rosja-bierze-sie-za-weteranow/z9f05p2",
-      "source_name": "Onet",
+      "title": "Kushner ujawnia plany USA. Zapowiada rozmowy pokojowe",
+      "snippet": "Wysłannik prezydenta USA Donalda Trumpa Jared Kushner przekazał, że czwartkowe rozmowy w Brukseli z udziałem Ukrainy, NATO i europejskich partnerów były owocne. Spotkanie dotyczyło gwarancji bezpieczeństwa dla Kijowa oraz przyszłej architektury bezpieczeństwa w Europie.",
+      "link": "https://wiadomosci.wp.pl/kushner-ujawnia-plany-usa-zapowiada-rozmowy-pokojowe-7347955067529696a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Putin ma plan na weteranów. Tak chce stworzyć \"nową elitę\" Rosji"
+      "title_pl": "Kushner ujawnia plany USA. Zapowiada rozmowy pokojowe"
     },
     {
-      "title": "Amerykanie przenoszą 50 żołnierzy z Polski na Litwę. Wilno zabiera głos",
-      "snippet": "Informację o transferze amerykańskich żołnierzy z Polski na Litwę przekazał litewski premier Mindaguas Sinkeviczius.",
-      "link": "https://wiadomosci.onet.pl/swiat/amerykanie-przenosza-50-zolnierzy-z-polski-na-litwe-wilno-zabiera-glos/bspnh36",
-      "source_name": "Onet",
+      "title": "Demokraci mogą przełamać weto Trumpa. Potrzebują jednak sojuszników",
+      "snippet": "Donald Trump zapowiedział, że po przejęciu Kongresu przez Demokratów będzie blokował ich projekty ustaw. Kongres może odrzucić weto prezydenta większością 2/3 głosów. Demokraci będą potrzebować do tego wsparcia Republikanów.",
+      "link": "https://wiadomosci.wp.pl/demokraci-moga-przelamac-weto-trumpa-potrzebuja-jednak-sojusznikow-7347946326366688a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Amerykanie przenoszą 50 żołnierzy z Polski na Litwę. Wilno zabiera głos"
+      "title_pl": "Demokraci mogą przełamać weto Trumpa. Potrzebują jednak sojuszników"
     },
     {
-      "title": "Burza w sprawie niemieckich żołnierzy w Polsce. Marcin Wyrwał reaguje. \"Dwie szklanki zimnej wody\"",
-      "snippet": "Zdjęcia niemieckich żołnierzy w Polsce stały się sensacją w sieci i pożywką dla prawicowych polityków. Dlaczego pojawili się w Polsce? Wyjaśnia to Marcin Wyrwał. Dziennikarz Onetu ma także apel do parlamentarzystów — Dwie szklanki zimnej wody na głowę. Powinno pomóc — wskazuje.",
-      "link": "https://wiadomosci.onet.pl/kraj/niemieccy-zolnierze-w-polsce-burza-na-prawicy-marcin-wyrwal-odpowiada/3g25ngs",
-      "source_name": "Onet",
+      "title": "548 skazanych uniknie egzekucji. Gubernator Kalifornii ogłasza decyzję",
+      "snippet": "Gubernator Kalifornii Gavin Newsom zdecydował o zamianie wyroków śmierci wobec wszystkich 548 osób oczekujących na egzekucję w tym stanie. Skazani spędzą resztę życia w więzieniu bez możliwości zwolnienia warunkowego. Decyzję ogłoszono dwa miesiące przed końcem kadencji polityka.",
+      "link": "https://wiadomosci.wp.pl/548-skazanych-uniknie-egzekucji-gubernator-kalifornii-oglasza-decyzje-7347932690725312a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Burza w sprawie niemieckich żołnierzy w Polsce. Marcin Wyrwał reaguje. \"Dwie szklanki zimnej wody\""
+      "title_pl": "548 skazanych uniknie egzekucji. Gubernator Kalifornii ogłasza decyzję"
     },
     {
-      "title": "Rosjanie przyszli do niego rankiem. Zniknął na cztery lata. \"Każdego dnia myślałem o samobójstwie\"",
-      "snippet": "— Tego, przez co przeszedłem, nie życzyłbym nawet mojemu największemu wrogowi — mówi Jewhen Kotelewski, Ukrainiec, który spędził niemal cztery lata w rosyjskiej niewoli. W osobistym wywiadzie ujawnia, jak wyglądają metody ludzi Władimira Putina.",
-      "link": "https://wiadomosci.onet.pl/swiat/lamali-nam-zebra-i-rozbijali-glowy-przezyl-wiezienie-w-rosji-myslalem-o-samobojstwie/lyph37n",
-      "source_name": "Onet",
+      "title": "Burza wokół szefa Pentagonu. Hegseth broni wojny z Iranem",
+      "snippet": "Szef Pentagonu Pete Hegseth nazwał wojnę z Iranem odważnym i historycznym przedsięwzięciem. W nagraniu opublikowanym w czwartek bronił decyzji o rozpoczęciu działań oraz swojej pozycji. W tle pojawiły się doniesienia o możliwej dymisji ministra obrony USA.",
+      "link": "https://wiadomosci.wp.pl/burza-wokol-szefa-pentagonu-hegseth-broni-wojny-z-iranem-7347918282979776a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Rosjanie przyszli do niego rankiem. Zniknął na cztery lata. \"Każdego dnia myślałem o samobójstwie\""
+      "title_pl": "Burza wokół szefa Pentagonu. Hegseth broni wojny z Iranem"
     },
     {
-      "title": "Fiński sąd ukarał rosyjskich sabotażystów. Zapadły wielomiesięczne wyroki",
-      "snippet": "Sąd w Helsinkach skazał w czwartek rosyjskiego kapitana i azerskiego członka załogi statku Fitburg na kary więzienia, uznając ich za winnych sabotażu i zniszczenia podmorskich kabli telekomunikacyjnych. Płynący z Rosji statek uszkodził kable prowadzące z Helsinek do Tallina w sylwestra 2025 r.",
-      "link": "https://wiadomosci.onet.pl/swiat/finski-sad-ukaral-sabotazystow-padly-wielomiesieczne-wyroki-wiezienia/d1kqs2f",
-      "source_name": "Onet",
+      "title": "Rosja próbowała ukryć prawdę o ataku. Jest nagranie z Komyszuwachy",
+      "snippet": "Ukraińskie media opublikowały nagranie z ataku na szkołę w Komyszuwasze w obwodzie zaporoskim. Materiał pokazuje cywilów kierujących się do schronu oraz rozdawanie pomocy humanitarnej. W bombardowaniu zginęły 43 osoby, a około 30 kolejnych może znajdować się pod gruzami. Nagranie z miejsca przeczy rosyjskim twierdzeniom o wojskowym celu ataku i potwierdza, że Rosjanie zaatakowali cywili.",
+      "link": "https://wiadomosci.wp.pl/rosja-probowala-ukryc-prawde-o-ataku-jest-nagranie-z-komyszuwachy-7347896450693568a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Fiński sąd ukarał rosyjskich sabotażystów. Zapadły wielomiesięczne wyroki"
+      "title_pl": "Rosja próbowała ukryć prawdę o ataku. Jest nagranie z Komyszuwachy"
+    },
+    {
+      "title": "Niepokojące doniesienia z Rumunii. Groźby wobec kolejnych samolotów",
+      "snippet": "Rumuńskie służby wywiadowcze poinformowały o groźbach podłożenia bomb w dwóch kolejnych samolotach. Jeden z nich, należący do KLM, wylądował w Bukareszcie. Piloci poprosili o przeprowadzenie kontroli pirotechnicznej - pisze Reuters.",
+      "link": "https://wiadomosci.wp.pl/niepokojace-doniesienia-z-rumunii-grozby-wobec-kolejnych-samolotow-7347887367293408a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Niepokojące doniesienia z Rumunii. Groźby wobec kolejnych samolotów"
+    },
+    {
+      "title": "Oni stracili przez spór z TK? \"Obecności tych polityków nie rozumiem\"",
+      "snippet": "Spór wokół Trybunału Konstytucyjnego stał się nie tylko kolejnym punktem zapalnym w relacjach rządu z opozycją, ale również okazją do politycznych demonstracji. W programie \"Teraz WP\" prof. Antoni Dudek wskazał, kto z polityków niepotrzebnie zaangażował się w konflikt. Padło na Sławomira Mentzena i Krzysztofa Bosaka, a także Mateusza Morawieckiego.",
+      "link": "https://wiadomosci.wp.pl/oni-stracili-przez-spor-z-tk-obecnosci-tych-politykow-nie-rozumiem-7347846762285504v",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Oni stracili przez spór z TK? \"Obecności tych polityków nie rozumiem\""
+    },
+    {
+      "title": "Tusk nie chciał naprawy TK? \"Zakładał, że wygra wybory Trzaskowski\"",
+      "snippet": "Czy kryzys wokół Trybunału Konstytucyjnego można było rozwiązać wcześniej? W programie Teraz WP prof. Antoni Dudek, w rozmowie z Patrycjuszem Wyżgą, ocenił, że na sposób działania rządu Donalda Tuska mogły wpłynąć kalkulacje związane z wyborami prezydenckimi. Zdaniem politologa premier zakładał zwycięstwo Rafała Trzaskowskiego.",
+      "link": "https://wiadomosci.wp.pl/tusk-nie-chcial-naprawy-tk-zakladal-ze-wygra-wybory-trzaskowski-7347845285464544v",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Tusk nie chciał naprawy TK? \"Zakładał, że wygra wybory Trzaskowski\""
+    },
+    {
+      "title": "Chinese fashion platform Shein to invest €500 million in Polish logistics hub",
+      "snippet": "The expansion after the EU introduced fees on low-value parcels from Chinese e-commerce platforms.",
+      "link": "https://notesfrompoland.com/2026/11/05/chinese-fashion-platform-shein-to-invest-e500-million-in-polish-logistics-hub/",
+      "source_name": "Notes from Poland",
+      "lang": "en",
+      "title_pl": "Chińska platforma modowa Shein zainwestuje 500 milionów euro w polskie centrum logistyczne"
+    },
+    {
+      "title": "Polish far-right leader Braun to face second trial",
+      "snippet": "Prosecutors have indicted him for a series of anti-Ukrainian, anti-Jewish, anti-LGBT and anti-EU acts.",
+      "link": "https://notesfrompoland.com/2026/11/05/polish-far-right-leader-braun-to-face-second-trial/",
+      "source_name": "Notes from Poland",
+      "lang": "en",
+      "title_pl": "Polski lider skrajnej prawicy Braun stanie przed drugim procesem"
+    },
+    {
+      "title": "\"Nóż w plecy Trumpa\". Ruszyła walka o władzę w Białym Domu",
+      "snippet": "J.D. Vance ogłosił, że republikanie przegrali wybory połówkowe z powodu wojny w Iranie, co jest \"wbiciem noża w plecy\" Donalda Trumpa. W Białym Domu szuka się winnych klęski, a jednocześnie ruszyła batalia o prezydenturę w 2028 roku.",
+      "link": "https://www.money.pl/gospodarka/noz-w-plecy-trumpa-ruszyla-walka-o-wladze-w-bialym-domu-7347761579522528a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "\"Nóż w plecy Trumpa\". Ruszyła walka o władzę w Białym Domu"
+    },
+    {
+      "title": "Amerykańska giełda na czerwono. \"Powszechna wyprzedaż\"",
+      "snippet": "W czwartek akcje na amerykańskiej giełdzie gwałtownie tracą na wartości, a miażdżąca przewaga demokratów budzi obawy o spółki powiązane z AI - zwraca uwagę agencja Bloomberga. Na Wall Street traci zarówno indeks S&P 500, jak i Nasdaq oraz B500.",
+      "link": "https://www.money.pl/gielda/amerykanska-gielda-na-czerwono-powszechna-wyprzedaz-7347821317679584a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Amerykańska giełda na czerwono. \"Powszechna wyprzedaż\""
+    },
+    {
+      "title": "W piątek zmiana na stacjach.  Minister ogłosił nowe ceny paliw",
+      "snippet": "W piątek litr benzyny 95 będzie kosztował nie więcej niż 6,20 zł, benzyny 98 – 6,93 zł, a diesla - 7,91 zł – wynika z opublikowanego w czwartek obwieszczenia Ministra Energii. To ceny niższe od tych, które obowiązują w czwartek.",
+      "link": "https://www.money.pl/gospodarka/w-piatek-zmiana-na-stacjach-minister-oglosil-nowe-ceny-paliw-7347732826606048a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "W piątek zmiana na stacjach.  Minister ogłosił nowe ceny paliw"
+    },
+    {
+      "title": "Budżet TK trafił do Sejmu. Marszałek podjął decyzję",
+      "snippet": "Uchwała dotycząca budżetu Trybunału Konstytucyjnego na 2027 r. trafiła do Sejmu. Marszałek Włodzimierz Czarzasty skierował ją do Komisji Finansów Publicznych. Dokument przyjęto na zgromadzeniu zwołanym przez Annę Korwin-Piotrowską w cieniu sporu o kierownictwo TK.",
+      "link": "https://www.money.pl/gospodarka/budzet-tk-trafil-do-sejmu-marszalek-podjal-decyzje-7347661260753376a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Budżet TK trafił do Sejmu. Marszałek podjął decyzję"
+    },
+    {
+      "title": "Netanjahu rzuca cień na wybory. \"Olbrzymie sumy pieniędzy\"",
+      "snippet": "Ustępujący premier Izraela Benjamin Netanjahu oświadczył, że obce państwa mogły próbować wpłynąć na wybory w Izraelu, angażując ogromne pieniądze. Żaden z dwóch głównych bloków nie zdobył większości, a kraj czekają trudne negocjacje koalicyjne.",
+      "link": "https://www.money.pl/gospodarka/netanjahu-rzuca-cien-na-wybory-olbrzymie-sumy-pieniedzy-7347647031638496a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Netanjahu rzuca cień na wybory. \"Olbrzymie sumy pieniędzy\""
+    },
+    {
+      "title": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 05.11.2026",
+      "snippet": "Kurs dolara - 05.11.2026. W czwartek za jednego dolara (USD) trzeba zapłacić 3.896 zł.",
+      "link": "https://www.money.pl/pieniadze/ile-kosztuje-dolar-kurs-dolara-do-zlotego-pln-usd-05-11-2026-7347644634745280a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Ile kosztuje dolar? Kurs dolara do złotego PLN/USD 05.11.2026"
+    },
+    {
+      "title": "Sromotna porażka Trumpa. Wall Street wystrzeliła po wyborach",
+      "snippet": "Wall Street mocno odbiła po zwycięstwie demokratów w wyborach do Kongresu. Dow Jones zyskał 1570 punktów, notując najlepszą sesję od 18 miesięcy. Inwestorów uspokoiła deklaracja Trumpa o uznaniu wyników, choć nowa większość może zaostrzyć regulacje dotyczące AI.",
+      "link": "https://www.money.pl/gielda/sromotna-porazka-trumpa-wall-street-wystrzelila-po-wyborach-7347627533171168a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Sromotna porażka Trumpa. Wall Street wystrzeliła po wyborach"
+    },
+    {
+      "title": "Złote żniwa w cieniu wojny. Amerykańscy nafciarze zarobili ponad 130 mld dolarów",
+      "snippet": "Konflikt zbrojny na Bliskim Wschodzie przyniósł gigantyczne zyski amerykańskiej branży naftowej. Od kwietnia do września spółki wydobywcze i rafineryjne wypracowały łącznie ponad 130 mld dolarów – niemal trzykrotnie więcej niż w analogicznym okresie ubiegłego roku.",
+      "link": "https://www.bankier.pl/wiadomosc/Zlote-zniwa-nafciarzy-w-cieniu-wojny-z-Iranem-Amerykanskie-koncerny-zarobily-ponad-130-mld-dolarow-9224053.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Złote żniwa w cieniu wojny. Amerykańscy nafciarze zarobili ponad 130 mld dolarów"
+    },
+    {
+      "title": "Szwajcarski bank bezlitośnie tnie etaty. Koniec taryfy ulgowej po awaryjnej fuzji",
+      "snippet": "Największy bank w Szwajcarii drastycznie ogranicza wydatki, kończąc awaryjne przejęcie Credit Suisse. Zaciskając pasa, obciął wydatki o ponad 800 mln dolarów, które miały pójść na wypłaty dla zewnętrznych konsultantów i wykonawców. Tym samym zlikwidował ponad 5,5 tys. miejsc pracy.",
+      "link": "https://www.bankier.pl/wiadomosc/Najwiekszy-szwajcarski-bank-bezlitosnie-tnie-etaty-Koniec-taryfy-ulgowej-po-awaryjnej-fuzji-9224131.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Szwajcarski bank bezlitośnie tnie etaty. Koniec taryfy ulgowej po awaryjnej fuzji"
+    },
+    {
+      "title": "Orlen zwiększył zysk netto o 163 proc. rdr. Konsensus pozostał poza zasięgiem",
+      "snippet": "Grupa Orlen wypracowała w trzecim kwartale 2026 roku wynik EBITDA LIFO na poziomie 14,78 mld zł wobec 8,9 mld zł przed rokiem - poinformowała spółka w komunikacie. Analitycy oczekiwali EBITDA LIFO w wysokości 15,32 mld zł.",
+      "link": "https://www.bankier.pl/wiadomosc/EBITDA-LIFO-Orlen-w-III-kw-14-78-mld-zl-wynik-pod-wplywem-zmiennosci-cen-surowcow-i-geopolityki-9224444.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Orlen zwiększył zysk netto o 163 proc. rdr. Konsensus pozostał poza zasięgiem"
+    },
+    {
+      "title": "Sprzedaż Dino Polska rośnie, ale marże pod presją. Spółka podała wyniki",
+      "snippet": "Zysk netto jednostki dominującej grupy Dino Polska wyniósł w trzecim kwartale 2026 roku 483 mln zł wobec 481,9 mln zł zysku rok wcześniej - podała spółka w raporcie. Konsensus PAP Biznes zakładał 484,5 mln zł zysku netto.",
+      "link": "https://www.bankier.pl/wiadomosc/Dino-Polska-mialo-w-III-kw-483-mln-zl-zysku-netto-j-d-wobec-konsensusu-484-5-mln-zl-zysku-9224495.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Sprzedaż Dino Polska rośnie, ale marże pod presją. Spółka podała wyniki"
+    },
+    {
+      "title": "Rosyjski diesel miał trafić do USA. 2 z 3 tankowców zmieniły kurs",
+      "snippet": "Dwa z trzech transportów rosyjskiego diesla, które miały trafić do USA w ramach porozumienia zawartego przez Donalda Trumpa i Władimira Putina, zmieniły kierunek podróży - podał „Financial Times”. Według gazety może to świadczyć o trudnościach z realizacją kontrowersyjnego planu importu rosyjskiego paliwa.",
+      "link": "https://www.bankier.pl/wiadomosc/Rosyjski-diesel-mial-trafic-do-USA-2-z-3-tankowcow-zmienily-kurs-9224481.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Rosyjski diesel miał trafić do USA. 2 z 3 tankowców zmieniły kurs"
     }
   ]
 }
