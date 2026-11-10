@@ -1,232 +1,200 @@
 {
-  "date": "9 listopada 2026",
-  "time": "16:16",
-  "timestamp": "2026-11-09_16:16",
-  "count": 75,
+  "date": "10 listopada 2026",
+  "time": "06:14",
+  "timestamp": "2026-11-10_06:14",
+  "count": 74,
   "items": [
     {
-      "title": "Paweł \"Naval\" Mateńczuk w \"Najważniejszych pytaniach\". Oglądaj od godz. 18:00",
-      "snippet": "Paweł Naval Mateńczuk, weteran Jednostki Wojskowej GROM będzie gościem poniedziałkowego wydania Najważniejszych pytań. Rozmowę poprowadzą Przemysław Szubartowicz i Karolina Olejak. Transmisja od godz. 18:00 w Polsat News, polsatnews.pl i Interii.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/pawel-naval-matenczuk-w-najwazniejszych-pytaniach-ogladaj-od-godz-1800/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Paweł \"Naval\" Mateńczuk w \"Najważniejszych pytaniach\". Oglądaj od godz. 18:00"
-    },
-    {
-      "title": "Sekcje ofiar ataku w Krakowie. Nowe informacje z prokuratury",
-      "snippet": "Zakończyły się sekcje zwłok sześciu ofiar ataku w Krakowie i trzech z Ostrowca Świętokrzyskiego - przekazali śledczy. Jak dodano, najpewniej we wtorek przeprowadzona zostanie sekcja sprawcy zamachu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/sekcje-ofiar-ataku-w-krakowie-nowe-informacje-z-prokuratury/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Sekcje ofiar ataku w Krakowie. Nowe informacje z prokuratury"
-    },
-    {
-      "title": "Licealiści przed TK mieli skandować wulgarne hasła. Resort zarządził kontrolę",
-      "snippet": "Trwa pilna kontrola - przekazała minister edukacji narodowej Barbara Nowacka. Mowa o pojawieniu się uczniów liceum z Zamościa przed Trybunałem Konstytucyjnym - mieli przybyć tam pod opieką nauczycielek podczas szkolnej wycieczki. Według ustaleń mediów młodzież skandowała wulgarne hasła. Założycielka szkoły Agnieszka Macek zaapelowała, żeby dla dobra dzieci powściągnąć emocje.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/licealisci-przed-tk-mieli-skandowac-wulgarne-hasla-resort-zarzadzil-kontrole/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Licealiści przed TK mieli skandować wulgarne hasła. Resort zarządził kontrolę"
-    },
-    {
-      "title": "Incydent na trasie pociągu Intercity. Tajemnicza dziura w szybie wagonu",
-      "snippet": "Policja bada incydent w pociągu Intercity Chemik relacji Katowice-Płock, który zatrzymano w Rudnikach pod Częstochową. W sieci pojawiły się zdjęcia uszkodzonej szyby i spekulacje o ostrzelaniu składu. - Nie wiemy, z czego dokładnie strzelano, mógł to być kamień, pocisk z procy lub wiatrówki - skomentowała oficer prasowa KMP w Częstochowie podkom. Barbara Poznańska w rozmowie z SE.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/incydent-na-trasie-pociagu-intercity-tajemnicza-dziura-w-szybie-wagonu/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Incydent na trasie pociągu Intercity. Tajemnicza dziura w szybie wagonu"
-    },
-    {
-      "title": "Dzień Niepodległości w Warszawie. Wprowadzono zakaz noszenia broni",
-      "snippet": "W środę, 11 listopada, w Warszawie wprowadzony zostanie zakaz noszenia lub przemieszczania w stanie rozładowanym wszelkiego rodzaju broni. Biorąc pod uwagę skalę tego przedsięwzięcia, istnieje konieczność podjęcia dodatkowych środków prewencyjnych mających na celu czasowe podniesienie poziomu bezpieczeństwa - przekazano w uzasadnieniu. Rozporządzenie w tej sprawie opublikowano w Dzienniku Ustaw.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/dzien-niepodleglosci-w-warszawie-wprowadzono-zakaz-noszenia-broni/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Dzień Niepodległości w Warszawie. Wprowadzono zakaz noszenia broni"
-    },
-    {
-      "title": "Ekspert przeanalizował broń zamachowca z Krakowa. Wskazali na zagrożenie",
-      "snippet": "- Broń zabezpieczona po zamachu w Krakowie mogła stanowić zagrożenie nawet po zatrzymaniu napastnika - ocenił w rozmowie z Polsat News ppłk rez. Michał Sitarski Królik. Ekspert zwrócił uwagę na zabezpieczenie karabinka, którego stan nie pozwalał jednoznacznie ustalić, czy był załadowany. Były kontrterrorysta Robert Szymański wskazał z kolei na problemy ze szkoleniem i wyposażeniem policjantów.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/ekspert-przeanalizowal-bron-zamachowca-z-krakowa-wskazali-na-zagrozenie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Ekspert przeanalizował broń zamachowca z Krakowa. Wskazali na zagrożenie"
-    },
-    {
-      "title": "\"To była jego osobista decyzja\". Żurek skomentował słowa Kierwińskiego",
-      "snippet": "- To była jego osobista decyzja, a my jak ustalimy dowody, jak te hipotezy będą już przemielone przez śledczych, być może także przez biegłych, to na pewno powiemy - powiedział minister sprawiedliwości Waldemar Żurek, pytany o słowa szefa MSWiA na temat rzekomych skrajnie prawicowych poglądów zamachowca z Krakowa. Żurek zaznaczył, że nie zamierza spekulować.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/to-byla-jego-osobista-decyzja-zurek-skomentowal-slowa-kierwinskiego/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"To była jego osobista decyzja\". Żurek skomentował słowa Kierwińskiego"
-    },
-    {
-      "title": "Pierwsze słowa policjanta po wybudzeniu ze śpiączki. \"A Kuba żyje?\"",
-      "snippet": "Wiecie Państwo jakie były pierwsze słowa Artura Morańskiego chwilę po wybudzeniu, po ciężkiej operacji? A Kuba żyje? - przekazał burmistrz Muszyny Jan Golba. Policjant pytał o zdrowie swojego partnera w akcji Jakuba Kulika. Dwaj funkcjonariusze powstrzymali zamachowca z Krakowa. Morańskiego odwiedził w szpitalu szef MON. O jego wybudzeniu ze śpiączki napisał też premier.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/kosiniak-kamysz-odwiedzil-rannego-policjanta-podziekowalem-za-niesamowite-poswiecenie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Pierwsze słowa policjanta po wybudzeniu ze śpiączki. \"A Kuba żyje?\""
-    },
-    {
-      "title": "\"Ordynarne wprowadzanie w błąd\". MSWiA reaguje po fotomontażu z Michałem O.",
-      "snippet": "To nie jest zdjęcie, lecz fałszywy fotomontaż wygenerowany przez AI - przekazała rzeczniczka MSWiA Karolina Gałecka, komentując krążące w internecie przeróbki zdjęcia, które ma przedstawiać szefa MSWiA Marcina Kierwińskiego ściskającego dłoń sprawcy zamachu w Krakowie, Michała O. To świadome i ordynarne wprowadzanie opinii publicznej w błąd. Sprawa trafi do prokuratury - dodała.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/ordynarne-wprowadzanie-w-blad-mswia-reaguje-po-fotomontazu-z-michalem-o/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Ordynarne wprowadzanie w błąd\". MSWiA reaguje po fotomontażu z Michałem O."
-    },
-    {
-      "title": "USA reagują na zamach w Krakowie. Departament Stanu wydał oświadczenie",
-      "snippet": "Departament Stanu USA wyraził solidarność z Polską po sobotnim zamachu w Krakowie. Amerykański resort dyplomacji przekazał kondolencje rodzinom ofiar i zapewnił o monitorowaniu sytuacji. Choć ambasador USA Tom Rose wcześniej przekazał wyrazy współczucia w imieniu Donalda Trumpa, sam prezydent dotychczas nie odniósł się publicznie do tragedii.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/usa-reaguja-na-zamach-w-krakowie-departament-stanu-wydal-oswiadczenie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "USA reagują na zamach w Krakowie. Departament Stanu wydał oświadczenie"
-    },
-    {
-      "title": "Policjanci usłyszeli wołania o pomoc. Kenijka uwięziona w mieszkaniu w Otwocku",
-      "snippet": "Otwoccy policjanci uwolnili obywatelkę Kenii, która była przetrzymywana w jednym z mieszkań w mieście. Funkcjonariusze wyważyli drzwi po usłyszeniu jej wołania o pomoc. W sprawie zatrzymano 40-letniego mężczyznę, któremu prokuratura postawiła zarzut handlu ludźmi. Sąd zdecydował o jego tymczasowym aresztowaniu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/policjanci-uslyszeli-wolania-o-pomoc-kenijka-uwieziona-w-mieszkaniu-w-otwocku/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Policjanci usłyszeli wołania o pomoc. Kenijka uwięziona w mieszkaniu w Otwocku"
-    },
-    {
-      "title": "\"Pod zarzutem przemytu ludzi\". Magyar przekazał informacje o bracie Orbana",
-      "snippet": "Aron Orban, brat byłego premiera Viktora Orbana, został zatrzymany pod zarzutem przemytu ludzi - przekazał w poniedziałek obecny szef węgierskiego rządu Peter Magyar, powołując się na doniesienia prasowe. Sprawę skomentował lider partii Fidesz, który uważa, że mamy do czynienia z wyrównywaniem rachunków, co służy odwróceniu uwagi.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/pod-zarzutem-przemytu-ludzi-magyar-przekazal-informacje-o-bracie-orbana/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Pod zarzutem przemytu ludzi\". Magyar przekazał informacje o bracie Orbana"
-    },
-    {
-      "title": "Białoruscy hakerzy ujawnili sekret Rosji. Liczby zgodne z szacunkami Zachodu",
-      "snippet": "Białoruscy hakerzy włamali się do rosyjskiego Rosstatu (Federalnej Służby Statystyki Państwowej) i ujawnili tajne dane o stratach na wojnie w Ukrainie - podał w niedzielę Moscow Times. Według wycieku, od 2022 roku życie straciło ponad 450 tys. rosyjskich żołnierzy. Portal zaznaczył, że rzeczywiste straty mogą być jednak jeszcze wyższe.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/bialoruscy-hakerzy-ujawnili-sekret-rosji-liczby-zgodne-z-szacunkami-zachodu/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Białoruscy hakerzy ujawnili sekret Rosji. Liczby zgodne z szacunkami Zachodu"
-    },
-    {
-      "title": "Rosja, Izrael i MAGA grały na zamieszkach we Francji. Media dotarły do analiz UE i Paryża",
-      "snippet": "Konta w mediach społecznościowych powiązane z tajną rosyjską siecią, ruchem MAGA oraz Izraelem próbowały wykorzystać niedawne zamieszki we Francji do celów politycznych - wynika z dokumentów UE i francuskiego MSZ. Działania miały polegać na dezinformacji, podżeganiu sprzeciwu wobec migracji i osłabianiu władz w Paryżu.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-09/rosja-izrael-i-maga-graly-na-zamieszkach-we-francji-media-dotarly-do-analiz-ue-i-paryza/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Rosja, Izrael i MAGA grały na zamieszkach we Francji. Media dotarły do analiz UE i Paryża"
-    },
-    {
-      "title": "Tragiczny wypadek kolejowy w Egipcie. Co najmniej 7 osób nie żyje, ponad 100 jest rannych",
-      "snippet": "Na południe od Kairu zderzyły się dwa pociągi - podało CBS News, powołując się na informacje egipskich władz. W wyniku wypadku zginęło co najmniej siedem osób, a ponad 100 zostało rannych. Do zdarzenia doszło z powodu wykolejenia się jednego z pociągów.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-08/tragiczny-wypadek-kolejowy-w-egipcie-co-najmniej-7-osob-nie-zyje-ponad-100-jest-rannych/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Tragiczny wypadek kolejowy w Egipcie. Co najmniej 7 osób nie żyje, ponad 100 jest rannych"
-    },
-    {
-      "title": "Tragedia w Tatrach, nie żyje Polak. \"Prawdopodobnie spadł z ponad 100 metrów\"",
-      "snippet": "Turysta z Polski zginął w Tatrach. Prawdopodobnie spadł on z wysokości ponad 100 metrów z wierzchołka Jastrzębiej Turni - poinformowało słowackie Górskie Pogotowie Ratunkowe. Na ciało mężczyzny natknęli się inni wspinacze. W tym samym czasie trwały poszukiwania zaginionego obywatela Słowacji.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-08/tragedia-w-tatrach-polak-prawdopodobnie-spadl-z-ponad-100-metrow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Tragedia w Tatrach, nie żyje Polak. \"Prawdopodobnie spadł z ponad 100 metrów\""
-    },
-    {
-      "title": "Konkurent Netanjahu z misją utworzenia rządu. \"Pilna potrzeba nowego przywództwa\"",
-      "snippet": "Prezydent Izraela Izaak Herzog powierzył misję utworzenia rządu Gadiemu Ajzenkotowi, przywódcy centrowej partii Prosto. - Państwo Izrael potrzebuje stabilnego rządu - powiedział prezydent. Ostrzegł jednocześnie, że kraj stoi w obliczu niepewności po wyborach w USA. - Jestem przekonany, że jest możliwe szybkie utworzenie nowego rządu - ocenił Ajzenkot, cytowany przez agencję Reutera.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-08/konkurent-netanjahu-z-misja-utworzenia-rzadu-pilna-potrzeba-nowego-przywodztwa/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Konkurent Netanjahu z misją utworzenia rządu. \"Pilna potrzeba nowego przywództwa\""
-    },
-    {
-      "title": "Honorowe obywatelstwo Krakowa dla policjantów. Jest ruch radnych",
-      "snippet": "Prezydent Krakowa Łukasz Gibała zawnioskował o nadanie Honorowego Obywatelstwa miasta dwóm policjantom, którzy obezwładnili zamachowca podczas sobotniego ataku w Krakowie. Ostatecznie decyzja należy do rady miasta. - Czekamy na poprawę zdrowia policjantów - mówi Jakub Kosek, przewodniczący rady miasta.",
-      "link": "https://wydarzenia.interia.pl/malopolskie/news-honorowe-obywatelstwo-krakowa-dla-bohaterskich-policjantow-j,nId,23571366",
+      "title": "Niezapowiedziany przylot z Moskwy. Szef rosyjskiego wywiadu w Izraelu",
+      "snippet": "Szef rosyjskiego wywiadu wojskowego GRU Igor Kostiukow przybył w niedzielę do Izraela, gdzie spotkał się z wysokimi rangą przedstawicielami resortu obrony - przekazał w poniedziałek dziennik \"Jerusalem Post\". Stamtąd udał się na negocjacje rosyjsko-ukraińskie w Zjednoczonych Emiratach Arabskich.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-niezapowiedziany-przylot-z-moskwy-szef-rosyjskiego-wywiadu-w,nId,23571520",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Honorowe obywatelstwo Krakowa dla policjantów. Jest ruch radnych"
+      "title_pl": "Niezapowiedziany przylot z Moskwy. Szef rosyjskiego wywiadu w Izraelu"
     },
     {
-      "title": "GIS ostrzega, chodzi o puddingi proteinowe. \"Możliwa obecność szkła\"",
-      "snippet": "W puddingach proteinowych Arla Protein Pudding Vanilla Cookie 200 g odnotowano możliwą obecność fragmentów szkła - poinformował Główny Inspektorat Sanitarny. Zagrożenie dotyczy jednej partii produktu, którą producent wycofuje z rynku. GIS ostrzega, że jej spożycie może prowadzić do uszkodzenia jamy ustnej.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-gis-ostrzega-chodzi-o-puddingi-proteinowe-mozliwa-obecnosc-s,nId,23571371",
+      "title": "Czarne chmury nad przyszłością Vance'a? Wymijające deklaracje Trumpa",
+      "snippet": "Donald Trump może nie poprzeć kandydatury wiceprezydenta J.D. Vance'a w republikańskich prawyborach - wynika z jego ostatnich wypowiedzi. - Prawdopodobnie nie, choć niekoniecznie - mówił w programie \"60 Minutes\", pytany o to, czy udzieli oficjalnego poparcia któremuś z kandydatów. W rozmowie z \"USA Today\" stwierdził, że nie rozmawiał z wiceprezydentem na temat poparcia go w prawyborach.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-czarne-chmury-nad-przyszloscia-vance-a-wymijajace-deklaracje,nId,23571507",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "GIS ostrzega, chodzi o puddingi proteinowe. \"Możliwa obecność szkła\""
+      "title_pl": "Czarne chmury nad przyszłością Vance'a? Wymijające deklaracje Trumpa"
     },
     {
-      "title": "W tej firmie pracował Michał Oksiński. Zarząd reaguje, jest głos prezesa",
-      "snippet": "\"Jesteśmy wstrząśnięci tym, co się wydarzyło\" - czytamy w oficjalnym komunikacie firmy OZMO z Ostrowca Świętokrzyskiego. To w tym zakładzie pracował Michał Oksiński, zamachowiec, który zaczął strzelać na Rynku Głównym w Krakowie. - Skupiamy się teraz na pomocy dla pracowników - podkreślił prezes Janusz Bira.",
-      "link": "https://wydarzenia.interia.pl/swietokrzyskie/news-w-tej-firmie-pracowal-michal-oksinski-zarzad-reaguje-jest-gl,nId,23571375",
+      "title": "Leon XIV zapowiada, chodzi o polską diecezję. W tle sprawa księdza z Grojca",
+      "snippet": "Leon XIV zarządził wizytację apostolską u ordynariusza bielsko-żywieckiego bp. Romana Pindla. O diecezji bielsko-żywieckiej zrobiło się głośno po odwołaniu ks. Józefa Zborka, proboszcza w Grojcu. Biskup Pindel podczas wizytacji parafii został otoczony przez tłum, który uwięził go w kościele.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-leon-xiv-zapowiada-chodzi-o-polska-diecezje-w-tle-sprawa-ksi,nId,23571510",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "W tej firmie pracował Michał Oksiński. Zarząd reaguje, jest głos prezesa"
+      "title_pl": "Leon XIV zapowiada, chodzi o polską diecezję. W tle sprawa księdza z Grojca"
     },
     {
-      "title": "Ostatnia ofiara zamachowca zidentyfikowana. Mamy potwierdzenie",
-      "snippet": "Szósta z ofiar sobotniego zamachu do którego doszło w Krakowie to 55-letni Polak - przekazał w rozmowie z Interią rzecznik wojewody małopolskiego Maksymilian Kosowski. Pozostałe ofiary to trzy obywatelki Polski, obywatelka Austrii i obywatel Wielkiej Brytanii.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-ostatnia-ofiara-zamachowca-zidentyfikowana-mamy-potwierdzeni,nId,23571389",
+      "title": "Boroń o szczegółach akcji w Krakowie. \"Nie ma takiej policji na świecie\"",
+      "snippet": "- Ile strzelał Breivik do cywilów? Ponad godzinę. Więc jeśli chcemy porównywać - nie ma takiej policji na świecie, która by tak szybko zadziałała. Możemy być dumni - stwierdził na antenie Polsat News Marek Boroń. Szef polskiej policji opisał akcję funkcjonariuszy na Rynku Głównym w Krakowie. Przekazał także informacje na temat rannych policjantów - Jakuba Kulika i Artura Morańskiego.",
+      "link": "https://wydarzenia.interia.pl/malopolskie/news-boron-o-szczegolach-akcji-w-krakowie-nie-ma-takiej-policji-n,nId,23571502",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Ostatnia ofiara zamachowca zidentyfikowana. Mamy potwierdzenie"
+      "title_pl": "Boroń o szczegółach akcji w Krakowie. \"Nie ma takiej policji na świecie\""
     },
     {
-      "title": "Ujawniono skalę rosyjskich strat w Ukrainie. Hakerzy wykradli tajne dane",
-      "snippet": "Od początku wojny Rosja odnotowała śmierć około 400 tysięcy osób walczących w Ukrainie - poinformował Bloomberg. Agencja powołała się na dane uzyskane przez grupy \"Cyber Partisans\" oraz \"Silent Crow\", które dokonały ataku na Federalną Służbę Statystyki Państwowej (Rosstat). Zbiór danych jednak \"niemal na pewno\" zaniża całkowitą liczbę ofiar po stronie Moskwy. Bloomberg wskazał powody.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-atak-hakerski-na-rosyjski-urzad-ujawniono-liczbe-rosjan-ktor,nId,23571300",
+      "title": "Rosyjski atak na terytorium Ukrainy. Nowy komunikat RCB",
+      "snippet": "\"Zakończył się atak powietrzny na Ukrainę\" - poinformowało Rządowe Centrum Bezpieczeństwa. Wcześniej do mieszkańców części powiatów na terenie województw lubelskiego i podlaskiego trafiły komunikaty informujące o nalotach.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-rosyjski-atak-na-terytorium-ukrainy-nowy-komunikat-rcb,nId,23571509",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Ujawniono skalę rosyjskich strat w Ukrainie. Hakerzy wykradli tajne dane"
+      "title_pl": "Rosyjski atak na terytorium Ukrainy. Nowy komunikat RCB"
     },
     {
-      "title": "Mgły nie będą jedynym problemem. Ostrzeżenia wkrótce zaczną obowiązywać",
-      "snippet": "Seria niebezpiecznych pogodowych zjawisk w Polsce. Wrócą gęste mgły, ale także marznące opady, a nawet wichury. Dla wielu województw synoptycy IMGW wydali ostrzeżenia pierwszego stopnia. Niektóre zaczną obowiązywać jeszcze w poniedziałek.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-rosnie-pogodowe-ryzyko-nie-chodzi-juz-tylko-o-mgly,nId,23571321",
+      "title": "Kłopoty szefa Pentagonu. Republikanin złożył wniosek o impeachment",
+      "snippet": "Do amerykańskiej Izby Reprezentantów został zgłoszony wniosek o postawienie w stan oskarżenia sekretarza wojny Pete'a Hegsetha. Republikański kongresmen Thomas Massie argumentował swój wniosek decyzjami podejmowanymi przez szefa Pentagonu podczas wojny z Iranem.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-klopoty-szefa-pentagonu-republikanin-zlozyl-wniosek-o-impeac,nId,23571500",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Mgły nie będą jedynym problemem. Ostrzeżenia wkrótce zaczną obowiązywać"
+      "title_pl": "Kłopoty szefa Pentagonu. Republikanin złożył wniosek o impeachment"
     },
     {
-      "title": "Pianista wypadł za burtę. \"W innym roku nie miałby szans na przetrwanie\"",
-      "snippet": "\"Myślałem, że zginę\" - tyle usłyszał jeden z rybaków od mężczyzny, którego wyłowił \"na środku oceanu\". Uratowany był pianistą, który wypadł z wycieczkowca w trakcie rejsu na Oceanie Spokojnym. Ocenia się, że rozbitek mógł spędzić na pełnych rekinów wodach ponad dziewięć godzin. Rybak podkreśla, że mężczyźnie w przeżyciu mogło pomóc tegoroczne zjawisko El Niño, dzięki któremu powierzchnia Pacyfiku była znacznie cieplejsza niż zwykle.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-pianista-dryfowal-na-srodku-oceanu-zycie-uratowalo-mu-super,nId,23571161",
+      "title": "Kiedy zamachowiec z Krakowa kupił pierwszą broń? Nowe fakty",
+      "snippet": "Sprawca zamachu w Krakowie Michał Oksiński od stycznia miał pozwolenie na broń palną, a pierwszy egzemplarz kupił w marcu tego roku - wynika z komunikatu Prokuratury Krajowej. Do tragicznych wydarzeń doszło w sobotę. W wyniku strzelaniny śmierć poniosło sześć osób, a kilkanaście innych zostało rannych. W poniedziałek w szpitalu zmarł sam zamachowiec.",
+      "link": "https://wydarzenia.interia.pl/malopolskie/news-pozwolenie-na-bron-mial-od-zaledwie-kilku-miesiecy-nowe-fakt,nId,23571498",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Pianista wypadł za burtę. \"W innym roku nie miałby szans na przetrwanie\""
+      "title_pl": "Kiedy zamachowiec z Krakowa kupił pierwszą broń? Nowe fakty"
     },
     {
-      "title": "Mieli słuchać hejnału w Krakowie. \"To spóźnienie nas uratowało\"",
-      "snippet": "- Planowo o godz. 15 mieliśmy słuchać hejnału - mówi Interii przewodniczka Liana Dadu, oprowadzająca po mieście wycieczkę z Litwy. 15 sekund po pełnej godzinie służby odebrały pierwsze zgłoszenie o strzałach na krakowskim Rynku Głównym. Jej grupa spóźniła się o pół godziny. Po zejściu z Wawelu przewodniczka usłyszała radiowozy i zmieniła trasę.",
-      "link": "https://wydarzenia.interia.pl/malopolskie/news-mieli-sluchac-hejnalu-w-krakowie-to-spoznienie-nas-uratowalo,nId,23571316",
+      "title": "Na tej strzelnicy trenował zamachowiec z Krakowa. \"W towarzystwie ojca\"",
+      "snippet": "- Nigdy nie zachowywał się w sposób naganny - mówił o zamachowcu z Krakowa Adam Chyb, pełnomocnik KS Świt w Starachowicach. To na tę strzelnicę chodził 24-latek. W tym roku pojawił się w obiekcie trzy razy - zawsze w towarzystwie ojca. Klub zapewnia, że na miejscu nie prowadzono szkoleń bojowych ani taktycznych.",
+      "link": "https://wydarzenia.interia.pl/swietokrzyskie/news-na-tej-strzelnicy-trenowal-zamachowiec-z-krakowa-w-towarzyst,nId,23571494",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Mieli słuchać hejnału w Krakowie. \"To spóźnienie nas uratowało\""
+      "title_pl": "Na tej strzelnicy trenował zamachowiec z Krakowa. \"W towarzystwie ojca\""
     },
     {
-      "title": "Nowe doniesienia o kierowcy białego Opla. \"Byli w drodze do remizy\"",
-      "snippet": "Jedną z osób rannych w sobotnim zamachu w Krakowie jest strażak z OSP w Olszowicach. \"Tomek wraz z naszą druhną Kingą byli w drodze do remizy, gdzie mieli poprowadzić zajęcia dla Młodzieżowej Drużyny Pożarniczej\" - przekazano w komunikacie opublikowanym przez jednostkę. Myślenicki Serwis Informacyjny poinformował, że strażak był kierowcą samochodu, w który uderzyło auto prowadzone przez Michała Oksińskiego.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-nowe-doniesienia-o-kierowcy-bialego-opla-byli-w-drodze-do-re,nId,23571319",
+      "title": "Melenchon mówił o \"zapytaniu mieszkańców\" Donbasu. Ukraińskie MSZ reaguje",
+      "snippet": "Ukraińskie MSZ zareagowało na słowa Jean-Luca Melenchona, kandydata na prezydenta Francji z ramienia skrajnie lewicowej partii Francja Nieujarzmiona (LFI). Polityk powiedział, że w sprawie przynależności terytorialnej okupowanego w większości przez Rosję Donbasu powinni zdecydować mieszkańcy tych terenów. Rzecznik ukraińskiej dyplomacji przypomniał, że \"Ukraińcy już rozwiązali kwestie granic swojego państwa\".",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-melenchon-mowil-o-zapytaniu-mieszkancow-donbasu-ukrainskie-m,nId,23571493",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Nowe doniesienia o kierowcy białego Opla. \"Byli w drodze do remizy\""
+      "title_pl": "Melenchon mówił o \"zapytaniu mieszkańców\" Donbasu. Ukraińskie MSZ reaguje"
     },
     {
-      "title": "Zamach na krakowski Rynek. Tusk napisał o \"ludzkiej przyzwoitości\"",
-      "snippet": "\"Milczenie jest nie tylko złotem. Czasem bywa też kwestią zwykłej ludzkiej przyzwoitości\" - napisał w mediach społecznościowych Donald Tusk. Premier odniósł się w ten sposób prawdopodobnie do trwającej w sieci dyskusji na temat sobotniego ataku na Rynek Główny w Krakowie. Wcześniej m.in. prezes PiS Jarosław Kaczyński napisał, że na miejscu tragedii \"było zaledwie kilku funkcjonariuszy\".",
-      "link": "https://wydarzenia.interia.pl/kraj/news-zamach-na-krakowski-rynek-tusk-napisal-o-ludzkiej-przyzwoito,nId,23571182",
+      "title": "Popierała Putina, wychwalała też Brauna. Samuela T. z zarzutami",
+      "snippet": "Samuela T., była uczestniczka programu \"Top Model\" i kandydatka Konfederacji do Sejmu, usłyszała 11 zarzutów za wpisy na platformie X - informuje Wirtualna Polska. Cztery z nich dotyczą publicznego pochwalania wojny napastniczej. Kolejne odnoszą się do publicznego pochwalania czynów, których parę lat temu Grzegorz Braun dopuścił się w Sejmie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-popierala-putina-wychwalala-tez-brauna-samuela-t-z-zarzutami,nId,23571464",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Zamach na krakowski Rynek. Tusk napisał o \"ludzkiej przyzwoitości\""
+      "title_pl": "Popierała Putina, wychwalała też Brauna. Samuela T. z zarzutami"
     },
     {
-      "title": "Wiadomości do uczniów, pomoc dla mieszkańców Ostrowca. \"Ruszyli w miasto\"",
-      "snippet": "- Psychologowie, wykwalifikowani pracownicy ruszyli w miasto, poszli na osiedle w Śródmieściu, skąd pochodził zamachowiec - przekazał prezydent Ostrowca Świętokrzyskiego Artur Łakomiec. W ramach wsparcia wiadomości z instrukcjami, jak się zachować, otrzymali uczniowie szkół, w których od rana prowadzone są na ten temat lekcje. Działa specjalny numer telefonu dla mieszkańców.",
-      "link": "https://wydarzenia.interia.pl/swietokrzyskie/news-wiadomosci-do-uczniow-pomoc-dla-mieszkancow-ostrowca-ruszyli,nId,23571141",
+      "title": "Amerykańscy negocjatorzy krytykowani za podejście do Rosji. \"Nie mają pojęcia\"",
+      "snippet": "Strona amerykańska zapewnia Rosji wczesne strategiczne zwycięstwo jeszcze przed rozpoczęciem negocjacji z Ukrainą w Abu Zabi - wskazuje \"Washington Post\". Według dziennika, cytującego obawy urzędników i ekspertów, negocjatorzy z USA mówiąc o szerszej europejskiej strategii bezpieczeństwa realizują strategię pokrywającą się z celami Kremla.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-amerykanscy-negocjatorzy-krytykowani-za-podejscie-do-rosji-n,nId,23571465",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Wiadomości do uczniów, pomoc dla mieszkańców Ostrowca. \"Ruszyli w miasto\""
+      "title_pl": "Amerykańscy negocjatorzy krytykowani za podejście do Rosji. \"Nie mają pojęcia\""
+    },
+    {
+      "title": "Trump podważa wynik wyborów. \"Czy ktokolwiek naprawdę wierzy?\"",
+      "snippet": "\"Czy ktokolwiek naprawdę wierzy, że te 'wybory' były uczciwe?\" - napisał Donald Trump. W niedawnych wyborach połówkowych demokraci odnieśli zdecydowane zwycięstwo, przejmując kontrolę nad obiema izbami Kongresu. Prezydent USA tuż po ogłoszeniu wyników, deklarował, że uzna wynik głosowania.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-trump-podwaza-wynik-wyborow-czy-ktokolwiek-naprawde-wierzy,nId,23571459",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Trump podważa wynik wyborów. \"Czy ktokolwiek naprawdę wierzy?\""
+    },
+    {
+      "title": "Prezydent ramię w ramię z premierem. Marsz Pamięci w Krakowie",
+      "snippet": "Karol Nawrocki i Donald Tusk pojawili się w Krakowie. Obaj politycy, na zaproszenie prezydenta miasta Łukasza Gibały, wzięli udział w Marszu Ciszy. Uczestnicy wydarzenia uczcili pamięć ofiar strzelaniny na Rynku Głównym. Marsz ruszył o godzinie 20.",
+      "link": "https://wydarzenia.interia.pl/malopolskie/news-prezydent-ramie-w-ramie-z-premierem-marsz-pamieci-w-krakowie,nId,23571488",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Prezydent ramię w ramię z premierem. Marsz Pamięci w Krakowie"
+    },
+    {
+      "title": "Słoiki po jedzeniu wyrzucaj w ten sposób. Inaczej dorzucisz sortowni pracy",
+      "snippet": "Gdzie wyrzucić brudny słoik po jedzeniu? Ten rodzaj odpadu jest szczególny, bo może zmieniać frakcję. Pracownicy sortowni apelują o właściwe utylizowanie takich śmieci.",
+      "link": "https://biznes.interia.pl/gospodarka/news-tak-wyrzucaj-sloiki-po-jedzeniu-inaczej-dorzucisz-sortowni-p,nId,23571270",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Słoiki po jedzeniu wyrzucaj w ten sposób. Inaczej dorzucisz sortowni pracy"
+    },
+    {
+      "title": "Nie tylko śnieg, ale i koszty. Zimowe utrzymanie miast pochłania miliony",
+      "snippet": "\"To nie znaczy, że tyle finalnie wydamy\" - zastrzega dyrektor warszawskiego Zarządu Oczyszczania Miasta, mówiąc o 115 mln zł przeznaczonych na zimowe utrzymanie ulic i chodników. Poprzednia zima kosztowała stolicę 107 mln zł, a Bydgoszcz wydała na ten cel ponad 15,7 mln zł. Ile dokładnie kosztuje odśnieżanie?",
+      "link": "https://biznes.interia.pl/gospodarka/news-zima-wystawia-miastom-slony-rachunek-na-odsniezanie-ida-mili,nId,23571211",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Nie tylko śnieg, ale i koszty. Zimowe utrzymanie miast pochłania miliony"
+    },
+    {
+      "title": "Nowa kwota średniej emerytury. ZUS właśnie podał dane",
+      "snippet": "Zakład Ubezpieczeń Społecznych podał aktualne dane dotyczące świadczeń socjalnych i liczby beneficjentów. Znamy już nową kwotę średniej emerytury, jaką ZUS wypłacał we wrześniu.",
+      "link": "https://biznes.interia.pl/emerytury/news-zus-podal-nowa-kwote-tyle-wynosi-srednia-emerytura,nId,23571049",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Nowa kwota średniej emerytury. ZUS właśnie podał dane"
+    },
+    {
+      "title": "UE chce bronić firm przed niezdrową konkurencją. Ma jednak problem z kadrą",
+      "snippet": "Unia Europejska wzmacnia ochronę przemysłu europejskiego przed zewnętrznymi konkurentami. Ma jednak duży problem - braki kadrowe - ostrzega portal Politico. Informuje, że firmy muszą czekać na arbitraż nawet półtora roku, czego wiele z nich nie wytrzymuje i upada.",
+      "link": "https://biznes.interia.pl/gospodarka/news-bruksela-wzmacnia-ochrone-firm-proponuje-wylacznik-awaryjny,nId,23571499",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "UE chce bronić firm przed niezdrową konkurencją. Ma jednak problem z kadrą"
+    },
+    {
+      "title": "Prawo do posiadania broni w Polsce. W maju NIK pokazała alarmujący raport",
+      "snippet": "Pięć lat po wejściu w życie dyrektywy UE określającej zasady posiadania broni, Polska wciąż nie objęła okresowymi badaniami medycznymi i psychologicznymi posiadaczy pozwoleń na broń do celów sportowych - informowała w maju NIK. Ostrzegała, że stworzony w Polsce system dostępu do broni palnej i nadzór nad tym dostępem \"mogą w rzeczywisty sposób negatywnie wpływać na bezpieczeństwo obywateli\". Raport przeszedł bez echa.",
+      "link": "https://biznes.interia.pl/gospodarka/news-prawo-do-posiadania-broni-w-polsce-w-maju-nik-pokazala-alarm,nId,23571473",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Prawo do posiadania broni w Polsce. W maju NIK pokazała alarmujący raport"
+    },
+    {
+      "title": "Znana firma wstrzymuje emisje reklam w TV Republika. Wyjaśnia powody",
+      "snippet": "Firma RTV EURO AGD poinformowała na platformie X, iż wstrzymuje emisje reklam w Telewizji Republika. Powodem są kontrowersje dotyczące sposobu relacjonowania zamachu w Krakowie przez tę telewizję.",
+      "link": "https://biznes.interia.pl/gospodarka/news-rtv-euro-agd-wstrzymuje-emisje-reklam-w-tv-republika-wyjasni,nId,23571477",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Znana firma wstrzymuje emisje reklam w TV Republika. Wyjaśnia powody"
+    },
+    {
+      "title": "Nagłe tąpnięcie cen ropy naftowej. Rynek osiągnął nową równowagę",
+      "snippet": "Ceny ropy naftowej spadły do najniższych poziomów od dziesięciu tygodni - informuje w poniedziałek \"Financial Times\". Inwestorzy żywią nadzieję na porozumienie USA i Iranu, a rynek osiągnął nową równowagę.",
+      "link": "https://biznes.interia.pl/gospodarka/news-takiej-sytuacji-nie-bylo-od-lat-spadek-cen-ropy-ma-kilka-prz,nId,23571462",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Nagłe tąpnięcie cen ropy naftowej. Rynek osiągnął nową równowagę"
+    },
+    {
+      "title": "Kłopoty Rosji z paliwem. W całym kraju wprowadzono ograniczenia sprzedaży",
+      "snippet": "Jak poinformował rosyjski niezależny portal Meduza, Rosnieft wprowadził ograniczenia w sprzedaży paliwa na swoich stacjach benzynowych w całej Rosji. Serwis powołał się na komunikat ministerstwa rozwoju gospodarczego Kraju Zabajkalskiego na Syberii. Napisano w nim, że na stacjach benzynowych w miastach można kupić do 30 litrów benzyny, a na autostradach - do 50 litrów.",
+      "link": "https://biznes.interia.pl/gospodarka/news-klopoty-rosji-z-paliwem-w-calym-kraju-wprowadzono-ograniczen,nId,23571470",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Kłopoty Rosji z paliwem. W całym kraju wprowadzono ograniczenia sprzedaży"
+    },
+    {
+      "title": "Metale ziem rzadkich w Szwecji. Skandynawia przełamuje monopol Chin",
+      "snippet": "Skandynawia staje się nowym hubem dla metali ziem rzadkich, rzucając wyzwanie monopolowi Pekinu. Unia Europejska inwestuje, by uniezależnić europejski przemysł od dostaw z Chin i zapewnić stabilną przyszłość kluczowym gałęziom gospodarki.",
+      "link": "https://biznes.interia.pl/gospodarka/news-europa-odcina-sie-od-chin-w-krajach-nordyckich-wlasnie-ruszy,nId,23571278",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Metale ziem rzadkich w Szwecji. Skandynawia przełamuje monopol Chin"
+    },
+    {
+      "title": "Hipoteki na wysokim poziomie, ale coś się zmienia. Mieszane sygnały",
+      "snippet": "Najnowsze statystyki pokazują wzrost popytu na kredyty mieszkaniowe, lecz rynek zaczyna wysyłać bardziej mieszane sygnały. BIK raportuje wysoką dynamikę liczby składanych wniosków i rosnące kwoty, ale pośrednicy mówią o mniejszej liczbie nowych spotkań i ostrożniejszych decyzjach klientów.",
+      "link": "https://biznes.interia.pl/finanse/news-hipoteki-na-wysokim-poziomie-ale-cos-sie-zmienia-mieszane-sy,nId,23571304",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Hipoteki na wysokim poziomie, ale coś się zmienia. Mieszane sygnały"
+    },
+    {
+      "title": "Miliardowa pożyczka dla węglowego giganta. Wstrzymano sprzedaż spółek",
+      "snippet": "Jastrzębska Spółka Węglowa i Agencja Rozwoju Przemysłu zawarły umowę pożyczki. Do JSW trafią środki w wysokości do 1,066 mld zł, które posłużą m.in. do finansowania działalności grupy podczas realizacji programu naprawczego. Finansowanie ma być wypłacane w transzach.",
+      "link": "https://biznes.interia.pl/gospodarka/news-ratunek-dla-weglowego-giganta-miliardowa-pozyczka-zamiast-sp,nId,23571409",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Miliardowa pożyczka dla węglowego giganta. Wstrzymano sprzedaż spółek"
     },
     {
       "title": "Co wydarzyło się w 2015 roku? Wybór sędziów TK budzi pytania",
@@ -237,236 +205,164 @@
       "title_pl": "Co wydarzyło się w 2015 roku? Wybór sędziów TK budzi pytania"
     },
     {
-      "title": "Wojna w Ukrainie. Trump zapowiada porozumienie i zmianę granic",
-      "snippet": "Donald Trump zapowiada, że porozumienie kończące wojnę w Ukrainie jest już blisko. Prezydent USA otwarcie mówi o konieczności korekty granic tego kraju, przekonując jednocześnie, że nie został zwiedziony przez Władimira Putina.",
-      "link": "https://biznes.interia.pl/polityka/news-trump-porozumienie-blisko-ukraina-bedzie-miala-inne-granice,nId,23571183",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Wojna w Ukrainie. Trump zapowiada porozumienie i zmianę granic"
-    },
-    {
-      "title": "Kolejne pożyczki z SAFE dla Polski. Minister finansów podał ważną datę",
-      "snippet": "Polska jest jednym z beneficjentów programu SAFE. Do rozdzielenia wciąż pozostały jeszcze miliardy, których nie wykorzystały państwa członkowskie UE. Minister finansów Andrzej Domański ujawnił, że decyzja o tym, czy Polska skorzysta z tzw. SAFE 2.0, zapadnie jeszcze w tym miesiącu.",
-      "link": "https://biznes.interia.pl/gospodarka/news-dodatkowe-pozyczki-z-safe-2-0-dla-polski-domanski-wskazal-wa,nId,23571322",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Kolejne pożyczki z SAFE dla Polski. Minister finansów podał ważną datę"
-    },
-    {
-      "title": "Ukrainie grozi ogromna luka w budżecie. MFW może uruchomić miliardy",
-      "snippet": "Międzynarodowy Fundusz Walutowy rozpoczął przegląd programu kredytowego dla Ukrainy. Pozytywna ocena może odblokować 1,67 mld dolarów wsparcia, którego Kijów potrzebuje w obliczu pogarszającej się sytuacji gospodarczej i ogromnej luki budżetowej.",
-      "link": "https://biznes.interia.pl/gospodarka/news-mfw-sprawdza-program-pomocowy-dla-ukrainy-w-grze-1-67-mld-do,nId,23571328",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Ukrainie grozi ogromna luka w budżecie. MFW może uruchomić miliardy"
-    },
-    {
-      "title": "Urząd odmawia przejęcia konstrukcji. Od 3 lat most jest bez właściciela",
-      "snippet": "Most w Nowakowie, kosztujący blisko 38 milionów złotych, od trzech lat nie ma oficjalnego właściciela. Lokalny samorząd odmawia przejęcia konstrukcji, wskazując na liczne usterki techniczne, których nie chce finansować.",
-      "link": "https://biznes.interia.pl/gospodarka/news-zbudowali-most-obrotowy-teraz-ani-gmina-ani-urzad-nie-chca-z,nId,23571292",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Urząd odmawia przejęcia konstrukcji. Od 3 lat most jest bez właściciela"
-    },
-    {
-      "title": "Nowy szef EBC jeszcze w tym roku. \"To człowiek o stabilnej ręce\"",
-      "snippet": "Unia Europejska chce wybrać następcę Christine Lagarde na stanowisku szefa EBC jeszcze przed końcem roku. O fotel ubiegają się Holender Klaas Knot i Hiszpan Pablo Hernández de Cos. Wybór może być częścią szerszego porozumienia o obsadzie trzech kluczowych stanowisk w banku.",
-      "link": "https://biznes.interia.pl/gospodarka/news-stopy-procentowe-kredyty-i-polityka-kto-zastapi-lagarde-na-c,nId,23571277",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Nowy szef EBC jeszcze w tym roku. \"To człowiek o stabilnej ręce\""
-    },
-    {
-      "title": "Stopa bezrobocia w Polsce. Ministerstwo opublikowało najnowsze dane",
-      "snippet": "Ministerstwo Rodziny, Pracy i Polityki Społecznej poinformowało, iż stopa bezrobocia pod koniec października wyniosła 5,8 proc., tyle samo co miesiąc wcześniej. W październiku w urzędach pracy zarejestrowanych było 906,5 tys. osób bezrobotnych - to o 0,5 tys. mniej niż w poprzednim miesiącu.",
-      "link": "https://biznes.interia.pl/gospodarka/news-stopa-bezrobocia-w-polsce-ministerstwo-opublikowalo-najnowsz,nId,23571307",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Stopa bezrobocia w Polsce. Ministerstwo opublikowało najnowsze dane"
-    },
-    {
-      "title": "Twórca Bakallandu reaguje na tragedię w Krakowie. Przekaże 50 tys. zł",
-      "snippet": "Marian Owerko, twórca Bakallandu i prezes Foodwell, chce przekazać 50 tys. zł dwóm policjantom rannym podczas interwencji w Krakowie. Przedsiębiorca zwrócił się przy tym do ministra finansów z prośbą o umożliwienie wypłaty całej kwoty funkcjonariuszom bez konieczności odprowadzania przez nich podatku.",
-      "link": "https://biznes.interia.pl/finanse/news-tworca-bakallandu-chce-przekazac-50-tys-zl-policjantom-apelu,nId,23571216",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Twórca Bakallandu reaguje na tragedię w Krakowie. Przekaże 50 tys. zł"
-    },
-    {
-      "title": "Złotówka zareagowała natychmiast. Nowe kursy walut obcych",
-      "snippet": "Ile kosztuje euro, a ile dolar, funt i hrywna? Podajemy aktualne kursy walut zagranicznych należące do najczęściej wymienianych w Polsce. Poniżej podajemy wyrażone w złotówkach ceny walut zagranicznych oraz cenę za uncję złota.",
-      "link": "https://biznes.interia.pl/gospodarka/news-nowe-kursy-walut-obcych-tyle-trzeba-zaplacic-za-dolara-i-eur,nId,23571232",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Złotówka zareagowała natychmiast. Nowe kursy walut obcych"
-    },
-    {
-      "title": "Ofiary wojny w Ukrainie. Rosstat ukrywa dane o 400 tys. poległych",
-      "snippet": "Rosja konsekwentnie ukrywa skalę strat w Ukrainie, ale dane wykradzione z urzędu statystycznego rzucają nowe światło na bilans wojny. Dokumenty wskazują na śmierć blisko 400 tys. żołnierzy, co całkowicie przeczy oficjalnej narracji Kremla.",
-      "link": "https://biznes.interia.pl/polityka/news-rosja-ukrywa-straty-w-ukrainie-ale-urzad-statystyczny-wlasni,nId,23571030",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Ofiary wojny w Ukrainie. Rosstat ukrywa dane o 400 tys. poległych"
-    },
-    {
-      "title": "Zmiany w unijnych przepisach o tytoniu. Domański wyjaśnia ich skutki",
-      "snippet": "Andrzej Domański deklaruje, że Polska popiera zmiany w unijnej dyrektywie dotyczącej opodatkowania wyrobów tytoniowych. Dodał również, że nie wpłynie to na ceny tych produktów w Polsce.",
-      "link": "https://biznes.interia.pl/gospodarka/news-unia-szykuje-zmiany-w-podatkach-od-tytoniu-domanski-zapowiad,nId,23571184",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Zmiany w unijnych przepisach o tytoniu. Domański wyjaśnia ich skutki"
-    },
-    {
-      "title": "Zamachowiec z Krakowa miał pozwolenie na broń. Psychiatra: działamy trochę na ślepo",
-      "snippet": "24-letni Michał Oksiński, który w sobotę otworzył ogień do ludzi na krakowskim Rynku, wcześniej uzyskał pozwolenie na posiadanie dwóch sztuk broni palnej. — Od dawna postuluję, żebyśmy mieli możliwość odroczenia wydania decyzji w sprawie pozwolenia na broń — mówi Onetowi dr hab. Grzegorz Opielak, psychiatra zajmujący się badaniem osób ubiegających się o takie zezwolenia. I wskazuje na konkretne luki w polskim systemie.",
-      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/zamachowiec-z-krakowa-mial-pozwolenie-na-bron-psychiatra-dzialamy-troche-na-slepo/pdj6w07",
+      "title": "Kraków pozostaje pogrążony w żałobie. Dziś sekcja zwłok zamachowca",
+      "snippet": "Wtorek jest dla mieszkańców Krakowa trzecim dniem żałoby po sobotniej strzelaninie. Dziś spotka się Wojewódzki Zespół Zarządzania Kryzysowego. Przeprowadzona ma zostać także sekcja zwłok zamachowca.",
+      "link": "https://wiadomosci.onet.pl/krakow/w-krakowie-trwa-zaloba-po-strzelaninie-dzis-sekcja-zwlok-zamachowca/2vv1fmt",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Zamachowiec z Krakowa miał pozwolenie na broń. Psychiatra: działamy trochę na ślepo"
+      "title_pl": "Kraków pozostaje pogrążony w żałobie. Dziś sekcja zwłok zamachowca"
     },
     {
-      "title": "Śledztwo w sprawie dyrektora Nvidii. Firma już traci na rynku",
-      "snippet": "W poniedziałek rano akcje Nvidii gwałtownie spadły. Wcześniej zarząd firmy ogłosił wszczęcie niezależnego śledztwa w sprawie doniesień, że jej dyrektor generalny stał się celem chińskich działań wywiadowczych.",
-      "link": "https://wiadomosci.onet.pl/politico/nvidia-mogla-stracic-miliardy-powodem-afera-wokol-romansu/tk23rb7",
+      "title": "Donald Trump liczy na przełom w sprawie Ukrainy i łagodzi ton wobec Iranu. Podsumowanie nocy",
+      "snippet": "Prezydent USA w rozmowie z agencją Reutera stwierdził, że \"coś może się wydarzyć\" w czasie zaczynających się we wtorek rozmów trójstronnych na temat Ukrainy. Z kolei we wpisie zamieszczonym w mediach społecznościowych znacznie łagodniej wypowiedział się na temat ewentualnego wznowienia działań w Iranie. O północy zakończyła się w Polsce żałoba narodowa. Oto podsumowanie najważniejszych wydarzeń nocy.",
+      "link": "https://wiadomosci.onet.pl/swiat/trump-liczy-na-przelom-w-abu-zabi-i-lagodzi-ton-wobec-iranu-podsumowanie-nocy/0yl5cgf",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Śledztwo w sprawie dyrektora Nvidii. Firma już traci na rynku"
+      "title_pl": "Donald Trump liczy na przełom w sprawie Ukrainy i łagodzi ton wobec Iranu. Podsumowanie nocy"
     },
     {
-      "title": "Elon Musk może zakończyć wojnę w Ukrainie? \"Zniszczylibyśmy wszystkie wyrzutnie\"",
-      "snippet": "Prezeska ukraińskiego koncernu zbrojeniowego Fire Point twierdzi, że Ukraina byłaby w stanie kompletnie zneutralizować rosyjskie wyrzutnie pocisków balistycznych, gdyby Elon Musk nie blokował dostępu do sieci Starlink na terytorium Rosji.",
-      "link": "https://wiadomosci.onet.pl/swiat/elon-musk-moze-zakonczyc-wojne-w-ukrainie-zniszczylibysmy-wszystkie-wyrzutnie/81mswx4",
+      "title": "Donald Trump murem za Petem Hegsethem. \"Wygrał dwie wojny\"",
+      "snippet": "Donald Trump oznajmił, że w razie postawienia ministra obrony Pete’a Hegsetha w stan oskarżenia (impeachmentu) stanie po jego stronie. Jego zdaniem szef Pentagonu powinien zostać na stanowisku, bo \"wygrał dwie wojny\".",
+      "link": "https://wiadomosci.onet.pl/swiat/impeachment-dla-petea-hegsetha-donald-trump-murem-za-szefem-pentagonu/wqtwyxh",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Elon Musk może zakończyć wojnę w Ukrainie? \"Zniszczylibyśmy wszystkie wyrzutnie\""
+      "title_pl": "Donald Trump murem za Petem Hegsethem. \"Wygrał dwie wojny\""
     },
     {
-      "title": "Rząd bezradny wobec Republiki. Wkrótce może jednak nastąpić zwrot",
-      "snippet": "Nasi rozmówcy z obozu władzy rozkładają ręce i przyznają, że na razie nie są w stanie nic zrobić w sprawie telewizji Republika, która w kwestii zamachu w Krakowie siała dezinformację. To może się jednak zmienić, bo nad stacją Tomasza Sakiewicza od kilkunastu miesięcy wisi decyzja sądu o odebraniu jej koncesji na nadawanie naziemne.",
-      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/rzad-bezradny-wobec-republiki-wkrotce-moze-jednak-nastapic-zwrot/sj28pxs",
+      "title": "Dominik Wilk koordynował akcję medyczną po zamachu. Opowiada, co się działo minuta po minucie [WYWIAD]",
+      "snippet": "— Nasz dyspozytor odebrał telefon od osoby, która była wtedy na miejscu i dokonała zgłoszenia. Zaraz po tym krzyknął do nas: \"strzelanina na Rynku!\" Nie ukrywam, że wszystkich nas podniosło z krzeseł. Na samym początku nie wiedzieliśmy, że ofiar jest więcej i że są na różnych ulicach, a dystans między nimi to nawet kilometr. Po kilkunastu minutach mieliśmy już kilkadziesiąt zgłoszeń z kilku ulic w centrum Krakowa. Ciągle schodziły też kolejne informacje o nowych postrzelonych — relacjonuje Oneto",
+      "link": "https://wiadomosci.onet.pl/bohaterowie-z-krakowa/uslyszeli-strzelanina-na-rynku-i-zerwali-sie-na-rowne-nogi-akcja-medyczna-minuta-po/bk5ekvb",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Rząd bezradny wobec Republiki. Wkrótce może jednak nastąpić zwrot"
+      "title_pl": "Dominik Wilk koordynował akcję medyczną po zamachu. Opowiada, co się działo minuta po minucie [WYWIAD]"
     },
     {
-      "title": "Jeśli Europa chce odstraszyć Rosję, to może się wykazać już w listopadzie",
-      "snippet": "Dziś teoretycznie żadna część kontynentu na zachód od Ukrainy nie jest w stanie wojny z Rosją. Jednak pokój nie jest już tym, czym był kiedyś. Ale Europa może dać Rosji prztyczka w nos i to jeszcze w tym miesiącu.",
-      "link": "https://wiadomosci.onet.pl/swiat/jesli-europa-chce-odstraszyc-rosje-to-moze-sie-wykazac-juz-w-listopadzie/dkhmeqr",
+      "title": "Wrocław - sprawdź prognozę pogody w dniu 10.11.2026",
+      "snippet": "Wrocław - czy dziś będzie ciepło w twoim mieście? Co przyniesie aura w dniu 10.11.2026? Prezentujemy najnowsze przewidywania meteorologów. Prognoza pogody - województwo dolnośląskie.",
+      "link": "https://wiadomosci.onet.pl/wroclaw/wroclaw-prognoza-pogody-w-dniu-10112026/rvc5t29",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Jeśli Europa chce odstraszyć Rosję, to może się wykazać już w listopadzie"
+      "title_pl": "Wrocław - sprawdź prognozę pogody w dniu 10.11.2026"
     },
     {
-      "title": "Rosjanie panikują przed mobilizacją. Zaczęli masowo uciekać do trzech krajów",
-      "snippet": "W trzecim kwartale tego roku Rosjanie zaczęli masowo wyjeżdżać do Gruzji, Armenii i Serbii w związku z plotkami o nowej fali mobilizacji. Łącznie do trzech krajów, popularnych wśród uciekających przed wojną, wyjechała największa liczba obywateli od 17 lat — wynika ze statystyk służby granicznej FSB.",
-      "link": "https://wiadomosci.onet.pl/swiat/rosjanie-probuja-uniknac-frontu-uciekaja-do-trzech-krajow/4fscjd4",
+      "title": "Warszawa: jaka pogoda czeka nas 10.11.2026?",
+      "snippet": "Warszawa. Jaka będzie pogoda w mieście? Czy w dniu 10.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo mazowieckie - jaka jest aktualna prognoza pogody?",
+      "link": "https://wiadomosci.onet.pl/warszawa/warszawa-prognoza-pogody-w-dniu-10112026/0kb4qnw",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Rosjanie panikują przed mobilizacją. Zaczęli masowo uciekać do trzech krajów"
+      "title_pl": "Warszawa: jaka pogoda czeka nas 10.11.2026?"
     },
     {
-      "title": "Jeden z najbardziej poszukiwanych szpiegów na świecie twierdzi, że pomógł doprowadzić do upadku kanclerza Austrii",
-      "snippet": "Jan Marsalek, były członek zarządu upadłego niemieckiego dostawcy usług finansowych Wirecard, który uciekł do Rosji, twierdził, że brał udział w politycznym \"zabiciu\" austriackiego kanclerza Sebastiana Kurza. Jeśli to prawda, wskazywałoby to, że Kreml wywarł bezpośredni wpływ na przywództwo polityczne jednego z państw UE.",
-      "link": "https://wiadomosci.onet.pl/swiat/jan-marsalek-i-rozmowy-ktore-zabily-kanclerza-austrii-nowe-informacje/3sekvwv",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Jeden z najbardziej poszukiwanych szpiegów na świecie twierdzi, że pomógł doprowadzić do upadku kanclerza Austrii"
-    },
-    {
-      "title": "Ćwiczenia wojskowe \"koalicji chętnych\" w Polsce. MSZ Rosji stanowczo reaguje",
-      "snippet": "Rozpoczęcie ćwiczeń \"Koalicji chętnych\" 9 listopada, w przededniu rozmów w Abu Zabi, potwierdza, że ​​Europejczycy nie mają prawa uczestniczyć w negocjacjach — oświadczyła Maria Zacharowa, rzeczniczka MSZ Rosji.",
-      "link": "https://wiadomosci.onet.pl/swiat/msz-rosji-stanowczo-reaguje-na-cwiczenia-wojsk-koalicji-chetnych-w-polsce/xmf51s7",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Ćwiczenia wojskowe \"koalicji chętnych\" w Polsce. MSZ Rosji stanowczo reaguje"
-    },
-    {
-      "title": "\"Telewizja Republika przestała być nadawcą\". Środowisko uderza w stację",
-      "snippet": "Towarzystwo Dziennikarskie zaapelowało w poniedziałek do Krajowej Rady Radiofonii i Telewizji o pilne zbadanie relacji Telewizji Republika z tragicznych wydarzeń w Krakowie. Organizacja domaga się wyciągnięcia konsekwencji wobec nadawcy, włącznie z możliwością cofnięcia koncesji, zarzucając stacji szerzenie dezinformacji i języka nienawiści.",
-      "link": "https://wiadomosci.onet.pl/kraj/lawina-oburzenia-w-branzy-dziennikarze-zadaja-reakcji-po-slowach-w-tv-republika/l0k1630",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "\"Telewizja Republika przestała być nadawcą\". Środowisko uderza w stację"
-    },
-    {
-      "title": "Zamach w Krakowie. Biuro Zwalczania Cyberprzestępczości ostrzega przed fałszywymi alarmami",
-      "snippet": "Policja i funkcjonariusze Centralnego Biura Zwalczania Cyberprzestępczości poinformowali, że po tragicznym wydarzeniu w Krakowie intensywnie monitorują internet w poszukiwaniu niepokojących treści. Zatrzymano dotychczas sześć osób.",
-      "link": "https://wiadomosci.onet.pl/kraj/biuro-zwalczania-cyberprzestepczosci-ostrzega-przed-falszywymi-alarmami/23r5v10",
-      "source_name": "Onet",
-      "lang": "pl",
-      "title_pl": "Zamach w Krakowie. Biuro Zwalczania Cyberprzestępczości ostrzega przed fałszywymi alarmami"
-    },
-    {
-      "title": "Diabelska ryba wraca do sił. W Dolinie Śmierci naliczono ich 137",
-      "snippet": "Krytycznie zagrożony karpieniec diabli zwiększył liczebność jedynej dzikiej populacji. W październiku 2026 r. w Devils Hole na terenie Parku Narodowego Doliny Śmierci naliczono 137 osobników. Jak podaje TVN24, w marcu 2025 r. było ich zaledwie 20.",
-      "link": "https://wiadomosci.wp.pl/diabelska-ryba-wraca-do-sil-w-dolinie-smierci-naliczono-ich-137-7349191171877344a",
+      "title": "\"Tylko w filmach tak to wygląda\". Jak się poluje na zamachowców w sieci",
+      "snippet": "Nieformalne kontakty z gigantami technologicznymi, fałszywe konta na forach ekstremistów, przysługi od zagranicznych służb i karteczki z danymi pod stołem. Były funkcjonariusz CBŚP opowiada nam, jak polskie służby wyłapują zamachowców w sieci. – Wszystko wskazuje na to, że Michał Oksiński był samotnym wilkiem. A takich ludzi jest najtrudniej wychwycić – podkreśla.",
+      "link": "https://wiadomosci.wp.pl/tylko-w-filmach-tak-to-wyglada-jak-sie-poluje-na-zamachowcow-w-sieci-7349229958052288a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Diabelska ryba wraca do sił. W Dolinie Śmierci naliczono ich 137"
+      "title_pl": "\"Tylko w filmach tak to wygląda\". Jak się poluje na zamachowców w sieci"
     },
     {
-      "title": "Sekcje zwłok ofiar zakończone. Zaplanowano sekcję sprawcy strzelaniny",
-      "snippet": "Prokuratura przekazała, że zakończono sekcje zwłok sześciu ofiar ataku w Krakowie i trzech z Ostrowca Świętokrzyskiego. Prawdopodobnie we wtorek odbędzie się sekcja sprawcy.",
-      "link": "https://wiadomosci.wp.pl/sekcje-zwlok-ofiar-zakonczone-zaplanowano-sekcje-sprawcy-strzelaniny-7349192204716512a",
+      "title": "Działo się w nocy. Przejmujący marsz w Krakowie, Hegseth w tarapatach",
+      "snippet": "Ulicami Krakowa przeszedł Marsz Ciszy, podczas którego oddano hołd ofiarom sobotniego zamachu. Ze szpitali napłynęły natomiast pozytywne wieści o stanie zdrowia bohaterskich policjantów. Ważą się losy szefa Pentagonu, wobec którego może zostać uruchomiona procedura impeachmentu, zaś w Donalda Trumpa bezpardonowo uderza jego poprzednik. Sprawdź, co jeszcze działo się w nocy z poniedziałku na wtorek.",
+      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-przejmujacy-marsz-w-krakowie-hegseth-w-tarapatach-7349390620776928a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Sekcje zwłok ofiar zakończone. Zaplanowano sekcję sprawcy strzelaniny"
+      "title_pl": "Działo się w nocy. Przejmujący marsz w Krakowie, Hegseth w tarapatach"
     },
     {
-      "title": "Pogrążeni w zadumie. Krakowianie oddają hołd ofiarom zamachu",
-      "snippet": "Mieszkańcy i turyści tłumnie pojawiają się dziś przy Rynku Głównym w Krakowie - w miejscu, w którym w sobotę doszło do tragicznych w skutkach wydarzeń. - Rynek zawsze był miejscem pełnym energii, raczej głośnym, a teraz jest całkiem inaczej. Cicho - zauważa w rozmowie z agencją AP jeden z mieszkańców miasta.",
-      "link": "https://wiadomosci.wp.pl/krakow/pograzeni-w-zadumie-krakowianie-oddaja-hold-ofiarom-zamachu-7349184433973696v",
+      "title": "Rozmawiał z Putinem, teraz ostrzega sojuszników. \"To iluzja\"",
+      "snippet": "Bezpośredni kontakt przywódców państw nordyckich z Władimirem Putinem wywołał falę krytyki w stolicach europejskich. Premier Norwegii Jonas Gahr Støre w rozmowie z portalem Politico stanowczo stanął w obronie swojej inicjatywy, którą podjął wspólnie z prezydentem Finlandii Alexandrem Stubbem. Jak przekonuje, Europa nie może oddawać pola wyłącznie Stanom Zjednoczonym, a brak dialogu z Moskwą nie przybliża końca wojny.",
+      "link": "https://wiadomosci.wp.pl/rozmawial-z-putinem-teraz-ostrzega-sojusznikow-to-iluzja-7349377882380736a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Pogrążeni w zadumie. Krakowianie oddają hołd ofiarom zamachu"
+      "title_pl": "Rozmawiał z Putinem, teraz ostrzega sojuszników. \"To iluzja\""
     },
     {
-      "title": "Zamach w Krakowie. Co z zaplanowanymi imprezami? Jasny głos z ratusza",
-      "snippet": "Cały świat widział sceny zamachu w Krakowie - mieście, do którego rocznie przyjeżdża miliony turystów. Co teraz czeka stolicę Małopolski? - zastanawia się branża. – Obronimy turystyczną markę Krakowa jako miasta mimo wszystko bezpiecznego i przyjaznego – zapewnia w rozmowie z Wirtualną Polską Elżbieta Kois-Żurek, wiceprezydent Krakowa. I zapowiada: \"nie odwołamy imprez turystycznych, które są zaplanowane na najbliższe tygodnie\".",
-      "link": "https://wiadomosci.wp.pl/krakow/zamach-w-krakowie-co-z-zaplanowanymi-imprezami-jasny-glos-z-ratusza-7349143671626176a",
+      "title": "\"Stoimy w obliczu zagrożenia\". Szwajcaria szykuje się do referendum",
+      "snippet": "\"Stoimy w obliczu zagrożenia niewidzianego od II wojny światowej\" – alarmują zwolennicy liberalizacji szwajcarskiego eksportu broni. W referendum 29 listopada obywatele rozstrzygną, czy zezwolić na dostawy uzbrojenia do 36 państw Zachodu i znieść zakaz reeksportu. Podczas gdy rząd i przemysł widzą w tym warunek współpracy z NATO, lewica bije na alarm, zarzucając władzom zdradę neutralności.",
+      "link": "https://wiadomosci.wp.pl/stoimy-w-obliczu-zagrozenia-szwajcaria-szykuje-sie-do-referendum-7349371736975840a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Zamach w Krakowie. Co z zaplanowanymi imprezami? Jasny głos z ratusza"
+      "title_pl": "\"Stoimy w obliczu zagrożenia\". Szwajcaria szykuje się do referendum"
     },
     {
-      "title": "Brat Viktora Orbana zatrzymany. Ciążą na nim poważne zarzuty",
-      "snippet": "Premier Węgier Peter Magyar przekazał w poniedziałek w mediach społecznościowych, powołując się na doniesienia prasowe, że Aron Orban, brat byłego premiera Viktora Orbana, został zatrzymany pod zarzutem przemytu ludzi. Sprawę badają węgierskie służby.",
-      "link": "https://wiadomosci.wp.pl/brat-viktora-orbana-zatrzymany-ciaza-na-nim-powazne-zarzuty-7349182857214432a",
+      "title": "\"Białoruś była gotowa\". Mińsk skarży się na Polskę, liczył na więcej",
+      "snippet": "– Lekkie starania były, ale na razie żadnego dalszego ruchu nie widzimy, chociaż Białoruś była gotowa – oświadczył gen. Alaksandr Walfowicz, sekretarz Rady Bezpieczeństwa Białorusi. Reżim w Mińsku nie kryje rozczarowania faktem, że kuluarowe rozmowy szefów dyplomacji Polski i Białorusi w Nowym Jorku nie doprowadziły do oczekiwanego przez stronę białoruską przełomu. – Białoruś wyciąga rękę (...), ale zapewne europejscy politycy nie są tym zainteresowani – uważa Walfowicz.",
+      "link": "https://wiadomosci.wp.pl/bialorus-byla-gotowa-minsk-skarzy-sie-na-polske-liczyl-na-wiecej-7349363079137760a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Brat Viktora Orbana zatrzymany. Ciążą na nim poważne zarzuty"
+      "title_pl": "\"Białoruś była gotowa\". Mińsk skarży się na Polskę, liczył na więcej"
     },
     {
-      "title": "New Delhi pod toksycznym smogiem po święcie Diwali. Petardy pogorszyły jakość powietrza",
-      "snippet": "W poniedziałek rano New Delhi znalazło się pod gęstą warstwą smogu po obchodach święta Diwali. W kilku częściach stolicy Indii wskaźnik jakości powietrza przekroczył 350 punktów, co oznaczało poziom określany jako \"poważny\". Do sezonowego kryzysu zanieczyszczenia powietrza przyczyniły się petardy.",
-      "link": "https://wiadomosci.wp.pl/new-delhi-pod-toksycznym-smogiem-po-swiecie-diwali-petardy-pogorszyly-jakosc-powietrza-7349182330722752a",
+      "title": "Negocjacje to fikcja? Iran oskarża USA o kłamstwa",
+      "snippet": "Szef irańskich służb bezpieczeństwa Mohsen Rezaei wezwał Stany Zjednoczone do zaprzestania \"fabrykowania\" fałszywych doniesień o rzekomo toczących się negocjacjach. Jak podkreślił, powrót do rozmów i odblokowanie cieśniny Ormuz uzależnione są od spełnienia siedmiu twardych warunków Teheranu. Strona irańska zdementowała również informacje o planowanym spotkaniu z wiceprezydentem USA J.D. Vance’em.",
+      "link": "https://wiadomosci.wp.pl/negocjacje-z-usa-to-fikcja-iran-oskarza-usa-o-klamstwa-7349357092166112a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "New Delhi pod toksycznym smogiem po święcie Diwali. Petardy pogorszyły jakość powietrza"
+      "title_pl": "Negocjacje to fikcja? Iran oskarża USA o kłamstwa"
     },
     {
-      "title": "Udało się zidentyfikować ostatnią ofiarę zamachowca. To 55-latek z Polski",
-      "snippet": "Ostatnią zidentyfikowaną ofiarą śmiertelną zamachowca jest 55-latek z Polski – ustaliła Wirtualna Polska. W niedzielę wojewoda małopolski Krzysztof Klęczar podawał jeszcze, że to około 50-letni mężczyzna. Informacje były nieprecyzyjne, bo, jak się dowiedzieliśmy, mężczyzna nie miał przy sobie dokumentów, był osobą bezdomną.",
-      "link": "https://wiadomosci.wp.pl/udalo-sie-zidentyfikowac-ostatnia-ofiare-zamachowca-to-55-latek-z-polski-7349150898563552a",
+      "title": "Papież zarządził kontrolę. Będzie wizytacja w polskiej diecezji",
+      "snippet": "W diecezji bielsko-żywieckiej odbędzie się wizytacja apostolska. Decyzję podjął papież Leon XIV, a kontrolę przeprowadzi biskup włocławski Krzysztof Wętkowski. Choć kuria nie podała oficjalnych powodów interwencji Stolicy Apostolskiej, sprawa zbiega się w czasie z głośnym i burzliwym konfliktem wokół odwołania proboszcza w podoświęcimskim Grojcu.",
+      "link": "https://wiadomosci.wp.pl/papiez-zarzadzil-kontrole-bedzie-wizytacja-w-polskiej-diecezji-7349353077750208a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Udało się zidentyfikować ostatnią ofiarę zamachowca. To 55-latek z Polski"
+      "title_pl": "Papież zarządził kontrolę. Będzie wizytacja w polskiej diecezji"
     },
     {
-      "title": "Sekret Wyspy Stanów. Rozbitkowie spędzili tu miesiące, teraz odnaleziono ich ślady",
-      "snippet": "Na argentyńskiej Wyspie Stanów archeolodzy zbadali pozostałości XIX-wiecznego obozowiska rozbitków. Ślady mogą być związane z załogą Luisa Piedrabueny, którego statek \"Espora\" rozbił się w tym rejonie w 1873 r. Naukowcy nie mają jeszcze pewności, czy odkryte przedmioty należały do jego ludzi.",
-      "link": "https://wiadomosci.wp.pl/sekret-wyspy-stanow-rozbitkowie-spedzili-tu-miesiace-teraz-odnaleziono-ich-slady-7349167616383456a",
+      "title": "Biden bezlitosny dla Trumpa. \"Powinno ciążyć na nim do końca życia\"",
+      "snippet": "Szturm na Kapitol z 6 stycznia 2021 r. powinien ciążyć na Donaldzie Trumpie do końca życia – pisze Joe Biden we wspomnieniach ze swojej prezydentury, zatytułowanych \"Promise me, America\". Były przywódca USA ostro krytykuje w nich swojego następcę m.in. za ułaskawienie uczestników zamieszek w Waszyngtonie. Książka trafi do sprzedaży 17 listopada.",
+      "link": "https://wiadomosci.wp.pl/biden-bezlitosny-dla-trumpa-powinno-ciazyc-na-nim-do-konca-zycia-7349344166537696a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Sekret Wyspy Stanów. Rozbitkowie spędzili tu miesiące, teraz odnaleziono ich ślady"
+      "title_pl": "Biden bezlitosny dla Trumpa. \"Powinno ciążyć na nim do końca życia\""
     },
     {
-      "title": "Rosyjskie trolle i polscy politycy. Tak podbijano kłamstwa o zamachu",
-      "snippet": "– Fałszywe informacje dotyczące zamachu w Krakowie rozpowszechniali m.in. politycy, a ich zasięgi dodatkowo zwiększały rosyjskie boty i trolle – powiedział w poniedziałek minister cyfryzacji Krzysztof Gawkowski. Przekazał, że w ciągu zaledwie 24 godzin od ataku zgłoszono do zablokowania ponad dwa tysiące kont.",
-      "link": "https://wiadomosci.wp.pl/rosyjskie-trolle-i-polscy-politycy-tak-podbijano-klamstwa-o-zamachu-7349166795422144a",
+      "title": "Tragedia w Krakowie na celowniku Kremla. Tak szerzono kłamstwa",
+      "snippet": "Masowa strzelanina w Krakowie posłużyła rosyjskiej i białoruskiej propagandzie do przeprowadzenia gigantycznej operacji dezinformacyjnej. Nim polskie służby wydały oficjalne komunikaty, sieć zalały fałszywki o \"ukraińskim terroryście\", zmyślonym najemnictwie w pułku Azow oraz preparowane konta tworzone za pomocą sztucznej inteligencji. Jak podało Ministerstwo Cyfryzacji, zasięgi kłamstw w zaledwie kilka godzin przekroczyły 200 mln odsłon.",
+      "link": "https://wiadomosci.wp.pl/tragedia-w-krakowie-na-celowniku-kremla-tak-szerzono-klamstwa-7349337715620288a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Rosyjskie trolle i polscy politycy. Tak podbijano kłamstwa o zamachu"
+      "title_pl": "Tragedia w Krakowie na celowniku Kremla. Tak szerzono kłamstwa"
+    },
+    {
+      "title": "Burza po słowach Melenchona o Donbasie. Ostra riposta Kijowa",
+      "snippet": "Wypowiedź Jean-Luca Melenchona na temat przyszłości Donbasu spotkała się ze stanowczym protestem Ukrainy. Lider francuskiej skrajnej lewicy i kandydat na prezydenta zasugerował, że o przynależności okupowanych terenów w tym regionie powinni zdecydować w głosowaniu sami mieszkańcy. W odpowiedzi ukraińskie MSZ przypomniało, że granice państwa zostały ustalone już w 1991 r. W samej Francji z kolei polityk został nazwany \"rzecznikiem Kremla\".",
+      "link": "https://wiadomosci.wp.pl/burza-po-slowach-melenchona-o-donbasie-ostra-riposta-kijowa-7349326340774368a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Burza po słowach Melenchona o Donbasie. Ostra riposta Kijowa"
+    },
+    {
+      "title": "Zginął w strzelaninie w Krakowie. Przyjaciele szukają rodziny 51-latka",
+      "snippet": "W mediach społecznościowych rozchodzi się poruszający apel o pomoc w odnalezieniu bliskich 51-letniego Roberta Kosidło, który zginął w tragicznej strzelaninie w Krakowie. Pochodzący z Rybnika mężczyzna od lat był związany z krakowskim Rynkiem Głównym. Teraz przyjaciele i kupcy, którym codziennie bezinteresownie pomagał, robią wszystko, by dotrzeć do jego krewnych na Śląsku i wyprawić mu godny pochówek.",
+      "link": "https://wiadomosci.wp.pl/krakow/zginal-w-strzelaninie-w-krakowie-przyjaciele-szukaja-rodziny-51-latka-7349319963302336a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Zginął w strzelaninie w Krakowie. Przyjaciele szukają rodziny 51-latka"
+    },
+    {
+      "title": "Chcą jej startu w wyborach na prezydenta USA. Ruszyła machina",
+      "snippet": "Choć do kolejnych wyborów prezydenckich w USA pozostały jeszcze lata, w Partii Demokratycznej już ruszyła walka o sukcesję. W obliczu braku wyraźnego faworyta do prezydenckiej nominacji w 2028 r., lewicowi aktywiści powołali ruch \"Ready for AOC\", chcąc przekonać Alexandrię Ocasio-Cortez do walki o najwyższy urząd w państwie. Choć kongresmenka porywa młody i progresywny elektorat, jej demokratyczny socjalizm wciąż budzi obawy partyjnego establishmentu przed utratą centrowych wyborców.",
+      "link": "https://wiadomosci.wp.pl/chca-jej-startu-w-wyborach-na-prezydenta-usa-ruszyla-machina-7349312117860800a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Chcą jej startu w wyborach na prezydenta USA. Ruszyła machina"
+    },
+    {
+      "title": "Grozi mu impeachment. Hegseth reaguje na wniosek kongresmena",
+      "snippet": "Szef Pentagonu Pete Hegseth może wkrótce stanąć w obliczu procedury impeachmentu. W poniedziałek formalny wniosek o postawienie go w stan oskarżenia złożył republikański kongresmen Thomas Massie, zarzucając ministrowi nadużycie władzy w związku z wojną z Iranem. Choć głosowanie w Izbie Reprezentantów ma odbyć się w ciągu dwóch dni, Hegseth zapewnia, że zachowuje spokój. Na wtorek zapowiedział konferencję prasową.",
+      "link": "https://wiadomosci.wp.pl/grozi-mu-impeachment-hegseth-reaguje-na-wniosek-kongresmena-7349304534604224a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Grozi mu impeachment. Hegseth reaguje na wniosek kongresmena"
+    },
+    {
+      "title": "Giełzak o Krakowie. \"To miejsce zostało nam skradzione\"",
+      "snippet": "W najnowszym odcinku programu \"Teraz WP\" gościem Patrycjusza Wyżgi był historyk i publicysta Marcin Giełzak. W jednym z wątków rozmowy gość skomentował nie zawsze dostrzegane funkcje państwa, a także symbolikę Krakowa w polskiej historii, odnosząc status miasta do tragicznych sobotnich wydarzeń. - Jakby się miało zabrać gdzieś człowieka z drugiego końca świata i pokazać mu Polskę, no to pokazałbym mu Kraków i to miejsce jakby zostało nam skradzione przez czyn tego zbrodniarza - podsumował Giełza",
+      "link": "https://wiadomosci.wp.pl/krakow/gielzak-o-krakowie-to-miejsce-zostalo-nam-skradzione-7349274625296864v",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Giełzak o Krakowie. \"To miejsce zostało nam skradzione\""
     },
     {
       "title": "Polish government ministers suggest tighter gun controls after deadly terrorist shooting",
@@ -474,7 +370,7 @@
       "link": "https://notesfrompoland.com/2026/11/09/polish-government-ministers-suggest-tighter-gun-controls-after-deadly-terrorist-shooting/",
       "source_name": "Notes from Poland",
       "lang": "en",
-      "title_pl": "Ministrowie polskiego rządu sugerują zaostrzenie kontroli dostępu do broni po śmiertelnej strzelaninie terrorystycznej"
+      "title_pl": "Ministrowie polskiego rządu sugerują zaostrzenie kontroli broni po śmiertelnej strzelaninie terrorystycznej"
     },
     {
       "title": "Perpetrator of Kraków terrorist attack dies of injuries in hospital",
@@ -483,6 +379,30 @@
       "source_name": "Notes from Poland",
       "lang": "en",
       "title_pl": "Sprawca ataku terrorystycznego w Krakowie zmarł w szpitalu w wyniku odniesionych obrażeń"
+    },
+    {
+      "title": "Miłość, zdrada i podejrzenia o szpiegostwo. Jak jeden romans zatrząsnął Nvidią",
+      "snippet": "Jensen Huang zbudował technologiczną spółkę wartą biliony dolarów. Teraz sam stał się dla niej źródłem ryzyka. Nvidia bada podejrzenia o operację chińskiego wywiadu, a Wall Street nerwowo reaguje. Analitycy ostrzegają: kłopoty prezesa mogą odbić się na całym rynku sztucznej inteligencji.",
+      "link": "https://www.money.pl/biznes/milosc-zdrada-i-podejrzenia-o-szpiegostwo-jak-jeden-romans-zatrzasnal-nvidia-7349193371331040a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Miłość, zdrada i podejrzenia o szpiegostwo. Jak jeden romans zatrząsnął Nvidią"
+    },
+    {
+      "title": "Skandal za oceanem. Kurs giganta reaguje",
+      "snippet": "Akcje Nvidii na informacje dotyczące prezesa spółki Jensena Huanga zareagowały spadkiem. Amerykański wywiad podejrzewa, że szef największego producenta chipów na świecie utrzymywał relację z kobietą, którą miały zwerbować chińskie służby.",
+      "link": "https://www.money.pl/gielda/skandal-za-oceanem-kurs-giganta-reaguje-7349233944160736a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Skandal za oceanem. Kurs giganta reaguje"
+    },
+    {
+      "title": "Miliardy dla Polski z unijnego systemu. Są świeże dane o ETS",
+      "snippet": "Dochody Polski z ogólnych aukcji uprawnień do emisji CO2 w ramach systemu EU ETS w 2025 r. wyniosły blisko 3,8 mld euro. Natomiast przychody ze sprzedaży uprawnień z Funduszu Modernizacyjnego w 2025 r. wyniosły blisko 1,639 mld euro – wynika z raportu KE dotyczącego m.in. rynku uprawnień do emisji dwutlenku węgla.",
+      "link": "https://www.money.pl/gospodarka/miliardy-dla-polski-z-unijnego-systemu-sa-swieze-dane-o-ets-7349196278733248a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Miliardy dla Polski z unijnego systemu. Są świeże dane o ETS"
     },
     {
       "title": "Dobry plan na przyszłość - Alior Bank zachęca do oszczędzania. Nawet 500 zł w promocjach IKE i IKZE",
@@ -499,6 +419,14 @@
       "source_name": "Money.pl",
       "lang": "pl",
       "title_pl": "mBank chce przekonać Polaków do inwestowania i notuje rekordowe wyniki"
+    },
+    {
+      "title": "Wojna celna USA i Chin. Pekin ogłosił ważną decyzję",
+      "snippet": "Chiny zdecydowały o przedłużeniu zawieszenia dodatkowych 24-proc. ceł na import z USA. W mocy pozostanie jednak stawka 10 proc. Pekin utrzymał też ulgi dotyczące opłat portowych. Decyzja zapadła po podobnym ruchu Waszyngtonu, tuż przed kolejnym spotkaniem Trumpa i Xi.",
+      "link": "https://www.money.pl/gospodarka/wojna-celna-usa-i-chin-pekin-oglosil-wazna-decyzje-7349109021628864a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Wojna celna USA i Chin. Pekin ogłosił ważną decyzję"
     },
     {
       "title": "Niższy PIT dla pracowników IT. Nowa interpretacja skarbówki",
@@ -525,76 +453,84 @@
       "title_pl": "Ile kosztuje euro? Kurs euro do złotego PLN/EUR 09.11.2026"
     },
     {
-      "title": "Ranking kont osobistych. Te rachunki warto rozważyć w listopadzie",
-      "snippet": "Darmowe prowadzenie rachunku, wysoka premia, atrakcyjne oprocentowanie oszczędności i karta bez opłat? W listopadowym rankingu kont osobistych sprawdzamy, które banki proponują najwięcej korzyści w pakiecie z najniższymi kosztami.",
-      "link": "https://www.money.pl/finanse/ranking-kont-osobistych-te-rachunki-warto-rozwazyc-w-listopadzie-7348826858645952a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Ranking kont osobistych. Te rachunki warto rozważyć w listopadzie"
-    },
-    {
-      "title": "Zbudował znaną polską markę. Mówi o wojnie cenowej",
-      "snippet": "Kazar od 35 lat sprzedaje Polakom buty, torebki i dodatki – liczone w milionach par. Artur Kazienko, założyciel marki, opowiada o wojnie cenowej, która wymiotła rynek, i o wejściu Kazara w odzież. Zobacz najnowszy odcinek Biznes Klasy.",
-      "link": "https://www.money.pl/biznes-klasa/zbudowal-znana-polska-marke-mowi-o-wojnie-cenowej-7348852289288640v.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Zbudował znaną polską markę. Mówi o wojnie cenowej"
-    },
-    {
-      "title": "Miała być zielona rewolucja, a jest spalanie diesla i awaria. Miasto zapomniało o... ładowarce",
-      "snippet": "Miał być dumą Nowego Jorku i symbolem zielonej transformacji miejskiego transportu. Skończyło się wizerunkową wpadką i spalaniem drogiego oleju napędowego. Nowojorski hybrydowo-elektryczny prom, warty 33 miliony dolarów, nie ma skąd czerpać prądu, ponieważ miasto wciąż nie postawiło dla niego stacji ładowania - donosi dziennik „The New York Times”.",
-      "link": "https://www.bankier.pl/wiadomosc/Miala-byc-zielona-rewolucja-a-jest-spalanie-diesla-i-awaria-Miasto-zapomnialo-o-ladowarce-9226043.html",
+      "title": "Genialne jednostki, przeciętna innowacyjność. Prof. Karwowski: Kreatywność z całą pewnością nie wystarczy",
+      "snippet": "Polska od lat zajmuje przeciętne pozycje w międzynarodowych rankingach innowacyjności, choć pod względem indywidualnego potencjału twórczego plasujemy się w ścisłej światowej czołówce. O źródłach tego rozdźwięku, barierach kulturowych oraz szansach i zagrożeniach związanych ze sztuczną inteligencją rozmawiał w studiu Bankier.pl na Made in Wrocław prof. Maciej Karwowski, kierownik Zakładu Psychologii Twórczości Uniwersytetu Wrocławskiego.",
+      "link": "https://www.bankier.pl/wiadomosc/Genialne-jednostki-przecietna-innowacyjnosc-Prof-Karwowski-Kreatywnosc-z-cala-pewnoscia-nie-wystarczy-9226151.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Miała być zielona rewolucja, a jest spalanie diesla i awaria. Miasto zapomniało o... ładowarce"
+      "title_pl": "Genialne jednostki, przeciętna innowacyjność. Prof. Karwowski: Kreatywność z całą pewnością nie wystarczy"
     },
     {
-      "title": "ETS przynosi Polsce miliardy. Komisja Europejska podała nowe dane",
-      "snippet": "Dochody Polski z ogólnych aukcji uprawnień do emisji CO2 w ramach unijnego systemu EU ETS w 2025 r. wyniosły blisko 3.852 mln euro, a przychody ze sprzedaży uprawnień z Funduszu Modernizacyjnego w 2025 r. wyniosły blisko 1.639 mln euro - wynika z raportu KE dotyczącego m.in. rynku uprawnień do emisji dwutlenku węgla.",
-      "link": "https://www.bankier.pl/wiadomosc/ETS-przynosi-Polsce-miliardy-Komisja-Europejska-podala-nowe-dane-9226215.html",
+      "title": "Bon do Rossmanna od znajomego? Tak oszuści rozsyłają fałszywą promocję",
+      "snippet": "Oszuści wykorzystują znane marki, by wyłudzić pieniądze od swoich ofiar. W nowym odcinku Scam Alert opisuję przekręt „na bon z Rossmana” i fałszywe maile od Spotify. Rusza też śledztwo w sprawie wezwań do zapłaty wysyłanych pod szyldem Urzędu Patentowego.",
+      "link": "https://www.bankier.pl/wiadomosc/Bon-do-Rossmanna-od-znajomego-Tak-oszusci-rozsylaja-falszywa-promocje-9225936.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "ETS przynosi Polsce miliardy. Komisja Europejska podała nowe dane"
+      "title_pl": "Bon do Rossmanna od znajomego? Tak oszuści rozsyłają fałszywą promocję"
     },
     {
-      "title": "Pot na palcach paraliżował granice UE. Bruksela domaga się milionów od IBM",
-      "snippet": "Unia Europejska straciła cierpliwość do inteligentnego systemu kontroli granicznej \"Wjazd i Wyjazd\" (w skrócie EES). Dostarczony przez IBM i partnerów produkt nie spełnił jednak pokładanych w nim nadziei. Stąd w obliczu powtarzających się opóźnień, Buksela zdecydowała się na pozew - informuje \"Financial Times\".",
-      "link": "https://www.bankier.pl/wiadomosc/Pot-na-palcach-paralizowal-granice-UE-Bruksela-domaga-sie-milionow-od-IBM-9225982.html",
+      "title": "Najlepsze lokaty kwartalne. Ponad 5% tylko w dwóch bankach",
+      "snippet": "Poszukujący „perełek” na lokatach kwartalnych mogą liczyć na oprocentowanie sięgające 5,80 proc. w skali roku. Poza liderem tylko jeden bank proponuje klientom indywidualnym na ten termin stawkę w wysokości ponad 5 proc. w skali roku.",
+      "link": "https://www.bankier.pl/wiadomosc/Lokaty-kwartalne-w-listopadzie-Najwyzsza-stawka-to-5-80-9226092.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Pot na palcach paraliżował granice UE. Bruksela domaga się milionów od IBM"
+      "title_pl": "Najlepsze lokaty kwartalne. Ponad 5% tylko w dwóch bankach"
     },
     {
-      "title": "Biedronka uruchamia własną aplikację do zakupów online. Biek debiutuje w 16 miastach",
-      "snippet": "Sieć sklepów Biedronka uruchamia własną aplikację Biek do zakupów online - poinformowała sieć w komunikacie prasowym. Aplikacja będzie dostępna we wszystkich 16 miastach, w których obecnie działa Biek.",
-      "link": "https://www.bankier.pl/wiadomosc/Biedronka-uruchamia-wlasna-aplikacje-do-zakupow-online-Biek-debiutuje-w-16-miastach-9226051.html",
+      "title": "Ukraina może dostać gwarancje podobne do NATO. USA ujawniają szczegóły",
+      "snippet": "Poprosiliśmy Rosjan o zgodę na to, byśmy mogli udzielić Ukrainie gwarancji bezpieczeństwa na wzór artykułu 4 i artykułu 5 NATO - powiedział w poniedziałek mediom amerykański urzędnik przed rozmowami trójstronnymi w Abu Zabi. Gwarancji miałby udzielić też Sojusz Północnoatlantycki.",
+      "link": "https://www.bankier.pl/wiadomosc/Ukraina-moze-dostac-gwarancje-podobne-do-NATO-USA-ujawniaja-szczegoly-9226383.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Biedronka uruchamia własną aplikację do zakupów online. Biek debiutuje w 16 miastach"
+      "title_pl": "Ukraina może dostać gwarancje podobne do NATO. USA ujawniają szczegóły"
     },
     {
-      "title": "Rewolucja w odprawach Ryanaira. Koniec z nerwami tuż przed lotem",
-      "snippet": "Stało się. Ryanair podjął decyzję o wydłużeniu darmowej odprawy. Pasażerowie, którzy nie opłacili wyboru miejsca, już nie muszą odliczać godzin do doby przed wylotem. Mogą się odprawić nawet na 72 godziny przed odlotem.",
-      "link": "https://www.bankier.pl/wiadomosc/Rewolucja-w-odprawach-Ryanaira-Koniec-z-nerwami-tuz-przed-lotem-9225930.html",
+      "title": "„Nasze emerytury mogą być naprawdę niewesołe”. Kapitał nie odłoży się sam",
+      "snippet": "Emerytura, która zapewni finansowe bezpieczeństwo po zakończeniu aktywności zawodowej, nie powstanie sama. W obliczu zmian demograficznych i wyzwań stojących przed systemem emerytalnym coraz większego znaczenia nabiera samodzielne budowanie kapitału na przyszłość.",
+      "link": "https://www.bankier.pl/wiadomosc/Nasze-emerytury-moga-byc-naprawde-niewesole-Kapital-nie-odlozy-sie-sam-9218250.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Rewolucja w odprawach Ryanaira. Koniec z nerwami tuż przed lotem"
+      "title_pl": "„Nasze emerytury mogą być naprawdę niewesołe”. Kapitał nie odłoży się sam"
     },
     {
-      "title": "Zarobki górników gonią IT, a \"średnia krajowa\" reszty oscyluje wokół 9 tys. zł",
-      "snippet": "Przeciętne miesięczne wynagrodzenie brutto w III kwartale 2026 roku wyniosło 9317,01 zł brutto. To oznacza wzrost o 6,2 proc. Analiza danych pokazuje, że tempo podwyżek wyraźnie wyhamowało w porównaniu z \"szalonymi\" poprzednimi latami. Wciąż rosną one jednak szybciej niż ceny w sklepach.",
-      "link": "https://www.bankier.pl/wiadomosc/Zarobki-gornikow-gonia-IT-a-srednia-krajowa-reszty-oscyluje-wokol-9-tys-zl-9225950.html",
+      "title": "RTV EURO AGD wycofuje reklamy z TV Republika. Sakiewicz wzywa do bojkotu firmy",
+      "snippet": "Firma RTV EURO AGD wstrzymuje emisje reklam w Telewizji Republika w związku z kontrowersjami dotyczącymi sposobu relacjonowania zamachu w Krakowie przez tę telewizję. O decyzji poinformowano na platformie X w poniedziałek.",
+      "link": "https://www.bankier.pl/wiadomosc/RTV-EURO-AGD-wycofuje-reklamy-z-TV-Republika-Sakiewicz-wzywa-do-bojkotu-firmy-9226336.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Zarobki górników gonią IT, a \"średnia krajowa\" reszty oscyluje wokół 9 tys. zł"
+      "title_pl": "RTV EURO AGD wycofuje reklamy z TV Republika. Sakiewicz wzywa do bojkotu firmy"
     },
     {
-      "title": "JSW pożyczy ponad miliard złotych od ARP. Pieniądze na ratowanie spółki",
-      "snippet": "Jastrzębska Spółka Węglowa ma umowę pożyczki w wysokości do 1.066 mln zł z Agencją Rozwoju Przemysłu m.in. na rozliczenie zaliczki 400 mln zł z tytułu przedwstępnej umowy sprzedaży udziałów i akcji oraz na finansowanie działalności JSW prowadzonej w okresie realizacji programu naprawczego Grupy - podała JSW w komunikacie. Okres finansowania trwa do 30.06.2038 r.",
-      "link": "https://www.bankier.pl/wiadomosc/Agencja-Rozwoju-Przemyslu-udzieli-JSW-do-1-066-mln-zl-pozyczki-9226190.html",
+      "title": "Polska firma robi superekologiczne ubrania. Przywraca do łask zapomniany biznes z czasów PRL",
+      "snippet": "Polska branża konopna przechodzi renesans, przekształcając niszowe uprawy w nowoczesne produkty włókiennicze i zielarskie. W podcaście „Z prądem” Maciej Kowalski, założyciel Kombinatu Konopnego, przedstawia perspektywy rozwoju tego sektora, walkę z dominacją syntetyków w odzieży oraz drogę spółki od crowdfundingu do giełdy NewConnect.",
+      "link": "https://www.bankier.pl/wiadomosc/Polska-firma-robi-superekologiczne-ubrania-Przywraca-do-lask-zapomniany-biznes-z-czasow-PRL-9226214.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "JSW pożyczy ponad miliard złotych od ARP. Pieniądze na ratowanie spółki"
+      "title_pl": "Polska firma robi superekologiczne ubrania. Przywraca do łask zapomniany biznes z czasów PRL"
+    },
+    {
+      "title": "Boom na centra danych ma swoją cenę. Norwegia zaczyna reglamentować prąd",
+      "snippet": "Minister cyfryzacji Norwegii Torgeir Micaelsen zapowiedział w poniedziałek na konferencji prasowej wprowadzenie koncesji dla centrów danych. Państwowy operator sieci energetycznych wstrzymał im od tego dnia przydzielanie nowych mocy. Powodem jest zużycie przez centra wielkich ilości energii elektrycznej.",
+      "link": "https://www.bankier.pl/wiadomosc/Boom-na-centra-danych-ma-swoja-cene-Norwegia-zaczyna-reglamentowac-prad-9226333.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Boom na centra danych ma swoją cenę. Norwegia zaczyna reglamentować prąd"
+    },
+    {
+      "title": "Demokraci chcą zmienić sposób wyboru prezydenta USA. Jest szansa na przełom",
+      "snippet": "Przejęcie kontroli przez Demokratów w kilku stanach po niedawnych wyborach połówkowych może im pozwolić na zmarginalizowanie Kolegium Elektorów USA i zwiększenie znaczenia głosów wyborców w wyborach prezydenckich - ocenia „New York Times”.",
+      "link": "https://www.bankier.pl/wiadomosc/Demokraci-chca-zmienic-sposob-wyboru-prezydenta-USA-Jest-szansa-na-przelom-9226367.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Demokraci chcą zmienić sposób wyboru prezydenta USA. Jest szansa na przełom"
+    },
+    {
+      "title": "Kebab za 1 euro wywołał zamieszki w Niemczech. Interweniowała policja",
+      "snippet": "Promocja kebaba za zaledwie 1 euro przyciągnęła setki osób do jednego z lokali w niemieckim Dortmundzie. Otwarcie restauracji szybko wymknęło się spod kontroli. Na miejsce wezwano policję, a w stronę funkcjonariuszy poleciały kamienie, butelki, materiały pirotechniczne, a nawet hulajnogi elektryczne.",
+      "link": "https://www.bankier.pl/wiadomosc/Kebab-za-1-euro-wywolal-zamieszki-w-Niemczech-Interweniowala-policja-9226409.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Kebab za 1 euro wywołał zamieszki w Niemczech. Interweniowała policja"
     },
     {
       "title": "To ostatnie dni na 1100 zł od BNP Paribas. Jak zdobyć pełną pulę i czy warto założyć tam konto?",
@@ -603,6 +539,62 @@
       "source_name": "Bankier.pl",
       "lang": "pl",
       "title_pl": "To ostatnie dni na 1100 zł od BNP Paribas. Jak zdobyć pełną pulę i czy warto założyć tam konto?"
+    },
+    {
+      "title": "Koreańskie wyrzutnie rakiet dla Norwegii. Podano ważną datę",
+      "snippet": "Oslo rozpocznie odbiory południowokoreańskich wyrzutni rakiet K239 Chunmoo w roku 2028. Wraz z nimi pozyskano kilka typów amunicji rakietowej, w tym o zasięgu 500 km.",
+      "link": "https://defence24.pl/sily-zbrojne/koreanskie-wyrzutnie-rakiet-dla-norwegii-podano-wazna-date",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Koreańskie wyrzutnie rakiet dla Norwegii. Podano ważną datę"
+    },
+    {
+      "title": "„Bezprecedensowe” ruchy Rosji. Niemal wszystkie bombowce w jednym miejscu",
+      "snippet": "W niedzielę, 8 listopada, ukraiński serwis Defence Express poinformował o „bezprecedensowych” ruchach rosyjskiego lotnictwa. Nawet 47 bombowców skoncentrowano w bazie lotniczej Ukrainka na rosyjskim Dalekim Wschodzie (w obwodzie amurskim).",
+      "link": "https://defence24.pl/polityka-obronna/bezprecedensowe-ruchy-rosji-niemal-wszystkie-bombowce-w-jednym-miejscu",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "„Bezprecedensowe” ruchy Rosji. Niemal wszystkie bombowce w jednym miejscu"
+    },
+    {
+      "title": "Szef MON: podczas wizyty w USA możliwe podpisanie porozumienia o współpracy przemysłów zbrojeniowych obu państw",
+      "snippet": "Podczas wtorkowej wizyty w Waszyngtonie możliwe jest podpisanie porozumienia dotyczącego współpracy polskiego i amerykańskiego przemysłu zbrojeniowego – zapowiedział wicepremier, szef MON Władysław Kosiniak-Kamysz.",
+      "link": "https://defence24.pl/przemysl/szef-mon-podczas-wizyty-w-usa-mozliwe-podpisanie-porozumienia-o-wspolpracy-przemyslow-zbrojeniowych-obu-panstw",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Szef MON: podczas wizyty w USA możliwe podpisanie porozumienia o współpracy przemysłów zbrojeniowych obu państw"
+    },
+    {
+      "title": "Żurek: Nie wykluczyliśmy wątku rosyjskiego",
+      "snippet": "Minister Sprawiedliwości Waldemar Żurek miał poinformować, że śledczy badają, czy w zamach, który miał miejsce w Krakowie, zamieszane są osoby trzecie.",
+      "link": "https://defence24.pl/wiadomosci/zurek-nie-wykluczylismy-watku-rosyjskiego",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Żurek: Nie wykluczyliśmy wątku rosyjskiego"
+    },
+    {
+      "title": "„W obliczu bezpośredniego zagrożenia”. Do Pałacu Prezydenckiego przyszedł list z USA",
+      "snippet": "W piątek, 6 listopada, kongresmen Keith Self wysłał do Prezydenta Karola Nawrockiego list, w którym chwali jego działania wokół Trybunału Konstytucyjnego. Polityk wskazuje również Polskę jako jednego z najważniejszych sojuszników USA.",
+      "link": "https://defence24.pl/geopolityka/w-obliczu-bezposredniego-zagrozenia-do-palacu-prezydenckiego-przyszedl-list-z-usa",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "„W obliczu bezpośredniego zagrożenia”. Do Pałacu Prezydenckiego przyszedł list z USA"
+    },
+    {
+      "title": "Awanse generalskie na Święto Niepodległości. Znamy nazwiska",
+      "snippet": "W Święto Niepodległości prezydent RP Karol Nawrocki wręczy 10 nominacji generalskich – dowiedział się nieoficjalnie Defence24.pl. Redakcja poznała też część nazwisk oficerów, którzy zostaną nominowani na wyższy stopień.",
+      "link": "https://defence24.pl/sily-zbrojne/awanse-generalskie-na-swieto-niepodleglosci-znamy-nazwiska",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Awanse generalskie na Święto Niepodległości. Znamy nazwiska"
+    },
+    {
+      "title": "Cysterny-Dystrybutory dla Wojska Polskiego",
+      "snippet": "Agencja Uzbrojenia poinformowała o dostawach kolejnych cystern-dystrybutorów paliwa dla Wojska Polskiego.",
+      "link": "https://defence24.pl/przemysl/cysterny-dystrybutory-dla-wojska-polskiego",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Cysterny-Dystrybutory dla Wojska Polskiego"
     }
   ]
 }
