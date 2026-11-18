@@ -1,512 +1,440 @@
 {
   "date": "18 listopada 2026",
-  "time": "06:03",
-  "timestamp": "2026-11-18_06:03",
-  "count": 75,
+  "time": "16:14",
+  "timestamp": "2026-11-18_16:14",
+  "count": 72,
   "items": [
     {
-      "title": "Decyzja ws. Święczkowskiego będzie opublikowana w środę. Jest decyzja TK",
-      "snippet": "Komunikat w sprawie wniosków Prokuratora Generalnego o uchylenie immunitetów Bogdanowi Święczkowskiemu i Bartłomiejowi Sochańskiemu zostanie opublikowany w środę - poinformowano we wtorek wieczorem na stronie Trybunału Konstytucyjnego. Sprawą zajmowało się przez cały wtorek Zgromadzenie Ogólne TK.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/decyzja-ws-swieczkowskiego-bedzie-opublikowana-w-srode-jest-decyzja-tk/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Decyzja ws. Święczkowskiego będzie opublikowana w środę. Jest decyzja TK"
-    },
-    {
-      "title": "\"Sikorski mi oczka puszcza\". Salwy śmiechu podczas debaty w Sejmie",
-      "snippet": "- Co mi tu puszczasz jakieś oczka, Radosławie Sikorski? No przepraszam bardzo, w Biedronia się bawisz? - wypalił Janusz Kowalski podczas sejmowej debaty nad wotum nieufności wobec rządu Donalda Tuska. Na sali rozległy się salwy śmiechu, a wicemarszałek Dorota Niedziela ostatecznie wyłączyła politykowi mikrofon. - Sejm nie jest cyrkiem - upomniała go.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/sikorski-mi-oczka-puszcza-salwy-smiechu-podczas-debaty-w-sejmie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Sikorski mi oczka puszcza\". Salwy śmiechu podczas debaty w Sejmie"
-    },
-    {
-      "title": "Wotum nieufności dla rządu Donalda Tuska. Sejm zdecydował",
-      "snippet": "Sejm zagłosował przeciwko wnioskowi klubu Rozwój Plus o wyrażenie konstruktywnego wotum nieufności wobec rządu i wybór Marka Jurka na premiera. Większość obecnych na sali posłów zagłosowało przeciwko tej inicjatywie. Szef rządu skomentował wynik głosowania mówiąc, że nikogo ono nie interesowało.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/wotum-nieufnosci-dla-rzadu-donalda-tuska-sejm-zdecydowal/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wotum nieufności dla rządu Donalda Tuska. Sejm zdecydował"
-    },
-    {
-      "title": "Awantura na lotnisku w Krakowie. Brytyjczyk trafił na izbę wytrzeźwień",
-      "snippet": "Pijany obywatel Wielkiej Brytanii wywołał awanturę na podkrakowskim lotnisku w Balicach. Mężczyzna awanturował się pod bramkami i ostatecznie zakończył podróż w izbie wytrzeźwień. Polsatnews.pl ustalił, że sprawca zamieszania został ukarany grzywną w wysokości 500 zł, którą przyjął.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/awantura-na-lotnisku-w-balicach-brytyjczyk-trafil-na-izbe-wytrzezwien/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Awantura na lotnisku w Krakowie. Brytyjczyk trafił na izbę wytrzeźwień"
-    },
-    {
-      "title": "Marek Siwiec w programie \"Gość Wydarzeń\"",
-      "snippet": "Szef Kancelarii Sejmu Marek Siwiec będzie odpowiadał na pytania Magdy Sakowskiej we wtorkowym wydaniu programu Gość Wydarzeń. Transmisja od godz. 19:15 w Polsacie, Polsat News, Wydarzeniach24, Interii i na polsatnews.pl.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/marek-siwiec-w-programie-gosc-wydarzen-1/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Marek Siwiec w programie \"Gość Wydarzeń\""
-    },
-    {
-      "title": "Tusk ostro odpowiedział Morawieckiemu. \"To nie jest miejsce na stand-upy\"",
-      "snippet": "- To nie jest miejsce na stand-upy - powiedział Donald Tusk, odpowiadając w Sejmie na wystąpienie Mateusza Morawieckiego. Lider Rozwoju Plus przekonywał, że rząd powinien zostać odwołany, i zaapelował do posłów PSL oraz Polski 2050 o poparcie wniosku o wotum nieufności. Premier nazwał całą inicjatywę chucpą i zakpił z propozycji powierzenia stanowiska szefa rządu Markowi Jurkowi.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/morawiecki-chce-odwolania-rzadu-tuska-zwrocil-sie-do-koalicjantow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Tusk ostro odpowiedział Morawieckiemu. \"To nie jest miejsce na stand-upy\""
-    },
-    {
-      "title": "Zawaliła się część budynku w centrum Warszawy. Na miejscu służby",
-      "snippet": "Część rozbieranego budynku biurowego zawaliła się przy ulicy Marszałkowskiej w centrum Warszawy. Fragmenty ściany spadły na chodnik. - W wyniku tego zdarzenia nikt nie odniósł obrażeń - przekazał Polsat News asp. Jakub Pacyniak z warszawskiej policji. Na miejscu pracują służby, a ruch samochodowy odbywa się już płynnie.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/zawalila-sie-czesc-budynku-w-centrum-warszawy-na-miejscu-sluzby/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Zawaliła się część budynku w centrum Warszawy. Na miejscu służby"
-    },
-    {
-      "title": "Zmiany w rządzie. Rzecznik prezydenta wskazał termin",
-      "snippet": "W piątek o godzinie 11.00 Prezydent RP Karol Nawrocki dokona zmian w składzie Rady Ministrów - przekazał rzecznik prezydenta Rafał Leśkiewicz. Dodał, że o ich skali zdecyduje Parlament podczas dzisiejszego głosowania. Sejm odrzucił jednak wniosek o wotum nieufności wobec rządu Donalda Tuska. Za odwołaniem gabinetu głosowało 200 posłów, przeciw było 242.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/zmiany-w-rzadzie-rzecznik-prezydenta-wskazal-termin/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Zmiany w rządzie. Rzecznik prezydenta wskazał termin"
-    },
-    {
-      "title": "Kolejna dymisja w Ministerstwie Rolnictwa. Odchodzi dyrektor generalny",
-      "snippet": "Kolejna dymisja w Ministerstwie Rolnictwa po publikacji Wirtualnej Polski. Jak ustalił portal, rezygnację złożył dyrektor generalny resortu Marek Cieśliński. Wcześniej ze stanowiska odszedł szef gabinetu politycznego ministra Stefana Krajewskiego, Michał Zarzecki. Sprawa ma związek z ustaleniami dotyczącymi spłaty ponad 2,2 mln zł zobowiązań tego drugiego przez państwową instytucję.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/kolejna-dymisja-w-ministerstwie-rolnictwa-odchodzi-dyrektor-generalny/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Kolejna dymisja w Ministerstwie Rolnictwa. Odchodzi dyrektor generalny"
-    },
-    {
-      "title": "Mejza odpowiada ministrowi. \"Nie mogę się doczekać konfrontacji\"",
-      "snippet": "Nie mogę się doczekać konfrontacji z Waldemarem Żurkiem - tak Łukasz Mejza reaguje na wniosek o pociągnięcie go do odpowiedzialności karnej. Śledczy zarzucają mu popełnienie czterech przestępstw, w tym oszustwa na szkodę Fundacji Siepomaga. - Zderzenie ze mną będzie dla Żurka bardziej bolesne niż zderzenie z robotem czyszczącym, przejadę się po nim jeszcze mocniej - powiedział Polsat News Mejza.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/mejza-odpowiada-ministrowi-nie-moge-sie-doczekac-konfrontacji/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Mejza odpowiada ministrowi. \"Nie mogę się doczekać konfrontacji\""
-    },
-    {
-      "title": "Oświadczenie sędziów TK ws. Święczkowskiego. \"Wyrażamy sprzeciw\"",
-      "snippet": "Wyrażamy stanowczy sprzeciw wobec bezprawnej próby uchylenia immunitetów sędziów Trybunału Konstytucyjnego - Bogdana Święczkowskiego i Bartłomieja Sochańskiego (...) oraz próby wyrażenia zgody na zatrzymanie i tymczasowe aresztowanie prezesa TK - czytamy w oświadczeniu sędziów Trybunału, do którego dotarł Polsat News.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/oswiadczenie-sedziow-tk-ws-swieczkowskiego-wyrazamy-sprzeciw/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Oświadczenie sędziów TK ws. Święczkowskiego. \"Wyrażamy sprzeciw\""
-    },
-    {
-      "title": "Joe Biden z podziwem o Polsce. \"Są zaciekle niepodlegli\"",
-      "snippet": "Były prezydent Joe Biden z podziwem opisał zmiany, które przeżyła Warszawa oraz postawę Polski wobec wojny w Ukrainie w wydanych wspomnieniach pt. Promise me, America. Odniósł się też do mistyfikacji podczas swojej podróży do Kijowa przez Rzeszów i Przemyśl.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/joe-biden-z-podziwem-o-polsce-sa-zaciekle-niepodlegli/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Joe Biden z podziwem o Polsce. \"Są zaciekle niepodlegli\""
-    },
-    {
-      "title": "Apple informuje o awarii. Problemy z szeregiem aplikacji",
-      "snippet": "Koncern Apple poinformował we wtorek, że szereg usług, w tym sklep z aplikacjami AppStore i iCloud, zmaga się z awariami. Przyczyna jest nieznana. Wcześniej pojawiły się też problemy z funkcjonowaniem Agencji Bezpieczeństwa Narodowego (NSA). To kolejne problemy z systemami informatycznymi w ostatnim czasie w USA.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/apple-informuje-o-awarii-problemy-z-szeregiem-aplikacji/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Apple informuje o awarii. Problemy z szeregiem aplikacji"
-    },
-    {
-      "title": "\"Nie brałbym ich na poważnie\". Szef NATO o groźbach Rosji",
-      "snippet": "Sekretarz generalny NATO Mark Rutte oświadczył we wtorek, że nie brałby na poważnie rosyjskich gróźb wobec Francji, której żołnierze według doniesień medialnych mają brać udział w misji szkoleniowej w Ukrainie. Wcześniej Kreml zagroził, że takie działanie może oznaczać bezpośrednie zaangażowanie Europy w wojnę.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/rutte-o-grozbach-kremla-wobec-francji-nie-bralbym-ich-na-powaznie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Nie brałbym ich na poważnie\". Szef NATO o groźbach Rosji"
-    },
-    {
-      "title": "Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny",
-      "snippet": "Pentagon skrytykował ukraińskie ataki w głębi Rosji, ostrzegając przed ryzykiem eskalacji konfliktu. Wiceszef resortu obrony USA Elbridge Colby ocenił, że uderzenia te nie przyczyniły się do zakończenia wojny ani powstrzymania rosyjskich postępów na froncie. Jego słowa padły krótko po apelu Wołodymyra Zełenskiego o zwiększenie pomocy wojskowej.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/amerykanski-polityk-wsciekly-na-ukraine-chodzi-o-dalekie-uderzenia/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Pentagon krytykuje ukraińską strategię. Ostrzega przed eskalacją wojny"
-    },
-    {
-      "title": "Katastrofa wojskowego samolotu w Rosji. Jest wiele ofiar",
-      "snippet": "Rosyjski wojskowy samolot transportowy An-12 rozbił się we wtorek w obwodzie kemerowskim na Syberii. Rosyjskie ministerstwo obrony poinformowało, że w katastrofie zginęło 19 osób znajdujących się na pokładzie. Rosyjskie media donoszą z kolei, że maszyna mogła zapalić się jeszcze w powietrzu. Na miejscu katastrofy pracują służby ratownicze.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/katastrofa-rosyjskiego-samolotu-wojskowego-sa-doniesienia-o-licznych-ofiarach/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Katastrofa wojskowego samolotu w Rosji. Jest wiele ofiar"
-    },
-    {
-      "title": "Amerykanie ostrzegają przed atakami w Europie. Pilny komunikat",
-      "snippet": "Kolejne ambasady USA w Europie wydają alerty w związku z zagrożeniem terrorystycznym na kontynencie. Taki komunikat opublikowały m.in. placówki w Polsce, Wielkiej Brytanii, Niemczech, Ukrainie czy Rosji. Autorzy komunikatu zwrócili też uwagę na protesty i alarmy bombowe.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/seria-alertow-ambasad-usa-w-europie-ostrzezenia-przed-atakami/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Amerykanie ostrzegają przed atakami w Europie. Pilny komunikat"
-    },
-    {
-      "title": "Katastrofa nieopodal Belgradu. Rozbił się myśliwiec MiG-29, nie żyje pilot",
-      "snippet": "Nieopodal miejscowości Stara Pazova, około 45 km od centrum Belgradu, rozbił się wojskowy myśliwiec MiG-29. Serbskie ministerstwo obrony potwierdziło informację o wypadku. Przekazało też, że zginął w nim 53-letni pilot. Trwa ustalanie przyczyn tragedii.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/mysliwiec-rozbil-sie-w-poblizu-belgradu-nie-zyje-53-letni-pilot/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Katastrofa nieopodal Belgradu. Rozbił się myśliwiec MiG-29, nie żyje pilot"
-    },
-    {
-      "title": "Przywódca kraju NATO kreśli \"czerwone linie\". Chodzi o rozmowy z Rosją",
-      "snippet": "Europa powinna być gotowa do negocjacji z Rosją dopiero po zakończeniu wojny w Ukrainie - oświadczył prezydent Finlandii Alexander Stubb. Doprecyzował, że chodzi o rozmowy w sprawie relacji Moskwy z NATO i Unią Europejską, nuklearnego wyścigu zbrojeń czy kontroli zbrojeń. Podkreślał, że zupełnie inną kwestią jest europejska architektura bezpieczeństwa, której nie możemy naruszać.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/przywodca-kraju-nato-kresli-czerwone-linie-chodzi-o-rozmowy-z-rosja/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Przywódca kraju NATO kreśli \"czerwone linie\". Chodzi o rozmowy z Rosją"
-    },
-    {
-      "title": "Czołowe zderzenie pociągów w Pradze. Wielu rannych, niektórzy ciężko",
-      "snippet": "Przed wjazdem na główną stację kolejową w Pradze doszło do czołowego zderzenia pociągów. Według informacji podawanych przez czeskie służby i media rannych zostało 46 osób. Ustalane są przyczyny wypadku. Jak ustalił Polsat News, wśród poszkodowanych nie ma obywateli Polski.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/czolowe-zderzenie-pociagow-w-pradze-wielu-rannych-niektorzy-ciezko/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Czołowe zderzenie pociągów w Pradze. Wielu rannych, niektórzy ciężko"
-    },
-    {
-      "title": "Celne trafienie w Most Krymski. Część przeprawy runęła, ruch wstrzymany",
-      "snippet": "Ukraińcy w nocy po raz drugi w ciągu doby zaatakowali Most Krymski, którego część została poważnie uszkodzona. Ruch drogowy i kolejowy na przeprawie został wstrzymany. W związku z uderzeniem rząd Rosji zbierze się na nadzwyczajnym posiedzeniu. Ukraińskie drony pojawiły się też m.in. nad Moskwą.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/celne-trafienie-w-most-krymski-czesc-przeprawy-runela-ruch-wstrzymany/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Celne trafienie w Most Krymski. Część przeprawy runęła, ruch wstrzymany"
-    },
-    {
-      "title": "Wyzwania dla Europy i przyszłość polskiego przemysłu. Polska Moc Biznesu 2026",
-      "snippet": "Przyszłość europejskiej gospodarki, bezpieczeństwo, energetyka i nowe technologie zdominowały VI Kongres Społeczno-Gospodarczy Polska Moc Biznesu. Wśród najważniejszych tematów znalazły się konkurencyjność Europy, transformacja energetyczna, sztuczna inteligencja oraz rozwój polskiego przemysłu. Wydarzenie odbyło się na PGE Narodowym w Warszawie, a jego program obejmował ponad 50 debat.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/wyzwania-dla-europy-i-przyszlosc-polskiego-przemyslu-polska-moc-biznesu-2026/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wyzwania dla Europy i przyszłość polskiego przemysłu. Polska Moc Biznesu 2026"
-    },
-    {
-      "title": "Miliardy złotych na małe reaktory jądrowe. \"Podpisaliśmy fantastyczną umowę\"",
-      "snippet": "Polski biznes stawia na SMR-y - modułowe reaktory jądrowe w amerykańskiej technologii. Do końca roku finansowanie tej inwestycji ma sięgnąć 3,5 mld zł. - Udało nam się z prezesem Grupy Polsat Plus Piotrem Żakiem podpisać fantastyczną umowę i będziemy dewelopować sześć SMR-ów w lokalizacji pakowskiej - podkreśla Michał Sołowow (SGE). Włączenie się do projektu rozważa także Polski Fundusz Rozwoju.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-17/miliardy-zlotych-na-male-reaktory-jadrowe-inwestycje-moze-wesprzec-panstwo/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Miliardy złotych na małe reaktory jądrowe. \"Podpisaliśmy fantastyczną umowę\""
-    },
-    {
-      "title": "Apel ponad podziałami ws. TK. Balcerowicz i Roszkowski jednym głosem",
-      "snippet": "Ośmioro kawalerów Orderu Orła Białego wystosowało apel o przeprowadzenie zmian prawnych i zażegnanie kryzysu w Trybunale Konstytucyjnym. Sygnatariusze postulują wybór sędziów kwalifikowaną większością 3/5 głosów. Pod pismem podpisali się m.in. były wicepremier Leszek Balcerowicz i kojarzony z prawicą historyk Wojciech Roszkowski.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-apel-ponad-podzialami-ws-tk-balcerowicz-i-roszkowski-jednym,nId,23575133",
+      "title": "Zabójstwo 11-letniej Danusi. Decyzja w sprawie zatrzymanej dziewczynki",
+      "snippet": "Sąd rodzinny w Jeleniej Górze podjął decyzję w sprawie 12-latki zatrzymanej po zabójstwie 11-letniej dziewczynki w grudniu 2025 roku. Wobec nieletniej zastosowano środek leczniczy. Jak poinformował Sąd Rejonowy w Jeleniej Górze, postanowienie kończące postępowanie zapadło 16 listopada i nie jest prawomocne.",
+      "link": "https://wydarzenia.interia.pl/dolnoslaskie/news-zabojstwo-11-latki-w-jeleniej-gorze-decyzja-w-sprawie-zatrzy,nId,23575627",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Apel ponad podziałami ws. TK. Balcerowicz i Roszkowski jednym głosem"
+      "title_pl": "Zabójstwo 11-letniej Danusi. Decyzja w sprawie zatrzymanej dziewczynki"
     },
     {
-      "title": "Pierwsze takie uderzenie Ukrainy w historii. Dotkliwy cios w symbol Putina",
-      "snippet": "Ukraińskie wojsko przeprowadziło atak na Most Krymski, wykorzystując rakiety i drony, ale bez użycia systemów łączności Starlink i Starshield Elona Muska. Jak ujawnia brytyjski dziennik \"The Times\", operacja została zaplanowana tak, aby zademonstrować słabość Władimira Putina przed jego spotkaniem z Donaldem Trumpem i Xi Jinpingiem w Chinach. Według doniesień medialnych uderzenie doprowadziło do poważnych uszkodzeń strategicznej przeprawy.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-pierwsze-takie-uderzenie-ukrainy-w-historii-dotkliwy-cios-w,nId,23575117",
+      "title": "\"Rozmowy już się zaczęły\". PSL urabia KO, premier uchyla drzwi",
+      "snippet": "PSL rozpoczęło grę, która wywołuje niemałe napięcia w koalicji rządzącej. - Nie będziemy negocjować z porywaczem wysokości okupu. Nie ma miejsca na rozmowę z prezydentem o przyszłości Trybunału Konstytucyjnego - irytuje się jeden z liderów Koalicji Obywatelskiej.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-rozmowy-juz-sie-zaczely-psl-urabia-ko-premier-uchyla-drzwi,nId,23575633",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Pierwsze takie uderzenie Ukrainy w historii. Dotkliwy cios w symbol Putina"
+      "title_pl": "\"Rozmowy już się zaczęły\". PSL urabia KO, premier uchyla drzwi"
     },
     {
-      "title": "Odpowiedź z Europy w sprawie Święczkowskiego. Ważą się losy immunitetu",
-      "snippet": "\"Hipokryzja ma krótkie nogi\" - tak minister sprawiedliwości Waldemar Żurek ocenił odmowną odpowiedź Europejskiego Trybunału Praw Człowieka na wnioski Bogdana Święczkowskiego i Bartłomieja Sochańskiego. Sędziowie Trybunału Konstytucyjnego zwrócili się o wydanie środka zabezpieczającego w ich sprawie. Ponadto w środę, a nie we wtorek zostanie ogłoszona decyzja ws. immunitetów prezesa TK i jego zastępcy. \"To kuriozum\" - komentuje mecenas Bartosz Lewandowski.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-decyzja-europejskiego-trybunalu-i-immunitet-swieczkowskiego,nId,23575109",
+      "title": "Nagranie z Watykanu obiegło internet. \"Przyszły ojciec święty\"",
+      "snippet": "Nagranie z audiencji generalnej Leona XIV obiegło internet. Wszystko przez dziecko, które papież wziął na ręce. Uwagę wszystkich przykuł strój, który maleństwo miało na sobie. \"Przyszły ojciec święty\" - skomentowała humorystycznie jedna z internautek.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-nagranie-z-watykanu-obieglo-internet-przyszly-ojciec-swiety,nId,23575623",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Odpowiedź z Europy w sprawie Święczkowskiego. Ważą się losy immunitetu"
+      "title_pl": "Nagranie z Watykanu obiegło internet. \"Przyszły ojciec święty\""
     },
     {
-      "title": "Atak z zaskoczenia na sojusznika. Amerykanie z ripostą, nieprzypadkowy cel",
-      "snippet": "Stany Zjednoczone zaatakowały irańską wyspę Keszm w cieśninie Ormuz. Kilka godzin wcześniej Korpus Strażników Rewolucji Islamskiej przeprowadził uderzenie na amerykańską bazę w Bahrajnie. Informator z armii USA zaznaczył, że kontrataku dokonano w ramach samoobrony. Obie strony formułują sprzeczne komunikaty.",
-      "link": "https://wydarzenia.interia.pl/bliski-wschod/news-atak-z-zaskoczenia-na-sojusznika-amerykanie-z-riposta-nieprz,nId,23575110",
+      "title": "Ukraińcy nie mogą sobie poradzić z kryzysem. Pracownicy załamują ręce",
+      "snippet": "Ukraiński przemysł ciężki znalazł się w stanie głębokiego kryzysu w wyniku nieustających rosyjskich ataków na kopalnie, zakłady metalurgiczne oraz infrastrukturę energetyczną i transportową. Jak wynika z raportu szwedzkiego dziennika Dagens Nyheter, produkcja stali w kluczowych zakładach została wstrzymana, wydobycie w kopalniach ograniczono do minimum, a tysiące pracowników mogą stracić pracę.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-ukraincy-nie-moga-sobie-poradzic-z-kryzysem-pracownicy-zalam,nId,23575628",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Atak z zaskoczenia na sojusznika. Amerykanie z ripostą, nieprzypadkowy cel"
+      "title_pl": "Ukraińcy nie mogą sobie poradzić z kryzysem. Pracownicy załamują ręce"
     },
     {
-      "title": "Wielkie spotkanie w Chinach. Putin na miejscu, witali go z honorami",
-      "snippet": "Władimir Putin przybył do Chin, gdzie ma wziąć udział w szczycie Współpracy Gospodarczej Azji i Pacyfiku (APEC) oraz spotkać się z Donaldem Trumpem i Xi Jinpingiem - poinformowała chińska agencja Xinhua. W sieci pojawiły się zdjęcia i nagrania z lądowania rosyjskiej maszyny i powitania dyktatora. W oczy rzuca się rozmach chińskich organizatorów.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-wielkie-spotkanie-w-chinach-putin-na-miejscu-witali-go-z-hon,nId,23575094",
+      "title": "Wichury rozkręcą się w czterech województwach. Zostały godziny do zmiany",
+      "snippet": "Szykuje się nieprzyjemny wieczór, przynajmniej w zachodniej Polsce. Tam pojawi się silny wiatr, dochodzący w porywach do 75 km/h. Przed groźnym zjawiskiem synoptycy IMGW ostrzegają w łącznie czterech województwach.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-pogodowe-zjawisko-wzmocni-sie-wieczorem-moze-byc-grozne,nId,23575583",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Wielkie spotkanie w Chinach. Putin na miejscu, witali go z honorami"
+      "title_pl": "Wichury rozkręcą się w czterech województwach. Zostały godziny do zmiany"
     },
     {
-      "title": "Wyraźnie widać początek poważnego ochłodzenia. Ogarnie cały kraj",
-      "snippet": "Zbliżamy się do pogodowego przełomu. Pod koniec tygodnia w Polsce nastąpi zdecydowane ochłodzenie, odczuwalne we wszystkich regionach. Nie będzie już dwucyfrowych temperatur w ciągu dnia, a nocami poczujemy mocniejsze przymrozki, sięgające -4 stopni. Możliwe, że potem ujemne temperatury utrzymają się lokalnie nawet po wschodzie słońca.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-nadchodza-chlodne-dni-i-mrozne-noce-poczatek-zmian-juz-niedl,nId,23574876",
+      "title": "Biegał z mieczem po ulicy, kierowcy podnieśli alarm. Akcja policji",
+      "snippet": "Policjanci z Kęt (woj. małopolskie) podjęli nietypową interwencję wobec agresywnego i pobudzonego mężczyzny. 48-latek biegał po ulicy z mieczem samurajskim w dłoni. Zachowywał się agresywnie wobec mundurowych. Funkcjonariusze opisują całą akcję.",
+      "link": "https://wydarzenia.interia.pl/malopolskie/news-biegal-z-mieczem-po-ulicy-kierowcy-podniesli-alarm-akcja-pol,nId,23575594",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Wyraźnie widać początek poważnego ochłodzenia. Ogarnie cały kraj"
+      "title_pl": "Biegał z mieczem po ulicy, kierowcy podnieśli alarm. Akcja policji"
     },
     {
-      "title": "\"Wykonali dobrą robotę\". Trump pochwalił dyktatora, niecodzienne słowa",
-      "snippet": "- Bardzo dobrze znałem twoich rodziców. Wierzę w genetykę i oni wykonali dobrą robotę. Masz bardzo dobre geny - w ten sposób Donald Trump pochwalił prezydenta Filipin Ferdinanda Marcosa Jr., a także jego ojca, który sprawował dyktatorskie rządy w kraju. Trump ponadto pochwalił własną administrację, używając nietypowego porównania.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-wykonali-dobra-robote-trump-pochwalil-dyktatora-niecodzienne,nId,23575088",
+      "title": "Alarmujące dane dla Polski, chodzi o antybiotyki. \"Gwałtowny wzrost\"",
+      "snippet": "W Polsce od 2019 roku około pięciokrotnie wzrosła częstość zakażeń krwi wywoływanych przez bakterie Klebsiella pneumoniae oporne na najsilniejsze antybiotyki - poinformowało Europejskie Centrum ds. Zapobiegania i Kontroli Chorób. W całej Unii Europejskiej wzrost ten wyniósł 72 proc. Centrum ostrzega, że bez zdecydowanych działań coraz trudniej będzie leczyć zakażenia bakteriami opornymi na antybiotyki.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-alarmujace-dane-dla-polski-chodzi-o-antybiotyki-gwaltowny-wz,nId,23575575",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Wykonali dobrą robotę\". Trump pochwalił dyktatora, niecodzienne słowa"
+      "title_pl": "Alarmujące dane dla Polski, chodzi o antybiotyki. \"Gwałtowny wzrost\""
     },
     {
-      "title": "Moskwa w panice, szukają sposobu na straty. Duma dała zielone światło",
-      "snippet": "Wobec kryzysowej sytuacji na ukraińskim froncie Rosja wydłuża maksymalny czas służby wojskowej kobiet. Zmiany przeszły przez pierwsze czytanie w zdominowanym przez partię Władimira Putina parlamencie. Ustawa precyzuje nowe górne granice wieku żołnierek. Rosjanie podali krótkie uzasadnienie wprowadzanych zmian.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-moskwa-w-panice-szukaja-sposobu-na-straty-duma-dala-zielone,nId,23575089",
+      "title": "\"Janusz dostał kosza\". Biedroń i Sikorski zakpili z Kowalskiego",
+      "snippet": "\"Nigdy bym nie puścił oczka do Janusza Kowalskiego. Szanujmy się\" - napisał europoseł Lewicy Robert Biedroń na platformie X. \"Janusz dostał kosza dwa razy tego samego dnia\" - odpisał mu wicepremier i szef MSZ Radosław Sikorski. Politycy odnieśli się w ten sposób do głośnego występu byłego posła PiS w Sejmie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-janusz-dostal-kosza-biedron-i-sikorski-zakpili-z-kowalskiego,nId,23575497",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Moskwa w panice, szukają sposobu na straty. Duma dała zielone światło"
+      "title_pl": "\"Janusz dostał kosza\". Biedroń i Sikorski zakpili z Kowalskiego"
     },
     {
-      "title": "\"Należy natychmiast\". Rosja stawia warunek, padły zdecydowane słowa",
-      "snippet": "- Ograniczenia praw osób rosyjskojęzycznych na Ukrainie należy natychmiast znieść, a nie traktować je jako przedmiot negocjacji - stwierdził Siergiej Ławrow. Szef MSZ Rosji odniósł się także do kwestii uczestnictwa Europy w negocjacjach pokojowych. Jak stwierdził, Europejczycy próbują się \"wcisnąć\" w rozmowy.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-nalezy-natychmiast-rosja-stawia-warunek-padly-zdecydowane-sl,nId,23575090",
+      "title": "Zwrot po decyzji węgierskiego sądu. Chodzi o kierowcę polskiego autokaru",
+      "snippet": "Węgierski sąd uchylił decyzję o areszcie tymczasowym wobec Roberta M., polskiego kierowcy autokaru, który uczestniczył w sierpniu w wypadku na autostradzie M3. Sąd tym samym przychylił się do argumentacji obrony. Decyzja jest prawomocna. W wyniku wypadku życie straciło 12 pielgrzymów wracających do Polski z Medziugorie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-zwrot-po-decyzji-wegierskiego-sadu-chodzi-o-kierowce-polskie,nId,23575516",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"Należy natychmiast\". Rosja stawia warunek, padły zdecydowane słowa"
+      "title_pl": "Zwrot po decyzji węgierskiego sądu. Chodzi o kierowcę polskiego autokaru"
     },
     {
-      "title": "Glapiński wszedł do gry o TK. \"To koniec kruchego pokoju\"",
-      "snippet": "- To koniec kruchego pokoju między rządem a NBP - mówi nam ważny polityk obozu władzy, gdy pytamy o zaangażowanie Adama Glapińskiego w spór o Trybunał Konstytucyjny. - Chyba dla nikogo nie jest zaskoczeniem, że Glapiński jest wiernym żołnierzem Jarosława Kaczyńskiego - dodaje inny z naszych rozmówców, jeden z zaufanych ludzi Donalda Tuska.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-glapinski-wszedl-do-gry-o-tk-to-koniec-kruchego-pokoju,nId,23575086",
+      "title": "Rosja z pytaniem do sojusznika Ukrainy, pokłosie ataku. \"Dołączacie?\"",
+      "snippet": "\"Czy Haga otwarcie dołącza do konfliktu?\" - pyta ambasada Rosji w Holandii po tym, jak w ataku na Most Krymski Kijów wykorzystał pociski firmy Destinus. Ta powiadomiła, że w przeprawę uderzyło siedem pocisków RUTA. W wyniku uderzenia na most część konstrukcji runęła.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-rosja-z-pytaniem-do-sojusznika-ukrainy-poklosie-ataku-dolacz,nId,23575488",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Glapiński wszedł do gry o TK. \"To koniec kruchego pokoju\""
+      "title_pl": "Rosja z pytaniem do sojusznika Ukrainy, pokłosie ataku. \"Dołączacie?\""
     },
     {
-      "title": "Dodał wpis po ataku w Krakowie, potem szybko usuwał. Akcja policji",
-      "snippet": "20-letni mieszkaniec powiatu łomżyńskiego został zatrzymany po tym, jak w mediach społecznościowych pochwalał sprawcę zamachu na Rynku Głównym w Krakowie. W jego domu policjanci znaleźli nóż taktyczny. Mężczyzna usłyszał zarzuty i przyznał się do winy. Przed zatrzymaniem 20-latek usunął wpis, jednak to nie sprawiło, że uniknął konsekwencji. Grozi mu więzienie.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-dodal-wpis-po-ataku-w-krakowie-potem-szybko-usuwal-akcja-pol,nId,23575078",
+      "title": "\"Nietypowe obiekty latające\". MON ostrzega mieszkańców Warszawy",
+      "snippet": "\"18 listopada od 16 do 18.30 Wojskowy Instytut Techniczny Uzbrojenia w Zielonce przeprowadzi planowane badania pocisków oświetlających MITHRAS 1000. Na niebie mogą pojawić się jasne, długo utrzymujące się punkty świetlne opadające powoli na spadochronach\" - poinformował MON w komunikacie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-nietypowe-obiekty-latajace-mon-ostrzega-mieszkancow-warszawy,nId,23575554",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Dodał wpis po ataku w Krakowie, potem szybko usuwał. Akcja policji"
+      "title_pl": "\"Nietypowe obiekty latające\". MON ostrzega mieszkańców Warszawy"
     },
     {
-      "title": "Dwugłos w sprawie zamknięcia granicy z Rosją. Nieoczekiwany ruch prezydent",
-      "snippet": "Dwugłos w Estonii w sprawie planu zamknięcia granicy z Rosją. Prezydent Ülle Madise wezwała do niekierowania się emocjami oraz do chłodnej kalkulacji przed podjęciem ostatecznej decyzji. Wskazała na względy ekonomiczne i potencjał przygranicznej Narwy. Wcześniej rząd zapowiedział, że wszystkie przejścia graniczne z Rosją zostaną zamknięte 1 grudnia. - Emocje należy odłożyć na bok - zaapelowała.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-dwuglos-w-sprawie-zamkniecia-granicy-z-rosja-nieoczekiwany-r,nId,23575071",
+      "title": "Spór o opłatę targową. Samorządy odrzucają pomysł obniżek",
+      "snippet": "Związek Powiatów Polskich opowiedział się przeciwko wprowadzeniu zmian w funkcjonowaniu tak zwanej opłaty targowej zaproponowanych przez Rzeczniczkę Małych i Średnich Przedsiębiorstw. Spór o opłatę targową dotyczy tego, czy państwo powinno odgórnie zwolnić z niej kupców na prywatnych bazarach.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-spor-o-oplate-targowa-samorzady-odrzucaja-pomysl-obnizek,nId,23573004",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Dwugłos w sprawie zamknięcia granicy z Rosją. Nieoczekiwany ruch prezydent"
+      "title_pl": "Spór o opłatę targową. Samorządy odrzucają pomysł obniżek"
     },
     {
-      "title": "Karta Moja Biedronka bez zniżek. W sklepie wystarczy chwila nieuwagi",
-      "snippet": "Karta Moja Biedronka to element programu lojalnościowego sieci Biedronka. Korzystanie z niej pozwala na stosowanie zniżek za zakupy. Trzeba jednak uważać, ponieważ zniżki łatwo można stracić.",
-      "link": "https://biznes.interia.pl/finanse/news-tak-kradna-znizki-z-karty-moja-biedronka-w-sklepie-potrzebuj,nId,23574660",
+      "title": "Gorące powitanie Trumpa w Chinach. Trwa oczekiwanie na rozmowy",
+      "snippet": "Donald Trump przyleciał do chińskiego Shenzhen na szczyt Współpracy Gospodarczej Azji i Pacyfiku (APEC), podczas którego zaplanowana jest jego rozmowa z Władimirem Putinem i Xi Jinpingiem. Po wyjściu prezydenta USA z samolotu, chińskie myśliwce wypuszczały na niebie kolorowy dym. Później prezydent USA i przywódca Rosji podali sobie dłonie w towarzystwie Xi.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-gorace-powitanie-trumpa-w-chinach-trwa-oczekiwanie-na-rozmow,nId,23575450",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Gorące powitanie Trumpa w Chinach. Trwa oczekiwanie na rozmowy"
+    },
+    {
+      "title": "Nowy kompleks wojskowy otwarty. Szef MON zapowiada kolejne wydatki",
+      "snippet": "Ponad 100 mln zł przeznaczono na modernizację kompleksu wojskowego w 14. Dywizjonie Artylerii Samobieżnej w Jarosławiu. Władysław Kosiniak-Kamysz zapowiedział kolejne inwestycje na Podkarpaciu i Lubelszczyźnie, które mają być traktowane priorytetowo ze względu na zagrożenia związane z wojną w Ukrainie.",
+      "link": "https://biznes.interia.pl/gospodarka/news-ponad-100-mln-zl-na-kompleks-wojskowy-szef-mon-zapowiada-kol,nId,23575602",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Karta Moja Biedronka bez zniżek. W sklepie wystarczy chwila nieuwagi"
+      "title_pl": "Nowy kompleks wojskowy otwarty. Szef MON zapowiada kolejne wydatki"
     },
     {
-      "title": "Nowy kamuflaż dla polskiej armii. MON ujawnia ceny",
-      "snippet": "Polska armia w najbliższych latach wymieni \"Pantery\" na \"Rysie\". Mowa o kamuflażu, z którego korzystają żołnierze - pierwsze dostawy nowych mundurów trafią do wojska jeszcze w tym roku. MON w odpowiedzi na pytania Interii Biznes ujawnia szacunkowy koszt jednego kompletu oraz harmonogram wymiany umundurowania.",
-      "link": "https://biznes.interia.pl/gospodarka/news-wojsko-szykuje-kosztowna-zmiane-rys-zastapi-pantere,nId,23574388",
+      "title": "Zmiana na szczycie giganta. To właściciel znanej polskiej firmy",
+      "snippet": "Niels Ulrich Duedahl zrezygnował ze stanowiska dyrektora generalnego grupy Danish Crown, właściciela polskiego Sokołowa. O decyzji miały przesądzić słabsze wyniki finansowe i niekorzystna sytuacja rynkowa. Znane jest już nazwisko osoby, która tymczasowo przejmie stery w firmie.",
+      "link": "https://biznes.interia.pl/firma/news-trzesienie-na-szczycie-miesnego-giganta-to-wlasciciel-znanej,nId,23575568",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Nowy kamuflaż dla polskiej armii. MON ujawnia ceny"
+      "title_pl": "Zmiana na szczycie giganta. To właściciel znanej polskiej firmy"
     },
     {
-      "title": "Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem",
-      "snippet": "Minister finansów i gospodarki Andrzej Domański zapowiedział, że rząd będzie w najbliższych tygodniach analizował, czy może przedłużyć pakiet CPN na pierwsze miesiące 2027 roku. Dodał również, że planowane, miliardowe koszty zamrożenia cen gazu na 2027 rok weźmie na siebie w głównej mierze Orlen.",
-      "link": "https://biznes.interia.pl/gospodarka/news-domanski-o-pakiecie-cpn-w-najblizszych-tygodniach-decyzja-o,nId,23575097",
+      "title": "Ukraina obeszła się bez pomocy Elona Muska. Ważny cel na Krymie runął",
+      "snippet": "Ukraina zaatakowała Most Kerczeński na okupowanym przez Rosję Krymie, doprowadzając do zawalenia się jego części. W operacji wykorzystano m.in. rakietę Flamingo oraz drony. Z ustaleń \"The Times\" wynika, że Ukraina przeprowadziła ją bez Starlinków Elona Muska.",
+      "link": "https://biznes.interia.pl/polityka/news-ukraina-poradzila-sobie-bez-elona-muska-wazny-cel-na-krymie,nId,23575546",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Domański nie wyklucza przedłużania pakietu CPN. Decyzja niebawem"
+      "title_pl": "Ukraina obeszła się bez pomocy Elona Muska. Ważny cel na Krymie runął"
     },
     {
-      "title": "Raport Nvidii uderza rykoszetem. Trafia w Nokię i Intel",
-      "snippet": "Nvidia zamieszała na światowych giełdach po tym, jak w raporcie regulacyjnym (formularz 13F) ujawniła, że pozbyła się części akcji innych spółek, w które inwestowała. Na decyzjach globalnego giganta chipów dotyczących wyprzedaży udziałów najbardziej ucierpiały Nokia i Intel.",
-      "link": "https://biznes.interia.pl/gospodarka/news-raport-nvidii-uderza-rykoszetem-trafia-w-nokie-i-intel,nId,23575034",
+      "title": "Był ambitny plan, ale zabrakło pieniędzy. Ekspert: Utracony game changer",
+      "snippet": "Budowa metra byłaby game changerem, jeśli chodzi o atrakcyjność Krakowa - uważa prof. Michał Kudłacz z UEK. Jego zdaniem to kwestia postrzegania stolicy Małopolski jako miasta europejskiego, a nie powiatowego. Zdania w tej sprawie są jednak podzielone.",
+      "link": "https://biznes.interia.pl/gospodarka/news-krakow-stawia-na-alternatywe-dla-metra-wybor-jak-miedzy-reka,nId,23575443",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Raport Nvidii uderza rykoszetem. Trafia w Nokię i Intel"
+      "title_pl": "Był ambitny plan, ale zabrakło pieniędzy. Ekspert: Utracony game changer"
     },
     {
-      "title": "Nowe obowiązki dla przedsiębiorców. Rząd chce uszczelnić zapasy ropy",
-      "snippet": "Jak podało Ministerstwo Energii, rząd przyjął projekt nowelizacji ustawy o zapasach ropy i gazu, który ma uszczelnić system zapasów ropy i gazu oraz usprawnić zarządzanie zapasami potrzebnymi do interwencji państwowych.",
-      "link": "https://biznes.interia.pl/gospodarka/news-rzad-chce-uszczelnic-zapasy-ropy-i-gazu-przyjal-specjalny-pr,nId,23575002",
+      "title": "Allegro z karą 55 mln zł. UOKiK ujawnia prawdę o sadzeniu drzew",
+      "snippet": "54,7 mln zł kary dla Allegro za greenwashing. Firma obiecywała sadzenie drzewa za każde 10 odebranych przesyłek, choć część nasadzeń wykonano wcześniej, a kilku milionów drzew nie posadzono wcale. UOKiK ostrzega: ekologiczny marketing może słono kosztować.",
+      "link": "https://biznes.interia.pl/firma/news-uokik-uderza-w-allegro-niemal-55-mln-zl-za-zielony-marketing,nId,23575493",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Nowe obowiązki dla przedsiębiorców. Rząd chce uszczelnić zapasy ropy"
+      "title_pl": "Allegro z karą 55 mln zł. UOKiK ujawnia prawdę o sadzeniu drzew"
     },
     {
-      "title": "Ponad 167 mln zł długu i opóźnione pensje. Szpital ma poważny problem",
-      "snippet": "Ponad 1100 pracowników Wojewódzkiego Specjalistycznego Szpitala im. Mikołaja Pirogowa w Łodzi nie otrzymało wynagrodzeń w terminie. Pensje, które powinny trafić na ich konta do 10 listopada, zostały opóźnione po zajęciu rachunku placówki przez ZUS. Dyrekcja zapowiada wypłatę pieniędzy, ale problemy finansowe szpitala są znacznie poważniejsze. Jego zadłużenie przekroczyło już 167 mln zł.",
-      "link": "https://biznes.interia.pl/finanse/news-zus-zajal-konto-lodzkiego-szpitala-1100-osob-czeka-na-wyplat,nId,23574952",
+      "title": "Paraliż lotów w USA. Administracja Trumpa chce 50 mld dol. na modernizację",
+      "snippet": "W piątek (13.11) w Stanach Zjednoczonych doszło do paraliżu przestrzeni powietrznej. Kilka dni później, we wtorek (17.11) administracja Donalda Trumpa złożyła wniosek o 50 mld dol. na modernizację infrastruktury lotniczej. Senatorzy głośno wyrażają swoje wątpliwości co do zawartej we wniosku kwoty.",
+      "link": "https://biznes.interia.pl/gospodarka/news-50-mld-dol-po-paralizu-lotow-senat-ma-obiekcje-do-wniosku-lu,nId,23575181",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Ponad 167 mln zł długu i opóźnione pensje. Szpital ma poważny problem"
+      "title_pl": "Paraliż lotów w USA. Administracja Trumpa chce 50 mld dol. na modernizację"
     },
     {
-      "title": "Czarnek straszy cięciami w 800 plus. Wiceminister: Wierutne bzdury",
-      "snippet": "Przemysław Czarnek zasugerował, że rząd może wykorzystać spór o Trybunał Konstytucyjny np. do podniesienia wieku emerytalnego czy ograniczenia 800 plus. Wiceminister rodziny, pracy i polityki społecznej Aleksandra Gajewska w rozmowie z \"Faktem\" odniosła się do wypowiedzi kandydata PiS na premiera. \"Przemysław Czarnek opowiada wierutne bzdury\" - stwierdziła.",
-      "link": "https://biznes.interia.pl/finanse/news-ciecia-w-800-plus-czarnek-straszy-wiceminister-odpowiada-wie,nId,23574973",
+      "title": "Rząd zapowiada kroki dot. cen prądu. Minister ujawnia pierwsze szczegóły",
+      "snippet": "Premier Donald Tusk zapowiedział we wtorek, że rząd chce zająć się rozwiązaniami dotyczącymi cen energii elektrycznej. Minister energii Miłosz Motyka potwierdza, że jest to \"kolejny krok\". Zapowiada, że w kolejnych tygodniach ogłoszone będą działania w tej sprawie.",
+      "link": "https://biznes.interia.pl/finanse/news-dobra-wiadomosc-dla-milionow-polakow-rzad-zapowiada-kroki-ws,nId,23575490",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Czarnek straszy cięciami w 800 plus. Wiceminister: Wierutne bzdury"
+      "title_pl": "Rząd zapowiada kroki dot. cen prądu. Minister ujawnia pierwsze szczegóły"
     },
     {
-      "title": "Odwet Kanady na Trumpie. Dogadują się i znoszą cła z Chinami",
-      "snippet": "Kanada i Chiny ogłosiły dalsze obniżki ceł na owoce morza i stal we wzajemnym handlu. Premier Kanady Mark Carney przyznaje, że to kolejny krok do uniezależnienia się od Stanów Zjednoczonych, po tym jak Donald Trump nałożył na nią cła.",
-      "link": "https://biznes.interia.pl/gospodarka/news-kanada-msci-sie-na-trumpie-dogaduja-sie-i-znosza-cla-z-china,nId,23574923",
+      "title": "Natychmiastowa reakcja złotówki. Zmieniły się kursy walut zagranicznych",
+      "snippet": "Ile kosztuje euro, a ile dolar, funt i hrywna? Podajemy aktualne kursy walut należące do najczęściej wymienianych w Polsce. Poniżej wyrażone w złotówkach ceny walut oraz cena za uncję złota.",
+      "link": "https://biznes.interia.pl/gospodarka/news-kursy-walut-obcych-dolar-przekroczyl-psychologiczna-granice,nId,23575442",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Odwet Kanady na Trumpie. Dogadują się i znoszą cła z Chinami"
+      "title_pl": "Natychmiastowa reakcja złotówki. Zmieniły się kursy walut zagranicznych"
     },
     {
-      "title": "Wołodymyr Zełenski mówi o ataku na most Krymski. Europę wschodnią nawiedziło trzęsienie ziemi. Podsumowanie nocy",
-      "snippet": "Wołodymyr Zełenski w wieczornym przemówieniu przekazał, że ukraiński atak na most Krymski był odpowiedzią na rosyjskie uderzenia w ukraińskie miasta i infrastrukturę. Tymczasem izraelski Kneset zdecydował, że nowym przewodniczącym zostanie Matan Kahana. Oto podsumowanie najważniejszych informacji z ostatnich godzin.",
-      "link": "https://wiadomosci.onet.pl/swiat/zelenski-o-ataku-ukrainy-wstrzasy-na-wschodzie-europy-podsumowanie-nocy/j01l0mr",
+      "title": "Nowy obowiązek szkół. Ustawa o wychowaniu patriotycznym podpisana",
+      "snippet": "Prezydent Karol Nawrocki podpisał ustawę o wychowaniu patriotycznym, która nakłada na szkoły nowy obowiązek organizowania wycieczek. Przepisy wchodzą w życie 1 marca 2027 roku, jednak już teraz budzą poważne zastrzeżenia związkowców, podaje Portal Samorządowy.",
+      "link": "https://biznes.interia.pl/praca/news-prezydent-podpisal-ustawe-szkoly-maja-nowy-obowiazek-i-czas,nId,23575253",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Nowy obowiązek szkół. Ustawa o wychowaniu patriotycznym podpisana"
+    },
+    {
+      "title": "Polska chce być bramą dla gazu z USA. Minister mówi o Rosji",
+      "snippet": "Polska chce stać się bramą dla amerykańskiego gazu do Europy, a atom i elektrownie gazowe mają pomóc obniżyć ceny energii. \"Czas powiedzieć, że nie ma powrotu do biznesu z Rosją\" - deklaruje minister Miłosz Motyka.",
+      "link": "https://biznes.interia.pl/gospodarka/news-polska-ma-byc-gazowa-brama-nie-ma-powrotu-do-biznesu-z-rosja,nId,23575376",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Polska chce być bramą dla gazu z USA. Minister mówi o Rosji"
+    },
+    {
+      "title": "45 mld euro dla Ukrainy. Komisja Europejska przedstawiła plan",
+      "snippet": "Komisja Europejska proponuje przekazanie Ukrainie 45 mld euro pożyczki w 2027 r. \"To najlepszy sposób, aby zapewnić Ukrainie silną pozycję przy stole negocjacyjnym\" - powiedziała szefowa KE Ursula von der Leyen. Z kolei jak wskazał komisarz Valdis Dombrovskis, spłata środków mogłaby nastąpić również z zysków generowanych przez zamrożone rosyjskie aktywa.",
+      "link": "https://biznes.interia.pl/gospodarka/news-ue-chce-pozyczyc-ukrainie-45-mld-euro-wsparcie-planowane-na,nId,23575405",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "45 mld euro dla Ukrainy. Komisja Europejska przedstawiła plan"
+    },
+    {
+      "title": "ORLEN rozszerza rozmowy o gazie. Na celowniku dwa rynki",
+      "snippet": "ORLEN szuka nowych odbiorców gazu w Europie Środkowej. Podpisane z partnerami z Węgier i Słowacji porozumienia mogą otworzyć koncernowi drogę do kolejnych rynków zbytu. W grę wchodzi wykorzystanie polskich terminali LNG i rozwój transgranicznego handlu surowcem.",
+      "link": "https://biznes.interia.pl/energetyka/news-polskie-terminale-lng-moga-zyskac-nowych-klientow-orlen-rozm,nId,23575332",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "ORLEN rozszerza rozmowy o gazie. Na celowniku dwa rynki"
+    },
+    {
+      "title": "Zadzwonił na policję, bo podejrzewał włamanie. Sam został zatrzymany za \"mały arsenał\" w domu",
+      "snippet": "32-latek podejrzewał, iż ktoś wtargnął na jego posesję. Wezwał policję, jednak to on sam został aresztowany. Funkcjonariusze w jego domu odkryli m.in. kilkanaście sztuk broni i ponad tysiąc sztuk amunicji.",
+      "link": "https://wiadomosci.onet.pl/slask/zadzwonil-na-policje-aby-zglosic-wlamanie-policjanci-aresztowali-go-za-bron/tynswxh",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Wołodymyr Zełenski mówi o ataku na most Krymski. Europę wschodnią nawiedziło trzęsienie ziemi. Podsumowanie nocy"
+      "title_pl": "Zadzwonił na policję, bo podejrzewał włamanie. Sam został zatrzymany za \"mały arsenał\" w domu"
     },
     {
-      "title": "Polacy wskazali, bez czego nie wyobrażają sobie życia. Dla wielu rodzin Szlachetnej Paczki wciąż jest to poza zasięgiem",
-      "snippet": "Połowa Polaków nie wyobraża sobie życia bez ogrzewania i ciepłej wody. Ponad 40 proc. nie chciałoby stracić własnego łóżka. Tak odpowiadali Polacy zapytani przez Szlachetną Paczkę o rzeczy niezbędne do normalnego życia. Tymczasem dla wielu rodzin w naszym kraju ich brak jest codziennością. Pani Iwona, żeby się umyć, najpierw gotuje wodę. Czworo rodzeństwa śpi razem na jednym zapadniętym łóżku.",
-      "link": "https://wiadomosci.onet.pl/kraj/polowa-polakow-nie-wyobraza-sobie-zycia-bez-ogrzewania-dla-wielu-to-wciaz-luksus/8mkpcd5",
+      "title": "\"Źli chłopcy brexitu\" wracają do gry. Zwolennicy UE: przychodzimy na strzelaninę z pistoletem na wodę",
+      "snippet": "Andy Burnham rozbudził nadzieję w zwolennikach powrotu Wielkiej Brytanii do Unii Europejskiej, rozpalając na nowo debatę na temat resetu wzajemnych stosunków. Jednocześnie jednak tchnął nowe życie w weteranów ruchu brexitowego, którzy już mobilizują się, by rzucić wyzwanie dążeniom brytyjskiego premiera.",
+      "link": "https://wiadomosci.onet.pl/politico/brexit-wraca-do-brytyjskiej-debaty-przeciwnicy-ue-zbieraja-stara-ekipe/vnep1mq",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Polacy wskazali, bez czego nie wyobrażają sobie życia. Dla wielu rodzin Szlachetnej Paczki wciąż jest to poza zasięgiem"
+      "title_pl": "\"Źli chłopcy brexitu\" wracają do gry. Zwolennicy UE: przychodzimy na strzelaninę z pistoletem na wodę"
     },
     {
-      "title": "Wrocław - jakiej pogody możemy się spodziewać 18.11.2026?",
-      "snippet": "Wrocław. Jaka będzie pogoda w mieście? Czy w dniu 18.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo dolnośląskie - jaka jest aktualna prognoza pogody?",
-      "link": "https://wiadomosci.onet.pl/wroclaw/wroclaw-prognoza-pogody-w-dniu-18112026/k570592",
+      "title": "Najkrótsza trasa z Ostrowca do Krakowa i jeden postój. Wiadomo, którędy jechał zamachowiec",
+      "snippet": "Najnowsze ustalenia wskazują, że 24-letni zamachowiec z Ostrowca Świętokrzyskiego jechał najkrótszą drogą, po drodze zatrzymał się jeden raz, a na teren Starego Miasta w Krakowie dostał się ulicą Szczepańską.",
+      "link": "https://wiadomosci.onet.pl/krakow/najkrotsza-trasa-z-ostrowca-do-krakowa-wiadomo-ktoredy-jechal-zamachowiec/0kn2901",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Wrocław - jakiej pogody możemy się spodziewać 18.11.2026?"
+      "title_pl": "Najkrótsza trasa z Ostrowca do Krakowa i jeden postój. Wiadomo, którędy jechał zamachowiec"
     },
     {
-      "title": "Warszawa: jaka pogoda czeka nas 18.11.2026?",
-      "snippet": "Warszawa. Jaka będzie pogoda w mieście? Czy w dniu 18.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo mazowieckie - jaka jest aktualna prognoza pogody?",
-      "link": "https://wiadomosci.onet.pl/warszawa/warszawa-prognoza-pogody-w-dniu-18112026/n13rjds",
+      "title": "Bombowce Rosji zmierzą się z najlepszym europejskim pociskiem",
+      "snippet": "Szwecja, Wielka Brytania i Ukraina podpisały list intencyjny w sprawie pogłębienia współpracy dotyczącej wysyłki myśliwców Gripen do Kijowa.",
+      "link": "https://wiadomosci.onet.pl/swiat/ukraina-bombowce-rosji-zmierza-sie-z-najlepszym-europejskim-pociskiem/cl86knb",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Warszawa: jaka pogoda czeka nas 18.11.2026?"
+      "title_pl": "Bombowce Rosji zmierzą się z najlepszym europejskim pociskiem"
     },
     {
-      "title": "Zielona Góra - prognoza pogody w dniu 18.11.2026",
-      "snippet": "Prognoza pogody dla miasta Zielona Góra. Co przyniesie aura w dniu 18.11.2026? Prezentujemy najnowsze przewidywania meteorologów. Prognoza pogody - województwo lubuskie. Czy warunki dziś pozwolą na spokojny spacer? Sprawdzamy.",
-      "link": "https://wiadomosci.onet.pl/lubuskie/zielona-gora-prognoza-pogody-w-dniu-18112026/zm9qkth",
+      "title": "Amerykanie spodziewają się zmiany w Białym Domu. To może być koniec ery MAGA [SONDAŻ]",
+      "snippet": "Z najnowszego sondażu POLITICO wynika, że prawie dwa razy więcej Amerykanów spodziewa się, iż w 2028 r. prezydenturę zdobędzie demokrata niż republikanin. Większość ankietowanych zgadza się, że perspektywy Partii Republikańskiej i ruchu MAGA są niepewne.",
+      "link": "https://wiadomosci.onet.pl/politico/wiekszosc-amerykanow-uwaza-ze-nastepnym-prezydentem-zostanie-demokrata-sondaz/ybw8pz8",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Zielona Góra - prognoza pogody w dniu 18.11.2026"
+      "title_pl": "Amerykanie spodziewają się zmiany w Białym Domu. To może być koniec ery MAGA [SONDAŻ]"
     },
     {
-      "title": "Olsztyn - 18.11.2026. Pogoda na dziś",
-      "snippet": "Olsztyn. Sprawdź, jaka pogoda będzie dziś w twoim mieście. Zobacz, czy aura w dniu 18.11.2026 sprzyjać będzie przebywaniu na świeżym powietrzu? Prognoza pogody - województwo warmińsko-mazurskie. Sprawdź, jaka pogoda czeka nas dziś. Prezentujemy najnowsze informacje meteorologiczne.",
-      "link": "https://wiadomosci.onet.pl/olsztyn/olsztyn-prognoza-pogody-w-dniu-18112026/j7tjb7y",
+      "title": "Grób bezimienny i prywatna msza. Ks. prof. Andrzej Kobyliński tłumaczy, jak Kościół powinien pochować zamachowca",
+      "snippet": "— Nie ma żadnych przesłanek, żeby odmówić pogrzebu katolickiego, ponieważ mieliśmy tak naprawdę do czynienia z jakimś zaburzeniem psychicznym. Nikt o zdrowych zmysłach nie strzela z broni maszynowej do niewinnych osób na Rynku w Krakowie — mówi ks. prof. Andrzej Kobyliński, etyk i filozof z Uniwersytetu Kardynała Stefana Wyszyńskiego w Warszawie.",
+      "link": "https://wiadomosci.onet.pl/kraj/grob-bezimienny-i-prywatna-msza-ks-prof-kobylinski-tlumaczy-jak-kosciol-powinien/e9exsjh",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Olsztyn - 18.11.2026. Pogoda na dziś"
+      "title_pl": "Grób bezimienny i prywatna msza. Ks. prof. Andrzej Kobyliński tłumaczy, jak Kościół powinien pochować zamachowca"
     },
     {
-      "title": "NATO za Donbas? \"Amerykanie sondują, na jakie ustępstwa pójdzie Kijów\"",
-      "snippet": "Propozycja USA, by Ukraina wycofała się z ufortyfikowanych miast w obwodzie donieckim w zamian za członkostwo w NATO, nie została w Kijowie odebrana poważnie. O wiele większe obawy i dyskusje budzi zbliżające się spotkanie przywódców USA, Rosji i Chin.",
-      "link": "https://wiadomosci.wp.pl/nato-za-donbas-amerykanie-sonduja-na-jakie-ustepstwa-pojdzie-kijow-7351992286717984a",
+      "title": "Luksusowy pałacyk w Paryżu przejęty przez służby. Należał do ukraińskiego oligarchy",
+      "snippet": "Luksusowy obiekt hotelowy w sercu Paryża, stanowiący dotychczas własność ukraińskiego oligarchy, został przejęty przez francuskie służby. Wszystko odbyło się na wniosek władz w Kijowie — poinformowała agencja AFP, powołując się na źródło zbliżone do sprawy. Właściciel zapowiada apelację.",
+      "link": "https://wiadomosci.onet.pl/swiat/znany-hotel-w-paryzu-przejety-przez-sluzby-nalezal-do-ukrainskiego-oligarchy/p6rpbjg",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Luksusowy pałacyk w Paryżu przejęty przez służby. Należał do ukraińskiego oligarchy"
+    },
+    {
+      "title": "Viktor Orban latał na mecze piłkarskie. Milionowe rachunki opłacali podatnicy",
+      "snippet": "Przez ostatnie 10 lat węgierskie Ministerstwo Spraw Zagranicznych sfinansowało, w całości lub częściowo, dziewięć wyjazdów ówczesnego premiera Viktora Orbana na mecze piłkarskie. Łącznie koszty wyjazdów polityka przekroczyły 280 mln forintów, czyli ponad 3 mln zł — poinformował portal 444, powołując się na dane węgierskiego MSZ.",
+      "link": "https://wiadomosci.onet.pl/swiat/viktor-orban-latal-na-mecze-pilkarskie-za-wszystko-placil-rzad/w6xxtgs",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Viktor Orban latał na mecze piłkarskie. Milionowe rachunki opłacali podatnicy"
+    },
+    {
+      "title": "Trzy organizacje piwowarskie apelują do Prezydenta o weto wobec ustawy podwyższającej akcyzę",
+      "snippet": "Trzy organizacje reprezentujące ponad 90 proc. krajowej produkcji piwa zwróciły się do Prezydenta RP Karola Nawrockiego z apelem o zawetowanie ustawy przewidującej podwyżkę akcyzy na napoje alkoholowe o 20,5 proc. od 1 stycznia 2027 r. W ocenie przedstawicieli branży nowe przepisy mogą doprowadzić do utraty tysięcy miejsc pracy, osłabić polskie rolnictwo, pogłębić problemy sektora gastronomicznego oraz zwiększyć koszty ponoszone przez konsumentów, nie gwarantując jednocześnie oczekiwanych korzyś",
+      "link": "https://wiadomosci.onet.pl/kraj/prezydent-karol-nawrocki-pod-presja-branzy-piwowarskiej-apel-o-weto-ustawy-akcyzowej/ck5xf3l",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Trzy organizacje piwowarskie apelują do Prezydenta o weto wobec ustawy podwyższającej akcyzę"
+    },
+    {
+      "title": "Niemcy szykują wielkie cięcia w służbach. Policjanci ostrzegają kanclerza. \"Już teraz nie wyrabiają\"",
+      "snippet": "Rząd Friedricha Merza planuje cięcia etatów w administracji federalnej, w tym w policji federalnej i innych służbach bezpieczeństwa. Do 2029 r. ma zniknąć co najmniej 8 proc. etatów w administracji federalnej i urzędach. Szczególnie dotknięta ma zostać policja federalna, ale także Federalny Urząd Kryminalny, służba celna, Federalna Agencja Pomocy Technicznej i inne służby bezpieczeństwa oraz ochrony ludności. Cięć musi się też spodziewać sektor obronny.",
+      "link": "https://wiadomosci.onet.pl/swiat/niemcy-szykuja-wielkie-ciecia-w-sluzbach-policjanci-ostrzegaja-kanclerza/7vme5fj",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Niemcy szykują wielkie cięcia w służbach. Policjanci ostrzegają kanclerza. \"Już teraz nie wyrabiają\""
+    },
+    {
+      "title": "Spotkanie, które budzi niepokój w Europie. \"Los mniejszych krajów zależy od wielkich mocarstw\"",
+      "snippet": "Przywódcy Stanów Zjednoczonych, Chin i Rosji spotkali się razem po raz pierwszy w historii. Po zwracającym uwagę powitaniu już wkrótce zasiadają na trójstronnym szczycie. Najważniejsze rozmowy zaplanowano na jutro. Spotkanie, choć jeszcze się na dobre nie zaczęło, już budzi niepokój — zwłaszcza w Europie.",
+      "link": "https://wiadomosci.onet.pl/swiat/trump-xi-i-putin-przy-jednym-stole-eksperci-obawiaja-sie-nowej-jalty/0l4t0wq",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Spotkanie, które budzi niepokój w Europie. \"Los mniejszych krajów zależy od wielkich mocarstw\""
+    },
+    {
+      "title": "Mołdawia postawiła się Rosji. \"Tak to właśnie wygląda\"",
+      "snippet": "Mołdawia wezwała rosyjskiego ambasadora Olega Ozerowa w związku z wielokrotnymi wtargnięciami dronów. \"Tak właśnie wygląda »pokój« promowany przez Kreml\" — oburzyło się Ministerstwo Spraw Zagranicznych w Kiszyniowie.",
+      "link": "https://wiadomosci.onet.pl/politico/drony-nad-moldawia-tak-wyglada-pokoj-promowany-przez-kreml/ehm9982",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Mołdawia postawiła się Rosji. \"Tak to właśnie wygląda\""
+    },
+    {
+      "title": "\"Raport Międzynarodowy\". Ujawniamy tajemnice relacji na linii Watykan-Moskwa. \"Putin cytował Jezusa\"",
+      "snippet": "W najnowszym odcinku \"Raportu Międzynarodowego\" wspólnie z Agnieszką Bryc przyjrzeliśmy się chamstwu, a dokładniej — imperialnemu, wielkoruskiemu, szowinistycznemu chamstwu Moskwy. W drugiej części podcastu naszym gościem był ksiądz profesor Andrzej Kobyliński. W rozmowie padają mocne tezy o tym, jak Władimir Putin wykorzystał chrześcijaństwo jako narzędzie polityczne, a patriarcha Cyryl stał się jednym z najważniejszych filarów kremlowskiej propagandy.",
+      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/raport-miedzynarodowy-ujawniamy-tajemnice-relacji-na-linii-watykan-moskwa-putin/5zqf1lk",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "\"Raport Międzynarodowy\". Ujawniamy tajemnice relacji na linii Watykan-Moskwa. \"Putin cytował Jezusa\""
+    },
+    {
+      "title": "Tragiczne potrącenie strażaków w Spale. 55-latek usłyszał zarzuty",
+      "snippet": "Prokuratura postawiła zarzuty kierowcy, który w woj. łódzkim potrącił na pasach dwoje strażaków. W wypadku zginęła dyrektorka zarządu wojewódzkiego Ochotniczej Straży Pożarnej, a druga osoba trafiła do szpitala z obrażeniami. Kierowca nie przyznaje się do winy.",
+      "link": "https://wiadomosci.onet.pl/lodz/nie-zyje-znana-dzialaczka-osp-55-latek-uslyszal-zarzuty/g6wh19y",
+      "source_name": "Onet",
+      "lang": "pl",
+      "title_pl": "Tragiczne potrącenie strażaków w Spale. 55-latek usłyszał zarzuty"
+    },
+    {
+      "title": "Pościg na Dolnym Śląsku. Kierowca miał dożywotni zakaz",
+      "snippet": "Policjanci z Polkowic zatrzymali 36-latka, który uciekł podczas kontroli drogowej w Grębocicach. Mężczyzna rozbił rogatki i sygnalizator na przejeździe kolejowym. Funkcjonariusze ustalili, że obowiązywał go dożywotni zakaz prowadzenia pojazdów, a wstępny test wykazał obecność amfetaminy i metamfetaminy.",
+      "link": "https://wiadomosci.wp.pl/poscig-na-dolnym-slasku-kierowca-mial-dozywotni-zakaz-7352370811422752a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "NATO za Donbas? \"Amerykanie sondują, na jakie ustępstwa pójdzie Kijów\""
+      "title_pl": "Pościg na Dolnym Śląsku. Kierowca miał dożywotni zakaz"
     },
     {
-      "title": "Działo się w nocy. Odwet USA w Iranie. Atak na Dniepr",
-      "snippet": "Nocna wymiana ognia na Bliskim Wschodzie, ostre starcie polityczne w Izraelu i potężny atak na ukraiński Dniepr. Donald Trump zaskoczył swoimi słowami w Azji, a Wołodymyr Zełenski w wieczornym orędziu zapowiedział kolejne operacje wojskowe. Oto przegląd najważniejszych wydarzeń minionej nocy.",
-      "link": "https://wiadomosci.wp.pl/dzialo-sie-w-nocy-odwet-usa-w-iranie-atak-na-dniepr-7352213578680352a",
+      "title": "Nowe doniesienia ws. zamachu w Krakowie. Chodzi o telefon sprawcy",
+      "snippet": "Śledczy nie mogą odczytać danych z jednego z telefonów Michała Oksińskiego, który otworzył ogień do przechodniów na Rynku Głównym w Krakowie - ustaliło Radio ESKA. Urządzenie jest poważnie uszkodzone i ma zostać wysłane do specjalistów za oceanem.",
+      "link": "https://wiadomosci.wp.pl/nowe-doniesienia-ws-zamachu-w-krakowie-chodzi-o-telefon-sprawcy-7352371137808384a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Działo się w nocy. Odwet USA w Iranie. Atak na Dniepr"
+      "title_pl": "Nowe doniesienia ws. zamachu w Krakowie. Chodzi o telefon sprawcy"
     },
     {
-      "title": "\"Nikt mnie nie rozpoznał\". Biden ujawnia kulisy tajnej podróży przez Polskę",
-      "snippet": "Były prezydent USA Joe Biden wydał wspomnienia zatytułowane \"Promise me, America\". W książce z podziwem pisze o przemianie Warszawy oraz postawie Polaków. Ujawnia też kulisy tajnej podróży do Kijowa, gdy w Rzeszowie w pełnym kamuflażu sam niósł swoje walizki, by utrzymać wizytę w ścisłej tajemnicy.",
-      "link": "https://wiadomosci.wp.pl/warszawa/nikt-mnie-nie-rozpoznal-biden-ujawnia-kulisy-tajnej-podrozy-przez-polske-7352205417130016a",
+      "title": "Szli do sklepu, gdy dopadli ich napastnicy. Polała się krew",
+      "snippet": "Szli do sklepu, gdy nagle podeszło do nich dwóch nieznajomych. Chwilę później jeden z pracowników budowy w Łodzi został ugodzony ostrym narzędziem w udo. 48-latek trafił do szpitala, a napastnicy uciekli – teraz szuka ich policja. Do ataku doszło w środę po południu przy ulicy Rzgowskiej w Łodzi.",
+      "link": "https://wiadomosci.wp.pl/lodz/szli-do-sklepu-gdy-dopadli-ich-napastnicy-polala-sie-krew-7352371171014688a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "\"Nikt mnie nie rozpoznał\". Biden ujawnia kulisy tajnej podróży przez Polskę"
+      "title_pl": "Szli do sklepu, gdy dopadli ich napastnicy. Polała się krew"
     },
     {
-      "title": "Rozbito grupę oszustów. \"Łowcy głów\" zatrzymali 45-latkę w Chełmie",
-      "snippet": "Lubelscy \"łowcy głów\" zatrzymali w Chełmie 45-letnią oszustkę, która od roku ukrywała się przed policją. Kobieta działała w zorganizowanej grupie przestępczej wyłudzającej pieniądze \"metodą na wnuczka\" i okradała seniorów, udając ich opiekunkę. Zatrzymana trafiła już do zakładu karnego, gdzie spędzi ponad 10 lat.",
-      "link": "https://wiadomosci.wp.pl/rozbito-grupe-oszustow-lowcy-glow-zatrzymali-45-latke-w-chelmie-7352198431877120v",
+      "title": "Rzadki niedźwiedź marsykański pod klasztorem we Włoszech. Kucharka zrobiła mu zdjęcie",
+      "snippet": "Niedźwiedź marsykański pojawił się w pobliżu benedyktyńskiego klasztoru Santa Scolastica w Subiaco w środkowych Włoszech. Zwierzę zauważyła kucharka wracająca samochodem do domu. Kobieta przez kilka minut obserwowała ssaka z auta, a następnie powiadomiła lokalne służby.",
+      "link": "https://wiadomosci.wp.pl/rzadki-niedzwiedz-marsykanski-pod-klasztorem-we-wloszech-kucharka-zrobila-mu-zdjecie-7352366633383968a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Rozbito grupę oszustów. \"Łowcy głów\" zatrzymali 45-latkę w Chełmie"
+      "title_pl": "Rzadki niedźwiedź marsykański pod klasztorem we Włoszech. Kucharka zrobiła mu zdjęcie"
     },
     {
-      "title": "Kolejny zgrzyt z PiS. Morawiecki liczy puste miejsca w Sejmie",
-      "snippet": "Aż 10 posłów Prawa i Sprawiedliwości nie wzięło udziału w głosowaniu nad odwołaniem rządu Donalda Tuska. Choć wniosek stowarzyszenia Rozwój Plus ostatecznie upadł, to absencja na prawicy wywołała ostrą reakcję Mateusza Morawieckiego.",
-      "link": "https://wiadomosci.wp.pl/kolejny-zgrzyt-z-pis-morawiecki-liczy-puste-miejsca-w-sejmie-7352191374800896a",
+      "title": "Miał pozwolenie na wiele sztuk broni. Nowe ustalenia ws. zamachowca z Krakowa",
+      "snippet": "Zamachowiec z Krakowa posiadał pozwolenie na broń do celów sportowych, które uprawniało go do zakupu nawet 10 sztuk broni palnej. Mężczyzna nabył dwie sztuki: karabin AR-15 i pistolet Glock.",
+      "link": "https://wiadomosci.wp.pl/mial-pozwolenie-na-wiele-sztuk-broni-nowe-ustalenia-ws-zamachowca-z-krakowa-7352365252556800a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Kolejny zgrzyt z PiS. Morawiecki liczy puste miejsca w Sejmie"
+      "title_pl": "Miał pozwolenie na wiele sztuk broni. Nowe ustalenia ws. zamachowca z Krakowa"
     },
     {
-      "title": "Gracze biorą L4 z powodu GTA VI. Szef ZUS: inspektor też człowiek",
-      "snippet": "Światowy rynek pracy przygotowuje się na \"grypę GTA\". Z powodu czwartkowej premiery gry Grand Theft Auto VI miliony pracowników planują urlopy lub fałszywe zwolnienia lekarskie. Do sprawy odniósł się prezes Zakładu Ubezpieczeń Społecznych Liwiusz Laska, który opublikował w sieci żartobliwy komentarz o kontrolach L4.",
-      "link": "https://wiadomosci.wp.pl/gracze-biora-l4-z-powodu-gta-vi-szef-zus-inspektor-tez-czlowiek-7352185220122624a",
+      "title": "Skandaliczne słowa na antenie Republiki. Adam Bodnar składa skargę do KRRiT",
+      "snippet": "Podczas relacji na żywo z Marszu Niepodległości na antenie Telewizji Republika padły oskarżenia pod adresem premiera Donalda Tuska o rzekome \"zamordowanie Lecha Kaczyńskiego\". Dziennikarka stacji w żaden sposób nie zareagowała na te słowa. Jak ustaliła Wirtualna Polska, senator Adam Bodnar złożył w tej sprawie oficjalną skargę do Krajowej Rady Radiofonii i Telewizji, domagając się wyciągnięcia konsekwencji wobec nadawcy.",
+      "link": "https://wiadomosci.wp.pl/skandaliczne-slowa-na-antenie-republiki-adam-bodnar-sklada-skarge-do-krrit-7352365377198080a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Gracze biorą L4 z powodu GTA VI. Szef ZUS: inspektor też człowiek"
+      "title_pl": "Skandaliczne słowa na antenie Republiki. Adam Bodnar składa skargę do KRRiT"
     },
     {
-      "title": "Tragiczny finał akcji w Tatrach. TOPR pokazał nagranie",
-      "snippet": "Tragiczny finał wielogodzinnych poszukiwań w Tatrach. Nie żyje turystka, która po upadku z dużej wysokości utknęła w przepaścistym rejonie Orlej Perci. Kobieta zmarła w nocy w trakcie transportu. TOPR opublikował nagranie z tej dramatycznej akcji. – Mimo trudnej akcji i chwili nadziei nie udało się jej uratować – poinformował naczelnik TOPR.",
-      "link": "https://wiadomosci.wp.pl/tragiczny-final-akcji-w-tatrach-topr-pokazal-nagranie-7352179753965600v",
+      "title": "Spada poparcie dla Nawrockiego. Rząd Tuska w nowym sondażu zyskuje",
+      "snippet": "Najnowszy sondaż Ogólnopolskiej Grupy Badawczej (OGB) dla serwisu stan360 przynosi sygnał ostrzegawczy dla Pałacu Prezydenckiego. Podczas gdy prezydent Karol Nawrocki notuje wzrost ocen negatywnych, gabinet Donalda Tuska odrabia straty i zmniejsza odsetek niezadowolonych Polaków. Na prawicy prezydent wciąż pozostaje jednak postacią nietykalną.",
+      "link": "https://wiadomosci.wp.pl/spada-poparcie-dla-nawrockiego-rzad-tuska-w-nowym-sondazu-zyskuje-7352361475156000a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Tragiczny finał akcji w Tatrach. TOPR pokazał nagranie"
+      "title_pl": "Spada poparcie dla Nawrockiego. Rząd Tuska w nowym sondażu zyskuje"
     },
     {
-      "title": "Potężny cios w Netanjahu. Kneset w rękach nowej koalicji",
-      "snippet": "Nowym przewodniczącym izraelskiego parlamentu został Matan Kahana, sojusznik Gadiego Eisenkota. Kandydat nowej koalicji pokonał w głosowaniu przedstawiciela obozu Benjamina Netanjahu. Zwycięzcy zapowiadają szybkie uchylenie najbardziej kontrowersyjnych reform wprowadzonych przez poprzedni rząd.",
-      "link": "https://wiadomosci.wp.pl/potezny-cios-w-netanjahu-kneset-w-rekach-nowej-koalicji-7352170332862496a",
+      "title": "Seria awarii w USA. Rubio zabrał głos, Vance apeluje o spokój",
+      "snippet": "W Stanach Zjednoczonych doszło w krótkim czasie do awarii usług Microsoftu, zakłóceń w ruchu lotniczym i problemów w systemie bankowym. Marco Rubio ocenił, że nie ma dowodów na ich wspólne źródło. Wiceprezydent J.D. Vance zaapelował o spokój.",
+      "link": "https://wiadomosci.wp.pl/seria-awarii-w-usa-rubio-zabral-glos-vance-apeluje-o-spokoj-7352361022515232a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Potężny cios w Netanjahu. Kneset w rękach nowej koalicji"
+      "title_pl": "Seria awarii w USA. Rubio zabrał głos, Vance apeluje o spokój"
     },
     {
-      "title": "Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych",
-      "snippet": "\"Konsulat Honorowy Austrii w Dnieprze został uszkodzony w wyniku rosyjskiego ataku\" - przekazał Andrij Sybiha. Wtorkowy ostrzał obwodu dniepropietrowskiego ranił łącznie 20 osób, w tym dwoje dzieci. Szef ukraińskiego MSZ wezwał zachodnich partnerów do pilnego zaostrzenia sankcji wobec Moskwy.",
-      "link": "https://wiadomosci.wp.pl/rosjanie-uderzyli-w-obiekty-cywilne-i-konsulat-wiele-ofiar-7352164912670720a",
+      "title": "Poroniła, szczątki dziecka miała trzymać w lodówce. Szpital gęsto się tłumaczy",
+      "snippet": "Rodzice mieli dostać szczątki nienarodzonego dziecka i przechowywać je w domowej lodówce. Sprawą, do której doszło w Szpitalu Wojewódzkim w Suwałkach, zajęła się już prokuratura. Śledczy sprawdzają, czy doszło do znieważenia zwłok. Teraz głos zabrała dyrekcja placówki.",
+      "link": "https://wiadomosci.wp.pl/poronila-szczatki-dziecka-miala-trzymac-w-lodowce-szpital-gesto-sie-tlumaczy-7352356753369120a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Rosjanie uderzyli w obiekty cywilne i konsulat. Wiele rannych"
+      "title_pl": "Poroniła, szczątki dziecka miała trzymać w lodówce. Szpital gęsto się tłumaczy"
     },
     {
-      "title": "Wymiana ognia między USA a Iranem. Bomby spadły na wyspę Keszm",
-      "snippet": "Amerykańskie myśliwce zbombardowały wyrzutnie rakietowe na irańskiej wyspie Keszm. Uderzenie było bezpośrednim odwetem za atak dronów, jaki Korpus Strażników Rewolucji Islamskiej przypuścił we wtorek rano na amerykańską bazę lotniczą w Bahrajnie. Napięcie na Bliskim Wschodzie rośnie, a na wodach Zatoki Perskiej płoną kolejne tankowce.",
-      "link": "https://wiadomosci.wp.pl/wymiana-ognia-miedzy-usa-a-iranem-bomby-spadly-na-wyspe-keszm-7352150067693600a",
+      "title": "Nawrocki powoła ministrów. W rządzie słychać obawy, czy wszystkich",
+      "snippet": "Na piątek Pałac Prezydenta zapowiedział dokonanie zmian w Radzie Ministrów. W rządzie nie ma jednak pewności, czy Karol Nawrocki nie szykuje niespodzianki, np. w postaci tylko częściowego zrealizowania wniosku Donalda Tuska.",
+      "link": "https://wiadomosci.wp.pl/nawrocki-powola-ministrow-w-rzadzie-slychac-obawy-czy-wszystkich-7352353759778816a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Wymiana ognia między USA a Iranem. Bomby spadły na wyspę Keszm"
+      "title_pl": "Nawrocki powoła ministrów. W rządzie słychać obawy, czy wszystkich"
     },
     {
-      "title": "Donald Trump chwali ojca prezydenta Filipin. Był dyktatorem",
-      "snippet": "- Wierzę w genetykę i oni wykonali dobrą robotę. Masz bardzo dobre geny - powiedział Donald Trump do prezydenta Filipin Ferdinanda Marcosa Jr. Amerykański przywódca podczas wizyty w Manili pochwalił rodziców polityka, w tym jego ojca, który przez lata sprawował w kraju brutalne rządy dyktatorskie.",
-      "link": "https://wiadomosci.wp.pl/donald-trump-chwali-ojca-prezydenta-filipin-byl-dyktatorem-7352142714480640a",
+      "title": "ISW o ataku na Most Kerczeński. Odsłonił słabość Rosji",
+      "snippet": "Skuteczne uderzenie Ukrainy na Most Kerczeński było efektem wielotygodniowego osłabiania rosyjskiej obrony przeciwlotniczej, precyzyjnego planowania i zastosowania dronów retransmitujących sygnał - ocenił Instytut Studiów nad Wojną. Operacja ograniczy rosyjskie możliwości transportu na okupowany Krym.",
+      "link": "https://wiadomosci.wp.pl/isw-o-ataku-na-most-kerczenski-odslonil-slabosc-rosji-7352358346881056a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Donald Trump chwali ojca prezydenta Filipin. Był dyktatorem"
+      "title_pl": "ISW o ataku na Most Kerczeński. Odsłonił słabość Rosji"
     },
     {
-      "title": "Wpadł przez wpis o zamachu w Krakowie. \"Też mam ochotę zabijać ludzi\"",
-      "snippet": "\"Dobrze zrobił, też mam ochotę zabijać ludzi\" – napisał w sieci 20-latek spod Łomży, komentując tragiczny zamach w Krakowie. Mężczyzna został namierzony przez policjantów z CBZC i usłyszał zarzuty. Choć prokuratura wnioskowała o tymczasowe aresztowanie, sąd zdecydował o pozostawieniu go na wolności.",
-      "link": "https://wiadomosci.wp.pl/wpadl-przez-wpis-o-zamachu-w-krakowie-tez-mam-ochote-zabijac-ludzi-7352137730238496v",
+      "title": "Światowy Dzień Cukrzycy: nowoczesne leczenie to nie tylko leki. Pacjenci potrzebują także edukacji i równego dostępu do opieki",
+      "snippet": "14 listopada obchodzimy Światowy Dzień Cukrzycy - to dobra okazja, by przypomnieć, że skuteczne leczenie tej choroby wymaga indywidualnego podejścia do pacjenta, dostępu do nowoczesnych terapii, a także edukacji i dobrze zorganizowanej opieki. Choć możliwości współczesnej diabetologii stale rosną, wciąż istnieją bariery, które utrudniają osobom z cukrzycą korzystanie z dostępnych rozwiązań. O najważniejszych potrzebach pacjentów mówi Polskie Stowarzyszenie Diabetyków, a eksperci podkreślają znac",
+      "link": "https://wiadomosci.wp.pl/swiatowy-dzien-cukrzycy-nowoczesne-leczenie-to-nie-tylko-leki-pacjenci-potrzebuja-takze-edukacji-i-rownego-dostepu-do-opieki-7352360247732224a",
       "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Wpadł przez wpis o zamachu w Krakowie. \"Też mam ochotę zabijać ludzi\""
+      "title_pl": "Światowy Dzień Cukrzycy: nowoczesne leczenie to nie tylko leki. Pacjenci potrzebują także edukacji i równego dostępu do opieki"
     },
     {
-      "title": "Bałtyk czułym punktem Zachodu? \"Dla Rosji to najbardziej wydajny kierunek uderzenia\"",
-      "snippet": "W najnowszym wydaniu \"Teraz WP\" gościem Patrycjusza Wyżgi był ppłk. rez. Maciej Korowaj. Analityk wojskowy mówił o geopolitycznym znaczeniu basenu Morza Bałtyckiego oraz o tym, dlaczego to właśnie ten region może stać się zarzewiem niebezpiecznej eskalacji ze strony Federacji Rosyjskiej. – To dla Rosjan najlepszy obszar, na którym mogą cokolwiek osiągnąć militarnie i politycznie w konfrontacji z Zachodem – ocenił Korowaj.",
-      "link": "https://wiadomosci.wp.pl/baltyk-czulym-punktem-zachodu-dla-rosji-to-najbardziej-wydajny-kierunek-uderzenia-7352100619610144v",
-      "source_name": "WP Wiadomości",
+      "title": "Średnia emerytura w Polsce. ZUS pokazuje najnowsze dane",
+      "snippet": "W Polsce w 2025 r. było 7,47 mln emerytów, o 1,1 proc. więcej niż rok wcześniej. Przeciętna emerytura wzrosła o 8,2 proc. i wyniosła 4178,94 zł – wynika z opublikowanych danych GUS. Średnia wysokość emerytury mężczyzn to 4978,67 zł, a kobiet – 3421,61 zł.",
+      "link": "https://www.money.pl/finanse/srednia-emerytura-w-polsce-zus-pokazuje-najnowsze-dane-7352311602161664a.html",
+      "source_name": "Money.pl",
       "lang": "pl",
-      "title_pl": "Bałtyk czułym punktem Zachodu? \"Dla Rosji to najbardziej wydajny kierunek uderzenia\""
+      "title_pl": "Średnia emerytura w Polsce. ZUS pokazuje najnowsze dane"
     },
     {
-      "title": "Poland’s central bank freezes constitutional court’s accounts amid leadership dispute",
-      "snippet": "Judges appointed under the current and former governments are battling for control over the court.",
-      "link": "https://notesfrompoland.com/2026/11/17/polands-central-bank-freezes-constitutional-courts-accounts-amid-leadership-dispute/",
-      "source_name": "Notes from Poland",
-      "lang": "en",
-      "title_pl": "Polski bank centralny zamraża rachunki Trybunału Konstytucyjnego w obliczu sporu o przywództwo"
+      "title": "Wydatki na socjal. Polacy wysłali rządowi jasny sygnał",
+      "snippet": "Blisko trzy czwarte Polaków nie chce podnoszenia podatków, by finansować nowe świadczenia socjalne. Z sondażu IBRiS dla \"Rzeczpospolitej\" wynika, że przeciwnicy takiego rozwiązania przeważają zarówno wśród wyborców koalicji rządzącej, jak i opozycji. Ekonomiści ostrzegają przed dalszym wzrostem wydatków i zadłużenia państwa.",
+      "link": "https://www.money.pl/finanse/wydatki-na-socjal-polacy-wyslali-rzadowi-jasny-sygnal-7352240204908576a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Wydatki na socjal. Polacy wysłali rządowi jasny sygnał"
+    },
+    {
+      "title": "Ile kosztuje euro? Kurs euro do złotego PLN/EUR 18.11.2026",
+      "snippet": "Kurs euro - 18.11.2026. W środę za jedno euro (EUR) trzeba zapłacić 4.4048 zł.",
+      "link": "https://www.money.pl/pieniadze/ile-kosztuje-euro-kurs-euro-do-zlotego-pln-eur-18-11-2026-7352245611722752a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Ile kosztuje euro? Kurs euro do złotego PLN/EUR 18.11.2026"
     },
     {
       "title": "Wirtualna Polska Holding pokazała wyniki finansowe",
@@ -517,92 +445,140 @@
       "title_pl": "Wirtualna Polska Holding pokazała wyniki finansowe"
     },
     {
-      "title": "Węglowy gigant szykuje przejęcie. Jest już wniosek",
-      "snippet": "Szykuje się połączenie dwóch spółek górniczych. Polska Grupa Górnicza chce przejąć Węglokoks Kraj, do którego należy likwidowana kopalnia Bobrek. Wniosek trafił już do UOKiK.",
-      "link": "https://www.money.pl/gospodarka/weglowy-gigant-szykuje-przejecie-jest-juz-wniosek-7352026837899264a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Węglowy gigant szykuje przejęcie. Jest już wniosek"
-    },
-    {
-      "title": "Ukraina uderzyła 1500 km w głąb Rosji. Na celowniku ogromna rafineria",
-      "snippet": "Sztab Generalny Sił Zbrojnych Ukrainy poinformował we wtorek o uderzeniu w jeden z największych kompleksów petrochemicznych w Rosji, położony w Baszkirii, w odległości 1,5 tys. km od granic Ukrainy.",
-      "link": "https://www.money.pl/gospodarka/ukraina-uderzyla-1500-km-w-glab-rosji-na-celowniku-ogromna-rafineria-7351984313493504a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Ukraina uderzyła 1500 km w głąb Rosji. Na celowniku ogromna rafineria"
-    },
-    {
-      "title": "Tąpnięcie na akcjach. XTB mocno w dół",
-      "snippet": "Komisja Nadzoru Finansowego przygotowuje interwencję produktową dotyczącą kontraktów CFD. Zapowiedź nadzorcy uderzyła w notowania XTB, dla którego instrumenty lewarowane odpowiadają za ok. 90 proc. przychodów – podaje stockwatch.pl.",
-      "link": "https://www.money.pl/gielda/akcje-xtb-tapnely-z-powodu-wypowiedzi-wicedyrektora-knf-7351984764762112a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Tąpnięcie na akcjach. XTB mocno w dół"
-    },
-    {
-      "title": "Spory skok inflacji w Polsce. KE opublikowała prognozy",
-      "snippet": "Komisja Europejska utrzymała prognozę wzrostu PKB dla Polski na 2026 r. na poziomie 3,5 proc. oraz zmniejszyła z 2,8 proc. do 2,7 proc. – na 2027 r. Jednocześnie KE podwyższyła prognozę inflacji w Polsce na 2027 r. z 2,9 proc. do 4,4 proc.",
-      "link": "https://www.money.pl/finanse/inflacja-w-gore-pkb-w-dol-jest-nowa-prognoza-ke-dla-polski-7351955239163936a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Spory skok inflacji w Polsce. KE opublikowała prognozy"
-    },
-    {
-      "title": "Saudyjczycy chcą sprzedać Rafinerię Gdańską? Minister: nie zgłosili",
-      "snippet": "Wokół potencjalnego tematu sprzedaży udziałów w Rafinerii Gdańskiej przez Saudi Aramco jest dużo szumu informacyjnego. Tak uważa minister aktywów państwowych Wojciech Balczun. Poinformował, że Saudyjczycy nie zgłaszali do tej pory chęci sprzedaży rafinerii.",
-      "link": "https://www.money.pl/gospodarka/saudyjczycy-chca-sprzedac-rafinerie-gdanska-minister-zabiera-glos-7351915519371296a.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Saudyjczycy chcą sprzedać Rafinerię Gdańską? Minister: nie zgłosili"
-    },
-    {
-      "title": "Rosnący dług. Polska może popełnić błąd Rumunii? Ekspert wyjaśnia",
-      "snippet": "- O ryzyku kryzysu nie decyduje sama wielkość długu, tylko to, dokąd płyną pieniądze i w jakiej walucie trzeba je oddać - mówi Hubert Stojanowski, ekspert DI Xelion. W progtamie \"Biznes Klasa\" wyjaśnia, dlaczego Rumunia jest w dużo trudniejszej sytuacji niż Polska. Zobacz fragment rozmowy.",
-      "link": "https://www.money.pl/pieniadze/rosnacy-dlug-polska-moze-popelnic-blad-rumunii-ekspert-wyjasnia-7351668083939328v.html",
-      "source_name": "Money.pl",
-      "lang": "pl",
-      "title_pl": "Rosnący dług. Polska może popełnić błąd Rumunii? Ekspert wyjaśnia"
-    },
-    {
-      "title": "Oto najpopularniejsze oszustwa na Black Friday. Przeczytaj, zanim wpadniesz w pułapkę",
-      "snippet": "Black Friday wypada w tym roku 27 listopada, a Cyber Monday 30 listopada, ale wiele sklepów rozciąga promocje na cały tydzień albo nawet miesiąc. Przestępcy korzystają z tego, że klienci kupują w pośpiechu i spodziewają się wiadomości o paczkach.",
-      "link": "https://www.bankier.pl/wiadomosc/Oto-najpopularniejsze-oszustwa-na-Black-Friday-Przeczytaj-zanim-wpadniesz-w-pulapke-9229981.html",
+      "title": "KNF odpowiada na zarzuty po tąpnięciu XTB. \"Mamy świadomość wpływu na decyzje inwestorów”",
+      "snippet": "Urząd Komisji Nadzoru Finansowego zabrał głos w sprawie gwałtownej przeceny akcji XTB, wywołanej słowami wiceszefa KNF w trakcie wtorkowej sesji giełdowej. W odpowiedzi na pytania naszej redakcji nadzorca wprost przyznaje, że jest świadomy wpływu swoich wypowiedzi na decyzje inwestorów, ale nie zamierza powstrzymywać się od otwartego dialogu o ryzykach. - Nie widzimy podstaw do unikania wypowiedzi na temat istotnych zagadnień regulacyjnych - odpowiada KNF.",
+      "link": "https://www.bankier.pl/wiadomosc/KNF-odpowiada-na-zarzuty-po-tapnieciu-XTB-Mamy-swiadomosc-ze-nasze-slowa-to-sygnal-9230843.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Oto najpopularniejsze oszustwa na Black Friday. Przeczytaj, zanim wpadniesz w pułapkę"
+      "title_pl": "KNF odpowiada na zarzuty po tąpnięciu XTB. \"Mamy świadomość wpływu na decyzje inwestorów”"
     },
     {
-      "title": "Renta alkoholowa 2026: komu przysługuje co miesiąc 1978 zł od ZUS?",
-      "snippet": "To jedno ze świadczeń, które budzi najwięcej emocji. Nazwy „renta alkoholowa” nie znajdziemy w przepisach ani oficjalnych dokumentach – to potoczny termin, którym określamy rentę z tytułu niezdolności do pracy przyznawaną ze względu na choroby związane z alkoholizmem. Komu należy się to świadczenie i jakie warunki trzeba spełnić, aby je otrzymać?",
-      "link": "https://www.bankier.pl/wiadomosc/Renta-alkoholowa-2026-komu-przysluguje-co-miesiac-1978-zl-od-ZUS-9230302.html",
+      "title": "Złoty ciąży polskiej gospodarce? Prof. Belka: Suwerenność to iluzja, która kosztuje miliardy",
+      "snippet": "Obecna tzw. suwerenność Polski w polityce pieniężnej, związana z utrzymywaniem własnej waluty, kosztuje - mówił w środę w Krakowie prof. Marek Belka. Wymieniał m.in. koszty związane z wyższymi niż w strefie euro, stopami procentowymi czy utrzymywaniem rezerw walutowych i rezerw złota.",
+      "link": "https://www.bankier.pl/wiadomosc/Zloty-ciazy-polskiej-gospodarce-Prof-Belka-Suwerennosc-to-iluzja-ktora-kosztuje-miliardy-9230925.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Renta alkoholowa 2026: komu przysługuje co miesiąc 1978 zł od ZUS?"
+      "title_pl": "Złoty ciąży polskiej gospodarce? Prof. Belka: Suwerenność to iluzja, która kosztuje miliardy"
     },
     {
-      "title": "Ważą się losy przedłużenia programu CPN. Domańki:  Decyzja zapadnie w najbliższych tygodniach",
-      "snippet": "W najbliższych tygodniach rząd podejmie decyzję, czy pakiet Ceny Paliwa Niżej powinien być w całości lub częściowo przedłużony w pierwszych miesiącach 2027 r. - poinformował minister finansów i gospodarki Andrzej Domański. Obecnie CPN ma działać jedynie do końca roku.",
-      "link": "https://www.bankier.pl/wiadomosc/Waza-sie-losy-przedluzenia-programu-CPN-Domanki-Decyzja-zapadnie-w-najblizszych-tygodniach-9230528.html",
+      "title": "48-minutowa wojna. Nowy \"nabytek\" Trumpa czyni go najsilniejszym na świecie?",
+      "snippet": "W trakcie wizyty w Manili i spotkania z filipińskim przywódcą Ferdinandem Marcosem Jr. prezydent USA określił Wenezuelę mianem \"nowego nabytku\". Donald Trump akcentował przy tym coraz większą skalę dostaw surowców energetycznych ze Stanów Zjednoczonych i zachwalał dwustronną współpracę przy inwestycjach naftowych oraz atomowych - podaje \"Bloomberg\".",
+      "link": "https://www.bankier.pl/wiadomosc/48-minutowa-wojna-Nowy-nabytek-Trumpa-czyni-go-najsilniejszym-na-swiecie-9230672.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Ważą się losy przedłużenia programu CPN. Domańki:  Decyzja zapadnie w najbliższych tygodniach"
+      "title_pl": "48-minutowa wojna. Nowy \"nabytek\" Trumpa czyni go najsilniejszym na świecie?"
     },
     {
-      "title": "Kto stanie na czele EBC? Hernandez de Cos z największą szansą na prezesurę",
-      "snippet": "Berlin zgłosi prof. Markusa Brunnermeiera z Uniwersytetu Princeton na stanowisko głównego ekonomisty Europejskiego Banku Centralnego (EBC), co toruje drogę do kierowania EBC Hiszpanowi Pablo Hernandezowi de Cos, byłemu szefowi Banku Hiszpanii – poinformował we wtorek dziennik „Financial Times”.",
-      "link": "https://www.bankier.pl/wiadomosc/Kto-stanie-na-czele-EBC-Hernandez-de-Cos-z-najwieksza-szansa-na-prezesure-9230513.html",
+      "title": "Indonezja i Chiny z gigantyczną umową. 71,8 mld dolarów na inteligentne miasta i nowe technologie",
+      "snippet": "Indonezja i Chiny uzgodniły w środę realizację czterech strategicznych projektów o wartości 71,8 mld USD, w tym rozwój dziesięciu tzw. inteligentnych miast – podała agencja Reutera, powołując się na oświadczenie pałacu prezydenta Indonezji Prabowo Subianto.",
+      "link": "https://www.bankier.pl/wiadomosc/Indonezja-i-Chiny-z-gigantyczna-umowa-71-8-mld-dolarow-na-inteligentne-miasta-i-nowe-technologie-9230949.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Kto stanie na czele EBC? Hernandez de Cos z największą szansą na prezesurę"
+      "title_pl": "Indonezja i Chiny z gigantyczną umową. 71,8 mld dolarów na inteligentne miasta i nowe technologie"
     },
     {
-      "title": "Rozłam w koalicji wokół TK? Tusk: Nie gniewam się, że szukają innych rozwiązań",
-      "snippet": "Nie gniewam się na koalicjantów Władysława Kosiniaka-Kamysza i Szymona Hołownię za to, że szukają innych rozwiązań konfliktu wokół Trybunału Konstytucyjnego - podkreślił premier Donald Tusk. Jednak, jak dodał, stanowczo obstaje, że „wreszcie” pracują legalnie wybrani sędziowie TK.",
-      "link": "https://www.bankier.pl/wiadomosc/Rozlam-w-koalicji-wokol-TK-Tusk-Nie-gniewam-sie-ze-szukaja-innych-rozwiazan-9230485.html",
+      "title": "Rosja wyłamuje się z dyplomatycznej izolacji. Trump, Putin i Xi Jinping wymienili uściski",
+      "snippet": "Przywódcy Chin, USA i Rosji – Xi Jinping, Donald Trump i Władimir Putin – zamienili kilka słów w środę przed wykonaniem wspólnego zdjęcia podczas przyjęcia powitalnego na szczycie APEC w Shenzhen. W ocenie BBC Putin przed rozmowami trójstronnymi już uzyskał dokładnie to, na co liczył.",
+      "link": "https://www.bankier.pl/wiadomosc/Rosja-wylamuje-sie-z-dyplomatycznej-izolacji-Trump-Putin-i-Xi-Jinping-wymienili-usciski-9230967.html",
       "source_name": "Bankier.pl",
       "lang": "pl",
-      "title_pl": "Rozłam w koalicji wokół TK? Tusk: Nie gniewam się, że szukają innych rozwiązań"
+      "title_pl": "Rosja wyłamuje się z dyplomatycznej izolacji. Trump, Putin i Xi Jinping wymienili uściski"
+    },
+    {
+      "title": "Prawie 5 tys. zł dla mężczyzn i 3,4 tys. zł dla kobiet. Tak wyglądają emerytury w Polsce",
+      "snippet": "W Polsce w 2025 r. było 7,47 mln emerytów, o 1,1 proc. więcej niż rok wcześniej. Przeciętna emerytura wzrosła o 8,2 proc. i wyniosła 4178,94 zł – wynika z opublikowanych w środę danych GUS. Średnia wysokość emerytury mężczyzn to 4978,67 zł, a kobiet – 3421,61 zł.",
+      "link": "https://www.bankier.pl/wiadomosc/Prawie-5-tys-zl-dla-mezczyzn-i-3-4-tys-zl-dla-kobiet-Tak-wygladaja-emerytury-w-Polsce-9230746.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Prawie 5 tys. zł dla mężczyzn i 3,4 tys. zł dla kobiet. Tak wyglądają emerytury w Polsce"
+    },
+    {
+      "title": "Polacy wydają miliardy na gry. Polska w europejskiej czołówce",
+      "snippet": "W 2025 roku Europejczycy wydali na gry wideo ponad 27,7 mld euro (około 122 mld zł), niemal dwukrotnie więcej niż w 2016 roku – wynika z raportu Europejskiego Obserwatorium Audiowizualnego. Polska zajęła siódme miejsce wśród największych rynków gier w Europie, z wydatkami przekraczającymi 4,38 mld zł.",
+      "link": "https://www.bankier.pl/wiadomosc/Polacy-wydaja-miliardy-na-gry-Polska-w-europejskiej-czolowce-9230788.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Polacy wydają miliardy na gry. Polska w europejskiej czołówce"
+    },
+    {
+      "title": "Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina",
+      "snippet": "Ukraiński atak, który doprowadził we wtorek do zawalenia się części Mostu Kerczeńskiego, przeprowadzono bez użycia systemu Starlink – podał „The Times”. Operacja miała też wymiar symboliczny – jej celem było pokazanie słabości Rosji przed spotkaniem Władimira Putina z przywódcami USA i Chin.",
+      "link": "https://www.bankier.pl/wiadomosc/Ukraina-uderzyla-w-Most-Kerczenski-bez-Starlinka-Operacja-miala-upokorzyc-Putina-9230775.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Ukraina uderzyła w Most Kerczeński bez Starlinka. Operacja miała upokorzyć Putina"
+    },
+    {
+      "title": "Pada kolejna fabryka mebli. Pracę może stracić 170 osób",
+      "snippet": "Fabryka mebli Telmex w Biskupcu ma zostać zlikwidowana, a pracę może stracić około 170 osób. Pierwsze wypowiedzenia mają trafić do załogi na początku grudnia 2026 roku – poinformowało Radio Olsztyn.",
+      "link": "https://www.bankier.pl/wiadomosc/Kolejna-fabryka-mebli-do-zamkniecia-Do-zwolnienia-nawet-170-osob-9230661.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Pada kolejna fabryka mebli. Pracę może stracić 170 osób"
+    },
+    {
+      "title": "Armia nie tylko się zbroi, ale i szkoli. Nadszedł czas na rozwój szkolnictwa wojskowego?",
+      "snippet": "Wicepremier, minister obrony narodowej Władysław Kosiniak-Kamysz zapowiedział powstanie w 2027 roku Oficerskiej Szkoły Artyleryjskiej w Toruniu. Czyżby był to pierwszy krok w odtwarzaniu szkolnictwa wojskowego w Polsce?",
+      "link": "https://defence24.pl/sily-zbrojne/armia-nie-tylko-sie-zbroi-ale-i-szkoli-nadszedl-czas-na-rozwoj-szkolnictwa-wojskowego",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Armia nie tylko się zbroi, ale i szkoli. Nadszedł czas na rozwój szkolnictwa wojskowego?"
+    },
+    {
+      "title": "Nietypowe światła nad Warszawą. MON uprzedza o testach",
+      "snippet": "W środę, 18 listopada, mieszkańcy Warszawy i okolicznych miejscowości mogą zaobserwować na niebie nietypowe obiekty świetlne, przypominające samoloty lub duże drony. Ministerstwo Obrony Narodowej wydało w tej sprawie komunikat, wyjaśniając przyczynę zjawiska.",
+      "link": "https://defence24.pl/polityka-obronna/nietypowe-swiatla-nad-warszawa-mon-uprzedza-o-testach",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Nietypowe światła nad Warszawą. MON uprzedza o testach"
+    },
+    {
+      "title": "Ukraina oskarża Rosję o używanie w wojnie „toksycznych chemikaliów”. Apel MSZ",
+      "snippet": "Szef ukraińskiej dyplomacji Andrij Sybiha oskarżył Rosję o świadome włączenie toksycznych chemikaliów do metod prowadzenia wojny. Kijów domaga się zablokowania powrotu Moskwy do Rady Wykonawczej Organizacja ds. Zakazu Broni Chemicznej (OPCW).",
+      "link": "https://defence24.pl/polityka-obronna/ukraina-oskarza-rosje-o-uzywanie-w-wojnie-toksycznych-chemikaliow-apel-msz",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Ukraina oskarża Rosję o używanie w wojnie „toksycznych chemikaliów”. Apel MSZ"
+    },
+    {
+      "title": "Ukraina otrzyma miliardy na obronę. Nowy pakiet od KE",
+      "snippet": "Komisja Europejska zaproponowała dodatkowe wsparcie finansowe dla Ukrainy. Na cele militarne ma zostać przeznaczone 25 miliardów euro.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/ukraina-otrzyma-miliardy-na-obrone-nowy-pakiet-od-ke",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Ukraina otrzyma miliardy na obronę. Nowy pakiet od KE"
+    },
+    {
+      "title": "Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze",
+      "snippet": "Międzynarodowe konsorcjum dziennikarskie opublikowało wyniki analizy ponad 15 milionów wewnętrznych dokumentów Deutsche Banku. Materiał, przekazany przez dwóch sygnalistów, obejmuje e-maile, protokoły, raporty due diligence i analizy ryzyka po 2010 roku. Dokumenty pokazują, że największy niemiecki bank utrzymywał relacje z oligarchami bliskimi Kremlowi oraz spółkami częściowo przez nich kontrolowanymi nawet po nałożeniu sankcji i w okolicy pełnoskalowej agresji na Ukrainę w 2022 roku. To konkret",
+      "link": "https://defence24.pl/geopolityka/sankcje-na-papierze-miliardy-w-obiegu-deutsche-bank-i-rosyjskie-pieniadze",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Sankcje na papierze, miliardy w obiegu. Deutsche Bank i rosyjskie pieniądze"
+    },
+    {
+      "title": "Białoruś jako zaplecze dywersji. Jak odciąć tlen rosyjskim operacjom w Polsce?",
+      "snippet": "Rosyjskie zasoby szpiegowskie i dywersyjne w Polsce kurczą się, ale białoruskie pozostają nienaruszone. Mińsk przebudował swój wywiad tak, by mógł udostępniać je Rosjanom decyzją szefa służby, bez podpisu prezydenta i pod osłoną politycznej odwilży ze Stanami Zjednoczonymi. Jeśli Polska nie uzna białoruskiego kanału za główny, Kreml będzie uderzał w nas rękami Mińska przez najbliższe lata.",
+      "link": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/bialorus-jako-zaplecze-dywersji-jak-odciac-tlen-rosyjskim-operacjom-w-polsce",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Białoruś jako zaplecze dywersji. Jak odciąć tlen rosyjskim operacjom w Polsce?"
+    },
+    {
+      "title": "Trump mianował nowego szefa sztabu armii USA. Poprzednika zwolnił w środku wojny z Iranem",
+      "snippet": "Prezydent Stanów Zjednoczonych Donald Trump mianował nowego szefa sztabu amerykańskiej armii. Dobiega końca kilkumiesięczna saga, która trwała od momentu odwołania poprzedniego dowódcy.",
+      "link": "https://defence24.pl/sily-zbrojne/trump-mianowal-nowego-szefa-sztabu-armii-usa-poprzednika-zwolnil-w-srodku-wojny-z-iranem",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Trump mianował nowego szefa sztabu armii USA. Poprzednika zwolnił w środku wojny z Iranem"
+    },
+    {
+      "title": "Więcej zmodyfikowanych Krabów w wojsku. Kolejna dostawa z HSW",
+      "snippet": "Huta Stalowa Wola dostarczyła do wojska kolejną partię armatohaubic Krab wraz z pojazdami towarzyszącymi w ramach DMO Regina. Trafiły one do 23. Śląskiego Pułku Artylerii wchodzącego w skład 11. Dywizji Kawalerii Pancernej.",
+      "link": "https://defence24.pl/sily-zbrojne/wiecej-zmodyfikowanych-krabow-w-wojsku-kolejna-dostawa-z-hsw",
+      "source_name": "Defence24",
+      "lang": "pl",
+      "title_pl": "Więcej zmodyfikowanych Krabów w wojsku. Kolejna dostawa z HSW"
     }
   ]
 }
