@@ -1,16 +1,72 @@
 {
-  "date": "19 listopada 2026",
-  "time": "17:01",
-  "timestamp": "2026-11-19_17:01",
-  "count": 78,
+  "date": "20 listopada 2026",
+  "time": "05:01",
+  "timestamp": "2026-11-20_05:01",
+  "count": 73,
   "items": [
     {
-      "title": "Marcin Przydacz w \"Gościu Wydarzeń\". Oglądaj od godz. 19:15",
-      "snippet": "Szef Biura Polityki Międzynarodowej w KPRP Marcin Przydacz będzie gościem czwartkowego odcinka programu Gość Wydarzeń. Transmisja od godz. 19:15 w Polsacie, Polsat News, Wydarzeniach 24, polsatnews.pl i Interii.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/marcin-przydacz-w-gosciu-wydarzen-ogladaj-od-godz-1915/",
+      "title": "Zderzenie na przejeździe kolejowym. Ruch pociągów wstrzymany",
+      "snippet": "W pobliżu miejscowości Chróstnik na Dolnym Śląsku doszło do zderzenia pociągu PKP Intercity z lawetą, która utknęła na przejeździe kolejowym - potwierdził asp. Patryk Zdanowski ze straży pożarnej w Lubinie w rozmowie z polsatnews.pl. Z przekazanych do tej pory informacji wynika, że nikt nie został ranny.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/zderzenie-na-przejezdzie-kolejowym-ruch-pociagow-wstrzymany/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Marcin Przydacz w \"Gościu Wydarzeń\". Oglądaj od godz. 19:15"
+      "title_pl": "Zderzenie na przejeździe kolejowym. Ruch pociągów wstrzymany"
+    },
+    {
+      "title": "\"Polska i Niemcy wezmą odpowiedzialność\". Szef MON o bezpieczeństwie Europy",
+      "snippet": "Dla USA Polska i Niemcy to kluczowi partnerzy w Europie - mówił w czwartek wicepremier, minister obrony narodowej Władysław Kosiniak-Kamysz po spotkaniu ze swoim niemieckim odpowiednikiem Borisem Pistoriusem. Dodał, że oba kraje będą wzmacniać relacje transatlantyckie i brać wspólną odpowiedzialność za bezpieczeństwo Europy.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/dla-usa-polska-i-niemcy-to-kluczowi-partnerzy-w-europie/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "\"Polska i Niemcy wezmą odpowiedzialność\". Szef MON o bezpieczeństwie Europy"
+    },
+    {
+      "title": "Negocjacje ws. Trybunału Konstytucyjnego. Prezydencki minister podał szczegóły",
+      "snippet": "- Rozmowy na tę chwilę ulegają zawieszeniu - ogłosił Zbigniew Bogucki po zakończeniu rozmów z przedstawicielami klubów parlamentarnych ws. Trybunału Konstytucyjnego. Przedstawiciel prezydenta zapowiedział, że w najbliższym czasie wszystkie strony rozmów mają przedstawić własne pomysły na rozwiązanie sporu.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/negocjacje-ws-trybunalu-konstytucyjnego-prezydencki-minister-podal-szczegoly/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Negocjacje ws. Trybunału Konstytucyjnego. Prezydencki minister podał szczegóły"
+    },
+    {
+      "title": "Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę",
+      "snippet": "W okolicach 4-6 grudnia możemy spodziewać się decyzji lub komunikatu ze strony Donalda Trumpa w sprawie utworzenia w Polsce stałej bazy wojsk USA - taką informację przekazał wiceminister obrony narodowej Cezary Tomczyk w czwartkowym wydaniu programu Gość Wydarzeń. Polityk relacjonował z Waszyngtonu o postępach w tej sprawie.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/decyzja-trumpa-ws-bazy-coraz-blizej-glos-mon-z-waszyngtonu-padla-data/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Decyzja Trumpa ws. stałej bazy w Polsce coraz bliżej. Wiceszef MON wskazał datę"
+    },
+    {
+      "title": "Kłótnia rzeczników ws. prezydenta. \"Szacun za samozaoranie\", \"rżnie głupa\"",
+      "snippet": "Szacun za samozaoranie. Mało kto aż tak to potrafi - czytamy we wpisie Jacka Dobrzyńskiego skierowanym do Rafała Leśkiewicza. Rzecznik ministra koordynatora służb specjalnych wdał się w zaciekłą wymianę zdań z rzecznikiem prezydenta. Przyczynkiem do dyskusji stała się sprawa strony internetowej Nowrocky, kojarzonej z nazwiskiem głowy państwa.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/klotnia-rzecznikow-ws-prezydenta-szacun-za-samozaoranie-rznie-glupa/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kłótnia rzeczników ws. prezydenta. \"Szacun za samozaoranie\", \"rżnie głupa\""
+    },
+    {
+      "title": "USA działają ws. Polski. Była ambasador zdradza: Ta sprawa ma najwyższy priorytet",
+      "snippet": "- Sprawa zapewnienia Polsce cywilnej energii nuklearnej ma najwyższy priorytet w amerykańskim departamencie energii - mówiła była ambasador USA w Polsce Georgette Mosbacher podczas forum P-TEC w Warszawie. O znaczeniu polsko-amerykańskiej współpracy w dziedzinie energetyki mówiła w Polsat News również Marta Poślad, Przewodnicząca Rady Dyrektorów Amerykańskiej Izby Handlowej w Polsce.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/usa-dzialaja-ws-polski-byla-ambasador-zdradza-ta-sprawa-ma-najwyzszy-priorytet/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "USA działają ws. Polski. Była ambasador zdradza: Ta sprawa ma najwyższy priorytet"
+    },
+    {
+      "title": "Masowe L4 w dniu premiery GTA 6? Rzeczniczka ZUS o statystykach",
+      "snippet": "Premiera GTA 6 wywołała globalne szaleństwo. W USA i Wielkiej Brytanii miliony pracowników planowały wziąć na ten dzień urlop, a szacunki strat gospodarczych liczone są w milionach. W Polsce ZUS nie odnotował fali zwolnień lekarskich. - Nie ma miejsca żadna hekatomba - powiedziała rzeczniczka Anna Kalita w rozmowie z Interią.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/masowe-l4-w-dniu-premiery-gta-6-rzeczniczka-zus-o-statystykach/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Masowe L4 w dniu premiery GTA 6? Rzeczniczka ZUS o statystykach"
+    },
+    {
+      "title": "Cyberatak na Autopay. Ekspert mówi o skali problemu i apeluje",
+      "snippet": "- Skala jest duża, to na pewno - mówił Marcin Maj z serwisu Niebezpiecznik.pl na antenie Polsat News. Ekspert zabrał głos w sprawie wycieku danych, o którym poinformowała firma pośrednicząca w płatnościach Autopay. Komentarza udzielił również Dominik Kuc z Fundacji Półtorej Minuty. - Jest to o tyle niepokojące, że cyberprzestępca nie musi zadziałać teraz - wskazał.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/cyberatak-na-autopay-ekspert-o-skali-problemu-padl-apel-do-klientow/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Cyberatak na Autopay. Ekspert mówi o skali problemu i apeluje"
     },
     {
       "title": "Do prokuratury wpłynęły dokumenty. Chodzi o TV Republikę",
@@ -45,52 +101,20 @@
       "title_pl": "Zakaz nocnej sprzedaży alkoholu. Sejm podjął decyzję"
     },
     {
-      "title": "Zarobki lekarzy. Sejm zagłosował nad poprawkami Senatu",
-      "snippet": "Sejm przyjął część poprawek Senatu do ustawy o limitach zarobków i czasie pracy lekarzy. Usunięto w całości m.in. zapisy o karach i zakazie pracy w systemie NFZ dla lekarzy poświadczających nieprawdę. Ustalono także maksymalną stawkę godzinową.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/zarobki-lekarzy-sejm-zaglosowal-nad-poprawkami-senatu/",
+      "title": "Donald Trump zapytany o Wołodymyra Zełenskiego: \"Nie zrobiłbym niczego bez niego\"",
+      "snippet": "Donald Trump powiedział w czwartek telewizji NBC News, że zgadza się z Wołodymyrem Zełenskim, że USA nie powinny podejmować decyzji w sprawie Ukrainy za jej plecami. Szczyt z przywódcami Rosji i Chin ocenił na 12 w 10-stopniowej skali.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/trump-nie-bedziemy-podejmowac-decyzji-o-ukrainie-bez-ukrainy/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Zarobki lekarzy. Sejm zagłosował nad poprawkami Senatu"
+      "title_pl": "Donald Trump zapytany o Wołodymyra Zełenskiego: \"Nie zrobiłbym niczego bez niego\""
     },
     {
-      "title": "Hołownia wyraził poparcie Ślizowi. \"Powinien być przewodniczącym\"",
-      "snippet": "Paweł Śliz ogłosił w czwartek start w wyborach na szefa Polski 2050. - Chciałbym przywrócić Polsce 2050 ten blask, który miała na początku, który przyciągnął ludzi, którzy do nas przyszli - zapewnił obecny wiceszef klubu Polski 2050. Jego kandydaturę poparł Szymon Hołownia. - Powinien być przewodniczącym partii - wskazał.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/holownia-wyrazil-poparcie-slizowi-powinien-byc-przewodniczacym/",
+      "title": "\"Dość optymistycznie\". Premier Tusk po spotkaniu koalicji chętnych",
+      "snippet": "- Mieliśmy połączenie z prezydentem Trumpem, który właśnie wylatywał z Chin i zrelacjonował nam swoje wrażenia po spotkaniu z prezydentami Xi i Putinem. Wygłosił słowa, które brzmiały dość optymistycznie - mówił Donald Tusk w trakcie briefingu prasowego po zakończeniu spotkania tzw. koalicji chętnych.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/dosc-optymistycznie-premier-tusk-po-spotkaniu-koalicji-chetnych/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Hołownia wyraził poparcie Ślizowi. \"Powinien być przewodniczącym\""
-    },
-    {
-      "title": "Tusk wprost o spotkaniach w Pałacu Prezydenckim ws. TK. \"Trzymam kciuki\"",
-      "snippet": "- O tym, jak wygląda ustrój Polski, nie mogą decydować partyjne rozmowy w Pałacu Prezydenckim - mówił Donald Tusk na konferencji prasowej przed spotkaniem koalicji chętnych w Berlinie. Odniósł się w ten sposób do spotkań z przedstawicielami niektórych partii, jakie miały miejsce ws. zmian w TK. Premier odniósł się też do kandydatury Szymona Hołowni na ambasadora przy Watykanie.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/tusk-wprost-o-spotkaniach-w-palacu-prezydenckim-ws-tk-trzymam-kciuki/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Tusk wprost o spotkaniach w Pałacu Prezydenckim ws. TK. \"Trzymam kciuki\""
-    },
-    {
-      "title": "Afera w Kłodzku, komendant Straży Miejskiej zatrzymany. Trwa przesłuchanie",
-      "snippet": "Komendant Straży Miejskiej w Kłodzku Michał Tułacz został zatrzymany - potwierdził w rozmowie z polsatnews.pl Mariusz Pindera, rzecznik Prokuratury Okręgowej w Świdnicy. Mężczyzna jest właśnie przesłuchiwany i składa wyjaśnienia.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/afera-w-klodzku-komendant-strazy-miejskiej-zatrzymany-trwa-przesluchanie/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Afera w Kłodzku, komendant Straży Miejskiej zatrzymany. Trwa przesłuchanie"
-    },
-    {
-      "title": "Wielka awaria Centralnej Magistrali Kolejowej. Poważne utrudnienia na kolei",
-      "snippet": "Na odcinku Szeligi - Strzałki, który leży na Centralnej Magistrali Kolejowej, doszło do awarii systemu sterowania ruchem - poinformowały PKP PLK i PKP Intercity. Składy kursują po jednym torze, opóźnienia mogą przekraczać nawet 60 minut.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/wielka-awaria-centralnej-magistrali-kolejowej-powazne-utrudnienia-na-kolei/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wielka awaria Centralnej Magistrali Kolejowej. Poważne utrudnienia na kolei"
-    },
-    {
-      "title": "\"Jest najsłabszy z całej trójki\". Ekspert wprost o pozycji Putina w Shenzhen",
-      "snippet": "Dla Putina to jest cud, który się zdarzył, że on został doproszony do tego grona - mówił w rozmowie z Polsat News o trójstronnym spotkaniu w Shenzhen dr Andrzej Byrt, były ambasador Polski w Niemczech i Rosji. Ocenił on, że polityk jest najsłabszy z całej trójki. Dr hab. Tomasz Płudowski zwrócił z kolei uwagę na niepokojącą bliskość między Donaldem Trumpem a Władimirem Putinem.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-19/jest-najslabszy-z-calej-trojki-ekspert-wprost-o-pozycji-putina-w-shenzhen/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Jest najsłabszy z całej trójki\". Ekspert wprost o pozycji Putina w Shenzhen"
+      "title_pl": "\"Dość optymistycznie\". Premier Tusk po spotkaniu koalicji chętnych"
     },
     {
       "title": "\"Nie będzie podziału świata\". Ukraiński generał o spotkaniu Trump - Putin - Xi",
@@ -149,300 +173,124 @@
       "title_pl": "Sanae Takaichi zwróciła się do Putina. Postawiła żądanie"
     },
     {
-      "title": "Wywoływały masowe protesty. Kneset rozpoczął uchylanie ustaw rządu Netanjahu",
-      "snippet": "Kontrowersyjne ustawy rządu Binjamina Netanjahu znalazły się na celowniku Knesetu. Izraelski parlament w powyborczej, nowej odsłonie chce uchylić m.in. prawo dotyczące reformy sądownictwa i przepisów zwiększających kontrolę rządzących nad mediami. To pierwsza ofensywa legislacyjna obozu Gadiego Ajzenkota, który próbuje utworzyć nowy gabinet.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-18/kneset-rozpoczal-uchylanie-kontrowersyjnych-ustaw-netanjahu-dotyczacych-sadow-i-mediow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wywoływały masowe protesty. Kneset rozpoczął uchylanie ustaw rządu Netanjahu"
-    },
-    {
-      "title": "Historyczny rekord sondy Voyager 1. Niby jest daleko, ale w kosmosie to rzut beretem",
-      "snippet": "Sonda Voyager 1 ustanowiła historyczny rekord, stając się najdalszym od Ziemi obiektem zbudowanym przez człowieka. Dzieli ją od nas prawie 26 mld km, czyli około jednego dnia świetlnego. Wystrzelona w 1977 roku maszyna wciąż utrzymuje łączność z NASA i ma na pokładzie złotą płytę z wiadomością dla obcych cywilizacji.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-18/historyczny-rekord-sondy-voyager-1-niby-jest-daleko-ale-w-kosmosie-to-rzut-beretem/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Historyczny rekord sondy Voyager 1. Niby jest daleko, ale w kosmosie to rzut beretem"
-    },
-    {
-      "title": "Deklaracja po szczycie Trumpa, Putina i Xi. O wojnie nuklearnej i nie tylko",
-      "snippet": "Wojny nuklearnej nie da się wygrać i nigdy nie wolno jej stoczyć - głosi treść jednego z punktów deklaracji Donalda Trumpa, Władimira Putina i Xi Jinpinga opublikowanej przez Biały Dom. W dokumencie poinformowano o ustaleniach trzech przywódców, między innymi w sprawie reformy Organizacji Narodów Zjednoczonych czy handlu produktami ropopochodnych.",
-      "link": "https://tvn24.pl/swiat/spotkanie-xi-putin-trump-w-shenzhen-bialy-dom-opublikowal-deklaracje-trzech-przywodcow-st9347860?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Deklaracja po szczycie Trumpa, Putina i Xi. O wojnie nuklearnej i nie tylko"
-    },
-    {
-      "title": "Dziennikarzom lecącym z Donaldem Trumpem zabrano telefony",
-      "snippet": "Dziennikarze wracający z prezydentem USA Donaldem Trumpem na pokładzie Air Force One z Chin przekazali, że zostały im odebrane telefony. Powodem miały być względy bezpieczeństwa.",
-      "link": "https://tvn24.pl/swiat/dziennikarzom-lecacym-z-donaldem-trumpem-na-pokladzie-air-force-onec-zabrano-telefony-st9347914?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Dziennikarzom lecącym z Donaldem Trumpem zabrano telefony"
-    },
-    {
-      "title": "Limity płac lekarzy zostają. Ustawa idzie do prezydenta",
-      "snippet": "Najważniejsza ustawa z pakietu naprawczego ochrony zdrowia przyjęła kształt, w jakim trafi na biurko prezydenta. Limity zarobków lekarzy pozostają bez zmian, ale lekarze nie będą musieli pracować na co najmniej pół etatu. O tym, jacy specjaliści będą z maksymalnych stawek wyłączeni, zadecyduje w rozporządzeniu minister zdrowia. Zapis o karaniu medyków za fałszerstwa w dokumentacji ostatecznie znika.",
-      "link": "https://tvn24.pl/zdrowie/limity-plac-lekarzy-zostaja-ustawa-idzie-do-prezydenta-st9347782?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Limity płac lekarzy zostają. Ustawa idzie do prezydenta"
-    },
-    {
-      "title": "Koniec SkyShowtime w Europie. Serwis podał termin zamknięcia platformy",
-      "snippet": "SkyShowtime, serwis obecny na 22 europejskich rynkach, zakończy działalność z końcem 2027 roku - poinformowała w środę pracowników rada dyrektorów spółki, cytowana przez magazyn \"The Hollywood Reporter\". Do tego czasu platforma ma funkcjonować bez zmian, a użytkownicy zachowają dostęp do jej katalogu.",
-      "link": "https://tvn24.pl/biznes/tech/skyshowtime-konczy-dzialalnosc-platforma-zniknie-z-rynku-w-2027-roku-st9347938?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Koniec SkyShowtime w Europie. Serwis podał termin zamknięcia platformy"
-    },
-    {
-      "title": "Podmuchy zimy. Odczujemy nawet -10 stopni Celsjusza",
-      "snippet": "Przed nami wyraźna zmiana pogody. Napływ arktycznego powietrza przyniesie nam ochłodzenie, opady deszczu ze śniegiem i śniegu oraz porywisty wiatr. Choć na termometrach zobaczymy kilka stopni Celsjusza powyżej zera, odczuwalnie może być nawet około -10 stopni.",
-      "link": "https://tvn24.pl/tvnmeteo/prognoza/podmuchy-zimy-odczujemy-nawet-10-stopni-celsjusza-st9347858?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Podmuchy zimy. Odczujemy nawet -10 stopni Celsjusza"
-    },
-    {
-      "title": "Mocny debiut Anthropic. Rynek czekał na ten moment",
-      "snippet": "Anthropic zadebiutował w czwartek na amerykańskiej giełdzie Nasdaq. Jak podał Reuters, wycena firmy stojącej za Claude'em może sięgnąć 1,8 biliona dolarów. Giełdowy debiut ma pokazać, jak mocno inwestorzy są gotowi postawić na boom związany ze sztuczną inteligencją, podczas gdy na rynku narastają obawy przed bańką.",
-      "link": "https://tvn24.pl/biznes/tech/rekordowy-debiut-na-gieldzie-anthropic-sprzedala-akcje-za-ponad-83-miliardy-dolarow-st9346292?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Mocny debiut Anthropic. Rynek czekał na ten moment"
-    },
-    {
-      "title": "\"Nieutuleni\". Mężczyźni, którzy boją się zawieść i wstydzą się prosić",
-      "snippet": "Ma być silny, zaradny, pewny siebie i niezawodny w łóżku. A co, jeśli nie daje rady? Co piąty mężczyzna boi się, że nie sprawdzi się podczas seksu. Wielu nie potrafi też przyznać, że potrzebuje pomocy albo zwykłego przytulenia. Seksuolog prof. Zbigniew Izdebski mówi o mężczyznach \"nieutulonych\". Skąd bierze się ten głód bliskości?",
-      "link": "https://tvn24.pl/zdrowie/czego-mezczyzni-boja-sie-w-seksie-najnowsze-badania-profesora-izdebskiego-st9347872?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "\"Nieutuleni\". Mężczyźni, którzy boją się zawieść i wstydzą się prosić"
-    },
-    {
-      "title": "Fala uderzeń w Most Krymski. Ile zostało z symbolu aneksji półwyspu?",
-      "snippet": "Trzy uderzenia w trzy dni. Most Krymski, symbol aneksji półwyspu przez Rosję, częściowo runął do wody. Jak trudna może być jego naprawa? - Uszkodzenia konstrukcyjne mostu są krytyczne - zgodnie przyznają ukraińscy i zachodni eksperci.",
-      "link": "https://tvn24.pl/swiat/most-krymski-atak-czesciowo-zniszczyl-most-drogowy-ile-zajmie-naprawa-reakcja-putina-st9341811?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Fala uderzeń w Most Krymski. Ile zostało z symbolu aneksji półwyspu?"
-    },
-    {
-      "title": "Marszałek Mazowsza wynosi się z Pragi",
-      "snippet": "Mazowiecki urząd marszałkowski zmienia swój adres. Przenosi się z Pragi na lewą stronę Wisły. Choć praski gmach ma dopiero 20 lat, już wymaga generalnego remontu. Od 3 grudnia mieszkańcy będą mogli załatwiać sprawy przy ulicy Chmielnej 85/87.",
-      "link": "https://tvn24.pl/tvnwarszawa/wola/warszawa-urzad-marszalkowski-zmienia-adres-przenosi-sie-z-pragi-do-srodmiescia-st9347600?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Marszałek Mazowsza wynosi się z Pragi"
-    },
-    {
-      "title": "Wziąć czy poczekać? Lekarz punktuje najczęstsze błędy przy antybiotykach",
-      "snippet": "Zielony katar? Bakterie. Po trzech dniach antybiotyku lepiej? Lek zadziałał. Do tego probiotyk, żeby odbudować jelita. A może zamiast recepty wolisz czosnek, bo \"działa tak samo\"? Brzmi znajomo? Tyle że każde z tych przekonań to kosztowna pułapka. Jak w nią nie wpaść?",
-      "link": "https://tvn24.pl/zdrowie/zielony-katar-mokry-kaszel-goraczka-lekarz-wyjasnia-kiedy-antybiotyk-a-kiedy-leczenie-objawowe-st9346997?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Wziąć czy poczekać? Lekarz punktuje najczęstsze błędy przy antybiotykach"
-    },
-    {
-      "title": "\"Xi Jinping odmówił podania ręki Putinowi\". Serio?",
-      "snippet": "Miliony wyświetleń generuje nagranie rzekomo pokazujące przywitanie przywódców Chin i Rosji. Oglądamy na nim, jak Władimir Putin wyciąga rękę w stronę Xi Jinpinga, a ten nie odwzajemnia gestu i opuszcza dłoń. Internauci opisują tę scenę jako \"upokorzenie Putina\". Sprawdziliśmy to wideo.",
-      "link": "https://konkret24.tvn24.pl/swiat/xi-jinping-odmowil-podania-reki-putinowi-serio-st9347690?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "\"Xi Jinping odmówił podania ręki Putinowi\". Serio?"
-    },
-    {
-      "title": "Szczyt koalicji chętnych w Berlinie. Media: mają popłynąć trzy sygnały",
-      "snippet": "Przywódcy państw wchodzących w skład koalicji chętnych wspierającej Ukrainę są już w Berlinie. Mają rozmawiać o dalszej pomocy dla Kijowa i negocjacjach pokojowych. Polskę reprezentuje premier Donald Tusk.",
-      "link": "https://tvn24.pl/swiat/szczyt-koalicji-chetnych-w-berlinie-st9347802?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Szczyt koalicji chętnych w Berlinie. Media: mają popłynąć trzy sygnały"
-    },
-    {
-      "title": "Koniec koncesji na A4. Spółka planuje zwolnić niemal całą załogę",
-      "snippet": "Stalexport Autostrada Małopolska zamierza przeprowadzić zwolnienia grupowe, które obejmą wszystkich pracowników spółki z wyjątkiem członków zarządu. Decyzja ma związek z wygaśnięciem w marcu 2027 roku koncesji na zarządzanie płatnym odcinkiem autostrady A4 między Katowicami a Krakowem.",
-      "link": "https://tvn24.pl/biznes/pieniadze/zwolnienia-grupowe-w-stalexport-autostrada-malopolska-koncesja-na-a4-wygasnie-w-2027-roku-st9347859?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Koniec koncesji na A4. Spółka planuje zwolnić niemal całą załogę"
-    },
-    {
-      "title": "Rosyjskie bombowce Tu-95 w pobliżu Tajwanu. Wcześniej maszyny widziano w Wietnamie",
-      "snippet": "Dwa rosyjskie bombowce Tu-95 przeleciały w pobliżu Tajwanu - przekazał Reuters, powołując się na tajwańskie MON. W tym czasie w Chinach odbywało się trójstronne spotkanie Donalda Trumpa, Władimira Putina i Xi Jinpinga. Cztery rosyjskie maszyny zostały dzień wcześniej zarejestrowane na nagraniu na lotnisku w Wietnamie.",
-      "link": "https://tvn24.pl/swiat/rosyjskie-bombowce-tu-95-nad-tajwanem-i-w-wietnamie-w-czasie-spotkania-putina-xi-i-trumpa-w-chinach-st9347651?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Rosyjskie bombowce Tu-95 w pobliżu Tajwanu. Wcześniej maszyny widziano w Wietnamie"
-    },
-    {
-      "title": "Rosyjska energia powróci do Europy? Amerykański sekretarz o nastrojach",
-      "snippet": "Europa nie chce powrotu do rosyjskiej energii - stwierdził w czwartek sekretarz energii USA Chris Wright. Przekazał również, że USA chcą zwiększać dostawy LNG, ropy i oleju napędowego na europejski rynek.",
-      "link": "https://tvn24.pl/biznes/ze-swiata/europa-nie-chce-powrotu-rosyjskiej-energii-usa-zwieksza-dostawy-lng-st9347683",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Rosyjska energia powróci do Europy? Amerykański sekretarz o nastrojach"
-    },
-    {
-      "title": "A2 coraz droższa. Rząd rozważa wypowiedzenie umowy",
-      "snippet": "Zwróciliśmy się do GDDKiA o przeanalizowanie możliwości wypowiedzenia umowy koncesyjnej na odcinku autostrady A2 między Nowym Tomyślem a Koninem - poinformowało redakcję tvn24.pl Ministerstwo Infrastruktury. Powodem są częste i znaczące podwyżki opłat. Zakończenie umowy nie będzie jednak proste, ponieważ przyznaje ona koncesjonariuszowi swobodę w ustalaniu stawek.",
-      "link": "https://tvn24.pl/biznes/pieniadze/autostrada-a2-coraz-drozsza-ministerstwo-infrastruktury-rozwaza-wypowiedzenie-umowy-st9347753",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "A2 coraz droższa. Rząd rozważa wypowiedzenie umowy"
-    },
-    {
-      "title": "Nocna prohibicja w Polsce. Sejm przyjął poprawki",
-      "snippet": "Sejm przyjął większość poprawek Senatu do ustawy wprowadzającej nocną prohibicję i zakaz reklamy alkoholu. Dotyczą one między innymi zakazu sprzedaży alkoholu z upustami, rabatami i w promocjach typu \"12+12\".",
-      "link": "https://tvn24.pl/biznes/z-kraju/nocna-prohibicja-w-polsce-sejm-przyjal-poprawki-senatu-st9347364",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Nocna prohibicja w Polsce. Sejm przyjął poprawki"
-    },
-    {
-      "title": "Czy premier będzie grał w grę? Tusk zapytany o GTA 6",
-      "snippet": "Nie jestem fanem tego typu gier, ale syn z rówieśnikami tak - skomentował premier Donald Tusk zapytany w trakcie czwartkowej konferencji prasowej o premierę szóstej części kultowej produkcji Grand Theft Auto. Emocje wokół premiery są duże i nie kryją ich także inni politycy.",
-      "link": "https://tvn24.pl/biznes/z-kraju/donald-tusk-zapytany-o-gta-vi-radoslaw-sikorski-slawomir-mentzen-i-prezes-zus-liwiusz-laska-rowniez-komentuja-premiere-gry-st9346988",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Czy premier będzie grał w grę? Tusk zapytany o GTA 6"
-    },
-    {
-      "title": "KE zarzuca Polsce zaniedbania w sprawach poważnych awarii przemysłowych. Jest skarga do TSUE",
-      "snippet": "Komisja Europejska pozwała Polskę do Trybunału Sprawiedliwości UE za niewłaściwe wdrożenie dyrektywy Seveso III, która ma chronić ludzi i środowisko przed skutkami poważnych awarii przemysłowych. Bruksela wskazuje między innymi na braki w raportach bezpieczeństwa, planach ratowniczych i informowaniu mieszkańców o zagrożeniach.",
-      "link": "https://tvn24.pl/biznes/z-kraju/ke-zarzuca-polsce-zaniedbania-w-sprawach-powaznych-awarii-przemyslowych-jest-skarga-do-tsue-st9347295",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "KE zarzuca Polsce zaniedbania w sprawach poważnych awarii przemysłowych. Jest skarga do TSUE"
-    },
-    {
-      "title": "Ta sieć sklepów była w październiku najtańsza w Polsce",
-      "snippet": "Średnia cena analizowanego koszyka produktów wyniosła 317,96 złotego, co oznacza spadek o 0,67 procent w porównaniu z wrześniem. Różnica między najtańszym a najdroższym wariantem koszyka wyniosła w październiku 154,33 zł i była o 9,06 zł większa niż we wrześniu - wynika z najnowszego badania ASM SFA.",
-      "link": "https://tvn24.pl/biznes/pieniadze/koszyk-zakupowy-auchan-najtansza-siecia-w-pazdzierniku-2026-gdzie-zrobimy-najtansze-zakupy-st9347192",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Ta sieć sklepów była w październiku najtańsza w Polsce"
-    },
-    {
-      "title": "ePUAP ponownie działa. \"Musimy mieć pewność\"",
-      "snippet": "Usługi państwowego systemu ePUAP wróciły do pełnego działania - poinformowało w czwartek Ministerstwo Cyfryzacji. 10 listopada resort ograniczył użytkownikom dostęp do systemu, żeby zatrzymać cyberatak. Jak wykazała analiza Państwowego Instytutu Badawczego NASK i Agencji Bezpieczeństwa Wewnętrznego, atak nie objął innych publicznych usług.",
-      "link": "https://tvn24.pl/biznes/tech/epuap-ponownie-dziala-oswiadczenie-ministerstwa-cyfryzacji-st9346800",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "ePUAP ponownie działa. \"Musimy mieć pewność\""
-    },
-    {
-      "title": "To miała być drogowa rewolucja, ale nikt nią nie jest zainteresowany. \"Nie wpłynął żaden wniosek\"",
-      "snippet": "Od niemal pięciu miesięcy w Polsce można prowadzić testy pojazdów zautomatyzowanych na drogach publicznych. Mimo nowych przepisów do Krajowego Koordynatora Prac Badawczych nie wpłynął dotąd ani jeden wniosek o zezwolenie na takie badania - poinformowało redakcję tvn24.pl Ministerstwo Infrastruktury.",
-      "link": "https://tvn24.pl/biznes/moto/testy-samochodow-autonomicznych-w-polsce-ministerstwo-infrastruktury-nie-wplynal-zaden-wniosek-st9346811",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "To miała być drogowa rewolucja, ale nikt nią nie jest zainteresowany. \"Nie wpłynął żaden wniosek\""
-    },
-    {
-      "title": "Szał na GTA 6. Dystrybutor gry liczy zyski",
-      "snippet": "Gigantyczna popularność gry Grand Theft Auto 6 w dniu premiery ma wymierny wpływ na rynek. Akcje Take-Two Interactive, spółki do której tytuł należy, wzrosły w obrocie pozagiełdowym. Tytuł zbiera pozytywne pierwsze opinie.",
-      "link": "https://tvn24.pl/biznes/tech/szal-na-grand-theft-auto-vi-dystrybutor-gry-take-two-interactive-zyskuje-w-handlu-pozagieldowym-st9346530",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Szał na GTA 6. Dystrybutor gry liczy zyski"
-    },
-    {
-      "title": "Volkswagen Crafter od 10 lat powstaje we Wrześni. Z fabryki wyjechało już ponad 600 tys. samochodów",
-      "snippet": "Dziesięć lat temu z fabryki Volkswagena we Wrześni wyjechał pierwszy Crafter. Od tego czasu powstało tam już ponad 600 tys. egzemplarzy, które trafiły do klientów na całym świecie. Jubileusz jest okazją nie tylko do podsumowania historii zakładu, ale także do pokazania, jak produkowany w Polsce lekki dostawczak stał się narzędziem codziennej pracy firm.",
-      "link": "https://tvn24.pl/biznes/moto/volkswagen-crafter-od-10-lat-powstaje-we-wrzesni-z-fabryki-wyjechalo-juz-ponad-600-tys-samochodow-st9346628",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Volkswagen Crafter od 10 lat powstaje we Wrześni. Z fabryki wyjechało już ponad 600 tys. samochodów"
-    },
-    {
-      "title": "Dymisja po publikacji Interii. Dyrektor szpitala traci stanowisko",
-      "snippet": "Zarząd województwa warmińsko-mazurskiego odwołał Mirosława Kochańskiego ze stanowiska dyrektora Szpitala Psychiatrycznego św. Antoniego Wielkiego we Fromborku - przekazał Interii Urząd Marszałkowski w Olsztynie. O nieprawidłowościach w placówce informowaliśmy w poniedziałek. Urzędnicy zapewniają jednocześnie, że szpital działa normalnie, a leczenie pacjentów przebiega bez zmian.",
-      "link": "https://wydarzenia.interia.pl/warminsko-mazurskie/news-dymisja-po-publikacji-interii-dyrektor-szpitala-traci-stanow,nId,23576211",
+      "title": "Prawomocne dożywocie za podwójne zabójstwo. Zdradziła go rękawiczka",
+      "snippet": "Sąd Apelacyjny w Warszawie utrzymał karę dożywotniego więzienia dla Zdzisława W., pseudonim \"Malowany\", za zabójstwo dwojga niemieckich emerytów na warszawskich Siekierkach w 2012 roku. Kluczowym dowodem okazała się rękawiczka ze śladami DNA sprawcy, dzięki której po ponad dekadzie udało się rozwiązać zagadkę zbrodni. Wyrok jest prawomocny.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-prawomocne-dozywocie-za-podwojne-zabojstwo-zdradzila-go-reka,nId,23576288",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Dymisja po publikacji Interii. Dyrektor szpitala traci stanowisko"
+      "title_pl": "Prawomocne dożywocie za podwójne zabójstwo. Zdradziła go rękawiczka"
     },
     {
-      "title": "Melania Trump z uznaniem o Polsce. Kancelaria Prezydenta pokazała nagranie",
-      "snippet": "- Polsko, twoje zaangażowanie na rzecz następnego pokolenia jest inspirujące - powiedziała Melania Trump w nagraniu wideo opublikowanym w związku z konferencją \"Ich przyszłość. Nasza odpowiedzialność\". W wydarzeniu, zorganizowanym z inicjatywy Marty Nawrockiej, biorą udział m.in. pierwsze damy Litwy, Rumunii i Ukrainy.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-inspirujace-zaangazowanie-melania-trump-z-uznaniem-o-polsce,nId,23576195",
+      "title": "Niemcy chcieli deportować Syryjkę do Polski. Na drodze stanął Kościół",
+      "snippet": "Niemieckie służby próbowały deportować 62-letnią Syryjkę do Polski. To się im jednak nie udało, bowiem kobieta ukryła się na terenie jednej z niemieckich parafii, gdzie otrzymała azyl kościelny.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-niemcy-chcieli-deportowac-syryjke-do-polski-na-drodze-stanal,nId,23576301",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Melania Trump z uznaniem o Polsce. Kancelaria Prezydenta pokazała nagranie"
+      "title_pl": "Niemcy chcieli deportować Syryjkę do Polski. Na drodze stanął Kościół"
     },
     {
-      "title": "Ławrow zirytowany pytaniem o Putina. Nagranie obiegło sieć",
-      "snippet": "Szef rosyjskiej dyplomacji ostro zareagował na pytanie o rezultaty rozmów Władimira Putina z Donaldem Trumpem i Xi Jinpingiem. Siergiej Ławrow nie chciał ocenić, czy negocjacje zakończyły się sukcesem. Na pytanie dziennikarza odpowiedział pytaniem. Nagranie obiegło sieć.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-lawrow-zirytowany-pytaniem-o-putina-nagranie-obieglo-siec,nId,23576203",
+      "title": "Pilny telefon Trumpa po szczycie. Fatalne informacje dla Kijowa",
+      "snippet": "Donald Trump połączył się z przywódcami państw biorącymi udział w spotkaniu koalicji chętnych w Berlinie i \"ostro zakwestionował dalsze wydatki na wsparcie wojskowe dla Kijowa\" - donosi portal Politico. Amerykański przywódca miał stwierdzić, że Władimir Putin podczas szczytu w Chinach wyraził chęć zakończenia wojny.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-pilny-telefon-trumpa-po-szczycie-fatalne-informacje-dla-kijo,nId,23576291",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Ławrow zirytowany pytaniem o Putina. Nagranie obiegło sieć"
+      "title_pl": "Pilny telefon Trumpa po szczycie. Fatalne informacje dla Kijowa"
     },
     {
-      "title": "Tusk wybiera się do Chin, znany jest termin. \"Liczę, że poznam intencje\"",
-      "snippet": "- Liczę na to, że lepiej poznam intencje chińskiej polityki wobec Ukrainy podczas mojej wizyty w Pekinie na początku grudnia - ogłosił Donald Tusk. Będzie to pierwsza podróż polskiego premiera do Państwa Środka od blisko dekady. W czwartek w stolicy Niemiec Tusk bierze udział w spotkaniu Koalicji Chętnych.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-tusk-wybiera-sie-do-chin-znany-jest-termin-licze-ze-poznam-i,nId,23576062",
+      "title": "Zwrot w sprawie rozmów o Trybunale. \"Impas\", \"doszło do zawieszenia\"",
+      "snippet": "- Spotkanie było trudne, dlatego że doszliśmy do tych kwestii, które są najbardziej sporne. Dzisiaj nastąpił pewien impas - przekazał szef Kancelarii Prezydenta Zbigniew Bogucki po rozmowach ze środowiskami politycznymi w sprawie sytuacji wokół Trybunału Konstucyjnego. Bogucki przyznał, że doszło do \"pewnego rodzaju zawieszenia rozmów\", a wyciek informacji do mediów oznaczał w jego ocenie \"zerwanie lojalności\" w sprawie.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-zwrot-w-sprawie-rozmow-o-trybunale-impas-doszlo-do-zawieszen,nId,23576292",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Tusk wybiera się do Chin, znany jest termin. \"Liczę, że poznam intencje\""
+      "title_pl": "Zwrot w sprawie rozmów o Trybunale. \"Impas\", \"doszło do zawieszenia\""
     },
     {
-      "title": "Putin nie gryzł się w język po spotkaniu w Chinach. \"Odpowiemy na ataki\"",
-      "snippet": "To, w jaki sposób Rosja odpowie na uderzenie Ukraińców na Most Krymski będzie znacznie bardziej bolesne niż sam atak - zapowiedział Władimir Putin podczas konferencji po trójstronnym spotkaniu z Donaldem Trumpem i Xi Jinpingiem w Shenzhen. Przywódca stwierdził też, że do naprawienia relacji Moskwy z krajami europejskimi potrzebne jest, by na Starym Kontynencie musi dojść do \"zmiany politycznych elit\".",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-putin-nie-gryzl-sie-w-jezyk-po-spotkaniu-z-trumpem-i-xi-odpo,nId,23576165",
+      "title": "Robert Fico pod wrażeniem chińskiego szczytu. Gorzkie słowa pod adresem UE",
+      "snippet": "\"Słowo 'pokój' padło 100 razy częściej, niż podczas czterech lat posiedzeń europejskiego 'gabinetu wojennego' który lubi nazywać się Radą Europejską\"- napisał słowacki premier po szczycie w chińskim Shenzhen. Według Roberta Ficy rozmowy Donalda Trumpa, Xi Jinpinga i Władimira Putina przyniosły \"pragmatyczne wnioski\". Przywódca nie szczędził krytycznych słów pod adresem UE.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-robert-fico-pod-wrazeniem-chinskiego-szczytu-gorzkie-slowa-p,nId,23576283",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Putin nie gryzł się w język po spotkaniu w Chinach. \"Odpowiemy na ataki\""
+      "title_pl": "Robert Fico pod wrażeniem chińskiego szczytu. Gorzkie słowa pod adresem UE"
     },
     {
-      "title": "Episkopat z apelem do wiernych. 21 listopada startuje niecodzienna akcja",
-      "snippet": "W sobotę 21 listopada w całej Polsce rozpocznie się dziewięciodniowa modlitwa w intencji Ojczyzny. Biskupi zachęcają wiernych do udziału w nowennie za wstawiennictwem św. Andrzeja Boboli. Jej główną intencją będzie zgoda i pojednanie w narodzie. Modlitwy potrwają do 29 listopada.",
-      "link": "https://wydarzenia.interia.pl/religia/news-21-listopada-rozpocznie-sie-ogolnopolska-nowenna-episkopat-a,nId,23576088",
+      "title": "Wstrząsająca relacja unijnej ambasador. \"Nadal nie mogę złapać oddechu\"",
+      "snippet": "\"Nadal mam problemy ze złapaniem oddechu. Cieszcie się życiem w pokoju przyjaciele\" - napisała ambasador Unii Europejskiej w Kijowie Katarina Mathernova. Dyplomatka była świadkiem upadku rosyjskiego drona, który wyrządził duże szkody. Słowaczka podzieliła się wstrząsającą relacją w mediach społecznościowych.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-wstrzasajaca-relacja-unijnej-ambasador-nadal-nie-moge-zlapac,nId,23576286",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Episkopat z apelem do wiernych. 21 listopada startuje niecodzienna akcja"
+      "title_pl": "Wstrząsająca relacja unijnej ambasador. \"Nadal nie mogę złapać oddechu\""
     },
     {
-      "title": "Politycy grzeją konsole. \"Mam nowe GTA, ale trwa posiedzenie Sejmu\"",
-      "snippet": "Premiera GTA 6 rozgrzewa cały świat, a jak się okazuje, w słynnej grze rywalizują też polscy politycy. - Czekam na zakończenie posiedzenia Sejmu i zagram - niecierpliwi się jeden z posłów. - Przyniosłem dzisiaj Playstation do Sejmu, naprawdę - przyznaje w rozmowie z Interią Łukasz Michnik, rzecznik Nowej Lewicy.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-politycy-grzeja-konsole-mam-nowe-gta-ale-trwa-posiedzenie-se,nId,23576094",
+      "title": "Zamach w Krakowie. Ranny Brytyjczyk opuścił szpital, wraca do domu karetką",
+      "snippet": "Harry Marchant, Brytyjczyk raniony przez zamachowca na Rynku Głównym w Krakowie, został wypisany ze szpitala i rozpoczął podróż do ojczyzny. Rodzina 20-latka zorganizowała zbiórkę na jego transport. Poszkodowany wraca do domu karetką.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-zamach-w-krakowie-ranny-brytyjczyk-opuscil-szpital-wraca-do,nId,23576274",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Politycy grzeją konsole. \"Mam nowe GTA, ale trwa posiedzenie Sejmu\""
+      "title_pl": "Zamach w Krakowie. Ranny Brytyjczyk opuścił szpital, wraca do domu karetką"
     },
     {
-      "title": "Szał na GTA 6 nie ominął Polski. ZUS ma radę dla graczy",
-      "snippet": "- Nie wolno brać zwolnienia lekarskiego tylko po to, żeby pograć w grę. Zwolnienie lekarskie jest po to, żeby dochodzić do zdrowia. Inaczej byłoby to oszukiwaniem lekarza - mówi Interii rzeczniczka ZUS Anna Kalita. Dla fanów GTA 6 ma alternatywną i w pełni legalną propozycję. Interia poznała też pierwsze dane dotyczące zwolnień z pracy 19 listopada w Polsce - w dniu premiery GTA 6.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-szal-na-gta-6-nie-ominal-polski-zus-ma-rade-dla-graczy,nId,23575931",
+      "title": "Śmierć nastolatków w środku nocy. Motocykl z impetem uderzył w drzewo",
+      "snippet": "Dwoje nastolatków nie żyje po wypadku, do którego doszło w Kraśniku Górnym (woj. dolnośląskie). Ich motocykl uderzył w ogrodzenie, a następnie w przydrożne drzewo - potwierdziła Interii podkom. Anna Kublik-Rościszewska z lokalnej policji. Wiadomo, że pasażerka nie miała na głowie kasku ochronnego.",
+      "link": "https://wydarzenia.interia.pl/dolnoslaskie/news-smierc-nastolatkow-w-srodku-nocy-motocykl-z-impetem-uderzyl,nId,23576258",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Szał na GTA 6 nie ominął Polski. ZUS ma radę dla graczy"
+      "title_pl": "Śmierć nastolatków w środku nocy. Motocykl z impetem uderzył w drzewo"
     },
     {
-      "title": "Możliwy całodobowy mróz, i to niedługo. W Polsce wiele się zmieni",
-      "snippet": "Od weekendu wiele w Polsce się zmieni. Temperatury spadną zdecydowanie, i to w całym kraju. Za dnia wszędzie będą jednocyfrowe, a po zmroku spadną wyraźnie poniżej zera. W wielu częściach kraju zrobi się biało, ponieważ spadnie więcej deszczu ze śniegiem i śniegu. Możliwe, że tego rodzaju opadów będzie więcej niż tych typowych dla jesieni.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-zimowa-presja-zacznie-narastac-deszcz-wymiesza-sie-ze-sniegi,nId,23576059",
+      "title": "Moskwa traci cierpliwość, ostrzega kraj NATO. \"Konfrontacyjne kroki\"",
+      "snippet": "\"Skrupulatnie rejestrujemy wszystkie konfrontacyjne kroki Finlandii\" - przekazało MSZ w Moskwie, odnosząc się do zakazu wydawania wiz rosyjskim sportowcom. Resort wezwał już fińską dyplomatkę. Do sprawy odniósł się też Władimir Putin.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-moskwa-traci-cierpliwosc-ostrzega-kraj-nato-konfrontacyjne-k,nId,23576256",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Możliwy całodobowy mróz, i to niedługo. W Polsce wiele się zmieni"
+      "title_pl": "Moskwa traci cierpliwość, ostrzega kraj NATO. \"Konfrontacyjne kroki\""
     },
     {
-      "title": "Flota Czarnomorska zablokowana. Ukraińcy o \"wisience na torcie\" po ataku",
-      "snippet": "Flota Czarnomorska została zablokowana na Morzu Czarnym w wyniku uderzenia w Most Krymski - przekazał rzecznik ukraińskiej marynarki wojennej Dmytro Pletenczuk. Środowy atak doprowadził do znacznego uszkodzenia przeprawy i paraliżu połączeń na okupowany Krym.",
-      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-flota-czarnomorska-zablokowana-ukraincy-o-wisience-na-torcie,nId,23576074",
+      "title": "Ukraina kpi z Putina. \"Stracił swój most do prawdziwej Jałty\"",
+      "snippet": "- Shenzhen to nie jest Jałta z marzeń Putina - oświadczył szef ukraińskiej dyplomacji, komentując spotkanie przywódców USA, Rosji i Chin. Andrij Sybiha wbił szpilę agresorowi i nawiązał do serii ataków na Most Krymski. Zdaniem Radosław Sikorskiego trójstronne rozmowy nie przybliżają do zakończenia wojny. - Stwarzają iluzję w umyśle Putina - zauważył.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-ukraina-kpi-z-putina-stracil-swoj-most-do-prawdziwej-jalty,nId,23576228",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Flota Czarnomorska zablokowana. Ukraińcy o \"wisience na torcie\" po ataku"
+      "title_pl": "Ukraina kpi z Putina. \"Stracił swój most do prawdziwej Jałty\""
     },
     {
-      "title": "Groźby i zatrzymania na granicy. Tak Pekin miał naciskać na europosłów",
-      "snippet": "Chiny próbują ograniczyć kontakty Parlamentu Europejskiego z Tajwanem - wynika z ustaleń Politico. Kilku europosłów miało otrzymać wiadomości z pogróżkami. Z kolei jeden z parlamentarzystów, jak dowiedziała się redakcja, usłyszał od chińskiego dyplomaty niepokojące ostrzeżenie: jeśli poleci na Tajwan, \"nie wiadomo, co może się stać\".",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-grozby-i-zatrzymania-na-granicy-tak-pekin-mial-naciskac-na-e,nId,23575952",
-      "source_name": "Interia",
+      "title": "Deklaracja w sporze o rachunki TK. \"NBP nie będzie ulegał żadnym wpływom\"",
+      "snippet": "Wiceprezes Narodowego Banku Polskiego Przemysław Litwiniuk odpiera zarzuty upolitycznienia banku w sporze o rachunki Trybunału Konstytucyjnego. Wyjaśnia też, jakie motywy kryły się za wstrzymaniem obsługi rachunku bieżącego TK.",
+      "link": "https://biznes.interia.pl/gospodarka/news-deklaracja-w-sporze-o-rachunki-tk-nbp-nie-bedzie-ulegal-zadn,nId,23576290",
+      "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Groźby i zatrzymania na granicy. Tak Pekin miał naciskać na europosłów"
+      "title_pl": "Deklaracja w sporze o rachunki TK. \"NBP nie będzie ulegał żadnym wpływom\""
+    },
+    {
+      "title": "Złoty wyraźnie słabnie do głównych walut. Analitycy wskazują \"winnych\"",
+      "snippet": "W czwartek po południu złoty wyraźnie stracił do euro (4,43 zł) i dolara (4,04 zł). Eksperci mówią wprost: to pokłosie oczekiwań na decyzje banków centralnych - szczególnie amerykańskiego Fed.",
+      "link": "https://biznes.interia.pl/waluty/aktualnosci/news-zloty-wyraznie-slabnie-do-glownych-walut-analitycy-wskazuja,nId,23576271",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Złoty wyraźnie słabnie do głównych walut. Analitycy wskazują \"winnych\""
+    },
+    {
+      "title": "Ogromna skala oszustw. Ofiarą padł już prawie co trzeci Polak",
+      "snippet": "Klienci sklepów internetowych stają się coraz bardziej czujni i częściej przerywają podejrzane transakcje. Znamy już grupy wiekowe, które najrzadziej dają się nabrać oszustom.",
+      "link": "https://biznes.interia.pl/finanse/news-ogromna-skala-oszustw-ofiara-padl-juz-prawie-co-trzeci-polak,nId,23576036",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Ogromna skala oszustw. Ofiarą padł już prawie co trzeci Polak"
+    },
+    {
+      "title": "Naftowy biznes dostaje ostrzeżenie. Wojna przyspieszy odwrót od ropy",
+      "snippet": "Kryzys wokół cieśniny Ormuz może ograniczyć światowy popyt na ropę o 4,4 mln baryłek dziennie do 2035 r. - wynika z analizy Międzynarodowej Agencji Energetycznej (IEA). Na zmianach mogą zyskać producenci technologii elektrycznych, energetyka słoneczna i atomowa. Dla rynku paliw szykuje się jednak znacznie większe przetasowanie.",
+      "link": "https://biznes.interia.pl/energetyka/news-kryzys-moze-kosztowac-producentow-ropy-miliardy-iea-pokazuje,nId,23575988",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Naftowy biznes dostaje ostrzeżenie. Wojna przyspieszy odwrót od ropy"
+    },
+    {
+      "title": "Minister finansów o zamrożonych rachunkach TK: Pracujemy nad rozwiązaniem",
+      "snippet": "Szef resortu finansów i gospodarki Andrzej Domański zapewnił, że trwają prace nad rozwiązaniem problemu zamrożonych przez Narodowy Bank Polski rachunków Trybunału Konstytucyjnego. - Martwi mnie upolitycznienie NBP - dodał Andrzej Domański.",
+      "link": "https://biznes.interia.pl/gospodarka/news-minister-finansow-o-zamrozonych-rachunkach-tk-pracujemy-nad,nId,23576239",
+      "source_name": "Interia Biznes",
+      "lang": "pl",
+      "title_pl": "Minister finansów o zamrożonych rachunkach TK: Pracujemy nad rozwiązaniem"
     },
     {
       "title": "Reakcja giełdy na premierę GTA VI. Nie ma hurraoptymizmu",
@@ -454,7 +302,7 @@
     },
     {
       "title": "Największa oferta publiczna w historii. Gigant AI wkracza na parkiet",
-      "snippet": "Anthropic - gigant branży AI, debiutuje w czwartek na amerykańskiej giełdzie Nasdaq. Anthropic sprzedał w ofercie publicznej akcje za 81 mld dolarów, w cenie 83 dolary za akcję. Informacje z handlu przedsesyjnego sugerują, że w debiucie wycena może być nawet 20 proc. wyższa.",
+      "snippet": "Anthropic - gigant branży AI, zadebiutował w czwartek na amerykańskiej giełdzie Nasdaq. Akcje spółki na otwarciu sięgnęły poziomu 111,5 USD (wzrost o 34 proc. w stosunku do ceny z oferty wynoszącej 83 USD). Anthropic sprzedał w ofercie publicznej akcje za 81 mld dolarów.",
       "link": "https://biznes.interia.pl/gieldy/aktualnosci/news-najwieksza-oferta-publiczna-w-historii-anthropic-wkracza-na,nId,23576148",
       "source_name": "Interia Biznes",
       "lang": "pl",
@@ -493,140 +341,252 @@
       "title_pl": "UOKiK stawia zarzuty o zmowę przetargową. Chodzi o odbiór odpadów"
     },
     {
-      "title": "Fiskus nie sprawdzi twojego konta bez statusu podejrzanego. Sejm zdecydował",
-      "snippet": "Sejm uchwalił projekt, który ograniczy możliwość kontroli stanu konta przez skarbówkę, o ile dana osoba nie ma statusu podejrzanego w postępowaniu. Teraz ustawa trafi na biurko prezydenta Karola Nawrockiego.",
-      "link": "https://biznes.interia.pl/gospodarka/news-fiskus-nie-bedzie-mogl-sprawdzic-twojego-konta-sejm-uchwalil,nId,23575983",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Fiskus nie sprawdzi twojego konta bez statusu podejrzanego. Sejm zdecydował"
-    },
-    {
-      "title": "Rząd będzie tłumaczyć się przed TSUE. KE pozwała Polskę",
-      "snippet": "Polska została pozwana do TSUE przez Komisję Europejską. Sprawa dotyczy dyrektywy Seveso III. \"Komisja uznaje, że działania podjęte przez polskie władze w celu zmiany przepisów krajowych są niewystarczające, w związku z czym kieruje sprawę przeciwko Polsce do Trybunału Sprawiedliwości UE\" - napisano w komunikacie KE.",
-      "link": "https://biznes.interia.pl/polityka/news-polska-pozwana-do-tsue-ke-zarzuca-nam-niewystarczajace-dzial,nId,23576080",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Rząd będzie tłumaczyć się przed TSUE. KE pozwała Polskę"
-    },
-    {
-      "title": "Zapytali Donalda Tuska o GTA VI. Odpowiedź premiera rozczarowuje",
-      "snippet": "Premiera Grand Theft Auto VI stała się globalnym wydarzeniem, które wykracza poza branżę rozrywkową. Zyski ze sprzedaży szacuje się w miliardach, a o głośnej produkcji studia Rockstar mówią wszyscy. Na fali popularności GTA VI pytanie o to, czy zdążył już zagrać w nową grę, zadano Donaldowi Tuskowi. Premier wyjawił jednak, że to \"nie jego bajka\".",
-      "link": "https://biznes.interia.pl/gospodarka/news-zadali-donaldowi-tuskowi-pytanie-o-gta-vi-odpowiedz-moze-roz,nId,23576027",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "Zapytali Donalda Tuska o GTA VI. Odpowiedź premiera rozczarowuje"
-    },
-    {
-      "title": "USA zwiększą eksport ropy i diesla do Europy. Chris Wright potwierdza",
-      "snippet": "- Chcemy być dostawcą energii, w tym do Europy i z całą pewnością będziemy rozwijali eksport w porozumieniu z sojusznikami i przyjaciółmi na kontynencie europejskim - powiedział w Warszawie sekretarz energii Stanów Zjednoczonych Chris Wright.",
-      "link": "https://biznes.interia.pl/energetyka/news-sekretarz-energii-usa-zwiekszymy-eksport-ropy-i-diesla-do-eu,nId,23576046",
-      "source_name": "Interia Biznes",
-      "lang": "pl",
-      "title_pl": "USA zwiększą eksport ropy i diesla do Europy. Chris Wright potwierdza"
-    },
-    {
-      "title": "Donald Tusk publikuje wymowne zdjęcie z Berlina. \"Prawdziwa przyjaźń\"",
-      "snippet": "Donald Tusk opublikował zdjęcie ze spotkania \"koalicji chętnych\" w Berlinie, na którym widać, jak przy stole negocjacyjnym uśmiecha się do prezydenta Ukrainy Wołodymyra Zełenskiego i premiera Wielkiej Brytanii Andy'ego Burnhama. W ten sposób polski premier nawiązał do swojego poprzedniego wpisu, w którym komentował przywitanie Donalda Trumpa i Władimira Putina.",
-      "link": "https://wiadomosci.onet.pl/swiat/donald-tusk-publikuje-wymowne-zdjecie-z-berlina-prawdziwa-przyjazn/bhhqnx9",
+      "title": "Włoskie lotnisko zamknięte z powodu potencjalnego zagrożenia. To pierwsza taka sytuacja w kraju",
+      "snippet": "Lotnisko w Genui przerwało w czwartek wieczorem swoją działalność z powodu dronów wykrytych przez kontrolerów lotów. Władze portu lotniczego uruchomiły procedury bezpieczeństwa. To pierwsza taka sytuacja we Włoszech.",
+      "link": "https://wiadomosci.onet.pl/swiat/wloskie-lotnisko-zamkniete-z-powodu-dronow-pierwsza-taka-sytuacja/4zp3wcw",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Donald Tusk publikuje wymowne zdjęcie z Berlina. \"Prawdziwa przyjaźń\""
+      "title_pl": "Włoskie lotnisko zamknięte z powodu potencjalnego zagrożenia. To pierwsza taka sytuacja w kraju"
     },
     {
-      "title": "Mistrzowie Polski i świata bez punktów. System nie widzi sukcesów młodych sportowców",
-      "snippet": "Zdobywają mistrzostwa Polski, medale mistrzostw Europy i świata. Na treningach spędzają znaczną część tygodnia, a w weekendy jeżdżą na zawody. Kiedy jednak nadchodzi rekrutacja do szkoły średniej, ich największe sportowe sukcesy mogą nie być warte ani jednego dodatkowego punktu. Wszystko dlatego, że medale zdobywają jako zawodnicy klubów, a nie reprezentanci szkół. — Mamy mistrzynie Polski i świata. Oficjalnego uznania wyników ich pracy i mistrzowskiego poziomu nie ma — mówi Łukasz Bilski, trene",
-      "link": "https://wiadomosci.onet.pl/lublin/mistrzowie-polski-i-swiata-bez-punktow-system-nie-widzi-sukcesow-mlodych-sportowcow/x6e6d0p",
+      "title": "Nocny alert RCB dla mieszkańców dwóch województw. Powodem ataki w Ukrainie",
+      "snippet": "\"Uwaga! Rosyjski atak powietrzny na Ukrainie. Sytuacja jest monitorowana. Podniesiono gotowość Systemu Obrony Powietrznej RP. Oczekuj dalszych komunikatów\" — przekazało Rządowe Centrum Bezpieczeństwa.",
+      "link": "https://wiadomosci.onet.pl/swiat/rcb-wyslalo-nocne-alerty-dotycza-rosyjskiego-ataku-w-ukrainie/cr2kyc4",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Mistrzowie Polski i świata bez punktów. System nie widzi sukcesów młodych sportowców"
+      "title_pl": "Nocny alert RCB dla mieszkańców dwóch województw. Powodem ataki w Ukrainie"
     },
     {
-      "title": "Wtargnęli na scenę i obsypali komisarza UE popiołem. \"To prochy ludzi, których zabijecie\"",
-      "snippet": "Aktywiści z grupy zrzeszającej osoby, które wygrały walkę z rakiem, obrzucili komisarza UE ds. zdrowia substancją przypominającą popiół w proteście przeciwko nowym europejskim przepisom łagodzącym ograniczenia dotyczące stosowania pestycydów.",
-      "link": "https://wiadomosci.onet.pl/politico/wtargneli-na-scene-i-obsypali-komisarza-ue-popiolem-to-prochy-ludzi-ktorych-zabijecie/h6bfc2l",
+      "title": "Prezydent Ukrainy usłyszał wypowiedź wysłannika Trumpa. \"Nie wiem, czy rozumiemy to tak samo\"",
+      "snippet": "Jared Kushner oświadczył, że Stanom Zjednoczonym udało się przekonać stronę rosyjską do przyjęcia gwarancji bezpieczeństwa dla Ukrainy opartych na artykule 5. NATO. Wołodymyr Zełenski stwierdził jednak, że ma wątpliwości dotyczące tego, jak administracja Donalda Trumpa rozumie takie gwarancje.",
+      "link": "https://wiadomosci.onet.pl/swiat/jared-kushner-mowi-o-gwarancjach-dla-ukrainy-zelenski-ma-watpliwosci/mjglm48",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Wtargnęli na scenę i obsypali komisarza UE popiołem. \"To prochy ludzi, których zabijecie\""
+      "title_pl": "Prezydent Ukrainy usłyszał wypowiedź wysłannika Trumpa. \"Nie wiem, czy rozumiemy to tak samo\""
     },
     {
-      "title": "\"To nie jest Jałta z jego snów\". Minister Sybiha kpi z Władimira Putina",
-      "snippet": "Rosja praktycznie straciła swój most do prawdziwej Jałty na okupowanym Krymie — skomentował w czwartek ukraiński minister spraw zagranicznych Andrij Sybiha.",
-      "link": "https://wiadomosci.onet.pl/swiat/szef-msz-ukrainy-komentuje-rozmowy-shenzhen-kpi-z-wladimira-putina/34t1b71",
+      "title": "Święczkowski odpowiada na apel Żurka. \"Nie mam zamiaru\"",
+      "snippet": "Waldemar Żurek w serwisie X zwrócił się do Bogdana Święczkowskiego z \"zaproszeniem\" do prokuratury. Święczkowski na antenie TV Republika przekazał, że może stawić się w charakterze świadka, ale nie oskarżonego, chyba że zgodę na jego ściganie wyda \"legalne zgromadzenie TK\".",
+      "link": "https://wiadomosci.onet.pl/swiat/swieczkowski-odpowiada-zurkowi-nie-przelamalbym-sie-z-nim-oplatkiem/kjcw2jj",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "\"To nie jest Jałta z jego snów\". Minister Sybiha kpi z Władimira Putina"
+      "title_pl": "Święczkowski odpowiada na apel Żurka. \"Nie mam zamiaru\""
     },
     {
-      "title": "Może zostać pierwszą kobietą na czele ONZ. Ma pomysł, jak przywrócić organizacji realny wpływ na sytuację na świecie",
-      "snippet": "Lana Nusseibeh, kandydatka Zjednoczonych Emiratów Arabskich na stanowisko sekretarza generalnego ONZ, proponuje utworzyć nowy organ, który wzmocni rolę ONZ jako mediatora w konfliktach zbrojnych i sytuacjach kryzysowych. Mówi też, jakie działania podjęłaby, by zakończyć wojnę w Sudanie i na Bliskim Wschodzie.",
-      "link": "https://wiadomosci.onet.pl/swiat/moze-zostac-pierwsza-kobieta-na-czele-onz-chce-zreformowac-orgnaizacje/trs7f1r",
+      "title": "Groźny wypadek na Dolnym Śląsku. Pociąg osobowy uderzył w lawetę",
+      "snippet": "Skład PKP Intercity wjechał w lawetę samochodową na przejeździe na Dolnym Śląsku — donosi Interia. Ruch kolejowy w regionie został tymczasowo wstrzymany.",
+      "link": "https://wiadomosci.onet.pl/wroclaw/wypadek-na-przejezdzie-kolejowym-na-dolnym-slasku-pociag-uderzyl-lawete/s33h0nb",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Może zostać pierwszą kobietą na czele ONZ. Ma pomysł, jak przywrócić organizacji realny wpływ na sytuację na świecie"
+      "title_pl": "Groźny wypadek na Dolnym Śląsku. Pociąg osobowy uderzył w lawetę"
     },
     {
-      "title": "\"Most Krymski to obiekt cywilny\". Putin obnażony przez nagranie własnego wojska",
-      "snippet": "— Nie wykorzystujemy mostu do transportu sprzętu wojskowego ani żadnych materiałów o przeznaczeniu wojskowym — powiedział Władimir Putin, odnosząc się do ataków Ukrainy na most Krymski. Jego słowa szybko zweryfikowało nagranie rosyjskiego ministerstwa obrony, na które zwrócił uwagę wiceminister Marcin Bosacki.",
-      "link": "https://wiadomosci.onet.pl/swiat/most-krymski-to-obiekt-cywilny-putin-obnazony-przez-nagranie-wlasnego-wojska/v22jd2z",
+      "title": "Amerykańscy żołnierze odznaczeni przez MON. Wspierali Polaków w ochronie dostaw dla Ukrainy",
+      "snippet": "Ich nazwiska i wizerunki są chronione, a szczegóły prowadzonych działań pozostają niejawne. W Waszyngtonie Ministerstwo Obrony Narodowej uhonorowało kilku amerykańskich żołnierzy za udział we wspólnych operacjach w cyberprzestrzeni. Jak ustalił Onet, część wyróżnionych wspierała polskie Wojska Obrony Cyberprzestrzeni podczas działań mających przeciwdziałać zagrożeniom cybernetycznym po wybuchu wojny w Ukrainie.",
+      "link": "https://wiadomosci.onet.pl/kraj/amerykanscy-zolnierze-odznaczeni-przez-mon-wspierali-polakow-w-ochronie-dostaw-dla/ntt5wld",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "\"Most Krymski to obiekt cywilny\". Putin obnażony przez nagranie własnego wojska"
+      "title_pl": "Amerykańscy żołnierze odznaczeni przez MON. Wspierali Polaków w ochronie dostaw dla Ukrainy"
     },
     {
-      "title": "Sprawy Święczkowskiego i Sochańskiego odroczone. Sędziowie zgłosili urlopy",
-      "snippet": "Sędziowie, wspierający Bogdana Święczkowskiego i Bartłomieja Sochańskiego, zgłosili urlopy, przez co Sąd Dyscyplinarny TK musiał odroczyć zaplanowane na czwartek i piątek posiedzenia — ustaliła stacja RMF FM.",
-      "link": "https://wiadomosci.onet.pl/kraj/sprawy-swieczkowskiego-i-sochanskiego-odroczone-sedziowie-zglosili-urlopy/v7hkpt7",
+      "title": "Decyzja Pekinu może zaboleć Moskwę. Ograniczenia wprowadzono w dniu wizyty Putina",
+      "snippet": "Władze Chin wprowadzają ograniczenia dotyczące eksportu części do dronów, które są dostarczane do Rosji i wykorzystywane do montażu oraz obsługi Szahidów.",
+      "link": "https://wiadomosci.onet.pl/swiat/w-dniu-wizyty-putina-chiny-wprowadzily-ograniczenia-eksportu-czesci-do-dronow-szahid/db4q8jp",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Sprawy Święczkowskiego i Sochańskiego odroczone. Sędziowie zgłosili urlopy"
+      "title_pl": "Decyzja Pekinu może zaboleć Moskwę. Ograniczenia wprowadzono w dniu wizyty Putina"
     },
     {
-      "title": "\"Slawa UPA\" na pomnikach w Poznaniu na zlecenie Rosji. Ukraińcy usłyszeli zarzuty",
-      "snippet": "Dwaj obywatele Ukrainy usłyszeli zarzuty w związku z umieszczeniem napisów o treści \"Slawa UPA\" na trzech poznańskich pomnikach — poinformowała prokuratura.",
-      "link": "https://wiadomosci.onet.pl/kraj/ukraincy-pisali-na-pomnikach-w-poznaniu-na-zlecenie-rosji-uslyszeli-zarzuty/cxyspw7",
+      "title": "Awantura między resortem a Pałacem. Rzecznicy pokłócili się w sieci",
+      "snippet": "Rzecznik prezydenta Karola Nawrockiego i rzecznik ministra-koordynatora służb specjalnych Tomasza Siemoniaka starli się ostro w mediach społecznościowych.",
+      "link": "https://wiadomosci.onet.pl/kraj/awantura-miedzy-rafalem-leskiewiczem-a-jackiem-dobrzynskim-sekret-wladzy/08mpy3d",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "\"Slawa UPA\" na pomnikach w Poznaniu na zlecenie Rosji. Ukraińcy usłyszeli zarzuty"
+      "title_pl": "Awantura między resortem a Pałacem. Rzecznicy pokłócili się w sieci"
     },
     {
-      "title": "„Pryzmat”. 9 relacji z obrazami Stefana Gierowskiego",
-      "snippet": "„Pryzmat” zestawia twórczość Stefana Gierowskiego ze współczesnymi praktykami artystycznymi, ukazując nowe możliwości dialogu. Dziewięcioro zaproszonych artystek i artystów podejmuje spotkanie z malarstwem wybitnego abstrakcjonisty, tworząc dziewięć autonomicznych sytuacji wystawienniczych.",
-      "link": "https://wiadomosci.onet.pl/kraj/pryzmat-9-relacji-z-obrazami-stefana-gierowskiego/s01d9jk",
+      "title": "\"Świat zbudowany po II wojnie światowej się kończy\". Znani eksperci o planach Chin. \"Największe czystki od 50 lat\"",
+      "snippet": "Szczyt z udziałem Xi Jinpinga, Władimira Putina i Donalda Trumpa to pierwsze, historyczne spotkanie w trójstronnym formacie. W rozmowie z Onetem znani sinolodzy zwracają uwagę na cel Chin. — Chcą nowego, innego porządku świata. Xi Jinping wyrasta w tym układzie na najsilniejszego przywódcę — mówi prof. Marcin Jacoby. — Dla Chin NATO jest przeżytkiem zimnej wojny i powinno zostać rozwiązane. Jednocześnie Xi Jinping umacnia władzę i przeprowadza najgłębsze, od śmierci Mao Zedonga 50 lat temu, czys",
+      "link": "https://wiadomosci.onet.pl/swiat/swiat-zbudowany-po-ii-wojnie-swiatowej-sie-konczy-znani-eksperci-o-planach-chin/epdp515",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "„Pryzmat”. 9 relacji z obrazami Stefana Gierowskiego"
+      "title_pl": "\"Świat zbudowany po II wojnie światowej się kończy\". Znani eksperci o planach Chin. \"Największe czystki od 50 lat\""
     },
     {
-      "title": "Szwecja nie chce dopuścić rosyjskich narciarzy do udziału w mistrzostwach świata w 2027 r. \"Nie byłoby słuszne\"",
-      "snippet": "Szwecja wydała wytyczne prawne, które pozwalają funkcjonariuszom straży granicznej na odmowę wjazdu lub deportację rosyjskich zawodników — nawet tych startujących jako sportowcy neutralni. Chodzi o Mistrzostwa Świata w Narciarstwie Klasycznym, które odbędą się w 2027 r. w Falun.",
-      "link": "https://wiadomosci.onet.pl/politico/szwecja-nie-chce-dopuscic-narciarzy-z-rosji-do-udzialu-w-mistrzostwach-swiata/7mghksw",
-      "source_name": "Onet",
+      "title": "Ukraina w NATO i UE. Zełenski przedstawił plan w Berlinie",
+      "snippet": "Prezydent Wołodymyr Zełenski oświadczył podczas spotkania \"koalicji\" chętnych w Berlinie, że najlepszą gwarancją bezpieczeństwa dla Ukrainy jest członkostwo w NATO, a fundamentem tych gwarancji pełna integracja z Unią Europejską.",
+      "link": "https://wiadomosci.wp.pl/ukraina-w-nato-i-ue-zelenski-przedstawil-plan-w-berlinie-7352914393241600a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Szwecja nie chce dopuścić rosyjskich narciarzy do udziału w mistrzostwach świata w 2027 r. \"Nie byłoby słuszne\""
+      "title_pl": "Ukraina w NATO i UE. Zełenski przedstawił plan w Berlinie"
     },
     {
-      "title": "Zdrowie bez granic. Jak Polacy podchodzą do możliwości leczenia za granicą?",
-      "snippet": "68% badanych zdecydowałoby się na podjęcie leczenia za granicą, gdyby w razie poważnej choroby dostępna była tam skuteczniejsza metoda terapii.",
-      "link": "https://wiadomosci.onet.pl/kraj/leczenie-za-granica-kusi-polakow-pko-zycie-przelamuje-bariery/cct3n63",
-      "source_name": "Onet",
+      "title": "\"Gospodarczy karzełek\". Przydacz ostro ocenił Rosję",
+      "snippet": "- Rosja jest dzisiaj gospodarczym karzełkiem i staje się coraz bardziej zależna od Chin - ocenił szef Biura Polityki Międzynarodowej KPRP Marcin Przydacz. Na antenie Polsat News prezydencki minister odniósł się do szczytu APEC w Shenzhen i zapowiedział dalsze starania o stałą obecność wojsk USA w Polsce.",
+      "link": "https://wiadomosci.wp.pl/gospodarczy-karzelek-przydacz-ostro-ocenil-rosje-7352906171873312a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Zdrowie bez granic. Jak Polacy podchodzą do możliwości leczenia za granicą?"
+      "title_pl": "\"Gospodarczy karzełek\". Przydacz ostro ocenił Rosję"
     },
     {
-      "title": "Dyplomatyczny spektakl bez przełomu. Xi i Putin mogą być największymi beneficjentami szczytu",
-      "snippet": "Po historycznym szczycie Donald Trump, Xi Jinping i Władimir Putin nie wygłosili żadnych oświadczeń ani nie odpowiadali na pytania, pozostawiając niewiele wskazówek co do tego, czy spotkanie przyniosło jakikolwiek postęp w kwestiach, które ich dzielą. Obserwatorzy nie mają jednak wątpliwości: sam fakt wspólnych rozmów wzmocni międzynarodową pozycję przywódców Chin i Rosji.",
-      "link": "https://wiadomosci.onet.pl/politico/dyplomatyczny-spektakl-bez-przelomu-xi-i-putin-moga-byc-najwiekszymi-beneficjentami/ycny4cn",
-      "source_name": "Onet",
+      "title": "Rosja atakuje Ukrainę. Alerty w dwóch województwach",
+      "snippet": "W nocy z czwartku na piątek Rządowe Centrum Bezpieczeństwa wysłało alerty do mieszkańców województw lubelskiego i podkarpackiego. Powodem jest atak Rosji. Rakiety wystrzelone przez armię Putina pojawiły się nocą nad tymi regionami zachodniej Ukrainy, które bezpośrednio graniczą z Polską. Zareagowało też polskie wojsko.",
+      "link": "https://wiadomosci.wp.pl/rosja-atakuje-ukraine-alerty-w-dwoch-wojewodztwach-7352894604019744a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Dyplomatyczny spektakl bez przełomu. Xi i Putin mogą być największymi beneficjentami szczytu"
+      "title_pl": "Rosja atakuje Ukrainę. Alerty w dwóch województwach"
     },
     {
-      "title": "Radosław Sikorski w Budapeszcie: doceniamy uznanie Rosji za zagrożenie",
-      "snippet": "Polskę i Węgry łączy znacznie więcej, niż wspólna historia i tradycja. Łączą nas interesy, bezpieczeństwo i odpowiedzialność za przyszłość naszego regionu — powiedział Radosław Sikorski, który przebywa z jednodniową wizytą w Budapeszcie.",
-      "link": "https://wiadomosci.onet.pl/swiat/radoslaw-sikorski-na-wegrzech-rzeczywiscie-dlugo-nas-tu-nie-bylo/zp901bn",
-      "source_name": "Onet",
+      "title": "Już tłumaczą Trumpa po deklaracji z Chin? \"To nie ustępstwo USA\"",
+      "snippet": "Czwartkowa deklaracja z Shenzhen o zwiększeniu światowej podaży paliw nie oznacza ustępstw Waszyngtonu wobec Moskwy i Pekinu - twierdzi amerykański minister energii Chris Wright. Polityk podkreślił, że nie oznacza to znoszenia sankcji, a Rosja i Chiny pozostają przeciwnikami USA.",
+      "link": "https://wiadomosci.wp.pl/juz-tlumacza-trumpa-po-deklaracji-z-chin-to-nie-ustepstwo-usa-7352882652022816a",
+      "source_name": "WP Wiadomości",
       "lang": "pl",
-      "title_pl": "Radosław Sikorski w Budapeszcie: doceniamy uznanie Rosji za zagrożenie"
+      "title_pl": "Już tłumaczą Trumpa po deklaracji z Chin? \"To nie ustępstwo USA\""
+    },
+    {
+      "title": "Spytali Trumpa o Tuska. Odpowiedział jednym zdaniem",
+      "snippet": "- Cóż, nic na to nie poradzę - powiedział w czwartek prezydent Donald Trump, pytany o wpis Donalda Tuska. Kilka godzin wcześniej polski premier skrytykował słowa prezydenta USA, w których nazwał on Putina \"przyjacielem\".",
+      "link": "https://wiadomosci.wp.pl/spytali-trumpa-o-tuska-odpowiedzial-jednym-zdaniem-7352872381622304a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Spytali Trumpa o Tuska. Odpowiedział jednym zdaniem"
+    },
+    {
+      "title": "Wymowna reakcja. Zełenski rozbawił dziennikarzy po pytaniu o Trumpa",
+      "snippet": "Wołodymyr Zełenski został spytany przez dziennikarkę, czy Donald Trump kiedykolwiek nazwał go \"przyjacielem\". Prezydent Ukrainy na chwilę zamilkł, a po pauzie udzielił odpowiedzi, która rozbawiła zebranych. Rozbawiony całą sytuacją był też sam Zełenski.",
+      "link": "https://wiadomosci.wp.pl/wymowna-reakcja-zelenski-rozbawil-dziennikarzy-po-pytaniu-o-trumpa-7352860339611680a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Wymowna reakcja. Zełenski rozbawił dziennikarzy po pytaniu o Trumpa"
+    },
+    {
+      "title": "ChatGPT pomagał w planowaniu strzelaniny. Zginęło osiem osób",
+      "snippet": "Osiemnastoletnia sprawczyni strzelaniny w kanadyjskim Tumbler Ridge wykorzystywała ChatGPT do planowania masakry i konstruowania broni – informuje magazyn \"Mother Jones\". Stworzony przez OpenAI bot instruował nastolatkę, jak omijać zabezpieczenia, a na jej prośbę generował obrazy tortur. W ataku zginęło osiem osób.",
+      "link": "https://wiadomosci.wp.pl/chatgpt-pomagal-w-planowaniu-strzelaniny-zginelo-osiem-osob-7352849852024832a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "ChatGPT pomagał w planowaniu strzelaniny. Zginęło osiem osób"
+    },
+    {
+      "title": "\"Nie jestem pewien\". Zełenski zdezorientowany po rozmowach z USA",
+      "snippet": "Prezydent Ukrainy Wołodymyr Zełenski przyznał, że nie ma pewności, czy Kijów i Waszyngton tak samo rozumieją \"gwarancje bezpieczeństwa na wzór artykułu 5. NATO\". Ukraiński przywódca oczekuje jasnych deklaracji w sprawie fizycznej obecności amerykańskich żołnierzy w Ukrainie oraz konkretnych reakcji w razie ponownego ataku ze strony Rosji.",
+      "link": "https://wiadomosci.wp.pl/nie-jestem-pewien-zelenski-zdezorientowany-po-rozmowach-z-usa-7352840417093632a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "\"Nie jestem pewien\". Zełenski zdezorientowany po rozmowach z USA"
+    },
+    {
+      "title": "Mąż ją odurzał i oferował mężczyznom. Zapadł wyrok w Wielkiej Brytanii",
+      "snippet": "Brytyjski sąd skazał czterech mężczyzn za przestępstwa seksualne wobec kobiety, która przez kilkanaście lat była odurzana i potajemnie oferowana w internecie przez własnego męża. To pierwszy tego typu proces w Wielkiej Brytanii. Główny sprawca, były lokalny polityk, już wcześniej przyznał się do winy. Wyroki zapadną w grudniu.",
+      "link": "https://wiadomosci.wp.pl/maz-ja-odurzal-i-oferowal-mezczyznom-zapadl-wyrok-w-wielkiej-brytanii-7352829047502848a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Mąż ją odurzał i oferował mężczyznom. Zapadł wyrok w Wielkiej Brytanii"
+    },
+    {
+      "title": "Antyukraińskie nastroje w Polsce. \"Kombinujemy, jak pomagać, żeby nie było widać\"",
+      "snippet": "W najnowszym odcinku \"Teraz WP\" Zbigniew Parafianowicz rozmawiał z dziennikarką, reportażystką i autorką książek, Arletą Bojke. Podczas rozmowy prowadzący poruszył wątek dotyczący przekazywania pomocy Ukrainie w obliczu panujących w Polsce nastrojów, presji wyborczej oraz wpływu rosyjskiej inżynierii społecznej. – Kombinujemy, jak pomagać, żeby tego nie było widać – zauważyła Bojke, charakteryzując działania polskiego rządu.",
+      "link": "https://wiadomosci.wp.pl/antyukrainskie-nastroje-w-polsce-kombinujemy-jak-pomagac-zeby-nie-bylo-widac-7352816272390176v",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Antyukraińskie nastroje w Polsce. \"Kombinujemy, jak pomagać, żeby nie było widać\""
+    },
+    {
+      "title": "Sezon na reset. Tak PiS koryguje przekaz pod wpływem Pałacu",
+      "snippet": "Od całkowitego sprzeciwu wobec \"resetu\" dotyczącego Trybunału Konstytucyjnego, przez stwierdzenie, iż \"reset\" - owszem, ale po wyborach, aż po deklarację, że \"reset\" jest możliwy, ale tylko pod warunkiem powołania \"prezydenckiego rządu technicznego\". PiS zmienia podejście do kwestii zmian w TK. A Jarosławowi Kaczyńskiemu nie jest w smak to, co robi w tej sprawie Pałac Prezydencki, angażując się w rozmowy z koalicjantami.",
+      "link": "https://wiadomosci.wp.pl/sezon-na-reset-tak-pis-koryguje-przekaz-pod-wplywem-palacu-7352720973264928a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Sezon na reset. Tak PiS koryguje przekaz pod wpływem Pałacu"
+    },
+    {
+      "title": "NBP zablokował kasę dla TK. Będzie ruch rządu",
+      "snippet": "Minister finansów i gospodarki Andrzej Domański poinformował w czwartek, że trwają prace nad przywróceniem możliwości realizowania płatności z rachunków Trybunału Konstytucyjnego. Szef resortu zaapelował też o szybkie podpisanie przez prezydenta Karola Nawrockiego zmian w podatku PIT.",
+      "link": "https://www.money.pl/finanse/zablokowane-konta-tk-minister-finansow-powiedzial-co-robi-rzad-7352745833580576a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "NBP zablokował kasę dla TK. Będzie ruch rządu"
+    },
+    {
+      "title": "Prognoza: do 2034 r. AI może dodać Polsce nawet 12 proc. PKB. Pod trzema warunkami",
+      "snippet": "Sztuczna inteligencja może do 2034 r. podnieść polski PKB nawet 12 proc. ponad ścieżkę bazową – wynika z modelu Banku Światowego. Dziś z AI korzysta jednak zaledwie 8 proc. polskich firm, a nasz kraj wchodzi w okres najszybszego w Europie starzenia się społeczeństwa.",
+      "link": "https://www.money.pl/pieniadze/ai-moze-dodac-polsce-nawet-12-proc-pkb-pod-trzema-warunkami-7352741862058016a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Prognoza: do 2034 r. AI może dodać Polsce nawet 12 proc. PKB. Pod trzema warunkami"
+    },
+    {
+      "title": "Wall Street czeka na debiut potęgi AI. Fala optymizmu przetacza się przez giełdę",
+      "snippet": "Inwestorzy czekają na pierwsze notowania Anthropic na Nasdaq. Zanim akcje twórcy Claude'a trafią do obrotu, rekordowa oferta podbiła cały sektor technologiczny. Nasdaq rośnie o blisko 2 proc., a kursy producentów chipów i dostawców chmury idą w górę o kilka procent.",
+      "link": "https://www.money.pl/gielda/wall-street-czeka-na-debiut-potegi-ai-fala-optymizmu-przetacza-sie-przez-gielde-7352730347390976a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Wall Street czeka na debiut potęgi AI. Fala optymizmu przetacza się przez giełdę"
+    },
+    {
+      "title": "Benzyna i diesel taniej. Takie ceny zobaczą kierowcy w piątek",
+      "snippet": "W piątek 20 listopada maksymalna cena dla benzyny Pb95 wynosić będzie 5,93 zł/l, dla benzyny Pb98 6,58 zł/l, a dla oleju napędowego 7,45 zł/l - poinformował minister energii w obwieszczeniu ws. maksymalnych cen paliw.",
+      "link": "https://www.money.pl/gospodarka/wszystkie-rodzaje-paliw-taniej-takie-ceny-zobacza-kierowcy-w-piatek-7352700954114048a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Benzyna i diesel taniej. Takie ceny zobaczą kierowcy w piątek"
+    },
+    {
+      "title": "Jak przygotować portfel na przyszłość? Jest data, którą zna każdy z nas",
+      "snippet": "Kryzysy gospodarcze i giełdowe tąpnięcia trudno przewidzieć. Emeryturę przeciwnie. Większość z nas wie, że kiedyś przestanie pracować zawodowo. Znacznie mniej osób zdaje sobie sprawę, jak dużą zmianą dla domowego budżetu może być przejście z pensji na świadczenie emerytalne. Dochody spadną, a wydatki wcale nie znikną. Dlatego warto myśleć o tym nie kilka lat przed emeryturą, ale od początku kariery zawodowej.",
+      "link": "https://www.money.pl/emerytury/jak-przygotowac-portfel-na-przyszlosc-jest-data-ktora-zna-kazdy-z-nas-7350265163405344a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Jak przygotować portfel na przyszłość? Jest data, którą zna każdy z nas"
+    },
+    {
+      "title": "Cztery tysiące milionerów w jednej firmie? Rekordowy debiut giganta",
+      "snippet": "– Debiut Anthropic na Nasdaq może uczynić tysiące pracowników milionerami – relacjonuje z Nowego Jorku Łukasz Kijek, dyrektor programowy serwisów premium w Wirtualnej Polsce oraz redaktor naczelny serwisu money.pl. Twórca modelu Claude, wyceniony na 1,5 bln dol., pobił rekord giełdowej oferty SpaceX.",
+      "link": "https://www.money.pl/gielda/4-tysiace-milionerow-w-jednej-firmie-rekordowy-debiut-giganta-7352655792363520v.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Cztery tysiące milionerów w jednej firmie? Rekordowy debiut giganta"
+    },
+    {
+      "title": "Emerytury do 5 tys. zł bez PIT. Co dalej z wielką obietnicą? Rząd wskazuje na miliardy",
+      "snippet": "Emerytury do 5 tys. zł bez PIT miały być jedną z ważnych obietnic wyborczych Koalicji Obywatelskiej. Po trzech latach seniorzy nadal czekają na zmianę. Rząd tłumaczy, że jej realizacja kosztowałaby budżet i samorządy 58,6 mld zł rocznie – podaje \"Dziennik Gazeta Prawna\".",
+      "link": "https://www.money.pl/emerytury/emerytury-bez-pit-mialy-byc-obietnica-rzad-wskazuje-na-miliardy-7352655435851808a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Emerytury do 5 tys. zł bez PIT. Co dalej z wielką obietnicą? Rząd wskazuje na miliardy"
+    },
+    {
+      "title": "Sklepy w grudniu staną na cztery dni. Ministra zabiera głos",
+      "snippet": "Cztery dni z rzędu bez zakupów w dużych sklepach. Minister pracy Agnieszka Dziemianowicz-Bąk potwierdziła, że 27 grudnia 2026 r. nie będzie niedzielą handlową. Przed świętami sklepy będą otwarte w trzy niedziele, ale po Wigilii czeka klientów przerwa aż do poniedziałku.",
+      "link": "https://www.money.pl/finanse/sklepy-stana-na-4-dni-ministra-nie-pozostawia-zludzen-7352624913483808a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Sklepy w grudniu staną na cztery dni. Ministra zabiera głos"
+    },
+    {
+      "title": "Trump rozważa kolejne uderzenia na Iran. Oto co się dzieje z cenami ropy",
+      "snippet": "Ropa nieznacznie drożeje, a na rynki wraca niepokój o Bliski Wschód. Donald Trump rozważa kolejne ataki na Iran, a Izrael naciska na wspólną operację. W tle są ataki na statki w cieśninie Ormuz i rosnące zapasy surowca w USA.",
+      "link": "https://www.money.pl/gospodarka/trump-rozwaza-kolejne-uderzenia-na-iran-oto-co-sie-dzieje-z-cenami-ropy-7352621396002848a.html",
+      "source_name": "Money.pl",
+      "lang": "pl",
+      "title_pl": "Trump rozważa kolejne uderzenia na Iran. Oto co się dzieje z cenami ropy"
+    },
+    {
+      "title": "Trump połączył się z Berlinem. Tusk mówi o ostrożnym optymizmie",
+      "snippet": "Prezydent USA Donald Trump powiedział w czwartek telewizji NBC News, że zgadza się z prezydentem Ukrainy Wołodymyrem Zełenskim, że USA nie powinny podejmować decyzji w sprawie Ukrainy za jej plecami. Szczyt z przywódcami Rosji i Chin ocenił na 12 w 10-stopniowej skali.",
+      "link": "https://www.bankier.pl/wiadomosc/Trump-polaczyl-sie-z-Berlinem-Tusk-mowi-o-ostroznym-optymizmie-9231986.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "Trump połączył się z Berlinem. Tusk mówi o ostrożnym optymizmie"
+    },
+    {
+      "title": "KGHM gasi pożar na kursie, PZU liderem spadków w WIG20. Wszyscy patrzą na debiut Anthropica i premierę GTA 6",
+      "snippet": "Czwartkowy handel na GPW przebiegał pod znakiem próby odbicia indeksu krajowych blue chipów skutecznie spacyfikowanej w drugiej połowie dnia. W WIG20 ciekawe wyglądało przeciągnie liny między rosnącym po wynikach kursem KGHM, a taniejącymi akcjami PZU, także reagującymi na sprawozdanie finansowe. Ponadto znów wyróżniły się notowania CD Projektu i Orlenu. Podczas gdy krajowe indeksy zakończyły dzień pod kreską, globalni inwestorzy wstrzymali oddech przed historycznym debiutem twórców modelu Claud",
+      "link": "https://www.bankier.pl/wiadomosc/KGHM-gasi-pozar-na-kursie-PZU-liderem-spadkow-w-WIG20-Wszyscy-patrza-na-debiut-Anthropica-i-premiere-GTA-6-9231932.html",
+      "source_name": "Bankier.pl",
+      "lang": "pl",
+      "title_pl": "KGHM gasi pożar na kursie, PZU liderem spadków w WIG20. Wszyscy patrzą na debiut Anthropica i premierę GTA 6"
     }
   ]
 }
