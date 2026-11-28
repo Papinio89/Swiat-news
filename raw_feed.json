@@ -1,16 +1,64 @@
 {
-  "date": "27 listopada 2026",
-  "time": "15:19",
-  "timestamp": "2026-11-27_15:19",
-  "count": 75,
+  "date": "28 listopada 2026",
+  "time": "07:45",
+  "timestamp": "2026-11-28_07:45",
+  "count": 76,
   "items": [
     {
-      "title": "\"Szkodnik\", \"wstyd\" vs. \"świetna decyzja\". Fala komentarzy po wecie prezydenta",
+      "title": "Kaczyński grzmi po oświadczeniu prokuratury. \"Tylko ktoś całkowicie naiwny\"",
+      "snippet": "Donald Tusk i jego ludzie wybierają jedną, mocno wątpliwą opinię i w dodatku wybiórczo ją przedstawiają... pod tezę, że to nie Putin, a polscy piloci są odpowiedzialni za katastrofę - napisał Jarosław Kaczyński. Prezes PiS odniósł się do piątkowego oświadczenia Prokuratury Krajowej, która przekazała, że przyczyną katastrofy smoleńskiej była seria błędów podczas podejścia do lądowania.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/kaczynski-grzmi-po-oswiadczeniu-prokuratury-tylko-ktos-calkowicie-naiwny/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Kaczyński grzmi po oświadczeniu prokuratury. \"Tylko ktoś całkowicie naiwny\""
+    },
+    {
+      "title": "Ustalenia ws. afery Pegasusa. Były komendant główny policji z zarzutami",
+      "snippet": "Były komendant główny policji Jarosław S. usłyszał kolejne zarzuty w śledztwie dotyczącym afery Pegasus - informuje Prokuratura Krajowa. Chodzi o dopuszczenie do stosowania przez policję oprogramowania szpiegowskiego. Podejrzany nie przyznał się do zarzucanych mu czynów.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/ustalenia-ws-afery-pegasusa-byly-komendant-glowny-policji-z-zarzutami/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Ustalenia ws. afery Pegasusa. Były komendant główny policji z zarzutami"
+    },
+    {
+      "title": "Tragedia w Zachodniopomorskiem. Nie żyje 14-miesięczne dziecko",
+      "snippet": "14-miesięczne dziecko wypadło z okna jednego z budynków mieszkalnych w Cedyni (woj. zachodniopomorskie). W chwili tragedii było pod opieką rodziców. Na miejscu lądował śmigłowiec Lotniczego Pogotowia Ratunkowego. Niestety, życia malca nie udało się uratować.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/tragedia-w-zachodniopomorskiem-nie-zyje-14-miesieczne-dziecko/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Tragedia w Zachodniopomorskiem. Nie żyje 14-miesięczne dziecko"
+    },
+    {
+      "title": "Wojciech Konończuk w \"Najważniejszych pytaniach\" [OGLĄDAJ]",
+      "snippet": "Wojciech Konończuk, dyrektor Ośrodka Studiów Wschodnich, gości w piątkowym wydaniu Najważniejszych pytań. Rozmowę prowadzą Przemysław Szubartowicz i Karolina Olejak. Transmisja od godz. 18:00 w Polsat News, polsatnews.pl i Interii.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/wojciech-kononczuk-w-najwazniejszych-pytaniach-ogladaj-od-g-18/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Wojciech Konończuk w \"Najważniejszych pytaniach\" [OGLĄDAJ]"
+    },
+    {
+      "title": "Samopodpalenie w centrum Warszawy. Prokuratura wszczęła śledztwo",
+      "snippet": "Prokuratura wszczęła postępowanie w sprawie samopodpalenia 22-latka między Ministerstwem Kultury, a Pałacem Prezydenckim w Warszawie. Jak przekazał rzecznik Prokuratury Okręgowej w Warszawie prok. Piotr Antoni Skiba, śledztwo jest prowadzone w kierunku doprowadzenia do targnięcia się obywatela Ukrainy na własne życie.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/samopodpalenie-w-centrum-warszawy-prokuratura-wszczela-sledztwo/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Samopodpalenie w centrum Warszawy. Prokuratura wszczęła śledztwo"
+    },
+    {
+      "title": "Resort reaguje na weto. Wskazano na profilaktykę i zdrowie Polaków",
+      "snippet": "MZ krytykuje weto prezydenta Karola Nawrockiego ws. nowelizacji opłaty cukrowej. Według resortu brak podwyżek oznacza stratę 1,3 mld zł rocznie dla NFZ, które miały wspierać profilaktykę i leczenie pacjentów. Prezydent argumentował, że przepisy uderzyłyby w konsumentów, producentów i małe sklepy.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/resort-reaguje-na-weto-wskazano-na-profilaktyke-i-leczenie-polakow/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Resort reaguje na weto. Wskazano na profilaktykę i zdrowie Polaków"
+    },
+    {
+      "title": "\"Szkodnik\", \"wstyd\" vs \"świetna decyzja\". Fala komentarzy po wecie prezydenta",
       "snippet": "Weto Karola Nawrockiego wobec reformy podatkowej wywołało falę komentarzy wśród polityków. Przedstawiciele rządu zarzucają prezydentowi pozbawienie milionów Polaków możliwości płacenia niższych podatków. Z kolei politycy PiS i Konfederacji chwalą jego decyzję, wskazując na planowane podwyżki dla przedsiębiorców.",
       "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/szkodnik-wstyd-vs-swietna-decyzja-fala-komentarzy-po-wecie-prezydenta/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "\"Szkodnik\", \"wstyd\" vs. \"świetna decyzja\". Fala komentarzy po wecie prezydenta"
+      "title_pl": "\"Szkodnik\", \"wstyd\" vs \"świetna decyzja\". Fala komentarzy po wecie prezydenta"
     },
     {
       "title": "Prezydent podjął decyzje w sprawie ustaw. Dwa weta",
@@ -29,68 +77,44 @@
       "title_pl": "Macierewicz zabrał głos ws. katastrofy smoleńskiej. Sceny w Prokuraturze Krajowej"
     },
     {
-      "title": "Tragedia w Tychach. Strażnicy miejscy znaleźli ciała trzech mężczyzn",
-      "snippet": "Ciała trzech mężczyzn znaleziono w nocy z czwartku na piątek w pustostanie w Tychach (woj. śląskie). Na zwłoki natrafili strażnicy miejscy podczas kontroli miejsca przebywania osób w kryzysie bezdomności. W pomieszczeniu znajdowało się prowizoryczne palenisko. Okoliczności tragedii wyjaśnia Prokuratura Rejonowa w Tychach.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/tragedia-w-tychach-straznicy-miejscy-znalezli-ciala-trzech-mezczyzn/",
+      "title": "Słowa Wołodymyra Zełenskiego wywołały oburzenie. Doszło do pilnej rozmowy",
+      "snippet": "Premier Włoch Giorgia Meloni i prezydent Ukrainy Wołodymyr Zełenski wyjaśnili sobie kwestię operacji ukraińskich sił przeciwko rosyjskim okrętom w Libii. Wcześniej Włochy ogłosiły, że wbrew zapewnieniom Kijowa o koordynacji działań z partnerami nie zostały poinformowane o operacji.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/premier-meloni-i-prezydent-zelenski-wyjasnili-sobie-kwestie-ukrainskiej-operacji-w-libii/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Tragedia w Tychach. Strażnicy miejscy znaleźli ciała trzech mężczyzn"
+      "title_pl": "Słowa Wołodymyra Zełenskiego wywołały oburzenie. Doszło do pilnej rozmowy"
     },
     {
-      "title": "Tusk podał warunek ws. Kierwińskiego. \"Gdyby tak się miało okazać\"",
-      "snippet": "- Gdyby tak było, albo gdyby miało się tak okazać (...), że ktoś wpłaca na kampanię tego czy innego polityka Koalicji Obywatelskiej, niezależnie od jego pozycji, (...) to oczywiście ja kończę współpracę - powiedział w piątek Donald Tusk. W ten sposób odniósł się do doniesień na temat wpłat na kampanię wyborczą Marcina Kierwińskiego.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/tusk-podal-warunek-ws-kierwinskiego-gdyby-tak-sie-mialo-okazac/",
+      "title": "Rosja grozi kolejnemu sąsiadowi.  \"Prowokowanie otwartego konfliktu\"",
+      "snippet": "Władze Łotwy próbują sprowokować otwarty konflikt z Rosją - stwierdziła rzeczniczka rosyjskiej dyplomacji Marija Zacharowa, cytowana przez TASS. Jednocześnie zapowiedziała, że w takich okolicznościach Moskwa nie może ignorować tych gróźb i zastrzega sobie prawo do podjęcia zdecydowanych działań odwetowych o charakterze politycznym i dyplomatycznym.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/rosja-grozi-kolejnemu-sasiadowi-prowokowanie-otwartego-konfliktu/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Tusk podał warunek ws. Kierwińskiego. \"Gdyby tak się miało okazać\""
+      "title_pl": "Rosja grozi kolejnemu sąsiadowi.  \"Prowokowanie otwartego konfliktu\""
     },
     {
-      "title": "Biegli o przyczynach katastrofy smoleńskiej. Prokuratura ujawnia szczegóły",
-      "snippet": "Przyczyną katastrofy smoleńskiej była seria błędów podczas podejścia do lądowania - wynika z opinii międzynarodowego zespołu biegłych, której ustalenia przedstawiła Prokuratura Krajowa. Samolot zniżał się zbyt szybko, a załoga błędnie oceniła jego wysokość. Mimo braku widoczności pasa startowego i ostrzeżeń przed zderzeniem z ziemią piloci zbyt późno podjęli decyzję o przerwaniu lądowania.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/biegli-o-przyczynach-katastrofy-smolenskiej-prokuratura-ujawnia-szczegoly/",
+      "title": "Niemcy zdecydowali ws. polskich ofiar. \"Jesteśmy głęboko zasmuceni\"",
+      "snippet": "Bundestag odrzucił w budżecie na 2027 r. środki na zadośćuczynienia dla żyjących w Polsce ofiar niemieckiej okupacji. - Jesteśmy głęboko zasmuceni i rozczarowani - skomentował przewodniczący zarządu Fundacji Polsko-Niemieckie Pojednanie Jakub Deka. Szacuje się, że wsparcia humanitarnego potrzebuje obecnie od 30 tys. do 50 tysięcy osób w podeszłym wieku.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/niemcy-zdecydowali-ws-polskich-ofiar-jestesmy-gleboko-zasmuceni/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Biegli o przyczynach katastrofy smoleńskiej. Prokuratura ujawnia szczegóły"
+      "title_pl": "Niemcy zdecydowali ws. polskich ofiar. \"Jesteśmy głęboko zasmuceni\""
     },
     {
-      "title": "Premier zdecydował ws. stopni alarmowych. Pilny komunikat RCB",
-      "snippet": "Donald Tusk zdecydował o przedłużeniu okresu obowiązywania stopni alarmowych. Do końca lutego na terytorium całego kraju będzie obowiązywać drugi stopień alarmowy. W tym samym czasie obowiązywać będzie drugi stopień wobec polskiej infrastruktury energetycznej mieszczącej się poza granicami naszego kraju. Trzeci stopień alarmowy będzie obejmować linie kolejowe.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/premier-zdecydowal-ws-stopni-alarmowych-pilny-komunikat-rcb/",
+      "title": "Ekspert nie ma dobrych wieści dla Ukrainy. \"Absolutnie nie do przyjęcia\"",
+      "snippet": "Propozycja oddania przez Ukrainę Donbasu za gwarancje bezpieczeństwa na wzór art. 5 NATO jest nie do przyjęcia dla strony rosyjskiej - ocenił Wojciech Konończuk, dyrektor Ośrodka Studiów Wschodnich. - Moim zdaniem nie ma realnie takich propozycji na stole - komentował w programie Najważniejsze pytania.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/ekspert-nie-ma-dobrych-wiesci-dla-ukrainy-absolutnie-nie-do-przyjecia/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Premier zdecydował ws. stopni alarmowych. Pilny komunikat RCB"
+      "title_pl": "Ekspert nie ma dobrych wieści dla Ukrainy. \"Absolutnie nie do przyjęcia\""
     },
     {
-      "title": "Tak rząd utrzymałby władzę. Nowy sondaż pokazuje zwycięstwo wspólnej listy",
-      "snippet": "Gdyby koalicja rządowa utworzyłaby jedną listę w wyborach parlamentarnych 2027, mogłaby liczyć na 41,6 proc. poparcia - wynika z sondażu IBRIS dla Wirtualnej Polski. Według szacunków szeroka lista zdobyłaby też 241 miejsc w Sejmie, co zapewniłoby samodzielną większość. Drugie miejsce w badaniu zajął PiS z wynikiem 15,4 proc., a trzecie Konfederacja z poparciem 14,5 proc.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/tak-rzad-utrzymalby-wladze-nowy-sondaz-pokazuje-zwyciestwo-wspolnej-listy/",
+      "title": "Tajne siły Władimira Putina. Rosja traci elitarnych żołnierzy",
+      "snippet": "Co najmniej 87 żołnierzy elitarnej formacji Sił Operacji Specjalnych Federacji Rosyjskiej miało ponieść śmierć od czasu rozpoczęcia pełnoskalowej inwazji na Ukrainę - wynika z ustaleń rosyjskich niezależnych mediów. Według wcześniejszych doniesień część tej jednostki weszła w skład nowej struktury wywiadu wojskowego, która ma zajmować się sabotażem w krajach NATO.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/tajne-sily-wladimira-putina-rosja-traci-elitarnych-zolnierzy/",
       "source_name": "Polsat News",
       "lang": "pl",
-      "title_pl": "Tak rząd utrzymałby władzę. Nowy sondaż pokazuje zwycięstwo wspólnej listy"
-    },
-    {
-      "title": "\"Szkodzi Polakom\". Minister uderzył w prezydenta, w tle głośna ustawa",
-      "snippet": "- Może pan prezydent dołoży się ze swoich? - pytał w piątkowym Graffiti Miłosz Motyka, mówiąc o kwestii ustawy zmieniającej progi podatkowe oraz zasady opodatkowania podatkiem CIT czy ryczałtem. Wcześniej Donald Tusk ostrzegał, że Karol Nawrocki może ją zawetować. - Pan redaktor mnie pyta, czy ja mam się zgadzać na to, że pan prezydent szkodzi Polakom. Nie, nie zgadzam się na to - mówił Motyka.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/szkodzi-polakom-minister-uderzyl-w-prezydenta-w-tle-glosna-ustawa/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Szkodzi Polakom\". Minister uderzył w prezydenta, w tle głośna ustawa"
-    },
-    {
-      "title": "Ukraińcy w Polsce, nowe dane NBP. \"Problem w przestrzeni publicznej\"",
-      "snippet": "Większość Ukraińców nie doświadcza w Polsce negatywnych zachowań na tle narodowościowym, a ich integracja ze społeczeństwem postępuje - wynika z najnowszego badania Narodowego Banku Polskiego. Coraz więcej z nich dobrze zna język polski, stabilizuje swoją sytuację zawodową i buduje relacje z Polakami. Badacze nie dostrzegają również oznak masowych wyjazdów z kraju.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/ukraincy-w-polsce-nowe-dane-nbp-problem-w-przestrzeni-publicznej/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Ukraińcy w Polsce, nowe dane NBP. \"Problem w przestrzeni publicznej\""
-    },
-    {
-      "title": "Obowiązkowe badania dla myśliwych? Wyniki sondażu, miażdżąca przewaga",
-      "snippet": "Zdecydowana większość Polaków (94,2 proc.) popiera wprowadzenie obowiązkowych badań lekarskich i psychologicznych dla myśliwych - wynika z sondażu IBRIS dla Rzeczpospolitej. Mimo ogromnego poparcia społecznego, Sejm wciąż nie wprowadził takich zmian. Obecnie w rządzie jest jedna partia, która jest im przeciwna.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/obowiazkowe-badania-dla-mysliwych-wyniki-sondazu-miazdzaca-przewaga/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Obowiązkowe badania dla myśliwych? Wyniki sondażu, miażdżąca przewaga"
+      "title_pl": "Tajne siły Władimira Putina. Rosja traci elitarnych żołnierzy"
     },
     {
       "title": "Rosja buduje własnego Starlinka. \"Zagrożenie dla całego świata\"",
@@ -109,6 +133,14 @@
       "title_pl": "\"Mógłbym powiedzieć: 'Nie lubię cię'\". Donald Trump wyjaśnił ws. Putina"
     },
     {
+      "title": "Wesele na 400 tys. osób. Niewiarygodna ceremonia w Indiach",
+      "snippet": "Przyjęcie weselne, które przyciągnęło aż 400 tys. gości, zorganizował dla swojej córki indyjski polityk Anant Singh. Ucztę przygotowywały setki kucharzy, natomiast specjalnie na potrzeby uroczystości przygotowano sześć lądowisk dla helikopterów. Jest jednak kilka problemów. Huczne przyjęcie odbyło się w najbiedniejszym stanie Indii, Biharze. Uwagę zwracają też poważne oskarżenia wobec gospodarza.",
+      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/wesele-na-400-tys-osob-niewiarygodna-impreza-w-indiach-jest-jedno-ale/",
+      "source_name": "Polsat News",
+      "lang": "pl",
+      "title_pl": "Wesele na 400 tys. osób. Niewiarygodna ceremonia w Indiach"
+    },
+    {
       "title": "NATO poderwało myśliwce i drona. Incydent na granicy Sojuszu",
       "snippet": "Niezidentyfikowany dron naruszył w piątek nad ranem przestrzeń powietrzną Łotwy - przekazały tamtejsze siły zbrojne. W związku z tym NATO poderwało myśliwce i drona przechwytującego. Łotewskie wojsko ostrzegło, że do czasu zakończenia wojny w Ukrainie takie incydenty mogą się powtarzać.",
       "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/nato-poderwalo-mysliwce-i-drona-incydent-na-granicy-sojuszu/",
@@ -125,169 +157,153 @@
       "title_pl": "Historyczny sukces w japońskim zoo. Pierwszy taki przypadek na świecie"
     },
     {
-      "title": "\"Bardzo dziwne\". Zełenski zareagował na zdjęcie Trumpa. Nie krył zdziwienia",
-      "snippet": "- Szkoda, że skupili się na Bliskim Wschodzie i tam kierują większe siły - mówił o postawie Stanów Zjednoczonych prezydent Ukrainy Wołodymyr Zełenski. W wywiadzie dla BBC zarzucił Amerykanom, że podczas rozmów pokojowych nie wywierają wystarczająco silnej presji na Rosję. Za bardzo dziwny uznał fakt, że Donald Trump opublikował zdjęcie z Władimirem Putinem i nazwał go swoim przyjacielem.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-27/bardzo-dziwne-zelenski-zareagowal-na-zdjecie-trumpa-nie-kryl-zdziwienia/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"Bardzo dziwne\". Zełenski zareagował na zdjęcie Trumpa. Nie krył zdziwienia"
-    },
-    {
-      "title": "\"To już wojna\". Litewski analityk wprost o konflikcie NATO z Rosją",
-      "snippet": "- Już za późno, by mówić tylko o wojnie hybrydowej. To już wojna. Wojna terrorystyczna - stwierdził litewski analityk polityczny Vytautas Bruveris, wskazując na działania Rosji podejmowane wobec krajów NATO. Ekspert stwierdził, że konflikt ukraińsko-rosyjski przenosi się już na nowe terytoria.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/to-juz-wojna-litewski-analityk-wprost-o-konflikcie-nato-z-rosja/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "\"To już wojna\". Litewski analityk wprost o konflikcie NATO z Rosją"
-    },
-    {
-      "title": "Zełenski ostrzega. Rosja przygotowuje kolejny zmasowany atak",
-      "snippet": "Rosja kończy przygotowania do kolejnego zmasowanego ataku w Ukrainie - poinformował Wołodymyr Zełenski. Powołując się na dane wywiadowcze wskazał, że uderzenie wymierzone będzie w infrastrukturę energetyczną i obiekty niezbędne do funkcjonowania ludności cywilnej.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/zelenski-ostrzega-rosja-przygotowuje-kolejny-zmasowany-atak/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Zełenski ostrzega. Rosja przygotowuje kolejny zmasowany atak"
-    },
-    {
-      "title": "Karol Nawrocki w Chile. Padły ważne zapowiedzi",
-      "snippet": "Polska chce być w regionie Ameryki Łacińskiej obecna nie tylko publicznie, ale przede wszystkim gospodarczo i inwestycyjnie - powiedział prezydent Karol Nawrocki po spotkaniu z prezydentem Chile Jose Antonio Kastem. Prezydenci rozmawiali m.in. o współpracy w górnictwie, geologii, astronomii i wojnie w Ukrainie.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/karol-nawrocki-w-chile-padly-wazne-zapowiedzi/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Karol Nawrocki w Chile. Padły ważne zapowiedzi"
-    },
-    {
-      "title": "Gerard Depardieu ponownie stanie przed sądem. Grozi mu nawet 20 lat więzienia",
-      "snippet": "Gerard Depardieu ponownie stanie przed francuskim wymiarem sprawiedliwości. Sąd apelacyjny zdecydował, że słynny aktor odpowie przed sądem za zarzucane mu czyny z sierpnia 2018 roku. Jak podaje Reuters, grozi mu od 15 do 20 lat więzienia. Obrona zapowiada, że rozważy zaskarżenie decyzji.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/gerard-depardieu-ponownie-stanie-przed-sadem-grozi-mu-nawet-20-lat-wiezienia/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Gerard Depardieu ponownie stanie przed sądem. Grozi mu nawet 20 lat więzienia"
-    },
-    {
-      "title": "Wojna w Ukrainie. Korea Północna ogranicza wsparcie wojskowe dla Rosji",
-      "snippet": "Korea Północna wstrzymuje wsparcie militarne dla Rosji - donosi ukraiński wywiad wojskowy (HUR). Ograniczenia obejmują zakaz lotów rosyjskich samolotów nad północnokoreańską strefą powietrzną. Wstrzymane mają zostać również dostawy rakiet i amunicji. Nieoficjalnie wiadomo, że władze totalitarnego państwa poczuły się urażone zachowaniem jednego z polityków Kremla.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/wojna-w-ukrainie-korea-polnocna-ogranicza-wsparcie-wojskowe-dla-rosji/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Wojna w Ukrainie. Korea Północna ogranicza wsparcie wojskowe dla Rosji"
-    },
-    {
-      "title": "Żywioł uderzył w USA. Setki odwołanych lotów, pół miliona odbiorców bez prądu",
-      "snippet": "Potężny sztorm zakłócił obchody Święta Dziękczynienia w Stanach Zjednoczonych. Setki lotów zostały odwołane lub opóźnione, a ponad pół miliona odbiorców zostało pozbawionych prądu. W Nowym Jorku podjęto bezprecedensową decyzję o przełożeniu słynnej parady Macys. Władze ostrzegają przed silnym wiatrem, powodziami i niebezpiecznymi warunkami na drogach.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/zywiol-uderzyl-w-usa-setki-odwolanych-lotow-pol-miliona-odbiorcow-bez-pradu/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Żywioł uderzył w USA. Setki odwołanych lotów, pół miliona odbiorców bez prądu"
-    },
-    {
-      "title": "Iran zaatakował w Kuwejcie. Nie żyje dwóch Włochów",
-      "snippet": "Dwóch obywateli Włoch poniosło śmierć w wyniku irańskiego ataku w Kuwejcie. Lokalne ministerstwo obrony przekazało, że obaj zostali trafieni odłamkami pochodzącymi z zestrzelonych dronów. Zginęli na skutek odniesionych ran.",
-      "link": "https://www.polsatnews.pl/wiadomosc/2026-11-26/iran-zaatakowal-w-kuwejcie-nie-zyje-dwoch-wlochow/",
-      "source_name": "Polsat News",
-      "lang": "pl",
-      "title_pl": "Iran zaatakował w Kuwejcie. Nie żyje dwóch Włochów"
-    },
-    {
-      "title": "Krakowska policja dostanie pieniądze na kamizelki kuloodporne",
-      "snippet": "Prezydent Krakowa zdecydował o przekazaniu policji środków na kamizelki kuloodporne. Prosił go o to komendant miejski.",
-      "link": "https://tvn24.pl/krakow/krakow-policja-dostanie-pieniadze-na-kamizelki-kuloodporne-od-miasta-st9361068?source=rss",
+      "title": "Samolot \"zahaczył o skrzydło\" drugiego na lotnisku w Waszyngtonie",
+      "snippet": "Dwa samoloty w piątek zderzyły się skrzydłami na lotnisku w Waszyngtonie. Pasażer jednego z nich opisał zajście w rozmowie z brytyjskim nadawcą publicznym.",
+      "link": "https://tvn24.pl/swiat/usa-samolot-zahaczyl-o-skrzydlo-drugiego-na-lotnisku-ronalda-reagana-w-waszyngtonie-st9362083?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Krakowska policja dostanie pieniądze na kamizelki kuloodporne"
+      "title_pl": "Samolot \"zahaczył o skrzydło\" drugiego na lotnisku w Waszyngtonie"
     },
     {
-      "title": "Wyż przegna chmury. Nocami może być nawet -15 stopni",
-      "snippet": "Rządy nad pogodą w Polsce obejmie wyż Manuel, który na jakiś czas przegna chmury. Nadchodzące dni w większości kraju zapowiadają się słonecznie. Spodziewany jest jednak mróz, który szczególnie dotkliwy będzie nocami.",
-      "link": "https://tvn24.pl/tvnmeteo/prognoza/prognoza-pogody-na-weekend-wyz-przegna-chmury-nocami-moze-byc-15-stopni-st9360977?source=rss",
+      "title": "Włochy mogą zmienić prawo łowieckie. Kontrowersyjny projekt ustawy \"strzelaj do wszystkiego\"",
+      "snippet": "Nowe przepisy we Włoszech określają myśliwych jako zarządców dzikiej przyrody. Gminy mogłyby swobodniej poszerzać tereny łowieckie. Proponowane jest też rozszerzenie listy gatunków objętych polowaniami. Ustawa jest efektem działań lobbingowych grup myśliwskich i rolniczych przed przyszłorocznymi wyborami parlamentarnymi. Reforma przygotowana przez konserwatywny rząd Georgii Meloni wywołuje niepokój obrońców praw zwierząt. Materiał \"Faktów o świecie\".",
+      "link": "https://tvn24.pl/swiat/wlochy-izba-deputowanych-rozwaza-liberalizacje-prawa-lowieckiego-st9362076?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Wyż przegna chmury. Nocami może być nawet -15 stopni"
+      "title_pl": "Włochy mogą zmienić prawo łowieckie. Kontrowersyjny projekt ustawy \"strzelaj do wszystkiego\""
     },
     {
-      "title": "Dzwony kościelne biją co kwadrans przez całą dobę",
-      "snippet": "Mieszkańcy La Garnache we Francji opowiedzieli się za tym, aby kościelne dzwony nadal biły co kwadrans przez całą dobę. Część lokalnej społeczności narzekała, że przez ich dźwięk nie może w nocy spać. W głosowaniu jednak ci drudzy stanowili mniejszość.",
-      "link": "https://tvn24.pl/swiat/francja-dzwony-koscielne-w-la-garnache-bija-co-kwadrans-cala-dobe-wiekszosc-mieszkancow-za-utrzymaniem-tradycji-st9361018?source=rss",
+      "title": "Ukraina chce rozejmu na Morzu Czarnym",
+      "snippet": "Ukraina przekazała partnerom propozycje dotyczące warunków rozejmu na Morzu Czarnym i oczekuje na odpowiedź Rosji - oświadczył ukraiński minister spraw zagranicznych Andrij Sybiha. Zaznaczył, że Moskwa za każdym razem wysuwa \"nierealistyczne żądania\".",
+      "link": "https://tvn24.pl/swiat/szef-msz-ukrainy-oczekujemy-odpowiedzi-rosji-na-propozycje-rozejmu-na-morzu-czarnym-st9362032?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Dzwony kościelne biją co kwadrans przez całą dobę"
+      "title_pl": "Ukraina chce rozejmu na Morzu Czarnym"
     },
     {
-      "title": "Śledztwo w sprawie Pegasusa. Zarzut dla byłego komendanta policji Jarosława S.",
-      "snippet": "Prokuratura przedstawiła zarzut byłemu komendantowi głównemu policji Jarosławowi S. w śledztwie dotyczącym stosowania Pegasusa - potwierdził portalowi tvn24.pl rzecznik Prokuratury Krajowej Przemysław Nowak. Śledczy nie zastosowali wobec niego środków zapobiegawczych.",
-      "link": "https://tvn24.pl/polska/zarzuty-dla-bylego-komendanta-policji-jaroslawa-s-w-ramach-sledztwa-w-sprawie-pegasusa-st9361320?source=rss",
+      "title": "\"Rządzi Kierwa\". Ludzie w partii wiedzą, w kogo inwestować",
+      "snippet": "W Koalicji Obywatelskiej mówią o nim, że stał się \"właścicielem partii\", że jest samowładny - a jednak na schedę po Donaldzie Tusku nie ma szans. O co więc chodzi Marcinowi Kierwińskiemu, który zbudował tak potężną strefę wpływów? Jedni mówią: kto rządzi w Warszawie, ma kontrolę nad partią. Inni: Kierwa po prostu zawsze chciał być prezydentem Warszawy.",
+      "link": "https://tvn24.pl/polska/w-koalicji-obywatelskiej-rzadzi-kierwa-ludzie-wiedza-w-kogo-inwestowac-st9361961?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Śledztwo w sprawie Pegasusa. Zarzut dla byłego komendanta policji Jarosława S."
+      "title_pl": "\"Rządzi Kierwa\". Ludzie w partii wiedzą, w kogo inwestować"
     },
     {
-      "title": "Kolejne weto prezydenta. Minister finansów: wstyd",
-      "snippet": "Prezydent ponownie stanął po stronie wielkich koncernów, a nie po stronie Polaków - napisał minister finansów Andrzej Domański po wecie do ustawy o podatkach. - Głupota i krótkowzroczność - skomentował poseł KO Konrad Frysztak w TVN24. Podpis w Toruniu dokonany pod jakimś świstkiem jest ważniejszy - oceniła posłanka Polski 2050 Ewa Schadler. Według ministry edukacji Barbary Nowackiej weto uderzy w nauczycieli.",
-      "link": "https://tvn24.pl/polska/prezydent-zawetowal-ustawe-o-podatkach-komentarze-politykow-st9361020?source=rss",
+      "title": "Wołodymyr Zełenski tłumaczył się z ukraińskiej operacji w Libii. Miał przeprosić Giorgię Meloni",
+      "snippet": "Operacja ukraińskich sił przeciwko rosyjskim okrętom w Libii była tematem rozmów między premier Włoch Giorgią Meloni i prezydentem Ukrainy Wołodymyrem Zełenskim. Wcześniej Włochy ogłosiły, że - wbrew zapewnieniom Kijowa o koordynacji działań z partnerami - nie zostały poinformowane o akcji.",
+      "link": "https://tvn24.pl/swiat/wolodymyr-zelenski-tlumaczyl-sie-z-ukrainskiej-operacji-w-libii-mial-przeprosic-giorgie-meloni-st9362057?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Kolejne weto prezydenta. Minister finansów: wstyd"
+      "title_pl": "Wołodymyr Zełenski tłumaczył się z ukraińskiej operacji w Libii. Miał przeprosić Giorgię Meloni"
     },
     {
-      "title": "Emocjonujący finał i fala komentarzy. Co fenomen \"Hotelu Paradise\" mówi o widzach?",
-      "snippet": "Widzowie zobaczyli rzuconą kulę i złamaną obietnicę. Nie zobaczyli jednak wszystkiego, co przez tygodnie kształtowało emocje i zachowania uczestników. Psychoterapeutka, medioznawczyni i wieloletni reżyser \"Hotelu Paradise\" wyjaśniają, co kryje się za jednym z najgłośniejszych finałów w historii programu.",
-      "link": "https://tvn24.pl/kultura-i-styl/hotel-paradise-decyzja-karoliny-hoppe-i-fenomen-programu-eksperci-wyjasniaja-st9359278?source=rss",
+      "title": "Tu w weekend ma ścisnąć największy mróz. Możliwe są ostrzeżenia IMGW",
+      "snippet": "Instytut Meteorologii i Gospodarki Wodnej opublikował prognozę zagrożeń na weekend. W części kraju ma złapać silny mróz. Sprawdź, gdzie trzeba się przygotować na szczególnie niskie wartości na termometrach.",
+      "link": "https://tvn24.pl/tvnmeteo/prognoza/tu-w-weekend-ma-scisnac-najwiekszy-mroz-mozliwe-sa-ostrzezenia-imgw-st9362006?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Emocjonujący finał i fala komentarzy. Co fenomen \"Hotelu Paradise\" mówi o widzach?"
+      "title_pl": "Tu w weekend ma ścisnąć największy mróz. Możliwe są ostrzeżenia IMGW"
     },
     {
-      "title": "Narkotykowy gang pseudokibiców. Dwie kolejne osoby zatrzymane",
-      "snippet": "Śląscy policjanci zatrzymali dwóch kolejnych mężczyzn, którzy działali w narkotykowym gangu założonym przez pseudokibiców. W całej sprawie, nadzorowanej przez prokuraturę z Sosnowca, zarzuty usłyszało już prawie 50 osób.",
-      "link": "https://tvn24.pl/katowice/slaskie-narkotykowy-gang-pseudokibicow-dwie-kolejne-osoby-zatrzymane-st9361336?source=rss",
+      "title": "Weto Nawrockiego, prokuratura o katastrofie smoleńskiej, śnieżyce na południu Polski",
+      "snippet": "Prezydent Karol Nawrocki zawetował ustawę o podatkach. Prokuratura przedstawiła wnioski w sprawie katastrofy smoleńskiej, a wystąpienie zakłócał poseł PiS Antoni Macierewicz. Południowa Polska zmaga się ze skutkami śnieżyc. Zobacz, co jeszcze warto wiedzieć w sobotę, 28 listopada.",
+      "link": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-dzis-wiedziec-najwazniejsze-informacje-28-listopada-2026-roku-st9362074?source=rss",
       "source_name": "TVN24",
       "lang": "pl",
-      "title_pl": "Narkotykowy gang pseudokibiców. Dwie kolejne osoby zatrzymane"
+      "title_pl": "Weto Nawrockiego, prokuratura o katastrofie smoleńskiej, śnieżyce na południu Polski"
+    },
+    {
+      "title": "Poroniła w szpitalu, do domu wróciła z pojemnikiem. \"Każdy, kto otwierał lodówkę, starał się nie patrzeć\"",
+      "snippet": "Myślałam, że taka sytuacja jest normą - mówi Kamila. Po poronieniu dostała podpisany pojemnik z płodem, bo chciała przeprowadzić badania genetyczne. W takim przypadku wydanie materiału pacjentce jest zgodne z przepisami. Pielęgniarka poradziła, by przewieźć go w torbie na mrożonki z supermarketu. Joanna Tylman zabrała ciało dziecka do domu, choć nie planowała badań. Szpital przyznał później, że złamano procedurę. Obie kobiety mówią o tym samym: o upokorzeniu i pojemniku w domowej lodówce.",
+      "link": "https://tvn24.pl/bialystok/sprawa-joanny-tylman-ze-szpitala-w-suwalkach-po-poronieniu-wrocila-z-pojemnikiem-ze-szczatkami-st9358705?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Poroniła w szpitalu, do domu wróciła z pojemnikiem. \"Każdy, kto otwierał lodówkę, starał się nie patrzeć\""
+    },
+    {
+      "title": "Mateusz Morawiecki z Andrzejem Dudą. Wspólne zdjęcie i krótki komentarz",
+      "snippet": "Były premier, a obecnie lider Rozwoju Plus Mateusz Morawiecki spotkał się z byłym prezydentem Andrzejem Dudą. O czym rozmawiali? Według Morawieckiego o \"polskich sprawach\", ale szczegóły nie są znane.",
+      "link": "https://tvn24.pl/polska/mateusz-morawiecki-z-andrzejem-duda-wspolne-zdjecie-i-krotki-komentarz-st9362024?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Mateusz Morawiecki z Andrzejem Dudą. Wspólne zdjęcie i krótki komentarz"
+    },
+    {
+      "title": "Padła główna wygrana w Eurojackpot. Po raz czwarty z rzędu",
+      "snippet": "W piątkowym losowaniu Eurojackpot padła główna wygrana - po raz czwarty z rzędu - w wysokości 10 milionów euro. W Polsce najwyższe były wygrane trzeciego stopnia. Oto wyniki losowania z 27 listopada 2026 roku.",
+      "link": "https://tvn24.pl/biznes/pieniadze/eurojackpot-wyniki-losowania-z-27-listopada-2026-padla-glowna-wygrana-jakie-liczby-wylosowano-st9362002?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Padła główna wygrana w Eurojackpot. Po raz czwarty z rzędu"
+    },
+    {
+      "title": "Aleksandra Leo: prezydent zabiera najuboższym, a daje najbogatszym",
+      "snippet": "Prezydent Karol Nawrocki zachował się jak Grinch, który psuje święta - zgodzili się w programie \"#BezKitu\" TVN24 posłanka Centrum Aleksandra Leo oraz polityk Nowej Lewicy Sebastian Gajewski. Oboje skrytykowali w ten sposób zawetowanie przez Nawrockiego ustawy podwyższającej progi podatkowe.",
+      "link": "https://tvn24.pl/polska/aleksandra-leo-karol-nawrocki-zabiera-najubozszym-a-daje-najbogatszym-st9361966?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Aleksandra Leo: prezydent zabiera najuboższym, a daje najbogatszym"
+    },
+    {
+      "title": "Próbował przemycić rzadkie żółwie. Na czarnym rynku są warte fortunę",
+      "snippet": "Służby skonfiskowały na holenderskim lotnisku 26 żółwi należących do zagrożonego gatunku. Znaleźli je w bagażu mężczyzny, który podróżował z Meksyku do Hongkongu. Prawdopodobnie miały trafić na czarny rynek w Azji, gdzie osiągają zawrotne kwoty.",
+      "link": "https://tvn24.pl/tvnmeteo/swiat/holandia-probowal-przemycic-rzadkie-zolwie-na-czarnym-rynku-sa-warte-fortune-st9361958?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Próbował przemycić rzadkie żółwie. Na czarnym rynku są warte fortunę"
+    },
+    {
+      "title": "Chcą ogromnej kary dla Apple. Za nadużywanie dominującej pozycji",
+      "snippet": "Chilijski urząd antymonopolowy domaga się nałożenia na Apple 80 milionów dolarów kary w związku z systemem iOS - podał w piątek Reuters.",
+      "link": "https://tvn24.pl/biznes/ze-swiata/apple-i-ios-pod-lupa-regulatora-wniosek-o-80-mln-dolarow-kary-st9361988?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Chcą ogromnej kary dla Apple. Za nadużywanie dominującej pozycji"
+    },
+    {
+      "title": "Antoni Macierewicz na konferencji prokuratury. \"A gdzie był przez wiele lat?\"",
+      "snippet": "Zapominamy cały czas o tym, że Antoni Macierewicz zgromadził w podkomisji dowody, które wprost mówiły, że tam nie doszło do zamachu - powiedział w \"Tak jest\" Piotr Świerczek, reporter \"Czarno na białym\". Skomentował w ten sposób przyjście posła PiS na konferencję prokuratury w sprawie katastrofy smoleńskiej. Przypomniał, że polityk był wielokrotnie zapraszany do studia TVN24.",
+      "link": "https://tvn24.pl/polska/antoni-macierewicz-na-konferencji-prokuratury-w-sprawie-katastrofy-smolenskiej-komentarz-piotra-swierczka-st9361894?source=rss",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Antoni Macierewicz na konferencji prokuratury. \"A gdzie był przez wiele lat?\""
+    },
+    {
+      "title": "\"To często cyrk\". Zarzuty franczyzobiorców i odpowiedzi Żabki",
+      "snippet": "Rozliczenia VAT, zadłużenie, system naliczania opłat oraz zakres kontroli nad prowadzeniem sklepów - takie zastrzeżenia wobec modelu współpracy z Żabką opisują \"Rzeczpospolitej\" obecni i byli franczyzobiorcy. Sieć odpowiada na zarzuty i podkreśla, że prowadzący sklepy są niezależnymi przedsiębiorcami.",
+      "link": "https://tvn24.pl/biznes/z-kraju/spor-franczyzobiorcow-z-zabka-zarzuty-dotycza-vat-zadluzenia-i-rozliczen-spolka-odpowiada-st9361649",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "\"To często cyrk\". Zarzuty franczyzobiorców i odpowiedzi Żabki"
+    },
+    {
+      "title": "Kolejna odsłona sporu o rachunki Trybunału Konstytucyjnego. NBP zwrócił się do prokuratury",
+      "snippet": "Sprawa rachunków Trybunału Konstytucyjnego trafiła do prokuratury. Narodowy Bank Polski zwrócił się o podjęcie działań, które mają doprowadzić do sądowego rozstrzygnięcia, kto może nimi dysponować.",
+      "link": "https://tvn24.pl/biznes/z-kraju/nbp-zwrocil-sie-do-prokuratury-w-sprawie-rachunkow-trybunalu-konstytucyjnego-st9361533",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Kolejna odsłona sporu o rachunki Trybunału Konstytucyjnego. NBP zwrócił się do prokuratury"
+    },
+    {
+      "title": "Hakerzy włamali się do kluczowego systemu sił powietrznych USA. \"Bardzo poważne naruszenie\"",
+      "snippet": "Hakerzy włamali się do Cloud One, głównej platformy chmurowej wykorzystywanej przez siły powietrzne USA - poinformował w piątek Reuters, powołując się na źródła zaznajomione ze sprawą. Cyberatak mógł zagrozić bezpieczeństwu kluczowych danych.",
+      "link": "https://tvn24.pl/biznes/tech/hakerzy-zaatakowali-cloud-one-kluczowy-system-sil-powietrznych-usa-st9361471",
+      "source_name": "TVN24",
+      "lang": "pl",
+      "title_pl": "Hakerzy włamali się do kluczowego systemu sił powietrznych USA. \"Bardzo poważne naruszenie\""
     },
     {
       "title": "Opłata cukrowa po raz drugi zawetowana przez prezydenta",
       "snippet": "Podwyżka stawek opłaty cukrowej ponownie spotkała się z wetem prezydenta. Karol Nawrocki argumentował, że zmiany dotknęłyby nie tylko słodkich napojów gazowanych, lecz także polskich soków.",
-      "link": "https://tvn24.pl/biznes/pieniadze/prezydent-karol-nawrocki-zawetowal-podwyzke-oplaty-cukrowej-st9361308?source=rss",
+      "link": "https://tvn24.pl/biznes/pieniadze/prezydent-karol-nawrocki-zawetowal-podwyzke-oplaty-cukrowej-st9361308",
       "source_name": "TVN24",
       "lang": "pl",
       "title_pl": "Opłata cukrowa po raz drugi zawetowana przez prezydenta"
     },
     {
-      "title": "Wódkę popijał piwem. Akt oskarżenia po wypadku, w którym zginęły trzy młode osoby",
-      "snippet": "Prokuratura skierowała do sądu akt oskarżenia w sprawie tragicznego wypadku w Łomiankach. Śmierć poniosły trzy młode osoby. Ich auto dachowało po zderzeniu z rozpędzonym pojazdem, kierowanym przez Patryka R. Zdaniem śledczych mężczyzna był pod wpływem alkoholu. Prowadził mimo dwóch sądowych zakazów. Grozi mu do 20 lat więzienia.",
-      "link": "https://tvn24.pl/tvnwarszawa/okolice/warszawa-akt-oskarzenia-po-tragicznym-wypadku-w-lomiankach-kierowcy-grozi-do-20-lat-wiezienia-st9360820?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Wódkę popijał piwem. Akt oskarżenia po wypadku, w którym zginęły trzy młode osoby"
-    },
-    {
-      "title": "\"Będziemy tam obserwować istny gejzer\". Za kulisami rozgrywki na prawicy",
-      "snippet": "Będą wybuchy, łagodzenia, kłótnie, miłości - prognozuje jeden z naszych rozmówców. Na prawicy trwa rozgrywka pięciu politycznych ośrodków, które łączy jeden cel. Dzielą - ambicje, interesy i wzajemne urazy. Kto ostatecznie będzie dyktował warunki?",
-      "link": "https://tvn24.pl/polska/rozgrywki-na-prawicy-relacje-na-linii-pis-konfederacja-rozwoj-plus-grzegorz-braun-karol-nawrocki-st9357395?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "\"Będziemy tam obserwować istny gejzer\". Za kulisami rozgrywki na prawicy"
-    },
-    {
-      "title": "Wyprzedzała, zderzyła się z drugim autem. Pięć osób w szpitalu",
-      "snippet": "Pięć osób, w tym dzieci w wieku ośmiu i dziewięciu lat, trafiło do szpitala po zderzeniu dwóch samochodów na obwodnicy Opalenicy (Wielkopolskie).",
-      "link": "https://tvn24.pl/poznan/opalenica-wyprzedzala-i-zderzyla-sie-z-drugim-autem-piec-osob-w-szpitalu-st9361309?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Wyprzedzała, zderzyła się z drugim autem. Pięć osób w szpitalu"
-    },
-    {
-      "title": "Incydent na ulicach Ełku. Mężczyzna miał pistolet",
-      "snippet": "Jeden z mieszkańców Ełku zauważył podejrzanie zachowującego się mężczyznę, który stał pod blokiem z przedmiotem przypominającym broń. Po zgłoszeniu na numer alarmowy na miejsce szybko skierowano policjantów.",
-      "link": "https://tvn24.pl/olsztyn/elk-stal-pod-blokiem-z-pistoletem-w-rece-swiadek-wezwal-policje-st9360975?source=rss",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Incydent na ulicach Ełku. Mężczyzna miał pistolet"
-    },
-    {
       "title": "Kto straci najwięcej na prezydenckim wecie w sprawie PIT. Wyliczenia eksperta",
       "snippet": "Najbardziej tracą pracownicy z dochodem powyżej 120 tysięcy złotych - podkreślił Piotr Juszczyk, ekspert inFakt w komentarzu dla tvn24.pl. Weto prezydenta Karola Nawrockiego oznacza, że planowana obniżka PIT nie wejdzie w życie, a część podatników nie zyska nawet 3,6 tysiąca złotych rocznie. Skutki tej decyzji odczują przede wszystkim pod koniec roku, po przekroczeniu progu podatkowego.",
-      "link": "https://tvn24.pl/biznes/pieniadze/weto-prezydenta-karola-nawrockiego-w-sprawie-progow-podatkowych-ile-nie-zyskaja-pracownicy-w-2027-roku-wyliczenia-st9361251?source=rss",
+      "link": "https://tvn24.pl/biznes/pieniadze/weto-prezydenta-karola-nawrockiego-w-sprawie-progow-podatkowych-ile-nie-zyskaja-pracownicy-w-2027-roku-wyliczenia-st9361251",
       "source_name": "TVN24",
       "lang": "pl",
       "title_pl": "Kto straci najwięcej na prezydenckim wecie w sprawie PIT. Wyliczenia eksperta"
@@ -333,276 +349,268 @@
       "title_pl": "Stopnie alarmowe w Polsce. Premier podpisał nowe zarządzenia"
     },
     {
-      "title": "Jak kupować w Black Friday? Najważniejsze zasady zakupów",
-      "snippet": "Zakupy podczas Black Friday, który w tym roku przypada 27 listopada, wymagają szczególnej ostrożności - ostrzega Urząd Ochrony Konkurencji i Konsumentów. UOKiK zwraca uwagę między innymi na presję wywieraną przez reklamy, stosowanie tak zwanych dark patterns, czyli zwodniczych mechanizmów sprzedażowych, oraz konieczność weryfikowania rzeczywistej wysokości rabatów i danych sprzedawcy.",
-      "link": "https://tvn24.pl/biznes/pieniadze/zakupy-na-black-friday-2026-uokik-ostrzega-przed-falszywymi-promocjami-i-presja-zakupowa-st9360089",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Jak kupować w Black Friday? Najważniejsze zasady zakupów"
-    },
-    {
-      "title": "Nawrocki w Chile. Prezydenci rozmawiali o inwestycjach i wojnie w Ukrainie",
-      "snippet": "Polska chce wzmacniać swoją obecność w Ameryce Łacińskiej, szczególnie w wymiarze gospodarczym oraz inwestycyjnym - podkreślił Karol Nawrocki po rozmowie z Jose Antonio Kastem. Prezydenci Polski i Chile potwierdzili poparcie dla suwerenności i integralności terytorialnej Ukrainy, a także zadeklarowali pogłębianie współpracy gospodarczej i naukowej.",
-      "link": "https://tvn24.pl/biznes/ze-swiata/prezydent-karol-nawrocki-w-chile-rozmowy-o-inwestycjach-kghm-i-wojnie-w-ukrainie-st9359806",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Nawrocki w Chile. Prezydenci rozmawiali o inwestycjach i wojnie w Ukrainie"
-    },
-    {
-      "title": "Rewolucja AI w Polsce. \"Wygrywać trzeba mądrze, a nie siłowo\"",
-      "snippet": "Dyskusja podczas Bielik Summit 2026.",
-      "link": "https://tvn24.pl/biznes/tech/rewolucja-ai-w-polsce-wygrywac-trzeba-madrze-a-nie-silowo-st9359266",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Rewolucja AI w Polsce. \"Wygrywać trzeba mądrze, a nie siłowo\""
-    },
-    {
-      "title": "Odwołali wszystkie loty. Powodem \"krytyczna sytuacja finansowa\"",
-      "snippet": "Z powodu krytycznej sytuacji finansowej norweskie linie lotnicze Norse zawiesiły wszystkie połączenia - ogłosił w czwartek zarząd spółki. Część rejsów odwołano już po odprawieniu pasażerów.",
-      "link": "https://tvn24.pl/biznes/pieniadze/norweskie-linie-lotnicze-norse-zawieszaja-wszystkie-loty-powodem-krytyczna-sytuacja-finansowa-st9359273",
-      "source_name": "TVN24",
-      "lang": "pl",
-      "title_pl": "Odwołali wszystkie loty. Powodem \"krytyczna sytuacja finansowa\""
-    },
-    {
-      "title": "Wielkie zgromadzenie na błoniach Jasnej Góry. Miasto rozstawiło 23 bariery",
-      "snippet": "Betonowe zapory przecięły główne dojścia do Jasnej Góry, a bramy wjazdowe do pobliskich parków zostały zamknięte. Miasto podkreśla, że to działanie prewencyjne przed sobotnią \"Pokutą za Polskę\". Na tym jednak operacja się nie kończy. Te same bariery mają wkrótce chronić uczestników świątecznego jarmarku w centrum Częstochowy.",
-      "link": "https://wydarzenia.interia.pl/religia/news-wzmozone-srodki-ostroznosci-w-czestochowie-wokol-sanktuarium,nId,23580153",
+      "title": "Potężne burze przeszły przez USA. Setki tysięcy ludzi bez prądu",
+      "snippet": "Dzień po Święcie Dziękczynienia, po burzach, które przeszły przez wschodnie wybrzeże Ameryki, odnotowano wciąż 360 tys. przerw w dostawie prądu - poinformował monitorujący awarie energetyczne portal poweroutage.us. Największe problemy odnotowano w Pensylwanii oraz w Missouri. Opóźnionych lub odwołanych było ponad 4 tys. lotów.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-potezne-burze-przeszly-przez-usa-setki-tysiecy-ludzi-bez-pra,nId,23580451",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Wielkie zgromadzenie na błoniach Jasnej Góry. Miasto rozstawiło 23 bariery"
+      "title_pl": "Potężne burze przeszły przez USA. Setki tysięcy ludzi bez prądu"
     },
     {
-      "title": "\"The Guardian\": AI podbiła szachy. A potem wydarzyło się coś niezwykłego",
-      "snippet": "Prawdopodobnie zaczęliście postrzegać sztuczną inteligencję jako zjawisko, które może wpłynąć na wasze życie, mniej więcej w 2023 roku, wraz z debiutem ChataGPT. Szachy natomiast zmagają się z konsekwencjami rozwoju AI już od 1996 roku. I wnioski z tego płynące mogą zaskakiwać.",
-      "link": "https://wydarzenia.interia.pl/interia-blizej-swiata/news-the-guardian-ai-podbila-szachy-a-potem-wydarzylo-sie-cos-nie,nId,23578480",
+      "title": "Pojednanie Rozwój Plus z PiS? Polacy zabrali głos",
+      "snippet": "Niemal 40 proc. Polaków nie wierzy w powrót polityków Rozwoju Plus do PiS przed przyszłorocznymi wyborami parlamentarnymi. Niewielu mniej ankietowanych uważa natomiast, że do takiego powrotu dojdzie - wynika z sondażu SW Research dla Onetu.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-pojednanie-rozwoj-plus-z-pis-polacy-zabrali-glos,nId,23580450",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"The Guardian\": AI podbiła szachy. A potem wydarzyło się coś niezwykłego"
+      "title_pl": "Pojednanie Rozwój Plus z PiS? Polacy zabrali głos"
     },
     {
-      "title": "\"The New York Times\": Jensen Huang, przemocowiec z Doliny Krzemowej",
-      "snippet": "\"Wyrwę wam serca i je zdepczę\". Przywrócony na stanowisko szef Nvidii Jensen Huang lubuje się w publicznym upokarzaniu swoich pracowników. Uważa, że ma to \"niezły potencjał rozrywkowy\". Jego byli i obecni podwładni podwładni przerywają milczenie.",
-      "link": "https://wydarzenia.interia.pl/interia-blizej-swiata/news-the-new-york-times-jensen-huang-przemocowiec-z-doliny-krzemo,nId,23578270",
+      "title": "Morawiecki spotkał się z Dudą. Tajemniczy wpis polityka",
+      "snippet": "Mateusz Morawiecki spotkał się z Andrzejem Dudą. Polityk zamieścił w mediach społecznościowych komentarz i wspólne zdjęcie z byłym prezydentem. \"Porozmawialiśmy o polskich sprawach\" - wskazał.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-morawiecki-spotkal-sie-z-duda-tajemniczy-wpis-polityka,nId,23580447",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"The New York Times\": Jensen Huang, przemocowiec z Doliny Krzemowej"
+      "title_pl": "Morawiecki spotkał się z Dudą. Tajemniczy wpis polityka"
     },
     {
-      "title": "\"The Economist\": Nie żałujcie milenialsów. Właśnie się odkuwają",
-      "snippet": "Według stereotypu milenialsi nie radzą sobie zbyt dobrze. To jednak nieprawda. Coraz częściej osiągają duże sukcesy w biznesie, polityce i kulturze. To oni są właścicielami największych firm AI i obejmują władzę w kolejnych krajach. Oto nadszedł czas milenialsów.",
-      "link": "https://wydarzenia.interia.pl/interia-blizej-swiata/news-the-economist-nie-zalujcie-milenialsow-wlasnie-sobie-odbijaj,nId,23558571",
+      "title": "Atak, którym chwalił się Zełenski. Rosjanie mieli pilnie zawrócić statki",
+      "snippet": "Po tym, jak Ukraińcy zatopili rosyjską korwetę Merkury, Rosjanie zawrócili swoje statki na Morzu Śródziemnym - ustaliła agencja Reutera. Chodzi o niedawny i - jak się okazało - kontrowersyjny atak u wybrzeży Libii. W reakcji na jedno z oświadczeń dotyczące tego wydarzenia Włochy zarzuciły Wołodymyrowi Zełenskiemu kłamstwo.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-atak-ktorym-chwalil-sie-zelenski-rosjanie-mieli-pilnie-zawro,nId,23580446",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "\"The Economist\": Nie żałujcie milenialsów. Właśnie się odkuwają"
+      "title_pl": "Atak, którym chwalił się Zełenski. Rosjanie mieli pilnie zawrócić statki"
     },
     {
-      "title": "Tusk zareagował na doniesienia w sprawie Kierwińskiego. \"Nie mam powodu\"",
-      "snippet": "- Nie mam powodu, żeby stracić zaufanie do Marcina Kierwińskiego - powiedział Donald Tusk. Premier odniósł się w ten sposób do sprawy finansowania kampanii szefa MSWiA. Jak dodał, gdyby potwierdziły się zarzuty o powiązaniu wpłat na kampanię \"tego czy innego polityka\" KO z pracą w spółkach skarbu państwa, to zakończyłby współpracę. Ponadto zapowiedział, że sprawa zostanie jeszcze raz przeanalizowana.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-tusk-zareagowal-na-doniesienia-w-sprawie-kierwinskiego-nie-m,nId,23580117",
+      "title": "Armia Chin ćwiczy desant. Drażnią wyspę, ekspert zwraca uwagę na szczegół",
+      "snippet": "Chińskie wojsko przeprowadza kolejne manewry wojskowe w okolicach Tajwanu. Ćwiczenia z udziałem wojsk desantowych zorganizowano w prowincji Fujian. Jak poinformowano, w trakcie działań testowana jest m.in. nowa metoda lądowania wojsk na wybrzeżu wyspy.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-chinska-armia-cwiczy-desant-draznia-wyspe-ekspert-zwraca-uwa,nId,23580440",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Tusk zareagował na doniesienia w sprawie Kierwińskiego. \"Nie mam powodu\""
+      "title_pl": "Armia Chin ćwiczy desant. Drażnią wyspę, ekspert zwraca uwagę na szczegół"
     },
     {
-      "title": "Komentarze po konferencji PK ws. Smoleńska. \"Kpina z rozumu\"",
-      "snippet": "\"Kpina z rozumu\", \"rosyjskie wpływy\", \"duża manipulacja\" - pisali w mediach społecznościowych politycy związani z Prawem i Sprawiedliwością po ogłoszeniu przez Prokuraturę Krajową przyczyn katastrofy smoleńskiej. \"Czekam na rozliczenie Macierewicza i reszty\" - skomentowała z kolei Barbara Nowacka",
-      "link": "https://wydarzenia.interia.pl/kraj/news-komentarze-po-konferencji-pk-ws-smolenska-kpina-z-rozumu-cze,nId,23580070",
+      "title": "Rekordowy budżet, pieniędzy dla polskich ofiar brak. Poruszenie w Niemczech",
+      "snippet": "Rekordowy budżet Niemiec, ale bez pieniędzy dla polskich ofiar niemieckiej okupacji. Bundestag uchwalił plan wydatków na 2027 rok. Choć część polityków i dziennikarzy apelowała o uwzględnienie w nim środków na \"gest humanitarny\" wobec Polski, taka decyzja nie zapadła. Pojawiają się pytania, co w obecnej sytuacji zrobi polski rząd.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-rekordowy-budzet-ale-bez-pieniedzy-dla-polskich-ofiar-porusz,nId,23580441",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Komentarze po konferencji PK ws. Smoleńska. \"Kpina z rozumu\""
+      "title_pl": "Rekordowy budżet, pieniędzy dla polskich ofiar brak. Poruszenie w Niemczech"
     },
     {
-      "title": "Opinia biegłych po katastrofie. Jacek Świat: Spójrzmy, czego tam nie ma",
-      "snippet": "Prokuratura zaprezentowała opinię biegłych, która rzuca nowe światło na katastrofę smoleńską. - Najciekawsze jest to, czego w tych ustaleniach nie ma - mówi Interii Jacek Świat, wdowiec po Aleksandrze Natalli-Świat. - Prawdy chyba nie doczekam - dodaje.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-ustalenia-bieglych-o-katastrofie-smolenskiej-jacek-swiat-spo,nId,23580102",
+      "title": "Rosja pozbawiona paliwa do niszczycielskich rakiet. Pomogła \"Czarna Iskra\"",
+      "snippet": "Ukraińska armia we współpracy z rosyjskim ruchem rebelianckim \"Czarna Iskra\" przeprowadziła atak na zakłady kauczuku syntetycznego w obwodzie tulskim. Jak informuje Sztab Generalny ZSU, wybuchy doprowadziły do poważnych uszkodzeń i ograniczenia dostaw paliwa rakietowego m.in. używanego w pociskach balistycznych Iskander. To właśnie one spadają na ukraińskie miasta.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-rosja-pozbawiona-paliwa-do-niszczycielskich-rakiet-pomogla-c,nId,23580417",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Opinia biegłych po katastrofie. Jacek Świat: Spójrzmy, czego tam nie ma"
+      "title_pl": "Rosja pozbawiona paliwa do niszczycielskich rakiet. Pomogła \"Czarna Iskra\""
     },
     {
-      "title": "Prokurator pokazał symulację katastrofy. Mamy nagranie",
-      "snippet": "Jako absolutnie kluczową okoliczność katastrofy smoleńskiej biegli ocenili kontynuowanie zniżania się poniżej minimalnej wysokości, pomimo braku warunków do bezpiecznego lądowania - podkreślił rzecznik Prokuratury Krajowej Przemysław Nowak. Podczas konferencji pokazał on również nagranie przedstawiające symulację ostatnich chwil przed katastrofą.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-prokurator-pokazal-symulacje-katastrofy-mamy-nagranie,nId,23580088",
+      "title": "Śledztwo ws. Pegasusa. Jest zarzut dla byłego komendanta głównego policji",
+      "snippet": "Były komendant główny policji Jarosław Sz. usłyszał zarzut niedopełnienia obowiązków w śledztwie dotyczącym wykorzystania systemu Pegasus. Prokuratura twierdzi, że jego decyzje działały na szkodę interesu publicznego. Sz. nie przyznał się do zarzucanych mu czynów.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-sledztwo-ws-pegasusa-jest-zarzut-dla-bylego-komendanta-glown,nId,23580424",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Prokurator pokazał symulację katastrofy. Mamy nagranie"
+      "title_pl": "Śledztwo ws. Pegasusa. Jest zarzut dla byłego komendanta głównego policji"
     },
     {
-      "title": "Kto wszedł do kokpitu? Biegli wykluczają dwa nazwiska",
-      "snippet": "Biegli ustalili tożsamość jednego z pasażerów, który trzykrotnie wchodził do kokpitu. Nie znaleźli dowodów obecności w kokpicie ani prezydenta Lecha Kaczyńskiego, ani gen. Andrzeja Błasika - poinformowała Prokuratura Krajowa.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-kto-wszedl-do-kokpitu-biegli-wykluczaja-dwa-nazwiska,nId,23580091",
+      "title": "Nastolatek rzucił się na matkę, zadał kilka ciosów. Dramat na Dolnym Śląsku",
+      "snippet": "14-latek z Twardogóry (woj. dolnośląskie) zaatakował nożem swoją matkę, zadając jej trzy ciosy. Kobieta jest przytomna, trafiła do szpitala - przekazała Interii wrocławska Prokuratura Okręgowa. Chłopiec został zatrzymany przez policję - z uwagi na jego wiek o jego losie zadecyduje sąd rodzinny.",
+      "link": "https://wydarzenia.interia.pl/dolnoslaskie/news-nastolatek-rzucil-sie-na-matke-zadal-kilka-ciosow-dramat-na,nId,23580375",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Kto wszedł do kokpitu? Biegli wykluczają dwa nazwiska"
+      "title_pl": "Nastolatek rzucił się na matkę, zadał kilka ciosów. Dramat na Dolnym Śląsku"
     },
     {
-      "title": "Zmiany podatkowe z podpisem prezydenta. Koniec popularnej ulgi",
-      "snippet": "Prezydent Karol Nawrocki podpisał nowelizację ustawy wprowadzającą ważne zmiany podatkowe od 2027 roku. Likwidacji ulegnie ulga na internet, natomiast krwiodawcy zyskają wyższe odliczenia. Z kolei firmy mogą liczyć na przedłużenie ulgi na robotyzację. Co jeszcze się zmieni? Wyjaśniamy.",
-      "link": "https://wydarzenia.interia.pl/kraj/news-zmiany-podatkowe-z-podpisem-prezydenta-koniec-popularnej-ulg,nId,23577529",
+      "title": "Putin chce potężnej floty. Rosja zaprezentowała pierwszy taki okręt",
+      "snippet": "Władimir Putin wziął udział w ceremonii podniesienia bandery na podwodnym okręcie atomowym Perm. Kreml przedstawia to jako zapowiedź modernizacji marynarki wojennej. Kontekst wskazuje jednak, że jednostka może zostać wykorzystana do kolejnych uderzeń na Ukrainę. Jeśli tak się stanie, Kijów będzie miał do czynienia z pierwszym tego typu okrętem.",
+      "link": "https://wydarzenia.interia.pl/ukraina-rosja/news-putin-chce-poteznej-floty-rosja-zaprezentowala-pierwszy-taki,nId,23580399",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Zmiany podatkowe z podpisem prezydenta. Koniec popularnej ulgi"
+      "title_pl": "Putin chce potężnej floty. Rosja zaprezentowała pierwszy taki okręt"
     },
     {
-      "title": "Ciało odnalezione we włoskich Alpach. Siostra Polaka zabrała głos",
-      "snippet": "We włoskich Alpach znaleziono ciało należące najprawdopodobniej do zaginionego rok temu turysty z Polski. Teraz głos zabrała siostra mężczyzny, która miesiącami prowadziła poszukiwania brata. \"Czujemy ulgę, ale też ogromny ból\" - napisała.",
-      "link": "https://wydarzenia.interia.pl/zagranica/news-cialo-odnalezione-we-wloskich-alpach-siostra-polaka-zabrala,nId,23579957",
+      "title": "Liderka AfD wzywa do deportacji migrantów. Mówi o Ukrainie, \"mam nadzieję\"",
+      "snippet": "Po zakończeniu wojny ukraińscy uchodźcy powinni wrócić do domów - twierdzi współprzewodnicząca AfD Alice Weidel. To kolejna wypowiedź przedstawicieli tej partii, w której wspomina się o opuszczeniu Niemiec przez znajdujących się tam obcokrajowców.",
+      "link": "https://wydarzenia.interia.pl/zagranica/news-liderka-afd-wzywa-do-deportacji-migrantow-wskazala-na-ukrain,nId,23580402",
       "source_name": "Interia",
       "lang": "pl",
-      "title_pl": "Ciało odnalezione we włoskich Alpach. Siostra Polaka zabrała głos"
+      "title_pl": "Liderka AfD wzywa do deportacji migrantów. Mówi o Ukrainie, \"mam nadzieję\""
     },
     {
-      "title": "Pałac prezydencki wyjaśnia weto. \"Straciliby nauczyciele i emeryci\"",
-      "snippet": "Pałac prezydencki tłumaczy weto Karola Nawrockiego w sprawie zmian w progach podatkowych oraz CIT i ryczałcie. Jak stwierdził rzecznik prezydenta RP Rafał Leśkiewicz, ustawa tylko pozornie obniży podatki, a w rzeczywistości poskutkuje wyższymi cenami. Dodał również, że rząd może procedować ustawę o obniżce podatków zaproponowaną przez prezydenta.",
-      "link": "https://biznes.interia.pl/polityka/news-rzecznik-prezydenta-wyjasnia-weto-straciliby-nauczyciele-i-e,nId,23580127",
+      "title": "Koszt opinii biegłych ws. katastrofy smoleńskiej. Prokuratura ujawnia",
+      "snippet": "Opinia biegłych w sprawie katastrofy smoleńskiej kosztowała \"miliony złotych\" - przekazał rzecznik Prokuratury Krajowej Przemysław Nowak. Nad jej przygotowaniem pracował międzynarodowy zespół ponad 20 ekspertów. Według nich do tragedii doprowadziły liczne błędy podczas podchodzenia do lądowania.",
+      "link": "https://wydarzenia.interia.pl/kraj/news-koszt-opinii-bieglych-ws-katastrofy-smolenskiej-prokuratura,nId,23580389",
+      "source_name": "Interia",
+      "lang": "pl",
+      "title_pl": "Koszt opinii biegłych ws. katastrofy smoleńskiej. Prokuratura ujawnia"
+    },
+    {
+      "title": "Oddajesz ubrania do kontenera? Nie zawsze trafią do potrzebujących",
+      "snippet": "Ubrania, których już nie nosimy, często trafiają do kontenerów ustawionych na osiedlach czy parkingach. Wiele osób zakłada, że w ten sposób pomaga potrzebującym. Czy rzeczywiście tak jest i co później dzieje się z oddaną odzieżą?",
+      "link": "https://biznes.interia.pl/finanse/news-oddajesz-ubrania-do-kontenera-nie-zawsze-trafiaja-tam-gdzie,nId,23578325",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Pałac prezydencki wyjaśnia weto. \"Straciliby nauczyciele i emeryci\""
+      "title_pl": "Oddajesz ubrania do kontenera? Nie zawsze trafią do potrzebujących"
     },
     {
-      "title": "Wiemy, co z opłatą cukrową. Prezydent podjął decyzję",
-      "snippet": "Prezydent Karol Nawrocki podpisał trzy ustawy, a dwie zawetował. Wśród zaakceptowanych przepisów znalazły się m.in. rozwiązania dotyczące fundacji rodzinnych i wsparcia przemysłu energochłonnego. Weto objęło natomiast podwyżkę opłaty cukrowej oraz pakiet zmian podatkowych.",
-      "link": "https://biznes.interia.pl/gospodarka/news-wsparcie-dla-przemyslu-i-podatek-cukrowy-nawrocki-podjal-dec,nId,23580154",
+      "title": "Bezpłatne leki dla dzieci. Można zaoszczędzić kilkaset złotych rocznie",
+      "snippet": "W sezonie infekcyjnym każda wizyta w aptece wiąże się z opłaceniem wysokiego rachunku. Doskonale wiedzą o tym rodzice, szczególnie przedszkolaków i najmłodszych uczniów. Nie wszyscy jednak mają świadomość, że części wydatków można uniknąć. Od ponad trzech lat dzieci i młodzież do 18. roku życia mogą otrzymywać wybrane leki bezpłatnie.",
+      "link": "https://biznes.interia.pl/finanse/news-darmowe-leki-dla-dzieci-rodzice-nie-wiedza-ze-moga-zaoszczed,nId,23578308",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Wiemy, co z opłatą cukrową. Prezydent podjął decyzję"
+      "title_pl": "Bezpłatne leki dla dzieci. Można zaoszczędzić kilkaset złotych rocznie"
     },
     {
-      "title": "Nowe ceny paliw na weekend. Tyle zapłacisz na stacji za benzynę i diesla",
-      "snippet": "Minister energii ogłosił nowe maksymalne ceny paliw, które będą obowiązywać w weekend i poniedziałek (28-30 listopada). Kierowcy poznali limity dla benzyny 95, benzyny 98 i oleju napędowego.",
-      "link": "https://biznes.interia.pl/finanse/news-nowe-ceny-paliw-na-weekend-i-poniedzialek-tyle-zaplaca-kiero,nId,23579921",
+      "title": "Polskie firmy na celowniku rządu Holandii. Koniec luki w prawie pracy",
+      "snippet": "Ministerstwo Spraw Społecznych i Zatrudnienia Holandii ogłosiło zmiany w regulacjach dotyczących pracy delegowanej. Proponowane przepisy uderzą w polskie agencje pracy tymczasowej, które wysłały najwięcej pracowników delegowanych z państw spoza UE do Holandii. Wiele z tych podmiotów dopuszczało się poważnych naruszeń prawa w tym zakresie.",
+      "link": "https://biznes.interia.pl/finanse/news-holandia-uderza-w-polskie-agencje-pracy-koniec-luki-prawnej,nId,23578822",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Nowe ceny paliw na weekend. Tyle zapłacisz na stacji za benzynę i diesla"
+      "title_pl": "Polskie firmy na celowniku rządu Holandii. Koniec luki w prawie pracy"
     },
     {
-      "title": "Spółdzielnia oferuje mieszkanie na wynajem. Czynsz wywołał komentarze",
-      "snippet": "Warszawska Spółdzielnia Mieszkaniowa ogłosiła konkurs na najemcę kawalerki w dzielnicy Żoliborz. Chociaż wiele osób jest przekonanych, że wynajem bezpośrednio od spółdzielni jest tańszy, w tym przypadku tak nie jest. Dlatego też pod wpisem WSM pojawiło się kilka niepochlebnych komentarzy.",
-      "link": "https://biznes.interia.pl/finanse/news-spoldzielnia-szuka-lokatorow-do-kawalerki-czynsz-wywolal-kom,nId,23579996",
+      "title": "Zimowe opony nie są wymagane. Policjant może jednak wystawić mandat",
+      "snippet": "Wraz z pierwszymi przymrozkami wraca temat wymiany opon na zimowe. Część kierowców nadal jeździ na letnich i zastanawia się, czy grozi za to mandat. Co mówią przepisy i w jakich sytuacjach policja może ukarać kierowcę?",
+      "link": "https://biznes.interia.pl/finanse/news-brak-zimowych-opon-i-mandat-przepisy-mowia-jasno,nId,23577539",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Spółdzielnia oferuje mieszkanie na wynajem. Czynsz wywołał komentarze"
+      "title_pl": "Zimowe opony nie są wymagane. Policjant może jednak wystawić mandat"
     },
     {
-      "title": "Europejski Bank Centralny. Pablo Hernandez de Cos głównym kandydatem",
-      "snippet": "Doświadczony bankier i obecny dyrektor BIS to główny kandydat na następcę Christine Lagarde. Przywódcy państw strefy euro już wskazali swojego faworyta, a ostateczne decyzje zapadną jeszcze w grudniu.",
-      "link": "https://biznes.interia.pl/polityka/news-nowy-prezes-ebc-kandydatem-zostal-hiszpan-jest-data-decyzji,nId,23580065",
+      "title": "Butelkomaty w Polsce. Kto dostaje kaucję, gdy nie oddam butelki?",
+      "snippet": "Nieodebrana kaucja za butelkę to dla wielu konsumentów zagadka. Okazuje się, że pieniądze za nieoddane butelki mają konkretne przeznaczenie. Nie zasilają portfeli sprzedawców, a utrzymują sprawność całego systemu. Co to znaczy?",
+      "link": "https://biznes.interia.pl/finanse/news-kto-dostaje-kaucje-gdy-nie-oddam-butelki-pieniadze-nie-przep,nId,23576395",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Europejski Bank Centralny. Pablo Hernandez de Cos głównym kandydatem"
+      "title_pl": "Butelkomaty w Polsce. Kto dostaje kaucję, gdy nie oddam butelki?"
     },
     {
-      "title": "Ekspert o wygranej Marine Le Pen. \"To nie byłby początek końca UE\"",
-      "snippet": "Ewentualne zwycięstwo liderki francuskiej prawicy nie zwiastuje rozpadu Wspólnoty, ale może głęboko przeobrazić europejską politykę. Zdaniem eksperta Pawła Zerki, sukces Marine Le Pen dodałby wiatru w żagle prawicy w Polsce i mógłby trwale zmienić kierunek unijnej integracji.",
-      "link": "https://biznes.interia.pl/polityka/news-ekspert-o-wygranej-marine-le-pen-to-nie-bylby-poczatek-konca,nId,23579924",
+      "title": "Mniej ofert sezonowych, ale stawki rosną. Mikołaj zarobi nawet 450 zł",
+      "snippet": "Przed świętami można dorobić w handlu, gastronomii i logistyce, ale sezonowych ofert jest mniej niż rok temu. Zmienia się też rynek: sklepy ograniczają rekrutację, a więcej pracowników potrzebują magazyny i firmy transportowe. Najwyższe stawki czekają na Mikołajów - wynoszą nawet 450 zł brutto za godzinę.",
+      "link": "https://biznes.interia.pl/finanse/news-nawet-450-zl-za-godzine-przed-swietami-w-tej-pracy-placa-naj,nId,23580038",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Ekspert o wygranej Marine Le Pen. \"To nie byłby początek końca UE\""
+      "title_pl": "Mniej ofert sezonowych, ale stawki rosną. Mikołaj zarobi nawet 450 zł"
     },
     {
-      "title": "\"Historyczny\" kontrakt MON zawarty . \"Nie było bardziej analizowanej umowy\"",
-      "snippet": "Ministerstwo Obrony Narodowej podpisało umowę z Palantir Technologies na wdrożenie systemu sztucznej inteligencji. Wicepremier Władysław Kosiniak-Kamysz ocenił ten krok jako historyczny przełom dla zdolności operacyjnych polskiej armii. Zapewnił, że została sprawdzona przez służby pod kątem bezpieczeństwa.",
-      "link": "https://biznes.interia.pl/gospodarka/news-mon-podpisalo-umowe-z-palantirem-systemy-ai-maja-wesprzec-wo,nId,23579981",
+      "title": "Ukryte oblicze państwa dobrobytu. Miliony złotych w ulgach i preferencjach",
+      "snippet": "Jest nowy \"paper\" Michała Brzezińskiego i Leszka Morawskiego pod tytułem \"Ukryte państwo dobrobytu. Kto korzysta z ulg i preferencji w podatkach i składkach.\" Autorzy, nieukrywający swojej tęsknoty za sprawiedliwością społeczną, dali wiele argumentów obrońcom wolności, równości wobec prawa. Dziękuję.",
+      "link": "https://biznes.interia.pl/felietony/news-felieton-gwiazdowskiego-ukryte-panstwo-dobrobytu-podatkowe-p,nId,23579860",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "\"Historyczny\" kontrakt MON zawarty . \"Nie było bardziej analizowanej umowy\""
+      "title_pl": "Ukryte oblicze państwa dobrobytu. Miliony złotych w ulgach i preferencjach"
     },
     {
-      "title": "Wielkie zmiany w podatkach. Karol Nawrocki podjął decyzję ws. ustawy",
-      "snippet": "Prezydent Karol Nawrocki zapowiedział, że nie podpisze ustawy, która dodaje nową, 24-proc. stawkę w PIT, zmienia progi podatkowe i podnosi stawkę CIT dla największych firm do 22 proc. - Ta ustawa dzieli obywateli, niewielu daje, większości odbiera - argumentował w swojej wypowiedzi zamieszczonej na profilu X.",
-      "link": "https://biznes.interia.pl/gospodarka/news-co-ze-zmianami-w-progach-podatkowych-jest-decyzja-prezydenta,nId,23576549",
+      "title": "Linie lotnicze NORSE ogłosiły upadłość. Jeszcze wczoraj szukały inwestora",
+      "snippet": "Tanie norweskie linie lotnicze NORSE ogłosiły w piątek 27 listopada upadłość, firma popadła w kłopoty finansowe m.in. ze względu na kryzys na rynku paliwa lotniczego. Dzień przed ogłoszeniem upadłości firma odwołała loty i ogłosiła poszukiwanie inwestorów.",
+      "link": "https://biznes.interia.pl/gospodarka/news-tanie-norweskie-linie-lotnicze-oglosily-upadlosc-wczoraj-odw,nId,23580421",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Wielkie zmiany w podatkach. Karol Nawrocki podjął decyzję ws. ustawy"
+      "title_pl": "Linie lotnicze NORSE ogłosiły upadłość. Jeszcze wczoraj szukały inwestora"
     },
     {
-      "title": "Premier zapowiada wypłaty dla pracowników TK. \"Biorę pełną odpowiedzialność\"",
-      "snippet": "Premier Donald Tusk zapowiedział operację finansową, która pozwoli wypłacić pensje pracownikom Trybunału Konstytucyjnego. Szef rządu podkreślił, że bierze pełną odpowiedzialność za te działania.",
-      "link": "https://biznes.interia.pl/polityka/news-co-z-pensjami-dla-pracownikow-tk-ludzie-nie-moga-funkcjonowa,nId,23580047",
+      "title": "Prezydent rozbudził emocje. Ekonomiści: Efektywne obciążenie PIT wzrośnie",
+      "snippet": "Prezydent Karol Nawrocki zawetował ustawę zmieniającą skalę PIT, rozbudzając emocje komentujących ekspertów. Do krytykujących decyzję prezydenta polityków (m.in. szefa resortu finansów Andrzeja Domańskiego) dołączyło wielu ekonomistów. \"W 2027 r. efektywne obciążenie PIT wzrośnie, więcej podatników wpadnie w wyższy próg\" - jednoznacznie komentują eksperci ING Banku Śląskiego.",
+      "link": "https://biznes.interia.pl/podatki/news-prezydent-rozpalil-emocje-ekonomisci-efektywne-obciazenie-pi,nId,23580412",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Premier zapowiada wypłaty dla pracowników TK. \"Biorę pełną odpowiedzialność\""
+      "title_pl": "Prezydent rozbudził emocje. Ekonomiści: Efektywne obciążenie PIT wzrośnie"
     },
     {
-      "title": "Złotówka słaba względem walut obcych. Dolar i euro drogie na weekend",
-      "snippet": "Ile kosztuje euro, a ile dolar, funt i hrywna? Podajemy aktualne kursy walut należące do najczęściej wymienianych w Polsce. Poniżej wyrażone w złotówkach ceny walut oraz cena za uncję złota.",
-      "link": "https://biznes.interia.pl/gospodarka/news-nowe-kursy-walut-obcych-tyle-na-weekend-zaplacimy-za-dolara,nId,23580054",
+      "title": "PKP Cargo notuje trzynastokrotnie wyższą stratę niż w ubiegłym roku",
+      "snippet": "PKP Cargo po trzech kwartałach 2026 roku zanotowało 137,1 mln zł straty netto. To ponad dziesięciokrotnie większa strata niż w analogicznym okresie ubiegłego roku, gdy wyniosła 10,4 mln zł. Według zarządcy masy sanacyjnej sytuacja jest skutkiem wydarzeń o \"charakterze księgowym\".",
+      "link": "https://biznes.interia.pl/gospodarka/news-pkp-cargo-z-milionowymi-stratami-ponad-trzynascie-razy-wyzsz,nId,23580408",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Złotówka słaba względem walut obcych. Dolar i euro drogie na weekend"
+      "title_pl": "PKP Cargo notuje trzynastokrotnie wyższą stratę niż w ubiegłym roku"
     },
     {
-      "title": "Negocjacje budżetowe w Brukseli. Tusk mówi o obiecującym punkcie wyjścia",
-      "snippet": "- Punkt wyjścia był trudny, a z polskiego punktu widzenia jest obiecujący - ocenił premier Donald Tusk po negocjacjach ws. unijnego budżetu w Brukseli. Szef rządu ocenił też, że podatek cyfrowy dla największych korporacji, o którym także rozmawiano, byłby dobrym pomysłem.",
-      "link": "https://biznes.interia.pl/gospodarka/news-nowy-budzet-ue-tusk-przekazal-kluczowe-ustalenia-ze-szczytu,nId,23579956",
+      "title": "Polskie miasto pokonało rywali z całej Europy. Zdobyło prestiżowy tytuł",
+      "snippet": "Polskie miasto wygrało prestiżowy tytuł Europejskiej Stolicy Młodzieży na 2029 rok. W finałowej rywalizacji Kielce pokonały konkurentów z całej Europy, a sukces ten ma stać się impulsem do głębokich zmian wizerunkowych miasta.",
+      "link": "https://biznes.interia.pl/polityka/news-polskie-miasto-pokonalo-rywali-z-calej-europy-zdobylo-presti,nId,23579835",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Negocjacje budżetowe w Brukseli. Tusk mówi o obiecującym punkcie wyjścia"
+      "title_pl": "Polskie miasto pokonało rywali z całej Europy. Zdobyło prestiżowy tytuł"
     },
     {
-      "title": "Stadion Narodowy zmieni nazwę. Orlen wyłoży ćwierć miliarda złotych",
-      "snippet": "Jak ustalił Business Insider Polska, Orlen zostanie nowym sponsorem tytularnym Stadionu Narodowego. Koncern ma płacić ponad 25 mln zł rocznie, a dziesięcioletni kontrakt może przekroczyć 250 mln zł. To kolejny duży projekt marketingowy płockiej spółki.",
-      "link": "https://biznes.interia.pl/gospodarka/news-orlen-wyda-ponad-250-mln-zl-na-stadion-narodowy-ma-zajac-mie,nId,23579966",
+      "title": "Sąsiad Polski uchwalił przyszłoroczny budżet. Rekordowe wydatki na armię",
+      "snippet": "Po długich sporach Bundestag uchwalił federalny budżet na przyszły rok. Zwracają uwagę rekordowe (najwyższe od czasów zimnej wojny) wydatki na obronność.",
+      "link": "https://biznes.interia.pl/gospodarka/news-sasiad-polski-uchwalil-przyszloroczny-budzet-rekordowe-wydat,nId,23580374",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Stadion Narodowy zmieni nazwę. Orlen wyłoży ćwierć miliarda złotych"
+      "title_pl": "Sąsiad Polski uchwalił przyszłoroczny budżet. Rekordowe wydatki na armię"
     },
     {
-      "title": "Londyn ostrzega Polaków: Brexit się nie udał, polexit byłby katastrofą",
-      "snippet": "Poparcie dla ugrupowań sceptycznych wobec Unii Europejskiej jest dziś w Polsce wyższe niż w Wielkiej Brytanii przed referendum z 2016 roku. Eksperci z brytyjskiego think tanku BrightBlue ostrzegają, że ewentualne wyjście Polski ze Wspólnoty miałoby tragiczne konsekwencje.",
-      "link": "https://biznes.interia.pl/polityka/news-londyn-ostrzega-polakow-brexit-sie-nie-udal-polexit-bylby-ka,nId,23579855",
+      "title": "Sondaż: Koalicji opłaca się wspólny start. Na te głosy partie mogą liczyć",
+      "snippet": "Gdyby obecny obóz rządzący wystawił w wyborach do Sejmu wspólny komitet, mógłby liczyć na ponad 41 proc. głosów i samodzielną większość. Z badania United Surveys (IBRiS) dla Wirtualnej Polski wynika, że w takim scenariuszu Prawo i Sprawiedliwość osiąga 15,4 proc. poparcia.",
+      "link": "https://biznes.interia.pl/polityka/news-sondaz-koalicji-oplaca-sie-wspolny-start-na-tyle-glosow-moga,nId,23580115",
       "source_name": "Interia Biznes",
       "lang": "pl",
-      "title_pl": "Londyn ostrzega Polaków: Brexit się nie udał, polexit byłby katastrofą"
+      "title_pl": "Sondaż: Koalicji opłaca się wspólny start. Na te głosy partie mogą liczyć"
     },
     {
-      "title": "Ukraiński pocisk lata szybciej niż amerykański ATACMS. \"Panika na Kremlu\"",
-      "snippet": "\"Jest tak szybka i trudna do wykrycia, że wychwalane rosyjskie systemy obrony przeciwlotniczej po prostu nie są w stanie jej przechwycić\" — piszą ukraińskie media o pocisku balistycznym FP-7, który niedawno był bohaterem tajemniczego nagrania.",
-      "link": "https://wiadomosci.onet.pl/swiat/ukrainski-pocisk-lata-szybciej-niz-amerykanski-atacms-panika-na-kremlu/z9hjv0n",
+      "title": "Dramatyczny pożar w Karpaczu. Ogień objął cały budynek",
+      "snippet": "Do pożaru w Karpaczu doszło w piątek wieczorem. Z ogniem walczyło dziewięć zastępów straży pożarnej. Na czas akcji w centrum miasta służby odłączyły prąd.",
+      "link": "https://wiadomosci.onet.pl/wroclaw/dramatyczny-pozar-w-karpaczu-ogien-objal-caly-budynek/1lrfvet",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Ukraiński pocisk lata szybciej niż amerykański ATACMS. \"Panika na Kremlu\""
+      "title_pl": "Dramatyczny pożar w Karpaczu. Ogień objął cały budynek"
     },
     {
-      "title": "Ignorowane zagrożenie. Dla mężczyzn w średnim wieku to tykająca bomba. \"Poczułem miażdżący ból w klatce piersiowej\"",
-      "snippet": "Jeden na dziesięciu mężczyzn w wieku 50 lat ma serce starsze o 10 lat niż jego rzeczywisty wiek — do takiego wniosku doszła organizacja Public Health England w 2017 r. Z badań wynika, że są też oni szczególnie narażeni na czynniki zwiększające ryzyko chorób serca. Mimo to wielu z nich ignoruje zagrożenia i zwleka z wizytą u lekarza. Len Drane miał 42 lata, gdy przekonał się, jak poważne skutki może to za sobą pociągać.",
-      "link": "https://wiadomosci.onet.pl/nauka/mial-42-lat-i-dostal-zawalu-serca-poczulem-miazdzacy-bol-w-klatce-piersiowej/c34eypq",
+      "title": "Wyścig z czasem generała Eisenkota. Jak Netanjahu może jeszcze odzyskać władzę w Izraelu",
+      "snippet": "Gadi Eisenkot dostał misję, która miała otworzyć nowy rozdział izraelskiej polityki. Zamiast szybkiego zwycięstwa od niemal trzech tygodni próbuje zbudować rząd. Ma większość w Knesecie, ale jest ona krucha, a jej częścią są arabskie ugrupowania, których udział w rządzie budzi ogromne emocje. Tymczasem jego zaplecze już przepycha ustawy odwracające część zmian z epoki Binjamina Netanjahu. Eisenkot ściga się jednak z czasem. Jeśli nie zdąży do 20 grudnia, inicjatywa może wrócić do Netanjahu.",
+      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/eisenkot-ma-plan-na-izrael-ale-wladza-moze-jeszcze-wrocic-do-netanjahu/nn9y9g6",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Ignorowane zagrożenie. Dla mężczyzn w średnim wieku to tykająca bomba. \"Poczułem miażdżący ból w klatce piersiowej\""
+      "title_pl": "Wyścig z czasem generała Eisenkota. Jak Netanjahu może jeszcze odzyskać władzę w Izraelu"
     },
     {
-      "title": "Włochy i Niemcy upominają Kijów. Chodzi o rosyjskie statki",
-      "snippet": "Ukraińskie operacje na Bałtyku i Morzu Śródziemnym wywołały chłodną reakcję Berlina i Rzymu. Niemcy martwią się o żeglugę, a włoski rząd obawia się zupełnie innego scenariusza.",
-      "link": "https://wiadomosci.onet.pl/swiat/wlochy-i-niemcy-apeluja-do-ukrainy-chodzi-o-ataki-na-rosyjskie-statki/m0cg9hz",
+      "title": "Rosję widzą z okna. \"Gdy tu dorastasz, nikt nie mówi, że twój duży sąsiad jest wrogiem\"",
+      "snippet": "Wystarczy kilka minut spaceru, by zobaczyć rosyjską flagę, rzekę oddzielającą dwa państwa i kolejkę ciągnącą się w stronę przejścia. Dla przyjezdnych może to wyglądać jak granica przyszłego frontu. Dla mieszkańców Narwy to po prostu codzienność.",
+      "link": "https://wiadomosci.onet.pl/swiat/odwiedzilam-mala-rosje-w-ue-europa-robi-z-nas-sensacje/k1rg06c",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Włochy i Niemcy upominają Kijów. Chodzi o rosyjskie statki"
+      "title_pl": "Rosję widzą z okna. \"Gdy tu dorastasz, nikt nie mówi, że twój duży sąsiad jest wrogiem\""
     },
     {
-      "title": "Prywatna kancelaria w gdańskiej komendzie. Prokuratura wszczyna śledztwo",
-      "snippet": "Prokuratura Rejonowa w Elblągu zdecydowała o rozpoczęciu śledztwa w sprawie nadużycia władzy przez szefową zespołu prawnego Komendy Wojewódzkiej Policji w Gdańsku mł. insp. Annę Marię Niewiadomską — dowiaduje się Onet. We wrześniu ujawniliśmy, że funkcjonariusze i pracownicy policji byli przez nią wykorzystywani do załatwiania spraw prowadzonych przez jej prywatną kancelarię radcowską.",
-      "link": "https://wiadomosci.onet.pl/tylko-w-onecie/prywatna-kancelaria-w-gdanskiej-komendzie-prokuratura-wszczyna-sledztwo/m2f1y0q",
+      "title": "Zielona Góra - prognoza pogody w dniu 28.11.2026",
+      "snippet": "Zielona Góra. Jaka będzie pogoda w mieście? Czy w dniu 28.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo lubuskie - jaka jest aktualna prognoza pogody?",
+      "link": "https://wiadomosci.onet.pl/lubuskie/zielona-gora-prognoza-pogody-w-dniu-28112026/ldq32nz",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Prywatna kancelaria w gdańskiej komendzie. Prokuratura wszczyna śledztwo"
+      "title_pl": "Zielona Góra - prognoza pogody w dniu 28.11.2026"
     },
     {
-      "title": "Karol Nawrocki wetuje kolejną ustawę, w sieci burza. \"Śmieje się Polakom w twarz\"",
-      "snippet": "\"Wstyd\", \"prezydent śmieje się Polakom w twarz\" — tak decyzję o kolejnym wecie Karola Nawrockiego komentują politycy koalicji rządzącej. Z decyzji prezydenta cieszy się za to Konfederacja. Z kolei Ryszard Petru wskazuje, co złego — jego zdaniem — zrobił rząd, przygotowując ustawę.",
-      "link": "https://wiadomosci.onet.pl/kraj/karol-nawrocki-wetuje-kolejna-ustawe-w-sieci-burza-smieje-sie-polakom-w-twarz/11lxe0f",
+      "title": "Toruń: jaka pogoda czeka nas 28.11.2026?",
+      "snippet": "Toruń. Jaka będzie pogoda w mieście? Czy w dniu 28.11.2026 przydadzą się nam parasole? Przedstawiamy najnowsze przewidywania meteorologów. Województwo kujawsko-pomorskie - jaka jest aktualna prognoza pogody?",
+      "link": "https://wiadomosci.onet.pl/kujawsko-pomorskie/torun-prognoza-pogody-w-dniu-28112026/260l5vf",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Karol Nawrocki wetuje kolejną ustawę, w sieci burza. \"Śmieje się Polakom w twarz\""
+      "title_pl": "Toruń: jaka pogoda czeka nas 28.11.2026?"
     },
     {
-      "title": "Atak nożem w Twardogórze. Chodzi o matkę i syna",
-      "snippet": "Służby interweniowały w centrum Twardogóry po zgłoszeniu dotyczącym ataku nożem w jednej z kamienic — podaje serwis Moja Oleśnica.",
-      "link": "https://wiadomosci.onet.pl/wroclaw/nastolatek-mial-zaatakowac-matke-nozem-interwencja-sluzb-w-twardogorze/htt93l5",
+      "title": "Opole - jakiej pogody możemy się spodziewać 28.11.2026?",
+      "snippet": "Opole. Jaka pogoda będzie dziś w twoim mieście? Co przyniesie prognoza pogody w dniu 28.11.2026? Prezentujemy najnowsze przewidywania meteorologów. Prognoza pogody - województwo opolskie.",
+      "link": "https://wiadomosci.onet.pl/opole/opole-prognoza-pogody-w-dniu-28112026/4b4vdq6",
       "source_name": "Onet",
       "lang": "pl",
-      "title_pl": "Atak nożem w Twardogórze. Chodzi o matkę i syna"
+      "title_pl": "Opole - jakiej pogody możemy się spodziewać 28.11.2026?"
+    },
+    {
+      "title": "Lodowate powietrze nad Polską. Temperatura spadnie do -17 st. C",
+      "snippet": "Przed nami mroźna końcówka listopada. Choć wyż Manuel przyniesie w weekend liczne rozpogodzenia, jednocześnie sprowadzi do Polski lodowate powietrze znad Arktyki. Szczególnie dotkliwy będzie chłód nocami. Z prognozy IMGW wynika, że w nocy z niedzieli na poniedziałek temperatura w kotlinach karpackich spadnie nawet do -17 st. C.",
+      "link": "https://wiadomosci.wp.pl/lodowate-powietrze-nad-polska-temperatura-spadnie-do-17-st-c-7355790274078880a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Lodowate powietrze nad Polską. Temperatura spadnie do -17 st. C"
+    },
+    {
+      "title": "Postrzelił ją zamachowiec z Krakowa. \"Przeżyłam, ale straciłam życie\"",
+      "snippet": "Kątem oka widzi, jak stojący obok mężczyzna pada na ziemię. Dostrzega samochód z opuszczoną szybą, zza której wydobywa się dym. Kierowcę widać bardzo dokładnie. Chyba wojskowy, bo ma ubranie moro. Twarz zasłonięta. Ale dlaczego trzyma karabin? Angelika już rozumie. Krzyczy: – Będzie strzelał!",
+      "link": "https://wiadomosci.wp.pl/krakow/postrzelil-ja-zamachowiec-z-krakowa-przezylam-ale-stracilam-zycie-7355510973024416a",
+      "source_name": "WP Wiadomości",
+      "lang": "pl",
+      "title_pl": "Postrzelił ją zamachowiec z Krakowa. \"Przeżyłam, ale straciłam życie\""
     }
   ]
 }
